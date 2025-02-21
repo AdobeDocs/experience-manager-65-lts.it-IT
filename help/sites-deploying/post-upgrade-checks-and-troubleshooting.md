@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Controlli post-aggiornamento {#post-upgrade-checks}
 
-Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), è necessario eseguire le seguenti attività per finalizzare l&#39;aggiornamento. Si presume che AEM sia stato avviato con il file jar 6.5 e che la base di codice aggiornata sia stata distribuita.
+Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), è necessario eseguire le seguenti attività per finalizzare l&#39;aggiornamento. Si presume che AEM sia stato avviato con il file jar 6.5.2025 e che la base di codice aggiornata sia stata distribuita.
 
 * [Verifica dei registri per il completamento dell&#39;aggiornamento](#main-pars-header-290365562)
 
@@ -58,14 +58,6 @@ In particolare, garantisce che:
 
 Per risolvere questo problema, sono state apportate modifiche alla modalità di generazione dei registri nel file `upgrade.log`.
 
-Di seguito è riportato un report di esempio che non mostra errori durante l’aggiornamento:
-
-![1487887443006](assets/1487887443006.png)
-
-Di seguito è riportato un report di esempio che mostra un bundle non installato durante il processo di aggiornamento:
-
-![1487887532730](assets/1487887532730.png)
-
 **error.log**
 
 Il file error.log deve essere esaminato attentamente durante e dopo l’avvio di AEM utilizzando la versione target jar. Eventuali avvertenze o errori devono essere esaminati. In generale, è consigliabile cercare i problemi all’inizio del registro. Gli errori che si verificano più avanti nel registro possono in realtà essere effetti collaterali di una causa principale che viene richiamata all’inizio del file. Se si verificano errori e avvisi ripetuti, vedere di seguito per [Analisi dei problemi relativi all&#39;aggiornamento](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
@@ -76,27 +68,11 @@ Passa alla console OSGi `/system/console/bundles` e verifica se alcuni bundle no
 
 ### Verifica versione Oak {#verify-oak-version}
 
-Dopo l&#39;aggiornamento, dovresti vedere che la versione di Oak è stata aggiornata a **1.10.2**. Per verificare la versione di Oak, accedi alla console OSGi e controlla la versione associata ai bundle di Oak: Oak Core, Oak Commons, Oak Segment Tar.
-
-### Ispezionare la cartella PreUpgradeBackup {#inspect-preupgradebackup-folder}
-
-Durante l&#39;aggiornamento, AEM tenta di eseguire il backup delle personalizzazioni e di memorizzarle sotto `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Per visualizzare questa cartella in CRXDE Lite, potrebbe essere necessario [abilitare temporaneamente CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
-
-La cartella con il timestamp deve avere una proprietà denominata `mergeStatus` con valore `COMPLETED`. La cartella **to-process** deve essere vuota e il nodo **overwrite** indica quali nodi sono stati sovrascritti durante l&#39;aggiornamento. Il contenuto sotto il nodo degli avanzi indica il contenuto che non è stato possibile unire in modo sicuro durante l’aggiornamento. Se l’implementazione dipende da uno qualsiasi dei nodi secondari (e non già installati dal pacchetto di codice aggiornato), deve essere unita manualmente.
-
-Disattiva CRXDE Lite seguendo questo esercizio se si trova in un ambiente di stage o produzione.
+Dopo l&#39;aggiornamento, dovresti vedere che la versione di Oak è stata aggiornata a **1.68.0**. Per verificare la versione di Oak, accedi alla console OSGi e controlla la versione associata ai bundle di Oak: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Convalida iniziale delle pagine {#initial-validation-of-pages}
 
 Esegui una convalida iniziale su più pagine in AEM. Se si aggiorna un ambiente di authoring, aprire la pagina iniziale e la pagina di benvenuto ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). In entrambi gli ambienti Author e Publish, apri alcune pagine di applicazioni e verifica che vengano riprodotte correttamente. In caso di problemi, consultare `error.log` per la risoluzione dei problemi.
-
-### Applicare i Service Pack di AEM {#apply-aem-service-packs}
-
-Se sono stati rilasciati, applica i Service Pack di AEM 6.5 pertinenti.
-
-### Migrazione delle funzioni di AEM {#migrate-aem-features}
-
-Diverse funzioni in AEM richiedono passaggi aggiuntivi dopo l’aggiornamento. Un elenco completo di queste funzioni e dei passaggi per migrarle in AEM 6.5 è disponibile nella pagina [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ### Verifica configurazioni di manutenzione pianificate {#verify-scheduled-maintenance-configurations}
 
@@ -118,7 +94,7 @@ Eseguire un piano di test dettagliato in base a come definito [Aggiornamento del
 
 ### Abilita agenti di replica {#enable-replication-agents}
 
-Dopo aver aggiornato e convalidato completamente l’ambiente di pubblicazione, abilita gli agenti di replica nell’ambiente di authoring. Verifica che gli agenti siano in grado di connettersi alle rispettive istanze Publish. Per ulteriori dettagli sull&#39;ordine degli eventi, vedere U [procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md).
+Dopo aver aggiornato e convalidato completamente l’ambiente di pubblicazione, abilita gli agenti di replica nell’ambiente di authoring. Verifica che gli agenti siano in grado di connettersi alle rispettive istanze Publish. Consulta [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md) per ulteriori dettagli sull&#39;ordine degli eventi.
 
 ### Abilita processi pianificati personalizzati {#enable-custom-scheduled-jobs}
 
@@ -126,23 +102,17 @@ A questo punto è possibile abilitare tutti i processi pianificati come parte de
 
 ## Analisi Dei Problemi Relativi All’Aggiornamento {#analyzing-issues-with-upgrade}
 
-Questa sezione contiene alcuni scenari di problemi che è possibile affrontare durante la procedura di aggiornamento ad AEM 6.3.
+Questa sezione contiene alcuni scenari di problemi che potrebbero verificarsi durante la procedura di aggiornamento ad AEM 6.5.2025.
 
 Questi scenari dovrebbero aiutare a individuare la causa principale dei problemi relativi all’aggiornamento e dovrebbero aiutare a identificare i problemi specifici del progetto o del prodotto.
-
-### Migrazione dell’archivio non riuscita  {#repository-migration-failing-}
-
-La migrazione dei dati da CRX2 ad Oak dovrebbe essere fattibile per qualsiasi scenario a partire da Istanze di Source basate su CQ 5.4. Assicurarsi di seguire esattamente le istruzioni di aggiornamento di questo documento, che includono la preparazione di `repository.xml`, accertandosi che nessun autenticatore personalizzato sia avviato tramite JAAS e che l&#39;istanza sia stata controllata per le incongruenze prima di avviare la migrazione.
-
-Se la migrazione non riesce, è possibile individuare la causa principale esaminando `upgrade.log`. Se il problema non è ancora noto, segnalalo all’Assistenza clienti.
-
-### Aggiornamento Non Eseguito {#the-upgrade-did-not-run}
-
-Prima di avviare i passaggi di preparazione, assicurati di eseguire prima l&#39;istanza **source** eseguendola con il comando Java™ -jar aem-quickstart.jar. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell&#39;istanza di origine. Inoltre, quando si avvia AEM per avviare l’aggiornamento, questo deve essere eseguito con il comando Java™ -jar aem-quickstart.jar. L’avvio da uno script di avvio non avvierà AEM in modalità di aggiornamento.
 
 ### Impossibile aggiornare pacchetti e bundle  {#packages-and-bundles-fail-to-update-}
 
 Nel caso in cui i pacchetti non vengano installati durante l’aggiornamento, i bundle in essi contenuti non verranno aggiornati. Questa categoria di problemi è causata da una configurazione errata dell’archivio dati. Verranno inoltre visualizzati come **ERRORE** e **AVVERTENZA** messaggi nel log degli errori. Poiché nella maggior parte di questi casi l’accesso predefinito potrebbe non funzionare, puoi utilizzare CRXDE direttamente per verificare e individuare i problemi di configurazione.
+
+### Aggiornamento Non Eseguito {#the-upgrade-did-not-run}
+
+Prima di avviare i passaggi di preparazione, assicurati di eseguire prima l&#39;istanza **source** eseguendola con il comando Java™ -jar aem-quickstart.jar. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell&#39;istanza di origine. Inoltre, quando si avvia AEM per avviare l’aggiornamento, questo deve essere eseguito con il comando Java™ -jar aem-quickstart.jar. L’avvio da uno script di avvio non avvierà AEM in modalità di aggiornamento.
 
 ### Alcuni bundle di AEM non passano allo stato attivo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -150,33 +120,13 @@ Se sono presenti bundle che non si avviano, verifica la presenza di eventuali di
 
 Nel caso in cui il problema sia presente ma si basi su un’installazione non riuscita del pacchetto che ha portato a un mancato aggiornamento dei bundle, questi verranno considerati incompatibili per la nuova versione. Per ulteriori informazioni su come risolvere il problema, vedere **Impossibile aggiornare pacchetti e bundle**.
 
-Si consiglia inoltre di confrontare l’elenco dei bundle di una nuova istanza di AEM 6.5 con quello aggiornato per rilevare i bundle che non sono stati aggiornati. Questo fornirà un ambito più vicino di ciò che si desidera cercare in `error.log`.
+Si consiglia inoltre di confrontare l’elenco dei bundle di una nuova istanza di AEM 6.5.2025 con quello aggiornato per rilevare i bundle che non sono stati aggiornati. Questo fornirà un ambito più vicino di ciò che si desidera cercare in `error.log`.
 
 ### Bundle personalizzati non passano allo stato attivo {#custom-bundles-not-switching-to-the-active-state}
 
 Se i bundle personalizzati non passano allo stato attivo, è probabile che ci sia codice che non importa l’API di modifica. Questo nella maggior parte dei casi porterà a dipendenze non soddisfatte.
 
-L’API rimossa deve essere contrassegnata come obsoleta in una delle versioni precedenti. Le istruzioni su una migrazione diretta del codice sono disponibili in questo avviso di elementi obsoleti. Adobe mira al controllo delle versioni semantiche, ove possibile, in modo che le versioni possano indicare modifiche che causano interruzioni.
-
 È inoltre consigliabile verificare se la modifica che ha causato il problema è necessaria e, in caso contrario, ripristinarla. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
-
-### Interfaccia utente di Platform non funzionante {#malfunctioning-platform-ui}
-
-Se alcune funzionalità dell’interfaccia utente non funzionano correttamente dopo l’aggiornamento, è necessario innanzitutto verificare la presenza di sovrapposizioni personalizzate dell’interfaccia. Alcune strutture potrebbero essere state modificate e la sovrapposizione potrebbe richiedere un aggiornamento o risultare obsoleta.
-
-Quindi, controlla eventuali errori JavaScript che possono essere tracciati fino alle estensioni aggiunte personalizzate collegate alle librerie client. Lo stesso vale per i CSS personalizzati che potrebbero causare problemi al layout di AEM.
-
-Infine, verifica eventuali errori di configurazione che JavaScript potrebbe non essere in grado di risolvere. Questo accade in genere con le estensioni disattivate in modo improprio.
-
-### Componenti personalizzati, modelli o estensioni dell’interfaccia utente non funzionanti {#malfunctioning-custom-components-templates-or-ui-extensions}
-
-In genere, le cause principali di questi problemi sono le stesse dei bundle non avviati o dei pacchetti non installati, con l’unica differenza che i problemi iniziano a verificarsi quando si utilizzano i componenti per la prima volta.
-
-Il modo per trattare il codice personalizzato errato è quello di eseguire prima i test di fumo per identificare la causa. Una volta trovato, consulta i consigli in questa sezione [link] dell&#39;articolo per trovare modi per risolverli.
-
-### Personalizzazioni mancanti in /etc {#missing-customizations-under-etc}
-
-`/apps` e `/libs` sono gestiti correttamente dall&#39;aggiornamento, ma potrebbe essere necessario ripristinare manualmente le modifiche in `/etc` da `/var/upgrade/PreUpgradeBackup` dopo l&#39;aggiornamento. Verificare la presenza di eventuali contenuti da unire manualmente in questa posizione.
 
 ### Analisi di error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 

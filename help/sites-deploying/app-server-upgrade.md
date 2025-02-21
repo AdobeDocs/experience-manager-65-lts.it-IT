@@ -4,117 +4,97 @@ description: Scopri come aggiornare le istanze di AEM distribuite tramite Applic
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 28701105452c347c5470fdb582d783e7aef1adb0
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# Passaggi per l&#39;aggiornamento delle installazioni di Application Server{#upgrade-steps-for-application-server-installations}
+# Passaggi per l&#39;aggiornamento delle installazioni di Application Server {#upgrade-steps-for-application-server-installations}
 
-Questa sezione descrive la procedura da seguire per aggiornare le installazioni di AEM for Application Server.
+>[!NOTE]
+>
+>Questa pagina illustra la procedura di aggiornamento per la guerra AEM 6.5 LTS su WLP (WebSphere Liberty).
 
-Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti da **AEM versione 6.4 a 6.5**.
+## Passaggi di pre-aggiornamento {#pre-upgrade-steps}
 
-1. Per prima cosa, avvia TomCat. Nella maggior parte dei casi, è possibile eseguire lo script di avvio di `./catalina.sh` eseguendo questo comando dal terminale:
+Prima di eseguire l’aggiornamento, è necessario completare diversi passaggi. Consulta [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) e [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) per ulteriori informazioni. Inoltre, assicurati che il tuo sistema soddisfi i requisiti per AEM 6.5 LTS. Analizzatore può aiutarti a stimare la complessità dell&#39;aggiornamento e a pianificare l&#39;aggiornamento (consulta [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md) per ulteriori informazioni).
 
-   ```shell
-   $CATALINA_HOME/bin/catalina.sh start
-   ```
+### Prerequisiti per la migrazione {#migration-prerequisites}
 
-1. Se AEM 6.4 è già implementato, verifica che i bundle funzionino correttamente accedendo a:
+* **Versione Java minima richiesta**: assicurati di aver installato IBM Sumeru JRE 17 sul tuo server WLP.
 
-   ```shell
-   https://<serveraddress:port>/cq/system/console/bundles
-   ```
+### Esecuzione dell&#39;aggiornamento {#performing-the-upgrade}
 
-1. Quindi, annulla la distribuzione di AEM 6.4. Questa operazione può essere eseguita da TomCat App Manager (`http://serveraddress:serverport/manager/html`)
-
-1. Ora esegui la migrazione dell’archivio utilizzando lo strumento di migrazione crx2oak. Per farlo, scarica la versione più recente di crx2oak da [questa posizione](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Esegui un backup dell’istanza prima di avviare qualsiasi attività di aggiornamento.
+1. Identificare se è necessario eseguire un aggiornamento sul posto o un aggiornamento secondario a seconda della versione del server WLP in uso. Se il server WLP corrente supporta il Servlet 6, è possibile eseguire l&#39;aggiornamento sul posto e continuare con questa documentazione. In caso contrario, è necessario eseguire un&#39;operazione di livello inferiore. Per il livello secondario, seguire la documentazione di migrazione dei contenuti con aggiornamento Oak - [Collegamento da aggiungere]
+1. Arresta l’istanza di AEM. In genere può essere eseguita utilizzando questo comando:
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
+   <path-to-wlp-directory>/bin/server stop server_name
    ```
-
-1. Elimina le proprietà necessarie nel file sling.properties effettuando le seguenti operazioni:
-
-   1. Apri il file in `crx-quickstart/launchpad/sling.properties`
-   1. Testo del passaggio Rimuovi le seguenti proprietà e salva il file:
-
-      1. `sling.installer.dir`
-
-      1. `felix.cm.dir`
-
-      1. `granite.product.version`
-
-      1. `org.osgi.framework.system.packages`
-
-      1. `osgi-core-packages`
-
-      1. `osgi-compendium-services`
-
-      1. `jre-*`
-
-      1. `sling.run.mode.install.options`
 
 1. Rimuovere i file e le cartelle non più necessari. Gli elementi da rimuovere in modo specifico sono:
 
-   * Cartella **launchpad/startup**. È possibile eliminarlo eseguendo il comando seguente nel terminale: `rm -rf crx-quickstart/launchpad/startup`
+   * `cq-quickstart-65.war` dalla cartella `dropins` e dalla cartella espansa si trovano in genere rispettivamente in `<path-to-aem-server>/dropins/cq-quickstart-65.war` e `<path-to-aem-server>/apps/expanded/cq-quickstart-65.war`
+   * La cartella `launchpad/startup`. È possibile eliminarlo eseguendo il comando seguente nel terminale, supponendo che ci si trovi nella cartella del server:
 
-   * Il file **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-
-   * Il file **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
-
-   * Rimuovi **sling.options.file** eseguendo: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
-
-1. Ora crea l’archivio nodi e l’archivio dati utilizzati con AEM 6.5. A tale scopo, creare due file con i seguenti nomi in `crx-quickstart\install`:
-
-   * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-   * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-
-   Questi due file configurano AEM per l’utilizzo di un archivio nodi TarMK e di un archivio dati File.
-
-1. Modifica i file di configurazione per renderli pronti per l’uso. Più precisamente:
-
-   * Aggiungi la riga seguente a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
-
-     `customBlobStore=true`
-
-   * Quindi aggiungere le righe seguenti a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
-
-     ```
-     path=./crx-quickstart/repository/datastore
-     minRecordLength=4096
+     ```shell
+     rm -rf crx-quickstart/launchpad/startup
      ```
 
-1. Ora devi modificare le modalità di esecuzione nel file .war di AEM 6.5. Per farlo, crea innanzitutto una cartella temporanea che ospiterà la guerra AEM 6.5. Il nome della cartella in questo esempio sarà `temp`. Una volta copiato il file .war, estrarre il contenuto dall&#39;interno della cartella temporanea:
+   * Il file `base.jar`. Per eseguire questa operazione, eseguire i comandi seguenti:
 
+     ```shell
+     find crx-quickstart/launchpad -type f -name 
+     "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \;
+     ```
+
+   * Il file `BootstrapCommandFile_timestamp.txt`:
+
+     ```shell
+     rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt
+     ```
+
+   * Rimuovere il file `sling.options` eseguendo:
+
+     ```shell
+     find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \; 
+     ```
+
+   * Rimuovi il file `sling.bootstrap.txt`:
+
+     ```shell
+     rm -rf crx-quickstart/launchpad/sling_bootstrap.txt
+     ```
+
+1. Creare un backup del file `sling.properties` (in genere presente in `crx-quickstart/conf/`) ed eliminarlo
+1. Cambia la versione del servlet in **6.0** nel file `server.xml`
+1. Esamina i parametri di avvio per il server AEM e assicurati di aggiornarli in base ai requisiti di sistema. Per ulteriori informazioni, vedere [Installazione autonoma personalizzata](/help/sites-deploying/custom-standalone-install.md)
+1. Installa Java 17 e accertati che sia installato correttamente eseguendo:
+
+   ```shell
+   java -version
    ```
-   jar xvf aem-quickstart-6.5.0.war
+
+1. Scarica il nuovo LTS war 6.5 da Software Distribution e copialo nella cartella dei dropin che si trova in: `/<path-to-aem-server>/dropins/`
+1. Avvia istanza di AEM: in genere può essere eseguita utilizzando questo comando:
+
+   ```shell
+   <path-to-wlp-directory>/bin/server start server_name
    ```
 
-1. Una volta estratto il contenuto, passare alla cartella **WEB-INF** e modificare il file web.xml per modificare le modalità di esecuzione. Per trovare la posizione in cui sono impostati nel file XML, cercare la stringa `sling.run.modes`. Una volta individuato, modifica le modalità di esecuzione nella riga di codice successiva, che per impostazione predefinita è impostata su author:
+1. Se sono presenti modifiche personalizzate in `sling.properties`, seguire le istruzioni seguenti:
 
-   ```bash
-   <param-value >author</param-value>
-   ```
+   1. Arrestare l&#39;istanza di AEM eseguendo `<path-to-wlp-directory>/bin/server stop server_name`
+   1. Applica le `sling.properties` modifiche personalizzate al file `sling.properties` appena generato (facendo riferimento al file di backup creato al passaggio 6)
+   1. Avvia l’istanza di AEM. In genere è possibile eseguirlo eseguendo: `<path-to-wlp-directory>/bin/server start server_name`
 
-1. Modificare il valore di authoring riportato sopra e impostare le modalità di esecuzione su: `author,crx3,crx3tar`. Il blocco di codice finale deve essere simile al seguente:
+## Distribuisci codebase aggiornata {#deploy-upgraded-codebase}
 
-   ```
-   <init-param>
-   <param-name>sling.run.modes</param-name>
-   <param-value>author,crx3,crx3tar</param-value>
-   </init-param>
-   <load-on-startup>100</load-on-startup>
-   </servlet>
-   ```
+Al termine del processo di aggiornamento sul posto, deve essere distribuita la base di codice aggiornata. I passaggi per aggiornare la base di codice in modo che funzioni nella versione di destinazione di AEM si trovano nella pagina [Aggiorna codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md).
 
-1. Ricrea il file jar con il contenuto modificato:
+## Eseguire Controlli E Risoluzione Dei Problemi Dopo L&#39;Aggiornamento {#perform-post-upgrade-checks-and-troubleshooting}
 
-   ```bash
-   jar cvf aem65.war
-   ```
-
-1. Infine, distribuire il nuovo file di guerra in TomCat.
+Per ulteriori informazioni, vedere [Controlli post aggiornamento e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

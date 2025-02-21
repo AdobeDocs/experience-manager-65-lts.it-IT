@@ -5,10 +5,10 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1a942dc471cde14fa3b811b31e54644e199f8738
+source-git-commit: 055e99ec1c202acacae1be55b48e828f2634b0f4
 workflow-type: tm+mt
-source-wordcount: '3641'
-ht-degree: 1%
+source-wordcount: '3291'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Adobe consiglia queste configurazioni e fornisce supporto completo come parte de
 
 | Livello di supporto | Descrizione |
 |---|---|
-| **Z: non supportato** | Configurazione non supportata. Adobe non fornisce istruzioni sul funzionamento o meno della configurazione e non la supporta. |
+| **Z: Non supportato** | La configurazione non è supportata. Adobe Systems non rilascia istruzioni sul funzionamento della configurazione e non la supporta. |
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -85,27 +85,17 @@ Adobe Experience Manager funziona con le seguenti versioni di Java™ Virtual Ma
 
 >[!CAUTION]
 >
->Monitora i bollettini sulla sicurezza dal fornitore Java™. In questo modo è possibile garantire la sicurezza degli ambienti di produzione. Inoltre, installa sempre gli aggiornamenti Java™ più recenti.
+>Monitora i bollettini sulla sicurezza dal fornitore Java™. In questo modo è possibile garantire la sicurezza degli ambienti di produzione. Inoltre, installa sempre gli ultimi aggiornamenti Java™.
 
 | **Piattaforma** | **Livello di supporto** | **Collegamento** |
 |---|---|---|
-| JDK per Oracle Java™ SE 17 | Z: Non supportato `[1]` |
-| JDK Oracle Java™ SE 11 - 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| JDK Oracle Java™ SE 10 | Z: Non supportato `[1]` |
-| JDK per Oracle Java™ SE 9 | Z: Non supportato `[1]` |
-| JDK Oracle Java™ SE 8 a 64 bit | R: Supportato `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
-| VM IBM® J9 - build 2.9, JRE 1.8.0 | R: Supportato `[2]` |
-| VM IBM® J9 - build 2.8, JRE 1.8.0 | R: Supportato `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bit | R: Supportato `[3]` | |
-| Azul Zulu OpenJDK 8 a 64 bit | R: Supportato `[3]` | |
+| JDK per Oracle Java™ SE 17 | R: Supportato `[1]` |
+| VM IBM® Semeru J9 - build 17.0.13.0 | R: Supportato `[2]` |
 
-1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10 e Java™ 12 sono versioni non LTS di Oracle (consulta [Roadmap del supporto Java™ SE per Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione del JDK Java™ SE di Oracle, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, sono supportati direttamente da Adobe per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Vedere i criteri di supporto [Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: Oracle Java™ 11 è supportato almeno fino a settembre 2026. È in preparazione il supporto per Oracle Java™ 17.**
+1. Oracle è passato a un modello di &quot;supporto a lungo termine&quot; (LTS) per i prodotti Oracle Java™ SE. Java™ 9, Java™ 10, Java™ 12, Java™ 13, Java™ 14, Java™ 15m Java™ 16 non sono versioni LTS di Oracle (consulta [Roadmap sul supporto di Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Per distribuire AEM in un ambiente di produzione, Adobe fornisce supporto solo per le versioni LTS di Java™. Il supporto e la distribuzione del JDK Java™ SE di Oracle, inclusi tutti gli aggiornamenti di manutenzione delle versioni LTS oltre la fine degli aggiornamenti pubblici, sono supportati direttamente da Adobe per tutti i clienti AEM che utilizzano la tecnologia Oracle Java™ SE. Vedere i criteri di supporto [Java™ per Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+   **Questa versione supporta Oracle Java™ 17.**
 
 1. IBM® JRE è supportato solo insieme all&#39;Application Server WebSphere®.
-
-1. Le versioni di Azul Zulu OpenJDK LTS sono supportate per le distribuzioni AEM locali a partire dalla versione 6.5 SP9. Il supporto e la distribuzione delle versioni Azul Zulu JDK LTS devono essere concessi in licenza direttamente da Azul dai clienti Adobe.
-
 
 ### Storage e persistenza {#storage-persistence}
 
@@ -118,28 +108,12 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | Archivia file binari in file TAR nel file system `[1]` | Binari | Z: non supportato per la produzione |
 | Amazon S3 | Binari | R: Supportato |
 | Archiviazione BLOB di Microsoft® Azure | Binari | R: Supportato |
-| MongoDB Enterprise 6.0 | Archivio | R: Supportato `[3, 4]` |
-| MongoDB Enterprise 5.0 | Archivio | R: Supportato `[3, 4]` |
-| MongoDB Enterprise 4.4 | Archivio | R: Supportato `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.2 | Archivio | R: Supportato `[2, 3, 4, 7]` |
-| MongoDB Enterprise 4.0 | Archivio | Z: non supportato |
-| MongoDB Enterprise 3.6 | Archivio | Z: non supportato |
-| MongoDB Enterprise 3.4 | Archivio | Z: non supportato |
-| IBM® DB2® 10.5 | Archivio e database Forms | R: Supporto limitato `[5]` |
-| Oracle Database 12c (12.1.x) | Archivio e database Forms | R: Supporto limitato |
-| Microsoft® SQL Server 2016 | Database Forms | R: Supportato |
+| MongoDB Enterprise 6.0 e 7.0 | Archivio | R: Supportato `[3, 4]` |
 | **Apache Lucene (predefinito Quickstart)** | Servizio di ricerca | R: Supportato |
-| Apache Solr | Servizio di ricerca | R: Supportato |
 
 1. &#39;File system&#39; include l&#39;archiviazione dei blocchi compatibile con POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
-1. Le versioni 4.2 e 4.4 di MongoDB Enterprise richiedono almeno AEM 6.5 SP9.
 1. Il partizionamento MongoDB non è supportato in AEM.
 1. MongoDB Storage Engine WiredTiger è supportato solo.
-1. Supportato per i clienti con upgrade di AEM Forms. Non supportato per le nuove installazioni.
-1. Applicabile solo ad AEM Forms:
-   * Rimozione del supporto per Oracle Database 12c e aggiunta del supporto per Oracle Database 19c.
-   * Rimozione del supporto per Microsoft® SQL Server 2016 e aggiunta del supporto per Microsoft® SQL Server 2019.
-1. Non supportato per AEM Forms.
 
 >[!NOTE]
 >
@@ -157,33 +131,26 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 
 >[!NOTE]
 >
->I database relazionali supportati come sopra elencati sono software di terze parti e non sono inclusi nel pacchetto di licenze AEM.
+>I database relazionali supportati elencati sopra sono software di terze parti e non sono inclusi nel pacchetto di licenze di AEM.
 >
->Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. L’Assistenza clienti di Adobe assiste i problemi di qualificazione relativi all’utilizzo dei database relazionali con AEM 6.5.
+>Per eseguire AEM 6.5 con un database relazionale supportato, è necessario un contratto di supporto separato con un fornitore di database. Adobe Systems Customer Care assiste i problemi qualificanti relativi all&#39;utilizzo dei database relazionali con AEM 6.5.
 >
->**La maggior parte dei database relazionali è attualmente supportata in Level-R in AEM 6.5, che include criteri di supporto e un programma di supporto come indicato nella descrizione di Level-R precedente.**
+>**La maggior parte dei database relazionali sono attualmente supportati all&#39;interno di Level-R su AEM 6.5, che viene fornito con criteri di supporto e un programma di supporto come indicato nella descrizione di Level-R sopra.**
 
-### Servlet Engine/Application Server {#servlet-engines-application-servers}
+### Motori servlet/Application server {#servlet-engines-application-servers}
 
 Adobe Experience Manager può essere eseguito come server autonomo (il file JAR quickstart) o come applicazione web all&#39;interno di un server applicazioni di terze parti (il file WAR).
 
-La versione minima dell’API Servlet richiesta è Servlet 3.1
+La versione minima dell’API Servlet richiesta è Servlet 3.1. Inoltre, AEM supporta Jakarta servlet 5 per jar e war può essere implementato nei server applicazioni che implementano Jakarta servlet API 5/6.
 
 | Platform | Livello di supporto |
 |---|---|
-| **Motore servlet integrato Quickstart (Jetty 9.4)** | R: Supportato |
-| Server Oracle WebLogic 12.2 (12cR2) | Z: non supportato |
-| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con Web Profile 7.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[2]` |
-| IBM® WebSphere® Application Server 9.0 e IBM® JRE 1.8 | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
-| Apache Tomcat 8.5.x | R: Supporto limitato per i nuovi contratti `[2]` |
-| JBoss® EAP 7.2.x con JBoss® Application Server | Z: non supportato |
-| JBoss® EAP 7.1.4 con JBoss® Application Server | R: Supporto limitato per i nuovi contratti `[1]` `[2]` |
-| JBoss® EAP 7.0.x con JBoss® Application Server | Z: non supportato |
+| **Motore servlet integrato Quickstart (Jetty 11.0.x)** | R: Supportato |
+| IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) con profilo Web 24.0.0.7 e IBM® Sumeru aprono JRE® 17 | R: Sostegno limitato per i nuovi contratti `[2]` |
+| Apache Tomcat 10.1.x | R: Supporto limitato per i nuovi contratti `[2]` |
 
 1. Consigliato per le distribuzioni con AEM Forms.
 1. L’avvio delle implementazioni di AEM 6.5 sui server applicazioni passa al Supporto con restrizioni. I clienti esistenti possono effettuare l’aggiornamento ad AEM 6.5 e continuare a utilizzare i server delle applicazioni. Per i nuovi clienti, include i criteri di supporto e un programma di supporto come indicato nella descrizione del livello R riportata sopra.
-1. Applicabile solo AEM Forms:
-   * Rimozione del supporto per JBoss® EAP 7.1.4 e aggiunta del supporto per JBoss® EAP 7.4.10.
 
 ### Sistemi operativi server {#server-operating-systems}
 
@@ -194,13 +161,8 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[3]` |
 | Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` `[2]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
-| Microsoft® Windows Server 2019 `[4]` | R: Supporto limitato per i nuovi contratti `[5]` |
-| Microsoft® Windows Server 2016 `[4]` | R: Supporto limitato per i nuovi contratti `[5]` |
-| Microsoft® Windows Server 2012 R2 | Z: non supportato |
-| Oracle Solaris™ 11 | Z: non supportato |
-| IBM® AIX® 7.2 | Z: non supportato |
 
-1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
+1. Kernel Linux® 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Le funzioni del componente aggiuntivo AEM Forms sono supportate solo su CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
 1. AEM Forms è supportato su Ubuntu 20.04 LTS.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
 
@@ -213,15 +175,15 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
    >* libxcb.x86_64 (1,13-1,el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
 
-1. Le distribuzioni di produzione di Microsoft® Windows sono supportate per i clienti che eseguono l&#39;aggiornamento alla versione 6.5 e per l&#39;utilizzo non di produzione. Le nuove implementazioni sono su richiesta per AEM Sites e Assets.
+1. Le distribuzioni di produzione di Microsoft® Windows sono supportate per i clienti che eseguono l’aggiornamento a 6.5 e per l’utilizzo non di produzione. Le nuove implementazioni sono su richiesta per AEM Sites e Assets.
 1. AEM Forms è supportato su Microsoft® Window Server senza le restrizioni R di livello di supporto.
-1. AEM Forms ha rimosso il supporto per Microsoft® Windows Server 2016.
+1. AEM Forms rimosso il supporto per Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
->Se stai installando AEM Forms 6.5, assicurati di aver installato il seguente Microsoft® Visual C++ a 32 bit ridistribuibile.
+>Se si installa AEM Forms 6.5, assicurarsi di aver installato il seguente ridistribuibile a 32 bit di Microsoft® Visual c ++.
 >
->* Microsoft® Visual C++ 2008 ridistribuibile
+>* Microsoft® Visual C++ 2008 Redistributable
 >* Microsoft® Visual C++ 2010 ridistribuibile
 >* Microsoft® Visual C++ 2012 ridistribuibile
 >* Microsoft® Visual C++ 2013 ridistribuibile
@@ -250,7 +212,7 @@ I seguenti server Web sono supportati per l&#39;utilizzo con Dispatcher versione
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | R: Supportato |
 | Microsoft® IIS 10 (Internet Information Server) | R: Supportato |
-| Microsoft® IIS 8.5 (Internet Information Server) | Z: Non supportato |
+| Microsoft® IIS 8.5 (Internet Information Server) | Z: non supportato |
 
 1. I server Web costruiti sulla base del codice sorgente httpd di Apache hanno lo stesso supporto della versione di httpd su cui è basato. In caso di dubbio, chiedere Adobe Systems conferma del livello di supporto relativo al rispettivo prodotto server. I seguenti casi:
 
@@ -312,7 +274,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   </tr>
   <tr>
    <td>Apple Safari 11.x su macOS</td>
-   <td>Z: non supportato</td>
+   <td>Z: Non supportato</td>
    <td>Z: non supportato</td>
   </tr>
   <tr>
@@ -329,7 +291,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
 </table>
 
 1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. supporto per Apple iPad
+1. Supporto per Apple iPad
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
 
@@ -353,9 +315,9 @@ Questa sezione contiene note speciali e informazioni più dettagliate sull&#39;e
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
-Tutti gli elementi di Adobe Experience Manager (istanza, Dispatcher) possono essere installati sia nelle reti IPv4 che IPv6.
+Tutti gli elementi di Adobe Experience Manager (Instance, Dispatcher) possono essere installati nelle reti IPv4 e IPv6.
 
-Il funzionamento è semplice in quanto non è richiesta alcuna configurazione speciale. Se necessario, specificare un indirizzo IP utilizzando il formato appropriato per il tipo di rete.
+Il funzionamento è semplice in quanto non è richiesta alcuna configurazione particolare. Se necessario, specificare un indirizzo IP utilizzando il formato appropriato per il tipo di rete.
 
 Quando è necessario specificare un indirizzo IP, è possibile selezionare (a seconda delle esigenze) una delle seguenti opzioni:
 
@@ -407,9 +369,9 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 
 >[!NOTE]
 >
->**Architettura NUMA:** I sistemi con processori basati su AMD64 e Intel® EM64T sono generalmente configurati come piattaforme NUMA (non-Uniform Memory Architecture). Cioè, il kernel costruisce più nodi di memoria al momento dell&#39;avvio piuttosto che costruire un singolo nodo di memoria.
+>**Architettura NUMA:** I sistemi con processori basati su AMD64 e Intel® EM64T sono generalmente configurati come piattaforme NUMA (non-Uniform Memory Architecture). In altre parole, il kernel costruisce più nodi di memoria in fase di avvio anziché costruire un singolo nodo di memoria.
 >
->Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica l&#39;esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server Immagine o il server Platform) lineare se c&#39;è memoria disponibile.
+>Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
 >Pertanto, Adobe consiglia di disattivare NUMA utilizzando l&#39;opzione di avvio **numa=off** per evitare che il kernel uccida questi processi.
 
@@ -424,13 +386,13 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 * Microsoft® Windows Server 2016
 * Spazio di swap pari ad almeno il doppio della quantità di memoria fisica (RAM)
 
-Per utilizzare Dynamic Media in Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
+Per utilizzare Dynamic Media su Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
 
 Per Windows x64:
 
 * Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Ottieni Microsoft® Visual Studio 2013 Redistributable at https://www.microsoft.com/en-us/download/details.aspx?id=40784 [](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Ottieni Microsoft® Visual Studio 2015 Redistributable su [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Ottieni Microsoft® Visual Studio 2013 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Ottieni Microsoft® Visual Studio 2015 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Per Windows x86:
 
@@ -527,9 +489,9 @@ Per Windows x86:
 * Memoria grafica - 128 MB di GPU (consigliati 256 MB)
 * 2,35 GB di spazio disponibile su disco rigido
 * Risoluzione di 1024 X 768 pixel o superiore
-* Video accelerazione hardware (opzionale)
+* Accelerazione hardware video (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
-* Privilegi amministrativi per installare Designer
+* Privilegi amministrativi per l&#39;installazione di Designer
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 32 bit per AEM Forms Designer a 32 bit
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per gli stack OSGI e JEE)
 
@@ -548,6 +510,6 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
 
 * **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
+### Requisiti per AEM Assets per l’elaborazione di risorse contenenti metadati su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il libreria GLIBC_2.14 per funzionare. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio il kernel Linux® versione 3.1.x. Migliora le prestazioni per l&#39;elaborazione di risorse che contengono una grande quantità di file metadati like PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
