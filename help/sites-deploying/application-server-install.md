@@ -8,9 +8,9 @@ topic-tags: deploying
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: 6bf0f8866016e973b0724279e228865cf158a4ba
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1151'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,3 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
    * Copiatelo nella cartella Webapps di Tomcat.
    * Attendi che AEM sia installato.
 
-## Risoluzione dei problemi {#troubleshooting}
-
-Per informazioni su come risolvere i problemi che possono verificarsi durante l&#39;installazione, vedere:
-
-* [Risoluzione dei problemi](/help/sites-deploying/troubleshooting.md)
