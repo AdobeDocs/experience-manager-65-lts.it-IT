@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+source-git-commit: cf067a359d9f1fbe46e1614d91ce55bf3ee5bf18
 workflow-type: tm+mt
-source-wordcount: '6073'
+source-wordcount: '6081'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Per configurare il contenuto di AEM affinché venga visualizzato in un portale, 
 
 >[!CAUTION]
 >
->AEM Portal Director è diventato obsoleto a partire da AEM 6.4. Vedere [Funzioni obsolete e rimosse](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director è diventato obsoleto a partire da AEM 6.4 e ora non è più supportato in AEM 6.5 LTS. Vedere [Funzioni obsolete e rimosse](/help/release-notes/release-notes.md#deprecated-and-removed-features).
 
 ## Amministrazione del portlet dei contenuti di AEM {#administering-the-aem-content-portlet}
 
