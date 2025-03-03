@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 4a13ad21a3ea4ce6a1db9dac459b2b9ffd0d27c3
+source-git-commit: fe361e43288ad0242faa1d82af086aee9fc7804b
 workflow-type: tm+mt
-source-wordcount: '7020'
+source-wordcount: '7044'
 ht-degree: 21%
 
 ---
@@ -1472,12 +1472,15 @@ ht-degree: 21%
          + [Utilizzo della reindicizzazione offline per ridurre i tempi di inattività durante un aggiornamento](/help/sites-deploying/upgrade-offline-reindexing.md)
          + [Migrazione dei contenuti differita](/help/sites-deploying/lazy-content-migration.md)
          + [Utilizzo dello strumento di migrazione CRX2Oak](/help/sites-deploying/using-crx2oak.md)
+         + [Migrazione dei contenuti da AEM 6.5 ad AEM 6.5 LTS tramite l’aggiornamento ad Oak](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
          + [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
          + [Controlli post-aggiornamento e risoluzione dei problemi](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Aggiornamento del Forms di ricerca personalizzato](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Aggiornamenti sostenibili](/help/sites-deploying/sustainable-upgrades.md)
          + [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Passaggi per l&#39;aggiornamento delle installazioni di Application Server](/help/sites-deploying/app-server-upgrade.md)
+         + [Passaggi per l&#39;aggiornamento delle installazioni di Application Server (WLP)](/help/sites-deploying/app-server-upgrade-wlp.md)
+         + [Passaggi per l&#39;aggiornamento delle installazioni di Application Server (Tomcat)](/help/sites-deploying/app-server-upgrade-tomcat.md)
          + [Elenco dei bundle obsoleti disinstallati dopo l&#39;aggiornamento](/help/sites-deploying/obsolete-bundles.md)
       + Best practice {#practices}
          + [Implementazione delle best practice](/help/sites-deploying/best-practices.md)
