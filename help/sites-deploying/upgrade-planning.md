@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f66bb283e5c2a746821839269e112be8c2714ba7
+source-git-commit: ac803ef9ac38380d7ce7fdf4490c428fd0039688
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1188'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Il processo di aggiornamento di AEM richiede una gestione accurata delle fasi di
 >
 >L&#39;aggiornamento a AEM 6.5 LTS è supportato dagli ultimi 6 Service Pack
 
-È importante assicurarsi di eseguire un sistema operativo supportato, Java™ Runtime, httpd e la versione Dispatcher. Per ulteriori informazioni, consulta TBD: collegamento ai requisiti tecnici di AEM 6.5 LTS. L’aggiornamento di questi componenti deve essere considerato nel piano di aggiornamento e deve avvenire prima dell’aggiornamento di AEM.
+È importante assicurarsi di eseguire un sistema operativo supportato, Java™ Runtime, httpd e la versione Dispatcher. Per ulteriori informazioni, fare riferimento ai [requisiti tecnici per AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). L’aggiornamento di questi componenti deve essere considerato nel piano di aggiornamento e deve avvenire prima dell’aggiornamento di AEM.
 
 <!-- Alexandru: drafting for now
 
@@ -106,15 +106,15 @@ New features in AEM 6.5 can be found in [the AEM section of adobe.com](/help/rel
 
 ### Creazione di un piano di test {#creating-a-test-plan}
 
-Ogni cliente ha implementato AEM in modo univoco ed è stato personalizzato per soddisfare i propri requisiti aziendali. Di conseguenza, è importante determinare tutte le personalizzazioni apportate al sistema in modo che possano essere incluse in un piano di test. Questo piano di test alimenta il processo di controllo qualità eseguito da Adobe sull’istanza aggiornata.
+Ogni cliente ha implementato AEM in modo univoco ed è stato personalizzato per soddisfare i propri requisiti aziendali. Di conseguenza, è importante determinare tutte le personalizzazioni apportate al sistema in modo che possano essere incluse in un piano di test.
 
 È necessario duplicare l’ambiente di produzione esatto e sottoporlo a test dopo l’aggiornamento per assicurarsi che tutte le applicazioni e il codice personalizzato vengano ancora eseguiti come desiderato. Ripristina tutte le tue personalizzazioni ed esegui test di prestazioni, carico e sicurezza. Quando organizzi il piano di test, assicurati di coprire tutte le personalizzazioni apportate al sistema, oltre alle interfacce utente e ai flussi di lavoro predefiniti utilizzati nelle operazioni quotidiane. Questi possono includere servizi e servlet OSGI personalizzati, integrazioni a Adobe Experience Cloud, integrazioni con terze parti tramite connettori AEM, integrazioni personalizzate di terze parti, componenti e modelli personalizzati, sovrapposizioni di interfacce personalizzate in AEM e flussi di lavoro personalizzati. Inoltre, le query personalizzate devono ancora essere testate per garantire che i loro indici continuino a funzionare in modo efficace dopo l’aggiornamento.
 
 ### Valutazione della complessità dell&#39;aggiornamento {#assessing-upgrade-complexity}
 
-A causa dell’ampia varietà di personalizzazioni applicate dai clienti di Adobe ai loro ambienti AEM, è importante trascorrere del tempo prima di determinare il livello generale di impegno che dovrebbe essere richiesto per l’aggiornamento. Analyzer per AEM può aiutarti a valutare la complessità dell’aggiornamento.
+A causa dell’ampia varietà di personalizzazioni applicate dai clienti di Adobe ai loro ambienti AEM, è importante trascorrere del tempo prima di determinare il livello generale di impegno che dovrebbe essere richiesto per l’aggiornamento. [AEM Analyzer per AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) può aiutarti a valutare la complessità dell&#39;aggiornamento.
 
-L’AEM Analyyer per AEM 6.5 LTS dovrebbe fornire una stima abbastanza accurata di cosa aspettarsi durante un aggiornamento per la maggior parte dei casi. Tuttavia, per personalizzazioni e implementazioni più complesse in cui sono presenti modifiche non compatibili, è possibile aggiornare un&#39;istanza di sviluppo ad AEM 6.5 LTS seguendo le istruzioni riportate in [Esecuzione di un aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md). Una volta completato, eseguire alcune prove di fumo di alto livello in questo ambiente. L&#39;obiettivo di questo esercizio non è quello di completare in modo esaustivo l&#39;inventario dei test case e produrre un inventario formale dei difetti, ma di fornire una stima approssimativa della quantità di lavoro che sarà necessario per aggiornare il codice per la compatibilità 6.5 LTS. Se utilizzato con AEM Analyzer e le modifiche all’architettura determinate nella sezione precedente, è possibile fornire una stima approssimativa al team di project management per pianificare l’aggiornamento.
+L&#39;[AEM Analyyer per AEM 6.5 LTS](/help/sites-deploying/pattern-detector.md) dovrebbe fornire una stima abbastanza accurata di ciò che ci si aspetta durante un aggiornamento per la maggior parte dei casi. Tuttavia, per personalizzazioni e implementazioni più complesse in cui sono presenti modifiche non compatibili, è possibile aggiornare un&#39;istanza di sviluppo ad AEM 6.5 LTS seguendo le istruzioni riportate in [Esecuzione di un aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md). Una volta completato, eseguire alcune prove di fumo di alto livello in questo ambiente. L&#39;obiettivo di questo esercizio non è quello di completare in modo esaustivo l&#39;inventario dei test case e produrre un inventario formale dei difetti, ma di fornire una stima approssimativa della quantità di lavoro che sarà necessario per aggiornare il codice per la compatibilità con AEM 6.5 LTS. In combinazione con [AEM Analyzer](/help/sites-deploying/pattern-detector.md) e le modifiche dell&#39;architettura determinate nella sezione precedente, è possibile fornire una stima approssimativa al team di gestione del progetto per pianificare l&#39;aggiornamento.
 
 ### Creazione del Runbook di aggiornamento e ripristino {#building-the-upgrade-and-rollback-runbook}
 
@@ -128,7 +128,7 @@ Adobe ha fornito procedure di aggiornamento e rollback in [Procedura di aggiorna
 
 ### Sviluppo di un piano di aggiornamento {#developing-an-upgrade-plan}
 
-L’output degli esercizi precedenti può essere utilizzato per creare un piano di aggiornamento che copre le tempistiche previste per le attività di test o sviluppo, l’addestramento e l’esecuzione effettiva dell’aggiornamento.
+L’output degli esercizi precedenti può essere utilizzato per creare un piano di aggiornamento che copre le tempistiche previste per le attività di test o sviluppo e l’esecuzione effettiva dell’aggiornamento.
 
 <!--Alexandru: drafting for now
 
