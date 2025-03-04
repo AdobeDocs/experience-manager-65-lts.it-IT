@@ -4,7 +4,7 @@ description: Configurare l’autenticazione basata su OAuth2 per Microsoft&reg (
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%
@@ -150,7 +150,7 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
 
    >[!NOTE]
    >
-   > Per ulteriori informazioni relative alle notifiche delle attività, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Per ulteriori informazioni relative alle notifiche delle attività, [fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Per configurare l’endpoint e-mail {#configure_email_endpoint}
 
@@ -164,7 +164,7 @@ Ora configura il servizio e-mail al più recente server JEE accedendo all’inte
 
    >[!NOTE]
    >
-   > Per ulteriori informazioni sulla configurazione degli endpoint e-mail, fare clic su [Configura un endpoint e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Per ulteriori informazioni sulla configurazione degli endpoint e-mail, fare clic su [Configura un endpoint e-mail](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## Risoluzione dei problemi {#troubleshooting}
 

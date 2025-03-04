@@ -8,7 +8,7 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 1%
@@ -146,7 +146,7 @@ Dopo aver impostato i prerequisiti, effettuare le seguenti operazioni per config
 1. Apri **[!UICONTROL Servizio di configurazione comune di Forms].**
 1. Nel campo **[!UICONTROL Consenti]**, **seleziona** Tutti gli utenti - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **[!UICONTROL Salva].L&#39;istanza Autore** è configurata per l&#39;utilizzo di [!DNL Adobe Sign].
 1. Pubblica la configurazione.
-1. Utilizza [replica](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html) per creare una configurazione identica nelle istanze di pubblicazione corrispondenti.
+1. Utilizza [replica](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html) per creare una configurazione identica nelle istanze di pubblicazione corrispondenti.
 
 Ora [!DNL Adobe Sign] è integrato con AEM [!DNL Forms] ed è pronto per essere utilizzato nei moduli adattivi. Per [utilizzare il servizio Adobe Sign in un modulo adattivo](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specifica il contenitore di configurazione creato in precedenza nelle proprietà del modulo adattivo.
 
@@ -261,7 +261,7 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 1. Nel campo **[!UICONTROL Consenti]**, **seleziona** Tutti gli utenti - Tutti gli utenti, anonimi o connessi, possono visualizzare in anteprima gli allegati, verificare e firmare i moduli e fare clic su **[!UICONTROL Salva].L&#39;istanza Autore** è configurata per l&#39;utilizzo di [!DNL Adobe Sign].
 
 1. Pubblica la configurazione.
-1. Utilizza [replica](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/replication.html) per creare una configurazione identica nelle istanze di pubblicazione corrispondenti.
+1. Utilizza [replica](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/replication.html) per creare una configurazione identica nelle istanze di pubblicazione corrispondenti.
 
 Ora puoi [utilizzare Aggiungi campi Adobe Acrobat Sign in un modulo adattivo](working-with-adobe-sign.md) o [flusso di lavoro AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Assicurarsi di aggiungere il contenitore di configurazione utilizzato per la configurazione di Cloud Service a tutto il Forms adattivo abilitato per [!DNL Adobe Acrobat Sign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
 

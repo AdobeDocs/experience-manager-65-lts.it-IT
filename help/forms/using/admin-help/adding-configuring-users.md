@@ -6,7 +6,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: eded255b54ff83f60f73cece8824c778d3a87680
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -175,4 +175,4 @@ Se un utente senza le autorizzazioni AEM Forms e CQ richieste tenta di accedere 
 
 CQ fornisce un meccanismo per sostituire il gestore jsp 404 predefinito.
 
-Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/platform/customizing-errorhandler-pages.html?lang=en) nella documentazione di Adobe Experience Manager.
+Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) nella documentazione di Adobe Experience Manager.

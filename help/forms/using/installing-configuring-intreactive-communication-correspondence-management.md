@@ -6,7 +6,7 @@ docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -93,7 +93,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
    1. Seleziona **[!UICONTROL Forms]** dall&#39;elenco a **[!UICONTROL discesa Soluzione]** .
    2. Seleziona la versione e il tipo per il pacchetto. È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Search Download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
 
    Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) AEM Forms.
@@ -143,7 +143,7 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 #### Installa pacchetto di compatibilità {#install-compatibility-package}
 
-La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM 6.5 Forms. Se si è eseguito l&#39;aggiornamento o la migrazione da una versione precedente e si intende continuare a utilizzare le lettere (Gestione corrispondenza), installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM 6.5 Forms. Se si è eseguito l&#39;aggiornamento o la migrazione da una versione precedente e si intende continuare a utilizzare le lettere (Gestione corrispondenza), installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 Il pacchetto di compatibilità per AEMFD consente di utilizzare le seguenti risorse di AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
 

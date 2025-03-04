@@ -5,7 +5,7 @@ keywords: Abilitare i componenti core, i componenti core Forms adattivo, i compo
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8efb1eb0b4a69cf59fa5853aa335dbf3d6061185
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Questo articolo fornisce istruzioni dettagliate per configurare e distribuire un
 
 Prima di abilitare i componenti core Adaptive Forms in un ambiente AEM 6.5 Forms:
 
-* [Eseguire l&#39;aggiornamento ad AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-65-2025/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Eseguire l&#39;aggiornamento ad AEM 6.5 Forms Service Pack 16 (6.5.16.0) o versione successiva](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -130,7 +130,7 @@ Per creare un progetto basato su Archetipo AEM 41 o [versione successiva](https:
 
    Una volta generato correttamente il progetto Archetipo AEM, viene generato un pacchetto AEM. Puoi trovare il pacchetto nella [cartella dei progetti Archetipo AEM]\all\target\[appid].all-[versione].zip
 
-1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/package-manager.html?lang=en) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip in tutte le istanze di authoring e pubblicazione.
+1. Utilizza [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html?lang=en) per distribuire il pacchetto [Cartella di progetto Archetipo AEM]\all\target\[appid].all-[versione].zip in tutte le istanze di authoring e pubblicazione.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ keywords: Aggiungi una funzione personalizzata, utilizza una funzione personaliz
 content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 0%
@@ -571,7 +571,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65-2025/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 

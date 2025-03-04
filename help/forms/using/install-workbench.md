@@ -6,7 +6,7 @@ topic-tags: author
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Le risorse presenti in questa tabella possono essere utili per ulteriori informa
   </tr>
   <tr>
    <td><p>Informazioni generali su AEM Forms e su come si integra con altri prodotti Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">Panoramica di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Tutta la documentazione disponibile per AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/getting-started/introduction-aem-forms.html?lang=en">Documentazione di AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Aggiornamenti patch, note tecniche e informazioni aggiuntive su questa versione del prodotto</p> </td>
@@ -114,7 +114,7 @@ La tabella seguente contiene un elenco completo dei possibili scenari di install
   </tr>
   <tr>
    <td><p>Acrobat Pro o Acrobat Pro Extended (include Designer)</p> </td>
-   <td><p>Nessuno.<br /> 
+   <td><p>Nessuna.<br /> 
 L’installazione di Workbench rileva nel computer un’istanza di Designer installata con Acrobat Pro o Acrobat Pro Extended.<br />
 Versioni diverse di Designer possono coesistere sullo stesso sistema, ad esempio Designer 6.4.x per Workbench 6.4 e Designer 6.5.0.x per Workbench 6.5. Non è necessario disinstallare la versione di Designer installata con Acrobat 10 Pro o Acrobat 10 Pro Extended o versione successiva.
 <br /></p> </td>
@@ -190,7 +190,7 @@ Per utilizzare Workbench, è necessario disporre di un&#39;istanza di AEM Forms 
 
 ### Configurazione delle impostazioni di timeout {#configuring-timeout-settings}
 
-Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65-2025/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
+Per impostazione predefinita, Workbench riceve un timeout dopo due ore, indipendentemente dall’attività o dall’inattività. Per modificare l&#39;impostazione di timeout, vedere la sezione relativa alla configurazione della gestione utente e degli attributi di sistema avanzati nella <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Guida della console di amministrazione</a>.
 
 ### Configurazione di Workbench per la connessione tramite HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

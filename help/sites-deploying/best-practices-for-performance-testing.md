@@ -8,7 +8,7 @@ topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1790'
 ht-degree: 0%
@@ -119,7 +119,7 @@ La sezione **ObservationQueueMaxLength** mostra il numero di eventi nella coda d
 1. Inseriscilo nella cartella /crx--quickstart/install.
 
 >[!NOTE]
->Consulta [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html)
+>Consulta [AEM 6.x | Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html)
 
 L’impostazione predefinita è 10.000, ma la maggior parte delle distribuzioni deve portarla a 20.000 o 50.000.
 
@@ -147,7 +147,7 @@ Dopo aver eseguito i test delle prestazioni sull’istanza di authoring, è nece
 * Controllare il registro degli errori per individuare eventuali errori o avvisi. Per ulteriori informazioni, vedere [Registrazione](/help/sites-deploying/configure-logging.md).
 * Monitorare le risorse hardware di sistema come memoria e utilizzo del CPU, I/O su disco o I/O di rete. Queste risorse sono spesso la causa dei colli di bottiglia delle prestazioni.
 * Ottimizza l’architettura delle pagine e il modo in cui vengono indirizzate per ridurre al minimo l’utilizzo dei parametri URL per consentire il maggior numero possibile di operazioni di caching.
-* Segui la documentazione di [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) e [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/configuring-performance.html).
+* Segui la documentazione di [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) e [Suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
 
 * In caso di problemi durante la modifica di determinate pagine o componenti nelle istanze di authoring, utilizza la modalità sviluppatore dell’interfaccia utente touch per esaminare la pagina in questione. Questa operazione fornisce un raggruppamento di ogni area di contenuto sulla pagina e il relativo tempo di caricamento.
 * Minimizza tutti i file JS e CSS sul sito. Vedi questo [post di blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).

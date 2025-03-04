@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2728'
 ht-degree: 0%
@@ -242,7 +242,7 @@ Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad 
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-2025/assets/administer/performance-tuning-guidelines.html?lang=en) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) per alcune ottimizzazioni dell&#39;indice.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

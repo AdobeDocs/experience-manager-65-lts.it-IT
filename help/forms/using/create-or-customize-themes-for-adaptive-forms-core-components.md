@@ -8,7 +8,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 5%
@@ -80,7 +80,7 @@ La personalizzazione di un tema si riferisce al processo di modifica e personali
 
 * Installa la versione più recente di [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 
-* Scopri come creare una [libreria client in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/developing/introduction/clientlibs.html). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
+* Scopri come creare una [libreria client in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
 
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
@@ -315,7 +315,7 @@ Per rimuovere i temi inutilizzati o indesiderati:
 1. Elimina la cartella dei temi e salva le modifiche.
 
 
-## Domanda frequente {#faq}
+## Domande frequenti {#faq}
 
 **Q:** Quale personalizzazione ha priorità quando si eseguono personalizzazioni in una cartella dei temi a livello globale e di componente?
 

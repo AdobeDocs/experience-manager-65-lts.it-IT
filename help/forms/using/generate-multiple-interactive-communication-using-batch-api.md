@@ -8,7 +8,7 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -86,7 +86,7 @@ Per creare una comunicazione interattiva dai record salvati in un file JSON:
    1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
@@ -146,7 +146,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
    1. Specifica il **[!UICONTROL Nome]** e il **[!UICONTROL Percorso]** fisici della cartella. Esempio: `c:\batchprocessing`.
    1. Selezionare l&#39;opzione **[!UICONTROL Servizio]** nel campo **[!UICONTROL Elabora file tramite]**.
    1. Selezionare il servizio **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** nel campo **[!UICONTROL Nome servizio]**.
-   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
+   1. Specificare un **[!UICONTROL pattern file di output]**. Ad esempio, il %F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns) specifica che la cartella controllata può trovare i file di input in una sottocartella della cartella controllata\input.
 1. Configura parametri avanzati:
    1. Apri la scheda **[!UICONTROL Avanzate]** e aggiungi le seguenti proprietà personalizzate:
 
@@ -362,4 +362,4 @@ Oltre a salvare i dati sul file system, puoi archiviare i file JSON in un archiv
 
 >[!NOTE]
 >
->Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).
+>Per impostazione predefinita, è abilitato solo il protocollo CRX. Per abilitare altri protocolli supportati, vedere [Configurazione del servizio di precompilazione tramite Configuration Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en).

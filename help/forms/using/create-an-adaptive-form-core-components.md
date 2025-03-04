@@ -9,7 +9,7 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '1794'
 ht-degree: 24%
@@ -61,7 +61,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 ## Creare un modulo adattivo {#create-an-adaptive-form}
 
-1. Accedi alla tua [istanza Autore AEM locale](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
+1. Accedi alla tua [istanza Autore AEM locale](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/deploy.html?lang=en#author-and-publish-installs).
 
 1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
 

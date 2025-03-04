@@ -8,7 +8,7 @@ topic-tags: forms-workspace
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Per aggiornare la barra di navigazione nella parte superiore dell’area di lavo
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-2025/administering/contentmanagement/webdav-access.html?lang=en).
+   >Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
 
 1. Fai riferimento alla nuova immagine di sfondo in /apps/ws/css/newStyle.css aggiungendo il seguente stile.
 

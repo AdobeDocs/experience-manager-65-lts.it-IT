@@ -10,7 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 887dc1d6d7e11672b62ef5ca5463ea6181ff0320
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 24%
@@ -21,7 +21,7 @@ ht-degree: 24%
 
 >[!NOTE]
 >
->L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi all’ottimizzazione SEO devono essere affrontati in molti progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65-2025/managing/managing-further-reference/seo-and-url-management.html).
+>L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi all’ottimizzazione SEO devono essere affrontati in molti progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/managing/managing-further-reference/seo-and-url-management.html).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
@@ -109,5 +109,5 @@ Il progetto [Venia Reference Store](https://github.com/adobe/aem-cif-guides-veni
 ## Risorse aggiuntive
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65-2025/deploying/configuring/resource-mapping.html)
+* [Mappature delle risorse di AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/resource-mapping.html)
 * [Mappature Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

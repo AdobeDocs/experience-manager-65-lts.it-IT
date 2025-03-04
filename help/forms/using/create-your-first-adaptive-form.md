@@ -4,7 +4,7 @@ description: Scopri come creare moduli di classe aziendale, interattivi e reatti
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 9bb44a58e919fd038c83cab89620256501137bef
+source-git-commit: 168cb023768ff3139937ab7f437ab7d00185bca0
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 5%
@@ -42,7 +42,7 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ### Prerequisito {#prerequisite}
 
-* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-2025/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa il componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell&#39;esercitazione sono basati sul database [!DNL MySQL] e utilizzano [!DNL Oracle's] [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
