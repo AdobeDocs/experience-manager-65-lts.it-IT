@@ -9,9 +9,9 @@ docset: aem65
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ee5f1f68f6f961ba0a18296eaf198ebe8671b226
+source-git-commit: 09b297721b08ef428f1ac8a26fec38d5a8bd34fd
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -20,28 +20,24 @@ ht-degree: 0%
 
 ## Controlli post-aggiornamento {#post-upgrade-checks}
 
-Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), è necessario eseguire le seguenti attività per finalizzare l&#39;aggiornamento. Si presume che AEM sia stato avviato con il file jar 6.5.2025 e che la base di codice aggiornata sia stata distribuita.
+Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), è necessario eseguire le seguenti attività per finalizzare l&#39;aggiornamento. Si presume che AEM sia stato avviato con il file jar AEM 6.5 LTS e che la base di codice aggiornata sia stata distribuita.
 
-* [Verifica dei registri per il completamento dell&#39;aggiornamento](#main-pars-header-290365562)
+* [Verifica dei registri per il completamento dell&#39;aggiornamento](#verify-logs-for-upgrade-success)
 
-* [Verificare i bundle OSGi](#main-pars-header-1637350649)
+* [Verificare i bundle OSGi](#verify-osgi-bundles)
 
-* [Verifica versione Oak](#main-pars-header-1293049773)
+* [Verifica versione Oak](#verify-oak-version)
 
-* [Controllare la cartella PreUpgradeBackup](#main-pars-header-988995987)
+* [Convalida iniziale delle pagine](#initial-validation-of-pages)
 
-* [Convalida iniziale delle pagine](#main-pars-header-20827371)
-* [Applicare i Service Pack di AEM](#main-pars-header-215142387)
+* [Verifica configurazioni di manutenzione pianificate](#verify-scheduled-maintenance-configurations)
 
-* [Migrazione delle funzioni di AEM](#main-pars-header-1434457709)
+* [Abilita agenti di replica](#enable-replication-agents)
 
-* [Verifica configurazioni di manutenzione pianificate](#main-pars-header-1552730183)
+* [Abilita processi pianificati personalizzati](#enable-custom-scheduled-jobs)
 
-* [Abilita agenti di replica](#main-pars-header-823243751)
+* [Esegui piano di test](#execute-test-plan)
 
-* [Abilita processi pianificati personalizzati](#main-pars-header-244535083)
-
-* [Esegui piano di test](#main-pars-header-1167972233)
 
 ### Verifica registri per aggiornamento completato {#verify-logs-for-upgrade-success}
 
@@ -68,7 +64,7 @@ Passa alla console OSGi `/system/console/bundles` e verifica se alcuni bundle no
 
 ### Verifica versione Oak {#verify-oak-version}
 
-Dopo l&#39;aggiornamento, dovresti vedere che la versione di Oak è stata aggiornata a **1.68.0**. Per verificare la versione di Oak, accedi alla console OSGi e controlla la versione associata ai bundle di Oak: Oak Core, Oak Commons, Oak Segment Tar.
+In seguito all&#39;aggiornamento, dovresti notare che la versione di Oak è stata aggiornata a **1.68.1-B002**. Per verificare la versione di Oak, accedi alla console OSGi e controlla la versione associata ai bundle di Oak: Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Convalida iniziale delle pagine {#initial-validation-of-pages}
 
@@ -88,10 +84,6 @@ Se utilizzi un archivio dati file, accertati che l’attività Raccolta oggetti 
 
 Se utilizzi MongoMK o il nuovo formato di segmento TarMK, accertati che l’attività Pulizia revisioni sia abilitata e aggiunta all’elenco Manutenzione giornaliera. Le istruzioni sono descritte in [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md).
 
-### Esegui piano di test {#execute-test-plan}
-
-Eseguire un piano di test dettagliato in base a come definito [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) nella sezione **Procedura di test**.
-
 ### Abilita agenti di replica {#enable-replication-agents}
 
 Dopo aver aggiornato e convalidato completamente l’ambiente di pubblicazione, abilita gli agenti di replica nell’ambiente di authoring. Verifica che gli agenti siano in grado di connettersi alle rispettive istanze Publish. Consulta [Procedura di aggiornamento](/help/sites-deploying/upgrade-procedure.md) per ulteriori dettagli sull&#39;ordine degli eventi.
@@ -100,19 +92,21 @@ Dopo aver aggiornato e convalidato completamente l’ambiente di pubblicazione, 
 
 A questo punto è possibile abilitare tutti i processi pianificati come parte della base di codice.
 
-## Analisi Dei Problemi Relativi All’Aggiornamento {#analyzing-issues-with-upgrade}
+### Esegui piano di test {#execute-test-plan}
 
-Questa sezione contiene alcuni scenari di problemi che potrebbero verificarsi durante la procedura di aggiornamento ad AEM 6.5.2025.
+Eseguire il piano di test dettagliato definito in [Aggiornamento del codice e delle personalizzazioni nella sezione **Procedura di test**](/help/sites-deploying/upgrading-code-and-customizations.md#testing-procedure-testing-procedure).
 
-Questi scenari dovrebbero aiutare a individuare la causa principale dei problemi relativi all’aggiornamento e dovrebbero aiutare a identificare i problemi specifici del progetto o del prodotto.
+## Analisi Dei Problemi Relativi All’Aggiornamento {#analyzing-issues-with-the-upgrade}
 
-### Impossibile aggiornare pacchetti e bundle  {#packages-and-bundles-fail-to-update-}
+Questa sezione contiene alcuni scenari di problemi che è possibile affrontare durante la procedura di aggiornamento ad AEM 6.5 LTS.
+
+### Impossibile aggiornare pacchetti e bundle  {#packages-and-bundles-fail-to-update}
 
 Nel caso in cui i pacchetti non vengano installati durante l’aggiornamento, i bundle in essi contenuti non verranno aggiornati. Questa categoria di problemi è causata da una configurazione errata dell’archivio dati. Verranno inoltre visualizzati come **ERRORE** e **AVVERTENZA** messaggi nel log degli errori. Poiché nella maggior parte di questi casi l’accesso predefinito potrebbe non funzionare, puoi utilizzare CRXDE direttamente per verificare e individuare i problemi di configurazione.
 
 ### Aggiornamento Non Eseguito {#the-upgrade-did-not-run}
 
-Prima di avviare i passaggi di preparazione, assicurati di eseguire prima l&#39;istanza **source** eseguendola con il comando Java™ -jar aem-quickstart.jar. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell&#39;istanza di origine. Inoltre, quando si avvia AEM per avviare l’aggiornamento, questo deve essere eseguito con il comando Java™ -jar aem-quickstart.jar. L’avvio da uno script di avvio non avvierà AEM in modalità di aggiornamento.
+Prima di avviare i passaggi di preparazione, assicurarsi di eseguire prima l&#39;istanza **source** eseguendola con il comando `java -jar aem-quickstart.jar`. Questo è necessario per assicurarsi che il file quickstart.properties sia generato correttamente. Se manca, l’aggiornamento non funzionerà. In alternativa, è possibile verificare se il file è presente cercando in `crx-quickstart/conf` nella cartella di installazione dell&#39;istanza di origine. Inoltre, quando si avvia AEM per avviare l&#39;aggiornamento, è necessario eseguirlo con il comando `java -jar <aem-quickstart-6.5-LTS.jar>`. L’avvio da uno script di avvio non avvierà AEM in modalità di aggiornamento.
 
 ### Alcuni bundle di AEM non passano allo stato attivo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -120,13 +114,13 @@ Se sono presenti bundle che non si avviano, verifica la presenza di eventuali di
 
 Nel caso in cui il problema sia presente ma si basi su un’installazione non riuscita del pacchetto che ha portato a un mancato aggiornamento dei bundle, questi verranno considerati incompatibili per la nuova versione. Per ulteriori informazioni su come risolvere il problema, vedere **Impossibile aggiornare pacchetti e bundle**.
 
-Si consiglia inoltre di confrontare l’elenco dei bundle di una nuova istanza di AEM 6.5.2025 con quello aggiornato per rilevare i bundle che non sono stati aggiornati. Questo fornirà un ambito più vicino di ciò che si desidera cercare in `error.log`.
+Si consiglia inoltre di confrontare l’elenco dei bundle di una nuova istanza AEM 6.5 LTS con quello aggiornato per rilevare i bundle che non sono stati aggiornati. Questo fornirà un ambito più vicino di ciò che si desidera cercare in `error.log`.
 
 ### Bundle personalizzati non passano allo stato attivo {#custom-bundles-not-switching-to-the-active-state}
 
-Se i bundle personalizzati non passano allo stato attivo, è probabile che ci sia codice che non importa l’API di modifica. Questo nella maggior parte dei casi porterà a dipendenze non soddisfatte.
+Se i bundle personalizzati non passano allo stato attivo, è probabile che ci sia codice che non importa l’API modificata. Questo nella maggior parte dei casi porterà a dipendenze non soddisfatte.
 
-È inoltre consigliabile verificare se la modifica che ha causato il problema è necessaria e, in caso contrario, ripristinarla. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
+È inoltre consigliabile verificare se la modifica che ha causato il problema era necessaria e, in caso contrario, ripristinarla. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
 
 ### Analisi di error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
@@ -150,4 +144,4 @@ In alcuni casi è possibile trovare anche messaggi WARN in quanto possono esserc
 
 ### Contattare il supporto Adobe {#contacting-adobe-support}
 
-Se hai già esaminato i consigli su questa pagina e riscontri ancora problemi, contatta il supporto Adobe. Per fornire quante più informazioni possibili al tecnico del supporto che lavora al tuo caso, assicurati di includere il file upgrade.log dal tuo aggiornamento.
+Se hai già esaminato i consigli su questa pagina e riscontri ancora problemi, contatta il supporto Adobe. Per fornire quante più informazioni possibili al tecnico del supporto che lavora al tuo caso, assicurati di includere i file `error.log` e `upgrade.log` dall&#39;aggiornamento.
