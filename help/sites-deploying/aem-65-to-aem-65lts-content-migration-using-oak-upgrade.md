@@ -4,7 +4,7 @@ description: Scopri come migrare i contenuti da AEM 6.5 a AEM 6.5 LTS utilizzand
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: ef25b11163ca727a9fa99799b713085e594ff520
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Questo documento fornisce una guida completa per l&#39;aggiornamento di Adobe Ex
 
 Prima di avviare la migrazione, verifica che siano soddisfatti i seguenti requisiti:
 
-1. Compatibilità Java: AEM 6.5 LTS deve essere installato e configurato per l’esecuzione con Java 17. Una volta configurata, avvia l’istanza di AEM e verifica che tutti i bundle siano attivi e funzionanti senza problemi
+1. Compatibilità Java: AEM 6.5 LTS deve essere installato e configurato per l’esecuzione con Java™ 17. Una volta configurata, avvia l’istanza di AEM e verifica che tutti i bundle siano attivi e funzionanti senza problemi
 1. Risorse di sistema: garantire spazio su disco e memoria sufficienti per gestire entrambi gli archivi durante il processo di migrazione
-1. Strumento di aggiornamento Oak: scarica il file jar `oak-upgrade` dall&#39;[archivio Maven ufficiale](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Assicurati che la versione corrisponda a quella oak-core utilizzata in AEM 6.5 LTS. Lo strumento di aggiornamento di Oak viene eseguito su Oracle Java 11 o versione successiva
+1. Strumento di aggiornamento Oak: scarica il file jar `oak-upgrade` dall&#39;[archivio Maven ufficiale](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade). Assicurati che la versione corrisponda a quella oak-core utilizzata in AEM 6.5 LTS. Lo strumento di aggiornamento di Oak viene eseguito su Oracle® Java™ 11 o versione successiva
 
 ## Processo di migrazione passo dopo passo {#step-by-step-migration-process}
 
