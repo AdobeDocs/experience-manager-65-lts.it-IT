@@ -4,9 +4,9 @@ description: Scopri come aggiornare le istanze di AEM distribuite tramite Tomcat
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8798c608ea168d753be2a08b25a0d0d344b0fef6
+source-git-commit: a8367ff25591c6ea7916aab17e733605ec3f59c8
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -15,22 +15,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Questa pagina illustra la procedura di aggiornamento per la guerra AEM 6.5 LTS contro Tomcat.
+>Questa pagina illustra la procedura di aggiornamento per AEM 6.5 LTS su Tomcat.
 
 ## Passaggi di pre-aggiornamento {#pre-upgrade-steps}
 
-Prima di eseguire l’aggiornamento, è necessario completare diversi passaggi. Consulta [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) e [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) per ulteriori informazioni. Inoltre, assicurati che il tuo sistema soddisfi i requisiti per AEM 6.5 LTS. Analizzatore può aiutarti a stimare la complessità dell&#39;aggiornamento e a pianificare l&#39;aggiornamento (consulta [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md) per ulteriori informazioni).
+Prima di eseguire l’aggiornamento, è necessario completare diversi passaggi. Consulta [Aggiornamento del codice e delle personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md) e [Attività di manutenzione pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) per ulteriori informazioni. Inoltre, assicurati che il tuo sistema soddisfi i [requisiti per AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md) e consulta le [considerazioni sulla pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md) e come [Analyzer](/help/sites-deploying/pattern-detector.md) può aiutarti a stimare la complessità.
+
 
 ### Prerequisiti per la migrazione {#migration-prerequisites}
 
-* **Versione Java minima richiesta**: assicurati di aver installato IBM Sumeru JRE 17 sul tuo server Tomcat.
+* **Versione Java minima richiesta**: verificare di aver installato Oracle® JRE 17 nel server Tomcat.
 * **Server Tomcat**: la versione del server Tomcat richiesta per 6,5 LTS è **11.0.x**.
 
 ### Esecuzione dell&#39;aggiornamento {#performing-the-upgrade}
 
 Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni e indicano che è già stata distribuita una versione funzionante di AEM. La procedura consente di documentare gli aggiornamenti eseguiti dalla versione **6.5** di AEM alla versione **6.5 LTS**.
 
-1. Se AEM 6.5 è già distribuito, verificare che i bundle funzionino correttamente accedendo a: *`https://<serveraddress:port>/cq/system/console/bundles`*
+1. Se AEM 6.5 è già distribuito, verificare che i bundle funzionino correttamente accedendo a: *`https://<serveraddress:port>/system/console/bundles`*
 1. Quindi, interrompi AEM 6.5. Questa operazione può essere eseguita da Tomcat App Manager all&#39;indirizzo: *`https://<serveraddress:port>/manager/html`*
 1. Assicurati di aver completato le [attività di pre-aggiornamento](#pre-upgrade-steps) come il backup del server AEM 6.5 prima di eseguire qualsiasi attività di aggiornamento
 1. Installa Java 17 e accertati che sia installato correttamente eseguendo il comando:
@@ -40,21 +41,21 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
    ```
 
 1. Configurare un server Tomcat compatibile con AEM 6.5 LTS
-1. Rivedi i parametri di avvio per il server AEM e assicurati di aggiornare i parametri in base ai requisiti di sistema. Per ulteriori informazioni, vedere [Installazione autonoma personalizzata](/help/sites-deploying/custom-standalone-install.md)
+1. Rivedi i parametri di avvio per il server AEM e assicurati di aggiornare i parametri in base ai requisiti di sistema. Consulta [Java 17 Considerazioni](/help/sites-deploying/custom-standalone-install.md#java-17-considerations-java-considerations) per ulteriori informazioni
 1. Distribuisci la guerra 6.5 LTS appena scaricata sul server Tomcat utilizzando Java 17 e avvia il server AEM 6.5 LTS Tomcat eseguendo:
 
    ```
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Quando AEM è in esecuzione, assicurati che tutti i bundle siano in esecuzione accedendo a: *`https://<serveraddress:port>/cq/system/console/bundles*`
+1. Quando AEM è in esecuzione, assicurati che tutti i bundle siano in esecuzione accedendo a: *`https://<serveraddress:port>/cq/system/console/bundles`*
 1. Arrestare il server AEM 6.5 LTS Tomcat. Nella maggior parte delle situazioni è possibile eseguire lo script `./catalina.sh` eseguendo il comando dal terminale:
 
    ```
    $CATALINA_HOME/bin/catalina.sh stop
    ```
 
-1. Migrare ora i contenuti da AEM 6.5 a AEM 6.5 LTS utilizzando questa esercitazione: [Migrazione dei contenuti da AEM 6.5 a AEM 6.5 LTS utilizzando Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
+1. È ora possibile migrare i contenuti da AEM 6.5 a AEM 6.5 LTS seguendo la procedura descritta di seguito: [Migrazione dei contenuti da AEM 6.5 a AEM 6.5 LTS tramite Oak-upgrade](/help/sites-deploying/aem-65-to-aem-65lts-content-migration-using-oak-upgrade.md)
 1. Dopo la migrazione del contenuto, applicare le modifiche personalizzate richieste nel file `sling.properties`
 1. Avvia il server AEM 6.5 LTS Tomcat eseguendo:
 
@@ -67,7 +68,7 @@ Tutti gli esempi in questa procedura utilizzano Tomcat come server applicazioni 
 
 ## Distribuisci codebase aggiornata {#deploy-upgraded-codebase}
 
-Al termine del processo di aggiornamento sul posto, deve essere distribuita la base di codice aggiornata. I passaggi per aggiornare la base di codice in modo che funzioni nella versione di destinazione di AEM si trovano nella pagina [Aggiorna codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md).
+Una volta completato il processo di aggiornamento, la base di codice aggiornata deve essere distribuita. I passaggi per aggiornare la base di codice in modo che funzioni nella versione di destinazione di AEM sono disponibili nella [pagina Aggiorna codice e personalizzazioni](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ## Eseguire Controlli E Risoluzione Dei Problemi Dopo L&#39;Aggiornamento {#perform-post-upgrade-checks-and-troubleshooting}
 
