@@ -10,9 +10,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3d4e458e4c96c547b94c08d100271ca6cf96f707
+source-git-commit: da061097fd57135bde149b41a12ab78cad5761d6
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Durante la pianificazione di un aggiornamento, è necessario esaminare e risolve
 
 ## Panoramica {#overview}
 
-1. **AEM Analyzer** - Esegui AEM Analyzer come definito nella pagina [Valutazione della complessità dell&#39;aggiornamento con AEM Analyzer](/help/sites-deploying/pattern-detector.md). Ricevi un rapporto di AEM Analyzer che contiene ulteriori dettagli sulle aree che devono essere indirizzate oltre alle API/bundle non disponibili nella versione Target di AEM. Il rapporto di AEM Analyzer fornisce un’indicazione di eventuali incompatibilità nel codice. Se non ne esiste alcuna, la distribuzione è compatibile con AEM 6.5 LTS. Puoi comunque scegliere di eseguire un nuovo sviluppo per l’utilizzo di AEM 6.5 LTS, ma non è necessario solo per mantenere la compatibilità.
-1. **Sviluppa base di codice per 6.5 LTS**- Crea un ramo o un archivio dedicato per la base di codice per la versione AEM di destinazione. Utilizza le informazioni di compatibilità pre-aggiornamento per pianificare le aree di codice da aggiornare.
-1. **Compilare con 6.5 LTS Uber jar**- Aggiornare i POM della base di codice per puntare a AEM 6.5 LTS uber jar e compilare il codice in base a esso.
-1. **Implementazione nell&#39;ambiente LTS 6.5** - È necessario impostare un&#39;istanza pulita di AEM 6.5 LTS (Author + Publish) in un ambiente di sviluppo/controllo qualità. È necessario distribuire una base di codice aggiornata e un campione rappresentativo di contenuti (dalla produzione corrente).
-1. **Convalida QA e correzione bug** - Il controllo qualità deve convalidare l&#39;applicazione sia sulle istanze Author che Publish di AEM 6.5 LTS. Eventuali bug rilevati devono essere corretti e inseriti nella base di codice di AEM 6.5 LTS. Ripeti Dev-Cycle secondo necessità fino a quando tutti i bug non vengono risolti.
+1. **AEM Analyzer** - Eseguire AEM Analyzer come descritto nella pianificazione dell&#39;aggiornamento e descritto in dettaglio nella pagina [Valutazione della complessità dell&#39;aggiornamento con AEM Analyzer](/help/sites-deploying/aem-analyzer.md). Ricevi un rapporto di AEM Analyzer che contiene ulteriori dettagli sulle aree che devono essere affrontate, oltre alle API/bundle non disponibili nella versione Target di AEM. Il rapporto di AEM Analyzer fornisce un’indicazione di eventuali incompatibilità nel codice. Se non ne esiste alcuna, la distribuzione è già compatibile con 6,5 LTS. È comunque possibile scegliere di eseguire un nuovo sviluppo per l&#39;utilizzo della funzionalità 6.5 LTS, ma non è necessario solo per mantenere la compatibilità.
+1. **Sviluppo base codice per 6.5 LTS**- Creazione di un ramo o repository dedicato per la base codice per la versione di destinazione. Utilizza le informazioni di Compatibilità pre-aggiornamento per pianificare le aree di codice da aggiornare.
+1. **Compilare con 6.5 LTS Uber jar**- Aggiornare i POM della base di codice al punto 6.5.2025 uber jar e compilare il codice in base a esso.
+1. **Implementa nell&#39;ambiente LTS 6.5** - Un&#39;istanza pulita di AEM 6.5 LTS (Author + Publish) deve trovarsi in un ambiente di sviluppo/controllo qualità. È necessario distribuire una base di codice aggiornata e un campione rappresentativo di contenuti (dalla produzione corrente).
+1. **Convalida QA e correzione bug** - Il controllo qualità deve convalidare l&#39;applicazione sia nelle istanze Author che Publish del 6.5.2025. Eventuali bug rilevati devono essere corretti e inseriti nella base di codice 6.5 LTS. Ripeti Dev-Cycle secondo necessità fino a quando tutti i bug non vengono risolti.
 
 Prima di procedere con un aggiornamento, è necessario disporre di una base di codice dell&#39;applicazione stabile che sia stata testata accuratamente rispetto a AEM 6.5 LTS.
 
