@@ -4,7 +4,8 @@ description: Scopri i componenti di base in Adobe Experience Manager 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: d5197dbee19a4b30157a9a2acac8da90962d9ddc
+exl-id: c507bef7-4ddc-4e8c-9947-71cb2ecbbf0a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '6846'
 ht-degree: 4%
@@ -1015,7 +1016,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
   Qui puoi specificare se un campo è obbligatorio e inserire vincoli su quel campo (ad esempio, deve essere numerico).
 
-* **Stile**
+* **Definizione dello stile**
 
   Indica le dimensioni e lo stile dei campi.
 
@@ -1071,7 +1072,7 @@ Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
      Un messaggio per informare gli utenti di ciò che è necessario.
 
-* **Stile**
+* **Definizione dello stile**
 
    * **Dimensione**
 

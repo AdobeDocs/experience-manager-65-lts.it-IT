@@ -5,10 +5,11 @@ topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: e77dfbdbe5d540590f7552ddd07f5f7b10f7b41e
+exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3044'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -360,7 +361,7 @@ Per Windows x64:
 
 Per Windows x86:
 
-* Ottieni Microsoft® Visual Studio 2010 Redistributable at https://www.microsoft.com/en-us/download/details.aspx?id=26999 [](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
+* Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Ottieni Microsoft® Visual Studio 2013 Redistributable at [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
 * Ottieni Microsoft® Visual Studio 2015 Redistributable su [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 

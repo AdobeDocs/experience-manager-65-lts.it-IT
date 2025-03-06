@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 2a406ca2870e241539819ae62c6a14904ee71211
+exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -166,4 +167,3 @@ AEM fornisce diversi componenti per la personalizzazione. Alcuni consentono agli
 | Esci | Indica l&#39;utente attualmente connesso e fornisce un collegamento per la disconnessione. |
 | Tag cloud | Una nuvola di tag per mostrare una selezione di tag presentata graficamente all’interno del sito web |
 | Teaser | Contenuto (in genere un’immagine) visualizzato in una pagina principale per &quot;prendere in giro&quot; gli utenti per accedere al contenuto sottostante. |
-

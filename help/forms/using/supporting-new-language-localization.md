@@ -8,7 +8,8 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 2%
@@ -34,7 +35,7 @@ La localizzazione dei moduli adattivi si basa su due tipi di dizionari locali:
 
 Esistono due metodi per identificare le impostazioni locali del modulo adattivo. Quando viene eseguito il rendering di un modulo adattivo, questo identifica le impostazioni locali richieste tramite:
 
-* visualizzazione del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell&#39;URL è `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare nella cache un modulo adattivo.
+* visualizzazione del selettore `[local]` nell&#39;URL del modulo adattivo. Il formato dell’URL è `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Il selettore `[local]` consente di memorizzare nella cache un modulo adattivo.
 
 * esaminare i seguenti parametri nell&#39;ordine specificato:
 

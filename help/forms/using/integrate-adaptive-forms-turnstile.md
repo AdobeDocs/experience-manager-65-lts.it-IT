@@ -3,7 +3,8 @@ title: Come si utilizza Turnstile in un AEM Adaptive Form 6.5?
 description: Migliora la sicurezza dei moduli con il servizio Turnstile. Guida dettagliata all’interno!
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 1444b0fc0811cbb187d2a4d83b626444e44ef73f
+exl-id: cca80e8d-496b-4d67-a90d-2eadf2931986
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 11%

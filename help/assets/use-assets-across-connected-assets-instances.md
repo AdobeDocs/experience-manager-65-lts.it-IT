@@ -7,7 +7,8 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 61a1c41a-7aec-4ffb-b622-905b3ca62c1b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3909'
 ht-degree: 15%
@@ -368,4 +369,3 @@ Per risolvere gli errori più comuni, effettuare le seguenti operazioni:
   ![impossibile recuperare i riferimenti remoti delle risorse](assets/reference-report-failure.png)
 
 * Se i cookie non vengono inviati dal server Sites al server Assets in Google Chrome, ciò si verifica perché la connessione Assets non si trova su HTTPS. Se non utilizzi HTTPS nell&#39;istanza di Assets, non potrai aggiungere l&#39;intestazione `SameSite=None` alla risposta dopo l&#39;autenticazione con il server Assets.
-

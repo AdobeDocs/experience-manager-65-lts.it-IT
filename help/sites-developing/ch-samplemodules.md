@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 523d8bf9-b925-4c09-8452-bb3a31489dd1
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 1%
@@ -62,7 +63,7 @@ Configura il modulo dell’interfaccia utente contexthub.base utilizzando un ogg
 * **listType:** stile da utilizzare per gli elementi dell&#39;elenco popover. Utilizza uno dei seguenti valori:
 
    * segno di spunta
-   * casella di controllo
+   * checkbox
    * radio
 
 * **popoverTemplate:** modello Handlebars che specifica il contenuto da riprodurre nel popover quando si fa clic sul modulo dell&#39;interfaccia utente. Se si include questo elemento, non includere l&#39;elemento `list`.

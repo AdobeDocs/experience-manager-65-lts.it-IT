@@ -5,7 +5,8 @@ contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: e12f12862c31cef81b2808897fab5cf8e19dfa86
+exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2817'
 ht-degree: 0%
@@ -384,4 +385,3 @@ Inoltre, verifica che il codice di implementazione multifield e la struttura dei
 **La configurazione disponibile per gli amministratori non è disponibile per gli autori**
 
 Se gli aggiornamenti delle configurazioni dell&#39;interfaccia vengono rispecchiati per gli amministratori ma non per gli account di authoring, verificare che il nodo di configurazione non sia denominato `config`. Utilizzare la proprietà [`configPath`](/help/sites-developing/components-basics.md#cq-inplaceediting).
-

@@ -6,13 +6,13 @@ content-type: reference
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2645745a83477509bac81cb5e122eabc44db3961
+exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 15%
 
 ---
-
 
 # Valutazione della complessità dell’aggiornamento con AEM Analyzer {#assessing-the-upgrade-complexity-with-the-aem-analyzer}
 
@@ -235,8 +235,3 @@ Il tempo di scadenza rimasto per il rapporto di AEM Analyzer viene visualizzato 
 
 * A volte, l&#39;operazione di rimozione potrebbe visualizzare la notifica: *&quot;Alcuni percorsi non sono stati rimossi correttamente. Controllare i registri e riprovare.*&quot;. Tuttavia, se i percorsi sono stati effettivamente rimossi, puoi tranquillamente ignorare questo messaggio
 * Analogamente, l&#39;operazione del pacchetto potrebbe non riuscire con l&#39;errore: *&quot;Errore durante l&#39;esecuzione dell&#39;operazione desiderata. Controllare i registri e riprovare.*&quot;. Ciò è probabilmente dovuto alla scadenza della sessione. In questi casi, ritentare l’operazione per risolvere il problema.
-
-
-
-
-

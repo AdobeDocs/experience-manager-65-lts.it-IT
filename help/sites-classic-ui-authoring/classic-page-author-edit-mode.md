@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 728db3fc315f1e7830d2133c63d096e4f616e9f8
+exl-id: f45ae3e8-f2e6-4c4a-9373-667441cb9fdc
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 3%
@@ -879,7 +880,7 @@ Durante la configurazione di uno dei componenti del modulo, nella finestra di di
 
   Qui è possibile specificare se un campo è obbligatorio e inserire vincoli in tale campo, ad esempio numerici.
 
-* **Stile**
+* **Definizione dello stile**
 
   Indica le dimensioni e lo stile dei campi.
 
@@ -935,7 +936,7 @@ Questo campo è obbligatorio e deve contenere solo i seguenti caratteri:
 
      Un messaggio per informare gli utenti di ciò che è necessario.
 
-* **Stile**
+* **Definizione dello stile**
 
    * **Dimensione**
 

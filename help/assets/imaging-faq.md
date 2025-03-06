@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3322'
 ht-degree: 0%
@@ -442,4 +443,3 @@ Per invalidare l’intera cache, devi creare un caso di supporto che richieda ta
 La tecnologia Smart Imaging ora supporta la conversione con perdita di dati in base al livello di qualità. Puoi continuare a utilizzare la conversione senza perdita impostando la qualità su 100, tramite le impostazioni della tua società o aggiungendo `qlt=100` al percorso URL dell&#39;immagine.
 
 +++
-

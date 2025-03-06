@@ -8,7 +8,8 @@ content-type: reference
 feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '3106'
 ht-degree: 2%
@@ -130,7 +131,7 @@ Recupera l&#39;URL del servizio JSONP utilizzato da questo oggetto per recuperar
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -207,7 +208,7 @@ Rimuove i dati dell&#39;archivio di sessione e tutte le proprietà di inizializz
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -232,7 +233,7 @@ Recupera i dati dell’archivio sessione in formato JSON.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -244,7 +245,7 @@ Cancella l&#39;archivio di sessione e lo inizializza con la proprietà di inizia
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -359,7 +360,7 @@ Recupera l&#39;URL del servizio JSONP utilizzato da questo oggetto per recuperar
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -445,7 +446,7 @@ Recupera i dati dell’archivio sessione in formato JSON.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -616,7 +617,7 @@ Rimuove tutte le proprietà dei dati dall&#39;archivio.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -652,7 +653,7 @@ Restituisce il nome dell&#39;archivio sessione.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -689,7 +690,7 @@ Restituisce l&#39;archivio di sessione associato all&#39;oggetto corrente.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -701,7 +702,7 @@ Contrassegna l&#39;archivio come inizializzato e attiva l&#39;evento `initialize
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -713,7 +714,7 @@ Indica se l&#39;archivio sessioni è inizializzato.
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 
@@ -750,7 +751,7 @@ Ripristina i valori iniziali dell&#39;archivio dati. L’implementazione predefi
 
 **Parametri**
 
-Nessuno.
+Nessuna.
 
 **Restituisce**
 

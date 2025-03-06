@@ -1,13 +1,13 @@
 ---
 title: Note sulla versione corrente per Adobe Experience Manager 6.5 LTS
 description: Queste sono le note sulla versione corrente di Adobe Experience Manager 6.5 LTS.
-source-git-commit: 6a69d4e143c54b22127a1e1ff3546898fcdd0b2d
+exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
+source-git-commit: 9bbd7acd498a1a0614db246f9d1326a62c199806
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 22%
 
 ---
-
 
 # Note sulla versione corrente per Adobe Experience Manager 6.5 LTS {#release-notes}
 
@@ -111,3 +111,4 @@ Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bis
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
 * [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+

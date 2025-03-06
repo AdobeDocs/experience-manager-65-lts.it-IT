@@ -7,10 +7,11 @@ docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2592'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -36,7 +37,7 @@ Configura azione di invio
 
 Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
-* Invia all’endpoint REST
+* Invia a endpoint REST
 * Invia e-mail
 * Invia PDF tramite e-mail
 * Richiama un Forms Workflow
@@ -60,7 +61,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
 Per soddisfare il tuo caso d’uso, puoi scrivere un’azione di invio personalizzata per i moduli adattivi. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](../../forms/using/custom-submit-action-form.md).
 
-## Invia all’endpoint REST {#submit-to-rest-endpoint}
+## Invia a endpoint REST {#submit-to-rest-endpoint}
 
 L&#39;opzione di invio **Invia all&#39;endpoint REST** trasmette i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
@@ -82,7 +83,7 @@ Per passare i campi come parametri in un URL REST, tutti i campi devono avere no
 
 Utilizzare l&#39;azione **Invia all&#39;endpoint REST** per inviare i dati inviati a un URL rest. L’URL può essere interno (il server sul quale viene eseguito il rendering del modulo) o esterno.
 
-Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste successive, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
+Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
 Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è https://host:port/path_to_rest_end_point. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 

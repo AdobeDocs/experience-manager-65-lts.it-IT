@@ -8,7 +8,8 @@ content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 5%
@@ -111,7 +112,7 @@ Le proprietà includono:
    <td>Nome di classe di un'implementazione di SAINTTransformer</td>
   </tr>
   <tr>
-   <td>e-mail</td>
+   <td>email</td>
    <td>Indirizzo e-mail di notifica.</td>
   </tr>
   <tr>

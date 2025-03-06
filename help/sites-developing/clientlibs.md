@@ -9,7 +9,8 @@ docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 29391c8e3042a8a04c64165663a228bb4886afb5
+exl-id: cafc7120-114e-487a-8b81-9c695318731e
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -71,7 +72,7 @@ In HTL, le librerie client vengono caricate tramite un modello helper fornito da
 * **js** - Carica solo i file JavaScript delle librerie client di riferimento.
 * **all** - Carica tutti i file delle librerie client di riferimento (sia CSS che JavaScript).
 
-Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere una matrice di valori stringa o una stringa contenente un elenco di valori separati da virgola.
+Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
 Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 

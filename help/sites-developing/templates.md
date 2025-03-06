@@ -9,7 +9,8 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a6121f570f7840c9b7a63d10c7a95cd2894fe4ec
+exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
+source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 1%
@@ -129,4 +130,3 @@ Per limitare i modelli utilizzabili per creare pagine figlie in una determinata 
 È possibile utilizzare la proprietà `cq:allowedTemplates` nel nodo `jcr:content` del modello per applicare questa configurazione a tutte le pagine appena create che utilizzano questo modello.
 
 Per aggiungere altri vincoli, ad esempio relativi alla gerarchia dei modelli, è possibile utilizzare le proprietà `allowedParents/allowedChildren` nel modello. È quindi possibile specificare esplicitamente che le pagine create da un modello devono essere padri/figli di pagine create da un modello T.
-
