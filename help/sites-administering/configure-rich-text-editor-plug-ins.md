@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4381'
 ht-degree: 2%
 
 ---
@@ -285,10 +285,6 @@ Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferi
 ### Configurare l’editor Rich Text per interruzioni di parola ottimali in giapponese {#jpwordwrap}
 
 Gli autori che utilizzano AEM per la creazione di contenuti in lingua giapponese possono applicare uno stile ai caratteri per evitare interruzioni di riga quando non è richiesta un’interruzione. Questo consente agli autori di lasciare che le frasi si interrompano nella posizione desiderata. Lo stile di questa funzionalità si basa sulla classe CSS predefinita nel foglio di stile CSS.
-
->[!NOTE]
->
->Questa funzione richiede almeno AEM 6.5 Service Pack 1.
 
 Per creare lo stile che gli autori possono applicare al testo giapponese, effettuare le seguenti operazioni:
 

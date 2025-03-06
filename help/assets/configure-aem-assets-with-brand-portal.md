@@ -10,9 +10,9 @@ role: Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 22a2428d-3ebd-4368-983e-d140f99de2dd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 4%
 
 ---
@@ -68,11 +68,11 @@ Per configurare AEM Assets con Brand Portal, è necessario quanto segue:
 
 [Scarica e installa il Service Pack più recente di AEM](#servicepack)
 
-### Scaricare e installare AEM 6.5 {#aemquickstart}
+### Scaricare e installare AEM 6.5 LTS {#aemquickstart}
 
-Per impostare un’istanza di AEM Author, si consiglia di utilizzare AEM 6.5. Se AEM non è ancora operativo, scaricalo dalle seguenti posizioni:
+Si consiglia di utilizzare AEM 6.5 LTS per configurare un’istanza di AEM Author. Se AEM non è ancora operativo, scaricalo dalle seguenti posizioni:
 
-* Se sei già un cliente di AEM, scarica AEM 6.5 dal [sito Web Adobe Licensing](https://licensing.adobe.com).
+* Se sei già un cliente di AEM, scarica AEM 6.5 LTS dal [sito Web Adobe Licensing](https://licensing.adobe.com).
 
 * Se sei un partner Adobe, utilizza il [Programma di formazione per partner Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) per richiedere AEM 6.5.
 
@@ -80,7 +80,7 @@ Dopo aver scaricato AEM, per istruzioni su come configurare un&#39;istanza di AE
 
 ### Scarica e installa il Service Pack più recente di AEM {#servicepack}
 
-Per istruzioni dettagliate, consulta le [Note sulla versione di AEM 6.5 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
+Per istruzioni dettagliate, vedere le [Note sulla versione del Service Pack di AEM 6.5 LTS](https://experienceleague.adobe.com/docs/experience-manager-65-lts/release-notes/release-notes.html).
 
 **Contatta l&#39;Assistenza clienti di Adobe** se non riesci a trovare il pacchetto AEM o il Service Pack più recente.
 

@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 7b6b02fd-fcb2-45ae-a239-e0c68de2bcbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 72%
+source-wordcount: '352'
+ht-degree: 75%
 
 ---
 
@@ -29,7 +29,7 @@ Le sezioni seguenti elencano gli scenari in cui si deve (o in alcuni casi non si
 
 **Azione**: esegui la migrazione della configurazione in quanto AEM ora supporta le credenziali OAuth.
 
-**Versioni rilevanti di AEM**: Adobe Managed Services (Service Pack 21 e versioni successive).
+**Versioni rilevanti di AEM**: Adobe Managed Services.
 
 I clienti di AEM utilizzano AEM per configurare le integrazioni con tutte le altre soluzioni Adobe. Ad esempio, Adobe Target, Adobe Analytics e altre.
 
@@ -44,6 +44,6 @@ Consulta [Configurazione delle integrazioni IMS per AEM](/help/sites-administeri
 
 **Azione**: conferma quando è possibile migrare questi elementi dalle credenziali JWT a quelle OAuth.
 
-**Versioni rilevanti di AEM**: Adobe Managed Services (Service Pack 21 e versioni successive).
+**Versioni rilevanti di AEM**: Adobe Managed Services.
 
 I progetti Adobe Developer Console vengono creati in modo che possano richiamare le [API di Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/). È opportuno migrare le credenziali nel progetto Adobe Developer al tipo di credenziali da server a server OAuth, primna della scadenza del tipo di credenziali obsolete JWT, che non ci saranno più da gennaio.

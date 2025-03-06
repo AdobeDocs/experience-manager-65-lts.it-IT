@@ -1,17 +1,13 @@
 ---
 title: Generare un documento di record per i moduli adattivi
 description: Spiega come generare un documento di record (DoR) per i moduli adattivi.
-content-type: reference
-topic-tags: adaptive_forms, develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4283'
 ht-degree: 2%
 
 ---
@@ -31,11 +27,6 @@ ht-degree: 2%
 Dopo aver inviato un modulo, i clienti in genere desiderano conservare una registrazione, in formato cartaceo o documentale, delle informazioni che hanno compilato nel modulo per riferimento futuro. Tale documento è denominato documento di record.
 
 Questo articolo spiega come generare un documento di record per un frammento di Forms adattivo o di modulo adattivo.
-
->[!NOTE]
->
-> Il supporto per personalizzare i frammenti di moduli adattivi e i relativi campi nell&#39;editor di moduli adattivi è stato introdotto con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
-
 
 >[!NOTE]
 >

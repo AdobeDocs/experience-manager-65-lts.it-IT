@@ -6,13 +6,12 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: d4f89be13039e53564cd3a3148a4b845bcc183a7
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '7052'
+source-wordcount: '6816'
 ht-degree: 21%
 
 ---
-
 
 # Documentazione di Adobe Experience Manager 6.5 LTS {#content}
 
@@ -305,7 +304,6 @@ ht-degree: 21%
       + [Pubblicare risorse Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md)
       + [Utilizzo della pubblicazione selettiva in Dynamic Media](/help/assets/selective-publishing.md)
       + [Invalidare la cache CDN tramite Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-      + [Invalidare la cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
       + [Installare Feature Pack 18912 per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md)
       + [Utilizzare i selettori](/help/assets/working-with-selectors.md)
    + Estendi Assets {#extending}
@@ -445,20 +443,7 @@ ht-degree: 21%
          + [Installare e configurare un flusso di lavoro incentrato su Forms su OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [Installare e configurare le comunicazioni interattive](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
          + [Installa e configura il servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=it)
-      + Installa AEM Forms su JEE {#jee-installation}
-         + [Piattaforme supportate per AEM Forms su JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [Installazione e distribuzione di AEM Forms in JEE tramite JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
-         + [Installazione e configurazione del server di AEM Forms Document Security](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [Preparazione all&#39;installazione di AEM Forms (server singolo)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-         + [Installazione e distribuzione di Adobe Experience Manager Forms in JEE per JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-         + [Installazione e distribuzione di Adobe Experience Manager Form in JEE per WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-         + [Installazione e distribuzione di AEM Forms in JEE per WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-         + [Installare AEM Forms Workbench](/help/forms/using/install-workbench.md)
-         + [Installare e configurare Designer](/help/forms/using/installing-configuring-designer.md)
-         + [Preparazione all&#39;installazione di AEM Forms (cluster di server)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-         + [Configurazione di Adobe Experience Manager Forms su JEE nel cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-         + [Configurazione di Adobe Experience Manager Forms su JEE nel cluster WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-         + [Configurazione di Adobe Experience Manager Forms su JEE nel cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + [Installare e configurare Designer](/help/forms/using/installing-configuring-designer.md)
       + Configura AEM Forms {#configure-aem-forms}
          + [Ottimizzazione delle prestazioni del server AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurare la cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -471,17 +456,10 @@ ht-degree: 21%
    + Aggiorna AEM Forms {#upgrade-aem-forms}
       + [Percorsi di aggiornamento disponibili](/help/forms/using/upgrade.md)
       + Aggiorna AEM Forms su OSGi {#aem-forms-osgi-upgrade}
-         + [Aggiornamento ad AEM 6.5 Forms su OSGi](/help/forms/using/upgrade-forms-osgi.md)
+         + [Aggiornamento ad AEM 6.5 LTS Forms su OSGi](/help/forms/using/upgrade-forms-osgi.md)
          + [Installa pacchetto di compatibilità](/help/forms/using/compatibility-package.md)
          + [Migrare risorse e documenti AEM Forms](/help/forms/using/migration-utility.md)
-      + Aggiorna AEM Forms su JEE {#aem-forms-jee-upgrade}
-         + [Preparazione all&#39;aggiornamento di AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-         + [Elenco di controllo e pianificazione dell&#39;aggiornamento di Adobe Experience Manager Forms su JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [Aggiornamento ad AEM 6.5 Forms su JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Aggiornamento ad Adobe Experience Manager Forms su JEE per JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Aggiornamento ad AEM Forms su JEE per JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Aggiornamento ad Adobe Experience Manager Forms su JEE per WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Aggiornamento ad Adobe Experience Manager Forms su JEE per WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
    + Gestisci AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms su gruppi e privilegi OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Creare nuove cartelle per categorizzare i moduli](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -809,7 +787,6 @@ ht-degree: 21%
          + [Visualizzazione e comprensione dei rapporti sulle transazioni](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [Elenco delle API fatturabili per AEM Forms su OSGi](/help/forms/using/transaction-reports-billable-apis.md)
          + [Registrare una transazione per le implementazioni personalizzate](/help/forms/using/record-transaction-custom-implementation.md)
-      + Rapporti sulle transazioni per AEM Forms in JEE {#transaction-reports-jee}
          + [Abilitazione e visualizzazione dei rapporti sulle transazioni](/help/forms/using/transaction-report-overview-jee.md)
          + [Elenco delle API fatturabili per AEM Forms su JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [Registrare una transazione per le API dei componenti personalizzati](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -1099,12 +1076,8 @@ ht-degree: 21%
       + [Impossibile convertire file Word o Excel in PDF su Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Impossibile aprire PDF forms basato su XFA in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer o Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Impossibile ripristinare l’archivio di CRX](/help/forms/using/restore-crx-repository.md)
-      + [Errori di servizio non disponibile dopo l&#39;installazione del service pack di AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Problema di installazione del service pack AEM Forms JEE 6.5.15.0 nell’ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Elaborazione di documenti anche se il server AEM Forms non è completamente operativo](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Impossibile utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
-      + [Mitigazione delle vulnerabilità RCE Struts 2 per Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [Impossibile eseguire il backup del database durante l&#39;aggiornamento a 6.5.12.0 per MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [La generazione di PDF non riesce a stampare un numero elevato di PDF su WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [Come riavviare correttamente AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [Il servizio PaperCapture non riesce a eseguire l&#39;OCR sui PDF](/help/forms/using/papercapture-service-resolution.md)

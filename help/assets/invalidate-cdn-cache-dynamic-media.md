@@ -9,9 +9,9 @@ role: User, Admin
 feature: CDN Cache
 solution: Experience Manager, Experience Manager Assets
 exl-id: bce11a49-bbbe-4dda-8144-7f135bb666d9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1277'
 ht-degree: 1%
 
 ---
@@ -21,18 +21,11 @@ ht-degree: 1%
 Le risorse Dynamic Media vengono memorizzate nella cache dalla rete CDN (Content Delivery Network) per velocizzare la distribuzione ai clienti. Tuttavia, quando apporti aggiornamenti a tali risorse, desideri che le modifiche diventino effettive immediatamente sul sito web. La rimozione o l’annullamento della validità della cache CDN consente di aggiornare rapidamente le risorse distribuite da Dynamic Media. Invece di attendere la scadenza della cache utilizzando un valore TTL (Time To Live) (il valore predefinito è dieci ore), puoi inviare una richiesta dall’interno di Dynamic Media affinché la cache scada in pochi minuti.
 
 
-
->[!IMPORTANT]
->
->I passaggi seguenti sono validi solo per la modalità Dynamic Media - Scene7 in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) o versione successiva. Questa funzione di annullamento della validità della CDN richiede anche l’utilizzo della CDN preconfigurata inclusa in Adobe Experience Manager - Dynamic Media. Qualsiasi altra rete CDN personalizzata non è supportata con questa funzione.<br>Se utilizzi Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) o versioni precedenti, segui i passaggi descritti in [Annullamento della validità della cache CDN tramite Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
-
-<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
-
 **Per annullare la validità del contenuto CDN memorizzato nella cache per le risorse Dynamic Media:**
 
 *Parte 1 di 2: creazione di un modello di annullamento validità CDN*
 
-1. In Experience Manager 6.5.6 o versione successiva, passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Annullamento validità CDN]**.
+1. Passa a **[!UICONTROL Strumenti]** > **[!UICONTROL Assets]** > **[!UICONTROL Annullamento validità CDN]**.
 
    ![Funzione di convalida CDN](/help/assets/assets-dm/cdn-invalidation-template2.png)
 

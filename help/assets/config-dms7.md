@@ -1,19 +1,14 @@
 ---
 title: Configurare Dynamic Media - Modalità Scene7
 description: Scopri come configurare Dynamic Media - Modalità Scene7.
-contentOwner: Rick Brough
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: dynamic-media
-content-type: reference
-docset: aem65
 role: User, Admin
 mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '6507'
+source-wordcount: '6491'
 ht-degree: 3%
 
 ---
@@ -132,7 +127,7 @@ Per ulteriori informazioni, consulta [Installare 18912 feature pack per la migra
 
    * **[!UICONTROL Pubblicazione di Assets]** - È possibile scegliere tra le tre opzioni seguenti:
       * **[!UICONTROL Immediatamente]** significa che quando le risorse vengono caricate, il sistema le acquisisce e fornisce l&#39;URL/Incorpora immediatamente. Non è necessario alcun intervento da parte dell’utente per pubblicare le risorse.
-      * **[!UICONTROL All&#39;attivazione]** significa che devi pubblicare esplicitamente la risorsa prima di fornire un URL o un collegamento di incorporamento.<br><!-- CQDOC-17478, Added March 9, 2021-->A partire da Experience Manager 6.5.8, l&#39;istanza di Experience Manager Publish riflette i valori accurati dei metadati Dynamic Media, ad esempio `dam:scene7Domain` e `dam:scene7FileStatus`, solo nella modalità di pubblicazione **[!UICONTROL All&#39;attivazione]**. Per abilitare questa funzionalità, installare Service Pack 8, quindi riavviare Experience Manager. Vai a Gestione configurazione Sling. Trovare la configurazione per `Scene7ActivationJobConsumer Component` o crearne una nuova). Seleziona la casella di controllo **[!UICONTROL Replica metadati dopo la pubblicazione in Dynamic Media]**, quindi seleziona **[!UICONTROL Salva]**.
+      * **[!UICONTROL All&#39;attivazione]** significa che devi pubblicare esplicitamente la risorsa prima di fornire un URL o un collegamento di incorporamento.<br><!-- CQDOC-17478, Added March 9, 2021-->A partire da Experience Manager 6.5.8, l&#39;istanza di Experience Manager Publish riflette i valori accurati dei metadati Dynamic Media, ad esempio `dam:scene7Domain` e `dam:scene7FileStatus`, solo nella modalità di pubblicazione **[!UICONTROL All&#39;attivazione]**. Vai a Gestione configurazione Sling. Trovare la configurazione per `Scene7ActivationJobConsumer Component` o crearne una nuova). Seleziona la casella di controllo **[!UICONTROL Replica metadati dopo la pubblicazione in Dynamic Media]**, quindi seleziona **[!UICONTROL Salva]**.
 
         ![Replica metadati dopo la casella di controllo di pubblicazione Dynamic Media](assets-dm/replicate-metadata-setting.png)
 
@@ -250,7 +245,7 @@ In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caric
 
 Se intendi utilizzare questa funzione, tieni presenti i seguenti prerequisiti e punti:
 
-* È necessario eseguire Experience Manager 6.5 con Service Pack 6.5.4.0 o versione successiva in modalità Dynamic Media - Scene7.
+* È necessario eseguire Experience Manager 6.5 LTS in modalità Dynamic Media - Scene7.
 * Questa funzionalità di caricamento di grandi dimensioni è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
 * Verifica che l’istanza di Experience Manager sia configurata con l’archiviazione BLOB di Amazon S3 o Microsoft® Azure.
 
