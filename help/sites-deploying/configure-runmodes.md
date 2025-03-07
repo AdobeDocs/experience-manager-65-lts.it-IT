@@ -1,17 +1,13 @@
 ---
 title: Modalità di esecuzione
 description: Scopri come regolare l’istanza di AEM per scopi specifici utilizzando le modalità di esecuzione.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3370d62eafb9339a9f9c638f3fb2e2ce0f14d9ec
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -38,18 +34,14 @@ Sono disponibili modalità di esecuzione dell’installazione pronte all’uso:
 
 * `author`
 * `publish`
-* `samplecontent`
-* `nosamplecontent`
 
 Si tratta di due coppie di modalità di esecuzione che si escludono a vicenda; ad esempio, è possibile:
 
 * definisci `author` o `publish`, non entrambi allo stesso tempo
 
-* combina `author` con `samplecontent` o `nosamplecontent` (ma non entrambi)
-
 >[!CAUTION]
 >
->Quando si utilizza una delle modalità di esecuzione precedenti (author, publish, samplecontent, nosamplecontent), il valore utilizzato al momento dell&#39;installazione definisce la modalità di esecuzione per l&#39;*intera durata* dell&#39;installazione.
+>Quando si utilizza una delle modalità di esecuzione precedenti (authoring, pubblicazione), il valore utilizzato al momento dell&#39;installazione definisce la modalità di esecuzione per l&#39;*intera durata* dell&#39;installazione.
 >
 >Per queste modalità di esecuzione *non è possibile* modificarle dopo l&#39;installazione.
 
@@ -68,16 +60,6 @@ Puoi anche creare modalità di esecuzione personalizzate. Queste possono essere 
 * come richiesto . . .
 
 Ad ogni avvio è possibile selezionare anche modalità di esecuzione personalizzate.
-
-## Utilizzo di samplecontent e nosamplecontent {#using-samplecontent-and-nosamplecontent}
-
-Queste modalità ti consentono di controllare l’utilizzo di contenuti di esempio. Il contenuto di esempio viene definito prima che venga generato l’avvio rapido e può includere pacchetti, configurazioni e così via:
-
-* La modalità di esecuzione `samplecontent` installa questo contenuto (la modalità predefinita).
-
-* La modalità `nosamplecontent` non installa il contenuto di esempio.
-
-La modalità di esecuzione nosamplecontent è progettata per le installazioni di produzione.
 
 ## Definizione delle proprietà di configurazione per una modalità di esecuzione {#defining-configuration-properties-for-a-run-mode}
 

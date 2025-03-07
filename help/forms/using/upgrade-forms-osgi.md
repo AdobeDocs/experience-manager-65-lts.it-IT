@@ -6,9 +6,9 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: dd45dfe953a111ccbbc71e8e25a8a2577037587a
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '837'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,6 @@ Dopo l&#39;aggiornamento al service pack AEM Forms 6.5.22.0, eseguire la procedu
       1. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
    1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
    1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
-   1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
    1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
       Puoi scaricare il pacchetto anche utilizzando il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
@@ -43,11 +42,9 @@ Dopo l&#39;aggiornamento al service pack AEM Forms 6.5.22.0, eseguire la procedu
 
       Se il server viene avviato tramite uno script o un servizio, aggiornarlo di conseguenza in modo da includere quanto riportato sopra, in modo che siano effettivi anche dopo i riavvii successivi.
 
-1. Riavvia l’istanza di AEM.
-
-   >[!NOTE]
-   >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+      >[!NOTE]
+      >
+      > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Eseguire attività successive all&#39;installazione.
 

@@ -1,17 +1,13 @@
 ---
 title: Configurazione di SSL in Windows Vista
 description: Scopri come configurare SSL in Windows Vista. Utilizza ed esegui Java Keytool per generare il certificato SSL con le chiavi RSA per l’autenticazione.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/configuring_ssl
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ee73f6a1-712c-461f-95e8-85f8c5694293
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: d0f29cb177e98315cd50c2d7e96c3605eec14885
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
