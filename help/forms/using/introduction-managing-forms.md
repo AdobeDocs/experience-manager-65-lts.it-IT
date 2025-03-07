@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 7ec29926-a5f6-4080-a981-597f9632f6e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Oltre alle opzioni per la creazione di moduli, documenti e risorse correlate, AE
 
 ### Moduli e documenti  {#forms-documents}
 
-In Forms &amp; Documents sono disponibili opzioni per la creazione di comunicazioni interattive, moduli adattivi, frammenti di moduli adattivi e set di moduli. Solo per AEM [!DNL Forms] su JEE, Forms &amp; Documents fornisce un&#39;opzione per importare i file dall&#39;archiviazione locale e sincronizzare le risorse di AEM [!DNL Forms] con Workbench.
+In Forms &amp; Documents sono disponibili opzioni per la creazione di comunicazioni interattive, moduli adattivi, frammenti di moduli adattivi e set di moduli. <!--Only for AEM [!DNL Forms] on JEE, Forms & Documents provides an option to import files from local storage and sync AEM [!DNL Forms] assets with Workbench.-->
 
 Il pulsante Crea è il punto iniziale del processo di creazione o caricamento della risorsa AEM [!DNL Forms]. Offre le opzioni per creare:
 

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-L’app AEM Forms consente la sincronizzazione di moduli adattivi, moduli mobili e set di moduli su dispositivi mobili, in base al server. Puoi definire flussi di lavoro che sono [flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/aem-forms-workflow.md) o flussi di lavoro Forms su JEE. Ad esempio, puoi gestire una società bancaria e utilizzare AEM Forms per gestire le applicazioni e le comunicazioni dei clienti. I clienti compilano un modulo e lo inviano per la verifica. Se abiliti il modulo su dispositivi mobili, i clienti possono compilarlo nell’app AEM Forms. Puoi anche gestire il flusso di lavoro di verifica abilitando il modulo di verifica su dispositivi mobili. Il tuo operatore sul campo può portare un dispositivo mobile al cliente, verificare i dettagli e inviare il modulo. L’app AEM Forms si sincronizza con il server AEM Forms e recupera i moduli abilitati per i dispositivi mobili. Se l’app è offline, memorizza i dati localmente.
+L’app AEM Forms consente la sincronizzazione di moduli adattivi, moduli mobili e set di moduli su dispositivi mobili, in base al server. Puoi definire flussi di lavoro che sono [flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/aem-forms-workflow.md) <!--or Forms workflows on JEE-->. Ad esempio, puoi gestire una società bancaria e utilizzare AEM Forms per gestire le applicazioni e le comunicazioni dei clienti. I clienti compilano un modulo e lo inviano per la verifica. Se abiliti il modulo su dispositivi mobili, i clienti possono compilarlo nell’app AEM Forms. Puoi anche gestire il flusso di lavoro di verifica abilitando il modulo di verifica su dispositivi mobili. Il tuo operatore sul campo può portare un dispositivo mobile al cliente, verificare i dettagli e inviare il modulo. L’app AEM Forms si sincronizza con il server AEM Forms e recupera i moduli abilitati per i dispositivi mobili. Se l’app è offline, memorizza i dati localmente.
 
 Il codice sorgente dell’app AEM Forms è disponibile per i clienti tramite Software Distribution. Il pacchetto del codice sorgente nella Distribuzione di software è disponibile come: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -62,9 +62,13 @@ Per sincronizzare il modulo nell’app AEM Forms:
 
 Quando il modulo viene pubblicato, l’app si sincronizza con il server e recupera il modulo. Per sincronizzare più moduli, nell&#39;istanza di authoring selezionare più moduli in Gestione moduli e selezionare **[!UICONTROL Sincronizza con l&#39;app AEM Forms]**.
 
-## Supporto per dispositivi mobili {#mobile-device-support}
+<!--
 
-Vedi l&#39;[app AEM Forms (precedentemente nota come Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+## Mobile device support {#mobile-device-support}
+
+See [AEM Forms app (previously known as Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+
+-->
 
 ## Funzioni chiave dell’app AEM Forms {#key-features-of-aem-forms-app}
 
@@ -72,7 +76,7 @@ Vedi l&#39;[app AEM Forms (precedentemente nota come Mobile Workspace)](/help/fo
 
 Puoi sincronizzare la tua app con il server AEM Forms e lavorare con i moduli sul tuo dispositivo mobile.
 
-Con il server di AEM Forms Workflow, un modulo può essere associato a un punto d’inizio in un processo di Workbench e nell’applicazione Casella in entrata AEM. A un’applicazione Casella in entrata AEM può essere associato un modulo adattivo. A un punto iniziale può essere associato un modulo adattivo, un modulo HTML5 o un set di moduli. È possibile inviare un punto d&#39;inizio come attività oppure salvare l&#39;attività come bozza. Per ulteriori informazioni sulle differenze tra un&#39;applicazione Casella in entrata AEM e un punto d&#39;inizio, consulta [Azioni e funzionalità dei flussi di lavoro AEM basati su moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Con il server di AEM Forms Workflow, un modulo può essere associato a un punto d’inizio in un processo di Workbench e nell’applicazione Casella in entrata AEM. A un’applicazione Casella in entrata AEM può essere associato un modulo adattivo. A un punto iniziale può essere associato un modulo adattivo, un modulo HTML5 o un set di moduli. È possibile inviare un punto d&#39;inizio come attività oppure salvare l&#39;attività come bozza. <!--For more information on differences between an AEM Inbox application and a startpoint see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 Con il server di AEM Forms senza il flusso di lavoro di AEM Forms, nell’app di AEM Forms viene eseguito il rendering di un modulo abilitato per la sincronizzazione nell’app. I Forms sono disponibili nella scheda Forms dell’app, possono essere inviati o salvati come bozza. I moduli adattivi e i moduli mobili sono supportati nell’app.
 
@@ -123,7 +127,7 @@ Vedi [Utilizzo del salvataggio automatico nell&#39;app AEM Forms](/help/forms/us
 
 ## Differenze tra la casella in entrata di AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono l&#39;utilizzo di [Posta in arrivo AEM](/help/forms/using/manage-applications-inbox.md) e dell&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata di AEM e dell’app AEM Forms sono diverse. La casella in entrata di AEM funziona solo con [flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md), mentre l&#39;app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. Per ulteriori informazioni sulle differenze tra la Casella in entrata di AEM e le funzionalità delle app AEM Forms, consulta [Azioni e funzionalità dei flussi di lavoro AEM incentrati sui moduli nei flussi di lavoro OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Due dei modi principali per avviare un flusso di lavoro incentrato su Forms sono l&#39;utilizzo di [Posta in arrivo AEM](/help/forms/using/manage-applications-inbox.md) e dell&#39;app AEM Forms. Tuttavia, le funzionalità della casella in entrata di AEM e dell’app AEM Forms sono diverse. La casella in entrata di AEM funziona solo con [flussi di lavoro incentrati su Forms](/help/forms/using/aem-forms-workflow.md), mentre l&#39;app AEM Forms funziona sia con flussi di lavoro incentrati su Forms che con la gestione dei processi. <!--For more information on differences between AEM Inbox and AEM Forms app capabilities, see [Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows](capabilities-osgi-jee-workflows.md).-->
 
 ## Moduli supportati {#supported-forms}
 

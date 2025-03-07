@@ -1,31 +1,26 @@
 ---
 title: Migrare risorse e documenti AEM Forms
-description: L’utility di migrazione consente di migrare risorse e documenti Adobe Experience Manager (AEM) Forms da AEM 6.3 Forms o versioni precedenti a AEM 6.4 Forms.
+description: L'utilità di migrazione consente di migrare risorse e documenti Adobe Experience Manager (AEM) Forms da AEM 6.5.22.0 Forms ad AEM 6.5 Forms LTS.
 content-type: reference
-topic-tags: correspondence-management, installing
-geptopics: SG_AEMFORMS/categories/jee
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-content-strategy: max-2018
-docset: aem65
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
 
 # Migrare risorse e documenti AEM Forms{#migrate-aem-forms-assets-and-documents}
 
-L&#39;utilità di migrazione converte le [risorse Forms adattive](../../forms/using/introduction-forms-authoring.md), le [configurazioni cloud](/help/sites-developing/extending-cloud-config.md) e le [risorse Gestione corrispondenza](/help/forms/using/cm-overview.md) dal formato utilizzato nelle versioni precedenti al formato utilizzato in Adobe Experience Manager (AEM) 6.5 Forms. Quando si esegue l&#39;utilità di migrazione, viene eseguita la migrazione dei seguenti elementi:
+L&#39;utilità di migrazione converte le [risorse Forms adattive](../../forms/using/introduction-forms-authoring.md), [configurazioni cloud](/help/sites-developing/extending-cloud-config.md) e [risorse Gestione corrispondenza](/help/forms/using/cm-overview.md) dal formato utilizzato nelle versioni precedenti al formato utilizzato in Adobe Experience Manager (AEM) 6.5 LTS Forms. Quando si esegue l&#39;utilità di migrazione, viene eseguita la migrazione dei seguenti elementi:
 
 * Componenti personalizzati per moduli adattivi
 * Moduli adattivi e modelli per la gestione della corrispondenza
 * Configurazioni cloud
-* Risorse per la gestione della corrispondenza e i moduli adattivi
+* Risorse di Gestione della corrispondenza e Forms adattivi
 
 >[!NOTE]
 >
@@ -33,11 +28,11 @@ L&#39;utilità di migrazione converte le [risorse Forms adattive](../../forms/us
 
 ## Approccio alla migrazione {#approach-to-migration}
 
-È possibile [aggiornare](../../forms/using/upgrade.md) alla versione più recente di AEM Forms 6.5 da AEM Forms 6.4, 6.3 o 6.2 o da una nuova installazione. A seconda che sia stata aggiornata l&#39;installazione precedente o sia stata eseguita una nuova installazione, è necessario eseguire una delle operazioni seguenti:
+È possibile [aggiornare](../../forms/using/upgrade.md) a [AEM Forms 6.5 LTS da AEM Forms 6.5.22.0](/help/forms/using/upgrade-forms-osgi.md). A seconda che sia stata aggiornata l&#39;installazione precedente o sia stata eseguita una nuova installazione, è necessario eseguire una delle operazioni seguenti:
 
 **Se è presente un aggiornamento sul posto**
 
-Se hai eseguito un aggiornamento sul posto, l’istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per Gestione corrispondenza)
+Se hai eseguito un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), l&#39;istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per la gestione della corrispondenza).
 
 È quindi necessario aggiornare le risorse e i documenti [eseguendo l&#39;utilità di migrazione](#runningmigrationutility).
 
@@ -62,7 +57,7 @@ Per le risorse di Gestione della corrispondenza:
 * Lo stato Pronto per la pubblicazione è diventato obsoleto a partire da AEM 6.1 Forms, quindi tutte le risorse nello stato Pronto per la pubblicazione sono passate allo stato Modificato.
 * Poiché l’interfaccia utente di è stata aggiornata in AEM Forms 6.3, anche i passaggi per eseguire le personalizzazioni sono diversi. Ripristina la personalizzazione se esegui la migrazione da una versione precedente alla 6.3.
 * I frammenti di layout vengono spostati da `/content/apps/cm/layouts/fragmentlayouts/1001` a `/content/apps/cm/modules/fragmentlayouts`. Il riferimento del dizionario dati nelle risorse visualizza il percorso del dizionario dati anziché il nome.
-* Eventuali spazi di tabulazione utilizzati per l&#39;allineamento nei moduli di testo devono essere riregolati. Per ulteriori informazioni, vedere [Gestione della corrispondenza - Utilizzo della spaziatura tra le schede per la disposizione del testo](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
+* Eventuali spazi di tabulazione utilizzati per l&#39;allineamento nei moduli di testo devono essere riregolati. <!--For more information, see [Correspondence Management - Using tab spacing for arranging text](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)-->.
 * Le configurazioni del compositore risorse vengono modificate nelle configurazioni di Gestione della corrispondenza.
 * Assets viene spostato in cartelle con nomi quali Testo esistente ed Elenco esistente.
 

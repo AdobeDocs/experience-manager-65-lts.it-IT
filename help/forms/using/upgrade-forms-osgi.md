@@ -1,45 +1,25 @@
 ---
-title: Aggiornamento ad AEM 6.5 Forms su OSGi
-description: È possibile eseguire un aggiornamento diretto da AEM 6.1 Forms, AEM 6.2 Forms e LiveCycle ES4 SP1 ad AEM 6.3 Forms.
+title: Aggiornamento ad AEM 6.5 Forms LTS su OSGi
+description: È possibile eseguire un aggiornamento diretto da AEM 6.5.22.0 Forms a AEM 6.5 Forms LTS.
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: installing
-geptopics: SG_AEMFORMS/categories/jee
-role: Admin,User
+role: Admin, User
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms,AEM Forms on OSGi, AEM Forms Upgrade
+feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '853'
 ht-degree: 1%
 
 ---
 
-# Aggiornamento ad AEM 6.5 Forms su OSGi {#upgrade-to-aem-forms-osgi}
+# Aggiornamento ad AEM 6.5 Forms LTS su OSGi {#upgrade-to-aem-forms-osgi}
 
-Puoi eseguire un aggiornamento diretto da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Forms.
+Per [eseguire l&#39;aggiornamento da AEM 6.5 a AEM 6.5 LTS](/help/sites-deploying/upgrade.md), eseguire l&#39;aggiornamento a AEM 6.5.22.0 Forms o versione successiva. È supportato un aggiornamento diretto da AEM 6.5.22.0 a AEM 6.5 Forms LTS.
 
-Il percorso di aggiornamento diretto da **AEM 6.0 Forms, AEM 6.1 Forms** e **AEM 6.2 Forms** a AEM 6.5 Forms non è disponibile. Esegui un [aggiornamento intermedio a AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [aggiornamento a AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html) o [aggiornamento a AEM 6.4 Forms](/help/forms/using/upgrade.md) e quindi aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Forms.
+Se utilizzi AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms, AEM 6.3 Forms, AEM 6.4 Forms o AEM 6.5 Forms, non è disponibile un aggiornamento diretto a AEM 6.5 Forms LTS. Per i percorsi di aggiornamento dettagliati, consulta la documentazione sui [percorsi di aggiornamento](/help/forms/using/upgrade.md).
 
-Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Forms, effettua le seguenti operazioni:
-
-1. Aggiorna l’istanza AEM esistente ad AEM 6.5. I passaggi sono elencati di seguito:
-
-   1. Installa il service pack e le patch più recenti per AEM 6.3 Forms o AEM 6.4 Forms. Per informazioni dettagliate, vedere [AEM Sustenance Hub](https://helpx.adobe.com/it/experience-manager/aem-releases-updates.html).
-   1. Prepara l’istanza di origine per l’aggiornamento. Per i passaggi dettagliati, vedi [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md).
-   1. Scarica [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software).
-   1. **(solo installazioni basate su Unix/Linux)** Se si utilizza UNIX o Linux come sistema operativo sottostante, aprire la finestra del terminale, passare alla cartella contenente crx-quickstart ed eseguire il comando seguente:
-
-      `chmod -R 755 ../crx-quickstart`
-
-   1. Aggiorna l’istanza di AEM ad AEM 6.3. Per istruzioni dettagliate, vedere [Aggiornamento ad AEM 6.5](/help/sites-deploying/upgrade.md).
-
-      Prima di continuare con i passaggi successivi, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file &lt;crx-repository>/error.log.
-
-      >[!NOTE]
-      >
-      >Quando il server è in esecuzione, alcuni bundle AEM Forms rimangono in stato di installazione. Il numero di bundle può variare per ogni installazione. Puoi ignorare lo stato di questi bundle. I bundle sono elencati in https://&#39;[server]:[porta]&#39;/system/console/.
+Dopo l&#39;aggiornamento al service pack AEM Forms 6.5.22.0, eseguire la procedura seguente per eseguire l&#39;aggiornamento ad AEM 6.5 LTS Forms:
 
 1. Installa il pacchetto del componente aggiuntivo AEM Forms. I passaggi sono elencati di seguito:
 
@@ -49,20 +29,25 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
       1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
       1. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
    1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
+   1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
    1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
    1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-      Puoi scaricare il pacchetto anche utilizzando il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+      Puoi scaricare il pacchetto anche utilizzando il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
-      >[!NOTE]
-      >
-      >Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file &lt;crx-repository>/error.log e che il registro sia stabile. Inoltre, alcuni pacchetti possono rimanere nello stato di installazione. Puoi ignorare lo stato di questi pacchetti.
+      Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file &lt;crx-repository>/error.log e che il registro sia stabile. Inoltre, alcuni pacchetti possono rimanere nello stato di installazione. Puoi ignorare lo stato di questi pacchetti.
+
+
+      **Riavviare l&#39;istanza di AEM con i seguenti parametri della riga di comando JVM aggiuntivi**:
+      `--add-opens java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED`
+
+      Se il server viene avviato tramite uno script o un servizio, aggiornarlo di conseguenza in modo da includere quanto riportato sopra, in modo che siano effettivi anche dopo i riavvii successivi.
 
 1. Riavvia l’istanza di AEM.
 
    >[!NOTE]
    >
-   Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Eseguire attività successive all&#39;installazione.
 
@@ -108,3 +93,7 @@ Per effettuare l’aggiornamento da AEM 6.3 Forms o AEM 6.4 Forms a AEM 6.5 Form
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
+
+   >[!NOTE]
+   >
+   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se esegui l’aggiornamento da Forms 6.3 a AEM 6.5 Forms, utilizza i percorsi modificati per la personalizzazione che crei nuovamente. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
