@@ -1,16 +1,11 @@
 ---
 title: Guida introduttiva allo sviluppo per AEM Sites - Esercitazione WKND
 description: Scopri come creare un’istanza AEM. Ulteriori informazioni sulla piattaforma e i componenti e sugli strumenti di sviluppo e personalizzazione.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: introduction
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eac6c640-1c00-4fd9-9858-50fa2a0ea1ef
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: fa066f9b822f1d5883e79610b239b13224a62fe0
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 80%

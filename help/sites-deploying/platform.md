@@ -1,21 +1,16 @@
 ---
 title: Introduzione alla piattaforma AEM
-description: Scopri la piattaforma AEM e i suoi componenti più importanti, tra cui l’installazione e la distribuzione di Adobe Experience Manager 6.5 e la relativa architettura, inclusa l’implementazione cloud di Adobe Managed Services.
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: platform
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
+description: Scopri la piattaforma AEM e i suoi componenti più importanti, inclusa l’installazione e la distribuzione di Adobe Experience Manager 6.5 LTS, nonché la relativa architettura, inclusa la distribuzione cloud di Adobe Managed Services.
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Architect
 hide: true
 hidefromtoc: true
 exl-id: c9ea613d-f1d1-49be-bd52-95d489442f46
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 4666e698b05510e2ed90995f7e7098e7f8d860da
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 4%
+source-wordcount: '777'
+ht-degree: 1%
 
 ---
 

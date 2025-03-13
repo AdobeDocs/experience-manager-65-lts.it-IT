@@ -1,18 +1,14 @@
 ---
 title: Introduzione ad AEM Forms
-description: Utilizza questa guida AEM 6.5 per creare, gestire, pubblicare e aggiornare moduli digitali. Trova le guide all’installazione, l’aggiornamento e la configurazione di tali moduli e scopri come creare moduli adattivi.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
-docset: aem65
+description: Utilizza questa guida AEM 6.5 LTS per creare, gestire, pubblicare e aggiornare moduli digitali. Trova le guide all’installazione, l’aggiornamento e la configurazione di tali moduli e scopri come creare moduli adattivi.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 15%
+source-wordcount: '951'
+ht-degree: 14%
 
 ---
 
