@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: b87199e70b4fefc345c86eabbe89054d4b240e95
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6217'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ In questa distribuzione, tutti i componenti sono necessari per una corretta impl
 
 ### Sistemi operativi {#operating-systems}
 
-Per un elenco dei sistemi operativi supportati per AEM 6, vedere la [pagina Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
+Per un elenco dei sistemi operativi supportati per AEM 6.5 LTS, vedere la [pagina Requisiti tecnici](/help/sites-deploying/technical-requirements.md).
 
 ### Ambienti {#environments}
 
@@ -649,7 +649,7 @@ Header set X-Content-Type-Options "nosniff"  env=jsonp_request
 Header setifempty Content-Type application/javascript env=jsonp_request
 ```
 
-#### Informativa sulla sicurezza dei contenuti {#content-security-policy}
+#### Criterio di sicurezza del contenuto {#content-security-policy}
 
 Le impostazioni predefinite di Dispatcher consentono di aprire Criteri sulla sicurezza dei contenuti, noti anche come CSP. Queste impostazioni consentono a una pagina di caricare risorse da tutti i domini soggetti ai criteri predefiniti della sandbox del browser.
 

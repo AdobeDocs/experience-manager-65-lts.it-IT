@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 96fdfc1f754358bc358595c10ba908a4aabce4af
+source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
 workflow-type: tm+mt
-source-wordcount: '6802'
+source-wordcount: '6798'
 ht-degree: 21%
 
 ---
@@ -1407,7 +1407,6 @@ ht-degree: 21%
          + [Pulizia revisioni](/help/sites-deploying/revision-cleanup.md)
          + [Query e indicizzazione Oak](/help/sites-deploying/queries-and-indexing.md)
          + [Eseguire AEM con TarMK Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
-         + [Supporto RDBMS in AEM](/help/sites-deploying/rdbms-support-in-aem.md)
          + [Indicizzazione tramite Oak-run Jar](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casi di utilizzo dell’indicizzazione Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Risoluzione dei problemi degli indici Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
