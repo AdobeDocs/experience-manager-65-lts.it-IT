@@ -1,13 +1,14 @@
 ---
-title: Domande frequenti
+title: Domande frequenti (FAQ)
 description: Domande frequenti su AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e9f8f59fd068e9e296c20e1d930fdbe2f5d30b1
+exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
+source-git-commit: 3677c3921a7dd603afd251aebf4be67947fb1e02
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +22,7 @@ Adobe si impegna a fondo per la sicurezza e la stabilità delle applicazioni che
 
 ## Sono un cliente on-premise, cosa succede se non eseguo l’aggiornamento ad AEM 6.5 LTS?
 
-AEM 6.5 LTS include importanti aggiornamenti di sicurezza e stabilità, tra cui il supporto per Oracle Java 17. Anche se Adobe continuerà a supportare AEM 6.5 per almeno i prossimi 3 anni, si consiglia alle organizzazioni di iniziare a pianificare un aggiornamento a 6.5 LTS.
+AEM 6.5 LTS include importanti aggiornamenti di sicurezza e stabilità, tra cui il supporto per Oracle Java 17. Anche se Adobe continuerà a supportare AEM 6.5 per almeno i prossimi 2 anni, si consiglia alle organizzazioni di iniziare a pianificare un aggiornamento a 6.5 LTS.
 
 ## Verranno influenzate le personalizzazioni e le integrazioni esistenti?
 
