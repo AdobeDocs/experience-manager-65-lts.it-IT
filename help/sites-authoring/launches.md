@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
 exl-id: 22cfa2bc-04af-49e6-b9b1-51112c96ba23
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c759cb6830810b0b822cd66f8a29cbcf4f2851eb
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 77%
+source-wordcount: '892'
+ht-degree: 69%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 77%
 
 I lanci consentono di creare in modo efficiente contenuti per una versione futura.
 
-Viene creato un lancio per consentire di apportare modifiche pronte per la pubblicazione futura (mantenendo le pagine correnti). Dopo aver modificato e aggiornato le pagine di lancio, promuovile di nuovo alla sorgente, quindi attiva le pagine sorgente (livello superiore). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
+Viene creato un *lancio* per consentire di apportare modifiche in preparazione alla pubblicazione futura, mantenendo al contempo le pagine correnti. Ciò significa che stai modificando effettivamente due versioni contemporaneamente: pagine attualmente pubblicate e una versione di tali pagine, da pubblicare in futuro. Una volta arrivato questo momento, puoi sostituire le pagine originali e pubblicare la nuova versione.
+
+Hai creato un *lancio*, quindi dopo aver modificato e aggiornato le tue *pagine di lancio* le hai *promosse* di nuovo al *Source*. Puoi quindi attivare queste *pagine Source* (livello principale). La promozione duplica il contenuto del lancio nelle pagine sorgente e può essere eseguita manualmente o automaticamente (a seconda dei campi impostati durante la creazione e la modifica del lancio).
 
 Ad esempio, le pagine di prodotti stagionali del tuo negozio online vengono aggiornate trimestralmente in modo che i prodotti in questione siano in linea con la stagione corrente. Per prepararti al prossimo aggiornamento trimestrale, puoi creare un lancio delle pagine web appropriate. Nel corso del trimestre, nella copia del lancio vengono accumulate le seguenti modifiche:
 
