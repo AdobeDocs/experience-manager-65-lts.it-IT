@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2147'
 ht-degree: 8%
 
 ---
@@ -83,7 +83,7 @@ Per definire il nodo nelle cartelle di origine dei pacchetti di contenuti, atten
 
 ## Configurazione del servizio di notifica e-mail del flusso di lavoro {#configuring-the-workflow-email-notification-service}
 
-Quando ricevi le notifiche e-mail del flusso di lavoro, sia l’indirizzo e-mail da che il prefisso dell’URL host vengono impostati sui valori predefiniti. È possibile modificare questi valori configurando il servizio di notifica e-mail del flusso di lavoro CQ **Day** nella console Web. In tal caso, si consiglia di mantenere la modifica nell’archivio.
+Quando ricevi le notifiche e-mail del flusso di lavoro, sia l’indirizzo e-mail da che il prefisso dell’URL host vengono impostati sui valori predefiniti. È possibile modificare questi valori configurando il servizio di notifica e-mail del flusso di lavoro CQ **Day** nella console Web. In questo caso, devi rendere persistente la modifica nell’archivio.
 
 Nella console Web la configurazione predefinita è la seguente:
 
