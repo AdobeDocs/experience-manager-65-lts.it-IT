@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
 exl-id: 77f797c8-d8ed-42ea-ad5f-988d976e0ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7e1d05c2c6bda15632d49aaecfd931238ae25e79
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 63%
+ht-degree: 57%
 
 ---
 
@@ -48,7 +48,7 @@ Per gli argomenti headless sono disponibili i seguenti Percorsi di documentazion
 |---|---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | Scopri le tecnologie headless, cosa apportano all’esperienza utente, come AEM supporta i modelli headless e come implementare un progetto di sviluppo headless dalla A alla Z. | Sviluppatori |
 | [Percorso di traduzione headless](/help/journey-headless/translation/overview.md) | Scopri le tecnologie headless, il motivo per cui potrebbero essere utilizzate nel progetto e come creare e aggiornare progetti di traduzione in AEM dalla A alla Z. | Specialisti della traduzione |
-| [Percorso per authoring headless](/help/journey-headless/author/overview.md) | Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless. | Architetti |
-| [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager as a Cloud Service e per vedere come modellare i contenuti per il tuo progetto. | Creatori e autori di contenuti |
+| [Percorso per architetto headless](/help/journey-headless/architect/overview.md) | Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless. | Architetti |
+| [Percorso per authoring headless](/help/journey-headless/author/overview.md) | Inizia qui per un’introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager as a Cloud Service e per vedere come creare contenuti per il tuo progetto. | Creatori e autori di contenuti |
 
 Rimani sintonizzato per [i prossimi percorsi che includeranno ruoli aggiuntivi.](/help/journey-documentation/home.md#journeys)
