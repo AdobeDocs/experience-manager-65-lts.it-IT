@@ -1,5 +1,5 @@
 ---
-title: Configurazione degli archivi dei nodi e dei dati in AEM 6
+title: Configurazione degli archivi dei nodi e dei dati in AEM 6.5 LTS
 description: Scopri come configurare archivi di nodi e archivi di dati e come eseguire la raccolta di rifiuti dell’archivio dati.
 content-type: reference
 topic-tags: deploying
@@ -10,14 +10,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
 
-# Configurazione degli archivi dei nodi e dei dati in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configurazione degli archivi dei nodi e dei dati in AEM 6.5 LTS{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introduzione {#introduction}
 
@@ -46,19 +46,10 @@ Per configurare sia l’archivio nodi che l’archivio dati, effettua le seguent
 
 ## Configurazioni archivio nodi {#node-store-configurations}
 
->[!CAUTION]
->
->Le versioni più recenti di Oak utilizzano un nuovo schema di denominazione e un nuovo formato per i file di configurazione OSGi. Il nuovo schema di denominazione richiede che il file di configurazione sia denominato **.config** e che il nuovo formato richieda la digitazione dei valori. Per informazioni dettagliate, vedere [Modello di provisioning Apache Sling e Apache SlingStart - Formato configurazione predefinito](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
->
->Se esegui l&#39;aggiornamento da una versione precedente di Oak, accertati di eseguire prima un backup della cartella `crx-quickstart/install`. Dopo l&#39;aggiornamento, ripristinare il contenuto della cartella nell&#39;installazione aggiornata e modificare l&#39;estensione dei file di configurazione da **.cfg** a **.config**.
-
 ### Archivio nodi segmento {#segment-node-store}
 
-L’archivio dei nodi di segmento è la base dell’implementazione TarMK di Adobe in AEM6. Utilizza il PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` per la configurazione.
+L’archivio dei nodi di segmento è la base dell’implementazione TarMK di Adobe in AEM 6.5 LTS. Utilizza il PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` per la configurazione.
 
->[!CAUTION]
->
->Il PID per l&#39;archivio dei nodi di segmento è stato modificato da `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` di AEM 6 a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Assicurati di apportare le regolazioni di configurazione necessarie per riflettere questa modifica.
 
 Puoi configurare le seguenti opzioni:
 
@@ -86,7 +77,7 @@ L’archivio dei nodi di documento è la base dell’implementazione MongoMK di 
 
 * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necessario per connettersi al database Mongo. Il valore predefinito è `mongodb://localhost:27017`
 
-* `db`: nome del database Mongo. Il nome predefinito del database è **Oak** ``. However, new AEM 6 installations use **aem-author** ``.
+* `db`: nome del database Mongo. Il valore predefinito è **aem-author**.
 
 * `cache`: dimensione della cache in MB. Viene distribuito tra le varie cache utilizzate in DocumentNodeStore. Il valore predefinito è `256`
 
@@ -143,9 +134,9 @@ AEM può essere configurato per archiviare i dati nel servizio di archiviazione 
 
 >[!NOTE]
 >
->AEM 6.5 supporta la memorizzazione di dati in Amazon S3, tuttavia il supporto non è esteso alla memorizzazione di dati in altre piattaforme, i cui fornitori possono disporre di implementazioni proprie delle API S3 di Amazon.
+>AEM 6.5 LTS supporta la memorizzazione di dati in Amazon S3, tuttavia il supporto non è esteso alla memorizzazione di dati in altre piattaforme, i cui fornitori possono avere le proprie implementazioni delle API S3 di Amazon.
 
-Per abilitare la funzionalità di archiviazione dati di S3, è necessario scaricare e installare un feature pack contenente il connettore S3 Datastore. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e scarica la versione più recente dalle versioni 1.10.x del feature pack (ad esempio, com.adobe.granite.oak.s3connector-1.10.0.zip). È inoltre necessario scaricare e installare il service pack di AEM più recente come elencato nella pagina [Note sulla versione di AEM 6.5](/help/release-notes/release-notes.md).
+Per abilitare la funzionalità di archiviazione dati di S3, è necessario scaricare e installare un feature pack contenente il connettore S3 Datastore. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e scarica la versione più recente dalle versioni 1.60.x del feature pack (ad esempio, com.adobe.granite.oak.s3connector-1.60.2.zip). È inoltre necessario scaricare e installare il service pack di AEM più recente come elencato nella pagina [Note sulla versione di AEM 6.5 LTS](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
@@ -189,9 +180,9 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 1. Modifica il file e aggiungi le opzioni di configurazione richieste dalla configurazione.
 1. Avvia AEM.
 
-## Aggiornamento a una nuova versione del connettore 1.10.x S3 {#upgrading-to-a-new-version-of-the-s-connector}
+## Aggiornamento a una nuova versione del connettore 1.60.x S3 {#upgrading-to-a-new-version-of-the-s-connector}
 
-Per effettuare l’aggiornamento a una nuova versione del connettore 1.10.x S3 (ad esempio, da 1.10.0 a 1.10.4), effettua le seguenti operazioni:
+Per effettuare l’aggiornamento a una nuova versione del connettore 1.60.x S3, effettua le seguenti operazioni:
 
 1. Arresta l’istanza di AEM.
 
@@ -205,7 +196,7 @@ Per effettuare l’aggiornamento a una nuova versione del connettore 1.10.x S3 (
    >
    >I nomi di file sopra indicati sono utilizzati solo a scopo illustrativo.
 
-1. Scarica la versione più recente del feature pack 1.10.x dall&#39;[archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Scarica la versione più recente del feature pack 1.60.x da [Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/s3-connector/6-5-lts/com.adobe.granite.oak.s3connector-1.60.2.zip)
 1. Decomprimere il contenuto in una cartella separata, quindi passare a `jcr_root/libs/system/install/15`.
 1. Copia i file jar in **&lt;aem-install>**/crx-quickstart/install/15 nella cartella di installazione di AEM.
 1. Avvia AEM e controlla la funzionalità del connettore.
@@ -413,7 +404,7 @@ Per configurare la replica senza binari con S3, sono necessari i seguenti passag
 
 AEM può essere configurato per archiviare i dati nel servizio di archiviazione Azure di Microsoft®. Utilizza il PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` per la configurazione.
 
-Per abilitare la funzionalità dell’archivio dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore di Azure. Vai a [Archivio Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e scarica la versione più recente dalle versioni 1.6.x del pacchetto di funzionalità (ad esempio, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Per abilitare la funzionalità dell’archivio dati di Azure, è necessario scaricare e installare un feature pack contenente il connettore di Azure. Vai alla [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/azure-connector/6-5-lts/com.adobe.granite.oak.azureblobconnector-1.9.16.zip) e scarica la versione più recente dalle versioni 1.9.x del feature pack (ad esempio, com.adobe.granite.oak.azureblobconnector-1.9.16.zip).
 
 >[!NOTE]
 >

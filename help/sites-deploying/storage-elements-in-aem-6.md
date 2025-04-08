@@ -1,6 +1,6 @@
 ---
-title: Elementi di archiviazione in AEM 6.5
-description: Scopri le implementazioni di archiviazione dei nodi disponibili in AEM 6.5 e come gestire l’archivio.
+title: Elementi di archiviazione in AEM 6.5 LTS
+description: Scopri le implementazioni di archiviazione dei nodi disponibili in AEM 6.5 LTS e come gestire l’archivio.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,35 +10,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: e51842b5-fa91-42d2-a490-5a7e867dada7
-source-git-commit: 3cc47de71aec7e110b55f511ceaa0d314a1369ef
+source-git-commit: 0e60c406a9cf1e5fd13ddc09fd85d2a2f8a410f6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# Elementi di archiviazione in AEM 6.5{#storage-elements-in-aem}
+# Elementi di archiviazione in AEM 6.5 LTS{#storage-elements-in-aem}
 
 Il presente articolo riguarda:
 
-* [Panoramica sullo storage in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
+* [Panoramica dello storage in AEM 6.5 LTS](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Gestione dell’archivio](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
 
-## Panoramica sullo storage in AEM 6 {#overview-of-storage-in-aem}
+## Panoramica dello storage in AEM 6.5 LTS {#overview-of-storage-in-aem}
 
-Una delle modifiche più importanti in AEM 6 sono le innovazioni a livello di archivio.
+Una delle modifiche più importanti in AEM 6.5 LTS sono le innovazioni a livello di archivio.
 
-Attualmente, in AEM6 sono disponibili due implementazioni di archiviazione dei nodi: archiviazione Tar e archiviazione MongoDB.
+Attualmente, in AEM 6.5 LTS sono disponibili due implementazioni di archiviazione dei nodi: archiviazione Tar e archiviazione MongoDB.
 
 ### Archiviazione Tar {#tar-storage}
 
 #### Esecuzione di un’istanza AEM appena installata con archiviazione Tar {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
->[!CAUTION]
->
->Il PID per l’archivio dei nodi di segmento è stato modificato da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService nelle versioni precedenti di AEM 6 in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Assicurati che vengano apportate le necessarie regolazioni di configurazione in modo che le modifiche vengano applicate.
-
-Per impostazione predefinita, AEM 6 utilizza l’archiviazione Tar per memorizzare nodi e binari, utilizzando le opzioni di configurazione predefinite. È possibile configurare manualmente le impostazioni di archiviazione eseguendo le operazioni seguenti:
+Per impostazione predefinita, AEM 6.5 LTS utilizza lo storage Tar per memorizzare nodi e binari, utilizzando le opzioni di configurazione predefinite. È possibile configurare manualmente le impostazioni di archiviazione eseguendo le operazioni seguenti:
 
 1. Scarica il file jar quickstart di AEM 6.5 LTS e inseriscilo in una nuova cartella.
 1. Decomprimi AEM eseguendo:
@@ -47,7 +43,7 @@ Per impostazione predefinita, AEM 6 utilizza l’archiviazione Tar per memorizza
 
 1. Creare una cartella denominata `crx-quickstart\install` nella directory di installazione.
 
-1. Creare un file denominato `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` nella cartella appena creata.
+1. Creare un file denominato `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` nella cartella appena creata.
 
 1. Modifica il file e imposta le opzioni di configurazione. Per l’archivio dei nodi di segmento, che è la base dell’implementazione dell’archiviazione Tar di AEM, sono disponibili le seguenti opzioni:
 
@@ -57,6 +53,10 @@ Per impostazione predefinita, AEM 6 utilizza l’archiviazione Tar per memorizza
 1. Avvia AEM.
 
 ### Archiviazione Mongo {#mongo-storage}
+
+>[!NOTE]
+>
+>La versione minima supportata di Mongo è Mongo 6.
 
 #### Esecuzione di un’istanza AEM appena installata con Mongo Storage {#running-a-freshly-installed-aem-instance-with-mongo-storage}
 
@@ -71,12 +71,12 @@ AEM 6.5 LTS può essere configurato per l’esecuzione con lo storage MongoDB se
 1. Creare una cartella denominata `crx-quickstart\install` nella directory di installazione.
 1. Configurare l&#39;archivio nodi creando un file di configurazione con il nome della configurazione da utilizzare nella directory `crx-quickstart\install`.
 
-   L&#39;archivio dei nodi dei documenti (che è la base per l&#39;implementazione dell&#39;archiviazione MongoDB di AEM) utilizza un file denominato `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   L&#39;archivio dei nodi dei documenti (che è la base per l&#39;implementazione dell&#39;archiviazione MongoDB di AEM) utilizza un file denominato `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
 1. Modifica il file e imposta le opzioni di configurazione. Sono disponibili le seguenti opzioni:
 
    * `mongouri`: [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) necessario per connettersi al database Mongo. Il valore predefinito è `mongodb://localhost:27017`
-   * `db`: nome del database Mongo. Per impostazione predefinita, le nuove installazioni di AEM 6 utilizzano **aem-author** come nome del database.
+   * `db`: nome del database Mongo. Per impostazione predefinita, le nuove installazioni di AEM 6.5 LTS utilizzano **aem-author** come nome del database.
    * `cache`: dimensione della cache in megabyte. Questa dimensione della cache viene distribuita tra le varie cache utilizzate in DocumentNodeStore. Il valore predefinito è 256.
    * `changesSize`: dimensione in MB della raccolta limitata utilizzata in Mongo per memorizzare nella cache l&#39;output diff. Il valore predefinito è 256.
    * `customBlobStore`: valore booleano che indica l&#39;utilizzo di un archivio dati personalizzato. Il valore predefinito è false.
