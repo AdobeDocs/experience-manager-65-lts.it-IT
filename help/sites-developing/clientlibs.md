@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -145,7 +145,7 @@ Per rendere accessibili le librerie client in `/apps`, viene utilizzato un servl
 
 Ad esempio:
 
-* Hai una libreria client in `/apps/myproject/clientlibs/foo`
+* Hai una libreria client in `/apps/myprojects/clientlibs/foo`
 * È presente un&#39;immagine statica in `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
 Quindi impostare la proprietà `allowProxy` su `foo` su true.
