@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1221'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,7 @@ Esistono diversi motivi per cui la replica non riesce. Questo articolo spiega l�
 
 **Le repliche vengono attivate quando si fa clic sul pulsante Attiva? Se NON lo è, eseguire le operazioni seguenti:**
 
-1. Vai a /crx/explorer e accedi come amministratore.
-1. Apri &quot;Esplora contenuti&quot;
+1. Vai a /crx/de/index.jsp e accedi come amministratore.
 1. Verifica se esiste un nodo /bin/replicate o /bin/replicate.json. Se il nodo esiste, eliminalo e salvalo.
 
 **Le repliche vengono messe in coda nelle code dell&#39;agente di replica?**
@@ -76,12 +75,12 @@ Seleziona questa opzione andando su /etc/replication/agents.author.html, quindi 
 A volte è utile impostare tutte le registrazioni di replica da aggiungere in un file di registro separato a livello di DEBUG. Per effettuare questo collegamento:
 
 1. Vai a https://host:port/system/console/configMgr e accedi come amministratore.
-1. Trovare la factory del logger di registrazione Apache Sling e creare un&#39;istanza facendo clic sul pulsante **+** a destra della configurazione di fabbrica. Verrà creato un nuovo logger di registrazione.
+1. Trovare la configurazione del logger di registrazione Sling Apache e creare un&#39;istanza facendo clic sul pulsante **+** a destra della configurazione di fabbrica. Verrà creato un nuovo logger di registrazione.
 1. Imposta la configurazione come segue:
 
    * Livello registro: DEBUG
-   * Percorso file di registro: logs/replication.log
-   * Categorie: com.day.cq.replication
+   * File di registro: logs/replication.log
+   * Logger: com.day.cq.replication
 
 1. Se pensi che il problema sia correlato in qualche modo a sling eventing/jobs, puoi anche aggiungere questo pacchetto Java™ nelle categorie:org.apache.sling.event
 

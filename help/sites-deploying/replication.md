@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3287'
 ht-degree: 2%
 
 ---
@@ -60,18 +60,26 @@ La replica inversa utilizza un agente nell’ambiente di pubblicazione che fa ri
 
 ### Replica: funzioni pronte all’uso {#replication-out-of-the-box}
 
-Il sito web we-retail incluso in un’installazione standard di AEM può essere utilizzato per illustrare la replica.
+Crea una pagina seguendo [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md).
 
 Per seguire questo esempio e utilizzare gli agenti di replica predefiniti, [installa AEM](/help/sites-deploying/deploy.md) con:
 
+
 * ambiente di authoring sulla porta `4502`
 * ambiente di pubblicazione sulla porta `4503`
+
+Questa replica viene eseguita dall’ambiente di authoring in base a:
+
+* **Agente predefinito (pubblicazione)**
+Questo agente replica il contenuto nell’istanza Publish predefinita.
+I dettagli di questo (configurazione e registri) sono accessibili dalla console Strumenti dell’ambiente di authoring; oppure:
+  `http://localhost:4502/etc/replication/agents.author/publish.html`.
 
 >[!NOTE]
 >
 >Attivato per impostazione predefinita:
 >
->* Agenti per creazione: agente predefinito (pubblicazione)
+>* Agenti per creazione: agente predefinito (pubblicazione). In caso contrario, assicurati di abilitarlo prima di procedere.
 >
 >Effettivamente disabilitato per impostazione predefinita (a partire da AEM 6.1):
 >
@@ -84,19 +92,13 @@ Per seguire questo esempio e utilizzare gli agenti di replica predefiniti, [inst
 #### Replica (da autore a pubblicazione) {#replication-author-to-publish}
 
 1. Passa alla pagina di supporto nell’ambiente di authoring.
-   **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
+   **https://localhost:4502/content/site1/test.html** `<pi>`
 1. Modifica la pagina in modo da poter aggiungere nuovo testo.
 1. **Attiva pagina** per pubblicare le modifiche.
 1. Apri la pagina di supporto nell’ambiente di pubblicazione:
-   **https://localhost:4503/content/we-retail/us/en/experience.html**
+   **https://localhost:4503/content/site1/test.html**
 1. Ora puoi vedere le modifiche inserite al momento dell’authoring.
 
-Questa replica viene eseguita dall’ambiente di authoring in base a:
-
-* **Agente predefinito (pubblicazione)**
-Questo agente replica il contenuto nell’istanza Publish predefinita.
-I dettagli di questo (configurazione e registri) sono accessibili dalla console Strumenti dell’ambiente di authoring; oppure:
-  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Agenti di replica - Pronti all’uso {#replication-agents-out-of-the-box}
 
@@ -108,7 +110,7 @@ Utilizzato per replicare da Author a Publish.
 * Svuotamento Dispatcher
 Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance).
 
-* [Replica inversa](#reverse-replication-publish-to-author)
+* [Replica inversa](#configuring-reverse-replication)
 Utilizzato per replicare da Publish a Author. La replica inversa non viene utilizzata per le funzioni di Communities, ad esempio forum, blog e commenti. Viene effettivamente disattivata in quanto la casella in uscita non è abilitata. L’utilizzo della replica inversa richiederebbe una configurazione personalizzata.
 
 * Agente statico
