@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2323'
 ht-degree: 1%
 
 ---
@@ -80,9 +80,9 @@ Per ogni istanza del cluster, è possibile visualizzare diverse proprietà relat
 * Argomenti del processo per i quali l&#39;istanza è registrata per l&#39;offload.
 * Gli argomenti del processo elaborati dall’istanza.
 
-1. Utilizzando l’interfaccia utente touch, fai clic sulla scheda Strumenti. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
-1. Nell&#39;area Operazioni Granite fare clic su Offload browser.
-1. Nel pannello di navigazione, fate clic su Browser topologia.
+1. Utilizzando l’interfaccia utente touch, fai clic sulla scheda Strumenti. ([http://localhost:4502/aem/start.html](http://localhost:4502/aem/start.html))
+1. Per visualizzare l&#39;opzione Offload, fare clic su Riquadro Offload nella sezione Deployment.
+1. Per visualizzare la topologia, fai clic su Topologia nella sezione Distribuzione.
 
    Vengono visualizzati i cluster che partecipano alla topologia.
 
@@ -100,7 +100,7 @@ Per ogni istanza del cluster, è possibile visualizzare diverse proprietà relat
 Per aprire la pagina Gestione topologia della console Web, attenersi alla procedura descritta di seguito.
 
 1. Apri la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
-1. Fai clic su Principale > Gestione topologia.
+1. Fai clic su Sling > Gestione topologia.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 

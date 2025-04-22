@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: bec8386db59691ae2d0346afc0cbd48fbc4890de
+source-git-commit: 3f644c8df73281bc35bd91a552f8e86aaae2dd4a
 workflow-type: tm+mt
-source-wordcount: '6800'
+source-wordcount: '6797'
 ht-degree: 22%
 
 ---
@@ -387,7 +387,7 @@ ht-degree: 22%
       + [Preparare le risorse per la traduzione](/help/assets/preparing-assets-for-translation.md)
       + [Scaricare risorse da Experience Manager](/help/assets/download-assets-from-aem.md)
       + [Lightbox](/help/assets/light-box.md)
-      + [Approfondimenti su Assets](/help/assets/asset-insights.md)
+      + [Approfondimenti sulle risorse](/help/assets/asset-insights.md)
       + [Abilitare gli approfondimenti sulle risorse tramite DTM](/help/assets/use-dtm-for-asset-insights.md)
       + [Configurare informazioni approfondite sulle risorse](/help/assets/configure-asset-insights.md)
       + [Archiviare ed estrarre le risorse](/help/assets/check-out-and-submit-assets.md)
@@ -1100,7 +1100,7 @@ ht-degree: 22%
          + [Arricchire i dati di prodotto con i contenuti associati](/help/commerce/cif/authoring/enrich-product-associated-content.md)
          + [Consigli per prodotti](/help/commerce/cif/authoring/product-recommendations.md)
       + Amministrazione {#administering}
-         + [Configurazione di più store](/help/commerce/cif/configuring/multi-store-setup.md)
+         + [Configurazione multi-store](/help/commerce/cif/configuring/multi-store-setup.md)
          + [Utilizzo di più modelli](/help/commerce/cif/configuring/multi-template-usage.md)
          + [Configurazione degli URL per SEO (Search Engine Optimization)](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [Opzioni di memorizzazione in cache](/help/commerce/cif/configuring/caching.md)
@@ -1238,7 +1238,7 @@ ht-degree: 22%
                + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [Come effettuare il Go Live con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
                + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
-            + Percorso Architect di contenuti headless {#architect}
+            + Percorso di architettura dei contenuti headless {#architect}
                + [Panoramica del Percorso Architect di contenuti AEM headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
                + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
                + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
@@ -1432,7 +1432,6 @@ ht-degree: 22%
          + [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md)
          + [Guida alle prestazioni di Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Articoli pratici sulla configurazione](/help/sites-deploying/ht-deploy.md)
-         + [Configurazione della console web](/help/sites-deploying/configuring-web-console.md)
       + Aggiornamento a AEM 6.5 LTS {#upgrading}
          + [Aggiornamento a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
          + [Pianificazione dell&#39;aggiornamento](/help/sites-deploying/upgrade-planning.md)
