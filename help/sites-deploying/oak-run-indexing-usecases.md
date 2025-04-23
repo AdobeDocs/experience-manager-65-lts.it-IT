@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a7a8a20a-e513-43df-80b7-1e6daf957f20
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '1380'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Oak-run supporta l’indicizzazione dei casi d’uso sulla riga di comando senza
 
 I vantaggi principali dell’utilizzo dell’approccio del comando dell’indice oak-run.jar per la gestione degli indici di Oak sono:
 
-1. Il comando Oak-run index fornisce un nuovo set di strumenti di indicizzazione per AEM 6.4.
+1. Il comando Oak-run index fornisce un nuovo set di strumenti di indicizzazione a partire da AEM 6.4.
 1. L’esecuzione di Oak riduce il tempo di reindicizzazione, riducendo i tempi di reindicizzazione su archivi più grandi.
 1. Oak-run riduce il consumo di risorse durante la reindicizzazione in AEM, con conseguente miglioramento generale delle prestazioni del sistema.
 1. Oak-run fornisce la reindicizzazione fuori banda, supportando situazioni in cui la produzione deve essere disponibile e non può tollerare interventi di manutenzione o tempi di inattività altrimenti necessari per la reindicizzazione.

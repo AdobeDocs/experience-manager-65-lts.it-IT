@@ -10,7 +10,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Oak-run supporta tutti i casi di utilizzo dell’indicizzazione sulla riga di comando senza dover operare dal livello JMX. I vantaggi dell’approccio oak-run sono:
 
-1. È un nuovo set di strumenti di indicizzazione per AEM 6.4
+1. Si tratta di un nuovo set di strumenti di indicizzazione a partire da AEM 6.4
 1. Riduce il tempo di reindicizzazione, che influisce positivamente sui tempi di reindicizzazione su archivi più grandi
 1. Sta riducendo il consumo di risorse durante la reindicizzazione in AEM, il che si traduce in migliori prestazioni del sistema per altre attività di AEM
 1. Oak-run fornisce supporto out-of-band: se le condizioni di produzione non consentono di eseguire la reindicizzazione sulle istanze di produzione, è possibile utilizzare un ambiente clonato per la reindicizzazione al fine di evitare un impatto critico sulle prestazioni.
@@ -64,7 +64,7 @@ Questo diagramma è un albero decisionale per quando utilizzare i vari approcci 
 
 ### Pre-estrazione del testo per SegmentNodeStore e DocumentNodeStore {#textpre-extraction}
 
-[È possibile utilizzare la funzione di pre-estrazione del testo](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (già disponibile in AEM 6.3) per ridurre il tempo di reindicizzazione. La pre-estrazione del testo può essere utilizzata con tutti gli approcci di reindicizzazione.
+[Estrazione anticipata del testo](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (una funzionalità che esiste da AEM 6.3) può essere utilizzata per ridurre il tempo di reindicizzazione. La pre-estrazione del testo può essere utilizzata con tutti gli approcci di reindicizzazione.
 
 A seconda dell&#39;approccio di indicizzazione `oak-run.jar`, sono disponibili vari passaggi su entrambi i lati del passaggio Esegui reindicizzazione nel diagramma seguente.
 

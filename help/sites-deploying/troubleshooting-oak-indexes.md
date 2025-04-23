@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 6b5e576debcd3351e15837727d2bc777b0e0c6f2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ Un arresto forzato comporta la sospensione dell’indicizzazione asincrona da pa
 1. Attendi circa 45 minuti affinché AEM riprenda le normali operazioni di indicizzazione asincrona.
 
 ## Pool di thread sovraccaricato {#thread-pool-overloaded}
-
->[!NOTE]
->
->Per AEM 6.1, assicurati che sia installato [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it).
 
 In circostanze eccezionali, il pool di thread utilizzato per gestire l’indicizzazione asincrona potrebbe subire un sovraccarico. Per isolare il processo di indicizzazione, è possibile configurare un pool di thread per evitare che altri processi di AEM interferiscano con la capacità di Oak di indicizzare il contenuto in modo tempestivo. In questi casi, effettuare le seguenti operazioni:
 
