@@ -11,18 +11,16 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 13%
+source-wordcount: '5052'
+ht-degree: 16%
 
 ---
 
 # Ottimizzazione delle prestazioni {#performance-optimization}
 
 >[!NOTE]
->
->Per le linee guida generali sulle prestazioni, leggere la pagina [Linee guida sulle prestazioni](/help/sites-deploying/performance-guidelines.md).
 >
 >Per ulteriori informazioni sulla risoluzione dei problemi e sulla risoluzione dei problemi relativi alle prestazioni, vedere anche la [Struttura delle prestazioni](/help/sites-deploying/performance-tree.md).
 >
@@ -203,10 +201,6 @@ Alcune regole devono essere tenute presenti quando si ottimizzano le prestazioni
 
 Alcuni aspetti di AEM (e/o dell’archivio sottostante) possono essere configurati per ottimizzare le prestazioni. Di seguito sono riportati possibilità e suggerimenti. Prima di apportare modifiche, è necessario verificare se o come si utilizza la funzionalità in questione.
 
->[!NOTE]
->
->Vedi [Ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/configuring/configuring-performance.html).
-
 ### Indicizzazione di ricerca {#search-indexing}
 
 A partire da AEM 6.0, Adobe Experience Manager utilizza un’architettura di archivio basata su Oak.
@@ -224,6 +218,7 @@ Ad esempio, quando vengono caricate le immagini (o le risorse DAM in generale), 
 
 Il motore del flusso di lavoro utilizza le code dei processi Apache Sling per la gestione e la pianificazione dell’elaborazione degli elementi di lavoro. I seguenti servizi della coda processi sono stati creati per impostazione predefinita dalla factory del servizio Configurazione coda processi di Apache Sling per l’elaborazione dei processi del flusso di lavoro:
 
+<!-- TODO: Change the reference to 6.5 LTS javadocs -->
 * Coda del flusso di lavoro Granite: la maggior parte dei passaggi del flusso di lavoro, come quelli che elaborano le risorse DAM, utilizza il servizio Coda del flusso di lavoro Granite.
 * Granite Workflow External Process Job Queue (Coda processi esterni flusso di lavoro Granite): questo servizio viene utilizzato per particolari passaggi del flusso di lavoro esterno che in genere vengono utilizzati per contattare un sistema esterno e per il polling dei risultati. Ad esempio, il passaggio Processo di estrazione file multimediali di InDesign è implementato come processo esterno. Il motore del flusso di lavoro utilizza la coda esterna per l’elaborazione del polling. (Vedi [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
@@ -462,7 +457,6 @@ Eventuali ottimizzazioni effettuate devono essere verificate per garantire che:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Carica Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [InfraRED](https://www.infraredsoftware.com/)
 * [Profilo interattivo Java™](https://jiprof.sourceforge.net/)
 
 Dopo l&#39;ottimizzazione, ripetere la prova per confermare l&#39;impatto.
@@ -642,87 +636,3 @@ Per avere la certezza i file siano memorizzati in cache correttamente, attieniti
 
 * Verifica che i file abbiano sempre l’estensione corretta.
 * Evitare gli script di server di file generici, che hanno URL come `download.jsp?file=2214`. Per utilizzare gli URL contenenti la specifica del file, riscrivere lo script. Per l&#39;esempio precedente, la riscrittura è `download.2214.pdf`.
-
-## Prestazioni di backup {#backup-performance}
-
-Questa sezione presenta una serie di benchmark utilizzati per valutare le prestazioni dei backup AEM e gli effetti dell&#39;attività di backup sulle prestazioni delle applicazioni. I backup di AEM presentano un carico significativo sul sistema durante l’esecuzione e Adobe misura questo impatto e gli effetti delle impostazioni di ritardo del backup che tentano di modulare questi effetti. L&#39;obiettivo è quello di offrire alcuni dati di riferimento sulle prestazioni previste dei backup in configurazioni realistiche e quantità di dati di produzione, nonché di fornire indicazioni su come stimare i tempi di backup per i sistemi pianificati.
-
-### Ambiente di riferimento {#reference-environment}
-
-#### Sistema fisico {#physical-system}
-
-I risultati riportati in questo documento sono stati ottenuti da benchmark eseguiti in un ambiente di riferimento con la seguente configurazione. Questa configurazione è simile a un ambiente di produzione tipico in un centro dati:
-
-* HP ProLiant DL380 G6, 8 CPU x 2,533 GHz
-* Unità SCSI collegate seriali da 300 GB e 10.000 rpm
-* Controller RAID hardware; otto unità in un array RAID0+5
-* Immagine VMware CPU x 2 Intel Xeon® E5540 a 2,53 GHz
-* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
-* Istanza Autore singolo
-
-Il sottosistema del disco su questo server è veloce, rappresentativo di una configurazione RAID ad alte prestazioni che potrebbe essere utilizzata in un server di produzione. Le prestazioni di backup possono essere sensibili alle prestazioni del disco e i risultati in questo ambiente riflettono le prestazioni su una configurazione RAID veloce. L&#39;immagine VMWare è configurata in modo da avere un unico volume di dischi di grandi dimensioni che risiede fisicamente nello storage su disco locale, sull&#39;array RAID.
-
-La configurazione di AEM colloca l’archivio e l’archivio dati sullo stesso volume logico, insieme al sistema operativo e al software AEM. Anche la directory di destinazione per i backup risiede in questo file system logico.
-
-#### Volumi di dati {#data-volumes}
-
-La tabella seguente illustra le dimensioni dei volumi di dati utilizzati nei benchmark di backup. Il contenuto della linea di base iniziale viene prima installato, quindi vengono aggiunte ulteriori quantità note di dati per aumentare le dimensioni del contenuto di cui è stato eseguito il backup. I backup vengono creati con incrementi specifici per rappresentare un aumento significativo dei contenuti e di ciò che può essere prodotto in un giorno. La distribuzione dei contenuti (pagine, immagini, tag) si basa approssimativamente sulla composizione realistica delle risorse di produzione. Pagine, immagini e tag sono limitati a un massimo di 800 pagine figlie. Ogni pagina include i componenti Titolo, Flash, Testo/Immagine, Video, Presentazione, Modulo, Tabella, Cloud e Carosello. Le immagini vengono caricate da un pool di 400 file univoci da 37 KB a 594 KB.
-
-| Contenuto | Nodi | Pagine | Immagini | Tag |
-|---|---|---|---|---|
-| Installazione di base | 69.610 | 562 | 256 | 237 |
-| Contenuto ridotto per il backup incrementale |  | +100 | +2 | +2 |
-| Contenuti di grandi dimensioni per il backup completo |  | +10 000 | +100 | +100 |
-
-Il benchmark di backup viene ripetuto con i set di contenuti aggiuntivi aggiunti a ogni ripetizione.
-
-#### Scenari di benchmark {#benchmark-scenarios}
-
-I benchmark di backup coprono due scenari principali: i backup quando il sistema è sottoposto a un carico significativo dell&#39;applicazione e i backup quando il sistema è inattivo. Sebbene il consiglio generale sia quello di eseguire i backup quando AEM è il più inattivo possibile, ci sono situazioni in cui è necessario eseguire il backup quando il sistema è sotto carico.
-
-* **Stato inattivo** - I backup vengono eseguiti senza altre attività in AEM.
-* **In carico** - I backup vengono eseguiti mentre il carico del sistema è inferiore all&#39;80% dai processi online. Il ritardo del backup è variato per vedere l&#39;impatto sul carico.
-
-I tempi di backup e le dimensioni del backup risultante vengono ricavati dai registri del server AEM. In genere, si consiglia di pianificare i backup per i periodi di inattività di AEM, ad esempio di notte. Questo scenario è rappresentativo dell’approccio raccomandato.
-
-Il caricamento è costituito da pagine create, pagine eliminate, attraversamenti e query con la maggior parte del carico provenienti da attraversamenti di pagina e query. L&#39;aggiunta e la rimozione di troppe pagine aumentano continuamente le dimensioni dell&#39;area di lavoro e impediscono il completamento dei backup. La distribuzione del caricamento utilizzata dallo script è costituita dal 75% di attraversamenti pagina, dal 24% di query e dall’1% di creazioni di pagina (livello singolo senza pagine secondarie nidificate). Il picco medio delle transazioni al secondo in un sistema inattivo viene raggiunto con quattro thread simultanei, utilizzati durante il test dei backup sotto carico.
-
-L&#39;impatto del carico sulle prestazioni di backup può essere stimato dalla differenza tra le prestazioni con e senza questo carico dell&#39;applicazione. L&#39;impatto del backup sul throughput dell&#39;applicazione viene rilevato confrontando il throughput dello scenario in transazioni all&#39;ora con e senza backup simultanei in corso e con backup che operano con impostazioni di &quot;ritardo di backup&quot; diverse.
-
-* **Impostazione ritardo** - Per diversi scenari, anche l&#39;impostazione del ritardo di backup è stata modificata, utilizzando valori di 10 millisecondi (impostazione predefinita), 1 millisecondi e 0 millisecondi, per esplorare il modo in cui questa impostazione ha influito sulle prestazioni dei backup.
-* **Tipo di backup** - Tutti i backup sono backup esterni dell&#39;archivio effettuati in una directory di backup senza creare un file ZIP, tranne in un caso per il confronto in cui il comando tar è stato utilizzato direttamente. Poiché i backup incrementali non possono essere creati in un file zip o quando il backup completo precedente è un file zip, il metodo di directory di backup è il più utilizzato nelle situazioni di produzione.
-
-### Riepilogo dei risultati {#summary-of-results}
-
-#### Tempi e velocità effettiva di backup {#backup-time-and-throughput}
-
-Il risultato principale di questi benchmark consiste nel mostrare in che modo i tempi di backup variano in funzione del tipo di backup e della quantità complessiva di dati. Il grafico seguente mostra il tempo di backup ottenuto utilizzando la configurazione di backup predefinita, in funzione del numero totale di pagine.
-
-![chlimage_1-81](assets/chlimage_1-81.png)
-
-I tempi di backup su un’istanza inattiva sono abbastanza coerenti, con una media di 0,608 MB al secondo, indipendentemente dai backup completi o incrementali (vedi grafico di seguito). Il tempo di backup dipende semplicemente dalla quantità di dati di cui viene eseguito il backup. Il tempo necessario per completare un backup completo aumenta notevolmente con il numero totale di pagine. Anche il tempo necessario per completare un backup incrementale aumenta con il numero totale di pagine, ma a una velocità molto inferiore. Il tempo necessario per completare il backup incrementale è molto più breve a causa della quantità relativamente ridotta di dati di cui viene eseguito il backup.
-
-La dimensione del backup prodotto è il fattore determinante del tempo necessario per completare il backup. Il grafico seguente mostra il tempo impiegato in funzione delle dimensioni finali del backup.
-
-![chlimage_1-82](assets/chlimage_1-82.png)
-
-Questo grafico illustra come i backup sia incrementali che completi seguano un semplice schema di dimensioni rispetto al tempo che Adobe può misurare come throughput. I tempi di backup su un&#39;istanza inattiva sono abbastanza coerenti, con una media di 0,61 MB al secondo indipendentemente dai backup completi o incrementali nell&#39;ambiente di benchmark.
-
-#### Ritardo backup {#backup-delay}
-
-Il parametro relativo al ritardo del backup viene fornito per limitare la possibilità che i backup interferiscano con i carichi di lavoro di produzione. Il parametro specifica un tempo di attesa in millisecondi, che viene interrotto nell&#39;operazione di backup file per file. L’effetto complessivo dipende in parte dalle dimensioni dei file interessati. La misurazione delle prestazioni di backup in MB/sec consente di confrontare gli effetti del ritardo sul backup.
-
-* L&#39;esecuzione di un backup in concomitanza con il normale carico dell&#39;applicazione ha un impatto negativo sulla velocità effettiva del carico regolare.
-* L’impatto può essere lieve (fino al 5%) o significativo, causando una riduzione del throughput fino al 75%. Probabilmente dipende soprattutto dall’applicazione.
-* Il backup non è un carico gravoso per CPU, pertanto i carichi di lavoro di produzione ad uso intensivo di CPU sarebbero meno interessati da backup rispetto a quelli ad uso intensivo di I/O.
-
-![chlimage_1-83](assets/chlimage_1-83.png)
-
-Per un confronto, la velocità effettiva ottenuta utilizzando un backup del file system (&quot;tar&quot;) per eseguire il backup degli stessi file dell’archivio. Le prestazioni del tar sono paragonabili, ma leggermente superiori rispetto al backup con ritardo impostato su zero. Se si imposta anche un ritardo ridotto, la velocità effettiva del backup viene notevolmente ridotta e il ritardo predefinito di 10 millisecondi si traduce in una velocità effettiva notevolmente ridotta. In situazioni in cui i backup possono essere pianificati quando l&#39;utilizzo complessivo dell&#39;applicazione è basso o l&#39;applicazione può essere inattiva, ridurre il ritardo al di sotto del valore predefinito per consentire al backup di procedere più rapidamente.
-
-L&#39;impatto effettivo della velocità effettiva delle applicazioni di un backup continuo dipende dai dettagli dell&#39;applicazione e dell&#39;infrastruttura. La scelta del valore di ritardo deve essere effettuata mediante l&#39;analisi empirica dell&#39;applicazione, ma deve essere scelta nel modo più piccolo possibile, in modo che i backup possano essere completati il più rapidamente possibile. Poiché esiste solo una debole correlazione tra la scelta del valore del ritardo e l&#39;impatto sulla velocità effettiva dell&#39;applicazione, la scelta del ritardo dovrebbe favorire tempi di backup complessivi più brevi per ridurre al minimo l&#39;impatto complessivo dei backup. Un backup che richiede otto ore, ma influisce sul throughput del -20%, avrà probabilmente un impatto complessivo maggiore di quello di un backup che richiede due ore per essere completato, ma influisce sul throughput del -30%.
-
-### Riferimenti {#references}
-
-* [Amministrazione - Backup e ripristino](/help/sites-administering/backup-and-restore.md)
-* [Gestione - Capacità e volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)

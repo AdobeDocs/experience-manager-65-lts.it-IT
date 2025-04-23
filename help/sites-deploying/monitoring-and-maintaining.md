@@ -1,5 +1,5 @@
 ---
-title: Monitoraggio e manutenzione del istanza Adobe Experience Manager
+title: Monitoraggio e manutenzione dell’istanza di Adobe Experience Manager
 description: Scopri come monitorare e gestire l’istanza di Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: c3ae083fbdbc8507904fde3c9c34ca4396c9cfaf
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5601'
 ht-degree: 0%
 
 ---
@@ -61,17 +61,13 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 >
 >Senza questo test, il backup è potenzialmente inutile (scenario peggiore).
 
->[!NOTE]
->
->Per ulteriori informazioni sulle prestazioni di backup, leggere la sezione [Backup delle prestazioni](/help/sites-deploying/configuring-performance.md#backup-performance).
-
 ### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
 
 Dopo l&#39;installazione o modifiche significative nella configurazione, creare un backup dell&#39;installazione del software.
 
 Per eseguire questa operazione, [eseguire il backup dell&#39;intero archivio](#backing-up-your-repository) e quindi:
 
-1. Interruzione AEM.
+1. Interrompi AEM.
 1. Eseguire il backup dell&#39;intero `<cq-installation-dir>` dal file system.
 
 >[!CAUTION]
@@ -96,7 +92,7 @@ Per informazioni dettagliate sull&#39;esecuzione di un backup &quot;a caldo&quot
 
 Lo strumento **Rimuovi versioni** è progettato per eliminare le versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
-Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni di AEM. Lo strumento **Rimuovi versione** è destinato all&#39;eliminazione delle versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutarti a ridurre le dimensioni del tuo archivio rimuovendo le vecchie versioni dei tuoi nodi.
+Questa sezione tratta le operazioni di manutenzione relative alla funzione di controllo delle versioni di AEM. Lo strumento **Rimuovi versione** è destinato all&#39;eliminazione delle versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
 ### Panoramica {#overview}
 
@@ -160,7 +156,7 @@ Imposta la validità massima della versione in giorni (per ogni nodo) che deside
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->I nodi eliminati non possono essere ripristinati senza ripristinare l’archivio. Assicurati di eseguire sempre un&#39;esecuzione di prova prima di eseguire l&#39;eliminazione.
+>I nodi eliminati non possono essere ripristinati senza ripristinare il archivio. Prenditi cura della tua configurazione eseguendo sempre un funzionamento a secco prima di spurgarla.
 
 #### Dry Run: analisi della console {#analyzing-the-console}
 
@@ -180,13 +176,13 @@ Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, u
 Inoltre, la console fornisce informazioni utili sulle versioni:
 
 * `V 1.0`: numero di versione.
-* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (di base) e non può essere eliminata.
+* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
 Nel prossimo esempio:
 
-* Le **[!DNL Shirts]** versioni vengono eliminate perché la loro versione è superiore a due giorni.
+* Le versioni **[!DNL Shirts]** vengono eliminate perché la loro validità è superiore a due giorni.
 * Le versioni **[!DNL Tonga Fashions!]** vengono eliminate perché il numero di versioni è maggiore di 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -209,7 +205,7 @@ La rotazione del file di registro si riferisce al processo che limita la crescit
 
 * Il file `error.log` è stato rinominato in base al pattern `{original_filename}.yyyy-MM-dd`. Ad esempio, l&#39;11 luglio 2010 il file di registro corrente viene rinominato `error.log-2010-07-10`, quindi viene creato un nuovo `error.log`.
 
-* Precedente file di registro non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i vecchi file di registro per limitare l&#39;utilizzo del disco.
+* I file di registro precedenti non vengono eliminati, pertanto è responsabilità dell&#39;utente pulire periodicamente i file di registro precedenti per limitare l&#39;utilizzo del disco.
 
 >[!NOTE]
 >
@@ -278,7 +274,7 @@ I livelli del registro sono i seguenti:
 | 0 | Errore irreversibile | Azione non riuscita. Impossibile continuare l&#39;installazione. |
 |---|---|---|
 | 1 | Errore | Azione non riuscita. L&#39;installazione procede, ma una parte di AEM WCM non è stata installata correttamente e non funziona. |
-| 2 | Avvertenza | L&#39;azione è stata completata ma si sono verificati problemi. AEM WCM potrebbe funzionare correttamente o meno. |
+| 2 | Avvertenza | L&#39;azione è riuscita ma ha incontrato dei problemi. AEM Web Content Management potrebbe funzionare o non funzionare correttamente. |
 | 3 | Informazioni | Azione completata. |
 
 ### Creare un file di registro personalizzato {#create-a-custom-log-file}
@@ -304,7 +300,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >
    >Sebbene non sia un requisito tecnico, è consigliabile rendere `<identifier>` unico.
 
-1. Impostare le seguenti proprietà su questo nodo:
+1. Imposta le seguenti proprietà su questo nodo:
 
    * Nome: `org.apache.sling.commons.log.file`
 
@@ -332,7 +328,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
       * Nome: `org.apache.sling.commons.log.pattern`
 
-        Digitare: `String`
+        Tipo: `String`
 
         Valore: specifica il pattern del messaggio di registro come richiesto; ad esempio,
 
@@ -415,7 +411,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
       * Nome: `org.apache.sling.commons.log.file.number`
 
-        Tipo: `Long`
+        Digitare: `Long`
 
         Valore: specificare il numero di file di log che si desidera mantenere, ad esempio `5`
 
@@ -441,7 +437,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >
    >Ad esempio, alla mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di log dopo questa data si verifica per essere precisi), .. /logs/error.log viene rinominato in .. /logs/error.log.2010-01-20. La registrazione per il 21 gennaio è l&#39;output a (un nuovo e vuoto) .. /logs/error.log finché non viene eseguito il rollover al successivo cambio di giornata.
    >
-   >| `'.'yyyy-MM` | Rotazione all&#39;inizio di ogni mese |
+   >| `'.'yyyy-MM` | Rotazione all’inizio di ogni mese |
    >|---|---|
    >| `'.'yyyy-ww` | Rotazione al primo giorno di ogni settimana (a seconda delle impostazioni internazionali). |
    >| `'.'yyyy-MM-dd` | Rotazione ogni giorno a mezzanotte. |
@@ -515,8 +511,8 @@ Per monitorare un agente di replica:
 
    * Verifica se l’agente è abilitato.
    * Visualizza la destinazione di qualsiasi replica.
-   * Verifica se la coda di replica è attiva (abilitata).
-   * Verifica se sono presenti elementi nella coda.
+   * Verificare se il coda di replica è attivo (abilitato).
+   * Verifica se ci sono elementi nella coda.
    * **Aggiorna** o **Cancella** per aggiornare la visualizzazione delle voci della coda. Questa operazione consente di visualizzare gli elementi che entrano ed escono dalla coda.
    * **Visualizza registro** per accedere al registro di tutte le azioni eseguite dall&#39;agente di replica.
    * **Verifica connessione** all&#39;istanza di destinazione.
@@ -538,11 +534,11 @@ Per monitorare un agente di replica:
 
 [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) è un processo interattivo che viene attivato durante lo sviluppo. Dopo la distribuzione, viene rivisto dopo intervalli o eventi specifici.
 
-I metodi utilizzati durante la raccolta delle informazioni per l’ottimizzazione possono essere utilizzati anche per il monitoraggio continuo.
+I metodi utilizzati durante la raccolta di informazioni per l&#39;ottimizzazione possono essere utilizzati anche per il monitoraggio continuo.
 
 >[!NOTE]
 >
->È inoltre possibile controllare [configurazioni specifiche disponibili per migliorare le prestazioni](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
+>È inoltre possibile controllare le configurazioni specifiche [disponibili per migliorare le prestazioni](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
 
 Di seguito sono elencati i problemi di prestazioni comuni che si verificano, insieme a proposte su come individuarli e contrastarli.
 
@@ -578,9 +574,9 @@ Tutte queste informazioni devono essere ottenute, ordinate e analizzate prima di
    * verifica se qualcosa (relativo al sistema) è cambiato entro uno spazio di tempo appropriato e se una qualsiasi di queste modifiche potrebbe avere influito sulle prestazioni
    * poni domande quali:
 
-      * il problema si verifica solo in momenti specifici?
-      * il problema si verifica solo su pagine specifiche?
-      * sono interessate altre richieste?
+      * Il problema si verifica solo in momenti specifici?
+      * Il problema si verifica solo su pagine specifiche?
+      * Altre richieste sono interessate?
 
    * raccogliere quante più informazioni possibili per confrontarle con la propria conoscenza del sistema in circostanze normali:
 
@@ -651,11 +647,6 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
    <td>JConsole</td>
    <td>Osservare metriche e thread JVM.</td>
    <td><p>Utilizzo: jconsole</p> <p>Consulta <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> e <a href="#monitoring-performance-using-jconsole">Monitoraggio delle prestazioni tramite JConsole</a>.</p> <p><strong>Nota:</strong> con JDK 1.8, JConsole è estensibile con i plug-in; ad esempio, Top o TDA (Thread Dump Analyzer).</p> </td>
-  </tr>
-  <tr>
-   <td>Java™ VisualVM</td>
-   <td>Osserva le metriche JVM, i thread, la memoria e la profilatura.</td>
-   <td><p>Sintassi: visualvm o visualvm<br /> </p> <p>Consulta <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> e <a href="#monitoring-performance-using-j-visualvm">Monitoraggio delle prestazioni tramite (J)VisualVM</a>.</p> <p><strong>Nota:</strong> con JDK 1.8, VisualVM è estensibile con i plug-in. VisualVM viene interrotto dopo JDK 9. Utilizza invece il registratore di volo Java™.</p> </td>
   </tr>
   <tr>
    <td>traliccio/cinghia, lsof</td>
@@ -925,31 +916,6 @@ Il comando dello strumento `jconsole` è disponibile con JDK.
 
    Ora puoi selezionare altre opzioni.
 
-### Monitoraggio delle prestazioni con (J)VisualVM {#monitoring-performance-using-j-visualvm}
-
-Per JDK 6-8, è disponibile il comando dello strumento `visualvm`. Dopo aver installato un JDK, puoi effettuare le seguenti operazioni:
-
-1. Avvia l’istanza di AEM.
-
-   >[!NOTE]
-   >
-   >Se si utilizza Java™ 5, è possibile aggiungere l&#39;argomento `-Dcom.sun.management.jmxremote` alla riga di comando Java™ che avvia JVM. JMX è abilitato per impostazione predefinita con Java™ 6.
-
-1. Esegui una delle seguenti operazioni:
-
-   * `jvisualvm`: nella cartella JDK 1.6 bin (versione testata)
-   * `visualvm`: scaricabile da [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (versione Edge sanguinante)
-
-1. Dall&#39;applicazione `Local`, fare doppio clic su `com.day.crx.quickstart.Main`. L’impostazione predefinita è Panoramica:
-
-   ![chlimage_1-2](assets/chlimage_1-2.png)
-
-   Ora puoi selezionare altre opzioni, tra cui Monitor:
-
-   ![chlimage_1-3](assets/chlimage_1-3.png)
-
-Puoi utilizzare questo strumento per generare immagini thread e immagini head della memoria. Queste informazioni vengono spesso richieste dal team di supporto tecnico.
-
 ### Raccolta di informazioni {#information-collection}
 
 Conoscere il più possibile le informazioni sull&#39;installazione può essere utile per tenere traccia di ciò che potrebbe aver causato un cambiamento nelle prestazioni e per verificare se tali modifiche sono giustificate. Raccogli queste metriche a intervalli regolari in modo da poter vedere facilmente cambiamenti significativi.
@@ -1039,7 +1005,7 @@ Per visualizzare quante risorse DAM sono attualmente gestite, utilizza una query
 
 #### Qual è la dimensione media delle risorse? {#what-is-the-average-size-of-the-assets}
 
-Per determinare la dimensione totale della `/var/dam` cartella:
+Per determinare la dimensione totale della cartella `/var/dam`:
 
 1. Utilizzare WebDAV per mappare l&#39;archivio al file system locale.
 
@@ -1103,16 +1069,11 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 >* [Immagini thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 >* [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 >* [Analizza utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
->* [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU al 100% {#cpu-at}
 
-Se il CPU del sistema è costantemente in esecuzione al 100%, vedi quanto segue:
-
-* Knowledge Base:
-
-   * [Analizzare processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+Se il CPU del sistema è in esecuzione costante al 100%, controlla i registri di AEM e utilizza strumenti come top, htop o jstack per identificare i thread ad alto contenuto di CPU. Analizzare le immagini thread per individuare cicli infiniti, thread bloccati o raccolte di oggetti inattivi eccessive.
 
 ### Memoria insufficiente {#out-of-memory}
 
@@ -1138,30 +1099,27 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
    * [Gestore script Apache Sling JSP](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Gestore JavaScript Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configurazione registrazione Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [Gestione libreria CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ Web Content Management Filtra Debug](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [CQ HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [Filtro di debug CQ WCM](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logger](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* Se e come hai configurato [Versione Eliminazione](/help/sites-deploying/version-purging.md)
+* Indica se e come hai configurato [Rimozione versione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
    * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
-   * [Windows Journal utilizza troppo spazio su disco](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}
 
 Se le prestazioni dell’istanza si deteriorano dopo ogni riavvio (a volte una settimana o più tardi), è possibile controllare quanto segue:
 
 * [Memoria insufficiente](#outofmemory)
-* Knowledge Base:
-
-   * [Sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+* [Sessioni non chiuse](/help/sites-administering/troubleshoot.md#checking-for-unclosed-jcr-sessions-checking-for-unclosed-jcr-sessions)
 
 ### Ottimizzazione JVM {#jvm-tuning}
 
-La Java™ Virtual Machine (JVM) è migliorata per quanto riguarda la messa a punto (soprattutto da Java™ 7). Di conseguenza, spesso è opportuno specificare una dimensione JVM fissa ragionevole e utilizzare le impostazioni predefinite.
+La Java™ Virtual Machine (JVM) è migliorata per quanto riguarda il tuning. Di conseguenza, spesso è opportuno specificare una dimensione JVM fissa ragionevole e utilizzare le impostazioni predefinite.
 
-Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Farlo prima di provare a regolare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
+Se le impostazioni predefinite non sono adatte, è importante stabilire un metodo per monitorare e valutare le prestazioni di GC. Eseguire questa operazione prima di tentare di ottimizzare la JVM. Questo processo può includere fattori di monitoraggio, tra cui la dimensione dell’heap, l’algoritmo e altri aspetti.
 
 Alcune scelte comuni sono:
 
@@ -1190,12 +1148,6 @@ Oppure JConsole:
   ```
 
 * Quindi collegarsi alla JVM con JConsole; vedere quanto segue:
-  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html](https://docs.oracle.com/en/java/javase/17/management/using-jconsole.html)`
 
 È possibile vedere la quantità di memoria utilizzata, gli algoritmi GC utilizzati, il tempo necessario per l&#39;esecuzione e l&#39;effetto di questo processo sulle prestazioni dell&#39;applicazione. Senza di esso, la messa a punto è solo &quot;manopole che girano casualmente&quot;.
-
->[!NOTE]
->
->Per la VM di Oracle, sono inoltre disponibili informazioni su:
->
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
