@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4834'
 ht-degree: 1%
 
 ---
@@ -51,8 +51,6 @@ Prima di avviare qualsiasi discussione seria sullo sviluppo di componenti, è ne
   [L&#39;interfaccia utente standard](/help/sites-developing/touch-ui-concepts.md) si basa sull&#39;esperienza utente unificata per Adobe Experience Cloud, utilizzando le tecnologie sottostanti di [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) e [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interfaccia classica**
 Interfaccia utente basata sulla tecnologia ExtJS, ora obsoleta con AEM 6.4.
-
-Per ulteriori dettagli, consulta [Raccomandazioni sull&#39;interfaccia utente per i clienti](/help/sites-deploying/ui-recommendations.md).
 
 I componenti possono essere implementati per supportare l’interfaccia touch, l’interfaccia classica o entrambe. Quando osservi un’istanza standard, trovi anche componenti pronti all’uso originariamente progettati per l’interfaccia classica, l’interfaccia touch o entrambe.
 

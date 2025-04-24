@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e9b26de3-6e14-4187-8f25-6e56ee3092a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '611'
 ht-degree: 3%
 
 ---
@@ -100,10 +100,6 @@ Durante la migrazione, tieni presente le seguenti differenze principali tra l’
 </table>
 
 In altre parole, la migrazione di una sezione dell&#39;interfaccia utente dall&#39;interfaccia classica all&#39;interfaccia touch significa portare un widget *ExtJS* in un *componente Sling*. Per semplificare questa operazione, l’interfaccia utente touch si basa sul framework dell’interfaccia utente Granite, che fornisce già alcuni componenti Sling per l’interfaccia utente (denominati componenti dell’interfaccia utente Granite).
-
-Prima di iniziare, controlla lo stato e i consigli correlati:
-
-* [Raccomandazioni in merito all’interfaccia utente per clienti](/help/sites-deploying/ui-recommendations.md)
 
 Le nozioni di base sullo sviluppo dell’interfaccia utente touch forniscono una solida base:
 

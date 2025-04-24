@@ -11,9 +11,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1075'
 ht-degree: 9%
 
 ---
@@ -154,7 +154,7 @@ L’analisi inizia dal passaggio 0. L’obiettivo è determinare quale entità (
   <tr>
    <td><strong>Passaggio 19</strong></td>
    <td>CPU 100%</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it</a></td>
+   <td>Visualizza <a href="/help/sites-deploying/monitoring-and-maintaining.md#cpu-at">CPU al 100%</a></td>
   </tr>
   <tr>
    <td><strong>Passaggio 20</strong></td>
@@ -288,7 +288,7 @@ L’analisi inizia dal passaggio 0. L’obiettivo è determinare quale entità (
   <tr>
    <td><strong>Passaggi 45<br /> e 47</strong><br /> </td>
    <td>Utilizzo di HTTP/2</td>
-   <td>Consulta la sessione Gem per i passaggi 37, 38 e 39. Inoltre, controlla <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">questo</a> post forum sul supporto HTTP/2.<br /> </td>
+   <td>Consulta la sessione Gem per i passaggi 37, 38 e 39.<br /> </td>
   </tr>
   <tr>
    <td><strong>Passaggio 49</strong></td>

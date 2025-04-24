@@ -11,10 +11,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 013c9155817811913963ca514f7a6369b338d487
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
+source-wordcount: '374'
+ht-degree: 5%
 
 ---
 
@@ -71,10 +71,6 @@ I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 </table>
 
 ## Interfaccia {#ui}
-
-Le best practice relative all’interfaccia utente sono descritte qui:
-
-[Raccomandazioni in merito all’interfaccia utente per clienti](/help/sites-deploying/ui-recommendations.md)
 
 AEM dispone attualmente di due interfacce: classica e touch nella stessa versione. Pertanto, i clienti devono prendere una decisione su quale utilizzare durante l’implementazione del progetto. Questo documento ha lo scopo di aiutare a trovare la scelta giusta.
 
