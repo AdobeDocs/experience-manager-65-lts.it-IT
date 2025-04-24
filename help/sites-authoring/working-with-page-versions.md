@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: ba5cc5fb-934f-4144-8e28-7aa5fdd9b92a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 438d383aa7a08334d9977411fd37395f89133834
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -21,6 +21,13 @@ Il controllo delle versioni crea lo snapshot di una pagina in un determinato mom
    * per annullare una modifica apportata alla pagina.
 * Confrontare la versione corrente di una pagina con una versione precedente:
    * per evidenziare le differenze nel testo e nelle immagini.
+
+>[!NOTE]
+>
+>Nell’archivio AEM viene creata una versione solo del contenuto. Le risorse dinamiche come codice, CSS e JavaScript non dispongono di versioni.
+>
+>* Quando si visualizzano le versioni, il contenuto viene visualizzato con il codice, CSS e JavaScript correnti dell’archivio.
+>* Durante il ripristino delle versioni, viene ripristinato solo il contenuto e vengono applicati il codice, i CSS e il JavaScript correnti dell’archivio.
 
 ## Creazione di una nuova versione   {#creating-a-new-version}
 
