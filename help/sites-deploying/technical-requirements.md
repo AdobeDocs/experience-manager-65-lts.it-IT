@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
 workflow-type: tm+mt
-source-wordcount: '3064'
+source-wordcount: '2961'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Per ulteriori informazioni, vedere le Linee guida](/help/managing/hardware-sizin
 
 ### Livelli di supporto {#support-levels}
 
-Questo documento elenca le piattaforme client e server supportate per Adobe Experience Manager. Adobe fornisce diversi livelli di supporto, sia per le configurazioni consigliate che per altre configurazioni.
+Questo documento elenca le piattaforme client e server supportate per Adobe Experience Manager. Adobe Systems fornisce diversi livelli di supporto, sia per le configurazioni consigliate che per altre configurazioni.
 
 ### Configurazioni supportate {#supported-configurations}
 
@@ -112,7 +112,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | MongoDB Enterprise 6.0 e 7.0 | Archivio | R: Supportato `[3, 4]` |
 | **Apache Lucene (Quickstart integrato)** | Servizio Search | R: Supportato |
 
-1. &#39;File system&#39; include l&#39;archiviazione dei blocchi compatibile con POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
+1. &#39;File System&#39; include l&#39;archiviazione a blocchi conforme a POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
 1. Il partizionamento MongoDB non è supportato in AEM.
 1. MongoDB Storage Engine WiredTiger è supportato solo.
 
@@ -153,13 +153,14 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[2]` |
 | Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
+| Microsoft® Windows Server 2022 | R: Supportato |
 
 1. Kernel Linux® 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
 
    >[!NOTE]
    >
-   >Per i server basati su Linux (stack OSGI e JEE), il componente aggiuntivo AEM Forms richiede dipendenze di runtime come:
+   >Per i server basati su Linux, il componente aggiuntivo AEM Forms richiede dipendenze runtime quali:
    >* glibc.x86_64 (2,17-196)
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
@@ -182,7 +183,7 @@ Per consigli su come distribuire AEM su Azure o AWS, al di fuori di Adobe Manage
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Il Dispatcher è il componente caching e bilanciamento del carico. [Scarica l&#39;ultima versione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) Dispatcher. Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 I seguenti server Web sono supportati per l&#39;utilizzo con Dispatcher versione 4.3.2:
 
@@ -258,7 +259,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   <tr>
    <td>Apple Safari su iOS 12.x</td>
    <td>R: Supportato [2]</td>
-   <td>Z: Non supportato</td>
+   <td>Z: non supportato</td>
   </tr>
   <tr>
    <td>Apple Safari su iOS 11.x</td>
@@ -268,7 +269,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
  </tbody>
 </table>
 
-1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Versione di supporto estesa di Firefox [Scopri ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Supporto per Apple iPad
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
@@ -277,7 +278,7 @@ In genere, il supporto del browser per i siti web di cui è stato eseguito il re
 
 ## Note aggiuntive sulla piattaforma {#additional-platform-notes}
 
-Questa sezione contiene note speciali e informazioni più dettagliate sull&#39;esecuzione di Adobe Experience Manager e dei relativi componenti aggiuntivi.
+In questa sezione vengono fornite note speciali e informazioni più dettagliate sull&#39;esecuzione di Adobe Experience Manager e dei relativi componenti aggiuntivi.
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
@@ -339,32 +340,32 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 >
 >Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
->Pertanto, Adobe consiglia di disattivare NUMA utilizzando l&#39;opzione di avvio **numa=off** per evitare che il kernel uccida questi processi.
+>Pertanto, Adobe Systems consiglia che se si esegue un sistema di questo tipo si disattivi NUMA utilizzando l&#39;opzione di **avvio numa=off** per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
->**Il nome host del server deve risolvere:** Verificare che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
+>**Il nome host del server deve risolvere:** Assicurarsi che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Spazio di swap pari ad almeno il doppio della quantità di memoria fisica (RAM)
+* Spazio di swap uguale ad almeno il doppio della quantità di memoria fisica (RAM)
 
-Per utilizzare Dynamic Media in Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
+Per utilizzare Dynamic Media su Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
 
 Per Windows x64:
 
 * Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Ottieni Microsoft® Visual Studio 2013 Redistributable at https://www.microsoft.com/en-us/download/details.aspx?id=40784 [](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Ottieni Microsoft® Visual Studio 2015 Redistributable su [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Ottieni Microsoft® Visual Studio 2015 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Per Windows x86:
 
 * Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Ottieni Microsoft® Visual Studio 2013 ridistribuibile in [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* Ottieni Microsoft® Visual Studio 2015 Redistributable su [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* Ottieni Microsoft® Visual Studio 2015 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -386,15 +387,7 @@ Per Windows x86:
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> ultima versione (obsoleto)</td>
-   <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (obsoleto)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF e TXT</td>
   </tr>
   <tr>
@@ -402,29 +395,13 @@ Per Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (obsoleto)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2016 (obsoleto)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2016 (obsoleto)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (obsoleto)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF e TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -448,7 +425,7 @@ Per Windows x86:
 >* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per convertire `.VSD` e `.VSDX` file.
 >
 
-### Requisiti di AEM Forms Designer {#requirements-for-aem-forms-designer}
+### Requisiti per AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 o Windows® 11
 * Processore da 1 GHz o superiore con supporto per PAE, NX e SSE2.
@@ -457,17 +434,17 @@ Per Windows x86:
 * Memoria grafica - 128 MB di GPU (consigliata 256 MB)
 * 2,35 GB di spazio disponibile su disco rigido
 * Risoluzione di 1024 X 768 pixel o superiore
-* Video accelerazione hardware (opzionale)
+* Accelerazione hardware video (opzionale)
 * Acrobat Pro DC, Acrobat Standard DC o Adobe Acrobat Reader DC
 * Privilegi amministrativi per l&#39;installazione di Designer
 * Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 32 bit per AEM Forms Designer a 32 bit
-* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit (per OSGI e stack JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 o versione successiva) Runtime a 64 bit per AEM Forms Designer a 64 bit
 
 [Installare e configurare AEM Forms finestra di progettazione](/help/forms/using/installing-configuring-designer.md)
 
 ### Requisiti per AEM Assets XMP metadati write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
-La funzione di write-back di XMP è supportata e abilitata per le piattaforme e i formati di file seguenti:
+XMP write-back è supportato e abilitato per le piattaforme e i formati di file seguenti:
 
 * **Sistemi operativi:**
 
@@ -476,7 +453,7 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
    * Windows Server
    * macOS X (64 bit)
 
-* **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
+* **File formati**: JPEG, PNG, TIFF, PDF, INDD, AI ed EPS.
 
 ### Requisiti per AEM Assets per l’elaborazione di risorse contenenti metadati su Linux® {#assetsonlinux}
 
