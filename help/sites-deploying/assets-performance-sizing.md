@@ -11,7 +11,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: d9bb95b41f065ced60ceef6eb6f2c08ebf115d2d
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 0%
@@ -75,9 +75,9 @@ La legenda seguente descrive le possibili aree di insidia delle prestazioni con 
 
 **File system temporaneo** Un file system locale lento può causare problemi di prestazioni interattive, soprattutto durante la ricerca, perché gli indici di ricerca sono archiviati nel disco locale. Può inoltre causare problemi di elaborazione delle risorse se si utilizza il processo della riga di comando.
 
-**AEM DAM Finder** I problemi di prestazioni interattive, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo di CPU a causa di molti utenti simultanei o di altri processi che utilizzano CPU nella stessa istanza. Passare da macchine virtuali a macchine dedicate e assicurarsi che non vengano eseguiti altri servizi sulla macchina può contribuire a migliorare le prestazioni. Se a causa dell’elaborazione delle risorse e della presenza di numerosi utenti simultanei si verifica un carico elevato di CPU, Day consiglia di aggiungere ulteriori nodi cluster.
+**AEM DAM Finder** I problemi di prestazioni interattive, spesso riscontrati nelle ricerche, sono causati da un elevato utilizzo di CPU a causa di molti utenti simultanei o di altri processi che utilizzano CPU nella stessa istanza. Passare da macchine virtuali a macchine dedicate e assicurarsi che non vengano eseguiti altri servizi sulla macchina può contribuire a migliorare le prestazioni. Se a causa dell’elaborazione delle risorse e della presenza di molti utenti simultanei si verifica un carico elevato di CPU, Adobe consiglia di aggiungere ulteriori nodi cluster.
 
-**Flusso di lavoro AEM DAM** I processi di flusso di lavoro a esecuzione prolungata durante l&#39;inserimento delle risorse causano problemi di prestazioni nell&#39;elaborazione delle risorse. A seconda del tipo di risorse da elaborare, questo può indicare un sovrautilizzo di CPU. Day consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo nodi cluster.
+**Flusso di lavoro AEM DAM** I processi di flusso di lavoro a esecuzione prolungata durante l&#39;inserimento delle risorse causano problemi di prestazioni nell&#39;elaborazione delle risorse. A seconda del tipo di risorse da elaborare, questo può indicare un sovrautilizzo di CPU. Adobe consiglia di ridurre il numero di altri processi in esecuzione sul sistema e di aumentare il numero di CPU disponibili aggiungendo nodi cluster.
 
 **Connettività NAS** La scarsa connettività di rete al NAS causa problemi di prestazioni interattive, perché l&#39;accesso ai nuovi nodi durante l&#39;elaborazione delle risorse è rallentato a causa della latenza della rete. Inoltre, una velocità effettiva di rete lenta influisce negativamente sulla velocità effettiva, ma anche sulle prestazioni di elaborazione delle risorse, perché il caricamento e il salvataggio delle rappresentazioni sono rallentati.
 
