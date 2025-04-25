@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: e337b682a0ee2b35940671991bd82b30d9d50128
+source-git-commit: 45b0c2c3a2cf1e3d55ad9184878cb8ebc3add672
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '2955'
 ht-degree: 1%
 
 ---
@@ -112,7 +112,7 @@ Esistono diverse opzioni per distribuire l’archivio di Adobe Experience Manage
 | MongoDB Enterprise 6.0 e 7.0 | Archivio | R: Supportato `[3, 4]` |
 | **Apache Lucene (Quickstart integrato)** | Servizio Search | R: Supportato |
 
-1. &#39;File System&#39; include l&#39;archiviazione a blocchi conforme a POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
+1. &#39;File system&#39; include l&#39;archiviazione dei blocchi compatibile con POSIX. Include la tecnologia di storage in rete. Tieni presente che le prestazioni del file system potrebbero variare e influenzare le prestazioni complessive. Caricare AEM di prova con il file system remoto/di rete.
 1. Il partizionamento MongoDB non è supportato in AEM.
 1. MongoDB Storage Engine WiredTiger è supportato solo.
 
@@ -153,7 +153,8 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[2]` |
 | Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
-| Microsoft® Windows Server 2022 | R: Supportato |
+
+<!--| Microsoft&reg; Windows Server 2022 |R: Supported|-->
 
 1. Kernel Linux® 5. x e 6. x include derivati dalla distribuzione Red Hat®, tra cui Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®.
 1. Distribuzione Linux® supportata da Adobe Managed Services.
@@ -177,13 +178,13 @@ Per un ambiente nativo per il cloud, consulta l’offerta più recente della lin
 
 Adobe offre anche Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo ad AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione BLOB di Azure o AWS S3.
+In tutti gli altri casi di distribuzione di AEM in Azure, AWS o in qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo ad AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. A meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio Archiviazione BLOB di Azure o AWS S3.
 
-Per consigli su come distribuire AEM su Azure o AWS, al di fuori di Adobe Managed Services, Adobe consiglia di lavorare direttamente con il provider cloud. Oppure, in collaborazione con i partner Adobe che supportano l’implementazione di AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
+Per consigli su come distribuire AEM in Azure o AWS, al di fuori di Adobe Systems Managed Services, Adobe Systems consiglia di collaborare direttamente con il provider cloud. Oppure, in collaborazione con i partner Adobe che supportano l’implementazione di AEM nell’ambiente cloud desiderato. Il fornitore o partner cloud selezionato è responsabile delle specifiche di dimensionamento, della progettazione e dell&#39;implementazione dell&#39;architettura in modo da soddisfare specifici requisiti di prestazioni, carico, scalabilità e sicurezza.
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Il Dispatcher è il componente caching e bilanciamento del carico. [Scarica l&#39;ultima versione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html) Dispatcher. Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 I seguenti server Web sono supportati per l&#39;utilizzo con Dispatcher versione 4.3.2:
 
@@ -254,12 +255,12 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
   <tr>
    <td>Apple Safari 11.x su macOS</td>
    <td>Z: non supportato</td>
-   <td>Z: Non supportato</td>
+   <td>Z: non supportato</td>
   </tr>
   <tr>
    <td>Apple Safari su iOS 12.x</td>
    <td>R: Supportato [2]</td>
-   <td>Z: non supportato</td>
+   <td>Z: Non supportato</td>
   </tr>
   <tr>
    <td>Apple Safari su iOS 11.x</td>
@@ -269,7 +270,7 @@ L’interfaccia utente di AEM è ottimizzata per schermi più grandi (in genere 
  </tbody>
 </table>
 
-1. Versione di supporto estesa di Firefox [Scopri ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Supporto esteso per Firefox [Ulteriori informazioni su mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. Supporto per Apple iPad
 
 ### Browser supportati per i siti Web {#supported-browsers-for-websites}
@@ -278,7 +279,7 @@ In genere, il supporto del browser per i siti web di cui è stato eseguito il re
 
 ## Note aggiuntive sulla piattaforma {#additional-platform-notes}
 
-In questa sezione vengono fornite note speciali e informazioni più dettagliate sull&#39;esecuzione di Adobe Experience Manager e dei relativi componenti aggiuntivi.
+Questa sezione contiene note speciali e informazioni più dettagliate sull&#39;esecuzione di Adobe Experience Manager e dei relativi componenti aggiuntivi.
 
 ### IPv4 e IPv6 {#ipv-and-ipv}
 
@@ -340,25 +341,25 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 >
 >Il costrutto a più nodi può causare esaurimento della memoria su uno o più nodi prima che gli altri nodi si esauriscano. Quando si verifica esaurimento della memoria, il kernel può decidere di terminare i processi (ad esempio, il server immagini o il server di Platform) anche se è disponibile memoria.
 >
->Pertanto, Adobe Systems consiglia che se si esegue un sistema di questo tipo si disattivi NUMA utilizzando l&#39;opzione di **avvio numa=off** per evitare che il kernel uccida questi processi.
+>Pertanto, Adobe consiglia di disattivare NUMA utilizzando l&#39;opzione di avvio **numa=off** per evitare che il kernel uccida questi processi.
 
 >[!NOTE]
 >
->**Il nome host del server deve risolvere:** Assicurarsi che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
+>**Il nome host del server deve risolvere:** Verificare che il nome host del server sia risolvibile in un indirizzo IP. Se ciò non è possibile, aggiungere il nome host completo e l&#39;indirizzo IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
 * Microsoft® Windows Server 2016
-* Spazio di swap uguale ad almeno il doppio della quantità di memoria fisica (RAM)
+* Spazio di swap pari ad almeno il doppio della quantità di memoria fisica (RAM)
 
-Per utilizzare Dynamic Media su Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
+Per utilizzare Dynamic Media in Windows, installare Microsoft® Visual Studio 2010, 2013 e 2015 ridistribuibile per x64 e x86.
 
 Per Windows x64:
 
 * Ottieni Microsoft® Visual Studio 2010 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
-* Ottieni Microsoft® Visual Studio 2013 Redistributable at https://www.microsoft.com/en-us/download/details.aspx?id=40784 [](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Ottieni Microsoft® Visual Studio 2013 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Ottieni Microsoft® Visual Studio 2015 ridistribuibile in [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Per Windows x86:
@@ -448,13 +449,13 @@ XMP write-back è supportato e abilitato per le piattaforme e i formati di file 
 
 * **Sistemi operativi:**
 
-   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit). Per informazioni sulla procedura di installazione delle librerie client a 32 bit, vedere [Come abilitare l&#39;estrazione e il write-back di XMP su Red Hat® Linux®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) a 64 bit.
+   * Linux® (supporto applicazione a 32 bit e 32 bit su sistemi a 64 bit). Per la procedura di installazione di librerie client a 32 bit, consulta [Come abilitare l&#39;estrazione e il write-back di XMP su Red Hat® Linux®](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) a 64 bit.
 
    * Windows Server
    * macOS X (64 bit)
 
-* **File formati**: JPEG, PNG, TIFF, PDF, INDD, AI ed EPS.
+* **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisiti per AEM Assets per l’elaborazione di risorse contenenti metadati su Linux® {#assetsonlinux}
+### Requisiti per AEM Assets per elaborare metadati risorse pesanti su Linux® {#assetsonlinux}
 
-Il processo XMPFilesProcessor richiede il funzionamento della libreria GLIBC_2.14. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+Il processo XMPFilesProcessor richiede il libreria GLIBC_2.14 per funzionare. Utilizzare un kernel Linux® che contiene GLIBC_2.14, ad esempio Linux® versione 3.1.x. Migliora le prestazioni per l’elaborazione delle risorse che contengono una grande quantità di metadati, come i file PSD. L&#39;utilizzo di una versione precedente di GLIBC genera un errore nei registri che iniziano con `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
