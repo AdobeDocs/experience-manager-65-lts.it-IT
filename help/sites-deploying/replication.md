@@ -12,9 +12,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: b840d970-9365-4df3-8467-e34abd940074
-source-git-commit: fb94bea433b95462e61376fe10ed9defe4eab551
+source-git-commit: 262b73813a0e1ccb9c45a4e099461d4dd8eccd00
 workflow-type: tm+mt
-source-wordcount: '3287'
+source-wordcount: '3270'
 ht-degree: 2%
 
 ---
@@ -347,8 +347,6 @@ Queste impostazioni vengono utilizzate per definire i trigger per la replica aut
   Se questa opzione è selezionata, l&#39;agente non forza il controllo delle versioni delle pagine attivate.
 
 ## Configurazione degli agenti di replica {#configuring-your-replication-agents}
-
-Per informazioni sulla connessione degli agenti di replica all&#39;istanza Publish tramite MSSL, vedere [Replica con SSL reciproco](/help/sites-deploying/mssl-replication.md).
 
 ### Configurazione degli agenti di replica dall’ambiente di authoring {#configuring-your-replication-agents-from-the-author-environment}
 
