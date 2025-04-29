@@ -4,9 +4,9 @@ description: Scopri la flessibilità di Universal Editor e come può aiutare a p
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3f6d0791968ad3017256dcd5ecea617bc7c8ed83
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1174'
 ht-degree: 1%
 
 ---
@@ -38,9 +38,9 @@ Universal Editor è un servizio che funziona insieme ad AEM per creare contenuti
 
 L’editor universale è supportato da:
 
-* AEM 6.5 LTS
+* AEM 6.5 LTS GA
    * Sono supportati sia l’hosting locale che AMS.
-* [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (service pack 21 o 22 più un feature pack)
+* [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (service pack 21 o 22 più un feature pack o successivo)
    * Sono supportati sia l’hosting locale che AMS.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versione `2023.8.13099` o successiva)
 
@@ -50,29 +50,15 @@ Questo documento si concentra sul supporto AEM 6.5 LTS di Universal Editor.
 
 Per testare l’Editor universale è necessario:
 
-1. [Aggiorna e configura l’istanza di authoring di AEM.](#update-configure-aem)
+1. [Configura i servizi nell’istanza di authoring di AEM.](#configure-aem)
 1. [Configurare un servizio Universal Editor locale.](#set-up-ue)
 1. [Regola il dispatcher per consentire il servizio Universal Editor.](#update-dispatcher)
 
 Dopo aver completato la configurazione, puoi [dotare le applicazioni dell&#39;editor universale.](#instrumentation)
 
-### Aggiornare AEM {#update-aem}
+### Configura servizi {#configure-aem}
 
-Per poter utilizzare Universal Editor con AEM 6.5 sono necessari Service Pack 21 o 22 e un feature pack per AEM.
-
-#### Applica Service Pack più recente {#latest}
-
-Assicurati di eseguire almeno il service pack 21 o 22 per AEM 6.5. È possibile scaricare il service pack più recente da [Software Distribution.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
-
-#### Installazione del Feature Pack di Universal Editor {#feature-pack}
-
-Installa **Universal Editor Feature Pack per AEM 6.5** [disponibile in Software Distribution.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
-
-Se è già in esecuzione il service pack 23 o versione successiva, il feature pack non è necessario.
-
-### Configura servizi {#configure-services}
-
-Il feature pack installa una serie di nuovi pacchetti per i quali è necessaria una configurazione aggiuntiva.
+L’editor universale si basa su una serie di servizi che devono essere configurati.
 
 #### Impostare l&#39;attributo SameSite per il cookie `login-token`. {#samesite-attribute}
 
