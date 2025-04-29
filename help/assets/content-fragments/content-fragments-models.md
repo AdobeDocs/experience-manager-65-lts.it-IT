@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d6e3662-f541-4755-b2a6-b35724dd8932
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: c23ab1f6cb5b96c35df3644780abcc9a0c5a6324
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 65%
+source-wordcount: '2343'
+ht-degree: 64%
 
 ---
 
@@ -105,6 +105,13 @@ Per definire il modello è disponibile una selezione di tipi di dati:
    * Aggiungi uno o più campi di una singola riga di testo; la lunghezza massima può essere definita
 * **Testo su più righe**
    * Area di testo che può essere RTF, Testo normale o Markdown
+
+     >[!NOTE]
+     >
+     Per motivi di prestazioni, si consiglia di non disporre di più di dieci campi Rich Text in un modello.
+     >
+     Se necessario, è consigliabile utilizzare [frammenti di contenuto nidificati](#fragment-reference-nested-fragments) per distribuire il caricamento.
+
 * **Numero**
    * Aggiungi uno o più campi numerici
 * **Booleano**
