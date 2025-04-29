@@ -1,6 +1,6 @@
 ---
 title: Introduzione ad AEM Forms
-description: Utilizza questa guida AEM 6.5 LTS per creare, gestire, pubblicare e aggiornare moduli digitali. Trova le guide all’installazione, l’aggiornamento e la configurazione di tali moduli e scopri come creare moduli adattivi.
+description: Utilizza questa guida di AEM 6.5 LTS per creare, gestire, pubblicare e aggiornare i moduli digitali. Trova informazioni sull’installazione, l’aggiornamento e la configurazione dei moduli e scopri come creare moduli adattivi.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
@@ -8,7 +8,7 @@ exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 3b83225e1150f1e623997c9ece6329de995148be
 workflow-type: tm+mt
 source-wordcount: '951'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -96,7 +96,7 @@ L&#39;acquisizione dei dati offline e la loro sincronizzazione alla successiva c
 * Connettori ECM (Enterprise Content Management)
 * Supporto di standard aperti, inclusi XML e SOAP per la connessione dei dati dei moduli con i sistemi aziendali
 * I report predefiniti di HTML monitorano i backlog, le code di lavoro e gli indicatori di prestazioni chiave (KPI, Key Performance Indicators)
-* Dashboard personalizzabili per informazioni in tempo reale sulle operazioni aziendali
+* Dashboard personalizzabili per insight in tempo reale nelle operazioni aziendali
 * API per la connessione con strumenti di reporting di terze parti
 
 ![Terza bozza](do-not-localize/3rd-draft.gif)
