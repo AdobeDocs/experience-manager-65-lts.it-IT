@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3251'
 ht-degree: 0%
@@ -391,7 +391,7 @@ Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare 
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage è l&#39;oggetto della pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, vedere i documenti [Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage è l&#39;oggetto della pagina corrente. Per ulteriori informazioni sulla manipolazione degli oggetti Page, vedere i documenti [Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestione pagine** Il gestore pagine è un&#39;interfaccia che fornisce metodi per le operazioni a livello di pagina.
 
@@ -399,7 +399,7 @@ Ad esempio, per ottenere la pagina contenitore di una risorsa, puoi utilizzare i
 
 Page myPage = pageManager.getContainingPage(myResource);
 
-PageManager è l&#39;oggetto di gestione pagina e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore delle pagine, consulta la [documentazione Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+PageManager è l&#39;oggetto di gestione pagina e myResource un oggetto risorsa. Per ulteriori informazioni sui metodi forniti dal gestore delle pagine, consulta la [documentazione Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Struttura all’interno del repository {#structure-within-the-repository}
 

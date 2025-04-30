@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
 exl-id: abc2747f-cfd8-4ee1-bbc0-5ad89beb383a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Il meccanismo di protezione XSS fornito da AEM si basa sulla [libreria Java™ A
 
 >[!NOTE]
 >
->Adobe consiglia di accedere sempre all&#39;API di protezione XSS utilizzando [XSSAPI fornita da AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe consiglia di accedere sempre all&#39;API di protezione XSS utilizzando [XSSAPI fornita da AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Inoltre, un firewall dell&#39;applicazione Web, ad esempio [mod_security per Apache](https://www.modsecurity.org), può fornire un controllo centrale e affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere da attacchi di cross-site scripting non rilevati in precedenza.
 

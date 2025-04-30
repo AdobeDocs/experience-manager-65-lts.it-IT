@@ -6,7 +6,7 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 88be03c6-2342-4441-836d-f13b8cdfd629
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%
@@ -49,7 +49,7 @@ Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per u
 
 ## Vantaggi di CIF {#cif-benefits}
 
-CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello di dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
+CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
 
 Il componente aggiuntivo CIF porta il contesto del prodotto in Experience Manager e fornisce strumenti di authoring come una console del prodotto e selettori di prodotti/categorie che consentono all’addetto al marketing di creare e distribuire esperienze di acquisto in Experience Manager senza dover dipendere dallo sviluppatore. I vantaggi includono:
 
@@ -67,7 +67,7 @@ CIF è progettato per l’innovazione continua con un componente aggiuntivo semp
 
 ### Integrazioni
 
-Collega l’ecosistema (ad esempio, la soluzione commerce) con l’Experience Cloud utilizzando [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Collega l’ecosistema (ad esempio, la soluzione commerce) con l’Experience Cloud utilizzando [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Pattern collaudati e best practice
 

@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: fdf95738-3075-43d6-9d51-64c83cf0f0b7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Per integrare [!DNL Adobe Sign] con AEM [!DNL Forms] è necessario quanto segue:
 
 * Un account sviluppatore [Adobe Sign attivo.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
 * Un server [SSL abilitato](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms].
-* Applicazione API [Adobe Sign](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
+* Applicazione API [Adobe Sign](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Credenziali (ID client e segreto client) dell&#39;applicazione API [!DNL Adobe Sign].
 * Durante la riconfigurazione, rimuovere la configurazione [!DNL Adobe Sign] esistente sia dall&#39;istanza di authoring che da quella di pubblicazione.
 * Utilizza [chiave di crittografia identica](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) per le istanze di authoring e pubblicazione.
@@ -112,7 +112,7 @@ Dopo aver impostato i prerequisiti, effettuare le seguenti operazioni per config
    * widget_write
    * workflow_read
 
-   Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione [!DNL Adobe Sign] e ottenere le chiavi, vedere [Configurare le impostazioni OAuth per la documentazione per gli sviluppatori dell&#39;applicazione](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
+   Per informazioni dettagliate su come configurare le impostazioni OAuth per un&#39;applicazione [!DNL Adobe Sign] e ottenere le chiavi, vedere [Configurare le impostazioni OAuth per la documentazione per gli sviluppatori dell&#39;applicazione](https://developer.adobe.com/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
    ![Configurazione OAuth](assets/oauthconfig_new.png)
 

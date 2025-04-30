@@ -6,7 +6,7 @@ role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 16%
@@ -52,7 +52,7 @@ Per sovrapporre i predicati preconfigurati, copiare il nodo `facets` da `/libs/d
 
 Oltre a utilizzare i predicati preesistenti, gli sviluppatori di [!DNL Experience Manager] possono anche creare i propri predicati utilizzando [API Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La creazione di predicati personalizzati richiede conoscenze di base sul framework [Widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
+La creazione di predicati personalizzati richiede conoscenze di base sul framework [Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
 
 La best practice prevede di copiare un predicato esistente e regolarlo. I predicati di esempio sono in **/libs/cq/search/components/predicates**.
 

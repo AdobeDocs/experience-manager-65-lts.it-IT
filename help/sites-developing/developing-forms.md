@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d1475168-6625-4d27-9c3b-01e415c2f398
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 0%
@@ -315,7 +315,7 @@ Quando la configurazione Mostra/Nascondi non è valida, viene fornita solo come 
 
 ### Sviluppo di script da utilizzare con Forms {#developing-scripts-for-use-with-forms}
 
-Per ulteriori informazioni sugli elementi API che possono essere utilizzati durante la scrittura di script, vedi [JavaScript relativi ai moduli](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Per ulteriori informazioni sugli elementi API che possono essere utilizzati durante la scrittura di script, vedi [JavaScript relativi ai moduli](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 È possibile utilizzarlo per azioni quali la chiamata di un servizio prima dell’invio del modulo e l’annullamento del servizio in caso di errore:
 

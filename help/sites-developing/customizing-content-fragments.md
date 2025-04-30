@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
@@ -243,7 +243,7 @@ I frammenti di contenuto possono essere integrati con:
 
 Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi:
 
-[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -253,7 +253,7 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 Le tre interfacce seguenti possono fungere da punti di ingresso:
 
-* **Modello frammento** ([Modello frammento](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modello frammento** ([Modello frammento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Utilizza `FragmentTemplate.createFragment()` per creare un frammento.
 
@@ -296,7 +296,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
       * Ottenere dati di base (nome, titolo, descrizione)
 
-* **Frammento di contenuto** ([Frammento di contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Frammento di contenuto** ([Frammento di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
 
@@ -328,7 +328,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
   Le interfacce che rappresentano gli elementi principali di un frammento sono:
 
-   * **Elemento contenuto** ([Elemento contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Elemento contenuto** ([Elemento contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto
@@ -342,7 +342,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
       * Scelta rapida per la risoluzione delle varianti (applicazione di alcune logiche di fallback aggiuntive specifiche per l’implementazione se la variante specificata non è disponibile per un elemento)
 
-   * **Variante contenuto** ([Variante contenuto](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+   * **Variante contenuto** ([Variante contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Ottenere dati di base (nome, titolo, descrizione)
       * Ottieni/Imposta contenuto

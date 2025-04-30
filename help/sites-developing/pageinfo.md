@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 1%
@@ -554,7 +554,7 @@ Per le risorse che utilizzano il componente della pagina dell&#39;applicazione c
 
 ### Esempio di implementazione di PageInfoProvider {#example-pageinfoprovider-implementation}
 
-La classe Java seguente implementa [PageInfoProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) e restituisce l&#39;URL pubblicato della risorsa della pagina corrente.
+La classe Java seguente implementa [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/index.html) e restituisce l&#39;URL pubblicato della risorsa della pagina corrente.
 
 ```java
 package com.adobe.example;

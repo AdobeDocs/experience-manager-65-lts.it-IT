@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6ca4f66d-993b-4cfb-9b09-84bb20a54d4c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '5177'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Ogni colonna è un&#39;istanza del componente [`columnbase`](#column-base-compon
 La query:
 
 * È definito come parte del componente [`reportbase`](#report-base).
-* È basato su [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
+* È basato su [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera i dati utilizzati come base del rapporto. Ogni riga del set di risultati (tabella) è associata a un nodo come restituito dalla query. Le informazioni specifiche per [singole colonne](#column-base-component) vengono quindi estratte da questo set di dati.
 
 * Di solito è costituito da:

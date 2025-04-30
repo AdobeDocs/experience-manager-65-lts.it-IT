@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Tagging
 role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -38,7 +38,7 @@ La libreria globale dichiara anche la [libreria Sling](/help/sites-developing/ta
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Il tag `<ui:includeClientLib>` include una libreria client html di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+Il tag `<ui:includeClientLib>` include una libreria client html di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Ha i seguenti attributi:
 

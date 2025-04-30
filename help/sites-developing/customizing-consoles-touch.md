@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Questi possono essere utilizzati in molti modi per estendere le console AEM. Di 
 >
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
 >
 
 
@@ -150,7 +150,7 @@ Per personalizzare le colonne nella vista a elenco:
 
 1. Facoltativamente:
 
-   * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+   * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
      Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.

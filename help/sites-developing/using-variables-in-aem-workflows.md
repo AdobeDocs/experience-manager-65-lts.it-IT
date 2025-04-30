@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Nei modelli di flusso di lavoro di AEM puoi effettuare le seguenti operazioni:
 * [Impostare un valore per la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable) utilizzando il passaggio del flusso di lavoro Imposta variabile.
 * [Utilizza la variabile](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) nei passaggi del flusso di lavoro OR Split e Goto AEM per definire un&#39;espressione che consenta di prendere decisioni di indirizzamento. Puoi anche utilizzare le variabili in tutti i passaggi del flusso di lavoro di AEM Forms.
 
-Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). È possibile utilizzare [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript per accedere ai metadati salvati utilizzando le variabili.
+Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). È possibile utilizzare [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript per accedere ai metadati salvati utilizzando le variabili.
 
 ## Creare una variabile {#create-a-variable}
 
@@ -169,7 +169,7 @@ Tutti i passaggi di AEM Forms Workflow supportano le variabili. Per ulteriori in
 
 ### Passaggi del flusso di lavoro senza supporto per le variabili {#workflow-steps-without-support-for-variables}
 
-È possibile utilizzare l&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) per accedere alle variabili nei passaggi del flusso di lavoro che non supportano le variabili.
+È possibile utilizzare l&#39;interfaccia [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) per accedere alle variabili nei passaggi del flusso di lavoro che non supportano le variabili.
 
 #### Recupera il valore della variabile {#retrieve-the-variable-value}
 
@@ -211,7 +211,7 @@ Aggiorna il valore della variabile **stipendio** in 50000.
 
 Puoi utilizzare un’API per impostare le variabili e trasmetterle alle istanze del flusso di lavoro.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) utilizza model, wfData e metaData come argomenti. Utilizza MetaDataMap per impostare il valore della variabile.
+[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) utilizza model, wfData e metaData come argomenti. Utilizza MetaDataMap per impostare il valore della variabile.
 
 In questa API, la variabile **variableName** è impostata su **value** utilizzando metaData.put(variableName, value);
 

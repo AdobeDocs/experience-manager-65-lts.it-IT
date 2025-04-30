@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
 source-wordcount: '3200'
 ht-degree: 0%
@@ -110,13 +110,13 @@ Il comportamento di [modifica di un componente è configurato](/help/sites-devel
 
 ## Configurazione del comportamento di anteprima {#configuring-the-preview-behavior}
 
-Il cookie della modalità [WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità **Anteprima** anche se la pagina non viene aggiornata.
+Il cookie della modalità [WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html) viene impostato quando si passa alla modalità **Anteprima** anche se la pagina non viene aggiornata.
 
 Per i componenti con un rendering sensibili alla modalità WCM, è necessario definirli per aggiornarsi in modo specifico e quindi basarsi sul valore del cookie.
 
 >[!NOTE]
 >
->Nell&#39;interfaccia utente touch vengono utilizzati solo i valori `EDIT` e `PREVIEW` per il cookie [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html).
+>Nell&#39;interfaccia utente touch vengono utilizzati solo i valori `EDIT` e `PREVIEW` per il cookie [Modalità WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/WCMMode.html).
 
 ## Creazione e configurazione di una finestra di dialogo {#creating-and-configuring-a-dialog}
 
