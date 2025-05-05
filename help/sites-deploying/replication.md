@@ -425,6 +425,7 @@ Per configurare la replica dei contenuti per un’ulteriore istanza Publish, cre
    * Nella scheda **Trasporto**:
 
       * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
+
         `https://localhost:4504/bin/receive`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
@@ -468,6 +469,7 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
    * Nella scheda **Trasporto**:
 
       * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.

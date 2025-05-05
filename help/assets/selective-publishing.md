@@ -268,6 +268,7 @@ Puoi utilizzare **[!UICONTROL Timeline]** con **[!UICONTROL Vista a schede]**, *
 Quando si utilizza **[!UICONTROL Vista a elenco]**, viene visualizzata una colonna aggiuntiva per lo stato di pubblicazione **[!UICONTROL Dynamic Media]**.
    * Una cartella configurata per la sincronizzazione con Dynamic Media visualizza la colonna **[!UICONTROL Dynamic Media]** per impostazione predefinita.
    * Una cartella *non* configurata per la sincronizzazione con Dynamic Media non visualizza la colonna Dynamic Media.
+
      ![Visualizzazione elenco e sequenza temporale](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Risoluzione dei problemi di pubblicazione selettiva {#selective-publish-troubleshoot}

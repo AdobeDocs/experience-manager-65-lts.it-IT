@@ -51,7 +51,7 @@ Vedi anche [Facoltativo - Impostazione e configurazione di Dynamic Media - Impos
    * Scheda [Attributi gestione colore](#color-management-attributes-tab)
 
    ![Pagina Impostazione pubblicazione Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Pagina Impostazione pubblicazione Dynamic Media, con la scheda **[!UICONTROL Attributi richiesta]**selezionata.*<br><br>
+   *Pagina Impostazione pubblicazione Dynamic Media, con la scheda **[!UICONTROL Attributi richiesta]**&#x200B;selezionata.*<br><br>
 
 1. Al termine, nell&#39;angolo superiore destro della pagina, fare clic su **[!UICONTROL Salva]**.
 

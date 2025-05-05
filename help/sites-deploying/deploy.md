@@ -173,7 +173,7 @@ Per accedere all’istanza, seleziona:
 
 **`https://localhost:4502`**
 
-Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **** in **`localhost:4503`**.
+Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **&#x200B;**&#x200B;in **`localhost:4503`**.
 
 ### Installazioni di authoring e pubblicazione {#author-and-publish-installs}
 

@@ -43,7 +43,7 @@ Requisiti minimi per l&#39;esecuzione di Adobe Experience Manager:
 >* [AEM Forms pacchetto](/help/forms/using/installing-configuring-aem-forms-osgi.md) aggiuntivo richiede 15 GB di spazio temporaneo.
 >
 
-Per ulteriori informazioni, vedere le Linee guida](/help/managing/hardware-sizing-guidelines.md) per il dimensionamento dell&#39;hardware[.
+Per ulteriori informazioni, vedere le Linee guida[&#128279;](/help/managing/hardware-sizing-guidelines.md) per il dimensionamento dell&#39;hardware.
 
 ### Livelli di supporto {#support-levels}
 
