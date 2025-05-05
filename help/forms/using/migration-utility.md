@@ -32,13 +32,13 @@ L&#39;utilità di migrazione converte le [risorse Forms adattive](../../forms/us
 
 **Se è presente un aggiornamento sul posto**
 
-Se hai eseguito un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), l&#39;istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per la gestione della corrispondenza).
+Se hai eseguito un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md), l&#39;istanza aggiornata dispone già delle risorse e dei documenti. Tuttavia, prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (incluso il pacchetto di compatibilità per la gestione della corrispondenza).
 
 È quindi necessario aggiornare le risorse e i documenti [eseguendo l&#39;utilità di migrazione](#runningmigrationutility).
 
 **In caso di installazione fuori sede**
 
-Se si tratta di un&#39;installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (incluso il pacchetto di compatibilità per Gestione corrispondenza).
+Se si tratta di un&#39;installazione fuori sede (nuova), prima di poter utilizzare le risorse e i documenti, è necessario installare il [pacchetto di compatibilità AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) (incluso il pacchetto di compatibilità per Gestione corrispondenza).
 
 Quindi devi importare il pacchetto di risorse (zip o cmp) nella nuova configurazione e quindi aggiornare le risorse e i documenti eseguendo [l&#39;utilità di migrazione](#runningmigrationutility). Adobe consiglia di creare le risorse nella nuova configurazione solo dopo aver eseguito l’utility di migrazione.
 

@@ -54,7 +54,7 @@ Adobe consiglia di installare il pacchetto di configurazione [adobe-asset-link-c
    Imposta le seguenti proprietà e salva le modifiche.
 
    * [!UICONTROL Mappature gruppo]: lascia vuoto a meno che non lo desideri. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
-   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/it/enterprise/using/create-aal-user-group.html).
 
 1. Individuare la configurazione **[!UICONTROL Adobe Granite Bearer Authentication Handler]** e fare clic per modificarla.
 
@@ -116,7 +116,7 @@ Per configurare manualmente Experience Manager:
 
 ## Configurazione aggiuntiva dopo la migrazione ai profili aziendali {#configure-migration-activity}
 
-Gli utenti di Adobe Asset Link possono connettersi ad Experience Manager per consentire l’accesso IMS dall’organizzazione principale Creative Cloud for Enterprise (CCE). Experience Manager utilizza gli ID client per identificare l’organizzazione IMS consentita. Dopo la migrazione ai profili aziendali, è necessario configurare l’ID client e la chiave segreta per l’organizzazione IMS in Experience Manager per il gestore di autenticazione Bearer. Per ulteriori informazioni sui profili aziendali, vedere [introduzione ai profili Adobe](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Gli utenti di Adobe Asset Link possono connettersi ad Experience Manager per consentire l’accesso IMS dall’organizzazione principale Creative Cloud for Enterprise (CCE). Experience Manager utilizza gli ID client per identificare l’organizzazione IMS consentita. Dopo la migrazione ai profili aziendali, è necessario configurare l’ID client e la chiave segreta per l’organizzazione IMS in Experience Manager per il gestore di autenticazione Bearer. Per ulteriori informazioni sui profili aziendali, vedere [introduzione ai profili Adobe](https://helpx.adobe.com/it/enterprise/kb/introducing-adobe-profiles.html).
 
 È necessaria una configurazione aggiuntiva solo se per Experience Manager e Creative Cloud for Enterprise (CCE) utilizzi diverse organizzazioni Adobe IMS e se viene stabilita una relazione di trust tra domini tra queste due organizzazioni.
 
@@ -283,7 +283,7 @@ In caso di problemi durante la configurazione o l’utilizzo di Adobe Asset Link
 * Assicurati che l’implementazione soddisfi i prerequisiti. In particolare, assicurati che siano installati i pacchetti o i Feature Pack appropriati.
 * Contatta il partner o l’integratore di sistemi della tua organizzazione.
 * Se gli utenti di Creative Cloud non sono in grado di verificare le risorse estratte, verifica la presenza di maiuscole/minuscole nei nomi di dominio negli ID e-mail. Per risolvere il problema, vedere [configurazione manuale](#manual-configuration).
-* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/it/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]

@@ -102,7 +102,7 @@ Il rapporto si presenta con questo formato:
 
 >[!NOTE]
 >
->Per ulteriori informazioni su ciascuna categoria di risultati, vedere [Categorie del rilevatore pattern](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Per ulteriori informazioni su ciascuna categoria di risultati, vedere [Categorie del rilevatore pattern](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Per comprendere i livelli di importanza, seguire la tabella seguente:
 

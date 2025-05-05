@@ -36,11 +36,11 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 ## Sessione Gem {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=it) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
 
 >[!NOTE]
 >
->La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) per ottenere una panoramica dettagliata del generatore di query.
+>La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=it) per ottenere una panoramica dettagliata del generatore di query.
 
 ## Query di esempio {#sample-queries}
 

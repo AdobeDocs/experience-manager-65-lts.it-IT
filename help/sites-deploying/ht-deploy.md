@@ -20,7 +20,7 @@ Gli argomenti seguenti descrivono come eseguire specifiche attività di distribu
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Eliminare i flussi di lavoro e il registro di controllo](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Eliminare i flussi di lavoro e il registro di controllo](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Suggerimenti per l&#39;ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md)
 
