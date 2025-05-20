@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e5acea11254a6c4dbd24ff2a6d8ae3578b6690da
+source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 28%
+source-wordcount: '927'
+ht-degree: 24%
 
 ---
 
@@ -108,10 +108,28 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5 LTS. Le vers
 | Open source | `org.apache.jackrabbit.api` pacchetti ora sono esportati dal bundle `org.apache.jackrabbit.oak-jackrabbit-api`. | Nessuna modifica richiesta. | 6.5 LTS GA |
 | Open source | `com.github.jknack.handlebars` non è supportato | Scegli la [versione](https://mvnrepository.com/artifact/com.github.jknack/handlebars) pertinente | 6.5 LTS GA |
 
+## Problemi noti {#known-issues}
+
+### Errore di connessione Dispatcher con funzione solo SSL {#ssl-only-feature}
+
+Quando si abilita la funzione solo SSL nelle distribuzioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze di Dispatcher e AEM. Dopo aver abilitato questa funzione, i controlli di integrità potrebbero non riuscire e la comunicazione tra le istanze di Dispatcher e AEM potrebbe essere interrotta.
+
+**Impatto:**
+* Errori di verifica stato con codici di risposta HTTP 500
+* Traffico interrotto tra istanze di Dispatcher e AEM
+* Il contenuto non può essere gestito correttamente tramite Dispatcher
+
+**Ambienti interessati:**
+* Distribuzioni di AEM con configurazioni del dispatcher
+* Sistemi in cui è stata abilitata la funzione solo SSL
+
+**Soluzione:**
+Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.0.zip). Non tentare di abilitare le funzionalità solo SSL finché non viene applicato l’hotfix necessario.
+
 ## Siti Web con restrizioni{#restricted-sites}
 
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
