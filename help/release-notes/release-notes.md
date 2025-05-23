@@ -1,14 +1,14 @@
 ---
 title: Note sulla versione corrente per Adobe Experience Manager 6.5 LTS
-description: Queste sono le note sulla versione corrente di Adobe Experience Manager 6.5 LTS.
+description: Trova informazioni sulla versione corrente per Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f6d152ceeae12cdadd0096e114584ce2a63a2ac
+source-git-commit: abba652bb5d7eb9b5f902ce99c07f2186e313173
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 24%
+source-wordcount: '1016'
+ht-degree: 18%
 
 ---
 
@@ -32,13 +32,13 @@ L’elenco seguente fornisce una panoramica, mentre le pagine successive elencan
 
 La piattaforma di [!DNL Adobe Experience Manager] 6.5 LTS si basa sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e del Content Repository Java™: Apache Jackrabbit Oak 1.68.x.
 
-Quickstart utilizza Eclipse Jetty 11.0.x come servlet engine.
+Eclipse Jetty 11.0.x è usato come motore servlet per Quickstart.
 
 #### Supporto Java™  {#java-support}
 
 * Supporto per Java™ 17 e Java™ 21.
-* Per ottenere prestazioni ottimali, sostituire i valori GC predefiniti con altri valori. Per ulteriori informazioni, vedere la sezione [installare e aggiornare](/help/sites-deploying/custom-standalone-install.md).
-* Gli aggiornamenti di manutenzione di Java™ 17 e Java™ 21 vengono distribuiti da Adobe per l’utilizzo da parte dei clienti nei progetti correlati ad AEM, quando non sono disponibili al pubblico da Oracle.
+* Per ottenere prestazioni ottimali, sostituire i valori predefiniti del catalogo globale con altri valori. Per ulteriori informazioni, vedere la sezione [installare e aggiornare](/help/sites-deploying/custom-standalone-install.md).
+* Adobe distribuisce gli aggiornamenti di manutenzione Java™ 17 e Java™ 21 per l’utilizzo da parte del cliente nei progetti correlati ad AEM, se non disponibili pubblicamente da Oracle.
 
 #### Packaging Uberjar {#uber-jar-packaging}
 
@@ -52,7 +52,7 @@ Quickstart utilizza Eclipse Jetty 11.0.x come servlet engine.
 
 Per i requisiti di installazione, vedere [istruzioni di installazione](/help/sites-deploying/custom-standalone-install.md).
 
-Per istruzioni dettagliate, consulta [documentazione sull&#39;aggiornamento](/help/sites-deploying/upgrade.md).
+Per istruzioni dettagliate, consulta la [documentazione sull&#39;aggiornamento](/help/sites-deploying/upgrade.md).
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -64,18 +64,19 @@ Trova la matrice completa delle piattaforme supportate, incluso il livello di su
 
 ## Funzioni obsolete e rimosse {#deprecated-and-removed-features}
 
-Adobe valuta costantemente le funzionalità dei prodotti per reinventare o sostituire nel tempo le funzioni meno recenti con alternative più moderne al fine di migliorare il valore complessivo per il cliente, tenendo comunque in considerazione la compatibilità con le versioni precedenti.
+Adobe esamina continuamente le funzionalità dei prodotti per migliorare il valore del cliente modernizzando o sostituendo le funzioni meno recenti. Queste modifiche vengono apportate prestando particolare attenzione alla compatibilità con le versioni precedenti.
 
 Per comunicare l’imminente rimozione o sostituzione delle funzionalità di Adobe Experience Manager (AEM), si applicano le seguenti regole:
 
 1. Innanzitutto viene annunciato che una data funzione diventa obsoleta. Anche se obsolete, le funzionalità sono ancora disponibili ma non vengono ulteriormente migliorate.
-1. La rimozione delle funzionalità obsolete avviene non prima della versione principale successiva. La data effettiva di rimozione verrà annunciata in seguito.
+1. La rimozione delle funzionalità obsolete avviene non prima della versione principale successiva. La data effettiva di rimozione è pianificata per essere annunciata in un secondo momento.
 
 Questo processo offre ai clienti almeno un ciclo di rilascio per adattare la loro implementazione a una nuova versione o alla funzionalità che prenderà il posto di quella dichiarata obsoleta, prima che venga definitivamente rimossa.
 
 ### Funzioni obsolete {#deprecated-features}
 
-In questa sezione sono elencate le funzionalità contrassegnate come obsolete con AEM 6.5 LTS. In genere, le funzioni pianificate per la rimozione in una versione futura vengono inizialmente impostate come obsolete e ne viene indicata un’alternativa.
+In questa sezione sono elencate le funzionalità che Adobe ha dichiarato obsolete in AEM 6.5 LTS. In genere, Adobe depreca le funzioni prima di rimuoverle in una versione futura e fornisce un’alternativa.
+
 
 Consigliamo ai clienti di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
@@ -89,9 +90,9 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5 LTS. Le vers
 
 | Area | Funzione obsoleta | Sostituzione | Versione (SP) |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic non è supportato. | Eseguire la migrazione a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
+| Commerce | AEM CIF Classic non è supportato. | Esegui la migrazione a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluzioni | Social network/Communities non supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
-| Screens | Screens non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
+| Screens | Screens non sono supportati. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Risorse | `dam-pim` e `dam-rating` non sono supportati perché i bundle dipendono dal social network. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Risorse | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` è stato rimosso. | Utilizzare l&#39;API alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` che è stata aggiunta. | 6.5 LTS GA |
 | Portale | AEM Portal Director non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
@@ -110,17 +111,34 @@ In questa sezione sono elencate le funzionalità rimosse da AEM 6.5 LTS. Le vers
 
 ## Problemi noti {#known-issues}
 
+### Problema con il bundle di script JSP in AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA**
+
+AEM 6.5.21, 6.5.22, 6.5.23 e AEM 6.5 LTS GA vengono forniti con il bundle `org.apache.sling.scripting.jsp:2.6.0`, che contiene un problema noto. Il problema si verifica in genere con un carico elevato quando l’istanza AEM gestisce molte richieste simultanee.
+
+Quando si verifica questo problema, è possibile che nei registri errori venga visualizzata una delle eccezioni seguenti insieme ai riferimenti a `org.apache.sling.scripting.jsp:2.6.0`:
+
+* `java.io.IOException: classFile.delete() failed`
+* `java.io.IOException: tmpFile.renameTo(classFile) failed`
+* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
+* `java.io.FileNotFoundException`
+
+Quando si verifica questo errore, l&#39;unico metodo di ripristino consiste nel riavviare l&#39;istanza di AEM.
+
+Contatta l’Assistenza clienti Adobe e fai riferimento a questa nota sulla versione per una risoluzione.
+
 ### Errore di connessione Dispatcher con funzione solo SSL {#ssl-only-feature}
 
-Quando si abilita la funzione solo SSL nelle distribuzioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze di Dispatcher e AEM. Dopo aver abilitato questa funzione, i controlli di integrità potrebbero non riuscire e la comunicazione tra le istanze di Dispatcher e AEM potrebbe essere interrotta.
+Quando si abilita la funzione solo SSL nelle distribuzioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, i controlli di integrità potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta.
 
 **Impatto:**
+
 * Errori di verifica stato con codici di risposta HTTP 500
-* Traffico interrotto tra istanze di Dispatcher e AEM
+* Traffico interrotto tra istanze Dispatcher e AEM
 * Il contenuto non può essere gestito correttamente tramite Dispatcher
 
 **Ambienti interessati:**
-* Distribuzioni di AEM con configurazioni del dispatcher
+
+* Distribuzioni di AEM con configurazioni Dispatcher
 * Sistemi in cui è stata abilitata la funzione solo SSL
 
 **Soluzione:**
@@ -131,5 +149,5 @@ Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolve
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
