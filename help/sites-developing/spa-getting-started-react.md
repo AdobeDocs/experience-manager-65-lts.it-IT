@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 9889b0fe-f39c-42dc-bc7b-8743d68e7503
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 4%
 
 ---
+
 
 # Guida introduttiva alle applicazioni a pagina singola in AEM - React{#getting-started-with-spas-in-aem-react}
 
@@ -117,7 +119,7 @@ In realtà, la creazione dell&#39;app utilizza [Webpack](https://webpack.js.org/
 
 Una volta generato, il pacchetto può essere caricato in un’istanza di AEM.
 
-### Archetipo progetto AEM {#aem-project-archetype}
+### Archetipo di progetto AEM {#aem-project-archetype}
 
 Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 

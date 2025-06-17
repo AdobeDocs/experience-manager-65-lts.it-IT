@@ -7,12 +7,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 65%
 
 ---
+
 
 # Introduzione alla SPA e procedura dettagliata {#spa-introduction-and-walkthrough}
 
@@ -147,11 +149,11 @@ L&#39;esperienza del comportamento di un&#39;applicazione a pagina singola per l
 
    Osserva la struttura delle pagine, inclusa la navigazione alle pagine figlie, al widget meteo e agli articoli.
 
-1. Passa a una pagina figlia utilizzando il menu e controlla che la pagina venga caricata immediatamente senza la necessità di un aggiornamento.
+1. Passa a una pagina secondaria utilizzando il menu e controlla che la pagina venga caricata immediatamente senza la necessità di un aggiornamento.
 
    ![Passaggio 2](assets/spa-walkthrough-step-1-2.png)
 
-1. Apri gli strumenti di sviluppo incorporati del browser e monitora l’attività di rete mentre navighi nelle pagine figlie.
+1. Apri gli strumenti di sviluppo incorporati del browser e monitora l’attività di rete mentre navighi nelle pagine secondarie.
 
    ![Passaggio 3](assets/spa-walkthrough-step-1-3.png)
 
@@ -159,7 +161,7 @@ L&#39;esperienza del comportamento di un&#39;applicazione a pagina singola per l
 
    La SPA gestisce il contenuto e il routing interamente sul lato client.
 
-Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine figlie, come viene caricata?
+Quindi, se la pagina non viene ricaricata durante la navigazione tra le pagine secondarie, come viene caricata?
 
 Nella sezione successiva, [Caricamento di un&#39;applicazione SPA,](#loading-an-spa-application) approfondisce la meccanica di caricamento dell&#39;applicazione SPA e il modo in cui il contenuto può essere caricato in modo sincrono e asincrono.
 
@@ -223,7 +225,7 @@ Nella sezione seguente esploreremo il contratto che consente all’editor di SPA
 
    `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`
 
-1. Utilizzando gli strumenti di sviluppo incorporati nel browser, esaminare il contenuto della pagina. Con lo strumento di selezione, selezionare un componente modificabile nella pagina e visualizzare i dettagli dell’elemento.
+1. Utilizzando gli strumenti di sviluppo incorporati nel browser, esamina il contenuto della pagina. Con lo strumento di selezione, selezionare un componente modificabile nella pagina e visualizzare i dettagli dell’elemento.
 
    Il componente ha un nuovo attributo dati `data-cq-data-path`.
 

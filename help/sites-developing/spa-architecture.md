@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
 
 ---
+
 
 # Sviluppo di SPA per AEM{#developing-spas-for-aem}
 
@@ -62,7 +64,7 @@ Come per il rendering, anche tutte le operazioni di instradamento devono essere 
 
 Qualsiasi routing statico funziona in base al principio [di portabilità](/help/sites-developing/spa-architecture.md#portability) e limita l&#39;autore in quanto non è compatibile con le funzionalità di authoring dei contenuti di AEM. Ad esempio, con il routing statico, se l’autore di contenuto desidera modificare un percorso o una pagina, deve chiedere allo sviluppatore front-end di farlo.
 
-## Archetipo progetto AEM {#aem-project-archetype}
+## Archetipo di progetto AEM {#aem-project-archetype}
 
 Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
