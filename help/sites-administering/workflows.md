@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -55,7 +55,7 @@ All’avvio (esecuzione) di un modello di flusso di lavoro, viene creata un’is
 
 >[!CAUTION]
 >
->I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori dettagli, vedi [Sviluppo di flussi di lavoro](/help/sites-developing/workflows.md#model).
+>I passaggi eseguiti sono quelli definiti dal modello di flusso di lavoro *al momento della generazione dell&#39;istanza*. Per ulteriori dettagli, vedi [Sviluppo ed estensione dei flussi di lavoro - Modelli](/help/sites-developing/workflows.md#model).
 
 Le istanze del flusso di lavoro avanzano nel seguente ciclo di vita:
 
