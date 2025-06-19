@@ -136,7 +136,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

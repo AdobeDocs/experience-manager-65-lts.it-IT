@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference) |
 | AEM 6.5 | Questo articolo |
 
 I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](/help/sites-developing/workflows-models.md#extending-aem).
