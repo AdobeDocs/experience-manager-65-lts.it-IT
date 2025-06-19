@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1ea2f849-ef36-47bf-ac3a-49d1984efca5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7d1ab7984bc890aa4f079357061f44784a3bd1fe
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 59%
 
 ---
@@ -312,7 +312,7 @@ I dettagli precisi sulle modalità di creazione di video con descrizione audio v
 
 * [Comprendere i criteri di successo 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Come soddisfare i criteri di successo 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/it/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Sottotitoli (dal vivo) (1.2.4)    {#captions-live}
 
@@ -328,12 +328,11 @@ Questo criterio di successo è identico a [Sottotitoli (preregistrati)](#caption
 
 Segui le indicazioni fornite per [Sottotitoli (preregistrati)](#captions-pre-recorded) qui sopra. Tuttavia, data la natura live dei media, i sottotitoli dovranno essere creati il più rapidamente possibile e in risposta a ciò che sta accadendo. Pertanto, è consigliabile utilizzare strumenti per la creazione di sottotitoli in tempo reale o di sintesi vocale.
 
-Istruzioni dettagliate al riguardo vanno oltre l&#39;ambito di questo documento, ma informazioni utili sono reperibili tramite le risorse seguenti:
+Istruzioni dettagliate vanno oltre lo scopo di questo documento, ma la risorsa seguente fornisce informazioni utili:
 
 * [WebAIM: aggiunta di sottotitoli in tempo reale](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): i sottotitoli possono essere generati automaticamente utilizzando il riconoscimento vocale?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Ulteriori informazioni - Sottotitoli (dal vivo) (1.2.4)  {#more-information-captions-live}
+#### Ulteriori informazioni - Sottotitoli (in tempo reale) (1.2.4)  {#more-information-captions-live}
 
 * [Comprendere i criteri di successo 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Come soddisfare i criteri di successo 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)

@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1453'
 ht-degree: 3%
 
 ---
@@ -39,10 +39,9 @@ Gli aspetti principali sono trattati di seguito, mentre le pagine che seguono fo
 >
 >* Partecipazione ai flussi di lavoro, vedi [Utilizzo dei flussi di lavoro](/help/sites-authoring/workflows.md).
 >* Per l&#39;amministrazione dei flussi di lavoro e delle istanze dei flussi di lavoro, vedere [Amministrazione dei flussi di lavoro](/help/sites-administering/workflows.md).
->* Per un articolo della community end-to-end, vedi [Modifica di Digital Assets tramite i flussi di lavoro di Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/using/assets-workflow.html)
+>* Per un articolo della community end-to-end, vedere [Modifica di Digital Assets tramite i flussi di lavoro di Adobe Experience Manager.](/help/assets/assets-workflow.md).
 >* Vedi [Webinar Ask the AEM Experts webinar on Workflows](https://communities.adobeconnect.com/p5s33iburd54/) (Domande agli esperti di sui flussi di lavoro).
 >* Modifiche ai percorsi delle informazioni, vedi [Best practice per i flussi di lavoro - Percorsi](/help/sites-developing/workflows-best-practices.md#locations).
->
 
 ## Modello {#model}
 
@@ -196,7 +195,7 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
-   | Passaggio 3 | Rivedi |
+   | Passaggio 3 | Rivedere |
    | Passaggio 4 | Approvazione |
    | Passaggio 5 | Completato |
    | Passaggio 6 | Completato |
@@ -205,7 +204,7 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
 
 ### Flussi di lavoro e Forms {#workflows-and-forms}
 
-In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core del modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=it) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
+In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core del modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Durante la creazione di un modulo, l’invio del modulo può essere facilmente associato a un modello di flusso di lavoro. Ad esempio, per archiviare il contenuto in una posizione specifica del repository o per notificare a un utente l&#39;invio del modulo e il relativo contenuto.
 

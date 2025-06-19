@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 79551cfa77420fae965ecac8060fd2005beff558
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 3%
+source-wordcount: '1363'
+ht-degree: 4%
 
 ---
 
@@ -173,7 +173,7 @@ Per accedere all’istanza, seleziona:
 
 **`https://localhost:4502`**
 
-Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **&#x200B;**&#x200B;in **`localhost:4503`**.
+Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **** in **`localhost:4503`**.
 
 ### Installazioni di authoring e pubblicazione {#author-and-publish-installs}
 
@@ -233,10 +233,6 @@ Quando il file jar quickstart viene avviato per la prima volta, si disinserisce 
 Se l’istanza è stata installata dall’interfaccia utente, si apre automaticamente una finestra del browser e si apre anche una finestra dell’applicazione desktop che mostra l’host e la porta dell’istanza e un interruttore di accensione/spegnimento:
 
 ![schermata di avvio](assets/screen_shot_.png)
-
->[!NOTE]
->
->Se utilizzi i collegamenti simbolici, dai un&#39;occhiata a [problemi con il collegamento simbolico](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
 
 ### Avvio e arresto {#starting-and-stopping}
 

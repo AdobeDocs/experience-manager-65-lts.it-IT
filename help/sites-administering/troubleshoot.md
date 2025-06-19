@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
+Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 
 ### Verifica di sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
@@ -104,7 +104,7 @@ Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le ses
 * È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
 * Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per analizzare le sessioni non chiuse e individuare il codice che non chiude una sessione, vedere l&#39;articolo della Knowledge Base [Analisi delle sessioni non chiuse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

@@ -8,7 +8,7 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 69d94737-41d0-47bb-b914-f7606becd038
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '3330'
 ht-degree: 1%
@@ -436,7 +436,7 @@ Puoi utilizzare il file di configurazione con le seguenti opzioni:
 * azureSas=&quot;&quot;: nella versione 1.6.3 del connettore è stato aggiunto il supporto per la firma di accesso condiviso di Azure. **Se nel file di configurazione sono presenti sia le credenziali SAS che le credenziali di archiviazione, SAS ha la priorità.** Per ulteriori informazioni sulle associazioni di protezione, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: l&#39;endpoint BLOB di Azure. Ad esempio, https://&lt;account di archiviazione>.blob.core.windows.net.
-* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, vedere la [documentazione ufficiale](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: nome dell&#39;account di archiviazione. Per ulteriori dettagli sulle credenziali di autenticazione di Microsoft® Azure, vedere la [documentazione ufficiale](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: la chiave di accesso all’archiviazione. Assicurati che il carattere &#39;=&#39; sia di escape come &#39;\=&#39;.
 * container=&quot;&quot;: nome del contenitore di archiviazione BLOB di Microsoft® Azure. Il contenitore è un raggruppamento di un insieme di BLOB. Per ulteriori dettagli, consulta la [documentazione ufficiale](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '5965'
 ht-degree: 0%
@@ -656,7 +656,7 @@ I CSP consentono di perfezionare i criteri. Tuttavia, in un’applicazione compl
 
 >[!NOTE]
 >
->Per ulteriori informazioni su come funziona, consulta la [pagina OWASP sui criteri di sicurezza dei contenuti](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Per ulteriori informazioni su come funziona, consulta la [pagina OWASP sui criteri di sicurezza dei contenuti](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Ridimensionamento {#sizing}
 

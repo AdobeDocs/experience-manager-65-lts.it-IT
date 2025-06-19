@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e82d97c2-c26a-48df-9210-47dc017c68c8
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 ## Suddivisione E {#and-split}
 
-La &lbrack;0&rbrace;divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
+La [0}divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
 
 ![wf-26](assets/wf-26.png)
 
@@ -188,7 +188,7 @@ La divisione **OR** crea una divisione nel flusso di lavoro, dopo la quale è at
 
 >[!NOTE]
 >
->Vedi [O passaggio suddiviso](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Vedi [O passaggio suddiviso](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)
 
 ![Diramazione tramite O Divisione](assets/variables_orsplit_new.png)
 
@@ -285,7 +285,6 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 * **Archivia dati con payload**
 
    * Per memorizzare i dati del widget come proprietà del payload del flusso di lavoro, utilizzate il seguente formato per il valore della proprietà name del nodo del widget:
-
      `./jcr:content/nodename`
 
    * I dati vengono memorizzati nella proprietà `nodename` del nodo payload. Se il nodo non contiene tale proprietà, la proprietà viene creata.
@@ -294,7 +293,6 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 * **Archivia dati con elemento di lavoro**
 
    * Per memorizzare i dati del widget come proprietà dei metadati dell&#39;elemento di lavoro, utilizzate il seguente formato per il valore della proprietà name:
-
      `nodename`
 
    * I dati vengono archiviati nella proprietà `nodename` dell&#39;elemento di lavoro `metadata`. I dati vengono conservati se la finestra di dialogo viene successivamente utilizzata con lo stesso payload.

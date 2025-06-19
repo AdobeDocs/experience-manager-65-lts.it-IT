@@ -9,7 +9,7 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 63f42a35-fbd5-4b1b-bba1-1bdcfd23dd33
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 6%
@@ -104,7 +104,7 @@ Durante l&#39;esecuzione di User Sync, viene recuperato un elenco di utenti da A
 
 Lo strumento consente all&#39;amministratore di sistema di mappare i gruppi di utenti nella directory del cliente con la configurazione del prodotto e i gruppi di utenti in [!DNL Admin Console]. La nuova versione di User Sync consente inoltre la creazione dinamica di gruppi di utenti in [!DNL Admin Console].
 
-Per impostare User Sync, l&#39;organizzazione deve creare un set di credenziali nello stesso modo in cui utilizzerebbe l&#39;[[!DNL User Management] API](https://developer.adobe.com/apis/cloudplatform/usermanagement/docs/setup.html).
+Per impostare User Sync, l&#39;organizzazione deve creare un set di credenziali nello stesso modo in cui utilizzerebbe l&#39;[[!DNL User Management] API](https://adobe-apiplatform.github.io/user-sync.py/en/success-guide/identify_server.html).
 
 ![immagine2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 

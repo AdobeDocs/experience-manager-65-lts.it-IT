@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 0%
@@ -43,8 +43,8 @@ Questa pagina consente di estendere le funzionalità del gestore multisito:
 
 La gestione multisito è costituita dai seguenti pacchetti:
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/api/package-summary.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/msm/commons/package-summary.html)
 
 I principali oggetti API MSM interagiscono come segue (vedi anche [Termini utilizzati](/help/sites-administering/msm.md#terms-used)):
 
@@ -208,15 +208,12 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 1. Aggiungi le seguenti proprietà a questo nodo:
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valore**: titolo identificativo che verrà visualizzato nell&#39;interfaccia utente.
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valore**: descrizione facoltativa.
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valore**: [Attivatore rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
       * `rollout`
@@ -689,7 +686,6 @@ Se una proprietà di pagina è soggetta a rollout e quindi, in caso di annullame
       * **Tipo**: `String`
 
       * **Valore**: contiene il nome della proprietà in esame (ed è paragonabile al valore della proprietà `name`; ad esempio, vedere
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Una volta definito `cq-msm-lockable`, l&#39;interruzione/chiusura della catena interagirà con MSM nel modo seguente:

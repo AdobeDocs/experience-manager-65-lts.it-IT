@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 2a94ea8d-2919-4f30-be31-ce559493805d
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Ad esempio, è possibile sovrapporre la seguente posizione all&#39;interno della
 
 >[!NOTE]
 >
->Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>Per ulteriori suggerimenti e strumenti, consulta l&#39;articolo della Knowledge Base [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935).
 
 ## Personalizzazione della vista predefinita per una console {#customizing-the-default-view-for-a-console}
 
@@ -151,7 +151,6 @@ Per personalizzare le colonne nella vista a elenco:
 1. Facoltativamente:
 
    * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
-
      Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.

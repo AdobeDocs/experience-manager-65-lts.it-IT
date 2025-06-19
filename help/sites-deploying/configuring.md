@@ -1,17 +1,13 @@
 ---
 title: Concetti di base sulla configurazione
 description: Scopri come configurare Adobe Experience Manager per i tuoi requisiti specifici.
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: configuring
-content-type: reference
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 338ea82e-c248-4118-9d42-e268d6396e65
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -180,11 +176,11 @@ Per informazioni sulla gestione degli utenti in AEM (inclusa l&#39;assegnazione 
 
 Dispatcher è lo strumento di Adobe Experience Manager per il caching, o il bilanciamento del carico, o entrambi. Può essere utilizzato con un server web di classe enterprise.
 
-Per informazioni dettagliate, vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it), in particolare [Configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it) per ulteriori dettagli sulla configurazione.
+Per informazioni dettagliate, vedere [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it), in particolare [Configurazione di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) per ulteriori dettagli sulla configurazione.
 
 ### Configurazione del connettore AEM LiveCycle {#configuring-aem-livecycle-connector}
 
-Con il rilascio di AEM Doc Services e AEM Doc Security, AEM ora ha la possibilità di richiamare i servizi di documentazione LiveCycle per eseguire il rendering di un modulo XFA, convertire un documento in PDF e proteggere un documento tramite policy. Per ulteriori dettagli, consulta [Connettore AEM LiveCycle](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html).
+Con il rilascio di AEM Doc Services e AEM Doc Security, AEM ora ha la possibilità di richiamare i servizi di documentazione LiveCycle per eseguire il rendering di un modulo XFA, convertire un documento in PDF e proteggere un documento tramite policy.
 
 ### Offload dei processi e amministrazione della topologia {#job-offloading-and-topology-administration}
 

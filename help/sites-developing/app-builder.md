@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f9b3df58-c94b-4143-aeec-85ff031bac2e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ App Builder offre ai clienti un modo per estendere facilmente Adobe Experience M
 * Estensibilità dei servizi di base: estende le funzionalità delle applicazioni di base estendendo il comportamento predefinito con funzioni personalizzate e logica di business.
 * Estensibilità dell’esperienza utente: estendere l’esperienza di base per supportare i requisiti aziendali o creare proprietà digitali, vetrine e app di back-office specifiche per il cliente.
 
-App Builder è disponibile per i clienti e i partner aziendali tramite Adobe Developer Preview dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Adobe invita gli sviluppatori a provare App Builder tramite il [programma di prova](https://developer.adobe.com/app-builder/trial/) di Adobe.
+App Builder è disponibile per i clienti e i partner aziendali tramite Adobe Developer Preview dall’estate 2020. La disponibilità generale (GA) di App Builder è prevista per dicembre 2021. Adobe invita gli sviluppatori a provare App Builder tramite il [programma di prova](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials) di Adobe.
 
 >[!NOTE]
 >
->Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/extending-aem/app-builder.html).
+>Per i clienti di AEM as a Cloud Service che desiderano utilizzare App Builder, consulta [Estensione di Adobe Experience Manager as a Cloud Service con Adobe Developer App Builder](/help/sites-developing/app-builder.md).
 
 ## Architettura {#architecture}
 
@@ -45,13 +45,13 @@ Il diagramma seguente illustra come un’applicazione standard basata su App Bui
 
 ![Architettura](assets/appbuilder-architecture.jpg)
 
-Per ulteriori dettagli sull&#39;architettura di App Builder, consulta [Panoramica dell&#39;architettura](https://developer.adobe.com/app-builder/docs/guides/).
+Per ulteriori dettagli sull&#39;architettura di App Builder, consulta [Panoramica dell&#39;architettura](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview).
 
 ## Introduzione ad App Builder {#additional-resources}
 
 Per aiutarti a iniziare a utilizzare App Builder, è stata creata una serie di documenti per aiutarti a iniziare:
 
-* [Guida introduttiva di App Builder](https://developer.adobe.com/app-builder/docs/getting_started/)
+* [Guida introduttiva di App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app)
 
 ## Continua l’apprendimento con la documentazione {#appbuilder-documentation}
 

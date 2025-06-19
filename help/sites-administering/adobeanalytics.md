@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 4f7e1794-af5a-45a2-8dc6-80029c47caeb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 56%
+source-wordcount: '249'
+ht-degree: 53%
 
 ---
 
@@ -50,15 +50,14 @@ Le pagine seguenti sono utili per configurare l’integrazione:
 Consulta:
 
 * [Estensione dell&#39;integrazione Adobe Analytics](/help/sites-developing/extending-analytics.md) per informazioni sullo sviluppo di componenti che raccolgono dati utente e sulla personalizzazione del framework Adobe Analytics.
-* L’articolo della knowledge base, [Integrazione di Adobe Analytics - risoluzione dei problemi](https://helpx.adobe.com/it/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), per informazioni sulla risoluzione dei problemi relativi all’integrazione di Adobe Analytics.
 
 >[!NOTE]
 >
 >Se utilizzi Adobe Analytics con una configurazione proxy personalizzata, devi [configurare due bundle OSGi](/help/sites-deploying/configuring-osgi.md) (ad esempio, con la console web), necessari per le configurazioni proxy **Apache HTTP Client**. Entrambi sono necessari, poiché alcune funzionalità di AEM utilizzano le API 3.x, mentre altre le API 4.x. Configurare:
 >
 >* **Client HTTP Day Commons 3.1** per configurare l’API 3.x;
->  ad esempio, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  >  ad esempio, [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Configurazione proxy dei componenti HTTP Apache** per configurare l’API 4.x;
->  ad esempio, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  >  ad esempio, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

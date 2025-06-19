@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 3%
@@ -56,8 +56,8 @@ Questi aiutano uno sviluppatore a:
 >
 >Consulta:
 >
->* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), per ulteriori suggerimenti e strumenti.
->* Sessione AEM Gems su [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=it).
+>* Articolo della Knowledge Base, [Risoluzione dei problemi relativi all&#39;interfaccia utente touch di AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), per ulteriori suggerimenti e strumenti.
+>* Sessione AEM Gems su [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Apertura modalità sviluppatore {#opening-developer-mode}

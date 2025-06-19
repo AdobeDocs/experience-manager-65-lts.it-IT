@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 >[!NOTE]
 >
->L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR di Adobe Experience Manager utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Adobe Experience Manager utilizzando l&#39;API JCR](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/access-jcr.html).
+>L’API QueryBuilder viene creata utilizzando l’API JCR. Puoi anche eseguire query sul JCR di Adobe Experience Manager utilizzando l’API JCR all’interno di un bundle OSGi. Per informazioni, consulta [Adobe Experience Manager utilizzando l&#39;API JCR](/help/sites-developing/access-jcr.md).
 
 ## Sessione Gem {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=it) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
 
 >[!NOTE]
 >
->La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=it) per ottenere una panoramica dettagliata del generatore di query.
+>La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) per ottenere una panoramica dettagliata del generatore di query.
 
 ## Query di esempio {#sample-queries}
 
@@ -324,7 +324,7 @@ Separato da uno spazio:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title

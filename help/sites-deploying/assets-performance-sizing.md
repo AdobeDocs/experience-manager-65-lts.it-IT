@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,3 @@ Finora nei progetti sono state utilizzate le seguenti modifiche delle prestazion
 
 * Generazione di rendering selettivo: genera solo le rappresentazioni necessarie aggiungendo condizioni al flusso di lavoro di elaborazione delle risorse, in modo che vengano generate rappresentazioni più costose solo per le risorse selezionate.
 * Archivio dati condiviso tra istanze: quando lo spazio su disco è insufficiente, questo può ridurre notevolmente la quantità di spazio su disco necessario, a scapito di sforzi di configurazione più elevati e perdendo la pulizia automatica dell’archivio dati.
-
-## Ulteriori informazioni {#further-reading}
-
-* [Analisi dei processi lenti e bloccati](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
