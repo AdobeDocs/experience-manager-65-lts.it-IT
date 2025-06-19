@@ -1,15 +1,15 @@
 ---
 title: Installare e configurare le comunicazioni interattive
-description: Installa e configura AEM Forms Interactive Communications per creare corrispondenze aziendali, documenti, dichiarazioni, avvisi sui vantaggi, marketing mail, fatture e kit di benvenuto.
+description: Installa e configura AEM Forms Interactive Communications per creare corrispondenza aziendale, documenti, rendiconti, note sui benefit, e-mail di marketing, fatture e kit di benvenuto.
 topic-tags: installing
 docset: aem65
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
 
    * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
-* I requisiti di memoria sono soddisfatti. AEM Forms pacchetto aggiuntivo richiede:
+* I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
 
    * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
    * 6 GB di spazio temporaneo per installazioni basate su UNIX.
@@ -89,17 +89,17 @@ Prima di iniziare a installare e configurare le funzionalità di comunicazione i
 Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementata in AEM. Il pacchetto contiene la comunicazione interattiva di AEM Forms, la gestione della corrispondenza e altre funzionalità. Per installare il pacchetto aggiuntivo, effettua le seguenti operazioni:
 
 1. Apri [Software Distribution](https://experience.adobe.com/downloads). Per accedere a Software Distribution è necessario disporre di un Adobe ID.
-1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibili nel menu dell&#39;intestazione.
-1. **[!UICONTROL Nella sezione Filtri]**:
-   1. Seleziona **[!UICONTROL Forms]** dall&#39;elenco a **[!UICONTROL discesa Soluzione]** .
-   2. Seleziona la versione e il tipo per il pacchetto. È inoltre possibile utilizzare l&#39;opzione **[!UICONTROL Search Download]** per filtrare i risultati.
+1. Seleziona **[!UICONTROL Adobe Experience Manager]** disponibile nel menu intestazione.
+1. Nella sezione **[!UICONTROL Filtri]**:
+   1. Selezionare **[!UICONTROL Forms]** dall&#39;elenco a discesa **[!UICONTROL Soluzione]**.
+   2. Seleziona la versione e digita per il pacchetto. Puoi anche utilizzare l&#39;opzione **[!UICONTROL Cerca download]** per filtrare i risultati.
 1. Selezionare il nome del pacchetto applicabile al sistema operativo in uso, selezionare **[!UICONTROL Accetta termini EULA]** e selezionare **[!UICONTROL Scarica]**.
-1. Apri [Gestione pacchetti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/package-manager.html)  e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
-1. Seleziona il pacchetto e fai clic su **[!UICONTROL Installa]**.
+1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
+1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi anche scaricare il pacchetto tramite la collegare diretta elencata nell&#39;articolo sulle [versioni](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) AEM Forms.
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
 
-1. Dopo aver installato il pacchetto, viene chiesto di riavviare il istanza AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i [messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED smettano di apparire nel file AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
+1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
 
    >[!NOTE]
    >
@@ -148,7 +148,7 @@ La comunicazione interattiva è l’approccio predefinito e consigliato per crea
 
 Il pacchetto di compatibilità per AEMFD consente di utilizzare le seguenti risorse di AEM 6.4 Forms, AEM 6.3 Forms e AEM 6.2 Forms su AEM 6.5 Forms:
 
-* Frammenti di documento
+* Frammenti di documenti
 * Lettere
 * Dizionari dati
 * Moduli adattivi: modelli e pagine obsoleti
@@ -183,10 +183,10 @@ Puoi abilitare la comunicazione SSL per il modello dati modulo. Per abilitare la
 
 ## Passaggi successivi {#next-steps}
 
-È stato configurato un ambiente per l&#39;utilizzo delle funzionalità di comunicazione interattiva e gestione della corrispondenza. Ora, i passaggi per l&#39;utilizzo di questa funzionalità sono:
+Hai configurato un ambiente per l’utilizzo delle funzionalità di comunicazione interattiva e di gestione della corrispondenza. Ora, i passaggi per utilizzare la funzionalità sono i seguenti:
 
 * [Panoramica sulla gestione della corrispondenza](/help/forms/using/interactive-communications-overview.md)
 
-* [Crea una comunicazione interattiva](../../forms/using/create-interactive-communication.md)
+* [Creare una comunicazione interattiva](../../forms/using/create-interactive-communication.md)
 
-* [Crea una lettera di gestione della corrispondenza](../../forms/using/create-letter.md)
+* [Creare una lettera di gestione della corrispondenza](../../forms/using/create-letter.md)

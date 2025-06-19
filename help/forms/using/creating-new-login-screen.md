@@ -1,17 +1,13 @@
 ---
 title: Creazione di una schermata di accesso
 description: Come modificare la pagina di accesso dei moduli LiveCycle, ad esempio di AEM Forms Workspace o Forms Manager.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 3e20857b-05bb-4f44-8011-550bdaf857c5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 3%
 
 ---
@@ -293,7 +289,7 @@ css.newLoginContentArea {
 1. Aggiungere nuove immagini in `/apps/livecycle/core/content/login`. Per aggiungere un&#39;immagine:
 
    1. Installare il client WebDAV.
-   1. Passare alla cartella `/apps/livecycle/core/content/login` utilizzando il client WebDAV. Per ulteriori informazioni, vedere [Accesso WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65-lts/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Passare alla cartella `/apps/livecycle/core/content/login` utilizzando il client WebDAV. Per ulteriori informazioni, vedere [Accesso WebDAV](/help/sites-administering/webdav-access.md).
 
    1. Aggiungere nuove immagini.
 

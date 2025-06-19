@@ -1,17 +1,13 @@
 ---
 title: Gestione delle applicazioni e delle attività di Forms nella casella in entrata AEM
 description: Casella in entrata AEM consente di avviare flussi di lavoro incentrati su Forms tramite l’invio di applicazioni e la gestione di attività.
-contentOwner: vishgupt
-topic-tags: document_services, publish
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1066'
 ht-degree: 3%
 
 ---
@@ -140,7 +136,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=it) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +146,6 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Creare un indice delle proprietà e impostarlo su true](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Creare un indice delle proprietà e impostarlo su true](/help/sites-deploying/queries-and-indexing.md#the-property-index).
 
-1. Dopo la configurazione degli indici in CRX DE o la distribuzione tramite un pacchetto, [reindicizza l&#39;archivio](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
-https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/queries-and-indexing.html
+1. Dopo aver configurato gli indici in CRX DE o aver distribuito tramite un pacchetto, reindicizza l’archivio.
