@@ -151,6 +151,7 @@ Per personalizzare le colonne nella vista a elenco:
 1. Facoltativamente:
 
    * Se si desidera inserire dati aggiuntivi, è necessario scrivere un [PageInforProvider](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) con un
+
      Proprietà `pageInfoProviderType`.
 
    Ad esempio, consulta la classe/bundle allegato (da GitHub) di seguito.

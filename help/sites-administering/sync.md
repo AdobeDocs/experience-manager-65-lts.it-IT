@@ -303,9 +303,11 @@ Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi 
    * cerca ed elimina il file denominato *sling.id.file*
 
       * ad esempio, su un sistema Linux®:
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * ad esempio, in un sistema Windows:
+
         `use windows explorer and search for *sling.id.file*`
 
 1. avviare l’istanza Publish
