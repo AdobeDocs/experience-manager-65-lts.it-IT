@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 89bab7e3-f688-4c95-8571-08477e737bc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4817296c00e094a65744a896d798e429d3ab6c7d
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 65%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
+
 
 # Pubblicazione delle pagine {#publishing-pages}
 
@@ -25,13 +26,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
 >* **Pubblicare/Annullare la pubblicazione**
->  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
+>  >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attivare/Disattivare**
->  Sinonimi di pubblicare/annullare la pubblicazione.
+>  >  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replicare/Replica**
->  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 
 ## Privilegi insufficienti {#insufficient-privileges}
 
@@ -151,17 +152,17 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
 
    ![pp-03](assets/pp-03.png)
 
-   Facendo clic su **Includi elementi figlio** viene visualizzata una finestra di dialogo che consente di includere:
+   Facendo clic su **Includi elementi secondari** viene visualizzata una finestra di dialogo che consente di includere:
 
    * Solo gli elementi secondari di primo livello.
    * Solo pagine modificate.
    * Solo pagine già pubblicate.
 
-   Fai clic su **Aggiungi** per aggiungere le pagine figlio nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
+   Fai clic su **Aggiungi** per aggiungere le pagine secondarie nell’elenco delle pagine da pubblicare o di cui annullare la pubblicazione, in base alle opzioni selezionate. Fai clic su **Annulla** per annullare la selezione e tornare alla procedura guidata.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-   Tornando alla procedura guidata vengono visualizzate le pagine aggiunte in base alle opzioni selezionate nella finestra di dialogo Includi elementi figlio.
+   Tornando alla procedura guidata vengono visualizzate le pagine aggiunte in base alle opzioni selezionate nella finestra di dialogo Includi elementi secondari.
 
    Puoi visualizzare e modificare i riferimenti da pubblicare o di cui annullare la pubblicazione per una pagina selezionandola e facendo clic sul pulsante **Riferimenti pubblicati**.
 
@@ -196,6 +197,10 @@ Per pubblicare una pagina o annullarne la pubblicazione tramite Gestisci pubblic
    Fai clic su **Pubblica** o **Pubblica più tardi** per completare la pubblicazione.
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
+
+>[!TIP]
+>
+>La pianificazione del contenuto per la pubblicazione replica il contenuto e rispetta i flussi di lavoro di pubblicazione. Se desideri nascondere temporaneamente il contenuto già pubblicato senza annullare la pubblicazione, considera [**Ora di attivazione** e **Ora di disattivazione** disponibili nelle proprietà della pagina.](/help/sites-authoring/editing-page-properties.md#on-time)
 
 ## Annullamento della pubblicazione delle pagine {#unpublishing-pages}
 
