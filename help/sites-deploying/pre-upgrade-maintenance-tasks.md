@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Prima di iniziare l’aggiornamento, è importante seguire queste attività di m
 
 ## Definizioni indice {#index-definitions}
 
-Assicurati di aver installato le definizioni dell’indice richieste rilasciate con i Service Pack di AEM 6.5 forniti almeno fino a AEM Service Pack 22. (Per ulteriori informazioni, consultare le [note sulla versione del servicepack AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/release-notes)).
+Assicurati di aver installato le definizioni dell’indice richieste rilasciate con il Service Pack di AEM 6.5 più recente. (Per ulteriori informazioni, consultare le [note sulla versione del servicepack AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/release-notes)).
 
 ## Garantire spazio su disco sufficiente {#ensure-sufficient-disk-space}
 
