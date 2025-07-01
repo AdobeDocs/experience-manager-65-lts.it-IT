@@ -1,14 +1,13 @@
 ---
 title: Integra [!DNL Assets] con [!DNL InDesign Server]
 description: Scopri come integrare  [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
-contentOwner: AG
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 8489976fbcee595ee8230c530597523e7cd0f6b7
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1548'
 ht-degree: 2%
 
 ---
@@ -21,11 +20,11 @@ ht-degree: 2%
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
 Questi possono coprire un&#39;ampia gamma di attività, ad esempio l&#39;utilizzo di [!DNL InDesign Server] per l&#39;elaborazione dei file.
 
-Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
+Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al motore [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting). Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript]. Per informazioni sugli script [!DNL InDesign], vedere [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al motore [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html). Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
@@ -50,7 +49,7 @@ Questo script di comandi:
 
    >[!NOTE]
    >
-   >IDML è un formato basato su XML che esegue il rendering di tutto il contenuto del file [!DNL InDesign]. Viene archiviato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip). Per ulteriori informazioni, vedere [Formati di interscambio InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
+   >IDML è un formato basato su XML che esegue il rendering di tutto il contenuto del file [!DNL InDesign]. Viene archiviato come pacchetto compresso utilizzando la compressione [ZIP](https://www.techterms.com/definition/zip). Per ulteriori informazioni, vedere [Formati di interscambio InDesign INX e IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8).
 
    >[!CAUTION]
    >

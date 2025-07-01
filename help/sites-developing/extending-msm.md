@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ Questa pagina consente di estendere le funzionalità del gestore multisito:
 >[!NOTE]
 >
 >Questa pagina deve essere letta insieme a [Riutilizzo del contenuto: Multi Site Manager](/help/sites-administering/msm.md).
->
->Anche le seguenti sezioni di Ristrutturazione dell’archivio Sites potrebbero essere di interesse:
->* [Configurazioni blueprint per Multi-Site Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [Configurazioni rollout gestore multisito](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -208,15 +204,12 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 1. Aggiungi le seguenti proprietà a questo nodo:
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valore**: titolo identificativo che verrà visualizzato nell&#39;interfaccia utente.
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valore**: descrizione facoltativa.
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valore**: [Attivatore rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
       * `rollout`
@@ -689,7 +682,6 @@ Se una proprietà di pagina è soggetta a rollout e quindi, in caso di annullame
       * **Tipo**: `String`
 
       * **Valore**: contiene il nome della proprietà in esame (ed è paragonabile al valore della proprietà `name`; ad esempio, vedere
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Una volta definito `cq-msm-lockable`, l&#39;interruzione/chiusura della catena interagirà con MSM nel modo seguente:

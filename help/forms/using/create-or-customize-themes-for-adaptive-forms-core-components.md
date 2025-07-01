@@ -2,16 +2,13 @@
 title: Come si creano o personalizzano i temi dei moduli adattivi?
 description: Scopri come creare o personalizzare i temi per i componenti core Adaptive Forms utilizzando le specifiche BEM
 keywords: crea tema per i componenti core per moduli adattivi, crea un nuovo tema, personalizza il tema, carica un nuovo tema, utilizza il tema nei moduli, elimina un tema, crea un tema nei moduli di AEM 6.5
-contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms
-docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '1938'
 ht-degree: 5%
 
 ---
@@ -81,7 +78,7 @@ La personalizzazione di un tema si riferisce al processo di modifica e personali
 
 * Installa la versione più recente di [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven è uno strumento di automazione della build comunemente utilizzato per i progetti Java™. L’installazione della versione più recente garantisce che tu disponga delle dipendenze necessarie per la personalizzazione del tema.
 
-* Scopri come creare una [libreria client in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/introduction/clientlibs.html). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
+* Scopri come creare una [libreria client in Adobe Experience Manager](/help/sites-developing/clientlibs.md). AEM fornisce librerie client che consentono di memorizzare il codice lato client nell’archivio, organizzarlo in categorie e definire quando e come ogni categoria di codice deve essere trasmessa al client.
 
 * Installa un editor di testo normale. Microsoft® Visual Studio Code. L&#39;utilizzo di un editor di testo normale come Microsoft® Visual Studio Code fornisce un ambiente semplice per la modifica e la modifica dei file dei temi.
 
@@ -111,7 +108,7 @@ La creazione o la personalizzazione di un tema è un processo in più fasi. Per 
 
 Gli esempi forniti nel documento sono basati sul tema **Canvas**, ma è possibile clonare qualsiasi tema e personalizzarlo seguendo le stesse istruzioni. Queste istruzioni sono applicabili a qualsiasi tema, consentendo di modificare i temi in base alle esigenze specifiche.
 
-#### 1. Clona l’archivio Git del tema {#clone-git-repo-of-theme}
+#### &#x200B;1. Clona l’archivio Git del tema {#clone-git-repo-of-theme}
 
 Per clonare un tema per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi:
 
@@ -141,9 +138,9 @@ Per clonare un tema, esegui le seguenti istruzioni:
 
 Dopo aver eseguito correttamente il comando, nella cartella `aem-forms-theme-canvas` del computer è disponibile una copia locale del tema.
 
-#### 2. Personalizzare il tema {#customize-the-theme}
+#### &#x200B;2. Personalizzare il tema {#customize-the-theme}
 
-Puoi personalizzare i singoli componenti o apportare modifiche a livello di tema utilizzando le variabili globali di un tema. La modifica delle variabili globali ha un effetto a cascata su tutti i singoli componenti. Ad esempio, è possibile utilizzare le variabili globali per modificare il colore del bordo di tutti i componenti all’interno di un modulo adattivo o applicare un colore di riempimento vibrante ai pulsanti di invito all’azione (CTA). Operazioni disponibili:
+Puoi personalizzare i singoli componenti o apportare modifiche a livello di tema utilizzando le variabili globali di un tema. La modifica delle variabili globali ha un effetto a cascata su tutti i singoli componenti. Ad esempio, è possibile utilizzare le variabili globali per modificare il colore del bordo di tutti i componenti all’interno di un modulo adattivo o applicare un colore di riempimento vibrante ai pulsanti di Call to action (CTA). Operazioni disponibili:
 
 * [Impostare gli stili del livello tema](#theme-customization-global-level)
 
@@ -190,7 +187,7 @@ Analogamente, è possibile utilizzare il file `variable.scss` per impostare la f
 >
 > Quando uno stile viene definito sia a livello di tema che a livello di componente, lo stile definito a livello di componente ha la priorità.
 
-#### 3. Preparare il tema per la distribuzione {#generate-the-clientlib}
+#### &#x200B;3. Preparare il tema per la distribuzione {#generate-the-clientlib}
 
 Per distribuire un tema in un’istanza AEM, è necessario convertirlo in una libreria client. Per convertire il tema in una libreria client, effettua le seguenti operazioni:
 
@@ -215,7 +212,7 @@ Per distribuire un tema in un’istanza AEM, è necessario convertirlo in una li
 
    ![Percorso libreria client](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Distribuire il tema in un ambiente locale {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Distribuire il tema in un ambiente locale {#deploy-the-theme-on-a-local-environment}
 
 Per distribuire il tema nell’ambiente di sviluppo o di test locale, effettua le seguenti operazioni:
 
@@ -266,7 +263,7 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Distribuire un tema nell’ambiente di produzione {#deploy-theme}
+#### &#x200B;5. Distribuire un tema nell’ambiente di produzione {#deploy-theme}
 
 Dopo aver testato correttamente il tema nell’ambiente di sviluppo locale, puoi procedere con la distribuzione del tema negli ambienti di produzione, incluse le istanze Author e Publish. Per distribuire il tema negli ambienti di produzione, effettua le seguenti operazioni:
 
@@ -291,7 +288,7 @@ Dopo l’installazione del pacchetto, il tema è disponibile per la selezione.
 I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Accedi all’istanza Autore AEM locale.
-1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Seleziona **Adobe Experience Manager** > **Forms** > **Forms e documenti**.
+1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Seleziona **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
 1. Fai clic su **Crea** > **Forms adattivo**.
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Avanti**. Viene visualizzato **Aggiungi proprietà**
 1. Specifica il **Nome** per il modulo adattivo.
@@ -344,4 +341,4 @@ Per rimuovere i temi inutilizzati o indesiderati:
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

@@ -1,17 +1,13 @@
 ---
 title: Utilizzo dell’area di lavoro AEM Forms
 description: Inizia a usare l’area di lavoro di AEM Forms con questa breve panoramica sui flussi di lavoro dei processi.
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: forms-workspace
-docset: aem65
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -133,8 +129,4 @@ Puoi personalizzare gran parte dell’interfaccia e delle funzionalità di base,
 
 Per impostazione predefinita, per un nuovo processo viene eseguito il rendering di un modulo XDP in formato PDF su un desktop e in formato HTML su un tablet. È sempre possibile eseguire il rendering di un modulo XDP in formato HTML. Per informazioni dettagliate, vedere [Nuovi servizi di rendering e invio](/help/forms/using/new-render-submit-service.md).
 
-La funzionalità [Mobile Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), che funziona con [profili](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), abilita il rendering HTML dei moduli XDP. Per impostazione predefinita, il &#39;Rendering nuovo HTML Form&#39; utilizza il profilo `default.html` che è possibile modificare. Puoi anche aggiungere modifiche personalizzate che si verificano prima del rendering di un modulo XDP in formato HTML.
-
-## app dell’area di lavoro AEM Forms {#aem-forms-workspace-app}
-
-Per lavorare sui processi aziendali su un dispositivo mobile, puoi utilizzare l’offerta di AEM Forms per app Workspace di AEM Forms. Per ulteriori informazioni, vedere [Panoramica dell&#39;app dell&#39;area di lavoro AEM Forms](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+La funzionalità [Mobile Forms](/help/forms/using/introduction.md), che funziona con [profili](/help/forms/using/custom-profile.md), abilita il rendering HTML dei moduli XDP. Per impostazione predefinita, il &#39;Rendering nuovo HTML Form&#39; utilizza il profilo `default.html` che è possibile modificare. Puoi anche aggiungere modifiche personalizzate che si verificano prima del rendering di un modulo XDP in formato HTML.

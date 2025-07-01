@@ -1,18 +1,13 @@
 ---
 title: 'Componenti Adobe Experience Manager: nozioni di base'
 description: Quando inizi a sviluppare nuovi componenti, devi comprendere le nozioni di base della loro struttura e configurazione.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
-source-git-commit: 013c9155817811913963ca514f7a6369b338d487
+source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4819'
 ht-degree: 1%
 
 ---
@@ -312,7 +307,7 @@ Un componente è un nodo di tipo `cq:Component` e presenta le proprietà e i nod
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Se impostata, questa proprietà viene considerata come ID cella. Per ulteriori informazioni, vedere l'articolo della Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Come vengono generati gli ID delle celle di progettazione</a>.<br /> </td>
+   <td>Se impostata, questa proprietà viene considerata come ID cella.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -597,7 +592,7 @@ Nell’archivio sono presenti molte configurazioni esistenti. Puoi cercare facil
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in **&#x200B; CRXDE Lite** e cercare con la seguente stringa di query XPath:
+* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** e cercare con la seguente stringa di query XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

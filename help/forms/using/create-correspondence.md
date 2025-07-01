@@ -8,9 +8,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Creare corrispondenza nell’interfaccia utente Crea corrispondenza {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Dopo aver creato un modello di [lettere in Gestione corrispondenza](../../forms/using/create-letter.md), l&#39;utente finale/agente/perito di attestazione può aprire la lettera nell&#39;interfaccia utente Crea corrispondenza e creare una corrispondenza immettendo dati, impostando contenuto e gestendo allegati. Infine, il perito o l&#39;agente può gestire il contenuto in modalità anteprima e inviare la lettera.
+Dopo aver creato un modello di [lettere in Gestione corrispondenza](/help/forms/using/create-letter.md), l&#39;utente finale/agente/perito di attestazione può aprire la lettera nell&#39;interfaccia utente Crea corrispondenza e creare una corrispondenza immettendo dati, impostando contenuto e gestendo allegati. Infine, il perito o l&#39;agente può gestire il contenuto in modalità anteprima e inviare la lettera.
 
 ### Visualizzare in anteprima una corrispondenza {#preview-a-correspondence}
 
@@ -51,13 +51,13 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
 1. Per impostazione predefinita, viene aperta l’anteprima della lettera HTML (anteprima moduli mobili) con la scheda Dati attivata.
 
-   Per ulteriori informazioni sui moduli per dispositivi mobili e sulle funzionalità supportate, vedere [Differenziazione delle funzionalità tra Mobile Forms e PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Per ulteriori informazioni sui moduli per dispositivi mobili e sulle funzionalità supportate, vedere [Differenziazione delle funzionalità tra Mobile Forms e PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
    Sono disponibili tre schede: dati, contenuto e allegati. Se non sono presenti elementi di dati (variabili segnaposto e campi di layout), la lettera si apre direttamente in con la scheda Contenuto visualizzata. La scheda Allegati è disponibile solo se sono presenti allegati o se è abilitato l&#39;accesso alla libreria.
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Immetti i dati {#enterdata}
 
@@ -111,17 +111,13 @@ Nella scheda del contenuto, gestisci il contenuto, ad esempio frammenti di docum
 
    >[!NOTE]
    >
-   >La formattazione del testo incollato presenta tuttavia alcune [limitazioni](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >La formattazione del testo incollato, tuttavia, presenta alcune limitazioni.
 
    È possibile applicare un rientro al testo e ai numeri nella lettera utilizzando il tasto TAB. È ad esempio possibile utilizzare il tasto TAB per allineare più colonne di testo di un elenco in un formato tabulare.
 
    ![tabspaces](assets/tabspaces.png)
 
    Esempio: utilizzo del tasto TAB per allineare più colonne di testo in un formato tabulare
-
-   >[!NOTE]
-   >
-   >Per ulteriori informazioni sull&#39;impostazione della spaziatura di tabulazione per i moduli di testo e le lettere, vedere [Ulteriori informazioni sull&#39;utilizzo della spaziatura di tabulazione per la disposizione del testo](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
 
 1. Se necessario, inserisci caratteri speciali nella corrispondenza. Ad esempio, è possibile utilizzare la tavolozza Caratteri speciali per inserire:
 
@@ -375,7 +371,7 @@ Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [S
 
 Per impostazione predefinita, nell’interfaccia utente per la creazione di corrispondenza vengono utilizzati i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L’anteprima dei moduli mobili non presenta problemi di rendering in alcun browser, poiché utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. Potete cambiare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell’anteprima PDF interattiva della lettera.
 
-Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 La procedura seguente illustra come modificare la modalità di anteprima della lettera:
 

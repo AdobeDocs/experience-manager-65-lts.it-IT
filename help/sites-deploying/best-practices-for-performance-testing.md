@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Sul mercato sono disponibili molti strumenti di test delle prestazioni. Quando s
 * AEM fornisce strumenti predefiniti per visualizzare rapidamente query, richieste e messaggi di errore problematici. Per ulteriori informazioni, vedere la sezione [Strumenti di diagnostica](/help/sites-administering/operations-dashboard.md#diagnosis-tools) della documentazione del dashboard operazioni.
 * Apache fornisce un prodotto denominato **JMeter** che può essere utilizzato per il test delle prestazioni e del carico e per il comportamento funzionale. È un software open-source e libero da usare, ma ha un set di funzioni più piccolo rispetto ai prodotti aziendali e una curva di apprendimento più ripida. JMeter è disponibile sul sito web di Apache all&#39;indirizzo [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** è un prodotto di test del carico di livello Enterprise. È disponibile una versione di valutazione gratuita. Ulteriori informazioni sono disponibili all&#39;indirizzo [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **Load Runner** è un prodotto di test del carico di livello Enterprise. È disponibile una versione di valutazione gratuita. Ulteriori informazioni sono disponibili all&#39;indirizzo [OpenText Professional Performance Engineering](https://www.opentext.com/products/professional-performance-engineering).
 
 * Quando si esegue il test di siti web mobili o reattivi, è necessario utilizzare un set di strumenti separato. Funzionano limitando la larghezza di banda della rete, simulando connessioni mobili più lente come 3G o EDGE. Tra gli strumenti più utilizzati vi sono:
 
@@ -74,7 +74,7 @@ La documentazione di [Monitoraggio delle prestazioni](/help/sites-deploying/moni
 
 **Modalità sviluppatore nell&#39;interfaccia utente touch**
 
-Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=it).
+Una delle nuove funzioni nell’interfaccia utente touch di AEM 6 è la Modalità sviluppatore. Così come gli autori possono passare dalla modalità di modifica a quella di anteprima, gli sviluppatori possono passare alla modalità sviluppatore nell’interfaccia utente di authoring. In questo modo puoi visualizzare il tempo di rendering per ciascuno dei componenti della pagina e le tracce dello stack di eventuali errori. Per ulteriori informazioni sulla modalità sviluppatore, consulta questa [presentazione CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Utilizzo di rlog.jar per leggere i registri di richiesta**
 
