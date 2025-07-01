@@ -57,7 +57,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+   >Per ulteriori informazioni sul passaggio dalla modalità di rendering HTML o PDF all&#39;anteprima della lettera, vedere [Modifica della modalità di rendering della lettera](#changerenditionmode). Per ulteriori informazioni sul supporto di PDF in Gestione della corrispondenza e AEM, consulta [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 ### Immetti i dati {#enterdata}
 
@@ -371,7 +371,7 @@ Per ulteriori informazioni sul supporto degli script nei moduli HTML5, vedere [S
 
 Per impostazione predefinita, nell’interfaccia utente per la creazione di corrispondenza vengono utilizzati i moduli HTML o mobili per eseguire il rendering dell’anteprima della lettera. L’anteprima dei moduli mobili non presenta problemi di rendering in alcun browser, poiché utilizza il plug-in nativo del browser e non richiede plug-in aggiuntivi. Potete cambiare la modalità di anteprima della lettera in PDF. Tuttavia, i vincoli del browser possono creare problemi per diverse funzioni dell’anteprima PDF interattiva della lettera.
 
-Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
+Per ulteriori informazioni sulla compatibilità del browser con l&#39;anteprima della lettera, vedere [Interruzione dei plug-in del browser NPAPI e relativo impatto](https://helpx.adobe.com/it/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 La procedura seguente illustra come modificare la modalità di anteprima della lettera:
 

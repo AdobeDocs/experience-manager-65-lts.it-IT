@@ -20,11 +20,11 @@ ht-degree: 2%
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
 Questi possono coprire un&#39;ampia gamma di attività, ad esempio l&#39;utilizzo di [!DNL InDesign Server] per l&#39;elaborazione dei file.
 
-Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
+Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/it/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al motore [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html). Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al motore [ExtendScript](https://helpx.adobe.com/it/indesign/using/scripting.html). Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
