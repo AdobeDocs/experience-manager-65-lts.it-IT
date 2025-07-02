@@ -123,7 +123,7 @@ Potete modificare un materiale promozionale subito dopo averlo creato. In altern
    >
    >Per consentire a [!DNL Experience Manager] di risolvere le immagini, eseguire le operazioni seguenti:
    >
-   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/it/indesign/using/graphics-links.html)).
    >* Montare [!DNL Experience Manager] nel file system locale, quindi mappare le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
 
 1. Per generare una copia trasformata di PDF per la brochure, seleziona l&#39;opzione Acrobat nella finestra di dialogo, quindi fai clic su **[!UICONTROL Continua]**.
