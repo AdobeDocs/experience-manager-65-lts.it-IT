@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 22dd8daa-b8c6-4e7d-bca3-3958a79fb4b5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 402b42d8ce5539739205a85d99bcb035d382a036
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '110'
 ht-degree: 3%
 
 ---
@@ -29,4 +29,4 @@ La soluzione si applica ad AEM Forms sul server JEE e AEM Forms sul server OSGi.
 
 ## Soluzione {#solution}
 
-Per risolvere il problema, aggiungere un argomento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` al [file batch](https://experienceleague.adobe.com/docs/experience-manager-65-lts/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) durante l&#39;avvio del server.
+Per risolvere il problema, aggiungere un argomento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` al [file batch](/help/sites-deploying/command-line-start-and-stop.md#windows-platform-start-bat-script-example) durante l&#39;avvio del server.

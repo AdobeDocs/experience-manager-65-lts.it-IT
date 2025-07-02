@@ -1,22 +1,19 @@
 ---
 title: Best practice per l’utilizzo dei moduli adattivi
 description: Spiega le best practice per la configurazione di un progetto AEM Forms, lo sviluppo di moduli adattivi e l’ottimizzazione delle prestazioni del sistema AEM Forms.
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: author
-feature: Adaptive Forms,Foundation Components,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
-source-git-commit: fef6317a0faf8d7324a83a36a3b441bbda66f970
+source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5536'
+source-wordcount: '5535'
 ht-degree: 0%
 
 ---
 
 # Best practice per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
@@ -99,9 +96,9 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 ### Creazione di modelli di modulo
 
-È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Alcune delle best practice consigliate sono:
+I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Alcune delle best practice consigliate sono:
 
 * La modalità di esecuzione **nosamplecontent** è consigliata solo per i nodi Author e non Publish.
 * L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi di authoring, che possono essere pubblicati sui nodi di pubblicazione configurati.
@@ -323,13 +320,13 @@ Spesso è necessario spostare i progetti AEM da un ambiente all’altro. Di segu
 Di seguito sono riportate alcune best practice per configurare AEM per migliorare le prestazioni generali:
 
 * Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix.
-* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html).
+* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Non memorizzare nella cache `/content/forms/af/` e `/content/dam/formsanddocuments/*` percorsi. per informazioni dettagliate sulla configurazione della memorizzazione nella cache dei moduli adattivi, vedi [memorizzazione nella cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Abilita HTML tramite il modulo di compressione del server web. Per ulteriori informazioni, vedere [Ottimizzazione delle prestazioni del server AEM Forms](/help/forms/using/performance-tuning-aem-forms.md).
-* Aumentare le chiamate per configurazione di richiesta per i moduli di grandi dimensioni. Consulta [Ottimizzazione delle prestazioni di moduli complessi e di grandi dimensioni](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Crea [pagine di errore personalizzate visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html).
+* Aumentare le chiamate per configurazione di richiesta per i moduli di grandi dimensioni. Consulta [Ottimizzazione delle prestazioni di moduli complessi e di grandi dimensioni](#optimizing-performance-of-large-and-complex-forms).
+* Crea [pagine di errore personalizzate visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md).
 * Server AEM Forms protetto.
 
    * Utilizzare la modalità di esecuzione `nosamplecontent` per verificare che non siano presenti contenuti di esempio e utenti di esempio distribuiti nel server di produzione. Vedere [Esecuzione di AEM in modalità pronta per la produzione](/help/sites-administering/production-ready.md).
@@ -366,11 +363,11 @@ Una delle sfide principali per le organizzazioni è la gestione dei dati persona
 
 L’editor di regole di AEM Forms fornisce un’interfaccia visiva per la creazione e la gestione delle regole, riducendo la necessità di ricorrere a estese funzioni di codifica. Può essere particolarmente utile per gli utenti aziendali o i progettisti di moduli che non dispongono di competenze avanzate di programmazione ma devono definire e mantenere regole di business all’interno dei moduli. A questo proposito vengono descritti alcuni casi d’uso in cui l’editor di regole consente di:
 
-* &#x200B;<!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
-* &#x200B;<!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
-* &#x200B;<!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
-* &#x200B;<!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
+* <!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
+* <!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
+* <!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
+* <!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
+* <!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
 
 L’editor di regole è disponibile sia per i componenti di AEM Forms Foundation che per i componenti core.
 

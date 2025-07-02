@@ -1,16 +1,13 @@
 ---
 title: Frammenti di documenti in AEM
 description: I frammenti di documento, ad esempio Testo, elenchi, condizioni e frammenti di layout, in Gestione corrispondenza consentono di formare i componenti statici, dinamici e ripetibili della corrispondenza con i clienti.
-topic-tags: correspondence-management
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6895'
 ht-degree: 0%
 
 ---
@@ -91,10 +88,6 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
    È possibile copiare e incollare direttamente il testo dal documento di MS Word in un modulo di testo modificabile. Nel modulo di testo viene mantenuta la formattazione come elenco puntato, carattere e colore del testo.
 
    ![pastetexttextmodule](assets/pastetexttextmodule.png)
-
-   >[!NOTE]
-   >
-   >La formattazione del testo incollato presenta tuttavia alcune [limitazioni](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
 1. Se necessario, inserisci caratteri speciali nel frammento del documento. Ad esempio, è possibile utilizzare la tavolozza Caratteri speciali per inserire:
 

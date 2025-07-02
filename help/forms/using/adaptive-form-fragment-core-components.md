@@ -1,20 +1,20 @@
 ---
-title: Cosa sono i frammenti di modulo adattivo?
-description: Forms adattivo fornisce un meccanismo per creare un segmento di modulo, ad esempio un pannello o un gruppo di campi, da utilizzare in qualsiasi modulo adattivo. Potete anche salvare un pannello esistente come frammento.
+title: Cosa sono i frammenti di moduli adattivi?
+description: Forms adattivo fornisce un meccanismo per creare un segmento di modulo, ad esempio un pannello o un gruppo di campi, da utilizzare in qualsiasi modulo adattivo. Puoi anche salvare un pannello esistente come frammento.
 topic-tags: author
-keywords: Aggiungere frammenti di modulo adattivo, frammenti di moduli adattivi, Crea frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire frammenti
+keywords: Aggiungere frammenti di moduli adattivi, frammenti di moduli adattivi, creare un frammento di modulo, aggiungere un frammento a un modulo adattivo, gestire i frammenti
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 3239416a53382a9f683f90dacd91b40ac20e9f50
 workflow-type: tm+mt
 source-wordcount: '1840'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
-# Crea e utilizzare frammenti di Forms adattivi in un modulo adattivo basato sui componenti core {#adaptive-form-fragments}
+# Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo basato su componenti core {#adaptive-form-fragments}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
@@ -31,7 +31,7 @@ I frammenti di modulo si integrano perfettamente in più moduli, semplificando l
 
 >[!NOTE]
 >
-> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 
 ## Creare un frammento di modulo {#create-a-fragment}
@@ -39,8 +39,8 @@ I frammenti di modulo si integrano perfettamente in più moduli, semplificando l
 Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un modulo adattivo esistente come frammento. Per creare un frammento di modulo:
 
 1. Accedi all&#39;istanza di AEM Forms all&#39;indirizzo https://[*hostname*]:[*port*]/aem/forms.html.
-1. Fai clic su **Crea > Frammento modulo adattivo**.
-1. Specifica titolo, nome, descrizione e tag per il frammento. Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, la sua creazione non riesce.
+1. Fai clic su **Crea > Frammento di modulo adattivo**.
+1. Specifica titolo, nome, descrizione e tag per il frammento. Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, il frammento non viene creato.
 1. Selezionare un modello di modulo. Forms Puoi creare un frammento di modulo per Forms adattivo basato su Componenti core o su Componenti di base.
    * Per creare un frammento di modulo per moduli basati su Componenti core, seleziona un modello basato su Componenti core.
    * Per creare un frammento di modulo per moduli basati su Componenti di base, seleziona un modello Componenti di base. Ad esempio, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
@@ -49,7 +49,7 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
 
 1. Fai clic per aprire la scheda **Modello modulo** e dal menu a discesa **Seleziona da** seleziona uno dei seguenti modelli per il frammento:
 
-   ![Visualizza il tipo di modello nella scheda Modello modulo](assets/create-af-1-1.png)
+   ![Mostra il tipo di modello nella scheda Modello modulo](assets/create-af-1-1.png)
 
    * **Nessuno**: specifica di creare il frammento da zero senza utilizzare alcun modello di modulo.
 
@@ -64,9 +64,9 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
 
 
 
-1. Fare clic su **Crea** e quindi su **Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica, è possibile aggiungere qualsiasi componente modulo adattivo al frammento.
+1. Fai clic su **Crea**, quindi su **Apri** per aprire il frammento, con un modello predefinito, in modalità di modifica. In modalità di modifica puoi aggiungere qualsiasi componente Modulo adattivo al frammento.
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Inoltre, se è stato selezionato uno schema XML o un modello di modulo XDP come modello di modulo per il frammento, nel contenuto Finder verrà visualizzata una nuova scheda che visualizza la gerarchia del modello di modulo. Consente di trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dell’XDP o XSD associato.
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come modello di modulo per il frammento, nel Finder contenuto viene visualizzata una nuova scheda che mostra la gerarchia del modello di modulo. Consente di trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dell’XDP o XSD associato.
 
 Una volta creato il frammento di modulo adattivo basato su uno schema o un modello di dati del modulo, gli elementi del modello di dati del modulo o dello schema vengono visualizzati nella scheda Origini dati del browser Contenuto nell’editor di moduli adattivi. Puoi trascinare gli elementi del modello di modulo sul frammento. Gli elementi del modello modulo aggiunti vengono convertiti in componenti modulo mantenendo le proprietà originali dallo schema associato.
 
@@ -91,9 +91,9 @@ Il frammento di modulo adattivo viene aggiunto facendo riferimento al modulo ada
 
 ### Incorporare un frammento in un modulo adattivo {#embed-a-fragment-in-adaptive-form}
 
-Per scegliere di incorporare un frammento di modulo adattivo in un modulo adattivo, fai clic sull&#39;icona Incorpora ![](assets/Smock_Import_18_N.svg) nella barra degli strumenti del pannello del frammento aggiunto
+Puoi scegliere di incorporare un frammento di modulo adattivo in un modulo adattivo facendo clic sull&#39;icona ![Incorpora](assets/Smock_Import_18_N.svg) nella barra degli strumenti del pannello del frammento aggiunto
 
-Il frammento incorporato non è più collegato al frammento autonomo. È possibile modificare i componenti nel frammento incorporato dall&#39;interno del modulo adattivo.
+Il frammento incorporato non è più collegato al frammento autonomo. Puoi modificare i componenti nel frammento incorporato direttamente dal modulo adattivo.
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}
@@ -109,19 +109,19 @@ Perform the following steps to show complete fragments in forms:
 
 -->
 
-### Uso dei frammenti all&#39;interno dei frammenti {#using-fragments-within-fragments}
+### Utilizzo di frammenti all’interno di frammenti {#using-fragments-within-fragments}
 
 Puoi creare frammenti di modulo adattivo nidificati, il che significa che puoi trascinare un frammento all’interno di un altro frammento e disporre di una struttura di frammenti nidificata.
 
 ### Utilizzo di un frammento di modulo più volte in un modulo adattivo {#using-form-fragment-mutiple-times-in-af}
 
-È possibile utilizzare più volte in un modulo adattivo un frammento di modulo basato su schema o senza schemi per salvare i dati in modo univoco per ogni campo di frammenti di modulo. Ad esempio, è possibile utilizzare un frammento del modulo indirizzo per raccogliere i dettagli dell&#39;indirizzo per indirizzi permanenti, di comunicazione e di soggiorno presenti in un modulo di applicazione di prestito.
+È possibile utilizzare più volte un frammento di modulo basato su schema e non basato su elementi singoli in un modulo adattivo per salvare i dati in modo univoco per ogni campo dei frammenti di modulo. Ad esempio, puoi utilizzare un frammento di modulo indirizzo per raccogliere i dettagli dell’indirizzo per indirizzi permanenti, di comunicazione e di presentazione in un modulo di richiesta di prestito.
 
-![Uso di più frammenti in un modulo adattivo](assets/using-multiple-fragment-af.gif)
+![utilizzo di più frammenti nel modulo adattivo](assets/using-multiple-fragment-af.gif)
 
-## Automatico mappatura di frammenti per il binding dei dati {#auto-mapping-of-fragments-for-data-binding}
+## Mappatura automatica dei frammenti per l’associazione dati {#auto-mapping-of-fragments-for-data-binding}
 
-Quando si crea un frammento di modulo adattivo utilizzando un modello di modulo XFA o un tipo complesso XSD e si trascina il frammento in un modulo adattivo, il frammento XFA o il tipo complesso XSD viene automaticamente sostituito dal frammento di modulo adattivo corrispondente la cui radice del modello di frammento è mappata al frammento XFA o al tipo complesso XSD.
+Quando crei un frammento di modulo adattivo utilizzando un modello di modulo XFA o un tipo complesso XSD e trascini il frammento in un modulo adattivo, il frammento XFA o il tipo complesso XSD viene sostituito automaticamente dal frammento di modulo adattivo corrispondente la cui radice del modello di frammento è mappata al frammento XFA o al tipo complesso XSD.
 
 Puoi modificare la risorsa del frammento e i relativi binding dalla finestra di dialogo Modifica componente.
 
@@ -150,11 +150,11 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
    <td><p>Apre il pannello Proprietà. Dal pannello Proprietà puoi visualizzare e modificare le proprietà, generare un’anteprima e caricare un’immagine in miniatura per il frammento selezionato. Per ulteriori informazioni, vedere <a>Gestione dei metadati</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Copiare</p> </td>
+   <td><p>Copia</p> </td>
    <td><p>Copia il frammento selezionato. Il pulsante Incolla viene visualizzato nella barra degli strumenti.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Download</p> </td>
+   <td><p>Scarica</p> </td>
    <td><p>Scarica il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -162,7 +162,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
    <td><p>Fornisce opzioni per visualizzare in anteprima il frammento come HTML o come anteprima personalizzata unendo i dati di un file XML con il frammento. Per ulteriori informazioni, vedere <a>Anteprima modulo</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Avvia revisione/Gestisci revisione</p> </td>
+   <td><p>Avvia/Gestisci revisione</p> </td>
    <td><p>Consente di avviare e gestire una revisione del frammento selezionato. Per ulteriori informazioni, vedere <a>Creazione e gestione delle revisioni</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
   </tr>
   <tr>
    <td><p>Pubblica/Annulla pubblicazione</p> </td>
-   <td><p>Pubblica/annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
+   <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Elimina</p> </td>
@@ -192,7 +192,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
 * Quando pubblichi un modulo adattivo, devi pubblicare i frammenti di modulo adattivo autonomi inseriti per riferimento nel modulo adattivo.
 * Quando ripubblichi un frammento di modulo adattivo aggiornato, le modifiche si riflettono nelle istanze pubblicate del modulo adattivo in cui viene utilizzato il frammento.
 * Il modulo adattivo contenente il componente Verifica non supporta gli utenti anonimi. Inoltre, non è consigliabile utilizzare il componente Verifica in un frammento di modulo adattivo.
-* (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungere la seguente voce al file /private/etc/hosts:
+* (**Solo Mac**) Per garantire che la funzionalità dei frammenti di modulo funzioni perfettamente in tutti gli scenari, aggiungi la seguente voce al file /private/etc/hosts:
   `127.0.0.1 <Host machine>` **Computer host**: computer Apple Mac in cui è distribuito AEM Forms.
 
 ## Frammenti di riferimento {#reference-fragments}
@@ -203,8 +203,8 @@ Fai riferimento ai frammenti di modulo adattivo che è possibile utilizzare per 
 ## Consulta anche {#see-also}
 
 * [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
-* [Utilizzare regola editor per aggiungere un comportamento dinamico al modulo](rule-editor.md)
-* [Crea o personalizza temi per Forms adattivi basati su componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* [Crea un modello per Forms adattive basate su componenti core](template-editor.md)
-* [Crea o aggiungere un modulo adattivo a un Pagina AEM Sites o a un frammento esperienza](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Utilizza l’editor di regole per aggiungere un comportamento dinamico al modulo](rule-editor.md)
+* [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
+* [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

@@ -1,18 +1,13 @@
 ---
 title: Consentire ad AEM di effettuare ricerche nei documenti PDF protetti da Document Security
 description: Scopri come abilitare la ricerca nativa di AEM per eseguire ricerche full-text sui documenti PDF protetti da DRM.
-contentOwner: khsingh
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -28,7 +23,7 @@ La funzione di ricerca di AEM consente di cercare e individuare le risorse di AE
 
 * Se utilizzi AEM Forms su OSGi:
 
-   * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
+   * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
 
    * Assicurati che un AEM Forms sul server JEE sia in esecuzione e che la sicurezza dei documenti sia installata nel corrispondente AEM Forms sul server JEE. Per indicizzare il documento protetto è necessario AEM Form sul server JEE.
 
@@ -66,7 +61,7 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
 
 #### Configurare il bundle Adobe LiveCycle Client SDK utilizzando l&#39;autenticazione reciproca {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Abilita l’autenticazione reciproca per AEM Forms su JEE. Per informazioni dettagliate, vedere [CAC e autenticazione reciproca](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Abilita l’autenticazione reciproca per AEM Forms su JEE.
 1. Apri AEM Web Console. URL: https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Individua e apri il bundle **Adobe LiveCycle Client SDK**. Specifica il valore per le seguenti proprietà:
 
