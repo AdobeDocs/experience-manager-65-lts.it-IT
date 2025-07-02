@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practice per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
@@ -96,9 +96,9 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
 
 ### Creazione di modelli di modulo
 
-È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
-I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Alcune delle best practice consigliate sono:
+I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Alcune delle best practice consigliate sono:
 
 * La modalità di esecuzione **nosamplecontent** è consigliata solo per i nodi Author e non Publish.
 * L’authoring di risorse come moduli adattivi, temi, modelli o configurazioni cloud viene eseguito solo sui nodi di authoring, che possono essere pubblicati sui nodi di pubblicazione configurati.
@@ -320,7 +320,7 @@ Spesso è necessario spostare i progetti AEM da un ambiente all’altro. Di segu
 Di seguito sono riportate alcune best practice per configurare AEM per migliorare le prestazioni generali:
 
 * Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix.
-* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html).
 
 * Non memorizzare nella cache `/content/forms/af/` e `/content/dam/formsanddocuments/*` percorsi. per informazioni dettagliate sulla configurazione della memorizzazione nella cache dei moduli adattivi, vedi [memorizzazione nella cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md).
 
