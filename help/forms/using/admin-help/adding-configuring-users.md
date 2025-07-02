@@ -165,7 +165,7 @@ Se un utente senza le autorizzazioni AEM Forms e CQ richieste tenta di accedere 
 * Soluzione per la gestione della corrispondenza
 * AEM Forms Workspace
 
-  ***nota **: Flex Workspace è obsoleto per la versione di AEM Forms.*
+  ***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 * gestione moduli
 * Reporting processi
