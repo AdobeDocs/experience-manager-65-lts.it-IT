@@ -1,19 +1,15 @@
 ---
 title: Strategia di backup e ripristino in un ambiente cluster
 description: Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è necessario implementare una strategia per eseguire il backup di tali dati, garantendo che rimangano sincronizzati con i dati di AEM Forms.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ In questo argomento vengono illustrate le strategie seguenti per eseguire il bac
    1. Eseguire il backup di tutti i file di qualsiasi nodo cluster secondario, incluse le sottodirectory.
    1. Eseguire il backup dell&#39;ID di sistema/repository di ciascun nodo cluster separatamente.
 
-   Per i passaggi dettagliati, vedere [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
 1. Eseguire il backup di qualsiasi altro dato, ad esempio i caratteri del cliente.
 1. Riavviare il cluster.
@@ -72,7 +68,7 @@ In questo argomento vengono illustrate le strategie seguenti per eseguire il bac
    1. Eseguire il backup di tutti i file di qualsiasi nodo cluster secondario, incluse le sottodirectory.
    1. Eseguire il backup repository/system.id di ogni nodo cluster separatamente.
 
-   Per i passaggi dettagliati, vedere [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   Per i passaggi dettagliati, vedere [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
 1. Eseguire il backup di qualsiasi altro dato, ad esempio i caratteri del cliente.
 1. Riavviare il cluster.
@@ -135,7 +131,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Elimina il file clusterNode/revision.log sul nodo.
    1. Elimina il file .lock sul nodo, se esistente.
    1. Elimina l’eventuale repository/system.id sul nodo.
-   1. Eliminare i file &ast;&ast;/listener.properties sul nodo, se esistenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se esistenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -165,7 +161,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Eliminare il file clusterNode/revision.log in tutti i nodi del cluster.
    1. Eliminare il blocco in tutti i nodi del cluster, se esistente.
    1. Eliminare tutti i nodi del cluster repository/system.id, se esiste.
-   1. Eliminare i file &ast;&ast;/listener.properties su tutti i nodi del cluster, se presenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se presenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -178,15 +174,15 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
 
 ## Backup e ripristino del nodo di pubblicazione della soluzione per la gestione della corrispondenza {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Il nodo dell&#39;editore non ha alcuna relazione primario-secondario in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo di Publisher seguendo [Backup e ripristino](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+Il nodo dell&#39;editore non ha alcuna relazione primario-secondario in un ambiente cluster. È possibile eseguire il backup di qualsiasi nodo di Publisher seguendo [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
 ### Ripristino di un singolo nodo di pubblicazione {#recover-a-single-publisher-node}
 
 1. Chiudi il nodo da recuperare e non esegui alcuna attività di pubblicazione fino a quando il nodo non è nuovamente attivo.
-1. Ripristinare il nodo di pubblicazione utilizzando [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Ripristinare il nodo di pubblicazione utilizzando [Ripristino del backup](/help/sites-administering/backup-and-restore.md).
 
 ### Ripristinare un cluster {#recover-a-cluster}
 
 1. Arrestare il cluster.
-1. Ripristinare il nodo di pubblicazione utilizzando [Ripristino del backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Ripristinare il nodo di pubblicazione utilizzando [Ripristino del backup](/help/sites-administering/backup-and-restore.md).
 1. Avvia il nodo principale seguito dal nodo secondario del cluster di authoring.

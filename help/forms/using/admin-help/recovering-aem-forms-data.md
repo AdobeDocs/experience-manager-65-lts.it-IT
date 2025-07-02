@@ -2,16 +2,13 @@
 title: Recupero dei dati dei moduli di AEM
 description: Questo documento descrive i passaggi necessari per recuperare i dati dei moduli di AEM.
 contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 6345edda-cdc6-4e13-ade6-2dd6de9d9616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f7adcbe7700d0ea9cbd18eb0b59bcd76f56e8cc5
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -98,7 +95,7 @@ Se un singolo nodo di un cluster multinodo non riesce e i nodi rimanenti del clu
 
    * **Autonomo**
 
-     *Ripristina istanze di authoring e pubblicazione*: se si verifica un errore irreversibile, è possibile ripristinare l&#39;ultimo stato di backup del repository eseguendo i passaggi descritti in [Backup e ripristino.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Ripristina istanze di authoring e pubblicazione*: se si verifica un problema, è possibile ripristinare l&#39;ultimo stato di backup del repository eseguendo i passaggi descritti in [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
 
      Il ripristino completo del nodo Author verifica anche il ripristino dei dati di Forms Manager e AEM Forms Workspace.
 

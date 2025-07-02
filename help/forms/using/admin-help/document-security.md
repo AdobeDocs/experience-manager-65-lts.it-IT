@@ -1,20 +1,15 @@
 ---
 title: Che cos’è la protezione dei documenti?
 description: Scopri come creare, archiviare e applicare impostazioni di riservatezza predefinite e distribuire le informazioni in modo sicuro utilizzando la protezione dei documenti.
-contentOwner: admin
-content-type: reference
-geptopics: SG_AEMFORMS/categories/working_with_document_security
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-docset: aem65
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5e7fe85e-3c7f-4a37-8f65-5c0ad4bbd66c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 32da9c3f13cb1eba130e96e03ab97617d18e1486
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ La protezione dei documenti garantisce che solo gli utenti autorizzati possano u
 * File Adobe PDF
 * File Microsoft® Word, Excel e PowerPoint
 
-Per ulteriori informazioni su come i criteri proteggono i tipi di file supportati, consulta [ulteriori informazioni sulla sicurezza dei documenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/forms/use-document-security/document-security-offerings.html?lang=en).
+Per ulteriori informazioni su come i criteri proteggono i tipi di file supportati, consulta [ulteriori informazioni sulla sicurezza dei documenti](/help/forms/using/document-security-offerings.md).
 
 La protezione dei documenti consente di creare, archiviare e applicare facilmente impostazioni di riservatezza predefinite ai documenti. Per evitare che le informazioni si diffondano oltre la portata dell&#39;utente, è inoltre possibile monitorare e controllare il modo in cui i destinatari utilizzano i documenti dopo averli distribuiti.
 

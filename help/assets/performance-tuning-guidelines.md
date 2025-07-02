@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43079a69-cd12-4853-9fff-96f9d177987a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e432b4e74f453ed222b2a295f1a6ef9e7b409223
 workflow-type: tm+mt
-source-wordcount: '2728'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Quando si caricano grandi quantità di risorse in [!DNL Adobe Experience Manager
 
 Configura la dimensione della cache nel buffer nella console web OSGi. In `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, impostare la proprietà `cq.dam.image.cache.max.memory` in byte. Ad esempio, 1073741824 è 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Da Experience Manager 6.1 SP1, se utilizzi un nodo `sling:osgiConfig` per configurare questa proprietà, assicurati di impostare il tipo di dati su Long. Per ulteriori dettagli, vedi [CQBufferedImageCache utilizza l&#39;heap durante il caricamento delle risorse](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+Da Experience Manager 6.1 SP1, se utilizzi un nodo `sling:osgiConfig` per configurare questa proprietà, assicurati di impostare il tipo di dati su Long.
 
 ### Archivi dati condivisi {#shared-data-stores}
 
@@ -243,7 +243,7 @@ Quando replichi le risorse in un numero elevato di istanze di pubblicazione, ad 
 
 ## Cerca indici {#search-indexes}
 
-Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema. Consulta [suggerimenti per l&#39;ottimizzazione delle prestazioni](https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/administer/performance-tuning-guidelines.html?lang=en) per alcune ottimizzazioni dell&#39;indice.
+Installa [i Service Pack più recenti](/help/release-notes/release-notes.md) e gli hotfix relativi alle prestazioni, in quanto spesso includono aggiornamenti agli indici di sistema.
 
 Creare indici personalizzati per le query eseguite spesso. Per informazioni dettagliate, consulta [metodologia per l&#39;analisi delle query lente](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [creazione di indici personalizzati](/help/sites-deploying/queries-and-indexing.md). Per ulteriori informazioni sulle best practice per query e indici, consulta [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

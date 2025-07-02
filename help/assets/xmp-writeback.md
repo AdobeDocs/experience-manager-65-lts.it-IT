@@ -1,15 +1,14 @@
 ---
 title: Write-back di XMP alle rappresentazioni
 description: Scopri in che modo la funzione di writeback di XMP propaga le modifiche ai metadati di una risorsa a tutte le sue rappresentazioni o a quelle specifiche.
-contentOwner: AG
 role: User, Admin
 feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e3972784-9ded-4da8-b90c-ec2da9c3297a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 863ec2b6d8a6e22705c2f48a4f7bbb76fa34f7c7
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -18,8 +17,8 @@ ht-degree: 6%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM 6.5 LTS | Questo articolo |
 
 Questa funzionalità di writeback di XMP in [!DNL Adobe Experience Manager Assets] replica le modifiche ai metadati nelle rappresentazioni della risorsa originale. Quando modifichi i metadati di una risorsa dall’interno di Assets o durante il caricamento della risorsa, le modifiche vengono inizialmente memorizzate nel nodo metadati nella gerarchia delle risorse.
 
@@ -69,8 +68,6 @@ Per la funzione Writeback di XMP per la propagazione dei metadati alle miniature
 Le modifiche ai metadati vengono propagate alle rappresentazioni delle miniature.140.100.png e miniatura.319.319.png della risorsa e non delle altre.
 
 >[!NOTE]
->
->Per i problemi di writeback di XMP in Linux a 64 bit, vedere [Come abilitare il write-back di XMP in RedHat Linux a 64 bit](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
 >Per le piattaforme supportate, vedere [Prerequisiti per il write-back dei metadati di XMP](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
 

@@ -1,14 +1,13 @@
 ---
 title: Modelli di risorse
 description: Scopri i modelli di risorse in [!DNL Adobe Experience Manager Assets] e come utilizzare i modelli di risorse per creare materiale promozionale di marketing.
-contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8584d5ea-6ef2-4e81-8b18-5aa2d4226ea6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9ed889c74a886e1b41c379dac77bb570ef5c2c39
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1557'
 ht-degree: 1%
 
 ---
@@ -124,10 +123,8 @@ Potete modificare un materiale promozionale subito dopo averlo creato. In altern
    >
    >Per consentire a [!DNL Experience Manager] di risolvere le immagini, eseguire le operazioni seguenti:
    >
-   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/it/indesign/using/graphics-links.html)).
+   >* Incorpora le immagini durante la creazione di [!DNL InDesign] modelli (consulta [Informazioni su collegamenti e immagini incorporate](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Montare [!DNL Experience Manager] nel file system locale, quindi mappare le icone mancanti con le risorse esistenti in [!DNL Experience Manager].
-   >
-   >Per ulteriori informazioni sull&#39;utilizzo di [!DNL InDesign] documenti, vedere [Procedure consigliate per l&#39;utilizzo dei documenti di InDesign in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Per generare una copia trasformata di PDF per la brochure, seleziona l&#39;opzione Acrobat nella finestra di dialogo, quindi fai clic su **[!UICONTROL Continua]**.
 1. Il materiale promozionale viene creato nella cartella con cui hai iniziato. Per visualizzare le rappresentazioni, aprire il materiale collaterale e scegliere **[!UICONTROL Rappresentazioni]** dall&#39;elenco GlobalNav.

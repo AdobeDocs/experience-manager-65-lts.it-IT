@@ -1,17 +1,15 @@
 ---
 title: Aggiunta e configurazione di utenti
 description: Le impostazioni Gestione utente nella console di amministrazione consentono di creare o eliminare utenti e configurare altre impostazioni utente.
-contentOwner: admin
-geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9dcdf84b70a3b0ea6fb332cd2cf8ccf1d4476489
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -41,10 +39,6 @@ Quando crei degli utenti, puoi aggiungerli ai gruppi e assegnare loro ruoli.
 
 1. (Facoltativo) Per assegnare ruoli all&#39;utente, fare clic su **[!UICONTROL Trova ruoli]**, selezionare la casella di controllo relativa ai ruoli da assegnare e quindi fare clic su **[!UICONTROL OK]**.
 1. Fare clic su **[!UICONTROL Fine]**.
-
-   >[!NOTE]
-   >
-   >Se riscontri problemi di accesso con l&#39;utente, vedi [L&#39;accesso a AEM Forms su JEE non riesce per AEM Forms lato OSGi](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Impostazioni utente {#user-settings}
 
@@ -171,11 +165,11 @@ Se un utente senza le autorizzazioni AEM Forms e CQ richieste tenta di accedere 
 * Soluzione per la gestione della corrispondenza
 * AEM Forms Workspace
 
-  ***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
+  ***nota **: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 * gestione moduli
 * Reporting processi
 
 CQ fornisce un meccanismo per sostituire il gestore jsp 404 predefinito.
 
-Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](https://experienceleague.adobe.com/docs/experience-manager-65-lts/developing/platform/customizing-errorhandler-pages.html?lang=en) nella documentazione di Adobe Experience Manager.
+Per informazioni dettagliate su come personalizzare la pagina di gestione degli errori, vedere [Personalizzazione delle pagine visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md) nella documentazione di Adobe Experience Manager.

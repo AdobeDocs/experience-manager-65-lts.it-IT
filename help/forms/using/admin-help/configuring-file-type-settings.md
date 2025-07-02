@@ -10,9 +10,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 9d4681c0b184cc7769a8da20a4c50d420e1137c7
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Creare o modificare un&#39;impostazione del tipo di file per specificare il modo
 
 1. Dopo aver completato tutte le sezioni, fare clic su **[!UICONTROL Salva]** o **[!UICONTROL Salva con nome]** e specificare un nome per l&#39;impostazione.
 
-È possibile personalizzare il supporto per vari tipi di file. (Vedi &quot; [Aggiunta di supporto per formati di file nativi aggiuntivi](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; in [Programmazione con AEM Forms](https://www.adobe.com/go/learn_lc_programming_11).)
+È possibile personalizzare il supporto per vari tipi di file.
 
 ## Modificare le impostazioni predefinite {#change-the-default-settings}
 
@@ -128,7 +128,7 @@ Le seguenti opzioni determinano la modalità di conversione dei file di immagine
 
 **Usa OCR:** Specifica se applicare OCR (riconoscimento ottico dei caratteri) al PDF. Il software OCR consente di cercare, correggere e copiare il testo nel PDF.
 
-***nota &#x200B;**: la funzionalità PDF OCR (PDF ricercabile) è supportata solo in Microsoft Windows.*
+***nota **: la funzionalità PDF OCR (PDF ricercabile) è supportata solo in Microsoft Windows.*
 
 **Lingua OCR primaria:** Specifica la lingua che il motore OCR deve utilizzare per identificare i caratteri.
 
@@ -267,7 +267,7 @@ Per istruzioni sull&#39;accesso a questa impostazione, vedere [Creare o modifica
 
    >[!NOTE]
    >
-   >*Se si utilizza questa opzione in combinazione con **Alcuni tipi di carattere non incorporati**, i tipi di carattere nell&#39;elenco **Aggiungi tipi di carattere a non incorporati**&#x200B;sono ancora completamente non incorporati.*
+   >*Se si utilizza questa opzione in combinazione con **Alcuni tipi di carattere non incorporati**, i tipi di carattere nell&#39;elenco **Aggiungi tipi di carattere a non incorporati**sono ancora completamente non incorporati.*
 
    >[!NOTE]
    >
