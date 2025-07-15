@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d353cde4e9cc2af738e600d5a9b74928d98496cb
+source-git-commit: 2c2e8defbaab13a31beeb7c6978af5da19535e70
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 19%
+source-wordcount: '1074'
+ht-degree: 18%
 
 ---
 
@@ -130,18 +130,21 @@ Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-NPR-4264
 
 ### Errore di connessione Dispatcher con funzione solo SSL {#ssl-only-feature}
 
-Quando si abilita la funzione solo SSL nelle distribuzioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, i controlli di integrità potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta.
+Quando si abilita la funzione solo SSL nelle distribuzioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, i controlli di integrità potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta. Questo problema si verifica in modo specifico quando i clienti tentano di connettersi tramite `https + IP` dalle istanze di Dispatcher alle istanze di AEM ed è relativo a problemi di convalida SNI (Server Name Indication).
 
 **Impatto:**
 
-* Errori di verifica stato con codici di risposta HTTP 500
+* Errori di verifica stato con codici di risposta HTTP 400
 * Traffico interrotto tra istanze Dispatcher e AEM
 * Il contenuto non può essere gestito correttamente tramite Dispatcher
+* Errori di connessione durante l’utilizzo di HTTPS con indirizzi IP nella configurazione di Dispatcher
+* HTTP 400 - Errori &quot;SNI non valido&quot; durante la connessione tramite HTTPS + IP
 
 **Ambienti interessati:**
 
 * Distribuzioni di AEM con configurazioni Dispatcher
 * Sistemi in cui è stata abilitata la funzione solo SSL
+* Configurazioni Dispatcher che utilizzano il metodo di connessione `https + IP` alle istanze AEM
 
 **Soluzione:**
 Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzionalità solo SSL finché non viene applicato l’hotfix necessario.
@@ -151,5 +154,5 @@ Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolve
 Questi siti Web sono disponibili solo per i clienti. Se sei un cliente e hai bisogno di accedervi, contatta il tuo account manager Adobe.
 
 * [Download del prodotto all&#39;indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* [Contatta L&#39;Assistenza Clienti Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
