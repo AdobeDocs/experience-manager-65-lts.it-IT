@@ -9,9 +9,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bff63900-0007-472d-a910-bf20b8013668
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
@@ -106,7 +106,7 @@ Se durante la creazione di una pagina si specifica solo una pagina **Titolo**, A
 | Titolo | Nome derivato |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nome {#name}
 
@@ -266,7 +266,7 @@ Per spostare o rinominare una pagina:
 
    ![schermata_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Nella pagina sono inoltre elencate le pagine che fanno riferimento alla pagina spostata. A seconda dello stato della pagina di riferimento, è possibile regolare tali collegamenti e/o ripubblicare le pagine.
+   Nella pagina sono inoltre elencate tutte le pagine che fanno riferimento direttamente o indirettamente alla pagina spostata. A seconda dello stato della pagina di riferimento, è possibile regolare tali collegamenti e/o ripubblicare le pagine.
 
 1. Compila i campi seguenti, a seconda dei casi:
 

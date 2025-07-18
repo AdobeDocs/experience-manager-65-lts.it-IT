@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2416'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
@@ -289,8 +289,8 @@ Dopo aver creato una pagina o essere passato a una pagina esistente (nella conso
    ![Incolla](assets/paste-without-children.png)
 
    Puoi effettuare le seguenti operazioni:
-   * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine figlio in questa posizione.
-   * Selezionare la freccia a discesa per visualizzare l&#39;opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine figlio non verranno copiate.
+   * Selezionare direttamente l’icona **Incolla** per la pagina. Verrà creata una copia della pagina originale e delle eventuali pagine secondarie in questa posizione.
+   * Selezionare la freccia a discesa per visualizzare l&#39;opzione **Incolla senza elementi secondari**. In questa posizione verrà creata una copia della pagina originale, mentre le pagine secondarie non verranno copiate.
 
    >[!NOTE]
    >
@@ -326,7 +326,7 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    Verrà avviata la procedura guidata Sposta pagina.
 
-1. Dal passaggio **Rinomina** della procedura guidata, puoi effettuare le seguenti operazioni:
+1. Il passaggio **Rinomina** della procedura guidata fornisce **informazioni** sulla pagina, inclusa la data di creazione, il percorso e il numero di riferimenti diretti. Da qui puoi effettuare le seguenti operazioni:
 
    * Specifica il nome da assegnare alla pagina spostata, quindi fai clic su **Avanti** per continuare.
 
@@ -365,7 +365,8 @@ In AEM è disponibile una funzionalità che consente di aggiornare eventuali col
 
    >[!NOTE]
    >
-   >Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Se la pagina non è collegata né è soggetta a riferimenti, questo passaggio non sarà disponibile.
+   >* Questo passaggio elenca riferimenti diretti e indiretti. Questo valore può essere diverso dalla quantità riportata nel passaggio **Rinomina** della procedura guidata e dai riferimenti riportati dalla barra dei riferimenti, che in entrambi i casi segnalano solo riferimenti diretti per motivi di prestazioni.
 
    ![caop-09](assets/caop-09.png)
 

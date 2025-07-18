@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2919'
 ht-degree: 42%
 
 ---
@@ -556,15 +556,16 @@ Queste opzioni sono accessibili tramite la freccia accanto al campo **Commento**
 
 ### Riferimenti {#references}
 
-**I riferimenti** mostrano connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
+**I riferimenti** mostrano le connessioni alla risorsa selezionata. Ad esempio, nella console **Sites**, i [riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) per le pagine mostrano:
 
+* [Blueprint](/help/sites-administering/msm.md)
 * [Lanci](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copie per lingua](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Riferimenti ai contenuti:
 
-   * collegamenti da altre pagine alla pagina selezionata
-   * contenuto preso in prestito da, o prestato, o entrambi, alla pagina selezionata dal componente Riferimento
+   * Collegamenti diretti da altre pagine alla pagina selezionata
+   * Contenuto preso in prestito da, prestato a, o entrambi, nella pagina selezionata dal componente Riferimento
 
 ![bh-28](assets/bh-28.png)
 

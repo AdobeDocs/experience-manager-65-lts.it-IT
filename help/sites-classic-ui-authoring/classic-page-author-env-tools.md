@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 8%
 
 ---
@@ -156,7 +156,7 @@ in una query è possibile utilizzare un numero qualsiasi di caratteri jolly.
 
 AEM consente di visualizzare le pagine collegate alla pagina su cui stai lavorando.
 
-Per visualizzare i riferimenti diretti alle pagine:
+Per visualizzare i riferimenti di pagina:
 
 1. Nella barra laterale, seleziona l&#39;icona della scheda **Pagina**.
 
@@ -165,6 +165,10 @@ Per visualizzare i riferimenti diretti alle pagine:
 1. Seleziona **Mostra riferimenti...** AEM apre la finestra Riferimenti e visualizza le pagine che si riferiscono alla pagina selezionata, inclusi i relativi percorsi.
 
    ![schermata_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+AEM mostra tutte le pagine che fanno direttamente riferimento alla pagina selezionata, nonché eventuali riferimenti indiretti. È utile per comprendere tutti i collegamenti che verranno aggiornati se devi spostare o eliminare la pagina.
+
+## Azioni Sidekick aggiuntive {#additional-actions}
 
 In alcune situazioni sono disponibili ulteriori azioni da parte di Sidekick, tra cui:
 
