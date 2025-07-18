@@ -10,12 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+index: false
+source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
+
 
 # Best practice per i modelli e-mail {#best-practices-for-email-templates}
 
@@ -23,7 +25,7 @@ ht-degree: 1%
 >
 >Questo articolo si applica ai componenti e-mail AEM basati su Componenti Foundation obsoleti.
 >
->Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=it)
+>Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Questo documento descrive alcune delle best practice relative alla progettazione delle e-mail, che si traducono in un modello di campagna e-mail ben sviluppato.
 
@@ -45,7 +47,7 @@ Utilizza queste best practice per creare una newsletter personalizzata.
 
 >[!NOTE]
 >
->Durante la creazione di un modello di posta elettronica per Adobe Campaign, è necessario includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello. In caso contrario, non puoi selezionare il modello Adobe Campaign in **Proprietà pagina** di Experience Manager (il campo è disabilitato).
+>Durante la creazione di un modello di posta per Adobe Campaign, devi includere la proprietà **acMapping** con il valore **mapRecipient** nel nodo **jcr:content** del modello. In caso contrario, non puoi selezionare il modello Adobe Campaign in **Proprietà pagina** di Experience Manager (il campo è disabilitato).
 
 ## Componente modello/pagina {#template-page-component}
 
