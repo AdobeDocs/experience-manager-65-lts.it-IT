@@ -6,9 +6,9 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: 29b6cd70a59e3a90cd081ba09c98bd015a7426fc
 workflow-type: tm+mt
-source-wordcount: '10213'
+source-wordcount: '10247'
 ht-degree: 1%
 
 ---
@@ -199,7 +199,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 Dopo aver installato Acrobat, aprire Microsoft® Word. Nella scheda **Acrobat**, fai clic su **Crea PDF** e converti un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
 
@@ -242,6 +242,12 @@ Il processo di installazione di Adobe Acrobat Pro DC for Microsoft Office varia 
 
 * **Tipo di licenza**: vendita al dettaglio o Volume License
 * **Tipo di distribuzione**: utente singolo o più utenti
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>Il video illustra il processo di installazione di una licenza Retail - Configurazione per utente singolo. Per altri scenari di distribuzione (vendita al dettaglio - più utenti, contratti multilicenza - utente singolo o contratti multilicenza - più utenti), fare riferimento alle istruzioni specifiche del passaggio 9 nelle schede corrispondenti di seguito per garantire l&#39;avvio e l&#39;attivazione delle licenze corretti per il tipo di distribuzione.
 
 Ogni scheda contiene istruzioni personalizzate ottimizzate per la configurazione specifica, che consentono di evitare problemi di configurazione e garantire la conformità alle licenze.
 
@@ -692,7 +698,7 @@ Dopo aver disinstallato la versione precedente, è necessario scaricare e instal
 Dopo aver completato tutti i processi, eseguire un test di azione rapida per confermare la validità dell&#39;installazione:
 
 1. Utilizzare Desktop remoto (RDP) per accedere al server e avviare il server AEM Forms utilizzando i servizi.
-2. Utilizzare Desktop remoto (RDP) per accedere al server e avviare il server AEM Forms utilizzando Servizi Windows. Una volta che il server è in esecuzione, non chiudere semplicemente la finestra RDP. Disconnettersi dall&#39;utente per garantire che la sessione termini correttamente mentre il servizio continua a essere eseguito in background.
+2. Una volta che il server è in esecuzione, non chiudere semplicemente la finestra RDP. Disconnettersi dall&#39;utente per garantire che la sessione termini correttamente mentre il servizio continua a essere eseguito in background.
 
 ###### Passaggio 10: verifica del servizio PDF Generator
 
@@ -1050,7 +1056,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
