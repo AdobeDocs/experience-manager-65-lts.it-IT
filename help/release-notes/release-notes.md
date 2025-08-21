@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8c726951cbd99660d2cfd23abef8857a6f4fcf36
+source-git-commit: b6a5e6bacfee72e162ce3bc035f909c02fbbf6db
 workflow-type: tm+mt
-source-wordcount: '4939'
+source-wordcount: '4935'
 ht-degree: 14%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 14%
 
 [!DNL Experience Manager] 6.5 LTS, SP1 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la disponibilità iniziale di 6,5 LTS a marzo 2025. [Installare il Service Pack](#install-update) su 6,5 LTS.
 
-## Funzioni principali e miglioramenti
+<!-- ## Key features and enhancements -->
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
