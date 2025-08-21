@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 70436606-d95c-4208-94f6-e33f3eefdf66
-source-git-commit: e9c09eebb372fc36ae161959e0465c07ad755130
+source-git-commit: 7f9f24f173604640b454449b389da9fcdcf7017d
 workflow-type: tm+mt
 source-wordcount: '1068'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -40,7 +40,7 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 * Per ottenere prestazioni ottimali, sostituisci i valori predefiniti del GC (catalogo globale) con altri valori. Per ulteriori informazioni, consulta la sezione [Installare e aggiornare](/help/sites-deploying/custom-standalone-install.md).
 * Adobe distribuisce gli aggiornamenti di manutenzione Java™ 17 e Java™ 21 per l’utilizzo da parte del cliente nei progetti correlati ad AEM, se non disponibili pubblicamente da Oracle.
 
-#### Pacchetto Uberjar {#uber-jar-packaging}
+#### Confezione di Uberjar {#uber-jar-packaging}
 
 * Il pacchetto Uberjar di AEM 6.5 LTS presenta una leggera differenza. Per ulteriori informazioni, consulta [Aggiornare la versione del file JAR Uber di AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
