@@ -11,7 +11,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Prima di procedere con un aggiornamento, è necessario disporre di una base di c
 
 ## Aggiorna base codice {#upgrade-code-base}
 
-### Creare un ramo dedicato per il codice LTS 6.5 nel controllo della versione {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
+### Creazione di un ramo dedicato per il codice LTS 6.5 nel controllo della versione {#create-a-dedicated-branch-for-6.5-lts-code-in-version-control}
 
 Tutto il codice e le configurazioni necessari per l’implementazione di AEM devono essere gestiti utilizzando una qualche forma di controllo della versione. È necessario creare un ramo dedicato nel controllo della versione per gestire tutte le modifiche necessarie per la base di codice nella versione di destinazione di AEM. In questo ramo vengono gestiti i test iterativi della base di codice rispetto alla versione di destinazione di AEM e le successive correzioni di bug.
 
@@ -83,7 +83,7 @@ Per AEM 6.5 LTS, esistono ancora due tipi di file JAR Uber:
     <groupId>com.adobe.aem</groupId>
     <artifactId>uber-jar</artifactId>
     <version>6.6.0</version>
-    <classifier>apis</classifier>
+    <classifier>deprecated-apis</classifier>
     <scope>provided</scope>
 </dependency>
 ```
