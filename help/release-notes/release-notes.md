@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 516fb71493cad9d4f4105bb09f56fe95d2971974
+source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
 workflow-type: tm+mt
-source-wordcount: '7204'
+source-wordcount: '7221'
 ht-degree: 71%
 
 ---
@@ -456,6 +456,12 @@ Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornam
 >[!NOTE]
 >
 > Per le nuove installazioni di AEM 6.5 LTS, le definizioni degli indici devono essere installate separatamente. Per informazioni più dettagliate, consulta questo [articolo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+
+## Installare e aggiornare il componente aggiuntivo AEM Forms {#install-update-aem-forms-add-on}
+
+Per istruzioni dettagliate, vedere [Istruzioni di installazione di AEM Forms Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+
+
 
 ## Piattaforme supportate {#supported-platforms}
 
