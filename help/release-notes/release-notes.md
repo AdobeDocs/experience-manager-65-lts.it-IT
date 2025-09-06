@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: d6b324ed961dc59a22e8e33109a5ba5262553aa7
+source-git-commit: 50f63016e5769939309d5013309043ad476e8b71
 workflow-type: tm+mt
-source-wordcount: '7221'
+source-wordcount: '7219'
 ht-degree: 71%
 
 ---
@@ -459,7 +459,7 @@ Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornam
 
 ## Installare e aggiornare il componente aggiuntivo AEM Forms {#install-update-aem-forms-add-on}
 
-Per istruzioni dettagliate, vedere [Istruzioni di installazione di AEM Forms Service Pack](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Per istruzioni dettagliate, vedere [Esecuzione di un aggiornamento sul posto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
