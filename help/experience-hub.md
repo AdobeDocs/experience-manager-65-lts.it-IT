@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: 66f0240a32830ba629b656e7f9aef84af2efc91c
+source-git-commit: 713dc1615ef1751c2fdbf67b5f97690ce6eed676
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub introduce un punto di partenza centralizzato per la gestione di c
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (4 minuti e 9 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471449?learn=on&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -50,11 +50,11 @@ La pagina Adobe Experience Manager è stata aggiornata con una navigazione migli
 >
 >I widget, gli strumenti e gli artefatti visualizzati dipendono dall’utente tipo, dalle adesioni e dal tipo di distribuzione di AEM (AEM as a Cloud Service o Managed Services 6.5/6.5 LTS).
 
-Queste soluzioni sono ora spostate nella navigazione principale in **Strumenti** o **Servizi**. Inoltre, i nuovi elementi di navigazione consentono di accedere rapidamente alle funzioni chiave di Adobe Experience Manager specifiche per le soluzioni abilitate, come Assets, Sites, Forms, Frammenti di contenuto, Avvii e molto altro.
+Queste soluzioni sono ora spostate nella navigazione principale in **Strumenti** o **Servizi**. Inoltre, i nuovi elementi di navigazione consentono di accedere rapidamente alle funzioni chiave di Adobe Experience Manager specifiche per le soluzioni abilitate. Tali soluzioni includono Assets, Sites, Forms, Frammenti di contenuto, Avvii e molto altro.
 
 ![Ambienti Experience Hub](/help/assets/assets-experience-hub/experience-hub-author-environments-ams.png)
 
-Queste funzioni sono disponibili per l’ambiente di produzione principale a cui hai accesso oppure puoi selezionare un ambiente specifico di destinazione nel caso in cui tu abbia accesso a più istanze di AEM.
+Queste funzioni sono disponibili per l’ambiente di produzione principale a cui puoi accedere. In alternativa, puoi selezionare un ambiente specifico di destinazione nel caso in cui tu abbia accesso a più istanze di AEM.
 
 ![Ambienti di produzione e stage](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
@@ -66,7 +66,7 @@ I widget possono anche essere ridimensionati e riposizionati sulla pagina in bas
 
 ![widget Experience Hub](/help/assets/assets-experience-hub/experience-hub-custom-widgets-ams.png)
 
-Nella sezione **Ambienti di authoring** sono visualizzati tutti gli ambienti AEM accessibili, con scelte rapide specifiche per le soluzioni e le pagine disponibili, che consentono di fissare gli ambienti specifici da visualizzare nella parte superiore dell&#39;elenco.
+Nella sezione **Ambienti di authoring** sono visualizzati tutti gli ambienti AEM a cui puoi accedere. Esistono scelte rapide specifiche per le soluzioni e le pagine disponibili, che consentono inoltre di fissare ambienti specifici da visualizzare nella parte superiore dell’elenco.
 
 Nella sezione **Recenti**, nell&#39;immagine seguente, sono elencate le pagine visitate di recente in AEM. A seconda della licenza del tenant, il widget può includere elementi come Programma, Esecuzione delle pipeline, Assets, Editor pagina e Editor di moduli.
 
@@ -82,4 +82,4 @@ Se non esiste alcun ambiente AEM Cloud Service o Managed Services di produzione,
 
 ## Assistente AI in AEM
 
-Per i clienti che hanno [completato i criteri dei prerequisiti](/help/ai-assistant-in-aem.md#get-access), l&#39;Assistente per l&#39;intelligenza artificiale in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/ai-assistant-in-aem.md).
+Per i clienti che hanno [completato i criteri dei prerequisiti](/help/ai-assistant-in-aem.md#get-access), l&#39;Assistente AI in AEM è disponibile per gli utenti della loro organizzazione. Consulta [Assistente AI in AEM](/help/ai-assistant-in-aem.md).
