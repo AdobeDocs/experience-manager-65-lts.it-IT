@@ -8,11 +8,11 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 12e2966754fe317c2a20951ee29b401425de486b
 workflow-type: tm+mt
 source-wordcount: '7223'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
-# Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Note sulla versione corrente di Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
 
 ## Informazioni sulla versione {#release-information}
 
@@ -158,7 +158,7 @@ I metadati XMP formattati in modo non corretto hanno generato un errore durante 
 * È stato corretto un errore JavaScript `ns.ui.alert is not a function` che si verificava durante la riattivazione dell&#39;ereditarietà del componente fantasma in AEM 6.5 On-Prem. (SITES-31993)
 * È stato risolto un problema a causa del quale l’opzione di rollout &quot;Più tardi&quot; consentiva di continuare senza selezionare una data in AEM 6.5. (SITES-31374)
 
-#### Editor di pagine{#sites-pageeditor-65-lts-sp1}
+#### Editor pagina{#sites-pageeditor-65-lts-sp1}
 
 * È stato risolto un problema nel modale Teaser a causa del quale la scheda Collegamento e azioni continuava a visualizzare lo stile degli errori, le icone e l’attributo ARIA non valido dopo l’immissione di dati validi e la risoluzione degli errori. (SITES-25527)
 * È stato risolto un problema nell’editor di testo del modale Teaser a causa del quale i pulsanti Elenchi e Paragrafi non trasmettevano il loro stato espanso o compresso agli assistenti vocali che garantiva aggiornamenti accurati degli attributi ARIA espansi. (SITES-25365)
@@ -452,7 +452,7 @@ Per i requisiti di configurazione, consulta [Istruzioni di installazione](/help/
 
 >[!NOTE]
 >
-> Se si esegue l&#39;aggiornamento diretto a LTS SP1 da 6.5 SP precedenti, seguire le istruzioni fornite per l&#39;aggiornamento da 6.5 a 6.5 LTS GA [upgrade](/help/sites-deploying/upgrade.md).
+> Se esegui l’aggiornamento diretto a LTS SP1 da 6.5 SP precedenti, segui le istruzioni fornite per l’[aggiornamento](/help/sites-deploying/upgrade.md) da 6.5 a 6.5 LTS GA.
 
 
 Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
@@ -463,7 +463,7 @@ Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornam
 
 ## Installare e aggiornare il componente aggiuntivo AEM Forms {#install-update-aem-forms-add-on}
 
-Per istruzioni dettagliate, vedere [Esecuzione di un aggiornamento sul posto](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+Per istruzioni dettagliate, vedere [Esecuzione di un aggiornamento sul posto](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 
 
@@ -543,11 +543,11 @@ Quando si verifica questo problema, è possibile che nei registri errori venga v
 
 Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip).
 
-### Errore di connessione a Dispatcher con funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
+### Errore di connessione di Dispatcher con la funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
 
 >[!NOTE]
 >
-> Questo problema è presente solo nella versione GA di AEM 6.5 LTS.
+> Questo problema è presente solo nella versione AEM 6.5 LTS GA.
 
 Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, le verifiche stato potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta. Questo problema si verifica in modo specifico quando i clienti tentano di connettersi tramite `https + IP` dalle istanze Dispatcher ad AEM. È correlato a problemi di convalida SNI (Server Name Indication).
 
