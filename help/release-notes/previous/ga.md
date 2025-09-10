@@ -1,17 +1,18 @@
 ---
-title: Note sulla versione per  [!DNL Adobe Experience Manager] 6.5 LTS
+title: Note sulla versione di [!DNL Adobe Experience Manager] 6.5 LTS
 description: Informazioni sulla versione corrente di Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 922b2391b45ac1a08987f286cdbd736fe9a383c8
-workflow-type: tm+mt
+exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
+source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Note sulla versione corrente per Adobe Experience Manager 6.5 LTS {#release-notes}
+# Note sulla versione corrente di Adobe Experience Manager 6.5 LTS {#release-notes}
 
 ## Informazioni sulla versione {#release-information}
 
@@ -39,7 +40,7 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 * Per ottenere prestazioni ottimali, sostituisci i valori predefiniti del GC (catalogo globale) con altri valori. Per ulteriori informazioni, consulta la sezione [Installare e aggiornare](/help/sites-deploying/custom-standalone-install.md).
 * Adobe distribuisce gli aggiornamenti di manutenzione Java™ 17 e Java™ 21 per l’utilizzo da parte del cliente nei progetti correlati ad AEM, se non disponibili pubblicamente da Oracle.
 
-#### Confezione di Uberjar {#uber-jar-packaging}
+#### Pacchetto Uberjar {#uber-jar-packaging}
 
 * Il pacchetto Uberjar di AEM 6.5 LTS presenta una leggera differenza. Per ulteriori informazioni, consulta [Aggiornare la versione del file JAR Uber di AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
@@ -47,7 +48,7 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
 
-## Installare e aggiornare {#install-update}
+## Installazione e aggiornarnamento {#install-update}
 
 Per i requisiti di configurazione, consulta [Istruzioni di installazione](/help/sites-deploying/custom-standalone-install.md).
 
@@ -55,7 +56,7 @@ Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornam
 
 >[!NOTE]
 >
-> Per le nuove installazioni di AEM 6.5 LTS, le definizioni degli indici devono essere installate separatamente. Per ulteriori informazioni, vedere [questo articolo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Per le nuove installazioni di AEM 6.5 LTS, le definizioni degli indici devono essere installate separatamente. Per informazioni più dettagliate, consulta questo [articolo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Piattaforme supportate {#supported-platforms}
 
@@ -101,10 +102,10 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 | Portale | AEM Portal Director non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Granite | Il bundle `com.adobe.granite.socketio` è stato rimosso. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Granite | `com.adobe.granite.crx-explorer` non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
-| Granite | `crx2oak` non è supportato. | Scegli la versione rilevante di [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
+| Granite | `crx2oak` non è supportato. | Scegliere la versione rilevante di [Oak-upgrade](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-upgrade) | 6.5 LTS GA |
 | Adobe | `com.adobe.cq.cq-searchpromote-integration` non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Guava | Tutte le dipendenze guava ora vengono rimosse in AEM e pertanto il bundle `com.adobe.granite.osgi.wrapper.guava-15.0.0-0002` non fa parte di AEM. | Se possibile, la clientela può aggiungere guava autonomamente se dipende da guava o sostituire il codice guava con raccolte java o altre alternative. | 6.5 LTS GA |
-| `We.Retail` | `We-retail` sito di esempio non supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
+| `We.Retail` | Il sito di esempio `We-retail` non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Open source | Il bundle `oak-solr-osgi` non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Open source | `org.apache.servicemix.bundles.abdera-parser`, `org.apache.servicemix.bundles.jdom` e `org.apache.sling.atom.taglib` non sono supportati. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Open source | I pacchetti `org.apache.commons.io` ora vengono esportati da `org.apache.commons.commons-io`. | Nessuna modifica richiesta. | 6.5 LTS GA |
@@ -127,7 +128,7 @@ Quando si verifica questo problema, è possibile che nei registri errori venga v
 
 Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip).
 
-### Errore di connessione Dispatcher con funzionalità solo SSL {#ssl-only-feature}
+### Errore di connessione di Dispatcher con la funzione solo SSL {#ssl-only-feature}
 
 Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, le verifiche stato potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta. Questo problema si verifica in modo specifico quando i clienti tentano di connettersi tramite `https + IP` dalle istanze Dispatcher ad AEM. È correlato a problemi di convalida SNI (Server Name Indication).
 
@@ -148,7 +149,7 @@ Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica
 **Soluzione:**
 se riscontri questo problema, contatta l’Assistenza Clienti di Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
 
-## Siti Web con restrizioni{#restricted-sites}
+## Siti web con restrizioni{#restricted-sites}
 
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
