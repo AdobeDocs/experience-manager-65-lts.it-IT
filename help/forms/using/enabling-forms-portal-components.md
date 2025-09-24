@@ -8,19 +8,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
 # Abilitazione dei componenti del portale Forms {#enabling-forms-portal-components}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it).
 
 I componenti del portale dei moduli non sono pronti all’uso. Per visualizzare i componenti nell’elenco dei componenti disponibili nella barra laterale di AEM, effettua le seguenti operazioni:
 

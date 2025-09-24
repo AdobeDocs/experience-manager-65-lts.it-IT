@@ -10,19 +10,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 1681e92b-2d88-4b10-a700-a516aa5a02c8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
+source-wordcount: '298'
+ht-degree: 2%
 
 ---
 
 # AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html).
 
 Puoi [creare gruppi](/help/sites-administering/user-group-ac-admin.md#group-administration) e assegnare criteri e [utenti](/help/sites-administering/user-group-ac-admin.md#user-administration) ai gruppi in Adobe Experience Manager (AEM). Questi criteri controllano i privilegi degli utenti che fanno parte del gruppo.
 

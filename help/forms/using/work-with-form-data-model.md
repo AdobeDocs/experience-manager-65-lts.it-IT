@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4159'
+source-wordcount: '4168'
 ht-degree: 0%
 
 ---
 
 # Utilizzare il modello dati del modulo{#work-with-form-data-model}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![integrazione dati](do-not-localize/data-integeration.png)
 
@@ -30,7 +31,7 @@ Se hai poca esperienza con l’integrazione dei dati in Forms e non hai configur
 
 * [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare origini dati](/help/forms/using/configure-data-sources.md)
-* [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
+* [Creare un modello di dati per moduli](/help/forms/using/create-form-data-models.md)
 
 Continua a leggere per i dettagli sulle varie attività e configurazioni che puoi eseguire utilizzando l’editor dei modelli di dati dei moduli.
 

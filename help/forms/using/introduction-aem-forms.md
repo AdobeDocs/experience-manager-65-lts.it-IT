@@ -5,21 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
-source-git-commit: d9f6415aabcbc55af23824d9e0ab33c418f6761f
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 15%
+source-wordcount: '943'
+ht-degree: 14%
 
 ---
 
-# Introduzione ad AEM Forms{#introduction-to-aem-forms}
+# Introduzione ad AEM Forms {#introduction-to-aem-forms}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
 
-Per informazioni sulle ultime funzionalità e sui miglioramenti di AEM Forms, vedi [Novità di AEM Forms](../../forms/using/whats-new.md).
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html).
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 

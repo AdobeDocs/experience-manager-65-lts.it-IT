@@ -6,9 +6,9 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1993'
 ht-degree: 6%
 
 ---
@@ -17,10 +17,11 @@ ht-degree: 6%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
 
 ## Creare un modulo adattivo {#strong-create-an-adaptive-form-strong}
 
@@ -30,7 +31,7 @@ Per creare un modulo adattivo, segui la procedura riportata di seguito.
 
 1. Inserisci le credenziali nella pagina di accesso di Experience Manager.
 
-   Dopo aver effettuato l&#39;accesso, nell&#39;angolo superiore sinistro selezionare **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**.
+   Dopo aver effettuato l’accesso, nell’angolo in alto a sinistra seleziona **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Moduli]** > **[!UICONTROL Moduli e documenti]**.
 
    >[!NOTE]
    >
@@ -201,7 +202,7 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
 
 1. (Solo salvataggio automatico basato su eventi) Per configurare le opzioni per il salvataggio automatico basato su eventi, effettuare le seguenti operazioni.
 
-   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
+   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
 
 1. (Facoltativo) Per salvare automaticamente il contenuto per utenti anonimi, selezionare l&#39;opzione **[!UICONTROL Abilita salvataggio automatico per utenti anonimi]** e fare clic su **[!UICONTROL OK]**.
 
@@ -222,6 +223,6 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
    ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
 
 1. Modifica il nome del modulo nella scheda **Titolo**, come illustrato nell&#39;immagine seguente.
-1. Fare clic su **Salva e chiudi**.
+1. Fai clic su **Salva e chiudi**.
 
    ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)

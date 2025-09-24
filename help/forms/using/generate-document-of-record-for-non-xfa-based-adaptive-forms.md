@@ -5,10 +5,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4283'
-ht-degree: 2%
+source-wordcount: '4292'
+ht-degree: 1%
 
 ---
 
@@ -16,10 +16,11 @@ ht-degree: 2%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=it).
 
 
 ## Panoramica {#overview}
@@ -412,7 +413,6 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
 
 * **[!UICONTROL BASE]**
    * **Modello:** Puoi selezionare il modello predefinito o personalizzato.
-
      ![testo alternativo](image.png)
    * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
    * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
@@ -425,7 +425,6 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
       * Verticale
       * Orizzontale
       * Come Modulo adattivo
-
      >[!NOTE]
      > L’allineamento verticale e orizzontale è applicabile solo a     Pulsante di opzione e casella di controllo
 * **[!UICONTROL PROPRIETÀ PAGINA MASTER]** Fare clic per ulteriori informazioni sulle [proprietà pagina master](#master-page-properties-master-page-properties)

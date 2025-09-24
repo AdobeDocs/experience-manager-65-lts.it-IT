@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 2%
+source-wordcount: '2085'
+ht-degree: 1%
 
 ---
 
 # Configurare origini dati{#configure-data-sources}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html).
 
 
 ![Integrazione dei dati](do-not-localize/data-integeration.png)
@@ -40,7 +41,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 È possibile configurare i database relazionali utilizzando Configurazione della console Web di AEM. Effettua le seguenti operazioni:
 
 1. Passa alla console Web di AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
-1. Cerca la configurazione dell&#39;**dell&#39;origine dati in pool di connessione Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
+1. Cerca la configurazione dell&#39;**[!UICONTROL dell&#39;origine dati in pool di connessione Apache Sling]**. Seleziona per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
 
    * Nome dell’origine dati
@@ -153,7 +154,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL &#x200B; per l&#39;origine dati REST]:
+1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL  per l&#39;origine dati REST]:
 
    * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi Web RESTful nel campo **[!UICONTROL Limite di connessioni in totale]**. Il valore predefinito è 20 connessioni.
 
@@ -161,7 +162,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
    * Nel campo **[!UICONTROL Keep alive]** specificare la durata per la quale una connessione HTTP persistente viene mantenuta attiva. Il valore predefinito è 15 secondi.
 
-   * Nel campo **[!UICONTROL Timeout connessione]** specificare la durata dell&#39;attesa di una connessione da parte del server [!DNL Experience Manager Forms]. Il valore predefinito è 10 secondi.
+   * Nel campo [!DNL Experience Manager Forms]Timeout connessione **[!UICONTROL specificare la durata dell&#39;attesa di una connessione da parte del server]**. Il valore predefinito è 10 secondi.
 
    * Specificare il periodo di tempo massimo per l&#39;inattività tra due pacchetti di dati nel campo **[!UICONTROL Timeout socket]**. Il valore predefinito è 30 secondi.
 
@@ -194,7 +195,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 

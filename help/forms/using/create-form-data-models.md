@@ -1,5 +1,5 @@
 ---
-title: Crea modello dati modulo
+title: Creare un modello di dati per moduli
 description: Scopri come creare modelli di dati per moduli con o senza origini dati configurate.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b27fceaf-38f8-433e-96c6-4f98bafa31af
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
 
-# Crea modello dati modulo{#create-form-data-model}
+# Creare un modello di dati per moduli{#create-form-data-model}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html).
 
 
 ![immagine protagonista](do-not-localize/data-integration.png)
@@ -35,7 +36,7 @@ L’integrazione dei dati in AEM Forms fornisce un’interfaccia utente intuitiv
 >
 >Per poter creare e utilizzare il modello di dati del modulo, è necessario essere membri sia del gruppo **fdm-author** che del gruppo **forms-user**. Contatta il tuo amministratore AEM per diventare membro dei gruppi.
 
-## Crea modello dati modulo {#data-sources}
+## Creare un modello di dati per moduli {#data-sources}
 
 Verificare di aver configurato le origini dati che si intende utilizzare nel modello dati del modulo come descritto in [Configurare le origini dati](../../forms/using/configure-data-sources.md). Per creare un modello dati modulo basato su origini dati configurate, eseguire le operazioni seguenti:
 

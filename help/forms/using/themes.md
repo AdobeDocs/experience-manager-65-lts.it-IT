@@ -9,9 +9,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6095'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,11 @@ ht-degree: 1%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html?lang=it).
 
 ## Introduzione {#introduction}
 
@@ -412,7 +413,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di personalizzare gli stili di testo nel componente del tema.</p> <p>Si desidera ad esempio modificare l'aspetto del testo immesso nella casella di testo.</p> <p>Le opzioni disponibili sono famiglia di caratteri, peso, colore, dimensione, altezza linea, allineamento testo, spaziatura, rientro testo, sottolineatura, corsivo, trasformazione testo, allineamento verticale, linea di base e direzione. </p> </td>
   </tr>
   <tr>
-   <td><p>Informazioni di base </p> </td>
+   <td><p>Esperienza pregressa </p> </td>
    <td><p>Consente di riempire lo sfondo del componente con un’immagine o un colore. </p> </td>
   </tr>
   <tr>
@@ -424,7 +425,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di aggiungere effetti speciali ai componenti quali opacità, modalità di fusione e ombre. </p> </td>
   </tr>
   <tr>
-   <td><p>Avanzate </p> </td>
+   <td><p>Avanzate</p> </td>
    <td><p>Consente di aggiungere:</p>
     <ul>
      <li>Proprietà per gli pseudo elementi <code>::before</code> e <code>::after</code> per aggiungere contenuto dopo o prima del contenuto predefinito nel selettore e assegnarvi uno stile.<br /> Consulta <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elementi CSS</a>.</li>

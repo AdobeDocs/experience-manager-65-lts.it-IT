@@ -9,19 +9,20 @@ feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 1%
+source-wordcount: '1422'
+ht-degree: 0%
 
 ---
 
 # Panoramica di AEM Document Services{#overview-of-aem-document-services}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html?lang=it).
 
 
 AEM Document Services è un set di servizi OSGi per la creazione, l’assemblaggio e la protezione di documenti PDF. Document Services include i seguenti servizi:
@@ -51,7 +52,7 @@ Sono disponibili le seguenti quattro operazioni del servizio di output:
 * **generatePDFOutputBatch**: unisce più modelli con più record di dati in una singola chiamata per generare un batch di file PDF. È inoltre possibile generare un singolo PDF combinando tutti i PDF
 * **generatePrintedOutputBatch**: unisce più modelli con più record di dati in una singola chiamata per generare un batch di documenti di stampa (PS,PCL,ZPL,DPL,IPL,TPCL). È inoltre possibile generare un singolo documento di stampa.
 
-## Servizio assemblatore {#assembler-service}
+## Servizio Assembler {#assembler-service}
 
 Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Il documento DDX fornisce istruzioni su come utilizzare i documenti di origine per produrre un insieme di documenti risultanti.
 

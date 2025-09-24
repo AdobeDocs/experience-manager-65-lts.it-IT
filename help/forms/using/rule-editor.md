@@ -9,9 +9,9 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6607'
+source-wordcount: '6615'
 ht-degree: 1%
 
 ---
@@ -20,10 +20,11 @@ ht-degree: 1%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Panoramica {#overview}
 
@@ -40,7 +41,7 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 * Invoke a form data model service and perform an operation
 * Set property of an object -->
 
-La regola editor sostituisce le funzionalità scripting presenti nell AEM 6.1 Forms e versioni precedenti. Tuttavia, gli script esistenti vengono mantenuti nel nuovo editor di regole. Per ulteriori informazioni sull&#39;utilizzo degli script esistenti nell&#39;editor di regole, vedere [Impatto dell&#39;editor di regole sugli script esistenti](#impact-of-rule-editor-on-existing-scripts).
+L’editor di regole sostituisce le funzionalità di script in AEM 6.1 Forms e nelle versioni precedenti. Tuttavia, gli script esistenti vengono mantenuti nel nuovo editor di regole. Per ulteriori informazioni sull&#39;utilizzo degli script esistenti nell&#39;editor di regole, vedere [Impatto dell&#39;editor di regole sugli script esistenti](#impact-of-rule-editor-on-existing-scripts).
 
 Gli utenti aggiunti al gruppo forms-power-users possono creare nuovi script e modificare quelli esistenti. Gli utenti del gruppo forms-users possono utilizzare gli script ma non crearli o modificarli.
 
@@ -105,11 +106,11 @@ L’editor di regole fornisce un set di tipi di regole predefiniti che è possib
 
 ### Quando   {#whenruletype}
 
-Il tipo di regola **When** segue il costrutto della regola **condition-action-alternate action** oppure, a volte, solo il costrutto **condition-action**. In questo tipo di regola, specificare innanzitutto una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione è soddisfatta ( `True`). Quando si utilizza il tipo When regola, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
+Il tipo di regola **When** segue il costrutto della regola **condition-action-alternate action** oppure, a volte, solo il costrutto **condition-action**. In questo tipo di regola si specifica innanzitutto una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Durante l&#39;utilizzo del tipo di regola When, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 
-Utilizzando il tipo regola Quando è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
+Utilizzando il tipo di regola When, è possibile valutare una condizione in un oggetto modulo ed eseguire azioni su uno o più oggetti.
 
-In parole povere, un tipico Quando regola è strutturato come segue:
+In parole semplici, una regola When tipica è strutturata come segue:
 
 `When on Object A:`
 
@@ -117,9 +118,9 @@ In parole povere, un tipico Quando regola è strutturato come segue:
 
 `Then, do the following:`
 
-Azione 2 sull&#39;oggetto B;
+Azione 2 sull’oggetto B;
 E
-Azione 3 sull&#39;oggetto C;
+Azione 3 sull’oggetto C;
 
 _
 
@@ -129,7 +130,7 @@ Ad esempio, un elenco include quattro opzioni: Rosso, Blu, Verde e Giallo. Duran
 
 ![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
 
-Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella azione Valore Di cancella il valore dell&#39;oggetto specificato. La presenza di Clear Valore of come opzione nell&#39;istruzione When consente di creare condizioni complesse con più campi.
+Durante la scrittura di una regola When, puoi attivare l&#39;azione Cancella valore di. Cancella valore dell&#39;azione cancella il valore dell&#39;oggetto specificato. L&#39;opzione Clear Value (Cancella valore) nell&#39;istruzione When consente di creare condizioni complesse con più campi.
 
 ![clearvalueof](assets/clearvalueof.png)
 
@@ -202,25 +203,25 @@ La figura seguente illustra un esempio di aggiunta dinamica di caselle di contro
 
 Il tipo di regola **[!UICONTROL Imposta valore di]** consente di impostare il valore di un oggetto modulo a seconda che la condizione specificata sia soddisfatta o meno. Il valore può essere impostato sul valore di un altro oggetto, una stringa letterale, un valore derivato da un&#39;espressione matematica o una funzione, un valore di una proprietà di un altro oggetto o l&#39;output di un servizio modello dati modulo. Analogamente, è possibile verificare la presenza di una condizione su un componente, una stringa, una proprietà o valori derivati da una funzione o un&#39;espressione matematica.
 
-Il tipo di regola Imposta valore non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Un insieme standard Valore di regola ha la seguente struttura:
+Il tipo di regola Imposta valore non è disponibile per tutti gli oggetti modulo, ad esempio pannelli e pulsanti della barra degli strumenti. Una regola Set Value Of standard ha la seguente struttura:
 
 
 
-Impostare il valore dell&#39;oggetto A su:
+Imposta il valore dell&#39;oggetto A su:
 
-(stringa ABC) O
-(proprietà oggetto X dell&#39;oggetto C) O
-(valore da una funzione) O
-(valore da un&#39;espressione matematica) O
-(valore di output di un servizio modello di dati o di un servizio Web);
+(stringa ABC) OPPURE
+(proprietà dell&#39;oggetto X dell&#39;oggetto C) OPPURE
+(valore da una funzione) OPPURE
+(valore da un&#39;espressione matematica) OPPURE
+(valore di output di un servizio di modello dati o di un servizio web);
 
 Quando (facoltativo):
 
-(Condizione 1 E Condizione 2 E Condizione 3) è VERO;
+(Condizione 1 AND Condizione 2 AND Condizione 3) è TRUE;
 
 
 
-Nell&#39;esempio seguente il valore nel campo viene preso come `dependentid` input e il valore del `Relation` campo viene impostato sull&#39;output dell&#39;argomento `Relation` del servizio modello dati `getDependent` modulo.
+Nell&#39;esempio seguente il valore nel campo `dependentid` viene utilizzato come input e il valore del campo `Relation` viene impostato sull&#39;output dell&#39;argomento `Relation` del servizio del modello dati del modulo `getDependent`.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -372,13 +373,13 @@ Visualizza il titolo dell’oggetto modulo adattivo tramite il quale è stato av
 
 Il riquadro a sinistra nell&#39;interfaccia utente dell&#39;editor di regole include due schede: **[!UICONTROL Oggetti Forms]** e **[!UICONTROL Funzioni]**.
 
-La scheda Oggetti modulo mostra una vista gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Durante la scrittura di una regola, è possibile trascinare gli oggetti modulo nell’editor di regole. Durante la creazione o la modifica di un regola quando si trascina un oggetto o una funzione in un segnaposto, il segnaposto accetta automaticamente il tipo di valore appropriato.
+La scheda Oggetti modulo mostra una vista gerarchica di tutti gli oggetti contenuti nel modulo adattivo. Visualizza il titolo e il tipo degli oggetti. Durante la scrittura di una regola, è possibile trascinare gli oggetti modulo nell’editor di regole. Quando si trascina un oggetto o una funzione in un segnaposto durante la creazione o la modifica di una regola, il segnaposto assume automaticamente il tipo di valore appropriato.
 
-Gli oggetti modulo a cui è applicata una o più regole valide sono contrassegnati da un punto verde. Se una delle regole applicate a un oggetto modulo viene non valido, l&#39;oggetto modulo viene contrassegnato con un punto giallo.
+Gli oggetti modulo a cui sono applicate una o più regole valide sono contrassegnati da un punto verde. Se una delle regole applicate a un oggetto modulo non è valida, l&#39;oggetto modulo viene contrassegnato con un punto giallo.
 
-Il scheda Funzioni include un insieme di funzioni predefinite, quali Somma di, Min di, Massimo di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare valori in pannelli e righe di tabella ripetibili e utilizzarli in istruzioni di azione e condizione durante la scrittura di regole. Tuttavia, è possibile creare [anche funzioni](#custom-functions) personalizzate.
+La scheda Funzioni include un set di funzioni incorporate, ad esempio Somma di, Min di, Max di, Media di, Numero di e Convalida modulo. È possibile utilizzare queste funzioni per calcolare i valori nei pannelli e nelle righe di tabella ripetibili e utilizzarli nelle istruzioni di azione e condizione durante la scrittura delle regole. Tuttavia, puoi anche creare [funzioni personalizzate](#custom-functions).
 
-![Le funzioni scheda](assets/functions.png)
+![Scheda Funzioni](assets/functions.png)
 
 >[!NOTE]
 >
@@ -388,7 +389,7 @@ Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli ogget
 
 ### C. Attivazione/disattivazione di funzioni e oggetti modulo {#c-form-objects-and-functions-toggle-br}
 
-Quando viene toccato questo pulsante, diventa attivo il riquadro Oggetti modulo o il riquadro Funzioni.
+Quando viene toccato questo pulsante di attivazione, diventa attivo il riquadro Oggetti modulo o il riquadro Funzioni.
 
 ### D. Editor di regole visive {#d-visual-rule-editor}
 
@@ -549,7 +550,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
 Gli utenti aggiunti al gruppo forms-power-users possono utilizzare l’editor di codice. L’editor di regole genera automaticamente il codice JavaScript per qualsiasi regola creata utilizzando l’editor visivo. Puoi passare dall’editor visivo all’editor di codice per visualizzare il codice generato. Tuttavia, se modifichi il codice della regola nell’editor di codice, non puoi tornare all’editor visivo. Se preferisci scrivere le regole nell’editor di codice anziché nell’editor visivo, puoi scriverle nuovamente nell’editor di codice. Il selettore dell’editor di codice visivo consente di passare da una modalità all’altra.
 
-L’editor di codice JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi di moduli adattivi, degli eventi, degli oggetti e delle API pubbliche, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
+L’editor di codice JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi di moduli adattivi, degli eventi, degli oggetti e delle API pubbliche, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Per ulteriori informazioni sulle linee guida per la scrittura di regole nell&#39;editor di codice, vedi [Espressioni di moduli adattivi](/help/forms/using/adaptive-form-expressions.md).
 
@@ -608,7 +609,7 @@ Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag d
 Sintassi: `@return {type}`
 In alternativa, è possibile utilizzare `@returns {type}`.
 Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
-{type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
+  {type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
 
    1. stringa
    1. numero
@@ -890,9 +891,9 @@ Nel modulo dell&#39;ordine di acquisto illustrato nell&#39;esempio precedente, s
 
 ![esempio-convalida](assets/example-validate.png)
 
-Regola nell&#39;editor visivo
+Regola nell’editor visivo
 
-Il regola viene visualizzato come segue nel codice editor.
+La regola viene visualizzata come segue nell’editor di codice.
 
 ![example-validate-code](assets/example-validate-code.png)
 

@@ -9,30 +9,31 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3151'
 ht-degree: 54%
 
 ---
 
 # Introduzione all’authoring di moduli adattivi {#introduction-to-authoring-adaptive-forms}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Panoramica {#overview}
 
 I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e adattivi. AEM Forms fornisce un’interfaccia utente intuitiva e componenti pronti all’uso per la creazione e l’utilizzo di moduli adattivi. Puoi scegliere di creare un modulo adattivo basato su un modello di modulo o uno schema di modulo o senza un modello di modulo. È importante scegliere con attenzione il modello di modulo, che deve risultare adatto non solo alle proprie esigenze, ma deve consentire di accrescere gli investimenti e le risorse infrastrutturali esistenti. Puoi scegliere tra le seguenti opzioni per creare un modulo adattivo:
 
-* **Seleziona un modello dati del modulo**
+* **Utilizzo di un modello dati modulo**
   [Integrazione dati](../../forms/using/data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo che può essere utilizzato per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
-* **Utilizzo di un modello di modulo XDP**
-Si tratta di un modello di modulo ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
+* **Utilizzo di un modello per moduli XDP**
+Si tratta di un modello per moduli ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
 Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
@@ -152,7 +153,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
@@ -240,7 +241,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Interruttore</td>
-   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o attivazione/disattivazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
+   <td>Aggiunge un interruttore che esegue un’azione di mostra/nascondi o abilitazione/disabilitazione. Non è possibile aggiungere più di due opzioni nel componente Interruttore. Poiché un interruttore può avere solo due valori, on o off, obbligatorio non è applicabile. Almeno un valore viene salvato indipendentemente dall’input dell’utente. <br /> </td>
   </tr>
   <tr>
    <td>Tabella</td>
@@ -372,7 +373,7 @@ J. **Altri**: fornisce ulteriori opzioni per lavorare con il componente selezion
 
 * Visualizza espressione SOM
 * Salva un pannello come frammento (solo per i pannelli)
-* Aggiungi pannello figlio (solo per pannelli)
+* Aggiungi pannello secondario (solo per pannelli)
 * Aggiungi barra degli strumenti del pannello (solo per i pannelli)
 * Sostituisci (non per pannelli)
 

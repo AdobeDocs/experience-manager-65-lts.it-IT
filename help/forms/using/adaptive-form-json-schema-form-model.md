@@ -6,10 +6,10 @@ level: Beginner, Intermediate
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 8d2781e7-732e-42e4-b18b-e6d9ceaa7abe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 5%
+source-wordcount: '1851'
+ht-degree: 4%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 5%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html).
 
 
 ## Prerequisiti {#prerequisites}
@@ -367,7 +368,7 @@ L&#39;esempio precedente definisce un record cliente, in cui ogni cliente ha sia
 
 JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. È possibile preconfigurare gli oggetti modulo per [valutare un&#39;espressione](adaptive-form-expressions.md) in un evento modulo.
 
-Utilizza la proprietà aem:afproperties per preconfigurare espressioni o script di moduli adattivi per i componenti dei moduli adattivi. Ad esempio, quando si attiva l&#39;evento di inizializzazione, il codice seguente imposta il valore del campo telefono e stampa un valore nel registro:
+Utilizzare la proprietà aem:afproperties per preconfigurare espressioni o script di moduli adattivi per i componenti di moduli adattivi. Ad esempio, quando si attiva l&#39;evento di inizializzazione, il codice seguente imposta il valore del campo telefono e stampa un valore nel registro:
 
 ```json
 "telephone": {

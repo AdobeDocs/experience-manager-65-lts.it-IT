@@ -8,10 +8,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 9d1a22da-2eb3-4c79-8c4d-4d0a3ed7fe3b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 9%
 
 ---
 
@@ -20,10 +20,11 @@ ht-degree: 2%
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html).
 
 
 È possibile utilizzare il componente **Firma scarabocchio** e il componente **Passaggio firma** per disegnare la firma (scarabocchio) in un modulo adattivo. Il componente del passaggio Firma visualizza una versione PDF del modulo adattivo. Per utilizzare il componente Passaggio firma, è necessario che sia abilitata l’opzione Documento di record o che i moduli adattivi basati su modelli di modulo siano impostati.
@@ -33,11 +34,11 @@ ht-degree: 2%
 ## Varie opzioni disponibili nella finestra Firma
 
 * **A:** Fai clic sull&#39;icona **Pennello pittura** per disegnare la firma su un&#39;area di lavoro.
-* **B:** Fai clic sull&#39;icona **Cancella** per cancellare la firma nell&#39;area di lavoro.
-* **C:** Fai clic sull&#39;icona **Geolocation** per aggiungere la geolocalizzazione insieme alla firma.
-* **D:** Fai clic sull&#39;icona **Tastiera** per digitare il tuo nome nell&#39;area di lavoro.
+* **B:** fai clic sull’icona **Cancella** per cancellare la firma nell’area di lavoro.
+* **C:** fai clic sull’icona **Geolocalizzazione** per aggiungere la geolocalizzazione insieme alla firma.
+* **D:** fai clic sull’icona **Tastiera** per digitare il tuo nome nell’area di lavoro.
 
-Dopo aver selezionato l&#39;icona Fine![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) nella finestra della firma scarabocchio, non è possibile modificare la firma. Nel caso in cui si desideri modificare la firma, è necessario ignorare la firma corrente e riapporla utilizzando l&#39;opzione Pennello/Tastiera.
+Dopo aver selezionato l&#39;icona Fine![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) nella finestra della firma scarabocchio, non è possibile modificare la firma. Nel caso in cui desideri modificare la firma, è necessario ignorare quella corrente e riapporla utilizzando l’opzione Pennello/Tastiera.
 
 È possibile selezionare l&#39;icona **Configura** ![configura](assets/configure.png) per impostare le proporzioni dell&#39;area di lavoro Firma scarabocchio.
 * Quando le proporzioni dell’area di lavoro Firma a mano sono inferiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte nella parte inferiore dell’area di lavoro Firma a mano.

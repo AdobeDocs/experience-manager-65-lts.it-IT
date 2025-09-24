@@ -5,19 +5,20 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 5%
+source-wordcount: '917'
+ht-degree: 4%
 
 ---
 
 # Tutorial: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=it).
 
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
@@ -43,7 +44,7 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ### Prerequisito {#prerequisite}
 
-* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=it#author-and-publish-installs)
+* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa il componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell&#39;esercitazione sono basati sul database [!DNL MySQL] e utilizzano [!DNL Oracle's] [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -66,7 +67,7 @@ Obiettivi:
 
 [![Consulta la Guida](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Passaggio 2: creare il modello dati del modulo {#step-create-form-data-model}
+## Passaggio 2: creare il modello dati modulo {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 

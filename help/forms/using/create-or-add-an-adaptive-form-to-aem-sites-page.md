@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2884'
-ht-degree: 3%
+source-wordcount: '2893'
+ht-degree: 2%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 3%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM 6.5 | Questo articolo |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it) |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=it).
 
 Con AEM Forms puoi incorporare facilmente i moduli adattivi nelle pagine web. Questo consente ai visitatori di compilare e inviare i moduli in modo comodo, senza mai uscire dalla pagina in cui si trovano. In questo modo, possono rimanere coinvolti senza difficoltà con altri elementi del sito web interagendo attivamente con il modulo.
 
@@ -70,11 +71,11 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 +++  Abilitare i componenti core Forms adattivi per il tuo ambiente
 
-Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=it).
+Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
-+++
++++ 
 
-+++  Aggiungere librerie client Forms adattive ai componenti della pagina AEM Sites e della pagina Frammento esperienza
++++  Aggiungere librerie client Forms adattive ai componenti della pagina AEM Sites e della pagina Frammento esperienza 
 
 Per abilitare la funzionalità completa del componente Contenitore Forms adattivo, aggiungi le librerie client Customheaderlibs e Customfooterlibs alla pagina AEM Sites utilizzando la pipeline di distribuzione. Per aggiungere le librerie:
 
@@ -118,7 +119,7 @@ Per abilitare la funzionalità completa del componente Contenitore Forms adattiv
 
 1. Ripeti i passaggi precedenti per tutte le istanze Author e Publish nell’ambiente.
 
-+++
++++ 
 
 +++ Abilita contenitore Forms adattivo
 

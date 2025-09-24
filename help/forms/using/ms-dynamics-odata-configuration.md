@@ -8,19 +8,20 @@ feature: Form Data Model
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
 
 # Configurazione OData Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html).
 
 ![integrazione dei dati](assets/data-integeration.png)
 
@@ -103,7 +104,6 @@ Per registrare un client OAuth nel computer Active Directory Federation Services
 
    * `Client-ID` è un ID client che può essere generato utilizzando qualsiasi generatore GUID.
    * `redirect-uri` è l&#39;URL del servizio cloud Microsoft Dynamics OData su AEM Forms. Il servizio cloud predefinito installato con il pacchetto AEM Forms viene distribuito al seguente URL:
-
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Eseguire il comando seguente per concedere l&#39;accesso al computer AD FS:
@@ -140,7 +140,7 @@ La configurazione di **MS Dynamics OData Cloud Service (servizio OData)** includ
 
 Il servizio cloud MS Dynamics OData Cloud Service (OData Service) è configurato e connesso al servizio Dynamics.
 
-## Crea modello dati modulo {#create-form-data-model}
+## Creare un modello di dati per moduli {#create-form-data-model}
 
 Quando installi il pacchetto AEM Forms, nell&#39;istanza AEM viene distribuito un modello di dati modulo,**Microsoft Dynamics FDM**. Per impostazione predefinita, il modello dati del modulo utilizza il servizio Microsoft Dynamics configurato in MS Dynamics OData Cloud Service (servizio OData) come origine dati.
 

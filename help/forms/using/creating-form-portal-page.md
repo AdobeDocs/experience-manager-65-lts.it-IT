@@ -9,19 +9,20 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1675'
 ht-degree: 2%
 
 ---
 
 # Creazione di una pagina del portale dei moduli{#creating-a-forms-portal-page}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=it).
 
 I componenti del portale Forms forniscono ai Web Developers i componenti necessari per creare e personalizzare un portale dei moduli nei siti Web creati con Adobe Experience Manager (AEM). Per una rapida panoramica del portale dei moduli, vedere [Introduzione alla pubblicazione dei moduli su un portale](../../forms/using/introduction-publishing-forms.md).
 
@@ -67,7 +68,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
 <table>
  <tbody>
   <tr>
-   <th>Tab</th>
+   <th>Scheda</th>
    <th>Configurazione</th>
    <th>Descrizione</th>
   </tr>

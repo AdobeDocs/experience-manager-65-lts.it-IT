@@ -8,9 +8,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2602'
 ht-degree: 4%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 4%
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Introduzione all’invio di azioni {#introduction-to-submit-actions}
@@ -41,7 +42,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 * Invia e-mail
 * Invia PDF tramite e-mail
 * Richiama un Forms Workflow
-* Invia usando il modello dati modulo
+* Inviare utilizzando il modello dati modulo
 * Azione di invio Forms Portal
 * Richiama un flusso di lavoro AEM
 * Invia a Power Automate
@@ -53,7 +54,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 >[!NOTE]
 >
 >Assicurati che la cartella [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
+>>esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
 
 >[!CAUTION]
 >
@@ -61,7 +62,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 
 Per soddisfare il tuo caso d’uso, puoi scrivere un’azione di invio personalizzata per i moduli adattivi. Per ulteriori informazioni, vedere [Scrittura di un&#39;azione di invio personalizzata per i moduli adattivi](../../forms/using/custom-submit-action-form.md).
 
-## Invia a endpoint REST {#submit-to-rest-endpoint}
+## Inviare all’endpoint REST {#submit-to-rest-endpoint}
 
 L&#39;opzione di invio **Invia all&#39;endpoint REST** trasmette i dati compilati nel modulo a una pagina di conferma configurata come parte della richiesta HTTP GET. Puoi aggiungere il nome dei campi da richiedere. Il formato della richiesta è:
 
@@ -85,7 +86,7 @@ Utilizzare l&#39;azione **Invia all&#39;endpoint REST** per inviare i dati invia
 
 Per pubblicare i dati su un server interno, specifica il percorso della risorsa. I dati vengono inseriti nel percorso della risorsa. Ad esempio, /content/restEndPoint. Per tali richieste POST, vengono utilizzate le informazioni di autenticazione della richiesta di invio.
 
-Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell’URL è https://host:port/path_to_rest_end_point. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
+Per pubblicare dati su un server esterno, fornisci un URL. Il formato dell&#39;URL è https://host:port/path_to_rest_end_point. Assicurati di configurare il percorso per gestire la richiesta POST in modo anonimo.
 
 ![Mappatura dei valori dei campi passati come parametri della pagina di ringraziamento](assets/post-enabled-actionconfig.png)
 
@@ -102,7 +103,7 @@ Ad esempio, questi due parametri vengono utilizzati nello script per analizzare 
 
 In questo esempio, `data` memorizza i dati XML e `att` i dati dell&#39;allegato.
 
-## Invia e-mail {#send-email}
+## Inviare e-mail {#send-email}
 
 L&#39;azione di invio **Invia e-mail** invia un&#39;e-mail a uno o più destinatari quando il modulo viene inviato correttamente. L’e-mail generata può contenere dati del modulo in un formato predefinito.
 
@@ -124,7 +125,7 @@ L&#39;opzione di invio **Invia a Forms Workflow** invia un file XML dati e gli e
 
 Per informazioni su come configurare l&#39;azione Invia a Forms Workflow, vedere [Invio ed elaborazione dei dati del modulo tramite flussi di lavoro moduli](../../forms/using/submit-form-data-livecycle-process.md).
 
-## Invia usando il modello dati modulo {#submit-using-form-data-model}
+## Inviare utilizzando il modello dati modulo {#submit-using-form-data-model}
 
 L&#39;azione di invio **Invia tramite modello dati modulo** scrive i dati del modulo adattivo inviati per l&#39;oggetto modello dati specificato in un modello dati modulo nella relativa origine dati. Durante la configurazione dell’azione di invio, puoi scegliere un oggetto modello dati di cui desideri riscrivere i dati inviati nella relativa origine dati.
 
@@ -138,7 +139,7 @@ L&#39;opzione **Azione invio portale Forms** rende disponibili i dati del modulo
 
 Per ulteriori informazioni sul portale Forms e sull&#39;azione di invio, vedere [Componente bozze e invii](../../forms/using/draft-submission-component.md).
 
-## Richiama un flusso di lavoro AEM {#invoke-an-aem-workflow}
+## Richiamare un flusso di lavoro AEM {#invoke-an-aem-workflow}
 
 L&#39;azione di invio **[!UICONTROL Richiama un flusso di lavoro AEM]** associa un modulo adattivo a un [flusso di lavoro AEM](/help/sites-developing/workflows-models.md). Quando un modulo viene inviato, il flusso di lavoro associato viene avviato automaticamente nell’istanza Autore. Puoi salvare il file di dati, gli allegati e il documento di record nella cartella relativa o sotto il payload del flusso di lavoro o in una variabile. Se il flusso di lavoro è contrassegnato per l’archiviazione dati esterna, l’opzione della variabile è disponibile e non l’opzione payload. Puoi effettuare una selezione dall’elenco di variabili disponibili per il modello di flusso di lavoro. Se il flusso di lavoro è contrassegnato per l’archiviazione di dati esterni in una fase successiva e non al momento della creazione del flusso di lavoro, assicurati che siano presenti le configurazioni di variabili richieste.
 
@@ -173,7 +174,7 @@ Dopo una configurazione corretta, utilizzare l&#39;azione di invio [Richiama un 
 
 >[!NOTE]
 >
->La funzionalità Invia a elenco SharePoint di Microsoft® è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> La funzionalità Invia a elenco SharePoint di Microsoft® è stata introdotta con AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 L&#39;azione di invio **[!UICONTROL Invia a SharePoint]** collega un modulo adattivo a un archivio Microsoft® SharePoint. È possibile inviare il file di dati del modulo, gli allegati o il documento di record all&#39;archivio di Microsoft® Sharepoint connesso.
 
@@ -199,7 +200,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
      >[!NOTE]
      >
-     >Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+     > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
 1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
@@ -218,16 +219,16 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Mi
 
 >[!NOTE]
 >
->In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
->* colonna immagine
->* colonna metadati
->* colonna persona
->* colonna di dati esterni
+> In Microsoft® SharePoint List non sono supportati i seguenti tipi di colonna:
+> * colonna immagine
+> * colonna metadati
+> * colonna persona
+> * colonna di dati esterni
 
 
 >[!NOTE]
 >
->Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+> Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Riconvalida lato server in modulo adattivo {#server-side-revalidation-in-adaptive-form}
 

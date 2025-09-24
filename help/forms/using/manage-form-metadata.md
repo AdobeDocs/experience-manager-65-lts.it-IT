@@ -9,19 +9,20 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 2%
+source-wordcount: '1973'
+ht-degree: 1%
 
 ---
 
 # Gestire i metadati del modulo{#manage-form-metadata}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html).
 
 ## Panoramica  {#overview-nbsp}
 
@@ -43,7 +44,7 @@ In AEM Forms sono supportati i seguenti tipi di risorse:
 * PDF forms
 * Documento (PDF semplici)
 * Moduli adattivi
-* Riferimenti
+* Risorse
 * XFS
 
 #### Ampio elenco di metadati {#extensive-list-of-metadata}
@@ -168,7 +169,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     <ul> 
      <li>Modello di modulo: viene selezionato un modello di modulo tra quelli esistenti nel repository. Questo valore può essere aggiornato.</li> 
      <li>Schema XML: viene caricato un file XSD. Questo valore può essere aggiornato.</li> 
-     <li>Nessuno</li> 
+     <li>Nessuna</li> 
     </ul> 
     <div>
       Un modello di modulo selezionato può essere aggiornato ma non rimosso. 
@@ -299,7 +300,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
       >[!NOTE]
       >
-      >Non modificare il prefisso ‘./jcr:content/metadata/’, che definisce il percorso in cui è memorizzata la proprietà.
+      >Non modificare il prefisso ‘./jcr:content/metadata/&#39; definisce il percorso in cui è memorizzata la proprietà.
       >
       >Inoltre, il nome della proprietà deve essere univoco per evitare di scrivere valori per due o più proprietà nella stessa posizione nell’archivio. Pertanto, si consiglia di modificare il valore &quot;default&quot;.
 

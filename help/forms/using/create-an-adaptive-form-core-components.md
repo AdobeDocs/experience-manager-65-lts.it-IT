@@ -6,9 +6,9 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
-source-git-commit: 254366c95c1aa1e3f5ba01441741a8dc1cfed42c
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1802'
 ht-degree: 24%
 
 ---
@@ -18,10 +18,11 @@ ht-degree: 24%
 
 <span class="preview"> Adobe consiglia di utilizzare i Componenti core per [aggiungere Forms adattivo a una pagina AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) o per [creare Forms adattivo autonomo](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=it).
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
@@ -39,13 +40,13 @@ Per creare un modulo adattivo è necessario quanto segue:
 
 * **Abilita componenti core Forms adattivi per l&#39;ambiente**: è necessario il progetto Archetipo AEM versione 41 o successiva per [abilitare i componenti core per l&#39;ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando si abilitano i Componenti core per l&#39;ambiente, il modello **Forms adattivo (Componente core)** e il tema Canvas vengono aggiunti all&#39;ambiente.
 
-* **Un modello di modulo adattivo**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) nel tuo ambiente. che consentono di iniziare a creare rapidamente i moduli.
+* **Un modello per moduli adattivi**: un modello fornisce una struttura di base e definisce l’aspetto (layout e stili) di un modulo adattivo. Include componenti preformattati contenenti determinate proprietà e struttura del contenuto. Fornisce inoltre le opzioni per definire un tema e un’azione di invio. Il tema definisce l’aspetto, mentre l’azione di invio definisce l’azione da intraprendere al momento dell’invio di un modulo adattivo. Puoi anche distribuire [modelli di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. che consentono di iniziare a creare rapidamente i moduli.
 
   >[!NOTE]
   >
   > Se non disponi del modello **Moduli adattivi (componente core)** nell’ambiente, [abilita la funzione Componenti core dei moduli adattivi per il tuo ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Quando abiliti i componenti core per il tuo ambiente, viene aggiunto il modello **Moduli adattivi (componente core)**.
 
-* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il tema `Canvas` viene aggiunto per impostazione predefinita quando si abilitano i Componenti core per il proprio ambiente. Puoi [scaricare e personalizzare i temi standard](create-or-customize-themes-for-adaptive-forms-core-components.md). Per **temi predefiniti** puoi distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) nel tuo ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
+* **Un tema per moduli adattivi**: un tema contiene dettagli sullo stile dei componenti e dei pannelli. Gli stili includono proprietà quali i colori di sfondo, i colori degli stati, la trasparenza, l’allineamento e le dimensioni. Quando applichi un tema, lo stile specificato si riflette sui componenti corrispondenti.  Il tema `Canvas` viene aggiunto per impostazione predefinita quando si abilitano i Componenti core per il proprio ambiente. Puoi [scaricare e personalizzare i temi standard](create-or-customize-themes-for-adaptive-forms-core-components.md). Per **temi predefiniti** puoi distribuire [temi di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) nel tuo ambiente. In questo modo è possibile iniziare a definire lo stile dei moduli e fornire una struttura di base per creare o personalizzare un tema in base alle proprie esigenze aziendali.
 
 * **Autorizzazioni**: aggiungi gli utenti a un gruppo [!DNL forms-users]. I membri del gruppo [!DNL forms-users] dispongono delle autorizzazioni per creare un modulo adattivo. Per un elenco dettagliato dei gruppi di utenti specifici per moduli, consulta [Gruppi e autorizzazioni](forms-groups-privileges-tasks.md).
 
@@ -53,7 +54,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Creare un modulo adattivo {#create-an-adaptive-form}
@@ -119,7 +120,7 @@ All&#39;invio di un modulo è possibile reindirizzare l&#39;utente a un&#39;altr
 
 ## Configurare uno schema o un modello di dati del modulo per un modulo adattivo {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello di dati del modulo:
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito. In base al requisito, connetti il modulo a uno schema JSON o a un modello dati modulo:
 
 * [Crea uno schema JSON e carica nell&#39;ambiente](/help/forms/using/adaptive-form-json-schema-form-model.md)
 * [Crea modello dati modulo](/help/forms/using/create-form-data-models.md)
@@ -173,7 +174,7 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
    ![Proprietà](/help/forms/using/assets/rename-form-properties.png)
 
 1. Modifica il nome del modulo nella scheda **Titolo**, come illustrato nell&#39;immagine seguente.
-1. Fare clic su **Salva e chiudi**.
+1. Fai clic su **Salva e chiudi**.
 
    ![Rinominare un modulo adattivo AEM](/help/forms/using/assets/rename-form-title.png)
 
@@ -198,4 +199,4 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
 * [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

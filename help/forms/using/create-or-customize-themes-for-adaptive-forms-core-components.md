@@ -6,19 +6,20 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
-source-git-commit: 7eddd03e7b1256f2f2b54bdd92672d5a1e4440d1
+source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1947'
 ht-degree: 5%
 
 ---
 
 # Creare o personalizzare un tema per moduli adattivi {#introduction-to-theme}
 
-| Versione | Collegamento articolo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+## Applicabile a {#applies-to}
+
+Questa documentazione si applica a **AEM 6.5 LTS Forms**.
+
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=it).
 
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
@@ -289,7 +290,7 @@ I passaggi per applicare un tema a un modulo adattivo sono i seguenti:
 
 1. Accedi all’istanza Autore AEM locale.
 1. Inserisci le credenziali nella pagina di accesso di Experience Manager. Seleziona **Adobe Experience Manager** > **Moduli** > **Moduli e documenti**.
-1. Fai clic su **Crea** > **Forms adattivo**.
+1. Seleziona **Crea** > **Moduli adattivi**.
 1. Seleziona un modello di Componenti core Forms adattivi e fai clic su **Avanti**. Viene visualizzato **Aggiungi proprietà**
 1. Specifica il **Nome** per il modulo adattivo.
 
@@ -341,4 +342,4 @@ Per rimuovere i temi inutilizzati o indesiderati:
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
