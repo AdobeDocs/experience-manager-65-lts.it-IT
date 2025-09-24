@@ -138,7 +138,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 Utilizza la fase e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [&#128279;](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
 **Titolo:** Il titolo del passaggio consente di identificare il passaggio nell&#39;editor del flusso di lavoro.
 

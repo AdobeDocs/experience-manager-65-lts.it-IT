@@ -54,7 +54,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 >[!NOTE]
 >
 >Assicurati che la cartella [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->>esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
+>&#x200B;>esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
 
 >[!CAUTION]
 >

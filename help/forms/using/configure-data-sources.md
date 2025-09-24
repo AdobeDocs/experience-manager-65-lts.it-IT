@@ -154,7 +154,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
 1. Selezionare **[!UICONTROL Configurazione client HTTP modello dati modulo per origine dati REST]**.
 
-1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL  per l&#39;origine dati REST]:
+1. Nella finestra di dialogo Configurazione client HTTP del modello dati modulo [!UICONTROL &#x200B; per l&#39;origine dati REST]:
 
    * Specifica il numero massimo di connessioni consentite tra il modello di dati del modulo e i servizi Web RESTful nel campo **[!UICONTROL Limite di connessioni in totale]**. Il valore predefinito è 20 connessioni.
 
@@ -195,7 +195,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>&#x200B;>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 

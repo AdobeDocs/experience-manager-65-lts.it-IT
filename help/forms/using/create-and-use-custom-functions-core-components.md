@@ -61,8 +61,8 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file 
 
 >[!NOTE]
 >`[functionName]` è il nome della funzione. Gli spazi non sono consentiti.
->>`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
->>Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
+>&#x200B;>`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
+>&#x200B;>Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
 
