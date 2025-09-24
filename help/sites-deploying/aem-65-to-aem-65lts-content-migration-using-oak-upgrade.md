@@ -5,7 +5,7 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8c4ffb0e-b4dc-4a81-ac43-723754cbc0de
-source-git-commit: 9bf502146a309cd0d91f2aaa1778d5b550d424a8
+source-git-commit: 69033442fda82d9efdd1ba2f55a45173c8ffc6ec
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 0%
@@ -86,6 +86,6 @@ Il modo più semplice per risolvere il problema è specificare l&#39;archivio da
 
 Anche l’avviso può essere ignorato, ma in questo caso l’archivio verrà reindicizzato completamente al primo avvio. Può essere un processo lungo, soprattutto per la grande istanza. L’archivio non sarà utilizzabile fino al completamento del processo di reindicizzazione. Utilizzare l&#39;opzione `--skip-checkpoints` per eliminare l&#39;avviso.
 
-È inoltre possibile reindicizzare offline l&#39;archivio prima di avviare AEM utilizzando [reindicizzazione offline](/help/sites-deploying/upgrade-offline-reindexing.md) per evitare la reindicizzazione completa al primo avvio.
+È inoltre possibile reindicizzare offline l&#39;archivio prima di avviare AEM utilizzando [reindicizzazione offline](/help/sites-deploying/offline-reindexing.md) per evitare la reindicizzazione completa al primo avvio.
 
 Per ulteriori informazioni sullo strumento oak-upgrade e sull&#39;utilizzo avanzato, consulta la [documentazione ufficiale](https://jackrabbit.apache.org/oak/docs/migration.html).
