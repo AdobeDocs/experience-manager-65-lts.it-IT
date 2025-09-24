@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/aem-forms-salesforce-integration).
 
 Puoi utilizzare le credenziali client OAuth 2.0 per integrare AEM Forms con l’applicazione Salesforce. Le credenziali client OAuth 2.0 sono un metodo standard e sicuro per la comunicazione diretta senza il coinvolgimento dell’utente.
 
@@ -37,7 +37,7 @@ Prima di impostare la comunicazione tra un’applicazione Salesforce e un ambien
 
 * Crea un&#39;app connessa a [Salesforce con flusso di credenziali client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5) e un utente solo API per la tua organizzazione e ottieni la chiave consumer e il segreto consumer per l&#39;app.
 
-* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
+* Assicurati che il file Swagger sia configurato in modo appropriato per corrispondere alle API della tua organizzazione. In alternativa, puoi scegliere di [creare un file Swagger](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api) da zero, adatto all&#39;utilizzo nell&#39;ambiente AEM.
 >[!NOTE]
 >
 > AEM 6.5 supporta solo le specifiche di file Swagger 2.0.

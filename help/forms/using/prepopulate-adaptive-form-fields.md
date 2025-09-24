@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=it).
 
 ## Introduzione {#introduction}
 
@@ -351,7 +351,7 @@ Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in 
 
 Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle OSGi. Crea il bundle OSGi, caricalo e installalo nei bundle di AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scarica AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Scarica AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
 * Scarica il pacchetto boilerplate
 
 * Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.
@@ -397,4 +397,4 @@ Puoi configurare il server AEM Forms in modo che esegua l’azione di unione dat
    * Per disattivare, eseguire il seguente comando cURL:
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-  Per sfruttare appieno l&#39;opzione di precompilazione dei dati nel client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  Per sfruttare appieno l&#39;opzione di precompilazione dei dati nel client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=it).
 
 ## Panoramica {#overview}
 
@@ -550,7 +550,7 @@ Per scrivere le regole, effettua le seguenti operazioni:
 
 Gli utenti aggiunti al gruppo forms-power-users possono utilizzare l’editor di codice. L’editor di regole genera automaticamente il codice JavaScript per qualsiasi regola creata utilizzando l’editor visivo. Puoi passare dall’editor visivo all’editor di codice per visualizzare il codice generato. Tuttavia, se modifichi il codice della regola nell’editor di codice, non puoi tornare all’editor visivo. Se preferisci scrivere le regole nell’editor di codice anziché nell’editor visivo, puoi scriverle nuovamente nell’editor di codice. Il selettore dell’editor di codice visivo consente di passare da una modalità all’altra.
 
-L’editor di codice JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi di moduli adattivi, degli eventi, degli oggetti e delle API pubbliche, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+L’editor di codice JavaScript è il linguaggio di espressione dei moduli adattivi. Tutte le espressioni sono espressioni JavaScript valide e utilizzano API di modelli di script per moduli adattivi. Queste espressioni restituiscono valori di determinati tipi. Per l&#39;elenco completo delle classi di moduli adattivi, degli eventi, degli oggetti e delle API pubbliche, consulta [Riferimento API della libreria JavaScript per i moduli adattivi](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
 
 Per ulteriori informazioni sulle linee guida per la scrittura di regole nell&#39;editor di codice, vedi [Espressioni di moduli adattivi](/help/forms/using/adaptive-form-expressions.md).
 
