@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 2534fb5af913603b69597e7be713156b427a1094
+source-git-commit: bcfbc3a67b4aa59532c93bd84eed655cee1262c1
 workflow-type: tm+mt
-source-wordcount: '3239'
+source-wordcount: '3290'
 ht-degree: 4%
 
 ---
@@ -171,7 +171,9 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
    >* libxcb.x86_64 (1,13-1,el7)
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 o versione successiva)
+   >* OpenSSL 3 (richiesto nella posizione predefinita sul sistema operativo).
 
+   *Per l&#39;installazione di OpenSSL 3: le librerie libcrypto.so.3 e libssl.so.3 devono essere disponibili nel percorso di libreria predefinito rappresentato dalla variabile di ambiente LD_LIBRARY_PATH. Se sono installati in un percorso non standard, assicurarsi che questo percorso venga aggiunto a LD_LIBRARY_PATH prima di avviare il server.*
 
 ### Ambienti di elaborazione virtuali e cloud {#virtual-cloud-computing-environments}
 
@@ -187,7 +189,7 @@ Per consigli su come distribuire AEM su Azure o AWS, al di fuori di Adobe Manage
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=it). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 Con Dispatcher versione 4.3.2 sono supportati i seguenti server web:
 
@@ -385,7 +387,7 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -413,7 +415,7 @@ Per Windows x86:
 >* PDF Generator non supporta Microsoft® Office 365.
 >* Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux®.
 >* Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Durante il periodo di validità della licenza di AEM Forms, è possibile accedere alla versione inclusa nel bundle solo a livello di programmazione con AEM Forms, utilizzabile solo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Durante il periodo di validità della licenza di AEM Forms, è possibile accedere alla versione inclusa nel bundle solo a livello di programmazione con AEM Forms, utilizzabile solo con AEM Forms PDF Generator. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Il servizio PDF Generator non supporta Microsoft® Windows 11.
 
 
@@ -424,7 +426,7 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -452,7 +454,7 @@ Per Windows x86:
 >
 >Inoltre,
 >
->* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078.
+>* Per eseguire la conversione, PDF Generator richiede una versione a 32 bit di [Acrobat 2020 classic track versione 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) o Acrobat 2017 versione 17.011.30078.
 >* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e gli altri software necessari per la conversione.
 >* L&#39;installazione di Microsoft® Office Professional Plus può utilizzare contratti multilicenza basati su Retail o MAK/KMS/AD.
 >* Se un&#39;installazione di Microsoft® Office viene disattivata o priva di licenza per qualsiasi motivo, ad esempio se un&#39;installazione con licenza Volume License non è in grado di individuare un host KMS entro un determinato periodo di tempo, le conversioni potrebbero non riuscire fino a quando l&#39;installazione non viene rilasciata e riattivata.
@@ -460,7 +462,7 @@ Per Windows x86:
 >* PDF Generator non supporta Microsoft® Office 365.
 >* Le conversioni PDF Generator per OpenOffice sono supportate solo su Windows e Linux®.
 >* Le funzioni PDF, Ottimizza PDF e Export PDF di OCR sono supportate solo in Windows.
->* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Accedi a livello di programmazione alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/it/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Una versione di Acrobat è inclusa in bundle con AEM Forms per abilitare le funzionalità di PDF Generator. Accedi a livello di programmazione alla versione in bundle solo con AEM Forms, per l’utilizzo con AEM Forms PDF Generator, durante il periodo di validità della licenza di AEM Forms. Per ulteriori informazioni, consulta la descrizione del prodotto AEM Forms in base alla distribuzione ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) o [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Il servizio PDF Generator non supporta Microsoft® Windows 10.
 >* PDF Generator non riesce a convertire i file con Microsoft® Visio 2019. È possibile continuare a utilizzare Microsoft® Visio 2016 per convertire `.VSD` e `.VSDX` file.
 >* PDF Generator non riesce a convertire i file utilizzando Microsoft® Project 2019. È possibile continuare a utilizzare Microsoft® Project 2016 per convertire `.VSD` e `.VSDX` file.
