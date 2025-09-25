@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 6dbc943b-3bca-4926-896d-f1471a49a70f
-source-git-commit: d6a13f6753fa522c43f5f807f8143118eaaea170
+source-git-commit: 1eb3dda408e165f1d57c4bdfb2d724e38d00c9b7
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '591'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub introduce un punto di partenza centralizzato per la gestione di c
 
 Guarda un rapido tour dell’area di lavoro AEM Experience Hub riprogettata (2 minuti e 39 secondi).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475200/?learn=on&enablevpops&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/3475190/?learn=on&enablevpops)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -36,8 +36,7 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    Potete cambiare questo predefinito in qualsiasi momento.
 
-   ![L&#39;elenco a discesa che mostra il predefinito di authoring dei contenuti è selezionato](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
-
+   ![Elenco a discesa Predefinito che mostra l&#39;autore del contenuto selezionato](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 La pagina Adobe Experience Manager è stata aggiornata con una navigazione migliorata e widget interattivi. La precedente raccolta di schede della soluzione forniva accesso a strumenti come i seguenti:
 
