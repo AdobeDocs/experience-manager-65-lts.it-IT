@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4e4d367b93f1e99cf076df14a15352f664890676
+source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
 workflow-type: tm+mt
-source-wordcount: '7103'
-ht-degree: 94%
+source-wordcount: '7319'
+ht-degree: 92%
 
 ---
 
@@ -300,7 +300,7 @@ Sono stati risolti i cicli di dipendenza OSGi che impedivano il funzionamento de
 
 #### Quickstart{#foundation-quickstart-65-lts-sp1}
 
-* È stato aggiornato lo script di disinstallazione per regolare l’intervallo di versioni per il bundle Guava per evitare che venga inserito nell&#39;elenco Bloccati quando viene installato tramite la Gestione pacchetti. (GRANITE-59559)
+* È stato aggiornato lo script di disinstallazione per regolare l’intervallo di versioni per il bundle Guava per evitare che venga inserito nell&#39;elenco Bloccati quando viene installato tramite il gestore di pacchetti. (GRANITE-59559)
 * È stato risolto un problema nell&#39;interfaccia utente di replica a causa del quale veniva visualizzato un errore (`#1660`) durante la modifica degli agenti di replica correggendo la gestione delle caselle di controllo classiche nell&#39;interfaccia. (GRANITE-58302)
 * Sono stati risolti diversi errori di avvio per l’archivio dati S3 durante l’esecuzione di AEM 6.5 LTS con JDK 21, risolvendo il problema delle autorizzazioni di servizio mancanti, aggiornando la gestione della configurazione e garantendo la corretta inizializzazione dei servizi richiesti. (GRANITE-57082)
 * È stata definita la strategia di manutenzione per AEM 6.5. Questa correzione includeva quanto segue:
@@ -448,6 +448,43 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
+
+#### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
+
+<!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
+
+**Ambiente**
+Applicabile a: clienti AEM 6.5 LTS (On-Premise) che installano Service Pack 1 (SP1). SP1 viene fornito come file JAR Quickstart.
+
+**Perché è importante**
+SP1 per AEM 6.5 LTS viene fornito come file JAR Quickstart anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise eseguono l’aggiornamento sostituendo il file JAR Quickstart, disimballandolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento sul posto di Adobe.
+
+**Flusso di aggiornamento consigliato (creazione o pubblicazione)**
+
+1. Verifica che l’istanza AEM 6.5 LTS sia integra e accessibile.
+1. Scaricare il file JAR Quickstart di SP1 (ad esempio, `cq-quickstart-6.6.x.jar`) da Software Distribution.
+1. Arresta l&#39;istanza in esecuzione.
+1. Nella directory di installazione di AEM (all&#39;esterno di `crx-quickstart/`), sostituire il file JAR Quickstart precedente con il file JAR SP1.
+1. Decomprimi il file JAR:
+
+   ```java
+   java -jar cq-quickstart-6.6.x.jar -unpack
+   ```
+
+   (Regola i flag heap in base alle esigenze.)
+
+1. Rinomina il file JAR decompresso in modo che corrisponda al ruolo e alla porta, ad esempio `cq-author-4502.jar` o `cq-publish-4503.jar`.
+1. Avvia AEM e conferma l’aggiornamento nell’interfaccia utente (Guida > Informazioni) e nei registri.
+
+**Buona igiene**
+
+* Esegui l’aggiornamento in ambienti di test/inferiori prima della produzione.
+* Prima di iniziare, eseguire backup completi e ripristinabili (repository più eventuali datastore esterni).
+* Consulta la guida all’aggiornamento sul posto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
+
+>[!NOTE]
+>
+>I nomi di file mostrati sopra (ad esempio, `cq-quickstart-6.6.x.jar`) riflettono la denominazione dell&#39;artefatto Quickstart SP1 osservata per questa versione LTS; utilizzare sempre il nome di file esatto scaricato da Software Distribution.
 
 ## Installazione e aggiornarnamento {#install-update}
 
