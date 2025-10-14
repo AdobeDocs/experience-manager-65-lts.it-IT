@@ -284,7 +284,7 @@ Di seguito è riportato un esempio di script LDIF per la voce VLV per gli utenti
 
    >[!NOTE]
    >
-   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma è possibile assegnargli un nome diverso. Utilizzare lo stesso nome nello strumento vlvindex. (Vedere [Creare l&#39;indice del server delle directory per VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma è possibile assegnargli un nome diverso. Utilizzare lo stesso nome nello strumento vlvindex. (Vedere [Creare l&#39;indice del server delle directory per VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Utilizzando lo strumento `ldapmodify` fornito con Sun ONE Server, creare una voce simile per i gruppi utilizzando rispettivamente il DN di base, il filtro di ricerca e il campo di ordinamento del gruppo:
 

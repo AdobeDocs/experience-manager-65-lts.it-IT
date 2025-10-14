@@ -27,7 +27,7 @@ ht-degree: 31%
    + [Selezione dell’interfaccia utente](/help/sites-classic-ui-authoring/author-env-select-ui.md)
    + [Ricerca](/help/sites-classic-ui-authoring/author-env-search.md)
    + [Casella in entrata](/help/sites-classic-ui-authoring/author-env-inbox.md)
-   + [Scelte rapide da tastiera per le console  ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
+   + [Scelte rapide da tastiera per le console  &#x200B;](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Authoring delle pagine](/help/sites-classic-ui-authoring/classic-page-author.md)
    + [Authoring: ambiente e strumenti](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)
@@ -44,7 +44,7 @@ ht-degree: 31%
 + Caratteristiche sito e pagina {#siteandpage}
    + [Authoring delle pagine con frammenti di contenuto](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md)
    + [Layout reattivo](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md)
-   + [Utilizzo delle versioni di una pagina  ](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
+   + [Utilizzo delle versioni di una pagina  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md)
    + [Utilizzo dei tag](/help/sites-classic-ui-authoring/classic-feature-tags.md)
    + [Scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
    + [Configurazione dei componenti in modalità progettazione](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md)

@@ -239,7 +239,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   Prima dello sviluppo, è necessario impostare tutti i processi di supporto necessari per distribuire, rilasciare, testare e segnalare i problemi.
 
-  Consulta anche il [portale di assistenza Adobe](https://experienceleague.adobe.com/it?support-solution=General&amp;support-tab=homehome?lang=it#support).
+  Consulta anche il [portale di assistenza Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support).
 
 ### Pianificazione e operazioni {#operations-planning-and-operations}
 
@@ -607,7 +607,7 @@ Per le best practice sull’implementazione, l’amministrazione, lo sviluppo o 
 
 * Altre best practice e linee guida relative alla gestione di un progetto AEM:
    * [Linee guida per il dimensionamento dell&#39;hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps aziendale ](/help/managing/enterprise-devops.md)
+   * [DevOps aziendale &#x200B;](/help/managing/enterprise-devops.md)
    * [Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e le linee guida per l’accessibilità dei contenuti web](/help/managing/web-accessibility.md)
    * [Regolamento generale sulla protezione dei dati](/help/managing/data-protection-and-privacy.md)* [Implementazione e manutenzione delle best practice](/help/sites-deploying/best-practices.md)
@@ -622,7 +622,7 @@ Inoltre, le seguenti sezioni della documentazione di AEM sono di particolare int
 
    * [Sicurezza](/help/sites-developing/security.md)
    * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps aziendale ](/help/managing/enterprise-devops.md)
+   * [DevOps aziendale &#x200B;](/help/managing/enterprise-devops.md)
    * [Ridimensionamento hardware](/help/managing/hardware-sizing-guidelines.md)
    * Concetti di AEM:
 
