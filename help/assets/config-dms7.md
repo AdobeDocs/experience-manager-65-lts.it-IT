@@ -43,7 +43,7 @@ In modalità Dynamic Media - Scene7, la dimensione predefinita del file caricato
 
 ## Abilitare Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) è disabilitato per impostazione predefinita. Per sfruttare le funzioni di Dynamic Media, devi abilitarle.
+[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) è disabilitato per impostazione predefinita. Per sfruttare le funzioni di Dynamic Media, devi abilitarle.
 
 >[!WARNING]
 >
@@ -75,7 +75,7 @@ Per migrare i predefiniti e le configurazioni del visualizzatore personalizzato 
 
 L&#39;installazione del 18912 del feature pack è *facoltativa*.
 
-Il Feature Pack 18912 consente di acquisire in blocco le risorse tramite FTP o di migrare le risorse dalla modalità Dynamic Media - Hybrid o Dynamic Media Classic alla modalità Dynamic Media - Scene7 su Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+Il Feature Pack 18912 consente di acquisire in blocco le risorse tramite FTP o di migrare le risorse dalla modalità Dynamic Media - Hybrid o Dynamic Media Classic alla modalità Dynamic Media - Scene7 su Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/it/customers/consulting-services/main.html).
 
 Per ulteriori informazioni, consulta [Installare 18912 feature pack per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md).
 
@@ -247,7 +247,7 @@ In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caric
 Se intendi utilizzare questa funzione, tieni presenti i seguenti prerequisiti e punti:
 
 * È necessario eseguire Experience Manager 6.5 LTS in modalità Dynamic Media - Scene7.
-* Questa funzionalità di caricamento di grandi dimensioni è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Questa funzionalità di caricamento di grandi dimensioni è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/it/products/experience-manager/managed-services.html).
 * Verifica che l’istanza di Experience Manager sia configurata con l’archiviazione BLOB di Amazon S3 o Microsoft® Azure.
 
   >[!NOTE]
