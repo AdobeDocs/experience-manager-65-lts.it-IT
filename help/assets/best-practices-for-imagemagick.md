@@ -6,7 +6,7 @@ role: Admin
 feature: Renditions,Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: 258c0d5e-ce2a-48c5-be79-bf5fac70ca96
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d4772c8844861ee82263e16d9c8608662e2e4870
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Per elaborare file di grandi dimensioni utilizzando ImageMagick, considera requi
 
 Sono disponibili più versioni dei file di installazione di ImageMagic per vari sistemi operativi. Utilizzare la versione appropriata per il sistema operativo in uso.
 
-1. Scarica i [file di installazione di ImageMagick](https://www.imagemagick.org/script/download.php) appropriati per il tuo sistema operativo.
+1. Scaricare i file di installazione di ImageMagick appropriati (`https://www.imagemagick.org/script/download.php` sito Web) per il sistema operativo in uso.
 1. Per installare ImageMagick sul disco che ospita il server [!DNL Experience Manager], avviare il file di installazione.
 
 1. Impostare la variabile di ambiente del percorso sulla directory di installazione di ImageMagic.
@@ -82,7 +82,7 @@ Sono disponibili più versioni dei file di installazione di ImageMagic per vari 
 
 Esistono diverse vulnerabilità di sicurezza associate all’utilizzo di ImageMagick per elaborare le immagini. Ad esempio, l’elaborazione delle immagini inviate dall’utente comporta il rischio di esecuzione di codice remoto (RCE).
 
-Inoltre, vari plug-in di elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, ma non solo, imagemagick di PHP, ruby&#39;s magick e paperclip e imagemagick di nodejs.
+Inoltre, vari plug-in di elaborazione delle immagini dipendono dalla libreria ImageMagick, tra cui, ma non solo, l&#39;imagemagick di PHP, l&#39;ermagick di Ruby e la clip cartacea e l&#39;imagemagick di nodejs.
 
 Se utilizzi ImageMagick o una libreria interessata, Adobe consiglia di attenuare le vulnerabilità note eseguendo almeno una delle seguenti attività (ma preferibilmente entrambe):
 
