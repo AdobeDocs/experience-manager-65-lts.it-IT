@@ -6,9 +6,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7319'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -454,37 +454,37 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Ambiente**
-Applicabile a: clienti AEM 6.5 LTS (On-Premise) che installano Service Pack 1 (SP1). SP1 viene fornito come file JAR Quickstart.
+Si applica a: clienti AEM 6.5 LTS (On-Premise) che installano il Service Pack 1 (SP1). SP1 viene fornito come file Quickstart JAR.
 
 **Perché è importante**
-SP1 per AEM 6.5 LTS viene fornito come file JAR Quickstart anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise eseguono l’aggiornamento sostituendo il file JAR Quickstart, disimballandolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento sul posto di Adobe.
+SP1 per AEM 6.5 LTS viene fornito come file Quickstart JAR anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise possono eseguire l’aggiornamento sostituendo il file Quickstart JAR, decomprimendolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento diretto di Adobe.
 
-**Flusso di aggiornamento consigliato (creazione o pubblicazione)**
+**Flusso di aggiornamento consigliato (authoring o pubblicazione)**
 
 1. Verifica che l’istanza AEM 6.5 LTS sia integra e accessibile.
-1. Scaricare il file JAR Quickstart di SP1 (ad esempio, `cq-quickstart-6.6.x.jar`) da Software Distribution.
+1. Scarica il file Quickstart JAR di SP1 (ad esempio, `cq-quickstart-6.6.x.jar`) da Distribuzione del software Adobe.
 1. Arresta l&#39;istanza in esecuzione.
-1. Nella directory di installazione di AEM (all&#39;esterno di `crx-quickstart/`), sostituire il file JAR Quickstart precedente con il file JAR SP1.
+1. Nella directory di installazione di AEM (esterna a `crx-quickstart/`), sostituisci il file Quickstart JAR precedente con il file JAR SP1.
 1. Decomprimi il file JAR:
 
    ```java
    java -jar cq-quickstart-6.6.x.jar -unpack
    ```
 
-   (Regola i flag heap in base alle esigenze.)
+   (Regola i flag dell&#39;heap in base alle esigenze).
 
 1. Rinomina il file JAR decompresso in modo che corrisponda al ruolo e alla porta, ad esempio `cq-author-4502.jar` o `cq-publish-4503.jar`.
 1. Avvia AEM e conferma l’aggiornamento nell’interfaccia utente (Guida > Informazioni) e nei registri.
 
-**Buona igiene**
+**Buone pratiche**
 
-* Esegui l’aggiornamento in ambienti di test/inferiori prima della produzione.
-* Prima di iniziare, eseguire backup completi e ripristinabili (repository più eventuali datastore esterni).
-* Consulta la guida all’aggiornamento sul posto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
+* Esegui l’aggiornamento in ambienti di test o inferiori prima della produzione.
+* Prima di iniziare, esegui backup completi e ripristinabili (repository più eventuali datastore esterni).
+* Consulta la guida all’aggiornamento diretto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
 
 >[!NOTE]
 >
->I nomi di file mostrati sopra (ad esempio, `cq-quickstart-6.6.x.jar`) riflettono la denominazione dell&#39;artefatto Quickstart SP1 osservata per questa versione LTS; utilizzare sempre il nome di file esatto scaricato da Software Distribution.
+>I nomi file mostrati sopra (ad esempio, `cq-quickstart-6.6.x.jar`) riflettono la denominazione dell&#39;artefatto Quickstart SP1 di questa versione LTS; utilizza sempre lo stesso nome del file scaricato da Distribuzione del software Adobe.
 
 ## Installazione e aggiornarnamento {#install-update}
 
