@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
-workflow-type: ht
-source-wordcount: '7319'
-ht-degree: 100%
+source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+workflow-type: tm+mt
+source-wordcount: '7381'
+ht-degree: 99%
 
 ---
 
@@ -301,7 +301,7 @@ Sono stati risolti i cicli di dipendenza OSGi che impedivano il funzionamento de
 #### Quickstart{#foundation-quickstart-65-lts-sp1}
 
 * È stato aggiornato lo script di disinstallazione per regolare l’intervallo di versioni per il bundle Guava per evitare che venga inserito nell&#39;elenco Bloccati quando viene installato tramite il gestore di pacchetti. (GRANITE-59559)
-* È stato risolto un problema nell&#39;interfaccia utente di replica a causa del quale veniva visualizzato un errore (`#1660`) durante la modifica degli agenti di replica correggendo la gestione delle caselle di controllo classiche nell&#39;interfaccia. (GRANITE-58302)
+* È stato risolto un problema nell&#39;interfaccia utente di replica a causa del quale veniva visualizzato un errore (`#1660`) durante la modifica degli agenti di replica; a tale scopo è stata corretta la gestione delle caselle di controllo classiche nell&#39;interfaccia. (GRANITE-58302)
 * Sono stati risolti diversi errori di avvio per l’archivio dati S3 durante l’esecuzione di AEM 6.5 LTS con JDK 21, risolvendo il problema delle autorizzazioni di servizio mancanti, aggiornando la gestione della configurazione e garantendo la corretta inizializzazione dei servizi richiesti. (GRANITE-57082)
 * È stata definita la strategia di manutenzione per AEM 6.5. Questa correzione includeva quanto segue:
    * Cadenza del Service Pack.
@@ -608,6 +608,18 @@ Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica
 
 **Soluzione:**
 se riscontri questo problema, contatta l’Assistenza Clienti di Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
+
+### Pagina Autorizzazioni vuota nell’interfaccia utente di sicurezza in AEM 6.5 LTS SP1
+
+>[!NOTE]
+>
+> Questo problema è presente solo in AEM 6.5 LTS SP1.
+
+Quando si accede alla pagina Autorizzazioni in Strumenti -> Sicurezza in AEM 6.5 LTS SP1, viene visualizzata una pagina vuota invece delle autorizzazioni per un utente o un gruppo.
+
+**Soluzione:**
+Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-62993-1.0.zip).
+
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
