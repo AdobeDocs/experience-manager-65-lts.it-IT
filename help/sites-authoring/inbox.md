@@ -1,13 +1,13 @@
 ---
 title: Casella in entrata per gestire le attività
-description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5.
+description: Gestione delle attività con la casella in entrata in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 077407ef-1d7f-47ad-b924-0afa19f21119
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 524f1bcea6761e299141bc1d1496e32c498ffd14
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1156'
 ht-degree: 39%
 
 ---
@@ -42,7 +42,7 @@ Queste notifiche vengono ricevute nella tua casella in entrata, dove puoi visual
 >* [Progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Progetti: lavorare con le attività](/help/sites-authoring/task-content.md)
 >* [Flussi di lavoro](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Moduli](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Casella in entrata nell’intestazione {#inbox-in-the-header}
@@ -219,7 +219,7 @@ Dalla casella in entrata è possibile creare le attività:
       * **Contenuto**; simile al payload, è un riferimento dall&#39;attività a una posizione nell&#39;archivio
       * **Descrizione**
       * **Priorità attività**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
 
    ![wf-86](assets/wf-86.png)
@@ -252,7 +252,7 @@ Per alcune attività puoi creare un [Progetto](/help/sites-authoring/projects.md
 
       * **Titolo**
       * **Descrizione**
-      * **Data inizio**
+      * **Data di inizio**
       * **Data di scadenza**
       * **Utente** e ruolo
 

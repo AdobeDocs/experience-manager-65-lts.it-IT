@@ -1,22 +1,18 @@
 ---
 title: Layout reattivo per le pagine di contenuto
 description: Adobe Experience Manager consente di realizzare un layout dinamico per le pagine utilizzando il componente Contenitore di layout.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 06c1c7bc-aecb-4c35-bf30-dcc852540d6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e4d365adbfc08ddd51af692237779ed4e11c532d
 workflow-type: tm+mt
 source-wordcount: '1810'
 ht-degree: 59%
 
 ---
 
-# Layout reattivo{#responsive-layout}
+# Layout dinamico{#responsive-layout}
 
 AEM ti consente di avere un layout dinamico per le pagine utilizzando il componente **Contenitore di layout**.
 
@@ -203,7 +199,7 @@ La modalità **Layout** può essere avviata in due modi.
 
 * Utilizzando il menu [modalità nella barra degli strumenti](/help/sites-authoring/author-environment-tools.md#page-modes) e selezionando la modalità **Layout**
 
-   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Impostazione destinazione**.
+   * Seleziona la modalità **Layout** esattamente come si fa per passare alla modalità **Modifica** o **Targeting**.
    * La modalità **Layout** rimane persistente; si esce dalla modalità **Layout** solo quando si seleziona un’altra modalità mediante il selettore di modalità.
 
 * Quando [si modifica un singolo componente.](/help/sites-authoring/editing-content.md#edit-component-layout)

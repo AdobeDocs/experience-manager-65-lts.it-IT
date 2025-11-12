@@ -1,24 +1,18 @@
 ---
 title: Visualizzazione dei dati di analisi delle pagine per misurare l’efficacia del contenuto di una pagina
 description: Utilizzare i dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
-legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
-# Visualizzazione dei dati di analisi delle pagine{#seeing-page-analytics-data}
+# Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
 Utilizza i dati di analisi della pagina per misurare l’efficacia del contenuto della pagina.
 

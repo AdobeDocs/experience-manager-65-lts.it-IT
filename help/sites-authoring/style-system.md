@@ -1,16 +1,13 @@
 ---
 title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1292'
 ht-degree: 83%
 
 ---
@@ -129,7 +126,7 @@ Con il componente configurato, gli stili configurati dagli autori delle pagine v
 
 ### Abilitare la scheda Stili nella finestra di dialogo Modifica {#enable-styles-tab-edit}
 
-A partire dalla versione 6.5.3.0 di AEM è ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda della finestra di dialogo Progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
+È ora disponibile una scheda Stili opzionale nella finestra di dialogo Modifica. A differenza della scheda della finestra di dialogo Progettazione, la scheda presente nella finestra di dialogo Modifica non è essenziale per il funzionamento del sistema di stili, ma offre all’autore di contenuti un’interfaccia alternativa opzionale per l’impostazione degli stili.
 
 La scheda della finestra di dialogo Modifica può essere inclusa in modo analogo a quella della finestra di dialogo Progettazione:
 

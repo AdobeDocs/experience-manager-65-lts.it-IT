@@ -1,23 +1,18 @@
 ---
-title: Creazione di una pagina di destinazione efficace per la newsletter
+title: Creazione di una pagina di destinazione efficace per una newsletter
 description: Una pagina di destinazione efficace per la newsletter ti consente di iscrivere quante più persone possibile alla newsletter (o ad altre campagne di e-mail marketing). Per ottenere i lead, puoi utilizzare le informazioni raccolte dalle iscrizioni alle newsletter.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 92f4946d-1f49-4286-a51e-84b2a46a6b8a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f69262246bafca44f88ff15a4c86125f5335507e
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
-# Creazione di una pagina di destinazione efficace per la newsletter{#creating-an-effective-newsletter-landing-page}
+# Creazione di una pagina di destinazione efficace per una newsletter{#creating-an-effective-newsletter-landing-page}
 
 Una pagina di destinazione efficace per la newsletter ti consente di iscrivere quante più persone possibile alla newsletter (o ad altre campagne di e-mail marketing). Per ottenere i lead, puoi utilizzare le informazioni raccolte dalle iscrizioni alle newsletter.
 

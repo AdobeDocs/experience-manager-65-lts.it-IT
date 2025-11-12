@@ -7,9 +7,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1980'
 ht-degree: 4%
 
 ---
@@ -18,8 +18,8 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=it) |
-| AEM 6.5 | Questo articolo |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM 6.5 LTS | Questo articolo |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
@@ -50,7 +50,7 @@ Per evitare una situazione di tipo Denial of Service (DOS), [!DNL Enterprise Man
 
 Per modificare il limite, accedi a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** e modifica il valore di **[!UICONTROL Parametri POST massimi]** nella configurazione OSGi **[!UICONTROL Gestione parametri richieste Apache]**.
 
-## Profili metadati {#metadata-profiles}
+## Profili di metadati {#metadata-profiles}
 
 Un profilo di metadati consente di applicare metadati predefiniti alle risorse all’interno di una cartella. Crea un profilo di metadati e applicalo a una cartella. Qualsiasi risorsa caricata successivamente nella cartella eredita i metadati predefiniti configurati nel profilo di metadati.
 
@@ -118,7 +118,7 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per confermare l&#39;operazione di eliminazione. Il profilo metadati viene eliminato dall’elenco.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/it/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -262,7 +262,7 @@ Puoi assegnare uno schema di metadati della cartella durante la creazione di una
 
 ### Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Apri le proprietà di una cartella configurata con uno schema di metadati della cartella. Nella pagina delle [!UICONTROL proprietà] della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
+Apri le proprietà di una cartella configurata con uno schema di metadati per cartelle. Nella pagina delle **[!UICONTROL proprietà]** della cartella viene visualizzata la scheda [!UICONTROL Metadati cartella]. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
 Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
@@ -272,13 +272,13 @@ Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]*
 
 * Per importare metadati su spazi dei nomi personalizzati, registra innanzitutto gli spazi dei nomi.
 * Il selettore proprietà visualizza le proprietà utilizzate negli editor di schema e nei moduli di ricerca. Il selettore proprietà non seleziona le proprietà dei metadati da una risorsa.
-* Potresti avere profili di metadati preesistenti da prima dell&#39;aggiornamento a [!DNL Experience Manager] 6.5. Dopo l&#39;aggiornamento, se si applica un profilo di questo tipo nella cartella [!UICONTROL Proprietà] della scheda [!UICONTROL Profili metadati], i campi del modulo metadati non vengono visualizzati. Tuttavia, se applichi un profilo di metadati appena creato, i campi del modulo vengono visualizzati ma non sono disponibili come previsto. Non si verifica alcuna perdita di funzionalità, ma se desideri visualizzare i campi modulo (non disponibili) modifica e salva i profili di metadati esistenti.
+* Potresti avere profili di metadati preesistenti da prima dell&#39;aggiornamento a [!DNL Experience Manager] 6.5 LTS. Dopo l&#39;aggiornamento, se si applica un profilo di questo tipo nella cartella [!UICONTROL Proprietà] della scheda [!UICONTROL Profili metadati], i campi del modulo metadati non vengono visualizzati. Tuttavia, se applichi un profilo di metadati appena creato, i campi del modulo vengono visualizzati ma non sono disponibili come previsto. Non si verifica alcuna perdita di funzionalità, ma se desideri visualizzare i campi modulo (non disponibili) modifica e salva i profili di metadati esistenti.
 
 >[!MORELIKETHIS]
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
 >* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=it).
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Procedure consigliate per organizzare le risorse digitali in modo da utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
 >* [writeback di XMP](/help/assets/xmp-writeback.md).

@@ -1,12 +1,11 @@
 ---
 title: Creare e configurare le pagine dell’Editor risorse
 description: Scopri come creare pagine personalizzate dell’Editor risorse e modificare più risorse contemporaneamente.
-contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
 source-wordcount: '2088'
 ht-degree: 1%
@@ -21,7 +20,7 @@ Questo documento descrive quanto segue:
 * Come creare e personalizzare le pagine dell’Editor risorse, ovvero pagine WCM che consentono di visualizzare e modificare i metadati ed eseguire azioni sulla risorsa.
 * Come modificare più risorse contemporaneamente.
 
-<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to 6.5 default samples. -->
+<!-- TBD: Add UICONTROL tags. Need PM review. Flatten the structure a bit. Re-write to remove Geometrixx mentions and to adhere to default samples. -->
 
 >[!NOTE]
 >

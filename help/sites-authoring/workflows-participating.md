@@ -1,16 +1,11 @@
 ---
 title: Partecipazione al flusso di lavoro
 description: In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: site-features
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Architect,Developer
 exl-id: 2680e967-ec04-4ae6-b379-f1f0e7c6606b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 21c5407d1153fa23a3e8b60487eb91f1c3101337
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 73%

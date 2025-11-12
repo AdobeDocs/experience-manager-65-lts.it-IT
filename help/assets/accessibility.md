@@ -1,15 +1,14 @@
 ---
 title: Funzioni e interfacce accessibili di  [!DNL Experience Manager Assets]
-description: Scopri in che modo le funzioni di accessibilità di  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] aiutano gli utenti con disabilità.
-contentOwner: AG
+description: Scopri in che modo le funzioni di accessibilità di  [!DNL Adobe Experience Manager] 6.5 LTS [!DNL Assets] aiutano gli utenti con disabilità.
 feature: Asset Management
 role: User, Architect, Leader
 solution: Experience Manager, Experience Manager Assets
 exl-id: f9540bfb-1c4f-41f0-9caa-ef9265225648
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 61a1bb55f4b8da8c421f51ee203ca8e433a73a64
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 0%
+source-wordcount: '1899'
+ht-degree: 1%
 
 ---
 

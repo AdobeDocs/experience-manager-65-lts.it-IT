@@ -1,15 +1,14 @@
 ---
 title: Libreria trascodifica immagini
 description: Scopri come configurare e utilizzare la Libreria di transcodifica delle immagini di Adobe, una soluzione di elaborazione delle immagini in grado di eseguire funzioni di gestione delle immagini di base, tra cui codifica, transcodifica, ricampionamento e ridimensionamento delle immagini.
-contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 solution: Experience Manager, Experience Manager Assets
 exl-id: fb24c331-55c3-4166-bd4f-c26cece902fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 1dd093acdfa571dad9659270ddc6912ab3d5dba5
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 0%
+source-wordcount: '978'
+ht-degree: 1%
 
 ---
 
@@ -59,8 +58,8 @@ Gli argomenti della riga di comando per Imaging Transcoding Library possono incl
 
 * `X`: funziona in modo simile a [!DNL Experience Manager]. Ad esempio, -resize 319.
 * `WxH`: le proporzioni non vengono mantenute, ad esempio `-resize 319x319`.
-* `Wx`: corregge la larghezza e calcola l&#39;altezza mantenendo le proporzioni. Esempio: `-resize 319x`.
-* `xH`: corregge l&#39;altezza e calcola la larghezza mantenendo le proporzioni. Esempio: `-resize x319`.
+* `Wx`: corregge la larghezza e calcola l&#39;altezza mantenendo le proporzioni. Ad esempio, `-resize 319x`.
+* `xH`: corregge l&#39;altezza e calcola la larghezza mantenendo le proporzioni. Ad esempio, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -76,7 +75,7 @@ Per configurare l’elaborazione ITL, crea un file di configurazione e aggiorna 
 
 Per configurare la libreria, crea un file CONF per indicare le librerie seguendo la procedura riportata di seguito. Sono necessarie autorizzazioni di amministratore o radice.
 
-1. Scarica il pacchetto [Libreria trascodifica immagini da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e installalo tramite Gestione pacchetti. Il pacchetto è compatibile con [!DNL Experience Manager] 6.5.
+1. Scarica il pacchetto [Libreria trascodifica immagini da Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) e installalo tramite Gestione pacchetti. Il pacchetto è compatibile con [!DNL Experience Manager] 6,5 LTS.
 
 1. Per conoscere un ID bundle per `com.day.cq.dam.cq-dam-switchengine`, accedi alla console Web e fai clic su **[!UICONTROL OSGi]** > **[!UICONTROL Bundle]**. In alternativa, per aprire la console dei bundle, accedere all&#39;URL `https://[aem_server:[port]/system/console/bundles/`. Individua il bundle `com.day.cq.dam.cq-dam-switchengine` e il relativo ID.
 

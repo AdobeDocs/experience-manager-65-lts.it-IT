@@ -1,23 +1,18 @@
 ---
-title: Utilizzo del Marketing Campaign Manager
+title: Utilizzo di Marketing Campaign Manager
 description: Marketing Campaign Manager (MCM) è una console che consente di gestire campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: personalization
-content-type: reference
-docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: fb2fd382-e06a-4779-a4c5-e483ef42796d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 120c3fd005ce94021758ffbd14dd6b552de7afe9
 workflow-type: tm+mt
 source-wordcount: '1161'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Utilizzo del Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
+# Utilizzo di Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 In AEM, Marketing Campaign Manager (MCM) è una console che consente di gestire le campagne multicanale. Con questo software di automazione marketing puoi gestire tutti i tuoi marchi, campagne ed esperienze insieme ai relativi segmenti, elenchi, lead e rapporti.
 

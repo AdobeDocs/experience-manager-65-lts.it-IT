@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
 workflow-type: tm+mt
-source-wordcount: '2476'
+source-wordcount: '2468'
 ht-degree: 62%
 
 ---
@@ -103,7 +103,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 
 >[!NOTE]
 >
->Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C &#x200B;](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
+>Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C ](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 
@@ -395,10 +395,6 @@ Lo stato dei processi asincroni può essere controllato nel dashboard [**Stato p
 >[!NOTE]
 >
 >Per ulteriori informazioni sull&#39;elaborazione asincrona dei processi e su come configurare il limite per le azioni di spostamento o ridenominazione delle pagine, vedere il documento [Processi asincroni](/help/sites-administering/asynchronous-jobs.md) nella guida utente per l&#39;amministrazione.
-
->[!NOTE]
->
->L&#39;elaborazione dello spostamento asincrono delle pagine richiede AEM 6.5.3.0 o versione successiva.
 
 ### Eliminazione di una pagina {#deleting-a-page}
 

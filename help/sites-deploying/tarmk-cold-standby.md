@@ -1,5 +1,5 @@
 ---
-title: Eseguire AEM con TarMK Cold Standby
+title: Come eseguire AEM con TarMK Cold Standby
 description: Scopri come creare, configurare e gestire una configurazione TarMK Cold Standby.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,20 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2672'
-ht-degree: 0%
+source-wordcount: '2680'
+ht-degree: 1%
 
 ---
 
-# Eseguire AEM con TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+# Come eseguire AEM con TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introduzione {#introduction}
 
 La capacità Cold Standby del Tar Micro Kernel consente a una o più istanze Adobe Experience Manager (AEM) in standby di connettersi a un&#39;istanza primaria. Il processo di sincronizzazione è unidirezionale, ovvero viene eseguito solo dalle istanze primarie a quelle in standby.
 
-Lo scopo delle istanze in standby è garantire una Live Data Copy dell’archivio master e garantire un passaggio rapido senza perdita di dati nel caso in cui il master non sia disponibile per qualsiasi motivo.
+Lo scopo delle istanze in standby è garantire una copia live dei dati dell’archivio principale e garantire un passaggio rapido senza perdita di dati nel caso in cui l’istanza principale non sia disponibile per qualsiasi motivo.
 
 Il contenuto viene sincronizzato in modo lineare tra l’istanza primaria e le istanze in standby senza che venga eseguita alcuna verifica di integrità per individuare eventuali danneggiamenti a livello di file o archivio. A causa di questa progettazione, le istanze in standby sono copie esatte dell’istanza primaria e non possono aiutare a mitigare le incoerenze sulle istanze primarie.
 
@@ -43,7 +43,7 @@ Il contenuto viene sincronizzato in modo lineare tra l’istanza primaria e le i
 
 ## Come funziona {#how-it-works}
 
-Nell’istanza AEM primaria viene aperta una porta TCP in ascolto dei messaggi in arrivo. Attualmente, esistono due tipi di messaggi che gli schiavi inviano al master:
+Nell’istanza AEM primaria viene aperta una porta TCP in ascolto dei messaggi in arrivo. Attualmente, esistono due tipi di messaggi che lo standby invia al primario:
 
 * un messaggio che richiede l’ID del segmento dell’head corrente
 * un messaggio che richiede i dati del segmento con un ID specificato
@@ -70,9 +70,9 @@ L’abilitazione dello standby a freddo di TarMK sull’istanza principale non h
 
 In standby, è possibile prevedere un consumo elevato di CPU durante il processo di sincronizzazione. Poiché la procedura non è multithreading, non può essere velocizzata utilizzando più core. Se non vengono modificati o trasferiti dati, non esiste alcuna attività misurabile. La velocità di connessione varia a seconda dell’hardware e dell’ambiente di rete, ma non dipende dalle dimensioni dell’archivio o dall’utilizzo SSL. Tieni presente questo aspetto durante la stima del tempo necessario per una sincronizzazione iniziale o quando nel frattempo sono stati modificati molti dati sul nodo principale.
 
-#### Sicurezza {#security}
+#### Protezione {#security}
 
-Supponendo che tutte le istanze vengano eseguite nella stessa area di sicurezza Intranet, il rischio di violazione della sicurezza risulta notevolmente ridotto. Tuttavia, è possibile aggiungere un ulteriore livello di sicurezza abilitando le connessioni SSL tra gli schiavi e il master. In questo modo si riduce la possibilità che i dati vengano compromessi da un uomo nel mezzo.
+Supponendo che tutte le istanze vengano eseguite nella stessa area di sicurezza Intranet, il rischio di violazione della sicurezza risulta notevolmente ridotto. Tuttavia, è possibile aggiungere un ulteriore livello di sicurezza abilitando le connessioni SSL tra le istanze in standby e primarie. In questo modo si riduce la possibilità che i dati vengano compromessi da un uomo nel mezzo.
 
 Inoltre, è possibile specificare le istanze in standby a cui è consentito connettersi limitando l’indirizzo IP delle richieste in ingresso. Ciò dovrebbe contribuire a garantire che nessuno nella Intranet possa copiare l’archivio.
 
@@ -93,7 +93,7 @@ Inoltre, è possibile specificare le istanze in standby a cui è consentito conn
 
 Per creare una configurazione TarMK cold standby, creare innanzitutto le istanze standby eseguendo una copia dell&#39;intera cartella di installazione del primario in un nuovo percorso. È quindi possibile avviare ogni istanza con una modalità di esecuzione che specifichi il relativo ruolo ( `primary` o `standby`).
 
-Di seguito è riportata la procedura da seguire per creare una configurazione con una istanza principale e una in standby:
+Di seguito è riportata la procedura da seguire per creare una configurazione con un&#39;istanza principale e una in standby:
 
 1. Installa AEM.
 
@@ -218,7 +218,7 @@ Il servizio può essere configurato anche tramite la console web:
 >
 >Puoi controllare il ruolo di un&#39;istanza in qualsiasi momento controllando la presenza delle modalità di esecuzione **primary** o **standby** nella console Web Impostazioni Sling.
 >
->Per eseguire questa operazione, vai a *https://localhost:4502/system/console/status-slingsettings* e controlla la riga **&quot;Modalità di esecuzione&quot;**.
+>Per eseguire questa operazione, vai a *https://localhost:4502/system/console/status-slingsettings* e controlla la riga **&quot;Run Modes&quot;**.
 
 ## Prima sincronizzazione {#first-time-synchronization}
 
@@ -325,7 +325,7 @@ Per applicare gli hotfix a una configurazione di standby a freddo, si consiglia 
 
 Per farlo, segui i passaggi descritti di seguito:
 
-1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
+1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
 1. Arrestare l&#39;istanza di standby a freddo.
 1. Installa l’hotfix sull’istanza primaria. Per ulteriori dettagli su come installare un hotfix, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 1. Verificare la presenza di eventuali problemi dopo l&#39;installazione.
@@ -336,7 +336,7 @@ Per farlo, segui i passaggi descritti di seguito:
 
 ## Monitoraggio {#monitoring}
 
-La funzione espone informazioni utilizzando JMX o MBean. In questo modo è possibile controllare lo stato corrente dello standby e del master utilizzando la [console JMX](/help/sites-administering/jmx-console.md). Le informazioni sono disponibili in un MBean di `type org.apache.jackrabbit.oak:type="Standby"` denominato `Status`.
+La funzione espone informazioni utilizzando JMX o MBean. In questo modo è possibile controllare lo stato corrente dello standby e del primario utilizzando la [console JMX](/help/sites-administering/jmx-console.md). Le informazioni sono disponibili in un MBean di `type org.apache.jackrabbit.oak:type="Standby"` denominato `Status`.
 
 **Standby**
 
@@ -365,7 +365,7 @@ L’osservazione del primario espone alcune informazioni generali tramite un MBe
 
 * `Mode:` mostra sempre il valore `primary`.
 
-È inoltre possibile recuperare le informazioni per un massimo di dieci client (istanze in standby) connessi al master. L’ID MBean è l’UUID dell’istanza. Non esistono metodi richiamabili per questi MBean, ma alcuni utili attributi di sola lettura:
+Inoltre, è possibile recuperare le informazioni per un massimo di dieci client (istanze in standby) connessi al principale. L’ID MBean è l’UUID dell’istanza. Non esistono metodi richiamabili per questi MBean, ma alcuni utili attributi di sola lettura:
 
 * `Name:` ID del client.
 * `LastSeenTimestamp:` il timestamp dell&#39;ultima richiesta in una rappresentazione testuale.
@@ -402,7 +402,7 @@ Potrebbe essere necessario più tempo del solito perché l’istanza in standby 
 
 In alternativa, l’archivio primario può essere copiato manualmente in standby dopo l’esecuzione della compattazione sul principale, essenzialmente ricostruendo lo standby ogni volta che viene eseguita la compattazione.
 
-### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+### Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 È importante eseguire di tanto in tanto la Garbage Collection sulle istanze dell’archivio dati dei file. In caso contrario, i file binari eliminati rimangono nel file system e finiscono per riempire l’unità. Per eseguire la raccolta di oggetti inattivi, attieniti alla procedura seguente:
 

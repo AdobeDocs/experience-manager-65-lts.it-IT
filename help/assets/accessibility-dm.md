@@ -8,7 +8,7 @@ feature: Accessibility
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 0aebf16a-4115-4656-b583-1a293478c9a1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 33f9dccea41417e84d8fdd0aac25a7e1e6327aac
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -38,8 +38,6 @@ L&#39;attraversamento della messa a fuoco segue la posizione naturale degli elem
    * Le prossime quattro `Tab` interruzioni sono i quattro angoli del frame. Quando lo stato attivo viene posizionato su un angolo del fotogramma, l&#39;angolo viene evidenziato. Anche in questo caso, è possibile utilizzare i tasti freccia sulla tastiera per spostare l&#39;angolo attivo.
 Vedi [Modifica il ritaglio avanzato o il campione avanzato di una singola immagine](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
-<!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
-
 <!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
@@ -54,12 +52,12 @@ Gli elementi dell&#39;interfaccia utente [!DNL Dynamic Media] funzionano con tec
 
 Tutti i componenti predefiniti dei visualizzatori [!DNL Dynamic Media] supportano l&#39;accessibilità da tastiera per i clienti.
 
-Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=it) nella Guida di riferimento dei visualizzatori Dynamic Media.
+Consulta [Accesso facilitato alla tastiera e navigazione](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) nella Guida di riferimento dei visualizzatori Dynamic Media.
 
 ## Supporto per la tecnologia di supporto in [!DNL Dynamic Media] visualizzatori {#assistive-technology-support-for-dm-viewers}
 
 Tutti i componenti visualizzatore [!DNL Dynamic Media] supportano i ruoli e gli attributi ARIA (Accessible Rich Internet Applications) per migliorare l&#39;integrazione con tecnologie per l&#39;accessibilità, come gli assistenti vocali.
-Consulta l&#39;argomento della Guida **Supporto per la tecnologia assistiva** in tutti gli argomenti relativi alla personalizzazione dei visualizzatori nella Guida di riferimento per visualizzatori Dynamic Media. Ad esempio, consulta [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=it) per il visualizzatore di video o [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=it#viewers-for-aem-assets-only) per il visualizzatore di immagini interattivo.
+Consulta l&#39;argomento della Guida **Supporto per la tecnologia assistiva** in tutti gli argomenti relativi alla personalizzazione dei visualizzatori nella Guida di riferimento per visualizzatori Dynamic Media. Ad esempio, consulta [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) per il visualizzatore di video o [Supporto per la tecnologia per l&#39;accesso facilitato](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) per il visualizzatore di immagini interattivo.
 
 ## Supporto per sottotitoli codificati in Dynamic Media {#closed-caption-support}
 
