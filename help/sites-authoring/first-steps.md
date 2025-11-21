@@ -8,7 +8,7 @@ exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
 source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
@@ -51,7 +51,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Blocco di una pagina  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}
 

@@ -478,7 +478,7 @@ SP1 per AEM 6.5 LTS viene fornito come file Quickstart JAR anziché come file ZI
 
 **Buone pratiche**
 
-* Esegui l’aggiornamento in ambienti di test o inferiori prima della produzione.
+* Esegui l’aggiornamento in ambienti di test o inferiori prima di eseguirlo in ambienti di produzione.
 * Prima di iniziare, esegui backup completi e ripristinabili (repository più eventuali datastore esterni).
 * Consulta la guida all’aggiornamento diretto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
 
