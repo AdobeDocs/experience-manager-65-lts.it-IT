@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e0fb43e63eb876049447d12ab379fd92aa1ee4b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2350'
+ht-degree: 58%
 
 ---
 
@@ -64,7 +64,7 @@ Operazioni disponibili:
    * [I tag](/help/sites-authoring/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
       * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
-      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo Content Delivery Network (CDN) specifico (per la memorizzazione in cache di CDN), invece di utilizzare il nome della variante.
+      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
 
      Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
@@ -406,6 +406,12 @@ Sono aggiunti come riferimento, nella posizione corrente all’interno del framm
 Le varianti consentono di utilizzare il contenuto **Master** e modificarlo in base allo scopo (se necessario).
 
 Per creare una variante:
+
+>[!NOTE]
+>
+>Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
+>
+>Si consiglia di non superare le dieci varianti per frammento di contenuto.
 
 1. Apri il frammento e accertati che il pannello laterale sia visibile.
 1. Seleziona **Varianti** dalla barra delle icone nel pannello laterale.
