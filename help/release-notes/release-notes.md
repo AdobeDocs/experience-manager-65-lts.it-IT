@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6023c211220bb500814ecd511b8787d107c3c6cd
+source-git-commit: 5dfcc115fd2e1991a8a4701597b0fb25b374e3ee
 workflow-type: tm+mt
-source-wordcount: '7381'
-ht-degree: 99%
+source-wordcount: '7405'
+ht-degree: 98%
 
 ---
 
@@ -410,6 +410,7 @@ Sono stati risolti i cicli di dipendenza OSGi che impedivano il funzionamento de
 * Gli utenti sono stati impossibilitati a utilizzare la funzione timeline dei PDF in AM Forms. Questo problema ha influito sulla capacità degli utenti di tenere traccia delle modifiche e delle revisioni dei documenti in modo efficace. Durante il caricamento di un PDF nella sezione “Moduli e documenti” dell’area di AEM Forms, la vista timeline non funziona più. (FORMS-19408)
 * Gli utenti rilevano un’eccezione Null Pointer durante l’interazione con OData. Questo causa interruzioni nei processi di recupero dei dati. (FORMS-20348)
 * È stata rimossa la libreria google.common.collect in seguito alla rimozione di Guava, una libreria Java open-source. Questo aggiornamento garantisce compatibilità e prestazioni migliori per la clientela enterprise che utilizza Moduli adattivi. (FORMS-17031)
+* Quando è abilitato Server-Side Validation (SSV), l’invio del modulo potrebbe non riuscire. Se riscontri questo problema, contatta il [Supporto Adobe](https://business.adobe.com/in/support/main.html) per assistenza. (FORMS-21966)
 
 ### Captcha Forms
 
