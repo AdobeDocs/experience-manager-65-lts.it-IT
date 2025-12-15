@@ -1,5 +1,5 @@
 ---
-title: Installazione autonoma personalizzata
+title: Installazione personalizzata indipendente
 description: Scopri le opzioni disponibili per l’installazione di un’istanza AEM autonoma.
 content-type: reference
 topic-tags: deploying
@@ -7,14 +7,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 93aa6218c36b52bfcd7a204e6f0b65871a4b365b
+source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# Installazione autonoma personalizzata{#custom-standalone-install}
+# Installazione personalizzata indipendente{#custom-standalone-install}
 
 In questa sezione sono descritte le opzioni disponibili durante l’installazione di un’istanza AEM autonoma. È inoltre possibile leggere [Elementi di archiviazione](/help/sites-deploying/storage-elements-in-aem-6.md) per ulteriori informazioni sulla scelta del tipo di archiviazione back-end dopo l&#39;installazione di AEM 6.
 
@@ -57,7 +57,7 @@ Se si esegue Oracle Java 17 o Java 21, è necessario aggiungere opzioni aggiunti
 * [Solo Forms] Di seguito è riportato un esempio per garantire che AEM Forms funzioni con Java 17/Java21. Includi i seguenti parametri JVM aggiuntivi:
 
 ```shell
---add-opens=java.base/java.util=ALL-UNNAMED -add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
+--add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.xml/com.sun.org.apache.xml.internal.serialize=ALL-UNNAMED
 ```
 
 ## Modalità di esecuzione {#run-modes}
@@ -323,7 +323,7 @@ Sebbene esistano molte possibilità per configurare AEM WCM, è necessario esegu
 
 >[!NOTE]
 >
-> Per le nuove installazioni di AEM 6.5 LTS, le definizioni degli indici devono essere installate separatamente. Per ulteriori informazioni, fare riferimento a [questo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
+> Per le nuove installazioni di AEM 6.5 LTS, le definizioni degli indici devono essere installate separatamente. Per ulteriori informazioni, fai riferimento a [questo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#index-definitions).
 
 ## Accesso a CRXDE Lite e alla console web {#accessing-crxde-lite-and-the-web-console}
 
