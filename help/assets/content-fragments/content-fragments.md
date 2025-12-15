@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 69%
+source-wordcount: '2295'
+ht-degree: 59%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 69%
 
 Con Adobe Experience Manager (AEM), i frammenti di contenuto ti consentono di progettare, creare, curare e [pubblicare contenuti indipendenti dalla pagina](/help/sites-authoring/content-fragments.md). Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali, ideali per la distribuzione headless.
 
-I frammenti di contenuto contengono contenuto strutturato:
+I frammenti di contenuto contengono contenuti strutturati:
 
 * Sono basati su un [Modello per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md), che definisce la struttura del frammento risultante.
 * La struttura può essere di tre tipi:
@@ -131,7 +131,7 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor di pagine [&#x200B; con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor di pagine [ con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 
@@ -300,3 +300,47 @@ Per utilizzare i frammenti di contenuto per l’authoring delle pagine, è inolt
 ## Esempio di utilizzo {#example-usage}
 
 Un frammento, con i relativi elementi e varianti, può essere utilizzato per creare contenuti coerenti per più canali. Durante la progettazione del frammento, è necessario considerare cosa viene utilizzato e dove viene utilizzato.
+
+## Best practice {#best-practices}
+
+I frammenti di contenuto possono essere utilizzati per formare strutture complesse. Adobe offre consigli sulle best practice da seguire per la definizione e l’utilizzo di modelli e frammenti.
+
+### Semplifica {#keep-it-simple}
+
+Durante la modellazione di contenuti strutturati in AEM, utilizza strutture di contenuto quanto più semplici possibile per garantire prestazioni di sistema elevate e governance semplificata.
+
+### Numero di modelli {#number-of-models}
+
+Crea tutti i modelli di contenuto necessari, ma non più.
+
+Troppi modelli complicano la governance e possono rallentare le query GraphQL. Di solito è sufficiente un piccolo insieme di modelli, massimo di decine basse. Se ti avvicini alle dieci o più alte, riconsidera la tua strategia di modellazione.
+
+### Nidificazione di modelli e frammenti (molto importante) {#nesting-models-and-fragments}
+
+Evita la nidificazione profonda o eccessiva dei frammenti di contenuto utilizzando i Riferimenti ai frammenti di contenuto, che consentono ai frammenti di fare riferimento ad altri frammenti, a volte su più livelli.
+
+L’utilizzo intensivo dei riferimenti ai frammenti di contenuto può influire in modo significativo sulle prestazioni del sistema, sulla reattività dell’interfaccia utente e sull’esecuzione delle query GraphQL. Mirare a mantenere la nidificazione a non più di dieci livelli.
+
+### Numero di campi e tipi di dati per modello {#number-of-data-fields-and-types-per-model}
+
+Includi solo i campi di dati e i tipi di dati necessari per un modello.
+
+Modelli eccessivamente complessi portano a frammenti eccessivamente complessi che possono rendere difficile l’authoring e ridurre le prestazioni dell’editor.
+
+### Campi Rich Text {#rich-text-fields}
+
+Utilizza i campi Rich Text (il tipo di dati **Testo su più righe**) in considerazione.
+
+Limita il numero di campi Rich Text per modello. Inoltre, indica la quantità di testo memorizzata in ciascun frammento e la quantità di formattazione di HTML. Contenuti Rich Text di grandi dimensioni possono influire negativamente sulle prestazioni del sistema.
+
+### Numero di varianti {#number-of-variations}
+
+Crea tutte le varianti di frammento necessarie, ma non più.
+
+Le varianti aggiungono tempo di elaborazione a un frammento di contenuto, nell’ambiente di authoring e alla consegna. Si consiglia di mantenere il numero di varianti al minimo gestibile.
+
+Si consiglia di non superare le dieci varianti per frammento di contenuto.
+
+### Test prima della produzione {#test-before-production}
+
+In caso di dubbi, crea un prototipo delle strutture di contenuto previste prima di implementarle in produzione. Una verifica precoce dei concetti, unita a test adeguati, sia tecnici che di accettazione da parte dell’utente, può aiutare a evitare problemi in un secondo momento, quando si dovranno affrontare le scadenze di produzione.

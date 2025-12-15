@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: cb22ff03-6de1-4cab-8a3e-d3d0fa1d29e2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 75%
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
@@ -37,13 +37,17 @@ L’[Editor frammento di contenuto](#opening-the-fragment-editor) prevede svaria
 
 >[!NOTE]
 >
+>Tieni presente le [best practice](/help/assets/content-fragments/content-fragments.md#best-practices) quando utilizzi i modelli per frammenti di contenuto e i frammenti di contenuto.
+
+>[!NOTE]
+>
 >I frammenti di contenuto sono archiviati come **Assets**, quindi sono gestiti principalmente dalla console **Assets**.
 
 ## Creazione di frammenti di contenuto {#creating-content-fragments}
 
 ### Creazione di un modello di contenuto {#creating-a-content-model}
 
-È possibile abilitare e creare i [modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) prima della creazione dei frammenti di contenuto con una struttura.
+È possibile abilitare e creare i [modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) prima di creare dei frammenti di contenuti strutturati.
 
 ### Creazione di un frammento di contenuto {#creating-a-content-fragment}
 
