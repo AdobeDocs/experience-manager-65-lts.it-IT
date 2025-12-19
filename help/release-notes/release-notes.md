@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ### Forms
 
-È ora disponibile AEM 6.5 Forms LTS su JEE. Per informazioni dettagliate sugli ambienti supportati, vedere il documento Combinazioni [Piattaforma supportata](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms). I collegamenti del programma di installazione sono disponibili nella pagina [Versioni di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+È ora disponibile AEM 6.5 Forms LTS su JEE. Per informazioni dettagliate sugli ambienti supportati, vedere il documento Combinazioni [Piattaforma supportata](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms). I collegamenti del programma di installazione sono disponibili nella pagina [Versioni di AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 <!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
 
