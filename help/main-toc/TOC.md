@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 08f9b6697e298689a91a9b31038f382a908acd5b
+source-git-commit: 6050ba71c29bb0e7d102354dc592dcc40667513e
 workflow-type: tm+mt
-source-wordcount: '6763'
+source-wordcount: '6775'
 ht-degree: 95%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 95%
    + [Sincronizzazione utente](/help/sites-administering/sync.md)
    + [Supporto di token incapsulati](/help/sites-administering/encapsulated-token.md)
    + [Single Sign-On](/help/sites-deploying/single-sign-on.md)
-   + [Come controllare le operazioni di gestione degli utenti in AEM. &#x200B;](/help/sites-administering/audit-user-management-operations.md)
+   + [Come controllare le operazioni di gestione degli utenti in AEM. ](/help/sites-administering/audit-user-management-operations.md)
    + [SSL per impostazione predefinita](/help/sites-administering/ssl-by-default.md)
    + [Gestore di autenticazione SAML 2.0](/help/sites-administering/saml-2-0-authenticationhandler.md)
    + [Gruppi di utenti chiusi in AEM](/help/sites-administering/closed-user-groups.md)
@@ -64,7 +64,7 @@ ht-degree: 95%
          + [Ricerca](/help/sites-authoring/search.md)
          + [Configurazione dell’ambiente account](/help/sites-authoring/user-properties.md)
          + [Casella in entrata](/help/sites-authoring/inbox.md)
-         + [Scelte rapide da tastiera per le console  &#x200B;](/help/sites-authoring/keyboard-shortcuts.md)
+         + [Scelte rapide da tastiera per le console  ](/help/sites-authoring/keyboard-shortcuts.md)
          + [Selezione dell’interfaccia utente](/help/sites-authoring/select-ui.md)
       + Authoring {#authoring}
          + [Authoring - Ambiente e strumenti](/help/sites-authoring/author-environment-tools.md)
@@ -85,7 +85,7 @@ ht-degree: 95%
          + [Utilizzo dei tag](/help/sites-authoring/tags.md)
          + [Creazione di modelli di pagina](/help/sites-authoring/templates.md)
          + [Sistema di stili](/help/sites-authoring/style-system.md)
-         + [Utilizzo delle versioni di una pagina  &#x200B;](/help/sites-authoring/working-with-page-versions.md)
+         + [Utilizzo delle versioni di una pagina  ](/help/sites-authoring/working-with-page-versions.md)
          + [Differenze tra pagine](/help/sites-authoring/page-diff.md)
          + [Console Componenti](/help/sites-authoring/default-components-console.md)
          + [Layout dinamico](/help/sites-authoring/responsive-layout.md)
@@ -110,7 +110,7 @@ ht-degree: 95%
          + [Partecipazione ai flussi di lavoro](/help/sites-authoring/workflows-participating.md)
          + [Utilizzo dei flussi di lavoro per i progetti](/help/sites-authoring/projects-with-workflows.md)
       + Prestazioni pagina {#page-performance}
-         + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html?lang=it)
+         + [Approfondimenti contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/content-insights.html)
          + [Analisi delle prestazioni della pagina](/help/sites-authoring/ci-analyze.md)
          + [Visualizzazione dei dati analitici sulle pagine](/help/sites-authoring/pa-using.md)
       + Personalizzazione {#personalization}
@@ -133,7 +133,7 @@ ht-degree: 95%
       + Articoli in primo piano {#introduction}
          + [MSM e traduzione](/help/sites-administering/msm-and-translation.md)
          + [Processi asincroni](/help/sites-administering/asynchronous-jobs.md)
-         + [Riutilizzo del contenuto: Gestione multi-sito e Live Copy](/help/sites-administering/msm.md)
+         + [Riutilizzo del contenuto: Multi-Site Manager e Live Copy](/help/sites-administering/msm.md)
          + [Panoramica sulla console Live Copy](/help/sites-administering/msm-livecopy-overview.md)
          + [Configurazione della sincronizzazione di una Live Copy](/help/sites-administering/msm-sync.md)
          + [Creazione e sincronizzazione di Live Copy](/help/sites-administering/msm-livecopy.md)
@@ -163,7 +163,7 @@ ht-degree: 95%
          + [Configurare il Rich Text editor](/help/sites-administering/rich-text-editor.md)
          + [Configurazione del Rich Text editor per la produzione di siti accessibili](/help/sites-administering/rte-accessible-content.md)
          + [Configurazione dell’annullamento per la modifica delle pagine](/help/sites-administering/config-undo.md)
-         + [Configurare i plug-in del Rich Text editor &#x200B;](/help/sites-administering/configure-rich-text-editor-plug-ins.md)
+         + [Configurare i plug-in del Rich Text editor ](/help/sites-administering/configure-rich-text-editor-plug-ins.md)
          + [Configurare il componente Video](/help/sites-administering/config-video.md)
          + [La modifica in serie](/help/sites-administering/bulk-editor.md)
          + [Configurazione delle notifiche e-mail](/help/sites-administering/notification.md)
@@ -185,7 +185,7 @@ ht-degree: 95%
          + [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
       + Personalizzazione {#personalization}
          + [Personalizzazione](/help/sites-administering/personalization.md)
-         + [Configurazione di ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html?lang=it)
+         + [Configurazione di ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/personlization/ch-configuring.html)
          + [ClientContext](/help/sites-administering/client-context.md)
          + [Configurazione della segmentazione con ContextHub](/help/sites-administering/segmentation.md)
          + [Configurazione della segmentazione](/help/sites-administering/campaign-segmentation.md)
@@ -228,10 +228,10 @@ ht-degree: 95%
          + [Best practice per i modelli e-mail](/help/sites-administering/best-practices-for-email-templates.md)
       + Best practice {#bestpractices}
          + [Best practice](/help/sites-administering/administer-best-practices.md)
-         + [Best practice per la traduzione](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html?lang=it)
-         + [Best practice MSM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html?lang=it)
+         + [Best practice per la traduzione](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/tc-bp.html)
+         + [Best practice MSM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - Compatibilità GDPR](/help/sites-administering/gdpr-compliance-sites.md)
-         + [Gestione delle richieste GDPR per AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html?lang=it)
+         + [Gestione delle richieste GDPR per AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - Compatibilità GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
       + Gestione dei contenuti {#contentmanagement}
          + [Gestione pacchetti](/help/sites-administering/package-manager.md)
@@ -274,8 +274,8 @@ ht-degree: 95%
       + [Best practice per ottimizzare la qualità delle immagini](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [Gestire i predefiniti del visualizzatore Dynamic Media](/help/assets/managing-viewer-presets.md)
       + [Applicazione dei predefiniti per il visualizzatore Dynamic Media](/help/assets/viewer-presets.md)
-      + [Gestione dei predefiniti per le immagini Dynamic Media](/help/assets/managing-image-presets.md)
-      + [Applicare predefiniti per le immagini Dynamic Media](/help/assets/image-presets.md)
+      + [Gestione dei predefiniti per immagini Dynamic Media](/help/assets/managing-image-presets.md)
+      + [Applicare predefiniti per immagini Dynamic Media](/help/assets/image-presets.md)
       + [Profili video di Dynamic Media](/help/assets/video-profiles.md)
       + [Profili immagine di Dynamic Media](/help/assets/image-profiles.md)
       + [Imaging avanzato](/help/assets/imaging-faq.md)
@@ -344,7 +344,7 @@ ht-degree: 95%
       + [[!DNL Assets] e MediaLibrary](/help/assets/medialibrary.md)
       + [Usare rasterizzatore PDF](/help/assets/aem-pdf-rasterizer.md)
       + [Configurare le restrizioni di caricamento](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integrazione di [!DNL Experience Manager] e  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integrazione di [!DNL Experience Manager] e  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrare con  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management nelle risorse](/help/assets/drm.md)
       + [Utilizzare il pacchetto demo per approfondimenti risorse](/help/assets/use-demo-package-for-asset-insights.md)
@@ -437,6 +437,8 @@ ht-degree: 95%
    + Installare e configurare AEM Forms {#install-aem-forms}
       + [Architettura e topologie di implementazione per AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Scegliere un tipo di persistenza per un’installazione di AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
+      + Installare AEM Forms su JEE {#jee-installation}
+         + [Piattaforme supportate per AEM Forms su JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
       + Installare AEM Forms su OSGi {#osgi-installation}
          + [Piattaforme supportate per AEM Forms su OSGi](/help/forms/using/supported-platforms.md)
          + [Installare e configurare i servizi per documenti](/help/forms/using/install-configure-document-services.md)
@@ -755,9 +757,9 @@ ht-degree: 95%
       + [Utilizzo di Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
       + [Esercitazioni rapide di Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
       + [Esempi di Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-      + [Nozioni di base sugli script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_it)
-      + [Riferimento script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_it)
-      + [Riferimento FormCalc di Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_it)
+      + [Nozioni di base sugli script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+      + [Riferimento script di Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Riferimento FormCalc di Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Utilizzo della firma a meno nei moduli HTML5](/help/forms/using/scribble-signature.md)
       + [Modifica del contenuto della pagina zero in Designer](/help/forms/using/changing-page-zero-content-designer.md)
       + Best practice sull’accessibilità {#accessibility-best-practices}
@@ -973,7 +975,7 @@ ht-degree: 95%
       + [Plug-in AEM per eseguire il debug dei moduli adattivi](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [API Form Bridge per moduli HTML5](/help/forms/using/form-bridge-apis.md)
       + [Riferimento API della libreria JavaScript per moduli adattivi](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html)
-      + [Servizio Assembler e riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65_it)
+      + [Servizio Assembler e riferimento DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + Programmazione con AEM Forms su JEE {#programming-aem-forms-jee}
          + Introduzione alla programmazione con AEM Forms su JEE {#introduction-programming-aem-forms-jee}
             + [Introduzione a API Java QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
@@ -1085,7 +1087,7 @@ ht-degree: 95%
       + [Configurazione e risoluzione dei problemi di un cluster di server AEM Forms su JEE](/help/forms/developing/configure-server-cluster.md)
       + [Generazione e utilizzo di hash in PDF forms dinamici](/help/forms/developing/hashing-forms.md)
       + [Passaggio delle credenziali tramite intestazioni WS-Security](/help/forms/developing/passing-credentials.md)
-+ Assistente IA in AEM {#ai-in-aem}
++ IA in AEM {#ai-in-aem}
    + [Panoramica](/help/ai-in-aem/overview.md)
    + Assistente IA {#ai-assistant}
       + [Configurare l’Assistente IA in AEM](/help/ai-assistant-in-aem-admin.md)
@@ -1202,7 +1204,7 @@ ht-degree: 95%
          + [Sviluppo di rapporti](/help/sites-developing/dev-reports.md)
       + Componenti{#components}
          + [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
-         + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html?lang=it)
+         + [Sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/sites/authoring/siteandpage/style-system.html)
          + [Panoramica sui componenti](/help/sites-developing/components.md)
          + [Componenti AEM: nozioni di base](/help/sites-developing/components-basics.md)
          + [Sviluppo di Componenti AEM](/help/sites-developing/developing-components.md)
@@ -1232,51 +1234,51 @@ ht-degree: 95%
          + [Headless e AEM](/help/sites-developing/headless/introduction.md)
          + Percorsi headless {#journeys}
             + Percorso per sviluppatori headless {#developer}
-               + [Comprendere headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html?lang=it)
-               + [Informazioni sullo sviluppo headless di CMS](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html?lang=it)
-               + [Guida introduttiva ad AEM as a Cloud Service headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html?lang=it)
-               + [Percorso della tua prima esperienza con AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html?lang=it)
-               + [Come modellare il contenuto come modelli di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=it)
-               + [Accedere al contenuto tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=it)
-               + [Aggiornare il contenuto tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=it)
-               + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=it)
-               + [Pubblicare tramite la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=it)
-               + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=it)
+               + [Comprendere headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/overview.html)
+               + [Informazioni sullo sviluppo headless di CMS](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/learn-about.html)
+               + [Guida introduttiva ad AEM as a Cloud Service headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/getting-started.html)
+               + [Percorso della tua prima esperienza con AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/path-to-first-experience.html)
+               + [Come modellare il contenuto come modelli di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html)
+               + [Accedere al contenuto tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html)
+               + [Aggiornare il contenuto tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html)
+               + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
+               + [Pubblicare tramite la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html)
+               + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html)
             + Percorso di architettura dei contenuti headless {#architect}
-               + [Panoramica del percorso architetto di contenuti headless di AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html?lang=it)
-               + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html?lang=it)
-               + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html?lang=it)
-               + [Scopri come creare modelli frammento di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html?lang=it)
+               + [Panoramica del percorso architetto di contenuti headless di AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/overview.html)
+               + [Modellazione dei contenuti per headless con AEM - Introduzione](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/introduction.html)
+               + [Scopri le nozioni di base sulla modellazione dei contenuti per headless con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/basics.html)
+               + [Scopri come creare modelli frammento di contenuto in AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/architect/model-structure.html)
          + Guide introduttive {#getting-started}
             + [Introduzione](/help/sites-developing/headless/getting-started/introduction.md)
-            + [Creazione di una configurazione &#x200B;](/help/sites-developing/headless/getting-started/create-configuration.md)
+            + [Creazione di una configurazione ](/help/sites-developing/headless/getting-started/create-configuration.md)
             + [Creazione di un modello di frammento di contenuto](/help/sites-developing/headless/getting-started/create-content-model.md)
             + [Creazione di una cartella di risorse](/help/sites-developing/headless/getting-started/create-assets-folder.md)
             + [Creazione di un frammento di contenuto](/help/sites-developing/headless/getting-started/create-content-fragment.md)
             + [Accesso e distribuzione di frammenti di contenuto](/help/sites-developing/headless/getting-started/create-api-request.md)
          + Frammenti di contenuto{#content-fragments}
-            + [Distribuzione headless con frammenti di contenuto e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html?lang=it)
-            + [Utilizzo di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html?lang=it)
-            + [Abilitare la funzionalità Frammento di contenuto per un’istanza](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html?lang=it)
-            + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html?lang=it)
-            + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html?lang=it)
-            + [Varianti - Authoring dei contenuti di frammenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html?lang=it)
-            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html?lang=it)
-            + [Uso di contenuti associati &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html?lang=it)
-            + [Metadati - Proprietà dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html?lang=it)
-            + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html?lang=it)
-            + [Anteprima - Rappresentazione JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html?lang=it)
+            + [Distribuzione headless con frammenti di contenuto e GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-graphql.html)
+            + [Utilizzo di frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments.html)
+            + [Abilitare la funzionalità Frammento di contenuto per un’istanza](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-configuration-browser.html)
+            + [Modelli per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-models.html)
+            + [Gestione dei frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-managing.html)
+            + [Varianti - Authoring dei contenuti di frammenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-variations.html)
+            + [Markdown](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-markdown.html)
+            + [Uso di contenuti associati ](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-assoc-content.html)
+            + [Metadati - Proprietà dei frammenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-metadata.html)
+            + [Albero struttura](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-structure-tree.html)
+            + [Anteprima - Rappresentazione JSON](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/content-fragments/content-fragments-json-preview.html)
          + API di distribuzione{#delivery-api}
-            + [API HTTP di Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=it)
-            + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=it)
-            + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=it)
+            + [API HTTP di Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html)
+            + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html)
+            + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html)
             + [Gestione degli endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [Utilizzo dell’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html?lang=it)
-            + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html?lang=it)
+            + [Utilizzo dell’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html)
+            + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html)
             + [Ottimizzazione delle query GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Aggiornamento dei frammenti di contenuto per un filtro GraphQL ottimizzato](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
-            + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html?lang=it)
-            + [API GraphQL per AEM con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html?lang=it)
+            + [Autenticazione per query GraphQL AEM remote su frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-authentication-content-fragments.html)
+            + [API GraphQL per AEM con frammenti di contenuto - Contenuto di esempio e query](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/content-fragments-graphql-samples.html)
          + L’editor universale {#universal-editor}
             + [Introduzione](/help/sites-developing/universal-editor/introduction.md)
       + Sviluppo ibrido e di SPA con AEM {#spas}
@@ -1297,7 +1299,7 @@ ht-degree: 95%
          + [Componente RemotePage](/help/sites-developing/spa-remote-page.md)
          + [Modifica di uno SPA esterno in AEM](/help/sites-developing/spa-edit-external.md)
          + [Componenti compositi negli SPA](/help/sites-developing/spa-composite-component.md)
-         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html?lang=it)
+         + [Abilitazione dell’esportazione JSON per un componente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/json-exporter-components.html)
          + [Integrazione Launch](/help/sites-developing/spa-launch.md)
          + [Materiali di riferimento SPA](/help/sites-developing/spa-reference-materials.md)
       + Strumenti di sviluppo {#devtools}
@@ -1363,7 +1365,7 @@ ht-degree: 95%
          + Estensione dell’interfaccia classica{#extending-classic-ui}
             + [Personalizzazione della console siti web (interfaccia classica)](/help/sites-developing/customizing-siteadmin.md)
             + [Personalizzazione della console di benvenuto (interfaccia classica)](/help/sites-developing/customizing-the-welcome-console.md)
-            + [Sviluppo di rapporti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html?lang=it)
+            + [Sviluppo di rapporti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/platform/dev-reports.html)
       + Test {#testing}
          + [Pianificazione](/help/sites-developing/planning.md)
          + [Quali ambienti di test sono necessari?](/help/sites-developing/test-environments.md)
@@ -1376,10 +1378,10 @@ ht-degree: 95%
          + [La versione successiva...](/help/sites-developing/the-next-release.md)
          + [Elenchi di controllo](/help/sites-developing/checklists.md)
          + [Giorno difficile](/help/sites-developing/tough-day.md)
-         + [Test dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html?lang=it)
+         + [Test dell’interfaccia utente](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/components/hobbes.html)
       + Best practice {#bestpractices}
          + [Analisi delle best practice](/help/sites-developing/best-practices.md)
-         + [Linee guida e best practice per lo sviluppo AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html?lang=it)
+         + [Linee guida e best practice per lo sviluppo AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [Best practice specifiche per lo sviluppo](/help/sites-developing/development-practices.md)
          + [Architettura dei contenuti](/help/sites-developing/content-architecture.md)
          + [Architettura del software](/help/sites-developing/software-architecture.md)
