@@ -4,7 +4,7 @@ description: Informazioni su come scaricare e installare un hotfix per AEM Forms
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 504240bdad9e964460a9fcdc555228c7cb02e314
+source-git-commit: 979a817293034d09189417cdf729f476c77cdde3
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 1%
@@ -15,6 +15,7 @@ ht-degree: 1%
 # Hotfix per Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 Questo articolo elenca le correzioni critiche implementate per risolvere problemi noti, migliorare la stabilità del sistema e migliorare le prestazioni complessive di AEM Forms 6.5 LTS.
+
 
 >[!NOTE]
 >
