@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: 6ceb03253f939734478cdc25b468737ceb83faa4
+source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
 workflow-type: tm+mt
 source-wordcount: '3711'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -99,7 +99,7 @@ La tabella seguente identifica i profili di codifica delle best practice per lo 
 
 ## Informazioni sull’utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che sfrutta la potenza dell’intelligenza artificiale in Adobe Sensei. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
+Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che utilizza la potenza dell’intelligenza artificiale nell’intelligenza artificiale di Adobe. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -109,7 +109,7 @@ Le dimensioni massime supportate per i file video con ritaglio avanzato sono i s
 * 30 fps.
 * 300 MB.
 
-Adobe Sensei è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, Adobe Sensei e il ritaglio avanzato supportano un video a 60 FPS solo se dura almeno due minuti e mezzo.
+Adobe AI è limitato a 9000 fotogrammi. ovvero cinque minuti a 30 FPS. Se il video ha un FPS più alto, la durata video massima supportata diminuisce. Ad esempio, Adobe AI e il ritaglio avanzato supportano un video a 60 FPS solo se dura almeno due minuti e mezzo.
 
 ![Ritaglio avanzato per video](assets/smart-crop-video.png)
 
@@ -287,13 +287,13 @@ Puoi modificare un profilo di codifica video esistente per accedere a parametri 
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito. Tuttavia, il valore consigliato è fino a due volte il bitrate di codifica.</p> </td>
   </tr>
