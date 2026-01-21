@@ -1,5 +1,5 @@
 ---
-title: Pianificazione dell'aggiornamento
+title: Pianificazione dell’aggiornamento
 description: Questo articolo consente di stabilire obiettivi, fasi e risultati finali chiari durante la pianificazione dell’aggiornamento di AEM.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 3fe5421e-e97e-43c4-b34b-b84bf189a779
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 425b3fae2658d78b0885f5034ff4c61da625d9d4
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
 
 ---
 
-# Pianificazione dell&#39;aggiornamento {#planning-your-upgrade}
+# Pianificazione dell’aggiornamento {#planning-your-upgrade}
 
 ## Panoramica dell’aggiornamento ad AEM {#aem-upgrade-overview}
 
@@ -29,7 +29,7 @@ Il processo di aggiornamento di AEM richiede una gestione accurata delle fasi di
 
 >[!NOTE]
 >
->L&#39;aggiornamento a AEM 6.5 LTS è supportato dagli ultimi 6 Service Pack
+>L’aggiornamento ad AEM 6.5 LTS è disponibile per tutti i Service Pack 6.5 supportati.
 
 È importante assicurarsi di eseguire un sistema operativo supportato, Java™ Runtime, httpd e la versione Dispatcher. Per ulteriori informazioni, fare riferimento ai [requisiti tecnici per AEM 6.5 LTS](/help/sites-deploying/technical-requirements.md). L’aggiornamento di questi componenti deve essere considerato nel piano di aggiornamento e deve avvenire prima dell’aggiornamento di AEM.
 
@@ -144,7 +144,7 @@ Un piano di progetto completo dovrebbe includere:
 * Aggiornamento dell’ambiente di staging
 * Integrazione, prestazioni e test di carico
 * Certificazione dell’ambiente
-* Pubblicazione
+* Pubblica
 
 ### Esecuzione di attività di sviluppo e controllo qualità {#performing-development-and-qa}
 
