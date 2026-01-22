@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 4a2ada26-b859-4a32-9ab0-2d4c2b695245
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+source-git-commit: add91325feaa96338526edcdde977d1f619e09d4
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -42,14 +42,14 @@ Dopo aver acquisito familiarità con queste nozioni di base, puoi trovare inform
 
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
-* [Installazione autonoma personalizzata](/help/sites-deploying/custom-standalone-install.md)
+* [Installazione personalizzata indipendente](/help/sites-deploying/custom-standalone-install.md)
 * [Installazione server applicazioni](/help/sites-deploying/application-server-install.md)
-* [Avvio e arresto riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
+* [Avvio e arresto dalla riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configurazione](/help/sites-deploying/configuring.md)
 * [Aggiornamento a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
 * [Articoli pratici sulla configurazione](/help/sites-deploying/ht-deploy.md)
-* [Console Web](/help/sites-deploying/web-console.md)
-* [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
+* [Console web](/help/sites-deploying/web-console.md)
+* [Risoluzione dei problemi relativi alla replica](/help/sites-deploying/troubleshoot-rep.md)
 * [Best practice](/help/sites-deploying/best-practices.md)
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 
@@ -137,7 +137,7 @@ Nella sezione seguente viene descritta l&#39;**installazione autonoma**. Per inf
 
    Percorso di installazione UNIX®: **/opt/aem**
 
-   Percorso di installazione di Windows: **`C:\Program Files\aem`**
+   Percorso di installazione di Windows: **`C:\aem`**
 
    Allo stesso modo, è comune installare istanze di esempio in una cartella direttamente sul desktop. In ogni caso, Adobe si riferisce genericamente a questa posizione come:
 
@@ -173,7 +173,7 @@ Per accedere all’istanza, seleziona:
 
 **`https://localhost:4502`**
 
-Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **&#x200B;**&#x200B;in **`localhost:4503`**.
+Il risultato nell&#39;istanza di authoring verrà configurato automaticamente per la connessione a un&#39;istanza di pubblicazione **** in **`localhost:4503`**.
 
 ### Installazioni di authoring e pubblicazione {#author-and-publish-installs}
 
@@ -201,7 +201,7 @@ Ad esempio, installa queste due istanze in
 
 Per ulteriori informazioni sulla personalizzazione dell&#39;installazione, vedere:
 
-* [Installazione autonoma personalizzata](/help/sites-deploying/custom-standalone-install.md)
+* [Installazione personalizzata indipendente](/help/sites-deploying/custom-standalone-install.md)
 <!-- * [Run Modes](/help/sites-deploying/configure-runmodes.md) -->
 
 ### Directory di installazione decompressa {#unpacked-install-directory}
@@ -253,7 +253,7 @@ Questa cartella contiene i seguenti script di shell UNIX® bash:
 
 Esistono anche **`bat`** file equivalenti per Windows. Per informazioni più dettagliate, consulta:
 
-* [Avvio e arresto riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
+* [Avvio e arresto dalla riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
 
 AEM avvia e reindirizza automaticamente il browser web alla pagina appropriata, in genere la pagina di accesso; ad esempio:
 
@@ -275,14 +275,14 @@ La sezione precedente consente di comprendere le nozioni di base sull’installa
 
 * [Requisiti tecnici](/help/sites-deploying/technical-requirements.md)
 * [Distribuzioni consigliate](/help/sites-deploying/recommended-deploys.md)
-* [Installazione autonoma personalizzata](/help/sites-deploying/custom-standalone-install.md)
+* [Installazione personalizzata indipendente](/help/sites-deploying/custom-standalone-install.md)
 * [Installazione server applicazioni](/help/sites-deploying/application-server-install.md)
-* [Avvio e arresto riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
+* [Avvio e arresto dalla riga di comando](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configurazione](/help/sites-deploying/configuring.md)
 * [Aggiornamento a AEM 6.5 LTS](/help/sites-deploying/upgrade.md)
 * [Articoli pratici sulla configurazione](/help/sites-deploying/ht-deploy.md)
-* [Console Web](/help/sites-deploying/web-console.md)
-* [Risoluzione dei problemi di replica](/help/sites-deploying/troubleshoot-rep.md)
+* [Console web](/help/sites-deploying/web-console.md)
+* [Risoluzione dei problemi relativi alla replica](/help/sites-deploying/troubleshoot-rep.md)
 * [Best practice](/help/sites-deploying/best-practices.md)
 * [Introduzione alla piattaforma AEM](/help/sites-deploying/platform.md)
 
