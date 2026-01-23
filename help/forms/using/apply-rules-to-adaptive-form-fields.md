@@ -7,9 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md). Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione {#about-the-tutorial}
+## Informazioni sul tutorial {#about-the-tutorial}
 
 È possibile utilizzare le regole per aggiungere interattività, logica di business e convalide intelligenti a un modulo adattivo. I moduli adattivi hanno un editor di regole integrato. L’editor di regole fornisce una funzionalità di trascinamento della selezione, simile alle visite guidate. Il metodo di trascinamento della selezione è il metodo più rapido e semplice per creare regole. L’editor di regole fornisce anche una finestra di codice per gli utenti interessati a testare le loro abilità di codifica o a portare le regole a un livello successivo.
 

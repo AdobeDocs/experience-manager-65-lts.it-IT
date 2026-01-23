@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a9cbab12-62a6-4779-955f-2858166945e6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 1%
@@ -81,7 +81,7 @@ Sono inclusi anche i seguenti gruppi:
 1. **Collegamenti**: nella parte superiore del menu principale nel sito We.Gov.
 1. **Istruzioni utente**: un insieme di passaggi numerici da seguire per spostarsi all&#39;interno del brano dell&#39;utente.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;porta>/content/we-gov/formsportal.html*
-1. **Visualizzazione mobile**:l&#39;utente We.Gov deve replicare una visualizzazione mobile con un browser ridimensionato.
+1. **Visualizzazione mobile**:We.Gov per replicare una visualizzazione mobile con un browser ridimensionato.
 1. **Vista desktop**: We.gov utente per visualizzare una demo su un laptop o desktop.
 1. **Modulo pre-screening**: modulo nella home page del sito We.Gov.
 1. **Modulo adattivo**: modulo di richiesta di registrazione per la demo We.gov.
@@ -94,7 +94,7 @@ Sono inclusi anche i seguenti gruppi:
    *https://&lt;aemserver>:&lt;porta>/aem/start.html*
 
 1. **Client e-mail**: metodo preferito per visualizzare le e-mail (Gmail, Outlook)
-1. **CTA**: invito all&#39;azione
+1. **CTA**: Call to action
 1. **Naviga**: per individuare un punto di riferimento specifico nella pagina del browser.
 1. **AFC**: conversione moduli automatica
 
@@ -224,12 +224,12 @@ Aya deve rivedere alcuni documenti a casa prima di poter completare l&#39;applic
 1. Utilizza la **logica dinamica** seguente per dimostrare la funzionalità dinamica utilizzando il menu a discesa **Stato famiglia**:
 
    1. **Singolo**: mostra pannello superiore
-   1. **Sposato**: mostra pannello coniugale dipendente
+   1. **Sposato**: mostra pannello dipendente da matrimonio
    1. **Divorziato**: mostra pannello accanto
    1. **Vedovo**: mostra pannello vicino
-   1. **Hai figli?**: pulsante di opzione (Sì/No) per visualizzare il pannello dipendente figlio.
+   1. **Hai figli?**: pulsante di opzione (Sì/No) per visualizzare il pannello dipendente dall&#39;elemento secondario.
 
-      1. (Aggiungi/Rimuovi) per aggiungere/rimuovere più pannelli figlio dipendenti.
+      1. (Aggiungi/Rimuovi) per aggiungere/rimuovere più pannelli dipendenti.
 
 1. Fare clic sulla freccia destra nella barra dei menu grigia.
 1. Fai clic sul pulsante Salva in basso.

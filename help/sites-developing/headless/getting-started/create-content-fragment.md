@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
 exl-id: 7b26e5cb-3aab-4f69-a0f1-42268c39bba8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%
@@ -22,14 +22,14 @@ Scopri come utilizzare i Frammenti di contenuto AEM per progettare, creare, cura
 
 I frammenti di contenuto ti consentono di progettare, creare, curare e pubblicare contenuti indipendenti dalle pagine. Consentono di preparare contenuti pronti per l&#39;uso in più posizioni e su più canali.
 
-I Frammenti di contenuto contengono contenuto strutturato e possono essere consegnati in formato JSON.
+I Frammenti di contenuto contengono contenuti strutturati e possono essere consegnati in formato JSON.
 
 ## Come creare un Frammento di contenuto {#how-to-create-a-content-fragment}
 
 Gli autori dei contenuti creano un certo numero di Frammenti di contenuto per rappresentare il contenuto creato. Questa sarà l’attività principale dei Frammenti di contenuto in AEM. Ai fini di questa guida introduttiva, ne creeremo uno.
 
 1. Accedi ad AEM e dal menu principale seleziona **Navigazione > Assets**.
-1. Passa alla cartella [&#x200B; creata in precedenza.](create-assets-folder.md)
+1. Passa alla cartella [ creata in precedenza.](create-assets-folder.md)
 1. Fare clic su **Crea > Frammento di contenuto**.
 1. La creazione di un Frammento di contenuto viene presentata come una procedura guidata in due passaggi. Seleziona innanzitutto il modello da utilizzare per creare il frammento di contenuto e fai clic su **Avanti**.
    * I modelli disponibili dipendono dalla [**configurazione cloud** definita per la cartella risorse](create-assets-folder.md) in cui stai creando il frammento di contenuto.

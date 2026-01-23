@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4829'
+ht-degree: 1%
 
 ---
 
@@ -691,7 +691,7 @@ Monitora i servizi per ogni agente di replica. Quando crei un agente di replica,
 * **Dominio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nome:** nessun valore
-* **Proprietà:** {id=&quot;*Nome*&quot;}, dove *Nome* è il valore della proprietà Nome agente.
+* **Proprietà:** {id="*Name*"}, dove *Nome* è il valore della proprietà Nome agente.
 
 ### Attributi {#attributes-3}
 

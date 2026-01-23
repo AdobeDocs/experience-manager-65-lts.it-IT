@@ -1,5 +1,5 @@
 ---
-title: API per richiamare il servizio modello dati modulo da moduli adattivi
+title: API per richiamare il servizio Modello dati modulo (FDM) nei moduli adattivi
 description: Spiega l’API invokeWebServices che è possibile utilizzare per richiamare i servizi web scritti in WSDL dall’interno di un campo modulo adattivo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -8,14 +8,14 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: e36be2da-af72-485f-87a6-cef6172037c6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# API per richiamare il servizio modello dati modulo da moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API per richiamare il servizio Modello dati modulo (FDM) nei moduli adattivi {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -126,7 +126,7 @@ La funzione di richiamata può avere `success` e `failure` funzioni di richiamat
 
 Lo script di esempio seguente utilizza l&#39;API `guidelib.dataIntegrationUtils.executeOperation` per richiamare l&#39;operazione del servizio `GETOrder` configurata nel modello dati del modulo `employeeOrder`.
 
-L&#39;operazione `GETOrder` accetta il valore nel campo modulo `Order ID` come input per l&#39;argomento `orderId` e restituisce il valore della quantità dell&#39;ordine nella funzione di callback `success`.  Se la funzione di callback `success` non restituisce la quantità dell&#39;ordine, la funzione di callback `failure` visualizza il messaggio `Error occured`.
+L&#39;operazione `GETOrder` accetta il valore nel campo modulo `Order ID` come input per l&#39;argomento `orderId` e restituisce il valore della quantità dell&#39;ordine nella funzione di callback `success`.  Se la funzione di callback `success` non restituisce la quantità dell&#39;ordine, la funzione di callback `failure` visualizza il messaggio `Error occurred`.
 
 >[!NOTE]
 >

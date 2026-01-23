@@ -1,5 +1,5 @@
 ---
-title: Aggiungi azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza
+title: Aggiungere un’azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza
 description: Scopri come aggiungere un’azione/pulsante personalizzato nell’interfaccia utente per la creazione di corrispondenza
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1853'
 ht-degree: 1%
 
 ---
@@ -264,7 +264,7 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
           };
           /**
            * Should the action be enabled in toolbar
-           * @param extraParams additional arguements that may be passed to handler (For future use)
+           * @param extraParams additional arguments that may be passed to handler (For future use)
            * @return flag indicating whether the action should be enabled
            */
          CCRCustomActionHandler.prototype.actionEnabled = function(extraParams){
