@@ -10,7 +10,7 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Selezionare [Stazione spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Vide
 
 È possibile utilizzare Adobe Premier Pro per visualizzare e modificare il metraggio 360/VR. Ad esempio, potete inserire correttamente loghi e testo in una scena e applicare effetti e transizioni progettati appositamente per gli elementi multimediali equirettangolari.
 
-Vedi [Modifica video 360/VR](https://helpx.adobe.com/it/premiere-pro/how-to/edit-360-vr-video.html).
+Vedi [Modifica video 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Carica le risorse da utilizzare con il visualizzatore video 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -51,7 +51,7 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/it/premiere-pro/how-to/edit
 
 **Carica le risorse da utilizzare con il visualizzatore di video 360:**
 
-1. È stata creata una cartella dedicata alla risorsa video 360.
+1. Crea una cartella dedicata alla risorsa video 360.
 1. [Applica un profilo video adattivo alla cartella](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Il rendering di contenuti video a 360° richiede requisiti più elevati per la risoluzione del video sorgente e delle rappresentazioni codificate rispetto ai contenuti video standard non a 360°.
@@ -121,7 +121,7 @@ Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynam
    * Trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione della scena statica.
    * Per iniziare la riproduzione, seleziona il pulsante **[!UICONTROL Riproduci]** del video. Durante la riproduzione del video, trascinare il puntatore del mouse sul video per modificare l&#39;angolo di visualizzazione.
 
-   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo &#x200B;](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
+   ![Schermata della stazione spaziale internazionale che galleggia nello spazio con la terra e il sole sullo sfondo ](assets/6_5_360video-preview-video360-social.png)*Schermata di un video a 360°.*
 
    * Dall&#39;elenco Visualizzatori, selezionare **[!UICONTROL Video360VR]**.
 

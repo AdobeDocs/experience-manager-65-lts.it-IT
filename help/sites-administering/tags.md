@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6659ca39-f297-40b9-88e2-d942aa653e9b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1744'
-ht-degree: 4%
+source-wordcount: '1745'
+ht-degree: 5%
 
 ---
 
@@ -44,8 +44,8 @@ Alcune delle funzioni dei tag in AEM includono:
    * Un tag che non è un tag contenitore viene definito tag foglia
    * Uno spazio dei nomi dei tag è un tag foglia o un tag contenitore
 
-* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/it/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
-* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/it/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
+* I tag vengono utilizzati dal [componente Ricerca](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) per facilitare la ricerca del contenuto.
+* I tag sono utilizzati dal [componente Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), che monitora il cloud di tag di un utente per fornire contenuti mirati.
 * Se l’assegnazione tag è un aspetto importante del contenuto
 
    * assicurati di creare un pacchetto di tag con le pagine che li utilizzano
@@ -55,7 +55,7 @@ Alcune delle funzioni dei tag in AEM includono:
 
 La console Assegnazione tag consente di creare e gestire i tag e le relative tassonomie. Un obiettivo è quello di evitare di avere molti tag simili relativi essenzialmente alla stessa cosa : per esempio, pagina e pagine o calzature e scarpe.
 
-I tag vengono gestiti raggruppandoli in spazi dei nomi, esaminando l’utilizzo dei tag esistenti prima di crearne di nuovi e riorganizzandoli senza disconnettere il tag dal contenuto a cui si fa attualmente riferimento.
+I tag vengono gestiti raggruppandoli in spazi dei nomi, esaminando l’utilizzo dei tag esistenti prima di crearne di nuovi e riorganizzandoli senza disconnettere il tag dal contenuto a cui si fa riferimento al momento.
 
 Per accedere alla console Assegnazione tag:
 
@@ -102,7 +102,7 @@ La selezione di uno spazio dei nomi o di un altro tag rende disponibili le segue
 * [Unisci](#merging-tags)
 * [Pubblicazione](#publishing-tags)
 * [Annulla pubblicazione](#unpublishing-tags)
-* [Elimina](#deleting-tags)
+* [Eliminare](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -249,10 +249,10 @@ Le autorizzazioni per i tag sono [&#39;sicure (per impostazione predefinita)&#39
    * accedi con privilegi amministrativi
    * accedere a [Console sicurezza](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * ad esempio, passa a http://localhost:4502/useradmin
+      * ad esempio, passare a http://localhost:4502/useradmin
 
    * nel riquadro di sinistra, selezionare il gruppo (o l&#39;utente) per il quale deve essere concessa l&#39;[autorizzazione di lettura](/help/sites-administering/security.md#permissions)
-   * nel riquadro di destra, individua il **Percorso &#x200B;** dello spazio dei nomi dei tag
+   * nel riquadro di destra, individua il **Percorso **dello spazio dei nomi dei tag
 
       * ad esempio, `/content/cq:tags/mycommunity`
 
@@ -299,10 +299,10 @@ Per aggiungere una nuova lingua alla finestra di dialogo, vedere [Aggiunta di un
 >
 >Il tag cloud e le parole chiave meta nel componente pagina standard utilizzano il tag localizzato `titles` in base alla lingua della pagina, se disponibile.
 
-## Riferimenti {#resources}
+## Risorse {#resources}
 
 * [Assegnazione di tag per sviluppatori](/help/sites-developing/tags.md)
 
   Informazioni sul framework dei tag ed estensione e inclusione dei tag nelle applicazioni personalizzate.
 
-* [Console classica per l’assegnazione di tag dell’interfaccia utente](/help/sites-administering/classic-console.md)
+* [Console per l’assegnazione di tag dell’interfaccia classica](/help/sites-administering/classic-console.md)

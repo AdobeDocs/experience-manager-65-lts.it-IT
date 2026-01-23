@@ -10,16 +10,16 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 0%
+source-wordcount: '1450'
+ht-degree: 1%
 
 ---
 
 # Mappatura dei dati dei componenti con le proprietà di Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Aggiungi componenti al framework che raccolgono i dati da inviare ad Adobe Analytics. I componenti progettati per raccogliere i dati di Analytics memorizzano i dati nella variabile **CQ** appropriata. Quando si aggiunge un componente di questo tipo a un framework, il framework visualizza l&#39;elenco delle variabili CQ in modo che possiate aggiungerle alla **variabile Analytics** appropriata.
+Aggiungi componenti al framework che raccolgono i dati da inviare ad Adobe Analytics. I componenti progettati per raccogliere i dati di Analytics memorizzano i dati nella variabile **CQ** appropriata. Quando si aggiunge un componente di questo tipo a un framework, il framework visualizza l&#39;elenco delle variabili CQ in modo da poterle mappare alla **variabile Analytics** appropriata.
 
 ![aa-11](assets/aa-11.png)
 

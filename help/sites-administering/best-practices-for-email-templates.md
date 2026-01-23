@@ -11,10 +11,10 @@ feature: Integration
 role: Admin
 exl-id: 34678cae-3c7f-4c9f-b7b6-c1dd4e0758ad
 index: false
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1072'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >Questo articolo si applica ai componenti e-mail AEM basati su Componenti Foundation obsoleti.
 >
->Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=it)
+>Gli utenti sono invitati a utilizzare i [Componenti core e-mail moderni.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Questo documento descrive alcune delle best practice relative alla progettazione delle e-mail, che si traducono in un modello di campagna e-mail ben sviluppato.
 

@@ -5,9 +5,9 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: b749ec33-9a78-41d5-889f-73dbdb33ceed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ La scheda &quot;Assets&quot; nel pannello laterale dell’editor consente di acc
 
 ![Pannello lato dati prodotto](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
-Analogamente alle risorse, i prodotti possono essere aggiunti a una pagina (creando un componente Product Teaser per impostazione predefinita) o a componenti (attualmente supportati sono Product Teaser e Product Carousel).
+Analogamente alle risorse, i prodotti possono essere trascinati e rilasciati su una pagina (che crea un componente Product Teaser per impostazione predefinita) o su componenti (attualmente supportati sono Product Teaser e Product Carousel).
 
 ### Aggiunta di collegamenti nei campi di testo mediante l’editor Rich Text {#rte}
 
@@ -80,7 +80,7 @@ Questo crea un collegamento segnaposto che viene sostituito da un collegamento r
 
 ### Accesso al contenuto prodotto associato {#associated-content}
 
-Se Universal Editor riconosce i prodotti 1:n in una pagina, il pannello laterale mostra automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente al contenuto AEM con tag del prodotto. Per ulteriori informazioni, vedere [arricchire i dati del prodotto con il contenuto AEM associato](./enrich-product-associated-content.md). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Assets&quot;.
+Se Universal Editor riconosce 1:n prodotti in una pagina, nel pannello laterale viene visualizzata automaticamente la scheda &quot;Contenuto Commerce associato&quot;. Questa scheda consente agli autori di accedere rapidamente al contenuto AEM con tag del prodotto. Per ulteriori informazioni, vedere [arricchire i dati del prodotto con il contenuto AEM associato](./enrich-product-associated-content.md). Questa scheda offre elenchi a discesa per filtrare in base al tipo di contenuto e a prodotti specifici se nella pagina sono presenti più prodotti. L’utilizzo del contenuto funziona esattamente come l’utilizzo del contenuto della scheda &quot;Assets&quot;.
 
 ![Pannello lato dati prodotto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

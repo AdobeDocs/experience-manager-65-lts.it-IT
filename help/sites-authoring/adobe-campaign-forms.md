@@ -9,14 +9,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
 exl-id: 6a72ba56-8222-4853-adc6-ee8f3d395d9d
-source-git-commit: 2edf37c2d6bb04b418618f2780f773ab37559114
+source-git-commit: 3bc6f5aab61b6ea0ae1d6d909bf2d36fd7e4dbe4
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-# Creazione di Adobe Campaign Forms in AEM {#creating-adobe-campaign-forms-in-aem}
+# Creazione di moduli di Adobe Campaign in AEM {#creating-adobe-campaign-forms-in-aem}
 
 AEM consente di creare e utilizzare moduli che interagiscono con Adobe Campaign sul sito web. Campi specifici possono essere inseriti nei moduli e mappati al database di Adobe Campaign.
 
@@ -96,7 +96,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
    * **Adobe Campaign: Abbonati ai servizi**: consente di gestire gli abbonamenti di un destinatario in Adobe Campaign.
    * **Adobe Campaign: annulla abbonamento a servizi**: consente di annullare gli abbonamenti di un destinatario in Adobe Campaign.
 
-1. È necessario disporre di un componente **Chiave primaria crittografata** in ogni modulo. Questo componente definisce quale parametro URL viene utilizzato per accettare la chiave primaria crittografata di un profilo Adobe Campaign. In Componenti, seleziona Adobe Campaign in modo che siano visibili solo i componenti.
+1. È necessario disporre di un componente **Chiave primaria crittografata** in ogni modulo. Questo componente definisce quale parametro URL viene utilizzato per accettare la chiave primaria crittografata di un profilo Adobe Campaign. In Componenti, seleziona Adobe Campaign in modo che solo tali componenti siano visibili.
 1. Trascina il componente **Chiave primaria crittografata** nel modulo (ovunque) e fai clic sull&#39;icona **Configurazione**. Nella scheda **Adobe Campaign**, specifica un nome qualsiasi per il parametro URL. Fai clic sul segno di spunta per salvare le modifiche.
 
    I collegamenti generati a questo modulo devono utilizzare questo parametro URL e assegnargli la chiave primaria crittografata di un profilo Adobe Campaign. La chiave primaria crittografata deve essere correttamente codificata nell&#39;URL (percentuale).
@@ -118,7 +118,7 @@ Questa sezione descrive solo collegamenti specifici ad Adobe Campaign. Per ulter
 
    >[!CAUTION]
    >
-   >È necessario fornire autorizzazioni di lettura all’utente anonimo sul servizio cloud per utilizzare i moduli al momento della pubblicazione. Tuttavia, stai attento ai potenziali problemi di sicurezza legati alla fornitura di autorizzazioni di lettura all’utente anonimo e assicurati di attenuarli, ad esempio, configurando il dispatcher.
+   >Per utilizzare i moduli in fase di pubblicazione, devi fornire le autorizzazioni di lettura all’utente anonimo nel servizio cloud. Tuttavia, stai attento ai potenziali problemi di sicurezza legati alla fornitura di autorizzazioni di lettura all’utente anonimo e assicurati di attenuarli, ad esempio, configurando il dispatcher.
 
 ## Verifica di un modulo {#testing-a-form}
 
@@ -126,7 +126,7 @@ Dopo aver creato un modulo e averne modificato il contenuto, può essere opportu
 
 >[!NOTE]
 >
->È necessario disporre di un componente **Chiave primaria crittografata** in ogni modulo. In Componenti, seleziona Adobe Campaign in modo che siano visibili solo i componenti.
+>È necessario disporre di un componente **Chiave primaria crittografata** in ogni modulo. In Componenti, seleziona Adobe Campaign in modo che solo tali componenti siano visibili.
 >
 >Anche se in questa procedura si immette il numero epk manualmente, in pratica, gli utenti riceveranno un collegamento a questa pagina (se annullare l’abbonamento, abbonarsi o aggiornare il profilo) all’interno di una newsletter. In base all’utente, il pk si aggiorna automaticamente.
 >
@@ -134,7 +134,7 @@ Dopo aver creato un modulo e averne modificato il contenuto, può essere opportu
 
 A questo scopo, devi ottenere manualmente l’EPK di un profilo Adobe Campaign e quindi aggiungerlo all’URL:
 
-1. Per ottenere la chiave principale crittografata (EPK) di un profilo Adobe Campaign:
+1. Per ottenere la chiave primaria crittografata (EPK) di un profilo Adobe Campaign:
 
    * In Adobe Campaign Standard - Passa a **Profili e tipi di pubblico** > **Profili**, in cui sono elencati i profili esistenti. Accertati che nella tabella sia visualizzato il campo **Identificatore risorsa principale** in una colonna (per configurarlo, tocca o fai clic su **Configura elenco**). Copia l’identificatore della risorsa principale del profilo desiderato.
    * In Adobe Campaign Classic, vai a **Profili e destinazioni** > **Destinatari**, in cui sono elencati i profili esistenti. Assicurarsi che nella tabella sia visualizzato il campo **Identificatore crittografato** in una colonna (per configurare questo campo, fare clic con il pulsante destro del mouse su una voce e selezionare **Configura elenco...**). Copia l’identificatore crittografato del profilo desiderato.

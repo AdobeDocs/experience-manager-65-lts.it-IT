@@ -1,18 +1,18 @@
 ---
-title: Verifica collegamenti
+title: La verifica collegamenti
 description: Verifica collegamenti consente di convalidare sia i collegamenti interni che quelli esterni e di riscriverli.
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 3fafb5e6-f5ac-4c11-809f-6cb2c5269377
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '969'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Verifica collegamenti {#the-link-checker}
+# La verifica collegamenti {#the-link-checker}
 
 Gli autori dei contenuti non devono preoccuparsi di convalidare ogni collegamento incluso nelle pagine dei contenuti.
 
@@ -22,7 +22,7 @@ Il Link Checker viene eseguito automaticamente per aiutare gli autori di contenu
 * Visualizzazione di un elenco di tutti i collegamenti esterni nel contenuto
 * Esecuzione delle trasformazioni dei collegamenti
 
-Il Link Checker dispone di diverse [opzioni di configurazione](#configuring), ad esempio la definizione della convalida interna, che consente di omettere alcuni collegamenti o percorsi di collegamento dalla convalida e la riscrittura delle regole di riscrittura dei collegamenti.
+Il Link Checker dispone di diverse [opzioni di configurazione](#configuring), ad esempio la definizione della convalida interna, che consente di omettere alcuni collegamenti o pattern di collegamento dalla convalida e la riscrittura delle regole di riscrittura dei collegamenti.
 
 Verifica collegamenti convalida [collegamenti interni](#internal) e [collegamenti esterni.](#external)
 
@@ -79,7 +79,7 @@ Vengono visualizzate le seguenti informazioni:
 * **Destinatario che inoltra**: la pagina di contenuto che contiene il collegamento esterno
    * Viene popolato solo [se configurato.](#configuring)
 * **Ultimo controllo** - L&#39;ultima volta che Verifica collegamenti ha convalidato il collegamento esterno
-   * La frequenza con cui vengono controllati i collegamenti [&#x200B; è configurabile.](#configuring)
+   * La frequenza con cui vengono controllati i collegamenti [ è configurabile.](#configuring)
 * **Ultimo stato** - L&#39;ultimo codice di stato di HTML restituito quando il collegamento selezionato ha controllato l&#39;ultimo collegamento esterno
 * **Ultima disponibilità** - Ora dall&#39;ultima disponibilità del collegamento per Verifica collegamenti
 * **Ultimo accesso** - ora dall&#39;ultimo accesso alla pagina con il collegamento esterno nell&#39;interfaccia di creazione

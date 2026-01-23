@@ -9,10 +9,10 @@ thumbnail: 39476.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
-source-git-commit: 4c3402aa813c115625d624f3b33ca73d31bed850
+source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 25%
+source-wordcount: '770'
+ht-degree: 26%
 
 ---
 
@@ -22,8 +22,8 @@ Lo sviluppo di progetti AEM Commerce basati su Commerce integration framework (C
 
 - [Guida utente allo sviluppo in AEM](/help/sites-developing/getting-started.md)
 - [Concetti di base di AEM](/help/sites-developing/the-basics.md)
-- [Sviluppo AEM: linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
-- [Come creare progetti AEM utilizzando Apache Maven](/help/sites-developing/ht-projects-maven.md)
+- [Sviluppo AEM - Linee guida e best practice](/help/sites-developing/dev-guidelines-bestpractices.md)
+- [Creare progetti AEM con Apache Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Sviluppo locale per AEM Commerce {#local}
 
@@ -41,7 +41,7 @@ Il componente aggiuntivo AEM Commerce per AEM, noto come componente aggiuntivo C
 
 - AEM 6.5 LTS locale
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
+- [Apache Maven](https://maven.apache.org/) (3.3.9 o versione successiva)
 - [Nodo LTS](https://nodejs.org/it/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)

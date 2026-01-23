@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 45d49917-d20f-470c-bf95-6e701de67a11
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '855'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -157,7 +157,7 @@ curl -u <user>:<password> http://localhost:4502/etc/packages/my_packages/test.zi
 curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip?cmd=replicate
 ```
 
-### User Management {#user-management}
+### Gestione utenti {#user-management}
 
 #### Crea un nuovo utente {#create-a-new-user}
 
@@ -284,13 +284,13 @@ curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:450
 curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
-### Sicurezza {#security}
+### Protezione {#security}
 
 #### Abilitazione e disabilitazione di CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
 Per ulteriori informazioni, vedere [Abilitazione di CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
-### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+### Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Per ulteriori dettagli, vedi [Raccolta oggetti inattivi archivio dati](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection).
 

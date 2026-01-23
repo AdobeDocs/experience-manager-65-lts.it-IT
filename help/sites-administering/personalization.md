@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: 558cf29b-34f4-4ead-b8d6-67ef8aaa5dc5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 2%
@@ -61,7 +61,7 @@ Personalization può essere utilizzato in molti casi, ad esempio:
 
 ### Pagine Intranet {#intranet-pages}
 
-* Il contenuto può essere fornito in base alla posizione, al reparto e/o al ruolo di un utente, già definito all’interno di una rete interna.
+* I contenuti possono essere offerti in base alla posizione, al reparto e/o al ruolo di un utente, già definito all’interno di una rete interna.
 * A seconda della scelta disponibile, l’utente può effettuare ulteriori selezioni.
 
 ### Gruppi di utenti specifici, limitati e di destinazione - Extranet {#extranets}
@@ -143,7 +143,7 @@ AEM fornisce diversi componenti per la personalizzazione. Alcuni consentono agli
 | Iscrizione all&#39;accesso combinato | Consente all&#39;utente di accedere a un account esistente o a un nuovo account. |
 | Campo indirizzo Forms | Campo complesso che consente di inserire un indirizzo internazionale. |
 | Inizio Forms | Avvia una definizione di modulo |
-| Forms Captcha | Campo costituito da una parola alfanumerica che viene aggiornata automaticamente. Il componente captcha protegge i siti web dai bot. |
+| Captcha Forms | Campo costituito da una parola alfanumerica che viene aggiornata automaticamente. Il componente captcha protegge i siti web dai bot. |
 | Gruppo di caselle di controllo Forms | Più elementi organizzati in un elenco e preceduti da caselle di controllo. Gli utenti possono selezionare più caselle di controllo. |
 | Elenco a discesa Forms | Più elementi organizzati in un elenco a discesa. Lo switch Multi Selectable specifica se è possibile selezionare più elementi dall&#39;elenco. |
 | Fine Forms | Termina la definizione del modulo. |
