@@ -11,10 +11,10 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 6b94caf1-97b7-4430-92f1-4f4d0415aef3
-source-git-commit: f983fc1edc613feaa070c4e82a92aabab9d50cbb
+source-git-commit: c1935b95d4e9e8e3773f2ff9825c759f97738304
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 0%
+source-wordcount: '1097'
+ht-degree: 1%
 
 ---
 
@@ -92,6 +92,7 @@ Per AEM 6.5 LTS, esistono ancora due tipi di file JAR Uber:
 
 * AEM 6.5 LTS non include la libreria guava di Google preconfigurata; è possibile installare la versione richiesta in base alle esigenze.
 * Il bundle Sling XSS ora utilizza la libreria Java HTML Sanitizer e l&#39;utilizzo del metodo `XSSAPI#filterHTML()` deve essere utilizzato per il rendering del contenuto HTML in modo sicuro e non per la trasmissione di dati ad altre API.
+* Aggiornamento alla configurazione del filtro SSL HTTP Apache Felix: in AEM 6.5 LTS, il bundle `org.apache.felix.http.sslfilter` è stato aggiornato dalla versione 1.2.6 alla versione 2.0.2. Durante questo aggiornamento, il PID di configurazione OSGi `org.apache.felix.http.sslfilter.SslFilter` è stato dichiarato obsoleto e sostituito con un nuovo PID: `org.apache.felix.http.sslfilter.Configuration`. Se nella distribuzione viene utilizzato il filtro SSL, le configurazioni esistenti devono essere migrate manualmente al nuovo PID utilizzando Gestione configurazione OSGi (`/system/console/configMgr`). La mancata migrazione della configurazione potrebbe impedire l’applicazione del filtro SSL prevista dopo l’aggiornamento.
 
 ## Procedura di prova {#testing-procedure}
 
