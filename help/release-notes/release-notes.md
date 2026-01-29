@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 8f5a06dc80943362acebfd7b19fed13c051417d1
+source-git-commit: 6a6a79663579e4d63e68ae6c9a4bec97f24032f9
 workflow-type: tm+mt
-source-wordcount: '7751'
+source-wordcount: '7745'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 93%
 
 ### Forms
 
-È ora disponibile AEM 6.5 Forms LTS su JEE. Per informazioni dettagliate sugli ambienti supportati, vedere il documento Combinazioni [Piattaforma supportata](/help/forms/using/aem-forms-jee-supported-platforms.md). I collegamenti del programma di installazione sono disponibili nella pagina [Versioni di AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+È ora disponibile AEM 6.5 Forms LTS su JEE. Per informazioni dettagliate sugli ambienti supportati, vedere il documento Combinazioni [Piattaforma supportata](/help/forms/using/aem-forms-jee-supported-platforms.md). I collegamenti del programma di installazione sono disponibili nella pagina [Versioni di AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
 
 #### Cosa è incluso in AEM Forms 6.5 LTS SP1
 
@@ -75,8 +75,6 @@ Per informazioni dettagliate sulla configurazione, consulta la guida all’insta
 
 Per ulteriori informazioni, consulta **Migrazione da javax a jakarta Namespace**.
 
-**Migrazione da javax a jakarta**
-
 #### Migrazione da `javax` a `jakarta` spazio dei nomi
 
 A partire da **AEM Forms 6.5 LTS SP1**, sono supportati solo i server applicazioni che implementano **Jakarta Servlet API 5/6**. Con **Jakarta EE 9 e versioni successive**, tutte le API sono passate dallo spazio dei nomi `javax.{}` a `jakarta.`.
@@ -110,9 +108,9 @@ Di conseguenza, **tutte le DSC personalizzate devono utilizzare lo spazio dei no
 
 Di seguito sono riportati alcuni esempi comuni di modifiche allo spazio dei nomi necessarie durante la migrazione:
 
-Prima (javax)    Dopo (jakarta)
-javax.servlet. **jakarta.servlet**
-javax.servlet.http. **jakarta.servlet.http.**
+* Prima (javax)    Dopo (jakarta)
+* javax.servlet. **jakarta.servlet**
+* javax.servlet.http. **jakarta.servlet.http.**
 
 **Mappature di importazione di esempio**
 
@@ -532,7 +530,7 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
