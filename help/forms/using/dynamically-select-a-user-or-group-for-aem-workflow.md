@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
 exl-id: b3b3567f-df0a-4a24-849c-dcc0b745de63
-source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
+source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 0%
+source-wordcount: '865'
+ht-degree: 3%
 
 ---
 
@@ -20,11 +20,11 @@ Scopri come selezionare un utente o un gruppo per un flusso di lavoro di AEM For
 
 Nelle organizzazioni di grandi dimensioni è necessario selezionare dinamicamente gli utenti per un processo. Ad esempio, selezionando un agente sul campo per servire un cliente in base alla vicinanza dell’agente al cliente. In questo caso, l’agente viene selezionato in modo dinamico.
 
-Assegna attività e i passaggi di Adobe Sign di [flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/aem-forms-workflow.md) forniscono opzioni per la selezione dinamica di un utente. Puoi utilizzare i bundle ECMAScript o OSGi per selezionare in modo dinamico un assegnatario per il passaggio Assegna attività o per selezionare i firmatari per il passaggio Firma documento.
+Assegna attività e i passaggi di Adobe Sign di [flussi di lavoro incentrati su Forms su OSGi](/help/forms/using/aem-forms-workflow.md) forniscono opzioni per selezionare un utente in modo dinamico. Puoi utilizzare i bundle ECMAScript o OSGi per selezionare dinamicamente un assegnatario per il passaggio Assegna attività o per selezionare i firmatari per il passaggio Firma documento.
 
-## Utilizzare ECMAScript per selezionare dinamicamente un utente o un gruppo {#use-ecmascript-to-dynamically-select-a-user-or-group}
+## Utilizzare ECMAScript per selezionare un utente o un gruppo in modo dinamico {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni server e scripting lato client. Per selezionare dinamicamente un utente o un gruppo utilizzando ECMAScript, effettuare le seguenti operazioni:
+ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni server e scripting lato client. Per selezionare un utente o un gruppo in modo dinamico utilizzando ECMAScript, effettuare le seguenti operazioni:
 
 1. Apri CRXDE Lite. URL: `https://'[server]:[port]'/crx/de/index.jsp`
 1. Creare un file con estensione .ecma nel percorso seguente. Se il percorso (struttura del nodo) non esiste, crealo:
@@ -32,25 +32,25 @@ ECMAScript è un linguaggio di script. Viene utilizzato per applicazioni server 
    * (Percorso per il passaggio Assegna attività) `/apps/fd/dashboard/scripts/participantChooser`
    * (Percorso per passaggio firma) `/apps/fd/workflow/scripts/adobesign`
 
-1. Aggiungere al file con estensione ecma un codice ECMAScript che abbia la logica per selezionare dinamicamente un utente. Fare clic su **[!UICONTROL Salva tutto]**.
+1. Aggiungere ECMAScript che dispone della logica per selezionare un utente in modo dinamico nel file `.ecma`. Fare clic su **[!UICONTROL Salva tutto]**.
 
    Per gli script di esempio, vedere [Esempi di ECMAScript per la selezione dinamica di un utente o di un gruppo](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
 1. Aggiungi il nome visualizzato dello script. Questo nome viene visualizzato nei passaggi del flusso di lavoro. Per specificare il nome:
 
-   1. Espandere il nodo di script, fare clic con il pulsante destro del mouse sul nodo **[!UICONTROL jcr:content]** e scegliere **[!UICONTROL Mixin]**.
+   1. Espandere il nodo di script, fare clic con il pulsante destro del mouse sul nodo **`jcr:content`** e scegliere **[!UICONTROL Mixin]**.
    1. Aggiungi la proprietà `mix:title` nella finestra di dialogo Modifica mixin e fai clic su **OK**.
-   1. Aggiungi la seguente proprietà al nodo jcr:content dello script:
+   1. Aggiungi la seguente proprietà al nodo `jcr:content` dello script:
 
       | Nome | Tipo | Valore |
       |--- |--- |--- |
-      | jcr:title | Stringa | Specifica il nome dello script. Ad esempio, scegli l’agente di campo più vicino. Questo nome viene visualizzato nei passaggi Assegna attività e Firma documento. |
+      | `jcr:title` | Stringa | Specifica il nome dello script. Ad esempio, scegli l’agente di campo più vicino. Questo nome viene visualizzato nei passaggi `Assign Task` e Firma documento. |
 
    1. Fare clic su **Salva tutto**. Lo script diventa disponibile per la selezione nei componenti di AEM Workflow.
 
       ![script](assets/script.png)
 
-### Esempi di ECMAScript per scegliere dinamicamente un utente o un gruppo {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
+### Esempi di ECMAScript per scegliere un utente o un gruppo in modo dinamico {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
 Nell&#39;esempio seguente ECMAScript viene selezionato in modo dinamico un assegnatario per il passaggio Assegna attività. In questo script, viene selezionato un utente in base al percorso del payload. Prima di utilizzare questo script, accertati che tutti gli utenti menzionati nello script siano presenti in AEM. Se gli utenti menzionati nello script non esistono in AEM, il processo correlato potrebbe non riuscire.
 
@@ -113,11 +113,11 @@ function getAdobeSignRecipients() {
 }
 ```
 
-## Utilizzare l’interfaccia Java per scegliere dinamicamente un utente o un gruppo {#use-java-interface-to-dynamically-choose-a-user-or-group}
+## Utilizzare l’interfaccia Java per scegliere un utente o un gruppo in modo dinamico {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per i passaggi di Adobe Sign e Assegna attività. È possibile creare un bundle OSGi che utilizzava l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirla al server AEM Forms. Questa opzione è disponibile per la selezione nei componenti Assegna attività e Adobe Sign di AEM Workflow.
+È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per i passaggi Adobe Sign e Assegna attività. Puoi creare un bundle OSGi che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo al server AEM Forms. Rende l&#39;opzione disponibile per la selezione nei componenti `Assign Task` e Adobe Sign di AEM Workflow.
 
-AEM Forms Sono necessari [file SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it) e [file JAR granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per compilare l&#39;esempio di codice elencato di seguito. Aggiungi questi file jar come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
+AEM Forms Sono necessari [file SDK](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) e [file JAR granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per compilare l&#39;esempio di codice elencato di seguito. Aggiungi questi file jar come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
 
 1. Aprire Eclipse IDE. Passa a **[!UICONTROL File]**> **[!UICONTROL Nuovo progetto]**.
 1. Nella schermata della procedura guidata, seleziona **[!UICONTROL Progetto Maven]** e fai clic su **[!UICONTROL Avanti]**.
@@ -224,16 +224,16 @@ AEM Forms Sono necessari [file SDK](https://experienceleague.adobe.com/docs/expe
    </project>
    ```
 
-1. Aggiungere il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere in modo dinamico un utente o un gruppo per il passaggio Assegna attività. Per il codice di esempio, vedere [Esempio per la scelta dinamica di un utente o di un gruppo tramite l&#39;interfaccia Java](#-sample-scripts-for).
+1. Aggiungere il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per il passaggio Assegna attività. Per il codice di esempio, vedere [Esempio per la scelta dinamica di un utente o di un gruppo tramite un&#39;interfaccia Java](#-sample-scripts-for).
 1. Apri un prompt dei comandi e passa alla directory contenente il progetto del bundle OSGi. Utilizza il seguente comando per creare il bundle OSGi:
 
    `mvn clean install`
 
-1. Carica il bundle su un server AEM Forms. Puoi utilizzare Gestione pacchetti di AEM per importare il bundle nel server AEM Forms.
+1. Carica il bundle su un server AEM Forms. Puoi utilizzare Gestione pacchetti di AEM per importare il bundle in AEM Forms Server.
 
 Una volta importato il bundle, l’opzione per scegliere l’interfaccia Java per selezionare dinamicamente un utente o un gruppo diventa disponibile in per i passaggi di Adobe Sign e Assegna attività.
 
-### Esempio di codice Java per scegliere dinamicamente un utente o un gruppo {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
+### Esempio di codice Java per scegliere un utente o un gruppo in modo dinamico {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
 Il codice di esempio seguente sceglie in modo dinamico un assegnatario per il passaggio Adobe Sign. Il codice viene utilizzato in un bundle OSGi. Prima di utilizzare il codice riportato di seguito, verifica che le informazioni utente (indirizzi e-mail e numeri di telefono) indicate nel codice siano corrette. Se le informazioni utente menzionate nel codice non sono corrette, il processo correlato potrebbe non riuscire.
 
