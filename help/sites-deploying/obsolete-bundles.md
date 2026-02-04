@@ -1,5 +1,5 @@
 ---
-title: Elenco dei bundle obsoleti disinstallati dopo l'aggiornamento
+title: Elenco dei bundle obsoleti disinstallati dopo l’aggiornamento
 description: Un elenco che descrive i bundle disinstallati automaticamente durante l’aggiornamento ad AEM 6.3.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 8%
 
 ---
 
-# Elenco dei bundle obsoleti disinstallati dopo l&#39;aggiornamento{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# Elenco dei bundle obsoleti disinstallati dopo l’aggiornamento{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 Quando si esegue l’aggiornamento a AEM 6.5 LTS, i seguenti bundle vengono disinstallati automaticamente, a seconda della versione del servicepack AEM 6.5 in cui è stato eseguito l’aggiornamento:
 
@@ -101,5 +101,5 @@ I seguenti bundle non sono inclusi in una nuova istanza AEM 6.5 LTS. Dopo l’ag
 * org.apache.sling.atom.taglib
 * com.github.jknack.handlebars
 * com.adobe.granite.osgi.wrapper.guava
-* com.adobe.cq.core.wcm.components.core (può essere sostituito con la versione compatibile con AEM 6.5 LTS)
+* com.adobe.cq.core.wcm.components.core (può essere sostituito con [versione compatibile con AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/versions))
 * com.adobe.cq.core.wcm.components.extension.contentfragment.bundle (può essere sostituito con la versione compatibile con AEM 6.5 LTS)
