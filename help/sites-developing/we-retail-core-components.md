@@ -1,6 +1,6 @@
 ---
-title: Prova dei componenti core in We.Retail
-description: Scopri come provare i componenti core in Adobe Experience Manager utilizzando We.Retail.
+title: Prova i Componenti core in We.Retail
+description: Scopri come utilizzare i componenti core in Adobe Experience Manager utilizzando We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,20 +9,20 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 62b6d299-f44e-4af3-b5e1-b0e92ca0598a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '560'
 ht-degree: 5%
 
 ---
 
-# Prova dei componenti core in We.Retail{#trying-out-core-components-in-we-retail}
+# Prova i componenti core in We.Retail{#trying-out-core-components-in-we-retail}
 
-I componenti core sono componenti moderni e flessibili, facilmente estensibili e semplici da integrare nei progetti. I componenti core sono stati progettati in base a diversi principi di progettazione principali, come HTL, facilità d’uso, configurabilità, controllo delle versioni ed estensibilità. We.Retail è stato creato su componenti core.
+I componenti core sono componenti moderni e flessibili, facilmente estensibili e semplici da integrare nei progetti. I componenti core sono stati progettati in base a diversi principi di progettazione principali, come HTL, facilità d’uso, configurabilità, controllo delle versioni ed estensibilità. Il sito `We.Retail` è basato sui componenti core.
 
-## Prova {#trying-it-out}
+## Provatelo {#trying-it-out}
 
-1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio We.Retail e apri la [console Componenti](/help/sites-authoring/default-components-console.md).
+1. Avvia Adobe Experience Manager (AEM) con il contenuto di esempio `We.Retail` e apri la [console Componenti](/help/sites-authoring/default-components-console.md).
 
    **Navigazione globale > Strumenti > Componenti**
 
@@ -35,7 +35,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Tutti i componenti core sono denominati **v1**, a indicare che si tratta della prima versione di questo componente core. Versioni regolari verranno rilasciate in futuro, che saranno compatibili con le versioni di AEM e consentiranno un facile aggiornamento, in modo da poter sfruttare le funzioni più recenti.
+1. Tutti i componenti core utilizzano il nome **v1** per indicare la prima versione di ciascun componente. Versioni regolari sono pianificate per il rilascio in futuro, che sono compatibili con le versioni di AEM e consentono un facile aggiornamento in modo da poter sfruttare le funzioni più recenti.
 1. Fare clic su **Testo (v1)**.
 
    Vedi che il **tipo di risorsa** del componente è `/apps/core/wcm/components/text/v1/text`. I componenti core si trovano in `/apps/core/wcm/components` e dispongono di versioni per componente.
@@ -46,7 +46,7 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Torna alla console Componenti. Filtra per il gruppo **We.Retail** e seleziona il componente **Text**.
+1. Torna alla console Componenti. Filtra per il gruppo **`We.Retail`** e seleziona il componente **Testo**.
 1. Verificare che il **Tipo risorsa** punti a un componente come previsto in `/apps/weretail`, ma il **Super Tipo risorsa** punti al componente di base `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
@@ -57,11 +57,11 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 1. Nella pagina di ringraziamento, seleziona il componente testo e fai clic sull’icona Annulla ereditarietà nel menu Modifica del componente.
 
-   [We.Retail ha una struttura globalizzata del sito](/help/sites-developing/we-retail-globalized-site-structure.md) in cui il contenuto viene inviato dalle rappresentazioni master del linguaggio a [Live Copy tramite un meccanismo denominato ereditarietà](/help/sites-administering/msm.md). Per questo motivo, è necessario annullare l’ereditarietà per consentire a un utente di modificare manualmente il testo.
+   [`We.Retail` ha una struttura del sito globalizzata](/help/sites-developing/we-retail-globalized-site-structure.md) in cui il contenuto viene inviato dal sito della lingua primaria alle [Live Copy tramite un meccanismo denominato ereditarietà](/help/sites-administering/msm.md). Per questo motivo, è necessario annullare l’ereditarietà per consentire a un utente di modificare manualmente il testo.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Confermare l&#39;annullamento facendo clic su **Sì**.
+1. Fai clic su **Sì** per confermare l&#39;annullamento.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -78,14 +78,18 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. I Componenti core consentono all’autore di un modello di configurare quali proprietà sono disponibili per gli autori di pagine. Queste includono funzioni quali le origini Incolla consentite, le opzioni di formattazione e gli stili di paragrafo disponibili.
+1. I Componenti core consentono all’autore di un modello di configurare quali proprietà sono disponibili per gli autori di pagine. Queste proprietà includono caratteristiche quali le origini Incolla consentite, le opzioni di formattazione e gli stili di paragrafo disponibili.
 
-   Tali finestre di dialogo di progettazione sono disponibili per molti componenti core e funzionano in parallelo con l’editor di modelli. Una volta abilitate, sono disponibili per l’autore tramite gli editor dei componenti.
+   Tali finestre di dialogo di progettazione sono disponibili per molti componenti core e funzionano in parallelo con l’Editor modelli. Una volta abilitate, sono disponibili per l’autore tramite gli editor dei componenti.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-## Ulteriori informazioni {#further-information}
+## Consulta anche {#further-information}
 
-Per ulteriori informazioni sui Componenti core, vedi il documento di authoring [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it) per una panoramica tecnica.
+Per informazioni dettagliate sui componenti core, consulta la guida all&#39;authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità. Per una panoramica tecnica, consulta la guida [Sviluppo di componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview).
 
-È inoltre possibile esaminare ulteriormente [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Per informazioni complete sui modelli modificabili, consultare il documento di creazione [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento per sviluppatori Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md).
+
+
+Per ulteriori informazioni sui Componenti core, vedere il documento di authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) per informazioni tecniche.
+
+È inoltre possibile esaminare [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Per informazioni dettagliate sui modelli modificabili, consulta il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento per sviluppatori Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md).

@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '300'
+ht-degree: 2%
 
 ---
 
-# Accesso alla raccolta di statistiche di utilizzo aggregate{#opting-into-aggregated-usage-statistics-collection}
+# Consenso alla raccolta di statistiche di utilizzo aggregate{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introduzione {#introduction}
 
@@ -33,9 +33,9 @@ Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’int
 
 >[!NOTE]
 >
->Puoi rinunciare in qualsiasi momento utilizzando la [console Web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) o non selezionando l&#39;opzione di consenso nella schermata di consenso di AEM.
+>Puoi rinunciare in qualsiasi momento utilizzando la [console Web]&#x200B;(/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console oppure non selezionando l&#39;opzione di consenso nella schermata di consenso di AEM.
 
-## Consenso tramite l’interfaccia utente touch {#opt-in-by-using-the-touch-ui}
+## Consenso tramite l’interfaccia touch {#opt-in-by-using-the-touch-ui}
 
 La prima volta che avvii AEM, puoi dare il consenso utilizzando l’interfaccia utente touch come segue:
 
@@ -43,19 +43,19 @@ La prima volta che avvii AEM, puoi dare il consenso utilizzando l’interfaccia 
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. Nell&#39;elenco a discesa fare clic su &quot;**Abilita raccolta statistiche di utilizzo aggregate**&quot;.
+1. Nell&#39;elenco a discesa fare clic su **Abilita raccolta statistiche di utilizzo aggregate**.
 
    ![sintassi_statisticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. Nella schermata di consenso, selezionare &quot;**Consenti raccolta di statistiche di utilizzo aggregate**&quot;.
+1. Nella schermata di consenso, fare clic sull&#39;opzione **[!UICONTROL Consenti raccolta di statistiche di utilizzo aggregate]**.
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. Fai clic su &quot;**Fine**&quot;.
+1. Fai clic su **Fine**.
 
 ## Consenso tramite la console web {#opt-in-by-using-the-web-console}
 
-Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
+Puoi dare il consenso (o la rinuncia) utilizzando la console web come segue:
 
 1. Nella schermata di navigazione di AEM, fai clic su **Strumenti** e quindi su **Operazioni**.
 
@@ -65,7 +65,7 @@ Puoi acconsentire (o rinunciare) utilizzando la console web come segue:
 
    ![usage_statisticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. Cerca &quot;**Raccolta di statistiche di utilizzo aggregate**&quot;.
+1. Cerca **Raccolta di statistiche di utilizzo aggregate**.
 1. Fai clic sull&#39;icona **Modifica**.
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
