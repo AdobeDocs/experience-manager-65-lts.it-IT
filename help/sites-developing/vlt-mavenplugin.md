@@ -22,7 +22,7 @@ Il plug-in Maven di Adobe Content Package distribuisce i pacchetti costruiti in 
 >
 >Vedi anche quanto segue:
 >
->* L&#39;articolo [Plug-in Maven per pacchetto di contenuti Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools) nella documentazione di AEM as a Cloud Service per informazioni su come distribuire le applicazioni AEM.
+>* L&#39;articolo [Plug-in Maven per pacchetto di contenuti Adobe](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin#developer-tools) nella documentazione di AEM as a Cloud Service per informazioni su come distribuire le applicazioni AEM.
 >* L&#39;articolo [Struttura del progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) nella documentazione di AEM as a Cloud Service per la struttura dei progetti AEM moderni.
 >* Documentazione di [Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) su come avviare un nuovo progetto AEM utilizzando l&#39;archetipo.
 >

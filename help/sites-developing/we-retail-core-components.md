@@ -86,10 +86,10 @@ I componenti core sono componenti moderni e flessibili, facilmente estensibili e
 
 ## Consulta anche {#further-information}
 
-Per informazioni dettagliate sui componenti core, consulta la guida all&#39;authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità. Per una panoramica tecnica, consulta la guida [Sviluppo di componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview).
+Per informazioni dettagliate sui componenti core, consulta la guida all&#39;authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità. Per una panoramica tecnica, consulta la guida [Sviluppo di componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/overview).
 
 
 
-Per ulteriori informazioni sui Componenti core, vedere il documento di authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/overview) per informazioni tecniche.
+Per ulteriori informazioni sui Componenti core, vedere il documento di authoring [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction) per una panoramica delle funzionalità dei Componenti core e il documento per sviluppatori [Sviluppo di Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/overview) per informazioni tecniche.
 
 È inoltre possibile esaminare [modelli modificabili](/help/sites-developing/we-retail-editable-templates.md). Per informazioni dettagliate sui modelli modificabili, consulta il documento di authoring [Creazione di modelli di pagina](/help/sites-authoring/templates.md) o il documento per sviluppatori Pagina [Modelli - Modificabili](/help/sites-developing/page-templates-editable.md).
