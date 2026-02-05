@@ -4,7 +4,7 @@ description: Trova la configurazione dell’archivio credenziali del database pe
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 0%
@@ -17,6 +17,7 @@ ht-degree: 0%
 ## Panoramica
 
 Questa guida descrive la **configurazione dell&#39;archivio credenziali del database** per AEM Forms JEE su JBoss/Red Hat EAP in **modalità autonoma**. Questa opzione è necessaria quando si esegue l&#39;installazione manuale.
+
 
 **Questa guida tratta:**
 

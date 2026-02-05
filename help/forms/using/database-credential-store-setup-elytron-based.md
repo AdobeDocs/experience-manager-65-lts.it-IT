@@ -4,7 +4,7 @@ description: JBoss EAP 8 supporta gli archivi di credenziali Elytron per la gest
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: 259cb81eb9652405dc7270535cbf9deb996ad2ac
+source-git-commit: f093f39fb535209297940cff13a99c7631812152
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 2%
@@ -17,6 +17,7 @@ ht-degree: 2%
 ## Configurare l’archivio delle credenziali del database utilizzando Elytron
 
 JBoss EAP 8 utilizza **archivi di credenziali Elytron** per gestire in modo sicuro le password del database per le distribuzioni AEM Forms. Adobe fornisce **script automatizzati** per semplificare la creazione e la configurazione dell&#39;archivio credenziali basato su Elytron in modalità dominio.
+
 
 È necessario completare l&#39;installazione **prima di avviare il controller di dominio JBoss**.
 
