@@ -5,24 +5,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 38%
+source-wordcount: '376'
+ht-degree: 21%
 
 ---
 
 # Componenti{#components}
 
-Adobe Experience Manager (AEM) è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. I componenti sono disponibili quando si [modifica una pagina](/help/sites-authoring/editing-content.md) e, per facilitare l’applicazione di filtri, sono raggruppati per area funzionale principale, ovvero per gruppi di componenti.
+Adobe Experience Manager (AEM) è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [si modifica una pagina](/help/sites-authoring/editing-content.md). Le raggruppa per un’area funzionale principale denominata gruppo di componenti per facilitare il filtraggio.
 
-I componenti sono disponibili quando [si modifica una pagina](/help/sites-authoring/editing-content.md). Per facilitare il filtraggio, i componenti sono raggruppati per area funzionale principale (ovvero per gruppi di componenti).
+I componenti sono disponibili quando [si modifica una pagina](/help/sites-authoring/editing-content.md). Raggruppa i componenti in base alla loro area funzionale principale (il gruppo di componenti) per facilitare il filtraggio.
 
 >[!NOTE]
 >
 >In questa sezione vengono descritti solo i componenti disponibili forniti in un’installazione standard di AEM.
 >
->A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Questi potrebbero anche avere lo stesso nome di alcuni dei componenti descritti qui.
+>A seconda dell’istanza, è possibile che siano stati sviluppati in modo esplicito componenti personalizzati in base alle proprie esigenze. Possono anche avere lo stesso nome di alcuni dei componenti discussi qui.
 
 ## Utilizzo generale {#general-usage}
 
@@ -38,9 +38,9 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 Per ulteriori informazioni sull&#39;aggiunta di componenti a una pagina, vedere [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
 I componenti sono ordinati in base a varie categorie, denominate gruppi di componenti. Esempi di tali gruppi di componenti includono:
 
-* **We.Retail**: include i componenti core abilitati per l&#39;utilizzo con l&#39;[implementazione di riferimento We.Retail](/help/sites-developing/we-retail.md).
+* **WeRetail**: include i componenti core abilitati per l&#39;utilizzo con l&#39;[implementazione di riferimento WeRetail](/help/sites-developing/we-retail.md).
 
-* **We.Retail Commerce**: include componenti commerce come carrelli e griglie di prodotti
+* **WeRetail Commerce**: include componenti commerce come carrelli e griglie di prodotti
 
 * **Generale**: include il contenitore di layout e il frammento di esperienza
 
@@ -48,15 +48,15 @@ I componenti sono ordinati in base a varie categorie, denominate gruppi di compo
 
 La [console Componenti](/help/sites-authoring/default-components-console.md) fornisce una panoramica dei gruppi di componenti e dei componenti forniti dall&#39;installazione di AEM. Puoi visualizzare le informazioni principali sui singoli componenti e sul relativo utilizzo.
 
-## Componenti - Aree principali {#components-major-areas}
+## Componenti: aree principali {#components-major-areas}
 
 Nelle pagine seguenti sono disponibili collegamenti ad alcune importanti informazioni aggiuntive sui componenti:
 
-* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it): i Componenti core offrono funzionalità flessibili e avanzate per l&#39;authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
+* [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/introduction): i componenti core offrono funzionalità flessibili e avanzate per l&#39;authoring, che forniscono tipi di contenuto essenziali per la creazione di pagine.
 
-### Configurazione dei componenti {#configuring-components}
+### Configurare i componenti {#configuring-components}
 
 Oltre ai componenti a cui gli autori possono accedere in un’installazione standard, sono disponibili vari altri componenti.
 
-* Se la pagina è basata sul modello moderno consigliato e modificabile, puoi [modificare il modello](/help/sites-authoring/templates.md) per attivarlo o disattivarlo, nonché modificare i parametri di componenti specifici.
-* Se la pagina è basata su un modello statico, è possibile utilizzare la [modalità progettazione](/help/sites-authoring/default-components-designmode.md#enable-disable-components) per abilitare/disabilitare questi e modificare i parametri per componenti specifici.
+* Se la pagina è basata sul modello moderno consigliato e modificabile, è possibile [modificare il modello](/help/sites-authoring/templates.md), attivarlo o disattivarlo e modificare i parametri di componenti specifici.
+* Se la pagina è basata su un modello statico, è possibile utilizzare la [modalità progettazione](/help/sites-authoring/default-components-designmode.md#enable-disable-components) per attivarla o disattivarla e modificare i parametri per componenti specifici.

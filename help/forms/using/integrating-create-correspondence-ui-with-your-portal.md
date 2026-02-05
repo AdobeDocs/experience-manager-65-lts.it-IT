@@ -1,5 +1,5 @@
 ---
-title: Integrazione dell’interfaccia utente per la creazione di corrispondenza con il portale personalizzato
+title: Integrazione della soluzione Create Correspondence con il tuo portale personalizzato
 description: Scopri come integrare l’interfaccia utente per la creazione di corrispondenza con il portale personalizzato
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,22 +9,22 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 496b125b-b091-4843-ba9f-2479dbeba07b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
 
-# Integrazione dell’interfaccia utente per la creazione di corrispondenza con il portale personalizzato{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integrazione della soluzione `Create Correspondence` con il portale personalizzato{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Panoramica {#overview}
 
-Questo articolo illustra come integrare la soluzione Create Correspondence con il tuo ambiente.
+In questo articolo viene descritto come integrare la soluzione `Create Correspondence` con l&#39;ambiente.
 
 ## Chiamata basata su URL {#url-based-invocation}
 
-Un modo per chiamare l’applicazione Create Correspondence da un portale personalizzato consiste nel preparare l’URL con i seguenti parametri di richiesta:
+Un modo per chiamare l&#39;applicazione `Create Correspondence` da un portale personalizzato consiste nel preparare l&#39;URL con i seguenti parametri di richiesta:
 
 * l’identificatore per il modello di lettera (utilizzando il parametro cmLetterId).
 
@@ -39,16 +39,16 @@ Ad esempio, il portale personalizzato prepara l’URL come\
 
 >[!NOTE]
 >
->Prima di richiamare l’applicazione Create Correspondence, salva e carica i dati per richiamare l’interfaccia utente Create Correspondence in corrispondenza dell’URL dati specificato. Questa operazione può essere eseguita dal portale personalizzato stesso o attraverso un altro processo back-end.
+>Prima di chiamare l&#39;applicazione `Create Correspondence`, salvare e caricare i dati per chiamare l&#39;interfaccia utente `Create Correspondence` in corrispondenza dell&#39;URL dati specificato. Questo processo può essere eseguito direttamente dal portale personalizzato o tramite un altro processo back-end.
 
 ## Chiamata basata su dati in linea {#inline-data-based-invocation}
 
-Un altro modo (e più sicuro) per chiamare l&#39;applicazione Create Correspondence potrebbe essere quello di premere semplicemente l&#39;URL su https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, mentre si inviano parametri e dati per chiamare l&#39;applicazione Create Correspondence come richiesta POST (nascondendoli all&#39;utente finale). Ciò significa anche che ora puoi trasmettere in linea i dati XML per l’applicazione Create Correspondence (come parte della stessa richiesta, utilizzando il parametro cmData), che non era possibile/ideale nell’approccio precedente.
+Un altro modo più sicuro per chiamare l&#39;applicazione `Create Correspondence` consiste nell&#39;accedere all&#39;URL all&#39;indirizzo https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html. Eseguire questo URL durante l&#39;invio di parametri e dati per chiamare l&#39;applicazione `Create Correspondence` come richiesta POST, nascondendoli all&#39;utente finale. Questo flusso di lavoro consente inoltre di passare i dati XML per l&#39;applicazione `Create Correspondence` in linea (come parte della stessa richiesta, utilizzando il parametro `cmData`). Questo flusso di lavoro non era possibile o ideale nell’approccio precedente.
 
 ### Parametri per specificare la lettera {#parameters-for-specifying-letter}
 
 | **Nome** | **Tipo** | **Descrizione** |
-|---|---|---|
+| --- | --- | --- |
 | cmLetterInstanceId | Stringa | Identificatore per l’istanza della lettera. |
 | cmLetterId | Stringa | Nome del modello Lettera. |
 
@@ -71,12 +71,12 @@ L&#39;ordine dei parametri nella tabella specifica la preferenza dei parametri u
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Stringa</td> 
-   <td>Utilizzo dei dati xml disponibili nell’istanza della lettera.</td> 
+   <td>Utilizzo dei dati XML disponibili nell'istanza della lettera.</td> 
   </tr>
   <tr>
    <td>cmUseTestData</td> 
    <td>Booleano</td> 
-   <td>Per riutilizzare i dati di test allegati al dizionario dati.</td> 
+   <td>Per riutilizzare i dati di test allegati in un dizionario dati.</td> 
   </tr>
  </tbody>
 </table>
@@ -105,4 +105,4 @@ L&#39;ordine dei parametri nella tabella specifica la preferenza dei parametri u
  </tbody>
 </table>
 
-Se utilizzi il protocollo http o cq per cmDataURL, l’URL di http/cq deve essere accessibile in modo anonimo.
+Se si utilizza il protocollo http o cq per `cmDataURL`, l&#39;URL di `http/cq` deve essere accessibile in modo anonimo.

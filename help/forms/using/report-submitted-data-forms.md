@@ -1,6 +1,6 @@
 ---
-title: API per lavorare con i moduli inviati sul portale dei moduli
-description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale dei moduli.
+title: API per lavorare con i moduli inviati sul portale Forms
+description: AEM Forms fornisce API che è possibile utilizzare per eseguire query e azioni sui dati dei moduli inviati nel portale Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
@@ -8,22 +8,22 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: a24d0218-d534-49c9-81c1-12b38d794caa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 16f57ae1663f035d1dc39005d37426c7a0d8dc16
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 6%
 
 ---
 
-# API per lavorare con i moduli inviati sul portale dei moduli {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API per lavorare con i moduli inviati su Forms Portal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms fornisce API che è possibile utilizzare per eseguire query sui dati dei moduli inviati tramite il portale Forms. Inoltre, puoi pubblicare commenti o aggiornare le proprietà dei moduli inviati utilizzando le API illustrate in questo documento.
 
 >[!NOTE]
 >
->Gli utenti che richiameranno le API devono essere aggiunti al gruppo dei revisori come descritto in [Associazione dei revisori di invio a un modulo](/help/forms/using/adding-reviewers-form.md).
+>Gli utenti che richiamano le API devono essere aggiunti al gruppo dei revisori. Vedere [Associazione dei revisori di invio a un modulo](/help/forms/using/adding-reviewers-form.md).
 
-## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
+## GET `/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview` {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
 Restituisce un elenco di tutti i moduli idonei.
 
@@ -57,7 +57,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET `/content/forms/portal/submission.review.json?func=getAllSubmissions` {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Restituisce i dettagli di tutti i moduli inviati. Tuttavia, puoi utilizzare i parametri URL per limitare i risultati.
 
@@ -85,11 +85,11 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>orderby</code> <br /> (facoltativo)</td>
-   <td>Specifica la proprietà per ordinare i risultati. Il valore predefinito è <strong>jcr:lastModified</strong>, che ordina i risultati in base all'ora dell'ultima modifica.</td>
+   <td>Specifica la proprietà per ordinare i risultati. Il valore predefinito è <code>jcr:lastModified</code>, che ordina i risultati in base all'ora dell'ultima modifica.</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> (facoltativo)</td>
-   <td>Specifica l'ordine di ordinamento dei risultati. Il valore predefinito è <strong>desc</strong>, che ordina i risultati in ordine decrescente. È possibile specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
+   <td>Specifica l'ordine di ordinamento dei risultati. Il valore predefinito è <code>desc</code>, che ordina i risultati in ordine decrescente. È possibile specificare <code>asc</code> per ordinare i risultati in ordine crescente.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (facoltativo)</td>
@@ -97,7 +97,7 @@ Specifica i seguenti parametri nell’URL della richiesta:
   </tr>
   <tr>
    <td><code>search</code> <br /> (facoltativo)</td>
-   <td>Cerca il valore specificato nelle proprietà del modulo e restituisce i moduli con valori corrispondenti. Il valore predefinito è <strong>""</strong>.</td>
+   <td>Cerca il valore specificato nelle proprietà del modulo e restituisce i moduli con valori corrispondenti. Il valore predefinito è <code>""</code>.</td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
-## POST /content/forms/portal/submission.review.json?func=addComment {#post-content-forms-portal-submission-review-json-func-addcomment-br}
+## PUBBLICA `/content/forms/portal/submission.review.json?func=addComment` {#post-content-forms-portal-submission-review-json-func-addcomment-br}
 
 Aggiunge un commento all&#39;istanza di invio specificata.
 
@@ -158,7 +158,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET `/content/forms/portal/submission.review.json?func=getComments`   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Restituisce tutti i commenti pubblicati sull&#39;istanza di invio specificata.
 
@@ -196,7 +196,7 @@ https://[host]:'port'/content/forms/portal/submission.review.json?func=getCommen
 [{"owner":"fr1","comment":"API test comment","time":1446726988250}]
 ```
 
-## POST /content/forms/portal/submission.review.json?func=updateSubmission {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
+## PUBBLICA `/content/forms/portal/submission.review.json?func=updateSubmission` {#post-content-forms-portal-submission-review-json-func-updatesubmission-br}
 
 Aggiorna il valore della proprietà specificata dell&#39;istanza di modulo inviata specificata.
 
@@ -212,7 +212,7 @@ Specifica i seguenti parametri nell’URL della richiesta:
 
 ### Risposta {#response-4}
 
-Restituisce un oggetto JSON con informazioni sull’aggiornamento inviato.
+Restituisce un oggetto JSON con informazioni sull’aggiornamento pubblicato.
 
 ### Esempio {#example-4}
 
