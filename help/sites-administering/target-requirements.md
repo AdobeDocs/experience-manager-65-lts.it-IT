@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 7%
+source-wordcount: '511'
+ht-degree: 5%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Come parte dell&#39;integrazione [di AEM e Adobe Target](/help/sites-administering/target.md), è necessario registrarsi ad Adobe Target, configurare l&#39;agente di replica e proteggere le impostazioni delle attività sul nodo di pubblicazione.
 
-## Registrazione ad Adobe Target {#registering-with-adobe-target}
+## Registrati ad Adobe Target {#registering-with-adobe-target}
 
 Per integrare AEM con Adobe Target, devi disporre di un account Adobe Target valido. Questo account deve disporre almeno delle autorizzazioni di **livello approvatore**. Quando ti registri a Adobe Target, ricevi un codice cliente. Per collegare AEM ad Adobe Target sono necessari il codice cliente e il nome di accesso e la password di Adobe Target.
 
@@ -29,11 +29,11 @@ Il codice client identifica l’account cliente Adobe Target quando si chiama il
 
 >[!NOTE]
 >
->Per utilizzare l’integrazione, il team di Target deve anche abilitare il tuo account.
+>Il team di Target deve abilitare il tuo account all’utilizzo dell’integrazione.
 >
->In caso contrario, contatta l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=it).
+>In caso contrario, contatta l&#39;[Assistenza clienti Adobe](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information).
 
-## Abilitazione dell’agente di replica di Target {#enabling-the-target-replication-agent}
+## Abilitare l’agente di replica di Target {#enabling-the-target-replication-agent}
 
 L&#39;agente di replica [di test e destinazione](/help/sites-deploying/replication.md) deve essere abilitato nell&#39;istanza di authoring. Questo agente di replica non è abilitato per impostazione predefinita se è stata utilizzata la modalità di esecuzione [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) per l&#39;installazione di AEM. Per ulteriori informazioni sulla protezione dell&#39;ambiente di produzione, vedere [Elenco di controllo protezione](/help/sites-administering/security-checklist.md).
 
@@ -44,25 +44,25 @@ L&#39;agente di replica [di test e destinazione](/help/sites-deploying/replicati
 
    >[!NOTE]
    >
-   >Quando si configura l&#39;agente di replica di Test and Target, nella scheda **Trasporto**, l&#39;URI è impostato per impostazione predefinita su **tnt:///**. Non sostituire questo URI con **https://admin.testandtarget.omniture.com**.
+   >Quando si configura l&#39;agente di replica di Test and Target, nella scheda **Trasporto**, l&#39;URI è impostato per impostazione predefinita su `tnt:///`. Non sostituire questo URI con `https://admin.testandtarget.omniture.com`.
    >
-   >Se si tenta di verificare la connessione con **tnt:///**, verrà generato un errore. Si tratta di un comportamento previsto poiché questo URI è solo per uso interno; non utilizzare con **Verifica connessione**.
+   >Se si tenta di verificare la connessione con `tnt:///`, verrà visualizzato un errore corrispondente al comportamento previsto. Il motivo è che l’URI è solo per uso interno. Non utilizzare con **Verifica connessione**.
 
-## Protezione del nodo Impostazioni attività {#securing-the-activity-settings-node}
+## Proteggere il nodo delle impostazioni delle attività {#securing-the-activity-settings-node}
 
-Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+Proteggere il nodo delle impostazioni attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 
-Il nodo **cq:ActivitySettings** è disponibile in CRXDE lite in `/content/campaigns/*nameofbrand*`* *nel nodo attività jcr:content;* *ad esempio, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
+Il nodo **cq:ActivitySettings** è disponibile in CRXDE Lite in `/content/campaigns/*nameofbrand*`* *sotto il nodo `jcr:content` delle attività. Ad esempio, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Questo nodo viene creato solo dopo aver eseguito il targeting di un componente.
 
-Il nodo **cq:ActivitySettings** sotto jcr:content dell&#39;attività è protetto dai seguenti ACL:
+Il nodo **cq:ActivitySettings** sotto il `jcr:content` dell&#39;attività è protetto dai seguenti ACL:
 
-* Nega tutto per tutti
-* Consenti jcr:read,rep:write per &quot;target-activity-authors&quot; (l&#39;autore è un membro di questo gruppo preconfigurato)
-* Consenti jcr:read,rep:write per &quot;targetservice&quot;
+* Nega tutto per tutti.
+* Consenti `jcr:read,rep:write` per `target-activity-authors` (l&#39;autore è un membro di questo gruppo preconfigurato).
+* Consenti `jcr:read,rep:write` per `targetservice`.
 
 Queste impostazioni garantiscono che gli utenti normali non abbiano accesso alle proprietà del nodo. Utilizza gli stessi ACL per l’authoring e per la pubblicazione. Per ulteriori informazioni, vedere [Amministrazione utenti e sicurezza](/help/sites-administering/security.md).
 
-## Configurazione di AEM Link Externalizer {#configuring-the-aem-link-externalizer}
+## Configurare AEM Link Externalizer {#configuring-the-aem-link-externalizer}
 
 Quando modifichi un&#39;attività in Adobe Target, l&#39;URL punta a **localhost** a meno che non modifichi l&#39;URL nel nodo di authoring di AEM. Puoi configurare AEM Link Externalizer se desideri che il contenuto esportato punti a uno specifico dominio *publish*.
 
