@@ -212,7 +212,7 @@ Con la funzionalità standard, questi casi d’uso ti consentono di effettuare l
       * tipo: `String[]`
       * valore: elenco dei nodi figlio (come definiti in `/libs`) da nascondere/ignorare
 
-      Il carattere jolly &amp;ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
+      Il carattere jolly &ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
 
 * **Riordina nodi**
 
