@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 09d54b52-485a-453c-a2d0-535adead9e6c
-source-git-commit: b9b5492b1bf5f717dec6a48ffbe808bf75cbce6a
+source-git-commit: 2a33cb4b8aa1dcfd989cf61465492d563f9cd99a
 workflow-type: tm+mt
 source-wordcount: '843'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Se implementato, si verifica quanto segue per impostazione predefinita:
 * La modalità di esecuzione è `author`
 * L&#39;istanza (archivio, ambiente Felix OSGI, bundle e così via) è installata in è `${user.dir}/crx-quickstart`, dove `${user.dir}` è la directory di lavoro corrente. Il percorso di crx-quickstart è denominato `sling.home`
 
-* La radice del contesto è il nome del file .war. Esempio: `aem-65-lts`.
+* La radice del contesto è il nome del file .war. Ad esempio, `aem-65-lts`.
 
 #### Configurazione {#configuration}
 
@@ -143,15 +143,15 @@ Prima di una distribuzione, leggere la [Descrizione generale](#general-descripti
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
         <tomcat-users>
-        role rolename="manager"/>
-        role rolename="tomcat"/>
-        <role rolename="admin"/>
-        <role rolename="role1"/>
-        <role rolename="manager-gui"/>
-        <user username="both" password="tomcat" roles="tomcat,role1"/>
-        <user username="tomcat" password="tomcat" roles="tomcat"/>
-        <user username="admin" password="admin" roles="admin,manager-gui"/>
-        <user username="role1" password="tomcat" roles="role1"/>
+          <role rolename="manager"/>
+          <role rolename="tomcat"/>
+          <role rolename="admin"/>
+          <role rolename="role1"/>
+          <role rolename="manager-gui"/>
+          <user username="both" password="tomcat" roles="tomcat,role1"/>
+          <user username="tomcat" password="tomcat" roles="tomcat"/>
+          <user username="admin" password="admin" roles="admin,manager-gui"/>
+          <user username="role1" password="tomcat" roles="role1"/>
         </tomcat-users>
         ```
 
