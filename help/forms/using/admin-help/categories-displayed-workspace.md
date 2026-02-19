@@ -43,7 +43,7 @@ Se utilizzi MySQL come database di AEM Forms, la console di amministrazione non 
 1. Nella casella Nome digita un nome per la categoria e nella casella Descrizione digita una descrizione della categoria.
 1. Fai clic su Aggiungi. La categoria viene visualizzata nella pagina Gestione categorie.
 
-   ***Nota **: puoi aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
+   ***Nota &#x200B;**: puoi aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
 
 ## Modificare una categoria {#edit-a-category}
 
