@@ -6,9 +6,9 @@ mini-toc-levels: 4
 feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 98bd0c24-6c5e-4b96-a3aa-a3e4ef802baf
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6494'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ In modalità Dynamic Media - Scene7, la dimensione predefinita del file caricato
 
 ## Abilitare Dynamic Media in modalità Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) è disabilitato per impostazione predefinita. Per sfruttare le funzioni di Dynamic Media, devi abilitarle.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) è disabilitato per impostazione predefinita. Per sfruttare le funzioni di Dynamic Media, devi abilitarle.
 
 >[!WARNING]
 >
@@ -75,13 +75,13 @@ Per migrare i predefiniti e le configurazioni del visualizzatore personalizzato 
 
 L&#39;installazione del 18912 del feature pack è *facoltativa*.
 
-Il Feature Pack 18912 consente di acquisire in blocco le risorse tramite FTP o di migrare le risorse dalla modalità Dynamic Media - Hybrid o Dynamic Media Classic alla modalità Dynamic Media - Scene7 su Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/it/customers/consulting-services/main.html).
+Il Feature Pack 18912 consente di acquisire in blocco le risorse tramite FTP o di migrare le risorse dalla modalità Dynamic Media - Hybrid o Dynamic Media Classic alla modalità Dynamic Media - Scene7 su Experience Manager. È disponibile da [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 Per ulteriori informazioni, consulta [Installare 18912 feature pack per la migrazione in blocco delle risorse](/help/assets/bulk-ingest-migrate.md).
 
 ## Creare una configurazione Dynamic Media in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -115,7 +115,6 @@ Per ulteriori informazioni, consulta [Installare 18912 feature pack per la migra
 1. Quando la connessione ha esito positivo, impostare quanto segue. Le intestazioni con un asterisco (*) sono obbligatorie:
 
    * **[!UICONTROL Società]**: il nome dell&#39;account Dynamic Media.
-
      >[!IMPORTANT]
      >
      >In un’istanza di Experience Manager è supportata una sola configurazione Dynamic Media in Cloud Services; non aggiungere più di una configurazione. Più configurazioni Dynamic Media in un&#39;istanza Experience Manager sono _non_ supportate o consigliate da Adobe.
@@ -142,7 +141,7 @@ A meno che non disponiate di una disposizione speciale per utilizzare il server 
    * **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**
       * **[!UICONTROL Attivata per impostazione predefinita]** - La configurazione viene applicata a tutte le cartelle per impostazione predefinita, a meno che non si contrassegni una cartella specificamente per l&#39;esclusione. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabilitata per impostazione predefinita]** - La configurazione non viene applicata ad alcuna cartella fino a quando non contrassegni esplicitamente una cartella selezionata per la sincronizzazione con Dynamic Media.
-Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**&#x200B;in precedenza.* Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
+Per contrassegnare una cartella selezionata per la sincronizzazione con Dynamic Media, seleziona una cartella di risorse, quindi nella barra degli strumenti seleziona **[!UICONTROL Proprietà]**. Nella scheda **[!UICONTROL Dettagli]**, nell&#39;elenco a discesa **[!UICONTROL Modalità di sincronizzazione Dynamic Media]**, scegliere una delle tre opzioni seguenti. Al termine, seleziona **[!UICONTROL Salva]**. *Ricorda: queste tre opzioni non sono disponibili se hai selezionato **[!UICONTROL Sincronizza tutto il contenuto]**in precedenza.* Vedi anche [Utilizzare la pubblicazione selettiva a livello di cartella in Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Ereditato]** - Nessun valore di sincronizzazione esplicito nella cartella. La cartella eredita invece il valore di sincronizzazione da una delle cartelle precedenti o dalla modalità predefinita nella configurazione cloud. Lo stato dettagliato per ereditato viene visualizzato tramite una descrizione comando.
          * **[!UICONTROL Abilita per le sottocartelle]** - Includi tutto in questa sottostruttura per la sincronizzazione con Dynamic Media. Le impostazioni specifiche della cartella sovrascrivono la modalità predefinita nella configurazione cloud.
          * **[!UICONTROL Disattivato per le sottocartelle]** - Escludi tutto ciò che si trova in questa struttura secondaria dalla sincronizzazione in Dynamic Media.
@@ -247,8 +246,8 @@ In modalità Dynamic Media - Scene7, la dimensione predefinita del file di caric
 Se intendi utilizzare questa funzione, tieni presenti i seguenti prerequisiti e punti:
 
 * È necessario eseguire Experience Manager 6.5 LTS in modalità Dynamic Media - Scene7.
-* Questa funzionalità di caricamento di grandi dimensioni è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/it/products/experience-manager/managed-services.html).
-* Verifica che l’istanza di Experience Manager sia configurata con l’archiviazione BLOB di Amazon S3 o Microsoft® Azure.
+* Questa funzionalità di caricamento di grandi dimensioni è supportata solo per i clienti [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Assicurati che la tua istanza di Experience Manager sia configurata con l’archiviazione BLOB Amazon S3 o Microsoft® Azure.
 
   >[!NOTE]
   >
@@ -383,7 +382,7 @@ Vedi [Caricamento di Assets](/help/assets/manage-assets.md#uploading-assets).
 1. Nella cartella mimeTypes, seleziona un tipo mime.
 1. Nella parte inferiore, sul lato destro della pagina CRXDE Lite:
 
-   * Fare doppio clic sul campo **[!UICONTROL enabled]**. Per impostazione predefinita, tutti i tipi MIME di risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Media per l&#39;elaborazione. Se desideri escludere questo tipo di risorsa mime dall&#39;elaborazione, modifica questa impostazione in **[!UICONTROL false]**.
+   * Fare doppio clic sul campo **[!UICONTROL enabled]**. Per impostazione predefinita, tutti i tipi MIME di risorse sono abilitati (impostati su **[!UICONTROL true]**), il che significa che le risorse vengono sincronizzate in Dynamic Media per l&#39;elaborazione. Se vuoi escludere questo tipo di risorsa mime dall&#39;elaborazione, modifica questa impostazione in **[!UICONTROL false]**.
 
    * Selezionare **[!UICONTROL jobParam]** per aprire il relativo campo di testo associato. Per un elenco dei valori dei parametri di elaborazione consentiti che è possibile utilizzare per un determinato tipo MIME, vedere [Tipi MIME supportati](/help/assets/assets-formats.md#supported-mime-types).
 
@@ -466,7 +465,7 @@ Sono disponibili due elementi per la definizione, Corrispondenza (Match) e Nome 
 
 **Per configurare la denominazione predefinita:**
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti Adobe.
 
@@ -500,7 +499,7 @@ Puoi creare, modificare e gestire i predefiniti per set di batch. Esistono due f
 
 **Per creare un predefinito per set di batch:**
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti Adobe.
 
@@ -556,7 +555,7 @@ Quando il set 360 gradi viene caricato e pubblicato, puoi attivare il nome della
 
 **Per creare un predefinito per set di batch per la generazione automatica di un set 360 gradi 2D:**
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=it#getting-started), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), quindi accedi al tuo account.
 
    Le credenziali e i dettagli di accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti Adobe.
 
@@ -651,7 +650,7 @@ La coda del flusso di lavoro di transito Granite è utilizzata per il flusso di 
 
 **Per aggiornare la coda del flusso di lavoro transitorio Granite:**
 
-1. Passa a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca **Coda: coda flussi di lavoro transitori Granite**.
+1. Passa a [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) e cerca **Queue: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >
@@ -720,7 +719,7 @@ I filtri consentono di *escludere* risorse dalla replica nel nodo di pubblicazio
 
 Se utilizzi Dynamic Media per l’imaging, o i video, o entrambi, puoi utilizzare i filtri predefiniti forniti da Adobe così come sono. I seguenti filtri sono attivi per impostazione predefinita:
 
-|   | Filtro | Tipo MIME | Rappresentazioni |
+|   | Filtro | Tipo mime | Rappresentazioni |
 | --- | --- | --- | --- |
 | Consegna immagini Dynamic Media | filter-image<br>filter-sets | Inizia con **image/**<br> Contiene **applications/** e termina con **set**. | Le impostazioni predefinite &quot;filter-images&quot; (valide per le singole immagini, incluse le immagini interattive) e &quot;filter-sets&quot; (valide per i set 360 gradi, i set di immagini, i set di file multimediali diversi e i set carosello):<br>· Escludono dalla replica le rappresentazioni dell&#39;immagine originale e dell&#39;immagine statica. |
 | Consegna video Dynamic Media | filter-video | Inizia con **video/** | Il &quot;video filtro&quot; predefinito:<br>· Esclude dalla replica il video originale e le rappresentazioni di miniature statiche. |

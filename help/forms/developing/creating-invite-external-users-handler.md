@@ -1,5 +1,5 @@
 ---
-title: Creazione di un handler per l’invito di utenti esterni
+title: Creazione di un gestore per l’invito di utenti esterni
 description: Scopri come creare un handler per l’invito di utenti esterni. Consente al servizio Rights Management di invitare utenti esterni a diventare utenti Rights Management.
 role: Developer
 solution: Experience Manager, Experience Manager Forms
@@ -7,14 +7,14 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Creazione di un handler per l’invito di utenti esterni {#create-invite-external-users-handler}
+# Creazione di un gestore per l’invito di utenti esterni {#create-invite-external-users-handler}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -52,7 +52,7 @@ Il metodo `invitedUser` accetta un&#39;istanza `java.util.List` che contiene ind
 >
 >Oltre a dimostrare come creare un gestore di inviti di utenti esterni, questa sezione utilizza anche l’API AEM Forms.
 
-L&#39;implementazione del gestore di inviti di utenti esterni contiene un metodo definito dall&#39;utente denominato `createLocalPrincipalAccount`. Questo metodo accetta un valore stringa che specifica un indirizzo e-mail come valore di parametro. Il metodo `createLocalPrincipalAccount` presuppone la preesistenza di un dominio locale denominato `EDC_EXTERNAL_REGISTERED`. Puoi configurare questo nome di dominio come qualsiasi altro nome desiderato; tuttavia, per un’applicazione di produzione, potrebbe essere utile eseguire l’integrazione con un dominio aziendale.
+L&#39;implementazione del gestore di inviti di utenti esterni contiene un metodo definito dall&#39;utente denominato `createLocalPrincipalAccount`. Questo metodo accetta un valore stringa che specifica un indirizzo e-mail come valore di parametro. Il metodo `createLocalPrincipalAccount` presuppone la preesistenza di un dominio locale denominato `EDC_EXTERNAL_REGISTERED`. È possibile configurare questo nome di dominio come qualsiasi altro nome desiderato; tuttavia, per un&#39;applicazione di produzione, è possibile eseguire l&#39;integrazione con un dominio enterprise.
 
 Il metodo `createUsers` scorre ogni indirizzo e-mail e crea un oggetto User corrispondente (un utente locale nel dominio `EDC_EXTERNAL_REGISTERED`). Infine, viene chiamato il metodo `doEmails`. Questo metodo viene lasciato intenzionalmente come stub nel campione. In un’implementazione di produzione, conterrebbe la logica dell’applicazione per inviare messaggi e-mail di invito agli utenti appena creati. Viene lasciato nell’esempio per dimostrare il flusso logico dell’applicazione di un’applicazione reale.
 
@@ -93,7 +93,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
     local_user.setEmail( email_address ); 
     local_user.setEmailAliases( aliases ); 
          
-    //  You may wish to disable the local user until, for example, his registration is processed by a confirmation link 
+    //  You may want to disable the local user until, for example, his registration is processed by a confirmation link 
     //local_user.setDisabled( true ); 
  
     DirectoryManager directory_manager = new DirectoryManagerServiceClient( _factory ); 
@@ -236,13 +236,13 @@ Per testare il gestore di inviti di utenti esterni, puoi aggiungere utenti ester
 Per aggiungere utenti esterni da invitare tramite la console di amministrazione:
 
 1. Distribuisci il file JAR del gestore inviti utenti esterni tramite Workbench.
-1. Riavviare il server applicazioni.
+1. Riavvia il server applicazioni.
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
-1. Accedere alla console di amministrazione.
+1. Accedi alla console di amministrazione.
 1. Fai clic su **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configurazione]** > **[!UICONTROL Registrazione utente]** invitata.
 1. Abilitare la registrazione degli utenti invitati selezionando la casella **[!UICONTROL Abilita registrazione utenti invitati]**. In **[!UICONTROL Usa sistema di registrazione predefinito]**, fare clic su **[!UICONTROL No]**. Salva le impostazioni.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Gestione dominio]**.

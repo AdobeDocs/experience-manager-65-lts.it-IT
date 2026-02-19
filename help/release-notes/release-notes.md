@@ -1,517 +1,349 @@
 ---
-title: Note sulla versione corrente di Adobe Experience Manager 6.5 LTS, SP1
-description: Informazioni sulla versione corrente di Adobe Experience Manager 6.5 LTS, Service Pack 1.
+title: Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP2
+description: Informazioni sulla versione corrente di Adobe Experience Manager 6.5 LTS, Service Pack 2.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e7bedb3c220fda8e2f9466cb074f17efa3b41db6
+source-git-commit: 56a6a366aa563cab3a0385c619041238f04b31c5
 workflow-type: tm+mt
-source-wordcount: '7751'
-ht-degree: 93%
+source-wordcount: '5867'
+ht-degree: 21%
 
 ---
 
-# Note sulla versione corrente di Adobe Experience Manager 6.5 LTS, SP1 {#release-notes}
+# Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP2 {#release-notes}
 
 ## Informazioni sulla versione {#release-information}
 
 | Prodotto | [!DNL Adobe Experience Manager] 6.5 LTS |
 |---|---|
-| Versione | Service Pack 1 (SP1), Hotfix per GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versione | Service Pack 2 (SP2) <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Tipo | Versione del Service Pack |
-| Data | 9 settembre 2025 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL di download | [Distribuzione del software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.1-hotfix-GRANITE-61551-1.4.zip) |
-
-<!-- OLD URL TO JAR
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.1.jar) | -->
+| Data | 19 febbraio 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL di download | [Distribuzione del software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack-lts/cq-quickstart-6.6.2.jar) |
 
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
 
-## Funzionalità incluse in [!DNL Adobe Experience Manager] 6.5 LTS, SP1 {#what-is-new}
+## Cosa è incluso in [!DNL Adobe Experience Manager] 6.5 LTS, SP2 {#what-is-new}
 
 <!-- UPDATE EACH RELEASE -->
 
-[!DNL Experience Manager] 6.5 LTS, SP1 include nuove funzionalità, miglioramenti importanti richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la disponibilità iniziale di 6.5 LTS a marzo 2025. [Installare il Service Pack](#install-update) su 6.5 LTS.
+[!DNL Experience Manager] 6.5 LTS, SP2 include nuove funzionalità, miglioramenti chiave richiesti dai clienti e correzioni di bug. Include inoltre miglioramenti a livello di prestazioni, stabilità e sicurezza, introdotti dopo la disponibilità iniziale di 6.5 LTS a marzo 2025. [Installare il Service Pack](#install-update) su 6.5 LTS.
 
-## Nuove funzioni e miglioramenti
+## Caratteristica chiave e miglioramento
 
-### Forms
+**AEM Sites**
 
-È ora disponibile AEM 6.5 Forms LTS su JEE. Per informazioni dettagliate sugli ambienti supportati, vedere il documento Combinazioni [Piattaforma supportata](/help/forms/using/aem-forms-jee-supported-platforms.md). I collegamenti del programma di installazione sono disponibili nella pagina [Versioni di AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+AEM 6.5 LTS SP2 ora include OpenAPI per la gestione dei frammenti di contenuto e dei modelli e per i lanci. Queste API consentono di accedere a Frammenti di contenuto e avvii per l’authoring e la pianificazione. Utilizzano le stesse OpenAPI moderne di AEM as a Cloud Service.
 
-#### Cosa è incluso in AEM Forms 6.5 LTS SP1
 
-**Aggiornamenti del supporto Java**
+<!-- UPDATE THE EACH RELEASE -->
 
-È stato introdotto il supporto per le versioni Java più recenti:
-
-* Java™ 17
-* Java™ 21
-
-**Aggiornamenti supporto server applicazioni**
-
-* È stato aggiunto il supporto per JBoss EAP 8.
-* Il framework di sicurezza PicketBox legacy è stato rimosso.
-* Gli archivi di credenziali basati su Elytron sono ora supportati per la gestione sicura delle credenziali.
-
-**Configurazione: archivio credenziali (basato su Elytron)**
-
-AEM Forms su JBoss EAP 8 utilizza Elytron per la gestione delle credenziali sicure. I clienti devono configurare un archivio credenziali basato su Elytron per garantire l&#39;avvio corretto del server e l&#39;autenticazione sicura del database.
-
-Per informazioni dettagliate sulla configurazione, consulta la guida all’installazione e alla configurazione.
-
-**Modifiche alla piattaforma e alla compatibilità**
-
-* Supporto per la specifica Servlet 5+
-* Basato sulla conformità a Jakarta EE 9
-
-**Requisito migrazione spazio dei nomi**
-
-* Jakarta EE 9 introduce una modifica dello spazio dei nomi da `javax.*` a `jakarta.*`
-* Tutti i **DSC personalizzati** devono essere migrati allo spazio dei nomi `jakarta.*`
-* AEM Forms 6.5 LTS SP1 supporta **solo i server applicazioni basati su Jakarta EE 9+**
-
-Per ulteriori informazioni, consulta **Migrazione da javax a jakarta Namespace**.
-
-#### Migrazione da `javax` a `jakarta` spazio dei nomi
-
-A partire da **AEM Forms 6.5 LTS SP1**, sono supportati solo i server applicazioni che implementano **Jakarta Servlet API 5/6**. Con **Jakarta EE 9 e versioni successive**, tutte le API sono passate dallo spazio dei nomi `javax.{}` a `jakarta.`.
-
-Di conseguenza, **tutte le DSC personalizzate devono utilizzare lo spazio dei nomi `jakarta`**. I componenti personalizzati generati con le API `javax.{}` sono **non compatibili** con i server applicazioni supportati.
-
-**Opzioni di migrazione per DSC personalizzati**
-
-È possibile eseguire la migrazione di DSC personalizzate esistenti utilizzando uno dei seguenti approcci:
-
-**Opzione 1: migrazione codice Source (consigliata)**
-
-* Aggiorna tutte le istruzioni di importazione da `javax.{}` a `jakarta.`
-* Ricompilare e ricompilare i progetti DSC personalizzati
-* Ridistribuisci i componenti aggiornati nel server applicazioni
-
-**Vantaggi:**
-
-* Garantisce la compatibilità a lungo termine con Jakarta EE 9+
-* Ideale per progetti con manutenzione attiva
-
-**Opzione 2: Migrazione Binario Tramite Eclipse Transformer**
-
-* Usa lo strumento **Trasformatore Eclipse** per convertire i file binari compilati (`.jar`, `.war`) da `javax` in `jakarta`
-* Non è richiesta alcuna modifica o ricompilazione del codice sorgente
-* Ridistribuisci i file binari trasformati nel server applicazioni
-
->[!NOTE]
->
-> La trasformazione binaria viene eseguita al **livello di bytecode**.
-
-Di seguito sono riportati alcuni esempi comuni di modifiche allo spazio dei nomi necessarie durante la migrazione:
-
-* Prima (javax)    Dopo (jakarta)
-* javax.servlet. **jakarta.servlet**
-* javax.servlet.http. **jakarta.servlet.http.**
-
-**Mappature di importazione di esempio**
-
-La tabella seguente mostra le modifiche comuni allo spazio dei nomi richieste durante la migrazione da `javax` a `jakarta`:
-
-| Prima di (`javax`) | Dopo (`jakarta`) |
-| ---------------------- | ------------------------ |
-| `javax.servlet.*` | `jakarta.servlet.*` |
-| `javax.servlet.http.*` | `jakarta.servlet.http.*` |
-
-Utilizza queste mappature come riferimento per aggiornare il codice sorgente DSC personalizzato o convalidare i file binari trasformati.
-
-<!-- 6.5 LTS REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE? -->
-
-<!-- UPDATE EACH RELEASE -->
-
-## Sono stati risolti i problemi in 6.5 LTS, Service Pack 1 {#fixed-issues}
+## Sono stati risolti i problemi in 6.5 LTS, Service Pack 2 {#fixed-issues}
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-### [!DNL Sites]{#sites-65-LTS-SP1}
+### [!DNL Sites]{#sites-65-LTS-SP2}
 
-#### Accessibilità {#sites-accessibility-65-lts-sp1}
+#### Accessibilità {#sites-accessibility-65-lts-sp2}
 
-* È stato risolto un problema a causa del quale l’elemento dell’editor di testo nei frammenti di contenuto veniva troncato per impostazione predefinita. Ora l’editor di testo visualizza il contenuto completo senza troncamento. (SITES-33005)
-* È stato risolto un problema che causava l’apertura della home page di Indigo al posto dell’URL di destinazione corretto quando si faceva clic sui percorsi dell’URL. (SITES-33004)
-* È stato risolto un problema di accessibilità in un componente AEM personalizzato che causava errori di conformità ADA durante il test automatizzato. (SITES-30660)
-* Sono stati risolti i problemi di conformità ADA nella finestra di dialogo Avviso e Messaggi del flusso di lavoro garantendo la visualizzazione del testo in nero su sfondi chiari e la conformità ai requisiti di contrasto di WCAG 2.0. (SITES-30138)
-* È stato risolto un problema di accessibilità a causa del quale il pulsante “Categoria” nell’editor di AEM Sites mancava di un’etichetta specifica; JAWS lo annunciava infatti come “Images button menu” (Menu del pulsante Immagini) invece di fornire un’etichetta descrittiva. (SITES-27497)
-* È stato risolto un problema di accessibilità a causa del quale le icone dei segni di spunta nella schermata Autorizzazioni effettive non avevano un testo alternativo, pertanto JAWS non riusciva a leggere e trasmettere il loro significato. (SITES-27272)
-* È stato risolto un problema di accessibilità a causa del quale la pagina Autorizzazioni non conteneva un chiaro annuncio di JAWS per la rimozione delle autorizzazioni di utenti o gruppi, generando confusione per gli utenti di assistenti vocali. (SITES-27238)
-* È stato risolto un problema di accessibilità a causa del quale i messaggi di errore venivano visualizzati solo come icone senza testo descrittivo, impedendo a JAWS di annunciare gli errori quando si verificavano. (SITES-27155)
-* È stato risolto un problema di accessibilità a causa del quale JAWS leggeva descrizioni dei pulsanti non corrette e non chiare nell’ambiente di AEM On-Premise, incluso il testo del livello di intestazione 2 mancante per la sezione dei moduli. (SITES-27152)
-* È stato risolto un problema di accessibilità a causa del quale JAWS non annunciava il numero di risultati dopo l’applicazione dei filtri ai valori nella scheda AEM Assets. (SITES-27150)
-* È stato risolto un problema di accessibilità a causa del quale la creazione di una cartella non mostrava una conferma e JAWS non la annunciava nell’interfaccia utente di Assets. (SITES-27141)
-* È stato risolto un problema di accessibilità in AEM Sites. JAWS non ha annunciato errori del modulo, lo stato attivo è stato spostato su elementi di errore non interattivi e gli errori dei campi obbligatori non sono stati visualizzati con l’uso del tasto di tabulazione. (SITES-27138)
-* È stato risolto un problema di accessibilità a causa del quale il menu del pulsante Timeline non disponeva di un’etichetta specifica; JAWS si limitava pertanto a leggere “Menu del pulsante Attività” senza fornire una descrizione chiara. (SITES-27134)
-* È stato risolto un problema di accessibilità a causa del quale JAWS non annunciava l’azione o il ruolo per gli elementi container, limitandosi a leggere “Breadcrumb v1” e “button v2” invece delle etichette descrittive. (SITES-27131)
-* È stato risolto un problema di accessibilità a causa del quale il pop-up di pubblicazione rapida non forniva un messaggio di operazione completata adeguato, impedendo agli assistenti vocali di annunciare il feedback sul completamento. (SITES-26912)
-* È stato risolto un problema di accessibilità nella vista a colonne di corallo a causa del quale gli elementi con ruoli ARIA che richiedevano ruoli secondari non ne contenevano, causando la mancata conformità agli standard di accessibilità. (SITES-26898)
-* È stato risolto un problema di accessibilità a causa del quale i testi “modello” e “proprietà” nella navigazione presente in alto sulla pagina di creazione non erano visibili in modalità Riflusso, impedendo l’accesso agli utenti che utilizzano tastiera e assistente vocale. (SITES-26895)
-* È stato risolto un problema di accessibilità a causa del quale le descrizioni comandi per le icone “ricerca”, “soluzione”, “guida”, “casella in entrata” e “utente” nella navigazione presente in alto non erano accessibili tramite la navigazione con tastiera. (SITES-26889)
-* È stato risolto un problema di accessibilità a causa del quale i campi modulo della scheda Base non fornivano suggerimenti di errore, impedendo agli utenti di ricevere indicazioni quando i campi di input obbligatori erano lasciati vuoti. (SITES-26885)
-* È stato risolto un problema di accessibilità a causa del quale gli assistenti vocali NVDA e Assistente vocale non annunciavano i dettagli dei file modello nella pagina Crea, impedendo agli utenti di ricevere informazioni complete a livello di programmazione. (SITES-26884)
-* È stato risolto un problema di accessibilità a causa del quale veniva utilizzato un nome errato per “Casella di testo Titolo pagina” nella scheda Base, impedendo agli assistenti vocali di fornire informazioni accurate agli utenti. (SITES-26879)
-* Sono stati aggiornati i colori di primo piano e di sfondo dei pulsanti per soddisfare i requisiti del rapporto di contrasto minimo di WCAG 2.2 AA, migliorando la leggibilità e l’accessibilità per tutti gli utenti. (SITES-26877)
-* È stato risolto un problema che causava la scomparsa dei testi “modello” e “proprietà” nella navigazione presente in alto sulla pagina di creazione dopo il ridimensionamento, garantendo visibilità e accessibilità agli utenti ipovedenti. (SITES-26872)
-* È stato risolto un problema che causava la visualizzazione di più barre di scorrimento orizzontali sulla pagina principale dopo l’applicazione di un Riflusso, affinché una singola barra di scorrimento venga visualizzata per la corretta accessibilità e visibilità del contenuto. (SITES-26800)
-* È stato risolto un problema di accessibilità nell’editor di pagine di AEM a causa del quale lo stato attivo sulla tastiera veniva ripristinato all’inizio della barra degli strumenti Demografica dopo l’attivazione dei pulsanti come Persona, Carrello o Abbandonato. Ora lo stato attivo resta sul pulsante attivato per supportare flussi di lavoro coerenti per la navigazione da tastiera e l’assistente vocale. (SITES-25306)
-* È stato risolto il problema relativo all’associazione delle etichette di accessibilità per i campi titolo pagina e tag. L’interfaccia di AEM ora associa correttamente le etichette di accessibilità ai campi “Titolo” e “Titolo pagina” durante l’utilizzo di assistenti vocali come JAWS. La correzione assicura la corretta lettura delle etichette e migliora la conformità ADA nei flussi di lavoro di creazione, proprietà e spostamento delle pagine. (SITES-27149)
-* È stata corretta l&#39;etichetta visiva mancante per i campi di input dei commenti nella timeline. Sono state corrette le etichette visive mancanti per i campi di input &quot;commento&quot; nella sezione della timeline per migliorarne l’accessibilità. L’aggiornamento garantisce che gli assistenti vocali possano annunciare con precisione le etichette dei campi. Questa esperienza migliora la navigazione e l&#39;invio dei moduli per tutti gli utenti, in particolare gli utenti che contano sulle tecnologie per l&#39;accessibilità. (SITES-26903)
-* È stata corretta l&#39;accessibilità da tastiera per il pulsante con puntini di sospensione nei commenti della timeline. È stata abilitata la navigazione tramite tastiera per il pulsante con puntini di sospensione (tre punti) accanto ai commenti nella sezione della timeline. Gli utenti possono ora accedere al pulsante e interagire con esso utilizzando il tasto tab, migliorando l&#39;accessibilità per gli utenti che si affidano alla navigazione tramite sola tastiera. (SITES-26891)
-* Sono stati migliorati gli annunci NVDA/Assistente vocale per i risultati di ricerca nelle finestre di dialogo di selezione. È stata aggiornata la finestra di dialogo Apri selezione per indicare se i risultati della ricerca vengono trovati o meno quando si utilizzano gli assistenti vocali, come NVDA o Assistente vocale. Questo miglioramento consente agli utenti che si affidano alle tecnologie per l&#39;accessibilità di comprendere il risultato delle azioni di ricerca senza bisogno di conferma visiva. (SITES-26883)
-* È stato corretto il ruolo ARIA per l&#39;icona con i puntini di sospensione accanto al campo di input del commento. È stata aggiornata l&#39;icona con i puntini di sospensione (tre punti) accanto al campo di input del commento per utilizzare il ruolo ARIA corretto, in modo che gli assistenti vocali possano identificare con precisione l&#39;elemento. Questo miglioramento migliora la conformità in materia di accessibilità e l&#39;esperienza degli utenti che si affidano alle tecnologie per l&#39;accessibilità. (SITES-26881)
-* Sono stati corretti gli attributi ARIA non validi nei componenti dell’interfaccia utente Coral. Sono stati aggiornati i componenti dell’interfaccia utente Coral per garantire che tutti gli attributi ARIA utilizzino valori validi, migliorando l’accessibilità e la conformità. In particolare, sono stati risolti casi in cui valori non validi come `aria-modal="dialog"` non venivano assegnati correttamente. Questo miglioramento consente agli assistenti vocali di interpretare correttamente gli elementi delle finestre di dialogo, migliorando l’accessibilità per gli utenti che si affidano a queste tecnologie. (SITES-26873)
-* Sono state migliorate la visibilità e le descrizioni delle icone negli scenari di ridisposizione. È stato migliorato il comportamento Ridisponi per garantire la corretta visualizzazione delle descrizioni per le icone **Scarica**, **Rielabora risorse** e **Estrai**. È stato individuato un problema di accessibilità in cui le icone e le relative etichette diventavano invisibili quando il riquadro di visualizzazione veniva ridimensionato o le impostazioni di zoom del browser cambiavano. Questa correzione consente di mantenere la visibilità degli utenti ipovedenti e fornisce descrizioni delle icone durante la ridisposizione. (SITES-26871)
+* Il componente Testo non è più attivo quando gli autori passano il cursore sugli elementi nel browser Componenti durante la modifica. Ciò ha interrotto la digitazione e ha provocato un errore di accessibilità in WCAG 3.2.1. La correzione impedisce che lo stile del passaggio del mouse sposti lo stato attivo e mantiene attivo il componente Testo durante l’interazione con il browser componenti. (SITES-35370)
+* È stata corretta la gestione dello stato attivo nel campo Testo RTF Descrizione, che bloccava la navigazione in avanti con il tasto TAB. Gli utenti si bloccavano nell’editor Rich Text perché il componente si basava su un comando non standard della tastiera per spostare lo stato attivo, interrompendo la navigazione prevista nella finestra di dialogo. La modifica applica l&#39;interazione standard della tastiera e mantiene la sequenza logica delle schede in tutta la finestra di dialogo. (SITES-35228)
+* È stato risolto un problema nell’editor Sites che interrompeva il comportamento previsto durante l’authoring delle pagine e causava un’interazione incoerente dei componenti. Gli autori hanno riscontrato risposte inaffidabili dell’interfaccia utente che hanno interferito con le attività di modifica standard e ridotto l’efficienza del flusso di lavoro. L’aggiornamento perfeziona la logica dell’editor sottostante e ripristina un’interazione stabile e prevedibile tra i componenti interessati. (SITES-35227)
+* una regressione che ha interrotto il selettore delle risorse nell’editor pagina e ne ha impedito il caricamento in scenari di modifica specifici della pagina. Gli autori possono ora aprire e utilizzare il selettore delle risorse normalmente durante la scelta o l’esplorazione delle risorse durante la modifica di una pagina. Questa modifica ripristina un accesso coerente ai flussi di lavoro di selezione delle risorse che interrompono il caricamento degli errori. (SITES-35226)
+* È stato eliminato un problema nell’editor Sites che causava un comportamento incoerente durante l’interazione delle pagine e interrompeva i flussi di lavoro di authoring standard. Il difetto ha portato a risposte impreviste dell’interfaccia utente che hanno interferito con la configurazione dei componenti e gli aggiornamenti dei contenuti. L’aggiornamento stabilizza la funzionalità interessata e ripristina l’esecuzione affidabile delle azioni di modifica su più pagine. (SITES-35225)
+* È stato eliminato un difetto nell’interfaccia di authoring di Sites che causava un comportamento incoerente durante la modifica delle pagine e interrompeva i normali flussi di lavoro. Gli autori hanno riscontrato risposte impreviste dell’interfaccia utente che hanno interferito con l’interazione dei componenti e con gli aggiornamenti dei contenuti. L’aggiornamento stabilizza le funzionalità interessate e ripristina un comportamento affidabile e prevedibile in tutti gli scenari di modifica. (SITES-35224)
+* AEM Sites ora include il supporto testuale `alt` per le immagini per soddisfare i requisiti ADA e WCAG. L&#39;output della pagina non omette più gli attributi `alt`, pertanto gli assistenti vocali ricevono il testo alternativo corretto. (SITES-27153)
+* È stato corretto il layout della barra degli strumenti `Note Add` in modo che il pulsante Aggiungi non si sovrapponga più al titolo con una larghezza del riquadro di visualizzazione di 320 px. È stato migliorato il riversamento su piccolo schermo in modo che i controlli rimangano leggibili e utilizzabili con uno zoom del 400%. (SITES-25376)
+* Sono stati corretti gli annunci mancanti degli assistenti vocali per gli errori della finestra di dialogo di selezione dei collegamenti. L’interfaccia utente ora pubblica il testo dell’errore tramite un contenitore per messaggi di stato, pertanto NVDA legge il messaggio non appena viene visualizzato. (SITES-25368)
+* Sono stati rimossi i ruoli griglia ARIA e cella griglia dall’elenco delle risorse nella barra laterale. Sono state ripristinate la semantica standard degli elenchi e l’ordine di attivazione della tastiera, migliorando la navigazione degli assistenti vocali e riducendo le tabulazioni aggiuntive. (SITES-25361)
+* È stata corretta la sequenza di attivazione nella barra laterale di Assets. Gli utenti che utilizzano la tastiera ora raggiungono ogni azione della risorsa, inclusa la modifica, tramite un percorso di tabulazione coerente. (SITES-25360)
+* È stato corretto l’overflow del layout nel modale Search Assets (Ricerca) con una larghezza del riquadro di visualizzazione di 320 px. Il contenuto modale ora viene ridisposto e rimane leggibile, pertanto i controlli non si sovrappongono più o sovraccaricano la finestra di dialogo. (SITES-25330)
+* Output NVDA corretto per il pulsante Modifica. NVDA ora annuncia l&#39;azione Modifica, non &quot;Pulsante Anteprima premuto&quot;. (SITES-25320)
+* Sono stati corretti gli input di testo della barra degli strumenti Demografia senza nome che causavano un output di utilità di lettura dello schermo silenzioso o generico. Ogni input ora espone un chiaro nome accessibile basato su etichette, che migliora la navigazione tramite tastiera e tecnologia per l’accessibilità. (SITES-25316)
+* È stato corretto l’ordine di attivazione della tastiera per la barra degli strumenti Demografia durante la navigazione nell’anteprima di layout. La navigazione tramite scheda ora si sposta direttamente dal pulsante Demografico ai controlli della barra degli strumenti, senza passare alla barra degli strumenti secondaria. (SITES-25305)
+* È stato corretto l’ordine di annuncio errato per le etichette &quot;Screens più piccolo&quot; e &quot;Tablet&quot; sul righello Modifica layout. Gli assistenti vocali ora annunciano queste etichette ai marcatori righello corretti, che corrispondono al layout della pagina. (SITES-25291)
+* È stato corretto l’overflow della barra degli strumenti Modifica layout con uno zoom del 200%. Il contenuto ora rimane all’interno del riquadro di visualizzazione e rimane raggiungibile tramite lo scorrimento. (SITES-25288)
+* È stato risolto un ordine di attivazione errato nella sovrapposizione Annotazioni. La tabulazione da tastiera ora passa da controlli di sovrapposizione a elementi di annotazione. La pagina padre non si attiva più da dietro la sovrapposizione. (SITES-25282)
+* Gestione a comparsa dei campioni corretti. La finestra di dialogo ora sposta lo stato attivo su un&#39;intestazione chiara e avvia l&#39;output dell&#39;utilità di lettura dello schermo in corrispondenza di tale punto di ingresso. NVDA non legge più il contenuto completo della finestra di dialogo fuori sequenza. (SITES-25275)
+* È stata corretta la gestione dell’attivazione modale di Timewarp dopo la chiusura del Selettore data. `Escape` ora restituisce lo stato attivo al pulsante Selezione data. La selezione della data ora attiva il campo di input accanto al controllo Selezione data, impedendo la perdita dello stato attivo e l&#39;accesso alla pagina in background. (SITES-25264)
+* È stata corretta la gestione dello stato attivo della tastiera per la finestra di dialogo Elimina annotazione. Annulla ora restituisce lo stato attivo al controllo `Delete` che ha aperto la finestra di dialogo, non al controllo Conferma valore esadecimale. Gli assistenti vocali non visualizzano più il contenuto di una finestra di dialogo non correlata dopo l&#39;annullamento. (SITES-25258)
+* È stata corretta la gestione dello stato attivo per la finestra di dialogo modale Annotazione. L&#39;apertura della finestra di dialogo ora imposta lo stato attivo sull&#39;intestazione della finestra di dialogo e impedisce a NVDA di leggere il contenuto dell&#39;area di lavoro e il testo della finestra di dialogo non correlato. La navigazione tramite tastiera ora rimane all&#39;interno della finestra di dialogo fino a quando non viene chiusa. (SITES-25257)
+* Sono stati risolti i problemi di layout modale di ricerca a 320 px di larghezza. Il contenuto modale ora scorre in modo pulito ed evita la sovrapposizione con la directory della struttura. Gli utenti possono visualizzare i risultati e navigare nella directory senza controlli oscurati. (SITES-25246)
+* Il testo modale di ricerca non viene più ritagliato dopo l&#39;aumento della spaziatura. Il layout della directory ad albero mantiene ora una separazione netta, in modo che le etichette e le voci rimangano leggibili. Gli utenti possono ora completare la ricerca e la navigazione senza sovrapporsi o separare il testo. (SITES-25245)
+* L’attivazione di Annota consente ora di spostare lo stato attivo della tastiera sul contenuto dell’annotazione, non sul pulsante Esci dall’annotazione. L&#39;ordine di tabulazione segue una sequenza logica e consente di mantenere i controlli correlati raggiungibili senza spostamenti all&#39;indietro. (SITES-25241)
+* Nei collegamenti Date (Data) e Exit Timewarp (Esci) manca un indicatore visibile dello stato attivo durante la navigazione da tastiera. L’interfaccia utente ora esegue il rendering di uno stile di attivazione a contrasto elevato distinto in modo che gli utenti possano identificare immediatamente il collegamento attivo. (SITES-25232)
+* L’intestazione modale Teaser non impedisce più agli utenti che utilizzano la tastiera di spostare la finestra di dialogo. I controlli da tastiera consentono ora le azioni di ritiro, spostamento e rilascio, che migliorano l&#39;usabilità dello screen reader e l&#39;operabilità complessiva. (SITES-25226)
+* AEM ora utilizza un’etichetta accessibile significativa per il pulsante Informazioni modali del teaser. Gli assistenti vocali annunciano un nome chiaro per l’azione invece della stringa di testo alternativo predefinita per l’icona. (SITES-25223)
+* Gli assistenti vocali ora annunciano l’azione corretta quando gli utenti attivano il pulsante Modifica. NVDA non segnala più &quot;Pulsante Anteprima premuto&quot;, che ha causato feedback fuorvianti e confusione durante la navigazione da tastiera. (SITES-25208)
+* L&#39;espansione della barra a sinistra ora sposta la tastiera sul primo controllo della barra a sinistra. La sequenza Tab non passa più alla barra degli strumenti secondaria né arriva all’elenco intermedio, pertanto gli utenti con tastiera possono raggiungere il contenuto della barra a sinistra senza ricorrere alla navigazione inversa. (SITES-24998)
+* Il contenuto della barra dell’emulatore del dispositivo ora rimane completamente visibile con una larghezza del riquadro di visualizzazione di 320 px. Il testo della barra degli strumenti e i controlli vengono disposti a capo anziché troncati, riducendo la sovrapposizione e migliorando la leggibilità. (SITES-24953)
+* AEM ora visualizza l’etichetta completa del dispositivo iPhone nella barra degli strumenti dell’emulatore. Il testo non viene più troncato alla larghezza predefinita, migliorando la leggibilità e la chiarezza della selezione del dispositivo. (SITES-24952)
+* Le intestazioni della tabella Vista a elenco ora espongono lo stato di ordinamento tramite ARIA. Gli assistenti vocali annunciano un ordine crescente o decrescente dopo un’azione di ordinamento delle colonne. (SITES-24943)
+* AEM ora mantiene la visibilità dell’etichetta del menu Altre azioni nella Vista a schede durante le modifiche della spaziatura del testo. Le opzioni di menu mantengono il testo completo, inclusa la pubblicazione rapida, e il menu rimane leggibile durante tutte le impostazioni di spaziatura del testo WCAG. (SITES-24941)
+* La barra dei menu Azioni scheda ora espone un nome accessibile in Vista scheda. Gli assistenti vocali annunciano chiaramente lo scopo della barra dei menu e il controllo vocale può impostare il controllo in base al nome. (SITES-24938)
+* La vista a schede non si basa più sulla semantica della griglia ARIA, che ha causato confusione nel comportamento degli assistenti vocali. L’interfaccia utente fornisce ora ruoli ed etichette significativi per il contenuto della scheda e la barra delle azioni della scheda, che riduce i controlli mancanti durante l’utilizzo della tastiera. (SITES-24933)
+* La descrizione comando `Delete Modal` viene ora visualizzata ogni volta che gli utenti passano il puntatore sull&#39;icona della descrizione. Le azioni di attivazione ora mostrano lo stesso testo della descrizione comando, migliorando l&#39;accesso ripetuto per gli utenti di mouse e tastiera. (SITES-24778)
+* La navigazione nella barra a sinistra segue ora l’ordine previsto di attivazione della tastiera dopo la configurazione della barra da parte degli utenti. Lo stato attivo della scheda si trova sull’area della barra a sinistra selezionata invece di Switch Display (Schermo switch), il che migliora la chiarezza della navigazione dell’assistente vocale. (SITES-24754)
+* È stato risolto un feedback NVDA errato durante la navigazione dei campioni di colore nella finestra modale Preferenze utente. NVDA ora legge l’etichetta del campione che riceve lo stato attivo, rimuovendo l’output di colore fuorviante. Il set di campioni ora supporta una navigazione coerente da tastiera e il riconoscimento della selezione. (SITES-24739)
+* Output NVDA dettagliato ridotto per il controllo `Spin`. È stata rimossa l’etichettatura di gruppo ridondante che duplicava l’etichetta di input, pertanto NVDA annuncia una volta il nome del controllo. La navigazione tramite tastiera e utilità di lettura dello schermo ora offre un annuncio singolo e chiaro. (SITES-24725)
+* La finestra di dialogo Carosello ora posiziona lo stato attivo sull&#39;intestazione della finestra di dialogo anziché sulla scheda Elementi. Annulla ed Esc ripristinano lo stato attivo sul controllo che ha avviato la finestra di dialogo, riducendo l’output NVDA dettagliato. (SITES-24716)
+* La finestra di dialogo per la selezione dei collegamenti ora allinea l’etichetta programmatica con l’etichetta visualizzata sullo schermo per gli elementi dell’albero di ultimo livello. La navigazione con tasti di direzione attiva un annuncio affidabile sull’utilità di lettura dello schermo per ogni elemento e rimuove l’output di etichette fuorvianti. (SITES-24710)
+* La finestra di dialogo Collega selezione aperta ora scorre correttamente sotto un riquadro di visualizzazione a 320 px. Il contenuto non supera più il modale o i tronchi e il modale non mostra più una barra di scorrimento orizzontale. (SITES-24709)
+* La finestra di dialogo Collega selezione aperta ora ripristina lo stato attivo della tastiera sull&#39;attivatore della finestra di dialogo dopo Chiudi o Annulla. La messa a fuoco non passa più all&#39;input Link, che mantiene stabile il contesto dell&#39;utilità di lettura dello schermo e riduce la navigazione aggiuntiva. (SITES-24707)
+* La finestra di dialogo modale dell’immagine ora segue una sequenza logica di attivazione. Lo stato attivo non ignora più i controlli precedenti o i rilasci sul punto di riferimento della pagina dopo l’annullamento e gli utenti riprendono a utilizzare il pulsante Configura dopo l’uscita. (SITES-24693)
+* La finestra di dialogo modale Barra dei riferimenti ora registra lo stato attivo della tastiera. Tab e Maiusc+Tab rimangono all&#39;interno dei controlli della finestra di dialogo e lo stato attivo non passa più al contenuto della pagina. Gli assistenti vocali annunciano solo il contenuto della finestra di dialogo. (SITES-24683)
+* La finestra modale Selezione percorso collegamento ipertestuale ora imposta lo stato attivo sull’intestazione della finestra di dialogo all’apertura. Annulla chiude la finestra di dialogo e ripristina lo stato attivo sul pulsante Apri finestra di dialogo di selezione, impedendo la perdita della messa a fuoco e l&#39;output ridondante dell&#39;utilità per la lettura dello schermo. (SITES-24672)
+* Il campo Ricerca ora utilizza un’etichetta persistente sullo schermo invece del testo segnaposto. L&#39;etichetta rimane visibile durante l&#39;immissione, migliorando la chiarezza per gli utenti di tastiera, utilità di lettura dello schermo e riconoscimento vocale. (SITES-24529)
+* La finestra di dialogo modale teaser ora imposta lo stato attivo sull’intestazione della finestra di dialogo all’apertura. La chiusura della finestra di dialogo riporta lo stato attivo sul controllo `Configure`, impedendo la perdita della messa a fuoco e l&#39;eccessivo output dell&#39;utilità di lettura dello schermo. (SITES-24522)
+* Il pannello Assets della barra laterale ora include un controllo Chiudi. Chiudi riporta lo stato attivo della tastiera sull’interruttore della barra laterale e impedisce la tabulazione forzata attraverso il contenuto del pannello. (SITES-24489)
+* La tabulazione da tastiera ora raggiunge i pulsanti e i collegamenti all’interno delle tabelle di amministrazione. Gli utenti non si affidano più alla navigazione tramite celle con tasti di direzione per trovare i controlli interattivi. (SITES-24285)
+* La finestra di dialogo del componente Immagine non espone più icone decorative della Guida e a schermo intero come immagini. Gli assistenti vocali ora ignorano queste icone, mantenendo lo stato attivo sui controlli utilizzabili e sul contenuto dei campi. (SITES-2940)
+* L’amministratore Sites ora rimuove il ruolo immagine dalle icone delle miniature delle cartelle. La tecnologia assistiva ignora questi elementi decorativi, mantenendo l’attenzione sui nomi delle cartelle e sulle azioni. (SITES-2852)
+* Struttura contenuto ora indirizza lo stato attivo della tastiera all&#39;elemento della struttura attivo o al primo elemento della struttura. Il contenitore ad albero non funge più da punto di tabulazione vuoto, impedendo le trap di Maiusc+Tab focus. (SITES-1577)
+
+#### Interfaccia utente amministratore{#sites-adminui-65-lts-sp2}
+
+Le impostazioni della Vista a elenco della console Sites non riflettevano le colonne visualizzate nella Vista a elenco. La finestra di dialogo si apriva con le caselle di controllo deselezionate e un conteggio errato delle colonne selezionate. Lo stato della finestra di dialogo Correggi sincronizza con le colonne della griglia attive e aggiorna il contatore in modo che corrisponda alla visibilità effettiva delle colonne. (SITES-38576)
+
+#### Interfaccia utente classica{#sites-classicui-65-lts-sp2}
+
+Dopo un aggiornamento, nella modifica del componente testo dell’interfaccia classica venivano visualizzati dei tag HTML non formattati, ma non testo formattato. Service Pack 2 corregge il rendering dell’editor Rich Text dell’interfaccia classica in modo che l’editor visualizzi il contenuto formattato e conservi il markup memorizzato. La correzione interrompe anche l’espansione del markup durante le modifiche e i salvataggi ripetuti. (SITES-38709)
+
+#### [!DNL Content Fragments]{#sites-contentfragments-65-lts-sp2}
+
+In 6.5 LTS, il supporto per gli eventi headless non disponeva degli eventi OSGi richiesti per frammenti di contenuto e modelli. L&#39;aggiornamento aggiunge il bundle di eventi più le dipendenze richieste e include una build LTS 6.5. Gli eventi Modello e Frammento di contenuto ora vengono attivati correttamente e supportano i flussi di lavoro API Launches. (SITES-35329)
+
+#### [!DNL Content Fragments] - Amministratore{#sites-admin-65-lts-sp2}
+
+* È stata modificata la gestione dei componenti nell’interfaccia di authoring di Sites per interrompere il comportamento irregolare durante gli aggiornamenti delle pagine. Il difetto ha portato a risposte imprevedibili dell’editor che hanno interferito con le modifiche di routine dei contenuti e ridotto l’efficienza del flusso di lavoro. L’aggiornamento allinea la logica dell’editor ai modelli di interazione previsti e offre prestazioni affidabili durante le attività di authoring. (SITES-35078) CRITICO
+
+* Una regressione ha interrotto la Vista a elenco della console Assets per i frammenti di contenuto e ha attivato un errore durante il rendering dell’elenco. L’aggiornamento corregge la logica della vista a elenco dopo la rimozione delle informazioni di anteprima e ripristina l’output stabile dell’elenco. La console ora visualizza i Frammenti di contenuto senza errori e mantiene utilizzabili le interazioni elenco. (SITES-38683)
+* L’Editor frammento di contenuto ora localizza l’etichetta Tag. L’editor localizza anche l’etichetta Raccolte, in modo che il testo dell’interfaccia utente corrisponda alle impostazioni internazionali selezionate. (SITES-977)
 
 
-#### Interfaccia utente amministratore{#sites-adminui-65-lts-sp1}
+#### [!DNL Content Fragments] - Editor frammenti{#sites-fragments-editor-65-lts-sp2}
 
-* È stato risolto un problema di accessibilità a causa del quale JAWS non annunciava i ruoli elenco né forniva istruzioni di navigazione e attivazione nella finestra di dialogo Crea sito. (SITES-30661)
-* Il supporto degli assistenti vocali sui messaggi di stato nella vista filtro Sites funziona come previsto, garantendo agli utenti un feedback chiaro e tempestivo quando passano da una visualizzazione all’altra. (SITES-24992)
-* Il selettore data nella barra dei filtri viene visualizzato completamente all’interno del relativo contenitore, fornendo dimensioni delle destinazioni touch adeguate ed eliminando i problemi di ritaglio. (SITES-24988)
-* I tag di filtro selezionati ora utilizzano etichette semantiche HTML e ARIA corrispondenti alla presentazione visiva, garantendo un supporto preciso dei ruoli e azioni chiare per le tecnologie per l’accessibilità. (SITES-24980)
-* È stato aggiunto un attributo aria-label all’area della barra Riferimenti per fornire un’etichetta univoca e descrittiva per gli utenti degli assistenti vocali e garantire un’identificazione coerente dei punti di riferimento all’interno della pagina. (SITES-24973)
-* La barra Riferimenti è stata aggiornata per utilizzare le unità relative a dimensionamento e posizionamento, consentendo la scalabilità e la piena funzionalità del contenuto quando viene ingrandito al 400% in un riquadro di visualizzazione 1280x1024. (SITES-24972)
-* Gli elementi di tabella confermati nella visualizzazione elenco della pagina Home di Sites contengono ruoli di intestazione di colonna corretti, che consentono agli assistenti vocali di annunciare le intestazioni per ogni cella di dati. (SITES-24942)
-* NVDA ha appena annunciato di aver inserito la Data di modifica nella directory ad albero, garantendo che gli utenti che usano utilità di lettura dello schermo ricevano informazioni complete sui dettagli delle risorse. (SITES-24782)
-* È stato risolto un problema a causa del quale l’assistente vocale NVDA annunciava un testo incompleto per gli elementi del componente Directory ad albero in AEM Sites. NVDA legge ora il testo completo per ogni elemento, migliorando l’accessibilità e la conformità. (SITES-24780)
-* È stata aggiunta l’accessibilità della tastiera alla finestra divisa nella directory ad albero, consentendo agli utenti di ridimensionare la barra laterale a sinistra utilizzando solo una tastiera. (SITES-24779)
-* Sono stati aggiornati i risultati della ricerca nel menu Aiuto per includere i ruoli ARIA corretti per le voci di elenco, in modo che gli assistenti vocali annuncino correttamente i collegamenti per migliorare l’accessibilità. (SITES-24729)
-* È stato risolto un problema a causa del quale gli assistenti vocali non annunciavano il messaggio di stato “Risultati X di Y”. Oppure il messaggio “nessun risultato trovato” dopo l’applicazione di filtri nel pannello Filtro siti, per garantire che gli utenti ricevano la conferma corretta dei risultati. (SITES-24720)
-* Sono state corrette le assegnazioni di ruolo mancanti per i collegamenti di navigazione nell’app. Sono stati aggiunti i ruoli ARIA appropriati per garantire che gli assistenti vocali identifichino e annuncino correttamente gli elementi di navigazione. (SITES-24719)
-* Il markup del ruolo griglia non corretto per i tag filtro selezionati è stato sostituito con gli elementi dei pulsanti e sono stati aggiunti nomi accessibili, in modo che gli assistenti vocali possano annunciare e identificare correttamente i tag. (SITES-24717)
-* Sono stati aggiunti annunci di utilità di lettura dello schermo per il messaggio di stato della barra Riferimenti quando si eseguono selezioni multiple, in modo che gli utenti ricevano conferma delle modifiche. (SITES-24678)
-* È stato corretto il comportamento del campo di ricerca in modo che non venga annunciato automaticamente il primo risultato. Gli assistenti vocali ora annunciano il numero di risultati trovati, consentendo agli utenti di navigare nell’elenco senza focalizzarsi su annunci errati. (SITES-24658)
-* Gli attributi `aria-label` non corretti sono stati rimossi dagli elementi statici non interattivi nella visualizzazione elenco per impedire agli assistenti vocali di annunciare informazioni fuorvianti o irrilevanti. (SITES-24515)
-* La casella di controllo nella prima colonna della Vista a elenco è stata aggiornata per utilizzare il testo della colonna Titolo come nome accessibile, in modo che gli assistenti vocali possano comunicare con precisione lo scopo del campo modulo. (SITES-24514)
-* Sono stati aggiunti gli attributi ARIA appropriati e il supporto per le aree geografiche attive per annunciare il caricamento dei messaggi di stato agli assistenti vocali durante la navigazione all’interno del contenuto. (SITES-24481)
-* È stata aggiornata la progettazione dinamica per eliminare lo scorrimento orizzontale quando il contenuto viene ingrandito al 400% con una larghezza di visualizzazione di 1280x1024, garantendo una visibilità completa senza scorrimento laterale. (SITES-24308)
-* È stata corretta la navigazione dello stato attivo nell’interfaccia utente amministratore di Sites in modo da seguire un ordine logico, riportando lo stato attivo sul pulsante “Seleziona tutto” dopo aver premuto il tasto ESC e spostato lo stato attivo sull’elemento interattivo successivo dopo aver premuto il tasto Tab. (SITES-24307)
-* È stato aggiornato l’ordine dello stato attivo nell’interfaccia utente amministratore di Sites in modo che il pulsante delle breadcrumb nell’elemento `<betty-titlebar-title>` riceva lo stato attivo nella sequenza corretta durante la navigazione da tastiera. (SITES-24305)
-* È stata verificata la funzionalità che consente di ignorare il collegamento per garantire che sposti il focus della tastiera nell’area del contenuto principale, consentendo agli utenti che utilizzano la tastiera di ignorare gli elementi dell’intestazione e di accedere ai contenuti in modo efficiente. (SITES-24061)
+* I tag di variante dei frammenti di contenuto scomparivano quando l’attivazione della funzione rimaneva disabilitata dopo il refactoring. La correzione ripristina il supporto dei tag di variante anche quando questo interruttore rimane disattivato. Gli autori possono nuovamente aggiungere e visualizzare tag di varianti nell’Editor frammento di contenuto. (SITES-38682) CRITICO
+* I frammenti di contenuto modificati sono scomparsi dall’elenco della console Assets dopo che gli autori sono tornati dall’Editor frammenti di contenuto. La memorizzazione nella cache del browser ha restituito un elenco non aggiornato e ha nascosto il frammento aggiornato fino a un aggiornamento manuale. La correzione aggiunge la gestione del controllo cache per il percorso di ritorno dell’editor in modo che l’elenco venga ricaricato correttamente e che il frammento modificato rimanga visibile. (SITES-35374) CRITICO
 
+* L’Editor Rich Text per frammenti di contenuto mostrava problemi di layout e di visualizzazione dopo recenti modifiche di stile dell’interfaccia utente. Service Pack 2 ottimizza lo stile dell’editor Rich Text in modo che la barra degli strumenti e l’area modificabile vengano riprodotte correttamente e rimangano leggibili. L’Editor frammento di contenuto ora è allineato con l’aspetto e il comportamento dell’Editor pagina. (SITES-38684)
+* La rimozione degli ambiti IMS da Polaris Asset Selector ha interrotto l’integrazione del frammento di contenuto con l’endpoint di consegna. Gli autori riscontrano degli errori quando apri il selettore di risorse remoto e selezioni le risorse. L’aggiornamento aggiunge nuovamente gli ambiti IMS necessari e ripristina l’accesso stabile a livello di consegna. (SITES-35837)
+* Il pannello Contenuto associato non esegue più il rendering di un segnaposto codificato &quot;non definito&quot;. L’Editor frammento di contenuto ora risolve il testo tramite le risorse di localizzazione, in modo che gli editor possano vedere il testo tradotto dell’interfaccia utente. (SITES-33675)
+  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* L’Editor frammento di contenuto ora visualizza un’etichetta della scheda Generale tradotta per tutte le lingue. L’editor sostituisce il testo di scheda non localizzato e rimuove gli ID interni dai titoli delle schede. (SITES-30715)
+* L’Editor frammento di contenuto ora visualizza i nomi tradotti per i tipi di risorse consentiti. L’elenco selettore non combina più stringhe interne ed etichette solo in inglese quando gli autori configurano le restrizioni relative ai riferimenti ai contenuti. (SITES-29699)
 
-#### Interfaccia utente classica{#sites-classicui-65-lts-sp1}
+#### [!DNL Content Fragments] - API GraphQL {#sites-graphql-api-65-lts-sp2}
 
-È stato risolto un problema dell’interfaccia classica a causa del quale le etichette delle caselle di controllo non erano presenti e HTML veniva visualizzato come testo codificato in più elementi dell’interfaccia utente, inclusi Ricerca per data e interfacce non standard. (SITES-31822)
+* È stata perfezionata la gestione della convalida delle query GraphQL per arrestare gli errori di distribuzione causati da errori di esecuzione dei filtri. Il difetto ha generato eccezioni durante l’avvio dell’applicazione e ha bloccato il rollout riuscito negli ambienti interessati. La revisione garantisce un comportamento di convalida coerente e consente una distribuzione fluida senza interruzioni della convalida delle query di runtime. (SITES-34301) CRITICO
 
-#### [!DNL Content Fragments]{#sites-contentfragments-65-lts-sp1}
+* La finestra di dialogo Modifica endpoint GraphQL ora visualizza stringhe localizzate dell’interfaccia utente. La finestra di dialogo non mostra più il testo solo in inglese, ad esempio &quot;GraphQL schema is take from configuration&quot; (Lo schema di proviene dalla configurazione), e le etichette correlate vengono riprodotte correttamente nelle diverse lingue. (SITES-34018)
 
-AEM ora evita il deterioramento delle prestazioni causato da metadati XMP non validi nelle risorse immagine. Le risorse che contengono nomi di proprietà XMP non validi o non conformi, ad esempio quelli con segmenti numerici o strutture non qualificate, non attivano più i registri di avviso ripetuti durante l’elaborazione. Il sistema filtra i metadati problematici per garantire che l’acquisizione e la convalida delle risorse siano completate senza errori. (SITES-30683)
+#### [!DNL Content Fragments] - Editor query GraphQL{#sites-graphql-query-editor-65-lts-sp2}
 
-<!--
-#### [!DNL Content Fragments] - Admin{#sites-admin-65-lts-sp1} -->
+* È stata perfezionata la gestione della convalida delle query GraphQL per arrestare gli errori di distribuzione causati da errori di esecuzione dei filtri. Il difetto ha generato eccezioni durante l’avvio dell’applicazione e ha bloccato il rollout riuscito negli ambienti interessati. La revisione garantisce un comportamento di convalida coerente e consente una distribuzione fluida senza interruzioni della convalida delle query di runtime. (SITES-35529)
+* Esplora risorse di GraphQL non avrà più esito negativo se il nome di un browser di configurazione contiene caratteri CJK. La creazione degli endpoint e l’accesso alle query salvate funzionano normalmente e la pagina Editor query di GraphQL rimane priva di errori. (SITES-31616)
 
-#### [!DNL Content Fragments] - Editor frammenti{#sites-fragments-editor-65-lts-sp1}
+#### [!DNL Content Fragments] - Editor modelli{#sites-model-editor-65-lts-sp2}
 
-Altri autori possono comunque pubblicare frammenti di contenuto anche quando un altro autore li estrae, il che è contrario al comportamento previsto della funzione di estrazione. Questa correzione impedisce ad altri utenti di visualizzare o utilizzare i pulsanti di pubblicazione nell’interfaccia di authoring quando viene estratto un frammento di contenuto. (SITES-30578)
+* I modelli per frammenti di contenuto nidificato non funzionavano più quando il refactoring associava la funzione a un interruttore disabilitato. La correzione ripristina il supporto del modello nidificato senza richiedere l’attivazione/disattivazione delle modifiche. Gli autori possono di nuovo creare e utilizzare modelli nidificati nell&#39;Editor modelli. (SITES-38681) CRITICO
 
-<!--
-#### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-65-lts-sp1}
+* Il pannello dei filtri Modelli per frammenti di contenuto non espone più stringhe non localizzate. AEM ora visualizza le etichette dei filtri localizzati e i valori dello stato localizzato in tutte le lingue. (SITES-30863)
+* L’Editor modello per frammenti di contenuto ora esegue il rendering delle stringhe localizzate per la finestra di dialogo di avviso del blocco. L’interfaccia utente sostituisce i messaggi in inglese non localizzati con risorse locali nelle lingue supportate. (SITES-28592)
 
-#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-65-lts-sp1}
+#### [!DNL Content Fragments] - API REST{#sites-restapi-65-lts-sp2}
 
-#### [!DNL Content Fragments] - REST API{#sites-restapi-65-lts-sp1} -->
+AEM Headless richiedeva un ramo della versione dedicato per evitare conflitti di dipendenza e di versione del bundle con le build principali. L’aggiornamento aggiunge un ramo headless versione 6.5lts e allinea i set di dipendenze e le versioni del bundle. Jenkins ora crea la base di codice headless in modo pulito, senza conflitti tra versioni. (SITES-36585)
 
-#### Console dei componenti{#sites-component-console-65-lts-sp1}
+<!-- #### Component console{#sites-component-console-65-lts-sp2} -->
 
-È stato risolto un problema nel componente Elenco prodotti a causa del quale la casella di controllo &quot;Seleziona tutti&quot; aggiungeva solo le prime 20 SKU dalla pagina iniziale invece di tutte le SKU nei risultati della ricerca. (SITES-29191)
+#### API contenuto{#sites-content-api-65-lts-sp2}
 
-#### Back-end core{#sites-core-backend-65-lts-sp1}
+Un difetto di attivazione della funzione ha segnalato in modo errato lo stato dell’API di gestione pagina. L’aggiornamento aggiunge un flag di abilitazione dedicato e lo valuta insieme all’interruttore esistente. L’API di gestione pagina ora mostra uno stato stabile. L’API di gestione del sito rimane sperimentale. (SITES-39284)
 
-I metadati XMP formattati in modo non corretto hanno generato un errore durante l&#39;elaborazione delle risorse immagine in `ValidationDataServlet`. La correzione assicura la gestione conforme dei metadati ed evita l’analisi ridondante di proprietà non valide. (SITE-30683)
+#### Back-end core{#sites-core-backend-65-lts-sp2}
 
-<!--
-#### Core Components{#sites-core-components-65-lts-sp1}
+* Una modifica nell’esperienza di authoring di Sites per risolvere comportamenti incoerenti che hanno interrotto i flussi di lavoro di modifica delle pagine standard. Gli autori hanno riscontrato risultati imprevisti durante l’interazione con i componenti, che hanno interferito con gli aggiornamenti dei contenuti e ridotto l’affidabilità. La modifica ripristina un comportamento stabile dell’editor e garantisce l’esecuzione coerente delle azioni di authoring in tutti gli scenari interessati. (SITES-35162) CRITICO
 
-#### Campaign integration{#sites-campaign-integration-65-lts-sp1}
-
-#### Experience Fragments{#sites-experiencefragments-65-lts-sp1}
-
-#### Foundation Components (Legacy){#sites-foundation-components-legacy-65-lts-sp1}
-
-#### Launches{#sites-launches-65-lts-sp1}
-
-#### Link Checker{#sites-link-checker-65-lts-sp1} -->
-
-#### MSM - Live Copy{#sites-msm-live-copies-65-lts-sp1}
-
-* È stato corretto un errore JavaScript `ns.ui.alert is not a function` che si verificava durante la riattivazione dell&#39;ereditarietà del componente fantasma in AEM 6.5 On-Prem. (SITES-31993)
-* È stato risolto un problema a causa del quale l’opzione di rollout &quot;Più tardi&quot; consentiva di continuare senza selezionare una data in AEM 6.5. (SITES-31374)
-
-#### Editor pagina{#sites-pageeditor-65-lts-sp1}
-
-* È stato risolto un problema nel modale Teaser a causa del quale la scheda Collegamento e azioni continuava a visualizzare lo stile degli errori, le icone e l’attributo ARIA non valido dopo l’immissione di dati validi e la risoluzione degli errori. (SITES-25527)
-* È stato risolto un problema nell’editor di testo del modale Teaser a causa del quale i pulsanti Elenchi e Paragrafi non trasmettevano il loro stato espanso o compresso agli assistenti vocali che garantiva aggiornamenti accurati degli attributi ARIA espansi. (SITES-25365)
-* È stato risolto un problema nella barra degli strumenti dei dati demografici a causa del quale la regolazione del cursore del carrello con l’input della tastiera spostava il focus sul pulsante Carrello invece di mantenere il focus sul cursore, migliorando l’efficienza della navigazione per gli utenti che utilizzano la tastiera. (SITES-25324)
-* È stato aggiunto un nome accessibile al cursore del carrello nella barra degli strumenti dei dati demografici assegnando un valore all&#39;elemento `<label>` associato. Questa correzione ha migliorato la compatibilità con le tecnologie per l’accessibilità e l’usabilità per gli assistenti vocali. (SITES-25322)
-* Sono stati aggiunti i ruoli ARIA e i nomi accessibili ai pulsanti nel menu a discesa della barra degli strumenti dei dati demografici. Questa correzione ha consentito una corretta identificazione tramite tecnologie per l’accessibilità e una migliore navigazione per gli utenti che utilizzano la tastiera e gli assistenti vocali. (SITES-25315)
-* È stato corretto il layout della barra degli strumenti dei dati demografici per impedire l’overflow del contenuto oltre la visualizzazione con uno zoom del browser del 200%, garantendo che tutti i controlli rimangano accessibili senza scorrimento orizzontale. (SITES-25309)
-* È stata corretta la gestione del focus nella barra degli strumenti dei dati demografici per mantenere il focus della tastiera sul pulsante attivato invece di reimpostarlo sulla posizione iniziale della barra degli strumenti. (SITES-25306)
-* L’etichetta del pulsante si sovrappone come previsto, utilizzando una descrizione per visualizzarla quando sono attive modalità con larghezze di schermo simili. (SITES-25285)
-* L’annotazione modale include un pulsante di invio visibile che consente agli utenti di inviare le annotazioni senza utilizzare il tasto ESC o senza fare clic all’esterno del modale. (SITES-25281)
-* L’annotazione modale include un pulsante con icona a forma di penna che consente agli utenti di inviare annotazioni, fornendo un metodo di invio chiaro e accessibile. (SITES-25269)
-* Sono stati corretti gli annunci degli assistenti vocali relativi ai pulsanti Annota e Chiudi annotazione per fornire un feedback accurato e pertinente e rimuovere informazioni non correlate o che generano confusione. (SITES-25268)
-* Le sezioni dell’area di lavoro nelle pagine dell&#39;Editor AEM ora supportano l’accessibilità completa da tastiera. Gli utenti possono attivare i titoli delle sezioni e i pulsanti di modifica utilizzando solo la tastiera, senza dover passare con il mouse. Questo aggiornamento garantisce la conformità a WCAG 2.1.1 e migliora l’usabilità tra i componenti (come modali Teaser, Immagine, Carosello, Layout, Timewarp e Annotazione). (SITES-25256)
-* È stato rimosso l’inutile scorrimento orizzontale nel modale Carosello a una larghezza di 320 px per garantire che tutto il contenuto venga visualizzato nel riquadro di visualizzazione senza richiedere la navigazione laterale. (SITES-25254)
-* È stato rimosso l’inutile scorrimento orizzontale nel modale Immagine a una larghezza di 320 px per garantire che tutto il contenuto venga visualizzato nel riquadro di visualizzazione senza richiedere la navigazione laterale. (SITES-25244)
-* È stato rimosso l’inutile scorrimento orizzontale nel modale Teaser a una larghezza di 320 px per garantire che tutto il contenuto venga visualizzato nel riquadro di visualizzazione senza richiedere la navigazione laterale. (SITES-25242)
-* Attivazione della navigazione tramite tastiera per il `List` e `Paragraph Format` il menu pop-up, entrambi nel modale Teaser. Questa correzione consente agli utenti di accedere e navigare in questi menu utilizzando i tasti freccia. (SITES-25235)
-* Sono stati corretti gli annunci degli assistenti vocali relativi ai pulsanti Annota e Chiudi annotazione per fornire un feedback preciso e pertinente in linea con le azioni associate. (SITES-25234)
-* È stata migliorata l’etichetta del pulsante Aiuto nel modale Teaser per descriverne chiaramente lo scopo e fornire un contesto significativo per tutti gli utenti, compresi gli utenti di tecnologie per l&#39;accessibilità. (SITES-25224)
-* È stato migliorato il righello dell’emulatore per gli utenti di utilità di lettura dello schermo associando le misurazioni del righello ai rispettivi dispositivi. Inoltre, sostituendo la descrizione con un elemento descritto da aria. (SITES-24955)
-* Non è stata implementata alcuna correzione perché il pulsante Modifica funziona come previsto e fornisce contesto informativo anziché eseguire un&#39;azione. (SITES-24950)
-* L’ordine del focus confermato nella pagina dell’editor segue una sequenza logica che consente agli utenti di navigare tra tutti gli elementi interattivi senza saltare o tornare indietro in modo imprevisto. (SITES-24937)
-* L’area di lavoro in modalità Anteprima confermata aggiorna correttamente la spaziatura del testo quando gli utenti applicano impostazioni di spaziatura di testo personalizzato, garantendo una formattazione coerente in tutte le aree di contenuto. (SITES-24936)
-* Il pulsante Anteprima verificato non attiva più le modifiche di contesto o stato nel focus, garantendo agli utenti l’attivazione intenzionale prima che la vista della pagina venga aggiornata. (SITES-24784)
-* Ai collegamenti di navigazione dell’app sono state aggiunte le assegnazioni corrette del ruolo ARIA, che consentono agli assistenti vocali di identificare con precisione gli elementi desiderati e di annunciarne gli elementi per migliorarne l&#39;accessibilità. (SITES-24718)
-* Il pulsante Modifica filtri è stato aggiornato per annunciare gli stati espansi e compressi agli assistenti vocali, rimuovere gli attributi ARIA ridondanti e regolare l’etichettatura per fornire descrizioni chiare e non duplicate. (SITES-24713)
-* Nella finestra di dialogo per la selezione dei collegamenti sono stati aggiunti annunci di assistenti vocali per i messaggi di stato dei risultati di ricerca, in modo che gli utenti ricevano una conferma al caricamento dei risultati o quando non vengono trovate corrispondenze. (SITES-24700)
-* Sono stati aggiunti annunci di assistenti vocali per lo stato di caricamento del modale Immagine, in modo che gli utenti ricevano un feedback durante il caricamento del modale e siano pronti per l’interazione. (SITES-24697)
-* È stato risolto un problema di accessibilità a causa del quale l’intestazione permanente oscurava il contenuto modale di Teaser con uno zoom del 200% e del 400%, garantendo piena visibilità e usabilità quando si utilizzava l’ingrandimento della pagina. (SITES-24523)
-* È stato aggiunto al campo Ricerca/filtro un messaggio di stato con il numero di risultati di ricerca, per consentire agli assistenti vocali di annunciare i risultati agli utenti. (SITES-24506)
-* Sono stati aggiunti annunci di assistenti vocali per il numero di risultati di ricerca nel campo Ricerca/Filtro, in modo che gli utenti ricevano un feedback immediato al caricamento dei risultati. (SITES-24505)
-* È stato aggiunto un nome accessibile all&#39;elenco di schede nel pannello della barra laterale, consentendo agli assistenti vocali di annunciarne lo scopo in conformità alle linee guida WAI-ARIA. (SITES-24492)
-* Sono state aggiunte etichette descrittive alle icone dell&#39;editor ambigue, in modo che tutti gli utenti comprendano chiaramente la funzione di ciascun pulsante. (SITES-24480)
-* È stata abilitata l&#39;accessibilità completa da tastiera per i titoli delle sezioni e i pulsanti di azione nella vista Area di lavoro, garantendo un funzionamento coerente per gli utenti di mouse e tastiera. (SITES-24479)
+* È stato perfezionato il comportamento di authoring di Sites per risolvere un problema che ha interrotto la modifica della pagina e causato risultati incoerenti durante l’interazione con i componenti. Gli autori hanno riscontrato risposte impreviste dell’interfaccia utente che hanno interferito con gli aggiornamenti dei contenuti e ridotto l’affidabilità del flusso di lavoro. La modifica ripristina una gestione stabile dello stato dell’editor e garantisce l’esecuzione prevedibile delle azioni di authoring negli scenari interessati. (SITES-34499)
 
 <!--
-#### Replication{#sites-replication-65-lts-sp1}
+#### Core Components{#sites-core-components-65-lts-sp2}
 
-#### Rich Text Editor{#sites-rte-65-lts-sp1} -->
+#### Campaign integration{#sites-campaign-integration-65-lts-sp2}
 
-#### Editor universale {#sites-universal-editor-65-lts-sp1}
+#### Experience Fragments{#sites-experiencefragments-65-lts-sp2}
 
-* È stata risolta una situazione di tipo &quot;race condition&quot; in QueryTokenService che causava accessi non validi quando più richieste con parametri di query venivano attivate prima che il servizio token di accesso restituisse un risultato. (SITES-30659)
-* È stato risolto un problema in UniversalEditorURLService a causa del quale il salvataggio di un array di percorsi mappati in Felix ConfigMgr manteneva solo il primo elemento. (SITES-30292)
+#### Foundation Components (Legacy){#sites-foundation-components-legacy-65-lts-sp2}
+-->
 
-### [!DNL Assets]{#assets-65-lts-sp1}
+#### Lanci{#sites-launches-65-lts-sp2}
 
-È stato risolto un problema a causa del quale la sincronizzazione delle risorse da DAM remoto a AEM locale di Sites rimuoveva dalle risorse lo stato pubblicato e le proprietà relative alla replica. (Assets-48958)
+* La timeline dei siti mostrava un testo in inglese hardcoded durante la promozione di Launch: &quot;Creata versione ... prima di promuovere il lancio.&quot; L’aggiornamento sostituisce la stringa hardcoded con la gestione localizzata dei messaggi. La timeline ora visualizza il testo localizzato e allinea la voce con il comportamento di localizzazione standard di AEM. (SITES-39157)
+* L’ambito della promozione di Launch si è spostato quando gli autori hanno promosso una sottosezione utilizzando Promuovi pagina corrente e sottopagine. AEM ha inoltre promosso pagine non correlate e causato modifiche live impreviste. La correzione corregge il calcolo dell’ambito di Launch in modo che venga promosso solo il sottoalbero scelto. (SITES-38315)
+* I frammenti di contenuto all&#39;interno di Launches non hanno partecipato all&#39;indice `damAssetLucene` e hanno limitato i risultati di ricerca e l&#39;efficienza delle query. Questa modifica aggiunge i percorsi dei frammenti di contenuto di Launch alla definizione dell’indice. Nelle query di ricerca e personalizzate sono ora disponibili frammenti di contenuto in `/content/launches`. (SITES-35634)
+* Nell’interfaccia utente Lanci sono stati visualizzati i controlli di lancio per frammenti di contenuto, anche se il prodotto non espone i lanci per frammenti di contenuto nell’interfaccia utente touch. Questa modifica elimina i percorsi del codice di Launch per frammenti di contenuto da cq-launches-content e regola il filtro degli elenchi di Launch. Gli autori ora visualizzano opzioni di lancio pagina coerenti senza voci di lancio per frammenti di contenuto. (SITES-35633)
+* In AEM 6.5 LTS Quickstart mancavano i bundle e i prerequisiti Launches richiesti, bloccando l’abilitazione di OpenAPI Launches. L’aggiornamento aggiunge i bundle Launches e le dipendenze richieste, ad esempio il supporto delle metriche, gli aggiornamenti DAM-cfm e la configurazione della coda. Le API Launches ora vengono eseguite su 6.5 LTS Quickstart con i componenti di runtime richiesti presenti. (SITES-35297)
+* Il pacchetto CF Launches richiamava versioni di dipendenze più recenti e librerie GraphQL non necessarie, il che ha complicato l’integrazione con AEM 6.5 LTS. Questa modifica allinea le versioni delle dipendenze alla linea di base di AEM 6.5 LTS e elimina le dipendenze GraphQL non utilizzate. La risoluzione del bundle ora rimane coerente e l&#39;avvio di CF Launches rimane stabile. (SITES-35295)
+* AEM Launches ora esegue una pipeline Jenkins dedicata per il ramo 6.5 LTS. La pipeline viene eseguita ogni notte per generare e inviare avvisi di errore tramite e-mail. Questa configurazione aumenta la copertura dei test e rileva tempestivamente le regressioni. (SITES-35293)
+* AEM 6.5 LTS ora distribuisce un bundle API Launches aggiornato con versioni allineate degli artefatti. Il bundle tiene traccia della riga del codice principale mantenendo la versione corretta della versione 6.5 LTS. Questo aggiornamento stabilizza il consumo dell’API Launches nello stack 6.5 LTS. (SITES-35292)
+* AEM 6.5 LTS ora include un bundle launch-core aggiornato con versioni di dipendenza allineate. L’aggiornamento aggiunge la gestione di base Launches per i tipi di dati UUID di frammenti e UUID di riferimento. L’elaborazione dei lanci ora mantiene un comportamento coerente tra i lanci e i flussi di lavoro per frammenti di contenuto. (SITES-35290)
+* È stato perfezionato l’editor Sites per risolvere eventuali comportamenti incoerenti che hanno interrotto i normali flussi di lavoro di authoring delle pagine. Gli autori hanno riscontrato un’interazione imprevista tra i componenti che ha interferito con gli aggiornamenti dei contenuti e ha ridotto l’affidabilità delle modifiche. La modifica ripristina una gestione coerente dello stato dell’interfaccia utente e garantisce l’esecuzione prevedibile delle azioni di authoring negli scenari interessati. (SITES-35138)
+* Launches Modifica ora mostra il testo dell&#39;errore localizzato invece della stringa hardcoded `Provided path is not a launch`. Ora l’interfaccia utente esegue il rendering dei messaggi tradotti tra le lingue quando Edit riceve un percorso di avvio non valido. (SITES-33360)
+* AEM 6.5 LTS ora include il lavoro delle porte laterali OpenAPI Launches. L’aggiornamento porta in parità i bundle API Launches, i pacchetti di contenuti e gli artefatti Quickstart richiesti e abilita gli scenari OpenAPI di Launches di frammenti di contenuto con convalida CI stabile. (SITES-32050)
+* L’interfaccia utente Launches ora localizza l’etichetta del modello Sostituito. I dettagli di sostituzione del modello ora visualizzano il testo tradotto invece di una stringa solo in inglese. (SITES-29525)
+* AEM ha risolto una chiave di localizzazione mancante in **Sites** > **Launches** > **Edit**. Ora gli utenti visualizzano un messaggio di errore tradotto invece della stringa non elaborata &quot;Impossibile aggiornare l’elenco delle origini del lancio&quot;. (SITES-21499)
+* L’interfaccia utente di promozione di Launch ora visualizza le etichette di stato localizzate e le azioni. Nell&#39;area di anteprima viene visualizzato il testo tradotto per **Eliminato**, **Nuovo** e **Visualizza**, anziché le stringhe inglesi non elaborate. (SITES-13540)
+* La creazione del lancio ora mostra messaggi di errore localizzati. L&#39;interfaccia utente non visualizza più stringhe inglesi non elaborate, ad esempio `Unable to create launch page`, `Source root resource is not a page` o `Mandatory parameter is missing`. (SITES-13085)
+
+
+<!-- #### Link Checker{#sites-link-checker-65-lts-sp2} -->
+
+
+#### MSM - Live Copy{#sites-msm-live-copies-65-lts-sp2}
+
+* Gli amministratori avevano visibilità limitata sull’elaborazione push-on-modify di MSM durante le modifiche al contenuto. La correzione aggiunge una registrazione dettagliata della ricezione e dell’esecuzione del rollout degli eventi MSM. L’output di debug ora mostra quali eventi sono stati attivati, quali percorsi di contenuto sono stati modificati e chi ha attivato la modifica. (SITES-38029)
+* AEM ha risolto un problema di layout di localizzazione nel campo data di rollout blueprint. Il prompt della data è ora adatto al controllo e rimane leggibile nelle lingue supportate, incluso `fr_FR`. (SITES-14961)
+
+<!-- #### Page editor{#sites-pageeditor-65-lts-sp2} -->
+
+#### Replica{#sites-replication-65-lts-sp2}
+
+La pubblicazione dell’Editor pagina ora gestisce gli URL contenenti selettori o suffissi. La richiesta pubblicata ora invia il percorso della pagina JCR, non una stringa URL di selettore o suffisso, quindi l’attivazione viene completata e il contenuto viene attivato. La replica ora restituisce uno stato di errore in caso di errore, che impedisce la visualizzazione di falsi messaggi di &quot;pubblicazione avviata&quot;. (NPR-43288)
+
+<!-- #### Rich Text Editor{#sites-rte-65-lts-sp2} -->
+
+#### Editor modello{#sites-template-editor-65-lts-sp2}
+
+Il testo dello stato del modello viene visualizzato in verticale in **Strumenti** > **Generale** > **Modelli** per alcune impostazioni internazionali. L’etichetta &quot;obsoleto&quot; interrompeva il layout e veniva letta come una colonna di caratteri. La correzione corregge lo stile dello stato del modello in modo che l’etichetta venga riprodotta su una singola linea orizzontale. (SITES-36797)
+
+#### Editor universale {#sites-universal-editor-65-lts-sp2}
+
+* Configurazione predefinita OSGi impostata come `preview=true`. L&#39;editor universale è stato avviato in modalità Anteprima. Questo aggiornamento corregge il valore predefinito e ripristina il comportamento standard della voce Produzione. Universal Editor ora si apre in modalità Produzione a meno che un amministratore non attivi esplicitamente la modalità Anteprima. (SITES-37193)
+* Per impostazione predefinita, il comando Apri di Universal Editor è ora disponibile in modalità Anteprima negli ambienti di sviluppo e stage. Il comando aggiunge preview=true, che mantiene i controlli dell’autore allineati con il contesto di anteprima ed evita l’apertura accidentale della produzione. (SITES-33839)
+
+### [!DNL Assets]{#assets-65-lts-sp2}
+
+Assets Relate ora funziona per i nomi di file che includono spazi. La logica del client di relazione aggiornata ora gestisce correttamente i percorsi contenenti spazio ed evita `undefined` errori di origine durante la selezione della relazione. Viene visualizzata la finestra di dialogo Riferisci (Relate), che consente di salvare le relazioni senza interruzioni dell&#39;interfaccia utente o spiner. Gli utenti DAM possono correlare, derivare e annullare la correlazione delle risorse senza rinominare i file. (Assets-56418)
+
+#### [!DNL Dynamic Media]{#assets-dm-65-lts-sp2}
+
+* Nuova integrazione del lettore video Dynamic Media (rollout limitato) - Una nuova esperienza di lettore video Dynamic Media è ora disponibile in AEM 6.6 Quickstart. Questo miglioramento è attualmente abilitato solo per i clienti iniziali come parte di un rollout controllato. (Assets-60165)
+* È stato risolto un problema che impediva all&#39;opzione Seleziona miniatura nella finestra di dialogo delle proprietà video di aprire il selettore risorse, consentendo agli utenti di scegliere miniature personalizzate per le risorse video. (Assets-58926)
+* Nei video Dynamic Media, è stato aggiunto il supporto per la selezione dell’arabo nell’elenco a discesa Lingua sottotitoli e tracce audio, consentendo agli autori di gestire i sottotitoli arabi direttamente in AEM. (Assets-61771)
+
+<!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
+
 
 <!--
-#### [!DNL Dynamic Media]{#assets-dm-65-lts-sp1}
+### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp1}
-
-### [!DNL Forms]{#forms-65-lts-sp1}
-
-#### Forms Designer 
+#### Forms Designer
 
 #### Forms
 
 #### Forms JEE 
- 
-#### Forms Captcha {#forms-captcha-65-lts-sp1} 
 
-#### XMLFM {#forms-xmlfm-65-lts-sp1}
+#### Forms Captcha {#forms-captcha-65-lts-sp2}
 
-#### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp1}
+#### XMLFM {#forms-xmlfm-65-lts-sp2}
 
-#### [!DNL Forms Designer] {#forms-designer-65-lts-sp1} -->
+#### [!DNL Adaptive Forms] {#adaptive-forms-65-lts-sp2}
 
-### Foundation {#foundation-65-lts-sp1}
+#### [!DNL Forms Designer] {#forms-designer-65-lts-sp2}
 
-<!--
-#### Apache Felix {#foundation-apachefelix-65-lts-sp1}
+#### Forms Designer
 
-#### Campaign{#foundation-campaign-65-lts-sp1}
+#### AdaptIve Forms
 
-#### Cloud Services{#foundation-cloudservices-65-lts-sp1}
+#### Forms Captcha
+
+#### Forms Management UI
+-->
 
 
+### Foundation {#foundation-65-lts-sp2}
 
-#### Communities {#foundation-communities-65-lts-sp1}
+#### Apache Felix {#foundation-apachefelix-65-lts-sp2}
 
-#### Content distribution{#foundation-content-distribution-65-lts-sp1}
-
-#### CRX {#foundation-crx-65-lts-sp1}
-
-#### Granite{#foundation-granite-65-lts-sp1} -->
-
-#### HTL{#foundatoin-htl-5-lts-sp1}
-
-Sono stati risolti i cicli di dipendenza OSGi che impedivano il funzionamento della factory del motore di script HTL, garantendo una risoluzione del servizio e l&#39;esecuzione dello script corrette. (Granite-58275)
-
-#### Integrazioni{#foundation-integrations-65-lts-sp1}
-
-* È stato rimosso l&#39;utilizzo di commons-httpclient 3.x dal bundle `com.adobe.cq.cq-analytics-integration` e sostituito con `org.apache.httpcomponents.httpclient` 4.5.13.B0001 per allinearlo ai più recenti standard AEM 6.5 LTS. (CQ-4360586)
-* È stato rimosso il bundle di integrazione Search&amp;Promote obsoleto da AEM per eliminare i componenti inutilizzati e ridurre il sovraccarico di manutenzione. (CQ-4358030)
-* Sono stati aggiunti nuovi casi di test back-end per l&#39;integrazione SiteCatalyst per migliorare la convalida delle analisi e garantire una copertura più completa. (CQ-4359991)
-* È stato risolto un problema nella sezione Proprietà della configurazione di lancio a causa del quale i menu a discesa Azienda e Proprietà non venivano visualizzati. Inoltre, Salva e chiudi hanno attivato errori nonostante tutti i campi obbligatori fossero compilati e messaggi di errore non corretti venivano visualizzati per Azienda e Proprietà quando solo il campo Titolo era vuoto. (CQ-4359853)
-* È stata rimossa la voce del percorso del servlet `searchpromote` dalla versione 6.6 per allinearla alla rimozione del bundle Search&amp;Promote. (CQ-4359523)
-* Sono stati corretti alcuni casi di test HTTP per l&#39;archivio di destinazione, al fine di garantire una convalida accurata e una maggiore affidabilità dei test. (CQ-4359022)
-* È stato rimosso l&#39;utilizzo del caching Guava dal modulo integration-adobeims-console per eliminare le dipendenze della libreria Guava. (CQ-4358710)
-* Convalidati i flussi di lavoro di integrazione di DTM, attività casella in entrata e funzionalità di progetto in AEM 6.6 per garantire il corretto funzionamento in AEM 6.5. (CQ-4358151)
-* Funzionalità Approfondimenti contenuto convalidata in AEM 6.6 per garantire la compatibilità e il corretto funzionamento in AEM 6.5. (CQ-4357774)
-* Funzionalità Cloud Service convalidata in AEM 6.6 per garantire la compatibilità e il corretto funzionamento in AEM 6.5. (CQ-4357773)
-* Integrazione convalidata della console Adobe IMS in AEM 6.6 per garantire la compatibilità e il corretto funzionamento in AEM 6.5. (CQ-4357772)
-* È stata aggiornata la pipeline Jenkins per l&#39;integrazione Test&amp;Target da eseguire su Java 17, risolvere gli errori dei test Selenium, spostare alcuni test su Playwright e garantire il superamento di tutti test unitari. (CQ-4357770)
-* Sono state allineate le integrazioni DX, il flusso di lavoro, la casella in entrata e i progetti con il ramo 6.6.0 aggiornando le pipeline di generazione e test. Risoluzione dei problemi di compatibilità dell&#39;aggiornamento e convalida di tutti i servizi interessati per la stabilità e la funzionalità. (CQ-4357767)
+* La sicurezza Sling Resource Access è ora in esecuzione sulla versione 1.1.2. ResourceAccessSecurityImpl non genera più un&#39;eccezione ClassCastException durante l&#39;inizializzazione quando vengono registrati più servizi ResourceAccessGateHandler. L&#39;inizializzazione viene ora completata in modo affidabile ed evita errori di avvio in ambienti con più gestori. (NPR-42750)
+* Console JMX e Console Web ora inviano un `Content-Type: text/css header` per le risorse CSS della console. Il controllo MIME rigoroso non blocca più il caricamento del foglio di stile, pertanto nell&#39;interfaccia utente `/system/console/jmx` viene eseguito il rendering con uno stile normale. (GRANITE-63677)
+* AEM ora evita di duplicare le voci ACL per il gruppo `contributor` in `WEB-INF/resources/provisioning/model.txt` generato. L’output WAR ora contiene un blocco ACL coerente, che impedisce la confusione delle autorizzazioni durante la revisione. (GRANITE-63269)
+* AEM non cancella più le impostazioni di deserializzazione Firewall (Firewall deserializzazione) durante le operazioni di aggiornamento del bundle, inserire nell&#39;elenco Bloccati inserire nell&#39;elenco Consentiti e. La logica di registrazione del filtro aggiornata mantiene l’istanza del firewall attiva allineata con la configurazione salvata, pertanto la protezione rimane abilitata senza riavviare il sistema. (GRANITE-61382)
+* La console Web Felix non genera più `NullPointerException` errori intermittenti durante l&#39;accesso `/system/console`. La gestione ServiceTracker aggiornata impedisce uno stato di tracciamento null. L’accesso e la navigazione dalla console rimangono stabili durante le richieste ripetute e la convalida automatizzata. (GRANITE-61042)
 
 <!--
-#### Jetty{#foundation-jetty-65-lts-sp1} -->
+#### Campaign{#foundation-campaign-65-lts-sp2}
 
-#### Localizzazione{#foundation-localization-65-lts-sp1}
+#### Cloud Services{#foundation-cloudservices-65-lts-sp2}
 
-* Le stringhe nella finestra di dialogo &quot;Rimuovi controllo di accesso&quot; dall&#39;elenco &quot;Autorizzazioni&quot; sono state localizzate per visualizzare le traduzioni corrette. (GRANITE-59427)
-* È stato risolto un problema nella finestra di dialogo Aggiungi regola di &quot;Proprietà suddivisione O&quot; dell&#39;editor dei modelli a causa del quale più stringhe di interfaccia utente, inclusi operatori ed etichette di campo, venivano visualizzate non localizzate. Tutte le stringhe vengono ora visualizzate con la localizzazione corretta. (CQ-4354014)
-* È stata aggiunta la traduzione mancante per la descrizione comando &quot;Breve descrizione per&quot; nella finestra di dialogo Modifica modelli flusso di lavoro. (CQ-4347996)
+#### Communities {#foundation-communities-65-lts-sp2}
 
-#### Oak {#foundation-oak-65-lts-sp1}
+#### Content distribution{#foundation-content-distribution-65-lts-sp2}
+-->
 
-È stato risolto un problema a causa del quale AEM ricreava o rinominava i file di configurazione esistenti in `/apps/system/config` durante gli aggiornamenti, sostituendo `.cfg.json` file con `.config` file. (GRANITE-58899)
+#### CRX {#foundation-crx-65-lts-sp2}
 
-#### Omnisearch{#foundation-omnisearch-65-lts-sp1}
+CRXDE Lite non mostra più una scheda vuota quando si apre un file JSP dopo un aggiornamento del Service Pack. AEM ora distribuisce il codice principale e aggiuntivo di CodeMirror corrispondente, evitando in tal modo l’errore irreversibile del browser e mantenendo l’editor utilizzabile. (GRANITE-64333)
 
-È stato risolto un problema di accessibilità a causa del quale i segnaposto venivano erroneamente visualizzati come etichette per i campi di input. Questo problema causa la mancanza di etichette dei campi in Ricerca, Frammenti di esperienza AEM, Frammenti di contenuto e Modelli di frammenti di contenuto. (Granite-61791)
+#### Granite{#foundation-granite-65-lts-sp2}
 
-<!--
-#### Platform{#foundation-platform-65-lts-sp1} -->
+Convalida sicurezza espressioni ora gestisce valori di configurazione OSGi vuoti o nulli. Applica i valori predefiniti sicuri, ignora le matrici vuote e registra i registri di cancellazione, impedendo NullPointerException e risultati di convalida imprevedibili. (NPR-43163)
 
-#### Progetti{#foundation-projects-65-lts-sp1}
+<!-- #### HTL{#foundatoin-htl-5-lts-sp2} -->
 
-* È stato risolto un problema che causava la visualizzazione di un pop-up di errore non corretto durante l’eliminazione di un progetto nella vista Calendario, nonostante l’eliminazione del progetto fosse riuscita correttamente. (CQ-4358890)
-* È stato risolto un problema in Firefox a causa del quale il piè di pagina della scheda &quot;Raccolta di risorse&quot; nella vista Progetto si sovrapponeva al bordo della scheda. Il piè di pagina ora viene allineato correttamente senza sovrapposizioni. (CQ-4353317)
+#### Integrazioni{#foundation-integrations-65-lts-sp2}
 
-#### Quickstart{#foundation-quickstart-65-lts-sp1}
-
-* È stato aggiornato lo script di disinstallazione per regolare l’intervallo di versioni per il bundle Guava per evitare che venga inserito nell&#39;elenco Bloccati quando viene installato tramite il gestore di pacchetti. (GRANITE-59559)
-* È stato risolto un problema nell&#39;interfaccia utente di replica a causa del quale veniva visualizzato un errore (`#1660`) durante la modifica degli agenti di replica; a tale scopo è stata corretta la gestione delle caselle di controllo classiche nell&#39;interfaccia. (GRANITE-58302)
-* Sono stati risolti diversi errori di avvio per l’archivio dati S3 durante l’esecuzione di AEM 6.5 LTS con JDK 21, risolvendo il problema delle autorizzazioni di servizio mancanti, aggiornando la gestione della configurazione e garantendo la corretta inizializzazione dei servizi richiesti. (GRANITE-57082)
-* È stata definita la strategia di manutenzione per AEM 6.5. Questa correzione includeva quanto segue:
-   * Cadenza del Service Pack.
-   * Cadenza dell&#39;hotfix.
-   * Supporto parallelo con AEM 6.6.
-   * Matrice di supporto aggiornata.
-   * Responsabilità di proprietà del componente aggiuntivo. (GRANITE-50459)
+AEM ora sincronizza le attività di Adobe Target anche quando esistono date di inizio e di fine. Il payload di Target ora formatta le date dell’attività come marche temporali ISO 8601 complete, inclusi secondi, millisecondi e fuso orario. Target non rifiuta più la richiesta con `InvalidJson.Json`. Le attività pianificate ora passano a uno stato sincronizzato invece di rimanere non sincronizzate. (CQ-4360733)
 
 <!--
-#### Security{#foundation-security-65-lts-sp1} -->
+#### Jetty{#foundation-jetty-65-lts-sp2}
 
-#### Sling{#foundation-sling-65-lts-sp1}
+#### Localization{#foundation-localization-65-lts-sp2}
 
-* Sling ResourceAccessSecurity è stato aggiornato alla versione 1.1.2 per risolvere un&#39;`ClassCastException` che si verificava quando più riferimenti a `ResourceAccessGate` inizializzavano `ResourceAccessSecurityImpl`. (NPR-42750)
-* È stato risolto un problema nell’integrazione di Adobe Stock a causa del quale la finestra di dialogo Licenza veniva visualizzata in grigio. Questo problema era dovuto alla rimozione dei campi di input richiesti dalla funzione `sunt:initList`. La funzione è stata trovata nelle librerie client di Coral Foundation. Sono state aggiornate le librerie client per mantenere i campi necessari, abilitando la funzionalità appropriata della finestra di dialogo delle licenze. (NPR-42748)
-* È stato corretto un errore di compilazione JSP imprevisto in `org.apache.sling.scripting.jsp 2.6.0`. (NPR-42640)
+#### Oak {#foundation-oak-65-lts-sp2}
+
+#### Omnisearch{#foundation-omnisearch-65-lts-sp2}
+
+#### Platform{#foundation-platform-65-lts-sp2}
+
+#### Projects{#foundation-projects-65-lts-sp2}
+-->
+
+#### Quickstart{#foundation-quickstart-65-lts-sp2}
+
+AEM 6.5 LTS SP2 aggiorna il bundle di Foundation Layer impostato per Sling, Oak e Felix. Questi aggiornamenti rafforzano la stabilità del runtime principale e allineano le versioni delle dipendenze in tutta la piattaforma. (GRANITE-61874)
 
 <!--
-* Backported the fix for Sling Scripting issue that caused `DataTimeParseException` and `String.length()` null pointer exceptions during package installation. Updated Sling Scripting to version 2.8.3-1.0.10.6 to reduce installation errors and improve stability. (NPR-42640) -->
+#### Security{#foundation-security-65-lts-sp2}
+
+AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311) -->
+
+#### Sling{#foundation-sling-65-lts-sp2}
+
+AEM ora include Sling Engine 2.16.6. Questa modifica elimina le violazioni XSS segnalate dagli strumenti di sicurezza e migliora la sicurezza e la stabilità del rendering di base. (NPR-43105)
 
 <!--
+#### Translation{#foundation-translation-65-lts-sp2}
 
-#### Translation{#foundation-translation-65-lts-sp1} -->
+#### User interface{#foundation-ui-65-lts-sp2}
+-->
 
-#### Interfaccia utente{#foundation-ui-65-lts-sp1}
+#### WCM{#foundation-wcm-65-lts-sp2}
 
-* È stato risolto un problema nell’interfaccia utente di authoring di AEM che limitava la visualizzazione dei gruppi di utenti a 41. Questo problema era dovuto a un limite di batch predefinito nel componente di selezione dei gruppi dell’interfaccia utente Granite. Il componente è stato aggiornato per visualizzare tutti i gruppi senza troncamento. (NPR-42749)
-* È stato risolto un problema nella procedura guidata per la creazione di pagine On-Prem, a causa del quale i campi obbligatori nei componenti con più campi non venivano riconvalidati durante la modifica delle proprietà della pagina. Questo problema, a sua volta, consentiva agli autori di ignorare la convalida e procedere con dati incompleti. (GRANITE-58826)
-* Sono stati corretti gli attributi ARIA per il pulsante Guida in AEM per garantire che gli assistenti vocali JAWS visualizzino un&#39;etichetta chiara e intuitiva invece di visualizzare l&#39;icona non tradotta e i metadati di testo. (GRANITE-55360)
+AEM Translations non genera più errori in Java 17 o Java 21 a causa di problemi di formato XLIFF. La pipeline di esportazione ora produce XLIFF conformi agli standard accettati dai provider di traduzione. Questa modifica rimuove le interruzioni del lavoro di traduzione e ripristina un trasferimento prevedibile tra AEM e i servizi di traduzione. I flussi di lavoro di traduzione ora rimangono stabili nei runtime Java supportati. (CQ-4360217)
 
-#### WCM{#foundation-wcm-65-lts-sp1}
+#### Flusso di lavoro{#foundation-workflow-65-lts-sp2}
 
-* È stato aggiunto il supporto Java 17 per le traduzioni AEM aggiornando i bundle di traduzione, verificando la compatibilità dei pacchetti Java, rimuovendo le dipendenze obsolete e garantendo la piena funzionalità tramite test completi. (CQ-4357525)
-* È stato rimosso il test Evergreen `com.adobe.cq.platform.it.http.workflow.inbox.InboxOnOffTimeIT.testActivateLater` per evitare falsi errori durante il test automatico. (CQ-4298376)
+EmailNotificationService-Processor non attiva più errori ripetuti di tipo &quot;Segmento non trovato&quot; durante la gestione delle notifiche del flusso di lavoro. La gestione aggiornata delle eccezioni rileva SegmentNotFoundException e interrompe il ciclo di elaborazione invece di continuare con letture non valide. L’esecuzione del flusso di lavoro rimane stabile e il rumore del registro diminuisce durante l’accesso alla casella in entrata e all’elemento di lavoro. (GRANITE-62635)
 
-#### Flusso di lavoro{#foundation-workflow-65-lts-sp1}
 
-* È stato aggiunto l&#39;attributo `data-detailsurl` mancante negli elementi della casella in entrata per impedire la visualizzazione di valori non definiti negli URL quando si utilizza AEM 6.5 LTS con Java 21. (GRANITE-60158)
-* È stata corretta un&#39;eccezione NullPointerException nel metodo `deactivate` del bundle `WorkflowToPublishEventService` durante l&#39;esecuzione di AEM 6.5 LTS con Java 21, garantendo l&#39;arresto corretto del servizio del flusso di lavoro senza errori. (GRANITE-58151)
-* L&#39;indice del flusso di lavoro è stato aggiornato per supportare la condivisione, la personalizzazione fuori sede e la risoluzione dei problemi di query della timeline. (GRANITE-52640)
-* L&#39;indice del flusso di lavoro è stato aggiornato per supportare la condivisione, le funzioni di personalizzazione fuori sede e la risoluzione dei problemi di query della timeline. (GRANITE-52294)
-* Sono stati risolti un numero maggiore di errori di registro durante la convalida del confronto dei registri per un aggiornamento del programma ad AEM versione 10912, garantendo un&#39;esecuzione stabile del flusso di lavoro. (GRANITE-44268)
-* È stato aggiornato il metodo di bonifica URL negli Archivi dei flussi di lavoro per sostituire `url.searchParams` con `url.search`, migliorando la protezione XSS per gli URL vulnerabili. (CQ-4359585)
-* Sono state convalidate le funzionalità di flusso di lavoro, casella in entrata e Progetti in AEM 6.6 Forms per garantirne il corretto funzionamento e l&#39;integrazione. (CQ-4358777)
-* È stata implementata l&#39;automazione per il rilascio di artefatti di contenuti dei flussi di lavoro tramite Jenkins, consentendo processi di distribuzione semplificati e coerenti in AEM 6.5. (CQ-4358472)
-* È stato risolto un problema nel flusso di lavoro Crea attività nella casella in entrata a causa del quale, dopo aver fatto clic su Invia, la finestra di dialogo &quot;Aggiungi attività&quot; non si chiudeva a causa di un errore di sintassi JavaScript, nonostante l&#39;attività fosse stata creata. (CQ-4355336)
-* È stato risolto un problema che impediva il salvataggio della configurazione della visualizzazione Casella in entrata a causa di una definizione di proprietà mancante per `isEndUserConfigurationEnabled`. (CQ-4287757)
 
-## Moduli
 
-### Forms Designer
-
-* Quando un utente esporta i dati per un PDF basato su XFA utilizzando exportDataAPI, l’XML risultante mostra discrepanze rispetto ai dati XML esportati manualmente utilizzando Acrobat Reader. Nell’output mancavano valori di alcuni campi rispetto all’output generato da Acrobat Reader. (LC-3922791)
-* La generazione di un PDF con tag con il servizio di output in Workbench aggiunge un tag di etichetta imprevisto sotto il tag di riferimento in un elemento del sommario. (LC-3922756)
-* Quando si appiattiscono PDF dinamici compilabili in formato PDF/A utilizzando il servizio di output, lo stato dinamico non viene mantenuto. Questo comporta una perdita di dati e potenziali problemi di conformità, soprattutto quando è abilitata l’assegnazione di tag. (LC-3922708)
-* Quando un utente inserisce le didascalie dei campi con allineamento in basso o a destra in AEM Forms Designer, la struttura ad albero dei tag include solo la didascalia senza il valore corrispondente, generando tag di accessibilità incompleti. (LC-3922619)
-* I codici QR nei PDF generati diventano illeggibili. Anche il testo alternativo per i codici QR non supera il test di accessibilità, influendo sulla compatibilità dell’assistente vocale. (LC-3922551)
-* Quando un utente esegue il rendering di una lettera nell’interfaccia utente dell’agente, la visualizzazione del contenuto non riesce a causa dell’API di render() di FormService. (LC-3922461)
-* Quando un utente tenta di creare file PDF/A da XDP con stile Sunken Square in AEM Forms, si verificano problemi di rendering dei bordi. (LC-3922180)
-* L’appiattimento dei moduli dinamici associati a uno schema XSD causa una perdita parziale di dati, in quanto alcuni dati dei moduli associati non vengono conservati nel PDF finale. (LC-3922008)
-* Quando un utente tenta di esportare dati da PDF interattivi utilizzando l’API extractData in AEM Forms 6.5.13 e versioni successive, risultano dei dati mancanti rispetto all’esportazione manuale. (LC-3921983)
-* La conversione di moduli XDP in PDF statici con AEM Forms Designer o il servizio di output crea più tag `Link-OBJR`. Questo causa un problema di conformità dell’accessibilità perché è previsto un singolo tag di collegamento unificato. (LC-3921977)
-
-### Moduli adattivi
-
-* In AEM Forms, se si abilita “Consenti testo formattato per il titolo” nel pannello principale, l’opzione “Escludi titolo dal documento di record” in un pannello nidificato nasconderà il titolo del pannello principale in modo errato. Questo errore si manifesta nel documento di record generato. (FORMS-19696)
-* Il sistema ignora il `sling:resourceType` personalizzato assegnato tramite `aem:afProperties` in uno schema JSON. Il tipo di risorsa personalizzato viene ignorato durante il rendering. (FORMS-19691)
-* Quando un utente invia un modulo adattivo con allegati precompilati utilizzando gli URI, tale invio non riesce e viene generata un’eccezione NullPointerException a causa della mancanza di dati binari. (FORMS-19371) (FORMS-19486)
-* Quando un utente carica un PDF nella sezione “Moduli e documenti”, la funzione timeline smette di funzionare. (FORMS-19407)(FORMS-19234)
-* Quando un utente carica i file utilizzando il componente predefinito (OOTB) del file allegato in AEM Forms, vengono identificate vulnerabilità di sicurezza. Questo problema può portare a una potenziale intercettazione del processo di invio da parte di entità non autorizzate. (FORMS-19271)
-* Quando un utente configura un modulo adattivo predefinito in AEM Forms per generare automaticamente un documento di record (DoR), il campo “Titolo” in Proprietà documento di Acrobat Reader non visualizza il titolo DoR acquisito. Per impostazione predefinita, il titolo del modulo non viene visualizzato al posto del nome del file. (FORMS-19263)
-* Quando un utente apre una comunicazione interattiva nell’interfaccia utente dell’agente, i dati precompilati non possono essere completamente cancellati; una volta rimossi, vengono ricompilati automaticamente con gli stessi dati. (FORMS-19151)
-* Quando un utente visualizza l’anteprima di un campo data nell’interfaccia utente dell’agente, la data cambia in modo imprevisto. Questo problema si verifica a causa di discrepanze di fuso orario tra l’impostazione UTC della VM e l’interpretazione della data da parte del sistema. (FORMS-19115)
-* Quando un utente invia un modulo, gli allegati potrebbero duplicarsi, generando più caricamenti dello stesso file. (FORMS-19045)(FORMS-19051)
-* L’aggiunta di coordinatori ai set di criteri in Protezione documenti non riesce negli ambienti di produzione e in quelli inferiori. (FORMS-18603, FORMS-18212, FORMS-19697)
-* Quando un utente fa clic sull’icona “datepicker-calendar-icon” in modalità desktop con un campo vuoto, si verifica un errore a causa della variabile _$focusDate non definita, che interrompe gli script personalizzati associati. (FORMS-18483)(FORMS-18268)
-* Quando un cliente visualizza l’anteprima di una lettera, il campo “Quantità in parole” non viene visualizzato oppure aggiorna i valori numerici in modo errato, causando un disallineamento e una mancanza di spazi nel contenuto. (FORMS-18437, FORMS-17330, FORMS-18209, FORMS-18557, CTG-4150848,FORMS-19614, LC-3922004)
-* Quando un cliente visualizza in anteprima una lettera salvata su RHEL, il contenuto non risulta allineato, mancano spazi e vengono visualizzati caratteri imprevisti come la “x”. (FORMS-18422)(FORMS-17641)
-* Quando un utente passa da una scheda all’altra in AEM Forms, la selezione dei componenti nella prima scheda risulta non reattiva. (FORMS-18345)
-* Quando un utente converte un file HTML in PDF utilizzando l’opzione WebToPDF, nel PDF di output manca la sezione dell’intestazione, inclusi i tag di metadati e titolo. (FORMS-18223, FORMS-17835, FORMS-19642, FORMS-18224)
-* In AEM JEE Process Manager SDK, quando un utente richiama il metodo retryAction(long actionOid), il sistema ritenta erroneamente la prima azione trovata nella tabella tb_action_instance. Questo flusso di lavoro si verifica anche quando viene fornito un ID azione specifico o quando l’ID è nullo, causando un comportamento non desiderato. (FORMS-18187)
-* Un utente riscontra problemi quando le funzionalità di bozza e invio salvate non riescono senza visualizzare alcun messaggio di errore. (FORMS-18069)
-* La transizione dai componenti di base basati su XSD ai componenti core impedisce l’implementazione di riferimenti tra file diversi negli schemi JSON, influendo sulla migrazione dei moduli adattivi. (FORMS-18065)
-* Quando un utente visualizza l’anteprima di una lettera nell’interfaccia utente dell’agente, il campo data mostra un valore errato a causa di problemi di conversione dell’ora in IC. Queste discrepanze derivano dalle differenze di fuso orario tra l’ambiente VM e l’interpretazione dell’orario da parte del sistema (UTC rispetto all’ora locale). (FORMS-17988) (FORMS-17248)
-* Quando un utente visualizza l’anteprima delle lettere utilizzando i modelli IC di avviso in AEM Forms, i tempi di generazione dei PDF variano in modo significativo, da 1,5 secondi a più di 10, anche sullo stesso server. Questa incoerenza influisce sui flussi di lavoro critici per l’azienda. (FORMS-17951)
-* Quando un utente associa un oggetto Firma scarabocchio in un modulo adattivo a un XDP utilizzando l’opzione “Origini dati” le modifiche non possono essere salvate. Il motivo è dovuto a errori di convalida delle proporzioni persistenti, anche quando si utilizzano valori validi. (FORMS-17587)
-* Quando un utente utilizza un XDP specifico con molti campi nascosti per i frammenti di documento, AEM crea nodi CRX con la proprietà `cm:optional` impostata su falso, causando un errore nell’invio della comunicazione interattiva (IC). (FORMS-17538)
-* Quando un cliente visualizza l’anteprima di una lettera, il campo della casella numerica non è in grado di gestire correttamente i valori negativi quando sono definiti limiti per le cifre lead e frac (interi e decimali). Questo problema si verifica a causa dell’utilizzo di parseFloat, che tratta il segno meno come parte del numero. (FORMS-17451)
-* Quando una lettera viene visualizzata in anteprima, si nota l’utilizzo del carattere jolly “*” nel file Adobe.json, sollevando dubbi sul suo scopo e sulla potenziale modifica. (FORMS-17317)
-* Quando un utente utilizza l’assistente vocale nella sezione Richiedi un conto cointestato di risparmio a tasso fisso, le intestazioni vengono erroneamente annunciate come cliccabili, causando problemi di accessibilità. (FORMS-17038)
-* Quando un modulo è incorporato, nell’iframe generato manca l’attributo titolo, il che provoca un problema di conformità per l’accessibilità. (FORMS-17010)
-* Il download di un modulo tramite l’interfaccia utente Gestione moduli include sempre le dipendenze associate, ad esempio temi e frammenti. (FORMS-15811)
-* Quando un utente accede al modulo su dispositivi mobili (iOS e Android™), i pulsanti “Avanti” e “Precedente” nella prima pagina sono disabilitati. Tuttavia, l’assistente vocale non li identifica come disabilitati. (FORMS-15773)
-* Quando un utente salva un modulo di grandi dimensioni con frammenti e caricamento lento abilitati, non riesce a recuperare le bozze, interrompendo il flusso di lavoro. (FORMS-19890, FORMS-19808)
-* Gli utenti hanno riscontrato dei problemi durante il salvataggio delle proprietà del modulo adattivo basato sui componenti core. Ciò si verificava perché venivano inclusi script ridondanti provenienti dal modulo adattivo basato sull’editor di componenti di base, causando conflitti nel modulo adattivo basato sui componenti core. editor. (FORMS-17474)
-* Gli utenti hanno riscontrato dei problemi con la pagina Firma di Adobe Sign GovCloud che non eseguiva il rendering in un iframe. (FORMS-16803)
-* Gli utenti rilevano degli errori durante la selezione dei riferimenti per i frammenti dei moduli adattivi (AF) dei componenti core. Viene visualizzato il messaggio di errore “Impossibile eseguire il rendering del riferimento: percorso non assoluto”, che impedisce il rendering del riferimento corretto. (FORMS-19678)
-* È stato aggiunto il supporto per la conversione di file con più thread con Acrobat DC, consentendo agli utenti di eseguire conversioni simultanee di documenti Word, Excel e PowerPoint in documenti PDF in modo più efficiente. (FORMS-21310)
-* È stata aggiunta l’inclusione del bundle `com.adobe.granite.toggle.impl.dev` in AEM Service Pack 24 per consentire processi di sviluppo più semplificati rimuovendolo dal componente aggiuntivo dei moduli. (FORMS-20139)
-* FeatureToggleRenderConditionServlet è stato rimosso dal bundle forms-foundation e com.adobe.granite.toggle.impl.dev dal componente aggiuntivo dei moduli. Questo aggiornamento garantisce che, dopo l’installazione del componente aggiuntivo dei moduli, la condizione di rendering venga risolta correttamente, migliorando le funzionalità dei componenti per la clientela. (FORMS-20138)
-* Gli utenti hanno riscontrato un rallentamento delle prestazioni a causa di query con tempi di esecuzione lunghi nei moduli adattivi. Questo aggiornamento esegue il backport delle modifiche alle query per migliorare l’efficienza. La clientela ora può creare l’indice con il nome tag aemformsAFReferences. (FORMS-21411)
-* Gli utenti hanno riscontrato degli errori di allineamento delle posizioni di intestazione durante la conversione di HTML in PDF (Portable Document Format) con WebtoPDF. Questo problema influiva sulla coerenza del layout del documento e sulla leggibilità dell’output. (FORMS-21502, FORMS-21540)
-* Gli utenti hanno riscontrato errori di convalida PDF/A-1b nonostante la verifica preliminare sia stata eseguita correttamente. Questo problema ha interessato i controlli di conformità dei documenti per la clientela enterprise che utilizza strumenti di convalida PDF. (FORMS-20196)
-* Gli utenti hanno riscontrato stringhe non tradotte nell’interfaccia utente, che causano confusione e difficoltà nella comprensione dell’interfaccia. (FORMS-6542)
-* Gli utenti hanno riscontrato problemi con le notifiche e-mail. Il passaggio del flusso di lavoro Invia e-mail non è riuscito a inviare le e-mail, con un impatto sui processi di comunicazione automatizzati. (FORMS-17961)
-* Gli utenti hanno riscontrato test non riusciti per i flussi di lavoro di Forms, che hanno influito sulla loro capacità di completare i processi di flusso di lavoro in modo efficiente. (FORMS-16231)
-* Gli utenti sono stati impossibilitati a utilizzare la funzione timeline dei PDF in AM Forms. Questo problema ha influito sulla capacità degli utenti di tenere traccia delle modifiche e delle revisioni dei documenti in modo efficace. Durante il caricamento di un PDF nella sezione “Moduli e documenti” dell’area di AEM Forms, la vista timeline non funziona più. (FORMS-19408)
-* Gli utenti rilevano un’eccezione Null Pointer durante l’interazione con OData. Questo causa interruzioni nei processi di recupero dei dati. (FORMS-20348)
-* È stata rimossa la libreria google.common.collect in seguito alla rimozione di Guava, una libreria Java open-source. Questo aggiornamento garantisce compatibilità e prestazioni migliori per la clientela enterprise che utilizza Moduli adattivi. (FORMS-17031)
-
-### Captcha Forms
-
-* È stato aggiunto il supporto `Hcaptcha` e `Turnstile` per i Moduli adattivi basato su componenti di base. (FORMS-16562)
-* Gli utenti hanno riscontrato problemi di sovrapposizione delle icone nella finestra di dialogo `Create hCaptcha Configuration`. Durante la compilazione dei campi obbligatori, l’icona delle informazioni si sovrapponeva all’icona di errore, generando confusione durante l’impostazione della configurazione. (FORMS-16916)
-* Gli utenti hanno riscontrato un’errata configurazione rilevata per reCAPTCHA in Moduli adattivi basata sui componenti di base. Quando il contenitore di configurazione non era selezionato per un modulo, il problema era causato da più configurazioni nella cartella `conf/global`. (FORMS-19237)
-* Gli utenti hanno riscontrato dei problemi che impedivano il rendering di reCAPTCHA. Questo problema interessava l’invio dei moduli e la convalida di sicurezza per la clientela enterprise. (FORMS-17136, FORMS-19596)
-* Gli utenti riscontrano un problema a causa del quale le dimensioni di reCAPTCHA enterprise non vengono riportate nell’interfaccia utente. (FORMS-16574)
-* Gli utenti hanno riscontrato problemi con la funzionalità ReCaptcha a causa di un ResourceResolver non chiuso in `ReCaptchaConfigurationServiceImpl`, che hanno causato errori di convalida intermittenti durante l’invio dei moduli. (FORMS-19241)
-* Gli utenti hanno riscontrato problemi con la convalida reCAPTCHA quando i moduli vengono creati in Sites. AEM Forms non riconosceva correttamente il nome del modulo, causando errori di convalida. (FORMS-20486)
-* Gli utenti hanno riscontrato invii di moduli anche quando il punteggio enterprise di reCAPTCHA era 1.0, con potenziali rischi per la sicurezza. FORMS-16766){{$include }}
-* È stato migliorato l’avviso reCAPTCHA in Moduli adattivi aggiornando i codici di errore di invio a 400. Inoltre, gli avvisi di registro sono stati perfezionati per distinguere tra timeout, scadenze e errori di rilevamento dei bot, migliorando l’accuratezza della risoluzione dei problemi e l’osservabilità del sistema. (FORMS-19240)
-* È stata chiusa un’istanza ResourceResolver non chiusa in ReCaptchaConfigurationServiceImpl per evitare potenziali perdite di risorse e migliorare la stabilità del sistema quando si utilizzano integrazioni reCAPTCHA in AEM Forms. (FORMS-19242)
-* È stata migliorata la gestione della configurazione CAPTCHA per AEM Forms, garantendo che la configurazione corretta venga associata a ciascun modulo quando esistono più voci nella cartella /conf/global. Impedisce l’utilizzo involontario di impostazioni CAPTCHA errate quando il contenitore di configurazione non è selezionato in modo esplicito. (FORMS-19239)
-
-### Interfaccia utente per la gestione dei moduli
-
-* Gli utenti hanno riscontrato stringhe non localizzate nel processo di creazione `Forms` > `Create Watchfolder` >` Watchfolder`. Durante la creazione di una cartella controllata, non sono state trovate stringhe quali `Watchfolder creation` e `Watchfolder created successfully`, con effetti sull’esperienza di interfaccia utente. (FORMS-15234)
-
-## [!DNL Experience Manager Foundation] {#experience-manager-foundation}
+## Informazioni su [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
 La piattaforma di [!DNL Adobe Experience Manager] 6.5 LTS si basa sulle versioni aggiornate del framework basato su OSGi (Apache Sling e Apache Felix) e dell’archivio dei contenuti Java™: Apache Jackrabbit Oak 1.68.x.
 
@@ -530,24 +362,24 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
 <!-- THE INFORMATION UNDER THIS HEADING CAME FROM CQDOC-23078 -->
 
 **Ambiente**
-Si applica a: clienti AEM 6.5 LTS (On-Premise) che installano il Service Pack 1 (SP1). SP1 viene fornito come file Quickstart JAR.
+Applicabile a: clienti AEM 6.5 LTS (On-Premise) che installano Service Pack 2 (SP2). SP2 viene fornito come file JAR Quickstart.
 
 **Perché è importante**
-SP1 per AEM 6.5 LTS viene fornito come file Quickstart JAR anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise possono eseguire l’aggiornamento sostituendo il file Quickstart JAR, decomprimendolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento diretto di Adobe.
+SP2 per AEM 6.5 LTS viene fornito come file JAR Quickstart anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise possono eseguire l’aggiornamento sostituendo il file Quickstart JAR, decomprimendolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento diretto di Adobe.
 
 **Flusso di aggiornamento consigliato (authoring o pubblicazione)**
 
 1. Verifica che l’istanza AEM 6.5 LTS sia integra e accessibile.
-1. Scarica il file Quickstart JAR di SP1 (ad esempio, `cq-quickstart-6.6.x.jar`) da Distribuzione del software Adobe.
+1. Scarica il file JAR Quickstart (ad esempio, `cq-quickstart-6.6.x.jar`) da Software Distribution.
 1. Arresta l&#39;istanza in esecuzione.
-1. Nella directory di installazione di AEM (esterna a `crx-quickstart/`), sostituisci il file Quickstart JAR precedente con il file JAR SP1.
+1. Nella directory di installazione di AEM (all&#39;esterno di `crx-quickstart/`), sostituire il file JAR Quickstart precedente con il file JAR SP2.
 1. Decomprimi il file JAR:
 
    ```java
@@ -562,12 +394,12 @@ SP1 per AEM 6.5 LTS viene fornito come file Quickstart JAR anziché come file ZI
 **Buone pratiche**
 
 * Esegui l’aggiornamento in ambienti di test o inferiori prima di eseguirlo in ambienti di produzione.
-* Prima di iniziare, esegui backup completi e ripristinabili (repository più eventuali datastore esterni).
+* Prima di iniziare, è necessario eseguire un backup completo e ripristinabile (archivio più eventuali archivi dati esterni).
 * Consulta la guida all’aggiornamento diretto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
 
 >[!NOTE]
 >
->I nomi file mostrati sopra (ad esempio, `cq-quickstart-6.6.x.jar`) riflettono la denominazione dell&#39;artefatto Quickstart SP1 di questa versione LTS; utilizza sempre lo stesso nome del file scaricato da Distribuzione del software Adobe.
+>I nomi di file mostrati sopra (ad esempio, `cq-quickstart-6.6.x.jar`) riflettono la denominazione dell&#39;artefatto Quickstart osservata per questa versione LTS; utilizzare sempre il nome di file esatto scaricato da Software Distribution.
 
 ## Installazione e aggiornarnamento{#install-update}
 
@@ -575,7 +407,7 @@ Per i requisiti di configurazione, consulta [Istruzioni di installazione](/help/
 
 >[!NOTE]
 >
-> Se esegui l’aggiornamento diretto a LTS SP1 da 6.5 SP precedenti, segui le istruzioni fornite per l’[aggiornamento](/help/sites-deploying/upgrade.md) da 6.5 a 6.5 LTS GA.
+> Se si esegue l&#39;aggiornamento diretto a LTS SP1 da 6.5 SP precedenti, seguire le istruzioni fornite per l&#39;aggiornamento da 6.5 a 6.5 LTS GA [upgrade](/help/sites-deploying/upgrade.md).
 
 
 Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
@@ -587,7 +419,6 @@ Per istruzioni dettagliate, consulta la [documentazione relativa all’aggiornam
 ## Installare e aggiornare il componente aggiuntivo AEM Forms {#install-update-aem-forms-add-on}
 
 Per istruzioni dettagliate, consulta [Esecuzione di un aggiornamento diretto](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
-
 
 
 ## Piattaforme supportate {#supported-platforms}
@@ -608,9 +439,7 @@ Adobe rivede ed evolve continuamente le funzionalità dei prodotti per offrire m
 Per garantire trasparenza e consentire una pianificazione adeguata, Adobe segue questo processo di deprecazione per Adobe Experience Manager (AEM):
 
 * La deprecazione viene annunciata per prima. Le funzionalità obsolete rimangono disponibili ma non vengono più migliorate.
-
 * La rimozione avviene non prima della versione principale successiva. La sequenza temporale della rimozione pianificata viene comunicata separatamente.
-
 * Ai clienti è fornito almeno un ciclo di rilascio per la transizione alle alternative supportate prima della rimozione di una funzionalità.
 
 ### Funzioni obsolete {#deprecated-features}
@@ -621,6 +450,8 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 
 | Area | Funzione | Sostituzione | Versione (SP) |
 | --- | --- | --- | --- |
+| Quickstart | API Mongo | Le API Mongo ora sono obsolete e la loro rimozione è prevista nelle versioni future. | 6.5 TS SP2 |
+| Sites | Supporto dei frammenti di contenuto nell’API REST di AEM Assets | AEM 6.5 LTS SP2 fornisce API OpenAPI moderne per la gestione di modelli e frammenti di contenuto; pertanto, gli endpoint precedenti per il supporto dei frammenti di contenuto nell’API REST di AEM Assets sono ora obsoleti.<br>Adobe intende mantenere questi endpoint meno recenti disponibili fino a un annuncio di fine del ciclo di vita. Adobe non prevede ulteriori miglioramenti per gli endpoint obsoleti. | 6,5 LTS SP2 |
 | Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. | 6.5 LTS GA |
 | [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS |  |
 
@@ -629,7 +460,6 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 In questa sezione sono elencate le funzionalità e le funzioni che sono state rimosse da AEM 6.5 LTS. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
 
 * Il supporto per RDBMK per la persistenza dell’archivio CRX è stato rimosso.
-
 * Negli ambienti cluster, MongoMK è ora l’unica opzione supportata per la persistenza dell’archivio.
 
 | Area | Funzione | Sostituzione | Versione (SP) |
@@ -656,21 +486,18 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ## Problemi noti {#known-issues}
 
-<!-- DO THESE KNOWN ISSUES CARRY OVER EACH RELEASE? THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
+### Installare gli indici Oak richiesti per le API headless di Sites{#site-headless-api}
 
-<!-- REMOVED THIS SECTION AS PER CQDOC-23046
-### Issue with JSP scripting bundle in AEM 6.5.21-6.5.23 and AEM 6.5 LTS GA
+Alcune API che sono state spostate in Sites Headless richiedono indici Oak aggiuntivi per garantire la piena funzionalità.
 
-AEM 6.5.21, 6.5.22, 6.5.23, and AEM 6.5 LTS GA ship with the `org.apache.sling.scripting.jsp:2.6.0` bundle, which contains a known issue. The issue typically occurs under high load when the AEM instance handles many concurrent requests.
+Installare il pacchetto `cq-dam-cfm-indices` per utilizzare le funzionalità seguenti:
 
-When this issue occurs, one of the following exceptions may appear in the error logs alongside references to `org.apache.sling.scripting.jsp:2.6.0`:
+* Elencare modelli per frammenti di contenuto
+* Elenco frammenti di contenuto
+* API di ricerca
+* Flussi di lavoro
 
-* `java.io.IOException: classFile.delete() failed`
-* `java.io.IOException: tmpFile.renameTo(classFile) failed`
-* `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-* `java.io.FileNotFoundException`
-
-A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-NPR-42640-1.2.zip) is available to resolve this problem. -->
+Scarica il pacchetto di indice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-dam-cfm-indices-1.1.2.zip) dal portale di distribuzione software di Adobe.
 
 ### Errore di connessione di Dispatcher con la funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
 
@@ -680,7 +507,7 @@ A hotfix [cq-6.5.lts.0-hotfix-NPR-42640](https://experience.adobe.com/#/download
 
 Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica un problema noto che influisce sulla connettività tra le istanze Dispatcher e AEM. Dopo aver abilitato questa funzione, le verifiche stato potrebbero non riuscire e la comunicazione tra le istanze Dispatcher e AEM potrebbe essere interrotta. Questo problema si verifica in modo specifico quando i clienti tentano di connettersi tramite `https + IP` dalle istanze Dispatcher ad AEM. È correlato a problemi di convalida SNI (Server Name Indication).
 
-**Impatto:**
+**Impatto**
 
 * Errori di verifica stato con codici di risposta HTTP 400
 * Traffico interrotto tra istanze Dispatcher e AEM
@@ -688,14 +515,15 @@ Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica
 * Errori di connessione durante l’utilizzo di HTTPS con indirizzi IP nella configurazione di Dispatcher
 * HTTP 400: errori “SNI non valida” durante la connessione tramite HTTPS + IP
 
-**Ambienti interessati:**
+**Ambienti interessati**
 
 * Implementazioni di AEM con configurazioni Dispatcher
 * Sistemi in cui è stata abilitata la funzione solo SSL
 * Configurazioni di Dispatcher che utilizzano il metodo di connessione `https + IP` alle istanze AEM
 
-**Soluzione:**
-se riscontri questo problema, contatta l’Assistenza Clienti di Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
+**Soluzione**
+
+Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
@@ -709,5 +537,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/customer-one/using/home).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
