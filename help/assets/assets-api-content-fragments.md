@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
 workflow-type: tm+mt
-source-wordcount: '1902'
-ht-degree: 23%
+source-wordcount: '1939'
+ht-degree: 22%
 
 ---
 
@@ -20,8 +20,17 @@ ht-degree: 23%
 | AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=it) |
 | AEM 6.5 | Questo articolo |
 
-
 ## Panoramica {#overview}
+
+>[!CAUTION]
+>
+>Il supporto per i frammenti di contenuto nell&#39;API HTTP di Assets è ora [obsoleto](/help/release-notes/release-notes.md#deprecated-features).
+>
+>È stato sostituito da [OpenAPI per la gestione di frammenti di contenuto e modelli di frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/).
+
+>[!NOTE]
+>
+>Per informazioni aggiornate sulle API di Experience Manager, visita [API di Adobe Experience Manager](https://developer.adobe.com/experience-cloud/experience-manager-apis/).
 
 Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un elemento importante della funzione di distribuzione headless di AEM.
 
@@ -103,7 +112,7 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
 <table>
  <thead>
   <tr>
-   <td>Formato</td>
+   <td>Aspetto</td>
    <td>API REST di Assets<br/> </td>
    <td>Componente AEM<br/> (componenti che utilizzano modelli Sling)</td>
   </tr>
@@ -128,7 +137,7 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
    </td>
   </tr>
   <tr>
-   <td>Sicurezza</td>
+   <td>Protezione</td>
    <td><p>Sono possibili più opzioni.</p> <p>OAuth è proposto; può essere configurato separatamente dalla configurazione standard.</p> </td>
    <td>Utilizza la configurazione standard di AEM.</td>
   </tr>
@@ -145,7 +154,7 @@ Ciò significa che le richieste successive (`write`) non possono essere combinat
  </tbody>
 </table>
 
-### Sicurezza {#security}
+### Protezione {#security}
 
 Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di autenticazione specifici, il filtro CORS di AEM deve essere configurato correttamente.
 
@@ -153,8 +162,8 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >
 >Per ulteriori informazioni, consulta:
 >
->* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
->* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it)
+>* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Negli ambienti con requisiti di autenticazione specifici, si consiglia OAuth.
@@ -244,7 +253,7 @@ Per creare un frammento di contenuto, è necessario fornire il percorso (archivi
 
 Il contenuto associato non è attualmente esposto.
 
-## Utilizzando {#using}
+## Utilizzo {#using}
 
 L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubblicazione di AEM, insieme al tuo caso d’uso specifico.
 
@@ -344,7 +353,7 @@ Restituito quando:
   Di seguito sono elencati gli scenari comuni in cui viene restituito questo stato di errore, insieme al messaggio di errore (monospazio) generato:
 
    * La cartella principale non esiste (quando si crea un frammento di contenuto tramite `POST`)
-   * Non è stato fornito alcun modello per frammenti di contenuto (cq:model è mancante), non può essere letto (a causa di un percorso non valido o di un problema di autorizzazione) o non è disponibile alcun modello per frammenti valido:
+   * Non è stato fornito alcun modello per frammenti di contenuto (cq:model mancante), non può essere letto (a causa di un percorso non valido o di un problema di autorizzazione) o non è disponibile un modello per frammenti valido:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -395,4 +404,4 @@ Consulta qui per riferimenti API dettagliati:
 Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
-* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
