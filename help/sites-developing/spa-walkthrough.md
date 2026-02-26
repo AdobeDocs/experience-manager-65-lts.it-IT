@@ -8,10 +8,10 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
 workflow-type: tm+mt
 source-wordcount: '1925'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -39,7 +39,7 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 * [AEM versione 6.5.4 o successiva](/help/release-notes/release-notes.md)
    * Devi disporre dei diritti di amministratore del sistema.
 * [L’app di esempio del progetto SPA WKND disponibile su GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Scarica la versione [&#x200B; più recente dell’app React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Il nome sarà simile a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Scarica la versione [ più recente dell’app React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Il nome sarà simile a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Scarica le [immagini di esempio più recenti](https://github.com/adobe/aem-guides-wknd-spa/releases) per l&#39;app. Il nome sarà simile a `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Utilizza Gestione pacchetti](/help/sites-administering/package-manager.md) per installare i pacchetti come faresti con qualsiasi altro pacchetto in AEM.
    * Ai fini della procedura dettagliata, non è necessario installare l’app tramite Maven.
@@ -83,7 +83,7 @@ Essendo più veloce, fluida e più simile a un’applicazione nativa, una SPA di
 
 L’idea principale alla base di un’applicazione a pagina singola è che le chiamate e la dipendenza da un server siano ridotte per ridurre al minimo i ritardi causati dalle chiamate al server, in modo che l’applicazione a pagina singola si avvicini alla reattività di un’applicazione nativa.
 
-In una pagina web tradizionale sequenziale, vengono caricati solo i dati necessari per la pagina immediata. Questo significa che quando l&#39;utente si sposta su un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive quando il visitatore interagisce con gli elementi sulla pagina. Queste chiamate multiple possono dare una sensazione di attesa o ritardo in quanto la pagina deve soddisfare le richieste dell&#39;utente.
+In una pagina web tradizionale sequenziale, vengono caricati solo i dati necessari per la pagina immediata. Questo significa che quando l&#39;utente si sposta su un’altra pagina, il server viene chiamato per le risorse aggiuntive. Potrebbero essere necessarie chiamate aggiuntive mentre l&#39;utente interagisce con gli elementi della pagina. Queste chiamate multiple possono dare una sensazione di attesa o ritardo in quanto la pagina deve soddisfare le richieste dell&#39;utente.
 
 ![schermata_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
