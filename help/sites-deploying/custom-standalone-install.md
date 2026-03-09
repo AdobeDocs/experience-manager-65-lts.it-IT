@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 93dc74b3-dfe3-442f-9dec-1b7af41cd4a1
-source-git-commit: 5c7ead37f55175bb565f8661c0c156f76f135131
+source-git-commit: 45178816afbda13ee9117a0b13dcb8a9218992da
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 2%
@@ -51,7 +51,7 @@ Se si esegue Oracle Java 17 o Java 21, è necessario aggiungere opzioni aggiunti
 * Di seguito è riportato un esempio dell’aspetto dei parametri JVM aggiuntivi all’avvio di AEM su Java 17/Java 21:
 
 ```shell
--XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang=org.apache.sling.commons.threads -Djdk.util.zip.disableZip64ExtraFieldValidation=true
+-XX:+UseG1GC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Djdk.util.zip.disableZip64ExtraFieldValidation=true
 ```
 
 * [Solo Forms] Di seguito è riportato un esempio per garantire che AEM Forms funzioni con Java 17/Java21. Includi i seguenti parametri JVM aggiuntivi:
