@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: f4b6c695110704bdd92967ce7f256c55c1229d34
+source-git-commit: c275e55834c2375fbc23d0bbc209760062e6c2bc
 workflow-type: tm+mt
-source-wordcount: '6063'
-ht-degree: 21%
+source-wordcount: '6197'
+ht-degree: 20%
 
 ---
 
@@ -25,6 +25,10 @@ ht-degree: 21%
 
 
 <!-- UPDATE ABOVE FOR EACH NEW RELEASE -->
+
+>[!IMPORTANT]
+>
+> **Hotfix obbligatorio** - Per evitare problemi di SNFE (SegmentNotFoundException) con la compattazione offline durante l&#39;installazione di SP2, installare l&#39;hotfix descritto in [Problemi noti - Danneggiamento dell&#39;archivio durante la compattazione online](#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146).
 
 ## Cosa è incluso in [!DNL Adobe Experience Manager] 6.5 LTS, SP2 {#what-is-new}
 
@@ -387,7 +391,7 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -511,6 +515,20 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ## Problemi noti {#known-issues}
 
+### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
+
+Gli utenti possono riscontrare un danneggiamento dell’archivio durante la compattazione online se la compattazione offline è stata precedentemente eseguita sull’archivio JCR. In questo scenario può verificarsi un `SegmentNotFoundException` (SNFE) che può danneggiare l&#39;archivio.
+
+Per risolvere il problema, installa l’hotfix ( Gestione pacchetti. È possibile ottenere l&#39;aggiornamento rapido da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
+
+Pianifica, ad esempio, i tempi di inattività quando lo applichi. Per la compattazione offline, utilizza il [file jar oak-run](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) corrispondente, disponibile anche in Software Distribution.
+
+>[!NOTE]
+>
+> * Per qualsiasi operazione oak-run, utilizza [oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
+>
+> * Avviare AEM impostando la proprietà `oak.compaction.legacy=true`.
+
 ### Installare gli indici Oak richiesti per le API headless di Sites{#site-headless-api}
 
 Alcune API che sono state spostate in Sites Headless richiedono indici Oak aggiuntivi per garantire la piena funzionalità.
@@ -562,5 +580,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
