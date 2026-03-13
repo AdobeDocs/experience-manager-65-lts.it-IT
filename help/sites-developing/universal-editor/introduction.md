@@ -4,9 +4,9 @@ description: Scopri la flessibilità di Universal Editor e come può aiutare a p
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1191'
 ht-degree: 42%
 
 ---
@@ -39,15 +39,19 @@ L’editor universale è un servizio che funziona insieme ad AEM per creare cont
 Di seguito è riportato il supporto di Universal Editor:
 
 * AEM 6.5 LTS GA
-   * Sono supportati sia l’hosting on-premise che Adobe Managed Services (AMS).
+   * Sono supportati sia l’hosting on-premise che Adobe Managed Services (AMS)*.
 * [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * Sono supportati sia l’hosting on-premise che AMS.
+   * Sono supportati sia l’hosting on-premise che AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versione `2023.8.13099` o successiva)
 
 Questo documento si concentra sul supporto AEM 6.5 LTS di Universal Editor. Per utilizzare l’Editor universale con AEM 6.5 LTS, è necessario quanto segue:
 
 * AEM 6.5 LTS GA
 * Dispatcher configurato correttamente
+
+>[!NOTE]
+>
+>*Se utilizzi Adobe Managed Services (AMS), contatta il tuo Customer Success Engineer (CSE) se desideri utilizzare l’editor universale.
 
 ## Configurazione {#setup}
 
