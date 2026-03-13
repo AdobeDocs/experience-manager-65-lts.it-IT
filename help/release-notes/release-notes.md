@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c275e55834c2375fbc23d0bbc209760062e6c2bc
+source-git-commit: 0268920d3c4895a1c52fbc36f537a02d1424c2a4
 workflow-type: tm+mt
-source-wordcount: '6197'
+source-wordcount: '6243'
 ht-degree: 20%
 
 ---
@@ -53,7 +53,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 
 * Il componente Testo non è più attivo quando gli autori passano il cursore sugli elementi nel browser Componenti durante la modifica. Ciò ha interrotto la digitazione e ha provocato un errore di accessibilità in WCAG 3.2.1. La correzione impedisce che lo stile del passaggio del mouse sposti lo stato attivo e mantiene attivo il componente Testo durante l’interazione con il browser componenti. (SITES-35370)
 * È stata corretta la gestione dello stato attivo nel campo Testo RTF Descrizione, che bloccava la navigazione in avanti con il tasto TAB. Gli utenti si bloccavano nell’editor Rich Text perché il componente si basava su un comando non standard della tastiera per spostare lo stato attivo, interrompendo la navigazione prevista nella finestra di dialogo. La modifica applica l&#39;interazione standard della tastiera e mantiene la sequenza logica delle schede in tutta la finestra di dialogo. (SITES-35228)
-* È stato risolto un problema nell’editor Sites che interrompeva il comportamento previsto durante l’authoring delle pagine e causava un’interazione incoerente dei componenti. Gli autori hanno riscontrato risposte inaffidabili dell’interfaccia utente che hanno interferito con le attività di modifica standard e ridotto l’efficienza del flusso di lavoro. L’aggiornamento perfeziona la logica dell’editor sottostante e ripristina un’interazione stabile e prevedibile tra i componenti interessati. (SITES-35227)
+* È stato risolto un problema nell’editor Siti che interferiva con il comportamento previsto durante la creazione della pagina e causava un’interazione incoerente tra i componenti. Gli autori hanno riscontrato risposte inaffidabili dell’interfaccia utente che hanno interferito con le attività di modifica standard e ridotto l’efficienza del flusso di lavoro. L’aggiornamento perfeziona la logica dell’editor sottostante e ripristina un’interazione stabile e prevedibile tra i componenti interessati. (SITES-35227)
 * una regressione che ha interrotto il selettore delle risorse nell’editor pagina e ne ha impedito il caricamento in scenari di modifica specifici della pagina. Gli autori possono ora aprire e utilizzare il selettore delle risorse normalmente durante la scelta o l’esplorazione delle risorse durante la modifica di una pagina. Questa modifica ripristina un accesso coerente ai flussi di lavoro di selezione delle risorse che interrompono il caricamento degli errori. (SITES-35226)
 * È stato eliminato un problema nell’editor Sites che causava un comportamento incoerente durante l’interazione delle pagine e interrompeva i flussi di lavoro di authoring standard. Il difetto ha portato a risposte impreviste dell’interfaccia utente che hanno interferito con la configurazione dei componenti e gli aggiornamenti dei contenuti. L’aggiornamento stabilizza la funzionalità interessata e ripristina l’esecuzione affidabile delle azioni di modifica su più pagine. (SITES-35225)
 * È stato eliminato un difetto nell’interfaccia di authoring di Sites che causava un comportamento incoerente durante la modifica delle pagine e interrompeva i normali flussi di lavoro. Gli autori hanno riscontrato risposte impreviste dell’interfaccia utente che hanno interferito con l’interazione dei componenti e con gli aggiornamenti dei contenuti. L’aggiornamento stabilizza le funzionalità interessate e ripristina un comportamento affidabile e prevedibile in tutti gli scenari di modifica. (SITES-35224)
@@ -104,7 +104,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 * La tabulazione da tastiera ora raggiunge i pulsanti e i collegamenti all’interno delle tabelle di amministrazione. Gli utenti non si affidano più alla navigazione tramite celle con tasti di direzione per trovare i controlli interattivi. (SITES-24285)
 * La finestra di dialogo del componente Immagine non espone più icone decorative della Guida e a schermo intero come immagini. Gli assistenti vocali ora ignorano queste icone, mantenendo lo stato attivo sui controlli utilizzabili e sul contenuto dei campi. (SITES-2940)
 * L’amministratore Sites ora rimuove il ruolo immagine dalle icone delle miniature delle cartelle. La tecnologia assistiva ignora questi elementi decorativi, mantenendo l’attenzione sui nomi delle cartelle e sulle azioni. (SITES-2852)
-* Struttura contenuto ora indirizza lo stato attivo della tastiera all&#39;elemento della struttura attivo o al primo elemento della struttura. Il contenitore ad albero non funge più da punto di tabulazione vuoto, impedendo le trap di Maiusc+Tab focus. (SITES-1577)
+* La struttura ad albero dei contenuti ora indirizza lo stato attivo sulla tastiera verso l&#39;elemento attivo o il primo elemento della struttura. Il contenitore della struttura ad albero non funge più da punto di tabulazione vuoto, impedendo le abbondanze con lo stato attivo Maiusc+Tab. (SITES-1577)
 
 #### Interfaccia utente amministratore{#sites-adminui-65-lts-sp2}
 
@@ -153,18 +153,18 @@ In 6.5 LTS, il supporto per gli eventi headless non disponeva degli eventi OSGi 
 
 * I modelli per frammenti di contenuto nidificato non funzionavano più quando il refactoring associava la funzione a un interruttore disabilitato. La correzione ripristina il supporto del modello nidificato senza richiedere l’attivazione/disattivazione delle modifiche. Gli autori possono di nuovo creare e utilizzare modelli nidificati nell&#39;Editor modelli. (SITES-38681) CRITICO
 
-* Il pannello dei filtri Modelli per frammenti di contenuto non espone più stringhe non localizzate. AEM ora visualizza le etichette dei filtri localizzati e i valori dello stato localizzato in tutte le lingue. (SITES-30863)
-* L’Editor modello per frammenti di contenuto ora esegue il rendering delle stringhe localizzate per la finestra di dialogo di avviso del blocco. L’interfaccia utente sostituisce i messaggi in inglese non localizzati con risorse locali nelle lingue supportate. (SITES-28592)
+* Il pannello dei filtri Modelli per frammenti di contenuto non espone più stringhe non localizzate. L’AEM ora visualizza le etichette dei filtri e i valori di stato localizzati in tutte le lingue. (SITES-30863)
+* Editor modello di frammenti di contenuto ora esegue il rendering delle stringhe localizzate per la finestra di dialogo di avviso del blocco. L&#39;interfaccia utente sostituisce i messaggi in inglese non localizzati con le risorse internazionali nelle lingue supportate. (SITES-28592)
 
 #### [!DNL Content Fragments] - API REST{#sites-restapi-65-lts-sp2}
 
-AEM Headless richiedeva un ramo della versione dedicato per evitare conflitti di dipendenza e di versione del bundle con le build principali. L’aggiornamento aggiunge un ramo headless versione 6.5lts e allinea i set di dipendenze e le versioni del bundle. Jenkins ora crea la base di codice headless in modo pulito, senza conflitti tra versioni. (SITES-36585)
+AEM Headless richiedeva un ramo dedicato alla release per evitare conflitti di dipendenza e versione bundle con le build mainline. L’aggiornamento aggiunge un ramo headless versione 6.5lts e allinea i set di dipendenze e le versioni del bundle. Jenkins ora crea la base di codice headless in modo pulito, senza conflitti tra versioni. (SITES-36585)
 
 <!-- #### Component console{#sites-component-console-65-lts-sp2} -->
 
 #### API contenuto{#sites-content-api-65-lts-sp2}
 
-Un difetto di attivazione della funzione ha segnalato in modo errato lo stato dell’API di gestione pagina. L’aggiornamento aggiunge un flag di abilitazione dedicato e lo valuta insieme all’interruttore esistente. L’API di gestione pagina ora mostra uno stato stabile. L’API di gestione del sito rimane sperimentale. (SITES-39284)
+Un difetto di attivazione/disattivazione della funzionalità ha segnalato uno stato API di gestione pagine non corretto. L’aggiornamento aggiunge un flag di abilitazione dedicato e lo valuta insieme all’interruttore esistente. L’API di gestione delle pagine ora mostra uno stato stabile. L&#39;API Site Management rimane sperimentale. (SITES-39284)
 
 #### Back-end core{#sites-core-backend-65-lts-sp2}
 
@@ -207,14 +207,14 @@ Un difetto di attivazione della funzione ha segnalato in modo errato lo stato de
 
 #### MSM - Live Copy{#sites-msm-live-copies-65-lts-sp2}
 
-* Gli amministratori avevano visibilità limitata sull’elaborazione push-on-modify di MSM durante le modifiche al contenuto. La correzione aggiunge una registrazione dettagliata della ricezione e dell’esecuzione del rollout degli eventi MSM. L’output di debug ora mostra quali eventi sono stati attivati, quali percorsi di contenuto sono stati modificati e chi ha attivato la modifica. (SITES-38029)
+* Gli amministratori avevano visibilità limitata sull&#39;elaborazione push-on-modify di MSM durante le modifiche al contenuto. La correzione aggiunge una registrazione dettagliata della ricezione e dell’esecuzione del rollout degli eventi MSM. L&#39;output di debug mostra ora gli eventi attivati, i percorsi di contenuto modificati e chi ha attivato la modifica. (SITES-38029)
 * AEM ha risolto un problema di layout di localizzazione nel campo data di rollout blueprint. Il prompt della data è ora adatto al controllo e rimane leggibile nelle lingue supportate, incluso `fr_FR`. (SITES-14961)
 
 <!-- #### Page editor{#sites-pageeditor-65-lts-sp2} -->
 
 #### Replica{#sites-replication-65-lts-sp2}
 
-La pubblicazione dell’Editor pagina ora gestisce gli URL contenenti selettori o suffissi. La richiesta pubblicata ora invia il percorso della pagina JCR, non una stringa URL di selettore o suffisso, quindi l’attivazione viene completata e il contenuto viene attivato. La replica ora restituisce uno stato di errore in caso di errore, che impedisce la visualizzazione di falsi messaggi di &quot;pubblicazione avviata&quot;. (NPR-43288)
+La pubblicazione dell&#39;editor di pagine ora gestisce gli URL contenenti selettori o suffissi. La richiesta pubblicata ora invia il percorso della pagina JCR, non un selettore o una stringa URL suffisso, quindi l&#39;attivazione viene completata e il contenuto viene pubblicato. La replica restituisce ora uno stato di errore in caso di errore, che impedisce la visualizzazione di falsi messaggi di &quot;pubblicazione avviata&quot;. (NPR-43288)
 
 <!-- #### Rich Text Editor{#sites-rte-65-lts-sp2} -->
 
@@ -224,7 +224,7 @@ Il testo dello stato del modello viene visualizzato in verticale in **Strumenti*
 
 #### Editor universale {#sites-universal-editor-65-lts-sp2}
 
-* Configurazione predefinita OSGi impostata come `preview=true`. L&#39;editor universale è stato avviato in modalità Anteprima. Questo aggiornamento corregge il valore predefinito e ripristina il comportamento standard della voce Produzione. Universal Editor ora si apre in modalità Produzione a meno che un amministratore non attivi esplicitamente la modalità Anteprima. (SITES-37193)
+* Una configurazione predefinita di OSGi è stata impostata come `preview=true` e ha forzato l&#39;avvio di Universal Editor in modalità di anteprima. Questo aggiornamento corregge il valore predefinito e ripristina il comportamento standard della voce Produzione. Universal Editor si apre ora in modalità di produzione a meno che un amministratore non attivi esplicitamente la modalità di anteprima. (SITES-37193)
 * Per impostazione predefinita, il comando Apri di Universal Editor è ora disponibile in modalità Anteprima negli ambienti di sviluppo e stage. Il comando aggiunge preview=true, che mantiene i controlli dell’autore allineati con il contesto di anteprima ed evita l’apertura accidentale della produzione. (SITES-33839)
 
 ### [!DNL Assets]{#assets-65-lts-sp2}
@@ -332,9 +332,9 @@ AEM 6.5 LTS Service Pack 2 richiede S3 Connector 1.60.10 o versione successiva. 
 Queste configurazioni meno recenti utilizzano proprietà quali `whitelist.name` e `whitelist.bundles`.
 
    * Sling fornisce ancora una parziale compatibilità con le versioni precedenti per i PID obsoleti, ma non li utilizza per le nuove configurazioni. Utilizza i PID `LoginAdminAllowList.*` più recenti.
-   * Non eseguire contemporaneamente configurazioni di inserisco nell&#39;elenco Consentiti obsolete e nuove configurazioni di. Configurazioni miste possono creare ambiguità e produrre comportamenti non desiderati. Quando esegui la migrazione ad AEM 6.5 LTS SP2, rimuovi completamente i PID obsoleti.
+   * Non eseguire contemporaneamente configurazioni obsolete e nuove configurazioni di elenchi consentiti. Configurazioni miste possono creare ambiguità e produrre comportamenti indesiderati. Quando si esegue la migrazione a AEM 6.5 LTS SP2, rimuovere completamente i PID obsoleti.
 
-  **Come comportarsi**
+  **Operazioni da eseguire**
 
    1. Trovare configurazioni di inserisce nell&#39;elenco Consentiti di che utilizzano `LoginAdminWhitelist*` PID.
    1. Sostituirli con i nuovi PID appropriati:
@@ -342,9 +342,9 @@ Queste configurazioni meno recenti utilizzano proprietà quali `whitelist.name` 
       * PID factory: `org.apache.sling.jcr.base.LoginAdminAllowList.fragment`
       * PID globale: `org.apache.sling.jcr.base.LoginAdminAllowList`
 
-      Per ulteriori dettagli, consulta [Approccio obsoleto per inserire nell&#39;elenco Consentiti i bundle per l&#39;accesso amministrativo](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
+      Per ulteriori dettagli, consulta [Approccio obsoleto per consentire bundle per l&#39;accesso amministrativo](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecated-approach-to-allowlist-bundles-for-administrative-login).
 
-* AEM 6.5 LTS SP2 aggiorna il bundle di Foundation Layer impostato per Sling, Oak e Felix. Questi aggiornamenti rafforzano la stabilità del runtime principale e allineano le versioni delle dipendenze in tutta la piattaforma. (GRANITE-61874)
+* AEM 6.5 LTS SP2 aggiorna il set di fasci di strati di fondazione per Sling, Oak e Felix. Questi aggiornamenti rafforzano la stabilità del runtime principale e allineano le versioni delle dipendenze sulla piattaforma. (GRANITE-61874)
 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
@@ -363,7 +363,7 @@ AEM ora include Sling Engine 2.16.6. Questa modifica elimina le violazioni XSS s
 
 #### WCM{#foundation-wcm-65-lts-sp2}
 
-AEM Translations non genera più errori in Java 17 o Java 21 a causa di problemi di formato XLIFF. La pipeline di esportazione ora produce XLIFF conformi agli standard accettati dai provider di traduzione. Questa modifica rimuove le interruzioni del lavoro di traduzione e ripristina un trasferimento prevedibile tra AEM e i servizi di traduzione. I flussi di lavoro di traduzione ora rimangono stabili nei runtime Java supportati. (CQ-4360217)
+Le traduzioni AEM non falliscono più su Java 17 o Java 21 a causa di problemi di formato XLIFF. La pipeline di esportazione ora produce XLIFF conformi agli standard accettati dai provider di traduzione. Questa modifica rimuove le interruzioni del lavoro di traduzione e ripristina un passaggio prevedibile tra l&#39;AEM e i servizi di traduzione. I flussi di lavoro di traduzione ora rimangono stabili nei runtime Java supportati. (CQ-4360217)
 
 #### Flusso di lavoro{#foundation-workflow-65-lts-sp2}
 
@@ -386,12 +386,38 @@ Eclipse Jetty 11.0.x è utilizzato come motore servlet per Quickstart.
 
 ### Pacchetto Uberjar {#uber-jar-packaging}
 
-* Il pacchetto Uberjar di AEM 6.5 LTS presenta una leggera differenza. Per ulteriori informazioni, consulta [Aggiornare la versione del file JAR Uber di AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+UberJar per AEM 6.5 LTS SP2 utilizza AEM 6.5 LTS UberJar versione 6.6.0. Puoi recuperare gli artefatti UberJar corrispondenti dall’archivio centrale Maven. A differenza di AEM 6.5, AEM 6.5 LTS separa le API pubbliche e quelle obsolete in due artefatti diversi.
+
+Per eseguire la compilazione in base alle API pubbliche, utilizza quanto segue:
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.0</version>
+    <classifier>apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+Se il codice dipende anche da API obsolete, aggiungi quanto segue:
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.6.0</version>
+    <classifier>deprecated-apis</classifier>
+    <scope>provided</scope>
+</dependency>
+```
+
+Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
 
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -463,11 +489,11 @@ Trova la matrice completa delle piattaforme supportate, incluso il livello di su
 
 <!-- CARRY OVER EACH RELEASE -->
 
-Adobe rivede ed evolve continuamente le funzionalità dei prodotti per offrire maggiore valore ai clienti, modernizzando o sostituendo le funzionalità legacy. Queste modifiche vengono implementate prestando particolare attenzione alla compatibilità con le versioni precedenti.
+Adobe esamina e sviluppa continuamente le funzionalità dei prodotti per offrire un maggiore valore ai clienti, modernizzando o sostituendo le funzionalità legacy. Queste modifiche vengono implementate con un&#39;attenta considerazione per la compatibilità con le versioni precedenti.
 
-Per garantire trasparenza e consentire una pianificazione adeguata, Adobe segue questo processo di deprecazione per Adobe Experience Manager (AEM):
+Per garantire la trasparenza e consentire una pianificazione adeguata, Adobe segue questa procedura di obsolescenza per Adobe Experience Manager (AEM):
 
-* La deprecazione viene annunciata per prima. Le funzionalità obsolete rimangono disponibili ma non vengono più migliorate.
+* La rimozione viene annunciata per prima. Le funzionalità obsolete restano disponibili ma non vengono più migliorate.
 * La rimozione avviene non prima della versione principale successiva. La sequenza temporale della rimozione pianificata viene comunicata separatamente.
 * Ai clienti è fornito almeno un ciclo di rilascio per la transizione alle alternative supportate prima della rimozione di una funzionalità.
 
@@ -517,11 +543,11 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
-Gli utenti possono riscontrare un danneggiamento dell’archivio durante la compattazione online se la compattazione offline è stata precedentemente eseguita sull’archivio JCR. In questo scenario può verificarsi un `SegmentNotFoundException` (SNFE) che può danneggiare l&#39;archivio.
+Gli utenti possono riscontrare un danneggiamento dell’archivio durante la compattazione online se in precedenza era stata eseguita la compattazione offline nell’archivio JCR. In questo scenario può verificarsi un `SegmentNotFoundException` (SNFE) che può danneggiare l&#39;archivio.
 
-Per risolvere il problema, installa l’hotfix ( Gestione pacchetti. È possibile ottenere l&#39;aggiornamento rapido da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
+Per risolvere il problema, installare l&#39;Hotfix da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
 
-Pianifica, ad esempio, i tempi di inattività quando lo applichi. Per la compattazione offline, utilizza il [file jar oak-run](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) corrispondente, disponibile anche in Software Distribution.
+Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il [file jar oak-run](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) corrispondente, disponibile anche in Software Distribution.
 
 >[!NOTE]
 >
@@ -580,5 +606,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
