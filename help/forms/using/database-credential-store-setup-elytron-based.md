@@ -4,13 +4,13 @@ description: JBoss EAP 8 supporta gli archivi di credenziali Elytron per la gest
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: d7a9502b-8d6a-4d83-9b1f-0c82cbf34b70
+source-git-commit: 58f549aaf5f248c2382477790c825bba1d737137
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
-
 
 # Configurazione archivio credenziali database (basato su Elytron)
 
@@ -186,5 +186,5 @@ Tutti gli alias fanno riferimento alla stessa password del database memorizzata 
 
 >[!NOTE]
 >
->* Configurare l&#39;archivio credenziali solo sul nodo primario.
->* I nodi secondari utilizzano automaticamente la configurazione del dominio sincronizzata dal nodo principale.
+>* Copiare il file dell&#39;archivio credenziali (cred-store.p12) creato sul nodo primario in ciascun nodo slave.
+
