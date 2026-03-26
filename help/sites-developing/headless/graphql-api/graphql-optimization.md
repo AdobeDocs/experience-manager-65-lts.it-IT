@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 58%
@@ -84,7 +84,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 
@@ -98,7 +98,7 @@ Ogni query persistente può avere un proprio set specifico di intestazioni di co
 
 ```shell
 $ curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H 'authorization: Basic yourauthorizationcode' \
     -H "Content-Type: application/json" \
     "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
     -d \
