@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 68bcdfff6ea13c7d392991eba9df957bd5ab1523
+source-git-commit: a3d1ebd3e1c4adba80fb63f0138d662a6d056cc6
 workflow-type: tm+mt
-source-wordcount: '6243'
-ht-degree: 20%
+source-wordcount: '6403'
+ht-degree: 19%
 
 ---
 
@@ -239,14 +239,18 @@ Assets Relate ora funziona per i nomi di file che includono spazi. La logica del
 
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
-
 <!--
+#### Forms Designer-->
+
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-#### Forms Designer
 
-#### Forms
+#### Moduli
 
+* Nelle distribuzioni del cluster AEM Forms 6.5 LTS in JBoss EAP 8, `domain/configuration/domain_oracle.xml` non contiene più un tag `<security>` duplicato che ha causato XML non valido e ha impedito l&#39;avvio del controller di dominio. (FORMS-24687)
+* In modalità di aggiornamento chiavi in mano, l&#39;aggiornamento della porta del database in `lc_turnkey.xml` viene ora applicato correttamente durante l&#39;aggiornamento e non fa più riferimento al valore della porta precedente. (FORMS-24689)
+* Durante la configurazione di JBoss EAP 8.0 su Linux, gli script della shell modificati in Windows non causano più `/bin/sh^M: bad interpreter or $'\r': command not found` errori a causa delle terminazioni della riga CRLF. (FORMS-24688)
+<!--
 #### Forms JEE 
 
 #### Forms Captcha {#forms-captcha-65-lts-sp2}
@@ -274,7 +278,7 @@ Assets Relate ora funziona per i nomi di file che includono spazi. La logica del
 * La sicurezza Sling Resource Access è ora in esecuzione sulla versione 1.1.2. ResourceAccessSecurityImpl non genera più un&#39;eccezione ClassCastException durante l&#39;inizializzazione quando vengono registrati più servizi ResourceAccessGateHandler. L&#39;inizializzazione viene ora completata in modo affidabile ed evita errori di avvio in ambienti con più gestori. (NPR-42750)
 * Console JMX e Console Web ora inviano un `Content-Type: text/css header` per le risorse CSS della console. Il controllo MIME rigoroso non blocca più il caricamento del foglio di stile, pertanto nell&#39;interfaccia utente `/system/console/jmx` viene eseguito il rendering con uno stile normale. (GRANITE-63677)
 * AEM ora evita di duplicare le voci ACL per il gruppo `contributor` in `WEB-INF/resources/provisioning/model.txt` generato. L’output WAR ora contiene un blocco ACL coerente, che impedisce la confusione delle autorizzazioni durante la revisione. (GRANITE-63269)
-* AEM non cancella più le impostazioni di deserializzazione Firewall (Firewall deserializzazione) durante le operazioni di aggiornamento del bundle, inserire nell&#39;elenco Bloccati inserire nell&#39;elenco Consentiti e. La logica di registrazione del filtro aggiornata mantiene l’istanza del firewall attiva allineata con la configurazione salvata, pertanto la protezione rimane abilitata senza riavviare il sistema. (GRANITE-61382)
+* AEM non cancella più le impostazioni di deserializzazione Firewall (Firewall deserializzazione) durante le operazioni di aggiornamento del bundle, inserire nell&#39;elenco Bloccati e. La logica di registrazione del filtro aggiornata mantiene l’istanza del firewall attiva allineata con la configurazione salvata, pertanto la protezione rimane abilitata senza riavviare il sistema. (GRANITE-61382)
 * La console Web Felix non genera più `NullPointerException` errori intermittenti durante l&#39;accesso `/system/console`. La gestione ServiceTracker aggiornata impedisce uno stato di tracciamento null. L’accesso e la navigazione dalla console rimangono stabili durante le richieste ripetute e la convalida automatizzata. (GRANITE-61042)
 
 <!--
@@ -417,7 +421,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -541,6 +545,14 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ## Problemi noti {#known-issues}
 
+### AEM Forms
+
+* **FORMS-24690:** In Configuration Manager, l&#39;inizializzazione del database non riesce durante l&#39;avvio quando si esegue AEM Forms 6.5 LTS JEE in modalità chiavi in mano con configurazione personalizzata se non è selezionato alcun modulo.
+
+* **FORMS-24692:** Il servizio di posta potrebbe non essere in grado di stabilire una connessione socket TLS, causando un errore nella consegna delle e-mail.
+
+* **FORMS-24741:** In AEM Forms 6.5 LTS JEE su Linux, Configuration Manager potrebbe non riuscire se OSFileSetIntendedFor non è impostato correttamente. Aggiornalo a Linux nei file di configurazione richiesti prima di eseguire Configuration Manager.
+
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
 Gli utenti possono riscontrare un danneggiamento dell’archivio durante la compattazione online se in precedenza era stata eseguita la compattazione offline nell’archivio JCR. In questo scenario può verificarsi un `SegmentNotFoundException` (SNFE) che può danneggiare l&#39;archivio.
@@ -606,5 +618,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
