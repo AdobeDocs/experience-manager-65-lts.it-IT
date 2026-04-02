@@ -5,12 +5,13 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 449f466473a3696d2ae8a7b91bd762765ddeac5b
+source-git-commit: f1dbf625f1cb42feaede7acb0dee073ac78ebab3
 workflow-type: tm+mt
-source-wordcount: '6983'
+source-wordcount: '7002'
 ht-degree: 18%
 
 ---
+
 
 # Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP2 {#release-notes}
 
@@ -43,6 +44,10 @@ ht-degree: 18%
 AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di contenuto](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/65lts/) e [Lanci](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/launches/). Queste API consentono di accedere a Frammenti di contenuto e avvii per l’authoring e la pianificazione. Utilizzano le stesse OpenAPI moderne di AEM as a Cloud Service.
 
 **AEM Forms**
+
+**Cosa è incluso in AEM Forms 6.5 LTS SP2**
+
+* Supporto per RDBMK con JBOSS EAP 8.0  è stato aggiunto.
 
 * Esperienza utente migliorata nell&#39;editor di regole visive. Questo aggiornamento include:
 
@@ -463,7 +468,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -658,5 +663,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
