@@ -53,7 +53,7 @@ I documenti PDF creati da PDF Generator in Acrobat 5.0 o versione successiva con
 
 I metadati del documento contengono (ma non sono limitati a) informazioni che vengono visualizzate anche nella scheda Descrizione della finestra di dialogo Proprietà documento in Acrobat. Le modifiche apportate nella scheda Descrizione vengono riportate nei metadati del documento. I metadati dei documenti possono essere estesi e modificati utilizzando prodotti di terze parti.
 
-Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati dei documenti tra i flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in formato XMP, semplificando la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, vedere [Piattaforma metadati estensibile (XMP)](https://www.adobe.com/products/xmp/) e [Centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) fornisce alle applicazioni Adobe un framework XML comune che standardizza la creazione, l’elaborazione e lo scambio di metadati dei documenti tra i flussi di lavoro di pubblicazione. È possibile salvare e importare il codice sorgente XML dei metadati del documento in formato XMP, semplificando la condivisione dei metadati tra vari documenti. Per ulteriori informazioni sui file di XMP, vedere [Piattaforma metadati estensibile (XMP)](https://www.adobe.com/it/products/xmp/) e [Centro sviluppatori Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Puoi creare file XMP in Acrobat.
 
