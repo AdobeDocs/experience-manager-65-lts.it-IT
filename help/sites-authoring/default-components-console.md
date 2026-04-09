@@ -3,9 +3,9 @@ title: Console Componenti
 description: La console Componenti consente di sfogliare tutti i componenti definiti per l’istanza e visualizzare le informazioni chiave di ciascun componente.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: e19f9c2b-dc69-4077-a038-d8eb25a1ad6a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 43%
@@ -41,7 +41,7 @@ Per visualizzare i dettagli di un componente specifico, fai clic sulla risorsa r
   Nella scheda Proprietà puoi:
 
    * Visualizzare le proprietà generali del componente.
-   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [&#128279;](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
+   * Visualizza come è stata definita l&#39;icona o l&#39;abbreviazione [](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) per il componente.
 
       * Facendo clic sull’origine dell’icona si aprirà quel componente.
 

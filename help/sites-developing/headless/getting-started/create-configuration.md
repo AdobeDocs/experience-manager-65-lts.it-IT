@@ -3,9 +3,9 @@ title: Guida rapida alla creazione di una configurazione headless
 description: Crea una configurazione come primo passaggio per iniziare a utilizzare headless in AEM 6.5.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 6792f5c0-074e-4465-9b84-8be78abd6b8f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 66%

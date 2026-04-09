@@ -1,25 +1,25 @@
 ---
-title: AEM Commerce - Preparazione al RGPD
+title: AEM Commerce - Compatibilità GDPR
 description: Scopri le procedure per gestire le richieste RGPD in AEM Commerce e come utilizzarle.
 contentOwner: carlino
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 2d7ae2ad-a7ad-4b7d-bfa4-167caa49a087
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# AEM Commerce - Preparazione al RGPD{#aem-commerce-gdpr-readiness}
+# AEM Commerce - Compatibilità GDPR{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >
 >Il RGPD è utilizzato come esempio nelle sezioni seguenti, ma i dettagli coperti sono applicabili a tutte le normative su privacy e protezione dei dati, come il RGPD e il CCPA.
 
-Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui diritti relativi alla privacy dei dati entra in vigore a maggio 2018. Visita la pagina [RGPD all&#39;Adobe Privacy Center](https://business.adobe.com/it/privacy/general-data-protection-regulation.html).
+Il Regolamento generale sulla protezione dei dati dell&#39;Unione Europea sui diritti relativi alla privacy dei dati entra in vigore a maggio 2018. Visita la pagina [RGPD all&#39;Adobe Privacy Center](https://business.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

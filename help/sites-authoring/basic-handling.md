@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
-source-git-commit: ebef0312d73597e28e5a1635a0e98f833d491d19
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2919'
 ht-degree: 42%
@@ -101,7 +101,7 @@ Nel pannello di navigazione sono disponibili le console seguenti:
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">frammento di esperienza</a> è un'esperienza autonoma che può essere riutilizzata su tutti i canali, con varianti e senza dover copiare e incollare ripetutamente le esperienze o parti di esse.</td>
   </tr>
   <tr>
-   <td>Moduli</td>
+   <td>Forms</td>
    <td>Questa console consente di creare, gestire ed elaborare <a href="/help/forms/using/introduction-aem-forms.md">moduli e documenti</a>.</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   È anche possibile utilizzare il [tasto di scelta rapida](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra obliqua) per richiamare la ricerca da qualsiasi console.
 
-* [Soluzioni](https://business.adobe.com/it/)
+* [Soluzioni](https://business.adobe.com/)
 
   ![Soluzioni](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -293,7 +293,7 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco &#x200B;](#list-view)
+* [Vista a elenco ](#list-view)
 
 >[!NOTE]
 >

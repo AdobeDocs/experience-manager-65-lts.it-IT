@@ -3,12 +3,12 @@ title: Progetti
 description: I progetti consentono di raggruppare le risorse in un’unica entità il cui ambiente comune e condiviso semplifica la gestione dei progetti.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 26%
+ht-degree: 27%
 
 ---
 
@@ -227,7 +227,7 @@ Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al p
 
 Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
 
-Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [&#x200B; durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
+Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [ durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ## Risorse aggiuntive {#additional-resources}
 
@@ -236,4 +236,4 @@ Per ulteriori dettagli sull’utilizzo dei progetti, consulta i seguenti documen
 * [Gestione dei progetti](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Utilizzo delle attività](/help/sites-authoring/task-content.md)
 * [Utilizzo dei flussi di lavoro per i progetti](/help/sites-authoring/projects-with-workflows.md)
-* [Progetto creativo e integrazione PIM](/help/sites-authoring/managing-product-information.md)
+* [Integrazione Progetto creativo e PIM](/help/sites-authoring/managing-product-information.md)

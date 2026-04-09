@@ -6,7 +6,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: cb5495f9-bc54-4515-ae15-55a5397500aa
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2387'
 ht-degree: 0%
@@ -29,9 +29,9 @@ Questo documento descrive i passaggi consigliati per caricare un’applicazione 
 I prerequisiti sono semplici.
 
 * Assicurati che un’istanza di AEM sia in esecuzione localmente.
-* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it&#available-properties).
+* Creare un progetto SPA di base di AEM utilizzando [l&#39;archetipo del progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
    * Questo costituisce la base del progetto AEM che verrà aggiornato per includere l’applicazione a pagina singola esterna.
-   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it#spa-editor).
+   * Gli esempi in questo documento utilizzano il punto di partenza del [progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Avrai a portata di mano l’applicazione a pagina singola React funzionante ed esterna che desideri integrare.
 
 ## Carica applicazione a pagina singola in un progetto AEM {#upload-spa-to-aem-project}
@@ -39,7 +39,7 @@ I prerequisiti sono semplici.
 Innanzitutto, devi caricare l’applicazione a pagina singola esterna nel progetto AEM.
 
 1. Sostituisci `src` nella cartella dei progetti `/ui.frontend` con la cartella `src` dell&#39;applicazione React.
-1. Includere eventuali dipendenze aggiuntive nel file `/ui.frontend/package.json` dell&#39;app `package.json`.
+1. Includere eventuali dipendenze aggiuntive nel file `package.json` dell&#39;app `/ui.frontend/package.json`.
    * Verificare che le dipendenze di SPA SDK siano di [versioni consigliate](spa-getting-started-react.md#dependencies).
 1. Includere eventuali personalizzazioni nella cartella `/public`.
 1. Includere eventuali script o stili in linea aggiunti nel file `/public/index.html`.
@@ -373,9 +373,9 @@ Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto
 
 Il seguente materiale di riferimento può essere utile per comprendere le applicazioni a pagina singola nel contesto di AEM.
 
-* [Archetipo Progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it)
+* [Archetipo Progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview)
 * [Progetto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=it)
 * [Guida introduttiva alle applicazioni a pagina singola in AEM con React](spa-getting-started-react.md)
 * [Materiali di riferimento SPA (riferimenti API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
-* [Routing modello SPA](spa-routing.md)
+* [Indirizzamento del modello SPA](spa-routing.md)

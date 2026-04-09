@@ -8,7 +8,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: aceec3ac-abdf-4ae2-b197-f58cb7faea5f
 index: false
-source-git-commit: 97f3bbc3eb5b4119accf2d93fb63bec35fd56c44
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 66%
@@ -39,7 +39,7 @@ La procedura dettagliata si basa sulle funzionalità di AEM standard e sull’ap
 * [AEM versione 6.5.4 o successiva](/help/release-notes/release-notes.md)
    * Devi disporre dei diritti di amministratore del sistema.
 * [L’app di esempio del progetto SPA WKND disponibile su GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Scarica la versione [&#x200B; più recente dell’app React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Il nome sarà simile a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Scarica la versione [ più recente dell’app React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Il nome sarà simile a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Scarica le [immagini di esempio più recenti](https://github.com/adobe/aem-guides-wknd-spa/releases) per l&#39;app. Il nome sarà simile a `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Utilizza Gestione pacchetti](/help/sites-administering/package-manager.md) per installare i pacchetti come faresti con qualsiasi altro pacchetto in AEM.
    * Ai fini della procedura dettagliata, non è necessario installare l’app tramite Maven.

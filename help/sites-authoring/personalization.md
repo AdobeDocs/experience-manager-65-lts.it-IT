@@ -3,9 +3,9 @@ title: Personalizzazione e targeting dei contenuti
 description: Scopri come Adobe Experience Manager 6.5 LTS può creare contenuti personalizzati.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: 8a4f8ce12a67985f659d0e565f2950c97179bc01
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 36%
@@ -20,7 +20,7 @@ AEM fornisce un framework di strumenti per la creazione e modifica di contenuti 
 
 ## Modalità di targeting {#targeting-mode}
 
-[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
+[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
 
 ## Attività {#activities}
 

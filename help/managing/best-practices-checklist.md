@@ -3,9 +3,9 @@ title: Elenco di controllo
 description: Gli elenchi di controllo del progetto sono un set di best practice per la consegna dei progetti. Guidano l’utente in tutte le fasi del ciclo di vita del progetto e offrono monitoraggio di alto livello sullo stato attuale.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 4a7d8228-101a-47bd-9bcf-d521a69d87a0
-source-git-commit: 343fe14be5c85eecdd34f7428460ee016e97734b
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 100%

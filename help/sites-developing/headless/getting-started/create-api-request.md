@@ -3,9 +3,9 @@ title: Guida rapida all’accesso e alla distribuzione di frammenti di contenuto
 description: Scopri come utilizzare l’API REST di AEM per Assets per gestire i frammenti di contenuto e l’API di GraphQL per la distribuzione headless dei contenuti dei frammenti di contenuto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: a5f7f0b9-7779-49c3-b79f-3dd3762c746a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 41%
@@ -36,8 +36,7 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
 1. GraphiQL è un editor di query interno al browser per GraphQL. Puoi utilizzarlo per creare query per recuperare frammenti di contenuto e distribuirli senza problemi come JSON.
    * Il pannello a sinistra consente di creare la query.
    * Nel pannello a destra vengono visualizzati i risultati.
-   * L’editor delle query dispone del completamento del codice e dei tasti di scelta rapida per eseguire facilmente la query.
-
+   * L’editor di query offre la funzione di completamento del codice e tasti di scelta rapida per agevolare l’esecuzione della query.
      ![Editor GraphiQL](assets/graphiql.png)
 
 1. Supponendo che il modello che hai creato si chiama `person` con campi `firstName`, `lastName` e `position`, puoi creare una semplice query per recuperare il contenuto del frammento di contenuto.
@@ -68,7 +67,6 @@ Gli architetti di informazioni devono progettare query per gli endpoint di canal
    * **Documenti** in alto a destra della pagina per visualizzare la documentazione contestuale per aiutarti a creare le query che si adattano ai tuoi modelli.
    * **Cronologia** nella barra degli strumenti superiore per visualizzare le query precedenti.
    * **Salva con nome** e **Salva** per salvare le query, dopodiché potrai elencarle e recuperarle dal pannello **Query persistenti** e da **Pubblica**.
-
      ![Documentazione di GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL consente query strutturate in grado di eseguire il targeting non solo di set di dati specifici o di singoli oggetti di dati, ma anche di fornire elementi specifici degli oggetti, risultati nidificati, offerte di supporto per variabili di query e molto altro.

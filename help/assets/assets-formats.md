@@ -7,7 +7,7 @@ feature: Asset Management,Renditions
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e48f7950-1b6e-4896-8abc-523552e42ed9
-source-git-commit: 2a328b703d691a23ca46a4171624a4184a8392dd
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '1554'
 ht-degree: 12%
@@ -145,7 +145,7 @@ I formati di documento supportati per le funzioni di gestione delle risorse sono
 
 I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM comuni sono descritti nella tabella seguente.
 
-| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
@@ -157,7 +157,7 @@ I formati di archivio supportati e l’applicabilità dei flussi di lavoro DAM c
 
 Di seguito è descritta l’applicabilità delle usuali funzionalità DAM per alcuni formati di file specifici.
 
-| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo accesso | Consegna Dynamic Media |
+| Formati | Archiviazione | Controllo delle versioni | Flusso di lavoro | Pubblicazione | Controllo degli accessi | Consegna Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -177,21 +177,21 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 
 | Estensione file | Tipo MIME/tipo di file multimediale Internet | Valore jobParam predefinito | Valore jobParam consentito |
 |---|---|---|---|
-| Immagine | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Il valore predefinito jobParam si applica a tutte le risorse di tipo MIME per immagini.<ul><li>[knockoutBackgroundOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html?lang=it)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html?lang=it)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html?lang=it)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=it)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html?lang=it)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html?lang=it)</li><li>[emailSetting](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html?lang=it)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html?lang=it)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html?lang=it)</li></ul> |
-| 3G2 | video/3gpp2 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| 3GP | video/3gpp | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| Immagine | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | Il valore predefinito jobParam si applica a tutte le risorse di tipo MIME per immagini.<ul><li>[knockoutBackgroundOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[emailSetting](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
+| 3G2 | video/3gpp2 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
+| 3GP | video/3gpp | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | AAC | audio/x-aac | | |
 | AFM | application/x-font-type1 | | |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=it)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=it)</li></ul> |
+| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | AIFF | audio/x-aiff | | |
-| AVI | video/x-msvideo | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| AVI | video/x-msvideo | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | BMP | image/bmp | | |
 | CSS | text/css | | |
 | DOC | application/msword | | |
 | EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>image/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash | | |
-| FLV | video/x-flv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| FLV | video/x-flv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | FPX | image/vnd.fpx | | |
 | GIF | image/gif | | |
 | ICC | application/vnd.iccprofile | | |
@@ -199,24 +199,24 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 | INDD | application/x-indesign | | |
 | JPEG | image/jpeg | | |
 | JPG | image/jpeg | | |
-| M2V | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| M4V | video/x-m4v | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MOV | video/quicktime | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| M2V | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
+| M4V | video/x-m4v | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
+| MOV | video/quicktime | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | MP3 | audio/mpeg | | |
-| MP4 | video/mp4 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MPEG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
-| MPG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| MP4 | video/mp4 | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
+| MPEG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
+| MPG | video/mpeg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | MTS | model/vnd.mts | | |
-| OGV | video/ogg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| OGV | video/ogg | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | OTF | application/x-font-otf | | |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [opzioniPDF](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html?lang=it) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [opzioniPDF](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html) |
 | PFB | application/x-font-type1 | | |
 | PFM | application/x-font-type1 | | |
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=it)</li><li>[illustratorOptions]&#x200B;(https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=it)</li></ul> |
-| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html?lang=it)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html?lang=it)</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[opzioniPostScript](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions]&#x200B;(https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
+| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
 | SWF | application/x-shockwave-flash | | |
@@ -224,12 +224,12 @@ Un elenco dei tipi MIME supportati è disponibile in CRXDE Lite in `/conf/global
 | TIF/TIFF | image/tiff | | |
 | TTC | application/x-font-ttf | | |
 | TTF | application/x-font-ttf | | |
-| VOB | video/dvd | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| VOB | video/dvd | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | VTT | text/vtt | | |
 | WAV | audio/x-wav | | |
-| WEBM | video/webm | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| WEBM | video/webm | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | WMA | audio/x-ms-wma | | |
-| WMV | video/x-ms-wmv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=it) |
+| WMV | video/x-ms-wmv | | [EscludiVideoMasterDaAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | XLS | application/vnd.ms-excel | | |
 | ZIP | application/zip | | |
 

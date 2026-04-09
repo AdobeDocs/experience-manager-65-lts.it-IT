@@ -3,9 +3,9 @@ title: Percorso di authoring di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche, e la creazione di contenuti per il tuo progetto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: a5c9ca6e-cec3-409b-9fe8-950423a85470
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 81%
@@ -72,12 +72,12 @@ Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a co
 However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
-* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
+* If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
 -->
 
 ## Risorse aggiuntive {#additional-resources}
 
-I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare le esigenze di un’unica azienda.
+I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare una singola esigenza di di business.
 
 I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse possono essere correlate tra loro. Dai un’occhiata ai percorsi aggiuntivi per ulteriori informazioni su come interagiscono le potenti funzioni di AEM.
 

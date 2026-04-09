@@ -3,9 +3,9 @@ title: Utilizzare i flussi di lavoro
 description: I flussi di lavoro in Adobe Experience Manager consentono di automatizzare una serie di passaggi eseguiti su una pagina o una risorsa.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 55382f3d-7aa4-433f-ac0c-c4764c01a8c3
-source-git-commit: d3ecfb99332ce5e5016f60b329ce5c10bc4593d4
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%

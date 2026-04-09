@@ -3,12 +3,12 @@ title: Sviluppo headless per siti AEM 6.5
 description: Scopri come le potenti funzionalità headless di AEM 6.5, come i modelli di contenuto, i frammenti di contenuto e l’API GraphQL, collaborano per gestire le esperienze a livello centrale e distribuirle tra i canali.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: 4eb42d3a-f869-4831-9aaf-58e7272bd1fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -56,6 +56,6 @@ Sono disponibili diverse risorse per iniziare a utilizzare le funzioni headless 
 | Risorsa | Descrizione | Tipo | Pubblico | Tempo stimato |
 |---|---|---|---|---|
 | [Percorso per sviluppatori headless](/help/journey-headless/developer/overview.md) | **Se sei un utente senza esperienza di AEM e tecnologie headless**, fai clic qui per un&#39;introduzione completa ad AEM e alle sue funzionalità headless, dalla teoria headless fino alla pubblicazione del primo progetto headless. | Guida | Sviluppatori **senza esperienza di AEM e headless** | 1 ora |
-| [Guida introduttiva headless](/help/sites-developing/headless/getting-started/introduction.md) | **Se sei un utente esperto di AEM** che necessita di un riepilogo delle principali funzioni headless di AEM, consulta questa breve panoramica. | Guida rapida | Sviluppatori e amministratori **con esperienza di AEM** | 20 minuti |
+| [Guida introduttiva headless](/help/sites-developing/headless/getting-started/introduction.md) | **Se sei un utente esperto di AEM** che necessita di un riepilogo delle principali funzioni headless di AEM, consulta questa breve panoramica. | Avvio rapido | Sviluppatori e amministratori **con esperienza di AEM** | 20 minuti |
 | [Guida introduttiva all&#39;esercitazione pratica su AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=it) | **Se preferisci un approccio pratico e hai familiarità con AEM**, questo tutorial si concentra direttamente sulla creazione di un semplice progetto headless. | Tutorial | Sviluppatori | 2 ore |
 | [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it) | Questa raccolta di risorse viene fornita sia per gli sviluppatori **new** che per quelli **esperti**. | Raccolta di risorse | Sviluppatori | |

@@ -3,9 +3,9 @@ title: Configurazione dei componenti predefiniti in modalità Progettazione
 description: Configurazione dei componenti di Adobe Experience Manager in modalità Progettazione.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 10%
@@ -43,7 +43,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Per ulteriori informazioni su `parsys`, vedere [Sviluppo di componenti](/help/sites-developing/components.md) e [Linee guida per l&#39;utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
+>Per ulteriori informazioni su [, vedere ](/help/sites-developing/components.md)Sviluppo di componenti[ e ](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Linee guida per l&#39;utilizzo di modelli e componenti`parsys`.
 
 >[!CAUTION]
 >

@@ -3,9 +3,9 @@ title: Gestione dei progetti - Elenco di controllo delle best practice
 description: La gestione di un progetto per l’implementazione di Adobe Experience Manager (AEM) richiede pianificazione e comprensione. Gli elenchi di controllo del progetto sono un set di best practice per la consegna dei progetti. Queste guide presentano tutte le fasi del ciclo di vita del progetto e un monitoraggio di alto livello dello stato.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
+role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: 58c2f666ef6fd89fc42f5d969d1ef1626e45fe45
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 100%
@@ -234,7 +234,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   Prima dello sviluppo, è necessario impostare tutti i processi di supporto necessari per distribuire, rilasciare, testare e segnalare i problemi.
 
-  Consulta anche il [portale di supporto Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support).
+  Consulta anche il [portale di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support).
 
 ### Pianificazione delle operazioni e operazioni {#operations-planning-and-operations}
 

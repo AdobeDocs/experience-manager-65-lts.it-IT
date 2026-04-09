@@ -1,15 +1,15 @@
 ---
 title: Utilizzo dei contenuti di destinazione in più siti
-description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati
+description: Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 058f0019-68c2-4769-b49d-c1e251196ff1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 84%
@@ -18,7 +18,7 @@ ht-degree: 84%
 
 # Utilizzo dei contenuti di destinazione in più siti{#working-with-targeted-content-in-multisites}
 
-Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito integrato dell’AEM per contenuti mirati.
+Se devi gestire contenuti mirati, ad esempio attività, esperienze e offerte tra siti diversi, puoi sfruttare il supporto multisito incorporato di AEM per contenuti mirati.
 
 >[!NOTE]
 >

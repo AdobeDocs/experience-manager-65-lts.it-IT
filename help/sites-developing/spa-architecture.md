@@ -11,7 +11,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 8670d700-6ccd-4809-b719-8580d6fb2cf8
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 5%
@@ -66,7 +66,7 @@ Qualsiasi routing statico funziona in base al principio [di portabilità](/help/
 
 ## Archetipo di progetto AEM {#aem-project-archetype}
 
-Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
+Qualsiasi progetto AEM deve utilizzare l’[archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview), che supporta progetti SPA utilizzando React o Angular e sfrutta l’SDK di SPA.
 
 ## Modelli di progettazione SPA {#spa-design-models}
 

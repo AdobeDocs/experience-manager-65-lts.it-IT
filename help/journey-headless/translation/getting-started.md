@@ -3,9 +3,9 @@ title: Guida introduttiva alla traduzione headless in AEM
 description: Scopri come organizzare i contenuti headless e come funzionano gli strumenti di traduzione di AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: beebb7b6-5ed8-4cec-84cf-fa90b2ef711a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 87%
@@ -88,7 +88,6 @@ Poiché i modelli di contenuto definiscono la struttura del contenuto, è necess
 1. L’**Editor modello frammento di contenuto** si apre.
    1. La colonna a sinistra contiene i campi del modello. Questa colonna ci interessa.
    1. La colonna a destra contiene i campi che si possono aggiungere al modello. Si può ignorare questa colonna.
-
       ![Editor modello per frammenti di contenuto](assets/content-fragment-model-editor.png)
 1. Fate clic su uno dei campi del modello. AEM lo contrassegna e i dettagli di quel campo sono visualizzati nella colonna a destra.
    ![Dettaglio dell’editor modello dei frammenti di contenuto](assets/content-fragment-model-editor-detail.png)
@@ -137,7 +136,7 @@ Le traduzioni devono essere create come cartelle di pari livello accanto alla li
 
 >[!NOTE]
 >
->L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente lavori di traduzione.
+>L’architetto dei contenuti è generalmente responsabile della creazione di queste cartelle linguistiche. Se non vengono create, AEM non sarà in grado di elaborare successivamente i processi di traduzione.
 
 La struttura finale può avere un aspetto simile al seguente.
 

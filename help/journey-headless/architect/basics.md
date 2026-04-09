@@ -3,9 +3,9 @@ title: Scopri le nozioni di base sulla modellazione dei contenuti
 description: Scopri le nozioni di base sulla modellazione dei contenuti per CMS headless utilizzando Frammenti di contenuto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: 89d4b9ae-8237-4c85-9e68-626e7d9d3464
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 94%

@@ -1,6 +1,6 @@
 ---
-title: Analisi delle prestazioni delle pagine
-description: Utilizza la pagina Content Insight per analizzare le prestazioni della pagina che stai creando
+title: Analisi delle prestazioni della pagina
+description: Utilizza la pagina Insight dei contenuti per analizzare le prestazioni della pagina che stai creando
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,18 +8,18 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 075c4150-e7e2-4374-afe0-31855bffe438
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Analisi delle prestazioni delle pagine{#analyzing-page-performance}
+# Analisi delle prestazioni della pagina{#analyzing-page-performance}
 
-Apri la pagina [Content Insight](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che stai creando. Configura il periodo di reporting per concentrare l’analisi.
+Apri la pagina [Contenuto Insight](/help/sites-authoring/content-insights.md) per analizzare le prestazioni della pagina che stai creando. Configura il periodo di reporting per concentrare l’analisi.
 
 ## Apertura di Analytics e Recommendations per una pagina {#opening-analytics-and-recommendations-for-a-page}
 
@@ -30,7 +30,7 @@ Utilizza la procedura seguente per visualizzare le analisi e i consigli per una 
 
    >[!NOTE]
    >
-   >Le analisi e i consigli per una pagina vengono visualizzati solo se AEM è stato configurato per l&#39;integrazione con Adobe Analytics[&#128279;](/help/sites-administering/adobeanalytics-connect.md).
+   >Le analisi e i consigli per una pagina vengono visualizzati solo se AEM è stato configurato per l&#39;integrazione con Adobe Analytics[.](/help/sites-administering/adobeanalytics-connect.md)
 
    ![schermata_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -41,15 +41,15 @@ Modifica i seguenti aspetti relativi al tempo nei rapporti di analisi:
 * Periodo di tempo in cui generare il rapporto.
 * Granularità dei dati.
 
-Gli strumenti per modificare gli aspetti temporali dei rapporti vengono visualizzati nella parte superiore della pagina Approfondimenti contenuto. ![chlimage_1-126](assets/chlimage_1-126.png)
+Gli strumenti per modificare gli aspetti temporali dei rapporti vengono visualizzati nella parte superiore della pagina Insight dei contenuti. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### Modifica del periodo di reporting {#changing-the-reporting-period-1}
 
-Modifica il periodo di reporting della pagina di approfondimento dei contenuti per focalizzare l’analisi dell’attività della pagina su un periodo di tempo specifico. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente. L’area ombreggiata nell’arco temporale rappresenta il periodo di reporting. Le date nell’arco temporale aumentano da sinistra a destra.
+Modifica il periodo di reporting della pagina Insight dei contenuti per concentrare l’analisi dell’attività della pagina su un periodo di tempo specifico. Quando si modifica il periodo di reporting, i rapporti vengono aggiornati automaticamente. L’area ombreggiata nell’arco temporale rappresenta il periodo di reporting. Le date nell’arco temporale aumentano da sinistra a destra.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Per modificare il periodo di reporting di una pagina di approfondimento dei contenuti:
+Per modificare il periodo di reporting di una pagina di Content Insight:
 
 1. Se l’intervallo temporale non viene visualizzato nella parte superiore della pagina, fai clic sull’icona Attiva/Disattiva intervallo temporale.
 

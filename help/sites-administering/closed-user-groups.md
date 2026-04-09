@@ -10,10 +10,10 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '6662'
-ht-degree: 1%
+source-wordcount: '6654'
+ht-degree: 0%
 
 ---
 
@@ -688,7 +688,7 @@ Per impostazione predefinita, le nuove installazioni di AEM utilizzeranno le nuo
 |---|---|
 | Percorsi supportati `/content` | La gestione del controllo di accesso per i criteri CUG è abilitata. |
 | Valutazione CUG abilitata FALSE | La valutazione delle autorizzazioni è disabilitata. I criteri CUG non hanno effetto. |
-| Classificazione | 200 | Consulta la documentazione di Oak. |
+| Classificazione \|200 | Consulta la documentazione di Oak. |
 
 >[!NOTE]
 >
@@ -700,7 +700,7 @@ Per impostazione predefinita, le nuove installazioni di AEM utilizzeranno le nuo
 |---|---|
 | Percorsi supportati `/content` | La gestione del controllo degli accessi per i criteri del gruppo utenti chiusi (CUG) è abilitata sotto i percorsi configurati. |
 | Valutazione CUG abilitata TRUE | La valutazione delle autorizzazioni è abilitata sotto i percorsi configurati. I criteri CUG diventano effettivi al `Session.save()`. |
-| Classificazione | 200 | Consulta la documentazione di Oak. |
+| Classificazione \|200 | Consulta la documentazione di Oak. |
 
 | **&quot;Elenco di esclusione CUG di Apache Jackrabbit Oak&quot;** | **Spiegazione** |
 |---|---|
@@ -802,7 +802,7 @@ Questo passaggio dalle proprietà JCR residue a un criterio di controllo degli a
 
 Crea criteri CUG nel nodo JCR definendo la sottostruttura da assoggettare a restrizioni di accesso in lettura. È probabile che si tratti di una pagina AEM nel caso in cui si preveda che il gruppo utenti chiusi (CUG) influisca sull’intera struttura.
 
-Il posizionamento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l’accesso al contenuto s.str di una determinata pagina, ma non avrà effetto su pagine di pari livello o secondarie. Questo può essere un caso d’uso valido ed è possibile ottenerlo con un editor dell’archivio che consente di applicare contenuti ad accesso granulare. Tuttavia, contrasta con l’implementazione precedente in cui il posizionamento di una proprietà cq:cugEnabled sul nodo jcr:content veniva rimappato internamente sul nodo della pagina. Questa mappatura non viene più eseguita.
+Il posizionamento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l&#39;accesso al contenuto s.str di una determinata pagina, ma non avrà effetto su pagine di pari livello o secondarie. Questo può essere un caso d’uso valido ed è possibile ottenerlo con un editor dell’archivio che consente di applicare contenuti ad accesso granulare. Tuttavia, contrasta con l&#39;implementazione precedente in cui il posizionamento di una proprietà cq:cugEnabled sul nodo jcr:content è stato rimappato internamente al nodo della pagina. Questa mappatura non viene più eseguita.
 
 **Valutazione delle autorizzazioni con criteri per gruppi utenti chiusi (CUG)**
 
@@ -817,7 +817,7 @@ Il modello di autorizzazione CUG consente di attivare singolarmente la gestione 
 * la gestione del controllo di accesso è abilitata se il modulo dispone di uno o più percorsi supportati in cui è possibile creare gruppi utenti chiusi (CUG)
 * la valutazione delle autorizzazioni è abilitata solo se è selezionata anche l&#39;opzione **Valutazione CUG abilitata**.
 
-Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [&#x200B; da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
+Nella nuova valutazione predefinita dell’installazione di AEM dei criteri per gruppi utenti chiusi (CUG), è abilitata solo con la modalità di esecuzione &quot;pubblicazione&quot;. Per ulteriori dettagli, vedi i dettagli sulla configurazione predefinita [ da AEM 6.3](#default-configuration-since-aem). Questo può essere verificato confrontando i criteri efficaci per un determinato percorso con i criteri memorizzati nel contenuto. I criteri effettivi verranno visualizzati solo se è abilitata la valutazione delle autorizzazioni per i gruppi di utenti chiusi (CUG).
 
 Come spiegato in precedenza, i criteri di controllo dell&#39;accesso ai gruppi utenti chiusi (CUG) ora sono sempre memorizzati nel contenuto, ma la valutazione delle autorizzazioni effettive risultanti da tali criteri verrà applicata solo se **Valutazione gruppi utenti chiusi (CUG) abilitata** è attivata nella console di sistema in Apache Jackrabbit Oak **Configurazione gruppi utenti chiusi (CUG).** Per impostazione predefinita, è abilitato solo con la modalità di esecuzione &#39;pubblicazione&#39;.
 
@@ -843,13 +843,13 @@ Per quanto riguarda `granite:loginPath`, è necessario lo stesso privilegio per 
 
 Crea i requisiti di autenticazione nel nodo JCR che definisce la sottostruttura da sottoporre all’accesso forzato. È probabile che si tratti di una pagina AEM nel caso in cui si preveda che il gruppo utenti chiusi (CUG) influisca sull’intera struttura e l’interfaccia utente per la nuova implementazione aggiunge quindi il tipo mixin di requisito di autenticazione sul nodo della pagina.
 
-L’inserimento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l’accesso solo al contenuto. Tuttavia, questo non influisce sul nodo della pagina stesso né su alcuna pagina figlia.
+Il posizionamento del criterio CUG solo nel nodo jcr:content situato sotto una determinata pagina limita l&#39;accesso solo al contenuto. Tuttavia, questo non influisce sul nodo della pagina stesso né su alcuna pagina figlia.
 
-Questo potrebbe essere uno scenario valido ed è possibile con un editor di archivio che consente di posizionare il mixin in qualsiasi nodo. Tuttavia, il comportamento è in contrasto con l’implementazione precedente, in cui il posizionamento di una proprietà cq:cugEnabled o cq:cugLoginPage nel nodo jcr:content è stato rimappato internamente al nodo della pagina. Questa mappatura non viene più eseguita.
+Questo potrebbe essere uno scenario valido ed è possibile con un editor di archivio che consente di posizionare il mixin in qualsiasi nodo. Tuttavia, il comportamento è in contrasto con l&#39;implementazione precedente, dove il posizionamento di una proprietà cq:cugEnabled o cq:cugLoginPage sul nodo jcr:content è stato rimappato internamente al nodo della pagina. Questa mappatura non viene più eseguita.
 
 #### Percorsi supportati configurati {#configured-supported-paths}
 
-Sia il tipo mixin `granite:AuthenticationRequired` che la proprietà granite:loginPath verranno rispettati solo all&#39;interno dell&#39;ambito definito dall&#39;opzione di configurazione **Percorsi supportati** presente con il requisito di autenticazione di Adobe Granite **e il gestore del percorso di accesso**. Se non viene specificato alcun percorso, la funzionalità dei requisiti di autenticazione viene disabilitata completamente. In questo caso, il tipo mixin e la proprietà diventano effettivi quando vengono aggiunti o impostati su un determinato nodo JCR.
+Sia il tipo mixin `granite:AuthenticationRequired` che la proprietà granite:loginPath verranno rispettati solo all&#39;interno dell&#39;ambito definito dal set di **opzioni di configurazione percorsi supportati** presenti con il requisito di autenticazione **Adobe Granite e il gestore del percorso di accesso**. Se non viene specificato alcun percorso, la funzionalità dei requisiti di autenticazione viene disabilitata completamente. In questo caso, il tipo mixin e la proprietà diventano effettivi quando vengono aggiunti o impostati su un determinato nodo JCR.
 
 ### Mappatura di contenuti JCR, servizi OSGi e configurazioni {#mapping-of-jcr-content-osgi-services-and-configurations}
 
@@ -857,7 +857,7 @@ Il documento seguente fornisce una mappatura completa dei servizi OSGi, delle co
 
 Mappatura CUG a partire da AEM 6.3
 
-[Ottieni file](assets/cug-mapping.pdf)
+[Ottieni il file](assets/cug-mapping.pdf)
 
 ## Aggiorna gruppo utenti chiusi {#upgrade-cug}
 

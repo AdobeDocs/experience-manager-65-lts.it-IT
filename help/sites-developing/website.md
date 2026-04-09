@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4923'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ Questo tutorial descrive come:
 1. Crea i seguenti componenti da utilizzare sulle pagine:
 
    * Navigazione superiore
-   * Elementi figli elenco
+   * Elementi secondari elenco
    * Logo
    * Immagine
    * Text-Image
@@ -55,7 +55,7 @@ Per seguire insieme al tutorial invece di eseguire gli esercizi, scarica il sito
 
 Pacchetto di contenuti per siti web
 
-[Ottieni file](assets/website-1_0.zip)
+[Ottieni il file](assets/website-1_0.zip)
 
 ## Installazione di Adobe Experience Manager {#installing-adobe-experience-manager}
 
@@ -93,7 +93,7 @@ In questa sezione viene creata la progettazione per l&#39;applicazione utilizzan
 
 Esempio di file static.css e immagini
 
-[Ottieni file](assets/mywebsite.zip)
+[Ottieni il file](assets/mywebsite.zip)
 
 1. Nella pagina iniziale di AEM, fai clic su **Strumenti**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
 
@@ -329,7 +329,7 @@ In questa sezione vengono creati diversi script che generano ciascuno una parte 
 
 1. In CRXDE Lite, creare il file `left.jsp` in `/apps/mywebsite/components/contentpage`:
 
-   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea &#x200B;** quindi **Crea file**.
+   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea **quindi **Crea file**.
 
    1. Nella finestra, digita `left.jsp` come **Nome** e fai clic su **OK**.
 
@@ -493,7 +493,7 @@ Migliora lo script di rendering del componente topnav per utilizzare collegament
 
 Questo esercizio illustra [l&#39;elaborazione della richiesta Sling](/help/sites-developing/the-basics.md#sling-request-processing). Lo script topnav.jsp viene modificato per chiamare uno script che genera dinamicamente immagini da utilizzare per i collegamenti di navigazione della pagina. In questo esercizio, Sling analizza l’URL dei file di origine delle immagini per determinare lo script da utilizzare per il rendering delle immagini.
 
-Ad esempio, l’origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
+Ad esempio, l&#39;origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
 
 1. Sling determina il percorso della risorsa da `/content/mwebysite/en/products.png.`
 1. Sling corrisponde a questo percorso con il nodo `/content/mywebsite/en/products`.
@@ -679,7 +679,7 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina che des
       * Tipo: `String`
       * Valore: `This is a description of the Product 1!.`
 
-   1. Fare clic su **Aggiungi**.
+   1. Fai clic su **Aggiungi**.
    1. Nella scheda **Proprietà**, crea un&#39;altra proprietà utilizzando i valori seguenti:
 
       * Nome: data
@@ -691,14 +691,14 @@ Crea due pagine che si trovano sotto la pagina Prodotti. Per ogni pagina che des
 
 1. In CRXDE Lite, imposta una descrizione e una data per la pagina del prodotto 2:
 
-   1. Seleziona il nodo /content/mywebsite/en/products/product2/jcr:content.
+   1. Selezionare il nodo /content/mywebsite/en/products/product2/jcr:content.
    1. Nella scheda **Proprietà** immettere i valori seguenti:
 
       * Nome: jcr:description
       * Tipo: String
       * Valore: questa è una descrizione del prodotto 2!.
 
-   1. Fare clic su **Aggiungi**.
+   1. Fai clic su **Aggiungi**.
    1. Nelle stesse caselle di testo sostituire i valori precedenti con i valori seguenti:
 
       * Nome: data
@@ -1172,23 +1172,23 @@ Questa sezione descrive come creare lo script di immagine.
 
 1. Salva le modifiche.
 
-#### Creazione del nodo Image cq:editConfig {#creating-the-image-cq-editconfig-node}
+#### Creazione del nodo cq:editConfig dell&#39;immagine {#creating-the-image-cq-editconfig-node}
 
 Il tipo di nodo `cq:editConfig` consente di configurare determinati comportamenti dei componenti durante la modifica delle relative proprietà.
 
-In questa sezione viene utilizzato un nodo cq:editConfig per consentire di trascinare le risorse da Content Finder nel componente immagine.
+In questa sezione, utilizzi un nodo cq:editConfig per consentire di trascinare le risorse da Content Finder nel componente immagine.
 
 1. In CRXDE Lite, sotto il nodo /apps/mywebsite/components/image, crea un nodo come segue:
 
    * Nome: cq:editConfig.
    * Tipo: cq:EditConfig.
 
-1. Crea un nodo sotto il nodo cq:editConfig come segue:
+1. Nel nodo cq:editConfig, creare un nodo come segue:
 
-   * Nome: cq:dropTarget.
+   * Nome: cq:dropTargets.
    * Tipo: cq:DropTargetConfig.
 
-1. Crea un nodo sotto il nodo cq:dropTargets come segue:
+1. Nel nodo cq:dropTargets, creare un nodo come segue:
 
    * Nome: immagine.
    * Tipo: nt:unstructured.
@@ -1197,7 +1197,7 @@ In questa sezione viene utilizzato un nodo cq:editConfig per consentire di trasc
 
 | Nome | Tipo | Valore |
 |---|---|---|
-| accetta | Stringa | image/(gif | jpeg | png) |
+| accetta | Stringa | image/(gif\|jpeg\|png) |
 | gruppi | Stringa | media |
 | propertyName | Stringa | ./imageReference |
 
@@ -1530,6 +1530,6 @@ Per questo componente, puoi impostare diversi parametri sia in modalità di modi
    ```
 
 1. Salva le modifiche.
-1. Nel browser, ricarica la pagina **&#x200B; Products**. L’aspetto dell’intera pagina è il seguente:
+1. Nel browser, ricarica la pagina** Products**. L’aspetto dell’intera pagina è il seguente:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

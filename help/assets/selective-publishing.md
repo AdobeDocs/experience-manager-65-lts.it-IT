@@ -10,7 +10,7 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 3%
@@ -186,7 +186,7 @@ Puoi utilizzare **[!UICONTROL Pubblicazione rapida]** per casi semplici di attiv
 1. Selezionare una delle opzioni seguenti dall&#39;elenco del menu **[!UICONTROL Pubblicazione rapida]**.
 
    | Opzione Pubblicazione rapida | Effetto |
-   | --- | --- | 
+   | --- | --- |
    | Pubblica su Experience Manager | Pubblica immediatamente le risorse selezionate in Experience Manager. |
    | Pubblica su Brand Portal | Pubblica immediatamente le risorse selezionate in **[!UICONTROL Brand Portal]**.<br>Questa opzione è disponibile solo se nell&#39;istanza di Experience Manager Assets è già configurato **[!UICONTROL Brand Portal]**. |
    | Pubblica in Dynamic Media | Pubblica immediatamente le risorse selezionate in Dynamic Media.<br>Una risorsa deve essere sincronizzata in Dynamic Media. Se necessario, verificare che **[!UICONTROL Modalità di sincronizzazione]** nelle proprietà di una cartella sia già impostata su **[!UICONTROL Sincronizza tutto il contenuto di questa sottostruttura di cartelle in Dynamic Media]**. |
@@ -242,11 +242,11 @@ Facoltativamente, puoi utilizzare queste caselle di controllo con il predicato d
    | Impostazione di pubblicazione di Assets nella configurazione di Dynamic Media | Azione selezionata | Destinazione pubblicazione |
    | --- | --- | --- |
    | Immediatamente o <br>All&#39;attivazione | Pubblicazione | Experience Manager e Dynamic Media |
-   | Immediatamente o <br>All&#39;attivazione | Pubblica in Dynamic Media | Nessuno |
+   | Immediatamente o <br>All&#39;attivazione | Pubblica in Dynamic Media | Nessuna |
    | Pubblicazione selettiva | Pubblicazione | Experience Manager |
    | Pubblicazione selettiva | Pubblica in Dynamic Media | Dynamic Media |
    | Immediatamente o <br>All&#39;attivazione | Annulla pubblicazione | Experience Manager e Dynamic Media |
-   | Immediatamente o <br>All&#39;attivazione | Annulla pubblicazione da Dynamic Media | Nessuno |
+   | Immediatamente o <br>All&#39;attivazione | Annulla pubblicazione da Dynamic Media | Nessuna |
    | Pubblicazione selettiva | Annulla pubblicazione | Experience Manager |
    | Pubblicazione selettiva | Annulla pubblicazione da Dynamic Media | Dynamic Media |
 
@@ -268,7 +268,6 @@ Puoi utilizzare **[!UICONTROL Timeline]** con **[!UICONTROL Vista a schede]**, *
 Quando si utilizza **[!UICONTROL Vista a elenco]**, viene visualizzata una colonna aggiuntiva per lo stato di pubblicazione **[!UICONTROL Dynamic Media]**.
    * Una cartella configurata per la sincronizzazione con Dynamic Media visualizza la colonna **[!UICONTROL Dynamic Media]** per impostazione predefinita.
    * Una cartella *non* configurata per la sincronizzazione con Dynamic Media non visualizza la colonna Dynamic Media.
-
      ![Visualizzazione elenco e sequenza temporale](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Risoluzione dei problemi di pubblicazione selettiva {#selective-publish-troubleshoot}

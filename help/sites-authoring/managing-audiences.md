@@ -8,9 +8,9 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 532d8289-a266-4556-ab59-855460c377cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 63%
@@ -65,7 +65,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se nel menu **Crea** non trovi **Crea pubblico di destinazione &#x200B;** non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
+>Se nel menu **Crea** non trovi **Crea pubblico di destinazione **non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -73,13 +73,13 @@ Per creare un pubblico di Adobe Target:
 
    ![schermata_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Nella console Pubblico, fai clic su **Crea** e quindi **&#x200B; Crea pubblico Target**.
+1. Nella console Pubblico, fai clic su **Crea** e quindi** Crea pubblico Target**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
 1. Nella finestra di dialogo **Configurazione Adobe Target**, seleziona la configurazione di destinazione e fai clic su **OK**.
 1. Nell&#39;area Regola n. 1 fare clic sul tipo di attributo e immettere le informazioni relative agli attributi nei campi disponibili. Al termine, seleziona il segno di spunta a destra dell’attributo per salvarlo. Per informazioni su tutti gli attributi, consulta [Attributi e relative opzioni](#attributes-and-their-options).
-1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore boolean AND, il che significa che l’audience deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
+1. Fai clic su **Aggiungi regola** per aggiungere un’altra regola. Immetti tutte le regole necessarie. Le regole sono combinate con l’operatore booleano E, il che significa che il pubblico deve soddisfare tutti i requisiti di ciascuna regola per essere idonea a un’attività.
 1. Fai clic su **Avanti**.
 1. Immetti un nome per il pubblico e fai clic su **Salva**.
 1. Fai clic su **Salva**. Il pubblico è elencato nell’elenco Pubblico.

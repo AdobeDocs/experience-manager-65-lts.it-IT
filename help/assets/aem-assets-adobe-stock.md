@@ -7,7 +7,7 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: b40c803de59f85fb34536849370ff3e77bba473a
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
 <!-- old content
@@ -102,7 +102,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Come sviluppatore, eseguire i passaggi seguenti per integrare [!DNL Adobe Experience Manager] e [!DNL Adobe Stock].
 
 1. [Configura un programma in [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configura un programma in [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -122,7 +122,7 @@ Eseguire la procedura seguente per configurare un programma in [!DNL Developer C
 
 Per aggiungere la configurazione nell&#39;istanza di authoring [!DNL AEM], eseguire la procedura seguente:
 
-1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [Aggiungi la configurazione cloud a cui connettersi [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza [!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -463,9 +463,9 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=it)
->* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/it/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/it/stock/faq.html)
+>* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--old content

@@ -7,16 +7,16 @@ topic-tags: page-authoring
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 33b531c0-8fda-4649-bad1-d28c58a160e0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 57%
+ht-degree: 60%
 
 ---
 
-# Scelte rapide da tastiera durante la modifica delle pagine{#keyboard-shortcuts-when-editing-pages}
+# Scelte rapide da tastiera durante la modifica di pagine{#keyboard-shortcuts-when-editing-pages}
 
 In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabili quando si modifica una pagina, altre quando si [utilizzano le console](/help/sites-authoring/keyboard-shortcuts.md).
 
@@ -42,7 +42,7 @@ In AEM sono disponibili varie scelte rapide da tastiera. Alcune sono utilizzabil
 
 >[!NOTE]
 >
->&ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
+>&amp;ast; Quando l&#39;utente inizia a interagire con la pagina in modalità Anteprima, il collegamento `Ctrl-Shift-m` non è più disponibile. Per rendere nuovamente disponibile il collegamento, l’utente deve fare clic sulla barra superiore dell’editor o tornare alla modalità Modifica.
 
 Sono disponibili varie scelte rapide da tastiera anche per gli utenti desktop che utilizzano le [console](/help/sites-authoring/keyboard-shortcuts.md).
 

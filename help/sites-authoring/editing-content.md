@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -119,7 +119,7 @@ Se la pagina è soggetta a più flussi di lavoro, il numero di flussi di lavoro 
 
 ## Segnaposto Componente {#component-placeholder}
 
-Il segnaposto del componente è un indicatore che mostra dove è posizionato un componente quando lo rilasci, sopra il componente su cui stai passando con il puntatore del mouse.
+Il segnaposto del componente è un indicatore che mostra dove è posizionato un componente quando lo rilasci, sopra il componente su cui stai passando il puntatore.
 
 * Quando aggiungi un componente alla pagina (trascinandolo dal browser dei componenti):
 
@@ -173,7 +173,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
 <table>
  <tbody>
   <tr>
-   <th><strong>Tipo risorsa</strong></th>
+   <th><strong>Tipo di risorsa</strong></th>
    <th><strong>Tipo di componente risultante</strong></th>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
   </tr>
   <tr>
    <td>Documento</td>
-   <td>Download</td>
+   <td>Scarica</td>
   </tr>
   <tr>
    <td>Prodotto</td>
@@ -193,7 +193,7 @@ Questa opzione è valida per i seguenti tipi di risorse (alcuni dipendono dal si
    <td>Flash</td>
   </tr>
   <tr>
-   <td>Frammenti di contenuto</td>
+   <td>Frammento di contenuto</td>
    <td>Frammento di contenuto<br /> </td>
   </tr>
  </tbody>
@@ -348,10 +348,10 @@ Per tipi di componenti specifici puoi trascinare e rilasciare le risorse dal bro
 | **Tipo risorsa** | **Tipo di componente** |
 |---|---|
 | Immagine | Immagine |
-| Documento | Download |
+| Documento | Scarica |
 | Prodotto | Prodotto |
 | Video | Flash |
-| Frammenti di contenuto | Frammenti di contenuto |
+| Frammento di contenuto | Frammento di contenuto |
 
 ## Modifica (Contenuto) Modalità a tutto schermo {#edit-content-full-screen-mode}
 
@@ -492,7 +492,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1&rbrace;. &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
+Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1}. ](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
 
 * Nascondi vari meccanismi di modifica per avere una visualizzazione rapida della pagina quando viene pubblicata.
 * Utilizza i collegamenti per navigare.

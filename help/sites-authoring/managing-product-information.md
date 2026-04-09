@@ -1,5 +1,5 @@
 ---
-title: Progetto creativo e integrazione PIM
+title: Integrazione Progetto creativo e PIM
 description: Creative Project semplifica l’intero flusso di lavoro del servizio fotografico, tra cui la generazione di una richiesta di servizio fotografico, il caricamento di un servizio fotografico, la collaborazione a un servizio fotografico e la creazione di pacchetti di risorse approvate
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,18 +7,18 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 4531a41c-99fa-4e98-b4f4-f8fc92ed9095
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
 
 ---
 
-# Progetto creativo e integrazione PIM {#creative-project-and-pim-integration}
+# Integrazione Progetto creativo e PIM {#creative-project-and-pim-integration}
 
-Se sei un addetto al marketing o un professionista della creatività, puoi utilizzare gli strumenti di Creative Project in Adobe Experience Manager (AEM) per gestire la fotografia di prodotti e i processi creativi associati all’interno della tua organizzazione.
+Se sei un addetto al marketing o un professionista della creatività, puoi utilizzare gli strumenti di Creative Project in Adobe Experience Manager (AEM) per gestire la fotografia di prodotti e i relativi processi creativi all’interno della tua organizzazione.
 
 Puoi utilizzare Creative Project per semplificare le seguenti attività nel flusso di lavoro del servizio fotografico:
 
@@ -33,7 +33,7 @@ Puoi utilizzare Creative Project per semplificare le seguenti attività nel flus
 
 ## Flussi di lavoro per servizio fotografico per prodotto  {#exploring-product-photo-shoot-workflows}
 
-Creative Project fornisce vari modelli di progetto per soddisfare i diversi requisiti del progetto. Il modello **Product Photo Shoot Project** è già disponibile. Questo modello include flussi di lavoro per servizio fotografico che consentono di avviare e gestire richieste di servizio fotografico per prodotto. Include inoltre una serie di attività che consentono di ottenere immagini digitali per i prodotti attraverso appropriati processi di revisione e approvazione.
+In Creative Project sono disponibili vari modelli di progetto per soddisfare i diversi requisiti del progetto. Il modello **Product Photo Shoot Project** è già disponibile. Questo modello include flussi di lavoro per servizio fotografico che consentono di avviare e gestire richieste di servizio fotografico per prodotto. Include inoltre una serie di attività che consentono di ottenere immagini digitali per i prodotti attraverso appropriati processi di revisione e approvazione.
 
 ## Crea un progetto servizio fotografico per prodotto {#create-a-product-photo-shoot-project}
 
@@ -194,7 +194,7 @@ L&#39;attività **Crea elenco di foto** consente al proprietario del progetto di
 
    ![Visualizza elenco di foto](assets/chlimage_1-148a.png)
 
-   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product &#x200B;** e **Description**.
+   Per modificare i dati esistenti o aggiungere nuovi dati, fare clic su **Modifica** nella barra degli strumenti. È possibile modificare solo i campi **Product **e **Description**.
 
    ![Modifica elenco di foto](assets/chlimage_1-149a.png)
 

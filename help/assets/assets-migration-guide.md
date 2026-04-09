@@ -2,11 +2,11 @@
 title: Migrare le risorse in blocco
 description: Descrive come inserire risorse in  [!DNL Adobe Experience Manager], applicare metadati, generare rappresentazioni e attivarle nelle istanze di pubblicazione.
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Migration,Renditions,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: b8328197-6d2a-493d-8098-db4f68f1fcb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%

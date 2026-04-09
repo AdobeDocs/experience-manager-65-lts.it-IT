@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8354eccd-4f71-45bb-9bab-8f756b9ce083
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 82%
@@ -118,7 +118,7 @@ Puoi specificare i dettagli:
 
    * Una risorsa esistente per visualizzare le seguenti azioni:
 
-      * **Includi elementi figlio** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
+      * **Includi elementi secondari** per specificare gli elementi secondari di tale risorsa che verranno inclusi nel flusso di lavoro.
 Viene visualizzata una finestra di dialogo che consente di perfezionare la selezione in base a:
 
          * Solo gli elementi secondari di primo livello.

@@ -8,16 +8,16 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2211'
 ht-degree: 47%
 
 ---
 
-# Authoring: ambiente e strumenti{#authoring-the-environment-and-tools}
+# Authoring - Ambiente e strumenti{#authoring-the-environment-and-tools}
 
 L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
@@ -286,7 +286,7 @@ Ad esempio, se appropriato, **Informazioni pagina** dispone anche delle opzioni 
 * [Promuovi lancio](/help/sites-authoring/launches-promoting.md) se la pagina è un lancio
 * [Apri nell&#39;interfaccia classica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se questa opzione è stata [abilitata da un amministratore](/help/sites-administering/enable-classic-ui-editor.md)
 
-Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analisi e alle raccomandazioni.
+Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analisi e ai consigli.
 
 ## Modalità pagina   {#page-modes}
 

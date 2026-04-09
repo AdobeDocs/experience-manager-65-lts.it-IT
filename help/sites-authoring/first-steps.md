@@ -3,9 +3,9 @@ title: Primi passaggi per gli autori durante la creazione di contenuti in AEM
 description: Scopri i concetti chiave per la creazione di contenuti e l’authoring in AEM 6.5 LTS. Troverai anche informazioni sull’utilizzo di tag, modelli e altre funzioni della pagina.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 8fc30cfe-cb10-47ba-911c-e4fdfaa970b5
-source-git-commit: 31370571843508acfb5d1e5cc491fdb043153a8f
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 13%
@@ -51,7 +51,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-authoring/editing-content.md#preview-mode) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Blocco di una pagina  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}
 

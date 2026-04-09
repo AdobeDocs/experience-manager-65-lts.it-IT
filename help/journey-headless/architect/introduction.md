@@ -3,9 +3,9 @@ title: Percorso Architect di contenuti Adobe Experience Manager headless
 description: Introduzione alle potenti e flessibili funzionalità headless di Adobe Experience Manager e come modellare i contenuti per il tuo progetto.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: cb64e012-7001-47a3-b038-8f8f6891c6a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 83%

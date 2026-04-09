@@ -3,9 +3,9 @@ title: Utilizzo dell’editor Rich Text per l’authoring dei contenuti
 description: Utilizzo dell’Editor Rich Text per creare contenuti in Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01c2a67a-7168-4362-ad7d-f4990ea43ed8
-source-git-commit: 7fcb784124027df87bf41cc6169815d755cea6d7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 31%
@@ -16,12 +16,12 @@ ht-degree: 31%
 
 L’Editor Rich Text è un componente essenziale per l’inserimento di contenuti di testo in AEM. Costituisce la base di varie componenti, tra cui:
 
-* [Testo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text)
-* [Tabella](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [Testo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [Tabella](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## Modifica diretta {#in-place-editing}
 
-Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [&#128279;](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
+Se si seleziona un componente basato su testo con un solo clic, verrà visualizzata la barra degli strumenti del componente [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) come per qualsiasi componente.
 
 ![schermata_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 

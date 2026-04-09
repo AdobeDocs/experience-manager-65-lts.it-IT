@@ -3,9 +3,9 @@ title: Normative sulla protezione dei dati e la privacy - Compatibilità di Adob
 description: Scopri il supporto di Adobe Experience Manager per le varie normative sulla protezione dei dati e la privacy. Questo include il Regolamento generale sulla Protezione dei Dati (GDPR) dell’UE, il California Consumer Privacy Act e le modalità per conformarsi all’implementazione di un nuovo progetto AEM.
 solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
+role: Developer,Leader,User
 exl-id: 6faf8e4f-ca2a-4d68-a354-fb0aa6c2644b
-source-git-commit: 4a93e17da1157253a681bf8b3a38252962d8fb59
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 98%

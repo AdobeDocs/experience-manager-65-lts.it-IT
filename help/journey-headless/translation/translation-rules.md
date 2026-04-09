@@ -3,9 +3,9 @@ title: Configurare le regole di traduzione
 description: Scopri come definire le regole di traduzione per identificare i contenuti per la traduzione.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 94534336-1e1f-40eb-8364-9358c1420616
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 87%
@@ -75,10 +75,9 @@ Nell’interfaccia utente di **Configurazione della traduzione** sono disponibil
 1. Una volta deselezionato, sotto la sezione **Generale** aggiungi i nomi delle proprietà dei modelli per frammento di contenuto [precedentemente identificati come campi per la traduzione.](getting-started.md#content-models)
    1. Immetti il nome della proprietà nel campo **Nuova proprietà**.
    1. Le opzioni **Traduci** e **Eredita** vengono controllate automaticamente.
-   1. Fare clic su **Aggiungi**.
+   1. Fai clic su **Aggiungi**.
    1. Ripeti questi passaggi per tutti i campi da tradurre.
    1. Fai clic su **Salva**.
-
       ![Aggiungi proprietà](assets/add-property.png)
 
 Hai configurato le regole di traduzione.

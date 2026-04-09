@@ -3,10 +3,10 @@ title: Domande frequenti (FAQ)
 description: Domande frequenti su AEM 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: 9f9da819550b93d7a06b151962bf41751ecbc8b3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 100%
 
@@ -42,11 +42,11 @@ Per garantire una transizione senza intoppi, si consiglia di:
 
 I Service Pack di AEM 6.5 LTS sono un aggiornamento cumulativo che include tutte le correzioni e i miglioramenti apportati a AEM 6.5 LTS dalla sua versione iniziale. Si consiglia di applicare il service pack più recente per garantire che l’istanza di AEM sia aggiornata con le funzioni e le patch di sicurezza più recenti.
 
-## Al momento sono in AEM 6.5, posso effettuare direttamente l’aggiornamento ai Service Pack di AEM 6.5 LTS senza effettuare l’aggiornamento a AEM 6.5 LTS in disponibilità generale?
+## Al momento uso AEM 6.5, posso effettuare direttamente l’aggiornamento ai Service Pack di AEM 6.5 LTS senza effettuare l’aggiornamento alla versione GA di AEM 6.5 LTS?
 
 Sì, puoi eseguire direttamente l’aggiornamento da AEM 6.5 a qualsiasi Service Pack di AEM 6.5 LTS. È consigliabile rivedere le [note sulla versione](/help/release-notes/release-notes.md) e la sezione [Aggiornamento a AEM 6.5 LTS](/help/sites-deploying/upgrade.md).
 
-## Al momento sono in AEM 6.5 LTS GA, devo apportare modifiche al codice per eseguire l’aggiornamento ai Service Pack di AEM 6.5 LTS?
+## Al momento uso AEM 6.5 LTS GA, devo apportare modifiche al codice per eseguire l’aggiornamento ai Service Pack di AEM 6.5 LTS?
 
 No, non è necessario apportare alcuna modifica al codice per eseguire l’aggiornamento da AEM 6.5 LTS ai Service Pack di AEM 6.5 LTS. Tuttavia, è sempre consigliabile rivedere le [note sulla versione](/help/release-notes/release-notes.md) e testare le personalizzazioni e le integrazioni in un ambiente di staging prima di applicare il Service Pack all’istanza di produzione.
 

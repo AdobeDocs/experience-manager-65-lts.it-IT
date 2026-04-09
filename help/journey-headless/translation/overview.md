@@ -3,9 +3,9 @@ title: Percorso di traduzione headless di AEM
 description: Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizzando i potenti strumenti di traduzione di AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: dcec1797-c1da-4738-95e8-9d77fa9e9bec
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 93%
@@ -18,7 +18,7 @@ Inizia qui per un percorso guidato alla traduzione di contenuti headless utilizz
 
 ## Introduzione {#introduction}
 
-L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalle impostazioni internazionali.
+L’implementazione headless sta diventando sempre più importante per la distribuzione di esperienze al pubblico, ovunque si trovino e indipendentemente dal canale, dall’area geografica o dalla lingua.
 
 L’implementazione headless ignora la gestione di pagine e componenti come avviene nelle soluzioni full-stack e si concentra sulla creazione dei frammenti di contenuto riutilizzabili e indipendenti dal canale, che possono essere distribuiti in modalità cross-channel. Utilizzando i potenti strumenti di traduzione di AEM, questi frammenti riutilizzabili possono essere facilmente tradotti e consegnati al pubblico ovunque si trovi.
 
@@ -80,7 +80,7 @@ Sebbene tu possa accedere direttamente a una sezione specifica del percorso, mol
 
 ## Risorse aggiuntive {#additional-resources}
 
-I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare le esigenze di un’unica azienda.
+I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare una singola esigenza di di business.
 
 I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse possono essere correlate tra loro. Dai un’occhiata ai percorsi aggiuntivi per ulteriori informazioni su come interagiscono le potenti funzioni di AEM.
 

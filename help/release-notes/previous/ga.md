@@ -3,10 +3,10 @@ title: Note sulla versione di [!DNL Adobe Experience Manager] 6.5 LTS
 description: Informazioni sulla versione corrente di Adobe Experience Manager 6.5 LTS.
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
-source-git-commit: eda8fc347ee8c68c1022495cbe8d48175c819be3
-workflow-type: ht
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+workflow-type: tm+mt
 source-wordcount: '1068'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ In questa sezione sono elencate le funzionalità che Adobe ha dichiarato obsolet
 
 Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
 
-| Area | Funzione obsoleta | Sostituzione | Versione (SP) |
+| Area | Funzione | Sostituzione | Versione (SP) |
 |---|---|---|---|
 | Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. | 6.5 LTS GA |
 
@@ -92,7 +92,7 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 
 In questa sezione sono elencate le funzionalità e le funzioni che sono state rimosse da AEM 6.5 LTS. Le versioni precedenti presentavano queste funzionalità contrassegnate come obsolete.
 
-| Area | Funzione obsoleta | Sostituzione | Versione (SP) |
+| Area | Funzione | Sostituzione | Versione (SP) |
 |--- |--- |--- |--- |
 | Commerce | AEM CIF Classic non è supportato. | Esegui la migrazione a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
 | Soluzioni | Social/Communities non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |

@@ -2,13 +2,13 @@
 title: 'Best practice per monitorare l''implementazione  [!DNL Assets] '
 description: Best practice per monitorare l'ambiente e le prestazioni della distribuzione  [!DNL Adobe Experience Manager]  dopo la distribuzione.
 contentOwner: AG
-role: Admin, Architect
+role: Admin,Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d2cb447c-69d6-4659-a29e-02af22b543fd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -194,7 +194,7 @@ Di seguito sono riportati alcuni controlli di integrità pronti all’uso che so
 Nel processo di monitoraggio, se si verificano problemi, ecco alcune attività di risoluzione dei problemi che è possibile eseguire per risolvere problemi comuni con [!DNL Experience Manager] distribuzioni:
 
 * Se si utilizza TarMK, eseguire spesso la compattazione Tar. Per ulteriori dettagli, vedere [Gestione del repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it).
+* Controlla `OutOfMemoryError` registri. Per ulteriori informazioni, vedere [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Controlla i registri per eventuali riferimenti a query non indicizzate, attraversamenti struttura o attraversamenti indice. Ciò indica query non indicizzate o query indicizzate in modo inadeguato. Per le best practice sull&#39;ottimizzazione delle prestazioni di query e indicizzazione, vedere [Best practice per query e indicizzazione](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilizza la console Flusso di lavoro per verificare che i flussi di lavoro funzionino come previsto. Se possibile, condensa più flussi di lavoro in un unico flusso di lavoro.

@@ -3,9 +3,9 @@ title: Creazione e organizzazione di pagine con AEM
 description: Scopri come creare e gestire le pagine con Adobe Experience Manager.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 66bbd6d8-d07c-48ad-b58e-819bf032851a
-source-git-commit: c99c7b2616e652ae372e98349d5de3b658a0beb1
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '2468'
 ht-degree: 62%
@@ -31,7 +31,7 @@ Questa sezione descrive come creare e gestire le pagine con Adobe Experience Man
 In qualità di autore, organizza il tuo sito web in AEM. A tale scopo, dovrai creare e denominare le pagine di contenuto affinché:
 
 * siano facilmente reperibili nell’ambiente di authoring;
-* i visitatori possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
+* i visitatori del tuo sito possano facilmente sfogliare le pagine nell’ambiente di pubblicazione.
 
 È inoltre possibile utilizzare le [cartelle](#creating-a-new-folder) per organizzare i contenuti.
 
@@ -103,7 +103,7 @@ Il **Titolo** e il **Nome** della pagina possono essere creati separatamente, ma
 
 >[!NOTE]
 >
->Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C &#x200B;](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
+>Quando si definisce un nome di una pagina, è buona norma mantenere il nome breve, che deve comunque essere espressivo e facile da ricordare, in modo che il lettore possa facilmente comprenderlo. Per ulteriori informazioni, consulta la [guida allo stile W3C ](https://www.w3.org/Provider/Style/TITLE.html) per l’elemento `title`.
 >
 >Tieni presente che alcuni browser (ad esempio le versioni precedenti di IE) possono accettare solo gli URL fino a una certa lunghezza; pertanto, esistono anche delle ragioni tecniche per cui è bene mantenere brevi i nomi di pagina.
 

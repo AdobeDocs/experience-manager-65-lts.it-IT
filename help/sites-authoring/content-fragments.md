@@ -8,12 +8,12 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 5bde6c78-84bc-48f5-b06f-1c4282eaf5c1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1138'
-ht-degree: 62%
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e ges
 
 Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. Puoi quindi utilizzare questi frammenti, con le relative varianti, durante l’authoring di pagine di contenuto.
 
-Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuto strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
+Insieme alla funzione di esportazione JSON aggiornata, i frammenti di contenuti strutturati possono anche essere utilizzati per distribuire contenuti AEM, tramite Content Services a canali diversi dalle pagine AEM.
 
 >[!NOTE]
 >

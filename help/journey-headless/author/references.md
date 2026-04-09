@@ -3,9 +3,9 @@ title: Informazioni sull’utilizzo dei riferimenti nei frammenti di contenuto
 description: Imparare a utilizzare i riferimenti in Frammenti di contenuto, per i contenuti, altri frammenti e altre risorse (file multimediali). Introdurre la necessità e la meccanica dei frammenti nidificati per l’authoring CMS headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: a8d4c122-6de6-42da-a8ef-d3b93fd3d3ae
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%

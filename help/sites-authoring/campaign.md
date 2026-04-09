@@ -7,11 +7,11 @@ content-type: reference
 topic-tags: personalization
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 1d621e12-6da5-4b49-98c9-3fb9b8189ff7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2769'
 ht-degree: 2%
 
 ---
@@ -260,7 +260,7 @@ In questo modo puoi distribuire i contenuti. Puoi vedere se una newsletter è co
 
 Per collegare una pagina creata in AEM con un messaggio e-mail di Adobe Campaign:
 
-1. Crea un messaggio e-mail basato su un modello e-mail specifico di AEM. Per ulteriori informazioni, consulta [Creazione di e-mail in Adobe Campaign Standard](https://helpx.adobe.com/it/campaign/standard/channels/using/creating-an-email.html).
+1. Crea un messaggio e-mail basato su un modello e-mail specifico di AEM. Per ulteriori informazioni, consulta [Creazione di e-mail in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html).
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

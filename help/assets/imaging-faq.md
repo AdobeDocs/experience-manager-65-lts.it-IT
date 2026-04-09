@@ -9,7 +9,7 @@ feature: Asset Management,Renditions
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3306'
 ht-degree: 0%
@@ -22,7 +22,7 @@ La tecnologia Smart Imaging applica le esclusive caratteristiche di visualizzazi
 
 ## Informazioni sulla tecnologia Smart Imaging {#what-is-smart-imaging}
 
-La tecnologia di imaging intelligente applica le funzionalità di intelligenza artificiale di Adobe e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
+La tecnologia Smart Imaging applica le funzionalità di Adobe AI e funziona con i &quot;predefiniti immagine&quot; esistenti. Funziona per migliorare le prestazioni di consegna delle immagini ottimizzando automaticamente il formato, le dimensioni e la qualità delle immagini in base alle funzionalità del browser client.
 
 E ora, ottieni un punteggio Google Core Web Vital migliore per LCP (Largest Contentful Paint) con Smart Imaging migliorato, che ora viene fornito con supporto sia AVIF che WebP.
 
@@ -88,7 +88,7 @@ Attivando la conversione del formato del browser aggiungendo `bfc=on` all&#39;UR
 
 Per disattivare Smart Imaging, aggiungi `bfc=off` all&#39;URL dell&#39;immagine.
 
-Vedi anche [bfc](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
+Vedi anche [bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc) nell&#39;API di server e rendering immagini Dynamic Media.
 
 ### Informazioni sull&#39;ottimizzazione del rapporto pixel del dispositivo (dpr) {#dpr}
 
@@ -255,7 +255,7 @@ Quando crei il caso di supporto, specifica le funzioni di Smart Imaging da attiv
 
       * Elenca tutti i domini rilevanti, ad esempio *`company.com`* o *`mycompany.scene7.com`*
       * Smart Imaging supporta domini sia generici che personalizzati.
-      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
+      * Per identificare i domini, apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e accedi al tuo account aziendale.
 
          1. Passa a **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]**.
          1. Cerca il campo **[!UICONTROL Nome server pubblicato]** per confermare il dominio.

@@ -3,9 +3,9 @@ title: Sistema di stili
 description: Il sistema di stili consente all’autore del modello di definire le classi di stile nel criterio del contenuto di un componente, in modo che un autore di contenuti possa sceglierli quando modifica un componente in una pagina. Gli stili possono essere varianti visive alternative di un componente, per renderlo più flessibile.
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: a3d42a73-e1b2-4f76-b98a-89cd98eea2c9
-source-git-commit: 1b01d338c8400f38e4f062cb3ee592062f560a67
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 83%

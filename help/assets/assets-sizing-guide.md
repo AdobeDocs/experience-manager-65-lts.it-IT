@@ -2,11 +2,11 @@
 title: Guida al dimensionamento di [!DNL Assets]
 description: Procedure consigliate per determinare metriche efficienti per stimare l'infrastruttura e le risorse necessarie per distribuire  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Admin
+role: Developer,Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: d88e3ca9-f80d-48f5-857a-eaf71dcb9226
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -53,13 +53,13 @@ L’esecuzione dei passaggi precedenti consente di determinare quanto segue:
 
 I dati di esempio inseriti nello strumento mostrano quanto sia importante eseguire i passaggi indicati. Se imposti l’archivio dati esclusivamente in base alle immagini non elaborate caricate (1 TB), potresti aver sottovalutato la dimensione dell’archivio di un fattore di 15.
 
-[Ottieni file](assets/disk_sizing_tool.xlsx)
+[Ottieni il file](assets/disk_sizing_tool.xlsx)
 
 ### Archivi dati condivisi {#shared-datastores}
 
 Per i datastore di grandi dimensioni, puoi implementare un datastore condiviso sia tramite un datastore di file condiviso su un’unità collegata in rete sia tramite un datastore Amazon S3. In questo caso, non è necessario che le singole istanze conservino una copia dei file binari. Inoltre, un datastore condiviso facilita la replica senza binari e contribuisce a ridurre la larghezza di banda utilizzata per replicare le risorse negli ambienti di pubblicazione.
 
-#### Casi di utilizzo {#use-cases}
+#### Casi d’uso {#use-cases}
 
 L’archivio dati può essere condiviso tra un’istanza di authoring primaria e in standby per ridurre al minimo il tempo necessario per aggiornare l’istanza in standby con le modifiche apportate nell’istanza principale. Puoi anche condividere l’archivio dati tra le istanze di authoring e pubblicazione per ridurre al minimo il traffico durante la replica.
 
@@ -93,14 +93,14 @@ La latenza nelle implementazioni S3 è introdotta dai thread di scrittura in bac
 
 * Metadati risorsa
 * Versioni risorsa
-* Registri di audit
+* Registri di controllo
 * Flussi di lavoro attivi e archiviati
 
 Poiché i file binari sono memorizzati nell&#39;archivio dati, ogni file binario occupa un certo spazio. La maggior parte degli archivi ha dimensioni inferiori a 100 GB. Tuttavia, potrebbero essere presenti archivi di dimensioni fino a 1 TB. Inoltre, per eseguire la compattazione offline, è necessario spazio libero sufficiente sul volume per riscrivere l&#39;archivio compattato insieme alla versione precompattata. Una buona regola consiste nel ridimensionare il disco a 1,5 volte le dimensioni previste per l’archivio.
 
 Per l&#39;archivio, utilizzare unità SSD o dischi con un livello IOPS superiore a 3000. Per eliminare la possibilità che IOPS introduca colli di bottiglia delle prestazioni, monitorare i livelli di attesa I/O di CPU per individuare i primi segnali di problemi.
 
-[Ottieni file](assets/aem_environment_sizingtool.xlsx)
+[Ottieni il file](assets/aem_environment_sizingtool.xlsx)
 
 ## Rete {#network}
 

@@ -1,5 +1,5 @@
 ---
-title: Come utilizzare lo strumento VLT
+title: Utilizzare lo strumento VLT
 description: Lo strumento Jackrabbit FileVault (VLT) è sviluppato da The Apache Foundation che mappa il contenuto di un’istanza Jackrabbit/AEM sul file system
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 46f191d9-b667-44e3-83e9-7988fffb0ecf
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Pagamento (co) {#checkout-co}
 
-Esegue un check-out iniziale da un archivio JCR al file system locale a partire da &lt;uri> fino al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura remota. È possibile specificare filtri Workspace da copiare nella directory META-INF.
+Esegue un check-out iniziale da un archivio JCR al file system locale a partire da &lt;uri> fino al file system locale in &lt;local-path>. È inoltre possibile aggiungere un argomento &lt;jcrPath> per estrarre una sottodirectory della struttura remota. È possibile specificare i filtri Workspace da copiare nella directory META-INF.
 
 #### Sintassi {#syntax-2}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf per i collegamenti hotfix (nome,id), ad esempio `[CQ520_HF_%s`\|`%s]` |
 | `-v (--verbose)` | output dettagliato |
 | `-q (--quiet)` | stampa il meno possibile |
 | `<localPaths> [<localPaths> ...]` | percorso locale |
@@ -635,7 +635,7 @@ propset -q|-R <propname> <propval> <file1> [<file2> ...]
 | `<propval>` | il valore della proprietà |
 | `<file> [<file> ...]` | file o directory su cui impostare la proprietà |
 
-### Aggiungi {#add}
+### Aggiungere {#add}
 
 Inserisce i file e le directory sotto il controllo della versione, pianificandoli per l&#39;aggiunta all&#39;archivio. Verranno aggiunti al prossimo commit.
 
@@ -655,7 +655,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `--force` | forza l&#39;esecuzione dell&#39;operazione |
 | `<file> [<file> ...]` | file o directory locale da aggiungere |
 
-### Elimina {#delete}
+### Eliminare {#delete}
 
 Rimuove file e directory dal controllo delle versioni.
 

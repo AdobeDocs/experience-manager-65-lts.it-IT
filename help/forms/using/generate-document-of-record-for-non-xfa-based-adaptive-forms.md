@@ -1,14 +1,14 @@
 ---
-title: Generare un documento di record per i moduli adattivi
+title: Generare un documento record per moduli adattivi
 description: Spiega come generare un documento di record (DoR) per i moduli adattivi.
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
 workflow-type: tm+mt
 source-wordcount: '4292'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -200,9 +200,9 @@ Nelle sezioni seguenti viene descritto come gli elementi di un modulo adattivo v
 ### Componenti statici {#static-components}
 
 | Componente modulo adattivo | Componente XFA corrispondente | Note |
-|---|---|---|
+| --- | --- | --- |
 | Immagine | Immagine | I componenti TextDraw e Image, sia associati che non associati, vengono sempre visualizzati nel documento di record di un modulo adattivo basato su XSD, a meno che non vengano esclusi utilizzando le impostazioni del documento di record. |
-| Testo | Testo |
+| Testo | Testo | |
 
 >[!NOTE]
 >

@@ -2,14 +2,14 @@
 title: Rimozione dell’editor di SPA
 description: Anche se l’editor di applicazioni a pagina singola rimane supportato da Adobe, scopri cosa significa la sua rimozione dal progetto e quali opzioni hai per i progetti futuri.
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 6fb1ce6788258f31c97f861fcc959301d83cb11d
+role: Admin,Developer
+exl-id: 7c1af58f-95b3-4366-96cd-7383ac869923
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
-
 
 # Rimozione dell’editor di SPA {#spa-editor-deprecation}
 
@@ -56,22 +56,22 @@ La sostituzione più adatta per l’editor SPA dipende dalle esigenze dei tuoi p
 
 La strutturazione dei contenuti con Frammenti di contenuto non esclude l’utilizzo dell’Editor universale come editor visivo ed entrambi gli editor possono essere utilizzati insieme.
 
-## Migrazione all’editor universale {#migrate-ue}
+## Eseguire la migrazione all’editor universale {#migrate-ue}
 
 L&#39;editor universale offre molti vantaggi, rendendo la migrazione ad esso un&#39;ottima soluzione per nuovi progetti.
 
 * **Modifica visiva:** Come per l&#39;editor SPA, gli autori possono modificare il contenuto direttamente nell&#39;anteprima e vedere immediatamente come le loro modifiche influiscono sull&#39;esperienza del visitatore.
-* **Future-Proofing:** la roadmap di AEM dà priorità all&#39;editor universale come editor visivo. La sua adozione garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
-* **Integrazione semplificata:** Non è necessario alcun SDK specifico per AEM per utilizzare Universal Editor, riducendo il blocco dello stack tecnologico.
-* **Porta la tua app:** Universal Editor supporta qualsiasi framework o architettura Web, consentendo l&#39;adozione senza richiedere il refactoring complesso.
-* **Estensibilità:** Universal Editor dispone di un solido framework di [estensione,](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) che include integrazioni con GenAI, Workfront e altro ancora.
+* **A prova di futuro:** la roadmap di AEM dà priorità all’editor universale come editor grafico. Il suo utilizzo garantisce l’accesso alle innovazioni e ai miglioramenti più recenti.
+* **Integrazione semplificata:** non è necessario alcun SDK specifico per AEM per utilizzare l’editor universale, così si riduce il blocco dello stack tecnologico.
+* **Porta la tua app:** l’editor universale supporta qualsiasi framework o architettura web, consentendo l’utilizzo senza richiedere un refactoring complesso.
+* **Estensibilità:** l’editor universale dispone di un solido [framework di estensione](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending), che include integrazioni con GenAI, Workfront e altro ancora.
 
 Non esiste un percorso di migrazione diretta dall’editor SPA all’editor universale. Ciò è dovuto a differenze fondamentali nelle due tecnologie.
 
 * L’editor universale non reintroduce funzioni quali Editor modelli, Sistema di stili o Griglia reattiva.
    * Questi casi d’uso possono ora essere gestiti in modo più efficiente con CSS e JS front-end snella in Edge Delivery Services o progetti headless.
 * Poiché l’editor universale è un editor come servizio, non può consentire agli implementatori di inserire CSS o JS nelle finestre di dialogo dei componenti.
-   * Questo impedisce la conversione automatica delle finestre di dialogo dei componenti dall’Editor pagina.
+   * In tal modo si impedisce la conversione automatica delle finestre di dialogo dei componenti dall’editor pagina.
    * Questo interessa molte aree delle finestre di dialogo, come i widget personalizzati, la convalida dei campi, le regole mostra/nascondi e le personalizzazioni basate su modelli.
 
 Tenendo presenti queste differenze tecniche, Adobe consiglia di:

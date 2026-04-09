@@ -9,9 +9,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 76%
@@ -23,7 +23,7 @@ ht-degree: 76%
 Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando promuovi una pagina di lancio sono disponibili le seguenti opzioni:
 
 * Promuovere solo la pagina corrente o l’intero lancio.
-* Promuovere le pagine figlie della pagina corrente.
+* Promuovere le pagine secondarie della pagina corrente.
 * Promuovere il lancio completo o solo le pagine che sono state modificate.
 * Eliminare il lancio dopo la promozione.
 

@@ -3,9 +3,9 @@ title: Ottimizzazione delle query GraphQL
 description: Scopri come ottimizzare le query GraphQL per filtrare, impaginare e ordinare i frammenti di contenuto in Adobe Experience Manager as a Cloud Service per la distribuzione di contenuti headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
+role: Admin,Developer
 exl-id: c2beb0fa-ff6c-4e42-842d-6a73311f4740
-source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 58%
@@ -84,7 +84,7 @@ Le query GraphQL e le relative risposte JSON possono essere memorizzate nella ca
 
 Consulta:
 
-* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn)
+* [Utilizzo della rete CDN in AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### Impostare le intestazioni di controllo cache HTTP {#set-http-cache-control-headers}
 

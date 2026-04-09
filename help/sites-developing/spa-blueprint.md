@@ -10,7 +10,7 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 798b9ad8-47fa-432d-8887-9de63c20cfca
 index: false
-source-git-commit: f6a3d16c55a6b62aea9a374904339e16d30f0a75
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 1%
@@ -76,7 +76,7 @@ La struttura del contenuto della pagina viene memorizzata in AEM. Il modello del
 
 I componenti dell’applicazione a pagina singola devono essere sincronizzati con il modello della pagina e devono essere aggiornati di conseguenza con eventuali modifiche al contenuto. Un pattern che utilizza componenti dinamici deve essere utilizzato per creare istantaneamente istanze di componenti seguendo la struttura del modello di pagina fornita.
 
-### Meta campi {#meta-fields}
+### Campi Meta {#meta-fields}
 
 Il modello di pagina utilizza il modulo di esportazione del modello JSON, a sua volta basato sull&#39;API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). I modelli sling esportabili espongono il seguente elenco di campi per consentire alle librerie sottostanti di interpretare il modello di dati:
 

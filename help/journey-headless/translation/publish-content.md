@@ -3,9 +3,9 @@ title: Pubblicare contenuti tradotti
 description: Scopri come pubblicare i contenuti tradotti e aggiornare le traduzioni come aggiornamenti dei contenuti.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin,Developer,User,Leader
 exl-id: 1543c167-ca69-4481-835f-932d93850a53
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -46,7 +46,7 @@ AEM è quindi fisicamente separato in due istanze.
 1. L’istanza dell’**autore** è il sistema in cui autori e amministratori di contenuti lavorano per creare e gestire i contenuti.
 1. L’istanza di **pubblicazione** è il sistema che consegna il contenuto ai consumatori.
 
-Per essere disponibile per il consumo, dopo essere stato creato sull’istanza dell’autore, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
+Per essere disponibile per il consumo, dopo essere stato creato sull’istanza di authoring, il contenuto deve essere trasferito nell’istanza di pubblicazione. Il processo di trasferimento dall’autore alla pubblicazione viene chiamato **pubblicazione**.
 
 ## Pubblicazione del contenuto tradotto {#publishing}
 

@@ -3,9 +3,9 @@ title: Visualizzazione dei dati di analisi delle pagine per misurare l’efficac
 description: Utilizzare i dati di analisi delle pagine per misurare l’efficacia del contenuto delle pagine
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: b47591ac-10ff-4b87-b75d-68ed635ceca8
-source-git-commit: 87f0e0530b14c8cb7d25ee139ec89d75551fb16e
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%

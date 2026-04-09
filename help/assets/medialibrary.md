@@ -1,12 +1,12 @@
 ---
 title: Utilizza la libreria multimediale per la gestione di base delle risorse digitali
 description: '[!DNL Experience Manager Assets] e Media Library per la gestione delle risorse.'
-role: Architect, Leader
+role: Developer,Leader
 feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: 92c9dd0043b644e258b75a999ad1d556689907a7
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
 La piattaforma [!DNL Adobe Experience Manager] offre funzionalità diverse per la gestione delle risorse. La libreria multimediale consente agli utenti di caricare un numero limitato di risorse nell’archivio, cercare e utilizzare tali risorse nelle pagine web ed eseguire semplici attività di gestione delle risorse sulle risorse.

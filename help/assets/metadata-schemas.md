@@ -7,7 +7,7 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
 source-wordcount: '3607'
 ht-degree: 7%
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le organizzazioni propongono un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. L’applicazione corretta dei metadati è indispensabile per mantenere i flussi di lavoro e i processi basati sui metadati. Per rispettare la strategia e gli standard per i metadati a livello di organizzazione, puoi utilizzare schemi di metadati che consentono agli utenti DAM di allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.

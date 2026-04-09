@@ -1,5 +1,5 @@
 ---
-title: AEM Sites - Preparazione al RGPD
+title: AEM Sites - Compatibilità GDPR
 description: Scopri le procedure per gestire le richieste RGPD in AEM Sites e come utilizzarle.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: best-practices
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+role: Admin,Developer,Leader,User
 exl-id: 826dafb8-db6c-4fe4-8b3d-edf7215dc571
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
-# AEM Sites - Preparazione al RGPD{#aem-sites-gdpr-readiness}
+# AEM Sites - Compatibilità GDPR{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -50,13 +50,13 @@ AEM dispone di un [servizio di rinuncia ai cookie](/help/sites-developing/cookie
 
 AEM Sites include un’integrazione opzionale con Enhanced Insights by Analytics che utilizza funzionalità interne al servizio Adobe Analytics On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=it).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Analytics, consulta [Adobe Analytics e RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalization ottimizzato per Target {#enhanced-personalization-by-target}
 
 AEM Sites include un’integrazione opzionale con Enhanced Personalization by Target che utilizza funzionalità interne al servizio Adobe Target On-demand.
 
-Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+Per ulteriori informazioni sulla gestione delle richieste dei soggetti interessati ai sensi del RGPD in relazione ad Adobe Target, consulta [Adobe Target - Privacy e Regolamento generale sulla protezione dei dati](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=it).
 
 ## ContextHub {#contexthub}
 

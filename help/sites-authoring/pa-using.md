@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: site-features
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 4%
+source-wordcount: '640'
+ht-degree: 5%
 
 ---
 
-# Visualizzazione dei dati di analisi delle pagine{#seeing-page-analytics-data}
+# Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
 Utilizza i dati di analisi della pagina per misurare l’efficacia del contenuto della pagina.
 
@@ -91,7 +91,7 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 >
 >I dati per Activity Map provengono da Adobe Analytics.
 
-Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#128279;](/help/sites-authoring/author-environment-tools.md#page-modes) in modalità  per visualizzare i dati rilevanti. Ad esempio:
+Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[ in modalità ](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
 
 ![aa-07](assets/aa-07.png)
 

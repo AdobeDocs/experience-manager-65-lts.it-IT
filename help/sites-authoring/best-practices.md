@@ -7,12 +7,12 @@ topic-tags: introduction
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 72ecde6c-0597-4743-aa5e-446a365953a5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -24,12 +24,12 @@ Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
 * [Risorse](#assets)
 * [Sites](#sites)
-* [Moduli](#forms)
+* [Forms](#forms)
 
 Per le best practice sull’amministrazione, la distribuzione, la manutenzione o lo sviluppo, consulta una delle seguenti sezioni:
 
 * [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
-* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
+* [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
 * [Implementazione delle best practice](/help/sites-deploying/best-practices.md)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.
@@ -72,7 +72,7 @@ Per la gestione e l’authoring dei contenuti del sito web, vengono descritte al
 | Strumenti di authoring | [Ambiente e strumenti di authoring](/help/sites-authoring/author-environment-tools.md) | Offre una panoramica degli strumenti utilizzati per l’authoring delle pagine. |
 | Organizzazione delle pagine | [Creazione e organizzazione delle pagine](/help/sites-authoring/managing-pages.md) | Fornisce una panoramica su come organizzare al meglio le pagine, incluse le convenzioni di denominazione. |
 
-## Moduli {#forms}
+## Forms {#forms}
 
 |  |  |  |
 |---|---|---|

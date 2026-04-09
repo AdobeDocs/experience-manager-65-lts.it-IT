@@ -8,9 +8,9 @@ topic-tags: personalization
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '5284'
 ht-degree: 72%
@@ -149,7 +149,7 @@ Dopo aver [avviato il processo di targeting](/help/sites-authoring/content-targe
 >
 >Un’offerta è il contenuto di un componente di cui è stato eseguito il targeting.
 
-Le esperienze vengono visualizzate nel riquadro Audiences. Nell’esempio seguente, le esperienze includono **Predefinita**, **Femmina**, **Femmina oltre 30** e **Femmina sotto 30**. Questo esempio mostra l’offerta Predefinita di un componente **Immagine** di destinazione.
+Le esperienze vengono visualizzate nel riquadro Tipi di pubblico. Nell’esempio seguente, le esperienze includono **Predefinita**, **Femmina**, **Femmina oltre 30** e **Femmina sotto 30**. Questo esempio mostra l’offerta Predefinita di un componente **Immagine** di destinazione.
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -294,10 +294,10 @@ In caso di modifica del contenuto con targeting, è necessario fare clic su **In
    >Se configurato dall’amministratore, potrebbe essere necessario impostare esplicitamente la posizione.
    >
    >
-   >Gli amministratori possono decidere se impostare questa configurazione è necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Gli amministratori possono decidere se impostare questa configurazione sia necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione &#x200B;** Force).
+   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione **Force).
 
 1. Seleziona l’esperienza per la quale desideri creare l’offerta.
 1. Crea l’offerta:
@@ -569,7 +569,7 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende l’audience per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it) sulle metriche di successo.
+1. Da **Obiettivo principale**, vai all’area **Metrica per obiettivo** e seleziona la metrica di successo che desideri monitorare: Conversione, Entrate, Coinvolgimento. Quindi inserisci come viene misurata la metrica (o quale azione intraprende il pubblico per indicare che un obiettivo è stato raggiunto). Vedi la definizione delle metriche dell’obiettivo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it) sulle metriche di successo.
 
    Per rinominare l’obiettivo, fai clic sui tre punti nell’angolo in alto a destra e seleziona **Rinomina**.
 
@@ -686,7 +686,7 @@ Se hai selezionato Adobe Target come motore:
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td><strong>Impostazione destinazione precisa</strong></td>
+   <td><strong>Targeting preciso</strong></td>
    <td><p>L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per l’authoring, il targeting accurato è sempre abilitato.</p> <p>Se selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue prima un <code>mboxDefine</code> e poi un <code>mboxUpdate</code>, dando luogo a una richiesta Ajax una volta che i dati sono disponibili.</p> <p>Se non selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue <code>mboxCreate</code> generando immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili).</p> <p><strong>Nota:</strong> l'abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
   </tr>
   <tr>

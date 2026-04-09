@@ -7,9 +7,9 @@ topic-tags: projects
 content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: eb19a269-8b3f-476b-b22b-8116dce70388
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 40%
@@ -38,8 +38,8 @@ A seconda del modello di progetto selezionato, sono disponibili alcuni flussi di
 | Richiedi lancio | x |  |  |  |
 | Richiedi pagina di destinazione | x |  |  |  |
 | Richiedi e-mail | x |  |  |  |
-| Creazione DAM copia in lingua &ast; |  |  |  | x |
-| Creazione DAM e traduzione copia in lingua &ast; |  |  |  | x |
+| Crea copia per lingua DAM &amp;ast; |  |  |  | x |
+| DAM - Crea e traduci copia per lingua &amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Il flusso di lavoro viene avviato. L&#39;attività viene visualizzata nella sche
 
 ## Flusso di lavoro per servizio fotografico per prodotto {#product-photo-shoot-workflow}
 
-I flussi di lavoro **Servizio fotografico per prodotto** (sia commerce che senza commerce) sono descritti in dettaglio nel documento [Progetti creativi](/help/sites-authoring/managing-product-information.md)
+I flussi di lavoro **Servizio fotografico per prodotto** (sia commerce che senza commerce) sono descritti in dettaglio nel documento [Progetti Creative](/help/sites-authoring/managing-product-information.md)
 
 ## Flusso di lavoro di approvazione progetto {#project-approval-workflow}
 

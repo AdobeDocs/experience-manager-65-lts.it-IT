@@ -3,9 +3,9 @@ title: Percorso Architect di contenuti AEM headless
 description: Inizia qui un percorso guidato attraverso le potenti e flessibili funzionalità headless di AEM, le loro caratteristiche e come modellare i contenuti sul tuo primo progetto headless.
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
+role: Admin,Developer
 exl-id: b5f5e214-d8b3-4066-b834-0ba74d773bbc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 91%
@@ -63,7 +63,7 @@ Ora sei pronto per iniziare il tuo percorso in Adobe headless. Ti invitiamo a co
 
 ## Risorse aggiuntive {#additional-resources}
 
-I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare le esigenze di un’unica azienda.
+I percorsi di documentazione mostrano come AEM risolve un problema aziendale fornendo una spiegazione che ti guida attraverso processi e funzionalità complessi e interrelati. Un percorso illustra il funzionamento congiunto di più funzioni per soddisfare una singola esigenza di di business.
 
 I percorsi sono progettati per resistere da soli. Tuttavia, diverse di esse possono essere correlate tra loro. Dai un’occhiata ai percorsi aggiuntivi per ulteriori informazioni su come interagiscono le potenti funzioni di AEM.
 
