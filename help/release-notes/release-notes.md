@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 4c1f1b9a7b6667c58760b5e427cdd82bf197f297
 workflow-type: tm+mt
-source-wordcount: '7002'
-ht-degree: 18%
+source-wordcount: '7102'
+ht-degree: 17%
 
 ---
 
@@ -468,7 +468,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -596,7 +596,11 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 * **FORMS-24690:** In Configuration Manager, l&#39;inizializzazione del database non riesce durante l&#39;avvio in modalità personalizzata chiavi in mano JEE AEM Forms 6.5 LTS quando non è selezionato alcun modulo o sono selezionati solo componenti limitati. L’errore è dovuto a una dipendenza mancante (xalan-2.7.2.jar), che genera un errore. L’aggiunta del file JAR ad adobe-livecycle-jboss.ear\lib risolve il problema.
 
-* **FORMS-24692:** Il servizio di posta potrebbe non essere in grado di stabilire una connessione socket TLS, causando un errore nella consegna delle e-mail.
+* **FORMS-24894:** Nelle distribuzioni Forms JEE LTS in esecuzione in JBoss EAP 8, l&#39;interfaccia utente delle estensioni di Reader potrebbe non riuscire con un errore interno del server.
+
+* **FORMS-24892:** In Forms JEE LTS in esecuzione su JBoss, le funzionalità relative alla posta elettronica potrebbero non riuscire. Quando si tenta di utilizzare le funzionalità di posta elettronica, il server potrebbe registrare un errore simile a `Error IMAPProvider not a subtype`.
+
+* **FORMS-24741:** Nelle piattaforme Linux, Forms JEE LTS richiede che la proprietà `OSFileSetIntendedFor` in `LFS_Foundation.properties` sia impostata correttamente prima di eseguire Configuration Manager. Se non viene aggiornata, la configurazione potrebbe non essere personalizzata correttamente per Linux, il che può causare problemi di runtime o di distribuzione. Per risolvere il problema, dopo aver eseguito il programma di installazione e prima di eseguire Configuration Manager, passare a `configurationManager/config/solcomp/`, aprire `LFS_Foundation.properties`, impostare `OSFileSetIntendedFor=Linux`, salvare il file, quindi eseguire Configuration Manager.
 
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -663,5 +667,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
