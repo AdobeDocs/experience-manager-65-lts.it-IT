@@ -9,9 +9,9 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -119,27 +119,39 @@ Per sostituire la sessione di amministrazione con un utente del servizio, è nec
 
 Dopo aver verificato che nessun utente nell’elenco degli utenti del servizio AEM sia applicabile al caso d’uso e che i corrispondenti problemi RTC siano stati approvati, aggiungi il nuovo utente al contenuto predefinito.
 
-L&#39;approccio consigliato consiste nel creare un utente del servizio per utilizzare Esplora repository in *https://&lt;server>:&lt;porta>/crx/explorer/index.jsp*
+>[!IMPORTANT]
+>
+>CRX Explorer (`/crx/explorer/index.jsp`) non è disponibile negli ambienti AEM 6.5 LTS e non deve essere utilizzato per la creazione di utenti del servizio. Gli utenti del servizio esistenti creati tramite Esplora risorse di CRX continuano a funzionare. Per i nuovi utenti del servizio, utilizza uno degli approcci descritti di seguito.
 
-L&#39;obiettivo è ottenere una proprietà `jcr:uuid` valida, obbligatoria per la creazione dell&#39;utente tramite un&#39;installazione del pacchetto di contenuti.
+>[!NOTE]
+>
+>Nessun tipo mixin associato agli utenti del servizio a livello di nodo JCR. Ciò significa che i nodi utente del sistema non dispongono di criteri di controllo di accesso collegati direttamente a tali nodi. Il controllo degli accessi viene invece gestito separatamente, ad esempio tramite istruzioni ACL RepoInit o la configurazione ACL a livello di repository.
 
-Per creare utenti del servizio, segui questi passaggi:
+### Utilizzo dell’inizializzazione dell’archivio Sling (RepoInit) {#creating-service-user-repoinit}
 
-1. Passaggio a Esplora repository in *https://&lt;server>:&lt;porta>/crx/explorer/index.jsp*
-1. Accesso come amministratore premendo il collegamento **Accedi** nell&#39;angolo superiore sinistro della schermata.
-1. Quindi, crea e assegna un nome all’utente del sistema. Per creare l&#39;utente come utente di sistema, impostare il percorso intermedio come `system` e aggiungere sottocartelle facoltative in base alle proprie esigenze:
+L&#39;approccio consigliato consiste nell&#39;utilizzare [Inizializzazione archivio Sling (RepoInit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) per creare utenti del servizio. RepoInit consente di definire in modo dichiarativo gli utenti del servizio e i relativi ACL utilizzando un semplice linguaggio di script.
 
-   ![chlimage_1-102](assets/chlimage_1-102a.png)
+Per creare un utente del servizio con RepoInit, aggiungi una proprietà `scripts` a una configurazione OSGi per `org.apache.sling.jcr.repoinit.RepositoryInitializer`:
 
-1. Verifica che il nodo utente del sistema sia visualizzato come segue:
+```
+create service user my-service-user with path system/cq
 
-   ![chlimage_1-103](assets/chlimage_1-103a.png)
+set ACL for my-service-user
+    allow jcr:read on /content
+end
+```
 
-   >[!NOTE]
-   >
-   >Nessun tipo mixin associato agli utenti del servizio. Ciò significa che non esistono criteri di controllo di accesso per gli utenti del sistema.
+La direttiva `with path system/cq` colloca l&#39;utente del servizio in `/home/users/system/cq` nell&#39;archivio. È possibile scegliere un percorso corrispondente alla struttura organizzativa del progetto (ad esempio, `system/myproject`). Se i nodi del percorso intermedio non esistono, utilizzare `with forced path` per crearli automaticamente.
 
-Quando aggiungi il file .content.xml corrispondente al contenuto del bundle, assicurati di aver impostato `rep:authorizableId` e che il tipo primario sia `rep:SystemUser`. Dovrebbe essere simile al seguente:
+Si consiglia questo approccio perché:
+
+* Definisce gli utenti e le autorizzazioni del servizio come codice, rendendoli riproducibili e controllati in base alla versione
+* Gestisce automaticamente la creazione durante l&#39;inizializzazione del repository
+* Compatibile sia con AEM 6.5 LTS che con gli ambienti AEM as a Cloud Service, anche se possono esistere lievi differenze di sintassi tra le versioni di Sling; consulta la documentazione di RepoInit per la tua piattaforma di destinazione
+
+### Utilizzo di un pacchetto di contenuti {#creating-service-user-content-package}
+
+È inoltre possibile creare un utente del servizio includendo `.content.xml` nel pacchetto di contenuti. Assicurarsi di aver impostato `rep:authorizableId` e che il tipo primario sia `rep:SystemUser`. È necessaria una proprietà `jcr:uuid` valida affinché l&#39;utente possa essere creato correttamente durante l&#39;installazione del pacchetto di contenuti. È possibile generare un UUID utilizzando un generatore UUID v4 standard (ad esempio, lo strumento da riga di comando `uuidgen` o qualsiasi generatore UUID online). `.content.xml` deve essere simile al seguente:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
