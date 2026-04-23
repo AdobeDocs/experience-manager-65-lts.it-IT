@@ -1,14 +1,14 @@
 ---
 title: Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP2
-description: Informazioni sulla versione corrente di Adobe Experience Manager 6.5 LTS, Service Pack 2.
+description: Trova informazioni sulla versione corrente per Adobe Experience Manager 6.5 LTS, Service Pack 2.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 4c1f1b9a7b6667c58760b5e427cdd82bf197f297
+source-git-commit: c04d683015576ab4aa59427f2ac1ec53fbb1d8f4
 workflow-type: tm+mt
-source-wordcount: '7102'
-ht-degree: 17%
+source-wordcount: '7427'
+ht-degree: 14%
 
 ---
 
@@ -47,7 +47,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 
 **Cosa è incluso in AEM Forms 6.5 LTS SP2**
 
-* Supporto per RDBMK con JBOSS EAP 8.0  è stato aggiunto.
+* Supporto per RDBMK con JBoss® EAP 8.0  è stato aggiunto.
 
 * Esperienza utente migliorata nell&#39;editor di regole visive. Questo aggiornamento include:
 
@@ -57,7 +57,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 
    * Invio di un feedback chiaro quando un&#39;operazione di salvataggio di una regola non riesce (FORMS-21261)
 
-* Aggiunta dell&#39;API (Application Programming Interface) di runtime per attivare/disattivare la modalità di esportazione XML (Extensible Markup Language) legacy in AEM Forms, in sostituzione del parametro -Dcom.adobe.fd.forms.export.legacy. Questo miglioramento consente agli utenti di passare da una modalità di esportazione all&#39;altra in modo più efficiente, migliorando la flessibilità del flusso di lavoro. (FORMS-23115)
+* API (Application Programming Interface) di runtime aggiunte per attivare/disattivare la modalità di esportazione XML (Extensible Markup Language) legacy in AEM Forms, sostituendo il parametro `Dcom.adobe.fd.forms.export.legacy`. Questo miglioramento consente agli utenti di passare da una modalità di esportazione all&#39;altra in modo più efficiente, migliorando la flessibilità del flusso di lavoro. (FORMS-23115)
 
 * È stato aggiunto il supporto per JSON (JavaScript Object Notation) con tag dello spazio dei nomi in Adaptive Forms. Questo miglioramento consente agli utenti di gestire in modo più efficace le strutture di dati JSON, migliorando l’integrazione e le funzionalità di elaborazione dei dati. (FORMS-22519)
 
@@ -76,7 +76,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 * Il componente Testo non è più attivo quando gli autori passano il cursore sugli elementi nel browser Componenti durante la modifica. Ciò ha interrotto la digitazione e ha provocato un errore di accessibilità in WCAG 3.2.1. La correzione impedisce che lo stile del passaggio del mouse sposti lo stato attivo e mantiene attivo il componente Testo durante l’interazione con il browser componenti. (SITES-35370)
 * È stata corretta la gestione dello stato attivo nel campo Testo RTF Descrizione, che bloccava la navigazione in avanti con il tasto TAB. Gli utenti si bloccavano nell’editor Rich Text perché il componente si basava su un comando non standard della tastiera per spostare lo stato attivo, interrompendo la navigazione prevista nella finestra di dialogo. La modifica applica l&#39;interazione standard della tastiera e mantiene la sequenza logica delle schede in tutta la finestra di dialogo. (SITES-35228)
 * È stato risolto un problema nell’editor Sites che interrompeva il comportamento previsto durante l’authoring delle pagine e causava un’interazione incoerente dei componenti. Gli autori hanno riscontrato risposte inaffidabili dell’interfaccia utente che hanno interferito con le attività di modifica standard e ridotto l’efficienza del flusso di lavoro. L’aggiornamento perfeziona la logica dell’editor sottostante e ripristina un’interazione stabile e prevedibile tra i componenti interessati. (SITES-35227)
-* una regressione che ha interrotto il selettore delle risorse nell’editor pagina e ne ha impedito il caricamento in scenari di modifica specifici della pagina. Gli autori possono ora aprire e utilizzare il selettore delle risorse normalmente durante la scelta o l’esplorazione delle risorse durante la modifica di una pagina. Questa modifica ripristina un accesso coerente ai flussi di lavoro di selezione delle risorse che interrompono il caricamento degli errori. (SITES-35226)
+* Una regressione che ha interrotto il selettore delle risorse nell’editor pagina e ne ha impedito il caricamento in scenari di modifica specifici della pagina. Gli autori possono ora aprire e utilizzare il selettore delle risorse normalmente durante la scelta o l’esplorazione delle risorse durante la modifica di una pagina. Questa modifica ripristina un accesso coerente ai flussi di lavoro di selezione delle risorse che interrompono il caricamento degli errori. (SITES-35226)
 * È stato eliminato un problema nell’editor Sites che causava un comportamento incoerente durante l’interazione delle pagine e interrompeva i flussi di lavoro di authoring standard. Il difetto ha portato a risposte impreviste dell’interfaccia utente che hanno interferito con la configurazione dei componenti e gli aggiornamenti dei contenuti. L’aggiornamento stabilizza la funzionalità interessata e ripristina l’esecuzione affidabile delle azioni di modifica su più pagine. (SITES-35225)
 * È stato eliminato un difetto nell’interfaccia di authoring di Sites che causava un comportamento incoerente durante la modifica delle pagine e interrompeva i normali flussi di lavoro. Gli autori hanno riscontrato risposte impreviste dell’interfaccia utente che hanno interferito con l’interazione dei componenti e con gli aggiornamenti dei contenuti. L’aggiornamento stabilizza le funzionalità interessate e ripristina un comportamento affidabile e prevedibile in tutti gli scenari di modifica. (SITES-35224)
 * AEM Sites ora include il supporto testuale `alt` per le immagini per soddisfare i requisiti ADA e WCAG. L&#39;output della pagina non omette più gli attributi `alt`, pertanto gli assistenti vocali ricevono il testo alternativo corretto. (SITES-27153)
@@ -114,7 +114,7 @@ AEM 6.5 LTS SP2 ora include OpenAPI per [Gestione di modelli e frammenti di cont
 * È stato risolto un feedback NVDA errato durante la navigazione dei campioni di colore nella finestra modale Preferenze utente. NVDA ora legge l’etichetta del campione che riceve lo stato attivo, rimuovendo l’output di colore fuorviante. Il set di campioni ora supporta una navigazione coerente da tastiera e il riconoscimento della selezione. (SITES-24739)
 * Output NVDA dettagliato ridotto per il controllo `Spin`. È stata rimossa l’etichettatura di gruppo ridondante che duplicava l’etichetta di input, pertanto NVDA annuncia una volta il nome del controllo. La navigazione tramite tastiera e utilità di lettura dello schermo ora offre un annuncio singolo e chiaro. (SITES-24725)
 * La finestra di dialogo Carosello ora posiziona lo stato attivo sull&#39;intestazione della finestra di dialogo anziché sulla scheda Elementi. Annulla ed Esc ripristinano lo stato attivo sul controllo che ha avviato la finestra di dialogo, riducendo l’output NVDA dettagliato. (SITES-24716)
-* La finestra di dialogo per la selezione dei collegamenti ora allinea l’etichetta programmatica con l’etichetta visualizzata sullo schermo per gli elementi dell’albero di ultimo livello. La navigazione con tasti di direzione attiva un annuncio affidabile sull’utilità di lettura dello schermo per ogni elemento e rimuove l’output di etichette fuorvianti. (SITES-24710)
+* La finestra di dialogo Collega selezione ora allinea l&#39;etichetta programmatica con l&#39;etichetta visualizzata sullo schermo per gli elementi dell&#39;albero di ultimo livello. La navigazione con tasti di direzione attiva un annuncio affidabile sull’utilità di lettura dello schermo per ogni elemento e rimuove l’output di etichette fuorvianti. (SITES-24710)
 * La finestra di dialogo Collega selezione aperta ora scorre correttamente sotto un riquadro di visualizzazione a 320 px. Il contenuto non supera più il modale o i tronchi e il modale non mostra più una barra di scorrimento orizzontale. (SITES-24709)
 * La finestra di dialogo Collega selezione aperta ora ripristina lo stato attivo della tastiera sull&#39;attivatore della finestra di dialogo dopo Chiudi o Annulla. La messa a fuoco non passa più all&#39;input Link, che mantiene stabile il contesto dell&#39;utilità di lettura dello schermo e riduce la navigazione aggiuntiva. (SITES-24707)
 * La finestra di dialogo modale dell’immagine ora segue una sequenza logica di attivazione. Lo stato attivo non ignora più i controlli precedenti o i rilasci sul punto di riferimento della pagina dopo l’annullamento e gli utenti riprendono a utilizzare il pulsante Configura dopo l’uscita. (SITES-24693)
@@ -180,7 +180,7 @@ In 6.5 LTS, il supporto per gli eventi headless non disponeva degli eventi OSGi 
 
 #### [!DNL Content Fragments] - API REST{#sites-restapi-65-lts-sp2}
 
-AEM Headless richiedeva un ramo della versione dedicato per evitare conflitti di dipendenza e di versione del bundle con le build principali. L’aggiornamento aggiunge un ramo headless versione 6.5lts e allinea i set di dipendenze e le versioni del bundle. Jenkins ora crea la base di codice headless in modo pulito, senza conflitti tra versioni. (SITES-36585)
+AEM Headless richiedeva un ramo della versione dedicato per evitare conflitti di dipendenza e di versione del bundle con le build principali. L&#39;aggiornamento aggiunge un ramo headless `release/6.5lts` e allinea i set di dipendenze e le versioni del bundle. Jenkins ora crea la base di codice headless in modo pulito, senza conflitti tra versioni. (SITES-36585)
 
 <!-- #### Component console{#sites-component-console-65-lts-sp2} -->
 
@@ -247,7 +247,7 @@ Il testo dello stato del modello viene visualizzato in verticale in **Strumenti*
 #### Editor universale {#sites-universal-editor-65-lts-sp2}
 
 * Configurazione predefinita OSGi impostata come `preview=true`. L&#39;editor universale è stato avviato in modalità Anteprima. Questo aggiornamento corregge il valore predefinito e ripristina il comportamento standard della voce Produzione. Universal Editor ora si apre in modalità Produzione a meno che un amministratore non attivi esplicitamente la modalità Anteprima. (SITES-37193)
-* Per impostazione predefinita, il comando Apri di Universal Editor è ora disponibile in modalità Anteprima negli ambienti di sviluppo e stage. Il comando aggiunge preview=true, che mantiene i controlli dell’autore allineati con il contesto di anteprima ed evita l’apertura accidentale della produzione. (SITES-33839)
+* Per impostazione predefinita, il comando Apri di Universal Editor è ora disponibile in modalità Anteprima negli ambienti di sviluppo e stage. Il comando aggiunge `preview=true`, che mantiene i controlli dell&#39;autore allineati con il contesto di anteprima ed evita l&#39;apertura accidentale della produzione. (SITES-33839)
 
 ### [!DNL Assets]{#assets-65-lts-sp2}
 
@@ -266,36 +266,20 @@ Assets Relate ora funziona per i nomi di file che includono spazi. La logica del
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
-
-#### Moduli
-
-* FORMS-23971: gli utenti hanno riscontrato problemi con la funzionalità &quot;Data Source / Enter Keyword&quot; dell’editor di Form Data Model (FDM). Ciò ha influito sulla capacità di cercare e selezionare origini dati.
-
-* FORMS-23754: sui dispositivi mobili, il componente tabella in Adaptive Forms eseguiva il rendering di un’intestazione nascosta nella parte superiore, causando un annuncio errato del contenuto da parte degli assistenti vocali. Ciò ha interessato gli utenti che si affidano alle utilità per la lettura dello schermo per la navigazione.
-
-* FORMS-23632: gli utenti hanno riscontrato problemi con i Forms adattivi basati su Componenti core che fanno riferimento a tipi di risorse contrassegnate come granite:InternalArea, che hanno influito sulla funzionalità di diversi componenti granite nel componente aggiuntivo Forms on-premise.
-
-* FORMS-23457: l’invio del modulo non riesce dopo l’aggiornamento ad AEM 6.5 LTS SP1. Gli utenti hanno riscontrato la mancanza di com.adobe.cq.social.commons.CollabUtil, che ha causato errori di compilazione JSP e azioni e-mail non riuscite.
-
-* FORMS-23426: gli utenti hanno riscontrato problemi con la mancata traduzione corretta di hCaptcha in Forms adattivo basato su Componenti Foundation. Ciò ha influito sulla capacità degli utenti non anglofoni di compilare i moduli con precisione.
-
-* FORMS-22633: gli utenti hanno riscontrato errori nell’invio dei moduli con una SAXParseException: &quot;Il contenuto non è consentito nel prologo&quot; (HTTP 500). Questo problema si verificava a causa di un valore null nel file XML dei dati di precompilazione, causando un errore di analisi XML lato server.
-
-* FORMS-22101: gli utenti hanno riscontrato errori nelle linee guida per l’accessibilità dei contenuti web (WCAG) di Adaptive Forms a causa di markup di navigazione nelle schede del modulo non valido. È stato eseguito il rendering di un elemento non di elenco come elemento figlio diretto di un elenco, in cui sono consentite solo le voci di elenco. Questo impediva al modulo di passare le convalide di accessibilità e le organizzazioni interessate che dovevano soddisfare i requisiti di conformità legali o interni.
-
-* FORMS-21989: gli utenti hanno riscontrato problemi di accessibilità nei documenti Record (DoR) e Submission PDF, in cui i campi modulo vuoti non venivano taggati come elementi del modulo. Ciò ha causato difficoltà agli assistenti vocali, compromettendo la capacità degli utenti con disabilità di navigare e completare i moduli in modo efficace.
-
-* FORMS-21925: gli utenti hanno riscontrato un problema a causa del quale le note a piè di pagina per i componenti all’interno di un pannello secondario non venivano visualizzate durante il caricamento del modulo. Ciò si verificava quando l’elemento con la nota a piè di pagina era l’ultimo componente della pagina.
-
-* FORMS-21814: gli utenti hanno riscontrato problemi durante la selezione dei componenti nell’editor di AEM Forms. Quando ci si sposta tra le schede e si torna alla prima scheda, alcuni contenitori non sono più selezionabili, impedendo una facile identificazione e interazione.
-
-* FORMS-20679: gli utenti hanno riscontrato una vulnerabilità di sicurezza nel dashboard di Adaptive Forms. Nello specifico, nel file startpointcontrol.js è stato identificato un problema di vulnerabilità cross-site scripting (XSS) che potrebbe potenzialmente consentire l&#39;esecuzione di script dannosi.
-
-* FORMS-24687: nelle distribuzioni del cluster AEM Forms 6.5 LTS in JBoss EAP 8, i file domain/configuration/domain_oracle.xml, domain_mysql.xml e domain_mssql.xml non contengono più un tag `<security>` duplicato che ha causato XML non valido e ha impedito l&#39;avvio del controller di dominio.
-
-* FORMS-24689: in modalità chiavi in mano, l&#39;aggiornamento della porta del database viene ora applicato correttamente durante la nuova installazione e l&#39;aggiornamento. Nella nuova modalità di installazione, gli utenti possono selezionare tra tutte le porte disponibili e in modalità di aggiornamento la porta del database aggiornata in lc_turnkey.xml viene indicata correttamente durante il processo di aggiornamento.
-
-* FORMS-24688: durante la configurazione di JBoss EAP 8.0 su Linux, gli script della shell modificati su Windows non causano più `/bin/sh^M: bad interpreter or $'\r': command not found` errori a causa delle terminazioni della riga CRLF.
+* Gli utenti hanno riscontrato problemi con la funzionalità `Data Source / Enter Keyword` dell&#39;editor del modello dati modulo. Questo problema influiva sulla capacità di cercare e selezionare origini dati. (FORMS-23971)
+* Sui dispositivi mobili, il componente tabella in Adaptive Forms eseguiva il rendering di un’intestazione nascosta nella parte superiore, causando l’annuncio errato del contenuto da parte degli assistenti vocali. Ciò ha interessato gli utenti che si affidano alle utilità per la lettura dello schermo per la navigazione. (FORMS-23754)
+* Gli utenti hanno riscontrato problemi con i Forms adattivi basati su Componenti core che fanno riferimento a tipi di risorse contrassegnati come granite:InternalArea, che hanno influito sulla funzionalità di diversi componenti granite nel componente aggiuntivo Forms on-premise. (FORMS-23632)
+* L’invio del modulo non riesce dopo l’aggiornamento ad AEM 6.5 LTS SP1. Gli utenti hanno riscontrato la mancanza di com.adobe.cq.social.commons.CollabUtil, che ha causato errori di compilazione JSP e azioni e-mail non riuscite. (FORMS-23457)
+* Gli utenti hanno riscontrato problemi con la traduzione di hCaptcha non corretta in Forms adattivo basato su Componenti di base. Ciò ha influito sulla capacità degli utenti non anglofoni di compilare i moduli con precisione. (FORMS-23426)
+* Gli utenti hanno riscontrato errori durante l’invio di un modulo con SAXParseException: &quot;Il contenuto non è consentito nel prologo&quot; (HTTP 500). Questo problema si verificava a causa di un valore null nel file XML dei dati di precompilazione, causando un errore di analisi XML lato server. (FORMS-22633)
+* Gli utenti hanno riscontrato errori nelle linee guida WCAG (Web Content Accessibility Guidelines) di Adaptive Forms. Il motivo è che il markup di navigazione tramite schede del modulo non è valido. In altre parole, viene eseguito il rendering di un elemento non di elenco come figlio diretto di un elenco, in cui sono consentite solo le voci di elenco. Questo problema impediva al modulo di passare le convalide di accessibilità e le organizzazioni interessate che dovevano soddisfare i requisiti di conformità legali o interni. (FORMS-22101)
+* Si sono verificati problemi di accessibilità con il documento di record (DoR)/PDF di invio, in cui i campi modulo vuoti non venivano taggati come elementi del modulo. Ciò ha causato difficoltà agli assistenti vocali, compromettendo la capacità degli utenti con disabilità di navigare e completare i moduli in modo efficace. (FORMS-21989)
+* Gli utenti hanno riscontrato un problema che impediva la visualizzazione delle note a piè di pagina per i componenti all’interno di un pannello secondario durante il caricamento del modulo. Questo problema si verificava quando l’elemento con la nota a piè di pagina era l’ultimo componente della pagina. (FORMS-21925)
+* Gli utenti hanno riscontrato problemi durante la selezione dei componenti nell’Editor di AEM Forms. Quando ci si sposta tra le schede e si torna alla prima scheda, alcuni contenitori non sono più selezionabili, impedendo una facile identificazione e interazione. (FORMS-21814)
+* Gli utenti hanno riscontrato una vulnerabilità di sicurezza nel dashboard di Adaptive Forms. Nello specifico, nel file startpointcontrol.js è stato identificato un problema di vulnerabilità cross-site scripting (XSS) che potrebbe potenzialmente consentire l&#39;esecuzione di script dannosi. (FORMS-20679)
+* Nelle distribuzioni del cluster AEM Forms 6.5 LTS in JBoss® EAP 8, i file `domain/configuration/domain_oracle.xml`, `domain_mysql.xml` e `domain_mssql.xml` non contengono più un tag `<security>` duplicato che ha causato un XML non valido e ha impedito l&#39;avvio del controller di dominio. (FORMS-24687)
+* In modalità chiavi in mano, l&#39;aggiornamento della porta del database viene ora applicato correttamente durante la nuova installazione e l&#39;aggiornamento. Nella nuova modalità di installazione, gli utenti possono selezionare tra tutte le porte disponibili e in modalità di aggiornamento la porta del database aggiornata in lc_turnkey.xml viene indicata correttamente durante il processo di aggiornamento. (FORMS-24689)
+* Durante la configurazione di JBoss® EAP 8.0 su Linux®, gli script della shell modificati in Windows non causano più `/bin/sh^M: bad interpreter or $'\r': command not found` errori a causa delle terminazioni della riga CRLF. (FORMS-24688)
 
 <!--
 #### Forms JEE 
@@ -356,8 +340,6 @@ AEM ora sincronizza le attività di Adobe Target anche quando esistono date di i
 #### Jetty{#foundation-jetty-65-lts-sp2}
 
 #### Localization{#foundation-localization-65-lts-sp2} 
-
-
 
 #### Omnisearch{#foundation-omnisearch-65-lts-sp2}
 
@@ -468,7 +450,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -477,7 +459,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 **Ambiente**
 Applicabile a: clienti AEM 6.5 LTS (On-Premise) che installano Service Pack 2 (SP2). SP2 viene fornito come file JAR Quickstart.
 
-**Perché è importante**
+**Perché questa procedura di aggiornamento è importante**
 SP2 per AEM 6.5 LTS viene fornito come file JAR Quickstart anziché come file ZIP da installare tramite Gestione pacchetti. I clienti on-premise possono eseguire l’aggiornamento sostituendo il file Quickstart JAR, decomprimendolo e riavviandolo. Questo metodo è coerente con la procedura di aggiornamento diretto di Adobe.
 
 **Flusso di aggiornamento consigliato (authoring o pubblicazione)**
@@ -499,7 +481,7 @@ SP2 per AEM 6.5 LTS viene fornito come file JAR Quickstart anziché come file ZI
 
 **Buone pratiche**
 
-* Esegui l’aggiornamento in ambienti di test o inferiori prima di eseguirlo in ambienti di produzione.
+* Esegui l’aggiornamento in ambienti di test/di livello inferiore prima della produzione.
 * Prima di iniziare, è necessario eseguire un backup completo e ripristinabile (archivio più eventuali archivi dati esterni).
 * Consulta la guida all’aggiornamento diretto di Adobe e i requisiti tecnici (consigliato Java 17/21 per LTS).
 
@@ -552,13 +534,13 @@ Per garantire trasparenza e consentire una pianificazione adeguata, Adobe segue 
 
 In questa sezione sono elencate le funzionalità che Adobe ha dichiarato obsolete in AEM 6.5 LTS. In genere, Adobe depreca le funzioni prima di rimuoverle in una versione futura e fornisce un’alternativa.
 
-Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità nella loro implementazione corrente e di pianificarne la modifica adottando l’alternativa fornita.
+Si consiglia ai clienti di verificare se utilizzano la funzione/funzionalità nella distribuzione corrente. Pianifica la modifica della loro implementazione in modo da utilizzare l’alternativa fornita.
 
 | Area | Funzione | Sostituzione | Versione (SP) |
 | --- | --- | --- | --- |
 | Quickstart | API Mongo | Le API Mongo ora sono obsolete e la loro rimozione è prevista nelle versioni future. | 6.5 TS SP2 |
 | Sites | Supporto dei frammenti di contenuto nell’API REST di AEM Assets | AEM 6.5 LTS SP2 fornisce API OpenAPI moderne per la gestione di modelli e frammenti di contenuto; pertanto, gli endpoint precedenti per il supporto dei frammenti di contenuto nell’API REST di AEM Assets sono ora obsoleti.<br>Adobe intende mantenere questi endpoint meno recenti disponibili fino a un annuncio di fine del ciclo di vita. Adobe non prevede ulteriori miglioramenti per gli endpoint obsoleti. | 6,5 LTS SP2 |
-| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. | 6.5 LTS GA |
+| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [Universal Editor](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [Editor frammento di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. | 6.5 LTS GA |
 | [!DNL Foundation] | Supporto per com.adobe.granite.oauth.server | Integrazione di Adobe IMS |  |
 
 ### Funzioni rimosse {#removed-features}
@@ -571,7 +553,7 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 | Area | Funzione | Sostituzione | Versione (SP) |
 | --- | --- | --- | --- |
 | Commerce | AEM CIF Classic non è supportato. | Esegui la migrazione a [AEM CIF](/help/commerce/cif/migration.md). | 6.5 LTS GA |
-| Soluzioni | Social/Communities non è supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
+| Soluzioni | Social network/Communities non supportato. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Screens | Gli Screens non sono supportati. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Risorse | `dam-pim` e `dam-rating` non sono supportati perché i bundle dipendono dal social. | Nessuna sostituzione disponibile. | 6.5 LTS GA |
 | Risorse | `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettings()` è stato rimosso. | Utilizza l’API alternativa `com.day.cq.dam.scene7.api.model.Scene7ViewerConfig#getSettingsList()` che è stata aggiunta. | 6.5 LTS GA |
@@ -594,13 +576,10 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ### AEM Forms
 
-* **FORMS-24690:** In Configuration Manager, l&#39;inizializzazione del database non riesce durante l&#39;avvio in modalità personalizzata chiavi in mano JEE AEM Forms 6.5 LTS quando non è selezionato alcun modulo o sono selezionati solo componenti limitati. L’errore è dovuto a una dipendenza mancante (xalan-2.7.2.jar), che genera un errore. L’aggiunta del file JAR ad adobe-livecycle-jboss.ear\lib risolve il problema.
-
-* **FORMS-24894:** Nelle distribuzioni Forms JEE LTS in esecuzione in JBoss EAP 8, l&#39;interfaccia utente delle estensioni di Reader potrebbe non riuscire con un errore interno del server.
-
-* **FORMS-24892:** In Forms JEE LTS in esecuzione su JBoss, le funzionalità relative alla posta elettronica potrebbero non riuscire. Quando si tenta di utilizzare le funzionalità di posta elettronica, il server potrebbe registrare un errore simile a `Error IMAPProvider not a subtype`.
-
-* **FORMS-24741:** Nelle piattaforme Linux, Forms JEE LTS richiede che la proprietà `OSFileSetIntendedFor` in `LFS_Foundation.properties` sia impostata correttamente prima di eseguire Configuration Manager. Se non viene aggiornata, la configurazione potrebbe non essere personalizzata correttamente per Linux, il che può causare problemi di runtime o di distribuzione. Per risolvere il problema, dopo aver eseguito il programma di installazione e prima di eseguire Configuration Manager, passare a `configurationManager/config/solcomp/`, aprire `LFS_Foundation.properties`, impostare `OSFileSetIntendedFor=Linux`, salvare il file, quindi eseguire Configuration Manager.
+* In Configuration Manager, l’inizializzazione del database non riesce durante Bootstrap in modalità personalizzata chiavi in mano di AEM Forms 6.5 LTS JEE quando non è selezionato alcun modulo o sono selezionati solo componenti limitati. L’errore è dovuto a una dipendenza mancante (xalan-2.7.2.jar), che causa un errore. L’aggiunta del file JAR ad adobe-livecycle-jboss.ear\lib risolve il problema. (FORMS-24690)
+* Nelle implementazioni Forms JEE LTS in esecuzione su JBoss® EAP 8, l’interfaccia utente delle estensioni Reader potrebbe non riuscire e generare un errore interno del server. (FORMS-24894)
+* In Forms JEE LTS in esecuzione su JBoss®, le funzionalità relative all’e-mail potrebbero non riuscire. Quando si tenta di utilizzare le funzionalità di posta elettronica, il server potrebbe registrare un errore simile a `Error IMAPProvider not a subtype`. (FORMS-24892)
+* Sulle piattaforme Linux®, Forms JEE LTS richiede che la proprietà `OSFileSetIntendedFor` in `LFS_Foundation.properties` sia impostata correttamente prima di eseguire Configuration Manager. Se non viene aggiornata, la configurazione potrebbe non essere personalizzata correttamente per Linux®, il che può causare problemi di runtime o distribuzione. Per risolvere il problema, dopo aver eseguito il programma di installazione e prima di eseguire Configuration Manager, passare a `configurationManager/config/solcomp/`, aprire `LFS_Foundation.properties`, impostare `OSFileSetIntendedFor=Linux`, salvare il file, quindi eseguire Configuration Manager. (FORMS-24741)
 
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
@@ -608,11 +587,11 @@ Gli utenti possono riscontrare un danneggiamento dell’archivio durante la comp
 
 Per risolvere il problema, installare l&#39;Hotfix da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
 
-Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il [file jar oak-run](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) corrispondente, disponibile anche in Software Distribution.
+Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il file jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) [`oak-run` corrispondente, disponibile anche in Software Distribution.
 
 >[!NOTE]
 >
-> * Per qualsiasi operazione oak-run, utilizza [oak-run 1.88.1-B006 jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
+> * Per qualsiasi operazione `oak-run`, utilizzare il file jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Avviare AEM impostando la proprietà `oak.compaction.legacy=true`.
 
@@ -657,15 +636,15 @@ Se riscontri questo problema, contatta l’Assistenza clienti Adobe. Per risolve
 
 ## Bundle OSGi e pacchetti di contenuti inclusi{#osgi-bundles-and-content-packages-included}
 
-Nei seguenti documenti di testo sono elencati i bundle OSGi e i Pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 LTS, Service Pack 1:
+Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di contenuti inclusi in questa versione di [!DNL Experience Manager] 6.5 LTS, Service Pack 2: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5 LTS, Service Pack 1](/help/release-notes/assets/65lts_sp1_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Elenco dei Pacchetti di contenuti inclusi in Experience Manager 6.5 LTS, Service Pack 1](/help/release-notes/assets/65lts_sp1_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Elenco dei bundle OSGi inclusi in Experience Manager 6.5 LTS, Service Pack 2](/help/release-notes/assets/65lts_sp2_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Elenco dei pacchetti di contenuti inclusi in Experience Manager 6.5 LTS, Service Pack 2](/help/release-notes/assets/65lts_sp2_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Siti web con restrizioni{#restricted-sites}
 
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
-* [Scarica il prodotto all’indirizzo licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 
