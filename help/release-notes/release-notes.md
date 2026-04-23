@@ -587,7 +587,7 @@ Gli utenti possono riscontrare un danneggiamento dell’archivio durante la comp
 
 Per risolvere il problema, installare l&#39;Hotfix da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
 
-Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il file jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) [`oak-run` corrispondente, disponibile anche in Software Distribution.
+Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il file jar [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) `oak-run` corrispondente, disponibile anche in Software Distribution.
 
 >[!NOTE]
 >
