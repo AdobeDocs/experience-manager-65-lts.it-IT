@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 5a93918b-3b5f-49e0-9283-86776f9d8fb4
-source-git-commit: 180fd02df50f84e0d4f9bc01efe56e28d25555e2
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Nelle versioni precedenti di Adobe Experience Manager (AEM), molte API sono stat
 
 #### Classificazioni contenuto {#content-classifications}
 
-AEM utilizza da tempo il principal of overlay e Sling Resource Merger per consentire ai clienti di estendere e personalizzare le funzionalità di AEM. Le funzionalità predefinite che alimentano le console e l&#39;interfaccia utente di AEM sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto **/libs**, ma potrebbero aggiungere contenuto aggiuntivo sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** (Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni). Ciò causava ancora numerosi problemi durante l&#39;aggiornamento di AEM poiché il contenuto in **/libs** poteva cambiare causando l&#39;interruzione della funzionalità di sovrapposizione in modi imprevisti. I clienti possono inoltre estendere i componenti AEM tramite l&#39;ereditarietà tramite `sling:resourceSuperType` oppure fare riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi di aggiornamento simili potrebbero verificarsi con casi di utilizzo di riferimento e di sostituzione.
+AEM utilizza da tempo il principal of overlay e Sling Resource Merger per consentire ai clienti di estendere e personalizzare le funzionalità di AEM. Le funzionalità predefinite che alimentano le console e l&#39;interfaccia utente di AEM sono memorizzate in **/libs**. I clienti non devono mai modificare nulla sotto **/libs**, ma potrebbero aggiungere contenuto aggiuntivo sotto **/apps** per sovrapporre ed estendere la funzionalità definita in **/libs** (Per ulteriori informazioni, consulta Sviluppo con sovrapposizioni). Ciò causava ancora numerosi problemi durante l&#39;aggiornamento di AEM poiché il contenuto in **/libs** poteva cambiare causando l&#39;interruzione della funzionalità di sovrapposizione in modi imprevisti. I clienti possono anche estendere i componenti AEM tramite l&#39;ereditarietà tramite `sling:resourceSuperType` o semplicemente fare riferimento a un componente in **/libs** direttamente tramite sling:resourceType. Problemi di aggiornamento simili potrebbero verificarsi con casi di utilizzo di riferimento e di sostituzione.
 
 Per rendere più sicuro e semplice per i clienti capire quali aree di **/libs** sono sicure da utilizzare e sovrapporre il contenuto in **/libs** è stato classificato con i seguenti mixin:
 
 * **Pubblico (granite:PublicArea)** - Definisce un nodo come pubblico in modo che possa essere sovrapposto, ereditato (`sling:resourceSuperType`) o utilizzato direttamente ( `sling:resourceType`). I nodi sotto /libs contrassegnati come pubblici possono essere aggiornati con l’aggiunta di un pacchetto di compatibilità. In generale, i clienti devono utilizzare solo nodi contrassegnati come pubblici.
 
-* **Astratto (granite:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non utilizzati direttamente ( `sling:resourceType`).
+* **Riassunto (granito:AbstractArea)** - Definisce un nodo come astratto. I nodi possono essere sovrapposti o ereditati ( `sling:resourceSupertype`) ma non utilizzati direttamente ( `sling:resourceType`).
 
 * **Finale (granite:FinalArea)** - Definisce un nodo come finale. I nodi classificati come finali idealmente non devono essere sovrapposti o ereditati. I nodi finali possono essere utilizzati direttamente tramite `sling:resourceType`. Per impostazione predefinita, i sottonodi sotto il nodo finale sono considerati interni.
 
@@ -86,7 +86,7 @@ I mixin applicati in CRXDE Lite mostrano nodi di contenuto e strutture contrasse
 
 AEM 6.5 viene fornito con un controllo di integrità per avvisare i clienti se il contenuto sovrapposto o di riferimento viene utilizzato in modo incoerente con la classificazione del contenuto.
 
-Il **&#x200B; Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
+Il** Sling/Granite Content Access Check** è un nuovo controllo di integrità che monitora l’archivio per verificare se il codice del cliente accede in modo errato ai nodi protetti in AEM.
 
 Questa operazione esegue la scansione di **/apps** e in genere richiede diversi secondi.
 

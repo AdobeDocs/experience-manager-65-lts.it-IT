@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services, Reader Extensions
 hide: true
 hidefromtoc: true
 exl-id: d8027b43-10c7-435c-8fb5-059508966d42
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 0%
+source-wordcount: '3973'
+ht-degree: 1%
 
 ---
 
@@ -148,7 +148,7 @@ Applica i diritti di utilizzo a un documento PDF utilizzando l’API (Java) dell
 
 [Applicazione dei diritti di utilizzo ai documenti di PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Guida rapida (modalità SOAP):applicare i diritti di utilizzo utilizzando l’API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Guida rapida (modalità SOAP):Applying diritti di utilizzo con l&#39;API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

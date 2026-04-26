@@ -7,9 +7,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9ee9e034-ac69-4c3b-b050-7e829c830bcd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '534'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Il [selettore risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=it) è stato chiamato [Selettore risorse](https://helpx.adobe.com/it/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di [!DNL Experience Manager].
+>Il [selettore risorse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) è stato chiamato [Selettore risorse](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di [!DNL Experience Manager].
 
 Il selettore risorse consente di sfogliare, cercare e filtrare le risorse in [!DNL Adobe Experience Manager] Assets. Puoi anche recuperare i metadati delle risorse selezionate utilizzando il selettore risorse. Per personalizzare l’interfaccia del selettore risorse, puoi avviarla con parametri di richiesta supportati. Questi parametri impostano il contesto del selettore risorse per uno scenario particolare.
 
@@ -63,4 +63,4 @@ Per avviare il selettore risorse in un determinato contesto, puoi trasmettere i 
 
 >[!MORELIKETHIS]
 >
->* [Selettore risorse micro-front-end in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=it)
+>* [Selettore risorse micro-front-end in AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

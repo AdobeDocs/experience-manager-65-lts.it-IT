@@ -7,10 +7,10 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7a0d5502-8e1a-4396-a517-ea3767e228c2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 2%
+source-wordcount: '1611'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le organizzazioni che si occupano di risorse digitali utilizzano sempre più spesso il vocabolario controllato dalla tassonomia nei metadati delle risorse. In sostanza, include un elenco di parole chiave utilizzate comunemente da dipendenti, partner e clienti per fare riferimento e cercare risorse digitali di una particolare classe. L’assegnazione dei tag alle risorse tramite un vocabolario controllato dalla tassonomia consente di identificarle e recuperarle facilmente.
@@ -31,7 +31,7 @@ Affinché il Servizio di contenuti avanzati possa applicare i tag giusti, addest
 
 Una volta che un tag è stato preparato e pronto, il servizio può ora applicarlo alle risorse tramite un flusso di lavoro sui tag.
 
-In background, il Servizio di contenuti avanzati utilizza il framework di intelligenza artificiale di Adobe per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
+In background, il Servizio di contenuti avanzati utilizza il framework Adobe AI per addestrare il suo algoritmo di riconoscimento delle immagini in base alla struttura dei tag e alla tassonomia aziendale. Questa content intelligence viene quindi utilizzata per applicare tag rilevanti a un diverso set di risorse.
 
 Servizio di contenuti avanzati è un servizio cloud ospitato su [!DNL Adobe Developer Console]. Per utilizzarlo in [!DNL Adobe Experience Manager], l&#39;amministratore di sistema deve integrare la distribuzione di [!DNL Experience Manager] con [!DNL Adobe Developer Console].
 
@@ -200,4 +200,4 @@ Puoi anche assegnare una classificazione più alta a un tag per aumentarne la ri
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Configura assegnazione tag avanzati](config-smart-tagging.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

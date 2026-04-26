@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0f9d0b66-d6e4-475a-8727-c1de1a1e1bb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '11687'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Per implementare questa struttura sottostante utilizzando LiveCycle Designer, è
 Per creare un modulo accessibile, è necessario configurare le proprietà del modulo in modo che LiveCycle Designer generi informazioni di accessibilità durante il salvataggio della struttura del modulo come file PDF:
 1. Scegliete File > Proprietà modulo.
 1. Fai clic sulla scheda Opzioni di salvataggio e, nell’area PDF, accertati che sia selezionata l’opzione Genera informazioni sull’accessibilità (tag) per Acrobat.
-1. Fare clic su OK.
+1. Fai clic su OK.
 
 In LiveCycle Designer, questa opzione è selezionata per impostazione predefinita.
 
@@ -274,7 +274,7 @@ Nel file di dati a cui si fa riferimento, per una descrizione comando potrebbe e
 1. Fare clic sul triangolo accanto alla casella Associazione e selezionare un&#39;associazione. Ad esempio, seleziona descrizione > @dp_tt.
 
 Nella casella Associazione viene visualizzata la stringa seguente: $record.tooltip.dp_tt Suggerimento: è possibile digitare questa stringa nella casella Elementi anziché selezionarla.
-1. Fare clic su OK.
+1. Fai clic su OK.
 1. Visualizzare il modulo nella scheda Anteprima PDF.
 
 ### Inserimento di testo di collegamento
@@ -512,7 +512,7 @@ Raccomandazioni per l’utilizzo dei colori:
 * WCAG 2.0
    * 1.4.1 Uso del colore: il colore non è utilizzato come unico mezzo visivo per trasmettere informazioni, indicare un&#39;azione, richiedere una risposta o distinguere un elemento visivo. (Livello A)
    * 1.4.3 Contrasto (minimo): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 4,5:1, con le seguenti eccezioni: (livello AA)
-   * 1.4.6 Contrasto (ottimizzato): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 7:1, con le seguenti eccezioni: (Livello AAA)
+   * 1.4.6 Contrasto (ottimizzato): la presentazione visiva di testo e immagini di testo ha un rapporto di contrasto di almeno 7:1, con le seguenti eccezioni: (livello AAA)
 
 
 ## Fornire celle di intestazione per le tabelle{#provide-heading-cells}
@@ -598,7 +598,7 @@ I campi avanzati possono essere un modo efficace per semplificare la compilazion
 
 È possibile utilizzare la tavolozza Accesso facilitato per assegnare ruoli agli oggetti in base allo scopo per cui l&#39;oggetto viene utilizzato. Questi ruoli possono essere applicati per creare titoli a livelli diversi.
 
-![Specifica di un ruolo di intestazione nella tavolozza Accesso facilitato](/help/forms/using/assets/image-15.png)
+![Specifica di un ruolo di intestazione nella tavolozza Accessibilità](/help/forms/using/assets/image-15.png)
 Figura 15: **Specificare un ruolo di intestazione nella tavolozza Accessibilità**
 
 Per creare un’intestazione nel modulo, effettua le seguenti operazioni:

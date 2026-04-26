@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 hide: true
 solution: Experience Manager, Workfront
 exl-id: dd6eec1e-fa63-410a-bcd3-61892861fd0c
-source-git-commit: cbcce32b78970bb4aae70f041b2f293a53348fad
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 3%
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Un utente con accesso amministratore in [!DNL Adobe Experience Manager] installa il connettore avanzato. Prima dell&#39;installazione, controlla il supporto della piattaforma e altri [prerequisiti per il connettore](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).

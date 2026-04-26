@@ -9,9 +9,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 30038003-e307-46d1-b5f9-624d98a672a7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1504'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ Adobe Experience Manager include più di 100 comandi di consegna delle immagini 
 
 * JPG o PNG sono la scelta migliore per fornire immagini di buona qualità e con dimensioni e peso gestibili.
 * Se nell’URL non viene fornito alcun comando di formato, per impostazione predefinita la consegna delle immagini Dynamic Media viene impostata su JPG.
-* JPG comprime in un rapporto di 10:1 e in genere produce file di immagine di dimensioni inferiori. Il PNG viene compresso con un rapporto di circa 2:1, tranne che a volte, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, le dimensioni dei file PNG sono maggiori di quelle dei file JPG.
+* JPG si comprime con un rapporto di 10:1 e in genere produce file di immagine di dimensioni inferiori. Il PNG viene compresso con un rapporto di circa 2:1, tranne che a volte, ad esempio quando le immagini contengono uno sfondo bianco. In genere, tuttavia, le dimensioni dei file PNG sono maggiori di quelle dei file JPG.
 * JPG utilizza la compressione con perdita di dati, il che significa che gli elementi dell&#39;immagine (pixel) vengono eliminati durante la compressione. Il PNG utilizza invece una compressione senza perdita di dati.
 * JPG comprime spesso le immagini fotografiche con una maggiore fedeltà rispetto alle immagini sintetiche, con bordi nitidi e contrasto.
 * Se le immagini contengono trasparenza, utilizzare PNG in quanto JPG non supporta tale funzionalità.
@@ -48,8 +48,10 @@ La nitidezza delle immagini è l’aspetto più complesso del controllo delle im
 
 White paper sulle best practice [Immagini più nitide in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) applicabile anche ad Experience Manager.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Con Experience Manager, puoi rendere più nitide le immagini al momento dell’acquisizione, della consegna o di entrambe. In genere, tuttavia, le immagini vengono rese più nitide utilizzando un solo metodo o l’altro, ma non entrambi. La nitidezza delle immagini alla consegna, su un URL, in genere offre i risultati migliori.
 
@@ -126,4 +128,4 @@ Durante la sperimentazione, i seguenti suggerimenti generali possono essere util
 
 * Prova e testa diversi parametri in tempo reale, direttamente su un URL.
 * Come best practice, ricorda che puoi raggruppare i comandi Dynamic Media Image Server in un predefinito per immagini. Un predefinito immagine è fondamentalmente una macro di comando URL con nomi predefiniti personalizzati come `$thumb_low$` e `&product_high$`. Il nome del predefinito personalizzato in un percorso URL chiama questi predefiniti. Questa funzionalità consente di gestire i comandi e le impostazioni di qualità per diversi pattern di utilizzo delle immagini sul sito web e di ridurre la lunghezza complessiva degli URL.
-* Experience Manager offre anche modi più avanzati per regolare la qualità delle immagini, ad esempio applicare immagini di nitidezza al momento dell’acquisizione. Per i casi d&#39;uso avanzati in cui sono disponibili opzioni per ottimizzare i risultati del rendering, [Adobe Professional Services](https://business.adobe.com/it/customers/consulting-services/main.html) può aiutarti con informazioni approfondite e best practice personalizzate.
+* Experience Manager offre anche modi più avanzati per regolare la qualità delle immagini, ad esempio applicare immagini di nitidezza al momento dell’acquisizione. Per i casi d&#39;uso avanzati in cui sono disponibili opzioni per ottimizzare i risultati del rendering, [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) può aiutarti con insight personalizzato e best practice.

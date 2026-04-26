@@ -1,5 +1,5 @@
 ---
-title: Richiamare AEM Forms tramite la comunicazione remota
+title: Richiamare AEM Forms tramite comunicazione remota
 description: Utilizzare la funzione di comunicazione remota per richiamare un processo AEM Forms per richiamare i processi creati in Workbench. Puoi richiamare un processo AEM Forms da un’applicazione client creata con Flex.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,APIs & Integrations,Workbench
 hide: true
 hidefromtoc: true
 exl-id: 37f5efaa-db0b-4035-987d-4140fc5a97be
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4604'
-ht-degree: 0%
+source-wordcount: '4651'
+ht-degree: 1%
 
 ---
 
-# Richiamare AEM Forms tramite la comunicazione remota {#invoking-aem-forms-using-remoting}
+# Richiamare AEM Forms tramite comunicazione remota {#invoking-aem-forms-using-remoting}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -70,7 +70,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 [Creazione di un&#39;applicazione client creata con Flex che richiama un processo di lunga durata incentrato sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
-[Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO tramite token HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
+[Creazione di applicazioni Flash Builder che eseguono l’autenticazione SSO tramite token HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
 <!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -84,7 +84,7 @@ Per richiamare in modo programmatico i processi di AEM Forms utilizzando la funz
 
 * *&lt;directory_di_installazione>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  dove &lt;*install_directory*> è la directory in cui è installato AEM Forms.
+  dove &lt;*directory_installata*> è la directory in cui è installato AEM Forms.
 
 **Consulta anche**
 
@@ -137,7 +137,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 >se AEM Forms è configurato per consentire il caricamento di documenti non sicuri, puoi utilizzare un utente che non dispone del ruolo di utente dell’applicazione di caricamento documento per caricare un documento. Un utente può anche disporre dell’autorizzazione Caricamento documento. Tuttavia, se AEM Forms è configurato per consentire solo documenti protetti, accertati che l’utente disponga del ruolo di utente dell’applicazione di caricamento del documento o dell’autorizzazione di caricamento del documento. (Vedi [Configurazione di AEM Forms per accettare documenti protetti e non protetti](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 Si utilizzano le funzionalità di caricamento Flash standard per l&#39;URL di caricamento designato: `https://SERVER:PORT/remoting/lcfileupload`. È quindi possibile utilizzare l&#39;oggetto `DocumentReference` nei casi in cui è previsto un parametro di input di tipo `Document`
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Il servizio Avvio rapido per la comunicazione remota utilizza il servlet di caricamento per trasmettere un file PDF al processo `MyApplication/EncryptDocument`. (Vedi [Richiamare un processo di breve durata passando un documento non sicuro utilizzando (obsoleto per AEM forms) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`La funzionalità Avvio veloce in remoto utilizza il servlet di caricamento in remoto per passare un file PDF al processo `MyApplication/EncryptDocument`. (Vedi [Richiamare un processo di breve durata passando un documento non sicuro utilizzando (obsoleto per AEM forms) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -615,7 +615,7 @@ AEM Forms supporta un&#39;operazione denominata `getFileUploadToken` che restitu
 
 È possibile utilizzare la console di amministrazione per specificare se i documenti sono protetti quando si passa un documento da un&#39;applicazione client Flex a un processo AEM Forms. Per impostazione predefinita, AEM Forms è configurato per accettare documenti protetti. Per configurare AEM Forms per l’accettazione di documenti protetti, effettua le seguenti operazioni:
 
-1. Accedere alla console di amministrazione.
+1. Accedi alla console di amministrazione.
 1. Fare clic su **Impostazioni**.
 1. Fare clic su **Impostazioni di sistema principali.**
 1. Fai clic su Configurazioni.
@@ -624,7 +624,7 @@ AEM Forms supporta un&#39;operazione denominata `getFileUploadToken` che restitu
 >[!NOTE]
 >
 >* Per configurare AEM Forms per l’accettazione di documenti non protetti, seleziona l’opzione Consenti caricamento di documenti non protetti dalle applicazioni Flex. Riavviare quindi un&#39;applicazione o un servizio per assicurarsi che l&#39;impostazione abbia effetto.
->* Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> * Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 
 ### Guida introduttiva: richiamare un processo di breve durata passando un documento protetto tramite la funzionalità di comunicazione remota {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}

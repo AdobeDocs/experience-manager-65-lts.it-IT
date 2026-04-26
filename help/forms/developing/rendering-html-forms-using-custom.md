@@ -1,5 +1,5 @@
 ---
-title: Rendering di HTML Forms tramite file CSS personalizzati
+title: Rendering di moduli HTML tramite file CSS personalizzati
 description: Utilizza il servizio Forms per fare riferimento a file CSS personalizzati per eseguire il rendering di HTML Forms in risposta a una richiesta HTTP da un browser web. È possibile eseguire il rendering di un modulo di HTML che utilizza un file CSS utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: b70404ee-21dc-4c0b-a66f-c37a6f29f98e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 0%
+source-wordcount: '1693'
+ht-degree: 3%
 
 ---
 
-# Rendering di HTML Forms tramite file CSS personalizzati {#rendering-html-forms-using-custom-css-files}
+# Rendering di moduli HTML tramite file CSS personalizzati {#rendering-html-forms-using-custom-css-files}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -85,11 +85,11 @@ Quando il servizio Forms esegue il rendering di un modulo di HTML, restituisce u
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering di Forms as HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -137,7 +137,7 @@ Esegui il rendering di un modulo HTML che utilizza un file CSS personalizzato ut
 
 **Consulta anche**
 
-[Rendering di HTML Forms tramite file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
+[Rendering di moduli HTML tramite file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
 
 [Guida rapida (modalità SOAP): rendering di un modulo HTML che utilizza un file CSS tramite l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
@@ -195,6 +195,6 @@ Esegui il rendering di un modulo HTML che utilizza un file CSS personalizzato ut
 
 **Consulta anche**
 
-[Rendering di HTML Forms tramite file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
+[Rendering di moduli HTML tramite file CSS personalizzati](#rendering-html-forms-using-custom-css-files)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

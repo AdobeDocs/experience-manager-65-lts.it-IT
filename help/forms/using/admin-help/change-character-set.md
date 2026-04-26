@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1d614736-5897-4fd3-9ca4-94b115139ba3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 1%
 
 Puoi specificare il set di caratteri utilizzato per codificare il flusso di output.
 
-1. Nella console di amministrazione, fare clic su **[!UICONTROL Servizi > output]**.
-1. In Internazionalizzazione selezionare un set di caratteri nell&#39;elenco Set di caratteri. Questa impostazione dipende da `TransformationFormat` e `PrintFormat` specificati tramite l&#39;API. Per specificare un set di caratteri diverso da quelli elencati, selezionare Personalizzato e specificare un valore di codifica nella casella visualizzata.
+1. Nella console di amministrazione fai clic su **[!UICONTROL Servizi > Output]**.
+1. Seleziona un set di caratteri sell’elenco Set di caratteri in Internazionalizzazione. Questa impostazione dipende dalle opzioni `TransformationFormat` e `PrintFormat` specificate tramite l’API. Per specificare un set di caratteri diverso da quelli elencati, seleziona Personalizzato e specifica un valore di codifica nella casella visualizzata.
 
    Se `TransformationFormat` è PDF e PDF/A o `PrintFormat` è PCL, PostScript, etichetta Zebra, IPL, DPL, TPCL, GenericColorPCL o GenericPSLevel3, sono supportati solo set di caratteri specifici.
 

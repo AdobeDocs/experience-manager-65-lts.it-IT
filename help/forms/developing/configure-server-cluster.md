@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7279bba-b889-4431-9cfd-79e140d46e05
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3943'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Familiarità con i server applicazioni Adobe Experience Manager (AEM) Forms su J
 
 ## Livello utente {#user-level}
 
-Avanzate 
+Avanzate
 
 Un cluster AEM Forms su JEE è una topologia progettata per consentire ad AEM Forms su JEE di essere resiliente agli errori di un cluster. Consente inoltre alla topologia di scalare la capacità del sistema oltre le capacità di un singolo nodo. Un cluster combina più nodi in un unico sistema logico che condivide i dati e consente alle transazioni di estendersi su più nodi in esecuzione. Un cluster è il modo più generale per scalare AEM Forms su JEE, in quanto può essere supportata qualsiasi combinazione di servizi che gestisca qualsiasi combinazione di carichi di lavoro. Un cluster AEM Forms su JEE non è necessariamente il più adatto per tutti i tipi di distribuzione e potrebbe essere appropriata un’architettura con bilanciamento del carico del server non cluster.
 
@@ -226,9 +226,9 @@ Per avere un AEM Forms sul cluster JEE corretto, il server applicazioni deve ess
 
 Riferimenti:
 
-* [Servizi enterprise ad alta disponibilità mediante cluster JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [Servizi aziendali a elevata disponibilità mediante cluster JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Cluster che utilizzano il server Oracle WebLogic](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Server Oracle WebLogic - Utilizzo di cluster](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Come posso verificare che JBoss® stia raggruppando correttamente? {#check-jboss-clustering}
 

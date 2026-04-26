@@ -1,6 +1,6 @@
 ---
-title: Configurare AEM Forms per preacquisire le informazioni sul dominio
-description: Configura AEM Forms per la preacquisizione delle informazioni sul dominio se il tempo di risposta risulta più lento a causa di gruppi profondamente nidificati o se sei membro di molti gruppi.
+title: Configurare AEM Forms per precaricare le informazioni sul dominio
+description: Configura AEM Forms per precaricare le informazioni sul dominio se il tempo di risposta risulta più lento a causa di gruppi profondamente nidificati o se sei membro di molti gruppi.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
@@ -11,23 +11,23 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 61328a32-d014-4a90-b142-169f4f73b35f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Configurare AEM Forms per preacquisire le informazioni sul dominio {#configure-aem-forms-to-prefetchdomain-information}
+# Configurare AEM Forms per precaricare le informazioni sul dominio {#configure-aem-forms-to-prefetchdomain-information}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a più gruppi (ad esempio, 500 o più) o se i gruppi sono nidificati in profondità (ad esempio, 30 livelli). Se si verifica questo problema, è possibile configurare AEM Forms per la preacquisizione delle informazioni da determinati domini.
+Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a più gruppi (ad esempio, 500 o più) o se i gruppi sono profondamente nidificati (ad esempio, 30 livelli). Se si verifica questo problema, puoi configurare AEM Forms per la preacquisizione delle informazioni da determinati domini.
 
-1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione utente > Configurazione > Importa ed esporta file di configurazione]**.
-1. Per esportare l&#39;impostazione di configurazione corrente in un file, fare clic su **[!UICONTROL Esporta]** e salvare il file di configurazione in un altro percorso.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione utenti > Configurazione > Importa ed esporta file di configurazione]**.
+1. Per esportare l’impostazione di configurazione corrente in un file, fai clic su **[!UICONTROL Esporta]** e salva il file di configurazione in un altro percorso.
 1. Aggiungi il seguente nodo (in grassetto):
 
    ```xml
@@ -45,7 +45,7 @@ Gli utenti possono riscontrare un tempo di risposta più lento se appartengono a
     <node name="APSAuditService">
    ```
 
-   In questo esempio, più domini sono configurati per la preacquisizione. I nomi di dominio sono separati da &quot;/&quot;. Ciò è illustrato nell&#39;esempio precedente con *Nome_dominio1*, *Nome_dominio2* e *Nome_dominio3*.
+   In questo esempio, più domini sono configurati per la preacquisizione. I nomi dominio sono separati da “/”. Ciò è illustrato nell’esempio precedente con *Domain_Name1*, *Domain_Name2* e *Domain_Name3*.
 
-1. Per importare il file aggiornato, in Gestione utenti fare clic su **[!UICONTROL Configurazione > Importa ed esporta file di configurazione]**.
-1. Fare clic su **[!UICONTROL Sfoglia]** per trovare il file, fare clic su Importa e quindi su **[!UICONTROL OK]**.
+1. Per importare il file aggiornato, in gestione utenti fai clic su **[!UICONTROL Configurazione > Importa ed esporta file di configurazione]**.
+1. Fai clic su **[!UICONTROL Sfoglia]** per trovare il file, fai clic su Importa, quindi su **[!UICONTROL OK]**.

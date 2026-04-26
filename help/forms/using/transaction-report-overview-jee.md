@@ -7,22 +7,24 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: f2703820-8701-4b48-be9c-12daa73d5408
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+source-wordcount: '535'
+ht-degree: 2%
 
 ---
 
 # Abilitazione e visualizzazione dei rapporti sulle transazioni per AEM Forms su JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<!--
+Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
 * Submission of a document
 * Rendition of a document
 * Conversion of a document from one file format to another 
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.
+-->
 
 ## Abilita reporting delle transazioni {#enable-transaction-reporting}
 
@@ -35,7 +37,7 @@ Per impostazione predefinita, la registrazione delle transazioni è disabilitata
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
-1. Riavviare il server.
+1. Riavvia il server.
 1. A parte le modifiche sul server, sul lato client è necessario aggiornare il file `adobe-livecycle-client.jar` nel progetto, se si utilizza lo stesso.
 
 <!--
@@ -62,7 +64,7 @@ Il rapporto di transazione tramite dashboard fornisce il numero totale di transa
 
 ### Rapporto di transazione tramite file di registro {#transaction-report-logfile}
 
-Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **&#x200B;**&#x200B;è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
+Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **** è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
 
 ```
 For Jboss Turnkey:
@@ -134,7 +136,8 @@ La frequenza di registrazione delle transazioni è determinata dalle operazioni 
 
 * Nei **registri transazioni**, l&#39;aggiornamento di ogni transazione viene eseguito immediatamente quando un modulo viene inviato, sottoposto a rendering o convertito correttamente.
 
-<!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
+<!--
+A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
 Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, or using non-standard form submission methods are not accounted as transactions. AEM Forms provides an API to record such transactions. Call the API from your custom implementations to record a transaction.
 
@@ -156,7 +159,8 @@ The transaction count is reverse replicated from publish instances to author or 
 * Enable the **Show transactions from publish only** option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
 * Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
-* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.-->
+* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.
+-->
 
 ## Articoli correlati {#related-articles}
 

@@ -9,10 +9,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 114a77bc-0b7e-49ce-bca1-e5195b4884dc
-source-git-commit: 3cbc2ddd4ff448278e678d1a73c4ee7ba3af56f4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5139'
-ht-degree: 0%
+source-wordcount: '5313'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Ogni aggiornamento del repository crea una revisione del contenuto. Di conseguen
 
 Con AEM 6.3 e versioni successive, è stata introdotta una versione online di questa funzionalità denominata Pulizia revisioni online. Rispetto alla funzione di pulizia delle revisioni offline, in cui l’istanza di AEM deve essere chiusa, la funzione di pulizia delle revisioni online può essere eseguita mentre l’istanza di AEM è online. La funzione Pulizia revisioni online è attivata per impostazione predefinita ed è la modalità consigliata per eseguire la pulizia delle revisioni.
 
-**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=it) per un&#39;introduzione e per scoprire come utilizzare la funzione di pulizia delle revisioni in linea.
+**Nota**: [Guarda il video](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) per un&#39;introduzione e per scoprire come utilizzare la funzione di pulizia delle revisioni in linea.
 
 Il processo di pulizia delle revisioni è costituito da tre fasi: **stima**, **compattazione** e **pulizia**. La stima determina se eseguire la fase successiva (compattazione) o meno in base alla quantità di rifiuti raccolti. Durante la fase di compattazione, i segmenti e i file tar vengono riscritti lasciando fuori il contenuto inutilizzato. La fase di pulizia rimuove quindi i vecchi segmenti, inclusi eventuali rifiuti in essi contenuti. La modalità offline può in genere recuperare più spazio, perché la modalità online deve tenere conto del working set di AEM, che impedisce la raccolta di segmenti aggiuntivi.
 
@@ -38,7 +38,7 @@ Inoltre, puoi leggere la [documentazione ufficiale di Oak](https://jackrabbit.ap
 
 ### Quando utilizzare la pulizia revisioni in linea anziché la pulizia revisioni non in linea? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Pulizia revisioni in linea è la modalità consigliata per eseguire la pulizia revisioni.La pulizia delle revisioni offline di** deve essere utilizzata solo in casi eccezionali, ad esempio prima della migrazione al nuovo formato di archiviazione o se richiesto dall&#39;Assistenza clienti di Adobe.
+**La pulizia delle revisioni in linea è la modalità consigliata per eseguire la pulizia delle revisioni.** La funzione di pulizia delle revisioni offline deve essere utilizzata solo in casi eccezionali, ad esempio prima della migrazione al nuovo formato di archiviazione o su richiesta dell’Assistenza clienti di Adobe.
 
 ## Eseguire la pulizia delle revisioni online {#how-to-run-online-revision-cleanup}
 
@@ -100,7 +100,7 @@ Inoltre, considera che:
 * **La compattazione completa** è più efficace, ma ha anche un impatto maggiore sulle normali operazioni di sistema. Esso deve pertanto essere utilizzato al di fuori dei giorni lavorativi.
 * La compattazione della coda e la compattazione completa devono essere programmate per l&#39;esecuzione nelle ore di minore utilizzo.
 
-### Risoluzione dei problemi {#troubleshooting}
+### Risoluzione di problemi {#troubleshooting}
 
 Quando utilizzate le nuove modalità di compattazione, tenete presente quanto segue:
 
@@ -183,7 +183,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>Quali sono i requisiti minimi per lo spazio su disco e la memoria heap durante l'esecuzione di Online Revision Cleanup?</strong></td>
-   <td><p>Lo spazio su disco viene costantemente monitorato durante la pulizia delle revisioni in linea. Se lo spazio su disco disponibile scende al di sotto di un valore critico, il processo viene annullato. Il valore critico è pari al 25% dell'attuale spazio su disco dell'archivio e non è configurabile.</p> <p><strong>Adobe consiglia di ridimensionare il disco almeno due o tre volte più grande della dimensione dell’archivio inizialmente stimata.</strong></p> <p>Lo spazio heap libero viene monitorato continuamente durante il processo di pulizia. Se lo spazio heap libero scende al di sotto di un valore critico, il processo viene annullato. Il valore critico viene configurato tramite org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. Il valore predefinito è 15%.</p> <p>I consigli per il dimensionamento heap di compattazione minimo non sono separati dai consigli per il dimensionamento della memoria di AEM. In genere: <strong>Se un'istanza di AEM è sufficientemente grande da gestire i casi d'uso e il relativo payload previsto, il processo di pulizia ottiene memoria sufficiente.</strong></p> </td>
+   <td><p>Lo spazio su disco viene costantemente monitorato durante la pulizia delle revisioni in linea. Se lo spazio su disco disponibile scende al di sotto di un valore critico, il processo viene annullato. Il valore critico è pari al 25% dell’attuale spazio su disco dell’archivio e non è configurabile.</p> <p><strong>Adobe consiglia di ridimensionare il disco almeno due o tre volte più grande della dimensione dell’archivio inizialmente stimata.</strong></p> <p>Lo spazio heap libero viene monitorato continuamente durante il processo di pulizia. Se lo spazio heap libero scende al di sotto di un valore critico, il processo viene annullato. Il valore critico viene configurato tramite org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD. Il valore predefinito è 15%.</p> <p>I consigli per il dimensionamento heap di compattazione minimo non sono separati dai consigli per il dimensionamento della memoria di AEM. In genere: <strong>Se un'istanza di AEM è sufficientemente grande da gestire i casi d'uso e il relativo payload previsto, il processo di pulizia ottiene memoria sufficiente.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -313,7 +313,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
       </ul> </li>
      <li>Spazio su disco ottenuto dalla pulizia della revisione
       <ul>
-       <li>Lo spazio viene recuperato solo al termine della fase di pulizia. Il completamento della fase di pulizia è contrassegnato dal messaggio di registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Le dimensioni post-pulizia sono {} ({} byte) e lo spazio recuperato {} ({} byte). Il peso/profondità della mappa di compattazione è {}/{} ({} byte/{})."</li>
+       <li>Lo spazio viene recuperato solo al termine della fase di pulizia. Il completamento della fase di pulizia è contrassegnato dal messaggio di registro "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimensione del post-cleanup è {} ({} byte) e lo spazio recuperato {} ({} byte). Il peso/profondità della mappa di compattazione è {}/{} ({} byte/{})."</li>
       </ul> </li>
      <li>Si è verificato un problema durante la pulizia della revisione
       <ul>
@@ -380,7 +380,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
   </tr>
   <tr>
    <td><strong>In base alla verifica dello stato e alle voci del registro, la pulizia delle revisioni in linea non è stata completata tre volte di seguito. Cosa è necessario per completare correttamente la pulizia delle revisioni online?</strong></td>
-   <td>Puoi eseguire diversi passaggi per trovare e risolvere il problema:<br />
+   <td>Puoi intraprendere diversi passaggi per trovare e risolvere il problema:<br />
     <ul>
      <li>Controllare innanzitutto le voci del registro<br /> </li>
      <li>A seconda delle informazioni contenute nei registri, adotta le misure appropriate:
@@ -409,7 +409,7 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
     <ol>
      <li>Applicazione che aggira i meccanismi di accesso consigliati (come Sling e API JCR) e utilizza un’API/SPI di livello inferiore per accedere all’archivio e quindi supera il tempo di conservazione di un segmento. In altre parole, mantiene un riferimento a un’entità oltre il tempo di conservazione consentito dalla funzione di pulizia delle revisioni online (24 ore per impostazione predefinita). Questo caso è transitorio e non causa il danneggiamento dei dati. Per il ripristino, è necessario utilizzare lo strumento oak-run per confermare la natura transitoria dell’eccezione (il controllo oak-run non deve segnalare errori). A questo scopo, l’istanza deve essere messa offline e riavviata in seguito.</li>
      <li>Un evento esterno ha causato il danneggiamento dei dati sul disco. Può trattarsi di un errore del disco, di spazio insufficiente o di una modifica accidentale dei file di dati richiesti. In questo caso, l’istanza deve essere messa offline e ripristinata utilizzando il controllo oak-run. Per ulteriori dettagli su come eseguire il controllo oak-run, leggi la seguente <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">documentazione di Apache</a>.</li>
-     <li>Risolvi tutte le altre occorrenze tramite <a href="https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support" target="_blank">Assistenza clienti Adobe</a>.</li>
+     <li>Risolvi tutte le altre occorrenze tramite <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=homehome?lang=it#support" target="_blank">Assistenza clienti Adobe</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
@@ -420,7 +420,8 @@ A volte, l&#39;alternanza tra la modalità di coda e la modalità di compattazio
 
 Il file error.log è dettagliato se si verificano problemi durante il processo di pulizia delle revisioni online. La seguente matrice mira a spiegare i messaggi più comuni e a fornire possibili soluzioni:
 
-<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!--
+| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -428,7 +429,8 @@ Il file error.log è dettagliato se si verificano problemi durante il processo d
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message does not mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+-->
 
 <table style="table-layout:auto">
  <tbody>
@@ -529,7 +531,7 @@ Lo strumento oak-run introduce diverse funzioni che mirano ad aumentare le prest
 
 L’elenco include diversi parametri della riga di comando, come descritto di seguito:
 
-* **-mmap.** È possibile impostarlo come true o false. Se è impostato su true, viene utilizzato l&#39;accesso mappato alla memoria. Se impostato su false, viene utilizzato l’accesso ai file. Se non specificato, l&#39;accesso mappato alla memoria viene utilizzato su sistemi a 64 bit e l&#39;accesso ai file viene utilizzato su sistemi a 32 bit. In Windows, l’accesso regolare ai file viene sempre applicato e questa opzione viene ignorata. **Questo parametro ha sostituito il parametro -Dtar.memoryMapped.**
+* **-mmap.** È possibile impostarlo su true o false. Se è impostato su true, viene utilizzato l&#39;accesso mappato alla memoria. Se impostato su false, viene utilizzato l’accesso ai file. Se non specificato, l&#39;accesso mappato alla memoria viene utilizzato su sistemi a 64 bit e l&#39;accesso ai file viene utilizzato su sistemi a 32 bit. In Windows, l’accesso regolare ai file viene sempre applicato e questa opzione viene ignorata. **Questo parametro ha sostituito il parametro -Dtar.memoryMapped.**
 
 * **-Dupdate.limit**. Definisce la soglia per lo scaricamento su disco di una transazione temporanea. Il valore predefinito è 10000.
 
@@ -537,9 +539,9 @@ L’elenco include diversi parametri della riga di comando, come descritto di se
 
 * **-Dcompaction-progress-log**. Numero di nodi compattati registrati. Il valore predefinito è 150000, il che significa che durante l&#39;operazione vengono registrati i primi nodi compattati 150000. Utilizzalo con il parametro successivo documentato di seguito.
 
-* **-Dtar.PersistCompactionMap.** Impostare questo parametro su true per utilizzare spazio su disco anziché memoria heap per la persistenza della mappa di compattazione. Richiede lo strumento oak-run **versioni 1.4** e successive. Per ulteriori dettagli, vedi la domanda 3 nella sezione [Domande frequenti sulla pulizia delle revisioni offline](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Questo parametro è stato rimosso in Oak versione 1.6 e non ha alcun effetto.**
+* **-Dtar.PersistCompactionMap.** Imposta questo parametro su true per utilizzare lo spazio su disco invece della memoria heap per la persistenza della mappa di compattazione. Richiede lo strumento oak-run **versioni 1.4** e successive. Per ulteriori dettagli, vedi la domanda 3 nella sezione [Domande frequenti sulla pulizia delle revisioni offline](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Questo parametro è stato rimosso in Oak versione 1.6 e non ha alcun effetto.**
 
-* **—forza.** Forza la compattazione e ignora una versione dell&#39;archivio segmenti non corrispondente.
+* **—forza.** Forza la compattazione e ignora una versione dell’archivio segmenti non corrispondente.
 
 >[!CAUTION]
 >

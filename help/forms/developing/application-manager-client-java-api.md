@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva di Application Manager Client JavaAPI (SOAP)
-description: Guida introduttiva di Application Manager Client JavaAPI (SOAP)
+title: Avvio rapido API Java per il client di Application Manager (SOAP)
+description: Avvio rapido API Java per il client di Application Manager (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 1ac45713-4eca-4def-a030-c7bc3fcdf4c7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 0%
+source-wordcount: '434'
+ht-degree: 3%
 
 ---
 
@@ -22,21 +22,21 @@ ht-degree: 0%
 
 Per il client di Application Manager è disponibile la seguente Guida introduttiva all&#39;API Java™ (SOAP).
 
-[Guida rapida (modalità SOAP): creazione della versione dell’applicazione tramite Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Guida rapida (modalità SOAP): creazione della versione dell’applicazione tramite l’API Java™](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Guida rapida (modalità SOAP): esportazione di applicazioni tramite Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Quick Start (modalità SOAP): esportazione di applicazioni tramite l’API Java™](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Quick Start (modalità SOAP): importazione di applicazioni tramite Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Quick Start (modalità SOAP): importazione di applicazioni tramite l’API Java™](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Guida rapida (modalità SOAP): come ottenere un’applicazione AEM Forms utilizzando Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Guida rapida (modalità SOAP): come ottenere un’applicazione AEM Forms utilizzando l’API Java™](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Guida rapida (modalità SOAP): come ottenere le applicazioni utilizzando Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Quick Start (modalità SOAP): guida introduttiva alle applicazioni tramite l’API Java™](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Quick Start (modalità SOAP): recupero dello stato delle applicazioni tramite Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Quick Start (modalità SOAP): recupero dello stato delle applicazioni tramite API Java™](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Guida rapida (modalità SOAP):anteprima dell’archivio di AEM Forms e delle applicazioni successive con Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Guida rapida (modalità SOAP):Previewing dell&#39;archivio di AEM Forms e delle applicazioni successive tramite l&#39;API Java™](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Guida rapida (modalità SOAP):eliminazione dell’archivio applicazioni AEM Forms tramite Java](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Guida rapida (modalità SOAP):Deleting dell&#39;archivio applicazioni AEM Forms tramite l&#39;API Java™](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Guida rapida (modalità SOAP):anteprima dell&#39;archivio applicazioni LiveCycle ES2 e versioni successive tramite l&#39;API Java™ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Guida rapida (modalità SOAP):Previewing LiveCycle ES2 e successivo archivio applicazioni tramite l&#39;API Java™ {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 Il seguente esempio di codice Java™ è per visualizzare in anteprima l’archivio di AEM Forms e delle applicazioni successive utilizzando l’API Java™.
 
@@ -723,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## Guida rapida (modalità SOAP):eliminazione dell’archivio applicazioni tramite l’API Java™ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
+## Guida rapida (modalità SOAP):Deleting dell&#39;archivio applicazioni tramite l&#39;API Java™ {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}
 
 Il seguente esempio di codice Java™ è per l&#39;eliminazione di un archivio di applicazioni.
 

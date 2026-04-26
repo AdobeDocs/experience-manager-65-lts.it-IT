@@ -7,9 +7,9 @@ role: User, Admin
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 33f539d2-ae00-4f43-a27a-55c1b55a6c0c
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2239'
 ht-degree: 2%
 
 ---
@@ -18,10 +18,11 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
-<!-- old content
+<!--
+old content
 
 [!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
 
@@ -30,7 +31,8 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
 -->
 
-<!-- New overview content
+<!--
+New overview content
 -->
 
 Il servizio [!DNL Adobe Stock] consente ai designer e alle aziende di accedere a milioni di foto, vettori, illustrazioni, video, modelli e risorse 3D di alta qualità e curate, senza royalty, per tutti i progetti creativi.
@@ -57,7 +59,8 @@ Un piano [!DNL Adobe Stock] dell&#39;organizzazione
 
 All&#39;interno del diritto, esiste un profilo di prodotto predefinito per [!DNL Adobe Stock] in [!DNL Admin Console]. È possibile creare più profili, che determinano chi può concedere in licenza le risorse Stock. Un utente con accesso diretto al profilo di prodotto può accedere a [https://stock.adobe.com/](https://stock.adobe.com/it) e alle risorse Stock della licenza. Esiste invece un altro metodo per utilizzare Developer Access per creare un’integrazione (API). Questa integrazione autentica la comunicazione tra [!DNL Experience Manager Assets] e [!DNL Adobe Stock].
 
-<!-- Old content
+<!--
+Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
@@ -102,7 +105,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Come sviluppatore, eseguire i passaggi seguenti per integrare [!DNL Adobe Experience Manager] e [!DNL Adobe Stock].
 
 1. [Configura un programma in [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Aggiungi configurazione nell&#39;istanza di authoring  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configura un programma in [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -122,7 +125,7 @@ Eseguire la procedura seguente per configurare un programma in [!DNL Developer C
 
 Per aggiungere la configurazione nell&#39;istanza di authoring [!DNL AEM], eseguire la procedura seguente:
 
-1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] &#x200B;](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza dell&#39;autore [!DNL AEM] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
 1. [Aggiungi la configurazione cloud a cui connettersi [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
 #### Configura un nuovo [!DNL Adobe Stock IMS configuration] nell&#39;istanza [!DNL AEM author] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
@@ -158,7 +161,8 @@ Eseguire la procedura seguente per aggiungere la configurazione cloud per connet
 1. Fai clic su **[!UICONTROL Salva e chiudi]**.
    ![utilizzo di adobe stock con aem](/help/assets/assets/adobe-stock-config-page.png)
 
-<!-- old content
+<!--
+old content
 
 ## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
 
@@ -463,12 +467,13 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 >[!MORELIKETHIS]
 >
->* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=it)
->* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/it/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/it/stock/faq.html)
+>* [Esercitazione video sull&#39;utilizzo di [!DNL Adobe Stock] risorse con [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] guida del piano Enterprise](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Domande frequenti](https://helpx.adobe.com/stock/faq.html)
 
 
-<!--old content
+<!--
+old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
@@ -482,7 +487,8 @@ Gli utenti possono visualizzare le proprietà sia per le risorse con licenza che
 
 -->
 
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!--
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--

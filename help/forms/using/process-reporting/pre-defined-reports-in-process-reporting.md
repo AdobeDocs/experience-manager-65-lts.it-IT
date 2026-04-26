@@ -1,5 +1,5 @@
 ---
-title: Rapporti predefiniti nella generazione di rapporti sui processi
+title: Rapporti predefiniti in Rapporti sui processi
 description: Eseguire una query per AEM Forms sui dati del processo JEE per creare rapporti su processi con tempi di esecuzione lunghi, durata del processo e volume del flusso di lavoro
 content-type: reference
 topic-tags: process-reporting
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3bf65798-a8ce-4864-9d77-952bb8d8da43
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 0%
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
-# Rapporti predefiniti nella generazione di rapporti sui processi {#pre-defined-reports-in-process-reporting}
+# Rapporti predefiniti in Rapporti sui processi {#pre-defined-reports-in-process-reporting}
 
 ## Rapporti predefiniti nella generazione di rapporti {#pre-defined-reports-in-process-reporting-1}
 

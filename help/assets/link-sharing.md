@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: ac7ff784-d331-4437-940f-9ea3ce122f8b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1043'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] consente di condividere risorse, cartelle e raccolte come URL con i membri dell&#39;organizzazione ed entità esterne, inclusi partner e fornitori. La condivisione delle risorse tramite un collegamento è un modo pratico per rendere le risorse disponibili alle parti esterne senza dover prima accedere a [!DNL Assets].

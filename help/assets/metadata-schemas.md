@@ -7,10 +7,10 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: bf5c2dff-db68-4e82-8217-ff35069dcb81
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 7%
+source-wordcount: '3651'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le organizzazioni propongono un modello di metadati che migliora l’individuazione delle risorse, l’utilizzo, l’interoperabilità e così via. L’applicazione corretta dei metadati è indispensabile per mantenere i flussi di lavoro e i processi basati sui metadati. Per rispettare la strategia e gli standard per i metadati a livello di organizzazione, puoi utilizzare schemi di metadati che consentono agli utenti DAM di allinearsi. [!DNL Adobe Experience Manager] consente di creare, gestire e applicare schemi di metadati in modo semplice e flessibile.
@@ -380,5 +380,6 @@ Puoi definire campi obbligatori a livello di cartella, che vengono applicati all
    >
    >I controlli di convalida dei metadati richiedono molte risorse e possono influire sulle prestazioni del sistema. Pianificare i controlli di conseguenza. Se il server non è in grado di gestire il carico, provare a disattivare il processo.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

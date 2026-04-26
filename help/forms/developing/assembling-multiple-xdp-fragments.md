@@ -13,10 +13,10 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 2ba6faf9-7b30-42b1-854b-9fada1e12a4a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 0%
+source-wordcount: '1886'
+ht-degree: 1%
 
 ---
 
@@ -208,7 +208,7 @@ Assembla più frammenti XDP utilizzando l’API del servizio Assembler (Java):
 
 [Assemblaggio di più frammenti XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 [Guida rapida (modalità SOAP): assemblaggio di più frammenti XDP tramite l&#39;API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Inclusi i file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Assemblare più frammenti XDP utilizzando l’API del servizio web {#assemble-multiple-xdp-fragments-using-the-web-service-api}

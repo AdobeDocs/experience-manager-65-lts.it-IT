@@ -11,9 +11,9 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: c6e007e9-6050-4d86-a32e-0bd942d48f27
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7942'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **Informazioni su Generate PDF Service**
 
-Il servizio Generate PDF converte i formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
+Il servizio Generate PDF converte i formati di file nativi in PDF. Converte inoltre i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
 
 Il servizio Genera PDF utilizza applicazioni native per convertire in PDF i seguenti formati di file. Salvo diversa indicazione, sono supportate solo le versioni in tedesco, francese, inglese e giapponese di queste applicazioni. *Solo Windows* indica il supporto solo per Windows Server® 2003 e Windows Server 2008.
 
@@ -211,7 +211,7 @@ Convertire un documento di Microsoft Word in un documento di PDF utilizzando l&#
 1. Creare un client Generate PDF.
 
    * Creare un oggetto `GeneratePDFServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
+   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `GeneratePDFServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -368,7 +368,7 @@ Convertire contenuti HTML in un documento PDF utilizzando Genera API PDF (serviz
 1. Creare un client Generate PDF.
 
    * Creare un oggetto `GeneratePDFServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
+   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `GeneratePDFServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -519,7 +519,7 @@ Convertire un documento PDF in un file RTF utilizzando l&#39;API Genera PDF (ser
 1. Creare un client Generate PDf.
 
    * Creare un oggetto `GeneratePDFServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
+   * Creare un oggetto `GeneratePDFServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `GeneratePDFServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -628,12 +628,12 @@ In questa tabella sono elencati i tipi di informazioni utilizzati per la stampa 
   </tr>
   <tr>
    <td><p>Istruzioni della finestra di dialogo specifiche dell'applicazione</p></td>
-   <td><p>Specifica come rispondere alle finestre di dialogo specifiche dell'applicazione. </p><p>Il file che contiene queste informazioni è valido.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (ad esempio, appmon.word.en_US.xml).</p></td>
+   <td><p>Specifica come rispondere alle finestre di dialogo specifiche dell'applicazione. </p><p>Il file che contiene queste informazioni è appmon.<i>`[appname]`</i>.dialog.<i>`[locale]`</i>.xml (ad esempio, appmon.word.en_US.xml).</p></td>
    <td><p>Non modificare questo file. </p><p>Per aggiungere istruzioni di finestra di dialogo per una nuova applicazione nativa, vedere <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Creazione o modifica di un file XML di finestra di dialogo aggiuntivo per un'applicazione nativa</a>.</p></td>
   </tr>
   <tr>
    <td><p>Istruzioni aggiuntive della finestra di dialogo specifiche per l'applicazione </p></td>
-   <td><p>Specifica le sostituzioni e le aggiunte alle istruzioni della finestra di dialogo specifiche dell'applicazione. La sezione presenta un esempio di tali informazioni. </p><p>Il file che contiene queste informazioni è valido.<i>`[appname]`</i>.add.<i>`[locale]`</i>.xml. Un esempio è appmon.add.en_US.xml.</p></td>
+   <td><p>Specifica le sostituzioni e le aggiunte alle istruzioni della finestra di dialogo specifiche dell'applicazione. La sezione presenta un esempio di tali informazioni. </p><p>Il file che contiene queste informazioni è appmon.<i>`[appname]`</i>.add.<i>`[locale]`</i>.xml. Un esempio è appmon.add.en_US.xml.</p></td>
    <td><p>È possibile creare e modificare file di questo tipo utilizzando un'applicazione di modifica XML. (Vedi <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Creazione o modifica di un ulteriore file XML di finestra di dialogo per un'applicazione nativa</a>.) </p><p><strong>Importante</strong>: creare istruzioni aggiuntive per la finestra di dialogo specifiche dell'applicazione per ogni applicazione nativa supportata dal server. </p></td>
   </tr>
  </tbody>
@@ -685,7 +685,7 @@ Un file XML di *finestra di dialogo* specifica il modo in cui il servizio Genera
 
 Quando il sistema o l&#39;applicazione nativa visualizza una finestra di dialogo non gestita dal file XML di script in esecuzione, il servizio Genera PDF esegue la ricerca nei file XML di dialogo in questo ordine, interrompendo la ricerca quando viene trovata una corrispondenza:
 
-* appmon.`[appname]`.aggiuntivo.`[locale]`.xml
+* appmon.`[appname]`.additional.`[locale]`.xml
 * appmon.`[appname]`.`[locale]`.xml (Non modificare il file).
 * appmon.global.`[locale]`.xml (Non modificare il file).
 

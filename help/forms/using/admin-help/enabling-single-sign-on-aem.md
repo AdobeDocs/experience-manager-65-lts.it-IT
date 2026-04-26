@@ -1,5 +1,5 @@
 ---
-title: Abilitazione del single sign-on in AEM forms
+title: Abilitazione del single sign-on nei moduli AEM
 description: Scopri come abilitare il single sign-on (SSO) utilizzando le intestazioni HTTP e SPNEGO.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ba02f9b1-209e-42f2-b1df-2ed64fc9fdbc
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 0%
+source-wordcount: '1739'
+ht-degree: 3%
 
 ---
 
-# Abilitazione del single sign-on in AEM forms{#enabling-single-sign-on-in-aem-forms}
+# Abilitazione del single sign-on nei moduli AEM{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
@@ -38,7 +38,7 @@ Se AEM Forms non è in grado di autenticare un utente utilizzando uno di questi 
 
 È possibile utilizzare la pagina Configurazione portale per abilitare il Single Sign-On (SSO) tra le applicazioni e qualsiasi applicazione che supporti la trasmissione dell&#39;identità tramite un&#39;intestazione HTTP. Quando l’SSO viene implementato, le pagine di accesso dell’utente di AEM Forms non sono necessarie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 
-È inoltre possibile abilitare SSO utilizzando SPNEGO. (Vedi [Abilitare l&#39;SSO tramite SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
+È inoltre possibile abilitare SSO utilizzando SPNEGO. Consulta [Abilitare SSO tramite SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
 1. Nella console di amministrazione, fai clic su Impostazioni > Gestione utente > Configurazione > Configura attributi del portale.
 1. Selezionare Sì per abilitare l&#39;SSO. Se si seleziona No, le altre impostazioni della pagina non sono disponibili.
@@ -77,7 +77,7 @@ Puoi anche abilitare il SSO utilizzando le intestazioni HTTP. (Vedi [Abilitare S
 >AEM Forms su JEE non supporta la configurazione del SSO utilizzando Kerberos/SPNEGO in più ambienti di dominio figlio.
 
 1. Decidi quale dominio utilizzare per abilitare l&#39;SSO. Il server AEM Forms e gli utenti devono far parte dello stesso dominio Windows o dominio trusted.
-1. In Active Directory, creare un utente che rappresenti il server AEM Forms. (Vedi [Creare un account utente](enabling-single-sign-on-aem.md#create-a-user-account).) Se stai configurando più domini per l&#39;utilizzo di SPNEGO, assicurati che le password di ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
+1. In Active Directory, creare un utente che rappresenti il server AEM Forms. (Vedi [Creare un account utente](enabling-single-sign-on-aem.md#create-a-user-account).) Se configuri più domini per l&#39;utilizzo di SPNEGO, assicurati che le password di ciascuno di questi utenti siano diverse. Se le password non sono diverse, SPNEGO SSO non funziona.
 1. Mappare il nome dell&#39;entità servizio. (Vedere [Mappare un nome principale di servizio (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configurare il controller di dominio. (Vedi [Impedisci errori di verifica integrità Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Aggiungere o modificare un dominio enterprise come descritto in [Aggiunta di domini](/help/forms/using/admin-help/adding-domains.md#adding-domains) o [Modifica e conversione di domini esistenti](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Quando si crea o si modifica il dominio enterprise, eseguire le operazioni seguenti:
@@ -87,12 +87,12 @@ Puoi anche abilitare il SSO utilizzando le intestazioni HTTP. (Vedi [Abilitare S
    * Aggiungere Kerberos come provider di autenticazione. Nella pagina Nuova o Modifica autenticazione per Kerberos specificare le informazioni seguenti:
 
       * **Provider autenticazione:** Kerberos
-      * **IP DNS:** indirizzo IP DNS del server in cui è in esecuzione AEM Forms. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` sulla riga di comando.
+      * **IP DNS:** l’indirizzo IP DNS del server in cui è in esecuzione AEM Forms. È possibile determinare questo indirizzo IP eseguendo `ipconfig/all` sulla riga di comando.
       * **Host KDC:** Nome host completo o indirizzo IP del server Active Directory utilizzato per l&#39;autenticazione
       * **Utente servizio:** il nome dell&#39;entità servizio (SPN) passato allo strumento KtPass. Nell&#39;esempio precedente, l&#39;utente del servizio è `HTTP/lcserver.um.lc.com`.
       * **Area di autenticazione servizio:** Nome di dominio per Active Directory. Nell&#39;esempio utilizzato in precedenza, il nome di dominio è `UM.LC.COM.`
       * **Password servizio:** Password dell&#39;utente del servizio. Nell&#39;esempio utilizzato in precedenza, la password del servizio è `password`.
-      * **Abilita SPNEGO:** Abilita l&#39;utilizzo di SPNEGO per Single Sign-On (SSO). Seleziona questa opzione.
+      * **Abilita SPNEGO:** abilita l’utilizzo di SPNEGO per SSO (single sign-on). Seleziona questa opzione.
 
 1. Configurare le impostazioni del browser client SPNEGO. (Vedi [Configurazione delle impostazioni del browser client SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
@@ -116,7 +116,7 @@ Puoi anche abilitare il SSO utilizzando le intestazioni HTTP. (Vedi [Abilitare S
 
    `ktpass -princ HTTP/`*host* `@`*AREA DI AUTENTICAZIONE* `-mapuser`*utente*
 
-   Digitare ad esempio il testo seguente:
+   Digita, ad esempio, il testo seguente:
 
    `ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo`
 

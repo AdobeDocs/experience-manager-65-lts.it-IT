@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 2e8b73eb-7070-4b7b-b14b-bfcca6175afb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 0%
+source-wordcount: '2784'
+ht-degree: 1%
 
 ---
 
@@ -209,7 +209,7 @@ Importa i dati del modulo utilizzando l’API di integrazione dei dati del modul
 1. Creare un client del servizio di integrazione dei dati del modulo.
 
    * Creare un oggetto `FormDataIntegrationClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `FormDataIntegrationClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
+   * Creare un oggetto `FormDataIntegrationClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `FormDataIntegrationClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -367,7 +367,7 @@ Esporta i dati del modulo utilizzando l’API di integrazione dei dati del modul
 1. Creare un client del servizio di integrazione dei dati del modulo.
 
    * Creare un oggetto `FormDataIntegrationClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `FormDataIntegrationClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
+   * Creare un oggetto `FormDataIntegrationClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `FormDataIntegrationClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:

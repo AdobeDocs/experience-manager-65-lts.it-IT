@@ -1,5 +1,5 @@
 ---
-title: Editor di regole per moduli adattivi
+title: Editor di regole dei moduli adattivi
 description: L’editor di regole per moduli adattivi consente di aggiungere un comportamento dinamico e di creare una logica complessa nei moduli senza codificare o creare script.
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,14 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2c0a5185-7759-447a-b4c6-36feaa4a23d3
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '6615'
-ht-degree: 1%
+source-wordcount: '6822'
+ht-degree: 2%
 
 ---
 
-# Editor di regole per moduli adattivi{#adaptive-forms-rule-editor}
+# Editor di regole dei moduli adattivi{#adaptive-forms-rule-editor}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -24,14 +24,15 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html).
 
 ## Panoramica {#overview}
 
 La funzione editor di regole di Adobe Experience Manager Forms consente agli utenti aziendali e agli sviluppatori di Forms di scrivere regole su oggetti modulo adattivi. Queste regole definiscono le azioni da attivare sugli oggetti modulo in base a condizioni preimpostate, input dell&#39;utente e azioni dell&#39;utente sul modulo. Consente di semplificare ulteriormente l’esperienza di compilazione dei moduli, garantendo precisione e velocità.
 
 L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata per scrivere regole. L’editor di regole offre un editor visivo per tutti gli utenti. Inoltre, solo per gli utenti esperti di Forms, l’editor di regole fornisce un editor di codice per scrivere regole e script.
-<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
+<!--
+Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -39,7 +40,8 @@ L’editor di regole fornisce un’interfaccia utente intuitiva e semplificata p
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object -->
+* Set property of an object
+-->
 
 L’editor di regole sostituisce le funzionalità di script in AEM 6.1 Forms e nelle versioni precedenti. Tuttavia, gli script esistenti vengono mantenuti nel nuovo editor di regole. Per ulteriori informazioni sull&#39;utilizzo degli script esistenti nell&#39;editor di regole, vedere [Impatto dell&#39;editor di regole sugli script esistenti](#impact-of-rule-editor-on-existing-scripts).
 
@@ -104,7 +106,7 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 
 L’editor di regole fornisce un set di tipi di regole predefiniti che è possibile utilizzare per scrivere regole. Esaminiamo in dettaglio ogni tipo di regola. Per ulteriori informazioni sulla scrittura di regole nell&#39;editor di regole, vedere [Scrivi regole](#write-rules).
 
-### Quando   {#whenruletype}
+### Quando {#whenruletype}
 
 Il tipo di regola **When** segue il costrutto della regola **condition-action-alternate action** oppure, a volte, solo il costrutto **condition-action**. In questo tipo di regola si specifica innanzitutto una condizione per la valutazione seguita da un&#39;azione da attivare se la condizione viene soddisfatta ( `True`). Durante l&#39;utilizzo del tipo di regola When, è possibile utilizzare più operatori AND e OR per creare [espressioni nidificate](#nestedexpressions).
 

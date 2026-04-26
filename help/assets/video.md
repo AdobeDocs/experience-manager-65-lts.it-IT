@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5dc734b3-22e3-4839-bc72-b96fa6dd8bd2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10480'
+source-wordcount: '10812'
 ht-degree: 2%
 
 ---
@@ -57,8 +57,8 @@ La seguente descrizione dettagliata del flusso di lavoro è stata progettata per
 
    * Organizzare, sfogliare e cercare risorse video
 
-      * [Organizza risorse digitali](/help/assets/organize-assets.md)
-Ulteriori informazioni su [Best practice per organizzare le risorse digitali per l&#39;utilizzo dei profili di elaborazione](organize-assets.md)
+      * [Organizzare risorse digitali](/help/assets/organize-assets.md)
+Ulteriori informazioni su [Best practice per organizzare le risorse digitali per utilizzare i profili di elaborazione](organize-assets.md)
 
       * [Cerca risorse video](search-assets.md#custompredicates) o [Cerca risorse](/help/assets/search-assets.md)
 
@@ -140,7 +140,7 @@ Per la gestione di un singolo video e di set di video adattivi, sono supportati 
 * Organizza, sfoglia e cerca video con supporto completo per i metadati, per una gestione efficiente delle risorse video.
 * Distribuisci set video adattivi sul Web e su desktop e dispositivi mobili, inclusi iPhone, iPad, Android™, BlackBerry® e Windows Phone.
 
-Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+Lo streaming video adattivo è supportato su varie piattaforme iOS. Consulta la [Guida di riferimento per i visualizzatori Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 Dynamic Media supporta la riproduzione di video per dispositivi mobili per video MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -156,7 +156,7 @@ Dynamic Media supporta la riproduzione di video per dispositivi mobili per video
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulta anche [Visualizzatori per Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizzatori per risorse di Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Best practice: utilizzo del visualizzatore video HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -174,7 +174,7 @@ Combinando in un singolo lettore quanto segue:
 
 È possibile estendere la portata dei contenuti rich media agli utenti desktop e mobili e garantire un&#39;esperienza video semplificata.
 
-Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Vedi anche [Informazioni sui visualizzatori HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Riproduzione di video su computer desktop e dispositivi mobili mediante il visualizzatore video HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -258,7 +258,7 @@ La tabella seguente descrive il dispositivo, il browser e il metodo di riproduzi
   <tr>
    <td>Dispositivo mobile</td>
    <td>Blackberry®</td>
-   <td>Streaming bitrate adattivo DASH* o HLS./td&gt;
+   <td>DASH* o streaming bitrate adattivo HLS./td&gt;
   </tr>
  </tbody>
 </table>
@@ -277,11 +277,13 @@ L’immagine seguente mostra il flusso di lavoro complessivo per l’authoring d
 
 Se hai attivato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **Codifica video elementi multimediali dinamici** ti consente di eseguire la codifica dei video. Questo flusso di lavoro acquisisce la cronologia del processo del flusso di lavoro e le informazioni di errore. Se hai attivato Dynamic Media e hai impostato Cloud Services per i video, il flusso di lavoro **[!UICONTROL Codifica video elementi multimediali dinamici]** viene applicato automaticamente al momento di caricare un video. Se non utilizzi Dynamic Media, viene applicato il flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**.
 
-<!-- DEAD The following are best-practice tips for encoding source video files.
+<!--
+DEAD The following are best-practice tips for encoding source video files.
 
 For advice about video encoding, see [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en).
 
-* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en). -->
+* [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
+-->
 
 ### File video Source {#source-video-files}
 
@@ -379,12 +381,12 @@ Quando scegli (o crei) un predefinito di codifica video per il file video sorgen
 
 | Risoluzione | Altezza (pixel) | Dimensioni dello schermo |
 |--- |--- |--- |
-| 240P | 240 | Schermo piccolo |
-| 300P | 300 | Schermo piccolo in genere per dispositivi mobili |
-| 360P | 360 | Schermo piccolo |
-| 480P | 480 | Schermata Medium |
-| 720P | 720 | Schermo grande |
-| 1080P | 1080 | Schermo ad alta definizione di grandi dimensioni |
+| 240p | 240 | Schermo piccolo |
+| 300p | 300 | Schermo piccolo in genere per dispositivi mobili |
+| 360p | 360 | Schermo piccolo |
+| 480p | 480 | Schermata Medium |
+| 720p | 720 | Schermo grande |
+| 1080p | 1080 | Schermo ad alta definizione di grandi dimensioni |
 
 La risoluzione video in ingresso massima supportata è 16.384 × 16.384. La risoluzione massima di codifica video in uscita è 8.192 × 4.320 o 4.320 × 8.192.
 
@@ -464,7 +466,7 @@ Specificare l&#39;intervallo di date iniziale e finale per il quale si desidera 
 
 Se utilizzi un visualizzatore video predefinito fornito da Dynamic Media, o se hai creato un predefinito visualizzatore personalizzato basato su un visualizzatore video predefinito, non sono necessari passaggi aggiuntivi per visualizzare i rapporti video. Tuttavia, se hai creato un visualizzatore video personalizzato basato sull’API SDK del visualizzatore di HTML5, procedi come segue per assicurarti che il visualizzatore video invii eventi di tracciamento ai rapporti video Dynamic Media.
 
-Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
+Utilizza la [Guida di riferimento per i visualizzatori Dynamic Media di Adobe](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) e l&#39;API [HTML5 Viewer SDK](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) per creare visualizzatori video personalizzati.
 
 **Per visualizzare i report video basati su un visualizzatore video creato con il visualizzatore Dynamic Media HTML5 SDK:**
 
@@ -585,7 +587,7 @@ Le didascalie e i sottotitoli aggiunti sono supportati nei formati WebVTT e Adob
 
      | Metadati didascalia | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per ulteriori file di didascalia e tracce audio. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti relativi ai caratteri del nome file sono gli stessi di quelli di AEM Assets.<br>Impossibile utilizzare lo stesso nome file per i file di didascalia e di traccia audio aggiuntivi. |
      | Lingua | Selezionare la lingua della didascalia. |
      | Tipo | Selezionare il tipo di didascalia in uso.<br>**Sottotitolo**: il testo della didascalia visualizzato con il video che traduce o trascrive la finestra di dialogo.<br>**Didascalia** - Il testo della didascalia include i rumori di sottofondo, la differenziazione degli altoparlanti e altri dettagli rilevanti. Fornisce anche la traduzione o la trascrizione della finestra di dialogo. Tutti questi aspetti rendono il contenuto più accessibile alle persone non udenti o con problemi di udito. |
      | Etichetta | Testo visualizzato per il nome della didascalia nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che vede il cliente e corrisponde a un sottotitolo o a una traccia di didascalia. Ad esempio, `English (CC)`. |
@@ -599,7 +601,7 @@ Le didascalie e i sottotitoli aggiunti sono supportati nei formati WebVTT e Adob
 
      | Metadati traccia audio | Descrizione |
      |--- |--- |
-     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere per il nome file sono gli stessi di AEM Assets.<br>Impossibile utilizzare lo stesso nome di file per altri file di traccia audio o di didascalia. |
+     | Nome file | Il nome file predefinito è derivato dal nome file originale. Il nome del file può essere modificato solo durante il caricamento e non può essere modificato in un secondo momento. I requisiti di carattere del nome file sono gli stessi di quelli di AEM Assets.<br>Impossibile utilizzare lo stesso nome file per file di traccia audio o di didascalia aggiuntivi. |
      | Lingua | Selezionate la lingua della traccia audio. |
      | Tipo | Selezionate il tipo di traccia audio in uso.<br>**Originale** - La traccia audio originariamente allegata al video e rappresentata come `[Original]` nell&#39;etichetta con la lingua `English` selezionata per impostazione predefinita. Anche se è possibile modificare **[!UICONTROL Label]** e **[!UICONTROL Language]** nella finestra di dialogo **[!UICONTROL Modifica traccia audio]**, se il video principale viene rielaborato, per impostazione predefinita vengono utilizzati i valori originali.<br>**Standard** - Traccia audio aggiuntiva per una lingua diversa dall&#39;originale.<br>**Descrizione audio**: traccia audio che include anche una narrazione descrittiva delle azioni non verbali e dei gesti nel video, rendendo il contenuto più accessibile agli utenti ipovedenti. |
      | Etichetta | Testo visualizzato come nome della traccia audio nell&#39;elenco a comparsa **[!UICONTROL Seleziona audio o sottotitoli]** nel lettore multimediale. L’etichetta è ciò che il cliente vede e che corrisponde a una traccia audio. Ad esempio, `English [Original]`. L&#39;etichetta audio associata a un video è impostata su `[Original]` per impostazione predefinita. |
@@ -662,7 +664,7 @@ Puoi osservare lo stato del ciclo di vita di qualsiasi file di didascalia o trac
 | Elaborato | Al termine dell&#39;elaborazione, il file di didascalia o di traccia audio, o la traccia audio originale associata al video principale, viene visualizzato in stato &quot;Elaborato&quot;. Puoi visualizzare in anteprima i file di didascalia e di traccia audio che appaiono come &quot;Elaborati&quot; *prima* che il video venga pubblicato live. |
 | Pubblicato | Uno stato &quot;Pubblicato&quot; rappresenta uno stato simile a &quot;Pubblicato&quot; per un video principale. Le Assets vengono pubblicate quando il video principale viene pubblicato e sono disponibili sull’URL pubblico di Dynamic Media. |
 | Non riuscito | Lo stato &quot;Non riuscito&quot; indica che l&#39;elaborazione di un file di didascalia o di traccia audio non è stata completata. Elimina la didascalia o il file di traccia audio e caricalo di nuovo. |
-| La pagina di cui è stata annullata la pubblicazione   | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
+| La pagina di cui è stata annullata la pubblicazione | Quando si annulla esplicitamente la pubblicazione di un video principale pubblicato, vengono annullati anche i file di didascalia o di traccia audio aggiunti al video. |
 
 ![Colonna di stato evidenziata per i campi Sottotitoli e Tracce audio.](assets-dm/msma-lifecycle-status2.png)*Stato del ciclo di vita di ogni didascalia e file di traccia audio caricati.*
 
@@ -796,7 +798,7 @@ Vedi anche [Accessibilità in Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media converte i file di didascalia in formato JSON (JavaScript Object Notation). Questa conversione ti consente di incorporare il testo JSON in una pagina web come trascrizione nascosta ma completa del video. I motori di ricerca possono quindi scansionare e indicizzare il contenuto per rendere i video più facilmente individuabili e fornire ai clienti ulteriori dettagli sul contenuto video.
 
-Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/it/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
+Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vedere [Fornire contenuto statico (non immagine)](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api).
 
 **Per aggiungere sottotitoli codificati a un video:**
 
@@ -808,19 +810,21 @@ Per ulteriori informazioni sull&#39;utilizzo della funzione JSON in un URL, vede
 
    Esistono molti siti web che offrono strumenti e servizi gratuiti e avanzati che puoi utilizzare per creare file di sottotitoli/didascalie WebVTT al di fuori di Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
-   <!--[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   <!--
+[WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
+Per ottenere risultati ottimali, utilizzare lo strumento in Internet Explorer 9 o versioni successive, Google Chrome o Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
+Nello strumento, incolla l&#39;URL copiato del file video nel campo **[!UICONTROL Inserisci URL del file video]**, quindi fai clic su **[!UICONTROL Carica]**. Vedi [Ottieni un URL per una risorsa](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) per ottenere l&#39;URL del file video stesso, che potrai incollare nel campo **[!UICONTROL Immetti URL del file video]**. A questo punto, Internet Explorer, Chrome o Safari possono riprodurre il video in modalità nativa.
+-->
 
-   Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con l&#39;estensione `.vtt`.
+Seguire le istruzioni visualizzate da un sito per creare e salvare il file WebVTT. Al termine, copiare il contenuto del file di didascalia e incollarlo in un editor di testo normale e salvarlo con l&#39;estensione `.vtt`.
 
-   >[!NOTE]
-   >
-   >Per il supporto globale dei sottotitoli video in più lingue, lo standard WebVTT richiede la creazione di `.vtt` file e chiamate separati per ogni lingua che si desidera supportare.
+>[!NOTE]
+>
+>Per il supporto globale dei sottotitoli video in più lingue, lo standard WebVTT richiede la creazione di `.vtt` file e chiamate separati per ogni lingua che si desidera supportare.
 
-   In genere, si desidera assegnare al file di didascalia `.vtt` lo stesso nome del file video e aggiungerlo alle impostazioni locali della lingua, ad esempio -EN, -FR o -DE. In questo modo, è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
+In genere, si desidera assegnare al file di didascalia `.vtt` lo stesso nome del file video e aggiungerlo alle impostazioni locali della lingua, ad esempio -EN, -FR o -DE. In questo modo, è possibile automatizzare la generazione degli URL video utilizzando il sistema di gestione dei contenuti web esistente.
 
 1. In Experience Manager, carica il file di didascalia WebVTT in DAM.
 1. Passa alla *risorsa video pubblicata* che vuoi associare al file di didascalia caricato.

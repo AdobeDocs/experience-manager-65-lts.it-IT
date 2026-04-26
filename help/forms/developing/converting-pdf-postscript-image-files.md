@@ -1,5 +1,5 @@
 ---
-title: Conversione di PDF in file Postscript e Image
+title: Conversione di PDF in file PostScript e immagine
 description: Utilizza il servizio Convert PDF per convertire i documenti PDF in PostScript e in diversi formati di immagine (JPEG, JPEG 2000, PNG e TIFF) utilizzando l’API Java e l’API Web Service.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 509b9e53-9af4-4916-afba-2db358ec0764
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2774'
-ht-degree: 0%
+source-wordcount: '2820'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **Informazioni sulla conversione del servizio PDF**
 
-Il servizio Convert PDF converte i documenti PDF in PostScript e in diversi formati di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di content management che non supportano documenti PDF.
+Il servizio Convert PDF converte i documenti PDF in PostScript e in diversi formati di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa basata su server non monitorato su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di content management che non supportano documenti PDF.
 
 Puoi eseguire queste attività utilizzando il servizio Convert PDF:
 
@@ -162,7 +162,7 @@ Convertire un documento di PDF in PostScript utilizzando l’API del servizio PD
 1. Creare un client Convert PDF.
 
    * Creare un oggetto `ConvertPdfServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `ConvertPdfServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
+   * Creare un oggetto `ConvertPdfServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `ConvertPdfServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -323,7 +323,7 @@ Convertire un documento PDF in un formato immagine utilizzando l’API del servi
 1. Creare un client PDF di conversione.
 
    * Creare un oggetto `ConvertPdfServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `ConvertPdfServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
+   * Creare un oggetto `ConvertPdfServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Tuttavia, specificare `?blob=mtom`.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `ConvertPdfServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:

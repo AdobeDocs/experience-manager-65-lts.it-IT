@@ -6,10 +6,10 @@ role: Developer
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: c1f80437-275a-48b6-99b9-bec070577da0
-source-git-commit: e799e9c99a12cad108ae2c035797e5887a2f4ef1
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 22%
+source-wordcount: '2064'
+ht-degree: 23%
 
 ---
 
@@ -45,7 +45,7 @@ Scopri il supporto per i frammenti di contenuto nell’API HTTP di Assets, un el
 
 L&#39;[API REST di Assets](/help/assets/mac-api-assets.md) consente agli sviluppatori di Adobe Experience Manager di accedere ai contenuti (memorizzati in AEM) direttamente tramite l&#39;API HTTP, mediante operazioni CRUD (Create, Read, Update, Delete).
 
-L’API consente di utilizzare Adobe Experience Manager come CMS (Content Management System) headless fornendo servizi di contenuti a un’applicazione front-end JavaScript. Oppure qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
+L’API consente di utilizzare Adobe Experience Manager come CMS (Content Management System) headless fornendo servizi di contenuti a un’applicazione front-end JavaScript. O qualsiasi altra applicazione in grado di eseguire richieste HTTP e gestire risposte JSON.
 
 Ad esempio, le applicazioni a pagina singola (SPA), basate su framework o personalizzate, richiedono contenuti forniti tramite l’API HTTP, spesso in formato JSON.
 
@@ -162,8 +162,8 @@ Se l’API REST di Assets viene utilizzata in un ambiente senza requisiti di aut
 >
 >Per ulteriori informazioni, consulta:
 >
->* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=it)
->* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=it)
+>* [Spiegazione di CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video: sviluppo per CORS con AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 Negli ambienti con requisiti di autenticazione specifici, si consiglia OAuth.
@@ -394,7 +394,7 @@ Restituito quando:
 
 Consulta qui per riferimenti API dettagliati:
 
-* [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Frammenti di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
    * [Funzioni disponibili](/help/assets/mac-api-assets.md#assets)
@@ -404,4 +404,4 @@ Consulta qui per riferimenti API dettagliati:
 Per ulteriori informazioni, consulta:
 
 * [Documentazione API HTTP di Assets](/help/assets/mac-api-assets.md)
-* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/it/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessione AEM Gem: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

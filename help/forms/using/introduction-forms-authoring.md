@@ -9,10 +9,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3151'
-ht-degree: 54%
+source-wordcount: '3215'
+ht-degree: 52%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 54%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html).
 
 
 ## Panoramica {#overview}
@@ -32,11 +32,11 @@ I moduli adattivi consentono di creare moduli coinvolgenti, reattivi, dinamici e
 * **Utilizzo di un modello dati modulo**
   [Integrazione dati](../../forms/using/data-integration.md) consente di integrare entità e servizi da diverse origini dati in un modello dati modulo che può essere utilizzato per creare moduli adattivi. Scegli il modello dati del modulo se il modulo adattivo che stai creando richiede il recupero e la scrittura di dati da e verso più origini dati.
 
-* **Utilizzo di un modello per moduli XDP**
-Si tratta di un modello per moduli ideale per gli investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
+* **Utilizzo di un modello di modulo XDP**
+È un modello di modulo ideale se disponi di investimenti in moduli basati su XFA o XDP. Fornisce un modo diretto per convertire i moduli basati su XFA in moduli adattivi. Eventuali regole XFA esistenti vengono mantenute nei moduli adattivi associati. I moduli adattivi risultanti supportano i costrutti XFA, ad esempio convalide, eventi, proprietà e modelli.
 
 * **Utilizzo di una definizione di schema XML (XSD) o di uno schema JSON**
-Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end della tua organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
+Gli schemi XML e JSON rappresentano la struttura in cui i dati vengono prodotti o utilizzati dal sistema back-end dell’organizzazione. È possibile associare lo schema a un modulo adattivo e utilizzarne gli elementi per aggiungere contenuto dinamico al modulo adattivo. Gli elementi dello schema saranno disponibili per l’utilizzo nella scheda Oggetti modello dati del browser Contenuto durante l’authoring di moduli adattivi.
 
 * **Utilizzo di nessuno o senza un modello di modulo**
 I moduli adattivi creati con questa opzione non utilizzano alcun modello di modulo. I dati XML generati da tali moduli hanno una struttura piatta con campi e valori corrispondenti.
@@ -75,9 +75,11 @@ La barra laterale consente di:
 
 **A.** Browser dei contenuti **B.** Browser delle proprietà **C.** Browser delle risorse **D.** Browser delle componenti
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 La barra laterale comprende i seguenti browser:
 
@@ -89,7 +91,7 @@ Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un compo
 
    * **Oggetti modello dati**
 Consente di visualizzare la gerarchia del modello di modulo.
-Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti del modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
+Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
 
 * **Browser proprietà**
 
@@ -121,7 +123,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Aggiunge la convalida CAPTCHA tramite il servizio Google reCAPTCHA. Per informazioni dettagliate, consulta <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Utilizzo del CAPTCHA nei moduli adattivi</a>.</td>
+   <td>Aggiunge la convalida CAPTCHA utilizzando il servizio Google reCAPTCHA. Per informazioni dettagliate, consulta <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Utilizzo del CAPTCHA nei moduli adattivi</a>.</td>
   </tr>
   <tr>
    <td>Grafico</td>
@@ -153,11 +155,11 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Aggiunge un campo per acquisire l’indirizzo e-mail. Il componente E-mail, per impostazione predefinita, convalida gli indirizzi e-mail utilizzando la seguente espressione regolare.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenente nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenenti nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Elenco allegato file</td>
@@ -193,7 +195,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Pannello</td>
-   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello</code>  pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
+   <td><p>Aggiunge un pannello o un sottopannello.</p> <p>Puoi anche aggiungere un componente pannello dalla barra degli strumenti del pannello principale utilizzando il pulsante <span class="uicontrol">Aggiungi pannello</code> pulsante. Allo stesso modo, puoi aggiungere una barra degli strumenti specifica per il pannello utilizzando il pulsante <span class="uicontrol">Aggiungi barra degli strumenti del</code> pulsante. È possibile configurare la posizione della barra degli strumenti del pannello utilizzando la finestra di dialogo Modifica pannello.</p> </td>
   </tr>
   <tr>
    <td>Casella password</td>

@@ -1,5 +1,5 @@
 ---
-title: Avvio rapido API servizio archivio
+title: Avvio rapido di API per il servizio di archivio
 description: Utilizza il servizio AEM Forms Repository per creare una cartella, scrivere una risorsa, elencarla, leggere una risorsa, aggiornarla, cercare risorse, creare relazioni tra le risorse, bloccare una risorsa, gestire gli elenchi di controllo di accesso ed eliminare una risorsa.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 63bf92c4-c70f-47d1-9ddf-9a32de4d49bf
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 0%
+source-wordcount: '648'
+ht-degree: 2%
 
 ---
 
-# Avvio rapido API servizio archivio {#repository-service-api-quick-starts}
+# Avvio rapido di API per il servizio di archivio {#repository-service-api-quick-starts}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -62,7 +62,7 @@ Il percorso di una risorsa nell’archivio AEM Forms è:
 
 >[!NOTE]
 >
->Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65_it).
+>Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

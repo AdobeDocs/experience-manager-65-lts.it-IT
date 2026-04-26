@@ -1,5 +1,5 @@
 ---
-title: Assemblaggio di documenti mediante la numerazione Bates
+title: Assemblaggio di documenti utilizzando la numerazione Bates
 description: Utilizza la numerazione Bates per assemblare documenti PDF utilizzando l’API Java e Web Service.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: 310d0566-673a-4b78-9f0d-86f56c495105
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 0%
+source-wordcount: '1934'
+ht-degree: 1%
 
 ---
 
-# Assemblaggio di documenti mediante la numerazione Bates {#assembling-documents-using-bates-numbering}
+# Assemblaggio di documenti utilizzando la numerazione Bates {#assembling-documents-using-bates-numbering}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 

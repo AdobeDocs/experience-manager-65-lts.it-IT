@@ -8,10 +8,10 @@ hidefromtoc: true
 feature: Adaptive Forms,AEM Forms on OSGi
 role: User, Developer
 exl-id: d0f54236-5dc2-4c64-87c5-85e5e85e8cf7
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '933'
-ht-degree: 20%
+source-wordcount: '959'
+ht-degree: 24%
 
 ---
 
@@ -168,7 +168,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e i flussi di lavoro JEE pe
    <td>Supportato <sup>[2]</sup></td>
   </tr>
   <tr>
-   <td>Document Services</td>
+   <td>Servizi per documenti</td>
    <td>Supportato <sup>[3]</sup></td>
    <td>Supportato <sup>[3]</sup></td>
   </tr>
@@ -253,7 +253,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e i flussi di lavoro JEE pe
    <td>Supportato</td>
   </tr>
   <tr>
-   <td>Servizio assemblatore</td>
+   <td>Servizio Assembler</td>
    <td>Supportato</td>
    <td>Supportato</td>
   </tr>
@@ -293,7 +293,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e i flussi di lavoro JEE pe
    <td>Funzione supportata</td>
   </tr>
   <tr>
-   <td>Reporting processi</td>
+   <td>Rapporti sui processi</td>
    <td>Non supportato</td>
    <td>Funzione supportata</td>
   </tr>
@@ -392,7 +392,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e i flussi di lavoro JEE pe
 
 1. Per firmare un modulo adattivo compilato, puoi utilizzare i flussi di lavoro AEM incentrati sui moduli su OSGi. I flussi di lavoro AEM incentrati sui moduli su OSGi supportano la firma out-of-the-form. L&#39;esperienza di [firma in-form](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) non è supportata.
 
-1. Per eseguire e monitorare i flussi di lavoro basati su moduli su AEM Forms OSGi e HTML Workspace AEM Forms, è necessario accedere alla casella in entrata di AEM.
+1. Per eseguire e monitorare i flussi di lavoro basati su moduli su AEM Forms OSGi e HTML Workspace, è necessario accedere alla casella in entrata di AEM.
 1. I servizi documentali AEM Forms nativi sono disponibili per i flussi di lavoro AEM incentrati su moduli su OSGi e per i flussi di lavoro AEM Forms su JEE. AEM Workflow utilizza servizi di documenti nativi per flussi di lavoro AEM incentrati su moduli in flussi di lavoro OSGi e AEM Forms JEE (Process Management).
 1. I flussi di lavoro AEM Forms JEE possono eseguire il rendering solo di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
 1. I flussi di lavoro di AEM Forms JEE non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per AEM Forms. Per ulteriori dettagli, consulta la [documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
@@ -424,12 +424,12 @@ Nella tabella seguente sono elencate le funzionalità della casella in entrata d
   </tr>
   <tr>
    <td><p>Delega di attività</p> </td>
-   <td><p>Funzione supportata</p> </td>
+   <td><p>Supportato</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>
   <tr>
    <td><p>Tracciamento cronologia e riepilogo attività</p> </td>
-   <td><p>Funzione supportata</p> </td>
+   <td><p>Supportato</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>
   <tr>
@@ -449,7 +449,7 @@ Nella tabella seguente sono elencate le funzionalità della casella in entrata d
   </tr>
   <tr>
    <td><p>Visualizzazione del calendario</p> </td>
-   <td><p>Funzione supportata</p> </td>
+   <td><p>Supportato</p> </td>
    <td><p>Non supportato</p> </td>
   </tr>
   <tr>

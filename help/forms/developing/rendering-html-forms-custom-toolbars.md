@@ -1,5 +1,5 @@
 ---
-title: Rendering di HTML Forms con barre degli strumenti personalizzate
+title: Rendering di moduli HTML con barre degli strumenti personalizzate
 description: Utilizzare il servizio Forms per personalizzare una barra degli strumenti di cui è stato eseguito il rendering con un modulo HTML. È possibile eseguire il rendering di un HTML Form con una barra degli strumenti personalizzata utilizzando l’API Java e un’API di servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e4b02c17-dcd1-424b-9aee-579a8346b4d7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 0%
+source-wordcount: '2358'
+ht-degree: 1%
 
 ---
 
-# Rendering di HTML Forms con barre degli strumenti personalizzate {#rendering-html-forms-with-customtoolbars}
+# Rendering di moduli HTML con barre degli strumenti personalizzate {#rendering-html-forms-with-customtoolbars}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -201,11 +201,11 @@ Quando il servizio Forms esegue il rendering di un modulo di HTML, restituisce u
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering di Forms as HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 

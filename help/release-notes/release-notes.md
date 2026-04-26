@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 560d505465362d33f2864f13e9b75921b83ba5e4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
 source-wordcount: '7427'
 ht-degree: 13%
@@ -262,7 +262,8 @@ Assets Relate ora funziona per i nomi di file che includono spazi. La logica del
 <!-- #### [!DNL Dynamic Media] - Hybrid Mode {#assets-dm-hybrid-65-lts-sp2} -->
 
 <!--
-#### Forms Designer-->
+#### Forms Designer
+-->
 
 ### [!DNL Forms]{#forms-65-lts-sp2}
 
@@ -382,7 +383,8 @@ Queste configurazioni meno recenti utilizzano proprietà quali `whitelist.name` 
 <!--
 #### Security{#foundation-security-65-lts-sp2}
 
-AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311) -->
+AEM now prevents NullPointerException errors when a logged-in user lacks read access for some groups and opens the Groups tab. The tab now hides groups without access and renders group membership details without a blank or unresponsive UI. (NPR-43311)
+-->
 
 #### Sling{#foundation-sling-65-lts-sp2}
 
@@ -450,7 +452,7 @@ Vedi anche [Aggiornare la versione del file JAR di AEM Uber](/help/sites-deployi
 ### Aggiornamento {#upgrade}
 
 * Per informazioni dettagliate sulla procedura di aggiornamento, consulta la [documentazione relativa all’aggiornamento](/help/sites-deploying/upgrade.md).
-* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
+* Per istruzioni di aggiornamento dettagliate, consulta la [Guida all&#39;aggiornamento per AEM Forms 6.5 LTS SP1 su JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/upgrade-aem-forms/upgrade)
 
 #### Best practice per gli aggiornamenti del Service Pack di AEM 6.5 LTS
 
@@ -587,7 +589,7 @@ Gli utenti possono riscontrare un danneggiamento dell’archivio durante la comp
 
 Per risolvere il problema, installare l&#39;Hotfix da [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-65388-1.0.zip). Poiché l&#39;aggiornamento rapido include un bundle `oak-segment-tar` di basso livello, l&#39;istanza viene riavviata dopo l&#39;installazione.
 
-Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il file jar [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) `oak-run` corrispondente, disponibile anche in Software Distribution.
+Pianifica i tempi di inattività dell’istanza al momento della sua applicazione. Per la compattazione offline, utilizza il file jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar) [`oak-run` corrispondente, disponibile anche in Software Distribution.
 
 >[!NOTE]
 >
@@ -646,5 +648,5 @@ Nei seguenti documenti di testo sono elencati i bundle OSGi e i pacchetti di con
 Questi siti web sono disponibili solo per la clientela. Se fai parte della clientela e necessiti dell’accesso, contatta il responsabile dell’account Adobe.
 
 * [Download del prodotto da licensing.adobe.com](https://licensing.adobe.com/)
-* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/it/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
+* Contatta l’[Assistenza Clienti di Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience).
 

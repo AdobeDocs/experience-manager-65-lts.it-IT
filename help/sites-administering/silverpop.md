@@ -10,19 +10,21 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 1782ad8c-b514-4d41-86c9-59c60af46cde
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '605'
+ht-degree: 2%
 
 ---
 
 # Integrazione con Silverpop Engage{#integrating-with-silverpop-engage}
 
-<!-- THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
+<!--
+THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE ARE NO REDIRECTS FOR THE DOWNLOAD URL BELOW THAT IS 404.
 >[!NOTE]
 >
->Silverpop integration is **not** available out of the box. Download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
+>Silverpop integration is **not** available out of the box. Download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document.
+-->
 
 L’integrazione di AEM con Silverpop Engage consente di gestire e inviare e-mail create in AEM tramite Silverpop. Consente inoltre di utilizzare le funzioni di gestione dei lead di Silverpop tramite AEM Forms sulle pagine AEM.
 
@@ -48,9 +50,9 @@ Per creare una configurazione Silverpop in Cloud Services:
    >
    >Silverpop Engage non è disponibile come opzione nei servizi di terze parti, a meno che non si scarichi il pacchetto da Condivisione pacchetti.
 
-1. Inserisci un titolo e, facoltativamente, un nome e fai clic su **Crea**. Viene visualizzata la finestra di configurazione **&#x200B; Impostazioni Silverpop**.
+1. Inserisci un titolo e, facoltativamente, un nome e fai clic su **Crea**. Viene visualizzata la finestra di configurazione** Impostazioni Silverpop**.
 1. Immetti il nome utente e la password, quindi seleziona un endpoint API dall’elenco a discesa.
-1. Fare clic su **Connetti a Silverpop.** Una volta stabilita la connessione, verrà visualizzata una finestra di dialogo di successo. Fare clic su **OK** per uscire dalla finestra. Per passare a Silverpop, fare clic su **Vai a Silverpop Engage**.
+1. Fare clic su **Connetti a Silverpop.** Una volta stabilita la connessione, viene visualizzata una finestra di dialogo di successo. Fare clic su **OK** per uscire dalla finestra. Per passare a Silverpop, fare clic su **Vai a Silverpop Engage**.
 1. Silverpop configurato. Puoi modificare la configurazione facendo clic su **Modifica**.
 1. Inoltre, il framework Silverpop Engage può essere configurato per azioni personalizzate fornendo titolo e nome (facoltativo). Fare clic su Crea per creare il framework per la connessione Silverpop già configurata.
 
@@ -62,7 +64,7 @@ Per creare una configurazione Silverpop in Strumenti:
 
 1. In AEM, fai clic su **Strumenti** > **Distribuzione** > **Servizi cloud**. Oppure accedi direttamente a `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleziona **Strumenti**, quindi **Configurazioni servizi cloud,** e infine **Coinvolgimento Silverpop**.
-1. Fare clic su **Nuovo**.
+1. Fai clic su **Nuovo**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 

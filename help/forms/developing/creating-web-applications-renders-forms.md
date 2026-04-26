@@ -1,5 +1,5 @@
 ---
-title: Creazione di applicazioni Web per il rendering di Forms
+title: Creazione di applicazioni web per il rendering dei moduli
 description: Creare un’applicazione basata sul web che utilizza servlet Java per richiamare il servizio Forms ed eseguire il rendering dei moduli. Il servlet Java funge da collegamento tra il servizio Forms che restituisce un modulo e un browser web client.
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ feature: Adaptive Forms, Workbench, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071781e8-990d-4d01-b46e-be1c57bdbe3a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ I file di dati XML utilizzati dall&#39;applicazione Web sono stati spostati dall
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 

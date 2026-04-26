@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5870209f-9e0c-4e60-a083-e46edb707ae7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Le risorse digitali sono spesso associate a una licenza che specifica i termini e la durata di utilizzo. Poiché [!DNL Adobe Experience Manager Assets] è completamente integrato con la piattaforma [!DNL Experience Manager], è possibile gestire in modo efficiente le informazioni sulla scadenza delle risorse e gli stati delle risorse. È inoltre possibile associare le informazioni sulle licenze alle risorse.

@@ -9,22 +9,24 @@ role: User, Admin
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 195c097b-787a-44a2-aa4f-a9f8ccf93e3d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '429'
 ht-degree: 10%
 
 ---
 
 # Utilizzare Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primaria, il software genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di fornire risorse di marketing e merchandising visive avanzate su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primaria, il software genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
 
 Il software fornisce esperienze di visualizzazione interattive, tra cui zoom, 360 gradi rotazione e video. Integra in modo univoco i flussi di lavoro della soluzione Adobe Experience Manager di gestione delle risorse digitali (Assets) per semplificare e semplificare il processo di gestione delle campagne digitali.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## Operazioni possibili con il software {#what-you-can-do-with-dynamic-media}
 

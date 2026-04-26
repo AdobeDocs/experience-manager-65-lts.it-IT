@@ -1,5 +1,5 @@
 ---
-title: Determinare Se I Documenti Sono Conformi A PDF/A
+title: Determinazione se i documenti sono conformi PDF/A
 description: Utilizzare il servizio Assembler per determinare se un documento di PDF è conforme a PDF/A utilizzando l'API Java e l'API del servizio Web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: bda74b30-28c4-490f-86c3-9c6fce14d79d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2065'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 3%
 
 ---
 
-# Determinare Se I Documenti Sono Conformi A PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+# Determinazione se i documenti sono conformi PDF/A {#determining-whether-documents-are-pdf-a-compliant}
 
 È possibile determinare se un documento di PDF è conforme a PDF/A utilizzando il servizio Assembler. Un documento PDF/A esiste come formato di archiviazione destinato alla conservazione a lungo termine del contenuto del documento. I font vengono incorporati nel documento e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video.
 

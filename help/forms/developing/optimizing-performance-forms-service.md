@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 63ddfd09-17b5-48b4-b7ee-961f2bdd2ae2
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 0%
+source-wordcount: '1442'
+ht-degree: 2%
 
 ---
 
@@ -75,11 +75,11 @@ Dopo che il servizio Forms esegue il rendering di un modulo, restituisce un flus
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Rendering di Forms as HTML](/help/forms/developing/rendering-forms-html.md)
+[Rendering dei moduli come HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 

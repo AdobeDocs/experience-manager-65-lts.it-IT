@@ -8,9 +8,9 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '595'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Come parte del processo di authoring, Experience Manager supporta il caricamento, la consegna e l’anteprima interattiva di risorse 3D.

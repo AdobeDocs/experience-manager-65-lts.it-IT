@@ -7,23 +7,25 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 80a4e5c0-d68f-4591-a43d-ab75b5f0764c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
 # La generazione di PDF non riesce a stampare un numero elevato di PDF tramite WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Quando un cliente genera un numero elevato di PDF tramite servizi implementati tramite WorkBench. Errore del servizio a causa di memoria insufficiente. L’errore viene visualizzato come:
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Questo perché il numero massimo di pagine in una richiesta di stampa è limitato a circa 1000 pagine su Windows. Quando si genera un output di stampa, il modello e i dati devono essere caricati in memoria e il layout risultante deve essere incorporato nella memoria. Ciò significa che esistono limiti alla dimensione dell’output finale. Il processo che genera l&#39;output di stampa è un&#39;attività a 32 bit, ovvero è limitato a 2 GB di RAM in Windows <!--and 4 GB on UNIX-->.
 

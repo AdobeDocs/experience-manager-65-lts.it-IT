@@ -1,5 +1,5 @@
 ---
-title: Assemblaggio di portafogli PDF
+title: Assemblaggio di portfolio PDF
 description: Assemblate un portfolio PDF per combinare diversi documenti di vari tipi, tra cui file Word, file immagine e documenti PDF. Puoi assemblare un portfolio PDF utilizzando un’API Java e un’API di servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms, Document Services
 hide: true
 hidefromtoc: true
 exl-id: 43460ac1-a152-4a0d-943f-1b3ed007f089
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1815'
-ht-degree: 0%
+source-wordcount: '1842'
+ht-degree: 1%
 
 ---
 
-# Assemblaggio di portafogli PDF {#assembling-pdf-portfolios}
+# Assemblaggio di portfolio PDF {#assembling-pdf-portfolios}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 

@@ -1,5 +1,5 @@
 ---
-title: Aggiornamento del Forms di ricerca personalizzato
+title: Aggiornamento dei moduli di ricerca personalizzati
 description: Questo articolo descrive le modifiche necessarie dopo un aggiornamento per il funzionamento dei moduli di ricerca personalizzati.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9df608f8-cdd0-4820-aab1-eab9fd70f961
-source-git-commit: 547d7866346fb148cb66f546d8a2e1141f69f563
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
+source-wordcount: '1796'
+ht-degree: 3%
 
 ---
 
-# Aggiornamento del Forms di ricerca personalizzato{#upgrading-custom-search-forms}
+# Aggiornamento dei moduli di ricerca personalizzati{#upgrading-custom-search-forms}
 
 In AEM 6.2, la posizione in cui sono memorizzati i Forms di ricerca personalizzati nell’archivio è cambiata. Dopo l&#39;upgrade, vengono spostati dalla loro posizione in 6.1 in:
 

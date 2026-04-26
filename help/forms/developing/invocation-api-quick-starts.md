@@ -1,5 +1,5 @@
 ---
-title: Avvio rapido API di chiamata
+title: Avvio rapido di API per la chiamata
 description: Utilizza la Guida introduttiva per richiamare in modo programmatico i servizi AEM Forms.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 7e1b29b3-aaab-4e99-bf6e-1f085a71d293
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 3%
+source-wordcount: '1272'
+ht-degree: 4%
 
 ---
 
-# Avvio rapido API di chiamata {#invocation-api-quick-starts}
+# Avvio rapido di API per la chiamata {#invocation-api-quick-starts}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 

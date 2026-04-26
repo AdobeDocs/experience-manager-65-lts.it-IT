@@ -1,5 +1,5 @@
 ---
-title: Contenitore servizio
+title: Contenitore di servizio
 description: Servizi AEM Forms nel contenitore di servizi
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: fea20b34-2f66-460e-8b1c-4e55842bc789
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 0%
+source-wordcount: '933'
+ht-degree: 2%
 
 ---
 
-# Contenitore servizio {#service-container}
+# Contenitore di servizio {#service-container}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -92,7 +92,7 @@ Il contenitore di servizi fornisce le funzionalità seguenti:
 
 [Richiamare AEM Forms tramite l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Richiamare AEM Forms tramite servizi Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+[Richiamare AEM Forms tramite servizi web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
 [Richiamare processi a lunga durata incentrati sull&#39;uomo](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 

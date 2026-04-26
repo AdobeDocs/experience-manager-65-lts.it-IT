@@ -11,10 +11,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 387f917c-eae3-4326-88f4-3b77cb9e4d46
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 1%
+source-wordcount: '2382'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Il servizio DocConverter può convertire i documenti PDF in documenti PDA/A. Puo
 
 ## Conversione di documenti in documenti PDF/A {#converting-documents-to-pdf-a-documents}
 
-È possibile utilizzare il servizio DocConverter per convertire un documento PDF in un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font sono incorporati e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non contiene contenuti audio e video. Prima di convertire un documento PDF in un documento PDF/A, verificare che il documento PDF non sia un documento PDF/A.
+È possibile utilizzare il servizio DocConverter per convertire un documento PDF in un documento PDF/A. Poiché PDF/A è un formato di archiviazione per la conservazione a lungo termine del contenuto del documento, tutti i font sono incorporati e il file non è compresso. Di conseguenza, un documento PDF/A è generalmente più grande di un documento PDF standard. Inoltre, un documento PDF/A non include contenuti audio e video. Prima di convertire un documento PDF in un documento PDF/A, verificare che il documento PDF non sia un documento PDF/A.
 
 La specifica PDF/A-1 è costituita da due livelli di conformità, ovvero A e B. La differenza principale tra i due è relativa al supporto della struttura logica (accessibilità), che non è richiesto per il livello di conformità B. Indipendentemente dal livello di conformità, PDF/A-1 impone che tutti i font siano incorporati nel documento PDF/A generato. Al momento, nella convalida (e conversione) è supportato solo PDF/A-1b.
 

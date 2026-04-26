@@ -7,10 +7,10 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: e2b9b13b-c00c-4bfc-8512-84188e90c0ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '5466'
-ht-degree: 7%
+source-wordcount: '5596'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Il formato video è una parte fondamentale delle risorse digitali di un’organizzazione. [!DNL Adobe Experience Manager] offre offerte e funzionalità mature per gestire l&#39;intero ciclo di vita delle risorse video dopo la loro creazione.
@@ -44,7 +44,7 @@ Per impostazione predefinita, [!DNL Assets] non ti consente di caricare risorse 
 Oltre alla configurazione [!DNL Assets], modifica le seguenti configurazioni per caricare risorse di grandi dimensioni:
 
 * Aumenta il tempo di scadenza del token. Consulta [!UICONTROL Adobe Granite CSRF Servlet] nella console Web in `https://[aem_server]:[port]/system/console/configMgr`. Per ulteriori informazioni, vedere [Protezione CSRF](/help/sites-developing/csrf-protection.md).
-* Aumenta `receiveTimeout` nella configurazione Dispatcher. Per ulteriori informazioni, vedere [Configurazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#renders-options).
+* Aumenta `receiveTimeout` nella configurazione Dispatcher. Per ulteriori informazioni, vedere [Configurazione di Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
@@ -154,11 +154,11 @@ Per configurare le impostazioni di Google Cloud:
 
 1. Nella pagina **[!UICONTROL Aggiungi credenziali al progetto]**, passaggio 1, eseguire le operazioni seguenti:
 
-   * Da **[!UICONTROL Quale API si utilizza?Elenco a discesa]**, selezionare **[!UICONTROL YouTube Data API v3]**.
+   * Da **[!UICONTROL Quale API stai utilizzando?]** , selezionare **[!UICONTROL YouTube Data API v3]**.
 
-   * Da **[!UICONTROL Da dove stai chiamando l&#39;API?Elenco a discesa]**, selezionare **[!UICONTROL Server Web (ad esempio, node.js, Tomcat)]**
+   * Da **[!UICONTROL Da dove stai chiamando l&#39;API?]** , selezionare **[!UICONTROL Server Web (ad esempio, node.js, Tomcat)]**
 
-   * Da **[!UICONTROL A quali dati accedi?]**, selezionare **[!UICONTROL Dati utente]**.
+   * Da **[!UICONTROL A quali dati accedi?]** elenco a discesa, selezionare **[!UICONTROL Dati utente]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
@@ -439,7 +439,7 @@ Ora associ alle risorse video i tag aggiunti in precedenza. Questo processo cons
 1. Nell&#39;angolo superiore destro della pagina delle proprietà del video, fai clic su **[!UICONTROL Salva e chiudi]**.
 1. Sulla barra degli strumenti fare clic su **[!UICONTROL Pubblicazione rapida]**.
 
-   Vedi anche [Utilizzo di Gestione pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=it).
+   Vedi anche [Utilizzo di Gestione pubblicazioni con Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    Facoltativamente, puoi verificare il video pubblicato sul tuo canale YouTube.
 
@@ -522,7 +522,7 @@ Quando carichi un nuovo video in una cartella a cui è applicata la codifica vid
 
    >[!NOTE]
    >
-   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL ritardo tentativi]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
+   >Potrebbero essere necessari tempi lunghi per la registrazione dei messaggi di errore/guasto, a causa della presenza di più configurazioni di flusso di lavoro nei **[!UICONTROL nuovi tentativi]**, nel **[!UICONTROL nuovo ritardo]** e nel **[!UICONTROL timeout]** da [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), ad esempio:
    >
    >* Configurazione coda processi Apache Sling
    >* Gestore processo esterno flusso di lavoro di Adobe Granite

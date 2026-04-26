@@ -1,19 +1,19 @@
 ---
-title: Esecuzione di un aggiornamento sul posto
+title: Esecuzione di un aggiornamento diretto
 description: Scopri come eseguire un aggiornamento sul posto per AEM 6.5 LTS.
 topic-tags: upgrading
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c7351625-b29e-45a7-b966-e7c0f56d4f22
-source-git-commit: 57bf39aa914bddca05d526b46b581579965069d6
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 0%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
-# Esecuzione di un aggiornamento sul posto {#performing-an-in-place-upgrade}
+# Esecuzione di un aggiornamento diretto {#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
@@ -47,7 +47,8 @@ Prima di eseguire l’aggiornamento, è necessario completare diversi passaggi. 
 
 1. Se è necessario applicare il file sling.properties personalizzato, crea una nuova istanza AEM locale e recupera il file sling.properties dalla directory crx-quickstart/conf. Applica le modifiche personalizzate richieste a questo file, quindi copialo nella directory crx-quickstart/conf dell’istanza di AEM che viene aggiornata. Se non sono presenti proprietà personalizzate, questo passaggio può essere ignorato.
 
-<!-- Alexandru: drafting temporarily
+<!--
+Alexandru: drafting temporarily
 
 ## Content Repository Migration {#content-repository-migration}
 

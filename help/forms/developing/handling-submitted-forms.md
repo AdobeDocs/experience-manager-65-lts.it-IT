@@ -1,5 +1,5 @@
 ---
-title: Gestione dei Forms inviati
+title: Gestione dei moduli inviati
 description: Utilizza il servizio Forms per recuperare i dati inviati immessi in un modulo interattivo. L’utente può inviare i dati del modulo nei formati XML, PDF e URL UTF-16.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 31a10544-0be7-4ef7-ba0f-c37099d36bcb
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 0%
+source-wordcount: '2915'
+ht-degree: 1%
 
 ---
 
-# Gestione dei Forms inviati {#handling-submitted-forms}
+# Gestione dei moduli inviati {#handling-submitted-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -36,7 +36,7 @@ Nella tabella seguente vengono illustrati i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -84,7 +84,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -188,7 +188,7 @@ A seconda del tipo di contenuto dei dati inviati, è possibile estrarre singoli 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Servizio di integrazione dei dati dei moduli - Guida introduttiva JavaAPI (SOAP)
+title: Avvio rapido di API Java per il servizio di integrazione dei dati del modulo (SOAP)
 description: Utilizza il servizio Integrazione dati modulo per importare dati in un modulo PDF ed esportare dati da un modulo PDF utilizzando l’API Java.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 1f67fad6-263c-4ee4-9986-1b3df53e1a16
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
+source-wordcount: '251'
+ht-degree: 3%
 
 ---
 

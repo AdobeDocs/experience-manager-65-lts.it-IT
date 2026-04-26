@@ -1,5 +1,5 @@
 ---
-title: Esecuzione di operazioni di servizio tramite API
+title: Esecuzione di operazioni del servizio tramite API
 description: Sviluppa applicazioni client utilizzando le API di AEM Forms.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 28a47c2d-5f2d-49c1-8890-512e2873ec29
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Esecuzione di operazioni di servizio tramite API {#performing-service-operations-using-apis}
+# Esecuzione di operazioni del servizio tramite API {#performing-service-operations-using-apis}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 

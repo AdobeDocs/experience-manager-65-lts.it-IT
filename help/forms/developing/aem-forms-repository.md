@@ -11,10 +11,10 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4a911fe6-2939-4c8c-b486-7575c759857d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9036'
-ht-degree: 0%
+source-wordcount: '9089'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **Informazioni sul servizio archivio**
 
-Il servizio Archivio fornisce ad AEM Forms servizi di archiviazione e gestione delle risorse. Quando gli sviluppatori creano un&#39;applicazione *AEM Forms*, possono distribuire le risorse nell&#39;archivio anziché nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, tra cui moduli XML, PDF forms (inclusi i moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di test.
+Il servizio Archivio fornisce ad AEM Forms servizi di archiviazione e gestione delle risorse. Quando gli sviluppatori creano un&#39;applicazione *AEM Forms*, possono distribuire le risorse nell&#39;archivio anziché nel file system. Le risorse possono includere qualsiasi tipo di materiale collaterale, tra cui moduli XML, moduli PDF (inclusi i moduli Acrobat), frammenti di modulo, immagini, profili, criteri, file SWF, file DDX, schemi XML, file WSDL e dati di test.
 
 Consideriamo ad esempio la seguente applicazione Forms denominata *Applications/FormsApplication*:
 
@@ -34,7 +34,7 @@ In FormsFolder è presente un file denominato Loan.xdp. Per accedere a questa st
 
 >[!NOTE]
 >
->Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Per informazioni sulla creazione di un&#39;applicazione Forms tramite Workbench, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 Il percorso di una risorsa nell’archivio AEM Forms è:
 
@@ -125,7 +125,7 @@ Richiama il metodo del servizio Repository per scrivere la raccolta di risorse, 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Creare cartelle utilizzando l’API Java {#create-folders-using-the-java-api}
 
@@ -147,7 +147,7 @@ Crea una cartella utilizzando l’API del servizio Repository (Java):
 
    * Identificatore UUID `com.adobe.repository.infomodel.Id` da assegnare alla risorsa.
    * Identificatore UUID `com.adobe.repository.infomodel.Lid` da assegnare alla risorsa.
-   * `java.lang.String` contenente il nome della raccolta di risorse. Esempio: `FormsFolder`.
+   * `java.lang.String` contenente il nome della raccolta di risorse. Ad esempio, `FormsFolder`.
 
    Il metodo restituisce un oggetto `com.adobe.repository.infomodel.bean.ResourceCollection` che rappresenta la nuova cartella.
 
@@ -264,7 +264,7 @@ Richiama il metodo del servizio Archivio per scrivere la risorsa, specificando l
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Scrivere risorse utilizzando l’API Java {#write-resources-using-the-java-api}
 
@@ -409,7 +409,7 @@ Richiama il metodo del servizio Archivio per recuperare l’elenco delle risorse
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Elencare le risorse utilizzando l’API Java {#list-resources-using-the-java-api}
 
@@ -526,7 +526,7 @@ Richiama il metodo del servizio Archivio per leggere la risorsa, specificando l�
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Lettura delle risorse tramite API Java {#read-resources-using-the-java-api}
 
@@ -636,7 +636,7 @@ Imposta le nuove informazioni nella risorsa e richiama il metodo del servizio Ar
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Aggiornare le risorse utilizzando l’API Java {#update-resources-using-the-java-api}
 
@@ -783,7 +783,7 @@ Scorrere l&#39;elenco di risorse restituito ed estrarre le informazioni per l&#3
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Cercare risorse utilizzando l’API Java {#search-for-resources-using-the-java-api}
 
@@ -905,7 +905,7 @@ Richiama il metodo del servizio Archivio per creare e specificare il tipo di rel
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Creare risorse di relazione tramite API Java {#create-relationship-resources-using-the-java-api}
 
@@ -1054,7 +1054,7 @@ Richiama il metodo del servizio Archivio per sbloccare la risorsa, specificando 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Bloccare le risorse utilizzando l’API Java {#lock-resources-using-the-java-api}
 
@@ -1196,7 +1196,7 @@ Richiama il metodo del servizio Archivio per eliminare la risorsa, specificando 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Avvio rapido API servizio archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
+[Avvio rapido di API per il servizio di archivio](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
 ### Eliminare le risorse utilizzando API Java (SOAP) {#delete-resources-using-the-java-api-soap}
 

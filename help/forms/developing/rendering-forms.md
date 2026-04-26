@@ -1,5 +1,5 @@
 ---
-title: Rendering di Forms
+title: Rendering dei moduli
 description: Utilizza il servizio Forms per creare applicazioni client di acquisizione dati interattive che convalidano, elaborano, trasformano e distribuiscono moduli generalmente creati in Designer. Gli autori di moduli possono sviluppare un singolo design di moduli eseguito dal servizio Forms in PDF, SWF o HTML in vari ambienti di browser.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 3f1f9ecb-be62-4428-8db8-23c57081b0f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
-# Rendering di Forms {#rendering-forms}
+# Rendering dei moduli {#rendering-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 

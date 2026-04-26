@@ -9,9 +9,9 @@ feature: Adaptive Forms,AEM Forms on OSGi
 hide: true
 hidefromtoc: true
 exl-id: a817fa19-ae22-4c77-8a8e-6c4deed10d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 1%
 
 ---
@@ -160,4 +160,4 @@ Puoi inoltre utilizzare le API per accedere e rimuovere nodi e proprietà. Per u
 
 * [Come accedere a livello di programmazione a AEM JCR](/help/sites-developing/access-jcr.md)
 * [Rimozione di nodi e proprietà](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Riferimento API](https://helpx.adobe.com/it/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Riferimento API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

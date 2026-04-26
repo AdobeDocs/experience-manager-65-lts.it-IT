@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla generazione di rapporti sui processi
+title: Introduzione ai rapporti sui processi
 description: Introduzione e funzionalità chiave di AEM Forms su JEE Process Reporting
 content-type: reference
 topic-tags: process-reporting
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 755df7e2-3603-4c0d-ad07-ec6f27de8c64
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 3%
 
 ---
 
-# Introduzione alla generazione di rapporti sui processi{#introduction-to-process-reporting}
+# Introduzione ai rapporti sui processi{#introduction-to-process-reporting}
 
 ![report di processo](assets/process-reporting.png)
 
@@ -64,7 +64,7 @@ Puoi quindi salvare i filtri del rapporto in modo che vengano eseguiti in una da
 
 I server AEM Forms eseguono numerosi processi in parallelo. Questi processi continuano a passare da uno stato all’altro. Pubblicando i dati di Forms nel repository di Process Reporting a intervalli regolari, Process Reporting conserva le informazioni di transizione sui processi in esecuzione in AEM Forms.
 
-### Controllo accesso {#access-control-br}
+### Controllo degli accessi {#access-control-br}
 
 ![senza titolo](assets/untitled.png)
 

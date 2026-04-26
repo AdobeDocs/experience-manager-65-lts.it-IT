@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac3766c5-b741-4e65-8053-0c9cfd66a2f9
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
+source-wordcount: '419'
+ht-degree: 3%
 
 ---
 
@@ -36,4 +36,4 @@ Utilizza tipi di variabili semplici (ad esempio stringa o int) ed evita di utili
 
 Utilizzo efficace dell&#39;archiviazione globale dei documenti (GDS). La directory GDS sul server Forms viene utilizzata per memorizzare, tra le altre cose, i file passati ai servizi che fanno parte di AEM Forms nei processi. Per migliorare le prestazioni, i documenti più piccoli vengono invece memorizzati in memoria e memorizzati nel database.
 
-La console di amministrazione espone la proprietà Dimensione massima in linea documento predefinita per configurare la dimensione massima dei documenti memorizzati in memoria e memorizzati nel database. (Vedere [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene salvata in modo permanente nella directory GDS anziché nel database. Il vantaggio è che è possibile eliminare più facilmente i file quando non sono più necessari quando vengono memorizzati nella directory GDS.
+La console di amministrazione espone la proprietà Dimensione massima in linea documento predefinita per configurare la dimensione massima dei documenti memorizzati in memoria e memorizzati nel database. Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings). Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene salvata in modo permanente nella directory GDS anziché nel database. Il vantaggio è che è possibile eliminare più facilmente i file quando non sono più necessari quando vengono memorizzati nella directory GDS.

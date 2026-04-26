@@ -8,9 +8,9 @@ feature: Collections,Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5b91d368-aa22-4f13-9c2c-6be831470609
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2199'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Una raccolta è un insieme di risorse in [!DNL Adobe Experience Manager Assets]. Puoi utilizzare le raccolte per condividere le risorse tra i vari utenti. Il set può essere una raccolta statica o dinamica basata sui risultati della ricerca.
@@ -186,7 +186,7 @@ Puoi cercare le raccolte dalla console Raccolte. Quando si esegue una ricerca co
 
 Se cerchi raccolte dal livello principale, nei risultati della ricerca vengono restituite solo singole raccolte. [!DNL Assets] o cartelle all&#39;interno delle raccolte sono escluse. In tutti gli altri casi (ad esempio, all’interno di una singola raccolta o di una gerarchia di cartelle), vengono restituite tutte le risorse, le cartelle e le raccolte pertinenti.
 
-## Cerca nelle raccolte {#searching-within-collections}
+## Ricerca in raccolte {#searching-within-collections}
 
 Nella console Raccolte, fai clic su una raccolta per aprirla.
 
@@ -233,7 +233,7 @@ Quando si scarica una raccolta, viene scaricata l’intera gerarchia di risorse 
    >
    >La raccolta aggiornata più di recente è selezionata per impostazione predefinita nella pagina **[!UICONTROL Aggiungi alla raccolta]**.
 
-1. Fare clic su **[!UICONTROL Aggiungi]**. Un messaggio conferma che la raccolta viene aggiunta alla raccolta di destinazione nella pagina **[!UICONTROL Seleziona destinazione]**. Chiudi il messaggio per completare il processo.
+1. Fai clic su **[!UICONTROL Aggiungi]**. Un messaggio conferma che la raccolta viene aggiunta alla raccolta di destinazione nella pagina **[!UICONTROL Seleziona destinazione]**. Chiudi il messaggio per completare il processo.
 
 >[!NOTE]
 >

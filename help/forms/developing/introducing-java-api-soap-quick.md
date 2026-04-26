@@ -1,6 +1,6 @@
 ---
 title: Introduzione a Java&trade; API QuickStart
-description: Scopri come eseguire le operazioni di AEM Forms utilizzando l’API fortemente tipizzata di AEM Forms Java&trade abilitata con la connessione SOAP.
+description: Scopri come eseguire le operazioni di AEM Forms utilizzando l’API AEM Forms Java&trade; fortemente tipizzata abilitata con la connessione SOAP.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: a5ae164d-d0c0-40d0-baeb-0e646fc71f55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---

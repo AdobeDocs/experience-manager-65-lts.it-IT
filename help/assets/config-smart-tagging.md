@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: be7c294c-149b-4825-8376-573f9e2987e2
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 19%
+source-wordcount: '1980'
+ht-degree: 20%
 
 ---
 
@@ -64,10 +64,10 @@ Per informazioni dettagliate su come eseguire questa configurazione, consulta la
       * [Autenticazione da server a server](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
    * Creazione di nuove credenziali OAuth:
-      * [Guida all’implementazione delle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
+      * [Guida all&#39;implementazione delle credenziali server-to-server di OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
    * Migrazione di una credenziale JWT esistente a una credenziale OAuth:
-      * [Migrazione dalle credenziali dell’account di servizio (JWT) alle credenziali da server a server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
+      * [Migrazione dalle credenziali dell’account di servizio (JWT) alle credenziali server-to-server OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 
 1. Nella pagina **[!UICONTROL Seleziona profili di prodotto]**, seleziona **[!UICONTROL Servizi di contenuti avanzati]**. Fai clic su **[!UICONTROL Salva API configurata]**.
@@ -136,7 +136,8 @@ Dopo aver completato la configurazione, puoi utilizzare un MBean JMX per convali
 1. Vai a **[!UICONTROL Strumenti]** > **[!UICONTROL Operazioni]** > **[!UICONTROL Console Web]** per aprire la console OSGi. Fai clic su **[!UICONTROL Principale] > [!UICONTROL JMX]**.
 
 <!--
-1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+-->
 
 1. Fai clic su `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
 
@@ -270,4 +271,4 @@ Per verificare se il Servizio di contenuti avanzati è stato addestrato sui tag 
 >
 >* [Panoramica e formazione dei tag avanzati](enhanced-smart-tags.md)
 >* [Risoluzione dei problemi relativi agli smart tag per le credenziali OAuth](config-oauth.md)
->* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it)
+>* [Esercitazione video sugli smart tag](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

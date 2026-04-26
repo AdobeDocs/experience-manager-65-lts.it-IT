@@ -1,5 +1,5 @@
 ---
-title: Forms con diritti di rendering
+title: Rendering di moduli con diritti
 description: Utilizza il servizio Forms per eseguire il rendering dei moduli a cui sono applicati diritti di utilizzo. Puoi eseguire il rendering di moduli abilitati per i diritti utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 70b2d1aa-6fcd-461d-b628-e82ddf266f48
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1488'
+ht-degree: 2%
 
 ---
 
-# Forms con diritti di rendering {#rendering-rights-enabled-forms}
+# Rendering di moduli con diritti {#rendering-rights-enabled-forms}
 
 Il servizio Forms può eseguire il rendering di moduli a cui sono applicati diritti di utilizzo. I diritti di utilizzo riguardano funzionalità disponibili per impostazione predefinita in Acrobat ma non in Adobe Reader, ad esempio la possibilità di aggiungere commenti a un modulo o di compilare campi modulo e salvare il modulo. I Forms a cui sono applicati diritti di utilizzo sono denominati moduli abilitati per i diritti. L’utente che apre un modulo abilitato ai diritti in Adobe Reader può eseguire operazioni abilitate per tale modulo.
 
@@ -81,9 +81,9 @@ Quando il servizio Forms esegue il rendering di un modulo abilitato ai diritti, 
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -182,6 +182,6 @@ Eseguire il rendering di un modulo abilitato ai diritti tramite l’API di Forms
 
 **Consulta anche**
 
-[Forms con diritti di rendering](#rendering-rights-enabled-forms)
+[Rendering di moduli con diritti](#rendering-rights-enabled-forms)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

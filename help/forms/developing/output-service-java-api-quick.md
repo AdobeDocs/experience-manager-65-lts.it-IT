@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva API Java del servizio di output (SOAP)
+title: Avvio rapido di API Java per il servizio di output (SOAP)
 description: Utilizza il servizio di output Guida rapida API Java (SOAP) per creare un documento PDF, creare un documento PDF basato su un file XDP dell’applicazione, creare un documento PDF/A, passare i documenti al servizio di output, passare un documento nel repository AEM Forms al servizio di output, creare un documento PDF basato su frammenti, stampare su un file, inviare un flusso di stampa a una stampante di rete, creare più file PDF, creare regole di ricerca, trasformare un documento PDF.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: a85333ac-427f-4730-b6d6-04c4b9419883
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ Nell&#39;esempio di codice Java seguente viene creato un documento PDF denominat
 
 >[!NOTE]
 >
->Prima di eseguire questo avvio rapido, accertarsi di creare un&#39;applicazione AEM Forms denominata Applications/FormsApplication. Crea una cartella all’interno dell’applicazione denominata FormsFolder e inserisci il file XDP nella cartella. Per ulteriori informazioni, vedere [Generare un documento di PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
+>Prima di eseguire questo avvio rapido, accertarsi di creare un&#39;applicazione AEM Forms denominata Applications/FormsApplication. Crea una cartella all’interno dell’applicazione denominata FormsFolder e inserisci il file XDP nella cartella. Per ulteriori informazioni, vedere [Generare un documento di PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

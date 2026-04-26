@@ -7,10 +7,10 @@ feature: Asset Management,Asset Distribution
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 89b14351-c689-42a6-bd89-cc258f601898
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 2%
+source-wordcount: '923'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Puoi scaricare risorse, incluse le rappresentazioni statiche e dinamiche. In alternativa, puoi inviare e-mail con collegamenti alle risorse direttamente da [!DNL Adobe Experience Manager Assets]. Le risorse scaricate sono incluse in un file ZIP. Il file ZIP compresso ha una dimensione massima di 1 GB per il processo di esportazione. È consentito un massimo di 500 risorse totali per processo di esportazione.
@@ -51,7 +51,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | **[!UICONTROL Crea una cartella separata per ogni risorsa]** | Seleziona questa opzione per includere in una cartella sul computer locale tutte le risorse scaricate, comprese quelle in cartelle secondarie nidificate nella cartella principale della risorsa. Se questa opzione non è selezionata, per impostazione predefinita la gerarchia delle cartelle viene ignorata e tutte le risorse vengono scaricate in una cartella nel computer locale. |
    | **[!UICONTROL E-mail]** | Viene inviata una notifica e-mail all’utente. I modelli di e-mail standard sono disponibili nelle seguenti posizioni:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> I modelli personalizzati durante la distribuzione sono disponibili nelle posizioni seguenti: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Puoi memorizzare modelli personalizzati specifici del tenant nelle seguenti posizioni:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Risorse]** | Seleziona questa opzione per scaricare la risorsa nella sua forma originale senza rappresentazioni.<br>L&#39;opzione Risorse secondarie è disponibile se la risorsa originale contiene risorse secondarie. |
-   | **[!UICONTROL Rappresentazione/i]** | Una rappresentazione è la rappresentazione binaria di una risorsa. Assets dispone di una rappresentazione principale, ovvero quella del file caricato. Possono avere un numero qualsiasi di rappresentazioni. <br> Con questa opzione è possibile selezionare le copie trasformate da scaricare. Le rappresentazioni disponibili dipendono dalla risorsa selezionata. L’opzione è disponibile se la risorsa ha delle rappresentazioni. |
+   | **[!UICONTROL Rappresentazione/i]** | Una rappresentazione è la rappresentazione binaria di una risorsa. Assets dispone di una rappresentazione principale, ovvero quella del file caricato. Possono avere un numero qualsiasi di rappresentazioni. <br> Con questa opzione, puoi selezionare le rappresentazioni da scaricare. Le rappresentazioni disponibili dipendono dalla risorsa selezionata. L’opzione è disponibile se la risorsa ha delle rappresentazioni. |
    | **[!UICONTROL Ritagli avanzati]** | Seleziona questa opzione per scaricare tutte le rappresentazioni con ritaglio avanzato della risorsa selezionata da AEM. Nel computer locale viene creato e scaricato un file zip con le rappresentazioni di Ritaglio avanzato. |
    | **[!UICONTROL Rappresentazioni dinamiche]** | Selezionare questa opzione per generare in tempo reale una serie di rappresentazioni alternative. Quando selezioni questa opzione, selezioni anche le rappresentazioni da creare in modo dinamico selezionandole dall&#39;elenco [Predefinito immagine](image-presets.md). <br>È inoltre possibile selezionare le dimensioni e l&#39;unità di misura, il formato, lo spazio colore, la risoluzione ed eventuali modificatori di immagine facoltativi, ad esempio l&#39;inversione dell&#39;immagine. L&#39;opzione è disponibile solo se è stato abilitato [!DNL Dynamic Media]. |
 
@@ -80,13 +80,13 @@ Per impostazione predefinita, per `GET` richieste di download di file, [!DNL Exp
 
 È possibile disabilitare `Asset Download Servlet` in un&#39;istanza Publish [!DNL Experience Manager] aggiornando la configurazione del dispatcher per bloccare eventuali richieste di download di risorse. Il servlet può anche essere disabilitato manualmente tramite la console OSGi direttamente.
 
-1. Per bloccare le richieste di download di risorse tramite una configurazione di Dispatcher, modifica la configurazione `dispatcher.any` e aggiungi una regola alla [sezione filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Per bloccare le richieste di download di risorse tramite una configurazione di Dispatcher, modifica la configurazione `dispatcher.any` e aggiungi una regola alla [sezione filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Per disabilitare il componente OSGi in un&#39;istanza Publish, accedi alla console OSGi in `http://[aem_server]:[port]/system/console/components`. Individuare `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e fare clic su **[!UICONTROL Disattiva]**.
 
 >[!MORELIKETHIS]
 >
->* [Scarica risorse tramite Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=it)
+>* [Scarica risorse tramite Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Scarica risorse protette DRM](drm.md).
->* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Windows o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#download-assets).
+>* [Scarica le risorse tramite l&#39;app desktop Experience Manager sul desktop Windows o Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Scarica le risorse tramite Adobe Assets Link dalle app Adobe Creative Cloud supportate](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html).

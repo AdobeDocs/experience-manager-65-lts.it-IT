@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b42303c4-e328-4c57-8ff5-9f214b6c3acd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Java™ API Quick Start(SOAP) è disponibile per il servizio DocConverter.
 
-[Guida rapida (modalità SOAP): determinazione della conformità PDF/A tramite Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[Guida rapida (modalità SOAP): determinazione della conformità PDF/A tramite l’API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Guida rapida (modalità SOAP): conversione di un documento in un documento PDF/A tramite Java](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Guida rapida (modalità SOAP): conversione di un documento in un documento PDF/A tramite l’API Java™](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 

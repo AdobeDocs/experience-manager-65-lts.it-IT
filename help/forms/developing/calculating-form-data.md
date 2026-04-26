@@ -1,5 +1,5 @@
 ---
-title: Calcolo dati modulo
+title: Calcolo dei dati del modulo
 description: Utilizzare il servizio Forms per calcolare i valori immessi da un utente in un modulo e visualizzare i risultati. Il servizio Forms calcola i valori utilizzando l’API Java e l’API del servizio web.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 071a6ccb-8204-4cbc-a39b-143da52c16f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1858'
-ht-degree: 0%
+source-wordcount: '1870'
+ht-degree: 1%
 
 ---
 
-# Calcolo dati modulo {#calculating-form-data}
+# Calcolo dei dati del modulo {#calculating-form-data}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -44,7 +44,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -126,10 +126,10 @@ Dopo aver verificato che lo stato di elaborazione associato a un modulo inviato 
 **Consulta anche**
 
 [Inclusione dei file della libreria Java di AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[Calcola i dati del modulo utilizzando l&#39;API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
+[Calcolare i dati del modulo utilizzando l&#39;API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
 [Calcola i dati del modulo utilizzando l&#39;API del servizio Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Guida introduttiva all&#39;API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Guida introduttiva dell&#39;API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 [Rendering di PDF forms interattivo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -221,5 +221,5 @@ Calcola i dati del modulo utilizzando l’API di Forms (servizio web):
    * Creare una matrice di byte e popolarla richiamando il metodo `getBinaryData` dell&#39;oggetto `BLOB`. Questa attività assegna il contenuto dell&#39;oggetto `FormsResult` alla matrice di byte.
    * Richiama il metodo `write` dell&#39;oggetto `javax.servlet.http.HttpServletResponse` per inviare il flusso di dati del modulo al browser Web client. Passare la matrice di byte al metodo `write`.
 
-**Vedere anche**
+**Vedi anche**
 [Richiamo di AEM Forms tramite la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

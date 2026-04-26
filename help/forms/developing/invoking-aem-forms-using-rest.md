@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 11a7278e-efaa-402c-8add-5280bf5a156a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 0%
+source-wordcount: '2507'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ I processi creati in Workbench possono essere configurati in modo da poterli ric
 
 Esistono due tipi di client HTML. Il primo client HTML è un client AJAX scritto in JavaScript. Il secondo client è un modulo di HTML contenente un pulsante di invio. Un&#39;applicazione client basata su HTML non è l&#39;unico client REST possibile. Qualsiasi applicazione client che supporta le richieste HTTP può richiamare un servizio utilizzando una chiamata REST. È ad esempio possibile richiamare un servizio utilizzando una chiamata REST da un modulo di PDF. (Vedi [Richiamo del processo MyApplication/EncryptDocument da Acrobat](#rest-invocation-examples).)
 
-Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Quando si utilizzano richieste REST, si consiglia di non richiamare direttamente i servizi Forms. Richiama invece i processi creati in Workbench. Quando crei un processo destinato alla chiamata REST, utilizza un punto iniziale programmatico. In questa situazione, l’endpoint REST viene aggiunto automaticamente. Per informazioni sulla creazione di processi in Workbench, vedere [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 
 Quando si richiama un servizio utilizzando REST, viene richiesto un nome utente e una password di AEM Forms. Tuttavia, se non si desidera specificare un nome utente e una password, è possibile disattivare la protezione del servizio.
 
@@ -291,7 +291,7 @@ Nell&#39;esempio di HTML seguente viene richiamato un processo AEM Forms denomin
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -321,7 +321,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 
 Specifica l&#39;URL per richiamare il processo nel campo *Invia all&#39;URL* del pulsante, come illustrato nella figura seguente.
 
-L’URL completo per richiamare il processo è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
+L&#39;URL completo da richiamare è https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 
 Se il processo richiede un documento PDF come valore di input, assicurarsi di inviare il modulo come PDF, come illustrato nella figura precedente. Inoltre, per richiamare correttamente un processo, è necessario che quest&#39;ultimo restituisca un documento PDF. In caso contrario, Acrobat non può gestire il valore restituito e si verifica un errore. Non è necessario specificare il nome della variabile di processo di input. Ad esempio, il processo *MyApplication/EncryptDocument* ha una variabile di input denominata `inDoc`. Non è necessario specificare inDoc, purché il modulo venga inviato come PDF.
 

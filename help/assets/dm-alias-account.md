@@ -1,5 +1,5 @@
 ---
-title: Configurare un account alias società Dynamic Media
+title: Configurare un account alias aziendale Dynamic Media
 description: Scopri come configurare un account alias aziendale in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: administering
@@ -9,15 +9,17 @@ role: User,Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: a058b4ba-8351-4c5f-87be-566620fb8876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: '684'
+ht-degree: 2%
 
 ---
 
-<!-- hide: yes
-hidefromtoc: yes -->
+<!--
+hide: true
+hidefromtoc: yes
+-->
 
 # Informazioni sulla configurazione di un account alias società Dynamic Media {#about-dm-alias-acct}
 

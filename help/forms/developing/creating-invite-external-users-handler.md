@@ -7,9 +7,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 5e1f1f3c-a2f3-4bf1-ba96-a02f8b16c180
-source-git-commit: 66696da39b1b790b2155b2ec08d936371f87b979
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 4%
 
 ---
@@ -217,7 +217,7 @@ L’illustrazione seguente mostra il contenuto del progetto Java inserito nel fi
 
 ![Invita utenti](assets/ci_ci_InviteUsers.png)
 
-A. File JAR esterni richiesti dal file JAVA del componente B.
+A. File JAR esterni richiesti dal componente B. File JAVA
 
 Crea un pacchetto del gestore di inviti di utenti esterni in un file JAR. Nel diagramma precedente, si noti che sono elencati i file .JAVA. Una volta inseriti in un file JAR, è necessario specificare anche i file .CLASS corrispondenti. Senza i file .CLASS, il gestore autorizzazioni non funziona.
 
@@ -248,7 +248,7 @@ Per aggiungere utenti esterni da invitare tramite la console di amministrazione:
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Gestione dominio]**.
 1. Fare clic su **[!UICONTROL Nuovo dominio locale]**. Nella pagina seguente creare un dominio con il nome e il valore dell&#39;identificatore `EDC_EXTERNAL_REGISTERED`. Salva le modifiche.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Servizi]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Utenti invitati e locali]**. Viene visualizzata la pagina **[!UICONTROL Aggiungi utente invitato]**.
-1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Fare clic su **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
+1. Immetti gli indirizzi e-mail (poiché il gestore di inviti esterni corrente non invia effettivamente i messaggi e-mail, l’indirizzo e-mail non deve essere valido). Fai clic su **[!UICONTROL OK]**. Gli utenti vengono invitati al sistema.
 1. Dalla home page della console di amministrazione, fare clic su **[!UICONTROL Impostazioni]** > **[!UICONTROL Gestione utente]** > **[!UICONTROL Utenti e gruppi]**.
 1. Nel campo **[!UICONTROL Trova]**, immetti un indirizzo e-mail specificato. Fare clic su **[!UICONTROL Trova]**. L&#39;utente invitato viene visualizzato come utente nel dominio locale `EDC_EXTERNAL_REGISTERED`.
 

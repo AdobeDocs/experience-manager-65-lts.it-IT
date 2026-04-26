@@ -11,10 +11,10 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 exl-id: 5d0ba475-06be-47fd-8ea2-9160c2d86b07
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 1%
+source-wordcount: '1135'
+ht-degree: 6%
 
 ---
 
@@ -225,7 +225,7 @@ JBoss® Application Server utilizza 8080 come porta HTTP predefinita. JBoss® di
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Considerazioni sulla sicurezza di AEM Forms su JEE {#aem-forms-on-jee-security-considerations}
 

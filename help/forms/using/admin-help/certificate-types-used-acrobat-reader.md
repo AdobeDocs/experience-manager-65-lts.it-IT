@@ -11,9 +11,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ca919915-c37b-4793-b5e2-21a464c5dcdf
-source-git-commit: 253e2b5a39fd4c2fe7ab9aeaafb72930b4aa39ff
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 65%
 
 ---
@@ -62,7 +62,7 @@ Nella tabella seguente sono elencati i profili di certificato che è possibile i
   <tr>
    <td><p>P1</p></td>
    <td><p>Produzione SAP</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione</p></td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ Nella tabella seguente sono elencati i profili di certificato che è possibile i
   <tr>
    <td><p>P3</p></td>
    <td><p>Estensioni DC Acrobat Reader, produzione</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione</p></td>
   </tr>
   <tr>
@@ -98,49 +98,49 @@ Nella tabella seguente sono elencati i profili di certificato che è possibile i
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms, Produzione</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x, Produzione</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms; gli OEM possono utilizzare Forms</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms; gli OEM possono utilizzare Forms.</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>Solo firma; gli OEM possono utilizzare solo la firma</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>Solo commenti offline; gli OEM possono utilizzare i commenti offline</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>Solo commenti; gli OEM possono utilizzare solo commenti</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>Autorizzazioni complete; gli OEM possono utilizzare autorizzazioni complete</p></td>
-   <td><p>Max</p></td>
+   <td><p>Max.</p></td>
    <td><p>Produzione e valutazione</p></td>
   </tr>
  </tbody>

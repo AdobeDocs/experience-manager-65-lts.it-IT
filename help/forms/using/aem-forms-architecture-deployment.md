@@ -9,10 +9,10 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 0%
+source-wordcount: '1547'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html).
 
 ## Architettura {#architecture}
 
@@ -58,7 +58,8 @@ AEM Forms on JEE also includes provides following supporting services to the AEM
 
 L’interfaccia utente di authoring di AEM Forms non supporta la creazione di documenti di record (DOR), PDF forms e HTML5 Forms. Tali risorse sono progettate utilizzando l’applicazione autonoma Forms Designer e caricate singolarmente in AEM Forms Manager. <!--Alternatively, for AEM Forms on JEE, forms can be designed as application (in AEM Forms Workbench) assets and deployed into AEM Forms on JEE server.-->
 
-AEM Forms su OSGi <!--and AEM Forms on JEE both--> dispone di funzionalità di flusso di lavoro. È possibile creare e distribuire rapidamente flussi di lavoro di base per varie attività in AEM Forms su OSGi.<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
+AEM Forms su OSGi <!--and AEM Forms on JEE both--> dispone di funzionalità di flusso di lavoro. Puoi creare e distribuire rapidamente flussi di lavoro di base per varie attività in AEM Forms su OSGi.
+<!--, without having to install the full-fledged Process Management capability of AEM Forms on JEE. There is some difference in the [features of Form-centric workflow on AEM Forms on OSGi and Process Management capability of AEM Forms on JEE](capabilities-osgi-jee-workflows.md). The development and management of Form-centric workflows on AEM Forms on OSGi uses the familiar AEM Workflow and AEM Inbox capabilities.-->
 
 ## Terminologie {#terminologies}
 
@@ -66,7 +67,7 @@ L’immagine seguente mostra diverse configurazioni del server AEM Form e i rela
 
 ![aem_forms_-_consigliata topologia](assets/aem_forms_-_recommendedtopology.png)
 
-**Autore:** un&#39;istanza di authoring è un server AEM Forms in esecuzione nella modalità di esecuzione Autore standard. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> È destinato agli utenti interni, ai progettisti di moduli e di comunicazioni interattive e agli sviluppatori. Abilita le seguenti funzionalità:
+**Autore:** un&#39;istanza di authoring è un server AEM Forms in esecuzione nella modalità di esecuzione Autore standard. <!--It can be AEM Forms on JEE or AEM Forms on OSGi environment.--> È destinato agli utenti interni, ai progettisti di moduli e comunicazioni interattive e agli sviluppatori. Abilita le seguenti funzionalità:
 
 * **Authoring e gestione di moduli e comunicazioni interattive:** progettisti e sviluppatori possono creare e modificare moduli adattivi e comunicazioni interattive, caricare altri tipi di moduli creati esternamente, ad esempio moduli creati in Adobe Forms Designer, e gestire queste risorse tramite la console Forms Manager.
 * **Pubblicazione di moduli e comunicazioni interattive:** Assets ospitato in un&#39;istanza di authoring può essere pubblicato in un&#39;istanza di pubblicazione per eseguire operazioni di runtime. La pubblicazione delle risorse utilizza le funzioni di replica di AEM. Adobe consiglia di configurare un agente di replica in tutte le istanze di authoring per inviare manualmente i moduli pubblicati alle istanze di elaborazione e di configurare un altro agente di replica per l&#39;elaborazione delle istanze con il trigger *Alla ricezione* abilitato per replicare automaticamente i moduli ricevuti nelle istanze di pubblicazione.

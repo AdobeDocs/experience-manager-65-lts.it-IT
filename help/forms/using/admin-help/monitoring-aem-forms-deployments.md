@@ -1,6 +1,6 @@
 ---
-title: Monitoraggio delle distribuzioni di AEM Forms
-description: È possibile monitorare le distribuzioni di AEM Forms sia a livello di sistema che a livello interno. Ulteriori informazioni sul monitoraggio delle distribuzioni di AEM Form sono disponibili in questo documento.
+title: Monitoraggio dell’implementazione di AEM Forms
+description: È possibile monitorare l’implementazione di AEM Forms sia a livello di sistema che a livello interno. Ulteriori informazioni sul monitoraggio dell’implementazione di AEM Forms sono disponibili in questo documento.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -11,24 +11,24 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: aa02139f-7e47-4979-9560-5d270c36080b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 0%
+source-wordcount: '586'
+ht-degree: 100%
 
 ---
 
-# Monitoraggio delle distribuzioni di AEM Forms {#monitoring-aem-forms-deployments}
+# Monitoraggio dell’implementazione di AEM Forms {#monitoring-aem-forms-deployments}
 
-È possibile monitorare le distribuzioni di AEM Forms sia a livello di sistema che a livello interno. Puoi utilizzare strumenti di gestione specializzati come HP OpenView, IBM® Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare in modo specifico l&#39;attività Java™. L’implementazione di una strategia di monitoraggio migliora la disponibilità, l’affidabilità e le prestazioni delle distribuzioni di AEM Forms.
+È possibile monitorare l’implementazione di AEM Forms sia a livello di sistema che a livello interno. Puoi utilizzare strumenti di gestione specializzati come HP OpenView, IBM® Tivoli e CA UniCenter e un monitor JMX di terze parti denominato *JConsole* per monitorare in modo specifico l’attività Java™. L’introduzione di una strategia di monitoraggio migliora la disponibilità, l’affidabilità e le prestazioni dell’implementazione di AEM Forms.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 ## Monitoraggio tramite MBean {#monitoring-using-mbeans}
 
-AEM Forms fornisce due MBean registrati che forniscono informazioni di navigazione e statistiche. Queste parti sono le uniche MBean supportate per l&#39;integrazione e l&#39;ispezione:
+AEM Forms offre due MBean registrati che forniscono informazioni di navigazione e statistiche. Questi componenti sono gli unici MBean supportati per l’integrazione e l’ispezione:
 
-* **ServiceStatistic:** Questo MBean fornisce informazioni sul nome del servizio e sulla relativa versione.
+* **ServiceStatistic:** questo MBean fornisce informazioni sul nome del servizio e sulla relativa versione.
 * **OperationStatistic:** questo MBean fornisce le statistiche di ogni servizio del server AEM Forms. In questo MBean gli amministratori possono ottenere informazioni su un particolare servizio, ad esempio il tempo di chiamata e il numero di errori.
 
 ### Interfacce pubbliche ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
@@ -71,45 +71,45 @@ AEM Forms fornisce due MBean registrati che forniscono informazioni di navigazio
 
 ### Statistiche operazioni e struttura MBean {#mbean-tree-operation-statistics}
 
-Utilizzando una console JMX (JConsole), sono disponibili le statistiche di OperationStatistic MBean. Queste statistiche sono attributi di MBean e possono essere visualizzate nella seguente struttura gerarchica:
+Le statistiche di OperationStatistic MBean sono disponibili tramite una console JMX (JConsole). Queste statistiche sono attributi di MBean e possono essere visualizzate nella seguente struttura gerarchica:
 
-**albero MBean**
+**Struttura MBean**
 
-**Nome dominio Adobe:** dipende dal server applicazioni. Se il server applicazioni non definisce il dominio, l&#39;impostazione predefinita è adobe.com.
+**Nome dominio Adobe:** dipende dal server applicazioni. Se il server applicazioni non definisce il dominio, l’impostazione predefinita è adobe.com.
 
 **ServiceType:** AdobeService è il nome utilizzato per elencare tutti i servizi.
 
-**AdobeServiceName:** Nome di servizio o ID di servizio.
+**AdobeServiceName:** nome di servizio o ID di servizio.
 
-**Versione:** Versione del servizio.
+**Versione:** versione del servizio.
 
 **Statistiche operazione**
 
-**Tempo di chiamata:** Tempo impiegato per l&#39;esecuzione del metodo. Questa chiamata non include l&#39;ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
+**Tempo di chiamata:** tempo impiegato per l’esecuzione del metodo. Questa chiamata non include l’ora in cui la richiesta viene serializzata, trasferita dal client al server e deserializzata.
 
-**Conteggio richiami:** il numero di volte in cui il servizio viene richiamato.
+**Conteggio chiamate:** il numero di volte in cui il servizio viene richiesto.
 
-**Tempo medio di chiamata:** Tempo medio di tutte le chiamate eseguite dall&#39;avvio del server.
+**Tempo medio di chiamata:** tempo medio di tutte le chiamate eseguite dall’avvio del server.
 
-**Tempo massimo di chiamata:** la durata della chiamata più lunga eseguita dall&#39;avvio del server.
+**Tempo massimo di chiamata:** la durata della chiamata più lunga eseguita dall’avvio del server.
 
-**Tempo minimo di chiamata:** la durata della chiamata più breve eseguita dall&#39;avvio del server.
+**Tempo minimo di chiamata:** la durata della chiamata più breve eseguita dall’avvio del server.
 
 **Conteggio eccezioni:** numero di chiamate che hanno generato errori.
 
-**Messaggio di eccezione:** Messaggio di errore dell&#39;ultima eccezione che si è verificata.
+**Messaggio di eccezione:** messaggio di errore dell’ultima eccezione che si è verificata.
 
-**Data e ora ultimo campionamento:** la data dell&#39;ultima chiamata.
+**Data e ora ultimo campionamento:** la data dell’ultima chiamata.
 
-**Unità di tempo:** Il valore predefinito è millisecondi.
+**Unità di tempo:** il valore predefinito è millisecondi.
 
 Per abilitare il monitoraggio JMX, in genere i server applicazioni richiedono una certa configurazione. Per informazioni dettagliate, consulta la documentazione del server applicazioni.
 
-### Esempi di come impostare l’accesso aperto JMX {#examples-of-how-to-set-up-open-jmx-access}
+### Esempi di configurazione dell’accesso JMX aperto {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss® 4.0.3/4.2.0 - configura l&#39;avvio JVM**
+**JBoss® 4.0.3/4.2.0 - configura l’avvio JVM**
 
-Per visualizzare MBean da JConsole, configurare i parametri di avvio JVM del server applicazioni JBoss. Assicurati che JBoss sia avviato dal file run.bat/sh.
+Per visualizzare MBean da JConsole, configura i parametri di avvio JVM del server applicazioni JBoss. Assicurati che JBoss sia avviato dal file run.bat/sh.
 
 1. Modifica il file run.bat che si trova in InstallJBoss/bin.
 1. Trova la riga JAVA_OPTS e aggiungi quanto segue:
@@ -118,27 +118,27 @@ Per visualizzare MBean da JConsole, configurare i parametri di avvio JVM del ser
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-**WebLogic 9.2 /10 - configura l&#39;avvio JVM**
+**WebLogic 9.2 /10 - configura l’avvio JVM**
 
-1. Modificare il file startWebLogic.bat che si trova in `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Modifica il file startWebLogic.bat che si trova in `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Trova la riga JAVA_OPTS e aggiungi quanto segue:
 
    ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-1. Riavviare WebLogic.
+1. Riavvia WebLogic.
 
 >[!NOTE]
 >
->Per WebLogic, è possibile accedere a MBean utilizzando remoto o IIOP.
+>In WebLogic,puoi accedere agli MBean tramite connessione remota o tramite IIOP.
 
 **Accesso remoto a MBean**
 
-1. Avviare JConsole per la nuova connessione e fare clic sulla scheda remota.
-1. Immetti il nome host e la porta (9088, il numero specificato durante le opzioni di avvio di JVM).
+1. Avvia JConsole per la nuova connessione e fai clic sulla scheda remoto.
+1. Inserisci il nome host e la porta (9088, il numero specificato durante le opzioni di avvio di JVM).
 
-**WebSphere® 6.1 - configurazione avvio JVM**
+**WebSphere® 6.1 - configura avvio JVM**
 
 1. In Admin Console (Server applicazioni > server1 > Definizione processo > JVM), aggiungi la seguente riga al campo Argomento JVM generico:
 
@@ -146,7 +146,7 @@ Per visualizzare MBean da JConsole, configurare i parametri di avvio JVM del ser
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Aggiungi o rimuovi il commento dalle tre righe seguenti nel file /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (o &lt;JRE WebSphere>/ lib/management/management.properties):
+1. Aggiungi o rimuovi il commento dalle tre righe seguenti in /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties file (or &lt;Your Websphere JRE>/ lib/management/management.properties):
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
@@ -154,4 +154,4 @@ Per visualizzare MBean da JConsole, configurare i parametri di avvio JVM del ser
     com.sun.management.jmxremote.ssl=false
    ```
 
-1. Riavviare WebSphere.
+1. Riavvia WebSphere.

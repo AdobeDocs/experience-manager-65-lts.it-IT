@@ -1,6 +1,6 @@
 ---
-title: Guida introduttiva JavaAPI Service di Application Manager (SOAP)
-description: Guida introduttiva JavaAPI Service di Application Manager (SOAP)
+title: Avvio rapido di API Java per il servizio Application Manager (SOAP)
+description: Avvio rapido di API Java per il servizio Application Manager (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 4b7d417f-6480-479e-9b8d-bcf2c9790a97
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 

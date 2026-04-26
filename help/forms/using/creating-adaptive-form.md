@@ -6,10 +6,10 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d81781b-bb79-4b85-bba6-2ac67829bfcf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1993'
-ht-degree: 6%
+source-wordcount: '2057'
+ht-degree: 8%
 
 ---
 
@@ -95,7 +95,8 @@ Per utilizzare un modello di dati modulo per creare un modulo adattivo:
 
 Puoi riutilizzare i modelli di modulo XFA per creare moduli adattivi. Per riutilizzare, carica e associa un modello di modulo XFA a un modulo adattivo. Gli elementi del modello di modulo (modulo XFA) sono resi disponibili per l’utilizzo nel Finder di contenuti al momento dell’authoring dei moduli adattivi. Da Content Finder è possibile trascinare gli elementi del modello di modulo nel modulo.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -109,7 +110,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+-->
 
 ## Creare un modulo adattivo basato su schema XML o JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -202,7 +204,7 @@ Per impostazione predefinita, l’opzione di salvataggio automatico non è abili
 
 1. (Solo salvataggio automatico basato su eventi) Per configurare le opzioni per il salvataggio automatico basato su eventi, effettuare le seguenti operazioni.
 
-   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
+   1. Nella casella **[!UICONTROL Salvataggio automatico dopo l&#39;evento]** specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
 
 1. (Facoltativo) Per salvare automaticamente il contenuto per utenti anonimi, selezionare l&#39;opzione **[!UICONTROL Abilita salvataggio automatico per utenti anonimi]** e fare clic su **[!UICONTROL OK]**.
 

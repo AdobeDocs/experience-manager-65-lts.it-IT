@@ -1,5 +1,5 @@
 ---
-title: Precompilazione di Forms con layout fluibili
+title: Precompilazione dei moduli con layout fluidi
 description: Precompila i moduli con layout fluibile per visualizzare i dati agli utenti all’interno di un modulo renderizzato utilizzando l’API Java e l’API del servizio Web.
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -11,16 +11,16 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3478'
-ht-degree: 0%
+source-wordcount: '3513'
+ht-degree: 1%
 
 ---
 
-# Precompilazione di Forms con layout fluibili {#prepopulating-forms-with-flowable-layouts1}
+# Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts1}
 
-## Precompilazione di Forms con layout fluibili {#prepopulating-forms-with-flowable-layouts2}
+## Precompilazione dei moduli con layout fluidi {#prepopulating-forms-with-flowable-layouts2}
 
 La precompilazione dei moduli consente di visualizzare i dati agli utenti all’interno di un modulo di cui è stato eseguito il rendering. Ad esempio, supponiamo che un utente acceda a un sito web con un nome utente e una password. Se l&#39;autenticazione ha esito positivo, l&#39;applicazione client esegue una query su un database per ottenere informazioni sull&#39;utente. I dati vengono uniti nel modulo, quindi il modulo viene sottoposto a rendering per l’utente. L’utente può quindi visualizzare dati personalizzati all’interno del modulo.
 
@@ -70,7 +70,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -104,7 +104,7 @@ Nel diagramma seguente viene illustrato un esempio di modulo ordine fornitore. L
 
 ### Considerazioni sulla progettazione dei moduli {#form-design-considerations}
 
-I Forms con layout scorrevoli si basano sulle progettazioni dei moduli create in Designer. La progettazione di un modulo specifica un set di regole di layout, presentazione e acquisizione dati, inclusi i valori di calcolo basati su input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomaschere incluse nella struttura del modulo. Ad esempio, nel modulo ordine fornitore visualizzato nel diagramma precedente, ogni linea è una sottomaschera. Per informazioni sulla creazione di una struttura di modulo contenente sottomaschere, vedere [Creazione di un modulo ordine fornitore con un layout scorrevole](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_it).
+I Forms con layout scorrevoli si basano sulle progettazioni dei moduli create in Designer. La progettazione di un modulo specifica un set di regole di layout, presentazione e acquisizione dati, inclusi i valori di calcolo basati su input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomaschere incluse nella struttura del modulo. Ad esempio, nel modulo ordine fornitore visualizzato nel diagramma precedente, ogni linea è una sottomaschera. Per informazioni sulla creazione di una struttura di modulo contenente sottomaschere, vedere [Creazione di un modulo ordine fornitore con un layout scorrevole](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Informazioni sui sottogruppi di dati {#understanding-data-subgroups}
 
@@ -232,9 +232,9 @@ Si esegue il rendering di un modulo precompilato come di un altro modulo. L&#39;
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -264,7 +264,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API Forms (J
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma origine dati XML questi campi sono visualizzati nella sezione A. Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo presente nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). (Vedi [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
    * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Aggiungere quindi l&#39;elemento di dettaglio all&#39;elemento radice chiamando il metodo `appendChild` dell&#39;oggetto `root` e passare l&#39;oggetto elemento di dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -340,7 +340,7 @@ Per precompilare un modulo con un layout scorrevole utilizzando l’API di Forms
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo visualizzato nella parte statica del modulo (nel diagramma origine dati XML questi campi sono visualizzati nella sezione A. Vedere [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
+   * Aggiungere tutti gli elementi rimanenti all&#39;elemento header ripetendo l&#39;ultimo passaggio secondario per ogni campo presente nella parte statica del modulo (nel diagramma dell&#39;origine dati XML questi campi sono illustrati nella sezione A). (Vedi [Informazioni sui sottogruppi di dati](#understanding-data-subgroups).)
    * Creare l&#39;elemento dettaglio dell&#39;origine dati XML chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Aggiungere quindi l&#39;elemento di dettaglio all&#39;elemento radice chiamando il metodo `appendChild` dell&#39;oggetto `root` e passare l&#39;oggetto elemento di dettaglio come argomento. Gli elementi XML accodati all&#39;elemento dettaglio corrispondono alla parte dinamica del modulo. Le seguenti righe di codice mostrano questa logica dell’applicazione:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`

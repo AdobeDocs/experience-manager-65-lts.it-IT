@@ -6,9 +6,9 @@ feature: Asset Management
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 50a980e5-3b35-4485-9a5b-44d1a42a837c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '555'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
 La piattaforma [!DNL Adobe Experience Manager] offre funzionalità diverse per la gestione delle risorse. La libreria multimediale consente agli utenti di caricare un numero limitato di risorse nell’archivio, cercare e utilizzare tali risorse nelle pagine web ed eseguire semplici attività di gestione delle risorse sulle risorse.
@@ -77,7 +77,8 @@ Per utilizzare la funzionalità Catalogo multimediale, è possibile utilizzare l
 * Flusso di attività (timeline).
 * Commenti e annotazioni.
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->

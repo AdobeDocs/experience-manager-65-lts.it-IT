@@ -1,5 +1,5 @@
 ---
-title: Passaggio di documenti al servizio Forms
+title: Trasmissione dei documenti al servizio Forms
 description: Passa al servizio Forms un oggetto com.adobe.idp.Document contenente la struttura del modulo. Il servizio Forms esegue il rendering della struttura del modulo nell'oggetto com.adobe.idp.Document.
 contentOwner: admin
 content-type: reference
@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 78d72100-b67b-48ac-9479-706fdccbd3cd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 0%
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -73,7 +73,7 @@ A seconda del tipo di applicazione client, è possibile scrivere il modulo in un
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ## Trasmettere i documenti al servizio Forms tramite API Java {#pass-documents-to-the-forms-service-using-the-java-api}
 

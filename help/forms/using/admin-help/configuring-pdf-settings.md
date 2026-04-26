@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 41a8a4b0-cb39-40a6-82b6-085f2c635e0c
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '7415'
-ht-degree: 0%
+source-wordcount: '7478'
+ht-degree: 2%
 
 ---
 
@@ -95,19 +95,19 @@ Le impostazioni di PDF determinano con precisione il modo in cui i file vengono 
 1. Fare clic su Nuovo o sul nome di un&#39;impostazione esistente.
 1. Nella pagina Nuova/Modifica impostazione Adobe PDF, inserisci le informazioni richieste nelle sezioni seguenti:
 
-[Opzioni generali](configuring-pdf-settings.md#general-options)
+   [Opzioni generali](configuring-pdf-settings.md#general-options)
 
-[Opzioni immagini](configuring-pdf-settings.md#images-options)
+   [Opzioni immagini](configuring-pdf-settings.md#images-options)
 
-[Opzioni font](configuring-pdf-settings.md#fonts-options)
+   [Opzioni font](configuring-pdf-settings.md#fonts-options)
 
-[Opzioni colore](configuring-pdf-settings.md#color-options)
+   [Opzioni colore](configuring-pdf-settings.md#color-options)
 
-[Opzioni avanzate](configuring-pdf-settings.md#advanced-options)
+   [Opzioni avanzate](configuring-pdf-settings.md#advanced-options)
 
-[Report standard e opzioni di conformità](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
+   [Report standard e opzioni di conformità](configuring-pdf-settings.md#standards-reporting-and-compliance-options)
 
-[Opzioni di visualizzazione iniziale](configuring-pdf-settings.md#initial-view-options)
+   [Opzioni di visualizzazione iniziale](configuring-pdf-settings.md#initial-view-options)
 
    Per passare a un&#39;altra sezione, fare clic sul relativo collegamento nella pagina Web oppure utilizzare i pulsanti Successivo e Precedente.
 
@@ -119,14 +119,14 @@ Le impostazioni di PDF determinano con precisione il modo in cui i file vengono 
 
 1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF, quindi fai clic su Carica.
 1. Nella pagina Carica impostazioni Adobe PDF fare clic su Sfoglia, individuare il file delle impostazioni di PDF e fare clic su Apri.
-1. Fare clic su OK e quindi di nuovo su OK.
+1. Fai clic su OK e quindi di nuovo su OK.
 
 ## Elimina impostazioni PDF {#delete-pdf-settings}
 
 Se non sono più necessarie, è possibile eliminare definitivamente le impostazioni di PDF.
 
 1. Nella console di amministrazione, fai clic su Servizi > PDF Generator > Impostazioni Adobe PDF.
-1. Selezionare la casella di controllo accanto all&#39;impostazione da eliminare. È possibile selezionare più impostazioni.
+1. Seleziona la casella di controllo accanto all’impostazione da eliminare. Puoi selezionare più impostazioni.
 1. Fare clic su Elimina e quindi di nuovo su Elimina nella pagina Conferma eliminazione.
 
 ## Opzioni generali {#general-options}
@@ -246,8 +246,8 @@ Questa tabella mostra i tipi di stampanti e la loro risoluzione misurata in dpi,
  <tbody>
   <tr>
    <th><p>Risoluzione della stampante</p> </th>
-   <th><p>Schermata di riga predefinita</p> </th>
-   <th><p>Risoluzione dell'immagine</p> </th>
+   <th><p>Retinatura a linee predefinita</p> </th>
+   <th><p>Risoluzione dell’immagine</p> </th>
   </tr>
   <tr>
    <td><p>300 dpi (stampante laser)</p> </td>
@@ -300,7 +300,7 @@ Le opzioni Tipi di carattere specificano quali tipi di carattere incorporare in 
 **Incorpora tutti i tipi di carattere:** Incorpora tutti i tipi di carattere utilizzati nel file. Per la conformità PDF/X è necessario incorporare i caratteri.
 
 **Caratteri Incorporati Del Sottoinsieme Quando Percentuale Di Caratteri Utilizzati
-Is Less Than:** Se si seleziona questa opzione, specificare una percentuale di soglia per incorporare solo un sottoinsieme dei caratteri. Ad esempio, se la soglia è 35 e viene utilizzato meno del 35% dei caratteri, PDF Generator incorpora solo tali caratteri. Sono incorporati solo i font con i bit di autorizzazione appropriati.
+È minore di:** Se si seleziona questa opzione, specificare una percentuale di soglia per incorporare solo un sottoinsieme dei caratteri. Ad esempio, se la soglia è 35 e viene utilizzato meno del 35% dei caratteri, PDF Generator incorpora solo tali caratteri. Sono incorporati solo i font con i bit di autorizzazione appropriati.
 
 **Quando l&#39;incorporamento non riesce:** Specifica la risposta di PDF Generator se non è possibile trovare un tipo di carattere da incorporare durante l&#39;elaborazione di un file. PDF Generator può ignorare la richiesta e sostituire il tipo di carattere, avvisare e sostituire il tipo di carattere oppure annullare l&#39;elaborazione del processo corrente.
 
@@ -322,7 +322,7 @@ Is Less Than:** Se si seleziona questa opzione, specificare una percentuale di s
 
 >[!NOTE]
 >
->I font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei caratteri del cliente, assicurarsi di riavviare il sistema in cui è installato AEM Form.
+>I font vengono selezionati dalla cache dei font di sistema di Windows e per aggiornare la cache è necessario riavviare il sistema. Dopo aver specificato la directory dei font del cliente, assicurati di riavviare il sistema in cui è installato AEM Forms.
 
 ## Opzioni colore {#color-options}
 

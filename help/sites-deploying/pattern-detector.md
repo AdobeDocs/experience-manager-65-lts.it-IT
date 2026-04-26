@@ -1,5 +1,5 @@
 ---
-title: Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+title: Valutazione della complessità dell’aggiornamento con il rilevamento pattern
 description: Scopri come utilizzare il rilevatore pattern per valutare la complessità dell’aggiornamento.
 feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 90f1b2ca07bec5a3be6c312a5f048abaa088df16
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
+source-wordcount: '532'
+ht-degree: 4%
 
 ---
 
-# Valutazione della complessità dell’aggiornamento con il rilevatore pattern
+# Valutazione della complessità dell’aggiornamento con il rilevamento pattern
 
 ## Panoramica {#overview}
 
@@ -44,13 +44,13 @@ Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https:/
 
 * **Tramite la console Inventario Felix:**
 
-1. Passa alla console Web di AEM navigando su *https://serveraddress:serverport/system/console/configMgr*
+1. Passa alla console Web di AEM passando a *https://serveraddress:serverport/system/console/configMgr*
 1. Selezionare **Stato - Rilevatore pattern** come illustrato nell&#39;immagine seguente:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Tramite un&#39;interfaccia JSON normale o basata su testo reattivo**
-* **Tramite un’interfaccia per righe JSON reattive, &#x200B;** che genera un documento JSON separato in ogni riga.
+* **Tramite un’interfaccia per righe JSON reattive, **che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
 
@@ -111,7 +111,7 @@ Con l&#39;output:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_it"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
@@ -215,7 +215,7 @@ Al momento il rilevatore pattern consente di controllare quanto segue:
 * Sovrautilizzi di tipi di risorse e super tipi Sling (con sovrapposizioni di contenuto del percorso di ricerca)
 * definizioni degli indici di Oak (compatibilità)
 * Pacchetti VLT (uso eccessivo)
-* rep:Compatibilità dei nodi utente (nel contesto della configurazione OAuth)
+* compatibilità nodi rep:User (nel contesto della configurazione OAuth)
 
 >[!NOTE]
 >

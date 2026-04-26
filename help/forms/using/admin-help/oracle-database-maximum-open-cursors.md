@@ -11,13 +11,13 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 98663f16-6c05-4485-9bf2-a2de9d1975c8
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 0%
+source-wordcount: '88'
+ht-degree: 100%
 
 ---
 
 # Soglia massima cursori aperti nel database Oracle {#oracle-database-maximum-open-cursors-threshold}
 
-Per configurare un valore massimo per i cursori aperti in Oracle, potrebbe essere necessario regolare tale valore su un numero appropriato per l’applicazione. È evidente che sotto un carico moderato, i cursori medi aperti erano 2700. Si consiglia di iniziare con un limite massimo di 3000. Per ulteriori informazioni, visitare il sito Web [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Per configurare un valore massimo per i cursori aperti in Oracle, potresti dover regolare tale valore su un numero appropriato per l’applicazione. È evidente che sotto un carico moderato, la media dei cursori aperti era 2700. Si consiglia di iniziare con un limite massimo di 3000. Per ulteriori informazioni, visita il sito Web [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

@@ -1,5 +1,5 @@
 ---
-title: Rimozione versione
+title: Eliminazione della versione
 description: Questo articolo descrive le opzioni disponibili per l’eliminazione della versione.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: f145e5f0d70662aa2cbe6c8c09795ba112e896ea
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
+source-wordcount: '727'
+ht-degree: 1%
 
 ---
 
-# Rimozione versione{#version-purging}
+# Eliminazione della versione{#version-purging}
 
 In un’installazione standard, Adobe Experience Manager (AEM) crea una versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
 
@@ -33,7 +33,7 @@ Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivi
 
 AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* [Gestione versioni](#version-manager)
+* Gestione versioni [](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 * strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)

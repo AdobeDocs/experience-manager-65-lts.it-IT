@@ -1,6 +1,6 @@
 ---
-title: Specificare le impostazioni di protezione
-description: Informazioni su come specificare le impostazioni di protezione per i file di dati XML. La funzionalità di impostazione della protezione controlla le entità esterne negli input XML.
+title: Specificare le impostazioni di sicurezza
+description: Scopri come specificare impostazioni di protezione per proteggere i file di dati XML. La funzionalità delle impostazioni di protezione controlla le entità esterne negli input XML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
@@ -11,23 +11,23 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ccda0b61-f22a-4ae3-95e6-74d545d6d890
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Specificare le impostazioni di protezione {#specify-security-settings}
+# Specificare le impostazioni di sicurezza {#specify-security-settings}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-L&#39;output consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita, sono risolti, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema AEM Forms.
+L’output consente di controllare se le entità esterne negli input XML vengono risolte. Per impostazione predefinita tali entità vengono risolte, ma è possibile modificare questo comportamento per aumentare la sicurezza del sistema AEM Forms.
 
-**Impedisci l&#39;elaborazione di file di dati XML contenenti riferimenti a entità esterne**
+**Impedire l’elaborazione di file di dati XML contenenti riferimenti a entità esterne**
 
-1. Nella console di amministrazione, fai clic su Servizi > output.
-1. Deselezionate la casella di controllo Risolvi entità esterne (Resolve External Entities).
+1. Nella Console di amministrazione, fai clic su Servizi > Output.
+1. Deseleziona la casella di controllo Risolvi entità esterne.
 1. Fai clic su Salva.

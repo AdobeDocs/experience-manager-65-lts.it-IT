@@ -6,10 +6,10 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 8%
+source-wordcount: '2189'
+ht-degree: 10%
 
 ---
 
@@ -21,9 +21,9 @@ Scopri come creare un tema personalizzato, assegnare uno stile ai singoli compon
 
 Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione  {#about-the-tutorial}
+## Informazioni sul tutorial  {#about-the-tutorial}
 
-Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
+Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
 
 Al termine dell’esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
@@ -40,9 +40,9 @@ Dopo aver completato l’esercitazione, il modulo dovrebbe avere un aspetto simi
 
 Scarica sul computer locale le immagini con lo stile dell’intestazione e il logo forniti di seguito. L&#39;intestazione del modulo adattivo `shipping-address-add-update-form` utilizza le immagini stile intestazione e logo. L&#39;immagine in stile intestazione viene visualizzata sul lato destro dell&#39;intestazione.
 
-[Ottieni file](assets/header-style.png)
+[Ottieni il file](assets/header-style.png)
 
-[Ottieni file](assets/logo-1.png)
+[Ottieni il file](assets/logo-1.png)
 
 ## Passaggio 1: applicare un tema al modulo adattivo {#step-apply-a-theme-to-your-adaptive-form}
 
@@ -102,11 +102,11 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 
 ### Creare un tema {#create-a-theme}
 
-1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. URL predefinito: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. L&#39;URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-theme](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Tema]**. Viene visualizzata la pagina [!UICONTROL Crea tema] con i campi necessari per creare un tema. I campi **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** sono obbligatori:
 
-   * **Titolo:** Specificare un titolo per il tema. Ad esempio, **Tema globale.** Il titolo consente di identificare il tema dall&#39;elenco dei temi.
-   * **Nome:** Specificare il nome del tema. Ad esempio, **Tema globale.** Nell&#39;archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
+   * **Titolo:** Specificare un titolo per il tema. Ad esempio, **Tema globale.** Il titolo consente di identificare il tema dall’elenco dei temi.
+   * **Nome:** Specificare il nome del tema. Ad esempio, **Tema globale.** Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo del nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura. Tutti gli input non validi vengono sostituiti da un trattino.
 
 1. Seleziona **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Seleziona **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema viene aperto nell’editor temi. Per lo stile, l&#39;editor temi utilizza un modulo adattivo fornito con AEM [!DNL Forms].
 
@@ -251,7 +251,7 @@ Puoi utilizzare un tema personalizzato per applicare uno stile identico a tutti 
       <td><b>Valore</b></td> 
      </tr> 
      <tr> 
-      <td>Informazioni di base</td> 
+      <td>Esperienza pregressa</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -306,7 +306,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
 
    | Proprietà | Valore |
    |---|---|
-   | Mobile | Sinistra |
+   | A virgola mobile | Sinistra |
    | Larghezza | 10% |
 
 1. Seleziona l&#39;opzione **[!UICONTROL Bozza indirizzo approvata dal governo]** e l&#39;icona ![aem_6_3_edit](assets/aem_6_3_edit.png). Imposta le seguenti proprietà:
@@ -320,7 +320,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      </tr> 
      <tr> 
       <td>Dimensioni e posizione</td> 
-      <td>Mobile</td> 
+      <td>A virgola mobile</td> 
       <td>Sinistra</td> 
      </tr> 
      <tr> 
@@ -351,7 +351,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Informazioni di base</td> 
+      <td>Esperienza pregressa</td> 
       <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -410,7 +410,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
      </tr> 
      <tr> 
       <td>Dimensioni e posizione</td> 
-      <td>Mobile</td> 
+      <td>A virgola mobile</td> 
       <td>Destra</td> 
      </tr> 
      <tr> 
@@ -425,7 +425,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Informazioni di base</td> 
+      <td>Esperienza pregressa</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -448,7 +448,8 @@ Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in
 <!--
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).-->
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
+-->
 
 >[!NOTE]
 >
@@ -479,7 +480,7 @@ Puoi utilizzare vari font per progettare un modulo adattivo. È possibile che in
 9. Passare alla cartella `clientlibs` appena creata e aggiungere le proprietà `allowProxy` e `categories`.
 10. Passare a `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e creare una cartella css.
 11. Vai alla cartella CSS creata e crea un file. Ad esempio, crea un file come `fonts.css` e incolla il codice di incorporamento insieme all&#39;URL.
-    ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
+   ![Struttura cartella](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Salva le modifiche.
 
 >[!NOTE]
@@ -515,4 +516,5 @@ The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection 
 1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
 1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
-   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**. -->
+   On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
+-->

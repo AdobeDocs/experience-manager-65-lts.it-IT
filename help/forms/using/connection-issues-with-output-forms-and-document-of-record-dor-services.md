@@ -10,16 +10,16 @@ feature: Adaptive Forms,Document Services
 hide: true
 hidefromtoc: true
 exl-id: c84ba536-a78d-4cf9-a480-59cb18e41076
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 1%
+source-wordcount: '188'
+ht-degree: 26%
 
 ---
 
 # Impossibile utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR) {#unable-to-use-output-service-forms-service-or-document-of-record-service}
 
-## Problema  
+## Problema
 
 Dopo aver installato AEM Forms 6.5 Service Pack 19, il tentativo di utilizzare il servizio di output, il servizio Forms o il servizio Document of Record (DoR) potrebbe causare un errore `Connection to failed service`.
 
@@ -33,7 +33,7 @@ Per risolvere il problema:
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 
 >[!NOTE]

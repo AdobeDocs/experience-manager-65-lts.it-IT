@@ -1,5 +1,5 @@
 ---
-title: Funzionamento di Report processi
+title: Funzionamento dei rapporti sui processi
 description: Descrizione dei servizi che compongono AEM Forms su JEE Process Reporting e introduzione all’interfaccia utente di Process Reporting
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: c59e5a1d-a066-48e7-a57e-c28cbb959719
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# Funzionamento di Report processi{#how-process-reporting-works}
+# Funzionamento dei rapporti sui processi{#how-process-reporting-works}
 
 Process Reporting è il modulo di reporting di AEM Forms su JEE.
 

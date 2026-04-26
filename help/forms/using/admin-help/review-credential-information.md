@@ -1,5 +1,5 @@
 ---
-title: Verifica informazioni sull'utilizzo delle credenziali
+title: Rivedere le informazioni sull’utilizzo delle credenziali
 description: Scopri come rivedere le informazioni sull’utilizzo delle credenziali. Le informazioni sull’utilizzo delle credenziali, che ne descrivono l’utilizzo, sono accessibili tramite l’estensione Acrobat Reader.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 5cc5c9fe-50ce-4863-bfa4-a009a6c3b06f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 0%
+source-wordcount: '196'
+ht-degree: 4%
 
 ---
 
-# Verifica informazioni sull&#39;utilizzo delle credenziali {#review-credential-use-information}
+# Rivedere le informazioni sull’utilizzo delle credenziali {#review-credential-use-information}
 
 Le credenziali contengono informazioni che descrivono l’uso previsto, accessibili tramite l’applicazione web per l’utente finale delle estensioni di Acrobat Reader DC. È possibile utilizzare queste informazioni per determinare il tipo di credenziali installate (valutazione o produzione) e le relative date di validità.
 

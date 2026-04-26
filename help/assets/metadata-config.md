@@ -7,9 +7,9 @@ feature: Metadata
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 43fb8af8-9750-44c1-8e02-34b25b92fd65
-source-git-commit: 194937f0678ea27a04319197f391dd7cc358ec51
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '2007'
 ht-degree: 4%
 
 ---
@@ -18,10 +18,11 @@ ht-degree: 4%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -117,8 +118,9 @@ Un profilo di metadati consente di applicare metadati predefiniti alle risorse a
 1. Fare clic su **[!UICONTROL Elimina profili metadati]** nella barra degli strumenti.
 1. Nella finestra di dialogo, fai clic su **[!UICONTROL Elimina]** per confermare l&#39;operazione di eliminazione. Il profilo metadati viene eliminato dall’elenco.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/it/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -200,7 +202,7 @@ Per modificare le proprietà degli elementi del modulo, fare clic sul componente
 
 **[!UICONTROL Etichetta campo]**: nome della proprietà dei metadati visualizzata nella pagina delle proprietà della cartella.
 
-**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova nel nodo della cartella.
+**[!UICONTROL Mappa su proprietà]**: questa proprietà specifica il percorso relativo del nodo della cartella nell&#39;archivio di CRX in cui viene salvato. Inizia con &quot;**./**&quot;, che indica che il percorso si trova sotto il nodo della cartella.
 
 Di seguito sono riportati i valori validi per questa proprietà:
 
@@ -262,7 +264,7 @@ Puoi assegnare uno schema di metadati della cartella durante la creazione di una
 
 ### Utilizzare lo schema di metadati della cartella {#use-the-folder-metadata-schema}
 
-Apri le proprietà di una cartella configurata con uno schema di metadati per cartelle. Nella pagina delle **[!UICONTROL proprietà]** della cartella viene visualizzata la scheda [!UICONTROL Metadati cartella]. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
+Apri le proprietà di una cartella configurata con uno schema di metadati per cartelle. Nella pagina delle [!UICONTROL proprietà] della cartella viene visualizzata la scheda **[!UICONTROL Metadati cartella]**. Seleziona questa scheda per visualizzare il modulo schema metadati della cartella.
 
 Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]** per memorizzare i valori. I valori specificati vengono memorizzati nel nodo della cartella nell&#39;archivio CRX.
 
@@ -278,7 +280,7 @@ Immetti i valori dei metadati nei vari campi e fai clic su **[!UICONTROL Salva]*
 >
 >* [Concetti e informazioni sui metadati](metadata-concepts.md).
 >* [Modifica proprietà metadati di più raccolte](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=it).
+>* [Importazione ed esportazione di metadati in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profili per elaborare metadati, immagini e video](processing-profiles.md).
 >* [Procedure consigliate per organizzare le risorse digitali in modo da utilizzare i profili di elaborazione](/help/assets/organize-assets.md).
 >* [writeback di XMP](/help/assets/xmp-writeback.md).

@@ -10,10 +10,10 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: e95f382b-ae89-46d5-b109-ea3257b6b046
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -91,14 +91,15 @@ Servizio per configurare l&#39;elenco di esclusione di entità che non dovrebber
 
   È possibile collegare un’implementazione personalizzata di CugExclude in caso di esigenze particolari.
 
-* Il componente OSGi implementa LoginPathProvider che espone un percorso di accesso corrispondente a LoginSelectorHandler. Include un riferimento obbligatorio a RequirementHandler utilizzato per registrare l&#39;osservatore che ascolta i requisiti di autenticazione modificati memorizzati nel contenuto tramite il tipo di mixin granite:AuthenticationRequired.
+* Il componente OSGi implementa LoginPathProvider che espone un percorso di accesso corrispondente a LoginSelectorHandler. Esiste un riferimento obbligatorio a un RequirementHandler utilizzato per registrare l&#39;osservatore che ascolta i requisiti di autenticazione modificati memorizzati nel contenuto tramite il tipo mixin granite:AuthenticationRequired.
 * Il componente OSGi che implementa RequirementHandler notifica a SlingAuthenticator le modifiche apportate ai authrequirements.
 
   Poiché il criterio di configurazione per questo componente è OBBLIGATORIO, viene attivato solo se è specificato un set di percorsi supportati.
 
   L’abilitazione del servizio avvia RequirementService.
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

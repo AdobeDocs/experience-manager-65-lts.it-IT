@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: d4809a55-aff5-41ac-b75e-81e3a6bf47ca
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 0%
+source-wordcount: '163'
+ht-degree: 100%
 
 ---
 
@@ -24,16 +24,16 @@ ht-degree: 0%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Dalla pagina Gestione archivio fonti attendibili è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello di SOAP.
+Dalla pagina Gestione archivio fonti attendibili, è possibile aggiungere e rimuovere le credenziali di nome utente e password utilizzate dal servizio Forms quando riceve una richiesta con protezione a livello di SOAP.
 
 ## Aggiungere credenziali nome utente e password {#add-a-user-name-and-password-credential}
 
-1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]**, quindi fare clic su **[!UICONTROL Aggiungi]**.
-1. Nella casella **[!UICONTROL Nome profilo]** digitare un nome per le credenziali.
-1. Nella casella **[!UICONTROL Nome utente]** digitare un nome utente univoco.
-1. Nella casella **[!UICONTROL Password]** digitare una password per l&#39;utente e quindi fare clic su **[!UICONTROL OK]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]**, quindi fai clic su **[!UICONTROL Aggiungi]**.
+1. Nella casella **[!UICONTROL Nome profilo]**, digita un nome per le credenziali.
+1. Nella casella **[!UICONTROL Nome utente]**, digita un nome utente univoco.
+1. Nella casella **[!UICONTROL Password]**, digita una password per l’utente e quindi fai clic su **[!UICONTROL OK]**.
 
 ## Eliminare le credenziali di nome utente e password {#delete-a-user-name-and-password-credential}
 
-1. Nella console di amministrazione, fare clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]**.
-1. Selezionare le caselle di controllo relative alle credenziali che si desidera eliminare, fare clic su **[!UICONTROL Elimina]** e quindi su **[!UICONTROL OK]**.
+1. Nella console di amministrazione, fai clic su **[!UICONTROL Impostazioni > Gestione archivio fonti attendibili > Credenziali utente e password]**.
+1. Seleziona le caselle di controllo relative alle credenziali che desideri eliminare, fai clic su **[!UICONTROL Elimina]** e quindi su **[!UICONTROL OK]**.

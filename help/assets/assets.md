@@ -6,10 +6,10 @@ feature: Asset Management
 role: Leader,Developer,User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2f2eb576-4924-4314-b348-c4b290a57fe3
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 4%
+source-wordcount: '926'
+ht-degree: 5%
 
 ---
 

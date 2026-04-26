@@ -1,5 +1,5 @@
 ---
-title: Servizio di backup e ripristino APIQuesto avvio
+title: Avvio rapido di API per il servizio di backup e ripristino
 description: Scopri in che modo l’API di backup e ripristino di AEM Forms Quick Starts consente processi efficienti di creazione e ripristino dei backup.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: de5663b1-2b4c-4f8e-8547-cb892a4d7d56
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 2%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Java™ API Quick Start(SOAP) è disponibile per l’API del servizio Backup e ripristino.
 
-[Guida introduttiva: attivazione della modalità di backup con Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Guida introduttiva: attivazione della modalità di backup con l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Guida introduttiva: uscire dalla modalità di backup con Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Guida introduttiva: uscire dalla modalità di backup con l’API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 Le operazioni di AEM Forms possono essere eseguite utilizzando l’API fortemente tipizzata di AEM Forms e la modalità di connessione deve essere impostata su SOAP.
 

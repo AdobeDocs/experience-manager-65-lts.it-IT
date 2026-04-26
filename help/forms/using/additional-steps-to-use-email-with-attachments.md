@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 0%
+source-wordcount: '281'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ Il problema si applica alla seguente versione:
 
 * Experience Manager 6.5 Forms
 
-## Problema   {#issue}
+## Problema {#issue}
 
 L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail o Includi allegati con la configurazione di Invio.
 
@@ -56,4 +56,4 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.

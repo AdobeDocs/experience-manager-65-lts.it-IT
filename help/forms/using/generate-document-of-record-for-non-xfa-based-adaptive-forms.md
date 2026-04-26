@@ -5,9 +5,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2d9ec8c4-330e-4474-97f4-1f434025683f
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: e91f40d1af626b3aa42c9ddb8381d73ef9a69273
 workflow-type: tm+mt
-source-wordcount: '4292'
+source-wordcount: '4354'
 ht-degree: 2%
 
 ---
@@ -392,7 +392,7 @@ Le impostazioni del documento record di un componente sono disponibili nelle rel
    * **[!UICONTROL Inserisci]** > **[!UICONTROL A pagina]** > Nome della pagina master: inserisce il pannello nella pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
    * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina successiva]**: inserisce il pannello nella parte superiore della pagina successiva. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
    * **[!UICONTROL Inserisci]** > **[!UICONTROL Inizio pagina]** > Nome della pagina master: inserisce il pannello nella parte superiore della pagina, quando viene eseguito il rendering della pagina specificata. Se un&#39;interruzione di pagina non viene inserita automaticamente, [!DNL AEM Forms] aggiunge un&#39;interruzione di pagina.
-* **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina quale area riempire dopo aver posizionato un pannello. I campi seguenti sono disponibili nella sezione **[!UICONTROL Dopo]**:
+* **[!UICONTROL Paginazione]** > **[!UICONTROL Dopo]**: determina l&#39;area da riempire dopo l&#39;inserimento di un pannello.I campi seguenti sono disponibili nella sezione **[!UICONTROL After]**:
    * **[!UICONTROL Dopo]** > **[!UICONTROL Continua a riempire l&#39;elemento padre]**: continua l&#39;unione dei dati per tutti gli oggetti che devono ancora essere riempiti nel pannello padre.
    * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area contenuto successiva]**: inizia a riempire l&#39;area contenuto successiva dopo l&#39;inserimento del pannello.
    * **[!UICONTROL Dopo]** > **[!UICONTROL Vai all&#39;area dei contenuti]** > Nome dell&#39;area dei contenuti: inizia a riempire l&#39;area dei contenuti specificata dopo l&#39;inserimento del pannello.
@@ -479,7 +479,7 @@ Quando lavori su un documento record per moduli adattivi, tieni presenti le cons
 
 ## Usa un file XCI personalizzato
 
-Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> È possibile utilizzare un file XCI personalizzato per sostituire una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
+Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms as a Cloud Service has a master XCI file.--> È possibile utilizzare un file XCI personalizzato per ignorare una o più proprietà predefinite specificate nel file XCI esistente. È ad esempio possibile scegliere di incorporare un tipo di carattere in un documento o di attivare la proprietà con tag per tutti i documenti. La tabella seguente specifica le opzioni XCI:
 
 | Opzione XCI | Descrizione |
 |--- |--- |
@@ -519,12 +519,14 @@ Un file XCI consente di impostare varie proprietà di un documento. <!-- Forms a
   1. Add the custom XCI file to your development project.
   1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
   1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
-  
 -->
 
 ### Utilizzare un file XCI personalizzato nell’ambiente di sviluppo Forms locale
 
 1. Carica il file XCI nell’ambiente di sviluppo locale.
-1. Aprire Gestione configurazione <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Aprire Gestione configurazione <!--Cloud Service SDK-->.
+
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+
 1. Individua e apri la configurazione **[!UICONTROL Adaptive Forms and Interactive Communication Web Channel]**.
 1. Specifica il percorso del file XCI e fai clic su **[!UICONTROL Salva]**.

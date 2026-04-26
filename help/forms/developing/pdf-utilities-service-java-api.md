@@ -1,5 +1,5 @@
 ---
-title: Servizio Utilità PDF Java APIQuick Start(SOAP)
+title: Avvio rapido di API Java per il servizio delle utilità di PDF (SOAP)
 description: Utilizzare il servizio Utilità di PDF per convertire un documento PDF in un documento XDP, convertire un documento XDP in un documento PDF, recuperare le proprietà del documento PDF, impostare lo stile di salvataggio per un documento PDF e bonificare i documenti PDF.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 546f42dd-a1bc-42cb-bbee-50a541f71d55
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 0%
+source-wordcount: '458'
+ht-degree: 1%
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Generare QuickStart per API Java del servizio PDF (SOAP)
+title: Avvio rapido di API Java per il servizio di generazione dei PDF (SOAP)
 description: Utilizzare il servizio Generate PDF per convertire un documento Microsoft Word in un documento PDF, convertire il contenuto HTML in un documento PDF e convertire un documento PDF in un file RTF utilizzando l'API Java.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 87b9f386-5a60-48fa-a25f-2aeb166c9d1b
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 0%
+source-wordcount: '325'
+ht-degree: 2%
 
 ---
 

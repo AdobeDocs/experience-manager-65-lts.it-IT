@@ -11,9 +11,9 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 1cc7b91e-c2f1-4831-b8cd-1399e7dd821e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -489,7 +489,7 @@ Avviso in Riferimenti servizio sono disponibili due elementi. Il primo elemento 
 1. Nell&#39;elenco **Modelli** selezionare **ASP.NET sito Web**.
 1. Nella casella **Posizione** selezionare una posizione per il progetto. Denomina il progetto *InvokePreLoanProcess*.
 1. Nella casella **Lingua** selezionare Visual C#
-1. Fare clic su OK.
+1. Fai clic su OK.
 
 **Aggiungi riferimenti al servizio:**
 

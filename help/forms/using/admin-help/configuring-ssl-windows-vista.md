@@ -1,37 +1,37 @@
 ---
-title: Configurazione di SSL in Windows Vista
-description: Scopri come configurare SSL in Windows Vista. Utilizza ed esegui Java Keytool per generare il certificato SSL con le chiavi RSA per l’autenticazione.
+title: Configurazione SSL in Windows Vista
+description: Scopri come configurare SSL in Windows Vista. Utilizza ed esegui Keytool di Java per generare il certificato SSL con le chiavi RSA per l’autenticazione.
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ee73f6a1-712c-461f-95e8-85f8c5694293
-source-git-commit: d0f29cb177e98315cd50c2d7e96c3605eec14885
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 0%
+source-wordcount: '172'
+ht-degree: 100%
 
 ---
 
-# Configurazione di SSL in Windows Vista {#configuring-ssl-on-windows-vista}
+# Configurazione SSL in Windows Vista {#configuring-ssl-on-windows-vista}
 
-Per configurare SSL in Windows Vista™, è necessario un certificato SSL con chiavi RSA per l&#39;autenticazione. Puoi utilizzare lo strumento chiave Java per creare il certificato.
+Per configurare SSL in Windows Vista™, hai bisogno di un certificato SSL con chiavi RSA per l’autenticazione. Per generare il certificato puoi utilizzare Keytool di Java.
 
 >[!NOTE]
 >
 >Windows Vista non funzionerà con le chiavi DSA.
 
-È possibile eseguire keytool utilizzando un singolo comando che include tutte le informazioni necessarie per creare il certificato e il keystore.
+Puoi eseguire keytool utilizzando un singolo comando che include tutte le informazioni necessarie per generare il certificato e il keystore.
 
-**Crea un certificato SSL**
+**Generare un certificato SSL**
 
-1. Al prompt dei comandi passare a *`[JAVA HOME]`*/bin e digitare il comando seguente per creare il certificato e il keystore:
+1. Al prompt dei comandi passa a *`[JAVA HOME]`*/bin e digita il comando seguente per generare il certificato e il keystore:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Nome host* `, OU=`*Nome gruppo* `, O=`*Nome società* `,L=`*Nome città* `, S=`*Stato* `, C=`*Codice paese* `" -alias`*&quot;Certificato LC&quot;* `-keypass` `key`*_* *password* `-keystore`*nomechiave* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Nome host* `, OU=`*Nome gruppo* `, O=`*Nome società* `,L=`*Nome città* `, S=`*Stato* `, C=`*Codice paese* `" -alias`*“Certificato LC”* `-keypass` `key`*_* *password* `-keystore`*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >Sostituisci *`[JAVA_HOME]`con la directory in cui è installato JDK e sostituisci il testo in corsivo con i valori corrispondenti all&#39;ambiente.*
+   >Sostituisci *`[JAVA_HOME]`con la directory in cui è installato JDK e sostituisci il testo in corsivo con i valori corrispondenti all’ambiente.*
 
-1. Digitare `changeit` come password. Questa password è l&#39;impostazione predefinita per un&#39;installazione Java e l&#39;amministratore di sistema potrebbe averla modificata.
+1. Digitare `changeit` come password. Questa password è l’impostazione predefinita per un’installazione Java e l’amministratore di sistema potrebbe averla modificata.

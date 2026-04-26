@@ -1,5 +1,5 @@
 ---
-title: Rendering di Forms per valore
+title: Rendering dei moduli per valore
 description: Utilizza Forms API (Java) per eseguire il rendering di un modulo per valore utilizzando Java API e Web Service API.
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 8ad8cf67-3e90-4790-a063-099134b377a3
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 0%
+source-wordcount: '1848'
+ht-degree: 1%
 
 ---
 
-# Rendering di Forms per valore {#rendering-forms-by-value}
+# Rendering dei moduli per valore {#rendering-forms-by-value}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -95,7 +95,7 @@ Quando il servizio Forms esegue il rendering di un modulo in base al valore, res
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -144,7 +144,7 @@ Eseguire il rendering di un modulo per valore utilizzando l’API Forms (Java):
 
 **Consulta anche**
 
-[Rendering di Forms per valore](/help/forms/developing/rendering-forms.md)
+[Rendering dei moduli per valore](/help/forms/developing/rendering-forms.md)
 
 [Quick Start (modalità SOAP): rendering per valore utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
@@ -201,6 +201,6 @@ Eseguire il rendering di un modulo in base al valore utilizzando l’API di Form
 
 **Consulta anche**
 
-[Rendering di Forms per valore](#rendering-forms-by-value)
+[Rendering dei moduli per valore](#rendering-forms-by-value)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

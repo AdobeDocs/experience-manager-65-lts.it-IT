@@ -1,5 +1,5 @@
 ---
-title: Rendering di Forms nel client
+title: Rendering dei moduli nel client
 description: Ottimizza la distribuzione dei contenuti PDF e migliora la capacità del servizio Forms di gestire il carico di rete utilizzando la funzionalità di rendering lato client di Acrobat o Adobe Reader
 contentOwner: admin
 content-type: reference
@@ -12,18 +12,18 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: cd0a9205-5ccc-420b-9245-98f8bd7d6c9f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 0%
+source-wordcount: '1715'
+ht-degree: 2%
 
 ---
 
-# Rendering di Forms nel client {#rendering-forms-at-the-client}
+# Rendering dei moduli nel client {#rendering-forms-at-the-client}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-## Rendering di Forms nel client {#rendering-forms-at-the-client-inner}
+## Rendering dei moduli nel client {#rendering-forms-at-the-client-inner}
 
 Puoi ottimizzare la distribuzione dei contenuti PDF e migliorare la capacità del servizio Forms di gestire il carico di rete utilizzando la funzionalità di rendering lato client di Acrobat o Adobe Reader. Questo processo è noto come rendering di un modulo sul client. Per eseguire il rendering di un modulo sul client, il dispositivo client (in genere un browser web) deve utilizzare Acrobat 7.0 o Adobe Reader 7.0 o versione successiva.
 
@@ -85,7 +85,7 @@ Il servizio Forms crea un flusso di dati modulo che è necessario scrivere nel b
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [Trasmissione di documenti al servizio Forms](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -185,6 +185,6 @@ Esegui il rendering di un modulo sul client utilizzando l’API Forms (servizio 
 
 **Consulta anche**
 
-[Rendering di Forms nel client](#rendering-forms-at-the-client)
+[Rendering dei moduli nel client](#rendering-forms-at-the-client)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

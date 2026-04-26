@@ -1,5 +1,5 @@
 ---
-title: Modificare il numero di articoli visualizzati nelle pagine Applicazioni e servizi
+title: Modificare il numero di elementi visualizzati nelle pagine Applicazioni e servizi
 description: Scopri come modificare il numero di elementi visualizzati nelle pagine Applicazioni e Servizi.
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,20 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a60548c8-42ed-4444-839d-7f33c9d2dd14
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Modificare il numero di articoli visualizzati nelle pagine Applicazioni e servizi {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+# Modificare il numero di elementi visualizzati nelle pagine Applicazioni e servizi {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
 >[!NOTE]
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Nella pagina Preferenze è possibile controllare il numero di servizi, endpoint, categorie e archivi visualizzati in ciascuna delle pagine Web delle applicazioni e dei servizi.
+Nella pagina Preferenze è possibile controllare il numero di servizi, endpoint, categorie e archivi visualizzati in ciascuna delle pagine Web di Applicazioni e servizi.
 
-1. Nella console di amministrazione, **[!UICONTROL fare clic su Servizi > Applicazioni e servizi > Preferenze]**.
-1. Nella pagina Preferenze digitare il numero di servizi, endpoint, categorie e archivi che è possibile visualizzare in ogni pagina e quindi fare clic su **[!UICONTROL Salva]**.
+1. Nella console di amministrazione, **[!UICONTROL fai clic su Servizi > Applicazioni e servizi > Preferenze]**.
+1. Nella pagina Preferenze digitare il numero di servizi, endpoint, categorie e archivi che è possibile visualizzare in ogni pagina e quindi fai clic su **[!UICONTROL Salva]**.

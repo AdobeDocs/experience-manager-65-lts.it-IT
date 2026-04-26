@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 55f5d3bb-2a6f-4fac-9d33-7b39e4ca317f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 3%
+source-wordcount: '272'
+ht-degree: 8%
 
 ---
 
-# Impossibile convertire file Word o Excel in PDF su Windows Server {#unable-to-convert-word-excel-files-PDF}
+# Impossibile convertire file Word o Excel in PDF sul server Windows {#unable-to-convert-word-excel-files-PDF}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Quando l&#39;utente cerca di convertire i file Word o Excel in PDF su Microsoft® Windows Server, si verifica il seguente errore:
 
@@ -35,7 +35,7 @@ Effettua le seguenti operazioni:
 
    1. Microsoft® consiglia di eseguire il backup del Registro di sistema prima di modificarlo. Per i passaggi dettagliati, vedere [Eseguire il backup e il ripristino del Registro di sistema in Windows](https://support.microsoft.com/en-us/help/322756).
    1. Aprire l&#39;editor del Registro di sistema di Microsoft® Windows. Per aprire l&#39;editor del Registro di sistema, passare a Start > Esegui, digitare regedit e fare clic su OK.
-   1. Passa a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verificare che il valore di EnableLUA sia impostato su 0 (zero).
+   1. Accedi a `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verificare che il valore di EnableLUA sia impostato su 0 (zero).
    1. Assicurarsi che il valore di **EnableLUA** sia impostato su 0 (zero). Se il valore non è 0, modificare il valore in 0. Chiudi l’editor del Registro di sistema.
 
 1. Riavvia il computer.

@@ -1,6 +1,6 @@
 ---
-title: Siti Web server applicazioni
-description: Questo documento contiene i collegamenti ai siti Web del produttore per tutti i server applicazioni supportati.
+title: Siti web del server applicazioni
+description: Questo documento contiene i collegamenti ai siti web del produttore per tutti i server applicazioni supportati.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 279e7661-09b1-41a9-8459-09d5280d4739
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 0%
+source-wordcount: '54'
+ht-degree: 100%
 
 ---
 
-# Siti Web server applicazioni {#application-server-websites}
+# Siti web del server applicazioni {#application-server-websites}
 
-Questo elenco contiene i collegamenti ai siti Web del produttore per tutti i server applicazioni supportati.
+Questo elenco contiene i collegamenti ai siti web del produttore per tutti i server applicazioni supportati.
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 

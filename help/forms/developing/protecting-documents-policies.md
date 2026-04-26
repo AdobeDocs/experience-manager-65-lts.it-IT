@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 0664e8f8-fad4-40e6-871e-24bba642fb4f
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '15394'
-ht-degree: 0%
+source-wordcount: '15601'
+ht-degree: 1%
 
 ---
 
@@ -281,7 +281,7 @@ Crea una policy utilizzando Document Security API (servizio web):
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -421,7 +421,7 @@ Modifica una policy esistente utilizzando Document Security API (servizio web):
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -524,7 +524,7 @@ Elimina una policy utilizzando l’API di Document Security (servizio web):
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -666,7 +666,7 @@ Applicare una policy a un documento PDF utilizzando Document Security API (servi
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passare un valore stringa che specifica il WSDL al servizio Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Trasmettere un valore stringa che specifica il WSDL al servizio Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -811,7 +811,7 @@ Rimuovi una policy da un documento PDF protetto tramite policy utilizzando Docum
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -954,7 +954,7 @@ Revoca dell’accesso a un documento PDF protetto tramite policy utilizzando Doc
 1. Creare un oggetto API client di Document Security
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -1086,7 +1086,7 @@ Ripristinare l’accesso a un documento revocato utilizzando Document Security A
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -1220,7 +1220,7 @@ Controlla un documento PDF protetto tramite policy utilizzando l’API Document 
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -1303,7 +1303,7 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
 <table>
  <thead>
   <tr>
-   <th><p>Nome chiave</p></th>
+   <th><p>Nome della chiave</p></th>
    <th><p>Descrizione</p></th>
    <th><p>Valore</p></th>
   </tr>
@@ -1356,7 +1356,7 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td>
-   <td><p>Specifica se la filigrana è uno sfondo. Il valore predefinito è false.</p></td>
+   <td><p>Specifica se la filigrana è uno sfondo. Il valore predefinito è falso.</p></td>
    <td><p>Vero o Falso</p></td>
   </tr>
   <tr>
@@ -1440,7 +1440,7 @@ Crea una filigrana utilizzando Document Security API (servizio web):
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -1587,7 +1587,7 @@ Modifica una filigrana utilizzando Document Security API (servizio web):
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -1715,7 +1715,7 @@ Cerca gli eventi utilizzando l’API di Rights Management (servizio web):
 1. Creare un oggetto API client di Rights Management
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -2059,7 +2059,7 @@ Applicare una policy a un documento di Word utilizzando Document Security API (s
 1. Crea un oggetto API client di Document Security.
 
    * Creare un oggetto `DocumentSecurityServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `DocumentSecurityServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DocumentSecurityServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -2203,7 +2203,7 @@ Rimuovi una policy da un documento Word protetto tramite policy utilizzando Docu
 1. Creare un oggetto API client di Document Security
 
    * Creare un oggetto `RightsManagementServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
+   * Creare un oggetto `RightsManagementServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.)
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `RightsManagementServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:

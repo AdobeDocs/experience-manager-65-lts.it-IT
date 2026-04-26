@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva all’API Java di User Manager (SOAP)
+title: Avvio rapido di API Java per la gestione degli utenti (SOAP)
 description: Utilizza l’API di User Manager per aggiungere utenti, eliminare utenti, creare gruppi, gestire utenti e gruppi, gestire ruoli e autorizzazioni, sincronizzare gli utenti a livello di programmazione e gestire i nodi delle preferenze a livello di programmazione.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: b960ca0b-5e0f-4009-b923-e93889c3c1f7
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '493'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 1%
 
 ---
 
@@ -382,7 +382,7 @@ Esempio Nell&#39;esempio di codice riportato di seguito viene trovato un utente 
 
 ## Quick Start (modalità SOAP): gestione di ruoli e autorizzazioni tramite l’API Java {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi viene assegnato a un utente/gruppo/ruolo, vengono stampati i ruoli dell&#39;utente/gruppo/ruolo e successivamente il ruolo viene rimosso dall&#39;utente/gruppo/ruolo. Per questo avvio rapido vengono richiamati due servizi: il servizio DirectoryManager e il servizio AuthorizationManager.(Vedi [Gestione di ruoli e autorizzazioni](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Esempio Nell&#39;esempio di codice riportato di seguito il ruolo Utente servizi viene assegnato a un utente/gruppo/ruolo, vengono stampati i ruoli dell&#39;utente/gruppo/ruolo e successivamente il ruolo viene rimosso dall&#39;utente/gruppo/ruolo. Per questo avvio rapido vengono richiamati due servizi: il servizio DirectoryManager e il servizio AuthorizationManager. Vedere [Gestione di ruoli e autorizzazioni](/help/forms/developing/users.md#managing-roles-and-permissions).
 
 ```java
  /*

@@ -1,5 +1,5 @@
 ---
-title: Attivazione e disattivazione della modalità di backup sicuro
+title: Abilitazione e disabilitazione della modalità backup sicuro
 description: Nella pagina Impostazioni di backup è possibile utilizzare AEM Forms in modalità di backup sicura in modo da poter eseguire il backup affidabile del database e della directory GDS (Global Document Storage). Scopri come abilitare e disabilitare la modalità di backup sicuro.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 34381caa-154e-479c-b475-7b3549909e9a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
-# Attivazione e disattivazione della modalità di backup sicuro {#enabling-and-disabling-safe-backup-mode}
+# Abilitazione e disabilitazione della modalità backup sicuro {#enabling-and-disabling-safe-backup-mode}
 
 >[!NOTE]
 > 

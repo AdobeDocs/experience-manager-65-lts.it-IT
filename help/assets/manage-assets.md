@@ -8,9 +8,9 @@ mini-toc-levels: 4
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10038'
+source-wordcount: '10234'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 In [!DNL Adobe Experience Manager Assets], puoi fare di più che archiviare e gestire le risorse. [!DNL Experience Manager] offre funzionalità di gestione delle risorse di livello enterprise. Puoi modificare e condividere le risorse, eseguire ricerche avanzate e creare più rappresentazioni di decine di formati di file supportati. Puoi anche gestire versioni e diritti digitali, automatizzare l’elaborazione delle risorse, gestire e gestire i metadati, collaborare utilizzando le annotazioni e molto altro.
@@ -48,7 +48,8 @@ Non includere caratteri speciali nelle estensioni dei nomi di file delle risorse
 
 ## Caricare le risorse {#uploading-assets}
 
-<!-- TBD the following:
+<!--
+TBD the following:
 Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
@@ -103,7 +104,7 @@ Per configurare l&#39;attività di pulizia per i processi di caricamento blocchi
 
 >[!CAUTION]
 >
->Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione dei blocchi è 50 MB. Se modifichi [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=it) e imposti `timeout configuration` su un tempo inferiore a quello necessario per caricare una risorsa, si verifica una situazione di timeout della sessione mentre è in corso il caricamento della risorsa. Pertanto, modificare `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
+>Il caricamento dei blocchi viene attivato quando il valore predefinito è 500 MB e la dimensione dei blocchi è 50 MB. Se modifichi [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e imposti `timeout configuration` su un tempo inferiore a quello necessario per caricare una risorsa, si verifica una situazione di timeout della sessione mentre è in corso il caricamento della risorsa. Pertanto, modificare `chunkUploadMinFileSize` e `chunksize` in modo che ogni richiesta di blocco aggiorni la sessione.
 >
 >Dato il timeout di scadenza delle credenziali, la latenza, la larghezza di banda e i caricamenti simultanei previsti, il valore più alto che consente di garantire che venga scelto quanto segue:
 >
@@ -178,7 +179,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 
 1. Utilizzando il client FTP scelto, accedi al server FTP utilizzando il nome utente e la password FTP ricevuti dall&#39;e-mail di provisioning. Nel client FTP, carica file o cartelle sul server FTP.
 
-1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=it#system-requirements-dmc-app), quindi accedi al tuo account.
+1. Apri l&#39;[applicazione desktop Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), quindi accedi al tuo account.
 
    Le credenziali e l’accesso sono stati forniti da Adobe al momento del provisioning. Se non disponi di queste informazioni, contatta l’Assistenza clienti Adobe.
 
@@ -208,17 +209,17 @@ Per annullare un processo di caricamento in corso, fai clic su **[!UICONTROL Ann
 | Sovrascrivi in qualsiasi cartella, nome come risorsa base, ignora estensione | | Selezionare questa opzione se si desidera che i file caricati sostituiscano i file esistenti con gli stessi nomi. Il nome di questa opzione potrebbe essere diverso, a seconda delle impostazioni in **[!UICONTROL Configurazione applicazione]** > **[!UICONTROL Impostazioni generali]** > **[!UICONTROL Carica nell&#39;applicazione]** > **[!UICONTROL Sovrascrivi immagini]**. |
 | Decomprimi file Zip o Tar al caricamento | | |
 | Opzioni processo | | Fai clic su **[!UICONTROL Opzioni processo]** per aprire la finestra di dialogo [!UICONTROL Opzioni processo di caricamento] e scegliere le opzioni che influiscono sull&#39;intero processo di caricamento. Queste opzioni sono le stesse per tutti i tipi di file.<br>È possibile scegliere le opzioni predefinite per il caricamento dei file a partire dalla pagina Impostazioni generali applicazione. Per aprire questa pagina, scegliere **[!UICONTROL Configurazione]** > **[!UICONTROL Configurazione applicazione]**. Selezionare l&#39;opzione **[!UICONTROL Opzioni di caricamento predefinite]** per aprire la finestra di dialogo [!UICONTROL Opzioni processo di caricamento]. |
-| | Quando   | Selezionare Una tantum o Ricorrente. Per impostare un processo ricorrente, scegliete l&#39;opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando il processo di caricamento FTP deve essere ripetuto. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
+| | Quando | Selezionare Una tantum o Ricorrente. Per impostare un processo ricorrente, scegliete l&#39;opzione Ripeti (Giornaliero, Settimanale, Mensile o Personalizzato) per specificare quando il processo di caricamento FTP deve essere ripetuto. Quindi specifica le opzioni di pianificazione in base alle esigenze. |
 | | Includi sottocartelle | Carica tutte le sottocartelle nella cartella che intendi caricare. I nomi della cartella e delle relative sottocartelle caricate vengono immessi automaticamente in [!DNL Experience Manager Assets]. |
-| | Opzioni di ritaglio | Per ritagliare manualmente i lati di un&#39;immagine, selezionate il menu Ritaglia e scegliete Manuale. Quindi immettete il numero di pixel da ritagliare da un lato o da ciascun lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine. Ad esempio, se l&#39;immagine visualizza 150 ppi e si immette 75 nelle caselle di testo Superiore, Destra, Inferiore e Sinistra, verrà ritagliato un centimetro da ciascun lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un&#39;immagine, aprire il menu Ritaglia, scegliere Manuale e immettere le misure dei pixel nei campi Superiore, Destro, Inferiore e Sinistro per ritagliare i pixel dai lati. È inoltre possibile scegliere Rifila dal menu Ritaglia e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliere l&#39;opzione Colore. Selezionate quindi il menu Angolo (Corner) e scegliete l&#39;angolo dell&#39;immagine con il colore che meglio rappresenta lo spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliere l&#39;opzione Trasparenza.<br> **Tolleranza** - Trascinare il dispositivo di scorrimento per specificare una tolleranza da 0 a 1. Per il ritaglio basato sul colore, specificare 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell&#39;angolo dell&#39;immagine. I numeri più vicini a 1 consentono una maggiore differenza di colore.<br>Per il ritaglio basato sulla trasparenza, specificare 0 per ritagliare i pixel solo se sono trasparenti. I numeri più vicini a 1 consentono una maggiore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
+| | Opzioni di ritaglio | Per ritagliare manualmente i lati di un&#39;immagine, selezionate il menu Ritaglia e scegliete Manuale. Quindi immettete il numero di pixel da ritagliare da un lato o da ciascun lato dell&#39;immagine. La quantità di immagine ritagliata dipende dall&#39;impostazione ppi (pixel per pollice) nel file di immagine. Se ad esempio l&#39;immagine visualizza 150 ppi e si immette 75 nelle caselle di testo Superiore, Destra, Inferiore e Sinistra, verrà ritagliato un centimetro da ogni lato.<br> Per ritagliare automaticamente i pixel dello spazio bianco da un&#39;immagine, aprire il menu Ritaglia, scegliere Manuale e immettere le misure dei pixel nei campi Superiore, Destro, Inferiore e Sinistro per ritagliare i pixel dai lati. È inoltre possibile scegliere Rifila dal menu Ritaglia e scegliere le seguenti opzioni:<br> **Rifila in base a** <ul><li>**Colore** - Scegliere l&#39;opzione Colore. Selezionate quindi il menu Angolo (Corner) e scegliete l&#39;angolo dell&#39;immagine con il colore che meglio rappresenta lo spazio bianco da ritagliare.</li><li>**Trasparenza** - Scegliere l&#39;opzione Trasparenza.<br> **Tolleranza** - Trascinare il dispositivo di scorrimento per specificare una tolleranza da 0 a 1. Per il ritaglio basato sul colore, specificare 0 per ritagliare i pixel solo se corrispondono esattamente al colore selezionato nell&#39;angolo dell&#39;immagine. I numeri più vicini a 1 consentono una maggiore differenza di colore.<br>Per il ritaglio basato sulla trasparenza, specificare 0 per ritagliare i pixel solo se sono trasparenti. I numeri più vicini a 1 consentono una maggiore trasparenza.</li></ul><br>Queste opzioni di ritaglio non sono distruttive. |
 | | Opzioni profilo colore | Scegli una conversione colore quando crei file ottimizzati utilizzati per la consegna:<ul><li>Mantenimento colore predefinito: mantiene i colori dell&#39;immagine di origine ogni volta che le immagini contengono informazioni sullo spazio colore; non vi è alcuna conversione colore. Quasi tutte le immagini oggi hanno il profilo colore appropriato già incorporato. Tuttavia, se un&#39;immagine sorgente CMYK non contiene un profilo colore incorporato, i colori vengono convertiti in spazio colore sRGB (rosso verde standard). sRGB è lo spazio colore consigliato per la visualizzazione delle immagini nelle pagine Web.</li><li>Mantieni spazio colore originale: mantiene i colori originali senza alcuna conversione di colore nel punto. Per le immagini senza un profilo colore incorporato, qualsiasi conversione di colore viene eseguita utilizzando i profili colore predefiniti configurati nelle impostazioni di pubblicazione. I profili colore potrebbero non essere allineati con il colore nei file creati con questa opzione. Pertanto, si consiglia di utilizzare l&#39;opzione Default Color Preservation (Conservazione colore predefinita).</li><li>Personalizza da > A<br> Apre i menu in modo da poter scegliere uno spazio colore Converti da e Converti in. Questa opzione avanzata sostituisce tutte le informazioni sui colori incorporate nel file di origine. Selezionare questa opzione se tutte le immagini inviate contengono dati di profilo colore errati o mancanti.</li></ul> |
-| | Opzioni di modifica delle immagini | Potete conservare le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta [Impostazione delle opzioni per le modifiche di immagini al caricamento](#setting-image-editing-options-at-upload). |
-| | Opzioni PostScript | Potete rasterizzare i file PostScript®, ritagliare i file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opzioni Photoshop | Potete creare modelli da file Adobe® Photoshop®, gestire i livelli, specificare il nome dei livelli, estrarre il testo e specificare come le immagini vengono ancorate nei modelli.<br> modelli non supportati in [!DNL Experience Manager].<br> Consulta [Impostazione delle opzioni di caricamento di Photoshop](#setting-photoshop-upload-options). |
-| | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>eCatalog non supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: il numero massimo di pagine per un PDF da considerare per l&#39;estrazione è 5000 per i nuovi caricamenti. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md). |
-| | Opzioni Illustrator | Potete rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
-| | Opzioni eVideo | Potete trascodificare un file video scegliendo un predefinito video.<br> Consulta [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
-| | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito che desideri utilizzare. È possibile selezionare più predefiniti. I predefiniti vengono creati nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Per ulteriori informazioni sulla creazione di predefiniti per set di batch, consulta [Configurazione dei predefiniti per set di batch per generare automaticamente set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Vedi [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
+| | Opzioni di modifica delle immagini | È possibile mantenere le maschere di ritaglio nelle immagini e scegliere un profilo colore.<br> Consulta [Impostazione delle opzioni per le modifiche di immagini al caricamento](#setting-image-editing-options-at-upload). |
+| | Opzioni PostScript | È possibile rasterizzare i file PostScript®, ritagliare i file, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opzioni Photoshop | È possibile creare modelli da file Adobe® Photoshop®, gestire i livelli, specificare il nome dei livelli, estrarre il testo e specificare come le immagini vengono ancorate nei modelli.<br> I modelli non sono supportati in [!DNL Experience Manager].<br> Consulta [Impostazione delle opzioni di caricamento di Photoshop](#setting-photoshop-upload-options). |
+| | Opzioni PDF | È possibile rasterizzare i file, estrarre parole di ricerca e collegamenti, generare automaticamente un eCatalog, impostare la risoluzione e scegliere uno spazio colore.<br>Gli eCatalog non sono supportati in [!DNL Experience Manager]. <br> Consulta [Impostazione delle opzioni di caricamento di PDF](#setting-pdf-upload-options).<br>**Nota**: per i nuovi caricamenti, il numero massimo di pagine da considerare per l&#39;estrazione per un PDF è 5000. Questo limite verrà modificato in 100 pagine (per tutti i PDF) il 31 dicembre 2022. Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md). |
+| | Opzioni Illustrator | È possibile rasterizzare i file Adobe Illustrator®, mantenere sfondi trasparenti, scegliere una risoluzione e scegliere uno spazio colore.<br> Consulta [Impostazione delle opzioni di caricamento di PostScript e Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Opzioni eVideo | È possibile trascodificare un file video scegliendo un predefinito per video.<br> Consulta [Impostazione delle opzioni di caricamento di eVideo](#setting-evideo-upload-options). |
+| | Predefiniti set di batch | Per creare un set di immagini o un set 360 gradi dai file caricati, fai clic sulla colonna Attivo per il predefinito che desideri utilizzare. È possibile selezionare più predefiniti. È possibile creare i predefiniti nella pagina Impostazione applicazione/Predefiniti set di batch di Dynamic Media Classic.<br> Per ulteriori informazioni sulla creazione di predefiniti per set di batch, vedere [Configurazione dei predefiniti per set di batch per la generazione automatica di set di immagini e set 360 gradi](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Vedi [Impostazione dei predefiniti per set di batch al caricamento](#setting-batch-set-presets-at-upload). |
 
 #### Imposta le opzioni per le modifiche immagine al caricamento {#setting-image-editing-options-at-upload}
 
@@ -276,7 +277,7 @@ Utilizza le [!UICONTROL opzioni di ritaglio] e le [!UICONTROL opzioni di profilo
 | Opzione | Sottoopzione | Descrizione |
 |---|---|---|
 | Mantieni livelli | | Ripete i livelli nel PSD, se presenti, in singole risorse. I livelli di risorsa rimangono associati al PSD. Potete visualizzarli aprendo il file PSD nella vista Dettaglio e selezionando il pannello dei livelli. |
-| Crea modello | | Crea un modello dai livelli nel file PSD. |
+| Creare un modello | | Crea un modello dai livelli nel file PSD. |
 | Estrai testo | | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
 | Estendi livelli a dimensione sfondo | | Estende le dimensioni dei livelli immagine strappati alle dimensioni del livello di sfondo. |
 | Denominazione livelli | | I livelli nel file PSD vengono caricati come immagini separate. |
@@ -319,7 +320,7 @@ Per trascodificare un file video scegliendo tra vari predefiniti video.
 | Video adattivo | | Un singolo predefinito di codifica che funziona con qualsiasi proporzione per creare video da distribuire su dispositivi mobili, tablet e desktop. I video sorgente caricati che sono codificati con questo predefinito sono impostati con un’altezza fissa. Tuttavia, la larghezza viene ridimensionata automaticamente per mantenere le proporzioni del video. <br>È consigliabile utilizzare la codifica video adattiva. |
 | Predefiniti codifica singola | Ordina predefiniti codifica | Selezionare **[!UICONTROL Nome]** o **[!UICONTROL Dimensione]** se si desidera ordinare i predefiniti di codifica elencati in Desktop, Dispositivi mobili e Tablet per nome o per dimensione di risoluzione. |
 | | Desktop | Creare un file MP4 per offrire ai computer desktop un&#39;esperienza video in streaming o progressiva. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
-| | Dispositivi mobili | Crea un file MP4 da distribuire su dispositivi mobili iPhone o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
+| | Dispositivo mobile | Crea un file MP4 da distribuire su dispositivi mobili iPhone o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
 | | Tablet | Crea un file MP4 da distribuire su dispositivi tablet iPad o Android™. Seleziona uno o più rapporti di formato con le dimensioni di risoluzione e la velocità dati di destinazione desiderate. |
 
 #### Imposta predefiniti set di batch al caricamento {#setting-batch-set-presets-at-upload}
@@ -430,7 +431,7 @@ Per visualizzare in anteprima una risorsa tramite tastiera, effettua le seguenti
 
    * Numero di volte in cui la risorsa è stata visualizzata o scaricata
    * Canali/dispositivi tramite i quali è stata utilizzata la risorsa
-   * Soluzioni creative in cui la risorsa è stata utilizzata di recente
+   * Soluzioni Creative in cui la risorsa è stata utilizzata di recente
 
    Per ulteriori dettagli, vedi [Informazioni su Assets](/help/assets/asset-insights.md).
 
@@ -883,7 +884,7 @@ Il controllo delle versioni crea un’istantanea delle risorse digitali in un de
 * Carica una risorsa con lo stesso nome file che esiste nella stessa posizione. Può trattarsi di una nuova risorsa o di una versione modificata della stessa risorsa.
 * Modificare un&#39;immagine in [!DNL Experience Manager] e salvare le modifiche.
 * Modifica i metadati di una risorsa.
-* Utilizza l&#39;app desktop [!DNL Experience Manager] per estrarre una risorsa esistente, modificarla e [caricare le modifiche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#edit-assets-upload-updated-assets).
+* Utilizza l&#39;app desktop [!DNL Experience Manager] per estrarre una risorsa esistente, modificarla e [caricare le modifiche](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 È inoltre possibile abilitare il controllo automatico delle versioni tramite un flusso di lavoro. Quando crei una versione per una risorsa, i metadati e le rappresentazioni vengono salvati insieme alla versione. Le rappresentazioni sono rappresentazioni alternative delle stesse immagini, ad esempio una rappresentazione PNG di un file JPEG caricato.
 
@@ -958,4 +959,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Per ulteriori informazioni, consulta come [sfogliare le risorse DAM utilizzando l&#39;app desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [come utilizzare Adobe Asset Link](https://helpx.adobe.com/it/enterprise/using/manage-assets-using-adobe-asset-link.html).

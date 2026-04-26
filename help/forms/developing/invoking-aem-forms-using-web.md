@@ -1,5 +1,5 @@
 ---
-title: Richiamare AEM Forms tramite servizi Web
+title: Richiamare AEM Forms tramite servizi web
 description: Richiama i processi AEM Forms utilizzando i servizi web con supporto completo per la generazione WSDL.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ feature: Adaptive Forms, APIs & Integrations, AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: ca620313-8c2c-44e6-9f29-0d91dc9f6e03
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '9814'
+source-wordcount: '9975'
 ht-degree: 0%
 
 ---
 
-# Richiamare AEM Forms tramite servizi Web {#invoking-aem-forms-using-web-services}
+# Richiamare AEM Forms tramite servizi web {#invoking-aem-forms-using-web-services}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -47,7 +47,7 @@ Per richiamare i servizi AEM Forms utilizzando un servizio Web, in genere si cre
  https://<your_serverhost>:<your_port>/soap/services/<service_name>?wsdl[&version=<version>][&async=true|false][lc_version=<lc_version>]
 ```
 
-Dove:
+dove:
 
 * *il_serverhost* rappresenta l&#39;indirizzo IP del server applicazioni J2EE che ospita AEM Forms.
 * *la porta* rappresenta la porta HTTP utilizzata dal server applicazioni J2EE.
@@ -107,7 +107,7 @@ Nella tabella seguente sono elencate le definizioni del servizio WSDL (supponend
    <td><p><code>http://localhost:8080/soap/services/FormDataIntegration?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Genera PDF</p></td>
+   <td><p>Generare un PDF</p></td>
    <td><p><code>http://localhost:8080/soap/services/ GeneratePDFService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -431,7 +431,7 @@ Nella tabella seguente sono elencati i tipi di dati Java e viene visualizzato il
     ant -buildfile "build.xml" wsdl
    ```
 
-   Inserire lo script di generazione ANT nella directory C:\Program Files\Java\jaxws-ri\bin. Lo script scrive i file JAVA in .cartella /classes. Lo script genera file JAVA che possono richiamare il servizio.
+   Inserire lo script di generazione ANT nella directory C:\Program Files\Java\jaxws-ri\bin. Lo script scrive i file JAVA nella cartella ./classes. Lo script genera file JAVA che possono richiamare il servizio.
 
 1. Creare un pacchetto dei file JAVA in un file JAR. Se stai lavorando su Eclipse, segui questi passaggi:
 
@@ -572,7 +572,7 @@ Per generare i file della libreria Java Axis, effettuare le seguenti operazioni:
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -724,7 +724,7 @@ La discussione qui riguarda l&#39;utilizzo di MTOM per richiamare il seguente pr
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -838,7 +838,7 @@ Si tratta di richiamare il seguente processo di breve durata di Forms denominato
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -923,7 +923,7 @@ Per richiamare il processo `MyApplication/EncryptDocument` utilizzando i file pr
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire l&#39;esempio di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 Quando viene richiamato, il processo esegue le azioni seguenti:
 
@@ -1037,7 +1037,7 @@ Quando viene richiamato, il processo esegue le azioni seguenti:
 1. Ottiene il documento PDF non protetto passato al processo. Questa azione è basata sull&#39;operazione `SetValue`. Il parametro di input per questo processo è una variabile di processo `document` denominata `inDoc`.
 1. Crittografa il documento PDF con una password. Questa azione è basata sull&#39;operazione `PasswordEncryptPDF`. Il documento PDF crittografato con password viene restituito in una variabile di processo denominata `outDoc`.
 
-Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 >[!NOTE]
 >

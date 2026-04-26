@@ -11,10 +11,10 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 39d793ca-5909-428e-9f6e-08d587f828c0
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 0%
+source-wordcount: '1323'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ In questo argomento viene descritto come utilizzare l&#39;API di Distiller Servi
 
 >[!NOTE]
 >
->Per convertire i file PostScript in documenti PDF AEM Forms, è necessario installare uno dei seguenti elementi nel server che ospita il pacchetto ridistribuibile Acrobat 9 o Microsoft Visual C++ 2005.
+>Per convertire i file PostScript in documenti PDF, è necessario installare uno dei seguenti elementi nel server che ospita il pacchetto ridistribuibile Acrobat 9 o Microsoft Visual C++ 2005.
 
 ### Riepilogo dei passaggi {#summary-of-steps}
 
@@ -152,7 +152,7 @@ Convertire un file PostScript in un documento PDF utilizzando l’API del serviz
 1. Creazione di un client di servizio Distiller.
 
    * Creare un oggetto `DistillerServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `DistillerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
+   * Creare un oggetto `DistillerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/DistillerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio. Tuttavia, specificare `?blob=mtom` per utilizzare MTOM.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `DistillerServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -194,7 +194,8 @@ Convertire un file PostScript in un documento PDF utilizzando l’API del serviz
 
 [Riepilogo dei passaggi](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

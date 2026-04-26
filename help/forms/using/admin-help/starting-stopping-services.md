@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: a4ff69d2-a429-49b9-ba48-9dd56ccdf23e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -35,7 +35,7 @@ I moduli di AEM Forms (ad esempio, Forms, Rights Management, Output) funzionano 
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Nella console di amministrazione, fare clic su **Servizi** > **Applicazioni e servizi** > **Gestione servizi**.
 1. Nella pagina Gestione servizio selezionare la casella di controllo accanto al servizio da arrestare o avviare e fare clic su Arresta o Avvia.

@@ -1,5 +1,5 @@
 ---
-title: Riconoscimento di certificati validi e scaduti nei documenti di PDF
+title: Riconoscimento di certificati validi e scaduti nei documenti PDF
 description: Scopri come riconoscere i certificati validi e scaduti nei documenti di PDF.
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f7402f0d-7c19-4a56-8630-208faa197f94
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 0%
+source-wordcount: '198'
+ht-degree: 8%
 
 ---
 
-# Riconoscimento di certificati validi e scaduti nei documenti di PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Riconoscimento di certificati validi e scaduti nei documenti PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Quando un documento PDF con diritti di utilizzo applicati dalle estensioni Reader viene aperto in Adobe Reader, viene visualizzata una barra di stato che descrive i diritti di utilizzo specifici abilitati nel documento PDF.
 

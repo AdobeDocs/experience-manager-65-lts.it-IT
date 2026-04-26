@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3394'
-ht-degree: 0%
+source-wordcount: '3508'
+ht-degree: 1%
 
 ---
 
@@ -61,8 +61,8 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file 
 
 >[!NOTE]
 >`[functionName]` è il nome della funzione. Gli spazi non sono consentiti.
->&#x200B;>`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
->&#x200B;>Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
+>`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
+>Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
 
@@ -356,7 +356,7 @@ OPPURE
 
 ### Creare una libreria client utilizzando Archetipo progetto AEM{#create-client-library-archetype}
 
-È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando Archetipo progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+È possibile aggiungere funzioni personalizzate aggiungendo una libreria client al progetto creato [utilizzando Archetipo progetto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se hai un progetto esistente <!--and have already the project structure as shown in the image below,--> puoi aggiungere direttamente [funzioni personalizzate](#create-add-custom-function) al progetto locale.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -573,7 +573,7 @@ Visualizziamo in anteprima il modulo per osservare come le funzioni personalizza
 
 >[!NOTE]
 >
-> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
+> Puoi fare riferimento alla seguente cartella [funzioni personalizzate](/help/forms/using/assets/customfunctions.zip). Scarica e installa questa cartella nella tua istanza di AEM utilizzando [Gestione pacchetti](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/contentmanagement/package-manager).
 
 ### Supporto delle funzioni asincrone nelle funzioni personalizzate {#support-of-async-functions}
 
@@ -634,7 +634,8 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
 >
 > `param {scope} globals` deve essere l&#39;ultimo parametro e non viene visualizzato nell&#39;editor di regole di un modulo adattivo.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -654,7 +655,8 @@ Gli oggetti Field fanno riferimento ai singoli componenti o elementi di un modul
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Scopri in che modo le funzioni personalizzate utilizzano gli oggetti field e global con l&#39;aiuto di un modulo `Contact Us` che utilizza casi d&#39;uso diversi.
 
@@ -973,7 +975,7 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 ## Supporto della memorizzazione in cache per la funzione personalizzata
 
-Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Nel file `Fetched following custom functions list from cache` viene visualizzato il messaggio `error.log`.
+Forms adattivo implementa il caching per le funzioni personalizzate per migliorare il tempo di risposta durante il recupero dell’elenco delle funzioni personalizzate nell’editor di regole. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list from cache`.
 
 ![funzione personalizzata con supporto cache](/help/forms/using/assets/custom-function-cache-error.png)
 
@@ -992,7 +994,7 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
 
   ![file di log degli errori](/help/forms/using/assets/custom-function-list-error-file.png)
 
-  In caso di errore, la funzione personalizzata viene recuperata e visualizzata nel file `error.log`. Nel file `Fetched following custom functions list` viene visualizzato il messaggio `error.log`:
+  In caso di errore, la funzione personalizzata viene recuperata e visualizzata nel file `error.log`. Nel file `error.log` viene visualizzato il messaggio `Fetched following custom functions list`:
 
   ![file di registro errori con funzione personalizzata appropriata](/help/forms/using/assets/custom-function-list-fetched-in-error.png)
 

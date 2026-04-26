@@ -1,6 +1,6 @@
 ---
 title: Configurazione del connettore per IBM&reg; Content Manager
-description: Configurare il connettore per IBM&reg; Content Manager per abilitare la comunicazione tra AEM Forms e IBM&reg; Content Manager.
+description: Configura il connettore per IBM&reg; Content Manager per abilitare la comunicazione tra AEM Forms e IBM&reg; Content Manager.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 106f01a2-39fb-474b-8c58-5ab08666b918
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 15%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Il connettore per IBM® Content Manager consente la comunicazione tra AEM Forms e IBM® Content Manager. Per ulteriori informazioni di base, vedere &quot;Connettori per ECM&quot; in [Riferimento servizi](https://www.adobe.com/go/learn_aemforms_services_63).
+Il connettore per IBM® Content Manager consente la comunicazione tra AEM Forms e IBM® Content Manager. Per ulteriori informazioni di base, consulta “Connettori per ECM” in [Riferimento servizi](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Configurare la connessione IBM® Content Manager {#configure-the-ibm-content-manager-connection}
 

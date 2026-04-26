@@ -7,10 +7,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 6309875f-3cf0-4e3b-abe2-10decde6b313
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 0%
+source-wordcount: '65'
+ht-degree: 3%
 
 ---
 
@@ -19,4 +19,4 @@ ht-degree: 0%
 * Centro risorse per l’accessibilità di Adobe: www.adobe.com/accessibility
 * Standard delle linee guida WCAG 1.0: http://www.w3.org/TR/WAI-WEBCONTENT/
 * Norme della sezione 508 degli Stati Uniti: http://www.section508.gov/index.cfm?FuseAction=ContentGID=12
-* HTML Linee guida per l’accessibilità dei contenuti web 1.0: http://www.w3.org/TR/WCAG10-HTML-TECHS/
+* Linee guida per l’accessibilità dei contenuti web 1.0: http://www.w3.org/TR/WCAG10-HTML-TECHS/

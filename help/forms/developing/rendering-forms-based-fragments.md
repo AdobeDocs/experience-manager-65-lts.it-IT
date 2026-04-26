@@ -1,5 +1,5 @@
 ---
-title: Rendering di Forms basato su frammenti
+title: Rendering dei moduli basato su frammenti
 description: Utilizza il servizio Forms per eseguire il rendering di moduli basati su frammenti creati con Designer.
 contentOwner: admin
 content-type: reference
@@ -12,18 +12,18 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3af4361d-ff30-46db-ac88-64bfae8f63a4
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 0%
+source-wordcount: '2204'
+ht-degree: 1%
 
 ---
 
-# Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments}
+# Rendering dei moduli basato su frammenti {#rendering-forms-based-on-fragments}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
-## Rendering di Forms basato su frammenti {#rendering-forms-based-on-fragments-inner}
+## Rendering dei moduli basato su frammenti {#rendering-forms-based-on-fragments-inner}
 
 Il servizio Forms può eseguire il rendering di moduli basati su frammenti creati con Designer. Un *frammento* è una parte riutilizzabile di un modulo e viene salvato come file XDP separato che può essere inserito in più progettazioni di moduli. Ad esempio, un frammento può includere un blocco di indirizzi o un testo legale.
 
@@ -99,9 +99,9 @@ Quando il servizio Forms esegue il rendering di un modulo, restituisce un flusso
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creazione di applicazioni Web per il rendering di Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -149,7 +149,7 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API Forms
 
 **Consulta anche**
 
-[Rendering di Forms basato su frammenti](#rendering-forms-based-on-fragments)
+[Rendering dei moduli basato su frammenti](#rendering-forms-based-on-fragments)
 
 [Quick Start (modalità SOAP): rendering di un modulo basato su frammenti tramite API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
@@ -205,6 +205,6 @@ Eseguire il rendering di un modulo basato su frammenti utilizzando l’API di Fo
 
 **Consulta anche**
 
-[Rendering di Forms basato su frammenti](#rendering-forms-based-on-fragments)
+[Rendering dei moduli basato su frammenti](#rendering-forms-based-on-fragments)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

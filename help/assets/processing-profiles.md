@@ -10,9 +10,9 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: aa257d33-302c-4a01-be48-e4ff56700bfa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Un profilo è la ricetta per le opzioni da applicare alle risorse caricate in un
 
 Tali regole possono includere l’aggiunta di metadati, il ritaglio intelligente delle immagini o la definizione di profili di codifica video. In Adobe Experience Manager, puoi creare tre tipi di profili, descritti in dettaglio ai seguenti collegamenti:
 
-* [Profili metadati](/help/assets/metadata-config.md#metadata-profiles)
+* [Profili di metadati](/help/assets/metadata-config.md#metadata-profiles)
 * [Profili immagine](/help/assets/image-profiles.md)
 * [Profili video](/help/assets/video-profiles.md)
 
@@ -126,7 +126,8 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
 
 1. Chiudi la scheda del browser che mostra il modello di flusso di lavoro Rielaborazione elementi multimediali dinamici.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

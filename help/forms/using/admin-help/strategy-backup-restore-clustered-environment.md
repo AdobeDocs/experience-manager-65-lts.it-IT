@@ -1,5 +1,5 @@
 ---
-title: Strategia di backup e ripristino in un ambiente cluster
+title: Strategia di backup e ripristino in un ambiente in cluster
 description: Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è necessario implementare una strategia per eseguire il backup di tali dati, garantendo che rimangano sincronizzati con i dati di AEM Forms.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
@@ -7,18 +7,18 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 1b7e0c532ab46346059de01cee4a1adecf3a0a13
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 5%
 
 ---
 
-# Strategia di backup e ripristino in un ambiente cluster {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# Strategia di backup e ripristino in un ambiente in cluster {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
 >
->Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è necessario implementare una strategia per eseguire il backup di tali dati, garantendo che rimangano sincronizzati con i dati di AEM Forms. Inoltre, l&#39;applicazione deve essere progettata in modo da essere sufficientemente solida da gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire qualsiasi operazione di database nel contesto di una transazione per mantenere uno stato coerente.
+>Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è necessario implementare una strategia per eseguire il backup di tali dati, garantendo che rimangano sincronizzati con i dati di AEM Forms. Inoltre, l’applicazione deve essere progettata in modo da essere sufficientemente solida per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire le operazioni di database nel contesto di una transazione per mantenere uno stato coerente.
 
 È necessario eseguire il backup delle seguenti parti del sistema AEM Forms per ripristinare eventuali errori:
 
@@ -117,7 +117,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    >Se il nodo danneggiato è un nodo primario di AEM, arrestare l&#39;intero nodo del cluster.
 
 1. Ricreare il sistema fisico da un&#39;immagine di sistema.
-1. Applica patch o aggiornamenti ai moduli di AEM che sono stati applicati dopo la creazione dell’immagine. Queste informazioni sono state registrate durante la procedura di backup. I moduli AEM devono essere ripristinati allo stesso livello di patch utilizzato al momento del backup del sistema.
+1. Applica patch o aggiornamenti ad AEM Forms che sono stati applicati dopo la creazione dell’immagine. Queste informazioni sono state registrate durante la procedura di backup. I moduli AEM devono essere ripristinati allo stesso livello di patch utilizzato al momento del backup del sistema.
 1. (*Facoltativo*) Se tutti gli altri nodi funzionano correttamente, è possibile che anche l&#39;archivio AEM sia danneggiato. In questo caso, nel file error.log dell’archivio AEM verrà visualizzato un messaggio di dissincronizzazione dell’archivio.
 
    Per ripristinare l’archivio, effettua le seguenti operazioni.
@@ -131,7 +131,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Elimina il file clusterNode/revision.log sul nodo.
    1. Elimina il file .lock sul nodo, se esistente.
    1. Elimina l’eventuale repository/system.id sul nodo.
-   1. Eliminare i file &ast;&ast;/listener.properties sul nodo, se esistenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se presenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -161,7 +161,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Eliminare il file clusterNode/revision.log in tutti i nodi del cluster.
    1. Eliminare il blocco in tutti i nodi del cluster, se esistente.
    1. Eliminare tutti i nodi del cluster repository/system.id, se esiste.
-   1. Eliminare i file &ast;&ast;/listener.properties su tutti i nodi del cluster, se presenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se esistenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]

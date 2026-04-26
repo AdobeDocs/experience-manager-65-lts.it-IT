@@ -1,6 +1,6 @@
 ---
-title: Rendering di Forms as HTML
-description: Utilizza il servizio Forms per eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP da un browser web. È possibile utilizzare l'API Java&trade; e l'API Web Service per eseguire il rendering dei moduli come HTML.
+title: Rendering dei moduli come HTML
+description: Utilizza il servizio Forms per eseguire il rendering dei moduli come HTML in risposta a una richiesta HTTP da un browser web. Puoi utilizzare l’API Java&trade; e l’API di servizio web per eseguire il rendering dei moduli come HTML.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -12,14 +12,14 @@ feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: f1e6adca-0591-4974-9c12-66706aa35247
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '4099'
+source-wordcount: '4149'
 ht-degree: 0%
 
 ---
 
-# Rendering di Forms as HTML {#rendering-forms-as-html}
+# Rendering dei moduli come HTML {#rendering-forms-as-html}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -89,9 +89,9 @@ Il servizio Forms può eseguire script durante il rendering del modulo. Di conse
 
 È consigliabile non assegnare alle variabili di script e ai campi modulo gli stessi nomi, ad esempio item. Alcuni browser Web, ad esempio Internet Explorer, potrebbero non inizializzare una variabile con lo stesso nome di un campo modulo, causando un errore di script. È buona prassi assegnare nomi diversi ai campi modulo e alle variabili di script.
 
-Quando si esegue il rendering di HTML Form che contengono sia funzionalità di spostamento tra pagine che script di form (ad esempio, si supponga che uno script recuperi i dati dei campi da un database ogni volta che viene eseguito il rendering del form), verificare che lo script del form sia incluso nell&#39;evento form:calculal posto del form:readyevent.
+Quando si esegue il rendering di HTML Form che contengono sia funzionalità di spostamento tra pagine che script di form (ad esempio, si supponga che uno script recuperi i dati di campo da un database ogni volta che viene eseguito il rendering del form), assicurarsi che lo script di form si trovi nell&#39;evento form:calculate anziché nel form:readyevent.
 
-Gli script di modulo presenti nell&#39;evento form:ready vengono eseguiti una sola volta durante il rendering iniziale del modulo e non vengono eseguiti per i recuperi di pagina successivi. Al contrario, l’evento form:calculate viene eseguito per ogni navigazione della pagina in cui viene eseguito il rendering del modulo.
+Gli script di modulo presenti nell&#39;evento form:ready vengono eseguiti una sola volta durante il rendering iniziale del modulo e non vengono eseguiti per i recuperi di pagina successivi. Al contrario, l&#39;evento form:calculate viene eseguito per ogni navigazione della pagina in cui viene eseguito il rendering del modulo.
 
 >[!NOTE]
 >
@@ -254,9 +254,9 @@ Quando il servizio Forms esegue il rendering di un modulo di HTML, restituisce u
 
 [Impostazione delle proprietà di connessione](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Guida introduttiva all’API di servizio Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Avvio rapido di API Java per il servizio dei moduli](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Rendering di PDF forms interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Rendering di moduli PDF interattivi](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Rendering di HTML Forms con barre degli strumenti personalizzate](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
@@ -284,7 +284,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (Java):
 
    >[!NOTE]
    >
-   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
+   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l&#39;URI della radice Web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML
 
@@ -312,7 +312,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (Java):
 
 **Consulta anche**
 
-[Rendering di Forms as HTML](#rendering-forms-as-html)
+[Rendering dei moduli come HTML](#rendering-forms-as-html)
 
 [Quick Start (modalità SOAP): rendering di un modulo HTML utilizzando l’API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
@@ -342,7 +342,7 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (servizio web)
 
    >[!NOTE]
    >
-   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedi alla console di amministrazione, fai clic su Servizi > Forms e imposta l’URI della directory principale del web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
+   >Il rendering di Forms in HTML non viene eseguito correttamente se l&#39;opzione `StandAlone` è `true` e `ApplicationWebRoot` fa riferimento a un server diverso dal server applicazioni J2EE che ospita AEM Forms (il valore `ApplicationWebRoot` è specificato utilizzando l&#39;oggetto `URLSpec` passato al metodo `(Deprecated) renderHTMLForm` dell&#39;oggetto `FormsServiceClient`). Se `ApplicationWebRoot` è un altro server di quello che ospita AEM Forms, il valore dell&#39;URI della radice Web nella console di amministrazione deve essere impostato come valore dell&#39;URI dell&#39;applicazione Web del modulo. Per eseguire questa operazione, accedere alla console di amministrazione, fare clic su Servizi > Forms e impostare l&#39;URI della radice Web come https://server-name:port/FormServer. Quindi, salva le impostazioni.
 
 1. Rendering di un modulo HTML
 
@@ -376,6 +376,6 @@ Eseguire il rendering di un modulo HTML utilizzando l’API Forms (servizio web)
 
 **Consulta anche**
 
-[Rendering di Forms as HTML](#rendering-forms-as-html)
+[Rendering dei moduli come HTML](#rendering-forms-as-html)
 
 [Richiamare AEM Forms utilizzando la codifica Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

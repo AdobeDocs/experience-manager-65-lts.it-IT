@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva all'API Java LiveCycleProcess (SOAP)
+title: Avvio rapido di API Java per il processo del ciclo dal vivo (SOAP)
 description: Utilizzare la Guida introduttiva dell'API Java LiveCycleProcess (SOAP) per cercare le istanze di processo, sospenderne le istanze, avviare le istanze di processo sospese, terminare le istanze di processo, eliminare i dati di processo e recuperare lo stato di un processo.
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: bdc63436-81d7-442a-9516-e6fbcc254d98
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '424'
+ht-degree: 1%
 
 ---
 

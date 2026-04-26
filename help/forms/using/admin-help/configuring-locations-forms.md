@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 49e815e9-2087-4a42-b481-dc66de787d67
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 1%
+source-wordcount: '838'
+ht-degree: 24%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 È possibile specificare l&#39;URL, l&#39;URI e le posizioni di file di attributi quali la directory principale del Web, la posizione dei moduli da recuperare, il file PDF di inizializzazione utilizzato nelle trasformazioni del modulo PDF e la posizione della cache.
 
-1. Nella console di amministrazione, fai clic su Servizi > Forms.
-1. In Posizioni (Locations), specificate le opzioni appropriate. Le opzioni sono descritte di seguito.
+1. Nella console di amministrazione, fai clic su Servizi > Moduli.
+1. In Posizioni specifica le opzioni appropriate. Le opzioni sono descritte di seguito.
 1. Fai clic su Salva.
 
-## Impostazioni posizioni {#locations-settings}
+## Impostazioni di Posizioni {#locations-settings}
 
 **URL di base:** l&#39;URL di base in cui si trovano le risorse del modulo come immagini e script. Questo valore è necessario per le trasformazioni di HTML che includono riferimenti HREF a dipendenze esterne, ad esempio immagini o script. Uno di questi script è xfasubset.js, necessario per l&#39;esecuzione di intelligence XFA in HTML Form. Questo valore deve essere l’equivalente HTTP dell’URI della directory principale dei contenuti.
 
@@ -62,7 +62,7 @@ Il valore predefinito è una stringa vuota.
 
 Il valore predefinito è una stringa vuota.
 
-**URI radice contenuto:** URI o posizione assoluta da cui vengono recuperati i moduli. Questo valore viene combinato con il parametro sFormQuery, specificato tramite l’API, per costruire il percorso assoluto del modulo recuperato. Questo valore può fare riferimento a una directory o a un percorso web accessibile tramite HTTP.
+**URI radice contenuto:** URI o posizione assoluta da cui vengono recuperati i moduli. Questo valore viene combinato con il parametro sFormQuery, specificato tramite l’API, per costruire il percorso assoluto del modulo recuperato. Il valore può fare riferimento a una directory o a un percorso web accessibile tramite HTTP.
 
 Il valore predefinito è una stringa vuota.
 
@@ -84,16 +84,16 @@ La voce seguente è un esempio di una voce nel file di mappatura dei caratteri:
 
 Il valore predefinito è una stringa vuota.
 
-**Posizione cache:** Specifica la posizione della cache del disco di Forms. Quando si modifica questa impostazione, tutte le informazioni della cache esistenti dalla posizione corrente vengono reimpostate e viene creata una nuova cache nella nuova posizione. Selezionare una delle opzioni seguenti:
+**Posizione cache:** Specifica la posizione della cache del disco di Forms. Quando modifichi questa impostazione, tutti i dati della cache esistenti per la posizione corrente vengono reimpostati e viene creata una nuova cache nella nuova posizione. Seleziona una delle opzioni seguenti:
 
-**Posizione predefinita:** Questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione dipendente dal server applicazioni in uso:
+**Percorso predefinito:** questa è la selezione predefinita. Quando questa opzione è selezionata, la cache viene creata in una posizione che dipende dal server applicazioni in uso:
 
 * **JBoss:** [JBoss Home]\server\[tipo installazione]\svcdata\FormServer\Cache
 * **WebLogic:** [Home WebLogic]\user_projects\domains\[nome dominio aem-forms]\adobe\[nome server Forms]\FormServer\Cache
 * **WebSphere:** [Home di IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Directory temporanea LC:** La cache viene creata in una sottodirectory della directory temporanea di AEM Forms, specificata nella console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Posizione della directory temporanea. La sottodirectory è denominata adobeform_[servername].
+**Directory temporanea LC:** la cache viene creata in una sottodirectory della directory temporanea dei moduli AEM, specificata nella Console di amministrazione in Impostazioni > Impostazioni sistema core > Configurazioni > Percorso directory temporanea. La sottodirectory è denominata adobeform_[servername].
 
 >[!NOTE]
 >
->Se si utilizza un&#39;utilità di pulizia temporanea, anche se l&#39;eliminazione di queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo fino alla creazione della nuova cache. Per evitare questo problema, non eliminare queste directory durante la cancellazione della directory temporanea di AEM Forms.
+>Se si utilizza un&#39;utilità di pulizia temporanea, anche se l&#39;eliminazione di queste directory non influisce sulla funzionalità, può avere un impatto significativo sulle prestazioni per un breve periodo di tempo fino alla creazione della nuova cache. Per evitare il problema, non eliminare queste directory quando cancelli la directory temporanea di AEM Forms.

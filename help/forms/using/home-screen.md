@@ -9,10 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: b8e413e0-1387-46c7-891a-85d5fc61288b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
@@ -28,9 +28,11 @@ Nella figura seguente sono riportate le chiamate ai componenti essenziali nella 
 
 ![Home schermata dell&#39;app Forms](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
 1. **Pulsante Menu**: selezionare il pulsante **Menu** per passare ad Attività, Forms, Posta in uscita e Impostazioni. Se la tua app AEM Forms è connessa a un server AEM Forms JEE, puoi visualizzare l’opzione Attività. L&#39;opzione Attività consente inoltre di memorizzare in un processo le bozze create dalle attività. Per i server AEM Forms OSGi, l’opzione Attività è nascosta. In Posta in uscita vengono memorizzati i moduli e le bozze salvati prima della sincronizzazione con il server. Tutti i moduli e le bozze salvati nella cartella Posta in uscita vengono caricati sul server AEM Forms quando l&#39;app è [sincronizzata con il server](../../forms/using/sync-app.md). Per informazioni sulle impostazioni, vedere [Aggiorna impostazioni generali](../../forms/using/update-general-settings.md).
 1. **Attività o Modulo**: selezionare l&#39;attività o il modulo elencato che si desidera utilizzare.

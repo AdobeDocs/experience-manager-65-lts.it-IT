@@ -1,5 +1,5 @@
 ---
-title: Servizio QuickStart per API Java di Signature Service (SOAP)
+title: Avvio rapido di API Java per il servizio di firma (SOAP)
 description: Utilizzare il servizio Firma per aggiungere un campo firma a un documento PDF, recuperare i nomi dei campi firma, modificare un campo firma, firmare digitalmente un documento PDF, firmare digitalmente un modulo basato su XFA, certificare un documento PDF, verificare una firma digitale, verificare più firme digitali e rimuovere una firma digitale.
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
 hidefromtoc: true
 exl-id: 4d35b174-40e5-4d2a-89ad-c3891f206e7e
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ Nell&#39;esempio di codice Java seguente vengono recuperati i nomi dei campi fir
 
 ## Guida rapida (modalità SOAP): modifica di un campo firma tramite API Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un campo di firma denominato SignatureField1 bloccando tutti i campi del modulo quando viene applicata una firma al campo di firma e garantendo che non siano consentite modifiche. Dopo che il servizio di firma restituisce il documento PDF contenente il campo di firma modificato, il documento PDF viene salvato come file PDF denominato LoanSig.pdf. In questo esempio viene sovrascritto il file PDF passato al servizio di firma. Vedere [Modifica dei campi di firma](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).
+Esempio Nell&#39;esempio di codice Java riportato di seguito viene modificato un campo di firma denominato SignatureField1 bloccando tutti i campi del modulo quando viene applicata una firma al campo di firma e garantendo che non siano consentite modifiche. Dopo che il servizio di firma restituisce il documento PDF contenente il campo di firma modificato, il documento PDF viene salvato come file PDF denominato LoanSig.pdf. In questo esempio viene sovrascritto il file PDF passato al servizio di firma. (Vedi [Modifica dei campi di firma](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*

@@ -7,14 +7,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3fa1b6c9-fe73-4d76-aa72-20ce3e502941
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
 
-# Generazione e utilizzo degli hash in Dynamic PDF forms {#generate-work-with-hashes-dynamic-pdf-forms}
+# Generazione e utilizzo di hash in PDF forms dinamici {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## Conoscenze preliminari {#prerequisite-knowledge}
 
@@ -123,6 +123,6 @@ Ti incoraggio a continuare a esplorare i due file PDF di esempio.  È possibile 
 * [Ronald Rivest](https://en.wikipedia.org/wiki/Ron_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Collisione hash](https://en.wikipedia.org/wiki/Hash_collision)
-* [Tabella arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Tavolo arcobaleno](https://en.wikipedia.org/wiki/Rainbow_table)
 * [Home page del progetto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* Home page del progetto [jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* [Home page del progetto jsSHA2](https://anmar.eu.org/projects/jssha2/)

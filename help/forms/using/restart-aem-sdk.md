@@ -7,10 +7,10 @@ solution: Experience Manager, Experience Manager Forms
 hide: true
 hidefromtoc: true
 exl-id: 68935045-89b1-4219-b111-88a4600200df
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '95'
+ht-degree: 14%
 
 ---
 
@@ -26,4 +26,4 @@ Se riavvii AEM SDK arrestando i processi Java™, potrebbero verificarsi incongr
 
 Per riavviare AEM SDK, passare alla finestra dei comandi attiva e premere il comando `Ctrl + C` per riavviare SDK.
 
-Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java™, può causare incongruenze nell’ambiente di sviluppo AEM.
+Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java™, può causare incongruenze nell’ambiente di sviluppo AEM.

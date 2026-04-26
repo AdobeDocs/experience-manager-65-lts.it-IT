@@ -11,14 +11,14 @@ feature: Adaptive Forms,Document Security
 hide: true
 hidefromtoc: true
 exl-id: 6c384e25-f53f-44aa-9043-b9f9f659f987
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1794'
+ht-degree: 1%
 
 ---
 
-# Creazione di applicazioni Flash Builder che eseguono l&#39;autenticazione SSO tramite token HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Creazione di applicazioni Flash Builder che eseguono l’autenticazione SSO tramite token HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
 
@@ -36,7 +36,7 @@ Il seguente processo AEM Forms di breve durata, denominato `MyApplication/Encryp
 
 >[!NOTE]
 >
->Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Questo processo non è basato su un processo AEM Forms esistente. Per seguire gli esempi di codice che illustrano come richiamare questo processo, creare un processo denominato `MyApplication/EncryptDocument` utilizzando Workbench. (Vedi [Utilizzo di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).)
 
 L&#39;applicazione client creata con Flash Builder interagisce con il servlet di sicurezza di User Manager configurato alle `/um/login` e `/um/logout`. L&#39;applicazione client invia quindi una richiesta all&#39;URL `/um/login` durante l&#39;avvio per determinare lo stato dell&#39;utente. Quindi User Manager risponde con lo stato utente. L’applicazione client e il servlet di sicurezza User Manager comunicano tramite HTTP.
 

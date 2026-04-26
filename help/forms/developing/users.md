@@ -11,10 +11,10 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: e449c6f6-7b75-47ab-9abd-8031b7b151e5
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '6201'
-ht-degree: 0%
+source-wordcount: '6236'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ La tabella seguente descrive ogni passaggio del processo di autenticazione.
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -543,7 +543,7 @@ Per gestire in modo programmatico utenti, gruppi e domini utilizzando (Java), es
 
 1. Creare un client DirectoryManagerService.
 
-   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Richiama le operazioni appropriate dell’utente o del gruppo.
 
@@ -691,7 +691,7 @@ Gestisci ruoli e autorizzazioni tramite l’API del servizio Gestione autorizzaz
 1. Creare un client AuthorizationManagerService.
 
    * Creare un oggetto `AuthorizationManagerServiceClient` utilizzando il relativo costruttore predefinito.
-   * Creare un oggetto `AuthorizationManagerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
+   * Creare un oggetto `AuthorizationManagerServiceClient.Endpoint.Address` utilizzando il costruttore `System.ServiceModel.EndpointAddress`. Passa un valore stringa che specifica il WSDL al servizio AEM Forms (ad esempio, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Non è necessario utilizzare l&#39;attributo `lc_version`. Questo attributo viene utilizzato quando si crea un riferimento a un servizio.
    * Creare un oggetto `System.ServiceModel.BasicHttpBinding` ottenendo il valore del campo `AuthorizationManagerServiceClient.Endpoint.Binding`. Eseguire il cast del valore restituito in `BasicHttpBinding`.
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
@@ -738,7 +738,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -864,7 +864,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma
 <table>
  <thead>
   <tr>
-   <th><p>Passaggio</p></th>
+   <th><p>Incremento</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>

@@ -11,10 +11,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1172f1f2-b297-4021-a9ee-507b0a4e628a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 3%
+ht-degree: 12%
 
 ---
 
@@ -35,7 +35,7 @@ Per i moduli sottoposti a rendering come HTML, gli errori di convalida dei modul
 
    **Frame:** Per visualizzare i messaggi di convalida in un frame della stessa finestra.
 
-   **Nessun frame:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo valore è quello predefinito.
+   **Nessun frame:** Per visualizzare i messaggi di convalida nella stessa finestra. Questo valore è predefinito.
 
    **Tramite API (con dati):** Per restituire i messaggi di convalida tramite API (con dati). I messaggi di convalida non vengono visualizzati sullo schermo.
 
@@ -55,7 +55,7 @@ Quando Reporting è impostato su Frame o su No Frame, è possibile specificare l
 
    **Destra:** Per visualizzare i messaggi di convalida sul lato destro del browser Web.
 
-   **Top**: per visualizzare i messaggi di convalida nella parte superiore del browser Web. Questo valore è quello predefinito.
+   **Top**: per visualizzare i messaggi di convalida nella parte superiore del browser Web. Questo valore è predefinito.
 
    **Inferiore**: per visualizzare i messaggi di convalida nella parte inferiore del browser Web.
 

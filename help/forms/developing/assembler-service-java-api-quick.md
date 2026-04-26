@@ -11,9 +11,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: e56b22b9-3f4f-46d1-9885-a7e58b47f42d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ Nell&#39;esempio di codice Java seguente vengono uniti due documenti di origine 
 
 ## Guida rapida (modalità SOAP): disassemblaggio di un documento PDF tramite l’API Java {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-Nell&#39;esempio di codice Java seguente viene disassemblato un documento PDF denominato *AssemblerResultPDF.pdf*. Il nome del documento DDX è *shell_disassemble.xml*. Ogni documento PDF disassemblato è denominato `ResultPDF[Number].pdf`. In altre parole, il primo documento PDF disassemblato è denominato *ResultPDF1.pdf.* Per informazioni sul documento DDX *shell_disassemble.xml* utilizzato in questo esempio di codice, vedere [Disassemblaggio di documenti PDF a livello di codice](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+Nell&#39;esempio di codice Java seguente viene disassemblato un documento PDF denominato *AssemblerResultPDF.pdf*. Il nome del documento DDX è *shell_disassemble.xml*. Ogni documento PDF disassemblato è denominato `ResultPDF[Number].pdf`. In altre parole, il primo documento PDF disassemblato è denominato *ResultPDF1.pdf.* Per informazioni sul documento DDX *shell_disassemble.xml* utilizzato in questo esempio di codice, vedere [Disassemblaggio a livello di codice dei documenti di PDF](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*

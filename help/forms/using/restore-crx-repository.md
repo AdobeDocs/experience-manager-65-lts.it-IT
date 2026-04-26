@@ -7,16 +7,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 716d8eb2-2010-4d55-b8fe-bd4f6f256a4d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '184'
 ht-degree: 1%
 
 ---
 
 # Impossibile ripristinare l’archivio CRX danneggiato {#unable-to-restore-corrupt-crx-repository}
 
-## Problema   {#issue}
+## Problema {#issue}
 
 Per AEM Forms su JEE che utilizza un database relazionale, il tempo sul computer che ospita AEM Forms e il database relazionale deve sempre essere sincronizzato in modo assoluto. Se l’ora su questi computer non è sincronizzata, l’archivio CRX di AEM Forms sul server JEE può diventare inaccessibile. Potrebbe apparire danneggiato e diventare inaccessibile tramite URL. Errore `AuthenticationsupportService missing` registrato.
 

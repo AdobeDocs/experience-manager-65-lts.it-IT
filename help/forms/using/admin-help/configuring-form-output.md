@@ -11,35 +11,35 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 2823d38e-f544-408e-9437-3d0fc622dc34
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '257'
+ht-degree: 100%
 
 ---
 
 # Configurazione dell’output del modulo{#configuring-form-output}
 
-## Specifica il tipo di output HTML restituito al browser Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Specificare il tipo di output HTML restituito al browser web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Nella console di amministrazione, fai clic su Servizi > Moduli.
-1. Nell&#39;elenco Tipo di output della casella di gruppo Output modulo selezionare una delle opzioni seguenti:
+1. Nell’elenco Tipo di output, in Output del modulo, seleziona una delle opzioni seguenti:
 
-   **Full HTML:** per eseguire il rendering del modulo in tag HTML completi (una pagina HTML completa). Questo valore è quello predefinito.
+   **HTML completo:** per eseguire il rendering del modulo in tag HTML completi (pagina HTML completa). Questo valore è predefinito.
 
-   **Corpo modulo:** Per eseguire il rendering del modulo entro `<BODY>` tag (non una pagina HTML completa).
+   **Corpo del modulo:** per eseguire il rendering del modulo in tag `<BODY>` (non una pagina HTML completa).
 
 1. Fai clic su Salva.
 
-## Specifica il percorso in cui viene eseguito il rendering del contenuto PDF {#specify-the-location-where-pdf-content-is-rendered}
+## Specificare la posizione in cui viene eseguito il rendering del contenuto PDF {#specify-the-location-where-pdf-content-is-rendered}
 
-1. In Output modulo, nell&#39;elenco Rendering a (Render at), selezionate una delle seguenti opzioni:
+1. In Output del modulo, nell’elenco Rendering in, seleziona una delle seguenti opzioni:
 
-   **Client:** Per eseguire il rendering di PDF forms in Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione dei moduli PDFF.
+   **Client:** per eseguire il rendering di moduli PDF in Adobe Acrobat o Adobe Reader. Il rendering lato client migliora le prestazioni dei moduli AEM e si applica solo alla trasformazione dei moduli PDF.
 
-   **Server:** Per eseguire il rendering di PDF forms nel server applicazioni.
+   **Server:** per eseguire il rendering di moduli PDF nel server applicazioni.
 
-   **Auto:** per eseguire il rendering del modulo PDF nel percorso specificato dal valore di configurazione `dynamicRender` del file XDP. Questo valore è quello predefinito.
+   **Auto:** per eseguire il rendering del modulo PDF nella posizione specificata dal valore di configurazione `dynamicRender` del file XDP. Questo valore è predefinito.
 
 1. Fai clic su Salva.
 
@@ -49,14 +49,14 @@ ht-degree: 1%
 > 
 > Assicurati che l’utente disponga dei privilegi di amministratore per accedere alla console dell’amministratore.
 
-Per abilitare la funzione, effettua le seguenti operazioni:
+Per abilitare questa funzione, esegui i passaggi seguenti:
 
 1. Accedi alla console di amministrazione.
-1. Vai a **Servizi** > **Moduli**.
-1. Specificate il tipo di output come corpo del modulo.
+1. Passa a **Servizi** > **moduli**.
+1. Specifica il tipo di output come corpo del modulo.
 1. Salva le impostazioni.
 1. Dichiara una variabile JavaScript, __CUSTOM_SCRIPTS_VERSION, nella sezione head del codice HTML e impostane il valore su 1.
 
    >[!NOTE]
    >
-   >*Per disattivare la funzionalità, è possibile rimuovere la variabile JavaScript o impostarne il valore su 0.*
+   >*Per disabilitare questa funzione, puoi rimuovere la variabile JavaScript o impostarne il valore su 0.*

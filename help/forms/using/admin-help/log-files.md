@@ -11,16 +11,16 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: ff4dce07-725e-4750-9e95-4261b50580bd
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 0%
+source-wordcount: '118'
+ht-degree: 97%
 
 ---
 
 # File di registro {#log-files}
 
-Eventi quali errori di runtime o di avvio vengono registrati nei file di registro del server applicazioni. In caso di problemi di distribuzione nel server applicazioni, è possibile utilizzare i file di registro per individuare il problema. È possibile aprire i file di registro utilizzando qualsiasi editor di testo.
+Eventi quali errori di runtime o di avvio vengono registrati nei file di registro del server applicazioni. In caso di problemi relativi all’implementazione nel server applicazioni, è possibile utilizzare i file di registro per aiutarti a individuare il problema. È possibile aprire i file di registro utilizzando qualsiasi editor di testo.
 
 (JBoss) I seguenti file di registro si trovano nella directory `[appserver root]/server/'server'/log`:
 
@@ -34,7 +34,7 @@ Eventi quali errori di runtime o di avvio vengono registrati nei file di registr
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) I seguenti file di log si trovano nella directory `[appserver root]/profiles/default/logs/[appserver name]`:
+(WebSphere) I seguenti file di registro si trovano nella directory `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

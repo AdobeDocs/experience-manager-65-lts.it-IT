@@ -12,10 +12,10 @@ feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
 hidefromtoc: true
 exl-id: 3508d2d1-e05a-4733-b682-4b022348147a
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '2153'
-ht-degree: 0%
+source-wordcount: '2183'
+ht-degree: 1%
 
 ---
 
@@ -131,7 +131,6 @@ Creare in modo dinamico un documento DDX e disassemblare un documento PDF utiliz
    * Creare un oggetto Java `DocumentBuilder` chiamando il metodo `newDocumentBuilder` dell&#39;oggetto `DocumentBuilderFactory`.
    * Chiamare il metodo `newDocument` dell&#39;oggetto `DocumentBuilder` per creare un&#39;istanza di un oggetto `org.w3c.dom.Document`.
    * Creare l&#39;elemento radice del documento DDX richiamando il metodo `createElement` dell&#39;oggetto `org.w3c.dom.Document`. Questo metodo crea un oggetto `Element` che rappresenta l&#39;elemento radice. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Impostare quindi un valore per l&#39;elemento figlio chiamando il relativo metodo `setAttribute`. Infine, accodare l&#39;elemento all&#39;elemento header chiamando il metodo `appendChild` dell&#39;elemento header e passare l&#39;oggetto elemento figlio come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:
-
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Creare l&#39;elemento `PDFsFromBookmarks` chiamando il metodo `createElement` dell&#39;oggetto `Document`. Passa un valore stringa che rappresenta il nome dell&#39;elemento al metodo `createElement`. Eseguire il cast del valore restituito in `Element`. Impostare un valore per l&#39;elemento `PDFsFromBookmarks` chiamando il relativo metodo `setAttribute`. Aggiungere l&#39;elemento `PDFsFromBookmarks` all&#39;elemento `DDX` chiamando il metodo `appendChild` dell&#39;elemento DDX. Passa l&#39;oggetto elemento `PDFsFromBookmarks` come argomento. Le seguenti righe di codice mostrano questa logica dell’applicazione:

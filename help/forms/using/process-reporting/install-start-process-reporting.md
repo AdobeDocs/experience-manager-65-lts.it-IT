@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva ai report sui processi
+title: Guida introduttiva ai rapporti sui processi
 description: Passaggi per iniziare a utilizzare AEM Forms su JEE Process Reporting
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: e64a3b6f-7248-4426-9f13-f703eab3632d
-source-git-commit: bc91f56d447d1f2c26c160f5c414fd0e6054f84c
+source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 0%
+source-wordcount: '1734'
+ht-degree: 2%
 
 ---
 
-# Guida introduttiva ai report sui processi{#getting-started-with-process-reporting}
+# Guida introduttiva ai rapporti sui processi{#getting-started-with-process-reporting}
 
 La funzione di reporting sui processi consente agli utenti di AEM Forms di eseguire query sulle informazioni sui processi di AEM Forms attualmente definiti nell’implementazione di AEM Forms. Tuttavia, il reporting dei processi non accede ai dati direttamente dall’archivio di AEM Forms. I dati vengono pubblicati per la prima volta nel repository di Process Reporting in base a una pianificazione (*dal servizio ProcessDataPublisher e ProcessDataStorage* s). I report e le query in Process Reporting vengono quindi generati dai dati di Process Reporting pubblicati nel repository. Process Reporting viene installato come parte del modulo Forms Workflow.
 
@@ -46,7 +46,7 @@ I servizi di report dei processi pubblicano i dati dal database di AEM Forms all
 
 Questa operazione può richiedere molte risorse e può influire sulle prestazioni dei server AEM Forms. È consigliabile pianificare questa operazione all’esterno degli slot orari occupati del server AEM Forms.
 
-Per impostazione predefinita, la pubblicazione dei dati viene pianificata per essere eseguita ogni giorno alle 02:00.
+Per impostazione predefinita, la pubblicazione dei dati è pianificata per essere eseguita ogni giorno alle 2:00.
 
 Per modificare la pianificazione di pubblicazione, effettuare le seguenti operazioni:
 
@@ -103,7 +103,7 @@ Per modificare la pianificazione di pubblicazione, effettuare le seguenti operaz
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ### Servizio ProcessDataStorage {#processdatastorage-service}
 
