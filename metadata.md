@@ -1,18 +1,20 @@
 ---
 product: adobe experience manager
 description: Documentazione di Adobe Experience Manager 6.5 LTS.
-git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.it-IT
+git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.en
 index: true
 type: Documentation
 solution: Experience Manager, Experience Manager 6.5 LTS
+landing-page-name: experience-manager-lts
+landing-page-breadcrumb-title: AEM 6.5 LTS
 version: Experience Manager 6.5 LTS
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 cloud: Experience Cloud
 recommendations: noDisplay
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+source-git-commit: 530dd0c09d5ef82f304ffff118cd52935c24cd98
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 52%
+source-wordcount: '93'
+ht-degree: 2%
 
 ---
 
@@ -22,10 +24,10 @@ ht-degree: 52%
 I metadati nel sistema di authoring GitHub sono gerarchici e vengono definiti in base ai seguenti livelli crescenti di precedenza.
 
 1. metadata.md
-1. Sommario
+1. ToC
 1. Articolo
 
-I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
+I metadati definiti nel file metadata.md si applicano all’intero archivio, ma possono essere ignorati a livello di sommario e di articolo. Eventuali esclusioni dei metadati devono essere eseguite al livello più basso possibile.
 
 I metadati nell’archivio experience-manager-cloud-service.en sono il minimo richiesto.
 
@@ -41,7 +43,7 @@ metadata.md
 * `tutorials-title`
 * `tutorials-url`
 
-Sommario
+ToCs
 
 * `sub-product`
 * `user-guide-title`
