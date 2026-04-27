@@ -1,7 +1,7 @@
 ---
 product: adobe experience manager
 description: Documentazione di Adobe Experience Manager 6.5 LTS.
-git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.en
+git-repo: https://github.com/AdobeDocs/experience-manager-65-lts.it-IT
 index: true
 type: Documentation
 solution: Experience Manager, Experience Manager 6.5 LTS
