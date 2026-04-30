@@ -6,8 +6,8 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '1068'
+workflow-type: ht
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 
 | Area | Funzione | Sostituzione | Versione (SP) |
 |---|---|---|---|
-| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [Editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per la modifica basata su modulo. | 6.5 LTS GA |
+| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [L’editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per modifiche basate sui moduli. | 6.5 LTS GA |
 
 ### Funzioni rimosse {#removed-features}
 
@@ -147,7 +147,7 @@ Quando si abilita la funzione solo SSL nelle implementazioni di AEM, si verifica
 * Configurazioni di Dispatcher che utilizzano il metodo di connessione `https + IP` alle istanze AEM
 
 **Soluzione:**
-se riscontri questo problema, contatta l’Assistenza Clienti di Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
+Se riscontri questo problema, contatta l’Assistenza Clienti di Adobe. Per risolvere il problema è disponibile un hotfix [cq-6.5.lts.0-hotfix-CQ-4359803](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.0-hotfix-CQ-4359803-1.0.2.zip). Non tentare di abilitare le funzioni solo SSL finché non viene applicato l’hotfix necessario.
 
 ## Siti web con restrizioni{#restricted-sites}
 
