@@ -5,23 +5,23 @@ feature: Generative AI, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: 312e1d66-ba2e-4b9a-a679-4e44112f3222
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 45%
+workflow-type: ht
+source-wordcount: '105'
+ht-degree: 100%
 
 ---
 
 # IA in AEM {#ai-in-aem}
 
-L’intelligenza artificiale è parte integrante di Adobe Experience Manager e viene utilizzata per supportare gli utenti nella ricerca di informazioni o nella generazione di esperienze.
+L’IA è parte integrante di Adobe Experience Manager e viene utilizzata per supportare gli utenti nella ricerca di informazioni o nella generazione di esperienze.
 
 ## Assistente IA {#ai-assistant}
 
-L&#39;Assistente di [IA in Adobe Experience Manager](/help/ai-assistant-in-aem.md) offre un&#39;interfaccia di conversazione progettata per semplificare la ricerca delle risposte alle query correlate ad AEM.
+L’[Assistente IA in Adobe Experience Manager](/help/ai-assistant-in-aem.md) offre un’interfaccia di conversazione progettata per semplificare la ricerca delle risposte alle query correlate ad AEM.
 
 ## Ulteriori informazioni {#further-information}
 
-* [Panoramica sull’intelligenza artificiale generativa di Adobe](https://www.adobe.com/it/ai/overview.html)
+* [Panoramica sull’IA di Adobe](https://www.adobe.com/it/ai/overview.html)
 
 * [IA generativa nei prodotti Experience Cloud](https://experienceleague.adobe.com/it/docs/core-services/interface/features/generative-ai)
 
