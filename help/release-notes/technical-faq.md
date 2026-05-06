@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
@@ -26,9 +26,17 @@ Il nuovo endpoint di verifica stato è disponibile all’indirizzo `/system/heal
 
 Per la documentazione dettagliata sul framework di verifica stato Felix, consulta la [documentazione Felix](https://github.com/apache/felix-dev/blob/master/healthcheck/README.md).
 
-### Supporto della console AEM Groovy
+### Supporto di AEM Groovy Console
 
-La versione della console AEM Groovy in uso in AEM 6.5 potrebbe non funzionare in AEM 6.5 LTS a causa di dipendenze guava mancanti. La nuova versione supportata della console AEM Groovy è [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
+La versione di AEM Groovy Console in uso in AEM 6.5 potrebbe non funzionare in AEM 6.5 LTS a causa di dipendenze guava mancanti. La nuova versione supportata di AEM Groovy Console è [19.0.8](https://github.com/orbinson/aem-groovy-console/releases/download/19.0.8/aem-groovy-console-all-19.0.8.zip).
+
+#### Configurazione aggiuntiva richiesta per AEM Groovy Console
+
+Se utilizzi AEM Groovy Console, devi aggiungere esplicitamente la seguente configurazione OSGi per `com.adobe.granite.apicontroller.FilterResolverHookFactory`. Aggiungi `aem-groovy-console-bundle` all&#39;elenco di bundle consentiti per la chiave `org.apache.sling.distribution.api`, estendendo le impostazioni predefinite della piattaforma:
+
+```
+"org.apache.sling.distribution.api": "com.adobe.*,com.day.*,org.apache.sling.*,aem-groovy-console-bundle"
+```
 
 ### AEM 6.5 LTS supporta la sincronizzazione utente?
 
