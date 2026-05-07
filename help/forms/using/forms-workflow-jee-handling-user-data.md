@@ -1,5 +1,5 @@
 ---
-title: Flussi di lavoro Forms JEE | Gestione dei dati utente
+title: Flussi di lavoro di Forms JEE | Gestione dei dati utente
 description: Scopri come utilizzare i flussi di lavoro di AEM Forms JEE per progettare, creare e gestire i processi aziendali.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,16 +7,15 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: 622c4899-f75f-4b47-a6c0-f94c8427e977
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
 
 ---
 
-# Flussi di lavoro Forms JEE | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
+# Flussi di lavoro di Forms JEE | Gestione dei dati utente {#forms-jee-workflows-handling-user-data}
 
 I flussi di lavoro di AEM Forms JEE forniscono gli strumenti necessari per progettare, creare e gestire i processi aziendali. Un processo del flusso di lavoro è costituito da una serie di passaggi che vengono eseguiti in un ordine specificato. Ogni passaggio esegue un’azione specifica, ad esempio l’assegnazione di un’attività a un utente o l’invio di un messaggio e-mail. Un processo può interagire con risorse, account utente e servizi e può essere attivato utilizzando uno dei seguenti metodi:
 
@@ -26,7 +25,7 @@ I flussi di lavoro di AEM Forms JEE forniscono gli strumenti necessari per proge
 * Utilizzo della cartella controllata
 * Utilizzo dell’e-mail
 
-Per ulteriori informazioni sulla creazione del processo del flusso di lavoro AEM Forms JEE, consulta la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_it).
+Per ulteriori informazioni sulla creazione del processo del flusso di lavoro AEM Forms JEE, consulta la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Dati utente e archivi dati {#user-data-and-data-stores}
 
@@ -129,7 +128,7 @@ Dopo aver identificato gli ID delle istanze di processo associati a un utente, e
 
 1. Creare un&#39;istanza del client `ProcessManager` pubblico ( `com.adobe.idp.workflow.client.ProcessManager`) utilizzando un&#39;istanza `ServiceClientFactory` con le impostazioni di connessione corrette.
 
-   Per ulteriori informazioni, vedere Riferimento API Java™ per [Class ProcessManager](https://helpx.adobe.com/it/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Per ulteriori informazioni, vedere Riferimento API Java™ per [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controlla lo stato dell’istanza del flusso di lavoro. Se lo stato è diverso da 2 (COMPLETE) o 4 (TERMINATED), terminare prima l&#39;istanza chiamando il metodo seguente:
 

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 7380be9a-7f5c-46df-97f8-6309daa2a566
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -151,7 +150,7 @@ Utilizza le opzioni del pannello **Filtri personali** per **aggiungere** ![lc_pr
    ![risultato_ricerca_attività](assets/task_search_result.png)
 
 1. Fai clic sul pulsante della barra ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il riquadro **I miei filtri** ed espandere lo spazio disponibile per il pannello **Report**.
-1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report &#x200B;** per eseguire operazioni sui risultati della query.
+1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report **per eseguire operazioni sui risultati della query.
 
    * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
 

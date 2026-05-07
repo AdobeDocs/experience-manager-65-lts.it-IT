@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Document Services, APIs & Integrations
 hide: true
-hidefromtoc: true
 exl-id: 8de9682f-8332-4f6e-ac4b-295fca82a424
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 1%
@@ -104,7 +103,7 @@ Nel diagramma seguente viene illustrato un esempio di modulo ordine fornitore. L
 
 ### Considerazioni sulla progettazione dei moduli {#form-design-considerations}
 
-I Forms con layout scorrevoli si basano sulle progettazioni dei moduli create in Designer. La progettazione di un modulo specifica un set di regole di layout, presentazione e acquisizione dati, inclusi i valori di calcolo basati su input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomaschere incluse nella struttura del modulo. Ad esempio, nel modulo ordine fornitore visualizzato nel diagramma precedente, ogni linea è una sottomaschera. Per informazioni sulla creazione di una struttura di modulo contenente sottomaschere, vedere [Creazione di un modulo ordine fornitore con un layout scorrevole](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_it).
+I Forms con layout scorrevoli si basano sulle progettazioni dei moduli create in Designer. La progettazione di un modulo specifica un set di regole di layout, presentazione e acquisizione dati, inclusi i valori di calcolo basati su input dell&#39;utente. Le regole vengono applicate quando i dati vengono immessi in un modulo. I campi aggiunti a un modulo sono sottomaschere incluse nella struttura del modulo. Ad esempio, nel modulo ordine fornitore visualizzato nel diagramma precedente, ogni linea è una sottomaschera. Per informazioni sulla creazione di una struttura di modulo contenente sottomaschere, vedere [Creazione di un modulo ordine fornitore con un layout scorrevole](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Informazioni sui sottogruppi di dati {#understanding-data-subgroups}
 

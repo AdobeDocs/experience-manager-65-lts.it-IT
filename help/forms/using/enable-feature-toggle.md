@@ -3,12 +3,11 @@ title: Attiva l’interruttore delle funzioni per integrare le funzioni di adozi
 description: L’attivazione delle funzioni è una funzionalità di AEM che consente agli amministratori di abilitare le nuove funzioni in un ambiente di runtime.
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-hidefromtoc: true
 exl-id: 8b6dea41-540b-498a-b52b-e584a9255f25
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 2%
+source-wordcount: '298'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 2%
 
 L’interruttore delle funzioni è una funzionalità di AEM che consente agli amministratori di abilitare o disabilitare in modo dinamico funzioni specifiche. Questa funzionalità è particolarmente utile per la gestione di **funzioni Early Adopter** e **funzioni prerelease** senza richiedere distribuzioni principali o modifiche alla base di codice. Garantisce flessibilità e controllo su quali funzioni sono accessibili in un ambiente AEM.
 
-## Attiva/disattiva funzione {#enable-feature-toggle-65}
+## Abilitare il pulsante di attivazione/disattivazione della funzione {#enable-feature-toggle-65}
 
 È possibile configurare gli interruttori delle funzionalità per i primi utenti o le nuove funzionalità tramite la **console Web AEM** seguendo la procedura riportata di seguito:
 

@@ -9,9 +9,8 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 hide: true
-hidefromtoc: true
 exl-id: 63bf92c4-c70f-47d1-9ddf-9a32de4d49bf
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
@@ -62,7 +61,7 @@ Il percorso di una risorsa nell’archivio AEM Forms è:
 
 >[!NOTE]
 >
->Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65_it).
+>Applications/FormsApplication non esiste per impostazione predefinita. Per seguire insieme agli avvii rapidi, crea questa applicazione utilizzando Workbench. Per informazioni sulla creazione di un&#39;applicazione tramite Workbench, vedere [Guida introduttiva alla progettazione dei processi](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Guida rapida (modalità SOAP): creazione di una cartella tramite l’API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: c04e0716-2aa2-420b-bbf5-74ffd1c28794
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 12%
@@ -43,7 +42,7 @@ L’utente non è in grado di eseguire operazioni quali Invia PDF tramite e-mail
 
 1. Installazione di `java.mail-1.5.jar` ottenuta dal passaggio 3. Questo passaggio riavvia le proprietà sling della distribuzione JEE. Attendi che i bundle installati in `http://<server name>:<port>/lc/system/console/bundles` mostrino lo stato come **Attivo**.
 
-   >Se lo stato è ancora **InActive**, riavviare   **JBoss®** da **Console servizi**.
+   >Se lo stato è ancora **InActive**, riavviare **JBoss®** dalla **Console servizi**.
 
 
 1. Installa `javax.mail-1.5.6.redhat-1.jar` file scaricato tramite il passaggio 5.

@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '3275'
 ht-degree: 99%
@@ -284,7 +283,7 @@ Di seguito è riportato un esempio di script LDIF per la voce VLV per gli utenti
 
    >[!NOTE]
    >
-   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Utilizzando lo strumento `ldapmodify` fornito con il server Sun ONE, crea una voce simile per i gruppi utilizzando rispettivamente il DN di base, il filtro di ricerca e il campo di ordinamento del gruppo:
 

@@ -5,9 +5,8 @@ feature: Transaction Reports
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 hide: true
-hidefromtoc: true
 exl-id: f2703820-8701-4b48-be9c-12daa73d5408
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 2%
@@ -64,7 +63,7 @@ Il rapporto di transazione tramite dashboard fornisce il numero totale di transa
 
 ### Rapporto di transazione tramite file di registro {#transaction-report-logfile}
 
-Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **&#x200B;**&#x200B;è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
+Il report delle transazioni tramite file di log fornisce informazioni dettagliate su ciascuna transazione. Per accedere ai log delle transazioni, seguire il percorso contestuale relativo all&#39;avvio del server. Per impostazione predefinita, le transazioni vengono acquisite in un file di log separato `transaction_log.log`. Il percorso del file **** è relativo al contesto di avvio del server. Il percorso predefinito per i diversi server è indicato di seguito:
 
 ```
 For Jboss Turnkey:

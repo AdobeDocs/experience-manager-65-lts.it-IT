@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 83dbd00e-28ad-4a2e-ac22-3658fb6f639b
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -34,7 +33,7 @@ R. In base alla rivalutazione della situazione, tutti i documenti PDF estesi uti
 
 **D. A chi devo rivolgermi in caso di ulteriori domande?**
 
-R. Puoi contattare il [supporto Adobe](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&lang=it#support) o aprire un ticket di supporto.
+R. Puoi contattare il [supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=it#support) o aprire un ticket di supporto.
 
 **D. Cosa succede se non aggiorno il certificato prima del 7 gennaio 2023?**
 
@@ -46,7 +45,7 @@ R. La descrizione dei nuovi certificati Acrobat Reader Extensions riporta la dic
 
 **D. Come si ottengono i certificati più recenti?**
 
-R. Tutti i clienti Forms autorizzati (con licenza attiva) possono scaricare i nuovi certificati (certificati basati su “Adobe Root CA G2”) dal sito web [Adobe Licensing Website](https://licensing.adobe.com/). Se non riesci a trovare il certificato sul sito web Adobe Licensing Website, contatta il [supporto Adobe](https://experienceleague.adobe.com/it?support-solution=Experience+Manager&lang=it#support) o apri un ticket di supporto.
+R. Tutti i clienti Forms autorizzati (con licenza attiva) possono scaricare i nuovi certificati (certificati basati su “Adobe Root CA G2”) dal sito web [Adobe Licensing Website](https://licensing.adobe.com/). Se non riesci a trovare il certificato sul sito web Adobe Licensing Website, contatta il [supporto Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=it#support) o apri un ticket di supporto.
 
 **D. I miei documenti PDF estesi utilizzando certificati rilasciati da “Adobe Root CA” (la precedente autorità di certificazione) continuano a essere utilizzabili dopo il 7 gennaio 2023?**
 
@@ -190,5 +189,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=it).
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
 -->

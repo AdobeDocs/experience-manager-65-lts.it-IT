@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a42d1094-293e-4f1a-a8f7-376dc8d34807
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 100%
@@ -125,7 +124,7 @@ Utilizza la scheda Archivi per importare e gestire gli LCA creati in Workbench.
 1. Se un processo o un servizio nella LCA dispone di parametri di configurazione, viene visualizzata la pagina Configura parametri, in cui è possibile configurare i parametri del servizio e fare clic su Avanti.
 1. Nella pagina Configura profilo di sicurezza è possibile apportare le modifiche necessarie:
 
-   * **Autenticazione obbligatoria per i chiamanti:** questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
+   * **Richiedi ai chiamanti di autenticarsi:** questa impostazione indica se il servizio può essere richiamato con o senza credenziali.
 
      Se viene visualizzato *Attualmente ai chiamanti è richiesto di autenticarsi*, il chiamante del servizio deve essere autenticato e l’entità principale dell’utente di tale chiamante deve essere autorizzata a richiamare il servizio; in caso contrario, il tentativo di chiamata verrà rifiutato. Per rimuovere la necessità di autenticazione, fai clic su Consenti chiamanti non autenticati.
 

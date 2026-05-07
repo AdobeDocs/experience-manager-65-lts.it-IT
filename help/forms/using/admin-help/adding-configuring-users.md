@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: b3f8e1d6-3e6e-4b2c-8528-3346bbda3396
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 99%
@@ -165,7 +164,7 @@ Se un utente senza le autorizzazioni AEM Forms e CQ richieste tenta di accedere 
 * Soluzione di gestione della corrispondenza
 * Area di lavoro di AEM Forms
 
-  ***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
+  ***nota **: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 * Gestione moduli
 * Rapporti sui processi

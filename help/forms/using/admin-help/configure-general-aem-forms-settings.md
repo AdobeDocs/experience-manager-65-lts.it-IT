@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 54e7132d-3009-4a83-9f03-55bb2c41ae90
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1801'
 ht-degree: 97%
@@ -79,7 +78,7 @@ Per ulteriori informazioni sulla directory GDS, consulta [Preparazione all’ins
 
 **Posizione della directory font clientela** *ndash; digita il percorso di una directory contenente font aggiuntivi che desideri utilizzare.
 
-***nota &#x200B;**: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
+***nota **: i font vengono selezionati dalla cache dei font del sistema Windows ed è necessario riavviare il sistema per aggiornare la cache. Dopo aver specificato la directory dei font della clientela, assicurati di riavviare il sistema in cui è installato AEM Forms.*
 
 **Posizione della directory dei font di sistema** *ndash; digita il percorso della directory dei font fornita dal sistema operativo. È possibile aggiungere più directory, separate da un punto e virgola **;**.
 

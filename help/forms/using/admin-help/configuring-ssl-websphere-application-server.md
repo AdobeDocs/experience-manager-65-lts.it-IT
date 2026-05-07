@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0caac293-98b4-4e73-9440-f1db68c94054
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 99%
@@ -69,7 +68,7 @@ Per abilitare SSL, WebSphere deve accedere a un account utente nel registro uten
 1. In Sicurezza amministrativa, seleziona **Ruoli utente amministrativi**.
 1. Fai clic su Aggiungi e procedi come segue:
 
-   1. Digitare **&ast;** nella casella di ricerca e fare clic su Cerca.
+   1. Digitare **&amp;ast;** nella casella di ricerca e fare clic su Cerca.
    1. Alla voce Ruoli, fai clic su **Amministratore**.
    1. Aggiungi l’utente appena creato al ruolo Mappato a e mappalo come Amministratore.
 

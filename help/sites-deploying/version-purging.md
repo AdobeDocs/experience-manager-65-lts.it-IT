@@ -10,9 +10,8 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 1%
@@ -33,7 +32,7 @@ Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivi
 
 AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* Gestione versioni [&#128279;](#version-manager)
+* Gestione versioni [](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 * strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)

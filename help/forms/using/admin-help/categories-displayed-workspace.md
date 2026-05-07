@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: f9ffbe56-757b-4fd0-b33a-2522695aed35
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 94%
@@ -43,7 +42,7 @@ Se utilizzi MySQL come database di AEM Forms, la console di amministrazione non 
 1. Nella casella Nome digita un nome per la categoria e nella casella Descrizione digita una descrizione della categoria.
 1. Fai clic su Aggiungi. La categoria viene visualizzata nella pagina Gestione categorie.
 
-   ***Nota &#x200B;**: puoi aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
+   ***Nota **: puoi aggiungere solo fino a cinque livelli gerarchici durante la creazione delle categorie.*
 
 ## Modificare una categoria {#edit-a-category}
 

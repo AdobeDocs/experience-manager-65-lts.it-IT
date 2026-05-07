@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 16%
@@ -29,7 +28,7 @@ Prima di aggiungere un rapporto personalizzato, attenersi alla procedura descrit
 
 ## Utilizzo dell&#39;interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it) prima di eseguire i passaggi seguenti:
+L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) prima di eseguire i passaggi seguenti:
 
 1. Sfoglia l&#39;URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura e sulle proprietà del nodo di archiviazione di Process Reporting.
@@ -46,7 +45,7 @@ L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share 
 
 ## Creazione di un servizio tramite API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it).
+I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crea un servizio OSGi con le annotazioni appropriate. Per accedere a QueryBuilder utilizzare:
 
@@ -640,7 +639,7 @@ I prerequisiti per la creazione di un&#39;interfaccia utente separata per la vis
    * **descrizione**- Specifica la descrizione di una riga del report. Puoi lasciare vuoto il campo della descrizione.
    * **icona**- Specifica l&#39;immagine da rappresentare graficamente il report. Puoi lasciare vuoto il campo dell’icona.
 
-   ![Proprietà del nodo &#x200B;](assets/node_properties_new.png)
+   ![Proprietà del nodo ](assets/node_properties_new.png)
 
    Proprietà del nodo
 

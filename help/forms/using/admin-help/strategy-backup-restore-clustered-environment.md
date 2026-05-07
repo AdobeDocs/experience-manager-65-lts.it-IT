@@ -5,9 +5,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0fe9b02a-96b4-462f-a940-a2d6084ed0a4
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 5%
@@ -131,7 +130,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Elimina il file clusterNode/revision.log sul nodo.
    1. Elimina il file .lock sul nodo, se esistente.
    1. Elimina l’eventuale repository/system.id sul nodo.
-   1. Eliminare i file &ast;&ast;/listener.properties sul nodo, se presenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties sul nodo, se presenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]
@@ -161,7 +160,7 @@ Nel caso in cui l&#39;intero cluster non riesca a causa di errori quali l&#39;ar
    1. Eliminare il file clusterNode/revision.log in tutti i nodi del cluster.
    1. Eliminare il blocco in tutti i nodi del cluster, se esistente.
    1. Eliminare tutti i nodi del cluster repository/system.id, se esiste.
-   1. Eliminare i file &ast;&ast;/listener.properties su tutti i nodi del cluster, se esistenti.
+   1. Eliminare i file &amp;ast;&amp;ast;/listener.properties su tutti i nodi del cluster, se esistenti.
    1. Ripristina repository/cluster_node.id per i singoli nodi cluster.
 
 >[!NOTE]

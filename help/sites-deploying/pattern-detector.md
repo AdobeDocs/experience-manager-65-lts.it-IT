@@ -5,9 +5,8 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
-hidefromtoc: true
 exl-id: c499432d-6aa4-481f-821d-bd2f9b7a911d
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 4%
@@ -50,7 +49,7 @@ Il rilevatore pattern viene rilasciato separatamente come [un pacchetto](https:/
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Tramite un&#39;interfaccia JSON normale o basata su testo reattivo**
-* **Tramite un’interfaccia per righe JSON reattive, &#x200B;** che genera un documento JSON separato in ogni riga.
+* **Tramite un’interfaccia per righe JSON reattive, **che genera un documento JSON separato in ogni riga.
 
 Entrambi i metodi sono descritti di seguito:
 
@@ -111,7 +110,7 @@ Con l&#39;output:
     "code": "ECU",
     "type": "extraneous.content.usage",
     "detective": "ContentAccessDetector",
-    "moreInfo": "https://www.adobe.com/go/aem6_ECU_it"
+    "moreInfo": "https://www.adobe.com/go/aem6_ECU"
   },
   "item": {
     "id": "a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f",
