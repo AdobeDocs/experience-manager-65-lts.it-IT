@@ -8,9 +8,8 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '6249'
 ht-degree: 99%
@@ -416,7 +415,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Exc
 
 **Prova OpenOffice come convertitore di fallback**: quando questa opzione è selezionata e una conversione con Microsoft Excel non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**Estensioni del nome file**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
+**Estensioni del nome file**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
 
 **Crea file conforme a PDF/A-1a**: impone l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 RGB.
 
@@ -491,7 +490,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Prova OpenOffice come convertitore fallback]**: quando selezioni questa opzione e una conversione con Microsoft Word non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**[!UICONTROL Estensioni del nome file]**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
+**[!UICONTROL Estensioni del nome file]**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
 
 **[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 

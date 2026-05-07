@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '7169'
 ht-degree: 96%
@@ -120,7 +119,7 @@ Utilizza le seguenti impostazioni per configurare un endpoint per le cartelle co
 
 **Nome:** (obbligatorio) identifica l’endpoint. Non includere un carattere &lt; o il nome visualizzato in Workspace verrà troncato. Se immetti come nome dell’endpoint un URL, accertati che sia conforme alle regole di sintassi specificate in RFC1738.
 
-**Descrizione:** descrizione dell’endpoint. Non includere un carattere &lt; o la descrizione visualizzata in Workspace verrà troncata.
+**Descrizione:** una descrizione dell’endpoint. Non includere un carattere &lt; o la descrizione visualizzata in Workspace verrà troncata.
 
 **Percorso:** (obbligatorio) specifica il percorso della cartella controllata. In un ambiente cluster, questa impostazione deve puntare a una cartella di rete condivisa accessibile da tutti i computer nel cluster.
 
@@ -164,7 +163,7 @@ Puoi utilizzare i modelli file per escludere:
    * &ast;.`[dD][Aa]`&#39;porta&#39;
    * &ast;.`[Xx][Mm][Ll]`
 
-Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui modelli di file](configuring-watched-folder-endpoints.md#about-file-patterns).
+Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 **Pattern di file di inclusione:** (obbligatorio) elenco di pattern delimitati da punto e virgola **;** utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se Includi modello file è input&ast;, vengono selezionati tutti i file e le cartelle che corrispondono a input&ast;. Questo include file e cartelle denominati input1, input2 e così via.
 

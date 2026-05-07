@@ -9,9 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
 hide: true
-hidefromtoc: true
 exl-id: a9eae40f-531f-4354-ade0-853e84dd88d9
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 98%
@@ -70,7 +69,7 @@ Puoi configurare il provider di servizi di archivio da utilizzare con Documentum
 
 **Provider di archivio ECM Documentum:** imposta il provider dell’archivio Documentum come provider di archivio. Questa opzione è stata dichiarata obsoleta
 
-**Provider di archivio:** imposta il provider dell’archivio nativo come provider di archivio
+**Provider dell’archivio:** imposta il provider dell’archivio nativo come provider dell’archivio
 
 >[!NOTE]
 >

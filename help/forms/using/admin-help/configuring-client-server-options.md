@@ -9,9 +9,8 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
 workflow-type: tm+mt
 source-wordcount: '10334'
 ht-degree: 98%
@@ -764,7 +763,7 @@ Per impostazione predefinita, la sincronizzazione viene eseguita automaticamente
 Nel file di configurazione di protezione dei documenti, puoi specificare la frequenza predefinita della sincronizzazione automatica in background. Questa impostazione funge da periodo di timeout predefinito per le applicazioni client, a meno che il client non imposti esplicitamente il proprio valore di timeout.
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione di Protezione documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `PolicyServer`. Sotto tale nodo, individua il nodo `ServerSettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `PolicyServer`. Sotto tale nodo, individua il nodo `ServerSettings`.
 1. Nel nodo `ServerSettings`, aggiungi la voce seguente, quindi salva il file:
 
    `<entry key="BackgroundSyncFrequency" value="`*tempo* `"/>`
@@ -979,7 +978,7 @@ Molti utenti della protezione dei documenti non hanno accesso a collegamenti est
 Le seguenti modifiche apportate al file config.xml disabilitano tutti i collegamenti esterni dalle interfacce utente della gestione dei diritti.
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `DisplaySettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `DisplaySettings`.
 1. Per disabilitare tutti i collegamenti esterni, nel nodo `DisplaySettings` aggiungi la voce seguente e quindi salva il file: `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```xml
@@ -993,7 +992,7 @@ Le seguenti modifiche apportate al file config.xml disabilitano tutti i collegam
 Le seguenti modifiche apportate al file config.xml abilitano il supporto per TLS per la funzione di registrazione degli utenti invitati.
 
 1. Esporta il file di configurazione di protezione documenti. (Consulta [Modifica manuale del file di configurazione della protezione dei documenti](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
-1. Apri il file di configurazione in un editor e individua il nodo `DisplaySettings`.
+1. Aprire il file di configurazione in un editor e individua il nodo `DisplaySettings`.
 1. Individua il seguente codice: `<node name="ExternalUser">`
 
    ```xml
