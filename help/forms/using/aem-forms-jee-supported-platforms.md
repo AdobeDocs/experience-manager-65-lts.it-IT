@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+source-git-commit: 30ac3d2e81e859244684339a028d7d9db470eefe
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3180'
 ht-degree: 3%
 
 ---
@@ -398,6 +398,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
 
 >[!NOTE]
 >
+>- PDF Generator supporta Microsoft® Office 2024.
 >- PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
 >- PDF Generator richiede Adobe Acrobat Pro DC (32 Bit) per eseguire la conversione.
 >- PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
