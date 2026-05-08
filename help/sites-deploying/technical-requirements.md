@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+source-git-commit: 551f915c2fa91a3b099ce5636ae5b7f4439c8236
 workflow-type: tm+mt
-source-wordcount: '2870'
+source-wordcount: '3086'
 ht-degree: 5%
 
 ---
@@ -336,7 +336,7 @@ Se utilizzi Dynamic Media su Linux®, è necessario soddisfare i seguenti prereq
 
 >[!NOTE]
 >
->**La disattivazione di SELinux:** Image Server non funziona se SELinux è attivato. Questa opzione è attivata per impostazione predefinita. Per risolvere il problema, modificare il file **/etc/selinux/config** e modificare il valore SELinux da:
+>**La disattivazione di SELinux:** Image Server non funziona se SELinux è attivato. Questa opzione è abilitata per impostazione predefinita. Per risolvere il problema, modificare il file **/etc/selinux/config** e modificare il valore SELinux da:
 >
 >`SELINUX=enforcing` **a** `SELINUX=disabled`
 
@@ -408,6 +408,7 @@ Per Windows x86:
 
 >[!NOTE]
 >
+>* PDF Generator supporta Microsoft® Office 2024.
 >* PDF Generator supporta solo le versioni in inglese, francese, tedesco e giapponese dei sistemi operativi e delle applicazioni supportati.
 >* PDF Generator richiede Adobe Acrobat Pro DC (32 Bit) per eseguire la conversione.
 >* PDF Generator supporta solo la versione a 32 bit di Microsoft® Office Professional Plus e di altro software necessario per la conversione.
