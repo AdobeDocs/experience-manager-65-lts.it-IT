@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 6aca9496869f6673661a650438a7fc1beb212097
+source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7581'
 ht-degree: 97%
 
 ---
@@ -281,6 +281,8 @@ Correla risorse ora funziona per i nomi di file che includono spazi. La logica d
 * Nelle distribuzioni del cluster AEM Forms 6.5 LTS in JBoss® EAP 8, i file `domain/configuration/domain_oracle.xml`, `domain_mysql.xml` e `domain_mssql.xml` non contengono più un tag `<security>` duplicato che ha causato un XML non valido e ha impedito l’avvio del controller di dominio. (FORMS-24687)
 * In modalità preconfigurata, l’aggiornamento della porta del database viene ora applicato correttamente durante la nuova installazione e l’aggiornamento. Nella nuova modalità di installazione, gli utenti possono selezionare da tutte le porte disponibili e in modalità di aggiornamento; durante il processo di aggiornamento la porta del database aggiornata in lc_turnkey.xml viene indicata correttamente. (FORMS-24689)
 * Durante la configurazione di JBoss® EAP 8.0 su Linux®, gli script della shell modificati in Windows non causano più errori `/bin/sh^M: bad interpreter or $'\r': command not found` a causa delle terminazioni della riga CRLF. (FORMS-24688)
+* Nelle implementazioni Forms JEE LTS in esecuzione su JBoss® EAP 8, l’interfaccia utente delle estensioni Reader potrebbe non riuscire e generare un errore interno del server. (FORMS-24894)
+* Su Linux®, gli utenti hanno riscontrato problemi di runtime o distribuzione quando Forms JEE LTS Configuration Manager è stato eseguito con un valore `OSFileSetIntendedFor` non impostato o non corretto in `configurationManager/config/solcomp/LFS_Foundation.properties`, che ha impedito la personalizzazione della configurazione per Linux®. Dopo l&#39;installazione e prima di eseguire Configuration Manager, impostare `OSFileSetIntendedFor=Linux` in tale file. (FORMS-24741)
 
 <!--
 #### Forms JEE 
@@ -578,9 +580,7 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 ### AEM Forms
 
 * In Gestione configurazioni, l’inizializzazione del database non riesce durante l’avvio in modalità personalizzata preconfigurata di AEM Forms 6.5 LTS JEE quando non è selezionato alcun modulo o sono selezionati solo componenti limitati. L’errore è dovuto a una dipendenza mancante (xalan-2.7.2.jar), che determina un errore. L’aggiunta del file JAR a adobe-livecycle-jboss.ear\lib risolve il problema. (FORMS-24690)
-* Nelle implementazioni Forms JEE LTS in esecuzione su JBoss® EAP 8, l’interfaccia utente delle estensioni Reader potrebbe non riuscire e generare un errore interno del server. (FORMS-24894)
 * In Forms JEE LTS in esecuzione su JBoss®, le funzionalità correlate all’e-mail potrebbero non riuscire. Quando si tenta di utilizzare le funzioni e-mail, il server potrebbe registrare un errore simile a `Error IMAPProvider not a subtype`. (FORMS-24892)
-* Sulle piattaforme Linux®, Forms JEE LTS richiede che la proprietà `OSFileSetIntendedFor` in `LFS_Foundation.properties` sia impostata correttamente prima di eseguire la gestione configurazioni. Se non viene aggiornata, la configurazione potrebbe non essere personalizzata correttamente per Linux®, il che può causare problemi di runtime o di implementazione. Per risolvere il problema, dopo aver eseguito il programma di installazione e prima di eseguire la gestione configurazioni, passa a `configurationManager/config/solcomp/`, apri `LFS_Foundation.properties`, imposta `OSFileSetIntendedFor=Linux`, salva il file, quindi esegui la gestione configurazioni. (FORMS-24741)
 
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
