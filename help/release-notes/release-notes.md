@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: eab6902e5bdb58f626e7b79f91d27447b31d6830
+source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
-source-wordcount: '7581'
-ht-degree: 97%
+source-wordcount: '7695'
+ht-degree: 95%
 
 ---
 
@@ -595,6 +595,16 @@ Pianifica i tempi di inattività dell’istanza durante la sua applicazione. Per
 > * Per qualsiasi operazione `oak-run`, utilizza il file jar [`oak-run` 1.88.1-B006](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/oak-run-1.88.1-B006.jar).
 >
 > * Avvia AEM impostando la proprietà di sistema `oak.compaction.legacy=true`.
+
+### Bundle `com.adobe.granite.apicontroller` mancante in AEM 6.5 LTS SP2 (GRANITE-67640) {#missing-apicontroller-bundle-granite-67640}
+
+Il bundle `com.adobe.granite.apicontroller` non è presente in AEM 6.5 LTS SP2. Questo bundle controlla come vengono risolti i bundle OSGi e può impedire la risoluzione dei bundle in altri bundle, il che è utile per limitare le API esposte.
+
+Installa l&#39;aggiornamento rapido da [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/cq-6.5.lts.2-hotfix-GRANITE-67640-1.0.zip) per utilizzare questa funzionalità.
+
+>[!NOTE]
+>
+> Dopo aver installato l&#39;hotfix, verificare lo stato del bundle di tutti i bundle installati per assicurarsi che la configurazione predefinita di `com.adobe.granite.apicontroller` non abbia introdotto restrizioni di risoluzione non intenzionali che potrebbero influire sulle implementazioni personalizzate esistenti.
 
 ### Commenti JSON non più supportati in Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 

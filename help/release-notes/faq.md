@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: d18c9dc3-fdcc-4558-b9b6-ecf1ce61048a
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 004a3859c06e7c219e7919ac5920a9bc179ede43
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 91%
 
 ---
 
@@ -18,11 +18,11 @@ Questa pagina risponde ad alcune domande frequenti su AEM 6.5 LTS.
 
 ## Perché Adobe ha rilasciato 6.5 LTS per AEM?
 
-Adobe si impegna a fondo per la sicurezza e la stabilità delle applicazioni che fornisce. Il supporto a lungo termine per AEM 6.5 getta le basi per i futuri aggiornamenti di AEM 6.5.In particolare, AEM 6.5 LTS include il supporto per Oracle Java 17 e Java 21 e sarà il ramo AEM che riceverà nuove funzioni e innovazioni di AEM.
+Adobe si impegna a fondo per la sicurezza e la stabilità delle applicazioni che fornisce. Il supporto a lungo termine per AEM 6.5 getta le basi per i futuri aggiornamenti di AEM 6.5. In particolare, AEM 6.5 LTS include il supporto per Oracle Java 17 e Java 21 e sarà il ramo AEM che riceverà nuove funzioni e innovazioni di AEM.
 
 ## Sono un cliente on-premise, cosa succede se non eseguo l’aggiornamento a AEM 6.5 LTS?
 
-AEM 6.5 LTS include importanti aggiornamenti su sicurezza e stabilità, tra cui il supporto per Oracle Java 17 e Java 21. Anche se Adobe continuerà a supportare AEM 6.5 per almeno i prossimi 2 anni, si consiglia alle organizzazioni di iniziare a pianificare un aggiornamento a 6.5 LTS.
+AEM 6.5 LTS include importanti aggiornamenti su sicurezza e stabilità, tra cui il supporto per Oracle Java 17 e Java 21. È consigliabile che le organizzazioni pianifichino un aggiornamento a 6.5 LTS. Adobe continuerà a supportare AEM 6.5 fino al 28 febbraio 2027. Per ulteriori dettagli, consulta la [roadmap](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap#aem65).
 
 ## Se eseguo l’aggiornamento a AEM 6.5 LTS, le personalizzazioni e le integrazioni esistenti ne saranno interessate?
 
