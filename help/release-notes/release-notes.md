@@ -8,7 +8,7 @@ exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: 02b7915e1e5554d29577e46960c072d46bcc8b0c
 workflow-type: tm+mt
 source-wordcount: '7695'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -608,15 +608,15 @@ Installa l&#39;aggiornamento rapido da [Distribuzione software](https://experien
 
 ### Commenti JSON non più supportati in Sling-Initial-Content (SP2) {#json-comments-no-longer-supported-in-sling-initial-content}
 
-Questo problema riguarda sviluppatori e amministratori di bundle OSGi che distribuiscono bundle che utilizzano `Sling-Initial-Content` con file JSON.
+Questo problema riguarda sviluppatori e amministratori di bundle OSGi che implementano bundle che utilizzano `Sling-Initial-Content` con file JSON.
 
-A partire da AEM 6.5 LTS SP2, i file JSON utilizzati nei bundle `Sling-Initial-Content` non accettano più commenti (`//` o `/* */`). Nelle versioni precedenti di AEM sono stati accettati commenti perché il provider `javax.json` è stato indulgente al riguardo. AEM 6.5 LTS SP2 ha aggiornato `org.apache.sling.jcr.contentloader` alla versione 2.6.0, cambiando il parser JSON in `jakarta.json`. Sebbene la specifica [JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) non definisca la sintassi per i commenti, le versioni precedenti di AEM li hanno accettati a causa della clemenza del provider `javax.json`. Il provider `jakarta.json` non offre questa estensione.
+A partire da AEM 6.5 LTS SP2, i file JSON utilizzati nei bundle `Sling-Initial-Content` non accettano più commenti (`//` o `/* */`). Le versioni precedenti di AEM accettavano i commenti perché il provider `javax.json` era indulgente al riguardo. AEM 6.5 LTS SP2 ha aggiornato `org.apache.sling.jcr.contentloader` alla versione 2.6.0, cambiando il parser JSON in `jakarta.json`. Sebbene la [specifica JSON (RFC 8259)](https://datatracker.ietf.org/doc/html/rfc8259) non definisca la sintassi per i commenti, erano accettati nelle versioni precedenti di AEM grazie all’indulgenza del provider `javax.json`. Il provider `jakarta.json` non offre questa estensione.
 
-L’errore è invisibile all’utente: i nodi di contenuto non vengono caricati all’attivazione del bundle e al programma di installazione non viene visualizzato alcun errore. Se manca inaspettatamente del contenuto dopo l’aggiornamento a SP2, controlla i registri di installazione di OSGi per verificare la presenza di errori di analisi JSON. Per identificare i bundle interessati, cerca `//` o `/* */` all&#39;interno dei file JSON elencati in `Sling-Initial-Content` intestazioni manifesto.
+L’errore è invisibile all’utente: i nodi di contenuto non vengono caricati all’attivazione del bundle e il programma di installazione non visualizza alcun messaggio di errore. Se manca inaspettatamente del contenuto dopo l’aggiornamento a SP2, controlla i registri del programma di installazione di OSGi per verificare la presenza di errori di analisi JSON. Per identificare i bundle interessati, cerca `//` o `/* */` all’interno dei file JSON elencati nelle intestazioni manifesto di `Sling-Initial-Content`.
 
 >[!CAUTION]
 >
-> Rimuovi tutti i commenti dai file JSON nei bundle `Sling-Initial-Content` per evitare errori di caricamento del contenuto dopo l&#39;aggiornamento ad AEM 6.5 LTS SP2.
+> Rimuovi tutti i commenti dai file JSON nei bundle `Sling-Initial-Content` per evitare errori di caricamento del contenuto dopo l’aggiornamento ad AEM 6.5 LTS SP2.
 
 ### Installa gli indici Oak richiesti per le API headless di Sites{#site-headless-api}
 
