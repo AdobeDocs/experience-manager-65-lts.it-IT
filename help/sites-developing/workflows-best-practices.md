@@ -1,17 +1,13 @@
 ---
 title: Best practice per i flussi di lavoro
 description: Scopri le best practice per l’utilizzo dei flussi di lavoro in Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1948'
 ht-degree: 1%
 
 ---
@@ -32,13 +28,13 @@ Durante la configurazione dei processi del flusso di lavoro (personalizzati e/o 
 
 Per ottimizzare i carichi di acquisizione elevati, puoi definire un [flusso di lavoro come transitorio](/help/sites-developing/workflows.md#transient-workflows).
 
-Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono mantenuti in JCR quando vengono eseguiti (le rappresentazioni di output vengono mantenute).
+Quando un flusso di lavoro è transitorio, i dati di runtime relativi ai passaggi di lavoro intermedi non vengono memorizzati nel JCR quando vengono eseguiti (le rappresentazioni di output vengono rese permanenti).
 
 I vantaggi includono:
 
-* Riduzione del tempo di elaborazione del flusso di lavoro, fino al 10%.
+* Riduzione del tempo di elaborazione del flusso di lavoro fino al 10%.
 * Riduzione significativa della crescita dell&#39;archivio.
-* Non sono necessari altri flussi di lavoro CRUD per l’eliminazione.
+* Non è necessario eliminare altri flussi di lavoro CRUD.
 * Inoltre, riduce il numero di file TAR da compattare.
 
 >[!CAUTION]
@@ -67,7 +63,7 @@ Esiste inoltre una configurazione separata per la **coda processi esterni flusso
 
 ### Configurare singole code di processi {#configure-individual-job-queues}
 
-In alcuni casi è utile configurare singole code di job per controllare thread simultanei o altre opzioni di coda su base di job individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite la factory **Apache Sling Job Queue Configuration**. Per trovare l&#39;argomento appropriato da elencare, eseguire il modello del flusso di lavoro e cercarlo nella console **Processi Sling**, ad esempio in `http://localhost:4502/system/console/slingevent`.
+In alcuni casi, è utile configurare singole code di job per controllare thread simultanei o altre opzioni di coda su base di job individuale. È possibile aggiungere e configurare una singola coda dalla console Web tramite la factory **Apache Sling Job Queue Configuration**. Per trovare l&#39;argomento appropriato da elencare, eseguire il modello del flusso di lavoro e cercarlo nella console **Processi Sling**, ad esempio in `http://localhost:4502/system/console/slingevent`.
 
 È possibile aggiungere singole code di processi anche per flussi di lavoro transitori.
 
@@ -226,7 +222,7 @@ Come in qualsiasi sviluppo personalizzato, si consiglia sempre di utilizzare la 
 Quando si implementa un processo di workflow:
 
 * Verrà fornita una sessione di flusso di lavoro che deve essere utilizzata a meno che non vi siano motivi validi per non farlo.
-* Non è consigliabile creare nuove sessioni dai passaggi del flusso di lavoro, in quanto ciò causa incoerenze negli stati e possibili problemi di concorrenza nel motore del flusso di lavoro.
+* Non è consigliabile creare nuove sessioni dai passaggi del flusso di lavoro, in quanto questo causa incoerenze negli stati e possibili problemi di concorrenza nel motore del flusso di lavoro.
 * Non devi acquisire una nuova sessione JCR dall’interno di un passaggio del processo in un flusso di lavoro; devi adattare la sessione del flusso di lavoro fornita dall’API della fase del processo a una sessione JCR. Ad esempio:
 
 ```
@@ -243,14 +239,14 @@ Salvataggio di una sessione
 * All&#39;interno di un processo del flusso di lavoro, se `WorkflowSession` viene utilizzato per modificare l&#39;archivio, non salvare esplicitamente la sessione. Al termine, il flusso di lavoro salverà la sessione.
 * `Session.Save` non deve essere chiamato da un passaggio del flusso di lavoro:
 
-   * si consiglia di adattare la sessione jcr del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
-   * non è consigliabile che una fase del processo crei una propria sessione jcr.
+   * si consiglia di adattare la sessione JCR del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
+   * non è consigliabile che una fase del processo crei una propria sessione JCR.
 
 * Eliminando i risparmi non necessari, è possibile ridurre il sovraccarico e quindi rendere più efficienti i flussi di lavoro.
 
 >[!CAUTION]
 >
->Se, nonostante i consigli qui riportati, crei una tua sessione JCR, questa deve essere salvata.
+>Se, nonostante i consigli qui riportati, crei una sessione JCR personalizzata, questa deve essere salvata.
 
 ### Riduci al minimo il numero e l&#39;ambito dei moduli di avvio {#minimize-the-number-scope-of-launchers}
 
