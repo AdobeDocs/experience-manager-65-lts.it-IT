@@ -50,7 +50,7 @@ Verifica di utilizzare il file JAR Uber con il classificatore `apis`. La struttu
 
 No. AEM 6.5 LTS non supporta gli artefatti Sling migrati negli spazi dei nomi del pacchetto `jakarta.*`. Utilizza gli equivalenti `javax.*` nel codice e nelle dipendenze, ad esempio `javax.annotation.PostConstruct` anziché `jakarta.annotation.PostConstruct` nei modelli Sling. L’implementazione dei modelli Sling in AEM 6.5 LTS riconosce solo le annotazioni `javax.*`, pertanto `jakarta.*` annotazioni vengono ignorate automaticamente durante l’inizializzazione.
 
-Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base [Errore dei modelli Sling con `jakarta.annotation.PostConstruct` in AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339).
+Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base [Errore dei modelli Sling con `jakarta.annotation.PostConstruct` in AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-30339).
 
 ## Ottenere ulteriore assistenza.
 
