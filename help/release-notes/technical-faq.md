@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: 89016492c069d61c18f9bf83bfb896cd78fb20fd
+source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 75%
+source-wordcount: '392'
+ht-degree: 59%
 
 ---
 
@@ -45,6 +45,12 @@ Sì, AEM 6.5 LTS supporta la sincronizzazione utente. Non vi è alcuna modifica 
 ### Il file JAR Uber su Maven Central sembra essere danneggiato: qual è il problema?
 
 Verifica di utilizzare il file JAR Uber con il classificatore `apis`. La struttura del pacchetto del file JAR Uber è cambiata in AEM 6.5 LTS. Per ulteriori informazioni, consulta [Aggiornare la versione del file JAR Uber di AEM](/help/sites-deploying/upgrading-code-and-customizations.md#update-the-aem-uber-jar-version).
+
+### AEM 6.5 LTS supporta gli spazi dei nomi del pacchetto `jakarta.*` (ad esempio, `jakarta.annotation`)?
+
+No. AEM 6.5 LTS non supporta gli artefatti Sling migrati negli spazi dei nomi del pacchetto `jakarta.*`. Utilizza gli equivalenti `javax.*` nel codice e nelle dipendenze, ad esempio `javax.annotation.PostConstruct` anziché `jakarta.annotation.PostConstruct` nei modelli Sling. L’implementazione dei modelli Sling in AEM 6.5 LTS riconosce solo le annotazioni `javax.*`, pertanto `jakarta.*` annotazioni vengono ignorate automaticamente durante l’inizializzazione.
+
+Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base [Errore dei modelli Sling con `jakarta.annotation.PostConstruct` in AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-30339).
 
 ## Ottenere ulteriore assistenza.
 
