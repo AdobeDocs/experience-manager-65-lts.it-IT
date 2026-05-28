@@ -4,7 +4,7 @@ description: Scopri come definire e distribuire spazi dei nomi personalizzati in
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 31d67c5b9bff651077df5a497e5c318b86a48158
+source-git-commit: 475a77e8e4ff0ecd19a939fd3b3c9294adf24997
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 8%
@@ -29,11 +29,11 @@ Gli spazi dei nomi possono essere utilizzati per indicare l’ambito e l’inten
 
 Gli spazi dei nomi personalizzati vengono gestiti negli script [Sling Repository Initialization (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html) e distribuiti come configurazioni OSGi nel pacchetto di configurazione del progetto (ad esempio, `ui.config`).
 
-## Risorse
+## Risorse {#resources}
 
 + [Documentazione sull’inizializzazione dell’archivio Sling (repoinit)](https://sling.apache.org/documentation/bundles/repository-initialization.html#repoinit-parser-test-scenarios)
 
-## Codice
+## Codice {#code}
 
 Il codice seguente viene utilizzato per configurare uno spazio dei nomi `wknd`.
 

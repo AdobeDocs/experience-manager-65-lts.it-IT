@@ -6,10 +6,10 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: b7aa877f9e782b0568adc7baa440dc630c690454
+source-git-commit: b5db6129e83dd7a54516707bbdb8864dc709d54b
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 6%
+source-wordcount: '1615'
+ht-degree: 7%
 
 ---
 
@@ -52,7 +52,7 @@ Dopo l&#39;aggiornamento al service pack AEM Forms 6.5.22.0, eseguire la procedu
 
      L’utility di migrazione rende compatibili con AEM 6.5 forms i moduli adattivi e le risorse di gestione della corrispondenza delle versioni precedenti. Puoi scaricare l’utility da AEM Software Distribution. Per informazioni dettagliate sulla configurazione e l&#39;utilizzo dell&#39;utilità di migrazione, vedere [utilità di migrazione](../../forms/using/migration-utility.md).
 
-     Se si utilizza [Esempio per l&#39;integrazione del componente Bozze e invii](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) con il database e l&#39;aggiornamento da una versione precedente, eseguire le query SQL seguenti dopo l&#39;aggiornamento:
+     Se si utilizza [Esempio per l&#39;integrazione del componente Bozze e invii](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) con il database e l&#39;aggiornamento da una versione precedente, eseguire le query SQL seguenti dopo l&#39;aggiornamento:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +93,7 @@ Dopo l&#39;aggiornamento al service pack AEM Forms 6.5.22.0, eseguire la procedu
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se esegui l’aggiornamento da Forms 6.3 a AEM 6.5 Forms, utilizza i percorsi modificati per la personalizzazione che crei nuovamente. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se esegui l’aggiornamento da Forms 6.3 a AEM 6.5 Forms, utilizza i percorsi modificati per la personalizzazione che crei nuovamente. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Distribuzione di AEM su JBoss EAP 8 (Windows)
@@ -133,7 +133,7 @@ Prima di iniziare il processo di distribuzione, assicurati che l’ambiente sodd
 2. Prendere nota del percorso di questa directory come `<JBOSS_HOME>` da utilizzare in questa guida.
 
    **Esempio:**\
-   ```C:\jboss-eap-8.0```
+   `C:\jboss-eap-8.0`
 
 ### Passaggio 2: preparare il file WAR di AEM
 
@@ -287,7 +287,7 @@ Dopo aver completato tutte le modifiche di configurazione, crea un nuovo pacchet
    ```
 
    **Esempio:**
-   ```C:\jboss-eap-8.0\standalone\deployments```
+   `C:\jboss-eap-8.0\standalone\deployments`
 
 #### Configurare le impostazioni JVM (facoltativo ma consigliato)
 
@@ -318,7 +318,7 @@ Prima di avviare JBoss, configura le impostazioni della memoria JVM:
    ```
 
    **Esempio:**
-   ```cmd cd C:\jboss-eap-8.0\bin```
+   `cmd cd C:\jboss-eap-8.0\bin`
 
 1. Avvia il server JBoss:
 
@@ -343,7 +343,7 @@ Deployed "cq-quickstart.war" (runtime-name : "cq-quickstart.war")
 Una volta completata la distribuzione e avviato AEM:
 
 **URL autore AEM:**
-```http://<server-ip>:8080/cq-quickstart```
+`http://<server-ip>:8080/cq-quickstart`
 
 **Credenziali predefinite:**
 
@@ -352,7 +352,7 @@ Una volta completata la distribuzione e avviato AEM:
 
 **Importante:** modificare la password predefinita immediatamente dopo il primo accesso.
 
-### Risoluzione dei problemi
+### Risoluzione di problemi
 
 #### Problemi comuni
 
@@ -394,9 +394,9 @@ Per gli ambienti di produzione:
 
 ### Documentazione correlata
 
-* [Documentazione EAP 8 JBoss](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
+* [Documentazione di JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0)
 * [Documentazione di Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=it)
-* [Guida all&#39;installazione e alla distribuzione di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it)
+* [Guida all’installazione e all’implementazione di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=it)
 
 ### Informazioni documento
 

@@ -1,24 +1,20 @@
 ---
 title: Scelte rapide da tastiera per le console in AEM
 description: Risparmia tempo durante l’authoring utilizzando queste scelte rapide da tastiera.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 2e9786117c4a8b3026f7f3109b5a49ce188b119a
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 47%
+source-wordcount: '386'
+ht-degree: 44%
 
 ---
 
-# Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
+# Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
 
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili all&#39;uso delle console, altre alla [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -40,7 +36,7 @@ Le seguenti scelte rapide sono disponibili per le console Sites, Commerce, Scree
 | Console | `?` | Aiuto per scelte rapide da tastiera |
 |  | `/` | Avvia la [ricerca](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Consente di attivare o disattivare il [selettore della barra](/help/sites-authoring/basic-handling.md#rail-selector) da visualizzare |
-|  | ``` ` ``` | Nasconde la barra |
+|  | `` ` `` | Nasconde la barra |
 |  | `e` | Modifica |
 |  | `p` | Proprietà |
 |  | `m` | Sposta |
