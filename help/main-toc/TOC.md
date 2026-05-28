@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
 workflow-type: tm+mt
-source-wordcount: '7693'
+source-wordcount: '7695'
 ht-degree: 67%
 
 ---
@@ -1412,6 +1412,7 @@ ht-degree: 67%
          + [Imprevisti del codice](/help/sites-developing/code-pitfalls.md)
          + [Bundle OSGi](/help/sites-developing/osgi-bundles.md)
          + [Integrazione JCR](/help/sites-developing/jcr-integration.md)
+         + [Spazi dei nomi personalizzati](/help/sites-developing/custom-namespaces.md)
          + [Esempi di codice](/help/sites-developing/code-samples.md)
          + [Risoluzione dei problemi relativi a query lente](/help/sites-developing/troubleshooting-slow-queries.md)
    + Implementazione {#deploying}
