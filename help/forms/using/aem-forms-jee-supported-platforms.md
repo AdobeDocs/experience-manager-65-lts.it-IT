@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: eb4c7e2afa28c5bd5bdf9c38fe44143a71abd1fc
+source-git-commit: aed08dbb5afd7aefb07716ff5dbbff7265c208e5
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3156'
 ht-degree: 3%
 
 ---
@@ -81,9 +81,9 @@ Adobe consiglia queste configurazioni e fornisce supporto completo o limitato co
 >[!NOTE]
 >
 >Per aiutare i clienti AEM Forms a ridurre il costo di proprietà, semplificare l’architettura di distribuzione e modernizzare lo stack di sviluppo, la piattaforma aziendale Adobe Experience Manager si sta allontanando dalle implementazioni basate su server applicazioni a favore delle implementazioni autonome basate su OSGi. Adobe continua a supportare lo stack AEM Forms JEE con una matrice ridotta di componenti dell’infrastruttura.
->Per le nuove installazioni, ove possibile, si consiglia di implementare AEM Forms sul moderno stack OSGi per utilizzare le ultime innovazioni relative a Adaptive Forms per le integrazioni di dati mobili, interattivi multicanale e back-end tramite il modello dati del modulo.
+>Per le nuove installazioni, ove possibile, si consiglia di distribuire AEM Forms sul moderno stack OSGi per utilizzare le ultime innovazioni relative a Adaptive Forms per le integrazioni di dati mobili, interattivi multicanale e back-end tramite il modello dati del modulo.
 >
->Adobe riconosce che gli utenti esistenti devono continuare a distribuire AEM Forms sullo stack JEE. In tali scenari, Adobe richiede l’implementazione di AEM Forms JEE sull’infrastruttura supportata come descritto in questa documentazione. Se stai eseguendo l’aggiornamento a AEM 6.5 Forzms e utilizzi una piattaforma non supportata nella versione precedente di AEM Forms, puoi contattare il supporto Adobe per assistenza sull’aggiornamento a una piattaforma supportata.
+>Adobe riconosce che gli utenti esistenti devono continuare a distribuire AEM Forms sullo stack JEE. In tali scenari, Adobe richiede l’implementazione di AEM Forms JEE sull’infrastruttura supportata come descritto in questa documentazione. Se stai eseguendo l’aggiornamento a AEM 6.5 Forms e utilizzi una piattaforma non supportata nella versione precedente di AEM Forms, puoi contattare il supporto Adobe per assistenza sull’aggiornamento a una piattaforma supportata.
 
 ### Java™ Virtual Machine (JVM) {#java-virtual-machines-jvm}
 
@@ -92,7 +92,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Piattaforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Livello di supporto</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
@@ -119,29 +119,29 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Piattaforma</strong></p> </td>
+   <td><p><strong>Platform</strong></p> </td>
    <td><p><strong> Descrizione</strong></p> </td>
    <td><p><strong>Livello di supporto</strong></p> </td>
   </tr>
   <tr>
    <td><p>File system</p> </td>
    <td><p>Microkernel dell’archivio (file TAR MK)</p> </td>
-   <td><p>Supportato</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p> RDBMK </p> </td>
    <td><p></p> </td>
-   <td><p>Supportato</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p> MongoDB Enterprise 9.0 </p> </td>
    <td><p>Microkernel archivio</p> </td>
-   <td><p>Supportato</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
   <tr>
    <td><p> MongoDB Enterprise 8.0</p> </td>
    <td><p>Microkernel archivio</p> </td>
-   <td><p>Supportato</p> </td>
+   <td><p>Funzione supportata</p> </td>
   </tr>
     <tr>
    <td><p> MongoDB Enterprise 7.0 </p> </td>
@@ -180,7 +180,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
  <tbody>
   <tr>
    <th>Database </th>
-   <th><p><strong>Piattaforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <table>
  <tbody>
   <tr>
-   <td><p><strong> Piattaforma</strong></p> </td>
+   <td><p><strong> Platform</strong></p> </td>
    <td><p><strong>Livello di supporto</strong></p> </td>
    <td><p><strong>Definizioni di patch supportate</strong></p> </td>
   </tr>
@@ -225,7 +225,7 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
 <table>
  <tbody>
   <tr>
-   <th><p><strong> Piattaforma</strong></p> </th>
+   <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Livello di supporto</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
@@ -272,6 +272,11 @@ Puoi eseguire AEM Forms su JEE in un computer fisico o in un ambiente virtuale. 
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 a 64 bit</p> </td>
+   <td>E: Funzionamento previsto</td>
+   <td><p>Service Pack e aggiornamenti critici</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 a 64 bit</p> </td>
    <td>E: Funzionamento previsto</td>
    <td><p>Service Pack e aggiornamenti critici</p> </td>
   </tr>
@@ -486,11 +491,15 @@ Per ulteriori informazioni, vedere:
 <table>
  <tbody>
   <tr>
-   <th><p><strong>Piattaforma</strong></p> </th>
+   <th><p><strong>Platform</strong></p> </th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 10 (Enterprise, Pro, Basic)</p> <p>Versione a 32 bit o a 64 bit</p> <p> </p> </td>
+   <td>Service Pack e aggiornamenti critici</td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® Windows® 11 (Enterprise, Pro, Basic)</p> <p>Versione a 64 bit</p> <p> </p> </td>
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
