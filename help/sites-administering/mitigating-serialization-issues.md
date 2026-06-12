@@ -11,7 +11,7 @@ role: Admin
 exl-id: eef69d02-2e88-4f44-98bb-d98fa297e3a2
 source-git-commit: ffb467630ee061bce5a9cab4e8a311e70b2aeb38
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '944'
 ht-degree: 1%
 
 ---
@@ -24,11 +24,11 @@ Il team AEM di Adobe ha lavorato a stretto contatto con il progetto open-source 
 
 Il file jar dell’agente incluso in questo pacchetto è la distribuzione modificata di NotSoSerial di Adobe.
 
-NotSoSerial è una soluzione a livello Java™ per risolvere un problema a livello Java™ e non è specifica per AEM. Aggiunge un controllo preliminare a un tentativo di deserializzare un oggetto. Questo controllo verifica il nome di una classe in base a un inserisco nell&#39;elenco Consentiti di classe di tipo firewall-style, a un elenco Bloccati di classe di tipo o a entrambi. A causa del numero limitato di classi nel inserisco nell&#39;elenco Bloccati di predefinito, è improbabile che questo test influisca sui sistemi o sul codice.
+NotSoSerial è una soluzione a livello Java™ per risolvere un problema a livello Java™ e non è specifica per AEM. Aggiunge un controllo preliminare a un tentativo di deserializzare un oggetto. Questo controllo verifica il nome di una classe rispetto a un inserisco nell&#39;elenco Consentiti di classe di tipo firewall, a un inserisco nell&#39;elenco Bloccati di o a entrambi. A causa del numero limitato di classi nel inserisco nell&#39;elenco Bloccati di predefinito, è improbabile che questo test influisca sui sistemi o sul codice.
 
 Per impostazione predefinita, l&#39;agente esegue un controllo di inserisce nell&#39;elenco Bloccati basato su un valore di  per le classi vulnerabili correnti note. Questo inserisco nell&#39;elenco Bloccati di ha lo scopo di proteggerti dall’elenco corrente di exploit che utilizzano questo tipo di vulnerabilità.
 
-La inserisce nell&#39;elenco Bloccati e il elenco Consentiti di dell&#39;agente di possono essere configurati seguendo le istruzioni riportate nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
+Il inserisco nell&#39;elenco Bloccati di e di può essere configurato seguendo le istruzioni riportate nella sezione [Configurazione dell&#39;agente](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) di questo articolo.
 
 L’agente ha lo scopo di contribuire a mitigare le classi vulnerabili più recenti. Se il progetto deserializza dati non attendibili, potrebbe essere vulnerabile ad attacchi Denial of Service, attacchi di memoria insufficiente e attacchi di deserializzazione futuri sconosciuti.
 
@@ -71,7 +71,7 @@ L&#39;agente NotSoSerial non è incluso nella distribuzione standard di AEM per 
 
 ## Configurazione dell’agente {#configuring-the-agent}
 
-La configurazione predefinita è adeguata per la maggior parte delle installazioni. Questa configurazione include un inserisco nell&#39;elenco Bloccati di esecuzione remota vulnerabile di classi conosciute ed un inserisco nell&#39;elenco Consentiti di esecuzione remota di pacchetti in cui la deserializzazione dei dati attendibili è sicura.
+La configurazione predefinita è adeguata per la maggior parte delle installazioni. Questa configurazione include una inserisce nell&#39;elenco Bloccati vulnerabile di classi di esecuzione remota note e un elenco Consentiti di pacchetti in cui la deserializzazione dei dati attendibili è sicura.
 
 La configurazione del firewall è dinamica e può essere modificata in qualsiasi momento:
 
@@ -88,7 +88,7 @@ Questa configurazione contiene la registrazione del inserisco nell&#39;elenco Co
 
 **Inserzione consentita**
 
-Nella sezione dell’elenco Consentiti queste voci sono classi o prefissi di pacchetti consentiti per la deserializzazione. Se si desidera deserializzare classi personalizzate, aggiungere le classi o i pacchetti a questo inserisco nell&#39;elenco Consentiti di.
+Nella sezione dell’elenco Consentiti queste voci sono classi o prefissi di pacchetti consentiti per la deserializzazione. Se stai deserializzando classi personalizzate, aggiungi le classi o i pacchetti a questo elenco Consentiti di.
 
 **Elenco Bloccati**
 
@@ -114,7 +114,7 @@ Per ulteriori informazioni sulla risoluzione dei problemi con l&#39;agente, vede
 
 >[!NOTE]
 >
->Se aggiungi `org.apache.commons.collections.functors` al inserisco nell&#39;elenco Consentiti di, il controllo dello stato di integrità non riesce mai.
+>Se si aggiunge `org.apache.commons.collections.functors` al inserisco nell&#39;elenco Consentiti di, il controllo dello stato di integrità non riesce sempre.
 
 ## Gestione degli errori con il caricamento degli agenti dinamici {#handling-errors-with-dynamic-agent-loading}
 

@@ -83,7 +83,7 @@ Per richiamare in modo programmatico i processi di AEM Forms utilizzando la funz
 
 * *&lt;directory_di_installazione>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  dove &lt;*directory_installata*> è la directory in cui è installato AEM Forms.
+  dove &lt;*install_directory*> è la directory in cui è installato AEM Forms.
 
 **Consulta anche**
 
