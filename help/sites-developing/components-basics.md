@@ -7,7 +7,7 @@ role: Developer
 exl-id: 3265ad97-75c2-4dc1-8180-71b65cf73d31
 source-git-commit: a0fe5bbfe93719641118521c6861bcb2cca76d60
 workflow-type: tm+mt
-source-wordcount: '4819'
+source-wordcount: '4940'
 ht-degree: 1%
 
 ---
@@ -59,13 +59,13 @@ Le nozioni di base su entrambi sono descritte in questa pagina e come riconoscer
 
 Adobe consiglia di mantenere il codice responsabile del markup e del rendering separato dal codice che controlla la logica utilizzata per selezionare il contenuto del componente.
 
-Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), un linguaggio di modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
+Questa filosofia è supportata da [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview), un linguaggio di modelli appositamente limitato per garantire che venga utilizzato un linguaggio di programmazione reale per definire la logica di business sottostante. Questa logica (facoltativa) viene richiamata da HTL con un comando specifico. Questo meccanismo evidenzia il codice chiamato per una determinata vista e, se necessario, consente una logica specifica per diverse viste dello stesso componente.
 
 ### Confronto tra HTL e JSP {#htl-vs-jsp}
 
 HTL è un linguaggio per modelli HTML introdotto con AEM 6.0.
 
-La discussione sull&#39;utilizzo di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) o JSP (Java™ Server Pages) durante lo sviluppo di componenti personalizzati deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
+La discussione sull&#39;utilizzo di [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview) o JSP (Java™ Server Pages) durante lo sviluppo di componenti personalizzati deve essere semplice, in quanto HTL è ora il linguaggio di script consigliato per AEM.
 
 Sia HTL che JSP possono essere utilizzati per lo sviluppo di componenti sia per l’interfaccia utente classica che per quella touch. Sebbene ci possa essere una tendenza a presumere che HTL sia solo per l’interfaccia touch e JSP per l’interfaccia classica, si tratta di un’idea errata e più dovuta ai tempi. L’interfaccia utente touch e HTL sono stati incorporati in AEM nello stesso periodo. Poiché HTL è ora la lingua consigliata, viene utilizzato per nuovi componenti, che in genere sono per l’interfaccia utente touch.
 
@@ -135,7 +135,7 @@ Si tratta di un’astrazione che garantisce che, anche quando l’aspetto cambia
 
 ### Definizione del componente {#component-definition}
 
-#### Nozioni di base sui componenti {#component-basics}
+#### Nozione di base sui componenti {#component-basics}
 
 La definizione di un componente può essere suddivisa come segue:
 
@@ -184,7 +184,7 @@ La definizione di un componente può essere suddivisa come segue:
 
    * `cq:editConfig (cq:EditConfig)` - Definisce le proprietà di modifica del componente e consente la visualizzazione del componente nel browser Componenti o in Sidekick.
 
-     Nota: se il componente ha una finestra di dialogo, questa viene visualizzata automaticamente nel browser Componenti o in Sidekick, anche se cq:editConfig non esiste.
+     Nota: se il componente ha una finestra di dialogo, questa verrà visualizzata automaticamente nel browser Componenti o in Sidekick, anche se cq:editConfig non esiste.
 
    * `cq:childEditConfig (cq:EditConfig)` - Controlla gli aspetti dell&#39;interfaccia utente di authoring per i componenti figlio che non definiscono il proprio `cq:editConfig`.
    * Interfaccia touch:
@@ -337,7 +337,7 @@ Un componente è un nodo di tipo `cq:Component` e presenta le proprietà e i nod
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Percorso di un nodo da utilizzare come modello di contenuto quando il componente viene aggiunto dal browser Componenti o da Sidekick. Deve essere un percorso assoluto, non relativo al nodo del componente.<br /> A meno che non si desideri riutilizzare il contenuto già disponibile altrove, questo non è necessario e <code>cq:template</code> è sufficiente (vedere di seguito).</td>
+   <td>Percorso di un nodo da utilizzare come modello di contenuto quando il componente viene aggiunto dal browser Componenti o da Sidekick. Deve essere un percorso assoluto, non relativo al nodo del componente.<br /> A meno che non si desideri riutilizzare il contenuto già disponibile altrove, questa operazione non è necessaria e <code>cq:template</code> è sufficiente (vedere di seguito).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -592,7 +592,7 @@ Nell’archivio sono presenti molte configurazioni esistenti. Puoi cercare facil
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in **&#x200B; CRXDE Lite** e cercare con la seguente stringa di query XPath:
+* Per cercare un nodo figlio di `cq:editConfig`, ad esempio, è possibile cercare `cq:dropTargets`, che è di tipo `cq:DropTargetConfig`; è possibile utilizzare lo strumento Query in** CRXDE Lite** e cercare con la seguente stringa di query XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -647,7 +647,7 @@ La proprietà `cq:actions` ( `String array`) definisce una o più azioni che pos
   </tr>
   <tr>
    <td>-</td>
-   <td>Aggiunge un distanziatore.<br /> visibile solo nell'interfaccia classica. L’interfaccia utente touch non visualizza le azioni in un menu contestuale, pertanto questo non è applicabile.</td>
+   <td>Aggiunge un distanziatore.<br /> Visibile solo nell’interfaccia classica. L’interfaccia utente touch non visualizza le azioni in un menu contestuale, pertanto questo non è applicabile.</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
@@ -702,11 +702,11 @@ La proprietà `cq:layout` ( `String`) definisce come il componente può essere m
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Valore predefinito. L’edizione del componente è accessibile "al passaggio del mouse" tramite clic e/o menu di scelta rapida.<br /> Per un utilizzo avanzato, l'oggetto lato client corrispondente è: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Valore predefinito. L'edizione del componente è accessibile "al passaggio del mouse" tramite clic e/o menu di scelta rapida.<br /> Per un utilizzo avanzato, l'oggetto lato client corrispondente è: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>L’edizione del componente è accessibile tramite una barra degli strumenti.<br /> Per un utilizzo avanzato, l'oggetto lato client corrispondente è: <code>CQ.wcm.EditBar</code>.</td>
+   <td>L'edizione del componente è accessibile tramite una barra degli strumenti.<br /> Per un utilizzo avanzato, l'oggetto lato client corrispondente è: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -786,9 +786,9 @@ Per impostazione predefinita, la proprietà `dialogLayout` definisce la modalit�
 * L’utente può sempre attivare o disattivare la modalità a schermo intero nella finestra di dialogo.
 * Non si applica all’interfaccia classica.
 
-### Configurazione con i nodi secondari cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurazione con nodi secondari cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-### cq:dropTarget {#cq-droptargets}
+### cq:dropTargets {#cq-droptargets}
 
 Il nodo `cq:dropTargets` (tipo di nodo `nt:unstructured`) definisce un elenco di destinazioni di rilascio che possono accettare un rilascio da una risorsa trascinata dal Content Finder. Funge da insieme di nodi di tipo `cq:DropTargetConfig`.
 
@@ -966,7 +966,7 @@ Il nodo `cq:listeners` (tipo di nodo `cq:EditListenersConfig`) definisce cosa ac
   </tr>
   <tr>
    <td><code>beforeinsert</code></td>
-   <td>Il gestore viene attivato prima dell’inserimento del componente.<br /> operativo solo per l'interfaccia utente touch.</td>
+   <td>Il gestore viene attivato prima dell'inserimento del componente.<br /> Operativo solo per l’interfaccia touch.</td>
    <td> </td>
   </tr>
   <tr>

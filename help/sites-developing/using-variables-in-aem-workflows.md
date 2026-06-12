@@ -1,5 +1,5 @@
 ---
-title: Variabili nei flussi di lavoro di AEM
+title: Variabili nei flussi di lavoro AEM
 description: Crea una variabile, imposta un valore per la variabile e utilizzala nei passaggi del flusso di lavoro Divisione OR e Vai a AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
@@ -7,12 +7,12 @@ role: Developer
 exl-id: eb75efb8-c59a-4d51-af54-942cca178f2e
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1999'
 ht-degree: 0%
 
 ---
 
-# Variabili nei flussi di lavoro di AEM{#variables-in-aem-workflows}
+# Variabili nei flussi di lavoro AEM{#variables-in-aem-workflows}
 
 Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati. Puoi quindi utilizzare il nome della variabile in qualsiasi passaggio del flusso di lavoro per recuperare il valore memorizzato nella variabile. È inoltre possibile utilizzare i nomi delle variabili per definire le espressioni per l&#39;adozione delle decisioni di instradamento.
 
@@ -83,10 +83,10 @@ A seconda del tipo di dati della variabile, puoi utilizzare le seguenti opzioni 
 Per aggiungere la mappatura tra variabili, eseguire le operazioni seguenti:
 
 1. Nella pagina di modifica del flusso di lavoro, seleziona l’icona Passaggi disponibile nella barra laterale del modello di flusso di lavoro.
-1. Trascinare e rilasciare il passaggio **Imposta variabile** nell&#39;editor del flusso di lavoro, selezionare il passaggio e selezionare ![Icona Configura indicata da una chiave inglese.](assets/configure_icon.png) (Configura).
+1. Trascina il passaggio **Imposta variabile** nell&#39;editor del flusso di lavoro, seleziona il passaggio e fai clic sull&#39;icona ![Configura indicata da una chiave inglese.](assets/configure_icon.png) (Configura).
 1. Nella finestra di dialogo Imposta variabile, seleziona **[!UICONTROL Mapping]** > **[!UICONTROL Aggiungi mapping]**.
 1. Nella sezione **Variabile mappa** selezionare la variabile per la memorizzazione dei dati, selezionare la modalità di mappatura e specificare un valore da memorizzare nella variabile. Le modalità di mappatura variano in base al tipo di variabile.
-1. Mappa più variabili in modo da poter creare un’espressione significativa. Selezionare l&#39;icona di salvataggio ![contrassegnata da un segno di spunta all&#39;interno di una casella.](assets/Done_Icon.png) per salvare le modifiche.
+1. Mappa più variabili in modo da poter creare un’espressione significativa. Seleziona l&#39;icona ![Salva indicata da un segno di spunta all&#39;interno di una casella.](assets/Done_Icon.png) per salvare le modifiche.
 
 ### Esempio 1: eseguire una query su una variabile XML per impostare il valore per una variabile stringa {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -231,7 +231,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Modificare una variabile {#edit-a-variable}
 
 1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
-1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.Icona &#x200B;](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
+1. Selezionare l&#39;icona di modifica ![contrassegnata da un simbolo a forma di matita.](assets/edit.png) (Modifica) accanto al nome della variabile da modificare.
 1. Modificare le informazioni sulla variabile e selezionare ![Icona Salva contrassegnata da un segno di spunta.](assets/Done_Icon.png) per salvare le modifiche. Impossibile modificare i campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** per una variabile.
 
 ## Eliminare una variabile {#delete-a-variable}
@@ -242,4 +242,4 @@ Per eliminare una variabile:
 
 1. Nella pagina Modifica flusso di lavoro, seleziona l’icona Variabili disponibile nella barra laterale del modello di flusso di lavoro. La sezione Variabili nel riquadro a sinistra visualizza tutte le variabili esistenti.
 1. Seleziona l’icona Elimina accanto al nome della variabile da eliminare.
-1. Selezionare l&#39;icona ![Fine indicata da un segno di spunta.](assets/Done_Icon.png) per confermare ed eliminare la variabile.
+1. Seleziona l&#39;icona ![Fine indicata da un segno di spunta.](assets/Done_Icon.png) per confermare ed eliminare la variabile.

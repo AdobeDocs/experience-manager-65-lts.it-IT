@@ -11,8 +11,8 @@ role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 45%
+source-wordcount: '620'
+ht-degree: 54%
 
 ---
 
@@ -63,7 +63,7 @@ I componenti forniti e il loro utilizzo nei [siti Web We.Retail di esempio](/hel
 
 Sono disponibili due set di componenti AEM forniti da Adobe:
 
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Componenti di base](/help/sites-authoring/default-components-foundation.md)
 
 **Componenti core** sono stati introdotti con AEM 6.3 e offrono funzionalità flessibili e avanzate per l&#39;authoring. Il [sito di riferimento We.Retail](/help/sites-developing/we-retail.md) illustra come utilizzare i Componenti core e rappresenta le best practice correnti per lo sviluppo dei componenti.
@@ -97,19 +97,19 @@ In alternativa, è possibile utilizzare CRXDE Lite per ottenere un elenco di tut
 Le pagine seguenti forniscono informazioni più dettagliate sullo sviluppo di questi e di altri componenti:
 
 * [Componenti AEM: nozioni di base](/help/sites-developing/components-basics.md)
-* [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md)
+* [Sviluppo di Componenti AEM](/help/sites-developing/developing-components.md)
 * [Sviluppo di componenti AEM: esempi di codice](/help/sites-developing/developing-components-samples.md)
-* [Configurazione di più editor locali](/help/sites-developing/multiple-inplace-editors.md)
+* [Configurazione di più editor diretti](/help/sites-developing/multiple-inplace-editors.md)
 * [Modalità Sviluppatore](/help/sites-developing/developer-mode.md)
-* [Verifica dell’interfaccia utente](/help/sites-developing/hobbes.md)
+* [Test dell’interfaccia utente](/help/sites-developing/hobbes.md)
 * [Componenti per frammenti di contenuto](/help/sites-developing/components-content-fragments.md)
 * [Ottenimento delle informazioni di pagina in formato JSON](/help/sites-developing/pageinfo.md)
 * [Internazionalizzazione dei componenti](/help/sites-developing/i18n.md)
-* [Componenti di base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
+* [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=it)
 * [Utilizzo di Nascondi condizioni](/help/sites-developing/hide-conditions.md)
 * Interfaccia classica
 
    * [Componenti di AEM (interfaccia classica)](/help/sites-developing/developing-components-classic.md)
    * [Utilizzo ed estensione dei widget (interfaccia classica)](/help/sites-developing/widgets.md)
    * [Utilizzo di xtypes (interfaccia classica)](/help/sites-developing/xtypes.md)
-   * [Sviluppo di Forms (interfaccia classica)](/help/sites-developing/developing-forms.md)
+   * [Sviluppo di moduli (interfaccia classica)](/help/sites-developing/developing-forms.md)

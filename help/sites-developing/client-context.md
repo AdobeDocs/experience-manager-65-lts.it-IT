@@ -12,8 +12,8 @@ role: Developer
 exl-id: efa4b828-0807-40ac-81a0-1090cac9a257
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 0%
+source-wordcount: '2996'
+ht-degree: 1%
 
 ---
 
@@ -302,7 +302,7 @@ Il componente dell&#39;archivio di contesto `/libs/cq/personalization/components
 
 Per eseguire il rendering dei dati di archivio utilizzando un componente genericstore, è necessario effettuare le seguenti operazioni:
 
-* Aggiungi il tag personalization:storeRendererTag allo script JSP del componente per identificare il nome dell’archivio sessione.
+* Aggiungi il tag di personalizzazione:storeRendererTag allo script JSP del componente per identificare il nome dell&#39;archivio sessione.
 * Implementa un metodo di rendering nella classe dell’archivio di sessione.
 
 #### Identificazione dell&#39;archivio sessioni genericstore {#identifying-the-genericstore-session-store}
@@ -419,7 +419,7 @@ function getName(){
 
 Per evitare che una proprietà di `PersistedSessionStore` venga resa persistente (ovvero, esclusa dal cookie `sessionpersistence`), aggiungerla all&#39;elenco delle proprietà non persistenti dell&#39;archivio di sessione persistente.
 
-Vedi ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
+Consulta ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
 ```
 CQ_Analytics.ClientContextUtils.onStoreRegistered("surferinfo", function(store) {
