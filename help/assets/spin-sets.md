@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16b03ca5-c060-4944-ad30-ad0bd350dc52
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2001'
 ht-degree: 9%
 
 ---
@@ -83,7 +83,7 @@ Per iniziare a usare rapidamente i set 360 gradi, effettua le seguenti operazion
 
    Adobe Experience Manager Assets crea chiamate URL per i set 360 gradi e li attiva dopo la pubblicazione dei set 360 gradi. Puoi copiare questi URL quando visualizzi in anteprima le risorse. In alternativa, puoi incorporarli nel sito web.
 
-   Seleziona il set a 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
+   Seleziona il set 360 gradi, quindi fai clic su **[!UICONTROL Visualizzatori]** nel menu a discesa della barra a sinistra.
 
    Consulta [Collegare un set 360 gradi a una pagina Web](/help/assets/linking-urls-to-yourwebapplication.md) e [Incorporare il visualizzatore di video o immagini](/help/assets/embed-code.md).
 
@@ -221,12 +221,11 @@ Puoi creare i set 360 gradi nell&#39;interfaccia utente o automaticamente utiliz
 
    * Per riordinare le immagini, trascinatele in una nuova posizione (selezionate l&#39;icona Riordina per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, selezionare l&#39;intestazione di colonna.
-   * Per aggiungere una risorsa o aggiornare una risorsa esistente, seleziona **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro.
+   * Per aggiungere una risorsa o aggiornare una risorsa esistente, seleziona **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo in alto a destra.
 Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.
    * Per eliminare una risorsa, selezionala e seleziona **[!UICONTROL Elimina risorsa]**.
    * Per applicare un predefinito, fai clic sull’icona Predefinito e seleziona un predefinito.
    * Per eliminare un intero set 360 gradi, passare al set 360 gradi, selezionarlo e selezionare **[!UICONTROL Elimina]**
-
    >[!NOTE]
    >
    >Per modificare le immagini di un set 360 gradi, passa al set e seleziona **[!UICONTROL Membri set]** nella barra a sinistra, quindi seleziona l&#39;icona a forma di matita su una singola risorsa per aprire la finestra di modifica.

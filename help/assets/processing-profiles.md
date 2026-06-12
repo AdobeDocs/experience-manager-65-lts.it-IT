@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: aa257d33-302c-4a01-be48-e4ff56700bfa
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '1398'
-ht-degree: 0%
+source-wordcount: '1298'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ Vedere [Regolare la dimensione del batch del flusso di lavoro di rielaborazione]
 1. Seleziona una cartella.
 
    * Il flusso di lavoro considera tutti i file nella cartella selezionata in modo ricorsivo.
-   * Se nella cartella principale selezionata sono presenti una o più sottocartelle con risorse, il flusso di lavoro rielabora ogni risorsa nella gerarchia delle cartelle.
+   * Se nella cartella principale selezionata sono presenti una o più sottocartelle con risorse, il flusso di lavoro rielabora ogni risorsa nella gerarchia di cartelle.
    * Come best practice, evita di eseguire questo flusso di lavoro su una gerarchia di cartelle con più di 1000 risorse.
 
 1. Selezionare **[!UICONTROL Timeline]** dall&#39;elenco a discesa nell&#39;angolo superiore sinistro della pagina.

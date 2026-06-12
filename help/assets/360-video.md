@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
 source-git-commit: f27795b9acf834101d82937d9f9f142361816735
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Vedere anche [Gestione dei predefiniti visualizzatore](/help/assets/managing-vie
 
 Selezionare [Stazione spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione di un video, trascinare il puntatore del mouse in una nuova posizione per modificare l&#39;angolo di visualizzazione.
 
-![Campione di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di esso.](assets/6_5_360videoiss_simplified.png)
+![Esempio di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di essa.](assets/6_5_360videoiss_simplified.png)
 *Fotogramma video da Stazione Spaziale 360*
 
 ## Video e Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}

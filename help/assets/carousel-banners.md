@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: d066e8ea-57f4-41a1-afcf-86950267fd50
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4563'
+source-wordcount: '4550'
 ht-degree: 3%
 
 ---
@@ -293,7 +293,6 @@ Vedi anche [Aggiungere mappe immagine](/help/assets/image-maps.md).
    * Seleziona **[!UICONTROL Collegamento ipertestuale]**.
 
       * Se sei un cliente di Experience Manager Sites, seleziona l’icona Selettore siti (cartella) per passare a un URL.
-
         >[!NOTE]
         >
         >Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
@@ -388,7 +387,7 @@ Puoi visualizzare in anteprima i banner carosello dall&#39;Editor carosello (met
 
    ![elenco a discesa experience_fragment-carouselbanner-viewer](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Selezionare **[!UICONTROL Anteprima]**.
+1. Seleziona **[!UICONTROL Anteprima]**.
 1. Seleziona gli hotspot o le mappe immagine sull&#39;immagine in modo da poter testare le azioni associate.
 
 **Per visualizzare in anteprima i banner a carosello dall&#39;elenco dei visualizzatori:**
