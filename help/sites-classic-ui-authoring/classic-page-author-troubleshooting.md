@@ -12,11 +12,11 @@ exl-id: be4397d1-0680-4b44-bdd2-825b521a44d6
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 30%
+ht-degree: 28%
 
 ---
 
-# Risoluzione di problemi AEM nell’ambiente di authoring{#troubleshooting-aem-when-authoring}
+# Risoluzione di problemi AEM durante l’authoring{#troubleshooting-aem-when-authoring}
 
 Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrare durante l’utilizzo di AEM e vengono proposte possibili soluzioni.
 
@@ -43,7 +43,7 @@ Nella seguente sezione vengono descritti alcuni problemi che potresti riscontrar
    * Esistono varie possibilità:
    * Verifica che la pagina sia stata replicata correttamente. Controlla lo stato della pagina e, se necessario, lo stato della coda di replica.
    * Cancella la cache del browser locale e accedi di nuovo alla pagina.
-   * Aggiungi `?` alla fine dell’URL della pagina, ad esempio:
+   * Aggiungi `?` alla fine dell&#39;URL della pagina. Ad esempio:
 
      `http://localhost:4502/sites.html/content?`
 

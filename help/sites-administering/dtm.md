@@ -11,14 +11,14 @@ role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2210'
 ht-degree: 3%
 
 ---
 
 # Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integra [Adobe Dynamic Tag Management](https://business.adobe.com/it/products/experience-platform/adobe-experience-platform.html) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
+Integra [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
 
 Prima dell&#39;integrazione, creare la [proprietà Web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) di Dynamic Tag Management che tiene traccia del dominio del sito AEM. Le [opzioni di hosting](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) della proprietà Web devono essere configurate in modo da poter configurare AEM per l&#39;accesso alle librerie Dynamic Tag Management.
 
@@ -163,7 +163,7 @@ Quando si ospitano le librerie Dynamic Tag Management su AEM, AEM configura auto
   </tr>
   <tr>
    <td>Espressione di pianificazione</td>
-   <td>(Viene visualizzata ed è obbligatoria se è selezionata l'opzione Abilita importazione polling). Espressione cron che controlla quando vengono scaricate le librerie di Dynamic Tag Management.</td>
+   <td>(Viene visualizzato ed è obbligatorio quando è selezionata l’opzione Abilita importazione polling). Espressione cron che controlla quando vengono scaricate le librerie Dynamic Tag Management.</td>
   </tr>
  </tbody>
 </table>

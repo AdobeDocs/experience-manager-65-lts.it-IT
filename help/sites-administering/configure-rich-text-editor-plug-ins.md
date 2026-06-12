@@ -1,5 +1,5 @@
 ---
-title: Configurare i plug-in dell’Editor Rich Text
+title: Configurare i plug-in del Rich Text editor
 description: Scopri come configurare i plug-in dell’Editor Rich Text di Adobe Experience Manager per abilitare singole funzionalità.
 contentOwner: AG
 solution: Experience Manager, Experience Manager Sites
@@ -8,12 +8,12 @@ role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '4381'
+source-wordcount: '4463'
 ht-degree: 2%
 
 ---
 
-# Configurare i plug-in dell’Editor Rich Text {#configure-the-rich-text-editor-plug-ins}
+# Configurare i plug-in del Rich Text editor {#configure-the-rich-text-editor-plug-ins}
 
 Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per abilitare o disabilitare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
 
@@ -193,7 +193,7 @@ Di seguito è riportato un esempio di struttura `htmlPasteRules` valida.
 
 ## Configurare gli stili di testo {#textstyles}
 
-Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l&#39;attributo `class` per fare riferimento alla classe CSS. Esempio: `<span class=monospaced>Monospaced Text Here</span>`.
+Gli autori possono applicare gli stili per modificare l&#39;aspetto di una parte di testo. Gli stili sono basati su classi CSS predefinite nel foglio di stile CSS. Il contenuto stilizzato è racchiuso tra tag `span` che utilizzano l&#39;attributo `class` per fare riferimento alla classe CSS. Ad esempio, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Quando il plug-in Stili viene attivato per la prima volta, non sono disponibili stili predefiniti. L&#39;elenco popup è vuoto. Per fornire agli autori stili, effettuare le seguenti operazioni:
 
@@ -270,7 +270,7 @@ Specificare quindi le posizioni dei fogli di stile a cui si desidera fare riferi
 
    * **Nome** `cssName`
    * **Tipo** `String`
-   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente.; ad esempio, `cssClass` invece di `.cssClass`)
+   * **Valore** Il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
 
 1. Aggiungere la proprietà `text` allo stesso nodo, che definisce il testo visualizzato nella casella di selezione:
 
@@ -455,12 +455,10 @@ In CRXDE, una volta salvata la proprietà, viene visualizzato il carattere rappr
 1. Sotto questo nodo (denominato in base all’intervallo di caratteri speciali) aggiungi le due proprietà seguenti:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) del primo carattere dell&#39;intervallo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valore** la rappresentazione [Unicode](https://unicode.org/) (decimale) dell&#39;ultimo carattere nell&#39;intervallo
 
@@ -500,8 +498,8 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
    >* **Tipo** `String[]`
    >
    >* **Valore** uno dei seguenti elementi o entrambi, come richiesto:
-   >* `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
-   >* `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
+   >   * `table` per consentire la modifica delle proprietà della tabella, inclusi gli stili.
+   >   * `cellprops` per consentire la modifica delle proprietà delle celle, inclusi gli stili.
 
 1. Definisci la posizione dei fogli di stile CSS in modo da poterli fare riferimento. Vedere [Specifica della posizione del foglio di stile](#locationofstylesheet), come quando si definiscono [stili per il testo](#textstyles). La posizione può essere definita se sono stati definiti altri stili.
 1. Nel nodo `table` creare i seguenti nuovi nodi (come richiesto):

@@ -9,7 +9,7 @@ role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1410'
 ht-degree: 3%
 
 ---
@@ -193,7 +193,7 @@ I due esempi seguenti illustrano la definizione:
 
 AEM utilizza LESS per generare parti del CSS necessario, che deve essere incluso nei progetti.
 
-Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/?lang=it) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
+Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -309,7 +309,7 @@ In alcuni casi potrebbe essere necessario nidificare le griglie reattive per sup
 
 Se non puoi evitare di utilizzare griglie reattive nidificate, assicurati che:
 
-* Tutti i contenitori (contenitori, schede, fisarmoniche, ecc.) hanno la proprietà `layout = responsiveGrid`.
+* Tutti i contenitori (contenitori, linguette, fisarmoniche, ecc.) hanno la proprietà `layout = responsiveGrid`.
 * Non combinare la proprietà `layout = simple` nella gerarchia dei contenitori.
 
 Sono inclusi tutti i contenitori strutturali del modello della pagina.
