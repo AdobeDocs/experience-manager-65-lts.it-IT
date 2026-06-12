@@ -7,8 +7,8 @@ role: Admin, User, Developer
 exl-id: e9549ac9-0ada-4661-969a-709f0ed3b133
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 15%
+source-wordcount: '984'
+ht-degree: 17%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 15%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html).
 
 ## Informazioni su AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per la creazione, la gestione, la pubblicazione e l’aggiornamento di moduli digitali complessi, garantendo al contempo l’integrazione con processi back-end, regole aziendali e dati.
+Adobe Experience Manager (AEM) fornisce una soluzione di facile utilizzo per creare, gestire, pubblicare e aggiornare i moduli digitali complessi, integrandosi al contempo con i processi di back-end, regole aziendali e dati.
 
 AEM Forms combina le funzionalità di authoring, gestione e pubblicazione dei moduli con le funzionalità di gestione della corrispondenza, la sicurezza dei documenti e l’analisi integrata per creare esperienze end-to-end coinvolgenti. Progettato per funzionare su canali web e mobili, AEM Forms può essere integrato in modo efficiente nei processi aziendali, riducendo i processi cartacei e gli errori e migliorando l&#39;efficienza.
 
@@ -57,7 +57,7 @@ AEM Forms ti consente di estendere i moduli nuovi ed esistenti per creare:
 
 **PDF forms**
 
-PDF forms I dati del modulo possono essere compilati in modalità non in linea, salvati in locale e inviati quando si è connessi in linea. È possibile utilizzare codici a barre 2D per acquisire i dati dei moduli e firme digitali per convalidarne l&#39;autenticità per gli utenti.
+I dati del modulo possono essere compilati in modalità non in linea, salvati in locale e inviati quando si è connessi in linea. È possibile utilizzare codici a barre 2D per acquisire i dati dei moduli e firme digitali per convalidarne l&#39;autenticità per gli utenti.
 
 **HTML Form**
 

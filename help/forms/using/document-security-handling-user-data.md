@@ -9,14 +9,14 @@ feature: Document Security,Adaptive Forms
 exl-id: c619a3b8-cd06-4f5d-af20-67f3a4bfcdce
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
 
 # Document Security | Gestione dei dati utente {#document-security-handling-user-data}
 
-AEM Forms document security consente di creare, archiviare e applicare impostazioni di protezione predefinite ai documenti. In questo modo solo gli utenti autorizzati possono utilizzare i documenti. È possibile proteggere i documenti utilizzando le policy. Una policy è una raccolta di informazioni che includono impostazioni di sicurezza e un elenco di utenti autorizzati. Puoi applicare una policy a uno o più documenti e autorizzare gli utenti aggiunti nella gestione utenti di AEM Forms JEE.
+AEM Forms document security consente di creare, archiviare e applicare impostazioni di protezione predefinite ai documenti. In questo modo solo gli utenti autorizzati possono utilizzare i documenti. È possibile proteggere i documenti utilizzando i criteri. Una policy è una raccolta di informazioni che includono impostazioni di sicurezza e un elenco di utenti autorizzati. Puoi applicare una policy a uno o più documenti e autorizzare gli utenti aggiunti nella gestione utenti di AEM Forms JEE.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 

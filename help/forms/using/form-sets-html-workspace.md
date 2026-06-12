@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 4b2c994e-8ca6-42fc-a8b2-96c53e9f9453
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ L’area di lavoro di AEM Forms supporta i set di moduli. Con i set di moduli, �
 
 ## Associazione di un set di moduli al punto d’inizio in un’app dell’area di lavoro AEM Forms {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
-1. Crea il flusso di lavoro del processo aziendale in Workbench. Per ulteriori informazioni, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+1. Crea il flusso di lavoro del processo aziendale in Workbench. Per ulteriori informazioni, vedere la [Guida di Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_it).
 1. Dalle proprietà di processo del punto iniziale, selezionare **Usa risorsa CRX** in Presentazione e dati.
 
    ![1-3](assets/1-3.png)

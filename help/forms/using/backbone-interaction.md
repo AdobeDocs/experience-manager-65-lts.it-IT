@@ -1,5 +1,5 @@
 ---
-title: Interazione dorsale
+title: Interazione portante
 description: Informazioni concettuali sull’utilizzo dei modelli Backbone JavaScript nell’area di lavoro di AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: c04d7d09-9d92-4a6c-b00f-7386a12ef5eb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# Interazione dorsale{#backbone-interaction}
+# Interazione portante{#backbone-interaction}
 
 Backbone è una libreria che aiuta a creare e seguire l’architettura MVC nelle applicazioni web. L’idea di base di Backbone consiste nell’organizzare l’interfaccia in viste logiche, supportate da modelli, ciascuno dei quali può essere aggiornato in modo indipendente quando il modello cambia, senza dover ridisegnare la pagina. Per ulteriori informazioni su Backbone, vedere [https://backbonejs.org](https://backbonejs.org/).
 

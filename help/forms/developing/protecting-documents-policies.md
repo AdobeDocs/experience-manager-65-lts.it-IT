@@ -1302,7 +1302,7 @@ Nella tabella seguente sono elencate le coppie chiave-valore necessarie per la c
 <table>
  <thead>
   <tr>
-   <th><p>Nome della chiave</p></th>
+   <th><p>Nome chiave</p></th>
    <th><p>Descrizione</p></th>
    <th><p>Valore</p></th>
   </tr>

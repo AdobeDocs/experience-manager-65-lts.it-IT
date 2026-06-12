@@ -73,7 +73,7 @@ Nella tabella seguente sono elencati i file JAR necessari per richiamare i servi
   <tr>
    <th><p>File</p></th>
    <th><p>Descrizione</p></th>
-   <th><p>Posizione</p></th>
+   <th><p>Dove si trova</p></th>
   </tr>
  </thead>
  <tbody>
@@ -224,7 +224,7 @@ Nella tabella seguente sono elencati i file JAR dipendenti dalla modalità di co
   <tr>
    <th><p>File</p> </th>
    <th><p>Descrizione</p> </th>
-   <th><p>Posizione</p> </th>
+   <th><p>Dove si trova</p> </th>
   </tr>
  &lt;/thead align="left"&gt;
  <tbody>
@@ -252,7 +252,7 @@ Nella tabella seguente sono elencati i file JAR dipendenti dalla modalità di co
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>se AEM Forms viene richiamato utilizzando la modalità SOAP, includi questi file JAR.</p> </td>
-   <td><p>&lt;<em>directory di installazione</em>&gt;/sdk/client-libs/third-party</p> </td>
+   <td><p>&lt;<em>directory di installazione</em>&gt;/sdk/client-libs/third party</p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
