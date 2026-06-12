@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione dell’authoring delle pagine
+title: Personalizzazione dell’authoring pagina
 description: Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la funzionalità di authoring delle pagine.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 1%
+source-wordcount: '1467'
+ht-degree: 2%
 
 ---
 
-# Personalizzazione dell’authoring delle pagine{#customizing-page-authoring}
+# Personalizzazione dell’authoring pagina{#customizing-page-authoring}
 
 >[!CAUTION]
 >
@@ -214,10 +214,10 @@ CODICE SU GITHUB
 
 Puoi trovare il codice di questa pagina su GitHub
 
-* [Apri il progetto aem-authoring-extension-inplace-editor in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
+* [Apri il progetto aem-authoring-extension-inplace-editor su GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Scarica il progetto come [file ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
-#### Configurazione di più editor locali {#configuring-multiple-in-place-editors}
+#### Configurazione di più editor diretti {#configuring-multiple-in-place-editors}
 
 È possibile configurare un componente in modo che abbia più editor locali. Quando sono configurati più editor locali, puoi selezionare il contenuto appropriato e aprire l’editor appropriato. Per ulteriori informazioni, consulta la documentazione [Configurazione di più editor locali](/help/sites-developing/multiple-inplace-editors.md).
 

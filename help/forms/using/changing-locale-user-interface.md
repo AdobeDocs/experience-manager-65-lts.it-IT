@@ -1,5 +1,5 @@
 ---
-title: Modifica delle impostazioni locali dell'interfaccia utente di AEM Forms Workspace
+title: Modifica delle impostazioni locali dell’interfaccia utente dell’area di lavoro di AEM Forms
 description: Come modificare l’area di lavoro di AEM Forms per localizzare testo, categorie compresse, code e processi e il selettore data sull’interfaccia.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: User, Developer
 exl-id: 3f919e4d-0535-4816-8762-9c0088e47a2c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 0%
+source-wordcount: '559'
+ht-degree: 3%
 
 ---
 
-# Modifica delle impostazioni locali dell&#39;interfaccia utente di AEM Forms Workspace{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Modifica delle impostazioni locali dell’interfaccia utente dell’area di lavoro di AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms Workspace offre supporto integrato per le lingue inglese, francese, tedesco e giapponese. Consente inoltre di localizzare l’interfaccia utente dell’area di lavoro di AEM Forms in qualsiasi altra lingua.
 
@@ -80,7 +80,7 @@ Per localizzare le immagini, effettuare le seguenti operazioni:
 
 1. Esegui tutte le modifiche semantiche elencate nell&#39;articolo [Personalizzazione Workspace](../../forms/using/introduction-customizing-html-workspace.md).
 1. Passa alla cartella *js/runtime/utility* e apri il file *usersession.js* per la modifica.
-1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang!== &#39;nw&#39;* all&#39;istruzione if:
+1. Individua il codice elencato nel blocco di codice originale e aggiungi la condizione *lang !== &#39;nw&#39;* all&#39;istruzione if:
 
    ```javascript
    // Orignal code

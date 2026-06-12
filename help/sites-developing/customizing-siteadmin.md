@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione della console Siti web (interfaccia classica)
+title: Personalizzazione della console siti web (interfaccia classica)
 description: La console di amministrazione dei siti Web può essere estesa per visualizzare colonne personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Developer
 exl-id: 445cb8c3-e0c4-44f8-a140-9e7215e3b73a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
-# Personalizzazione della console Siti web (interfaccia classica){#customizing-the-websites-console-classic-ui}
+# Personalizzazione della console siti web (interfaccia classica){#customizing-the-websites-console-classic-ui}
 
 ## Aggiunta di una colonna personalizzata alla console Siti Web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
@@ -115,12 +115,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 Quando apri la console di amministrazione dei siti web e esplori il sito, il browser emette una chiamata Ajax per ottenere l’oggetto JSON utilizzato per generare la console. Quando ad esempio si passa alla cartella `/content/geometrixx`, la seguente richiesta viene inviata al server AEM per generare la console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Per assicurarti che il nuovo servizio sia in esecuzione dopo aver distribuito il bundle che lo contiene:
 
 1. Puntare il browser al seguente URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. La risposta deve visualizzare le nuove proprietà come segue:
 

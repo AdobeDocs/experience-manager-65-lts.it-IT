@@ -12,8 +12,8 @@ exl-id: 801364fc-0fde-49d0-a95f-963ed6db189b
 index: false
 source-git-commit: b8671573afd711dec4b883b3b382304e13889852
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 5%
+source-wordcount: '1020'
+ht-degree: 7%
 
 ---
 
@@ -156,7 +156,7 @@ Quando il componente viene creato in modo statico utilizzando la maschera del co
 
 ### app.component.ts {#app-component-ts}
 
-Una volta avviato `app.module.ts`, `AppComponent` può inizializzare l&#39;app, che viene qui mostrata in una versione semplificata per concentrarsi sul contenuto importante.
+Una volta avviato `AppComponent`, `app.module.ts` può inizializzare l&#39;app, che viene qui mostrata in una versione semplificata per concentrarsi sul contenuto importante.
 
 ```
 // app.component.ts

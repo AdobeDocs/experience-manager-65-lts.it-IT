@@ -1,5 +1,5 @@
 ---
-title: Differenziazione delle funzioni tra HTML5 Forms e PDF forms
+title: Differenziazione delle funzioni tra moduli HTML5 e moduli PDF
 description: Scopri le differenze di funzionalità tra HTML5 Forms e PDF forms.
 contentOwner: robhagat
 content-type: reference
@@ -12,26 +12,26 @@ role: Admin, User, Developer
 exl-id: adf65e7f-9984-40e8-99e3-fadce08bb44e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 2%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
-# Differenziazione delle funzioni tra HTML5 Forms e PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Differenziazione delle funzioni tra moduli HTML5 e moduli PDF {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 La tabella seguente specifica il supporto delle funzioni fornito per i moduli HTML5 e PDF forms:
 
 <table>
  <tbody>
   <tr>
-   <th>Funzione obsoleta</th>
+   <th>Funzione</th>
    <th>Moduli HTML5</th>
    <th>PDF</th>
   </tr>
   <tr>
    <td>Codici a barre<br /> </td>
    <td>Non disponibile a livello di interfaccia utente. </td>
-   <td>Funzione supportata</td>
+   <td>Supportato</td>
   </tr>
   <tr>
    <td>Campo firma<br /> </td>

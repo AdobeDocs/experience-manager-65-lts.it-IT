@@ -1,5 +1,5 @@
 ---
-title: Come utilizzare lo strumento Server proxy
+title: Utilizzare lo strumento Server proxy
 description: Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: e33640ba-6039-4057-8942-b4faa9b2e250
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 0%
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
-# Come utilizzare lo strumento Server proxy{#how-to-use-the-proxy-server-tool}
+# Utilizzare lo strumento Server proxy{#how-to-use-the-proxy-server-tool}
 
 Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
 

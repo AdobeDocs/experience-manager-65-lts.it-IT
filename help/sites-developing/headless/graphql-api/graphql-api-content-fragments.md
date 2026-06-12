@@ -7,8 +7,8 @@ role: Developer
 exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4984'
-ht-degree: 51%
+source-wordcount: '5053'
+ht-degree: 50%
 
 ---
 
@@ -65,14 +65,14 @@ Per ulteriori informazioni sull’API di GraphQL, consulta le sezioni seguenti (
 
 * In [graphql.com](https://graphql.com):
 
-   * [Esercitazioni](https://graphql.com/tutorials/)
+   * [Tutorial](https://graphql.com/tutorials/)
 
 
 L’implementazione di GraphQL per AEM si basa sulla libreria Java™ standard di GraphQL. Consulta:
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [Java GraphQL™ su GitHub](https://github.com/graphql-java)
+* [Java™ GraphQL su GitHub](https://github.com/graphql-java)
 
 ### Terminologia GraphQL {#graphql-terminology}
 
@@ -240,7 +240,7 @@ Nello schema sono presenti singoli campi, di due categorie di base:
 
 * Campi generati dall’utente.
 
-  Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dato**.
+  Per creare campi in base alla modalità di configurazione del modello di frammento di contenuto, viene utilizzata una selezione di [Tipi di dati](#data-types). I nomi dei campi vengono ricavati dal campo **Nome proprietà** del **Tipo di dati**.
 
    * È inoltre necessario prendere in considerazione l&#39;impostazione **Rendering come**, in quanto gli utenti possono configurare determinati tipi di dati. Ad esempio, un campo di testo a riga singola può essere configurato per contenere più testi a riga singola scegliendo `multifield` dal menu a discesa.
 
@@ -358,7 +358,7 @@ Puoi visualizzare tutti i tipi di metadati GraphQL se visualizzi lo schema Graph
 >[!NOTE]
 >
 >**Differenza tra metadati normali e quelli di array**
->Nota: `StringMetadata` e `StringArrayMetadata` si riferiscono a ciò che è memorizzato nell’archivio, non alla modalità di recupero.
+>Tieni presente che `StringMetadata` e `StringArrayMetadata` fanno entrambi riferimento a ciò che è memorizzato nell&#39;archivio, non alla modalità di recupero.
 >
 >Ad esempio, chiamando il campo `stringMetadata`, si riceve un array di tutti i metadati archiviati nell&#39;archivio come `String`. Se si chiama `stringArrayMetadata`, verrà visualizzato un array di tutti i metadati archiviati nell&#39;archivio come `String[]`.
 
@@ -706,7 +706,7 @@ query {
 
 Il tipo di query `...Paginated` riutilizza la maggior parte delle funzionalità del tipo di query `...List` (filtro, ordinamento), ma invece di utilizzare gli argomenti `offset`/`limit` utilizza `first`/`after` come definiti in [Specifica delle connessioni del cursore GraphQL](https://relay.dev/graphql/connections.htm). È possibile trovare un’introduzione meno formale in [Introduzione a GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: i primi elementi `n` da restituire.
+* `first`: `n` primi elementi da restituire.
 Il valore predefinito è `50`.
 Il massimo è `100`.
 * `after`: cursore che determina l&#39;inizio della pagina richiesta. L&#39;elemento rappresentato dal cursore non è incluso nel set di risultati. Il cursore di un elemento è determinato dal campo `cursor` della struttura `edges`.
@@ -769,7 +769,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
   >
   >Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
   >
-  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=it#how-does-the-dispatcher-return-documents%3F)
+  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -896,7 +896,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
    * Per il contenuto:
 
       * `_locale`: per visualizzare la lingua; basato su Language Manager
-         * Vedi [Query di esempio per più frammenti di contenuto di una specifica impostazione locale](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+         * Vedi [Query di esempio per più frammenti di contenuto di una determinata lingua](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
 
       * `_metadata`: per visualizzare i metadati del frammento
          * Vedi [Query di esempio per metadati: elenca i metadati per riconoscimenti con titolo GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
@@ -955,7 +955,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 >[!CAUTION]
 >
->Se la memorizzazione nella cache di [&#x200B; in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >
@@ -1077,7 +1077,7 @@ Per proteggere da potenziali problemi, esistono limitazioni predefinite imposte 
 
       * Quando due (o più) frammenti con modelli diversi (ad esempio, `M1`, `M2`) vengono utilizzati come possibili riferimenti (Riferimento contenuto o Riferimento frammento) da un altro frammento; ad esempio, `Fragment1` `MultiField/List`
       * E questi due frammenti con modelli diversi (`M1`, `M2`) hanno campi con lo stesso nome, ma tipi diversi.
-Per maggiore chiarezza:
+Per illustrare:
          * `M1.Title` come `Text`
          * `M2.Title` come `Text/MultiField`
       * Se la query GraphQL contiene il campo `Title`, si verificherà un errore di conflitto di campi.
@@ -1092,8 +1092,8 @@ Domande poste:
 
 1. **D**: “*quali sono le differenze tra l’API di GraphQL per AEM e l’API di Query Builder?*”
 
-   * **R**: 
-“*l’API di GraphQL per AEM offre il controllo totale dell’output JSON ed è uno standard di settore per l’esecuzione di query sui contenuti.
+   * **A**:
+&quot;*L&#39;API GraphQL di AEM offre il controllo totale dell&#39;output JSON ed è uno standard di settore per l&#39;esecuzione di query sui contenuti.
 In futuro, AEM prevede di investire nell&#39;API AEM GraphQL.*&quot;
 
 ## Tutorial: guida introduttiva ad AEM headless e GraphQL {#tutorial}
