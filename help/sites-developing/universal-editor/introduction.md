@@ -6,8 +6,8 @@ role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
 source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 42%
+source-wordcount: '1320'
+ht-degree: 46%
 
 ---
 
@@ -142,7 +142,7 @@ Con AEM aggiornato e configurato, puoi impostare un servizio editor universale l
 1. Installa Node.js versione >=20.
 1. Scarica e decomprimi il servizio Universal Editor più recente da [Software Distribution](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home)
 1. Configurare il servizio Universal Editor tramite variabili di ambiente o file `.env`.
-   * [Per informazioni dettagliate, consulta la documentazione dell’editor universale di AEM as a Cloud Service.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [Per informazioni dettagliate, consulta la documentazione di AEM as a Cloud Service Universal Editor.](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * Nota che potresti dover utilizzare l’opzione `UES_MAPPING` se è richiesta la riscrittura interna dell’IP.
 1. Eseguire `universal-editor-service.cjs`
 
