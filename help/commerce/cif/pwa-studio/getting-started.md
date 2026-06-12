@@ -8,7 +8,7 @@ role: Admin, Developer
 exl-id: 17c6a9b3-9fa0-432a-b6df-e5e0149a3168
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Per connettere PWA Studio all&#39;endpoint GraphQL di AEM, puoi utilizzare l&#39
    Ulteriori dettagli sulla personalizzazione del componente Navigazione sono disponibili in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e nella documentazione del [Extensibility Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) di PWA Studio.
 
 1. Il client Apollo prevede l&#39;endpoint AEM GraphQL in `<https://pwa-studio/endpoint.js>`. Per mappare l’endpoint a questa posizione, personalizza la configurazione UPWARD dell’applicazione PWA Studio:
-a. Per `pwa-root/.env`, aggiungi la variabile AEM_CFM_GRAPHQL e adattala in modo che punti all’endpoint GraphQL AEM Content Fragments.
+a. A `pwa-root/.env`, aggiungi la variabile AEM_CFM_GRAPHQL e adattala in modo che punti all’endpoint GraphQL AEM Content Fragments.
 
    Esempio: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 

@@ -1,5 +1,5 @@
 ---
-title: Amministrazione utenti e sicurezza
+title: Amministrazione utenti e protezione
 description: Scopri come amministrare e proteggere gli utenti in AEM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 2661bd32-82c4-4a04-bf85-6ed120a73de4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5443'
 ht-degree: 1%
 
 ---
 
-# Amministrazione utenti e sicurezza{#user-administration-and-security}
+# Amministrazione utenti e protezione{#user-administration-and-security}
 
 Questo capitolo descrive come configurare e gestire l’autorizzazione degli utenti e descrive anche la teoria alla base del funzionamento dell’autenticazione e dell’autorizzazione in AEM.
 
@@ -164,7 +164,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
    <td>L’utente è autorizzato a leggere la pagina e tutte le sue pagine figlie.</td>
   </tr>
   <tr>
-   <td>Modifica</td>
+   <td>Modificare</td>
    <td><p>L’utente può:</p>
     <ul>
      <li>modifica il contenuto esistente nella pagina e nelle pagine figlie.</li>
@@ -179,7 +179,7 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
     </ul> <p>Se <strong>modify</strong> viene negato, le sottostrutture sotto jcr:content vengono escluse perché la creazione di jcr:content e dei relativi nodi figlio viene considerata una modifica della pagina. Questa regola si applica solo ai nodi che definiscono un nodo figlio jcr:content.</p> </td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td><p>L’utente può:</p>
     <ul>
      <li>elimina i paragrafi esistenti dalla pagina o da qualsiasi pagina figlia.</li>
@@ -187,15 +187,15 @@ Le azioni possono essere eseguite su una pagina (risorsa). Per ogni pagina della
     </ul> <p>Se a <strong>modify</strong> viene negata l'autorizzazione, tutte le sottostrutture al di sotto di jcr:content vengono escluse in quanto la rimozione di jcr:content e dei relativi nodi figlio viene considerata una modifica della pagina. Questa regola si applica solo ai nodi che definiscono un nodo figlio jcr:content.</p> </td>
   </tr>
   <tr>
-   <td>Leggi ACL</td>
+   <td>Leggere le ACL</td>
    <td>L’utente può leggere l’elenco di controllo di accesso della pagina o delle pagine figlie.</td>
   </tr>
   <tr>
-   <td>Modifica ACL</td>
+   <td>Modificare le ACL</td>
    <td>L’utente può modificare l’elenco di controllo di accesso della pagina o di qualsiasi pagina figlia.</td>
   </tr>
   <tr>
-   <td>Replica</td>
+   <td>Replicare</td>
    <td>L’utente può replicare i contenuti in un altro ambiente (ad esempio, l’ambiente Publish). Il privilegio viene applicato anche a tutte le pagine figlie.</td>
   </tr>
  </tbody>
@@ -406,7 +406,7 @@ Le schede consentono di accedere a varie configurazioni:
 
 <!-- ??? in table below. -->
 
-| Tab | Descrizione |
+| Scheda | Descrizione |
 |--- |--- |
 | Casella filtro | Un meccanismo per filtrare gli utenti, i gruppi o entrambi elencati. Vedere [Filtraggio di utenti e gruppi](#filtering-users-and-groups). |
 | Nascondi utenti | Un interruttore che nasconde tutti gli utenti elencati, lasciando solo i gruppi. Vedere [Nascondere utenti e gruppi](#hiding-users-and-groups). |
@@ -415,7 +415,7 @@ Le schede consentono di accedere a varie configurazioni:
 | Proprietà | Elenca informazioni sull&#39;utente o sul gruppo che possono includere informazioni e-mail, una descrizione e informazioni sul nome. Consente inoltre di modificare la password di un utente. Consulta [Creazione di utenti e gruppi](#creating-users-and-groups), [Modifica delle proprietà di utenti e gruppi](#modifying-user-and-group-properties) e [Modifica della password utente](#changing-a-user-password). |
 | Gruppi | Elenca tutti i gruppi a cui appartiene l&#39;utente o il gruppo selezionato. È possibile assegnare l&#39;utente o i gruppi selezionati a gruppi aggiuntivi o rimuoverli dai gruppi. Vedi [Gruppi](#adding-users-or-groups-to-a-group). |
 | Membri | Disponibile solo per i gruppi. Elenca i membri di un determinato gruppo. Vedi [Membri](#members-adding-users-or-groups-to-a-group). |
-| Autorizzazioni | Puoi allocare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consulta [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione e all&#39;eliminazione di pagine e alla modifica della gerarchia. ??? consente di [allocare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine.</li><li>Autorizzazioni relative a [privilegi di replica](#setting-replication-privileges) (in genere dall&#39;autore alla pubblicazione) in base a un percorso.</li></ul> |
+| Autorizzazioni | Puoi allocare le autorizzazioni a un utente o a un gruppo. Consente di controllare quanto segue:<ul><li>Autorizzazioni relative a pagine/nodi specifici. Consulta [Impostazione delle autorizzazioni](#setting-permissions). </li><li>Autorizzazioni relative alla creazione e all’eliminazione di pagine e alla modifica della gerarchia. ??? consente di [allocare privilegi](#settingprivileges), ad esempio la modifica della gerarchia, che consente di creare ed eliminare pagine,</li><li>Autorizzazioni relative a [privilegi di replica](#setting-replication-privileges) (in genere dall&#39;autore alla pubblicazione) in base a un percorso.</li></ul> |
 | Impersonatori | Consente a un altro utente di rappresentare l’account. Utile quando hai bisogno che un utente agisca per conto di un altro utente. Vedi [Rappresentazione degli utenti](#impersonating-another-user). |
 | Preferenze | Imposta [preferenze per il gruppo o l&#39;utente](#setting-user-and-group-preferences). Ad esempio, le preferenze di lingua. |
 
@@ -729,7 +729,7 @@ Per impostare gli utenti o gli amministratori in modo che dispongano dei privile
 
 Se si prevede di implementare privilegi specifici per l&#39;applicazione, le informazioni seguenti descrivono ciò che è necessario sapere per implementare un privilegio personalizzato e come applicarlo in CQ:
 
-Il privilegio di modifica della gerarchia è coperto da una combinazione di privilegi jcr. Il privilegio di replica è denominato **crx:replicate** che viene archiviato/valutato insieme ad altri privilegi nell&#39;archivio JCR. Tuttavia, non viene applicato a livello di JCR.
+Il privilegio di modifica della gerarchia è coperto da una combinazione di privilegi jcr. Il privilegio di replica è denominato **crx:replicate** e viene archiviato/valutato insieme ad altri privilegi nell&#39;archivio JCR. Tuttavia, non viene applicato a livello di JCR.
 
 La definizione e la registrazione dei privilegi personalizzati fa ufficialmente parte dell&#39;[API Jackrabbit](https://jackrabbit.apache.org/oak/docs/security/privilege.html) a partire dalla versione 2.4 (vedere anche [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). L&#39;ulteriore utilizzo è coperto dalla gestione del controllo di accesso JCR come definito da [JSR 283](https://jcp.org/en/jsr/detail?id=283) (sezione 16). Inoltre, l’API Jackrabbit definisce un paio di estensioni.
 

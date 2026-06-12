@@ -12,7 +12,7 @@ role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -198,8 +198,7 @@ Prendendo l&#39;immagine precedente come esempio, la **vista AEM** ha le seguent
 >
 >Anche la colonna della variabile CQ di qualsiasi tabella può essere compilata in linea facendo doppio clic sul campo e aggiungendovi del testo. Questi campi accettano JavaScript come input.
 >
->Ad esempio, accanto a `prop3` puoi aggiungere:
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Ad esempio, accanto a `prop3` puoi aggiungere:> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >per inviare il *titolo* di una pagina concatenata con la relativa *sezione* utilizzando *:* (due punti) e con prefisso *Adobe* come `prop3`
 >
 

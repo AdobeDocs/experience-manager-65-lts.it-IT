@@ -1,5 +1,5 @@
 ---
-title: Invio di una conferma per l’invio di un modulo tramite e-mail
+title: Invio di una conferma di invio modulo tramite e-mail
 description: AEM Forms consente di configurare l’azione di invio e-mail che invia una conferma a un utente al momento dell’invio del modulo.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 3b453793-0308-49a9-9d5b-b323780d6903
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
-# Invio di una conferma per l’invio di un modulo tramite e-mail {#sending-a-form-submission-acknowledgement-via-email}
+# Invio di una conferma di invio modulo tramite e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Invio di dati per moduli adattivi {#adaptive-form-data-submission}
 

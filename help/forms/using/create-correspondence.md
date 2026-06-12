@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: cb6528fd-6761-412d-8413-c72049acf91d
 source-git-commit: d9eb2edf01200b575c6f99a47e5c010e3b3ca28a
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3848'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
 1. Modifica i moduli di contenuto, come richiesto, nella scheda Contenuto. Per spostare lo stato attivo sul modulo del contenuto rilevante nella gerarchia del contenuto, puoi selezionare la riga o il paragrafo pertinente nell’anteprima della lettera oppure selezionare il modulo del contenuto direttamente nella gerarchia del contenuto.
 
-   Ad esempio, la riga &quot;Per consentirci di accedere a...&quot; è selezionata nell&#39;immagine seguente e il modulo di contenuto corrispondente è selezionato nella scheda Contenuto.
+   Ad esempio, la riga &quot;Per consentirci di accedere a...&quot; è selezionato nell&#39;immagine seguente e il modulo di contenuto corrispondente è selezionato nella scheda Contenuto.
 
    Toccando Evidenzia moduli selezionati nel contenuto ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), puoi disabilitare o abilitare la funzionalità per evidenziare il modulo del contenuto nella scheda Contenuto quando il testo, il paragrafo o il campo dati rilevante viene toccato nell&#39;anteprima della lettera.
 
@@ -285,7 +285,7 @@ Tali istanze possono essere salvate solo quando la lettera viene visualizzata ne
 
 Prima di pubblicare lettere o salvare bozze nell’istanza di pubblicazione, effettua le seguenti operazioni sull’istanza di authoring e di pubblicazione per abilitare la funzione Salva come bozza:
 
-Per impostazione predefinita, le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* non vengono trasferite all&#39;istanza Publish. Per trasferire le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* all&#39;istanza Publish, disabilitare il componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Per disattivare il componente:
+Per impostazione predefinita, le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* non vengono trasferite all&#39;istanza di pubblicazione. Per trasferire le proprietà *cq:lastReplicationAction*, *cq:lastreplicated* e *cq:lastReplicatedBy* all&#39;istanza di pubblicazione, disabilitare il componente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Per disattivare il componente:
 
 1. Nell’istanza di authoring, apri la console Componenti della console Web di Adobe Experience Manager. URL predefinito: `http://author-server:port/system/console/components`
 

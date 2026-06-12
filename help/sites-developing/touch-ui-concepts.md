@@ -12,7 +12,7 @@ role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ L’interfaccia touch include:
 * L’intestazione della suite che:
    * Mostra il logo
    * Fornisce un collegamento alla navigazione globale
-   * Fornisce un collegamento ad altre azioni generiche, ad esempio Ricerca, Guida, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
+   * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
 * La barra a sinistra (visualizzata quando necessario e nascosta), che può mostrare:
    * Timeline
    * Riferimenti
@@ -120,7 +120,7 @@ L’interfaccia utente Granite:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Componenti Foundation dell&#39;interfaccia utente Granite](#granite-ui-foundation-components)
+* [Componenti di base per l&#39;interfaccia utente Granite](#granite-ui-foundation-components)
 Questa libreria di componenti di base può essere utilizzata o estesa da altre librerie.
 * [Componenti di amministrazione dell’interfaccia utente Granite](#granite-ui-administration-components)
 
@@ -241,14 +241,14 @@ Quando si aggiorna il codice ExtJS per utilizzare l’interfaccia utente Granite
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo di nodo** | **Tipo di risorsa dell&#39;interfaccia utente Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componenti di amministrazione dell’interfaccia utente Granite {#granite-ui-administration-components}

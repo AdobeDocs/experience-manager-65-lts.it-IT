@@ -1,5 +1,5 @@
 ---
-title: Panoramica di AEM Document Services
+title: Panoramica dei servizi basati su documenti di AEM
 description: AEM Document Services è un set di servizi OSGi per la creazione, l’assemblaggio e la protezione di documenti PDF.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: 03e87c5a-c106-4b4c-9b42-8ce7a04d9c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 0%
+source-wordcount: '1456'
+ht-degree: 4%
 
 ---
 
-# Panoramica di AEM Document Services{#overview-of-aem-document-services}
+# Panoramica dei servizi basati su documenti di AEM{#overview-of-aem-document-services}
 
 ## Applicabile a {#applies-to}
 
@@ -115,11 +115,11 @@ Il servizio di firma accede ai certificati e alle credenziali archiviati nell&#3
 
 ### Servizio Encryption {#encryption-service}
 
-Il servizio Crittografia consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il suo contenuto diventa illeggibile. È possibile crittografare l&#39;intero documento PDF (inclusi il contenuto, i metadati e gli allegati), tutti gli elementi diversi dai metadati o solo gli allegati. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Se un documento PDF è crittografato con una password, l’utente deve specificare la password di apertura prima che il documento possa essere visualizzato in Adobe Reader o Acrobat. Se un documento PDF è crittografato con un certificato, l&#39;utente deve decrittografare il documento PDF con una chiave privata (certificato). La chiave privata utilizzata per decrittografare il documento PDF deve corrispondere alla chiave pubblica utilizzata per crittografarlo.
+Il servizio Crittografia consente di crittografare e decrittografare i documenti. Quando un documento viene crittografato, il relativo contenuto diventa illeggibile. È possibile crittografare l&#39;intero documento PDF (inclusi il contenuto, i metadati e gli allegati), tutti gli elementi diversi dai metadati o solo gli allegati. Un utente autorizzato può decrittografare il documento per ottenere l’accesso al relativo contenuto. Se un documento PDF è crittografato con una password, l’utente deve specificare la password di apertura prima che il documento possa essere visualizzato in Adobe Reader o Acrobat. Se un documento PDF è crittografato con un certificato, l&#39;utente deve decrittografare il documento PDF con una chiave privata (certificato). La chiave privata utilizzata per decrittografare il documento PDF deve corrispondere alla chiave pubblica utilizzata per crittografarlo.
 
 ### Servizio di estensione Reader {#reader-extension-service}
 
-Il servizio Estensioni di Reader consente all’organizzazione di condividere facilmente documenti PDF interattivi estendendo le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio Estensioni di Reader funziona con Adobe Reader 7.0 o versione successiva. Il servizio aggiunge i diritti di utilizzo a un documento PDF. Questa azione attiva le funzioni che in genere non sono disponibili quando un documento di PDF viene aperto mediante Adobe Reader, ad esempio l&#39;aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti abilitati per i diritti.
+Il servizio Estensioni di Reader consente all’organizzazione di condividere facilmente documenti PDF interattivi estendendo le funzionalità di Adobe Reader con diritti di utilizzo aggiuntivi. Il servizio Estensioni di Reader funziona con Adobe Reader 7.0 o versione successiva. Il servizio aggiunge i diritti di utilizzo a un documento PDF. Questa azione attiva le funzioni che in genere non sono disponibili quando un documento di PDF viene aperto mediante Adobe Reader, ad esempio l&#39;aggiunta di commenti a un documento, la compilazione di moduli e il salvataggio del documento. Gli utenti di terze parti non richiedono software o plug-in aggiuntivi per lavorare con documenti con diritti abilitati.
 
 Quando ai documenti di PDF vengono aggiunti i diritti di utilizzo appropriati, i destinatari possono eseguire le seguenti attività da Adobe Reader:
 

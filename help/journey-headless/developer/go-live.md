@@ -7,8 +7,8 @@ role: Admin, Developer
 exl-id: 8837e7cd-c949-46cc-9c39-3c7a82cc1daf
 source-git-commit: 84ef35149332330e040b8d94cae151708e3c6829
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 53%
+source-wordcount: '1909'
+ht-degree: 52%
 
 ---
 
@@ -219,7 +219,7 @@ Se questo tipo di flessibilità è necessario per il progetto, passare alla sezi
 
 * [Guida allo sviluppo di AEM](/help/sites-developing/the-basics.md)
 
-* [Esercitazione WKND](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+* [Esercitazione WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 
 * [Cloud Manager per AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=it)
 
@@ -230,5 +230,5 @@ Se questo tipo di flessibilità è necessario per il progetto, passare alla sezi
    * Configurazione del [rewriter CDN](/help/sites-deploying/osgi-configuration-settings.md) (*cerca rewriter CDN*)
 
 * [Introduzione ad AEM come CMS headless](/help/sites-developing/headless/introduction.md)
-* [Portale per sviluppatori AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
-* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=it)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=it)
+* [Tutorial per contenuti headless in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

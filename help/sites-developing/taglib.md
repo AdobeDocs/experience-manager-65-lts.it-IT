@@ -11,7 +11,7 @@ role: Developer
 exl-id: 15f30571-7129-402c-98be-270a142c4cbb
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Utilizzare `<cq:include>` o `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` è obsoleto a partire da AEM 5.6. Al suo posto deve essere utilizzato [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib).
+>`<cq:includeClientLib>` obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib).
 
 Il tag `<cq:includeClientLib>` include una libreria client html di AEM, che può essere una libreria js, css o theme. Per più inclusioni di tipi diversi, ad esempio, js e css, questo tag deve essere utilizzato più volte in jsp. Questo tag è un wrapper di convenienza intorno all&#39;interfaccia del servizio `com.day.cq.widget.HtmlLibraryManager`.
 
@@ -586,8 +586,8 @@ Il tag `<sling:defineObjects>` espone i seguenti oggetti di script, utilizzati r
 
 **slingResponse**
 
-* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. È lo stesso di HttpServletResponse da cui si estende.**richiesta**
-* L’oggetto richiesta JSP standard che è un HttpServletRequest puro.**risposta**
+* Oggetto SlingHttpServletResponse, che fornisce accesso alla risposta HTTP creata dal server. È lo stesso HttpServletResponse da cui estende.**richiesta**
+* L&#39;oggetto di richiesta JSP standard che è un HttpServletRequest puro.**risposta**
 * L’oggetto di risposta JSP standard che è un HttpServletResponse puro.
 
 **resourceResolver**

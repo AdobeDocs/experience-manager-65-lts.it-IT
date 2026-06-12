@@ -1,5 +1,5 @@
 ---
-title: Generazione rapporti
+title: Reporting
 description: Scopri come utilizzare la funzione di reporting in Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 6dd29f1c-3769-469c-8b8a-464f9ac00b15
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2782'
-ht-degree: 3%
+source-wordcount: '2806'
+ht-degree: 4%
 
 ---
 
-# Generazione rapporti {#reporting}
+# Reporting {#reporting}
 
 Per aiutarti a monitorare e analizzare lo stato dell’istanza, Adobe Experience Manager (AEM) fornisce una selezione di rapporti predefiniti che possono essere configurati per i tuoi requisiti individuali:
 
@@ -534,7 +534,7 @@ Poiché nell&#39;ambiente di pubblicazione non è consentita alcuna configurazio
 
 >[!CAUTION]
 >
->L&#39;accesso a questi report può rappresentare un problema di sicurezza; pertanto Adobe consiglia di configurare Dispatcher in modo che `/etc/reports` non sia disponibile per i visitatori esterni. Per ulteriori dettagli, vedere l&#39;[elenco di controllo protezione](security-checklist.md).
+>L&#39;accesso a questi report può rappresentare un problema di sicurezza; pertanto Adobe consiglia di configurare Dispatcher in modo che `/etc/reports` non sia disponibile per i visitatori esterni. Per ulteriori dettagli, consulta l’[elenco di controllo della sicurezza](security-checklist.md).
 
 ## Autorizzazioni necessarie per l’esecuzione dei rapporti {#permissions-needed-for-running-reports}
 

@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ef72c05-1301-402e-94ce-49fbaf26fb98
 source-git-commit: aff6c41e13293a1c83eca226354f5c16cff18d99
 workflow-type: tm+mt
-source-wordcount: '2147'
-ht-degree: 8%
+source-wordcount: '2175'
+ht-degree: 9%
 
 ---
 
@@ -206,7 +206,7 @@ subject=<text_1>
 >
 >Ulteriori informazioni sul formato del modello sono disponibili nei [javadocs del metodo Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-Il metodo `${payload.path.open}` rivela il percorso del payload dell&#39;elemento di lavoro. Ad esempio, per una pagina in Sites, `payload.path.open` sarebbe simile a `/bin/wcmcommand?cmd=open&path=…`.; questo senza il nome del server, motivo per cui il modello lo precede con `${host.prefix}`.
+Il metodo `${payload.path.open}` rivela il percorso del payload dell&#39;elemento di lavoro. Ad esempio, per una pagina in Sites, `payload.path.open` sarebbe simile a `/bin/wcmcommand?cmd=open&path=…`. Senza il nome del server, motivo per cui il modello lo precede con `${host.prefix}`.
 
 Le seguenti variabili possono essere utilizzate all’interno del modello e-mail:
 

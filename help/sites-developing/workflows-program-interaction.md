@@ -11,7 +11,7 @@ role: Developer
 exl-id: 7e14471e-8bb5-4cce-9175-3bbff9d803a9
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2035'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Crea una nuova istanza di flusso di lavoro. I parametri sono:<br /> - <code>model</code>: l'ID (URI) del rispettivo modello di flusso di lavoro<br /> - <code>payloadType</code>: contenente il tipo di payload (ad esempio, <code>JCR_PATH</code> o URL).<br /> Il payload viene inviato come parametro <code>payload</code>. Viene inviata nuovamente una risposta <code>201</code> (<code>CREATED</code>) con un'intestazione di posizione contenente l'URL della nuova risorsa istanza del flusso di lavoro.</p> </td>
+   <td><p>Crea una nuova istanza di flusso di lavoro. I parametri sono:<br /> - <code>model</code>: l'ID (URI) del rispettivo modello di flusso di lavoro<br /> - <code>payloadType</code>: contenente il tipo di payload (ad esempio, <code>JCR_PATH</code> o URL).<br /> Payload inviato come parametro <code>payload</code>. Viene inviata nuovamente una risposta <code>201</code> (<code>CREATED</code>) con un'intestazione di posizione contenente l'URL della nuova risorsa istanza del flusso di lavoro.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Crea un nuovo modello di workflow. Se il parametro <code>title</code> viene inviato, viene creato un nuovo modello con il titolo specificato. Quando si allega una definizione di modello JSON come parametro <code>model</code>, viene creato un nuovo modello di flusso di lavoro in base alla definizione fornita.<br /> Viene inviata una risposta <code>201</code> (<code>CREATED</code>) con un'intestazione di posizione contenente l'URL della nuova risorsa modello flusso di lavoro.<br /> Lo stesso accade quando una definizione di modello viene allegata come parametro di file denominato <code>modelfile</code>.<br /> In entrambi i casi dei parametri <code>model</code> e <code>modelfile</code>, è necessario un parametro aggiuntivo denominato <code>type</code> per definire il formato di serializzazione. È possibile integrare nuovi formati di serializzazione utilizzando l’API OSGI. Con il motore del flusso di lavoro viene fornito un serializzatore JSON standard. Il tipo è JSON. Di seguito è riportato un esempio del formato.</td>
+   <td>Crea un nuovo modello di workflow. Se il parametro <code>title</code> viene inviato, viene creato un nuovo modello con il titolo specificato. Se si allega una definizione di modello JSON come parametro <code>model</code>, viene creato un nuovo modello di flusso di lavoro in base alla definizione fornita.<br /> Viene inviata nuovamente una risposta <code>201</code> (<code>CREATED</code>) con un'intestazione di posizione contenente l'URL della nuova risorsa modello flusso di lavoro.<br /> Lo stesso accade quando una definizione di modello viene allegata come parametro di file denominato <code>modelfile</code>.<br /> In entrambi i casi dei parametri <code>model</code> e <code>modelfile</code>, è necessario un parametro aggiuntivo denominato <code>type</code> per definire il formato di serializzazione. È possibile integrare nuovi formati di serializzazione utilizzando l’API OSGI. Con il motore del flusso di lavoro viene fornito un serializzatore JSON standard. Il tipo è JSON. Di seguito è riportato un esempio del formato.</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +377,7 @@ I seguenti metodi di richiesta HTTP si applicano a:
 
 ### Ottenere un elenco di tutti i flussi di lavoro in esecuzione con i relativi ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Per ottenere un elenco di tutti i flussi di lavoro in esecuzione, eseguire un&#39;operazione GET per:
+Per ottenere un elenco di tutti i flussi di lavoro in esecuzione, eseguire una GET a:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -425,7 +425,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### Come elencare tutti i modelli di flussi di lavoro {#how-to-list-all-workflow-models}
 
-Per ottenere un elenco di tutti i modelli di flusso di lavoro disponibili, eseguire una GET per:
+Per ottenere un elenco di tutti i modelli di flusso di lavoro disponibili, eseguire una procedura GET a:
 
 `http://localhost:4502/etc/workflow/models.json`
 

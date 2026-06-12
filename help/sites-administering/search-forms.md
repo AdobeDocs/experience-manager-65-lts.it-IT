@@ -11,7 +11,7 @@ role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2078'
 ht-degree: 7%
 
 ---
@@ -393,7 +393,7 @@ Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle d
 * **Nomi proprietà pubblicazione e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* Il &ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
+* L&#39;&ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 
@@ -547,12 +547,12 @@ Nella tabella seguente sono elencate le autorizzazioni necessarie per eseguire a
    <td>Autorizzazioni di lettura e scrittura sul nodo <code>/apps </code>.</td>
   </tr>
   <tr>
-   <td>Elimina</td>
+   <td>Eliminare</td>
    <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/apps</code></td>
   </tr>
   <tr>
    <td>Anteprima</td>
-   <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/var/dam/content</code>.<br /> autorizzazioni di lettura e scrittura sul nodo <code>/apps</code>.</td>
+   <td>Autorizzazioni di lettura, scrittura ed eliminazione sul nodo <code>/var/dam/content</code>.<br /> Autorizzazioni di lettura e scrittura sul nodo <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>
