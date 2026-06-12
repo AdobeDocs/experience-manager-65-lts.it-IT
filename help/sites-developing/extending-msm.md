@@ -1,5 +1,5 @@
 ---
-title: Estensione di Multi Site Manager
+title: Estensione di Multi-Site Manager
 description: Questa pagina consente di estendere le funzionalità del gestore multisito
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Developer
 exl-id: 46300f72-730e-444c-8677-352a890e9910
 source-git-commit: c033a676eb746befd43803d1ae00c564890cb945
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 0%
+source-wordcount: '2605'
+ht-degree: 1%
 
 ---
 
-# Estensione di Multi Site Manager{#extending-the-multi-site-manager}
+# Estensione di Multi-Site Manager{#extending-the-multi-site-manager}
 
 Questa pagina consente di estendere le funzionalità del gestore multisito:
 
@@ -204,15 +204,12 @@ La nuova configurazione di rollout è quindi disponibile quando imposti le confi
 
 1. Aggiungi le seguenti proprietà a questo nodo:
    * **Nome**: `jcr:title`
-
      **Tipo**: `String`
      **Valore**: titolo identificativo che verrà visualizzato nell&#39;interfaccia utente.
    * **Nome**: `jcr:description`
-
      **Tipo**: `String`
      **Valore**: descrizione facoltativa.
    * **Nome**: `cq:trigger`
-
      **Tipo**: `String`
      **Valore**: [Attivatore rollout](/help/sites-administering/msm-sync.md#rollout-triggers) da utilizzare. Seleziona da:
       * `rollout`
@@ -236,7 +233,7 @@ Aggiungi nodi secondari di tipo `cq:LiveSyncAction` per aggiungere azioni di sin
 1. **Crea** un nodo con le seguenti proprietà:
 
    * **Nome**: nome del nodo dell&#39;azione di sincronizzazione.
-Il nome deve essere uguale a **Nome azione** nella tabella in [Azioni di sincronizzazione](/help/sites-administering/msm-sync.md#installed-synchronization-actions), ad esempio `contentCopy` o `workflow`.
+Il nome deve essere uguale al **Nome azione** nella tabella in [Azioni di sincronizzazione](/help/sites-administering/msm-sync.md#installed-synchronization-actions), ad esempio `contentCopy` o `workflow`.
    * **Tipo**: `cq:LiveSyncAction`
 
 1. Aggiungere e configurare tutti i nodi delle azioni di sincronizzazione necessari. Ridisponi i nodi delle azioni in modo che il loro ordine corrisponda all’ordine in cui desideri che si verifichino. Il nodo di azione più in alto si verifica per primo.
@@ -648,7 +645,7 @@ Per modificare le lingue:
 1. Fare clic su **Strumenti**, **Operazioni** e quindi su **Console Web**. Da questa console fare clic su **OSGi**, quindi su **Configurazione**.
 1. Individua e fai clic su **Day CQ WCM Language Manager** e modifica il valore di **Language List** in `/apps/wcm/core/resources/languages`, quindi fai clic su **Save**.
 
-   ![&#x200B; giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
+   ![ giorno CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## Configurazione dei blocchi MSM nelle proprietà della pagina (interfaccia touch) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
@@ -685,7 +682,6 @@ Se una proprietà di pagina è soggetta a rollout e quindi, in caso di annullame
       * **Tipo**: `String`
 
       * **Valore**: contiene il nome della proprietà in esame (ed è paragonabile al valore della proprietà `name`; ad esempio, vedere
-
         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Una volta definito `cq-msm-lockable`, l&#39;interruzione/chiusura della catena interagirà con MSM nel modo seguente:
