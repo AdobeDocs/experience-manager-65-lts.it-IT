@@ -12,7 +12,7 @@ role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '5601'
+source-wordcount: '5796'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 ### Backup dell&#39;installazione del software {#backing-up-your-software-installation}
 
-Dopo l&#39;installazione o modifiche significative nella configurazione, creare un backup dell&#39;installazione del software.
+Dopo l&#39;installazione, o dopo modifiche significative della configurazione, creare un backup dell&#39;installazione del software.
 
-Per eseguire questa operazione, [eseguire il backup dell&#39;intero archivio](#backing-up-your-repository) e quindi:
+Per eseguire questa attività, [esegui il backup dell&#39;intero archivio](#backing-up-your-repository), quindi:
 
 1. Interrompi AEM.
 1. Eseguire il backup dell&#39;intero `<cq-installation-dir>` dal file system.
@@ -86,7 +86,7 @@ Nella sezione [Backup e ripristino](/help/sites-administering/backup-and-restore
 
 Per informazioni dettagliate sull&#39;esecuzione di un backup &quot;a caldo&quot; online, vedere [Creazione di un backup online](/help/sites-administering/backup-and-restore.md#online-backup).
 
-## Rimozione versione {#version-purging}
+## Eliminazione della versione {#version-purging}
 
 Lo strumento **Rimuovi versioni** è progettato per eliminare le versioni di un nodo o di una gerarchia di nodi nell&#39;archivio. Il suo scopo principale è quello di aiutare a ridurre le dimensioni dell’archivio rimuovendo le versioni precedenti dei nodi.
 
@@ -141,7 +141,7 @@ Imposta il numero massimo di versioni (per ogni nodo) che desideri mantenere. La
    * **Numero minimo di versioni**
 Imposta il numero minimo di versioni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
 
-   * **Versione massima**
+   * **Durata massima versione**
 Imposta la validità massima della versione in giorni (per ogni nodo) che desideri mantenere. Lascia vuoto per non usare questa impostazione.
 
    Quindi **Salva**.
@@ -154,7 +154,7 @@ Imposta la validità massima della versione in giorni (per ogni nodo) che deside
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
->I nodi eliminati non possono essere ripristinati senza ripristinare il archivio. Prenditi cura della tua configurazione eseguendo sempre un funzionamento a secco prima di spurgarla.
+>I nodi eliminati non possono essere ripristinati senza ripristinare l’archivio. Assicurati di eseguire sempre un&#39;esecuzione di prova prima di eseguire l&#39;eliminazione.
 
 #### Dry Run: analisi della console {#analyzing-the-console}
 
@@ -174,11 +174,11 @@ Il processo elenca tutti i nodi che sono stati elaborati. Durante il processo, u
 Inoltre, la console fornisce informazioni utili sulle versioni:
 
 * `V 1.0`: numero di versione.
-* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (base) e non può essere eliminata.
+* `V 1.0.1`&#42;: la stella indica che la versione è la versione corrente (di base) e non può essere eliminata.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: la data della versione.
 
-Nel prossimo esempio:
+Nell&#39;esempio seguente:
 
 * Le versioni **[!DNL Shirts]** vengono eliminate perché la loro validità è superiore a due giorni.
 * Le versioni **[!DNL Tonga Fashions!]** vengono eliminate perché il numero di versioni è maggiore di 5.
@@ -272,7 +272,7 @@ I livelli del registro sono i seguenti:
 | 0 | Errore irreversibile | Azione non riuscita. Impossibile continuare l&#39;installazione. |
 |---|---|---|
 | 1 | Errore | Azione non riuscita. L&#39;installazione procede, ma una parte di AEM WCM non è stata installata correttamente e non funziona. |
-| 2 | Avvertenza | L&#39;azione è riuscita ma ha incontrato dei problemi. AEM Web Content Management potrebbe funzionare o non funzionare correttamente. |
+| 2 | Avvertenza | L&#39;azione è stata completata ma si sono verificati problemi. AEM WCM potrebbe funzionare correttamente o meno. |
 | 3 | Informazioni | Azione completata. |
 
 ### Creare un file di registro personalizzato {#create-a-custom-log-file}
@@ -292,11 +292,11 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
      Ad esempio `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
-   * Digitare: `sling:OsgiConfig`
+   * Tipo: `sling:OsgiConfig`
 
    >[!NOTE]
    >
-   >Sebbene non sia un requisito tecnico, è consigliabile rendere `<identifier>` unico.
+   >Sebbene non si tratti di un requisito tecnico, è consigliabile rendere `<identifier>` univoco.
 
 1. Imposta le seguenti proprietà su questo nodo:
 
@@ -336,15 +336,15 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >
    >`org.apache.sling.commons.log.pattern` supporta fino a sei argomenti.
    >
-   >{0} Timestamp di tipo `java.util.Date`
+   >`java.util.Date` Timestamp di tipo {0}
    >
-   >{1} indicatore del registro
+   >{1} il marcatore del registro
    >
-   >{2} nome del thread corrente
+   >{2} il nome del thread corrente
    >
-   >{3} nome del logger
+   >{3} il nome del logger
    >
-   >{4} livello di registro
+   >{4} il livello di registro
    >
    >{5} il messaggio di registro
    >
@@ -409,7 +409,7 @@ In determinate circostanze, può essere opportuno creare un file di registro per
 
       * Nome: `org.apache.sling.commons.log.file.number`
 
-        Digitare: `Long`
+        Tipo: `Long`
 
         Valore: specificare il numero di file di log che si desidera mantenere, ad esempio `5`
 
@@ -431,9 +431,9 @@ In determinate circostanze, può essere opportuno creare un file di registro per
    >* È possibile specificare un limite di dimensione con un numero. Se non viene fornito alcun indicatore di dimensione, verrà considerato come il numero di byte oppure sarà possibile aggiungere uno degli indicatori di dimensione: `KB`, `MB` o `GB` (il case verrà ignorato).
    >* È possibile specificare una pianificazione di data/ora come modello `java.util.SimpleDateFormat`. Definisce il periodo di tempo dopo il quale il file viene ruotato. Inoltre, il suffisso aggiunto al file ruotato (per l’identificazione).
    >
-   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera dei log).
+   >Il valore predefinito è &#39;.&#39;yyyy-MM-dd (per la rotazione giornaliera del registro).
    >
-   >Ad esempio, alla mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di log dopo questa data si verifica per essere precisi), .. /logs/error.log viene rinominato in .. /logs/error.log.2010-01-20. La registrazione per il 21 gennaio è l&#39;output a (un nuovo e vuoto) .. /logs/error.log finché non viene eseguito il rollover al successivo cambio di giornata.
+   >Ad esempio, a mezzanotte del 20 gennaio 2010 (o quando il primo messaggio di registro dopo questa data è preciso), ../logs/error.log viene rinominato ../logs/error.log.2010-01-20. La registrazione per il 21 gennaio viene generata in (nuovo e vuoto) ../logs/error.log fino al suo rollover al cambio di giorno successivo.
    >
    >| `'.'yyyy-MM` | Rotazione all’inizio di ogni mese |
    >|---|---|
@@ -509,8 +509,8 @@ Per monitorare un agente di replica:
 
    * Verifica se l’agente è abilitato.
    * Visualizza la destinazione di qualsiasi replica.
-   * Verificare se il coda di replica è attivo (abilitato).
-   * Verifica se ci sono elementi nella coda.
+   * Verifica se la coda di replica è attiva (abilitata).
+   * Verifica se sono presenti elementi nella coda.
    * **Aggiorna** o **Cancella** per aggiornare la visualizzazione delle voci della coda. Questa operazione consente di visualizzare gli elementi che entrano ed escono dalla coda.
    * **Visualizza registro** per accedere al registro di tutte le azioni eseguite dall&#39;agente di replica.
    * **Verifica connessione** all&#39;istanza di destinazione.
@@ -532,11 +532,11 @@ Per monitorare un agente di replica:
 
 [Ottimizzazione delle prestazioni](/help/sites-deploying/configuring-performance.md) è un processo interattivo che viene attivato durante lo sviluppo. Dopo la distribuzione, viene rivisto dopo intervalli o eventi specifici.
 
-I metodi utilizzati durante la raccolta di informazioni per l&#39;ottimizzazione possono essere utilizzati anche per il monitoraggio continuo.
+I metodi utilizzati durante la raccolta delle informazioni per l’ottimizzazione possono essere utilizzati anche per il monitoraggio continuo.
 
 >[!NOTE]
 >
->È inoltre possibile controllare le configurazioni specifiche [disponibili per migliorare le prestazioni](/help/sites-deploying/configuring-performance.md#configuring-for-performance) .
+>È inoltre possibile controllare [configurazioni specifiche disponibili per migliorare le prestazioni](/help/sites-deploying/configuring-performance.md#configuring-for-performance).
 
 Di seguito sono elencati i problemi di prestazioni comuni che si verificano, insieme a proposte su come individuarli e contrastarli.
 
@@ -572,9 +572,9 @@ Tutte queste informazioni devono essere ottenute, ordinate e analizzate prima di
    * verifica se qualcosa (relativo al sistema) è cambiato entro uno spazio di tempo appropriato e se una qualsiasi di queste modifiche potrebbe avere influito sulle prestazioni
    * poni domande quali:
 
-      * Il problema si verifica solo in momenti specifici?
-      * Il problema si verifica solo su pagine specifiche?
-      * Altre richieste sono interessate?
+      * il problema si verifica solo in momenti specifici?
+      * il problema si verifica solo su pagine specifiche?
+      * sono interessate altre richieste?
 
    * raccogliere quante più informazioni possibili per confrontarle con la propria conoscenza del sistema in circostanze normali:
 
@@ -587,7 +587,7 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
 <table>
  <tbody>
   <tr>
-   <td>Strumento </td>
+   <td>Strumento</td>
    <td>Utilizzato per analizzare...</td>
    <td>Utilizzo / Ulteriori informazioni...</td>
   </tr>
@@ -619,7 +619,7 @@ Alcuni di questi strumenti dipendono dal sistema operativo.
   <tr>
    <td>Apache Bench</td>
    <td>Identificare le perdite di memoria e analizzare in modo selettivo i tempi di risposta.</td>
-   <td><p>utilizzo di base:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Per informazioni dettagliate, vedere <a href="#apache-bench">Apache Bench</a> e la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">ab man page</a>.</p> </td>
+   <td><p>utilizzo di base:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Per informazioni dettagliate, vedere <a href="#apache-bench">Apache Bench</a> e la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html?lang=it">ab man page</a>.</p> </td>
   </tr>
   <tr>
    <td>Ricerca analisi</td>
@@ -686,7 +686,7 @@ Il registro delle richieste registra ogni richiesta effettuata, insieme alla ris
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Calcolando il totale di tutte le voci di GET in periodi specifici (ad esempio, in vari periodi di 24 ore), puoi fare dichiarazioni sul traffico medio sul tuo sito web.
+Calcolando il totale di tutte le voci GET in periodi specifici (ad esempio, in vari periodi di 24 ore), puoi fare dichiarazioni sul traffico medio sul tuo sito web.
 
 #### Monitoraggio dei tempi di risposta con request.log {#monitoring-response-times-with-the-request-log}
 
@@ -805,7 +805,7 @@ Concatenare i singoli file `request.log` se è necessario eseguire questa operaz
 
 ### Apache Bench {#apache-bench}
 
-Per ridurre al minimo l&#39;impatto di casi speciali (ad esempio la raccolta di oggetti inattivi), si consiglia di utilizzare uno strumento come `apachebench` (ad esempio, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) per ulteriore documentazione) per identificare eventuali perdite di memoria e analizzare in modo selettivo i tempi di risposta.
+Per ridurre al minimo l&#39;impatto di casi speciali (ad esempio la raccolta di oggetti inattivi), si consiglia di utilizzare uno strumento come `apachebench` (ad esempio, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html?lang=it) per ulteriore documentazione) per identificare eventuali perdite di memoria e analizzare in modo selettivo i tempi di risposta.
 
 Apache Bench può essere utilizzato nel modo seguente:
 
@@ -905,7 +905,7 @@ Le informazioni raccolte possono essere utilizzate per indicare:
 Il comando dello strumento `jconsole` è disponibile con JDK.
 
 1. Avvia l’istanza di AEM.
-1. Esegui `jconsole.`
+1. Eseguire `jconsole.`
 1. Seleziona la tua istanza di AEM e **Connetti**.
 
 1. Dall&#39;applicazione `Local`, fare doppio clic su `com.day.crx.quickstart.Main`. La panoramica viene visualizzata come predefinita:

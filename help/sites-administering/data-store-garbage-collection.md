@@ -1,5 +1,5 @@
 ---
-title: Raccolta oggetti inattivi in archivio dati
+title: Raccolta oggetti inattivi nell’archivio dati
 description: Scopri come configurare Data Store Garbage Collection per liberare spazio su disco.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
 
-# Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+# Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Quando viene rimossa una risorsa WCM convenzionale, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record di archivio dati senza riferimenti diventa quindi un &quot;immondizia&quot; che non deve essere conservata. Nei casi in cui sono presenti diverse risorse inutilizzate, è utile eliminarle per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione dei file system.
 

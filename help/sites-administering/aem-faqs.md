@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti su AEM
+title: Domande frequenti AEM
 description: Utilizza queste domande frequenti per comprendere, configurare e risolvere i problemi relativi ai flussi di lavoro o ai problemi più comuni in AEM.
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
@@ -7,12 +7,12 @@ role: Admin
 exl-id: b2e73e28-fa34-436d-8a20-848d353e3b8c
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '993'
+ht-degree: 1%
 
 ---
 
-# Domande frequenti su AEM {#aem-faqs}
+# Domande frequenti AEM {#aem-faqs}
 
 Scopri le risposte ad alcuni problemi di configurazione e risoluzione dei problemi di AEM.
 
@@ -39,7 +39,7 @@ Se è necessario che anche gli autori gestiscano i progetti, è possibile aggiun
 
 Crea una directory principale della lingua e una copia per lingua all’interno della directory principale, prima di creare un progetto di traduzione.
 
-Ad esempio:
+Ad esempio,
 Creare una directory principale della lingua in `/content/geometrixx` con il nome come `fr_LU` (e il titolo come francese (Lussemburgo)). Successivamente, creare una copia in lingua della pagina dal pannello dei riferimenti e passare all&#39;opzione `Create structure only` in `Create & Translate`. Infine, crea un progetto di traduzione e quindi aggiungi la copia per lingua al processo di traduzione.
 
 Per informazioni dettagliate, consulta le risorse aggiuntive di seguito:

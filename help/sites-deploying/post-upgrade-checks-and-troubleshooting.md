@@ -12,8 +12,8 @@ role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
 source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 0%
+source-wordcount: '1203'
+ht-degree: 1%
 
 ---
 
@@ -123,7 +123,7 @@ Se i bundle personalizzati non passano allo stato attivo, è probabile che ci si
 
 È inoltre consigliabile verificare se la modifica che ha causato il problema era necessaria e, in caso contrario, ripristinarla. Controlla anche se l’aumento di versione dell’esportazione del pacchetto è stato aumentato più del necessario, seguendo un rigoroso controllo delle versioni semantiche.
 
-### Analisi di error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Analisi dei file error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 Nella maggior parte delle situazioni, i registri devono essere consultati per gli errori per individuare la causa di un problema. Tuttavia, con gli aggiornamenti, è anche necessario monitorare i problemi di dipendenza in quanto i vecchi bundle potrebbero non essere aggiornati correttamente.
 

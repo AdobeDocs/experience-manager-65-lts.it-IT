@@ -12,7 +12,7 @@ role: Admin
 exl-id: fcabfd44-31c2-4884-8dbd-99aa74972cfa
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6016'
 ht-degree: 2%
 
 ---
@@ -156,7 +156,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
 
    >[!NOTE]
    >
-   >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo JMX Mbean.**
+   >Per ogni nuova configurazione di Apache Sling Composite Health Check viene creato un nuovo file Mbean JMX.**
 
 1. Infine, è necessario aggiungere la voce del controllo di integrità composito creato nei nodi di configurazione del dashboard operazioni. La procedura è la stessa dei singoli controlli di integrità: un nodo di tipo **nt:unstructured** deve essere creato in `/apps/settings/granite/operations/hc`. La proprietà di risorsa del nodo è definita dal valore di **hc.mean.name** nella configurazione OSGI.
 
@@ -297,7 +297,7 @@ Il ruolo di una Verifica stato composita è quello di aggregare più verifiche d
   </tr>
   <tr>
    <td>Verifiche di sicurezza</td>
-   <td><p>Il controllo di sicurezza è un elemento composito che aggrega i risultati di più controlli relativi alla sicurezza. Questi singoli controlli di integrità rispondono a problemi diversi dall'elenco di controllo della sicurezza disponibile nella pagina della documentazione dell'elenco di controllo della sicurezza <a href="/help/sites-administering/security-checklist.md">.</a> Il controllo è utile come test di fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecs,type=HealthCheck</a></p> </td>
+   <td><p>Il controllo di sicurezza è un elemento composito che aggrega i risultati di più controlli relativi alla sicurezza. Questi singoli controlli di integrità rispondono a problemi diversi dall'elenco di controllo della sicurezza disponibile nella pagina della documentazione dell'elenco di controllo della sicurezza <a href="/help/sites-administering/security-checklist.md">.</a> Il controllo è utile come test del fumo di sicurezza all'avvio dell'istanza. </p> <p>MBean per questa verifica stato è <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecs,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>Bundle attivi</td>
@@ -452,7 +452,7 @@ Se si seleziona la casella **Includi tempo di esecuzione** prima di eseguire la 
 
 Lo scopo di Gestione indici è quello di facilitare la gestione degli indici, ad esempio la manutenzione degli indici o la visualizzazione del loro stato.
 
-È possibile accedervi da **Strumenti - Operazioni - Diagnosi &#x200B;** dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
+È possibile accedervi da **Strumenti - Operazioni - Diagnosi** dalla schermata iniziale, quindi fare clic sul pulsante **Gestione indice**.
 
 È inoltre possibile accedervi direttamente da questo URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -495,7 +495,7 @@ Nel dashboard operazioni sono disponibili le seguenti attività:
 1. L&#39;attività di manutenzione **Rimozione progetto**, che si trova nel menu **Finestra manutenzione settimanale**, utilizza l&#39;opzione **Aggiungi**.
 1. **Eliminazione delle attività ad hoc** attività di manutenzione, disponibile nel menu **Finestra manutenzione settimanale**, utilizzando l&#39;opzione **Aggiungi**.
 
-L&#39;orario predefinito per la finestra di manutenzione giornaliera è dalle 2.00 alle 5.00. Le attività configurate per l’esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 del sabato.
+La tempistica predefinita per la finestra di manutenzione giornaliera è compresa tra le 2:00 e le 5:00. Le attività configurate per l&#39;esecuzione nella finestra di manutenzione settimanale vengono eseguite tra le ore 1:00 e le ore 2:00 di sabato.
 
 Puoi anche configurare gli intervalli premendo l’icona ingranaggio su una qualsiasi delle due schede di manutenzione:
 
@@ -520,7 +520,7 @@ Anche se l’attività di manutenzione è stata sviluppata per ridurre i rifiuti
 
 Puoi accedere all&#39;attività Pulizia file binari Lucene da: **AEM > Strumenti > Operazioni > Manutenzione > Finestra manutenzione giornaliera > Pulizia file binari Lucene**.
 
-### Raccolta oggetti inattivi in archivio dati {#data-store-garbage-collection}
+### Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Per informazioni dettagliate sulla raccolta oggetti inattivi dell&#39;archivio dati, consulta la pagina dedicata della documentazione di [Raccolta oggetti inattivi dell&#39;archivio dati](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -543,7 +543,7 @@ Per la manutenzione del registro di controllo, consulta la [pagina separata dell
 
 È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. Questa azione consente di ridurre al minimo la necessità di utilizzare manualmente gli [strumenti di eliminazione versione](/help/sites-deploying/version-purging.md). È possibile pianificare e configurare l&#39;attività Pulizia versione accedendo a **Strumenti > Operazioni > Manutenzione > Finestra manutenzione settimanale** e attenendosi alla seguente procedura:
 
-1. Fare clic su **Aggiungi**.
+1. Fai clic su **Aggiungi**.
 1. Scegliere **Rimozione versione** dal menu a discesa.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -604,7 +604,7 @@ Le attività di manutenzione personalizzate possono essere implementate come ser
    <td>Facoltativo</td>
   </tr>
   <tr>
-   <td>granite.maintenance.mandatory</td>
+   <td>granite.maintenance.required</td>
    <td>Attributo booleano che definisce se un’attività è obbligatoria e deve essere eseguita periodicamente. Se un'attività è obbligatoria ma al momento non è presente in alcuna finestra di programmazione attiva, un controllo di integrità segnala questo errore. Il valore predefinito è false.</td>
    <td>vero</td>
    <td>Facoltativo</td>
@@ -622,8 +622,8 @@ Le attività di manutenzione personalizzate possono essere implementate come ser
    <td>Obbligatorio</td>
   </tr>
   <tr>
-   <td>job.topics</td>
-   <td>Argomento univoco dell’attività di manutenzione.<br /> La gestione del processo Apache Sling avvia un processo con esattamente questo argomento per eseguire l'attività di manutenzione e quando l'attività viene registrata per questo argomento viene eseguita.<br /> L'argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>job.topic</td>
+   <td>Argomento univoco dell'attività di manutenzione.<br /> La gestione del processo Apache Sling avvia un processo con esattamente questo argomento per eseguire l'attività di manutenzione e quando l'attività viene registrata per questo argomento viene eseguita.<br /> L'argomento deve iniziare con <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obbligatorio</td>
   </tr>
@@ -757,7 +757,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
        <li>per un archivio dati file, viene visualizzato il percorso</li>
        <li>per un archivio dati S3, viene visualizzato il nome del bucket S3</li>
        <li>per un archivio dati S3 condiviso, viene visualizzato il nome del bucket S3</li>
-       <li>per un Azure Data Store, viene visualizzato il contenitore</li>
+       <li>per un archivio dati di Azure, viene visualizzato il contenitore</li>
       </ul> </li>
      <li>se non è presente un archivio dati esterno personalizzato, viene visualizzato un messaggio che indica tale fatto</li>
     </ul> </td>
@@ -811,7 +811,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
      <li>Conteggi flussi di lavoro: numero di flussi di lavoro in un determinato stato (se presenti):
       <ul>
        <li>in esecuzione</li>
-       <li>non riuscito</li>
+       <li>non riuscito/i</li>
        <li>sospeso</li>
        <li>interrotto</li>
       </ul> </li>
@@ -826,7 +826,7 @@ La tabella seguente descrive tutte le informazioni visualizzate nel dashboard Pa
    <td>Processi Sling</td>
    <td><p>Conteggi processi Sling - numero di processi in un determinato stato (se presenti):</p>
     <ul>
-     <li>non riuscito</li>
+     <li>non riuscito/i</li>
      <li>in coda</li>
      <li>annullato</li>
      <li>attivi</li>

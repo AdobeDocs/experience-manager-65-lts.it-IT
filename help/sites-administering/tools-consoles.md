@@ -12,8 +12,8 @@ role: Admin
 exl-id: b81d2f39-1517-49f0-9d16-bcde514cc199
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -58,7 +58,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Assegnazione dei tag</td>
+   <td>Assegnazione tag</td>
   </tr>
   <tr>
    <td> </td>
@@ -170,11 +170,11 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Schemi metadati cartelle<br /> </td>
+   <td>Schemi di metadati per cartelle<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Schemi metadati</td>
+   <td>Schemi di metadati</td>
   </tr>
   <tr>
    <td> </td>
@@ -197,7 +197,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
    <td>Configurazione DAM remoto</td>
   </tr>
   <tr>
-   <td>Riferimenti</td>
+   <td>Risorse</td>
    <td> </td>
   </tr>
   <tr>
@@ -206,7 +206,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td> </td>
-   <td>Riferimenti per sviluppatori</td>
+   <td>Risorse per sviluppatori</td>
   </tr>
   <tr>
    <td>Implementazione</td>
@@ -317,7 +317,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
    <td>Configurazione accesso social network tramite Pinterest<br /> </td>
   </tr>
   <tr>
-   <td>Communities</td>
+   <td>Community</td>
    <td> </td>
   </tr>
   <tr>
@@ -373,7 +373,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
   </tr>
   <tr>
    <td>Configurazioni ClientContext<br /> </td>
-   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite e Experience Cloud sono disponibili qui.<br /> </td>
+   <td>ClientContext rappresenta una raccolta assemblata dinamicamente di dati utente. Le configurazioni predefinite ed Experience Cloud sono disponibili qui.<br /> </td>
   </tr>
   <tr>
    <td>Configurazioni servizi cloud<br /> </td>
@@ -416,7 +416,7 @@ Le console **Strumenti** consentono di accedere a diversi strumenti specifici pe
    <td>Verifica collegamenti esterni.</td>
   </tr>
   <tr>
-   <td>Dispositivi mobili</td>
+   <td>Dispositivo mobile</td>
    <td>Consente di creare siti Web progettati per dispositivi mobili.</td>
   </tr>
   <tr>

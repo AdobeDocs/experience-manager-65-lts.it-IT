@@ -7,8 +7,8 @@ role: User,Admin,Developer
 exl-id: c5b4ffe5-b722-4452-8450-1e1089e3ffba
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1366'
+ht-degree: 31%
 
 ---
 
@@ -80,7 +80,7 @@ Fai clic su **Crea** per aggiungere un nuovo progetto.
 
 I progetti sono costituiti da diversi tipi di informazioni che si desidera gestire insieme. Queste informazioni sono rappresentate da **Tiles** diversi.
 
-Al progetto possono essere associate le seguenti tessere.
+È possibile associare i seguenti riquadri al progetto.
 
 * [Risorse](#assets)
 * [Raccolte di risorse](#asset-collections)
@@ -227,7 +227,7 @@ Quando crei il progetto e aggiungi utenti ai vari ruoli, i gruppi associati al p
 
 Ad esempio, un progetto denominato Mioprogetto avrebbe tre gruppi: **Proprietari mioprogetto**, **Editor mioprogetto**, **Osservatori mioprogetto**.
 
-Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [&#x200B; durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
+Se il progetto viene eliminato, tali gruppi vengono eliminati solo se si seleziona l&#39;opzione appropriata [durante l&#39;eliminazione del progetto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Un amministratore può anche eliminare manualmente i gruppi in **Strumenti** > **Sicurezza** > **Gruppi**.
 
 ## Risorse aggiuntive {#additional-resources}
 
