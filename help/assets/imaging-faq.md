@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 9f95a54d-6c5e-44c1-965e-631ec7487308
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3487'
+source-wordcount: '3441'
 ht-degree: 2%
 
 ---
@@ -338,9 +338,9 @@ Questa intestazione indica quanto segue:
 >
 >**X-Adobe-Smart-Imaging = -1 con WebP consegnato**
 >
->Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, è possibile utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
+>Se il valore di `X-Adobe-Smart-Imaging` è -1 e WebP è ancora in fase di distribuzione, Smart Imaging è attivo. Tuttavia, i vantaggi in termini di dimensioni non sono stati calcolati a causa di una cache obsoleta. Per risolvere il problema, puoi utilizzare `cache=update` (una sola volta) nell&#39;URL dell&#39;immagine.
 >Esempio di utilizzo del modificatore:
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Per invalidare l’intera cache, è necessario creare un caso di supporto.
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>Per invalidare l&#39;intera cache, è necessario creare un caso di supporto.
 
 +++
 

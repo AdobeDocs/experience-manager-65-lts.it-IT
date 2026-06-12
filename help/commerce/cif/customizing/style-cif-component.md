@@ -12,8 +12,8 @@ role: Admin, Developer
 exl-id: 92689d52-6485-4cd5-a04f-4738096a0dba
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '2338'
-ht-degree: 16%
+source-wordcount: '2684'
+ht-degree: 19%
 
 ---
 
@@ -70,7 +70,7 @@ I CSS e JavaScript responsabili del rendering del tema o degli stili della vetri
 
 Gli stili specifici del brand possono essere applicati ai componenti core di AEM CIF aggiungendo e ignorando i CSS gestiti da queste librerie client. È fondamentale comprendere in che modo le librerie client sono strutturate e incluse nella pagina.
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it) è un progetto [webpack](https://webpack.js.org/) dedicato per gestire tutte le risorse front-end di un progetto. Questo consente agli sviluppatori front-end di utilizzare un numero qualsiasi di lingue e tecnologie come [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e molto altro.
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=it&=it) è un progetto [webpack](https://webpack.js.org/) dedicato per gestire tutte le risorse front-end di un progetto. Questo consente agli sviluppatori front-end di utilizzare un numero qualsiasi di lingue e tecnologie come [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e molto altro.
 
 Il modulo `ui.frontend` è anche un modulo Maven e integrato con il progetto più grande utilizzando un modulo NPM come [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante una compilazione, `aem-clientlib-generator` copia i file CSS e JavaScript compilati in una libreria client nel modulo `ui.apps`.
 
@@ -88,7 +88,7 @@ Apportare quindi una piccola modifica allo stile Teaser per verificare il funzio
 
    Si noti che nella cartella sono presenti più file Sass (`.scss`). Si tratta degli stili specifici di Commerce per ciascuno dei componenti Commerce.
 
-1. Aprire il file `_productteaser.scss`.
+1. Apri il file in `_productteaser.scss`.
 
 1. Aggiorna la regola `.item__image` e modifica la regola del bordo:
 
@@ -140,7 +140,7 @@ Apportare quindi una piccola modifica allo stile Teaser per verificare il funzio
    >
    >File di questo tipo vengono ignorati dal controllo del codice sorgente poiché devono essere generati durante il tempo di creazione.
 
-1. Controllare il file `ui.frontend/clientlib.config.js`.
+1. Ispeziona il file `ui.frontend/clientlib.config.js`.
 
    ```js
    /* clientlib.config.js*/
@@ -220,7 +220,7 @@ Ora che gli aggiornamenti del codice sono stati distribuiti, aggiungi una nuova 
 
 Verifica quindi l’inclusione delle librerie client nella pagina.
 
-1. Passare alla **home page** del sito: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Passa alla **home page** del sito: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Seleziona il menu **Informazioni pagina** e fai clic su **Visualizza come pubblicato**:
 
@@ -458,7 +458,7 @@ Dopo aver distribuito ad AEM il codice per il progetto, dovresti essere in grado
 
    ![Product Teaser multipli](../assets/style-cif-component/multiple-teasers-final.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 In [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) puoi verificare che il file CSS aggiornato sia stato distribuito: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
@@ -466,7 +466,7 @@ Durante la distribuzione di nuovi file CSS e/o JavaScript, è importante assicur
 
 AEM inoltre tenta di memorizzare nella cache le librerie client per migliorare le prestazioni. A volte, dopo la distribuzione del codice, vengono distribuiti i file meno recenti. Puoi annullare manualmente la validità della cache della libreria client di AEM utilizzando lo strumento [Rigenera librerie client](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Se si sospetta che AEM abbia memorizzato nella cache una versione precedente di una libreria client, è meglio annullare la validità della cache. La rigenerazione delle librerie è infatti inefficiente e richiede molto tempo.*
 
-## Complimenti {#congratulations}
+## Congratulazioni {#congratulations}
 
 Hai creato il tuo primo componente core CIF di AEM e hai utilizzato un server di sviluppo Webpack.
 
@@ -478,9 +478,9 @@ Usa il [Sistema di stili di AEM](/help/sites-authoring/style-system.md) per crea
 
 ## Risorse aggiuntive {#additional-resources}
 
-* [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
-* [Componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components)
-* [Configurare un ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=it)
+* [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype)
+* [Componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
+* [Configurare un ambiente di sviluppo AEM locale](https://experienceleague.adobe.com/it/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)
 * [Librerie lato client](/help/sites-developing/clientlibs.md)
-* [Guida introduttiva di AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
+* [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
 * [Sviluppo con il sistema di stili](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=it)

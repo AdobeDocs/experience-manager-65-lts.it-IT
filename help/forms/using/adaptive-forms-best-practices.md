@@ -6,8 +6,8 @@ role: Admin, User, Developer
 exl-id: b87629fa-85a9-4024-963a-4761bc093e62
 source-git-commit: d0529c8bce32e192cbbc7686f14825df57762363
 workflow-type: tm+mt
-source-wordcount: '5535'
-ht-degree: 0%
+source-wordcount: '5664'
+ht-degree: 1%
 
 ---
 
@@ -127,11 +127,11 @@ AEM Forms fornisce un [editor di regole](/help/forms/using/rule-editor.md) che c
 L’editor di regole fornisce un editor visivo e un editor di codice per la scrittura di regole. Quando scrivi le regole utilizzando la modalità editor di codice, tieni presente quanto segue:
 
 * Utilizza nomi significativi e univoci per i campi modulo e i componenti per evitare possibili conflitti durante la scrittura delle regole.
-* Utilizzare l&#39;operatore `this` per un componente per fare riferimento a se stesso in un&#39;espressione di regola. In questo modo la regola rimane valida anche se il nome del componente cambia. Esempio: `field1.valueCommit script: this.value > 10`.
+* Utilizzare l&#39;operatore `this` per un componente per fare riferimento a se stesso in un&#39;espressione di regola. In questo modo la regola rimane valida anche se il nome del componente cambia. Ad esempio, `field1.valueCommit script: this.value > 10`.
 
-* Utilizza i nomi dei componenti quando fai riferimento ad altri componenti del modulo. Utilizzare la proprietà `value` per recuperare il valore di un campo o di un componente. Esempio: `field1.value`.
+* Utilizza i nomi dei componenti quando fai riferimento ad altri componenti del modulo. Utilizzare la proprietà `value` per recuperare il valore di un campo o di un componente. Ad esempio, `field1.value`.
 
-* Per evitare conflitti, fai riferimento ai componenti per gerarchia univoca relativa. Esempio: `parentName.fieldName`.
+* Per evitare conflitti, fai riferimento ai componenti per gerarchia univoca relativa. Ad esempio, `parentName.fieldName`.
 
 * Quando gestisci regole complesse o di uso comune, considera la scrittura di regole business come funzioni in una libreria client separata che puoi specificare e riutilizzare nei moduli adattivi. La libreria client deve essere una libreria indipendente e non deve avere dipendenze esterne, ad eccezione di jQuery e Underscore.js. È inoltre possibile utilizzare la libreria client per applicare [la riconvalida lato server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) dei dati del modulo inviati.
 * I moduli adattivi forniscono un set di API che è possibile utilizzare per comunicare con ed eseguire azioni sui moduli adattivi. Alcune delle API chiave sono le seguenti. Per ulteriori informazioni, vedere [Riferimento API della libreria JavaScript per Forms adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).

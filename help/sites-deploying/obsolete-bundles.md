@@ -11,8 +11,8 @@ role: Admin
 exl-id: 29f1d07b-925b-4612-aa1b-34c387a5765f
 source-git-commit: b93a65226587936010c3dd53312c66e15f73cf2a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 8%
+source-wordcount: '384'
+ht-degree: 4%
 
 ---
 
@@ -81,7 +81,7 @@ Quando si esegue l’aggiornamento a AEM 6.5 LTS, i seguenti bundle vengono disi
 * com.adobe.cq.screens.mq.activemq
 * com.adobe.cq.screens.mq.core
 * com.adobe.cq.screens
-* com.adobe.cq.screens.sessions
+* com.adobe.cq.screens.session
 * com.adobe.granite.socketio
 * org.apache.jackrabbit.jackrabbit-api (Sostituito con la versione più recente org.apache.jackrabbit.oak-jackrabbit-api)
 * com.adobe.cq.commerce.cq-commerce-core

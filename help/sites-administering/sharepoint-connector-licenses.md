@@ -1,5 +1,5 @@
 ---
-title: Licenze del connettore SharePoint, avvisi sul copyright e liberatorie
+title: Licenze del connettore SharePoint, notifiche sul copyright e liberatorie
 description: Scopri le licenze dei connettori SharePoint, le note sul copyright e le liberatorie.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 4573803a-65dd-433a-b833-3242556bb1fe
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '406'
+ht-degree: 4%
 
 ---
 
-# Licenze del connettore SharePoint, avvisi sul copyright e liberatorie{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# Licenze del connettore SharePoint, notifiche sul copyright e liberatorie{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 In questa sezione sono elencate tutte le licenze, le note sul copyright e le esclusioni di responsabilità che devono essere esplicitamente indicate con il connettore Day JCR per MS® SharePoint.
 

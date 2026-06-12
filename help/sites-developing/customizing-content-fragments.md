@@ -10,8 +10,8 @@ role: Developer
 exl-id: 705bffea-ef70-40b5-81d8-b130d3908073
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 1%
+source-wordcount: '2826'
+ht-degree: 2%
 
 ---
 
@@ -82,7 +82,6 @@ I frammenti di contenuto con contenuto strutturato (ovvero, basati su un modello
 * Tutto il contenuto è archiviato nel nodo `jcr:content/data` della risorsa:
 
    * I dati dell’elemento vengono memorizzati nel sottonodo principale:
-
      `jcr:content/data/master`
 
    * Le varianti vengono memorizzate in un sottonodo che porta il nome della variante:
@@ -91,7 +90,7 @@ ad esempio, `jcr:content/data/myvariation`
    * I dati di ciascun elemento vengono memorizzati nel rispettivo sottonodo come una proprietà con il nome dell’elemento:
 ad esempio, il contenuto dell&#39;elemento `text` è archiviato come proprietà `text` in `jcr:content/data/master`
 
-* I metadati e il contenuto associato sono memorizzati sotto `jcr:content/metadata`
+* I metadati e il contenuto associato sono memorizzati di seguito `jcr:content/metadata`
 Ad eccezione del titolo e della descrizione, che non sono considerati metadati tradizionali e memorizzati in `jcr:content`
 
 #### Mappatura di frammenti di contenuto semplici su Assets {#mapping-simple-content-fragments-to-assets}

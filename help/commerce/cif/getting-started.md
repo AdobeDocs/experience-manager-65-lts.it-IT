@@ -8,8 +8,8 @@ role: Admin, Developer
 exl-id: 15face30-3039-49a0-bfee-56bff21e5c27
 source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 4%
+source-wordcount: '741'
+ht-degree: 8%
 
 ---
 
@@ -92,6 +92,6 @@ Per impostazioni più complesse che utilizzano più strutture di siti AEM combin
 
 ## Risorse aggiuntive {#additional-resources}
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+- [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
 - [Configurazione di Commerce Multi-Store](configuring/multi-store-setup.md)

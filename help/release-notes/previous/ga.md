@@ -6,8 +6,8 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: dfda31ac-765b-401d-98d0-c19f0de22aab
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
-source-wordcount: '1152'
+workflow-type: tm+mt
+source-wordcount: '1160'
 ht-degree: 100%
 
 ---
@@ -86,7 +86,7 @@ Consigliamo alla clientela di verificare se utilizzano la funzione/funzionalità
 
 | Area | Funzione | Sostituzione | Versione (SP) |
 |---|---|---|---|
-| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [L’editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per modifiche basate sui moduli. | 6.5 LTS GA |
+| Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [L’editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per modifiche basate sul modulo. | 6.5 LTS GA |
 
 ### Funzioni rimosse {#removed-features}
 

@@ -11,7 +11,7 @@ role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 0%
 
 ---
@@ -512,7 +512,7 @@ Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezion
    <td>Si tratta di un privilegio di aggregazione che contiene tutti gli altri privilegi predefiniti.</td>
   </tr>
   <tr>
-   <td><strong>Avanzate </strong></td>
+   <td><strong>Avanzate</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -561,7 +561,7 @@ Durante l&#39;aggiunta di una voce di controllo di accesso è possibile selezion
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Rimuovere un nodo.</td>
+   <td>Rimuovi un nodo.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>
