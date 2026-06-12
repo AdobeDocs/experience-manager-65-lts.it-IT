@@ -1,5 +1,5 @@
 ---
-title: Procedura dettagliata sul sito di riferimento per la selezione dei dipendenti
+title: Procedura dettagliata sul sito di riferimento per l’assunzione dei dipendenti
 description: Il sito di riferimento AEM Forms mostra come le organizzazioni possono utilizzare le funzioni di AEM Forms per implementare il flusso di lavoro di selezione dei dipendenti.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ role: Admin, User, Developer
 exl-id: 238cf38b-31f3-4a0b-ad26-b93df2844195
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
 
-# Procedura dettagliata sul sito di riferimento per la selezione dei dipendenti {#employee-recruitment-reference-site-walkthrough}
+# Procedura dettagliata sul sito di riferimento per l’assunzione dei dipendenti {#employee-recruitment-reference-site-walkthrough}
 
 ## Panoramica {#overview}
 

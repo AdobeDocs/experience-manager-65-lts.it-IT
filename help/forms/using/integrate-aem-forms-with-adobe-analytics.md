@@ -7,7 +7,7 @@ feature: Adaptive Forms
 exl-id: 5d1bd8c9-2d9b-47a5-9204-9328eadfb102
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Nella figura seguente sono illustrate le azioni da eseguire prima di visualizzar
 
 ![Panoramica di Analytics](/help/forms/using/assets/analyticsworkflow.png)
 
-## 1. Configurare [!DNL Adobe Analytics] {#Configure-adobe-analytics}
+## &#x200B;1. Configurare [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
 Prima di configurare [!DNL Adobe Analytics], creare:
 
@@ -56,7 +56,7 @@ Prima di configurare [!DNL Adobe Analytics], creare:
 
 Per configurare le estensioni AEM Forms e [Adobe Analytics](https://experienceleague.adobe.com/it/docs/experience-platform/tags/extensions/client/analytics/overview), effettua le seguenti operazioni:
 
-1. Accedi a Adobe Experience Cloud e seleziona un nome appropriato per l’azienda.
+1. Accedi ad Adobe Experience Cloud e seleziona un nome appropriato per l’azienda.
 
 1. Seleziona **[!UICONTROL Launch/Data Collection]** e seleziona **[!UICONTROL Vai a Launch/Data Collection]**.
 
@@ -196,7 +196,7 @@ Per pubblicare la configurazione, effettua le seguenti operazioni:
 
 ![Flusso di pubblicazione](/help/forms/using/assets/publish-flow.png)
 
-## 2. Configurare AEM Forms {#configure-aem-forms}
+## &#x200B;2. Configurare i moduli AEM {#configure-aem-forms}
 
 Prima di creare la configurazione di Adobe Launch, crea una [configurazione Adobe IMS utilizzando Adobe Launch come soluzione cloud](https://experienceleague.adobe.com/it/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/connect-aem-tag-property-using-ims).
 
@@ -272,7 +272,7 @@ Per mappare l&#39;evento a un evento di acquisizione personalizzato in [!DNL Ado
 
 1. Selezionare **Mantieni modifiche** ed eseguire le altre azioni specificate in [Configura regole](#configure-rules).
 
-## 3. Configurare e visualizzare i report in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
+## &#x200B;3. Configura e visualizza i report in [!DNL Adobe Analytics] {#view-reports-adobe-analytics}
 
 Dopo aver configurato un modulo adattivo per l&#39;invio di dati evento a [!DNL Adobe Analytics], puoi iniziare a visualizzare i rapporti in [!DNL Adobe Analytics]:
 

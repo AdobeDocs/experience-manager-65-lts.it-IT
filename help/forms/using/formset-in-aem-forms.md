@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 29339930-2c0c-46d8-84ad-92b1e8384422
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
 
 ---
@@ -303,7 +303,7 @@ La sottostruttura indica i dati dei moduli nel set di moduli. L’elemento è fa
 
 Questo tag indica l&#39;inizio dell&#39;XML di HTML5 Form. Questo viene aggiunto nel codice XML di invio se è presente nel codice XML di precompilazione o se non è presente alcun codice XML di precompilazione. Questo tag può essere rimosso dal file XML di precompilazione.
 
-### XFA:SET DI DATI {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +315,7 @@ Questo tag indica l&#39;inizio dell&#39;XML di HTML5 Form. Questo viene aggiunto
 
 `children: xfa:data`
 
-### XFA:DATI {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 

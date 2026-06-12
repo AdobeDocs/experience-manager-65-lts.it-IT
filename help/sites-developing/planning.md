@@ -11,8 +11,8 @@ role: Developer
 exl-id: 82199140-e464-45a5-9c00-dda2d8efde74
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 Questo documento descrive cosa devi sapere per pianificare il test. Inoltre, è necessario rispondere alle seguenti domande prima di eseguire i test:
 
 * [Quali ambienti di test saranno necessari?](/help/sites-developing/test-environments.md)
-* [Definizione dei test case](/help/sites-developing/test-cases.md)
+* [Definizione dei casi di test](/help/sites-developing/test-cases.md)
 * [Test: quando e con chi?](/help/sites-developing/when-who.md)
 
 ## Prima di iniziare {#before-you-start}

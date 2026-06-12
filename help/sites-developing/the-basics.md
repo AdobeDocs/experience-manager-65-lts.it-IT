@@ -11,8 +11,8 @@ role: Developer
 exl-id: fe3735ff-5c9b-4eb8-bf1d-f2189ec7e26f
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 0%
+source-wordcount: '3366'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Lo standard Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.
 
 Il lead delle specifiche è detenuto da Adobe Research (Switzerland) AG.
 
-Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto del repository.
+Il pacchetto [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&ast; viene utilizzato per l&#39;accesso diretto e la manipolazione del contenuto dell&#39;archivio.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -174,9 +174,9 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` allor
 
 * Richieste GET/HEAD e URL che terminano con .html (tipi di richiesta predefiniti, formato predefinito)
 
-  Lo script è /apps/hr/jobs/jobs.esp; l’ultima sezione di sling:resourceType forma il nome del file.
+  Lo script è /apps/hr/jobs/jobs.esp; l&#39;ultima sezione di sling:resourceType forma il nome del file.
 
-* Richieste POST (tutti i tipi di richiesta eccetto GET/HEAD, il nome del metodo deve essere in maiuscolo)
+* Richieste POST (tutti i tipi di richiesta tranne GET/HEAD, il nome del metodo deve essere in maiuscolo)
 
   POST viene utilizzato nel nome dello script.
 
@@ -196,7 +196,7 @@ Utilizzando l&#39;esempio precedente, se `sling:resourceType` è `hr/jobs` allor
 
   Lo script è `/apps/hr/jobs/jobs.print.esp`. Il selettore viene aggiunto al nome dello script.
 
-* Se non è definito sling:resourceType:
+* Se non è definito alcun sling:resourceType:
 
    * il percorso del contenuto viene utilizzato per cercare uno script appropriato (se ResourceTypeProvider basato sul percorso è attivo).
 
@@ -278,22 +278,22 @@ Se chiami direttamente la rappresentazione (lo script), nascondi la risorsa all�
 
 * gestione automatica di metodi http diversi da GET, tra cui:
 
-   * POST, PUT, DELETE gestito con un’implementazione sling predefinita
+   * POST, PUT, DELETE che viene gestito con un’implementazione sling predefinita
    * lo script `POST.jsp` nel percorso sling:resourceType
 
 * l&#39;architettura del codice non è più pulita né strutturata in modo chiaro come dovrebbe essere; di primaria importanza per lo sviluppo su larga scala
 
 ### API Sling {#sling-api}
 
-Questo utilizza il pacchetto API Sling, org.apache.sling.&ast; e librerie di tag.
+Questo utilizza il pacchetto API Sling, org.apache.sling.&ast; e le librerie di tag.
 
-### Riferimento a elementi esistenti mediante sling:include {#referencing-existing-elements-using-sling-include}
+### Riferimento a elementi esistenti tramite sling:include {#referencing-existing-elements-using-sling-include}
 
 Un&#39;ultima considerazione è la necessità di fare riferimento agli elementi esistenti all&#39;interno degli script.
 
 Gli script più complessi (aggregazione di script) devono accedere a più risorse (ad esempio, navigazione, barra laterale, piè di pagina, elementi di un elenco) includendo la *risorsa*.
 
-A questo scopo, utilizza il comando sling:include(&quot;/&lt;percorso>/&lt;risorsa>&quot;). Ciò include effettivamente la definizione della risorsa di riferimento, come nell’istruzione seguente che fa riferimento a una definizione esistente per il rendering delle immagini:
+A tale scopo, utilizzare il comando sling:include(&quot;/&lt;percorso>/&lt;risorsa>&quot;). Ciò include effettivamente la definizione della risorsa di riferimento, come nell’istruzione seguente che fa riferimento a una definizione esistente per il rendering delle immagini:
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -385,7 +385,7 @@ Definisce il componente Pagina utilizzato per eseguire il rendering della pagina
 
 **Pagina** Una pagina è un&#39;istanza di un modello.
 
-Una pagina ha un nodo di gerarchia di tipo cq:Page e un nodo di contenuto di tipo cq:PageContent. La proprietà sling:resourceType del nodo di contenuto punta al componente Pagina utilizzato per il rendering della pagina.
+Una pagina ha un nodo di gerarchia di tipo cq:Page e un nodo di contenuto di tipo cq:PageContent. La proprietà sling:resourceType del nodo del contenuto punta al componente Pagina utilizzato per il rendering della pagina.
 
 Ad esempio, per ottenere il nome della pagina corrente, è possibile utilizzare il codice seguente nello script:
 

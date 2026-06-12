@@ -11,7 +11,7 @@ role: Developer
 exl-id: 9036e26c-74cd-4013-a63d-70ece0f80904
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3611'
 ht-degree: 1%
 
 ---
@@ -182,7 +182,7 @@ Per rendere attivo il componente per l’utilizzo in uno scenario di flusso di l
 
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
-1. Al di sotto del nodo cq:EditConfig, aggiungi il seguente nodo:
+1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`
@@ -217,7 +217,7 @@ Eseguire la procedura seguente sul nuovo componente (vedere [Creazione di compon
 
    Per ulteriori informazioni sul nodo cq:editConfig, vedere [Configurazione del comportamento di modifica di un componente](/help/sites-developing/components-basics.md#edit-behavior).
 
-1. Al di sotto del nodo cq:EditConfig, aggiungi il seguente nodo:
+1. Sotto il nodo cq:EditConfig, aggiungi il seguente nodo:
 
    * Nome: `cq:formParameters`
    * Tipo: `nt:unstructured`

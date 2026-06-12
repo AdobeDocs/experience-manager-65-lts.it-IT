@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 097d2854-c0ab-4932-a951-2b4639cbee27
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -75,11 +75,11 @@ Le risorse nelle condizioni sottoposte a rendering in base alle regole applicate
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rifiuta Modifica.** Seleziona questa icona per rifiutare le modifiche che potresti aver apportato alla risorsa e alla regola nella condizione.
-   **[B] Accetta Modifica.** Seleziona questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.
+   **[A] Rifiuta modifica.** Seleziona questa icona per rifiutare le modifiche che potresti aver apportato alla risorsa e alla regola nella condizione.
+   **[B] Accetta modifica.** Seleziona questa icona per accettare le modifiche apportate alla risorsa e alla regola nella condizione.
    **[C] risorsa duplicata.** Seleziona questa icona per creare una copia della risorsa insieme all&#39;eventuale regola applicata nella condizione. Quindi puoi procedere alla modifica della regola e della risorsa per la risorsa duplicata. La duplicazione di una risorsa è utile per creare regole simili in modo da visualizzare risorse alternative in base a un particolare contesto.
    **[D] Mostra anteprima.** Selezionare questa icona per visualizzare un&#39;anteprima della risorsa nella pagina Crea\Modifica condizione.
-   Riordinamento del &#39;server&#39; di **.** Seleziona e mantieni questa icona per trascinare e rilasciare le risorse in modo da riordinarle all&#39;interno di una condizione.
+   Riordinamento del &#39;server&#39; **.** Seleziona e tieni premuto questa icona per trascinare e rilasciare le risorse per riordinarle all’interno di una condizione.
 
    Per specificare il comportamento della condizione in fase di esecuzione, è possibile selezionare le opzioni seguenti:
 

@@ -12,7 +12,7 @@ role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
 source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -86,8 +86,8 @@ Inoltre, è possibile specificare le istanze in standby a cui è consentito conn
 >
 >Il PID per l’archivio dei nodi di segmento e il servizio archivio in standby è stato modificato in AEM 6.3 rispetto alle versioni precedenti come segue:
 >
->* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService in org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
->* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* da org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService a org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >Effettuare le regolazioni di configurazione necessarie in modo che riflettano questa modifica.
 

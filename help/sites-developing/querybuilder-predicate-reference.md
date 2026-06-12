@@ -11,7 +11,7 @@ role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
 source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -517,7 +517,7 @@ Non supporta il filtro. Non supporta l’estrazione dei facet.
 Percorso assoluto del nodo per il quale trovare nodi simili.
 
 * **locale**
-Percorso relativo di un nodo discendente o `.` per il nodo corrente (facoltativo, l&#39;impostazione predefinita è &quot; `.`&quot;).
+Percorso relativo di un nodo discendente o `.` per il nodo corrente (facoltativo, il valore predefinito è &quot; `.`&quot;).
 
 ### `tag` {#tag}
 
