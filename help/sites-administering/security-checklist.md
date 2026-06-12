@@ -12,8 +12,8 @@ role: Admin,Developer
 exl-id: 9b957118-2a21-4e2b-a575-6518d5dba54f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2958'
-ht-degree: 1%
+source-wordcount: '3024'
+ht-degree: 3%
 
 ---
 
@@ -110,11 +110,11 @@ Adobe consiglia di definire pagine personalizzate del gestore degli errori, in p
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=it).
+>Per ulteriori dettagli, vedere [Come creare script personalizzati o gestori di errori](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html).
 
 ### Completa elenco di controllo della sicurezza di Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=it).
+AEM Dispatcher è un componente fondamentale dell&#39;infrastruttura aziendale. Adobe consiglia di completare l&#39;[elenco di controllo della sicurezza di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -255,7 +255,7 @@ Quando si lavora con AEM, sono disponibili diversi metodi di gestione delle impo
 
 ### Mitigare gli attacchi Denial of Service (DoS) {#mitigate-denial-of-service-dos-attacks}
 
-Un attacco Denial of Service (DoS) è un tentativo di rendere una risorsa del computer non disponibile per gli utenti a cui è destinata. Questo attacco viene spesso eseguito sovraccaricando la risorsa, ad esempio:
+Un attacco Denial of Service (DoS) è un tentativo di rendere la risorsa di un computer indisponibile per gli utenti a cui è destinata. Questo attacco viene spesso eseguito sovraccaricando la risorsa, ad esempio:
 
 * Un flusso di richieste provenienti da una sorgente esterna.
 * Una richiesta di informazioni superiore a quelle che il sistema è in grado di fornire.
@@ -324,7 +324,7 @@ Per evitare l&#39;uso improprio del DoS, è possibile effettuare le seguenti ope
 >
 >Questa mitigazione deve essere eseguita solo sugli ambienti AEM che non utilizzano Forms.
 
-Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza di **&ast;.form.&ast;** stringa nelle query.
+Poiché AEM non fornisce indici predefiniti per `FormChooserServlet`, l&#39;utilizzo di selettori di moduli nelle query può attivare un costoso attraversamento dell&#39;archivio, in genere bloccando l&#39;istanza di AEM. I selettori di moduli possono essere rilevati dalla presenza della stringa **&amp;ast;.form.&amp;ast;** nelle query.
 
 Per attenuare questo problema, puoi effettuare le seguenti operazioni:
 
@@ -349,7 +349,7 @@ Arresta i bundle OSGi appropriati per disabilitare WebDAV negli ambienti di auth
 
    `https://<*host*>:<*port*>/system/console`
 
-   Esempio: `http://localhost:4503/system/console/bundles`.
+   Ad esempio, `http://localhost:4503/system/console/bundles`.
 
 1. Nell’elenco dei bundle, individua il bundle denominato:
 
@@ -377,7 +377,7 @@ Non è necessario eseguire alcuna configurazione per abilitarla, perché è ora 
 
 Anche se non consigliato, puoi disattivarlo nel caso sia necessaria la vecchia implementazione per compatibilità con le applicazioni esistenti. A tale scopo, è necessario effettuare le seguenti operazioni:
 
-1. Vai alla console Web e rimuovi la voce **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** dalla proprietà **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Vai alla console Web e rimuovi la voce **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** dalla proprietà **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
    Puoi anche trovare il provider della sicurezza Oak cercando il PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** nelle configurazioni OSGi.
 
@@ -464,6 +464,6 @@ Il modo consigliato per replicare in modo sicuro le chiavi nelle istanze consist
 
 Adobe consiglia di eseguire un test di penetrazione dell’infrastruttura AEM prima di procedere alla produzione.
 
-### Best practice per lo sviluppo {#development-best-practices}
+### Best practice specifiche per lo sviluppo {#development-best-practices}
 
 È fondamentale che i nuovi sviluppi seguano le [Best practice per la sicurezza](/help/sites-developing/security.md) per garantire la sicurezza dell&#39;ambiente AEM.
