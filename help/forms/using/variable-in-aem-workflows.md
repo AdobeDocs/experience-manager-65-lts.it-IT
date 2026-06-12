@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 1a0d00f9-45f7-45af-ab34-d1c164980abb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2127'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html).
 
 Una variabile in un modello di flusso di lavoro è un modo per memorizzare un valore in base al relativo tipo di dati. Puoi quindi utilizzare il nome della variabile in qualsiasi passaggio del flusso di lavoro per recuperare il valore memorizzato nella variabile. È inoltre possibile utilizzare i nomi delle variabili per definire le espressioni per l&#39;adozione delle decisioni di instradamento.
 
@@ -39,13 +39,13 @@ Le variabili sono un&#39;estensione dell&#39;interfaccia [MetaDataMap](https://d
 Puoi creare le variabili utilizzando la sezione Variabili disponibile nella barra laterale del modello di flusso di lavoro. Le variabili del flusso di lavoro di AEM supportano i seguenti tipi di dati:
 
 * **Tipi di dati di base**: Long, Double, Boolean, Date e String
-* **Tipi di dati complessi**: [Documento](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e istanza del modello dati modulo.
+* **Tipi di dati complessi**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e istanza del modello dati modulo.
 
 >[!NOTE]
 >
 >I flussi di lavoro supportano solo il formato ISO8601 per le variabili di tipo Data.
 
-È necessario [il pacchetto del componente aggiuntivo AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i tipi di dati Document and Form Data Model.  Utilizzare il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, crea una variabile ArrayList e seleziona Stringa come sottotipo per memorizzare più valori stringa utilizzando la variabile.
+È necessario [il pacchetto del componente aggiuntivo AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per i tipi di dati Document and Form Data Model.  Utilizzare il tipo di dati ArrayList per creare raccolte di variabili. È possibile creare una variabile ArrayList per tutti i tipi di dati primitivi e complessi. Ad esempio, crea una variabile ArrayList e seleziona Stringa come sottotipo per memorizzare più valori stringa utilizzando la variabile.
 
 Per creare una variabile, effettua le seguenti operazioni:
 
@@ -197,7 +197,7 @@ Utilizza le seguenti API nello script ECMA per recuperare i valori per le variab
 | Modello dati modulo | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-È necessario [il pacchetto del componente aggiuntivo AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) per i tipi di dati delle variabili Document and Form Data Model.
+È necessario [il pacchetto del componente aggiuntivo AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) per i tipi di dati delle variabili Document and Form Data Model.
 
 **Esempio**
 
@@ -267,7 +267,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ### Archiviare dati utente sensibili all’esterno di JCR utilizzando variabili del flusso di lavoro {#jcr-independent-persistance}
 
 I dati elaborati utilizzando Forms Workflow possono contenere dati utente sensibili, come informazioni personali identificabili e informazioni personali riservate. Le aziende possono scegliere di archiviare i dati, elaborati da vari passaggi del flusso di lavoro (e trasmessi utilizzando le variabili del flusso di lavoro), dall’archiviazione JCR a un archivio dati esterno di loro proprietà e gestito. Per ulteriori informazioni sulla persistenza dei dati del flusso di lavoro in un archivio esterno, vedere [Utilizzo delle variabili del flusso di lavoro per i datastore di proprietà del cliente](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] fornisce l&#39;API del flusso di lavoro [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) per archiviare le variabili del flusso di lavoro negli archivi BLOB di Azure esterni. Per informazioni dettagliate sull&#39;utilizzo dell&#39;API, vedere [Utilizzare le variabili del flusso di lavoro per parametrizzare i dati sensibili e archiviarli in archivi dati esterni](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+[!DNL Adobe Experience Manager] fornisce l&#39;API del flusso di lavoro [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) per archiviare le variabili del flusso di lavoro in archivi BLOB Azure esterni. Per informazioni dettagliate sull&#39;utilizzo dell&#39;API, vedere [Utilizzare le variabili del flusso di lavoro per parametrizzare i dati sensibili e archiviarli in archivi dati esterni](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Modificare una variabile {#edit-a-variable}
 

@@ -12,7 +12,7 @@ role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '4829'
+source-wordcount: '4969'
 ht-degree: 1%
 
 ---
@@ -333,7 +333,7 @@ Informazioni sull’archivio CRX
    <td>true indica che le applicazioni possono eseguire l'osservazione dell'archivio registrata. con l'osservazione nel diario, è possibile ottenere una serie di notifiche di modifica per un periodo di tempo specifico. </td>
   </tr>
   <tr>
-   <td>query.languages</td>
+   <td>query.language</td>
    <td>I linguaggi di query supportati dall’archivio. Nessun valore indica che non è supportata alcuna query.</td>
   </tr>
   <tr>
@@ -377,7 +377,7 @@ Informazioni sull’archivio CRX
    <td>true indica che questo nodo cluster è il master preferito del cluster.</td>
   </tr>
   <tr>
-   <td>option.transactions.supported</td>
+   <td>option.transaction.supported</td>
    <td>true indica che il repository supporta le transazioni.</td>
   </tr>
   <tr>
@@ -385,7 +385,7 @@ Informazioni sull’archivio CRX
    <td>URL del fornitore del repository.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
+   <td>node.type.management.value.restrictions.supported</td>
    <td>true indica che l'archivio supporta vincoli di valore per le proprietà dei nodi.</td>
   </tr>
   <tr>

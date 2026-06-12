@@ -11,8 +11,8 @@ role: Admin
 exl-id: 3ffa7c80-ce59-41cf-bb50-c6caf77d9baa
 source-git-commit: 09f3d38e9f9c7f882d8b03dcf86db68cb8885a08
 workflow-type: tm+mt
-source-wordcount: '4196'
-ht-degree: 6%
+source-wordcount: '4372'
+ht-degree: 7%
 
 ---
 
@@ -120,7 +120,7 @@ Puoi anche estrarre gli indici nel sistema in formato JSON. A questo scopo, devi
 
 **Durante lo sviluppo**
 
-Impostare soglie basse per `oak.queryLimitInMemory` (ad esempio, 10000) e Oak. `queryLimitReads` (ad esempio, 5000) e ottimizza la costosa query quando si preme un UnsupportedOperationException che indica &quot;La query ha letto più di x nodi...&quot;
+Impostare soglie basse per `oak.queryLimitInMemory` (ad esempio, 10000) e Oak. `queryLimitReads` (ad esempio, 5000) e ottimizzare la costosa query quando si preme un UnsupportedOperationException che indica &quot;La query legge più di x nodi...&quot;
 
 Questo consente di evitare le query che richiedono molte risorse, ovvero che non sono supportate da alcun indice o da un indice a copertura ridotta. Ad esempio, una query che legge 1 milione di nodi porterebbe a un aumento dell’I/O e avrebbe un impatto negativo sulle prestazioni complessive dell’applicazione. Qualsiasi query che non riesce a causa di limiti superiori deve essere analizzata e ottimizzata.
 
@@ -200,7 +200,7 @@ Quando si rimuove un indice in un’istanza MongoDB, il costo dell’eliminazion
 
 ### Scheda di riferimento rapido per le query JCR {#jcrquerycheatsheet}
 
-Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l&#39;utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica ad AEM 6.5, AEM 6.5 LTS e AEM as a Cloud Service.
+Per supportare la creazione di query JCR e le definizioni degli indici efficienti, la [Scheda di riferimento rapido per le query JCR](assets/JCR_query_cheatsheet-v1.1.pdf) è disponibile per il download e l’utilizzo come riferimento durante lo sviluppo. Contiene query di esempio per QueryBuilder, XPath e SQL-2 comprendendo scenari multipli che si comportano in modo diverso in termini di prestazioni delle query. Fornisce inoltre consigli su come creare o personalizzare gli indici Oak. Il contenuto di questa Scheda di riferimento rapido si applica ad AEM 6.5, AEM 6.5 LTS e AEM as a Cloud Service.
 
 ## Reindicizzazione {#re-indexing}
 
@@ -358,7 +358,7 @@ Di seguito sono riportati i possibili problemi relativi alle risoluzioni:
    * Se il problema non viene risolto e le eccezioni `AsyncIndexUpdate` persistono:
 
       1. [Reindicizza](#how-to-re-index) l&#39;indice erring
-      1. Archivia anche un ticket di [supporto Adobe](https://helpx.adobe.com/it/support.html)
+      1. Archivia anche un ticket di [supporto Adobe](https://helpx.adobe.com/support.html)
 
 ### Reindicizzare {#how-to-re-index}
 

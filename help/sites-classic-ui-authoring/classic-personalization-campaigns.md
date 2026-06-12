@@ -11,8 +11,8 @@ role: User
 exl-id: 86fe233e-b3fb-432e-861e-8134df2744e4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
 
@@ -28,9 +28,9 @@ Questo documento descrive i vari elementi che compongono le campagne. Informazio
 * [E-mail marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [Pagine di destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Offerte Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [Utilizzo del Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Utilizzo di Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Segmentazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [Configurazione della campagna](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [Impostazione della campagna](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 La gestione delle campagne è composta da vari elementi:
 
@@ -41,10 +41,9 @@ In Adobe Experience Manager (AEM), i brand sono l&#39;unità di livello principa
 Una campagna è una raccolta di singole **esperienze**.
 
 * **Esperienze**
-Il contenuto mirato forma le varie esperienze, presentate al visitatore ai **punti di contatto**. Sono disponibili diversi tipi di esperienza:
+Il contenuto mirato forma le varie esperienze, presentate al visitatore in **Punti di contatto**. Sono disponibili diversi tipi di esperienza:
 
    * **Teaser**
-
      [Le pagine/paragrafi teaser](#teasers) vengono utilizzati per indirizzare specifici visitatori **Segmenti** a contenuti incentrati sui loro interessi.
 
      Le pagine teaser possono:

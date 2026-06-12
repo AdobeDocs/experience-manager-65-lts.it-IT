@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il modello dati del modulo
+title: Utilizzare il modello dati modulo
 description: L’integrazione dei dati fornisce l’editor del modello dati del modulo per configurare e utilizzare i modelli dati del modulo.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,18 @@ role: Admin, User, Developer
 exl-id: e95c4cc4-1800-4bd8-a3c4-c6c868a1276d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '4168'
-ht-degree: 0%
+source-wordcount: '4264'
+ht-degree: 1%
 
 ---
 
-# Utilizzare il modello dati del modulo{#work-with-form-data-model}
+# Utilizzare il modello dati modulo{#work-with-form-data-model}
 
 ## Applicabile a {#applies-to}
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![integrazione dati](do-not-localize/data-integeration.png)
 
@@ -31,7 +31,7 @@ Se hai poca esperienza con l’integrazione dei dati in Forms e non hai configur
 
 * [Integrazione dei dati di AEM Forms](/help/forms/using/data-integration.md)
 * [Configurare origini dati](/help/forms/using/configure-data-sources.md)
-* [Creare un modello di dati per moduli](/help/forms/using/create-form-data-models.md)
+* [Creare un modello di dati modulo](/help/forms/using/create-form-data-models.md)
 
 Continua a leggere per i dettagli sulle varie attività e configurazioni che puoi eseguire utilizzando l’editor dei modelli di dati dei moduli.
 
@@ -298,7 +298,7 @@ Per aggiungere un&#39;associazione:
 Per modificare le proprietà:
 
 1. Selezionare la casella di controllo accanto a un oggetto modello dati, a una proprietà o a un servizio nel modello dati del modulo.
-1. Selezionare **[!UICONTROL Modifica proprietà]**. Viene aperto il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
+1. Seleziona **[!UICONTROL Modifica proprietà]**. Viene aperto il riquadro **[!UICONTROL Modifica proprietà]** per l&#39;oggetto modello, la proprietà o il servizio selezionato.
 
    * **Oggetto modello dati**: specificare i servizi di lettura e scrittura e gli argomenti di modifica.
    * **Proprietà**: specificare il tipo, il sottotipo e il formato per la proprietà. È inoltre possibile specificare se la proprietà selezionata è la chiave primaria per l&#39;oggetto modello dati.
@@ -382,7 +382,7 @@ Dopo aver aggiunto il servizio `GET LINK` alla scheda Servizi nel modello dati d
 
 >[!NOTE]
 >
->I valori disponibili nel campo **Valore predefinito** dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?Pulsante di attivazione/disattivazione**. Quando è abilitata, mostra le proprietà di navigazione del tipo Raccolta.
+>I valori disponibili nel campo **Valore predefinito** dell&#39;argomento **NavigationPropertyName** dipendono dallo stato dell&#39;array **Return?** interruttore. Quando è abilitata, mostra le proprietà di navigazione del tipo Raccolta.
 
 In questo esempio, è inoltre possibile scegliere l&#39;oggetto modello di output come oggetto Person e l&#39;argomento proprietà di navigazione come Friends o BestFriend (a seconda che l&#39;array **Return sia o meno?** è abilitato o disabilitato).
 

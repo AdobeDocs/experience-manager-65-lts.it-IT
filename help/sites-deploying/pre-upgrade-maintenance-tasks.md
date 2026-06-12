@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
 source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 0%
+source-wordcount: '1153'
+ht-degree: 2%
 
 ---
 
@@ -95,7 +95,7 @@ Il componente OSGI `PreUpgradeTasksMBeanImpl` è preconfigurato con un elenco di
 
 Per accedere a MBean:
 
-1. Passaggio alla console JMX all&#39;indirizzo *https://serveraddress:serverport/system/console/jmx*
+1. Vai alla console JMX all&#39;indirizzo *https://serveraddress:serverport/system/console/jmx*
 1. Cerca **PreUpgradeTasks** e fai clic sul risultato
 
 1. Seleziona un metodo dalla sezione **Operazioni** e seleziona **Richiama** nella finestra seguente.

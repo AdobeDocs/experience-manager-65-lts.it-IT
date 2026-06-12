@@ -156,7 +156,7 @@ Una volta scaricato, puoi installare e configurare il connettore S3 come segue:
 
    Copia tutti i contenuti dalla posizione precedente in `<aem-install>/crx-quickstart/install.`
 
-1. Se AEM è già configurato per funzionare con l’archiviazione Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
+1. Se AEM è già configurato per funzionare con l&#39;archivio Tar o MongoDB, rimuovi eventuali file di configurazione esistenti dalla cartella ***&lt;aem-install>***/*crx-quickstart*/*install* prima di procedere. I file che devono essere rimossi sono:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -196,7 +196,7 @@ Per effettuare l’aggiornamento a una nuova versione del connettore 1.60.x S3, 
 
 1. Scarica la versione più recente del feature pack 1.60.x dall&#39;archivio [Maven.](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 1. Decomprimere il contenuto in una cartella separata, quindi passare a `jcr_root/libs/system/install/`.
-1. Copia tutte le sottocartelle in **&lt;aem-install>**/crx-quickstart/install/ nella cartella di installazione di AEM.
+1. Copiare tutte le sottocartelle in **&lt;aem-install>**/crx-quickstart/install/ nella cartella di installazione di AEM.
 1. Avvia AEM e controlla la funzionalità del connettore.
 
 Puoi utilizzare il file di configurazione con le opzioni descritte di seguito.

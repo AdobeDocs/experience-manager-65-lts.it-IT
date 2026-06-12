@@ -7,8 +7,8 @@ role: Admin
 exl-id: 73230415-078c-4933-8521-bc18e5490103
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1472'
-ht-degree: 4%
+source-wordcount: '1505'
+ht-degree: 5%
 
 ---
 
@@ -67,7 +67,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 >
 >È possibile creare configurazioni utilizzando il Browser configurazioni solo se l&#39;utente dispone dei diritti `admin`. I diritti di amministratore sono necessari anche per assegnare i diritti di accesso alla configurazione o per modificare in altro modo una configurazione.
 
-#### Creazione di una configurazione  {#creating-a-configuration}
+#### Creazione di una configurazione {#creating-a-configuration}
 
 È semplice creare una configurazione in AEM utilizzando il Browser configurazioni.
 
@@ -75,7 +75,7 @@ Il browser di configurazioni consente all’amministratore di creare, gestire e 
 1. Fai clic su **Crea**.
 1. Specifica il **titolo** e il **nome** da assegnare alla configurazione.
 
-   ![Crea configurazione](assets/configuration-create.png)
+   ![Creare una configurazione](assets/configuration-create.png)
 
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventa il nome del nodo nell’archivio.

@@ -12,8 +12,8 @@ role: Admin
 exl-id: a39ed93e-4276-48ff-ba49-d0f630409222
 source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 2%
+source-wordcount: '1491'
+ht-degree: 7%
 
 ---
 
@@ -30,7 +30,7 @@ Quando si associa una pagina Web a un framework, il framework esegue il tracciam
 
 ### Account Adobe Analytics {#adobe-analytics-account}
 
-Per tenere traccia dei dati di AEM in Adobe Analytics, devi disporre di un account Adobe Experience Cloud Adobe Analytics valido.
+Per tenere traccia dei dati di AEM in Adobe Analytics, devi disporre di un account Adobe Analytics Adobe Experience Cloud valido.
 
 L’account Adobe Analytics deve:
 
@@ -45,13 +45,13 @@ L’account Adobe Analytics deve:
 
 Prima di procedere, accertati di disporre delle credenziali per accedere ad Adobe Analytics. In uno dei modi seguenti:
 
-* [Accesso a Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
+* [Accesso ad Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
 * [Accesso ad Adobe Analytics](https://sc.omniture.com/login/)
 
 ### Configurazione di AEM per l’utilizzo dei centri dati di Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-I [data center](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=it) di Adobe Analytics raccolgono, elaborano e memorizzano i dati associati alla suite di rapporti di Adobe Analytics. Configura AEM per utilizzare il centro dati che ospita la tua suite di rapporti Adobe Analytics. Il centro dati è menzionato nel contratto. Per queste informazioni, contatta un amministratore della tua organizzazione.
+I [data center](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) di Adobe Analytics raccolgono, elaborano e memorizzano i dati associati alla suite di rapporti di Adobe Analytics. Configura AEM per utilizzare il centro dati che ospita la tua suite di rapporti Adobe Analytics. Il centro dati è menzionato nel contratto. Per queste informazioni, contatta un amministratore della tua organizzazione.
 
 Se necessario, utilizzare quanto segue per essere instradato al data center corretto: `https://api.omniture.com/`.
 
@@ -84,7 +84,7 @@ Utilizza la [console Web per configurare il bundle OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
+>In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
 >È ora necessario utilizzare il plug-in [ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it).
 
@@ -92,7 +92,7 @@ Utilizza la [console Web per configurare il bundle OSGi](/help/sites-deploying/c
 
 >[!CAUTION]
 >
->A causa di modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
+>In seguito a modifiche di sicurezza nell’API di Adobe Analytics, non è più possibile utilizzare la versione di Activity Map inclusa in AEM.
 >
 >È ora necessario utilizzare il plug-in [ActivityMap fornito da Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=it).
 
@@ -174,7 +174,7 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 
 1. Dalla console **Sites**, seleziona la pagina che desideri impostare con il tracciamento.
 1. Apri **[Proprietà pagina](/help/sites-authoring/editing-page-properties.md)** direttamente dalla console o dall&#39;editor pagina.
-1. Apri la scheda **&#x200B; Cloud Services**.
+1. Apri la scheda** Cloud Services**.
 
 1. Utilizza il menu a discesa **Aggiungi configurazione** per selezionare **Adobe Analytics** dalle opzioni disponibili. Se è presente l’ereditarietà, disattivala prima che il selettore diventi disponibile.
 
@@ -183,7 +183,7 @@ I discendenti della pagina ereditano l’associazione con il framework. Ad esemp
 1. Seleziona **Salva e chiudi**.
 1. Per attivare la pagina e le configurazioni/i file collegati, **[Pubblica](/help/sites-authoring/publishing-pages.md)** la pagina.
 1. Il passaggio finale consiste nel visitare la pagina nell&#39;istanza di pubblicazione e cercare una parola chiave (ad esempio, melanzana) utilizzando il componente **Ricerca**.
-1. Puoi quindi controllare le chiamate effettuate ad Adobe Analytics utilizzando uno strumento appropriato, ad esempio [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=it).
+1. Puoi quindi controllare le chiamate effettuate ad Adobe Analytics utilizzando uno strumento appropriato, ad esempio [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
 1. Utilizzando l’esempio fornito, la chiamata deve contenere il valore immesso (ovvero, melanzana) in eVar7 e l’elenco degli eventi deve contenere event3.
 
 ### Visualizzazioni pagina {#page-views}

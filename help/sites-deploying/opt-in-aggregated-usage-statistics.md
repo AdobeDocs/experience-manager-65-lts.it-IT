@@ -12,8 +12,8 @@ role: Admin
 exl-id: 410691eb-27a9-4f8e-b926-01027c7f84d4
 source-git-commit: cc96a14ebaf9f895a798b5f4904f5b4769b990bb
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 2%
+source-wordcount: '323'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-Per migliorare Adobe Experience Cloud, invii statistiche su come interagisci con Adobe Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
+Per migliorare Adobe Experience Cloud, invii ad Adobe statistiche su come interagisci con Adobe Experience Manager (AEM). Queste informazioni non contengono dati sui visitatori del sito della tua azienda e vengono utilizzate solo per aiutare Adobe a fornire, supportare e migliorare l’esperienza utente.
 
 Puoi partecipare alla raccolta delle statistiche di utilizzo utilizzando l’interfaccia utente touch o la console web.
 
@@ -70,7 +70,7 @@ Puoi dare il consenso (o la rinuncia) utilizzando la console web come segue:
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Selezionare la casella di controllo **Abilitato**. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
+1. Seleziona la casella di controllo **Abilitato**. In alternativa, è possibile deselezionare la casella di controllo se si desidera rinunciare alla raccolta delle statistiche di utilizzo.
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

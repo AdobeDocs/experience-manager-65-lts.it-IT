@@ -7,7 +7,7 @@ role: Admin
 exl-id: b21555f2-bc07-4653-a5da-966b9aa7ea1f
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -102,9 +102,9 @@ Queste cartelle sono di tipo `nt:folder` e devono contenere il bundle appropriat
 
 Se sono state definite configurazioni per più modalità di esecuzione, è necessario definire quale deve essere utilizzata all&#39;avvio. Esistono diversi metodi per specificare quale modalità di esecuzione utilizzare; l’ordine di risoluzione è:
 
-1. [proprietà di sistema (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [proprietà di sistema (`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties` file](#using-the-sling-properties-file)
+1. [Opzione `-r`](#using-the-r-option)
 1. [Rilevamento del nome file](#filename-detection-renaming-the-jar-file)
 
 Quando si utilizza un server applicazioni è inoltre possibile [definire la modalità di esecuzione in web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
