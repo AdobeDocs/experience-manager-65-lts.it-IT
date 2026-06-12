@@ -1,5 +1,5 @@
 ---
-title: Creare tabelle complesse accessibili in moduli HTML5
+title: Creare tabelle complesse accessibili nei moduli HTML5
 description: Scopri come creare tabelle accessibili nei moduli di HTML5.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: e6e6c08a-3bed-4713-a0e0-2a02607c7fc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 5%
 
 ---
 
-# Creare tabelle complesse accessibili in moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
+# Creare tabelle complesse accessibili nei moduli HTML5 {#create-accessible-complex-tables-in-html-forms}
 
 L’implementazione predefinita delle tabelle in HTML5 Forms utilizza gli elementi DIV di HTML per eseguire il rendering di una tabella. Il rendering prevede l’utilizzo dei ruoli ARIA per soddisfare i requisiti di accessibilità.
 

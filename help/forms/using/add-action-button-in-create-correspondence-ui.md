@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: 8294cbbe-f37f-41d0-b8e8-298f9413462e
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1888'
 ht-degree: 1%
 
 ---
@@ -168,7 +168,7 @@ Dopo aver apportato tutte le modifiche lato server, riavvia il bundle Adobe Asse
 >
 >Potrebbe essere necessario cancellare la cache del browser.
 
-1. Vai a `https://[host]:'port'/system/console/bundles`. Se necessario, accedi come amministratore.
+1. Passa a `https://[host]:'port'/system/console/bundles`. Se necessario, accedi come amministratore.
 
 1. Individua il bundle di blocchi predefiniti di Adobe Asset Composer. Riavvia il bundle: fai clic su Interrompi, quindi fai clic su Avvia.
 
@@ -190,7 +190,7 @@ La gestione dell’azione/pulsante al momento del clic sull’azione/pulsante in
 * Abilitazione/disabilitazione dell’azione appena aggiunta: operazione eseguita escludendo la funzione actionEnabled().
 * Gestione effettiva dell’azione quando l’utente fa clic sul pulsante: eseguita escludendo l’implementazione della funzione handleAction().
 
-1. Vai a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, accedi come amministratore.
+1. Passa a `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessario, accedi come amministratore.
 
 1. Nella cartella delle app, crea una cartella denominata `js` nel ramo /apps di CRX con una struttura simile a quella della cartella seguente:
 
@@ -378,9 +378,9 @@ Il processo LiveCycle richiesto che abilita il processo del servizio e-mail.
 
 1. Fai clic su **Importa**.
 
-#### Aggiunta di ServiceName all&#39;elenco di servizi di Inserisce nell&#39;elenco Consentiti di servizi di {#adding-servicename-to-the-allowlist-service-list}
+#### Aggiunta di ServiceName all&#39;elenco dei servizi di Inserisce nell&#39;elenco Consentiti di in corso {#adding-servicename-to-the-allowlist-service-list}
 
-Nel server di Experience Manager Experience Manager, indica i servizi LiveCycle a cui desideri accedere.
+Nel server di Experience Manager, indica i servizi LiveCycle a cui desideri accedere.
 
 1. Accedere come amministratore a `https:/[host]:'port'/system/console/configMgr`.
 

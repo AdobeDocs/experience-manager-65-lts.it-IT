@@ -35,7 +35,7 @@ Nella tabella seguente vengono illustrati i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -83,7 +83,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
