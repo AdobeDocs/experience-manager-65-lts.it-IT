@@ -1,5 +1,5 @@
 ---
-title: Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola AEM Sites
+title: Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola di AEM Sites
 description: Incorporare moduli adattivi o comunicazioni interattive nelle pagine AEM Sites. Gli utenti possono compilare e inviare moduli senza uscire dalla pagina Sites.
 topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 2ac51487-42e0-4b8a-b224-2858f26e85ef
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 0%
+source-wordcount: '1192'
+ht-degree: 3%
 
 ---
 
-# Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
+# Incorporare un modulo adattivo o una comunicazione interattiva nell’applicazione a pagina singola di AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 AEM Forms consente agli sviluppatori di moduli di incorporare facilmente moduli adattivi e comunicazioni interattive in un’applicazione a pagina singola di AEM Sites. Il modulo adattivo incorporato e la comunicazione interattiva sono completamente funzionali e gli utenti possono compilare e inviare il modulo senza uscire dalla pagina. Aiuta l’utente a rimanere nel contesto di altri elementi della pagina web e a interagire contemporaneamente con il modulo adattivo o la comunicazione interattiva.
 
-Nell&#39;applicazione a pagina singola AEM Sites è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il [componente Contenitore SPA di AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente AEM Forms per applicazioni a pagina singola AEM Sites che puoi aggiungere alla pagina Sites.
+Nell&#39;applicazione a pagina singola AEM Sites è possibile aggiungere un modulo adattivo o una comunicazione interattiva utilizzando il [componente Contenitore SPA di AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) È un componente di AEM Forms per applicazioni a pagina singola di AEM Sites che puoi aggiungere alla pagina Sites.
 
 Per informazioni sull&#39;incorporamento di un modulo adattivo in un AEM Sites non SPA, consulta [Incorporare un modulo adattivo o una comunicazione interattiva nella pagina AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
@@ -52,7 +52,7 @@ Esegui la procedura seguente per installare il componente Contenitore SPA di AEM
 
 ## Incorporare un modulo adattivo o una comunicazione interattiva {#af-component}
 
-AEM Forms Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando il componente Contenitore di applicazioni a pagina singola:
+Per incorporare un modulo adattivo o una comunicazione interattiva utilizzando il componente Contenitore di applicazioni a pagina singola:
 
 1. Apri la pagina AEM Sites, in modalità di modifica, in cui desideri incorporare un modulo adattivo o una comunicazione interattiva.
 1. Inserire il componente **AEM Form per applicazioni a pagina singola** nella pagina utilizzando una delle opzioni seguenti:

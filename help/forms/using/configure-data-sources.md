@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 30b7b311-574d-4b01-8b48-0342c160d4d4
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2085'
-ht-degree: 1%
+source-wordcount: '2105'
+ht-degree: 2%
 
 ---
 
@@ -41,7 +41,7 @@ L&#39;integrazione dei dati supporta OAuth2.0([Codice di autorizzazione](https:/
 È possibile configurare i database relazionali utilizzando Configurazione della console Web di AEM. Effettua le seguenti operazioni:
 
 1. Passa alla console Web di AEM all&#39;indirizzo `https://server:host/system/console/configMgr`.
-1. Cerca la configurazione dell&#39;**[!UICONTROL dell&#39;origine dati in pool di connessione Apache Sling]**. Seleziona per aprire la configurazione in modalità di modifica.
+1. Cerca la configurazione dell&#39;**dell&#39;origine dati in pool di connessione Apache Sling**. Seleziona per aprire la configurazione in modalità di modifica.
 1. Nella finestra di dialogo di configurazione specificare i dettagli del database che si desidera configurare, ad esempio:
 
    * Nome dell’origine dati
@@ -162,7 +162,7 @@ Per configurare il client HTTP del modello dati modulo, effettua le seguenti ope
 
    * Nel campo **[!UICONTROL Keep alive]** specificare la durata per la quale una connessione HTTP persistente viene mantenuta attiva. Il valore predefinito è 15 secondi.
 
-   * Nel campo [!DNL Experience Manager Forms]Timeout connessione **[!UICONTROL specificare la durata dell&#39;attesa di una connessione da parte del server]**. Il valore predefinito è 10 secondi.
+   * Nel campo **[!UICONTROL Timeout connessione]** specificare la durata dell&#39;attesa di una connessione da parte del server [!DNL Experience Manager Forms]. Il valore predefinito è 10 secondi.
 
    * Specificare il periodo di tempo massimo per l&#39;inattività tra due pacchetti di dati nel campo **[!UICONTROL Timeout socket]**. Il valore predefinito è 30 secondi.
 
@@ -195,7 +195,7 @@ Un servizio OData è identificato dall&#39;URL radice del servizio. Per configur
 >[!NOTE]
 >
 >Il modello dati del modulo supporta [OData versione 4](https://www.odata.org/documentation/).
->&#x200B;>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione di Microsoft Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Per una guida dettagliata alla configurazione di Microsoft Dynamics 365, online o on-premise, vedere [Configurazione OData di Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Vai a **[!UICONTROL Strumenti > Servizi cloud > Origini dati]**. Seleziona per selezionare la cartella in cui desideri creare una configurazione cloud.
 

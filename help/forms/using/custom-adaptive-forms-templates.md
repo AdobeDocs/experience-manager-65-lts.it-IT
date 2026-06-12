@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 20e958d7-5976-4ccd-99b6-0e3bdb424d2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 0%
+source-wordcount: '1288'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +52,7 @@ La tabella seguente enumera l’associazione tra modelli e componente Pagina:
  <tbody>
   <tr>
    <td><p><strong>Modello</strong></p> </td>
-   <td><p><strong>Componente Pagina </strong></p> </td>
+   <td><p><strong>Componente Pagina</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -109,7 +109,7 @@ Per creare un modello personalizzato, ad esempio simpleEnrollmentTemplate, effet
 
    Invece di `guideformtitle`, puoi includere un componente personalizzato o il componente `parsys`. Rimuovere ad esempio `guideformtitle` e aggiungere un componente personalizzato o il nodo del componente `parsys`. Assicurarsi che la proprietà `sling:resourceType` del componente faccia riferimento al componente e che lo stesso sia definito nel file `component.jsp` della pagina.
 
-1. Passa alla posizione /apps/mycompany/templates/enrollment-template/jcr:content.
+1. Passare alla posizione /apps/mycompany/templates/enrollment-template/jcr:content.
 
 1. Aprire la scheda **[!UICONTROL Proprietà]** e modificare il valore della proprietà `cq:designPath` in /etc/designs/mycompany.
 
@@ -128,7 +128,7 @@ Il modello personalizzato ha lo stesso stile del modello predefinito perché il 
 
    1. Per il nodo `enrollmentpage`, impostare il valore della proprietà `sling:resourceSuperType` su mycompany/components/page/contentpage. Il componente `contentpage` è il componente della pagina base per il sito. Altri componenti della pagina possono estenderlo. Rimuovere i file di script in `enrollmentpage`, ad eccezione di `head.jsp`, `content.jsp` e `library.jsp`. Il componente `sling:resourceSuperType`, che in questo caso è `contentpage`, include tutti questi script. Le intestazioni, inclusi la barra di navigazione e il piè di pagina, sono ereditati dal componente `contentpage`.
 
-   1. Aprire il file `head.jsp`.
+   1. Apri il file in `head.jsp`.
 
       Il file JSP contiene la riga `<cq.include script="library.jsp"/>`.
 

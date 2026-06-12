@@ -689,9 +689,9 @@ Il processo di filtro Referrer può essere descritto come segue:
 1. Forms Server controlla il metodo HTTP utilizzato per la chiamata:
 
    1. Se si tratta di POST, Forms Server esegue il controllo dell&#39;intestazione Referrer.
-   1. Se si tratta di GET, Forms Server ignora il controllo Referrer, a meno che *CSRF_CHECK_GETS* non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione Referrer. *CSRF_CHECK_GETS* è specificato nel file *web.xml* dell&#39;applicazione.
+   1. Se è GET, Forms Server ignora il controllo Referrer, a meno che *CSRF_CHECK_GETS* non sia impostato su true, nel qual caso esegue il controllo dell&#39;intestazione Referrer. *CSRF_CHECK_GETS* è specificato nel file *web.xml* dell&#39;applicazione.
 
-1. Forms Server controlla se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di controllo dell utente:
+1. Il server Forms verifica se l&#39;URI richiesto esiste nel inserisco nell&#39;elenco Consentiti di:
 
    1. Se l&#39;URI viene inserito nell&#39;elenco Consentiti, il server accetta la richiesta.
    1. Se l’URI richiesto non viene inserito nell&#39;elenco Consentiti, il server recupera il Referrer della richiesta.
@@ -710,7 +710,7 @@ Il processo di filtro Referrer può essere descritto come segue:
 
 AEM Forms su JEE fornisce un filtro Referrer per specificare il Referrer che può accedere alle risorse del server. Per impostazione predefinita, il filtro Referrer non filtra le richieste che utilizzano un metodo HTTP sicuro, ad esempio GET, a meno che *CSRF_CHECK_GETS* non sia impostato su true. Se il numero di porta per una voce Referrer consentito è impostato su 0, AEM Forms su JEE consentirà tutte le richieste con Referrer provenienti da tale host indipendentemente dal numero di porta. Se non viene specificato alcun numero di porta, sono consentite solo le richieste dalla porta predefinita 80 (HTTP) o dalla porta 443 (HTTPS). Il filtro Referrer è disattivato se tutte le voci nell&#39;elenco Referrer consentiti vengono eliminate.
 
-Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per qualsiasi nome non qualificato restituito dal sistema operativo host (nomi che non dispongono di indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
+Quando si installa Document Services per la prima volta, l’elenco Referenti consentiti viene aggiornato con l’indirizzo del server in cui è installato Document Services. Le voci per il server includono il nome del server, l&#39;indirizzo IPv4, l&#39;indirizzo IPv6 se IPv6 è abilitato, l&#39;indirizzo di loopback e una voce localhost. I nomi aggiunti all&#39;elenco Referenti consentiti vengono restituiti dal sistema operativo host. Ad esempio, un server con un indirizzo IP di 10.40.54.187 includerà le seguenti voci: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Per tutti i nomi non qualificati restituiti dal sistema operativo host (nomi che non hanno indirizzo IPv4, indirizzo IPv6 o nome di dominio qualificato), il inserisco nell&#39;elenco Consentiti di non viene aggiornato. Modifica l’elenco dei Referenti consentiti in base all’ambiente aziendale. Non distribuire Forms Server nell’ambiente di produzione con l’elenco dei Destinatari autorizzati predefiniti. Dopo aver modificato uno dei Referrer consentiti, le Eccezioni referente o gli URI, assicurati di riavviare il server affinché le modifiche diventino effettive.
 
 **Gestione dell&#39;elenco dei referenti consentiti**
 
@@ -821,7 +821,7 @@ Quando configuri un’architettura di rete sicura come descritto nella sezione p
  <thead> 
   <tr> 
    <th><p>Protocollo</p> </th> 
-   <th><p>Utilizza</p> </th> 
+   <th><p>Utilizzare</p> </th> 
   </tr> 
  </thead> 
  <tbody>

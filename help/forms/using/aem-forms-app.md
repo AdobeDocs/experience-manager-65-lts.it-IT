@@ -1,5 +1,5 @@
 ---
-title: app AEM Forms
+title: App AEM Forms
 description: L’app AEM Forms consente ai lavoratori sul campo di utilizzare moduli adattivi sui loro dispositivi mobili.
 contentOwner: sashanka
 content-type: reference
@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 9cc83733-630a-4846-bd9e-72fd76a3286d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 0%
+source-wordcount: '2386'
+ht-degree: 1%
 
 ---
 
@@ -217,7 +217,7 @@ Per informazioni dettagliate su come distribuire l&#39;app tramite MDM, consulta
 
 Se stai effettuando l’aggiornamento alla versione più recente dell’app AEM Forms, assicurati di aver letto i seguenti punti:
 
-* **Se hai installato una versione precedente dell&#39;app da Play Store in Android**
+* **Se hai installato una versione precedente dell&#39;app dal Play Store su Android**
 Puoi aggiornare l’app direttamente dal play store.
 
 * **Se la versione precedente dell&#39;app viene generata e installata utilizzando il codice sorgente (applicabile per iOS e Android)**:

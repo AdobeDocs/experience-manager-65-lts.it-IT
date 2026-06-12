@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 3eb9c0e3-950e-4dd5-a4c9-2d8f486ea3cf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 0%
+source-wordcount: '1188'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ Effettua le seguenti operazioni per creare un modello personalizzato per vari co
 
 ## Creazione di un modello personalizzato {#creating-a-nbsp-custom-template}
 
-1. Creare un nodo sling:Folder in /apps
+1. Crea un nodo sling:Folder in /apps
 
    Aggiungi una proprietà &quot;fpContentType&quot;. Specifica i valori appropriati per la proprietà a seconda del componente per il quale stai definendo il modello personalizzato.
 
@@ -50,10 +50,10 @@ Effettua le seguenti operazioni per creare un modello personalizzato per vari co
 
    >[!NOTE]
    >
-   >Il titolo può essere diverso dal nome del nodo sling:Folder creato.
+   >Il titolo può essere diverso dal nome del nodo di sling:Folder creato.
 
    L’immagine seguente illustra la configurazione del componente Ricerca ed elenco.
-   ![Creazione di una cartella sling:Folder](assets/1.png)
+   ![Creazione di un sling:Folder](assets/1.png)
 
 1. Crea un file template.html in questa cartella affinché possa fungere da modello personalizzato.
 1. Scrivi il modello personalizzato e utilizza i metadati personalizzati come descritto di seguito.
@@ -158,7 +158,7 @@ Ad esempio, per l’intestazione &quot;Title&quot; (Titolo) nella visualizzazion
 
 **A**. Elemento contenitore
 
-Metadati &quot;path&quot; di **B.** con una gerarchia fissa per ottenere la miniatura archiviata per ciascun modulo.
+**B.** Metadati &quot;path&quot; con una gerarchia fissa per ottenere la miniatura memorizzata per ciascun modulo.
 
 Attributo **C.** Data-Repeable utilizzato per la sezione del modello per ogni modulo
 

@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3352'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file 
 
 >[!NOTE]
 >`[functionName]` è il nome della funzione. Gli spazi non sono consentiti.
->`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
+>`<Function Name>` è il nome visualizzato della funzione nell&#39;editor di regole di Adaptive Forms.
 >Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
@@ -538,7 +538,7 @@ Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzand
 ## Utilizzo di una funzione personalizzata in un modulo adattivo {#use-custom-functions}
 
 In un modulo adattivo, puoi utilizzare [funzioni personalizzate all&#39;interno dell&#39;editor di regole](/help/forms/using/rule-editor-core-components.md).
-Aggiungiamo il codice seguente al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
+Aggiungiamo il seguente codice al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
 
 ```javascript
     /**

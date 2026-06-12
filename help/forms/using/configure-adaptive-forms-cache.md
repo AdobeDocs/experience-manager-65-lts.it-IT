@@ -11,8 +11,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: a6793fdf-7ee8-4a54-91d8-635eb79ca702
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 1%
+source-wordcount: '928'
+ht-degree: 3%
 
 ---
 
@@ -128,11 +128,11 @@ Per abilitare e configurare la memorizzazione in cache dei moduli adattivi su Di
 
 L’ambiente AEM è configurato per memorizzare nella cache i moduli adattivi. Memorizza nella cache tutti i tipi di moduli adattivi. Se prima di distribuire la pagina memorizzata in cache è necessario verificare le autorizzazioni di accesso utente per una pagina, vedere [memorizzazione in cache del contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it).
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Alcuni moduli adattivi contenenti immagini o video non vengono invalidati automaticamente dalla cache di Dispatcher {#videos-or-images-not-auto-invalidated}
 
-#### Problema   {#issue1}
+#### Problema {#issue1}
 
 Quando selezioni e aggiungi immagini o video tramite il browser di risorse a un modulo adattivo e tali immagini e video vengono modificati nell’editor di Assets, i moduli adattivi contenenti tali immagini non vengono invalidati automaticamente dalla cache di Dispatcher.
 
@@ -142,7 +142,7 @@ Dopo aver pubblicato le immagini e il video, annulla esplicitamente la pubblicaz
 
 ### Solo la prima istanza di un modulo adattivo è memorizzata in cache {#only-first-instance-of-adaptive-forms-is-cached}
 
-#### Problema   {#issue3}
+#### Problema {#issue3}
 
 Se l&#39;URL del modulo adattivo non dispone di informazioni sulla localizzazione e **[!UICONTROL Usa impostazioni locali browser]** nella gestione della configurazione è abilitato, viene distribuita una versione localizzata del modulo adattivo. Solo la prima istanza del modulo adattivo viene memorizzata in cache e distribuita a ogni utente successivo.
 
