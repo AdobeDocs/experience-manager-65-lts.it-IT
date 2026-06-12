@@ -1,5 +1,5 @@
 ---
-title: Albero prestazioni
+title: Struttura delle prestazioni
 description: Scopri i passaggi da intraprendere per risolvere i problemi di prestazioni in AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: c83fcf96-cc45-40a0-9a50-c60406096de1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 9%
+source-wordcount: '1298'
+ht-degree: 10%
 
 ---
 
-# Albero prestazioni{#performance-tree}
+# Struttura delle prestazioni{#performance-tree}
 
 ## Ambito {#scope}
 
@@ -57,7 +57,7 @@ L’analisi inizia dal passaggio 0. L’obiettivo è determinare quale entità (
   <tr>
    <td><strong>Passaggio</strong></td>
    <td><strong>Titolo</strong></td>
-   <td><strong>Riferimenti</strong></td>
+   <td><strong>Risorse</strong></td>
   </tr>
   <tr>
    <td><strong>Passaggio 0</strong></td>
@@ -243,7 +243,7 @@ L’analisi inizia dal passaggio 0. L’obiettivo è determinare quale entità (
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=it#configuring-the-dispatcher-cache-cache">Configurazione della cache di Dispatcher</a></li>
     </ol> <p>Come migliorare il rapporto della cache; rendere le richieste memorizzabili in cache (best practice Dispatcher)</p> <p>Considera inoltre le impostazioni seguenti per ottimizzare le configurazioni di memorizzazione in cache<br /> </p>
     <ol>
-     <li>Imposta una regola senza cache per la richiesta HTTP diversa da GET</li>
+     <li>Imposta una regola senza cache per la richiesta HTTP che non sia GET</li>
      <li>Configurare le stringhe di query affinché non siano memorizzabili in cache</li>
      <li>Non memorizzare in cache gli URL con estensioni mancanti</li>
      <li>Intestazioni di autenticazione cache (possibile dalla versione 4.1.10 di Dispatcher)</li>

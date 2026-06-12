@@ -11,8 +11,8 @@ role: Admin
 exl-id: 1c437771-cec5-48b8-8d77-a66c269420ec
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 2%
 
 ---
 
@@ -85,8 +85,7 @@ Per configurare SSO per un&#39;istanza di AEM, configurare il [Gestore autentica
 >* `disp_iis.ini`
 >* IIS
 >
->In `disp_iis.ini` set:
->(per informazioni dettagliate, vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it#microsoft-internet-information-server))
+>In `disp_iis.ini` set:>(per informazioni dettagliate, vedere [installazione di Dispatcher con Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=it#microsoft-internet-information-server))
 >
 >* `servervariables=1` (inoltra le variabili del server IIS come intestazioni di richiesta all&#39;istanza remota)
 >* `replaceauthorization=1` (sostituisce qualsiasi intestazione denominata &quot;Authorization&quot; diversa da &quot;Basic&quot; con il suo equivalente &quot;Basic&quot;)

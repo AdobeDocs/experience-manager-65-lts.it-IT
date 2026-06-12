@@ -1,5 +1,5 @@
 ---
-title: Portlet e portali AEM
+title: Portlet e portali di AEM
 description: Scopri come configurare e amministrare AEM as a portal e come configurare e visualizzare il contenuto di AEM in un portlet.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6081'
+source-wordcount: '6108'
 ht-degree: 0%
 
 ---
 
-# Portlet e portali AEM{#aem-portals-and-portlets}
+# Portlet e portali di AEM{#aem-portals-and-portlets}
 
 Questo documento descrive quanto segue:
 
@@ -113,7 +113,7 @@ Il portlet può essere configurato con le seguenti preferenze:
   </tr>
   <tr>
    <td>htmlSelector</td>
-   <td>Il selettore che viene aggiunto a ogni URL. Per impostazione predefinita è <strong>portlet</strong>, pertanto tutte le richieste alle pagine HTML utilizzano URL che terminano con <strong>.portlet.html.</strong> Consente l'utilizzo di script personalizzati in AEM per il rendering del portlet.</td>
+   <td>Il selettore che viene aggiunto a ogni URL. Per impostazione predefinita è <strong>portlet</strong>, pertanto tutte le richieste alle pagine HTML utilizzano URL che terminano con <strong>.portlet.html.</strong> Questo consente l’utilizzo di script personalizzati all’interno di AEM per il rendering del portlet.</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -171,7 +171,7 @@ Il portlet può essere configurato con una propria cache, in modo che il contenu
 Una volta distribuita la cache, il portlet memorizza in cache i contenuti dell’istanza Publish. La cache del portlet può essere invalidata con uno svuotamento del dispatcher da AEM. Per configurare il portlet in modo che utilizzi la propria cache:
 
 1. Configurare un agente di replica nell&#39;istanza di authoring che esegua il targeting del server portale.
-1. Supponendo che il server portale sia in esecuzione sull&#39;host **localhost**, **porta 8080 &#x200B;** e che l&#39;applicazione Web portlet AEM sia montata nel contesto **cqportlet**, l&#39;URL per svuotare la cache è `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilizza GET come metodo.
+1. Supponendo che il server portale sia in esecuzione sull&#39;host **localhost**, **porta 8080** e che l&#39;applicazione Web portlet AEM sia montata nel contesto **cqportlet**, l&#39;URL per svuotare la cache è `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Utilizza GET come metodo.
    **Nota:** Anziché utilizzare un parametro di richiesta, è possibile inviare un&#39;intestazione http denominata **Percorso**.
 
 #### Scaricamento della cache tramite l’agente di replica {#flushing-the-cache-via-replication-agent}
@@ -215,7 +215,7 @@ Per configurare un agente di replica per il portale:
    ![schermata_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
 1. Nel campo **Metodo HTTP** digitare **GET**.
-1. Nel campo **Intestazioni HTTP**, fare clic su **+** per aggiungere una nuova voce e digitare **Percorso: {path}**.
+1. Nel campo **Intestazioni HTTP**, fare clic su **+** per aggiungere una nuova voce e digitare **Percorso:{path}**.
 1. Se necessario, fare clic sulla scheda **Proxy** e immettere le informazioni proxy nell&#39;agente.
 1. Fare clic su **OK** per salvare le modifiche.
 1. Per verificare la connessione, fare clic sul collegamento **Verifica connessione**. Viene visualizzato un messaggio di registro che indica se il test di replica è riuscito. Ad esempio:
@@ -389,7 +389,7 @@ Per aprire la pagina di amministrazione del sito web o per modificare una pagina
    </LoginModule>
    ```
 
-1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **Gestore autenticazione PIN CQ** dal menu a discesa.
+1. Nella console di configurazione OSGi, per impostazione predefinita disponibile all&#39;indirizzo https://localhost:4502/system/console/configMgr, seleziona **CQ PIN Authentication Handler** dal menu a discesa.
 1. Modificare il parametro **URL Root Path** in modo che contenga solo il valore singolo **/**.
 
 ### Privilegi {#privileges}
@@ -398,9 +398,9 @@ Alcune funzioni del portlet sono protette da privilegi. L’utente corrente deve
 
 * &quot;toolbar&quot; : privilegio generale per visualizzare/utilizzare la barra degli strumenti nel portlet.
 * &quot;prefs&quot; : Se l’utente dispone di questo privilegio, può visualizzare/modificare le preferenze del portlet.
-* &quot;cq-author:edit&quot; : con questo privilegio, l’utente può richiamare la vista di modifica del contenuto.
-* &quot;cq-author:preview&quot; : con questo privilegio, l’utente può visualizzare l’anteprima.
-* &quot;cq-author:siteadmin&quot; : con questo privilegio, l’utente può aprire siteadmin all’interno di AEM.
+* &quot;cq-author:edit&quot; : con questo privilegio, l&#39;utente può richiamare la visualizzazione di modifica del contenuto.
+* &quot;cq-author:preview&quot; : con questo privilegio, l&#39;utente può visualizzare l&#39;anteprima.
+* &quot;cq-author:siteadmin&quot;: con questo privilegio, l&#39;utente può aprire siteadmin in AEM.
 
 L&#39;approccio migliore per gestire i privilegi consiste nell&#39;utilizzare i ruoli del portale e assegnare ruoli a tali privilegi. Questa operazione può essere eseguita tramite una configurazione OSGi. Il &quot;Day Portal Director Privilege Manager&quot; (Gestore privilegi Day Portal Director) può essere configurato con un set di ruoli per ogni privilegio. Se l’utente dispone di uno dei ruoli, dispone del privilegio corrispondente.
 
@@ -444,7 +444,7 @@ META-INF/MANIFEST.MF
 /com/day/cq/portlet/toolbar/layout/toolbar.css
 ```
 
-La cartella META-INF contiene il file MANIFEST.MF necessario a OSGi per identificarlo come bundle. Viene visualizzato come segue:
+La cartella META-INF contiene il file MANIFEST.MF richiesto da OSGi per identificarlo come bundle. Viene visualizzato come segue:
 
 ```xml
 Manifest-Version: 1.0
@@ -722,7 +722,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
    >
    >Se si prevede di utilizzare lo stesso portlet più volte sulla stessa pagina, assegnare a ogni portlet un ID finestra diverso.
 
-1. Fare clic su **OK**. Il portlet viene visualizzato sulla pagina AEM.
+1. Fai clic su **OK**. Il portlet viene visualizzato sulla pagina AEM.
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -730,7 +730,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 Per accedere al contenuto fornito da AEM WCM, il server di portale deve essere dotato del portlet AEM Portal Director. A tale scopo, installare, configurare e aggiungere il portlet alla pagina del portale utilizzando i passaggi descritti in questa sezione.
 
-Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Author in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
+Per impostazione predefinita, il portlet si connette all&#39;istanza Publish in localhost:4503 e all&#39;istanza Autore in localhost:4502. Questi valori possono essere modificati durante la distribuzione del portlet. Il director del portale è disponibile come contenuto nell’archivio in /libs/portal/directory. Scarica il file .war dell’applicazione prima di utilizzarlo.
 
 ### Download del file .war {#downloading-the-war-file}
 

@@ -12,8 +12,8 @@ role: Admin
 exl-id: b840d970-9365-4df3-8467-e34abd940074
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 2%
+source-wordcount: '3230'
+ht-degree: 3%
 
 ---
 
@@ -105,7 +105,7 @@ I seguenti agenti sono disponibili in un’installazione standard di AEM:
 * [Agente predefinito](#replication-author-to-publish)
 Utilizzato per replicare da Author a Publish.
 
-* Svuotamento Dispatcher
+* Eliminazione dispatcher
 Viene utilizzato per la gestione della cache di Dispatcher. Per ulteriori informazioni, vedere [Annullamento della validità della cache di Dispatcher dall&#39;ambiente di authoring](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-the-authoring-environment) e [Annullamento della validità della cache di Dispatcher da un&#39;istanza di pubblicazione](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=it#invalidating-dispatcher-cache-from-a-publishing-instance).
 
 * [Replica inversa](#configuring-reverse-replication)
@@ -205,7 +205,7 @@ Durante la configurazione di un agente di replica dalla console Strumenti, nella
 
   Il protocollo qui specificato (HTTP o HTTPS) determina il metodo di trasporto.
 
-  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. È possibile utilizzare l&#39;URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+  Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
 * **Utente**
 
@@ -425,7 +425,6 @@ Per configurare la replica dei contenuti per un’ulteriore istanza Publish, cre
    * Nella scheda **Trasporto**:
 
       * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
-
         `https://localhost:4504/bin/receive`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
@@ -469,13 +468,12 @@ Gli agenti predefiniti sono inclusi nell&#39;installazione. Tuttavia, è ancora 
    * Nella scheda **Trasporto**:
 
       * Immetti l’URI richiesto per la nuova istanza Publish; ad esempio,
-
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Immettere l&#39;account utente specifico del sito utilizzato per la replica.
       * Se necessario, puoi configurare altri parametri.
 
-   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. È possibile utilizzare l&#39;URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
+   Per gli agenti di Dispatcher Flush, la proprietà URI viene utilizzata solo se utilizzi voci virtualhost basate sul percorso per differenziare le farm. Utilizza questo campo per individuare la farm da invalidare. Ad esempio, la farm n. 1 ha l’host virtuale `www.mysite.com/path1/*` e la farm n. 2 ha l’host virtuale `www.mysite.com/path2/*`. Puoi utilizzare l’URL `/path1/invalidate.cache` per individuare la prima farm e `/path2/invalidate.cache` per individuare la seconda farm.
 
    >[!NOTE]
    >

@@ -11,7 +11,7 @@ role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2210'
 ht-degree: 3%
 
 ---
@@ -163,7 +163,7 @@ Quando si ospitano le librerie Dynamic Tag Management su AEM, AEM configura auto
   </tr>
   <tr>
    <td>Espressione di pianificazione</td>
-   <td>(Viene visualizzata ed è obbligatoria se è selezionata l'opzione Abilita importazione polling). Espressione cron che controlla quando vengono scaricate le librerie di Dynamic Tag Management.</td>
+   <td>(Viene visualizzato ed è obbligatorio quando è selezionata l’opzione Abilita importazione polling). Espressione cron che controlla quando vengono scaricate le librerie Dynamic Tag Management.</td>
   </tr>
  </tbody>
 </table>

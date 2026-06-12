@@ -12,14 +12,14 @@ role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 47%
+source-wordcount: '2223'
+ht-degree: 46%
 
 ---
 
 # Authoring - Ambiente e strumenti{#authoring-the-environment-and-tools}
 
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi meccanismi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Gestione del sito {#managing-your-site}
 
@@ -43,7 +43,7 @@ Puoi modificare una pagina con l’editor pagina. Esempio:
 >
 >Se necessario, puoi saltare la presentazione e ripeterla in qualsiasi momento selezionando una delle opzioni dal menu **Informazioni pagina**.
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti aree:
 
@@ -52,7 +52,7 @@ Durante la modifica di una pagina, l’**Aiuto** è accessibile dalle seguenti a
 
 Ulteriori [risorse di aiuto sono disponibili nelle console](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Browser Componenti   {#components-browser}
+## Browser Componenti {#components-browser}
 
 Il browser Componenti mostra tutti componenti disponibili per la pagina corrente. Questi possono essere trascinati nella posizione appropriata, quindi modificati per aggiungere il contenuto.
 
@@ -288,7 +288,7 @@ Ad esempio, se appropriato, **Informazioni pagina** dispone anche delle opzioni 
 
 Inoltre, se necessario, **Informazioni pagina** può fornire accesso alle analisi e ai consigli.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina {#page-modes}
 
 Esistono diverse modalità di modifica di una pagina che consentono di eseguire azioni diverse:
 
@@ -324,7 +324,7 @@ Per accedervi, utilizza le icone nell’angolo in alto a destra. L’icona effet
 
 Spesso per l’authoring è necessario selezionare un’altra risorsa, ad esempio quando si definisce un collegamento a un’altra pagina o risorsa o si seleziona un’immagine. Per selezionare facilmente un percorso, i [campi percorso](/help/sites-authoring/author-environment-tools.md#path-fields) offrono un completamento automatico e il [browser percorsi](/help/sites-authoring/author-environment-tools.md#path-browser) consente una selezione più solida.
 
-### Campi percorso   {#path-fields}
+### Campi percorso {#path-fields}
 
 L’esempio utilizzato qui mostra il Componente immagine. Per ulteriori informazioni sull&#39;utilizzo e la modifica dei componenti, vedere [Componenti per l&#39;authoring delle pagine](/help/sites-authoring/default-components.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Strumento Server proxy (proxy.jar)
+title: Strumento server proxy (proxy.jar)
 description: Scopri lo strumento Server proxy (proxy.jar) in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Developer
 exl-id: d918ddf2-aa70-4742-97d5-24a2c51f578a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
 
-# Strumento Server proxy (proxy.jar){#proxy-server-tool-proxy-jar}
+# Strumento server proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 Il server proxy funge da server intermedio che inoltra le richieste tra un client e un server. Il server proxy tiene traccia di tutte le interazioni client-server e genera un registro dell&#39;intera comunicazione TCP. Questo consente di monitorare esattamente ciò che sta accadendo, senza dover accedere al server principale.
 
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa che questa voce proviene dal client (si tratta di una richiesta per una pagina Web)
 * 0 è il numero di connessione (il contatore di connessione inizia da 0)
 * #00000 l&#39;offset nel flusso di byte. Questa è la prima voce, quindi l&#39;offset è 0.
-* [GET &lt;?>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
+* [GET &lt;??>] è il contenuto della richiesta, nell&#39;esempio una delle intestazioni HTTP (url).
 
 Quando una connessione viene chiusa, vengono registrate le seguenti informazioni:
 
@@ -143,7 +143,7 @@ Rivedi un modello semplice che, se richiesto, genera il seguente codice:
 </html>
 ```
 
-Se AEM è in esecuzione su localhost:4303, avviare il server proxy come indicato di seguito:
+Se AEM è in esecuzione su localhost:4303, avviare il server proxy nel modo seguente:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

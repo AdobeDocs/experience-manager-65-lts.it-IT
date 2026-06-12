@@ -1,5 +1,5 @@
 ---
-title: Impostazioni configurazione OSGi
+title: Impostazioni di configurazione di OSGi
 description: Questo articolo descrive le impostazioni di configurazione OSGi (elencate in base al bundle) rilevanti per l’implementazione del progetto. L'elenco funge da orientamento e non è esaustivo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ role: Admin
 exl-id: d3356f5f-f80f-4ce0-b4e2-3ee927208ab1
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '3247'
+source-wordcount: '3170'
 ht-degree: 0%
 
 ---
 
-# Impostazioni configurazione OSGi{#osgi-configuration-settings}
+# Impostazioni di configurazione di OSGi{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/) è un elemento fondamentale nello stack di tecnologia di AEM. Viene utilizzato per controllare i bundle compositi di AEM e la relativa configurazione.
 
@@ -63,7 +63,7 @@ Le seguenti impostazioni di configurazione OSGi (elencate in base al bundle) son
 >Assicurati di configurare quanto segue:
 >
 >**Nome utente** e **Password**, le credenziali per accedere alla Console di gestione Web Apache Felix.
->La password deve essere modificata dopo l&#39;installazione iniziale per garantire la [sicurezza](/help/sites-administering/security-checklist.md) dell&#39;istanza.
+>È necessario modificare la password dopo l&#39;installazione iniziale per garantire la [sicurezza](/help/sites-administering/security-checklist.md) dell&#39;istanza.
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ Consulta [Registrazione AEM](/help/sites-deploying/configure-logging.md) e [Regi
 * **Dimensione minima del pool** e **Dimensione massima del pool**, ovvero la dimensione del pool utilizzata per contenere i thread evento.
 
 * **Dimensione coda**, la dimensione massima della coda del thread se il pool è esaurito.
-Il valore consigliato è `-1` perché imposta la coda su illimitato. Se viene fissato un limite, potrebbero verificarsi perdite al superamento di tale limite.
+Il valore consigliato è `-1` perché imposta la coda su illimitata. Se viene fissato un limite, potrebbero verificarsi perdite al superamento di tale limite.
 
 * La modifica di queste impostazioni può migliorare le prestazioni in scenari con un numero elevato di eventi. Ad esempio, utilizzo intensivo di AEM DAM o Workflow.
 * I valori specifici dello scenario devono essere stabiliti utilizzando test.
@@ -108,7 +108,7 @@ Alcune impostazioni possono influire sulle prestazioni. Se possibile, disabilita
 
 **Programma di installazione di Apache Sling JCR** Questi parametri probabilmente non richiedono configurazione, ma possono essere utili per lo sviluppo o il debug. Ad esempio, le cartelle di installazione possono essere utili per l&#39;archiviazione o l&#39;estrazione o per la creazione di un pacchetto.
 
-* **Nome delle cartelle di installazione regexp** e **Profondità massima gerarchia delle cartelle di installazione** - Specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle del repository. Quando viene utilizzato un carattere jolly (come in .&#42;/install) vengono cercate tutte le corrispondenze appropriate, ad esempio `/libs/sling/install` e `/libs/cq/core/install`.
+* **Nome delle cartelle di installazione regexp** e **Profondità massima gerarchia delle cartelle di installazione** - Specificare dove e a quale profondità vengono cercate le risorse da installare nelle cartelle del repository. Quando si utilizza un carattere jolly (come in .&#42;/install) viene eseguita la ricerca di tutte le corrispondenze appropriate, ad esempio `/libs/sling/install` e `/libs/cq/core/install`.
 
 * **Percorso di ricerca**, elenco di percorsi che jcrinstall cerca le risorse da installare, con un numero che indica il fattore di ponderazione per il percorso.
 
@@ -230,7 +230,7 @@ Vedere: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Res
 
 È possibile impostare vari parametri, tra cui:
 
-* **Percorsi di esecuzione** - Elenca i percorsi per la ricerca di script eseguibili. Configurando percorsi specifici, puoi limitare quali script possono essere eseguiti. Se non è configurato alcun percorso, viene utilizzato il valore predefinito ( `/` = root), che consente l&#39;esecuzione di tutti gli script.
+* **Percorsi di esecuzione** - Elenca i percorsi per la ricerca di script eseguibili. Configurando percorsi specifici, puoi limitare quali script possono essere eseguiti. Se non è configurato alcun percorso, viene utilizzato quello predefinito ( `/` = root), che consente l&#39;esecuzione di tutti gli script.
 Se un valore di percorso configurato termina con una barra, la ricerca viene eseguita nell&#39;intera sottostruttura. Senza una barra finale di questo tipo, lo script viene eseguito solo se corrisponde esattamente.
 
 * **Estensioni predefinite** - Elenco di estensioni per le quali viene utilizzato il comportamento predefinito. L’ultimo segmento di percorso del tipo di risorsa può essere utilizzato come nome dello script.
@@ -331,19 +331,19 @@ Nomi delle intestazioni che potrebbero contenere un ID utente.
 * **Nomi cookie**
 Nomi dei cookie che potrebbero contenere un ID utente.
 
-* **Nomi Parametri**
+* **Nomi parametri**
 Nomi dei parametri di richiesta che potrebbero fornire l’ID utente.
 
 * **Mappa utente**
 Per gli utenti selezionati, il nome utente estratto dalla richiesta HTTP può essere sostituito con uno diverso nell’oggetto credenziali. La mappatura è definita qui. Se il nome utente `admin` viene visualizzato su entrambi i lati della mappa, la mappatura viene ignorata. Il carattere &quot;=&quot; deve essere preceduta da &quot;\&quot;.
 
 * **Formato**
-Indica il formato in cui viene fornito l’ID utente. Usa:
+Indica il formato in cui viene fornito l’ID utente. Utilizza:
 
    * `Basic` se l&#39;ID utente è codificato nel formato di autenticazione HTTP Basic
    * `AsIs` se l&#39;ID utente viene fornito in testo normale o qualsiasi valore di espressione regolare applicato deve essere utilizzato così com&#39;è o qualsiasi espressione regolare
 
-**Day CQ WCM Debug Filter** Questo è utile per lo sviluppo in quanto consente l&#39;utilizzo di suffissi quali ?debug=layout durante l&#39;accesso a una pagina. Ad esempio, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornisce informazioni di layout che possono essere di interesse per lo sviluppatore.
+**Day CQ WCM Debug Filter** Questo è utile per lo sviluppo in quanto consente l&#39;utilizzo di suffissi quali ?debug=layout durante l&#39;accesso a una pagina. Ad esempio, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout fornisce informazioni di layout che potrebbero essere di interesse per lo sviluppatore.
 
 * Per garantire prestazioni e sicurezza, disattiva nelle istanze di produzione.
 

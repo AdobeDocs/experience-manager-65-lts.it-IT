@@ -12,7 +12,7 @@ role: User,Admin,Developer
 exl-id: 281c96e2-24f8-4568-add2-67972148b406
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '2919'
+source-wordcount: '2951'
 ht-degree: 42%
 
 ---
@@ -43,11 +43,11 @@ Immediatamente dopo aver effettuato l’accesso, si aprirà il pannello di [navi
 
 >[!NOTE]
 >
->Per comprendere l&#39;utilizzo di base di AEM, questo documento si basa sulla console **Sites**.
+>Per illustrare l’utilizzo di base di AEM, in questo documento viene utilizzata la console **Sites**.
 >
 >Per iniziare, fai clic su **Sites**.
 
-### Navigazione nel prodotto  {#product-navigation}
+### Navigazione nel prodotto {#product-navigation}
 
 Ogni volta che un utente accede per la prima volta a una console, viene avviato un tutorial relativo alla navigazione nel prodotto. Fai clic qui per una buona panoramica delle operazioni di base di AEM.
 
@@ -71,12 +71,12 @@ Per chiudere il pannello di navigazione globale e tornare alla posizione precede
 
 La navigazione globale presenta due pannelli, rappresentati da icone sul lato sinistro dello schermo:
 
-* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola 
+* **[Navigazione](/help/sites-authoring/basic-handling.md#navigation-panel)**: rappresentata da una bussola
 * **[Strumenti](/help/sites-authoring/basic-handling.md#tools-panel)**: rappresentati da un martello
 
 Le opzioni disponibili in questi pannelli sono descritte di seguito.
 
-### Pannello di navigazione  {#navigation-panel}
+### Pannello di navigazione {#navigation-panel}
 
 Il pannello di navigazione consente di accedere alle console AEM:
 
@@ -213,7 +213,7 @@ L’intestazione di è sempre presente nella parte superiore dello schermo. Anch
 
   ![Passa al contenuto principale](assets/bh-30.png)
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Sono disponibili diverse risorse di Aiuto:
 
@@ -256,7 +256,7 @@ Risorse per sviluppatori e download
   >* [Scelte rapide da tastiera per la modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Scelte rapide da tastiera per le console](/help/sites-authoring/keyboard-shortcuts.md)
 
-## Barra delle azioni  {#actions-toolbar}
+## Barra delle azioni {#actions-toolbar}
 
 Ogni volta che viene selezionata una risorsa (ad esempio una pagina o una risorsa), le icone indicano diverse azioni, con testo descrittivo nella barra degli strumenti. Queste azioni dipendono da:
 
@@ -268,7 +268,7 @@ Le azioni disponibili nella barra degli strumenti cambiano per riflettere le azi
 
 La modalità di [selezione di una risorsa](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) dipende dalla vista.
 
-A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Toccando o facendo clic sui puntini di sospensione (i tre punti o **...**) si apre un selettore a discesa contenente tutte le azioni che non rientrano nella barra. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
+A causa del poco spazio disponibile in alcune finestre, la barra può facilmente superare lo spazio a disposizione. In questo caso, vengono visualizzate altre opzioni. Tocca o fai clic sui puntini di sospensione (i tre punti o **...**) apre un selettore a discesa contenente tutte le azioni rimanenti. Ad esempio, dopo la selezione di una pagina nella console **Sites**:
 
 ![Barra degli strumenti Azioni](assets/bh-12.png)
 
@@ -276,7 +276,7 @@ A causa del poco spazio disponibile in alcune finestre, la barra può facilmente
 >
 >Le singole icone disponibili sono documentate in relazione alla console, alla funzione o allo scenario appropriato.
 
-## Azioni rapide  {#quick-actions}
+## Azioni rapide {#quick-actions}
 
 In [Vista a schede](#cardviewquickactions), alcune azioni sono disponibili come icone di azione rapida e sulla barra degli strumenti. Le icone delle azioni rapide sono disponibili per un singolo elemento alla volta ed evitano di dover preselezionare le opzioni.
 
@@ -293,13 +293,13 @@ Puoi visualizzare, navigare e selezionare (per ulteriori azioni) le risorse in u
 * [Vista a colonne](#column-view)
 * [Vista a schede](#card-view)
 
-* [Vista a elenco &#x200B;](#list-view)
+* [Vista a elenco](#list-view)
 
 >[!NOTE]
 >
 >Per impostazione predefinita, AEM Assets non visualizza le rappresentazioni originali delle risorse nell’interfaccia utente come miniature in nessuna delle viste. Se sei un amministratore, puoi utilizzare le sovrapposizioni per configurare AEM Assets in modo da visualizzare le rappresentazioni originali come miniature.
 
-### Selezionare le risorse  {#selecting-resources}
+### Selezionare le risorse {#selecting-resources}
 
 La selezione di una risorsa specifica dipende dalla combinazione della vista e del dispositivo:
 
@@ -440,7 +440,7 @@ Selezionando una risorsa nella colonna più a sinistra, le risorse figlie vengon
 
 * Per spostarti verso il basso nella struttura, tocca o fai clic sulle schede (facendo attenzione a evitare le azioni rapide); per tornare verso l’alto utilizza le [breadcrumb nell’intestazione](/help/sites-authoring/basic-handling.md#the-header).
 
-### Vista a elenco  {#list-view}
+### Vista a elenco {#list-view}
 
 ![Vista a elenco](assets/bh-19.png)
 
