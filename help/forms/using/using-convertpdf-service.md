@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 1f6263f5-e4fb-44c2-a1d2-6046e9d69a48
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Panoramica {#overview}
 
-Il servizio Converti PDF converte i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa automatica basata su server su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di content management che non supportano documenti PDF.
+Il servizio Converti PDF converte i documenti PDF in file PostScript o di immagine (JPEG, JPEG 2000, PNG e TIFF). La conversione di un documento PDF in PostScript è utile per la stampa basata su server non monitorato su qualsiasi stampante PostScript. La conversione di un documento PDF in un file TIFF multipagina è pratica quando si archiviano documenti in sistemi di content management che non supportano documenti PDF.
 
 Con il servizio Convert PDF è possibile eseguire le operazioni seguenti:
 
