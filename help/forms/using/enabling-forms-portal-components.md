@@ -1,5 +1,5 @@
 ---
-title: Abilitazione dei componenti del portale Forms
+title: Abilitazione dei componenti del portale dei moduli
 description: I componenti del portale Forms sono già disattivati. Abilitare i gruppi di predicati Document Services e Document Services per abilitare i componenti di Forms Portal.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: a537fc63-b894-4e47-a71f-98ea07747baa
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 14%
 
 ---
 
-# Abilitazione dei componenti del portale Forms {#enabling-forms-portal-components}
+# Abilitazione dei componenti del portale dei moduli {#enabling-forms-portal-components}
 
 ## Applicabile a {#applies-to}
 
@@ -52,6 +52,6 @@ Ora le categorie di componenti Servizi basati su documenti e Predicati di serviz
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

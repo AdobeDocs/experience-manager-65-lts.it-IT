@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare un modulo adattivo'
+title: 'Esercitazione: creare un modulo adattivo'
 description: Scopri come creare, creare il layout e visualizzare in anteprima un modulo adattivo. Inoltre, scopri come configurare le azioni di invio.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
@@ -7,18 +7,18 @@ role: Admin, User, Developer
 exl-id: 87e03ff2-1324-42bd-b4da-54a0c17ce98e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1415'
 ht-degree: 9%
 
 ---
 
-# Tutorial: creare un modulo adattivo {#do-not-publish-tutorial-create-an-adaptive-form}
+# Esercitazione: creare un modulo adattivo {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
 Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md). Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione {#about-the-tutorial}
+## Informazioni sul tutorial {#about-the-tutorial}
 
 I moduli adattivi sono moduli di nuova generazione dinamici e reattivi. Puoi utilizzare i moduli adattivi per fornire esperienze personalizzate. È inoltre possibile integrare i moduli adattivi con [!DNL Adobe Analytics] per le statistiche di utilizzo e [!DNL Adobe Campaign] per la gestione delle campagne. Per ulteriori informazioni sulle funzionalità dei moduli adattivi, consulta [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
 
@@ -36,7 +36,7 @@ Avrai un modulo simile al seguente entro la fine dell’articolo:\
 
 ## Passaggio 1: creare il modulo adattivo {#step-create-the-adaptive-form}
 
-1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**. URL predefinito: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documenti]**. L&#39;URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Modulo adattivo]**. Viene visualizzata un&#39;opzione per selezionare un modello. Seleziona il modello **[!UICONTROL Vuoto]** per selezionarlo e scegli **[!UICONTROL Successivo]**.
 
 1. Viene visualizzata un&#39;opzione per **[!UICONTROL Aggiungi proprietà]**. I campi **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** sono obbligatori:
@@ -61,7 +61,7 @@ AEM [!DNL Forms] fornisce molti componenti per visualizzare informazioni su un m
 
    Se non ne hai uno, seleziona Ottieni file per scaricare il logo utilizzato in questo articolo.
 
-[Ottieni file](assets/logo.png)
+   [Ottieni il file](assets/logo.png)
 
 1. Trascina il componente **[!UICONTROL Footer]** da ![treeexpandall](assets/treeexpandall.png) nel modulo adattivo. In questa fase, il modulo si presenta come segue:
 
@@ -72,7 +72,7 @@ AEM [!DNL Forms] fornisce molti componenti per visualizzare informazioni su un m
 I componenti sono elementi costitutivi di un modulo adattivo. AEM [!DNL Forms] fornisce molti componenti per acquisire e visualizzare informazioni in un modulo adattivo. Puoi trascinare i componenti da ![treeexpandall](assets/treeexpandall.png) a un modulo. Per informazioni sui componenti disponibili e sulle funzionalità corrispondenti, consulta [Introduzione alla creazione di moduli adattivi](/help/forms/using/introduction-forms-authoring.md).
 
 1. Trascina il componente **[!UICONTROL Casella numerica]** nel modulo adattivo. Posizionalo prima del componente Piè di pagina. Apri le proprietà del componente, cambia il **[!UICONTROL Titolo]** del componente in **`Customer ID`**, cambia il **[!UICONTROL Nome elemento]** in **`customer_ID`**, abilita l&#39;opzione **[!UICONTROL Campo richiesto]**, abilita l&#39;opzione **[!UICONTROL Usa tipo di input numero di HTML5]** e seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Trascina tre componenti Casella di testo nel modulo adattivo. Posizionale prima del componente Piè di pagina. Impostare le seguenti proprietà per queste caselle di testo.:
+1. Trascina tre componenti Casella di testo nel modulo adattivo. Posizionale prima del componente Piè di pagina. Impostare le seguenti proprietà per queste caselle di testo:
 
    <table> 
     <tbody> 
@@ -182,7 +182,7 @@ La procedura seguente consente di configurare l’azione di invio e-mail e l’a
 
 I moduli adattivi offrono anche un’opzione per emulare l’esperienza di un modulo per vari dispositivi. Ad esempio, iPhone, iPad e Desktop. Puoi utilizzare entrambe le opzioni **[!UICONTROL Anteprima]** e **[!UICONTROL Emulatore]** ![righello](assets/ruler.png) insieme per visualizzare in anteprima un modulo per dispositivi con dimensioni di schermo diverse.
 
-1. Seleziona l&#39;opzione **[!UICONTROL Anteprima]** sul lato destro dell&#39;editor di moduli. Il modulo viene aperto in modalità anteprima. Se hai usato il nome menzionato nell&#39;esercitazione, l&#39;URL di anteprima del modulo è [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
+1. Seleziona l&#39;opzione **[!UICONTROL Anteprima]** sul lato destro dell&#39;editor di moduli. Il modulo viene aperto in modalità anteprima. Se hai utilizzato il nome menzionato nell&#39;esercitazione, l&#39;URL di anteprima del modulo è [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilizza ![righello](assets/ruler.png) per visualizzare l&#39;aspetto del modulo su vari dispositivi.
 1. Compila i campi del modulo e seleziona **[!UICONTROL Invia]**. Il modulo è stato inviato e si è reindirizzati alla pagina predefinita **Grazie**. È inoltre possibile specificare una pagina di ringraziamento personalizzata. Per ulteriori dettagli, vedere [Configurazione della pagina di reindirizzamento](/help/forms/using/configuring-redirect-page.md).
 

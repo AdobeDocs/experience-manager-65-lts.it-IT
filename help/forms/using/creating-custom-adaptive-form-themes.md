@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 exl-id: e9853779-e22c-484e-8480-8e724d584ab7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Si crea un **modello adattivo** e si applica il tema al modello. Puoi quindi uti
 >
 >Se si esegue la procedura seguente utilizzando i nomi, il modello risultante dovrebbe essere simile allo snapshot seguente:
 
-![Snapshot modulo adattivo a tema foresta](assets/thumbnail.png)
+![Istantanea modulo adattivo a tema foresta](assets/thumbnail.png)
 **Figura:** *Esempio di tema foresta*
 
 1. Creare un nodo di tipo `cq:ClientLibraryFolder` sotto il nodo `/apps`.

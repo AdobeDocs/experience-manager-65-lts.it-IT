@@ -12,8 +12,8 @@ role: Admin, User, Developer
 exl-id: e57d51de-9d98-4b20-8180-22fa81fad4fd
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 0%
+source-wordcount: '2002'
+ht-degree: 2%
 
 ---
 
@@ -85,7 +85,7 @@ HTML5 forms utilizza la memorizzazione nella cache per ottimizzare la velocità 
    <th>Descrizione</th>
   </tr>
   <tr>
-   <td>Nessuno</td>
+   <td>Nessuna</td>
    <td>Non memorizzare in cache gli artefatti<br /> </td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ I moduli HTML5 eseguono il caching in memoria utilizzando la strategia LRU. Se l
 
 Il servizio di configurazione consente di ottimizzare i parametri di configurazione e le impostazioni della cache per i moduli HTML5.
 
-Per aggiornare queste impostazioni, vai a CQ Felix Admin Console (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[porta]&#39;/system/console/configMgr), cerca e seleziona Configurazione Forms mobile.
+Per aggiornare queste impostazioni, vai al CQ Felix Admin Console (disponibile all&#39;indirizzo https://&lt;&#39;[server]:[porta]&#39;/system/console/configMgr), cerca e seleziona Configurazione Forms mobile.
 
 Puoi configurare la dimensione della cache o disabilitarla utilizzando il servizio di configurazione. È inoltre possibile abilitare il debug utilizzando il parametro Opzioni di debug. Ulteriori informazioni sul debug dei moduli sono disponibili all&#39;indirizzo [Debug dei moduli HTML5](/help/forms/using/debug.md).
 

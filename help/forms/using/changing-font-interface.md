@@ -1,5 +1,5 @@
 ---
-title: Modifica del tipo di carattere nell'interfaccia
+title: Modifica del font nell’interfaccia
 description: Come modificare selettivamente i caratteri nell'interfaccia utente.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: User, Developer
 exl-id: e27ff9df-41d0-4eef-b04e-a3eefea3c9ab
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '278'
+ht-degree: 6%
 
 ---
 
-# Modifica del tipo di carattere nell&#39;interfaccia{#changing-the-font-on-the-interface}
+# Modifica del font nell’interfaccia{#changing-the-font-on-the-interface}
 
 Puoi modificare il font visualizzato nell’area di lavoro di AEM Forms. I font utilizzati in una sezione specifica dell&#39;interfaccia utente sono definiti nella sezione corrispondente del foglio di stile. È possibile modificare i caratteri nell&#39;interfaccia utente in modo selettivo.
 
