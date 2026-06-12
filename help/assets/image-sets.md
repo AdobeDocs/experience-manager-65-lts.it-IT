@@ -13,7 +13,7 @@ exl-id: 654cf0fc-1a80-4764-8ce7-22d060e1f61a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -102,7 +102,7 @@ In caso di problemi durante la creazione dei set, consulta Immagini e set in [Ri
 
 ## Caricare risorse nei set di immagini {#uploading-assets-in-image-sets}
 
-Per iniziare, carica le immagini per i set di immagini. Quando scegli le immagini, ricorda che i tuoi clienti possono ingrandire le immagini nel Visualizzatore set di immagini. Assicurati che le immagini siano almeno 2000 pixel nella dimensione più grande. I set di immagini supportano molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG e EPS senza perdita di dati.
+Per iniziare, carica le immagini per i set di immagini. Quando scegli le immagini, ricorda che i tuoi clienti possono ingrandire le immagini nel Visualizzatore set di immagini. Verifica che le immagini abbiano una dimensione maggiore che sia di almeno 2000 pixel. I set di immagini supportano molti formati di file immagine, ma si consiglia di utilizzare immagini TIFF, PNG e EPS senza perdita di dati.
 
 È possibile caricare immagini per i set di immagini come si fa per [caricare qualsiasi altra risorsa in Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -155,7 +155,7 @@ Vedi anche [Limitazioni di Dynamic Media](/help/assets/limitations.md).
 
 1. In Experience Manager, seleziona il logo Experience Manager per accedere alla console di navigazione globale, quindi passa a **[!UICONTROL Navigazione]** > **[!UICONTROL Assets]**. Passa alla posizione in cui desideri creare un set di immagini, quindi vai a **[!UICONTROL Crea]** > **[!UICONTROL Set di immagini]** per aprire la pagina Editor set di immagini.
 
-   Puoi anche creare il set dall’interno di una cartella che contiene le risorse.
+   Puoi anche creare il set dall’interno di una cartella contenente le risorse.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -248,7 +248,6 @@ Tuttavia, i set creati utilizzando predefiniti set di batch, non *not* vengono v
    * Per riordinare le risorse, trascina un’immagine in una nuova posizione (seleziona l’icona Riordina per spostare gli elementi).
    * Per ordinare gli elementi in ordine crescente o decrescente, selezionare l&#39;intestazione di colonna.
    * Per aggiungere una risorsa o aggiornare una risorsa esistente, seleziona **[!UICONTROL Aggiungi risorsa]**. Passa a una risorsa, selezionala, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina.
-
      >[!NOTE]
      >
      >Se elimini l’immagine utilizzata da Experience Manager per la miniatura sostituendola con un’altra immagine, la risorsa originale viene comunque visualizzata.

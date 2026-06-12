@@ -14,8 +14,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 1ffc31e1-9e47-40fe-93b8-cd6ef96e0674
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3792'
-ht-degree: 8%
+source-wordcount: '3901'
+ht-degree: 7%
 
 ---
 
@@ -173,7 +173,7 @@ Gli script seguenti vengono utilizzati dall’integrazione Dynamic Media:
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>ThumbnailExport.jsx</td>
+   <td>EsportazioneMiniatura.jsx</td>
    <td>Sì</td>
    <td>Genera un rendering <code>thumbnail.jpg</code> da 300 ppi ottimizzato e trasformato in un rendering PTIFF da <code>Dynamic Media Process Image Assets</code> componente di processo.<br /> </td>
   </tr>
@@ -194,7 +194,7 @@ Gli script seguenti vengono utilizzati dall’integrazione Dynamic Media:
 
 Puoi configurare le dimensioni delle miniature configurandole nel flusso di lavoro **[!UICONTROL Risorsa di aggiornamento DAM]**. Il flusso di lavoro prevede due passaggi per configurare le dimensioni delle miniature delle risorse immagine. Sebbene (**[!UICONTROL Dynamic Media Process Image Assets]**) sia utilizzato per le risorse di immagini dinamiche e (**[!UICONTROL Process Thumbnails]**) sia per la generazione di miniature statiche o quando tutti gli altri processi non riescono a generare miniature, *both* devono avere le stesse impostazioni.
 
-Con il passaggio **[!UICONTROL Risorse di immagine di processo di elementi multimediali dinamici]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
+Con il passaggio **[!UICONTROL Elabora risorse immagini Dynamic Media]**, le miniature vengono generate da Image Server e questa configurazione è indipendente da quella applicata al passaggio **[!UICONTROL Elabora miniature]**. La generazione delle miniature tramite il passaggio **[!UICONTROL Elabora miniature]** rappresenta il modo più lento e laborioso di creare le miniature, in termini di utilizzo della memoria.
 
 Il dimensionamento delle miniature è definito nel seguente formato: **`width:height:center`**, ad esempio `80:80:false`. La larghezza e l’altezza determinano le dimensioni in pixel della miniatura. Il valore centrale è falso o true e se impostato su true, indica che l&#39;immagine miniatura ha esattamente le dimensioni specificate nella configurazione. Se l&#39;immagine ridimensionata è più piccola, viene centrata all&#39;interno della miniatura.
 
@@ -266,7 +266,7 @@ Vedere [Formato file InDesign (INDD)](#indesign-indd-file-format).
 
    >[!NOTE]
    >
-   >Per rendere dinamico questo predefinito immagine, cancella i valori nei campi **[!UICONTROL larghezza]** e **[!UICONTROL altezza]**, lasciandoli vuoti.
+   >Per rendere dinamico questo predefinito per immagini, cancella i valori nei campi **[!UICONTROL larghezza]** e **[!UICONTROL altezza]**, lasciandoli vuoti.
 
 1. Immetti i valori desiderati nelle schede **[!UICONTROL Base]** e **[!UICONTROL Avanzate]**, compreso un nome. Le opzioni sono descritte in [Opzioni predefinito immagine](#image-preset-options). I predefiniti vengono visualizzati nel riquadro a sinistra e possono essere usati all’istante con altre risorse.
 
@@ -284,7 +284,7 @@ Se non specificate alcun valore, il predefinito immagine è dinamico per Experie
 
 >[!NOTE]
 >
->Per visualizzare i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]** quando applichi un predefinito immagine a una risorsa, essa deve essere pubblicata.
+>Per visualizzare i pulsanti **[!UICONTROL URL]** e **[!UICONTROL RESS]** quando applichi un predefinito per immagini a una risorsa, questa deve essere pubblicata.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -298,7 +298,7 @@ Quando crei o modifichi i predefiniti immagine, disponi delle opzioni descritte 
 
 * **[!UICONTROL Formato]** (**[!UICONTROL Base]** scheda) - Seleziona **[!UICONTROL JPEG]** o un altro formato che soddisfa i tuoi requisiti. Tutti i browser web supportano il formato immagine JPEG, in quanto offre un buon compromesso tra dimensioni ridotte dei file e qualità delle immagini. Tuttavia, le immagini in formato JPEG usano uno schema di compressione che causa la perdita di dati, con possibile introduzione di artefatti di immagine indesiderati, qualora l’impostazione di compressione sia troppo bassa. Per questo motivo, Adobe consiglia di impostare la qualità di compressione su 75. Questa impostazione offre un buon compromesso tra la qualità delle immagini e le dimensioni ridotte dei file.
 
-* **[!UICONTROL Attiva nitidezza semplice]**: non selezionare **[!UICONTROL Attiva nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
+* **[!UICONTROL Abilita nitidezza semplice]**: non selezionare **[!UICONTROL Abilita nitidezza semplice]** (il filtro di nitidezza offre un controllo inferiore rispetto alle impostazioni Maschera definizione dettagli).
 
 * **[!UICONTROL Nitidezza: Metodo Ricampionamento]** - Selezionare **[!UICONTROL Nitidezza2]**.
 
@@ -404,7 +404,7 @@ Quando crei o modifichi i predefiniti immagine, disponi delle opzioni descritte 
     </ul>
     <div>
       La nitidezza è descritta in
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf?lang=it">Immagini nitide</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65-lts/assets/sharpening_images.pdf">Immagini nitide</a>.
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +424,7 @@ Quando crei o modifichi i predefiniti immagine, disponi delle opzioni descritte 
   </tr>
   <tr>
    <td><strong>Modificatore immagine</strong></td>
-   <td><p>Oltre alle comuni impostazioni per le immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate per le immagini che puoi specificare nel campo <strong>Modificatori immagine</strong>. Questi parametri sono definiti nel riferimento del comando <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it#image-serving-api">Image Server Protocol</a>.</p> <p>Importante: le seguenti funzionalità elencate nell’API non sono supportate:</p>
+   <td><p>Oltre alle comuni impostazioni per le immagini disponibili nell'interfaccia utente, Dynamic Media supporta numerose modifiche avanzate per le immagini che puoi specificare nel campo <strong>Modificatori immagine</strong>. Questi parametri sono definiti nel riferimento del comando <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">Image Server Protocol</a>.</p> <p>Importante: le seguenti funzionalità elencate nell’API non sono supportate:</p>
     <ul>
      <li>Comandi di base per la creazione di modelli e il rendering del testo: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandi di localizzazione: <code>locale=</code> e <code>req=xlate</code></li>
@@ -441,15 +441,15 @@ Quando crei o modifichi i predefiniti immagine, disponi delle opzioni descritte 
 
 ## Definizione delle opzioni dei predefiniti immagine con i modificatori immagine {#defining-image-preset-options-with-image-modifiers}
 
-Oltre alle opzioni disponibili nelle schede Base e Avanzate, puoi definire modificatori di immagini per avere più opzioni quando definisci i predefiniti per le immagini. Image Rendering si basa sull&#39;API di rendering delle immagini definita in dettaglio nella [Guida di riferimento al protocollo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it#image-serving-api).
+Oltre alle opzioni disponibili nelle schede Base e Avanzate, puoi definire modificatori di immagini per avere più opzioni quando definisci i predefiniti per le immagini. Image Rendering si basa sull&#39;API di rendering delle immagini definita in dettaglio nella [Guida di riferimento al protocollo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 Di seguito sono riportati alcuni esempi di base delle operazioni che è possibile eseguire con i modificatori di immagini.
 
 >[!NOTE]
 >
->Alcuni modificatori di immagini [&#x200B; non possono essere utilizzati in Experience Manager](#advanced-tab-options).
+>Alcuni modificatori di immagini [ non possono essere utilizzati in Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=it#image-serving-api) - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Inverte ogni componente di colore per ottenere un effetto immagine negativo.
 
   ```xml
   &op_invert=1
@@ -457,7 +457,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=it#image-serving-api) - Applica un filtro di sfocatura all&#39;immagine.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - Applica un filtro di sfocatura all&#39;immagine.
 
   ```xml
   &op_blur=7
@@ -473,7 +473,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=it#image-serving-api) - Diminuisce o aumenta la luminosità.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - Diminuisce o aumenta la luminosità.
 
   ```xml
   &op_brightness=58
@@ -481,7 +481,7 @@ Di seguito sono riportati alcuni esempi di base delle operazioni che è possibil
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=it#image-serving-api) - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l&#39;opacità in primo piano.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - Regola l&#39;opacità dell&#39;immagine. Consente di ridurre l&#39;opacità in primo piano.
 
   ```xml
   opac=29

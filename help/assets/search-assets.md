@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 3511e07b-f6d0-435a-aa80-55357d3dccf5
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '5797'
+source-wordcount: '5754'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
 | AEM 6.5 LTS | Questo articolo |
 
 [!DNL Adobe Experience Manager Assets] fornisce metodi affidabili per l&#39;individuazione delle risorse che consentono di velocizzare le operazioni relative ai contenuti. I tuoi team possono ridurre i tempi di commercializzazione con un’esperienza di ricerca intelligente e fluida utilizzando funzionalità pronte all’uso e metodi personalizzati. La ricerca delle risorse è fondamentale per l’utilizzo di un sistema di gestione delle risorse digitali, che sia destinato a un ulteriore utilizzo da parte dei creativi, per la gestione affidabile delle risorse da parte degli utenti aziendali e dei professionisti del marketing o per l’amministrazione da parte degli amministratori DAM. Ricerche semplici, avanzate e personalizzate che è possibile eseguire tramite l&#39;interfaccia utente di [!DNL Assets] o altre applicazioni e superfici consentono di soddisfare questi casi d&#39;uso.
@@ -52,7 +52,7 @@ Acquisisci familiarità con l’interfaccia di ricerca e le azioni disponibili.
 
 *Figura: Comprendere l&#39;interfaccia dei risultati di ricerca di [!DNL Experience Manager Assets].*
 
-**A.** Salva la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. Il percorso di ricerca **E.** è DAM. **F.** Campo Omnisearch con la parola chiave di ricerca fornita dall&#39;utente. **G.** Selezionare i risultati della ricerca caricati. **H.** Numero di risultati di ricerca visualizzati rispetto al totale dei risultati. **I.** Chiudere la ricerca. **J.** Passare dalla vista a schede alla vista a elenco.
+**A.** Salva la ricerca come raccolta avanzata. **B.** Filtri o predicati per limitare i risultati della ricerca. **C.** Visualizza file, cartelle o entrambi. **D.** Fai clic su Filtri per aprire o chiudere la barra a sinistra. **E.** Il percorso di ricerca è DAM. **F.** Campo Omnisearch con la parola chiave di ricerca fornita dall&#39;utente. **G.** Selezionare i risultati della ricerca caricati. **H.** Numero di risultati di ricerca visualizzati rispetto al totale dei risultati. **I.** Chiudere la ricerca. **J.** Passare dalla vista a schede alla vista a elenco.
 
 ### Facet di ricerca dinamica {#dynamicfacets}
 
@@ -87,7 +87,7 @@ Per impostazione predefinita, la ricerca [!DNL Experience Manager] combina i ter
 * `woman-running`
 
 Tuttavia, la query `woman -running` restituisce le risorse senza `running` nei relativi metadati.
-L&#39;utilizzo di tag avanzati aggiunge una clausola `OR` aggiuntiva per trovare i termini di ricerca come smart tag applicati. In tale query di ricerca viene visualizzata anche una risorsa con tag `woman` o `running` che utilizza tag avanzati. I risultati della ricerca sono quindi una combinazione di:
+L&#39;utilizzo di Smart Tags aggiunge una clausola `OR` aggiuntiva per trovare i termini di ricerca come smart tag applicati. Una risorsa con tag `woman` o `running` tramite Tag avanzati viene visualizzata anche in tale query di ricerca. I risultati della ricerca sono quindi una combinazione di:
 
 * Assets con `woman` e `running` parole chiave nei metadati (comportamento predefinito).
 
@@ -123,9 +123,9 @@ Puoi migliorare la pertinenza delle parole chiave per determinate risorse in mod
 1. Nella casella **[!UICONTROL Promozione ricerca]**, specifica una parola chiave per la quale vuoi aumentare la ricerca dell&#39;immagine, quindi fai clic su **[!UICONTROL Aggiungi]**. È possibile specificare più parole chiave nello stesso modo.
 1. Fai clic su **[!UICONTROL Salva e chiudi]**. La risorsa promossa per questa parola chiave viene visualizzata tra i risultati di ricerca principali.
 
-Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune risorse nei risultati di ricerca per la parola chiave di destinazione. Guarda l’esempio di video seguente. Per informazioni dettagliate, vedi [Ricerca in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=it).
+Puoi utilizzarlo a tuo vantaggio, incrementando la classificazione di alcune risorse nei risultati di ricerca per la parola chiave di destinazione. Guarda l’esempio di video seguente. Per informazioni dettagliate, vedi [Ricerca in [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410337/?captions=ita&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *Video: scopri come vengono classificati i risultati della ricerca e come può essere influenzato il livello.*
 
@@ -213,11 +213,11 @@ Utilizzando Adobe Asset Link, i professionisti della creatività possono ora acc
 
 ### Cerca risorse digitali nell&#39;app desktop [!DNL Experience Manager] {#desktop-app}
 
-I professionisti Creative utilizzano l&#39;app desktop per rendere [!DNL Experience Manager Assets] facilmente ricercabile e disponibile sul desktop locale (Windows o Mac). I creativi possono visualizzare facilmente le risorse desiderate in Mac Finder o Esplora risorse, aperte in applicazioni desktop e modificate localmente. Le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell&#39;archivio. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e l&#39;operatore `AND`. Consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=it#browse-search-preview-assets) nell&#39;app desktop.
+I professionisti Creative utilizzano l&#39;app desktop per rendere [!DNL Experience Manager Assets] facilmente ricercabile e disponibile sul desktop locale (Windows o Mac). I creativi possono visualizzare facilmente le risorse desiderate in Mac Finder o Esplora risorse, aperte in applicazioni desktop e modificate localmente. Le modifiche vengono salvate in [!DNL Experience Manager] con una nuova versione creata nell&#39;archivio. L&#39;applicazione supporta ricerche di base utilizzando una o più parole chiave, caratteri jolly `*` e `?` e l&#39;operatore `AND`. Consulta [Sfogliare, cercare e visualizzare in anteprima le risorse](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) nell&#39;app desktop.
 
 ### Cerca risorse digitali in [!DNL Brand Portal] {#brand-portal}
 
-Gli utenti e i professionisti del marketing che operano nel settore commerciale utilizzano Brand Portal per condividere in modo efficiente e sicuro le risorse digitali approvate con i loro team interni, partner e rivenditori. Vedi [cercare risorse in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=it).
+Gli utenti e i professionisti del marketing che operano nel settore commerciale utilizzano Brand Portal per condividere in modo efficiente e sicuro le risorse digitali approvate con i loro team interni, partner e rivenditori. Vedi [cercare risorse in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
 ### Cerca in [!DNL Adobe Stock] immagini {#adobe-stock1}
 
@@ -239,7 +239,7 @@ La funzionalità di ricerca di [!DNL Experience Manager] supporta la ricerca di 
 
 >[!NOTE]
 >
->Il selettore risorse è stato chiamato [selettore risorse](https://helpx.adobe.com/it/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di [!DNL Adobe Experience Manager].
+>Il selettore risorse è stato chiamato [selettore risorse](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) nelle versioni precedenti di [!DNL Adobe Experience Manager].
 
 Il selettore delle risorse consente di cercare, filtrare e sfogliare le risorse DAM in modo speciale. Il selettore risorse è disponibile in `https://[aem_server]:[port]/aem/assetpicker.html`. Puoi recuperare i metadati delle risorse selezionate utilizzando il selettore risorse. Puoi avviarlo con i parametri di richiesta supportati, ad esempio tipo di risorsa (immagine, video, testo) e modalità di selezione (selezione singola o multipla). Questi parametri impostano il contesto del selettore di risorse per una particolare istanza di ricerca e rimangono intatti per tutta la selezione.
 
@@ -365,11 +365,11 @@ La ricerca visiva utilizza tag avanzati. Dopo aver configurato la funzionalità 
    Salva le modifiche.
 
 1. Accedere a `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` e aggiungere la proprietà `similarityTags` di tipo `Boolean` con il valore di `true`.
-1. Applica tag avanzati alle risorse nell&#39;archivio [!DNL Experience Manager]. Consulta [come configurare i tag avanzati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=it#configuring).
+1. Applica tag avanzati alle risorse nell&#39;archivio [!DNL Experience Manager]. Consulta [come configurare i tag avanzati](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, nel nodo `/oak-index/damAssetLucene`, impostare la proprietà `reindex` su `true`. Salva le modifiche.
 1. (Facoltativo) Se hai un modulo di ricerca personalizzato, copia il nodo `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Salva le modifiche.
 
-Per informazioni correlate, vedere [comprendere gli smart tag in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=it) e [gestire gli smart tag](/help/assets/enhanced-smart-tags.md).
+Per informazioni correlate, vedere [comprendere gli smart tag in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) e [gestire gli smart tag](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
@@ -492,5 +492,5 @@ Collega e rimuovi le risorse visualizzate nei risultati di ricerca. Seleziona le
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] guida all&#39;implementazione per la ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=it)
->* [Configurazione avanzata per migliorare i risultati della ricerca](https://experienceleague.adobe.com/it/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] guida all&#39;implementazione per la ricerca](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Configurazione avanzata per migliorare i risultati della ricerca](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
