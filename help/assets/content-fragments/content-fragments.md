@@ -7,7 +7,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7b5a9485-8d07-434e-9871-5f97d6781eaf
 source-git-commit: e0a31fe9bc3297a4cb6e72765482c24cebb3ad29
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2371'
 ht-degree: 59%
 
 ---
@@ -131,7 +131,7 @@ I frammenti di contenuto sono:
    * I frammenti di contenuto (e le relative varianti) possono essere creati e gestiti dalla console **Assets**.
    * Vengono creati e modificati nell’Editor frammenti di contenuto.
 
-* Utilizzato nell&#39;editor di pagine [&#x200B; con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
+* Utilizzato nell&#39;editor di pagine [ con il componente Frammento di contenuto](/help/sites-authoring/content-fragments.md) (componente di riferimento):
 
    * Il componente **Frammento di contenuto** è disponibile per gli autori delle pagine. Consente loro di fare riferimento e distribuire il frammento di contenuto richiesto in formato HTML o JSON.
 

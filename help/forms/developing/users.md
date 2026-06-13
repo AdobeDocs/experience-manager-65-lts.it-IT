@@ -54,7 +54,7 @@ La tabella seguente descrive ogni passaggio del processo di autenticazione.
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -542,7 +542,7 @@ Per gestire in modo programmatico utenti, gruppi e domini utilizzando (Java), es
 
 1. Creare un client DirectoryManagerService.
 
-   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione &#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
+   Creare un oggetto `DirectoryManagerServiceClient` utilizzando il relativo costruttore e passando un oggetto `ServiceClientFactory` che contiene proprietà di connessione. Per informazioni, vedere [Impostazione delle proprietà di connessione ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Richiama le operazioni appropriate dell’utente o del gruppo.
 
@@ -737,7 +737,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -863,7 +863,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>

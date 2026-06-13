@@ -1,5 +1,5 @@
 ---
-title: Creare aspetti personalizzati nei moduli di HTML5
+title: Creare aspetti personalizzati nei moduli HTML5
 description: Puoi collegare widget personalizzati a un Forms mobile. Puoi estendere i widget jQuery esistenti o sviluppare widget personalizzati.
 contentOwner: robhagat
 content-type: reference
@@ -13,11 +13,11 @@ exl-id: 7d9fadf8-c48a-424e-8b71-18ffd0328a13
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '635'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Creare aspetti personalizzati nei moduli di HTML5{#create-custom-appearances-in-html-forms}
+# Creare aspetti personalizzati nei moduli HTML5{#create-custom-appearances-in-html-forms}
 
 Puoi collegare widget personalizzati a un Forms mobile. È possibile estendere i widget jQuery esistenti o sviluppare widget personalizzati utilizzando il framework di aspetti. Il motore XFA utilizza diversi widget. Per informazioni dettagliate, vedere [Framework di aspetto per moduli adattivi e HTML5](/help/forms/using/introduction-widgets.md).
 
@@ -47,7 +47,7 @@ I moduli HTML5 forniscono un&#39;implementazione del framework widget che può e
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è un evento XFA corrispondente. </td>
+   <td>Restituisce una mappa per convertire gli eventi HTML in eventi XFA. <br /> {<br /> blur: XFA_EXIT_EVENT,<br /> }<br /> Questo esempio mostra che la sfocatura è un evento HTML e XFA_EXIT_EVENT è l'evento XFA corrispondente. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -104,5 +104,5 @@ dove &quot;identifier&quot; è un selettore CSS jQuery che rappresenta un partic
 | Tipo di identificatore | Identificatore | Descrizione |
 |---|---|---|
 | Campo particolare con nome nomecampo | Identificatore:&quot;div.fieldname&quot; | Tutti i campi denominati &quot;fieldname&quot; vengono riprodotti utilizzando il widget. |
-| Tutti i campi di tipo &quot;type&quot; (dove type è NumericField, DateField e così via).: | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield in quanto questi campi non sono supportati. |
+| Tutti i campi di tipo &quot;type&quot; (dove type è NumericField, DateField e così via): | Identificatore: &quot;div.type&quot; | Per Timefield e DateTimeField, il tipo è textfield in quanto questi campi non sono supportati. |
 | Tutti i campi | Identificatore: &quot;div.field&quot; |  |

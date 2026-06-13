@@ -8,8 +8,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16ab2e64-9c12-43ae-a8d2-f71e63899c68
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 7%
+source-wordcount: '2751'
+ht-degree: 8%
 
 ---
 
@@ -71,7 +71,7 @@ Esistono diversi modi per incorporare i metadati nei file. È disponibile il sup
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano XMP Standard in quanto fornisce un modello di contenuti avanzati. Gli utenti di XMP Standard e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui basarsi. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/it/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) è uno standard aperto utilizzato da [!DNL Experience Manager Assets] per la gestione di tutti i metadati. Lo standard offre una codifica universale dei metadati che può essere incorporata in tutti i formati di file. Adobe e altre aziende supportano XMP Standard in quanto fornisce un modello di contenuti avanzati. Gli utenti di XMP Standard e di [!DNL Experience Manager Assets] hanno una piattaforma potente su cui basarsi. Per ulteriori informazioni, vedere [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -123,7 +123,7 @@ I metadati specifici dell’applicazione includono metadati tecnici e descrittiv
 * CQ - Utilizzato da [!DNL Experience Manager Assets].
 * DAM - Utilizzato da [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] è una raccolta di strumenti per la gestione dei metadati e dei file per i sistemi operativi Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/it/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto e MP - Foto Microsoft.
@@ -271,7 +271,7 @@ XMP consente di aggiungere una proprietà `xml:lang` alle proprietà di testo pe
 
 ## Utilizzare i metadati di IPTC {#support-for-iptc-metadata}
 
-Scopri come [!DNL Adobe Experience Manager Assets] supporta i metadati di IPTC, le valutazioni creative e le parole chiave aggiunte alle risorse tramite [!DNL Adobe Bridge] e altre app [!DNL Adobe Creative Cloud].
+Scopri come [!DNL Adobe Experience Manager Assets] supporta i metadati di IPTC, le valutazioni di Creative e le parole chiave aggiunte alle risorse tramite [!DNL Adobe Bridge] e altre app [!DNL Adobe Creative Cloud].
 
 [!DNL Adobe Experience Manager Assets] supporta lo standard di metadati IPTC ampiamente utilizzato per descrivere le risorse. In questo modo, [!DNL Assets] favorisce l&#39;accettazione delle sue immagini da parte di vari soggetti, tra cui fotografi, agenzie creative, biblioteche, musei e così via.
 
@@ -290,13 +290,13 @@ La pagina Proprietà delle risorse ora include schede separate per visualizzare 
 1. Modifica le proprietà dei metadati dell’estensione IPTC, secondo necessità.
 1. Fai clic su **[!UICONTROL Salva e chiudi]** per salvare le modifiche.
 
-### Supporto per valutazione creativa {#creative-rating-support}
+### Supporto per la valutazione Creative {#creative-rating-support}
 
-Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, la pagina Proprietà mostra ora le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app creative
+Oltre a visualizzare le valutazioni dei singoli utenti e le valutazioni aggregate, la pagina Proprietà mostra ora le valutazioni assegnate alle risorse tramite Adobe Bridge e altre app Creative
 
 Queste valutazioni sono disponibili nella sezione **[!UICONTROL Valutazione creativa]** della scheda **[!UICONTROL Avanzate]**.
 
-Questa valutazione è di sola lettura e varia da 1 a 5. Puoi cercare le risorse in base alla loro valutazione creativa dal pannello di ricerca.
+Questa valutazione è di sola lettura e varia da 1 a 5. Puoi cercare le risorse in base alla loro valutazione Creative dal pannello di ricerca.
 
 Tuttavia, questa proprietà non è attualmente indicizzata per evitare conflitti con le modifiche personalizzate apportate dagli utenti.
 

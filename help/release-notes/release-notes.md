@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
 workflow-type: tm+mt
-source-wordcount: '7679'
+source-wordcount: '7660'
 ht-degree: 97%
 
 ---
@@ -155,7 +155,7 @@ In 6.5 LTS, il supporto per gli eventi headless non disponeva degli eventi OSGi 
 
 * L’editor Rich Text per frammenti di contenuto mostrava problemi di layout e di visualizzazione dopo recenti modifiche di stile dell’interfaccia utente. Service Pack 2 ottimizza lo stile dell’editor Rich Text in modo che la barra degli strumenti e l’area modificabile eseguano il rendering correttamente e rimangano leggibili. L’editor frammenti di contenuto ora è allineato con l’aspetto e il comportamento dell’editor pagina. (SITES-38684)
 * La rimozione degli ambiti IMS dal selettore risorse Polaris ha interrotto l’integrazione del frammento di contenuto con l’endpoint di consegna. Gli autori riscontrano errori all’apertura del selettore risorse remoto e durante la selezione delle risorse. L’aggiornamento aggiunge nuovamente gli ambiti IMS necessari e ripristina l’accesso stabile a livello di consegna. (SITES-35837)
-* Il pannello Contenuto associato non esegue più il rendering di un segnaposto hardcoded “non definito”. L’editor frammenti di contenuto ora risolve il testo tramite le risorse di localizzazione, in modo che gli editor possano visualizzare il testo dell’interfaccia utente tradotto. (SITES-33675)
+* Il pannello Contenuto associato non esegue più il rendering di un segnaposto codificato &quot;non definito&quot;. L’Editor frammento di contenuto ora risolve il testo tramite le risorse di localizzazione, in modo che gli editor possano vedere il testo tradotto dell’interfaccia utente. (SITES-33675)
   <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * L’editor frammenti di contenuto ora visualizza un’etichetta della scheda Generale tradotta per tutte le lingue. L’editor sostituisce il testo della scheda non localizzato e rimuove gli ID interni dai titoli della scheda. (SITES-30715)
 * L’editor frammenti di contenuto ora visualizza i nomi tradotti per i tipi di risorse consentiti. L’elenco selettore non combina più stringhe interne ed etichette solo in inglese quando gli autori configurano le restrizioni relative ai riferimenti ai contenuti. (SITES-29699)

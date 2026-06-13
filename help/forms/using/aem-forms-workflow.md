@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 972273ad-763f-4314-95b1-678368f99148
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3667'
-ht-degree: 1%
+source-wordcount: '3646'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ L’esempio è disponibile come pacchetto allegato di seguito. Importa e install
 
 Nell&#39;esempio viene creato un modello di flusso di lavoro per una richiesta di mutuo che deve essere compilata da un agente bancario di front-office. Una volta compilata, la domanda viene inviata per l&#39;approvazione. Successivamente, l’applicazione approvata viene inviata al cliente per le firme elettroniche utilizzando Adobe Sign. Puoi importare e installare l’esempio utilizzando Gestione pacchetti.
 
-[Ottieni file](assets/example-mortgage-loan-application.zip)
+[Ottieni il file](assets/example-mortgage-loan-application.zip)
 
 1. Apri la console Modelli di flusso di lavoro. URL predefinito: `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Seleziona **Crea**, quindi **Crea modello**. Viene visualizzata la finestra di dialogo Aggiungi modello flusso di lavoro.
@@ -272,14 +272,14 @@ Puoi utilizzare i passaggi Assegna attività e Invia e-mail dei flussi di lavoro
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
-La riduzione al minimo del numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular) eliminazione delle istanze del flusso di lavoro.
+Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular) eliminazione delle istanze del flusso di lavoro.
 
 ## Parametrizza i dati sensibili per le variabili del flusso di lavoro e memorizzali in archivi di dati esterni {#externalize-wf-variables}
 
-I dati inviati dai moduli adattivi ai flussi di lavoro [!DNL Experience Manager] possono contenere dati PII (personalmente identificabili) o SPD (Sensitive Personal Data) degli utenti finali della tua azienda. Tuttavia, non è obbligatorio archiviare i dati in [!DNL Adobe Experience Manager] [archivio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=it). Puoi esternalizzare l&#39;archiviazione dei dati degli utenti finali nell&#39;archiviazione dei dati gestita (ad esempio, l&#39;archiviazione BLOB di Azure) parametrizzando le informazioni in [variabili del flusso di lavoro](/help/forms/using/variable-in-aem-workflows.md).
+I dati inviati dai moduli adattivi ai flussi di lavoro [!DNL Experience Manager] possono contenere dati PII (personalmente identificabili) o SPD (Sensitive Personal Data) degli utenti finali della tua azienda. Tuttavia, non è obbligatorio archiviare i dati in [!DNL Adobe Experience Manager] [archivio JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Puoi esternalizzare l&#39;archiviazione dei dati degli utenti finali nell&#39;archiviazione dei dati gestita (ad esempio, l&#39;archiviazione BLOB di Azure) parametrizzando le informazioni in [variabili del flusso di lavoro](/help/forms/using/variable-in-aem-workflows.md).
 
-In un flusso di lavoro di Forms [!DNL Adobe Experience Manager], i dati vengono elaborati e trasmessi tramite una serie di passaggi del flusso di lavoro tramite variabili del flusso di lavoro. Queste variabili sono proprietà denominate o coppie chiave-valore memorizzate nel nodo di metadati delle istanze del flusso di lavoro, ad esempio `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Queste variabili del flusso di lavoro possono essere esternalizzate in un archivio separato diverso da JCR e quindi elaborate da [!DNL Adobe Experience Manager] flussi di lavoro. [!DNL Adobe Experience Manager] fornisce l&#39;API `[!UICONTROL UserMetaDataPersistenceProvider]` per archiviare le variabili del flusso di lavoro nell&#39;archiviazione esterna gestita. Per ulteriori informazioni sull&#39;utilizzo delle variabili del flusso di lavoro per gli archivi dati di proprietà del cliente in [!DNL Adobe Experience Manager], vedere [Amministrare le variabili del flusso di lavoro per gli archivi dati esterni](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe] fornisce il seguente [esempio](https://github.com/adobe/workflow-variable-externalizer) per memorizzare le variabili dalla mappa dei metadati del flusso di lavoro all&#39;archiviazione BLOB di Azure, utilizzando l&#39;API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Analogamente, è possibile utilizzare l&#39;esempio come guida per utilizzare l&#39;API [UserMetaDataPersistenceProvider] per esternalizzare le variabili del flusso di lavoro in qualsiasi altro archivio dati esterno a [!DNL Adobe Experience Manager] e gestirle allo stesso modo.
+In un flusso di lavoro di Forms [!DNL Adobe Experience Manager], i dati vengono elaborati e trasmessi tramite una serie di passaggi del flusso di lavoro tramite variabili del flusso di lavoro. Queste variabili sono proprietà denominate o coppie chiave-valore memorizzate nel nodo di metadati delle istanze del flusso di lavoro, ad esempio `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Queste variabili del flusso di lavoro possono essere esternalizzate in un archivio separato diverso da JCR e quindi elaborate da [!DNL Adobe Experience Manager] flussi di lavoro. [!DNL Adobe Experience Manager] fornisce l&#39;API `[!UICONTROL UserMetaDataPersistenceProvider]` per memorizzare le variabili del flusso di lavoro nell&#39;archiviazione esterna gestita. Per ulteriori informazioni sull&#39;utilizzo delle variabili del flusso di lavoro per gli archivi dati di proprietà del cliente in [!DNL Adobe Experience Manager], vedere [Amministrare le variabili del flusso di lavoro per gli archivi dati esterni](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] fornisce il seguente [esempio](https://github.com/adobe/workflow-variable-externalizer) per memorizzare le variabili dalla mappa dei metadati del flusso di lavoro all&#39;archiviazione BLOB di Azure, utilizzando l&#39;API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Analogamente, è possibile utilizzare l&#39;esempio come guida per utilizzare l&#39;API [UserMetaDataPersistenceProvider] per esternalizzare le variabili del flusso di lavoro in qualsiasi altra archiviazione dati esterna a [!DNL Adobe Experience Manager] e gestirle.
 
 >[!NOTE]
 >
@@ -336,7 +336,7 @@ Per configurare un modello di flusso di lavoro AEM per un’archiviazione dati e
 
 ### Linee guida per i flussi di lavoro di AEM per l’archiviazione di dati esterni {#guidelines-workflows-external-data-storage}
 
-Di seguito sono riportate le linee guida per l&#39;utilizzo dei flussi di lavoro [!DNL Adobe Experience Manager] e l&#39;archiviazione dei dati in archivi dati esterni (ad esempio, il server di archiviazione di Microsoft Azure):
+Di seguito sono riportate le linee guida per l&#39;utilizzo di [!DNL Adobe Experience Manager] flussi di lavoro e l&#39;archiviazione di dati in archivi dati esterni (ad esempio, Microsoft Azure Storage Server):
 
 * Utilizza le variabili per memorizzare i dati durante la definizione dei file di dati di input e output e degli allegati nei passaggi del modello di flusso di lavoro. Non selezionare **[!UICONTROL Relativo al payload]** e **[!UICONTROL Disponibile in un percorso assoluto]** opzioni. Le opzioni **[!UICONTROL Relative al payload]** e **[!UICONTROL Disponibili in un percorso assoluto]** non vengono visualizzate automaticamente una volta [configurato un modello di flusso di lavoro [!DNL Adobe Experience Manager] per l&#39;archiviazione dati esterna](#configure-aem-wf-model).
 
