@@ -1,5 +1,5 @@
 ---
-title: Introduzione alla personalizzazione di AEM Form Workspace
+title: Introduzione alla personalizzazione dell’area di lavoro di AEM Forms
 description: Introduzione rapida, con informazioni concettuali e tecniche, per personalizzare l'area di lavoro AEM Forms LiveCycle per la gestione dei processi.
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ role: Admin, User, Developer
 exl-id: 39be83b0-c003-4e6c-baca-95166f654bc7
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 0%
+source-wordcount: '1790'
+ht-degree: 1%
 
 ---
 
-# Introduzione alla personalizzazione di AEM Form Workspace{#introduction-to-customizing-aem-form-workspace}
+# Introduzione alla personalizzazione dell’area di lavoro di AEM Forms{#introduction-to-customizing-aem-form-workspace}
 
 AEM form workspace offre funzionalità che consentono di modificare la semantica delle presentazioni e la funzionalità dell&#39;interfaccia. Di seguito sono descritti i tipi di personalizzazioni per modificare lo stile, il layout, la formattazione, il branding e le funzionalità di base.
 

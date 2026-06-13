@@ -1,5 +1,5 @@
 ---
-title: Configurare il progetto Visual Studio e creare l'app Windows
+title: Configurare il progetto Visual Studio e creare l’app Windows
 description: Informazioni su come configurare un progetto Visual Studio per creare l'app per dispositivi mobili AEM Forms Windows.
 topic-tags: forms-app
 docset: aem65
@@ -9,12 +9,12 @@ role: User, Developer
 exl-id: c2e9200f-a4b7-46fc-9dde-425329e5365d
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 2%
+source-wordcount: '953'
+ht-degree: 4%
 
 ---
 
-# Configurare il progetto Visual Studio e creare l&#39;app Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
+# Configurare il progetto Visual Studio e creare l’app Windows{#set-up-the-visual-studio-project-and-build-the-windows-app}
 
 AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per creare un’applicazione Workspace personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` fa parte del pacchetto `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Distribuzione software.
 

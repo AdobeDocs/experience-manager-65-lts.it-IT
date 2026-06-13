@@ -10,8 +10,8 @@ feature: Adaptive Forms,AEM Forms on OSGi
 exl-id: ee917b4b-fd38-4e05-8632-8efb82d9cddc
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 2%
+source-wordcount: '1962'
+ht-degree: 7%
 
 ---
 
@@ -118,12 +118,12 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
-1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e che il registro sia stabile.
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e che il registro sia stabile.
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
@@ -175,7 +175,7 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 1. Apri AEM Configuration Manager in una finestra del browser. URL predefinito: `https://'[server]:[port]'/system/console/configMgr`.
 1. Cerca **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e apri la configurazione.
-1. Aggiungere il pacchetto **sun.util.calendar** al campo **inserisce nell&#39;elenco Consentiti** di un&#39;unità di misura Fai clic su **Salva**.
+1. Aggiungere il pacchetto **sun.util.calendar** al campo **inserisce nell&#39;elenco Consentiti**. Fai clic su **Salva**.
 1. Ripeti i passaggi 1-3 su tutte le istanze Author e Publish.
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
@@ -228,7 +228,7 @@ Per utilizzare Adobe Sign con AEM Forms, [Integra Adobe Sign con AEM Forms](/hel
 
 #### Configurare Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate in base ai dati sulle modifiche necessarie per rendere i moduli o i documenti più utilizzabili.
+AEM Forms si integra con Adobe Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 Per utilizzare Adobe Analytics con AEM Forms, vedi [Configurazione di analisi e report](/help/forms/using/configure-analytics-forms-documents.md).
 
@@ -243,5 +243,5 @@ AEM forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per 
 Hai configurato un ambiente per l’utilizzo delle funzionalità di acquisizione dati di AEM Forms. Ora, i passaggi successivi per utilizzare la funzionalità sono:
 
 * [Creare il primo modulo adattivo](/help/forms/using/create-your-first-adaptive-form.md)
-* [Crea il tuo primo PDF Form](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Creazione del primo modulo PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introduzione a HTML5 Forms](/help/forms/using/introduction.md)

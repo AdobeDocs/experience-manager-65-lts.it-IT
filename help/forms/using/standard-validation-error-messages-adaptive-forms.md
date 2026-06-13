@@ -12,8 +12,8 @@ role: User, Developer
 exl-id: 17d1976e-96bd-4f8a-8be5-ea208c5ba93f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2361'
-ht-degree: 1%
+source-wordcount: '2318'
+ht-degree: 2%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html).
 
 
-AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di moduli. Fornisce inoltre funzionalità per personalizzare le funzioni del gestore degli errori. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel backend per codici di errore specifici o informare il cliente che il servizio non è disponibile. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un servizio esterno viene richiamato utilizzando le API, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione. Un gestore degli errori consente di gestire e visualizzare gli errori o i problemi di convalida rilevati.
+AEM Forms fornisce gestori predefiniti di successo e di errori per l’invio di moduli. Fornisce inoltre funzionalità per personalizzare le funzioni del gestore degli errori. Ad esempio, puoi richiamare un flusso di lavoro personalizzato nel back-end per codici di errore specifici o informare il cliente che il servizio non è disponibile. I gestori sono funzioni lato client che vengono eseguite in base alla risposta del server. Quando un servizio esterno viene richiamato utilizzando le API, i dati vengono trasmessi al server per la convalida, che restituisce una risposta al client con informazioni sull’evento di successo o errore per l’invio. Le informazioni vengono passate come parametri al gestore pertinente per eseguire la funzione. Un gestore degli errori consente di gestire e visualizzare gli errori o i problemi di convalida rilevati.
 
 ![flusso di lavoro gestore errori per informazioni su come aggiungere un gestore errori personalizzato nei moduli](/help/forms/using/assets/error-handler-workflow.png)
 
@@ -182,13 +182,13 @@ Puoi visualizzare il valore di dataRef nella finestra **[!UICONTROL Proprietà]*
 
 Prima di utilizzare un gestore di errori personalizzato in un Forms adattivo:
 
-* Conoscenza di base per [creare una funzione personalizzata](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=it#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
+* Conoscenza di base per [creare una funzione personalizzata](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installa la versione più recente di [Apache Maven](https://maven.apache.org/download.cgi).
 
 
 ## Aggiungi gestore errori tramite l’Editor regole {#add-error-handler-using-rule-editor}
 
-Utilizzando l&#39;azione Invoke Service[&#x200B; dell&#39;editor di regole &#x200B;](/help/forms/using/rule-editor.md#invoke), puoi definire i criteri di convalida in base all&#39;origine dati utilizzata con il modulo adattivo. Se si utilizzano i servizi Web RESTful come origine dati, è possibile definire i criteri di convalida in un file di definizione Swagger. Utilizzando le funzioni di gestore degli errori e l’editor di regole in Adaptive Forms, puoi gestire e personalizzare in modo efficace la gestione degli errori. Definisci le condizioni utilizzando l’Editor regole e configura le azioni da eseguire quando la regola viene attivata. Il modulo adattivo convalida gli input immessi nei campi in base a criteri di convalida predefiniti. Se i valori di input non soddisfano i criteri di convalida, i messaggi di errore vengono visualizzati a livello di campo in un modulo adattivo.
+Utilizzando l&#39;azione Invoke Service](/help/forms/using/rule-editor.md#invoke) dell&#39;editor di regole [, puoi definire i criteri di convalida in base all&#39;origine dati utilizzata con il modulo adattivo. Se si utilizzano i servizi Web RESTful come origine dati, è possibile definire i criteri di convalida in un file di definizione Swagger. Utilizzando le funzioni di gestore degli errori e l’editor di regole in Adaptive Forms, puoi gestire e personalizzare in modo efficace la gestione degli errori. Definisci le condizioni utilizzando l’Editor regole e configura le azioni da eseguire quando la regola viene attivata. Il modulo adattivo convalida gli input immessi nei campi in base a criteri di convalida predefiniti. Se i valori di input non soddisfano i criteri di convalida, i messaggi di errore vengono visualizzati a livello di campo in un modulo adattivo.
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Utilizzando l’editor di regole, puoi:
 ### Aggiungi funzione gestore errori predefinita {#add-default-errror-handler}
 
 È supportato un gestore degli errori predefinito per visualizzare i messaggi di errore sui campi se la risposta di errore si trova nello schema standard o in un errore di convalida lato server.
-Per informazioni su come utilizzare un gestore di errori predefinito utilizzando l&#39;azione Richiama servizio[&#x200B; dell&#39;editor di regole, utilizzare un modulo adattivo semplice con due campi, &#x200B;](/help/forms/using/rule-editor.md#invoke)ID animale domestico **e** Nome animale **e utilizzare un gestore di errori predefinito nel campo** ID animale **per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio**,`200 - OK`, `404 - Not Found`. `400 - Bad Request` Per aggiungere un gestore degli errori predefinito tramite l’azione Richiama servizio dell’editor di regole, esegui i passaggi seguenti:
+Per informazioni su come utilizzare un gestore di errori predefinito utilizzando l&#39;azione Richiama servizio](/help/forms/using/rule-editor.md#invoke) dell&#39;editor di regole, utilizzare un modulo adattivo semplice con due campi, **ID animale domestico** e **Nome animale** e utilizzare un gestore di errori predefinito nel campo **ID animale** per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio `200 - OK`,`404 - Not Found`, `400 - Bad Request`. Per aggiungere un gestore degli errori predefinito tramite l’azione Richiama servizio dell’editor di regole, esegui i passaggi seguenti:[
 
 1. Apri un modulo adattivo in modalità di creazione, seleziona un componente modulo e seleziona **[!UICONTROL Editor regole]** per aprire l&#39;editor regole.
 1. Seleziona **[!UICONTROL Crea]**.
@@ -233,7 +233,7 @@ Oltre alle azioni citate, i gestori degli errori personalizzati possono essere u
 
 Il gestore degli errori personalizzati è una funzione (libreria client) progettata per rispondere agli errori restituiti da un servizio esterno e fornire una risposta personalizzata agli utenti finali. Qualsiasi libreria client con annotazione `@errorHandler` è considerata una funzione di gestore degli errori personalizzata. Questa annotazione consente di identificare la funzione di gestione degli errori specificata nel file `.js`.
 
-Per capire come creare e utilizzare un gestore di errori personalizzato utilizzando l&#39;azione Richiama servizio[&#x200B; dell&#39;editor di regole, prendiamo ad esempio il modulo adattivo con due campi, &#x200B;](/help/forms/using/rule-editor.md#invoke)ID animale domestico **e** Nome animale **, e utilizziamo un gestore di errori personalizzato nel campo** ID animale **per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio**,`200 - OK`, `404 - Not Found`.`400 - Bad Request`
+Per capire come creare e utilizzare un gestore di errori personalizzato utilizzando l&#39;azione Richiama servizio](/help/forms/using/rule-editor.md#invoke) dell&#39;editor di regole, prendiamo ad esempio il modulo adattivo con due campi, **ID animale domestico** e **Nome animale**, e utilizziamo un gestore di errori personalizzato nel campo **ID animale** per verificare la presenza di vari errori restituiti dall&#39;endpoint REST configurato per richiamare un servizio esterno, ad esempio `200 - OK`,`404 - Not Found`, `400 - Bad Request`.[
 
 Per aggiungere e utilizzare un gestore di errori personalizzato in un modulo adattivo, effettua le seguenti operazioni:
 
@@ -308,7 +308,7 @@ Prima di implementare il gestore di errori personalizzato in un modulo adattivo,
 
 In questo caso, il nome della libreria client viene fornito come `customfunctionsdemo` nel file `.content.xml`.
 
-Per utilizzare un gestore degli errori personalizzato utilizzando l&#39;azione Richiama servizio **[!UICONTROL dell&#39;editor di regole:]**
+Per utilizzare un gestore degli errori personalizzato utilizzando l&#39;azione Richiama servizio ]**dell&#39;editor di regole:**[!UICONTROL 
 
 1. Apri un modulo adattivo in modalità di creazione, seleziona un componente modulo e seleziona **[!UICONTROL Editor regole]** per aprire l&#39;editor regole.
 1. Seleziona **[!UICONTROL Crea]**.

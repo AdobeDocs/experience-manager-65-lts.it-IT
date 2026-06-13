@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 17e1310f-f82d-42ee-a7cb-9bc141f23aee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 In Gestione corrispondenza, un modello di lettera contiene campi modulo tipici, funzioni di layout come intestazione e piè di pagina e &quot;aree di destinazione&quot; vuote per il posizionamento del contenuto.
 
-Gestione corrispondenza fornisce modelli di lettere nel pacchetto del componente aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
+Gestione corrispondenza fornisce modelli di lettere nel pacchetto del componente aggiuntivo [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Puoi personalizzare i modelli in Designer in base alle tue esigenze di branding e business. Il pacchetto include i seguenti modelli:
 
 * Classico
 * Classic Semplice

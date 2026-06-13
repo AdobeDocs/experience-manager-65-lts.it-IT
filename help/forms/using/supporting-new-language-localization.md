@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
 source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 7%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
 
@@ -97,7 +97,7 @@ I18N.js
 
 ### Aggiungere una libreria client per moduli adattivi per una lingua {#add-adaptive-form-client-library-for-a-locale-br}
 
-Creare un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria come `guides.I18N.<locale>` e dipendenze come `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
+Creare un nodo di tipo `cq:ClientLibraryFolder` in `etc/<folderHierarchy>`, con categoria `guides.I18N.<locale>` e dipendenze `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` e `guide.common`. &quot;
 
 Aggiungi i seguenti file alla libreria client:
 

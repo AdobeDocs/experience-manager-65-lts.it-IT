@@ -1,5 +1,5 @@
 ---
-title: Creare l’app AEM Forms Android
+title: Creare l’app AEM Forms per Android
 description: Passaggi per configurare il progetto Android Studio e creare il file .apk per l’app AEM Forms per Android
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: a804ba9b-c5c6-4d76-96e4-5d729b673ca4
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 2%
+source-wordcount: '728'
+ht-degree: 4%
 
 ---
 
-# Creare l’app AEM Forms Android {#build-the-aem-forms-android-app}
+# Creare l’app AEM Forms per Android {#build-the-aem-forms-android-app}
 
 Per creare l’app Android per AEM Forms, esegui i seguenti passaggi nella sequenza consigliata.
 
@@ -49,8 +49,8 @@ Nell&#39;immagine seguente viene visualizzata la struttura della cartella `adobe
 Imposta le seguenti variabili di ambiente prima di avviare il processo di build per l’app AEM Forms:
 
 * Impostare la variabile di ambiente JAVA_HOME sulla posizione del software JDK nel file system locale. Ad esempio, C:\Program Files\Java\jdk1.8.0_181
-* Impostare la variabile di ambiente di sistema `ANDROID_SDK_ROOT` sul percorso SDK per Android. Ad esempio, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Impostare la variabile di ambiente di sistema `Path` per includere i percorsi delle cartelle degli strumenti e degli strumenti di Platform per Android. Ad esempio, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Impostare la variabile di ambiente di sistema `ANDROID_SDK_ROOT` sul percorso SDK per Android. Ad esempio, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Impostare la variabile di ambiente di sistema `Path` per includere i percorsi delle cartelle degli strumenti e degli strumenti di Platform per Android. Ad esempio, C:\Users\&lt;nomeutente>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&lt;nomeutente>\AppData\Local\Android\Sdk\tools.
 
 ## Creare un’app AEM Forms standard {#set-up-the-xcode-project}
 
@@ -77,7 +77,7 @@ Per creare un’app AEM Forms con Android Studio, effettua le seguenti operazion
    Una volta creato correttamente l’ambiente di sviluppo, puoi applicare le personalizzazioni all’app. Utilizza i seguenti articoli per personalizzare l’app:
 
    * [Personalizzazione branding](/help/forms/using/branding-customization.md)
-   * [Personalizzazione tema](/help/forms/using/theme-customization.md)
+   * [Personalizzazione del tema](/help/forms/using/theme-customization.md)
    * [Personalizzazione movimento](/help/forms/using/gesture-customization.md)
 
    Dopo aver applicato le personalizzazioni appropriate all’app, puoi generare il file .apk per la distribuzione.
