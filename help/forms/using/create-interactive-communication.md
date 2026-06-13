@@ -10,7 +10,7 @@ role: User, Developer
 exl-id: 6d24ce27-4653-4a70-97d0-e4299eceb32c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '6130'
+source-wordcount: '6132'
 ht-degree: 1%
 
 ---
@@ -49,12 +49,12 @@ Di seguito sono riportati i prerequisiti per la creazione di una comunicazione i
 
    * **[!UICONTROL Post elaborazione]**: selezionare il nome del flusso di lavoro da attivare. Quando selezioni il flusso di lavoro AEM, fornisci Percorso allegato, Percorso layout, Percorso PDF, Percorso dati di stampa e Percorso dati web.
    * **[!UICONTROL Tag]**: seleziona i tag da applicare alla comunicazione interattiva. Puoi anche immettere un nome di tag nuovo/personalizzato e premere Invio per crearlo.
-   * **[!UICONTROL Autore]**: il nome dell&#39;autore viene ricavato automaticamente dal nome utente dell&#39;utente connesso.
+   * Il nome dell&#39;autore **[!UICONTROL Author]**:The viene ricavato automaticamente dal nome utente dell&#39;utente connesso.
    * **[!UICONTROL Data pubblicazione:]** Immettere la data di pubblicazione della comunicazione interattiva.
    * **[!UICONTROL Data annullamento pubblicazione]**: immetti la data in cui annullare la pubblicazione della comunicazione interattiva.
 
 1. Seleziona **[!UICONTROL Avanti]**. Viene visualizzata la schermata che consente di specificare i dettagli dei canali di stampa e web.
-1. Immetti quanto segue:
+1. Immetti le seguenti informazioni:
 
    * **[!UICONTROL Stampa]**: selezionare questa opzione per generare il canale di stampa della comunicazione interattiva.
    * **[!UICONTROL Modello di stampa]**: sfoglia e seleziona un XDP come modello di stampa.
@@ -296,7 +296,7 @@ Nella tabella seguente è riportato un esempio dei valori visualizzati in seguit
 
 | Tipo | Valore predefinito | Pattern di visualizzazione | Valore visualizzato | Descrizione |
 |---|---|---|---|---|
-| Codice fiscale | 123456789 | testo{999-99-9999} | 123 45 6789 | Il numero di cifre nel campo del valore predefinito corrisponde al numero di cifre nel campo Pattern. Il valore basato sul modello viene visualizzato correttamente. |
+| Codice fiscale | 123456789 | testo{999-99-9999} | 123-45-6789 | Il numero di cifre nel campo del valore predefinito corrisponde al numero di cifre nel campo Pattern. Il valore basato sul modello viene visualizzato correttamente. |
 | Codice fiscale | 1234567 | testo{999-99-9999} | 1-23-4567 | Il numero di cifre nel campo del valore predefinito è inferiore al numero di cifre nel campo Pattern. Il modello si applica alle 7 cifre disponibili. |
 | Codice fiscale | 1234567890 | testo{999-99-9999} | 1234567890 | Il numero di cifre nel campo del valore predefinito è maggiore del numero di cifre nel campo Pattern. Di conseguenza, il valore visualizzato non cambia. |
 
@@ -546,7 +546,7 @@ Passa il puntatore del mouse sull&#39;area di destinazione o sulla variabile ril
 
 L’ereditarietà dei componenti all’interno dell’area di destinazione viene annullata e ora puoi modificarli in base alle esigenze.
 
-### Riabilita ereditarietà {#re-enable-inheritance}
+### Abilita di nuovo ereditarietà {#re-enable-inheritance}
 
 Nel canale web, se hai annullato l’ereditarietà di un componente, puoi riabilitarlo. Per riabilitare l&#39;ereditarietà, passa il cursore del mouse sul limite dell&#39;area di destinazione pertinente, che include il componente, quindi seleziona ![reenableinheritance](assets/reenableinheritance.png).
 

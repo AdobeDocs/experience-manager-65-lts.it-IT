@@ -1,5 +1,5 @@
 ---
-title: Espressioni per moduli adattivi
+title: Espressioni dei moduli adattivi
 description: Utilizza le espressioni per moduli adattivi per aggiungere convalida, calcolo e attivare o disattivare automaticamente la visibilità di una sezione.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 7192ee1d-dc3f-4d90-919f-6329b434e18b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 0%
+source-wordcount: '2779'
+ht-degree: 1%
 
 ---
 
-# Espressioni per moduli adattivi{#adaptive-form-expressions}
+# Espressioni dei moduli adattivi{#adaptive-form-expressions}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -278,7 +278,7 @@ Come accennato in precedenza, i moduli adattivi consentono all’autore di forni
 Per creare un pattern personalizzato per un tipo di campo specifico e riutilizzarlo per altri campi dello stesso tipo, effettua le seguenti operazioni:
 
 1. Passa a CRXDE Lite nell’istanza di authoring.
-1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps, crea un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
+1. Crea una cartella per mantenere i modelli personalizzati. Nella directory /apps creare un nodo di tipo sling:folder. Ad esempio, creare un nodo con il nome `customPatterns`. In questo nodo creare un altro nodo di tipo `nt:unstructed` e denominarlo `textboxpatterns`. Questo nodo contiene i vari modelli personalizzati che desideri aggiungere.
 1. Apri la scheda Proprietà del nodo creato. Aprire ad esempio la scheda Proprietà di `textboxpatterns`. Aggiungere la proprietà `guideComponentType` a questo nodo e impostarne il valore su *fd/af/components/formatter/guideTextBox*.
 
 1. Il valore di questa proprietà varia a seconda del campo per il quale si desidera definire i modelli. Per il campo numerico, il valore della proprietà `guideComponentType` è *fd/af/components/formatter/guideNumericBox*. Il valore del campo Datepicker è *fd/af/components/formatter/guideDatepicker*.

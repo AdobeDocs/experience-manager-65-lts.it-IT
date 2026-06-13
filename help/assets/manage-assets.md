@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 7398b95b-e82d-4241-8f32-13b8d20caad9
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '10234'
+source-wordcount: '10112'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Quando si organizza una raccolta di risorse, ad esempio tutte le immagini `Natur
 
 >[!NOTE]
 >
->* La condivisione di una cartella [!DNL Assets] di tipo `sling:OrderedFolder` non è supportata quando si condivide con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
+>* La condivisione di una cartella [!DNL Assets] di tipo `sling:OrderedFolder` non è supportata durante la condivisione con Experience Cloud. Se desideri condividere una cartella, non selezionare [!UICONTROL Ordinato] durante la creazione di una cartella.
 >* [!DNL Experience Manager] non consente di utilizzare `subassets` parola come nome di una cartella. Si tratta di una parola chiave riservata a un nodo che contiene risorse secondarie per le risorse composte.
 
 1. Passa alla posizione nella cartella delle risorse digitali in cui desideri creare una cartella. Scegliere **[!UICONTROL Crea]** dal menu. Seleziona **[!UICONTROL Nuova cartella]**.
@@ -197,7 +197,7 @@ Dynamic Media consente il caricamento batch delle risorse tramite server FTP. Se
 1. Nell&#39;angolo inferiore destro della finestra di dialogo Opzioni processo di caricamento fare clic su **[!UICONTROL Salva]**.
 1. Nell&#39;angolo inferiore destro della pagina Carica, fare clic su **[!UICONTROL Invia caricamento]**.
 
-   Per visualizzare l&#39;avanzamento del caricamento, nella barra di navigazione globale fare clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. È possibile continuare a lavorare in [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per rivedere un processo in corso.
+   Per visualizzare l&#39;avanzamento del caricamento, nella barra di navigazione globale fare clic su **[!UICONTROL Processi]**. Nella pagina Processi viene visualizzato l’avanzamento del caricamento. Puoi continuare a lavorare in [!DNL Experience Manager] e tornare alla pagina Processi in Dynamic Media Classic in qualsiasi momento per rivedere un processo in corso.
 Per annullare un processo di caricamento in corso, fai clic su **[!UICONTROL Annulla]** accanto alla Durata.
 
 #### Opzioni processo di caricamento {#upload-job-options}

@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un’azione personalizzata alla vista Elenco risorse
+title: Aggiungere un’azione personalizzata alla vista elenco delle risorse
 description: Questo articolo illustra come aggiungere un’azione personalizzata alla visualizzazione Elenco risorse
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: a27c4469-6430-4a68-ba2c-7fb0ddebb263
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
-# Aggiungere un’azione personalizzata alla vista Elenco risorse{#add-custom-action-to-the-asset-listing-view}
+# Aggiungere un’azione personalizzata alla vista elenco delle risorse{#add-custom-action-to-the-asset-listing-view}
 
 ## Panoramica {#overview}
 
@@ -70,7 +70,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       ![Sovrapponi nodo](assets/2_createnodedownloadflatpdf.png)
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
       Fare clic su **Salva tutto**.
 
@@ -152,7 +152,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Fare clic su **Salva tutto**.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app. Fare clic su **Salva tutto**.
 
 1. Nella cartella js, crea un file denominato formaction.js con il codice per la gestione delle azioni del pulsante, seguendo la procedura riportata di seguito:
 
@@ -242,7 +242,7 @@ La procedura seguente illustra come personalizzare Gestione della corrispondenza
 
       **Corrispondenza tipi di nodo:** selezionati
 
-   1. Fare clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
+   1. Fai clic su **OK**. La struttura di cartelle viene creata nella cartella delle app.
 
    1. Fare clic su **Salva tutto**.
 

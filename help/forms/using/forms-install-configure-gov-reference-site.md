@@ -9,7 +9,7 @@ role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
 source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4746'
 ht-degree: 2%
 
 ---
@@ -26,14 +26,14 @@ Questo pacchetto è stato creato per **AEM Forms 6.4 OSGI Author**, è stato tes
 |---|---|---|
 | 6.4 | 5.0.86 | **Supportato** |
 | 6,5 | 6.0.80 | **Supportato** |
-| 6.5.3 | 6.0.122. | **Supportato** |
+| 6.5.3 | 6.0.122 | **Supportato** |
 
 Questo pacchetto contiene una configurazione cloud che supporta le seguenti versioni della piattaforma:
 
 | PROVIDER CLOUD | VERSIONE SERVIZIO | STATO |
 |---|---|---|
 | Adobe Sign | API v5 | **Supportato** |
-| Microsoft® Dynamics 365 | 1710 (9,1.0.3020) | **Supportato** |
+| Microsoft® Dynamics 365 | 1710 (9.1.0.3020) | **Supportato** |
 | Adobe Analytics | API Rest v1.4 | **Supportato** |
 
 **Considerazioni sull&#39;installazione del pacchetto:**
@@ -94,7 +94,7 @@ Questa sezione contiene informazioni sull’installazione del pacchetto demo.
    ![pacchetto moduli governativi](assets/wegov_forms_package.jpg)
 
 1. Consenti il completamento del processo di installazione.
-1. Passa a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* per verificare che l&#39;installazione sia stata completata correttamente.
+1. Passa a *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html?wcmmode=disabled* per verificare che l&#39;installazione sia stata completata correttamente.
 
 ### Da un file ZIP locale {#from-a-local-zip-file}
 
@@ -111,7 +111,7 @@ Questa sezione contiene informazioni sull’installazione del pacchetto demo.
    ![Installa pacchetto Forms WeGov](assets/wegov_forms_package-1.jpg)
 
 1. Consenti il completamento del processo di installazione.
-1. Passa a *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* per verificare che l&#39;installazione sia stata completata correttamente.
+1. Passa a *https://&lt;aemserver>:&lt;porta>/content/we-gov/home.html?wcmmode=disabled* per verificare che l&#39;installazione sia stata completata correttamente.
 
 ### Installazione di nuove versioni del pacchetto {#installing-new-package-versions}
 
@@ -227,7 +227,7 @@ Questa sezione contiene dettagli e istruzioni sulla configurazione di MS® Dynam
 
 **Riferimenti:**
 
-1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configurazione di Microsoft® Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md)
 1. [Configurazione di Microsoft® Dynamics per AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Servizio cloud MS® Dynamics OData {#ms-dynamics-odata-cloud-service}
@@ -483,7 +483,7 @@ Per installare e configurare AEM Forms con Adobe Forms, gli utenti dello strumen
 
 Prima di leggere ulteriori istruzioni, leggere quanto segue:
 
-* [Configurazione del servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Configurare il servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Creare una configurazione IMS - Parte 1 {#creating-ims-config}
 
@@ -512,7 +512,7 @@ Se non contatti l’amministratore di sistema, assicurati di avere la possibilit
 
 1. Passa a [Adobe Developer Console](https://developer.adobe.com/console/).
 
-1. Fai clic su **Create Integration** (Crea integrazione).
+1. Fare clic su **Crea integrazione**.
 
 1. Selezionare **Accedi a un&#39;API**.
 
