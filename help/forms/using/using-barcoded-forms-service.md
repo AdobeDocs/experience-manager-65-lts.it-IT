@@ -1,5 +1,5 @@
 ---
-title: Servizio Forms con codice a barre
+title: Servizio moduli con codice a barre
 description: Utilizza il servizio AEM Forms Barcoded Forms per estrarre dati da immagini elettroniche di codici a barre.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ role: Admin, User, Developer
 exl-id: f823d240-88c7-4357-9dbb-6cc069451721
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
 
-# Servizio Forms con codice a barre{#barcoded-forms-service}
+# Servizio moduli con codice a barre{#barcoded-forms-service}
 
 ## Panoramica {#overview}
 

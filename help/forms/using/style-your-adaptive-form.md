@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
@@ -251,7 +251,7 @@ Puoi utilizzare un tema personalizzato per applicare uno stile identico a tutti 
       <td><b>Valore</b></td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 
@@ -351,7 +351,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>FFFFFF</td> 
      </tr> 
@@ -425,7 +425,7 @@ Alcuni stili sono applicabili solo a un componente specifico. Tali componenti so
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>Esperienza pregressa</td> 
+      <td>Informazioni di base</td> 
       <td>Colore di sfondo</td> 
       <td>F6921E</td> 
      </tr> 

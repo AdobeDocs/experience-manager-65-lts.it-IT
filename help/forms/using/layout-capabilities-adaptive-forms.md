@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 23ca3bff-1a7e-48cc-83b7-b2ec8545cd00
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 0%
+source-wordcount: '1246'
+ht-degree: 6%
 
 ---
 
@@ -67,7 +67,7 @@ I layout del pannello sono disponibili nel percorso `/libs/fd/af/layouts/panel`.
 
 Elenco dei layout dei pannelli nei moduli adattivi
 
-### Reattivo - tutto su una pagina senza navigazione {#responsive-everything-on-one-page-without-navigation-br}
+### Reattivo - Tutto su una stessa pagina senza navigazione {#responsive-everything-on-one-page-without-navigation-br}
 
 Utilizza questo layout di pannello per creare un layout reattivo che si adatta alle dimensioni dello schermo del dispositivo senza alcuna necessità di navigazione specializzata.
 
@@ -99,7 +99,7 @@ Espressione di completamento passaggio nel layout della procedura guidata per un
 
 Maschera che utilizza la procedura guidata
 
-### Layout per il pannello a soffietto {#layout-for-accordion-design}
+### Layout per progettazione a soffietto {#layout-for-accordion-design}
 
 Utilizzando questo layout, è possibile inserire il componente `Panel adaptive form` in un pannello con navigazione in stile Pannello a soffietto. Utilizzando questo layout, puoi anche creare pannelli ripetibili. I pannelli ripetibili consentono di aggiungere o rimuovere in modo dinamico i pannelli in base alle esigenze. Puoi definire il numero minimo e massimo di ripetizioni di un pannello. Inoltre, il titolo del pannello può essere determinato dinamicamente, in base alle informazioni fornite negli elementi del pannello.
 
@@ -109,7 +109,7 @@ L’espressione di riepilogo può essere utilizzata per mostrare i valori fornit
 
 Pannelli ripetibili creati con il layout Pannello a soffietto
 
-### Layout a schede: le schede vengono visualizzate a sinistra {#tabbed-layout-tabs-appear-on-the-left}
+### Layout a schede - Le schede sono visualizzate a sinistra {#tabbed-layout-tabs-appear-on-the-left}
 
 Utilizzando questo layout, è possibile inserire il componente `Panel adaptive form` in un pannello con navigazione tramite schede. Le schede vengono posizionate a sinistra del contenuto del pannello.
 
@@ -117,7 +117,7 @@ Utilizzando questo layout, è possibile inserire il componente `Panel adaptive f
 
 Schede visualizzate a sinistra di un pannello
 
-### Layout a schede: le schede vengono visualizzate nella parte superiore {#tabbed-layout-tabs-appear-on-the-top}
+### Layout a schede - Le schede sono visualizzate in alto {#tabbed-layout-tabs-appear-on-the-top}
 
 Utilizzando questo layout, è possibile inserire il componente `Panel adaptive form` in un pannello con navigazione tramite schede. Le schede vengono posizionate sopra il contenuto del pannello.
 
@@ -139,7 +139,7 @@ Elenco dei layout mobili nei moduli adattivi
 
 Quando si utilizza un layout mobile, per accedere a vari pannelli del modulo tocca l’icona ![aem6forms_form_menu](assets/aem6forms_form_menu.png).
 
-### Layout con titoli dei pannelli nell’intestazione del modulo {#layout-with-panel-titles-in-the-form-header}
+### Layout con titoli dei pannelli nell&#39;intestazione del modulo {#layout-with-panel-titles-in-the-form-header}
 
 Questo layout, come suggerisce il nome, mostra i titoli dei pannelli insieme al menu di navigazione e alla barra di navigazione. Questo layout fornisce anche le icone Successivo e Precedente per la navigazione.
 
@@ -147,7 +147,7 @@ Questo layout, come suggerisce il nome, mostra i titoli dei pannelli insieme al 
 
 Layout mobili con titoli dei pannelli nelle intestazioni dei moduli
 
-### Layout senza titoli dei pannelli nell’intestazione del modulo {#layout-without-panel-titles-in-the-form-header}
+### Layout senza titoli dei pannelli nell&#39;intestazione del modulo {#layout-without-panel-titles-in-the-form-header}
 
 Come suggerisce il nome, questo layout mostra solo il menu di navigazione e la barra di navigazione senza i titoli dei pannelli. Questo layout fornisce anche le icone Successivo e Precedente per la navigazione.
 
@@ -175,7 +175,7 @@ Inoltre, è possibile aggiungere più barre degli strumenti contenenti pulsanti 
 
 Visualizzazione predefinita per la barra degli strumenti
 
-### Layout fisso mobile per barra degli strumenti {#mobile-fixed-layout-for-toolbar}
+### Layout mobile fisso per la barra degli strumenti {#mobile-fixed-layout-for-toolbar}
 
 Selezionare questo layout per fornire layout alternativi per desktop e dispositivi mobili.
 
@@ -185,4 +185,4 @@ Per il layout mobile, puoi aggiungere pulsanti di azione utilizzando le icone.
 
 ![Layout fisso mobile per barra degli strumenti](assets/toolbar_layout_mobile_fixed.png)
 
-Layout fisso mobile per barra degli strumenti
+Layout mobile fisso per la barra degli strumenti

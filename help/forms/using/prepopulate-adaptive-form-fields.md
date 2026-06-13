@@ -1,5 +1,5 @@
 ---
-title: Precompilare i campi del modulo adattivo
+title: Precompilare i campi di un modulo adattivo
 description: Utilizza i dati esistenti per precompilare i campi di un modulo adattivo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -11,12 +11,12 @@ role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 0%
+source-wordcount: '2298'
+ht-degree: 1%
 
 ---
 
-# Precompilare i campi del modulo adattivo{#prefill-adaptive-form-fields}
+# Precompilare i campi di un modulo adattivo{#prefill-adaptive-form-fields}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -356,7 +356,7 @@ Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle 
 
 * Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.
 
-[Ottieni file](assets/prefill-sumbit-xmlsandcontentpackage.zip)
+[Ottieni il file](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 #### Creare un servizio di preriempimento {#create-a-prefill-service}
 

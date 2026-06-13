@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 6e909f87-4233-4158-a4e1-f0ee2ada366a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2039'
-ht-degree: 0%
+source-wordcount: '1965'
+ht-degree: 1%
 
 ---
 
@@ -65,7 +65,7 @@ Contiene le seguenti opzioni:
    * **Informazioni pagina**: consente di specificare informazioni quali l&#39;ora di pubblicazione/annullamento della pubblicazione, le miniature, le librerie lato client, i criteri di pagina e la libreria lato client di progettazione pagina.
    * **Emulatore**: consente di simulare e personalizzare l&#39;aspetto per dispositivi diversi.
    * **Selettore livello:** consente di modificare il livello.
-Puoi scegliere il livello **Struttura** o **Contenuto iniziale**. Il livello Struttura consente di aggiungere e personalizzare l&#39;intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
+Puoi scegliere **Structure** layer o **Initial Content** layer. Il livello Struttura consente di aggiungere e personalizzare l&#39;intestazione e il piè di pagina. Il livello Contenuto iniziale consente di personalizzare il contenuto del modulo.
 
    * **Anteprima:** consente di visualizzare in anteprima l&#39;aspetto del modello quando viene pubblicato. Potete utilizzare Selettore livello (Layer Selector) e Anteprima (Preview) per attivare o disattivare le modalità di modifica e anteprima.
 

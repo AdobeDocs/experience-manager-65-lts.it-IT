@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 6f68090f-4ded-42c3-a074-3a18b27e754d
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '6095'
-ht-degree: 1%
+source-wordcount: '5975'
+ht-degree: 2%
 
 ---
 
@@ -146,7 +146,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
   </tr>
   <tr>
    <td>8.</td>
-   <td>Ora di pubblicazione</td>
+   <td>Ora di attivazione pubblicazione</td>
    <td>Sì</td>
    <td>Tempo per pubblicare automaticamente il tema.</td>
   </tr>
@@ -163,7 +163,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
    <td>Etichetta associata al tema per l’identificazione utilizzata per migliorare la ricerca.</td>
   </tr>
   <tr>
-   <td>11</td>
+   <td>11.</td>
    <td>Riferimenti</td>
    <td>Collegamenti</td>
    <td>
@@ -173,7 +173,7 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
     </ul> </td>
   </tr>
   <tr>
-   <td>12</td>
+   <td>12.</td>
    <td>Posizione Clientlib</td>
    <td>Sì</td>
    <td>
@@ -181,11 +181,11 @@ Elenco delle metaproprietà di un tema (disponibili nella pagina delle propriet�
      <li>Percorso dell’archivio definito dall’utente all’interno di "/etc" in cui sono memorizzate le clientlibs corrispondenti a questo tema.</li>
      <li>Valore predefinito - "/etc/clientlibs/fd/theme" + percorso relativo della risorsa tema.</li>
      <li>Se la posizione non esiste, la gerarchia di cartelle viene generata automaticamente.</li>
-     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> Se modifichi la posizione predefinita di clientlib, nell'archivio CRXDE assegna <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> nella nuova posizione. Allega anche un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
+     <li>Quando questo valore viene modificato, la struttura del nodo clientlib viene spostata nella nuova posizione immessa.<br /> <em><strong>Nota:</strong> se si modifica la posizione predefinita clientlib, nell'archivio CRXDE assegnare <code>crx:replicate</code>, <code>rep:write</code>, <code>rep:glob:*</code>, <code>rep:itemNames::</code> <code>js.txt</code>, <code>jcr:read</code> a <code>forms-users</code> e <code>crx:replicate</code>, <code>jcr:read</code> a <code>fd-service</code> nella nuova posizione. Allega anche un altro ACL aggiungendo <code>deny jcr:addChildNodes</code> per <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
-   <td>13</td>
+   <td>13.</td>
    <td>Nome categoria Clientlib</td>
    <td>Sì</td>
    <td>
@@ -413,7 +413,7 @@ Le opzioni per la personalizzazione degli stili di stato variano a seconda dei c
    <td><p>Consente di personalizzare gli stili di testo nel componente del tema.</p> <p>Si desidera ad esempio modificare l'aspetto del testo immesso nella casella di testo.</p> <p>Le opzioni disponibili sono famiglia di caratteri, peso, colore, dimensione, altezza linea, allineamento testo, spaziatura, rientro testo, sottolineatura, corsivo, trasformazione testo, allineamento verticale, linea di base e direzione. </p> </td>
   </tr>
   <tr>
-   <td><p>Esperienza pregressa </p> </td>
+   <td><p>Informazioni di base </p> </td>
    <td><p>Consente di riempire lo sfondo del componente con un’immagine o un colore. </p> </td>
   </tr>
   <tr>

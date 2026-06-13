@@ -7,8 +7,8 @@ feature: Interactive Communication,Correspondence Management
 exl-id: d03965e1-4fa3-414c-80b6-c9fca281bee4
 source-git-commit: bd33420307a7be6664b6bbb52677af66edaa9c0e
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 1%
+source-wordcount: '1450'
+ht-degree: 7%
 
 ---
 
@@ -97,11 +97,11 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 
    Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
 
-1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano più visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
+1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file [AEM-Installation-Directory]/crx-quickstart/logs/error.log e che il registro sia stabile.
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 1. Ripeti i passaggi da 1 a 7 su tutte le istanze Author e Publish.
 
@@ -135,12 +135,12 @@ Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di creazione
 
 1. Apri AEM Configuration Manager in una finestra del browser. L&#39;URL predefinito è https://&#39;[server]:[porta]&#39;/system/console/configMgr.
 1. Cerca e apri **Configurazione firewall deserializzazione**.
-1. Aggiungere il pacchetto **sun.util.calendar** al campo **inserisce nell&#39;elenco Consentiti** di un&#39;unità di misura Fai clic su Salva.
+1. Aggiungere il pacchetto **sun.util.calendar** al campo **inserisce nell&#39;elenco Consentiti**. Fai clic su Salva.
 1. Ripeti i passaggi 1-3 su tutte le istanze Author e Publish.
 
 ### Configurazioni opzionali post-installazione {#optional-post-installation-configurations}
 
-#### Installa pacchetto di compatibilità {#install-compatibility-package}
+#### Installare pacchetto di compatibilità {#install-compatibility-package}
 
 La comunicazione interattiva è l’approccio predefinito e consigliato per creare comunicazioni con i clienti in AEM 6.5 Forms. Se si è eseguito l&#39;aggiornamento o la migrazione da una versione precedente e si intende continuare a utilizzare le lettere (Gestione corrispondenza), installare il [pacchetto di compatibilità AEMFD](/help/forms/using/compatibility-package.md).
 
@@ -171,7 +171,7 @@ Dispatcher è lo strumento di caching e bilanciamento del carico di Adobe Experi
 
 È probabile che i clienti abbandonino una comunicazione interattiva se l&#39;esperienza che offre non è coinvolgente. Se da un lato è frustrante per i clienti, dall&#39;altro aumenta il volume e i costi di supporto per la tua organizzazione. Identificare e fornire la giusta esperienza del cliente che aumenti il tasso di conversione è fondamentale e impegnativo. AEM Forms è la chiave di questo problema.
 
-AEM forms si integra con Adobe Target, una soluzione Adobe Experience Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Per utilizzare Adobe Target per personalizzare una comunicazione interattiva, [Integra Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms si integra con Adobe Target, una soluzione Adobe Experience Cloud, per fornire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Per utilizzare Adobe Target per personalizzare una comunicazione interattiva, [Integra Adobe Target con AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### Configurare la comunicazione SSL per il modello dati modulo  {#configure-ssl-communcation-for-form-data-model}
 

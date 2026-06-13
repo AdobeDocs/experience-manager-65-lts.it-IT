@@ -11,7 +11,7 @@ role: Admin, User, Developer
 exl-id: a1791374-d05c-4f60-b178-152a7bc06c45
 source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
 workflow-type: tm+mt
-source-wordcount: '3215'
+source-wordcount: '3164'
 ht-degree: 52%
 
 ---
@@ -91,7 +91,7 @@ Mostra la gerarchia degli oggetti del modulo. L’autore può passare a un compo
 
    * **Oggetti modello dati**
 Consente di visualizzare la gerarchia del modello di modulo.
-Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. È possibile visualizzare gli oggetti modello dati quando il modulo utilizza lo schema XML, lo schema JSON o il modello XDP.
+Consente di trascinare e rilasciare gli elementi del modello di modulo sul modulo adattivo. Gli elementi aggiunti vengono automaticamente convertiti in componenti modulo mantenendo le proprietà originali. Puoi visualizzare gli oggetti modello dati quando il modulo utilizza uno schema XML, uno schema JSON o un modello XDP.
 
 * **Browser proprietà**
 
@@ -159,7 +159,7 @@ Consente di trascinare e rilasciare gli elementi del modello di modulo sul modul
   </tr>
   <tr>
    <td>Allegato file</td>
-   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenenti nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
+   <td><p>Aggiunge un pulsante che consente agli utenti di sfogliare e allegare documenti di supporto a un modulo. È possibile allegare più file a un componente File allegato. È inoltre possibile specificare le **[!UICONTROL Maximum File Size]** e **[!UICONTROL Supported File Types]** per gli allegati nel browser delle proprietà del componente. </p> <p><strong> Nota: </strong><ul> <li> Il componente non supporta l'associazione di file il cui nome inizia con i caratteri (.) e che contengono i caratteri \ / : * ? " &lt; &gt; | ; % $, o contenente nomi di file speciali riservati per il sistema operativo Windows come nul, prn, con, lpt o com. </li> <li> Per allegare più file a un componente file allegato aperto nel browser Apple Safari, selezionare e allegare i file uno alla volta. Non è possibile selezionare e allegare più file contemporaneamente.</li> <li>Il componente File allegato supporta un set predefinito di formati di file nei moduli adattivi abilitati per Adobe Sign. Per ulteriori informazioni, consulta <a href="https://helpx.adobe.com/it/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formati di file supportati</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Elenco allegato file</td>
