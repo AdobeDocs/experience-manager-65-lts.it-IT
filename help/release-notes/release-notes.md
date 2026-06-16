@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c87fd907f2e9b91cc7013be5c12c867fb71dbbe1
+source-git-commit: a24394ffd8d54faf9f16245e359d91c0cfbb04e4
 workflow-type: tm+mt
-source-wordcount: '7660'
-ht-degree: 97%
+source-wordcount: '7696'
+ht-degree: 96%
 
 ---
 
@@ -48,6 +48,8 @@ AEM 6.5 LTS SP2 ora include OpenAPI per la [gestione di modelli e frammenti di c
 **Funzionalità incluse in AEM Forms 6.5 LTS, SP2**
 
 * È stato aggiunto il supporto per RDBMK con JBoss® EAP 8.0.
+
+* È stato aggiunto il supporto per WebSphere® Liberty Profile (WLP).
 
 * Esperienza utente migliorata nell’editor di regole visivo. Questo aggiornamento include:
 
@@ -580,7 +582,8 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 ### AEM Forms
 
 * In Gestione configurazioni, l’inizializzazione del database non riesce durante l’avvio in modalità personalizzata preconfigurata di AEM Forms 6.5 LTS JEE quando non è selezionato alcun modulo o sono selezionati solo componenti limitati. L’errore è dovuto a una dipendenza mancante (xalan-2.7.2.jar), che determina un errore. L’aggiunta del file JAR a adobe-livecycle-jboss.ear\lib risolve il problema. (FORMS-24690)
-* In Forms JEE LTS in esecuzione su JBoss®, le funzionalità correlate all’e-mail potrebbero non riuscire. Quando si tenta di utilizzare le funzioni e-mail, il server potrebbe registrare un errore simile a `Error IMAPProvider not a subtype`. (FORMS-24892)
+* In Forms JEE LTS in esecuzione su JBoss®, le funzionalità correlate all’e-mail potrebbero non riuscire. Quando si tenta di utilizzare le funzionalità di posta elettronica, il server registra un errore: `Error IMAPProvider not a subtype`. (FORMS-24892)
+* Nelle implementazioni di Forms JEE LTS Service Pack 2 in esecuzione su WebSphere® Liberty Profile, la funzionalità e-mail potrebbe non riuscire. Quando si tenta di utilizzare le funzionalità di posta elettronica, il server registra un errore: `Could not convert socket to TLS`. (FORMS-24692)
 
 ### Danneggiamento dell’archivio durante la compattazione online dopo la compattazione offline (GRANITE-65146) {#repository-corruption-during-online-compaction-after-offline-compaction-granite-65146}
 
