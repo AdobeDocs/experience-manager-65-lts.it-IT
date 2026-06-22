@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
 exl-id: 901bd212-3daf-4b1e-a7c3-afb832959913
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 41%
+source-wordcount: '3546'
+ht-degree: 42%
 
 ---
 
@@ -59,7 +59,7 @@ Crea progetti di traduzione in modo da poter eseguire e gestire il flusso di lav
 * Viene creato un progetto per ogni copia per lingua selezionata.
 * Viene creata e aggiunta a ciascun progetto una copia della pagina selezionata e delle risorse associate. Queste copie vengono successivamente inviate al fornitore di traduzione per la lavorazione.
 
-È possibile specificare anche la selezione delle pagine figlie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine figlie in modo che vengano tradotte. Se alle pagine figlie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
+È possibile specificare anche la selezione delle pagine secondarie insieme alla pagina selezionata. In questo caso, a ogni progetto vengono aggiunte anche copie delle pagine secondarie in modo che vengano tradotte. Se alle pagine secondarie sono associate diverse configurazioni del framework di integrazione della traduzione, AEM crea ulteriori progetti.
 
 È inoltre possibile [creare manualmente progetti di traduzione](#creating-a-translation-project-using-the-projects-console).
 
@@ -377,7 +377,7 @@ Per confrontare le copie per lingua con la lingua master:
 1. Nella console **Sites**, passa alla copia per lingua che desideri confrontare.
 1. Apri il pannello **[Riferimenti](/help/sites-authoring/basic-handling.md#references)**.
 1. Sotto l’intestazione **Copie** seleziona **Copie per lingua.**
-1. Seleziona la specifica copia per lingua e fai clic su **Confronta con &#x200B;** principaleo **Confronta con precedente &#x200B;** se applicabile.
+1. Seleziona la specifica copia per lingua e fai clic su **Confronta con ** principaleo **Confronta con precedente **se applicabile.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -393,7 +393,7 @@ Dopo aver completato il job, lo stato del job è Completato.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Archivia un processo di traduzione una volta completato e non è più necessario visualizzare i dettagli sullo stato del processo. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
+Archivia un processo di traduzione quando è terminato e non è più necessario visualizzare i dettagli relativi allo stato. Quando archivi il processo, il riquadro Processo di traduzione viene rimosso dal progetto.
 
 ## Creazione della struttura di una copia per lingua {#creating-the-structure-of-a-language-copy}
 
@@ -459,7 +459,7 @@ Quando crei manualmente un progetto di traduzione, devi fornire valori per le se
 1. Seleziona il modello Progetto di traduzione e fai clic su Avanti.
 1. Immetti i valori per le proprietà Base.
 1. Fai clic su Avanzate e fornisci i valori per le proprietà relative alla traduzione.
-1. Fai clic su Crea. Nella casella di conferma, fai clic su Fine per tornare alla console Progetti, oppure fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
+1. Fai clic su crea. Nella casella di conferma, fai clic su Fine per tornare alla console Progetti, oppure fai clic su Apri progetto per aprire e iniziare a gestire il progetto.
 
 ## Esportazione di un processo di traduzione {#exporting-a-translation-job}
 

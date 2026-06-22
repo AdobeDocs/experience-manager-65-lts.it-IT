@@ -5,10 +5,10 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: 8f8883d8-4e2b-4ba0-bd83-414a96e7d382
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: a0272acbf803ff40b3af9aa292ca0a4532b20a55
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 100%
+source-wordcount: '3275'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Il foglio di lavoro **Heartbeat del progetto** fornisce una panoramica grafica d
 
 ## Stato per ruolo {#status-by-role}
 
-Il foglio di lavoro **Stato per ruolo** mostra un raggruppamento dettagliato di [**Integrità**, **Qualità e **Completezza**](#projectheartbeat) per **[Fase](#phases-and-milestones)** e **[Utente tipo](#persona)**.
+Il foglio di lavoro **Stato per ruolo** mostra un raggruppamento dettagliato di [**Integrità**, **Qualità** e **Completezza**](#projectheartbeat) per **[Fase](#phases-and-milestones)** e **[Persona](#persona)**.
 
 ## Fasi e milestone {#phases-and-milestones}
 
@@ -234,7 +234,7 @@ Pianificare lo sviluppo è fondamentale per garantire che il progetto sia basato
 
   Prima dello sviluppo, è necessario impostare tutti i processi di supporto necessari per distribuire, rilasciare, testare e segnalare i problemi.
 
-  Consulta anche il [portale di supporto Adobe](https://experienceleague.adobe.com/it?support-solution=General&support-tab=homehome?lang=it#support).
+  Consulta anche il [portale di supporto Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=homehome?lang=it#support).
 
 ### Pianificazione delle operazioni e operazioni {#operations-planning-and-operations}
 
@@ -271,7 +271,7 @@ Allo stesso modo, le operazioni devono essere pianificate in modo appropriato pe
 
 * **Piano di ripristino**
 
-  Assicurati di disporre di un piano di ripristino. In situazioni di emergenza, questo deve essere disponibile per garantire l’utilizzo in produzione di AEM... Questo dovrebbe riguardare situazioni come backup, ripristino, blocco e altre.
+  Assicurati di disporre di un piano di ripristino. In situazioni di emergenza, questo deve essere disponibile per garantire l’utilizzo in produzione di AEM. Questo dovrebbe riguardare situazioni come backup, ripristino, fallover e altre.
 
 ### Sviluppo {#development}
 
@@ -605,7 +605,8 @@ Per le best practice sull’implementazione, l’amministrazione, lo sviluppo o 
    * [DevOps aziendale](/help/managing/enterprise-devops.md)
    * [Best practice per la gestione di SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e le Linee guida di accessibilità dei contenuti web](/help/managing/web-accessibility.md)
-   * [Regolamento generale sulla protezione dei dati](/help/managing/data-protection-and-privacy.md)* [Implementazione e manutenzione delle best practice](/help/sites-deploying/best-practices.md)
+   * [Regolamento generale sulla protezione dei dati](/help/managing/data-protection-and-privacy.md)
+* [Implementazione e manutenzione delle best practice](/help/sites-deploying/best-practices.md)
 * [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
 * [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
 * [Authoring delle best practice](/help/sites-authoring/best-practices.md)
