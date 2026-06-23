@@ -9,9 +9,9 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
 exl-id: 63d0d345-a80b-4bfb-baab-c7f7aa648695
-source-git-commit: 6795f085b5a4d1ac2836b6c6f2f4d09a5739e639
+source-git-commit: 2fa67ea63307e4e8da9bcef9e89b9c032e917bf1
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2860'
 ht-degree: 3%
 
 ---
@@ -244,17 +244,12 @@ Adobe Experience Manager Forms richiede una macchina virtuale Java™ da eseguir
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
-   <td>Ubuntu 20.04</td>
+   <td>Ubuntu 22.04</td>
    <td>A: supportato</td>
    <td>Service Pack e aggiornamenti critici</td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 9 (Kernel 5.x) (64 bit)</p> </td>
-   <td><p>A: supportato</p> </td>
-   <td><p>Versioni minori, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
-  </tr>
-  <tr>
-   <td><p>Red Hat® Enterprise Linux® 8 (Kernel 4.x) (64 bit)</td>
    <td><p>A: supportato</p> </td>
    <td><p>Versioni minori, aggiornamenti cumulativi e aggiornamenti critici</p> </td>
   </tr>
@@ -278,11 +273,6 @@ Puoi eseguire AEM Forms su JEE in un computer fisico o in un ambiente virtuale. 
    <th><p><strong>Piattaforma (versione base)</strong></p> </th>
    <th>Livello di supporto</th>
    <th><p><strong>Definizioni di patch supportate</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Microsoft® Windows® 10 a 64 bit</p> </td>
-   <td>E: Funzionamento previsto</td>
-   <td><p>Service Pack e aggiornamenti critici</p> </td>
   </tr>
   <tr>
    <td><p>Microsoft® Windows® 11 a 64 bit</p> </td>

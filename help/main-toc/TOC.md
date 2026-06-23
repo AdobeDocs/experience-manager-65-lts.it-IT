@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: c77ad85cf736ee660bfaa662d428a7f7e83a12ff
+source-git-commit: 176e5aabb810f9eee0aa2f8583422f149f016a2e
 workflow-type: tm+mt
-source-wordcount: '7695'
+source-wordcount: '7709'
 ht-degree: 67%
 
 ---
@@ -1096,6 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[Il servizio PaperCapture non riesce a eseguire OCR nei PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Esecuzione dello script non riuscita in AEM Forms 6.5 LTS con JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [Impossibile avviare il controller di dominio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
+      + [Mitigazione di VULN-36128 e VULN-36120 per AEM Forms su JEE 6.5 LTS SP2](/help/forms/using/mitigating-vulnerabilities-vuln-36128-vuln-36120-for-aem-forms-on-jee-65-lts-sp2.md)
    + Documentazione legacy {#legacy-documentation}
       + {hide-from-toc}[Utilizzo del servizio di esecuzione script in AEM Forms su JEE Workbench per la generazione di dati XML](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Compressione e decompressione di file tramite un AEM Forms su DSC personalizzato JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1256,7 +1257,7 @@ ht-degree: 67%
                + [Come modellare il contenuto come modelli di contenuto AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/model-your-content.html?lang=it)
                + [Come accedere ai contenuti tramite API di consegna AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/access-your-content.html?lang=it)
                + [Come aggiornare i contenuti tramite API di AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/update-your-content.html?lang=it)
-               + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html?lang=it)
+               + [Come mettere tutto insieme](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/put-it-all-together.html)
                + [Come pubblicare con la tua applicazione headless](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/go-live.html?lang=it)
                + [Facoltativo - Come creare applicazioni a pagina singola con AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/headless/developer/create-spa.html?lang=it)
             + Percorso di architettura dei contenuti headless {#architect}
@@ -1286,7 +1287,7 @@ ht-degree: 67%
          + API di distribuzione{#delivery-api}
             + [API HTTP di Assets](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/mac-api-assets.html?lang=it)
             + [API REST per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/assets-api-content-fragments.html?lang=it)
-            + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html?lang=it)
+            + [API GraphQL per frammenti di contenuto](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphql-api-content-fragments.html)
             + [Gestione degli endpoint GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
             + [Utilizzo dell’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/graphiql-ide.html?lang=it)
             + [Query persistenti](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/assets/extending/persisted-queries.html?lang=it)
