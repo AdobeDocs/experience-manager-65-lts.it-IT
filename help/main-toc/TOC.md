@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Utilizzare la documentazione di Adobe Experience Manager 6.5 LTS per scoprire come funziona e cosa può fare il software per te.
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
-source-git-commit: 314aafaec6b45d7ea929f32d47e73da293800d4b
+source-git-commit: 1d825cd821609504c5e2cff7f7002bf3afe30434
 workflow-type: tm+mt
-source-wordcount: '7710'
+source-wordcount: '7706'
 ht-degree: 67%
 
 ---
@@ -1096,7 +1096,7 @@ ht-degree: 67%
       + {hide-from-toc}[Il servizio PaperCapture non riesce a eseguire OCR nei PDF](/help/forms/using/papercapture-service-resolution.md)
       + [Esecuzione dello script non riuscita in AEM Forms 6.5 LTS con JBoss EAP 8 (Linux)](/help/forms/using/script-execution-issues-on-aem-forms-65-lts-with-jboss-eap-8-linux.md)
       + [Impossibile avviare il controller di dominio JBoss](/help/forms/using/unable-to-start-jboss-domain-controller-due-to-duplicate-security-tag.md)
-      + [Mitigazione delle vulnerabilità SSRF (Server-Side Request Forgery) per AEM Forms in JEE 6.5 LTS SP2](/help/forms/using/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
+      + [Mitigazione delle vulnerabilità SSRF (Server-Side Request Forgery) per AEM Forms in JEE 6.5 LTS SP2](/help/forms/troubleshooting/mitigating-server-side-request-forgery-vulnerabilities-for-aem-forms-on-jee-65-lts-sp2.md)
    + Documentazione legacy {#legacy-documentation}
       + {hide-from-toc}[Utilizzo del servizio di esecuzione script in AEM Forms su JEE Workbench per la generazione di dati XML](/help/forms/developing/building-xml.md)
       + {hide-from-toc}[Compressione e decompressione di file tramite un AEM Forms su DSC personalizzato JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
