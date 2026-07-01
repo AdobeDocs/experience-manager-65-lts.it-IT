@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: c532abc558084ee9b58e618b0fc16677f4c5b6a4
+source-git-commit: ee3cfd977ab2e7f7cadabb2719fb38ef255b6a2a
 workflow-type: tm+mt
-source-wordcount: '7743'
+source-wordcount: '7770'
 ht-degree: 96%
 
 ---
@@ -157,8 +157,7 @@ In 6.5 LTS, il supporto per gli eventi headless non disponeva degli eventi OSGi 
 
 * L’editor Rich Text per frammenti di contenuto mostrava problemi di layout e di visualizzazione dopo recenti modifiche di stile dell’interfaccia utente. Service Pack 2 ottimizza lo stile dell’editor Rich Text in modo che la barra degli strumenti e l’area modificabile eseguano il rendering correttamente e rimangano leggibili. L’editor frammenti di contenuto ora è allineato con l’aspetto e il comportamento dell’editor pagina. (SITES-38684)
 * La rimozione degli ambiti IMS dal selettore risorse Polaris ha interrotto l’integrazione del frammento di contenuto con l’endpoint di consegna. Gli autori riscontrano errori all’apertura del selettore risorse remoto e durante la selezione delle risorse. L’aggiornamento aggiunge nuovamente gli ambiti IMS necessari e ripristina l’accesso stabile a livello di consegna. (SITES-35837)
-* Il pannello Contenuto associato non esegue più il rendering di un segnaposto codificato &quot;non definito&quot;. L’Editor frammento di contenuto ora risolve il testo tramite le risorse di localizzazione, in modo che gli editor possano vedere il testo tradotto dell’interfaccia utente. (SITES-33675)
-  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
+* Il pannello Contenuto associato non esegue più il rendering di un segnaposto hardcoded “non definito”. L’editor frammenti di contenuto ora risolve il testo tramite le risorse di localizzazione, in modo che gli editor possano visualizzare il testo dell’interfaccia utente tradotto. (SITES-33675)  <!-- REMOVED FROM BUG LIST FEBRUARY 13, 2026 * Preview error messaging now uses localized strings instead of raw `Cannot print fragment's Json` text. The Content Fragment Editor now shows translated output across locales during GraphQL endpoint resolution failures. (SITES-33666)-->
 * L’editor frammenti di contenuto ora visualizza un’etichetta della scheda Generale tradotta per tutte le lingue. L’editor sostituisce il testo della scheda non localizzato e rimuove gli ID interni dai titoli della scheda. (SITES-30715)
 * L’editor frammenti di contenuto ora visualizza i nomi tradotti per i tipi di risorse consentiti. L’elenco selettore non combina più stringhe interne ed etichette solo in inglese quando gli autori configurano le restrizioni relative ai riferimenti ai contenuti. (SITES-29699)
 
@@ -540,6 +539,7 @@ Si consiglia alla clientela di rivedere l’utilizzo o meno della funzione/funzi
 
 | Area | Funzione | Sostituzione | Versione (SP) |
 | --- | --- | --- | --- |
+| Sites | Riepilogo del testo dei frammenti di contenuto | Nessuna sostituzione disponibile. | |
 | Quickstart | API Mongo | Le API Mongo ora sono obsolete e la loro rimozione è pianificata per le versioni future. | 6.5 TS SP2 |
 | Sites | Supporto ai frammenti di contenuto nell’API REST di AEM Assets | AEM 6.5 LTS SP2 fornisce OpenAPI moderne per la gestione dei modelli e frammenti di contenuto, pertanto gli endpoint precedenti per il supporto dei frammenti di contenuto nell’API REST di AEM Assets sono ora obsoleti.<br>Adobe intende mantenere questi endpoint precedenti disponibili fino a un annuncio di fine del ciclo di vita. Adobe non pianifica ulteriori miglioramenti per gli endpoint obsoleti. | 6.5 LTS SP2 |
 | Sites | [Editor SPA](/help/sites-developing/spa-overview.md) | Gli editor preferiti per la gestione dei contenuti headless in AEM sono:<br>- [l’editor universale](/help/sites-developing/universal-editor/introduction.md) per la modifica visiva.<br>- [L’editor frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) per modifiche basate sul modulo. | 6.5 LTS GA |
