@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare frammenti di documento'
+title: 'Esercitazione: creare frammenti di documento'
 description: Creare frammenti di documenti per la comunicazione interattiva
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 6c23092f-49ac-4133-baf0-87e4deaabeb0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1689'
 ht-degree: 3%
 
 ---
 
-# Tutorial: creare frammenti di documento{#tutorial-create-document-fragments}
+# Esercitazione: creare frammenti di documento{#tutorial-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -164,7 +164,7 @@ Per creare variabili per i campi con l’interfaccia utente agente come origine 
    ![Testo statico dettagli cliente](assets/customer_details_static_text_new.png)
 
 1. Posizionare il cursore accanto al campo **Mobile Number** e fare doppio clic sulla proprietà **customer** > **mobilenum**.
-1. Posizionare il cursore accanto al campo **Numero contatto alternativo** e fare doppio clic sulla proprietà **&#x200B; cliente** > **alternatemobilenumber**.
+1. Posizionare il cursore accanto al campo **Numero contatto alternativo** e fare doppio clic sulla proprietà&#x200B;**cliente** > **alternatemobilenumber**.
 1. Posizionare il cursore accanto al campo **Numero relazione** e fare doppio clic sulla proprietà **cliente** > **numero relazione**.
 1. Selezionare la scheda **Variabili**, posizionare il cursore accanto al campo **Luogo di fornitura** e fare doppio clic sulla variabile **Fornitura**.
 1. Posizionare il cursore accanto al campo **Codice stato** e fare doppio clic sulla variabile **Codice stato**.

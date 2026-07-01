@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 247ea068-6564-4b62-8449-a8800548106f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 0%
+source-wordcount: '1046'
+ht-degree: 1%
 
 ---
 
-# Tutorial: crea la tua prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
+# Esercitazione: creare la prima comunicazione interattiva {#tutorial-create-your-first-interactive-communication}
 
 Scopri come creare la tua prima comunicazione interattiva.
 
@@ -68,7 +68,7 @@ Per creare un&#39;anatomia per la comunicazione interattiva con le seguenti moda
 * Dati condizionali
 * Immagini
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Passaggio 2: creare il modello dati del modulo {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ Un modello per dati modulo consente di collegare una comunicazione interattiva p
 * Modifica dati di esempio
 * Test del modello di dati del modulo e servizi configurati con i dati di test
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Passaggio 3: creare frammenti di documento {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ I frammenti di documento sono componenti riutilizzabili di una corrispondenza ut
 * Creare le variabili
 * Creare e applicare regole
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Passaggio 4: creare modelli {#step-create-templates}
 
@@ -119,7 +119,7 @@ I modelli per il canale web vengono creati in AEM. Gli autori e gli amministrato
 * Carica i modelli XDP sul server AEM Forms
 * Creare e abilitare modelli per il canale web
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Passaggio 5: creare una comunicazione interattiva {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ Le comunicazioni interattive possono essere distribuite attraverso due canali: s
 * Creare un grafico nella versione web della comunicazione interattiva
 * Creare collegamenti ipertestuali nella versione web della comunicazione interattiva
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
 ## Passaggio 6: pubblicare la comunicazione interattiva {#step-publish-your-interactive-communication}
 
