@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare il primo modulo adattivo'
+title: 'Esercitazione: creare il primo modulo adattivo'
 description: Scopri come creare moduli di classe aziendale, interattivi e reattivi.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
@@ -7,12 +7,12 @@ role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 4%
+source-wordcount: '1007'
+ht-degree: 8%
 
 ---
 
-# Tutorial: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
+# Esercitazione: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
 
 ## Applicabile a {#applies-to}
 
@@ -44,7 +44,7 @@ Il sito Web viene eseguito su Adobe Experience Manager (AEM) e utilizza AEM [!DN
 
 ### Prerequisito {#prerequisite}
 
-* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html?lang=it#author-and-publish-installs)
+* Configura un&#39;istanza di authoring [AEM](https://experienceleague.adobe.com/docs/experience-manager-65-lts/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installa il componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) nell&#39;istanza di authoring.
 * Ottenere il driver del database JDBC (file JAR) dal provider del database. Esempi nell&#39;esercitazione sono basati sul database [!DNL MySQL] e utilizzano [!DNL Oracle's] [Driver di database MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

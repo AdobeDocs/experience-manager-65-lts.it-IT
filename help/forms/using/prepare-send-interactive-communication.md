@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 0%
+source-wordcount: '2029'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +47,7 @@ Durante la preparazione della comunicazione interattiva tramite l’interfaccia 
 
 ### Inserisci dati {#enter-data}
 
-1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&ast;) per abilitare il pulsante **Invia**.
+1. Nella scheda Dati, immettere i dati per le variabili, le proprietà del modello di dati del modulo e i campi del modello di stampa (XDP), come richiesto. Compila tutti i campi obbligatori contrassegnati da un asterisco (&amp;ast;) per abilitare il pulsante **Invia**.
 
    Seleziona un valore per un campo dati nell’anteprima della comunicazione interattiva per evidenziare il campo dati corrispondente nella scheda Dati o viceversa.
 
@@ -146,7 +146,7 @@ L’interfaccia utente dell’agente supporta 210 caratteri speciali. L&#39;ammi
 
 ### Frammenti di documenti {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Frecce su/giù**: Frecce per spostare i frammenti di documento verso l&#39;alto o verso il basso nella comunicazione interattiva.
 * **Elimina**: se consentito, elimina il frammento di documento dalla comunicazione interattiva.
@@ -178,9 +178,9 @@ Adobe consiglia di eseguire queste istruzioni in sequenza per salvare correttame
 
 ### Abilitare la funzione Salva come bozza {#before-save-as-draft}
 
-Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per abilitare la funzione, effettua le seguenti operazioni:
+Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per abilitare questa funzione, esegui i passaggi seguenti:
 
-1. Implementare l&#39;interfaccia del provider di servizi (SPI) [ccrDocumentInstance](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
+1. Implementare l&#39;interfaccia del provider di servizi (SPI) [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    La SPI consente di salvare nel database la versione bozza della comunicazione interattiva con un ID bozza come identificatore univoco. Queste istruzioni presuppongono una conoscenza preventiva di come creare un bundle OSGi utilizzando un progetto Maven.
 

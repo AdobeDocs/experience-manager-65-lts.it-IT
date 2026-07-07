@@ -12,8 +12,8 @@ role: Admin
 exl-id: b7b1bce6-9cea-4f13-955f-f9e361f298bf
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 3%
 
 ---
 
@@ -75,7 +75,7 @@ Una volta abilitata la sincronizzazione degli utenti, vengono sincronizzati solo
 
 1. Verifica che sia installato il codice più recente:
 
-* [Aggiornamenti alla piattaforma AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it)
+* [Aggiornamenti della piattaforma AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=it)
 
 ### &#x200B;1. Agente di distribuzione Apache Sling - Factory agenti di sincronizzazione {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -152,7 +152,7 @@ Consulta anche
 * [Gestione diritti di accesso](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Risoluzione dei problemi nella sezione [Modifica eccezione operazione durante l&#39;elaborazione della risposta](#modify-operation-exception-during-response-processing).
 
-### &#x200B;3. Distribuzione Adobe Granite - Provider segreto di trasporto per password crittografata {#adobegraniteencpasswrd}
+### &#x200B;3. Distribuzione Adobe Granite - Provider segreto di trasporto con password crittografata {#adobegraniteencpasswrd}
 
 **Configurare le autorizzazioni**
 
@@ -220,7 +220,7 @@ Verifica `Name`: `socialpubsync-reverse`
 
 ![Diff Observer Factory](assets/screen-shot_2019-05-24at090809.png)
 
-### &#x200B;6. Trigger di distribuzione Apache Sling - Fabbrica dei trigger pianificati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### &#x200B;6. Trigger di distribuzione Apache Sling - Factory dei trigger pianificati {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **(Facoltativo) modifica intervallo di polling**
 
@@ -266,14 +266,14 @@ Verifica `Name`: `socialpubsync`
 
 ![Factory agenti di sincronizzazione](assets/chlimage_1-25.png)
 
-* **Endpoint esportazione**
-Deve essere presente un endpoint di esportazione per ogni istanza Publish. Ad esempio, se sono presenti 2 istanze Publish, localhost:4503 e 4504, devono essere presenti due voci:
+* **Endpoint di esportazione**
+Deve essere presente un endpoint di esportazione per ogni istanza Publish. Se ad esempio sono presenti 2 istanze Publish, localhost:4503 e 4504, è necessario che siano presenti due voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Endpoint importazione**
-Deve essere presente un endpoint di importazione per ogni istanza Publish. Ad esempio, se sono presenti 2 istanze Publish, localhost:4503 e 4504, devono essere presenti due voci:
+Deve essere presente un endpoint di importazione per ogni istanza Publish. Se ad esempio sono presenti 2 istanze Publish, localhost:4503 e 4504, è necessario che siano presenti due voci:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -303,11 +303,9 @@ Se l’ID Sling di un’istanza Publish corrisponde all’ID Sling di qualsiasi 
    * cerca ed elimina il file denominato *sling.id.file*
 
       * ad esempio, su un sistema Linux®:
-
         `rm -i $(find . -type f -name sling.id.file)`
 
       * ad esempio, in un sistema Windows:
-
         `use windows explorer and search for *sling.id.file*`
 
 1. avviare l’istanza Publish
@@ -339,7 +337,7 @@ Per sincronizzare correttamente gli aggiornamenti, è necessario modificare il g
 
 * gestione delle policy:
 
-   * per sovrascrivere i nodi rep:policy esistenti con quelli nuovi, aggiungete un terzo filtro pacchetto:
+   * per sovrascrivere i nodi rep:policy esistenti con nuovi nodi, aggiungere un terzo filtro pacchetto:
 
       * `/home/users|+.*/rep:policy`
 
@@ -363,7 +361,7 @@ Per progettazione, i dati utente creati nell’ambiente di pubblicazione non ven
 
 Se necessario, quando si utilizza la console [Amministrazione utenti e sicurezza](/help/sites-administering/security.md) per aggiungere nuovi utenti nell&#39;ambiente di pubblicazione, la sincronizzazione utente sincronizza i nuovi utenti e l&#39;appartenenza al gruppo con altre istanze di pubblicazione. La sincronizzazione degli utenti sincronizza anche i gruppi di utenti creati tramite la console di sicurezza.
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 ### Come portare offline User Sync {#how-to-take-user-sync-offline}
 
@@ -421,7 +419,7 @@ Nell’elenco è incluso un URL per ogni istanza Publish che esegue la diagnosti
 
 ### Configurazione aggiunta in modo errato {#configuration-improperly-added}
 
-Quando la sincronizzazione utente non funziona, il problema più comune è che sono state aggiunte *configurazioni aggiuntive*. La configurazione *predefinita esistente deve essere stata *modificata*.
+Quando la sincronizzazione utente non funziona, il problema più comune è che sono state aggiunte *configurazioni aggiuntive*. La configurazione *predefinita esistente deve essere stata* modificata*.
 
 Di seguito sono riportate le visualizzazioni delle configurazioni predefinite modificate da visualizzare nella console Web. Se compaiono più istanze, la configurazione aggiunta deve essere rimossa.
 

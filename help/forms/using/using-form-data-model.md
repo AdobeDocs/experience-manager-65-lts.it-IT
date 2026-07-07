@@ -1,5 +1,5 @@
 ---
-title: Usa modello dati modulo
+title: Utilizzare il modello dati modulo
 description: Scopri come utilizzare il modello dati modulo per creare e utilizzare i moduli adattivi e le comunicazioni interattive.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
@@ -10,18 +10,18 @@ role: Admin, User, Developer
 exl-id: 900ec6cd-d780-46eb-8ab1-907e563d81d7
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 1%
+source-wordcount: '1323'
+ht-degree: 3%
 
 ---
 
-# Usa modello dati modulo{#use-form-data-model}
+# Utilizzare il modello dati modulo{#use-form-data-model}
 
 ## Applicabile a {#applies-to}
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model.html).
 
 
 ![immagine protagonista](do-not-localize/data-integration.png)
@@ -30,8 +30,8 @@ L’integrazione dei dati in AEM Forms consente di utilizzare diverse origini da
 
 * [Integrazione dei dati di AEM Forms](../../forms/using/data-integration.md)
 * [Configurare origini dati](../../forms/using/configure-data-sources.md)
-* [Creare un modello di dati per moduli](../../forms/using/create-form-data-models.md)
-* [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md)
+* [Creare un modello di dati modulo](../../forms/using/create-form-data-models.md)
+* [Utilizzare il modello dati modulo](../../forms/using/work-with-form-data-model.md)
 
 Un modello dati modulo è un’estensione dello schema JSON che puoi utilizzare per:
 
