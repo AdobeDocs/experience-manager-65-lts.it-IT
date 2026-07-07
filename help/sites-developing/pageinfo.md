@@ -11,8 +11,8 @@ role: Developer
 exl-id: 6c54197f-86da-41bd-93e6-ee78ece91013
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '950'
+ht-degree: 2%
 
 ---
 
@@ -538,7 +538,7 @@ Per configurare il servizio nell’origine del progetto:
 
 Creare un servizio personalizzato Page Information Provider per aggiungere metadati di pagina facilmente ottenibili dall&#39;applicazione.
 
-1. Implementare l&#39;interfaccia `com.day.cq.wcm.api.PageInfoProvider`.
+1. Implementa l’interfaccia `com.day.cq.wcm.api.PageInfoProvider`.
 1. Crea il bundle e distribuisci la classe come servizio OSGi.
 1. Crea un componente pagina nell’applicazione. Utilizzare `foundation/components/page` come valore della proprietà `sling:resourceSuperType`.
 

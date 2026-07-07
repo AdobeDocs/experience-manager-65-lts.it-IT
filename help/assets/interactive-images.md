@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: e4be0056-1e19-41a8-8d8c-be65999b562d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '4435'
 ht-degree: 1%
 
 ---
@@ -45,14 +45,11 @@ Il tutorial illustra i passaggi necessari per integrare le immagini interattive 
 
 Passaggi delle immagini interattive:
 
-1. **(Facoltativo) Identifica le variabili hotspot**. Se utilizzi Experience Manager Assets e Dynamic Media in modo autonomo, inizia identificando le variabili dinamiche utilizzate nell&#39;implementazione Quickview esistente. Quindi puoi immettere i dati dei punti attivi durante la creazione dell’immagine interattiva. Vedere [(facoltativo) Identificare le variabili hotspot](#optional-identifying-hotspot-variables).
-Tuttavia, se utilizzi Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.
+1. **(Facoltativo) Identifica le variabili hotspot**. Se utilizzi Experience Manager Assets e Dynamic Media in modo autonomo, inizia identificando le variabili dinamiche utilizzate nell&#39;implementazione Quickview esistente. Quindi puoi immettere i dati dei punti attivi durante la creazione dell’immagine interattiva. Vedere [(facoltativo) Identificare le variabili hotspot](#optional-identifying-hotspot-variables).Tuttavia, se utilizzi Adobe Experience Manager Sites, o Adobe Experience Manager eCommerce, o entrambi, questo passaggio non è necessario.
 
-1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattive** - Personalizza l&#39;immagine grafica utilizzata per rappresentare gli hotspot. Non è necessario creare un predefinito visualizzatore di immagini interattive se si intende utilizzare il predefinito visualizzatore di immagini interattive predefinito `Shoppable_Banner`.
-Vedere [(Facoltativo) Creare un predefinito visualizzatore di immagini interattivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+1. **(Facoltativo) Crea un predefinito visualizzatore di immagini interattive** - Personalizza l&#39;immagine grafica utilizzata per rappresentare gli hotspot. Non è necessario creare un predefinito visualizzatore di immagini interattive se si intende utilizzare il predefinito visualizzatore di immagini interattive predefinito `Shoppable_Banner`.Vedere [(Facoltativo) Creare un predefinito visualizzatore di immagini interattivo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Carica un banner immagine** - Carica i banner immagine da rendere interattivi.
-Vedi [Caricare un banner immagine](#uploading-an-image-banner).
+1. **Carica un banner immagine** - Carica i banner immagine da rendere interattivi.Vedi [Caricare un banner immagine](#uploading-an-image-banner).
 
 1. **Aggiungi punti attivi a un banner immagine** - Aggiungi uno o più punti attivi a un banner immagine e associali a un&#39;azione, ad esempio un collegamento ipertestuale, una visualizzazione rapida o un frammento di esperienza. Dopo aver aggiunto gli hotspot, terminerai questa attività pubblicando l’immagine interattiva.
 
@@ -98,11 +95,9 @@ L’approccio consiste quindi nel visitare diverse aree del sito web esistente i
 
 In genere non è necessario utilizzare strumenti di debug specifici. I browser web moderni dispongono di web inspector che svolgono un lavoro adeguato. Di seguito sono riportati alcuni esempi di browser Web che includono i controlli Web:
 
-* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 per aprire il pannello Strumenti di sviluppo e quindi seleziona la scheda Rete.
-In un Mac, premi Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi seleziona la scheda Rete.
+* Per visualizzare tutte le richieste HTTP in uscita in Google Chrome, premi F12 per aprire il pannello Strumenti di sviluppo e quindi seleziona la scheda Rete.In un Mac, premi Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi seleziona la scheda Rete.
 
-* In Firefox, puoi attivare il plug-in Firebug premendo F12 e utilizzando la relativa scheda Net, oppure puoi utilizzare lo strumento integrato Inspector e la relativa scheda Network.
-In un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Ispettore.
+* In Firefox, puoi attivare il plug-in Firebug premendo F12 e utilizzando la relativa scheda Net, oppure puoi utilizzare lo strumento integrato Inspector e la relativa scheda Network.In un Mac, premere Comando+Opzione+I per aprire il pannello Strumenti per sviluppatori, quindi selezionare la scheda Ispettore.
 
 Quando il monitoraggio della rete è attivato nel browser, attiva Quickview sulla pagina.
 
@@ -296,8 +291,7 @@ Vedi [(facoltativo) Anteprima immagini interattive](#optional-previewing-interac
 
    * Seleziona **[!UICONTROL Frammento esperienza]**.
 
-      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.
-Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
+      * Se sei un cliente di Experience Manager Sites, seleziona l’icona Ricerca (lente di ingrandimento) per aprire la pagina Frammento esperienza. Seleziona il frammento di esperienza da utilizzare, quindi seleziona **[!UICONTROL Seleziona]** nell&#39;angolo superiore destro della pagina per tornare alla pagina Gestione punti attivi.Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
       * Specifica la larghezza e l’altezza del frammento di esperienza da visualizzare sul banner.
 
@@ -322,10 +316,7 @@ Vedi [Frammenti esperienza](/help/sites-authoring/experience-fragments.md).
 
 Puoi utilizzare Anteprima per visualizzare una rappresentazione di come l’immagine interattiva viene visualizzata dai clienti e per testare i punti attivi dell’immagine in modo che si comportino come previsto.
 
-Quando sei soddisfatto dell’immagine interattiva, puoi pubblicarla.
-Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
-Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.
-Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Quando sei soddisfatto dell’immagine interattiva, puoi pubblicarla.Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).Consulta [Collegare gli URL all&#39;applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md). Il metodo di collegamento basato su URL non è possibile se il contenuto interattivo presenta collegamenti con URL relativi, in particolare collegamenti a pagine Experience Manager Sites.Consulta [Aggiungere Dynamic Media Assets alle pagine](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Per visualizzare in anteprima le immagini interattive:**
 
@@ -346,11 +337,9 @@ I clienti di Experience Manager Sites possono aggiungere l’immagine interattiv
 
 Se sei un cliente Experience Manager Assets indipendente, puoi aggiungere manualmente l’immagine interattiva al sito web come descritto in questa sezione.
 
-1. Copia il codice di incorporamento dell&#39;immagine interattiva pubblicata.
-Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
+1. Copia il codice di incorporamento dell&#39;immagine interattiva pubblicata.Vedi [Incorporare il visualizzatore di video o immagini in una pagina Web](/help/assets/embed-code.md).
 
-1. Aggiungi il codice da incorporare copiato nella posizione desiderata all’interno della pagina web.
-Il codice di incorporamento copiato è impostato per un ambiente reattivo in modo che si adatti automaticamente all’area assegnata.
+1. Aggiungi il codice da incorporare copiato nella posizione desiderata all’interno della pagina web.Il codice di incorporamento copiato è impostato per un ambiente reattivo in modo che si adatti automaticamente all’area assegnata.
 
 **Esempio**
 

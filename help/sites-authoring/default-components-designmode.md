@@ -7,7 +7,7 @@ role: User,Admin,Developer
 exl-id: 679ec753-1beb-49d2-9ed3-ee9abdd5f1a9
 source-git-commit: e3106e87f72484568667873c1772abd30a108e51
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '902'
 ht-degree: 10%
 
 ---
@@ -43,7 +43,7 @@ Ad esempio, il contenuto di una pagina di prodotto può contenere un sistema par
 
 >[!NOTE]
 >
->Per ulteriori informazioni su [, vedere &#x200B;](/help/sites-developing/components.md)Sviluppo di componenti[&#x200B; e &#x200B;](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)Linee guida per l&#39;utilizzo di modelli e componenti`parsys`.
+>Per ulteriori informazioni su `parsys`, vedere [Sviluppo di componenti](/help/sites-developing/components.md) e [Linee guida per l&#39;utilizzo di modelli e componenti](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components).
 
 >[!CAUTION]
 >

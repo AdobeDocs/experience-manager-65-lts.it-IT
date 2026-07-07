@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 69420707-2362-462b-8618-d9bf63881632
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 0%
+source-wordcount: '527'
+ht-degree: 3%
 
 ---
 
@@ -53,6 +53,6 @@ Il primo passaggio per implementare l’integrazione dei dati consiste nell’id
 Consulta quanto segue per iniziare, comprendere e implementare l’integrazione dei dati.
 
 * [Configurare origini dati](../../forms/using/configure-data-sources.md)
-* [Crea modello dati modulo](../../forms/using/create-form-data-models.md)
-* [Utilizzare il modello dati del modulo](../../forms/using/work-with-form-data-model.md)
-* [Usa modello dati modulo](../../forms/using/using-form-data-model.md)
+* [Creare un modello di dati modulo](../../forms/using/create-form-data-models.md)
+* [Utilizzare il modello dati modulo](../../forms/using/work-with-form-data-model.md)
+* [Utilizzare il modello dati modulo](../../forms/using/using-form-data-model.md)

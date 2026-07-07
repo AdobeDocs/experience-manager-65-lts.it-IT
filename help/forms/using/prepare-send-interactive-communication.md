@@ -9,8 +9,8 @@ role: User, Developer
 exl-id: 2ccd8c75-e4d0-40f9-bc8f-352b408b5c62
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 0%
+source-wordcount: '2029'
+ht-degree: 1%
 
 ---
 
@@ -178,7 +178,7 @@ Adobe consiglia di eseguire queste istruzioni in sequenza per salvare correttame
 
 ### Abilitare la funzione Salva come bozza {#before-save-as-draft}
 
-Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per abilitare la funzione, effettua le seguenti operazioni:
+Per impostazione predefinita, la funzione Salva come bozza non è attivata. Per abilitare questa funzione, esegui i passaggi seguenti:
 
 1. Implementare l&#39;interfaccia del provider di servizi (SPI) [ccrDocumentInstance](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 

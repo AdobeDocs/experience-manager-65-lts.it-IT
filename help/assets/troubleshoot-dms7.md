@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di Dynamic Media - Modalità Scene7
+title: Risoluzione problemi di Dynamic Media - Modalità Scene7
 description: Scopri come risolvere i problemi di configurazione e configurazione e i problemi generali in Dynamic Media quando è in esecuzione in modalità Scene7.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -13,12 +13,12 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 469495f2-b6d3-490d-a5df-ffa07b30cc1e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 1%
 
 ---
 
-# Risoluzione dei problemi di Dynamic Media - Modalità Scene7{#troubleshooting-dynamic-media-scene-mode}
+# Risoluzione problemi di Dynamic Media - Modalità Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 Nel documento seguente viene descritta la risoluzione dei problemi per Dynamic Media che esegue la modalità di esecuzione **dynamicmedia_scene7**.
 
@@ -54,7 +54,7 @@ Per confermare la corretta sincronizzazione della risorsa da Experience Manager 
 
 ### Registrazione sincronizzazione {#synchronization-logging}
 
-Errori e problemi di sincronizzazione registrati in `error.log` (directory server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione a DEBUG sul pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
+Errori e problemi di sincronizzazione registrati in `error.log` (directory server Experience Manager `/crx-quickstart/logs/`). È disponibile una registrazione sufficiente per determinare la causa principale della maggior parte dei problemi, tuttavia è possibile aumentare la registrazione a DEBUG nel pacchetto `com.adobe.cq.dam.ips` tramite la console Sling ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) per raccogliere ulteriori informazioni.
 
 ### Sposta, Copia, Elimina {#move-copy-delete}
 
@@ -79,7 +79,7 @@ In caso di problemi con immagini e set, vedere le seguenti indicazioni per la ri
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Come eseguire il debug</strong></td>
    <td><strong>Soluzione</strong></td>
   </tr>
@@ -144,7 +144,7 @@ In caso di problemi con il video, consulta le seguenti linee guida per la risolu
 <table>
  <tbody>
   <tr>
-   <td><strong>Problema  </strong></td>
+   <td><strong>Problema</strong></td>
    <td><strong>Come eseguire il debug</strong></td>
    <td><strong>Soluzione</strong></td>
   </tr>
@@ -255,8 +255,7 @@ Se le risorse di esempio o il disegno del predefinito visualizzatore non è stat
 1. Cercare il pacchetto visualizzatore nell&#39;elenco; inizia con `cq-dam-scene7-viewers-content`.
 1. Selezionare **Reinstalla**.
 1. In Cloud Services, passa alla pagina Configurazione di Dynamic Media, quindi apri la finestra di dialogo di configurazione per la configurazione di Dynamic Media - S7.
-1. Non apportare modifiche, selezionare **Salva**.
-Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
+1. Non apportare modifiche, selezionare **Salva**.Questa azione di salvataggio attiva nuovamente la logica per creare e sincronizzare le risorse di esempio, il CSS del predefinito visualizzatore e il disegno.
 
 ### Problema: l’anteprima dell’immagine non viene caricata nella creazione dei predefiniti del visualizzatore {#image-preview-not-loading}
 

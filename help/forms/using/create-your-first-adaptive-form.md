@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare il primo modulo adattivo'
+title: 'Esercitazione: creare il primo modulo adattivo'
 description: Scopri come creare moduli di classe aziendale, interattivi e reattivi.
 feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
@@ -7,12 +7,12 @@ role: Admin, User, Developer
 exl-id: caa79def-4a29-4746-9a35-c362ea1c3c0c
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 4%
+source-wordcount: '1007'
+ht-degree: 8%
 
 ---
 
-# Tutorial: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
+# Esercitazione: creare il primo modulo adattivo {#tutorial-create-your-first-adaptive-form}
 
 ## Applicabile a {#applies-to}
 
