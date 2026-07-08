@@ -12,8 +12,8 @@ role: Admin
 exl-id: 432fc767-a6b8-48f8-b124-b13baca51fe8
 source-git-commit: 7584fa1c544f9dd499b4007a9158e25b783f620c
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 1%
+source-wordcount: '2613'
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Se la reindicizzazione è necessaria in archivi di grandi dimensioni, specialmen
 
 Gli indici sono configurati come nodi nell&#39;archivio nel nodo **Oak:index**.
 
-Il tipo del nodo indice deve essere **oak:QueryIndexDefinition.** Per ogni indicizzatore sono disponibili diverse opzioni di configurazione come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore riportati di seguito.
+Il tipo del nodo indice deve essere **oak:QueryIndexDefinition.** Sono disponibili diverse opzioni di configurazione per ogni indicizzatore come proprietà del nodo. Per ulteriori informazioni, consulta i dettagli di configurazione per ogni tipo di indicizzatore riportati di seguito.
 
 ### Indice proprietà {#the-property-index}
 
@@ -165,7 +165,7 @@ I caratteri speciali come *&quot;-&quot;* non sono indicizzati.
 | dimensione | 300 |
 | fine | ..., 100,... |
 | inventare | 200 |
-| oggetto | ..., 300... |
+| oggetto | ..., 300,... |
 | rubik | ..., 100, 200,... |
 
 L&#39;elenco dei documenti è ordinato. Questo è utile quando si esegue una query.
