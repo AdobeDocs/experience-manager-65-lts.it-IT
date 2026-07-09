@@ -345,7 +345,7 @@ ht-degree: 66%
       + [[!DNL Assets] e MediaLibrary](/help/assets/medialibrary.md)
       + [Usare rasterizzatore PDF](/help/assets/aem-pdf-rasterizer.md)
       + [Configurare le restrizioni di caricamento](/help/assets/configuring-asset-upload-restrictions.md)
-      + [Integrazione di [!DNL Experience Manager] e  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integrazione di [!DNL Experience Manager] e  [!DNL Creative Cloud] &#x200B;](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrare con  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management nelle risorse](/help/assets/drm.md)
       + [Utilizzare il pacchetto demo per approfondimenti risorse](/help/assets/use-demo-package-for-asset-insights.md)
@@ -953,7 +953,7 @@ ht-degree: 66%
          + {hide-from-toc}[Gestione del lavoro e limitazione](/help/forms/using/admin-help/manager-throttling.md)
          + {hide-from-toc}[Esecuzione di AEM Forms in modalità manutenzione](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
       + Manutenzione del database di AEM Forms {#maintain-aem-forms-database}
-         + Database {hide-from-toc}[DB2®: esecuzione settimanale di un processo](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+         + {hide-from-toc}[Database DB2®: esecuzione settimanale di un processo](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + {hide-from-toc}[Soglia massima cursori aperti nel database Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
          + {hide-from-toc}[Database IBM® DB2®: esecuzione di comandi per manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + {hide-from-toc}[Rimozione dati processo](/help/forms/using/admin-help/purging-process-data.md)
