@@ -8,8 +8,8 @@ role: User, Developer
 exl-id: 6e69ca67-883f-4079-96e2-5b7a9c843ada
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 2%
+source-wordcount: '2970'
+ht-degree: 4%
 
 ---
 
@@ -203,7 +203,7 @@ Un’azione di invio consente di scegliere la destinazione dei dati acquisiti tr
 
 ## Configurare uno schema o un modello dati modulo per un modulo {#configure-schema-or-data-model-for-form}
 
-È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. Puoi anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
+È possibile utilizzare il modello dati modulo per collegare un modulo a un’origine dati per inviare e ricevere dati in base alle azioni degli utenti. È possibile anche collegare un modulo a uno schema JSON per ricevere i dati inviati in un formato predefinito.
 
 Prima di collegare un modulo a uno schema o a un modello di dati del modulo
 

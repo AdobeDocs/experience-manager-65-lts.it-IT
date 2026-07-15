@@ -10,8 +10,8 @@ role: Admin, User, Developer
 exl-id: 242a0157-5863-4f9a-8613-687078fcafb5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 1%
+source-wordcount: '226'
+ht-degree: 24%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Introduzione {#introduction}
 
-Gestione della corrispondenza centralizza e gestisce la creazione, l’assemblaggio e la distribuzione di corrispondenza sicura, personalizzata e interattiva. Consente di assemblare rapidamente la corrispondenza dai contenuti pre-approvati e personalizzati in un processo semplificato, dalla creazione all’archiviazione. In questo modo, i tuoi clienti ottengono la comunicazione giusta al momento giusto e nel modo giusto: puntuale, accurata, conveniente, sicura e pertinente. La vostra azienda ottimizza il valore delle interazioni con i clienti e riduce al minimo costi e rischi grazie a un processo semplificato per la facilità, la velocità e la produttività.
+Gestione della corrispondenza centralizza e gestisce la creazione, l’assemblaggio e la distribuzione di corrispondenza sicura, personalizzata e interattiva. Consente di assemblare rapidamente la corrispondenza dai contenuti pre-approvati e personalizzati in un processo semplificato, dalla creazione all’archiviazione. In questo modo, i tuoi clienti ottengono la comunicazione giusta al momento giusto e nel modo giusto: puntuale, accurata, conveniente, sicura e pertinente. L’azienda ottimizza il valore delle interazioni con la clientela e riduce al minimo costi e rischi grazie a un processo semplificato per la facilità, la velocità e la produttività.
 
 ## Vantaggi {#benefits}
 
