@@ -10,7 +10,7 @@ role: Admin, User, Developer
 exl-id: 6c3c4d7f-fc4c-44ad-886f-f76d0532d91a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html).
 
 ![integrazione dei dati](assets/data-integeration.png)
 
@@ -60,7 +60,7 @@ Per impostare l&#39;URL di risposta per l&#39;applicazione Microsoft Dynamics re
 >
 >Utilizzare questa procedura solo durante l&#39;integrazione di AEM Forms con il server Microsoft Dynamics online.
 
-1. Passare all&#39;account Microsoft Azure Active Directory e aggiungere il seguente URL di configurazione del servizio cloud nelle impostazioni **URL di risposta** per l&#39;applicazione registrata:
+1. Vai all&#39;account Microsoft Azure Active Directory e aggiungi il seguente URL di configurazione del servizio cloud nelle impostazioni **URL di risposta** per l&#39;applicazione registrata:
 
    `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
@@ -140,7 +140,7 @@ La configurazione di **MS Dynamics OData Cloud Service (servizio OData)** includ
 
 Il servizio cloud MS Dynamics OData Cloud Service (OData Service) è configurato e connesso al servizio Dynamics.
 
-## Creare un modello di dati per moduli {#create-form-data-model}
+## Creare un modello di dati modulo {#create-form-data-model}
 
 Quando installi il pacchetto AEM Forms, nell&#39;istanza AEM viene distribuito un modello di dati modulo,**Microsoft Dynamics FDM**. Per impostazione predefinita, il modello dati del modulo utilizza il servizio Microsoft Dynamics configurato in MS Dynamics OData Cloud Service (servizio OData) come origine dati.
 

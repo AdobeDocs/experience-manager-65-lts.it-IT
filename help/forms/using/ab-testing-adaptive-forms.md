@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 5e7165e5-b2bf-4716-82d3-de02f669cd6e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
+source-wordcount: '1613'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 È probabile che i clienti abbandonino un modulo se l’esperienza che fornisce non è coinvolgente. Se da un lato è frustrante per i clienti, dall’altro può anche aumentare il volume e i costi del supporto per la tua organizzazione. Identificare e fornire la giusta esperienza del cliente che aumenti il tasso di conversione è fondamentale e impegnativo. Adobe Experience Manager Forms è la chiave di questo problema.
 
-AEM Forms si integra con Adobe Target, una soluzione Adobe Experience Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti agli utenti target e identificare l’esperienza che determina un migliore tasso di conversione.
+AEM Forms si integra con Adobe Target, una soluzione di Adobe Experience Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Una delle funzionalità principali di Target è il test A/B, che consente di configurare rapidamente test A/B simultanei, presentare contenuti rilevanti agli utenti target e identificare l’esperienza che determina un migliore tasso di conversione.
 
 Con Adobe Experience Manager (AEM) Forms, puoi impostare ed eseguire test A/B sui moduli adattivi in tempo reale. Fornisce inoltre funzionalità di reporting pronte all’uso e personalizzabili per visualizzare le prestazioni in tempo reale delle esperienze dei moduli e identificare quella che massimizza il coinvolgimento e la conversione degli utenti.
 
@@ -53,7 +53,7 @@ Se si sta configurando una destinazione per la prima volta, fare clic su **Confi
 1. Specifica i dettagli dell’account Target, ad esempio codice client, e-mail e password.
 1. Selezionare **Rest** dall&#39;elenco a discesa Tipo API.
 
-1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fare clic su **OK** nel messaggio e quindi su **OK** nella finestra di dialogo. L’account Target è configurato.
+1. Fai clic su **Connetti ad Adobe Target** per inizializzare la connessione con Target. Se la connessione ha esito positivo, viene visualizzato il messaggio Connessione riuscita. Fai clic su **OK** sul messaggio e quindi **OK** nella finestra di dialogo. L’account Target è configurato.
 
 1. Creare un framework di destinazione come descritto in [Aggiungere un framework](/help/sites-administering/target.md).
 
@@ -109,7 +109,7 @@ Puoi selezionare il pubblico quando configuri il test A/B per un modulo, come mo
 1. Fai clic sullo strumento **Seleziona** nella barra degli strumenti e seleziona il modulo adattivo.
 1. Fai clic su **Altro** nella barra degli strumenti e seleziona **Configura test A/B**. Viene visualizzata la pagina Configura test A/B.
 
-[&#128279;](assets/ab-test-configure-1.png)
+[![Pagina di configurazione test A/B per moduli adattivi](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Specifica un **Nome attività** per il test A/B.
 
@@ -126,7 +126,7 @@ Puoi selezionare il pubblico quando configuri il test A/B per un modulo, come mo
    * Descrizione, etichetta e testo della guida di un campo
    * Script che non influiscono sul flusso di invio o lo interrompono
    * Convalide (lato client e lato server)
-   * Tema per l’esperienza B. (puoi selezionare un tema alternativo per l’esperienza B)
+   * Tema per l’esperienza B. (puoi selezionare un tema alternativo per l’esperienza B).
 
 1. Passa all&#39;interfaccia utente di Forms e Documents, seleziona il modulo adattivo, fai clic su **Altro** e seleziona **Avvia test A/B**.
 
@@ -153,7 +153,7 @@ Per visualizzare e analizzare il rapporto del test A/B:
 
 1. Selezionare il modulo adattivo, fare clic su **Altro** e quindi su **Rapporto test A/B**. Il report viene visualizzato.
 
-[&#128279;](assets/ab-test-report-3.png)
+[![Rapporto test A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analizza il rapporto e verifica di disporre di un numero sufficiente di punti dati per dichiarare vincitrice una delle esperienze con prestazioni migliori. Puoi scegliere di continuare con lo stesso test A/B per più tempo o dichiarare un vincitore e terminare il test A/B.
 1. Per dichiarare un vincitore e terminare il test A/B, fare clic sul pulsante **Termina test A/B** nel dashboard di reporting. Viene visualizzata una finestra di dialogo in cui viene richiesto di dichiarare vincitrice una delle due esperienze. Scegli un vincitore e conferma di terminare il test A/B.

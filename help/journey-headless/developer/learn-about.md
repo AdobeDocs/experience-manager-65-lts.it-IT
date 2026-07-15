@@ -7,7 +7,7 @@ role: Admin, Developer
 exl-id: 39e05b80-a11b-41ff-8157-dc74f071c514
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 90%
 
 ---
@@ -85,7 +85,7 @@ In passato, le API per CMS erano solitamente basate su REST. Il trasferimento di
 
 C&#39;è ancora bisogno di disporre di API REST affidabili. Tuttavia le richieste REST possono essere grandi e complesse. Se hai più consumatori che fanno chiamate REST per tutti i tuoi canali, questi composti di verbosità e le prestazioni possono essere influenzati.
 
-La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. È comune vedere le soluzioni utilizzare un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per il lavoro in corso.
+La distribuzione di contenuti headless utilizza spesso le API GraphQL. GraphQL consente un trasferimento senza stato simile, ma consente query più mirate, riducendo il numero totale di query necessarie e migliorando le prestazioni. Molte soluzioni utilizzano un mix di REST e GraphQL, essenzialmente scegliendo lo strumento migliore per uno specifico lavoro.
 
 Qualunque sia l’API scelta, definendo un sistema headless basato su API comuni, puoi sfruttare il browser più aggiornato e altre tecnologie web come le app web progressive (PWA). Le API creano un’interfaccia standard facilmente estensibile e adattabile.
 
