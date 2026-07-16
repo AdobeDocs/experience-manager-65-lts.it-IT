@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ La vista dettagliata delle attività comprende le sezioni riportate di seguito.
 
 #### Dettagli attività {#task-details}
 
-Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività &#x200B;](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
+Nella sezione Dettagli attività vengono visualizzate informazioni sull&#39;attività. Le informazioni visualizzate dipendono dalle impostazioni di configurazione del [Passaggio attività ](/help/sites-developing/workflows-step-ref.md) nel flusso di lavoro. Nell&#39;esempio precedente vengono visualizzati la descrizione, lo stato, la data di inizio e il flusso di lavoro utilizzati per l&#39;attività. Consente inoltre di allegare un file all&#39;operazione.
 
 #### Modulo {#form}
 
@@ -117,7 +117,7 @@ La scheda **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del f
 
 ![attività-flusso di lavoro completato](assets/completed-task-workflow.png)
 
-## Risoluzione dei problemi {#troubleshooting-workflows}
+## Risoluzione di problemi {#troubleshooting-workflows}
 
 ### Impossibile visualizzare gli elementi relativi al flusso di lavoro AEM nella casella in entrata AEM {#unable-to-see-aem-worklow-items}
 
@@ -136,7 +136,7 @@ Il proprietario di un modello di flusso di lavoro non è in grado di visualizzar
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/using) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
+   * Distribuisci gli indici tramite un pacchetto AEM. È possibile utilizzare un progetto [Archetipo di AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using) per creare un pacchetto AEM distribuibile. Utilizza il seguente codice di esempio per aggiungere indici a un progetto di Archetipo AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

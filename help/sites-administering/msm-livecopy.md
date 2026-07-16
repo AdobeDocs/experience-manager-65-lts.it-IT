@@ -7,7 +7,7 @@ role: Admin
 exl-id: 47128d86-ee8d-4a15-ba3e-4cf2e2ec6191
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4204'
 ht-degree: 40%
 
 ---
@@ -380,7 +380,7 @@ Quando viene selezionata una pagina Live Copy, l’azione [Sospendi è disponibi
 1. Seleziona l’opzione appropriata da:
 
    * **Sospendi**
-   * **Sospendi con figli**
+   * **Sospendi con elementi secondari**
 
    ![Selezionare l&#39;opzione di sospensione appropriata](assets/chlimage_1-226.png)
 
@@ -392,7 +392,7 @@ Quando viene selezionata una pagina Live Copy, l’azione [Sospendi è disponibi
 
 Sospendere l’ereditarietà della Live Copy per una pagina è un’azione temporanea. Una volta sospesa, l’azione **Riprendi** diventa disponibile e consente di ripristinare la relazione live.
 
-Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
+Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, puoi richiedere una sincronizzazione:
 
 * Nella finestra di dialogo **Riprendi**/**Ripristina**; ad esempio:
 
@@ -402,7 +402,7 @@ Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticam
 
 >[!CAUTION]
 >
->Quando riattivi l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
+>Quando abiliti di nuovo l’ereditarietà, la pagina non viene sincronizzata automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione al momento della ripresa o in un secondo momento.
 
 #### Ripresa dell’ereditarietà dalle proprietà della pagina {#resuming-inheritance-from-page-properties}
 
@@ -428,7 +428,7 @@ Su una Live Copy esistente puoi modificare la profondità di una pagina, ovvero 
 
    * Avrà effetto immediato ed è non reversibile.
 
-      * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi figlio non potranno essere mantenute se annullate.
+      * Le pagine figlie vengono esplicitamente staccate dalla Live Copy. Ulteriori modifiche sugli elementi secondari non potranno essere mantenute se annullate.
 
       * Rimuove eventuali discendenti `LiveRelationships` anche se sono nidificati `LiveCopies`.
 
@@ -445,7 +445,7 @@ Per specificare o modificare la profondità:
 
 1. Apri le proprietà della pagina Live Copy utilizzando il comando **Visualizza proprietà** della console **Sites** oppure utilizzando **Informazioni pagina** sulla barra degli strumenti della pagina.
 1. Fai clic sulla scheda **Live Copy**.
-1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine figlie siano incluse o meno:
+1. Nella sezione **Configurazione** imposta o cancella l&#39;opzione **Ereditarietà Live Copy** a seconda che le pagine secondarie siano incluse o meno:
 
    * selezionato: una live copy profonda (le pagine figlie sono incluse)
    * cancella: una live copy shallow (le pagine figlie sono escluse)
@@ -468,7 +468,7 @@ Annulla l’ereditarietà della Live Copy per un componente in modo che non veng
 
 >[!NOTE]
 >
->Quando riabiliti l’ereditarietà, il componente non viene sincronizzato automaticamente con il sorgente. Se necessario, è possibile richiedere manualmente una sincronizzazione.
+>Quando abiliti di nuovo l’ereditarietà, il componente non viene sincronizzato automaticamente con l’origine. Se necessario, è possibile richiedere manualmente una sincronizzazione.
 
 Annulla l&#39;ereditarietà per modificare il contenuto o eliminare il componente:
 

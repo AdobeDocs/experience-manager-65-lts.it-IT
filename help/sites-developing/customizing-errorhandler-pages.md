@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione delle pagine visualizzate dal gestore degli errori
+title: Personalizzazione delle pagine mostrate dal gestore degli errori
 description: Adobe Experience Manager viene fornito con un gestore degli errori standard per la gestione degli errori HTTP.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: 4f98853d-306f-4d11-a3d8-83122b372b2d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 0%
+source-wordcount: '545'
+ht-degree: 3%
 
 ---
 
-# Personalizzazione delle pagine visualizzate dal gestore degli errori{#customizing-pages-shown-by-the-error-handler}
+# Personalizzazione delle pagine mostrate dal gestore degli errori{#customizing-pages-shown-by-the-error-handler}
 
 Adobe Experience Manager (AEM) viene fornito con un gestore degli errori standard per la gestione degli errori HTTP, ad esempio mostrando:
 
@@ -69,7 +69,7 @@ Puoi sviluppare script personalizzati per personalizzare le pagine visualizzate 
 
 Gli errori HTTP 500 sono causati da eccezioni sul lato server.
 
-* **[Errore interno del server &#x200B;](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+* **[Errore interno del server 500](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
 Il server ha rilevato una condizione imprevista che ha impedito il completamento della richiesta.
 
 Quando l’elaborazione delle richieste genera un’eccezione, il framework Sling Apache (su cui è basato AEM):
@@ -82,7 +82,7 @@ Quando l’elaborazione delle richieste genera un’eccezione, il framework Slin
 
   nel corpo della risposta.
 
-È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori[&#128279;](#how-to-customize-pages-shown-by-the-error-handler).  Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
+È possibile creare uno script `500.jsp` personalizzando le pagine visualizzate dal gestore degli errori](#how-to-customize-pages-shown-by-the-error-handler). [Tuttavia, viene utilizzato solo se `HttpServletResponse.sendError(500)` viene eseguito in modo esplicito, ovvero da un servizio di raccolta eccezioni.
 
 In caso contrario, il codice di risposta è impostato su 500, ma lo script `500.jsp` non viene eseguito.
 

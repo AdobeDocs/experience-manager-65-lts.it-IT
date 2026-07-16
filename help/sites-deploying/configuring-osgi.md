@@ -11,7 +11,7 @@ role: Admin
 exl-id: 3bf3ba2e-f5f2-428a-a1fc-36f885350f6b
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Entrambi i metodi possono essere utilizzati anche se ci sono sottili differenze,
    * Contengono le impostazioni definite nella console web.
    * Può essere incluso nei pacchetti di contenuti per l’utilizzo in altre istanze.
 
-* [content-nodes (sling:osgiConfig) nell’archivio](#osgi-configuration-in-the-repository)
+* [content-nodes (sling:osgiConfig) nell&#39;archivio](#osgi-configuration-in-the-repository)
 
    * Richiede la configurazione manuale con CRXDE Lite.
    * A causa delle convenzioni di denominazione dei nodi `sling:OsgiConfig`, è possibile collegare la configurazione a una [modalità di esecuzione](/help/sites-deploying/configure-runmodes.md) specifica. Puoi anche salvare le configurazioni per più di una modalità di esecuzione nello stesso archivio.
