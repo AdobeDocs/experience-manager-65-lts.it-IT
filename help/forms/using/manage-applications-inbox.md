@@ -7,7 +7,7 @@ role: Admin, User, Developer
 exl-id: 5454ee3d-45fb-4ed2-b2f2-1fa9e2460759
 source-git-commit: b8576049fba41b3bec16046316938274a5046513
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1091'
 ht-degree: 3%
 
 ---
@@ -117,7 +117,7 @@ La scheda **[!UICONTROL Dettagli flusso di lavoro]** mostra ogni passaggio del f
 
 ![attività-flusso di lavoro completato](assets/completed-task-workflow.png)
 
-## Risoluzione dei problemi {#troubleshooting-workflows}
+## Risoluzione di problemi {#troubleshooting-workflows}
 
 ### Impossibile visualizzare gli elementi relativi al flusso di lavoro AEM nella casella in entrata AEM {#unable-to-see-aem-worklow-items}
 

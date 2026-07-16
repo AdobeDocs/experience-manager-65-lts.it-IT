@@ -11,7 +11,7 @@ role: Admin
 exl-id: c0b285b7-3b20-4412-88b8-04de4a703f42
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2386'
 ht-degree: 1%
 
 ---
@@ -165,7 +165,7 @@ Per connettere un&#39;istanza CQ al membro radice di una topologia, attenersi al
 1. Apri la console Web nel browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Fai clic su Principale > Gestione topologia.
 1. Fare clic su Configura servizio di individuazione.
-1. Aggiungere un elemento alla proprietà URL del connettore topologia e specificare l&#39;URL del servizio Connettore topologia del membro radice. L’URL è nel formato https://rootservername:4502/libs/sling/topology/connector.
+1. Aggiungere un elemento alla proprietà URL del connettore topologia e specificare l&#39;URL del servizio Connettore topologia del membro radice. L&#39;URL è nel formato https://rootservername:4502/libs/sling/topology/connector.
 
 Eseguire la procedura seguente sul membro radice della topologia. La procedura aggiunge i nomi degli altri membri della topologia al relativo elenco consentiti del servizio di individuazione.
 
@@ -289,7 +289,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell’agente inverso {#creating-the-reverse-agent}
 
-1. Crea un **agente di replica inversa** sull&#39;autore. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica qualsiasi **Titolo**. **Name** deve seguire la convenzione di denominazione.
+1. Crea un **agente di replica inversa** sull&#39;autore. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica un **titolo**. **Name** deve seguire la convenzione di denominazione.
 1. Crea l’agente utilizzando le seguenti proprietà:
 
    | Proprietà | Valore |
@@ -302,7 +302,7 @@ Esempio: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creazione dell’agente di posta in uscita {#creating-the-outbox-agent}
 
-1. Crea un **agente di replica** nell&#39;istanza di lavoro. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica qualsiasi **Titolo**. Il **Nome** deve essere `offloading_outbox`.
+1. Crea un **agente di replica** nell&#39;istanza di lavoro. (Vedi la [documentazione per gli agenti di replica](/help/sites-deploying/replication.md).) Specifica un **titolo**. Il **Nome** deve essere `offloading_outbox`.
 1. Crea l’agente utilizzando le seguenti proprietà.
 
    | Proprietà | Valore |
