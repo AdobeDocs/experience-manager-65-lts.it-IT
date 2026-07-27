@@ -8,7 +8,7 @@ role: Admin
 exl-id: 87c30912-c89a-42f1-b37b-ec439e7318c7
 source-git-commit: 6b846e456466492f4be2c1e5a1f6b3913ae4dab4
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2098'
 ht-degree: 15%
 
 ---
@@ -88,10 +88,10 @@ Il rapporto si presenta con questo formato:
 
 * **Panoramica rapporto**: informazioni sul rapporto stesso, tra cui:
 
-   * **Ora del report**: quando il contenuto del report è stato generato e reso disponibile per la prima volta
-   * **Data di scadenza**: quando scade la cache del contenuto del report
-   * **Periodo di tempo di generazione**: la quantità di tempo in cui è stato generato il report
-   * **Conteggio risultati**: numero totale di risultati inclusi nel report
+  * **Ora del report**: quando il contenuto del report è stato generato e reso disponibile per la prima volta
+  * **Data di scadenza**: quando scade la cache del contenuto del report
+  * **Periodo di tempo di generazione**: la quantità di tempo in cui è stato generato il report
+  * **Conteggio risultati**: numero totale di risultati inclusi nel report
 
 * **Panoramica del sistema**: informazioni sul sistema AEM su cui è stato eseguito Analyzer
 * **Categorie dei risultati**: diverse sezioni che riguardano ciascuna uno o più risultati della stessa categoria. Ogni sezione include quanto segue: nome della categoria, sottotipi, conteggio e importanza dei risultati, riepilogo, collegamento alla documentazione della categoria e informazioni su singoli risultati.
@@ -102,7 +102,7 @@ Il rapporto si presenta con questo formato:
 
 >[!NOTE]
 >
->Per ulteriori informazioni su ciascuna categoria di risultati, vedere [Categorie del rilevatore pattern](https://experienceleague.adobe.com/it/docs/experience-manager-pattern-detection/table-of-contents/aso).
+>Per ulteriori informazioni su ciascuna categoria di risultati, vedere [Categorie del rilevatore pattern](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/aso).
 
 Per comprendere i livelli di importanza, seguire la tabella seguente:
 

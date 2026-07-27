@@ -10,8 +10,8 @@ role: User, Developer
 exl-id: 8afc775f-2178-4acc-afb7-718970c435b4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 5%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -38,7 +38,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td>Anteprima PDF</td>
   </tr>
   <tr>
-   <td>PDF Form</td>
+   <td>Modulo PDF</td>
    <td>Anteprima PDF con dati<br /> </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ Nella tabella seguente sono elencate le opzioni di anteprima disponibili per i d
    <td>Anteprima HTML e Anteprima HTML con dati</td>
   </tr>
   <tr>
-   <td>Modello modulo</td>
+   <td>Modello per moduli</td>
    <td>Anteprima PDF, Anteprima PDF con dati, Anteprima HTML, Anteprima HTML con dati<br /> </td>
   </tr>
  </tbody>

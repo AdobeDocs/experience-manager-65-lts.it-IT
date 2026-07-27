@@ -9,7 +9,7 @@ role: User, Developer
 exl-id: 0860f059-d599-4f87-9611-e7fe1c6bc059
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '1956'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Nella scheda Base, puoi configurare le seguenti proprietà:
 * **Asse Y > Usa funzione**: specifica la funzione statistica da utilizzare per calcolare i valori sull&#39;asse Y. Nell’esempio, viene aggiunto l’importo speso in ciascuna categoria e il valore calcolato viene tracciato sull’asse Y. Pertanto, selezionare Somma dall&#39;elenco a discesa Usa funzione. Per ulteriori informazioni sulle funzioni, vedere Utilizzare le funzioni nel grafico.
 * **Posizione legenda**: specifica la posizione della legenda rispetto al grafico. Le opzioni disponibili sono Right, Left, Top e Bottom.
 * **Mostra legenda**: se abilitata, mostra una legenda per il grafico.
-* **Descrizione**: specifica il formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico. Il valore predefinito è **\${x}(\${y})**. A seconda del tipo di grafico, quando si posiziona il mouse su un punto, una barra o una sezione del grafico, le variabili **\${x}** e **\${y}** vengono sostituite in modo dinamico con i valori corrispondenti sull&#39;asse X e sull&#39;asse Y e visualizzate nella descrizione comando. Come mostrato nell&#39;esempio seguente, la descrizione viene visualizzata come **Negozi al dettaglio(5870)** quando si punta il mouse sulla colonna Negozi al dettaglio. Per disattivare la descrizione, lasciare vuoto il campo Descrizione. Questa opzione non è applicabile ai grafici a linee e a superficie.
+* **Descrizione**: specifica il formato in cui la descrizione viene visualizzata al passaggio del mouse su un punto dati nel grafico. Il valore predefinito è **\${x}(\${y})**. A seconda del tipo di grafico, quando si posiziona il puntatore del mouse su un punto, una barra o una sezione del grafico, le variabili **\${x}** e **\${y}** vengono sostituite in modo dinamico con i valori corrispondenti sull&#39;asse X e sull&#39;asse Y e visualizzate nella descrizione comando. Come mostrato nell&#39;esempio seguente, la descrizione viene visualizzata come **Negozi al dettaglio(5870)** quando si punta il mouse sulla colonna Negozi al dettaglio. Per disattivare la descrizione, lasciare vuoto il campo Descrizione. Questa opzione non è applicabile ai grafici a linee e a superficie.
 * **Configurazioni specifiche per il grafico**: oltre alle configurazioni comuni, è disponibile la seguente configurazione specifica per il grafico:
 * **Raggio interno**: disponibile per i grafici ad anello per specificare il raggio (in pixel) del cerchio interno nel grafico.
 * **Colore linea**: disponibile per i grafici a linee, a linee, a punti e ad area per specificare il valore esadecimale del colore per la linea nel grafico.

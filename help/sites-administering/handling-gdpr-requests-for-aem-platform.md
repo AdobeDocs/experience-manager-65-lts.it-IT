@@ -8,8 +8,8 @@ role: Admin
 exl-id: 9445c51a-eb0b-41d0-9a23-ed75a5cd879e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 40%
+source-wordcount: '455'
+ht-degree: 41%
 
 ---
 
@@ -75,7 +75,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Disattiva utente {#disable-user}
 
 1. Apri la console User Administration e cerca l’utente in questione, come descritto sopra.
-1. Passa il puntatore del mouse sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
+1. Passa il puntatore sull’utente e fai clic sull’icona di selezione. Il profilo diventa grigio e indica che è stato selezionato.
 
 1. Premi il pulsante Disattiva nel menu superiore per disabilitare l’utente:
 

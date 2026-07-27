@@ -11,8 +11,8 @@ role: User, Developer
 exl-id: 03430815-6459-469c-b3dd-4cd83b9eec5f
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 2%
+source-wordcount: '1631'
+ht-degree: 6%
 
 ---
 
@@ -129,7 +129,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Invia URL</td>
+   <td>URL di invio</td>
    <td><p>Configura un servlet in cui vengono inviati i dati del modulo.</p> <p><strong>Nota:</strong> <em>È possibile specificare l'URL di invio di un modulo in più posizioni e il relativo ordine di precedenza è il seguente:</em></p>
     <ol>
      <li><em>L’URL di invio incorporato nel modulo (nel pulsante Invia ) ha la priorità più alta.</em></li>
@@ -154,7 +154,7 @@ La finestra di dialogo **Modifica** include diverse schede che forniscono le opz
   </tr>
   <tr>
    <td> </td>
-   <td>Percorso stile personalizzato</td>
+   <td>Percorso stili personalizzati</td>
    <td>Se hai selezionato Personalizzato come Tipo di stile, cerca il percorso del CSS personalizzato, altrimenti seleziona Predefinito.</td>
   </tr>
  </tbody>
@@ -261,6 +261,6 @@ Il portale dei moduli fornisce azioni di rendering pronte all’uso. È possibil
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

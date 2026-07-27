@@ -7,7 +7,7 @@ role: User, Developer
 exl-id: 13d84b04-dab6-453f-bc0d-62a5f557c4f2
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '7613'
+source-wordcount: '7736'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
 
 I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -66,25 +66,25 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 * **Per l&#39;attività completata, esegui il rendering del modulo adattivo come**: quando un&#39;attività è contrassegnata come completata, puoi eseguire il rendering del modulo adattivo come modulo adattivo di sola lettura o documento PDF. Per poter eseguire il rendering del modulo adattivo come documento record, è necessario abilitare l’opzione Documento di record o i moduli adattivi basati su modello di modulo.
 * **Precompilati:** I campi elencati di seguito fungono da input per l&#39;attività:
 
-   * **[!UICONTROL Selezionare il file di dati di input utilizzando]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Il file contiene ad esempio i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Il percorso di esempio è [Payload_Directory]/workflow/data.
+  * **[!UICONTROL Selezionare il file di dati di input utilizzando]**: percorso del file di dati di input (.json, .xml, .doc o modello dati modulo). Puoi recuperare il file di dati di input utilizzando un percorso relativo al payload o recuperare il file memorizzato in una variabile di tipo Documento, XML o JSON. Il file contiene ad esempio i dati inviati per il modulo tramite un&#39;applicazione Casella in entrata AEM. Il percorso di esempio è [Payload_Directory]/workflow/data.
 
-   * **Selezionare gli allegati di input utilizzando:** Gli allegati disponibili nel percorso sono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare gli allegati memorizzati in una variabile di tipo ArrayList of Document. Il percorso di esempio è [Payload_Directory]/allegati/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
+  * **Selezionare gli allegati di input utilizzando:** Gli allegati disponibili nel percorso sono allegati al modulo associato all&#39;attività. Il percorso può essere relativo al payload o recuperare gli allegati memorizzati in una variabile di tipo ArrayList of Document. Il percorso di esempio è [Payload_Directory]/allegati/. È possibile specificare gli allegati posizionati rispetto al payload o utilizzare una variabile di tipo documento (Elenco array > Documento) per specificare un allegato di input per il modulo adattivo.
 
-      * **Scegli JSON di input:** Seleziona un file JSON di input utilizzando un percorso relativo al payload o memorizzato in una variabile di tipo di dati Document, JSON o Form Data Model. Questa opzione è disponibile se si seleziona Interfaccia utente agente comunicazione interattiva o Documento canale web comunicazione interattiva dall’elenco a discesa Tipo.
-      * **Scegli un servizio di precompilazione personalizzato:** Seleziona il servizio di precompilazione per recuperare i dati e precompilare il documento del canale web di comunicazione interattiva o l&#39;interfaccia utente dell&#39;agente.
-      * **Utilizza il servizio di precompilazione della comunicazione interattiva selezionata in precedenza:** Utilizza questa opzione per utilizzare il servizio di precompilazione della comunicazione interattiva definito nell&#39;elenco a discesa Usa comunicazione interattiva.
-      * **Mappatura attributo richiesta:** Utilizzare la sezione Mappatura attributo richiesta per definire il [nome e il valore dell&#39;attributo richiesta](../../forms/using/work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore di attributo della richiesta utilizzando un valore letterale o una variabile di tipo di dati String.\
-        Il servizio di precompilazione e le opzioni di mappatura degli attributi della richiesta sono disponibili solo se dall’elenco a discesa Tipo si seleziona Interfaccia utente agente di comunicazione interattiva o Documento canale web di comunicazione interattiva.
+    * **Scegli JSON di input:** Seleziona un file JSON di input utilizzando un percorso relativo al payload o memorizzato in una variabile di tipo di dati Document, JSON o Form Data Model. Questa opzione è disponibile se si seleziona Interfaccia utente agente comunicazione interattiva o Documento canale web comunicazione interattiva dall’elenco a discesa Tipo.
+    * **Scegli un servizio di precompilazione personalizzato:** Seleziona il servizio di precompilazione per recuperare i dati e precompilare il documento del canale web di comunicazione interattiva o l&#39;interfaccia utente dell&#39;agente.
+    * **Utilizza il servizio di precompilazione della comunicazione interattiva selezionata in precedenza:** Utilizza questa opzione per utilizzare il servizio di precompilazione della comunicazione interattiva definito nell&#39;elenco a discesa Usa comunicazione interattiva.
+    * **Mappatura attributo richiesta:** Utilizzare la sezione Mappatura attributo richiesta per definire il [nome e il valore dell&#39;attributo richiesta](../../forms/using/work-with-form-data-model.md#bindargument). Recupera i dettagli dall’origine dati in base al nome e al valore dell’attributo specificati nella richiesta. È possibile definire un valore di attributo della richiesta utilizzando un valore letterale o una variabile di tipo di dati String.\
+      Il servizio di precompilazione e le opzioni di mappatura degli attributi della richiesta sono disponibili solo se dall’elenco a discesa Tipo si seleziona Interfaccia utente agente di comunicazione interattiva o Documento canale web di comunicazione interattiva.
 
 * **Informazioni inviate:** I campi elencati di seguito fungono da percorsi di output per l&#39;attività:
 
-   * **Salva file di dati di output tramite:** Salva il file di dati (.json,. xml, .doc o modello dati modulo). Il file di dati contiene informazioni inviate tramite il modulo associato. Puoi salvare il file di dati di output utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, XML o JSON. Ad esempio, [Payload_Directory]/Workflow/data, dove i dati sono un file.
-   * **Salva allegati tramite:** Salva gli allegati del modulo forniti in un&#39;attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o memorizzarlo in una variabile di matrice del tipo di dati Document.
-   * **Salva documento di record utilizzando:** Percorso per salvare un file del documento di record. Ad esempio, [Directory_Payload]/DocumentofRecord/credit-card.pdf. Puoi salvare il documento record utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Dati documento. Se si seleziona l&#39;opzione **Relativo al payload**, il documento di record non viene generato se il campo percorso viene lasciato vuoto. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo.
+  * **Salva file di dati di output tramite:** Salva il file di dati (.json,. xml, .doc o modello dati modulo). Il file di dati contiene informazioni inviate tramite il modulo associato. Puoi salvare il file di dati di output utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, XML o JSON. Ad esempio, [Payload_Directory]/Workflow/data, dove i dati sono un file.
+  * **Salva allegati tramite:** Salva gli allegati del modulo forniti in un&#39;attività. È possibile salvare gli allegati utilizzando un percorso relativo al payload o memorizzarlo in una variabile di matrice del tipo di dati Document.
+  * **Salva documento di record utilizzando:** Percorso per salvare un file del documento di record. Ad esempio, [Directory_Payload]/DocumentofRecord/credit-card.pdf. Puoi salvare il documento record utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Dati documento. Se si seleziona l&#39;opzione **Relativo al payload**, il documento di record non viene generato se il campo percorso viene lasciato vuoto. Questa opzione è disponibile solo se si seleziona Modulo adattivo dall’elenco a discesa Tipo.
 
-   * **Salvare i dati del canale Web utilizzando:** Salvare il file di dati del canale Web utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, JSON o Modello dati modulo. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
-   * **Salvare il documento PDF utilizzando:** Salvare il documento PDF utilizzando un percorso relativo al payload o archiviarlo in una variabile di tipo dati Documento. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
-   * **Salva modello di layout utilizzando:** Salva il modello di layout utilizzando un percorso relativo al payload o memorizzalo in una variabile di tipo dati Documento. Il [modello di layout](../../forms/using/layout-design-details.md) fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
+  * **Salvare i dati del canale Web utilizzando:** Salvare il file di dati del canale Web utilizzando un percorso relativo al payload o memorizzarlo in una variabile di tipo Documento, JSON o Modello dati modulo. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
+  * **Salvare il documento PDF utilizzando:** Salvare il documento PDF utilizzando un percorso relativo al payload o archiviarlo in una variabile di tipo dati Documento. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
+  * **Salva modello di layout utilizzando:** Salva il modello di layout utilizzando un percorso relativo al payload o memorizzalo in una variabile di tipo dati Documento. Il [modello di layout](../../forms/using/layout-design-details.md) fa riferimento a un file XDP creato con Forms Designer. Questa opzione è disponibile solo se dall’elenco a discesa Tipo selezioni Interfaccia utente agente di comunicazione interattiva.
 
 * **Assegnatario > Assegna opzioni:** Specificare il metodo per assegnare l&#39;attività a un utente. È possibile assegnare dinamicamente l&#39;attività a un utente o a un gruppo utilizzando lo script Selettore partecipanti oppure assegnare l&#39;attività a un utente o a un gruppo AEM specifico.
 * **Selettore partecipanti:** L&#39;opzione è disponibile quando l&#39;opzione **Assegna dinamicamente a un utente o a un gruppo** è selezionata nel campo Assegna opzioni. È possibile utilizzare un codice ECMAScript o un servizio per selezionare dinamicamente un utente o un gruppo.
@@ -105,8 +105,8 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 * **Modello e-mail HTML**: selezionare il modello e-mail per l&#39;e-mail di notifica. Per modificare un modello, modifica il file che si trova in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **Consenti delega a:** La Posta in arrivo di AEM fornisce all&#39;utente connesso un&#39;opzione per delegare il flusso di lavoro assegnato a un altro utente. Puoi delegare all’interno dello stesso gruppo o all’utente del flusso di lavoro di un altro gruppo. Se l&#39;attività è assegnata a un singolo utente e l&#39;opzione **consenti delega ai membri del gruppo assegnatario** è selezionata, non è possibile delegare l&#39;attività a un altro utente o gruppo.
 * **Impostazioni di condivisione:** la casella in entrata di AEM fornisce le opzioni per condividere una o tutte le attività della casella in entrata con altri utenti:
-   * Quando l&#39;opzione **Consenti all&#39;assegnatario di condividere in modo esplicito nella casella in entrata** è selezionata, l&#39;utente può fare clic sull&#39;attività e condividerla con un altro utente AEM.
-   * Quando l&#39;opzione **Consenti all&#39;assegnatario di condividere tramite la condivisione della casella in entrata** è selezionata e un utente condivide i propri elementi della casella in entrata o consente ad altri utenti di accedere ai propri elementi della casella in entrata, solo le attività con l&#39;opzione sopra indicata abilitata vengono condivise con altri utenti.
+  * Quando l&#39;opzione **Consenti all&#39;assegnatario di condividere in modo esplicito nella casella in entrata** è selezionata, l&#39;utente può fare clic sull&#39;attività e condividerla con un altro utente AEM.
+  * Quando l&#39;opzione **Consenti all&#39;assegnatario di condividere tramite la condivisione della casella in entrata** è selezionata e un utente condivide i propri elementi della casella in entrata o consente ad altri utenti di accedere ai propri elementi della casella in entrata, solo le attività con l&#39;opzione sopra indicata abilitata vengono condivise con altri utenti.
 
 * **Azioni > Azioni predefinite:** Sono disponibili le azioni Invia, Salva e Reimposta. Per impostazione predefinita, sono attivate tutte le azioni predefinite.
 * **Variabile di route:** Nome della variabile di route. La variabile di route acquisisce le azioni personalizzate selezionate da un utente nella casella in entrata di AEM.
@@ -138,7 +138,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 Utilizza la fase e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [&#128279;](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
 **Titolo:** Il titolo del passaggio consente di identificare il passaggio nell&#39;editor del flusso di lavoro.
 
@@ -158,7 +158,7 @@ Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di
 
 * **Metadati flusso di lavoro:** Utilizzare l&#39;opzione quando il valore da utilizzare viene salvato in una proprietà dei metadati del flusso di lavoro. Dopo aver selezionato l’opzione, immetti il nome della proprietà dei metadati nella casella di testo vuota sotto l’opzione Metadati del flusso di lavoro. Ad esempio, emailAddress.
 * **URL risorsa:** Utilizza l&#39;opzione per incorporare un collegamento web di una comunicazione interattiva nell&#39;e-mail. Dopo aver selezionato l’opzione, sfoglia e scegli la comunicazione interattiva da incorporare. La risorsa può trovarsi nel server di authoring o di pubblicazione.
-* **Immagine:** Utilizza l&#39;opzione per incorporare un&#39;immagine nell&#39;e-mail. Dopo aver selezionato l’opzione, sfoglia e scegli l’immagine. L&#39;opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&#42;&quot;/>) disponibili nel modello e-mail.
+* **Immagine:** Utilizza l&#39;opzione per incorporare un&#39;immagine nell&#39;e-mail. Dopo aver selezionato l’opzione, sfoglia e scegli l’immagine. L’opzione immagine è disponibile solo per i tag immagine (&lt;img src=&quot;&#42;&quot;/>) disponibili nel modello e-mail.
 
 **Indirizzo e-mail del mittente/destinatario:** Seleziona l&#39;opzione **Letterale** per specificare manualmente un indirizzo e-mail o seleziona l&#39;opzione **Recupera dai metadati del flusso di lavoro** per recuperare l&#39;indirizzo e-mail da una proprietà dei metadati. È inoltre possibile specificare un elenco di matrici di proprietà dei metadati per l&#39;opzione **Recupera dai metadati del flusso di lavoro**. Selezionare l&#39;opzione **Variabile** per recuperare l&#39;indirizzo di posta elettronica dal valore memorizzato in una variabile di tipo di dati stringa.
 
@@ -256,17 +256,17 @@ Il passaggio Richiama servizio modello dati modulo include i campi elencati di s
 * **Servizio**: elenco dei servizi forniti dal modello dati del modulo selezionato.
 * **Input per servizi > Fornisci dati di input utilizzando metadati letterali, variabili o del flusso di lavoro e un file JSON**: un servizio può avere più argomenti. Seleziona l’opzione per ottenere il valore degli argomenti del servizio da una proprietà di metadati del flusso di lavoro, da un oggetto JSON, da una variabile o inserisci direttamente il valore nella casella di testo fornita:
 
-   * **Valore letterale:** Utilizzare l&#39;opzione quando si conosce il valore esatto da specificare. Ad esempio, srose@we.info.
-   * **Variabile:** Utilizzare l&#39;opzione per recuperare il valore archiviato in una variabile.
-   * **Recupera dai metadati del flusso di lavoro:** Utilizzare l&#39;opzione quando il valore da utilizzare viene salvato in una proprietà dei metadati del flusso di lavoro. Ad esempio, emailAddress.
-   * **[!UICONTROL Relativo al payload]**: utilizzare l&#39;opzione per recuperare l&#39;allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
+  * **Valore letterale:** Utilizzare l&#39;opzione quando si conosce il valore esatto da specificare. Ad esempio, srose@we.info.
+  * **Variabile:** Utilizzare l&#39;opzione per recuperare il valore archiviato in una variabile.
+  * **Recupera dai metadati del flusso di lavoro:** Utilizzare l&#39;opzione quando il valore da utilizzare viene salvato in una proprietà dei metadati del flusso di lavoro. Ad esempio, emailAddress.
+  * **[!UICONTROL Relativo al payload]**: utilizzare l&#39;opzione per recuperare l&#39;allegato salvato in un percorso relativo al payload. Selezionare l&#39;opzione e specificare il nome della cartella che include il file allegato oppure specificare il nome del file allegato nella casella di testo.
 
-     Se ad esempio la cartella Relativa al payload nel repository di CRX include un file allegato nel percorso `attachment\attachment-folder`, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato l&#39;opzione **[!UICONTROL Relativa al payload]**.
-   * **JSON Dot Notation:** Utilizzare l&#39;opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input da JSON di input.
-   * **Eseguire il mapping dei campi di input dal JSON di input:** Specificare il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
+    Se ad esempio la cartella Relativa al payload nel repository di CRX include un file allegato nel percorso `attachment\attachment-folder`, specificare `attachment\attachment-folder` nella casella di testo dopo aver selezionato l&#39;opzione **[!UICONTROL Relativa al payload]**.
+  * **JSON Dot Notation:** Utilizzare l&#39;opzione quando il valore da utilizzare si trova in un file JSON. Ad esempio, insurance.customerDetails.emailAddress. L’opzione JSON Dot Notation è disponibile solo se è selezionata l’opzione Mappa campi di input da JSON di input.
+  * **Eseguire il mapping dei campi di input dal JSON di input:** Specificare il percorso di un file JSON per ottenere il valore di input di alcuni argomenti del servizio dal file JSON. Il percorso del file JSON può essere relativo al payload, un percorso assoluto oppure puoi selezionare un documento JSON di input utilizzando una variabile di tipo JSON o Modello dati modulo.
 
 * **Input per servizi > Fornisci dati di input utilizzando una variabile o un file JSON:** Seleziona l&#39;opzione per ottenere valori per tutti gli argomenti da un file JSON salvato in un percorso assoluto, in un percorso relativo al payload o in una variabile.
-* **Selezionare il documento JSON di input utilizzando**: il file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **relativo al payload** o **percorso assoluto.** È inoltre possibile recuperare il documento JSON di input utilizzando una variabile di tipo di dati JSON o Form Data Model.
+* **Selezionare il documento JSON di input utilizzando**: il file JSON contenente i valori per tutti gli argomenti del servizio. Il percorso del file JSON può essere **relativo al payload** o **percorso assoluto.** Puoi anche recuperare il documento JSON di input utilizzando una variabile di tipo di dati JSON o Modello dati modulo.
 
 * **Notazione punti JSON:** Lasciare vuoto il campo per utilizzare tutti gli oggetti del file JSON specificato come input per gli argomenti del servizio. Per leggere un oggetto JSON specifico dal file JSON specificato come input per gli argomenti del servizio, specifica la notazione del punto per l’oggetto JSON. Ad esempio, se disponi di un JSON simile a quello elencato all’inizio della sezione, specifica insurance.customerDetails per fornire tutti i dettagli di un cliente come input per il servizio.
 * **Output del servizio > Mappa e scrivi i valori di output in una variabile o nei metadati:** Selezionare l&#39;opzione per salvare i valori di output come proprietà del nodo dei metadati dell&#39;istanza del flusso di lavoro in crx-repository. Specifica il nome della proprietà dei metadati e seleziona l’attributo di output del servizio corrispondente da mappare con la proprietà dei metadati. Ad esempio, mappa phone_number restituito dal servizio di output con la proprietà phone_number dei metadati del flusso di lavoro. Allo stesso modo, puoi memorizzare l’output in una variabile di tipo dati Long. Quando si seleziona una proprietà per l&#39;opzione **[!UICONTROL Attributo di output del servizio da mappare]**, vengono compilate solo le variabili in grado di memorizzare i dati della proprietà selezionata per l&#39;opzione **[!UICONTROL Salva output in]**.
@@ -307,7 +307,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 
 * **Script o servizio per selezionare i destinatari:** L&#39;opzione è disponibile solo se si seleziona Dinamicamente nel campo Seleziona destinatari. È possibile specificare un ECMAScript o un servizio per scegliere i destinatari e le opzioni di verifica per un documento.
-* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa **[!UICONTROL in]** 2 passaggi di verifica.
+* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa ]**in**[!UICONTROL  2 passaggi di verifica.
 * **Variabile di stato:** un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile di tipo dati String. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un’istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;data-ora>/&lt;istanza del modello di flusso di lavoro>/workItems/&lt;nodo>/metaData contiene lo stato di una variabile.
 * **[!UICONTROL Documento firmato]**: è possibile salvare lo stato del documento firmato in Variabile. Per aggiungere un audit trail della firma elettronica per una maggiore sicurezza e legalità al documento firmato, è possibile includere un rapporto di audit. È possibile salvare il documento firmato utilizzando la cartella Variabile o Payload.
   >[!NOTE]
@@ -427,23 +427,23 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 
 * **[!UICONTROL Formato stampante]**: valore Formato di stampa che specifica il linguaggio di descrizione della pagina da utilizzare quando non viene fornito un file XDC per generare il flusso di output. Se fornisci un valore letterale, seleziona uno dei seguenti valori:
 
-   * **[!UICONTROL PCL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per PCL.
-   * **[!UICONTROL PostScript personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per PostScript.
-   * **[!UICONTROL ZPL]** personalizzato: utilizzare l&#39;opzione per specificare un file XDC personalizzato per ZPL.
-   * **[!UICONTROL PCL colore generico (5c)]**: utilizzare un PCL colore generico (5c).
-   * **[!UICONTROL PostScript generico livello3]**: utilizzare PostScript generico livello 3.
-   * **[!UICONTROL ZPL 300 DPI]**: utilizzare ZPL 300 DPI. Viene utilizzato zpl300.xdc.
-   * **[!UICONTROL ZPL 600 DPI]**: utilizzare ZPL 600 DPI. Viene utilizzato il file zpl600.xdc.
-   * **[!UICONTROL IPL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per IPL.
-   * **[!UICONTROL IPL 300 DPI]**: utilizzare IPL 300 DPI. Viene utilizzato ipl300.xdc.
-   * **[!UICONTROL IPL 400 DPI]**: utilizzare IPL 400 DPI. Viene utilizzato il file ipl400.xdc.
-   * **[!UICONTROL TPCL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per TPCL.
-   * **[!UICONTROL TPCL 305 DPI]**: utilizzare TPCL 300 DPI. Viene utilizzato il file tpcl305.xdc.
-   * **[!UICONTROL PCL 600 DPI]**: utilizzare TPCL 600 DPI. Viene utilizzato il file tpcl600.xdc.
-   * **[!UICONTROL DPL personalizzato]**: utilizzare l&#39;opzione per specificare un DPL per file XDC personalizzato.
-   * **[!UICONTROL DPL300DPI]**: utilizzare DPL 300 DPI. Viene utilizzato il file dpl300.xdc.
-   * **[!UICONTROL DPL406DPI]**: utilizzare DPL 400 DPI. Viene utilizzato dpl406.xdc.
-   * **[!UICONTROL DPL600DPI]**: utilizzare DPL 600 DPI. Viene utilizzato dpl600.xdc.
+  * **[!UICONTROL PCL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per PCL.
+  * **[!UICONTROL PostScript personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per PostScript.
+  * **[!UICONTROL ZPL]** personalizzato: utilizzare l&#39;opzione per specificare un file XDC personalizzato per ZPL.
+  * **[!UICONTROL PCL colore generico (5c)]**: utilizzare un PCL colore generico (5c).
+  * **[!UICONTROL PostScript generico livello3]**: utilizzare PostScript generico livello 3.
+  * **[!UICONTROL ZPL 300 DPI]**: utilizzare ZPL 300 DPI. Viene utilizzato zpl300.xdc.
+  * **[!UICONTROL ZPL 600 DPI]**: utilizzare ZPL 600 DPI. Viene utilizzato il file zpl600.xdc.
+  * **[!UICONTROL IPL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per IPL.
+  * **[!UICONTROL IPL 300 DPI]**: utilizzare IPL 300 DPI. Viene utilizzato ipl300.xdc.
+  * **[!UICONTROL IPL 400 DPI]**: utilizzare IPL 400 DPI. Viene utilizzato il file ipl400.xdc.
+  * **[!UICONTROL TPCL personalizzato]**: utilizzare l&#39;opzione per specificare un file XDC personalizzato per TPCL.
+  * **[!UICONTROL TPCL 305 DPI]**: utilizzare TPCL 300 DPI. Viene utilizzato il file tpcl305.xdc.
+  * **[!UICONTROL PCL 600 DPI]**: utilizzare TPCL 600 DPI. Viene utilizzato il file tpcl600.xdc.
+  * **[!UICONTROL DPL personalizzato]**: utilizzare l&#39;opzione per specificare un DPL per file XDC personalizzato.
+  * **[!UICONTROL DPL300DPI]**: utilizzare DPL 300 DPI. Viene utilizzato il file dpl300.xdc.
+  * **[!UICONTROL DPL406DPI]**: utilizzare DPL 400 DPI. Viene utilizzato dpl406.xdc.
+  * **[!UICONTROL DPL600DPI]**: utilizzare DPL 600 DPI. Viene utilizzato dpl600.xdc.
 
 **Proprietà output**
 
@@ -458,15 +458,15 @@ Il passaggio Genera output stampato ha le seguenti proprietà:
 * **[!UICONTROL Seleziona file XCI tramite]**: i file XCI vengono utilizzati per descrivere i font e altre proprietà utilizzati per gli elementi di progettazione dei moduli. È possibile mantenere un file XCI relativo al payload, in un percorso assoluto o utilizzando una variabile di tipo dati Documento.
 
 * **[!UICONTROL Impostazioni locali]**: specifica la lingua utilizzata per generare il documento PDF. Se fornisci un valore letterale, seleziona una lingua dall’elenco o scegli uno dei seguenti valori:
-   * **Per utilizzare il server predefinito**:
-Impostazione predefinita. Utilizza l&#39;impostazione Locale configurata sul server AEM Forms. L&#39;impostazione Locale viene configurata utilizzando la console di amministrazione. (Vedi [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_65_it).)
+  * **Per utilizzare il server predefinito**:
+    Impostazione predefinita. Utilizza l&#39;impostazione Locale configurata sul server AEM Forms. L&#39;impostazione Locale viene configurata utilizzando la console di amministrazione. (Vedi [Guida di Designer](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
-   * **Per utilizzare un valore personalizzato**:
-Digita il codice locale nella casella letterale o seleziona una variabile stringa contenente il codice locale. Per un elenco completo dei codici delle impostazioni internazionali supportati, vedere https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+  * **Per utilizzare un valore personalizzato**:
+    Digita il codice locale nella casella letterale o seleziona una variabile stringa contenente il codice locale. Per un elenco completo dei codici delle impostazioni internazionali supportati, vedere https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copie]**: valore intero che specifica il numero di copie da generare per l&#39;output. Il valore predefinito è 1.
 
 * **[!UICONTROL Stampa fronte retro]**: valore di paginazione che specifica se utilizzare la stampa fronte/retro o fronte/retro. Le stampanti che supportano PostScript e PCL utilizzano questo valore. Se fornisci un valore letterale, seleziona uno dei seguenti valori:
-   * **[!UICONTROL Edge lungo fronte-retro]**: utilizzare la stampa fronte-retro e la stampa utilizzando la paginazione a lato lungo.
-   * **[!UICONTROL Edge corto fronte-retro]**: utilizzare la stampa fronte-retro e la stampa utilizzando la paginazione lato-corto.
-   * **[!UICONTROL Simplex]**: utilizzare la stampa fronte/retro.
+  * **[!UICONTROL Edge lungo fronte-retro]**: utilizzare la stampa fronte-retro e la stampa utilizzando la paginazione a lato lungo.
+  * **[!UICONTROL Edge corto fronte-retro]**: utilizzare la stampa fronte-retro e la stampa utilizzando la paginazione lato-corto.
+  * **[!UICONTROL Simplex]**: utilizzare la stampa fronte/retro.
