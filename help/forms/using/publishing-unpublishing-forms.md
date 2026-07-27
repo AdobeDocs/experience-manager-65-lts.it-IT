@@ -12,7 +12,7 @@ role: Admin, User, Developer
 exl-id: 475e3c95-913d-49ee-8245-b88b967f9b7e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1409'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ AEM Forms supporta i seguenti tipi di risorse:
 
 * Moduli adattivi
 * Documenti adattivi
-* Frammenti di moduli adattivi
+* Frammenti di un modulo adattivo
 * Temi
 * Modelli di modulo (moduli XFA)
 * PDF forms
@@ -48,12 +48,12 @@ Il Forms adattivo può utilizzare alcune configurazioni, impostazioni e personal
 * Le altre configurazioni dei servizi cloud vengono attivate solo se l’utente dispone di autorizzazioni di amministratore.
 * Personalizzazioni. Questi includono, tra l’altro:
 
-   * Layout personalizzati
-   * Aspetti personalizzati
-   * File CSS: utilizzato come input nella finestra di dialogo delle proprietà del contenitore Modulo adattivo
-   * Categoria libreria client: scelta come input nella finestra di dialogo delle proprietà del contenitore di moduli adattivi
-   * Qualsiasi altra libreria client che potrebbe essere inclusa nel modello di modulo adattivo.
-   * Percorsi di progettazione
+  * Layout personalizzati
+  * Aspetti personalizzati
+  * File CSS: utilizzato come input nella finestra di dialogo delle proprietà del contenitore Modulo adattivo
+  * Categoria libreria client: scelta come input nella finestra di dialogo delle proprietà del contenitore di moduli adattivi
+  * Qualsiasi altra libreria client che potrebbe essere inclusa nel modello di modulo adattivo.
+  * Percorsi di progettazione
 
 ## Stati risorse {#asset-states}
 

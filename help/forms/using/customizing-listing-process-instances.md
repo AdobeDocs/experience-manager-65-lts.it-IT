@@ -1,5 +1,5 @@
 ---
-title: Personalizzazione dell'elenco delle istanze di processo
+title: Personalizzazione dell’elenco delle istanze di processo
 description: Come personalizzare le proprietà visualizzate nell’istanza del processo nell’area di lavoro di AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 7ffde604-2f56-4b53-88ab-5fac321e4753
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 3%
+source-wordcount: '294'
+ht-degree: 7%
 
 ---
 
-# Personalizzazione dell&#39;elenco delle istanze di processo {#customizing-the-listing-of-process-instances}
+# Personalizzazione dell’elenco delle istanze di processo {#customizing-the-listing-of-process-instances}
 
 L’elenco delle istanze di processo viene visualizzato nella scheda Tracciamento dell’area di lavoro di AEM Forms.
 

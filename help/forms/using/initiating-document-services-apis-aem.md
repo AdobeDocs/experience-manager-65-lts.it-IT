@@ -1,5 +1,5 @@
 ---
-title: Avviare le API di Document Services dal flusso di lavoro AEM
+title: Avviare le API dei servizi basati sui documenti dal flusso di lavoro AEM
 description: Scopri come richiamare AEM Document Services su DDX o input forniti. Vedi anche come convertire PDF in PDF/A
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: User, Developer
 exl-id: 22a7744e-0af6-4aac-a8a1-156b563c627c
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 0%
+source-wordcount: '1173'
+ht-degree: 1%
 
 ---
 
-# Avviare le API di Document Services dal flusso di lavoro AEM  {#initiate-document-services-apis-from-aem-workflow}
+# Avviare le API dei servizi basati sui documenti dal flusso di lavoro AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assemblatore {#assembler}
 
@@ -38,9 +38,9 @@ Il flusso di lavoro Richiama DDX richiede i seguenti documenti di input:
 
 * **DDX**: è un input obbligatorio per il passaggio del flusso di lavoro Richiama DDX e può essere specificato selezionando una delle seguenti opzioni dal menu a discesa dell&#39;input DDX.
 
-   * *Relativo al payload*: il file di input DDX è relativo alla cartella di payload per l&#39;elemento del flusso di lavoro.
-   * *Usa payload*: il payload per l&#39;elemento del flusso di lavoro viene utilizzato come documento DDX di input.
-   * *Percorso assoluto*: il percorso assoluto del documento DDX nell&#39;archivio CRX.
+  * *Relativo al payload*: il file di input DDX è relativo alla cartella di payload per l&#39;elemento del flusso di lavoro.
+  * *Usa payload*: il payload per l&#39;elemento del flusso di lavoro viene utilizzato come documento DDX di input.
+  * *Percorso assoluto*: il percorso assoluto del documento DDX nell&#39;archivio CRX.
 
 * **Crea mappa da PayLoad**: se selezionata, tutti i documenti nella cartella del payload vengono aggiunti alla mappa del documento di input per l&#39;API `invoke` nell&#39;Assembler. Il nome del nodo di ciascun documento viene utilizzato come chiave nella mappa.
 
@@ -53,7 +53,7 @@ La scheda Opzioni ambiente consente di impostare varie opzioni di elaborazione p
 * *Livello log processi*: specifica il livello di log per i log di elaborazione.
 * *Solo convalida*: verifica la validità del DDX di input.
 
-* *Non riuscito in caso di errore*: specifica se la chiamata al servizio Assembler deve non riuscire in caso di errore. Il valore predefinito è False.
+* *Non riuscito in caso di errore*: specifica se la chiamata al servizio Assembler deve non riuscire in caso di errore. Il valore predefinito è falso.
 
 #### Documenti di output {#output-documents}
 
@@ -101,7 +101,7 @@ La scheda Documenti di output consente di specificare la destinazione dei docume
 * *Documento PDFA*: specifica il percorso in cui viene salvato il documento PDF/A convertito. Può sovrascrivere il documento di payload o salvarlo nella cartella di payload.
 * *Registro conversione*: specifica il percorso in cui vengono salvati i registri di conversione. Può sovrascrivere il documento di payload o essere salvato nella cartella di payload.
 
-## Moduli {#forms}
+## Forms {#forms}
 
 Il flusso di lavoro di rendering di PDF Form è un wrapper intorno all&#39;API di servizio Forms `renderPDFForm` per la creazione di un modulo PDF utilizzando un modello XDP e un XML dati.
 

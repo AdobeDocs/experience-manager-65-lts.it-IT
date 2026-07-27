@@ -1,5 +1,5 @@
 ---
-title: Provare la struttura globalizzata del sito in We.Retail
+title: Prova della struttura globalizzata di un sito in We.Retail
 description: Scopri come provare una struttura globalizzata del sito in Adobe Experience Manager utilizzando We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Developer
 exl-id: a4e6b858-2470-4e8a-b02d-58e6ab7f37ea
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 5%
+source-wordcount: '436'
+ht-degree: 8%
 
 ---
 
-# Provare la struttura globalizzata del sito in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
+# Prova della struttura globalizzata di un sito in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 We.Retail è stato creato con una struttura del sito globalizzata che offre un master in lingua che può essere copiato in tempo reale su siti web specifici del paese. Tutto è configurato per consentire di sperimentare questa struttura e le funzionalità di traduzione incorporate.
 

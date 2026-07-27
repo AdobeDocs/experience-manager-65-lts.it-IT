@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 606cd19d-b244-4c4d-ab25-7709351dcfe0
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 0%
+source-wordcount: '1075'
+ht-degree: 5%
 
 ---
 
@@ -91,6 +91,6 @@ Forms Portal consente di elencare i moduli dal repository dei moduli nella pagin
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](../../forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](../../forms/using/draft-submission-component.md#customizing-the-storage)
-* [Esempio per integrare il componente Bozze e invii con il database](integrate-draft-submission-database.md)
+* [Esempio di integrazione del componente bozze e invii con il database](integrate-draft-submission-database.md)
 * [Personalizzazione dei modelli per i componenti di Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](../../forms/using/introduction-publishing-forms.md)
