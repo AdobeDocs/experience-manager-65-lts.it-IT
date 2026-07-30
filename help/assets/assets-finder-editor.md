@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 39e1b20b-27d5-4869-b7e1-0dd2d087df7b
 source-git-commit: 7b62f47a0ce75ad5676ea41c86b299160e8b505c
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
@@ -329,7 +329,7 @@ Di seguito è riportato un componente Tag popolato:
 
 ![schermata_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 Il componente Miniatura è il punto in cui la risorsa visualizza la miniatura selezionata (per molti dei formati la miniatura viene estratta automaticamente). Inoltre, il componente visualizza il nome del file e [le azioni che puoi modificare](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
