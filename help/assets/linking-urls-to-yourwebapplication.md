@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 16798533-855d-4f14-8edb-edba79818dbf
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 5%
+source-wordcount: '1290'
+ht-degree: 6%
 
 ---
 
@@ -56,7 +56,7 @@ Esistono diversi modi per ottenere una stringa URL. Tuttavia, i passaggi seguent
 
 1. Passa alla risorsa *published* di cui desideri copiare l&#39;URL del predefinito immagine o del predefinito visualizzatore e seleziona la risorsa per aprirlo.
 
-   Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito immagine.
+   Gli URL sono disponibili per la copia solo *dopo* la prima *pubblicazione* delle risorse. Inoltre, è necessario pubblicare anche il predefinito visualizzatore o il predefinito per immagini.
 
    Consulta [Pubblicare risorse](publishing-dynamicmedia-assets.md).
 
@@ -112,9 +112,9 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    * `The URL of the published static is the following:`
 
-      * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
+     * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
-        Esempio: `https://aem.com/is/content/adobe/image.gif`.
+       Ad esempio, `https://aem.com/is/content/adobe/image.gif`.
 
    * Seleziona **[!UICONTROL Risorsa]** > **[!UICONTROL Rappresentazioni dinamiche]**, quindi seleziona una rappresentazione dinamica della risorsa statica e copia l&#39;URL.
 
@@ -170,7 +170,7 @@ Dynamic Media supporta la distribuzione di risorse statiche, che sono risorse ag
 
    Il percorso sopra riportato è solo un esempio; non è il percorso effettivo copiato.
 
-   * In **[!UICONTROL ID registrazione]**, copia il nome del cliente trovato nell&#39;ultima parte dell&#39;ID. Il nome del cliente così copiato sarà necessario nei passaggi seguenti.
+   * In **[!UICONTROL ID registrazione]**, copia il nome del cliente indicato nell’ultima parte dell’ID. Il nome del cliente così copiato sarà necessario nei passaggi seguenti.
 
      Ad esempio, se l&#39;ID di registrazione era `87654321|demoCo`, il nome cliente copiato sarebbe `demoCo`.
 

@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 37e0d7de-0f7b-475f-b508-3dd150008fee
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '1279'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ Sebbene le funzionalità di ciascun visualizzatore siano diverse, il processo di
    Il visualizzatore utilizza un gestore denominato `QuickViewActive`.
 
    **Esempio**
-Supponiamo di utilizzare il seguente codice di incorporamento di esempio nella pagina web per un’immagine interattiva:
+   Supponiamo di utilizzare il seguente codice di incorporamento di esempio nella pagina web per un’immagine interattiva:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +114,7 @@ Supponiamo di utilizzare il seguente codice di incorporamento di esempio nella p
    Il gestore `quickViewActivate` controlla Quickview nel visualizzatore. Il gestore contiene l&#39;elenco delle variabili e le chiamate di funzione da utilizzare con Quickview. Il codice di incorporamento fornisce la mappatura per la variabile SKU impostata in Quickview e un esempio di chiamata alla funzione `loadQuickView`.
 
    **Mappatura variabile**
-Mappa le variabili da utilizzare nella pagina web al valore SKU e alle variabili generiche contenute in Quickview:
+   Mappa le variabili da utilizzare nella pagina web al valore SKU e alle variabili generiche contenute in Quickview:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +130,7 @@ Mappa le variabili da utilizzare nella pagina web al valore SKU e alle variabili
    ```
 
    **Chiamata funzione**
-Il gestore richiede anche una chiamata di funzione per il funzionamento di Quickview. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce una chiamata di funzione di esempio:
+   Il gestore richiede anche una chiamata di funzione per il funzionamento di Quickview. Si presume che la funzione sia accessibile dalla pagina host. Il codice di incorporamento fornisce una chiamata di funzione di esempio:
 
    `loadQuickView(sku)`
 
@@ -147,7 +147,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    * Rimuovi il commento dalla sezione setHandlers del codice da incorporare.
    * Mappa eventuali variabili aggiuntive contenute in Quickview.
 
-      * Aggiornare la chiamata `loadQuickView(sku,*var1*,*var2*)` se si aggiungono variabili aggiuntive.
+     * Aggiornare la chiamata `loadQuickView(sku,*var1*,*var2*)` se si aggiungono variabili aggiuntive.
 
    * Crea una semplice funzione `loadQuickView` () sulla pagina, all&#39;esterno del visualizzatore.
 
@@ -261,7 +261,7 @@ Il gestore richiede anche una chiamata di funzione per il funzionamento di Quick
    `*viewerInstance.*init()`
 
    **Esempio**
-In questo esempio viene utilizzato il visualizzatore di immagini interattive.
+   In questo esempio viene utilizzato il visualizzatore di immagini interattive.
 
    `s7interactiveimageviewer.init()`
 
