@@ -1,5 +1,5 @@
 ---
-title: Sviluppo di componenti AEM
+title: Sviluppo di Componenti AEM
 description: I componenti AEM vengono utilizzati per contenere, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ role: Developer
 exl-id: ff9c9e25-13a8-4ca7-a347-1da1352ef223
 source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
 workflow-type: tm+mt
-source-wordcount: '3200'
-ht-degree: 0%
+source-wordcount: '3540'
+ht-degree: 1%
 
 ---
 
-# Sviluppo di componenti AEM{#developing-aem-components}
+# Sviluppo di Componenti AEM{#developing-aem-components}
 
 I componenti AEM vengono utilizzati per contenere, formattare ed eseguire il rendering del contenuto reso disponibile sulle pagine web.
 
@@ -74,7 +74,7 @@ Il rendering del componente verrà eseguito con [HTML](https://www.w3schools.com
 
 ### Utilizzo di HTML Template Language {#using-the-html-template-language}
 
-[HTML Templating Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che devono creare solidi siti web aziendali, HTL consente di ottenere una maggiore sicurezza ed efficienza dello sviluppo.
+[HTML Templating Language (HTL)](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview), introdotto con AEM 6.0, sostituisce JSP (JavaServer Pages) come sistema di modelli lato server preferito e consigliato per HTML. Per gli sviluppatori web che devono creare solidi siti web aziendali, HTL consente di ottenere una maggiore sicurezza ed efficienza dello sviluppo.
 
 >[!NOTE]
 >
@@ -88,11 +88,11 @@ Il meccanismo per separare la logica dall&#39;aspetto aiuta a chiarire ciò che 
 
 ### Utilizzo di Java {#using-java}
 
-[Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=it). Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
+[Java Use-API per HTL consente a un file HTL di accedere a metodi helper in una classe Java personalizzata](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Questo consente di utilizzare il codice Java per implementare la logica per selezionare e configurare il contenuto del componente.
 
 ### Utilizzo di JavaScript {#using-javascript}
 
-[HTL JavaScript Use-API consente a un file HTL di accedere a codice helper scritto in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=it). Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
+[HTL JavaScript Use-API consente a un file HTL di accedere a codice helper scritto in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Questo consente di utilizzare il codice JavaScript per implementare la logica per la selezione e la configurazione del contenuto del componente.
 
 ### Utilizzo delle librerie HTML lato client {#using-client-side-html-libraries}
 
@@ -132,15 +132,15 @@ Per maggiori dettagli, consulta:
 
 * Coral UI
 
-   * Fornisce un’interfaccia utente coerente per tutte le soluzioni cloud
-   * [Concetti dell’interfaccia touch di AEM - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guida all&#39;interfaccia utente Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Fornisce un’interfaccia utente coerente per tutte le soluzioni cloud
+  * [Concetti dell’interfaccia touch di AEM - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Guida all’interfaccia utente Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Interfaccia utente Granite
 
-   * Fornisce il markup dell’interfaccia utente Coral racchiuso nei componenti Sling per la creazione di console e finestre di dialogo dell’interfaccia utente
-   * [Concetti dell’interfaccia touch di AEM - Interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Fornisce il markup dell’interfaccia utente Coral racchiuso nei componenti Sling per la creazione di console e finestre di dialogo dell’interfaccia utente
+  * [Concetti dell’interfaccia touch di AEM - Interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Documentazione dell’interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Finestre di dialogo per l’interfaccia touch:
 * utilizza il framework dell’interfaccia utente Granite.
 * contiene una struttura di nodi che descrive i campi all’interno della finestra di dialogo.
 
-   * questi nodi sono `nt:unstructured` con la proprietà `sling:resourceType` richiesta.
+  * questi nodi sono `nt:unstructured` con la proprietà `sling:resourceType` richiesta.
 
 Un esempio di struttura dei nodi potrebbe essere:
 
@@ -191,7 +191,7 @@ Per esempi, consulta:
 >
 >Consulta:
 >
->* la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=it).
+>* la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* il codice di esempio correlato è trattato in [Esempio di codice - Come personalizzare i campi della finestra di dialogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -229,7 +229,7 @@ Ad esempio, consulta:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Estensione (ereditarietà) di un campo {#extending-inheriting-from-a-field}
 
@@ -267,7 +267,7 @@ Ad esempio, consulta:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Listener nella struttura del contenuto {#listeners-in-the-content-structure}
 
@@ -306,7 +306,7 @@ Per esempi, consulta:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornito da [Esempio di codice](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -385,28 +385,28 @@ AEM offre la possibilità di configurare un sistema paragrafo nella pagina in mo
 
    * `assetGroup`:
 
-      * Tipo: `String`
-      * Valore: il gruppo a cui appartiene la risorsa correlata, ad esempio `media`
+     * Tipo: `String`
+     * Valore: il gruppo a cui appartiene la risorsa correlata, ad esempio `media`
 
    * `assetMimetype`:
 
-      * Tipo: `String`
-      * Valore: il tipo MIME della risorsa correlata, ad esempio `image/*`
+     * Tipo: `String`
+     * Valore: il tipo MIME della risorsa correlata, ad esempio `image/*`
 
    * `droptarget`:
 
-      * Tipo: `String`
-      * Valore: destinazione di rilascio; ad esempio, `image`
+     * Tipo: `String`
+     * Valore: destinazione di rilascio; ad esempio, `image`
 
    * `resourceType`:
 
-      * Tipo: `String`
-      * Valore: la risorsa componente correlata, ad esempio `foundation/components/image`
+     * Tipo: `String`
+     * Valore: la risorsa componente correlata, ad esempio `foundation/components/image`
 
    * `type`:
 
-      * Tipo: `String`
-      * Valore: il tipo, ad esempio `Images`
+     * Tipo: `String`
+     * Valore: il tipo, ad esempio `Images`
 
 Per esempi, consulta:
 
@@ -432,7 +432,7 @@ L&#39;estensione [AEM Brackets](/help/sites-developing/aem-brackets.md) fornisce
 L’estensione:
 
 * Semplifica la sincronizzazione (non è richiesto Maven o File Vault) per aumentare l’efficienza degli sviluppatori e aiuta gli sviluppatori front-end con conoscenze AEM limitate a partecipare ai progetti.
-* Fornisce il supporto di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it), il linguaggio del modello progettato per semplificare lo sviluppo dei componenti e aumentare la sicurezza.
+* Fornisce il supporto di [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview), il linguaggio del modello progettato per semplificare lo sviluppo dei componenti e aumentare la sicurezza.
 
 >[!NOTE]
 >
@@ -444,24 +444,24 @@ Quando si migra un componente progettato per essere utilizzato con l’interfacc
 
 * HTL
 
-   * L&#39;utilizzo di [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per valutare la possibilità di [migrare da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+  * L&#39;utilizzo di [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview) non è obbligatorio, ma se il componente deve essere aggiornato, è il momento ideale per valutare la possibilità di [migrare da JSP a HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componenti
 
-   * Migra il codice [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) che utilizza le funzioni classiche specifiche dell&#39;interfaccia utente
-   * Plug-in RTE. Per ulteriori informazioni, vedere [Configurazione dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md).
-   * [Esegui migrazione di `cq:listener` codice](#migrating-cq-listener-code) che utilizza funzioni specifiche dell&#39;interfaccia utente classica
+  * Migra il codice [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) che utilizza le funzioni classiche specifiche dell&#39;interfaccia utente
+  * Plug-in RTE. Per ulteriori informazioni, vedere [Configurazione dell&#39;editor Rich Text](/help/sites-administering/rich-text-editor.md).
+  * [Esegui migrazione di `cq:listener` codice](#migrating-cq-listener-code) che utilizza funzioni specifiche dell&#39;interfaccia utente classica
 
 * Finestre di dialogo
 
-   * Crea una finestra di dialogo da utilizzare nell’interfaccia touch. Tuttavia, a scopo di compatibilità, l’interfaccia touch può utilizzare la definizione di finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per tale interfaccia.
-   * Gli [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) sono forniti per aiutarti a estendere i componenti esistenti.
-   * [La mappatura di ExtJS ai componenti dell&#39;interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornisce una pratica panoramica degli xtype ExtJS e dei tipi di nodo con i corrispondenti tipi di risorse dell&#39;interfaccia utente Granite.
-   * Personalizzazione dei campi. Per ulteriori informazioni, consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=it).
-   * Migra da vtypes a [Convalida interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Utilizzando i listener JS, per ulteriori informazioni vedi [Gestione degli eventi dei campi](#handling-field-events) e la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=it).
+  * Crea una finestra di dialogo da utilizzare nell’interfaccia touch. Tuttavia, a scopo di compatibilità, l’interfaccia touch può utilizzare la definizione di finestra di dialogo dell’interfaccia classica, se non è stata definita alcuna finestra di dialogo per tale interfaccia.
+  * Gli [Strumenti di modernizzazione AEM](/help/sites-developing/modernization-tools.md) sono forniti per aiutarti a estendere i componenti esistenti.
+  * [La mappatura di ExtJS ai componenti dell&#39;interfaccia utente Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornisce una pratica panoramica degli xtype ExtJS e dei tipi di nodo con i corrispondenti tipi di risorse dell&#39;interfaccia utente Granite.
+  * Personalizzazione dei campi. Per ulteriori informazioni, consulta la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+  * Migra da vtypes a [Convalida interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Utilizzando i listener JS, per ulteriori informazioni vedi [Gestione degli eventi dei campi](#handling-field-events) e la sessione AEM Gems su [Personalizzazione dei campi della finestra di dialogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
-### Migrazione di cq:codice listener {#migrating-cq-listener-code}
+### Migrazione del codice cq:listener {#migrating-cq-listener-code}
 
 Se si sta eseguendo la migrazione di un progetto progettato per l&#39;interfaccia utente classica, è possibile che il codice `cq:listener` (e le clientlibs correlate al componente) utilizzino funzioni specifiche dell&#39;interfaccia utente classica (ad esempio `CQ.wcm.*`). Per la migrazione è necessario aggiornare tale codice utilizzando gli oggetti/le funzioni equivalenti nell’interfaccia utente touch.
 
