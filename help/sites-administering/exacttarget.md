@@ -12,8 +12,8 @@ role: Admin
 exl-id: cd36d432-ad42-41be-abcf-f74ef2e42544
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 2%
+source-wordcount: '471'
+ht-degree: 3%
 
 ---
 
@@ -46,7 +46,7 @@ Per creare una configurazione ExactTarget in Cloud Services:
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Immettere il nome utente e la password, quindi selezionare un endpoint API, ad esempio **https://webservice.exacttarget.com/Service.asmx**.
-1. Fare clic su **Connetti a ExactTarget.** Una volta stabilita la connessione, verrà visualizzata una finestra di dialogo di completamento. Casella Fare clic su **OK** per uscire dalla finestra.
+1. Fai clic su **Connetti a ExactTarget.** Una volta stabilita la connessione, viene visualizzata una finestra di dialogo di successo. Casella Fare clic su **OK** per uscire dalla finestra.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -66,7 +66,7 @@ Per creare una configurazione ExactTarget in Strumenti:
 
 1. Nella pagina di benvenuto, fai clic su **Strumenti**. Oppure accedi direttamente a `https://<hostname>:<port>/misadmin#/etc`.
 1. Seleziona **Strumenti**, quindi **Configurazioni servizi cloud,** e infine **ExactTarget**.
-1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina &#x200B;** Crea.
+1. Fai clic su **Nuovo** per aprire la finestra **Crea pagina **Crea.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 

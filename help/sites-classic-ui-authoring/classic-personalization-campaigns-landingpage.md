@@ -7,7 +7,7 @@ role: User
 exl-id: 827e5440-6451-41be-b565-c2fb7668b3da
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3376'
 ht-degree: 2%
 
 ---
@@ -77,8 +77,8 @@ Per rendere modificabili le parti di HTML importate all’interno di AEM, puoi m
 * Immagine, per le immagini che devono essere rese scambiabili
 * Inviti all&#39;azione:
 
-   * Collegamento click-through
-   * Collegamento grafico
+  * Collegamento click-through
+  * Collegamento grafico
 
 * Modulo lead CTA, per acquisire informazioni utente
 * Sistema paragrafo (Parsys), per consentire l&#39;aggiunta o la conversione di qualsiasi componente
@@ -115,11 +115,11 @@ Di seguito è riportato un esempio di un componente immagine in una pagina di de
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Invito all&#39;azione (CTA) {#call-to-action-cta}
+#### Call to action (CTA) {#call-to-action-cta}
 
 La progettazione di una pagina di destinazione può contenere diversi collegamenti, alcuni dei quali possono essere intesi come &quot;Inviti all’azione&quot;.
 
-Il servizio Call to action (CTA) viene utilizzato per consentire al visitatore di intervenire immediatamente sulla pagina di destinazione, ad esempio &quot;Subscribe Now&quot; (Abbonati ora), &quot;View this video&quot; (Visualizza questo video), &quot;Limited Time Only&quot; (Solo a tempo limitato) e così via.
+Call to action (CTA) viene utilizzato per consentire al visitatore di intervenire immediatamente sulla pagina di destinazione, ad esempio &quot;Subscribe Now&quot; (Abbonati ora), &quot;View this video&quot; (Visualizza questo video), &quot;Limited Time Only&quot; (Solo tempo limitato) e così via.
 
 * Collegamento Click-through: consente di aggiungere un collegamento di testo che, se selezionato, porta il visitatore a un URL di destinazione.
 * Collegamento grafico: consente di aggiungere un’immagine che, se selezionata, porta il visitatore a un URL di destinazione.
@@ -128,7 +128,7 @@ Entrambi i componenti CTA hanno opzioni simili. Il collegamento Click-through in
 
 #### Collegamento Click-through {#click-through-link}
 
-Questo componente CTA può essere utilizzato per aggiungere un collegamento di testo alla pagina di destinazione. È possibile fare clic su tale collegamento per indirizzare l’utente all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Invito all&#39;azione&quot;.
+Questo componente CTA può essere utilizzato per aggiungere un collegamento di testo alla pagina di destinazione. È possibile fare clic su tale collegamento per indirizzare l’utente all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Call to action&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -153,7 +153,7 @@ Di seguito è riportato un esempio di collegamento click-through:
 
 #### Collegamento grafico {#graphical-link}
 
-Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo **Invito all&#39;azione**.
+Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo **Call to action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -176,7 +176,7 @@ Di seguito è riportato un esempio di collegamento grafico:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Modulo lead invito all&#39;azione (CTA) {#call-to-action-cta-lead-form}
+### Modulo lead call to action (CTA) {#call-to-action-cta-lead-form}
 
 Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profilo di un visitatore/lead. Queste informazioni possono essere memorizzate e utilizzate in un secondo momento per effettuare un marketing efficace basato sulle informazioni. Queste informazioni generalmente includono titolo, nome, e-mail, data di nascita, indirizzo, interesse e così via. Fa parte del gruppo **Modulo lead CTA**.
 
@@ -227,7 +227,7 @@ Indica le dimensioni e lo stile dei campi.
 
 #### Componenti modulo lead {#lead-form-components}
 
-Nella sezione seguente sono descritti i componenti disponibili per i moduli lead di invito all’azione.
+Nella sezione seguente sono descritti i componenti disponibili per i lead form di Call-to-action.
 
 **Informazioni** consente agli utenti di aggiungere informazioni.
 
@@ -313,10 +313,10 @@ Indica se deve essere visualizzato o meno un pulsante Invia.
 * **Invia nome**
 Un identificatore se in un modulo si utilizzano più pulsanti di invio.
 
-* **Invia titolo**
+* **Titolo invio**
 Nome visualizzato sul pulsante, ad esempio Invia o Invia.
 
-* **Mostra pulsante Ripristina**
+* **Mostra pulsante Reimposta**
 Selezionare la casella di controllo per rendere visibile il pulsante Reimposta.
 
 * **Reimposta titolo**
@@ -393,7 +393,7 @@ Se il pacchetto di progettazione è pronto, i passaggi seguenti descrivono come 
 
 La progettazione e le risorse di una pagina di destinazione vengono solitamente create da un designer possibilmente presso un’agenzia in strumenti a cui sono abituate, come Adobe Photoshop o Adobe Dreamweaver. Una volta completata la progettazione, la finestra di progettazione invia un file zip con tutte le risorse al marketing. Il contatto nel marketing è quindi responsabile della rimozione del file zip in AEM e della pubblicazione del contenuto.
 
-Inoltre, potrebbe essere necessario apportare modifiche alla pagina di destinazione dopo l’importazione modificando o eliminando il contenuto e configurando i componenti di invito all’azione. Infine, l’addetto al marketing vorrà visualizzare in anteprima la pagina di destinazione e quindi attivare la campagna per assicurarsi che sia pubblicata.
+Inoltre, potrebbe essere necessario apportare modifiche alla pagina di destinazione dopo l’importazione modificando o eliminando il contenuto e configurando i componenti di call-to-action. Infine, l’addetto al marketing vorrà visualizzare in anteprima la pagina di destinazione e quindi attivare la campagna per assicurarsi che sia pubblicata.
 
 Questa sezione descrive come effettuare le seguenti operazioni:
 
@@ -443,7 +443,7 @@ Per aggiungere componenti nella pagina di destinazione, trascina i componenti fi
 
 >[!NOTE]
 >
->Se un componente nella pagina di destinazione non può essere modificato, è necessario reimportare il file zip dopo [la modifica del file HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Significa che durante l&#39;importazione le parti non modificabili non sono state convertite in componenti AEM.
+>Se non è possibile modificare un componente nella pagina di destinazione, è necessario reimportare il file zip dopo [aver modificato il file HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Ciò significa che durante l’importazione le parti non modificabili non sono state convertite in componenti AEM.
 
 ### Eliminazione di una pagina di destinazione {#deleting-a-landing-page}
 

@@ -1,5 +1,5 @@
 ---
-title: Pubblicazione di un messaggio e-mail ai provider di servizi e-mail
+title: Pubblicazione di un’e-mail ai provider di servizi e-mail
 description: È possibile pubblicare newsletter in servizi di posta elettronica quali ExactTarget e Silverpop Engage.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: User
 exl-id: 03890f75-bfbc-4f73-85ae-07e991728115
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 3%
+source-wordcount: '1135'
+ht-degree: 4%
 
 ---
 
-# Pubblicazione di un messaggio e-mail ai provider di servizi e-mail{#publishing-an-email-to-email-service-providers}
+# Pubblicazione di un’e-mail ai provider di servizi e-mail{#publishing-an-email-to-email-service-providers}
 
 È possibile pubblicare newsletter in servizi di posta elettronica quali ExactTarget e Silverpop Engage. Questo documento descrive come configurare AEM per pubblicare una newsletter in questi servizi di posta elettronica.
 

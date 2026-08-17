@@ -1,5 +1,5 @@
 ---
-title: Gestione delle sottoscrizioni
+title: Gestione delle registrazioni
 description: Gli utenti possono essere invitati ad iscriversi alle mailing list del fornitore di servizi e-mail con l’aiuto del componente Modulo utilizzato in una pagina web di AEM. Per preparare una pagina di AEM con un modulo di iscrizione alle mailing list del servizio di posta elettronica, è necessario applicare la configurazione del servizio corrispondente alla pagina di AEM visitata dal potenziale abbonato.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: User
 exl-id: 1a11407d-7261-4f1a-bcb9-4c06b8277af4
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '947'
 ht-degree: 1%
 
 ---
 
-# Gestione delle sottoscrizioni{#managing-subscriptions}
+# Gestione delle registrazioni{#managing-subscriptions}
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Per creare un modulo di iscrizione e configurarlo per gli abbonamenti alle maili
    >
    >La finestra di dialogo può variare a seconda del provider di servizi di posta elettronica.
 
-1. Nella scheda **Modulo** selezionare la pagina di ringraziamento a cui si desidera che gli utenti accedano dopo aver inviato il modulo. Se non si specifica alcun valore, il modulo verrà visualizzato nuovamente dopo l&#39;invio. Fare clic su **OK**. Nel modulo viene visualizzato un componente **ID e-mail** che consente di creare un modulo in cui gli utenti possono inviare i propri indirizzi e-mail per iscriversi o annullare l&#39;iscrizione a una mailing list.
+1. Nella scheda **Modulo** selezionare la pagina di ringraziamento a cui si desidera che gli utenti accedano dopo aver inviato il modulo. Se non si specifica alcun valore, il modulo verrà visualizzato nuovamente dopo l&#39;invio. Fai clic su **OK**. Nel modulo viene visualizzato un componente **ID e-mail** che consente di creare un modulo in cui gli utenti possono inviare i propri indirizzi e-mail per iscriversi o annullare l&#39;iscrizione a una mailing list.
 1. Aggiungi il componente pulsante **Invia** dalla sezione **Modulo** nella barra laterale.
 
    Modulo pronto. Pubblica la pagina configurata nei passaggi precedenti insieme alla pagina **grazie** nell&#39;istanza di pubblicazione. Tutti i potenziali abbonati che visitano la pagina possono compilare il modulo e iscriversi all’elenco fornito nella configurazione.
@@ -105,7 +105,7 @@ Per configurare un messaggio e-mail di risposta automatica per un abbonato:
 1. **Seleziona classificazione** (questa classificazione viene utilizzata per inviare l&#39;e-mail).
 1. Seleziona la pagina **Grazie** (la pagina a cui gli utenti vengono indirizzati una volta inviato il modulo).
 
-   Nella scheda **Modulo**, seleziona la pagina di ringraziamento a cui desideri che gli utenti vadano dopo aver inviato il modulo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio. Fare clic su **OK**.
+   Nella scheda **Modulo**, seleziona la pagina di ringraziamento a cui desideri che gli utenti vadano dopo aver inviato il modulo. Se non specificato, il modulo viene visualizzato nuovamente dopo l&#39;invio. Fai clic su **OK**.
 
 1. Esporta le chiavi dall’autore alla pubblicazione.
 1. Aggiungi il componente pulsante **Invia** dalla sezione **Modulo** nella barra laterale.
