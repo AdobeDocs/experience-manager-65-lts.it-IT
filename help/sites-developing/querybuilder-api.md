@@ -1,6 +1,6 @@
 ---
 title: API Query Builder
-description: La funzionalità di Asset Share Query Builder è esposta tramite un'API Java&trade; e un'API REST.
+description: La funzionalità di Asset Share Query Builder è esposta tramite un’API Java&trade; e un’API REST.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,7 +13,7 @@ role: Developer
 exl-id: a87c571e-7afb-42e7-836c-170dcfb0d03b
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2350'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ L’API REST consente di accedere alle stesse funzioni tramite HTTP con risposte
 
 ## Sessione Gem {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=it) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) è una serie di approfondimenti tecnici su Adobe Experience Manager forniti da esperti Adobe. Questa sessione dedicata al generatore di query è utile per una panoramica e per l’utilizzo dello strumento.
 
 >[!NOTE]
 >
->La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=it) per ottenere una panoramica dettagliata del generatore di query.
+>La sessione Gem di AEM [Moduli di ricerca è stata semplificata con AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) per ottenere una panoramica dettagliata del generatore di query.
 
 ## Query di esempio {#sample-queries}
 
@@ -141,8 +141,8 @@ Ad esempio, l’interfaccia utente può adattare il seguente approccio:
 
 * La risposta può avere il seguente risultato:
 
-   * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati come parte della prima pagina e fornire l’impaginazione per le tre pagine successive. È inoltre possibile utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
-   * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire l’impaginazione per le dieci pagine successive. È inoltre possibile utilizzare questa proprietà per visualizzare un testo come **&quot;più di 100 risultati trovati&quot;**. Quando l&#39;utente passa alle pagine successive, le chiamate effettuate al Generatore di query aumentano il limite di `guessTotal` e anche dei parametri `offset` e `limit`.
+  * `total=43`, `more=false` - Indica che il numero totale di hit è 43. L’interfaccia utente può visualizzare fino a dieci risultati come parte della prima pagina e fornire l’impaginazione per le tre pagine successive. È inoltre possibile utilizzare questa implementazione per visualizzare un testo descrittivo come **&quot;43 risultati trovati&quot;**.
+  * `total=100`, `more=true` - Indica che il numero totale di hit è maggiore di 100 e il conteggio esatto non è noto. L’interfaccia utente può visualizzare fino a dieci pagine come parte della prima pagina e fornire l’impaginazione per le dieci pagine successive. È inoltre possibile utilizzare questa proprietà per visualizzare un testo come **&quot;più di 100 risultati trovati&quot;**. Quando l&#39;utente passa alle pagine successive, le chiamate effettuate al Generatore di query aumentano il limite di `guessTotal` e anche dei parametri `offset` e `limit`.
 
 `guessTotal` deve essere utilizzato nei casi in cui l&#39;interfaccia utente deve utilizzare lo scorrimento infinito per evitare che Query Builder determini il conteggio esatto degli hit.
 
@@ -476,12 +476,12 @@ Spiega **tutte** le query durante il ciclo di sviluppo rispetto al set di indici
 
 * Abilita i registri DEBUG per QueryBuilder per ottenere la query XPath sottostante e spiegabile
 
-   * Passa a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Crea un logger per `com.day.cq.search.impl.builder.QueryImpl` in **DEBUG**.
+  * Passa a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Crea un logger per `com.day.cq.search.impl.builder.QueryImpl` in **DEBUG**.
 
 * Dopo aver abilitato DEBUG per la classe precedente, nei registri viene visualizzato l&#39;XPath generato da Query Builder.
 * Copiare la query XPath dalla voce di registro per la query QueryBuilder associata, ad esempio:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Incolla la query XPath in [Spiega query](/help/sites-administering/operations-dashboard.md#explain-query) come XPath per ottenere il piano di query
 
@@ -495,12 +495,12 @@ Spiega **tutte** le query durante il ciclo di sviluppo rispetto al set di indici
 
 * Abilita i registri DEBUG per QueryBuilder per ottenere la query XPath sottostante e spiegabile
 
-   * Passa a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Crea un logger per `com.day.cq.search.impl.builder.QueryImpl` in **DEBUG**.
+  * Passa a https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Crea un logger per `com.day.cq.search.impl.builder.QueryImpl` in **DEBUG**.
 
 * Dopo aver abilitato DEBUG per la classe precedente, nei registri viene visualizzato l&#39;XPath generato da Query Builder.
 * Copiare la query XPath dalla voce di registro per la query QueryBuilder associata, ad esempio:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Incolla la query XPath in [Spiega query](/help/sites-administering/operations-dashboard.md#explain-query) come XPath per ottenere il piano di query
 

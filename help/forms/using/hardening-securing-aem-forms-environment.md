@@ -1,5 +1,5 @@
 ---
-title: Protezione avanzata dei moduli AEM in ambiente OSGi
+title: Rafforzamento e protezione di AEM Forms in ambiente OSGi
 description: Scopri consigli e best practice per proteggere AEM Forms sul server OSGi.
 topic-tags: Security
 role: Admin,User
@@ -8,12 +8,12 @@ feature: Document Security,Adaptive Forms
 exl-id: 0225063b-9a57-4b3f-8216-295b1f2d4db5
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 0%
+source-wordcount: '1470'
+ht-degree: 1%
 
 ---
 
-# Protezione avanzata dei moduli AEM in ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Rafforzamento e protezione di AEM Forms in ambiente OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Scopri consigli e best practice per proteggere AEM Forms sul server OSGi.
 
@@ -75,7 +75,7 @@ Puoi configurare un firewall esterno per consentire a un determinato URL di AEM 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Portale moduli </td> 
+   <td>Portale dei moduli </td> 
    <td>
     <ul> 
      <li>/content/forms/portal/</li> 
@@ -123,9 +123,9 @@ Puoi configurare il firewall interno in modo che alcuni componenti di AEM Forms 
 
 Per impostazione predefinita, le risorse disponibili sui nodi di pubblicazione sono accessibili a tutti. L’accesso in sola lettura è abilitato per tutte le risorse. È necessario per abilitare l’accesso anonimo. Se prevedi di limitare l’accesso alla visualizzazione modulo e all’invio solo agli utenti autenticati, utilizza un gruppo comune per consentire solo agli utenti autenticati di avere accesso in sola lettura alle risorse disponibili sui nodi di pubblicazione. Le seguenti posizioni/directory contengono risorse di Forms che richiedono protezione avanzata (accesso in sola lettura per gli utenti autenticati):
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&amp;ast
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## Gestione sicura dei dati dei moduli  {#securely-handle-forms-data}
 
@@ -168,18 +168,18 @@ Per le istanze di authoring, pubblicazione ed elaborazione è necessario un set 
 
 * Esistono diversi gruppi predefiniti con privilegi specifici per ogni utente tipo. Assegna utenti al gruppo.
 
-   * Un utente del gruppo utenti di forms:
+  * Un utente del gruppo utenti di forms:
 
-      * può creare, compilare, pubblicare e inviare un modulo.
-      * non può creare un modulo adattivo basato su XDP.
-      * non dispongono delle autorizzazioni necessarie per scrivere script per i moduli adattivi.
-      * impossibile importare XDP o un pacchetto contenente XDP
+    * può creare, compilare, pubblicare e inviare un modulo.
+    * non può creare un modulo adattivo basato su XDP.
+    * non dispongono delle autorizzazioni necessarie per scrivere script per i moduli adattivi.
+    * impossibile importare XDP o un pacchetto contenente XDP
 
-   * Un utente di forms-power-user group crea, compila, pubblica e invia tutti i tipi di moduli, scrive script per i moduli adattivi e importa pacchetti contenenti XDP.
-   * Un utente di template-author e template-power-user può visualizzare in anteprima e creare un modello.
-   * Un utente di autori di moduli fdm può creare e modificare un modello di dati modulo.
-   * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
-   * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
+  * Un utente di forms-power-user group crea, compila, pubblica e invia tutti i tipi di moduli, scrive script per i moduli adattivi e importa pacchetti contenenti XDP.
+  * Un utente di template-author e template-power-user può visualizzare in anteprima e creare un modello.
+  * Un utente di autori di moduli fdm può creare e modificare un modello di dati modulo.
+  * Un utente del gruppo cm-user-agent può creare, visualizzare in anteprima e pubblicare lettere di gestione della corrispondenza.
+  * Un utente del gruppo di editor dei flussi di lavoro può creare un&#39;applicazione casella in entrata e un modello di flusso di lavoro.
 
 **Durante l&#39;elaborazione dell&#39;autore:**
 

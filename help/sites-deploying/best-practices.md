@@ -1,5 +1,5 @@
 ---
-title: Implementazione delle best practice
+title: Best practice per la distribuzione
 description: Scopri come distribuire e gestire Adobe Experience Manager (AEM) nel modo più efficiente ed efficace possibile.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ role: Admin
 exl-id: 4f830ee9-e0e3-48df-b67d-709258cb1991
 source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 5%
+source-wordcount: '387'
+ht-degree: 24%
 
 ---
 
-# Implementazione delle best practice{#deploying-best-practices}
+# Best practice per la distribuzione{#deploying-best-practices}
 
 Le best practice per l’implementazione descrivono come distribuire o gestire Adobe Experience Manager (AEM) nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti include diverse aree in AEM.
 
@@ -29,8 +29,8 @@ Nelle seguenti aree è disponibile la documentazione relativa all’implementazi
 Per le best practice sull’amministrazione, lo sviluppo o l’authoring, consulta una delle seguenti sezioni:
 
 * [Amministrazione delle best practice](/help/sites-administering/administer-best-practices.md)
-* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
-* [Best practice di authoring](/help/sites-authoring/best-practices.md)
+* [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
+* [Authoring delle best practice](/help/sites-authoring/best-practices.md)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.
 
@@ -85,8 +85,8 @@ Le best practice sulle prestazioni sono elencate qui:
   </tr>
   <tr>
    <td>Utilizzo di Dispatcher con una rete CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=it#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
-   <td>Una rete CDN (Content Delivery Network), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire contenuto da una posizione vicina all’utente finale.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilizzo di Dispatcher con una rete CDN</a></td>
+   <td>Una rete per la consegna dei contenuti (CDN), come Akamai Edge Delivery o Amazon Cloud Front, consente di distribuire i contenuti da una località vicina all’utente finale.</td>
   </tr>
   <tr>
    <td>Ottimizzazione delle prestazioni</td>
@@ -95,7 +95,7 @@ Le best practice sulle prestazioni sono elencate qui:
   </tr>
   <tr>
    <td>Test delle prestazioni</td>
-   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per i test delle prestazioni</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practice per il test delle prestazioni</a></td>
    <td>Descrive le best practice per l'esecuzione di test delle prestazioni in una distribuzione AEM.<br /> </td>
   </tr>
  </tbody>

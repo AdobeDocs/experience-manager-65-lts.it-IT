@@ -11,8 +11,8 @@ role: Admin, User, Developer
 exl-id: 6c99920d-d424-4a69-b7cc-a5e99257c923
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 2%
 
 ---
 
@@ -60,7 +60,7 @@ Passiamo ora ai dettagli su come misurare le prestazioni e migliorare i tassi di
 
 **Configura analisi**
 
-Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Effettua le seguenti operazioni:
+Per ottenere informazioni approfondite sulle interazioni dei clienti con i moduli, devi prima configurare Analytics in AEM Forms. Esegui i passaggi seguenti:
 
 1. Creare una suite di rapporti in Adobe Analytics
 1. Creare la configurazione del servizio cloud in AEM
