@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: a4101e70-85cd-471c-9bf9-fd09bf5fc8e8
-source-git-commit: d5a7542f1404db662b53c19f2c956f4971a90e78
+source-git-commit: fd7199ca5efa15df0fd014b7a0cfc52cbd7173fe
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 59%
+source-wordcount: '2078'
+ht-degree: 57%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 59%
 
 Dalla scheda **Varianti** puoi effettuare le seguenti operazioni:
 
-* [Inserire il contenuto](#authoring-your-content) del frammento
-* [Creare e gestire le varianti](#managing-variations) del contenuto **principale**
+* [Inserisci il contenuto](#authoring-your-content) del frammento
+* [Crea e gestisci varianti](#managing-variations) del contenuto **Master**
 
 Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di modifica, ad esempio:
 
@@ -30,8 +30,6 @@ Puoi eseguire una serie di altre azioni a seconda del tipo di dati in corso di m
 * [Caricare contenuti](#uploading-content)
 
 * [Visualizzare le statistiche chiave](#viewing-key-statistics) (informazioni sul testo su più righe)
-
-* [Ottenere un riepilogo del testo](#summarizing-text)
 
 * [Sincronizzare le varianti con il contenuto principale](#synchronizing-with-master)
 
@@ -51,22 +49,22 @@ Operazioni disponibili:
 
 * Apporta modifiche al contenuto direttamente nella scheda **Varianti**; ogni tipo di dati fornisce diverse opzioni di modifica, ad esempio:
 
-   * per i campi **Testo su più righe**, puoi anche aprire l&#39;[editor a schermo intero](#full-screen-editor) in:
+  * per i campi **Testo su più righe**, puoi anche aprire l&#39;[editor a schermo intero](#full-screen-editor) in:
 
-      * Selezionare il [Formato](#formats)
-      * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
-      * Accedere a una serie di [azioni](#actions)
+    * Selezionare il [Formato](#formats)
+    * Accedere a ulteriori opzioni di modifica (per il formato [Testo formattato](#rich-text))
+    * Accedere a una serie di [azioni](#actions)
 
-   * Per i campi **Riferimento frammento**, l&#39;opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) può essere disponibile, a seconda della definizione del modello.
+  * Per i campi **Riferimento frammento**, l&#39;opzione [Modifica frammento di contenuto](#fragment-references-edit-content-fragment) può essere disponibile, a seconda della definizione del modello.
 
 * Assegna **Tag** alla variante corrente; i tag possono essere aggiunti, aggiornati e rimossi
 
-   * [I tag](/help/sites-authoring/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
+  * [I tag](/help/sites-authoring/tags.md) sono utili per organizzare i frammenti in quanto possono essere utilizzati per la classificazione e la tassonomia dei contenuti. I tag possono essere utilizzati per trovare il contenuto (per tag) e applicare operazioni in blocco.
 
-      * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
-      * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
+    * La ricerca di un tag restituisce il frammento, con la variante tag evidenziata.
+    * I tag delle varianti possono essere utilizzati anche per raggruppare le varianti per un profilo della rete per la consegna dei contenuti (CDN) specifico (per la memorizzazione nella cache della CDN), invece di utilizzare il nome della variante.
 
-     Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
+    Ad esempio, puoi assegnare ai frammenti rilevanti il tag “Lancio di Natale” in modo da poter visualizzare solo tale sottoinsieme di frammenti, oppure per copiarli in una nuova cartella e utilizzarli per un altro lancio futuro.
 
   >[!NOTE]
   >
@@ -101,8 +99,6 @@ Quando l’editor a schermo intero (ovvero testo su più righe) è aperto, sono 
 
 * [Sincronizzare con il contenuto principale](#synchronizing-with-master) (se si modifica una variante)
 
-* [Ottenere un riepilogo del testo](#summarizing-text)
-
 ### Formati {#formats}
 
 Le opzioni per la modifica del testo su più righe dipendono dal formato selezionato:
@@ -130,10 +126,10 @@ La modifica in formato RTF consente di formattare:
 * Stile paragrafo: Paragrafo, Titolo 1/2/3
 * [Inserisci risorsa](#inserting-assets-into-your-fragment)
 * Aprire l’editor a schermo intero, in cui sono disponibili le seguenti opzioni di formattazione:
-   * Ricerca
-   * Trova/Sostituisci
-   * Controllo ortografia
-   * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * Ricerca
+  * Trova/Sostituisci
+  * Controllo ortografia
+  * [Annotazioni](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inserisci frammento di contenuto](#inserting-content-fragment-into-your-fragment); disponibile quando il campo **Testo su più righe** è configurato con **Consenti riferimento frammento**.
 
 Dall’editor a schermo intero sono accessibili anche le [azioni](#actions).
@@ -216,60 +212,6 @@ Esempio:
 ### Caricamento del contenuto {#uploading-content}
 
 Per semplificare il processo di creazione dei frammenti di contenuto, puoi caricare il testo, prepararlo in un editor esterno e aggiungerlo direttamente al frammento.
-
-### Ottenere un riepilogo del testo {#summarizing-text}
-
-La funzione di riepilogo del testo è progettata per aiutare gli utenti a ridurre la lunghezza del testo a un numero predefinito di parole, mantenendo i punti chiave e il significato generale.
-
->[!NOTE]
->
->A livello più tecnico, il sistema mantiene le frasi che ritiene fornire il *miglior rapporto tra densità e unicità delle informazioni* in base a specifici algoritmi.
-
->[!CAUTION]
->
->Il frammento di contenuto deve avere come predecessore una cartella di lingua valida (codice ISO), che viene utilizzata per determinare il modello della lingua.
->
->Ad esempio: `en/` nel seguente percorso:
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->L’inglese è disponibile in modo predefinito.
->
->Altre lingue sono disponibili come pacchetti modello di lingua da Condivisione pacchetti:
->
->* [Francese (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Tedesco (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiano (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spagnolo (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. Seleziona **Principale** o la variante richiesta.
-1. Apri l’editor a schermo intero.
-
-1. Seleziona **Riepiloga testo** nella barra degli strumenti.
-
-   ![riepilogo](assets/cfm-variations-05.png)
-
-1. Specifica il numero di parole desiderato e seleziona **Inizia**:
-1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
-
-   * Tutte le frasi da eliminare sono evidenziate in rosso e barrate.
-   * Fai clic su una frase evidenziata se desideri mantenerla nel contenuto del riepilogo.
-   * Fare clic su una frase non evidenziata se si desidera eliminarla.
-
-1. Seleziona **Riepiloga** per confermare le modifiche.
-
-1. Il testo originale viene visualizzato affiancato al riepilogo proposto:
-
-   * Tutte le frasi da eliminare sono evidenziate in rosso e barrate.
-   * Fai clic su una frase evidenziata se desideri mantenerla nel contenuto del riepilogo.
-   * Fare clic su una frase non evidenziata se si desidera eliminarla.
-   * Vengono visualizzate le statistiche di riepilogo: **Effettivo** e **Destinazione**
-   * È possibile **visualizzare in nteprima** le modifiche.
-
-   ![confronto del riepilogo](assets/cfm-variations-06.png)
 
 ### Annotazione di un frammento di contenuto {#annotating-a-content-fragment}
 
