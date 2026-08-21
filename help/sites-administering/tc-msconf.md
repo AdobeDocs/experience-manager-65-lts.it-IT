@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 exl-id: e4beda86-2d74-44b9-a5f4-e3671ba9a2da
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 63%
+source-wordcount: '270'
+ht-degree: 64%
 
 ---
 

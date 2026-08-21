@@ -12,8 +12,8 @@ role: Admin
 exl-id: 1121af36-b07a-4e8d-a60b-6c5b91e56f82
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
+source-wordcount: '3524'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +51,7 @@ La seguente scheda di riferimento rapido fornisce un esempio di come preparare i
 
 Scheda di riferimento rapido della pagina di destinazione
 
-[Ottieni file](assets/cheatsheet.zip)
+[Ottieni il file](assets/cheatsheet.zip)
 
 ### Layout e requisiti dei file ZIP {#zip-file-layout-and-requirements}
 
@@ -235,9 +235,9 @@ Se si tenta di convertire un tag `<img>` con URL assoluto, viene generata un&#39
 
 In caso contrario, sono supportate le immagini URL assolute per i tag immagine che non fanno parte dell’elemento div del componente Immagine.
 
-### Componenti dell’invito all’azione {#call-to-action-components}
+### Componenti call-to-action {#call-to-action-components}
 
-È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente di invito all’azione modificabile&quot;: tali componenti di invito all’azione importati possono essere modificati dopo l’importazione della pagina di destinazione. AEM include i seguenti componenti CTA:
+È possibile contrassegnare una parte della pagina di destinazione per l’importazione come &quot;componente Call to action modificabile&quot;: i componenti call-to-action importati possono essere modificati dopo l’importazione della pagina di destinazione. AEM include i seguenti componenti CTA:
 
 * Collegamento Click-through: consente di aggiungere un collegamento di testo che, se selezionato, porta il visitatore a un URL di destinazione.
 * Collegamento grafico: consente di aggiungere un’immagine che, se selezionata, porta il visitatore a un URL di destinazione.
@@ -276,7 +276,7 @@ Questo componente può essere utilizzato in qualsiasi applicazione autonoma o pu
 
 #### Collegamento grafico {#graphical-link}
 
-Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Invito all&#39;azione&quot;.
+Questo componente CTA può essere utilizzato per aggiungere qualsiasi immagine grafica con collegamento nella pagina di destinazione. L&#39;immagine può essere un semplice pulsante o qualsiasi immagine grafica come sfondo. Quando si fa clic sull’immagine, l’utente viene indirizzato all’URL di destinazione specificato nelle proprietà del componente. Fa parte del gruppo &quot;Call to action&quot;.
 
 Proprietà supportate
 
@@ -323,9 +323,9 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 **Funzioni supportate**
 
 * Campi lead predefiniti: nome, cognome, indirizzo, dominio, genere, informazioni, ID utente, ID e-mail, pulsante di invio sono disponibili nella barra laterale. È sufficiente trascinare il componente richiesto nel modulo del lead.
-* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un’applicazione zip indipendente o importata, l’utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
+* Con l’aiuto di questi componenti, l’autore può progettare un modulo lead indipendente; questi campi corrispondono ai campi del modulo lead. In un&#39;applicazione zip indipendente o importata, l&#39;utente può aggiungere campi aggiuntivi utilizzando i campi del modulo cq:form o cta lead, il nome e progettarli in base ai requisiti.
 * Mappare i campi del modulo lead utilizzando nomi predefiniti specifici del modulo lead di CTA, ad esempio - firstName per nome nel modulo lead e così via.
-* I campi non mappati ai componenti modulo lead vengono mappati su cq:form: testo, radio, casella di controllo, menu a discesa, nascosto, password.
+* I campi non mappati ai moduli lead vengono mappati ai componenti cq:form: testo, radio, casella di controllo, elenco a discesa, nascosto, password.
 * L’utente può fornire il titolo utilizzando il tag &quot;label&quot; e lo stile utilizzando l’attributo di stile &quot;class&quot; (disponibile solo per i componenti del modulo lead di CTA).
 * La pagina di ringraziamento e l’elenco delle iscrizioni possono essere forniti come parametro nascosto del modulo (presente nel file index.htm) oppure possono essere aggiunti/modificati dalla barra di modifica di &quot;Inizio del modulo lead&quot;
 
@@ -335,7 +335,7 @@ Un modulo lead è un modulo utilizzato per raccogliere le informazioni sul profi
 
 * I vincoli come - obbligatorio possono essere forniti dalla configurazione di modifica di ciascun componente.
 
-Tag HTML per includere il componente collegamento grafico nel file zip importato. Qui &quot;firstName&quot; è mappato al firstName del modulo lead e così via, tranne che per le caselle di controllo: queste due caselle di controllo sono mappate al componente a discesa cq:form.
+Tag HTML per includere il componente collegamento grafico nel file zip importato. Qui &quot;firstName&quot; è mappato a lead form firstName e così via, ad eccezione delle caselle di controllo. Queste due caselle di controllo sono mappate al componente a discesa cq:form.
 
 ```xml
 <div id="cqcanvas">
@@ -387,7 +387,7 @@ L’inclusione del markup sopra riportato in HTML consente di:
 * Inizializza la barra laterale con i componenti predefiniti. È possibile aggiungere nuovi componenti alla pagina di destinazione trascinandoli dalla barra laterale al componente Parsys.
 * Anche due componenti titolo fanno parte di Parsys.
 
-### Destinazione {#target}
+### Target {#target}
 
 Il componente Target mostra il contenuto di un’esperienza sulla pagina. È possibile creare più esperienze in una campagna e il componente Target può mostrare in modo dinamico il contenuto di esperienze diverse ai vari utenti che visitano la pagina.
 
@@ -419,11 +419,11 @@ Oltre a specificare se i componenti importati sono componenti AEM modificabili, 
 
 ### Impostazione delle proprietà di pagina mediante l&#39;estrazione dei metadati definiti nel HTML importato {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-I seguenti metadati dichiarati nella parte superiore del HTML importato sono estratti e conservati dall’importatore di progettazione come proprietà &quot;jcr:description&quot;:
+I seguenti metadati dichiarati nel head del HTML importato vengono estratti e conservati dall&#39;importazione di progetti come proprietà &quot;jcr:description&quot;:
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-L’attributo della lingua impostato nel tag HTML deve essere estratto e mantenuto dall’importazione di design come proprietà &quot;jcr:language&quot;
+L&#39;attributo della lingua impostato nel tag HTML deve essere estratto e mantenuto dall&#39;importazione progettazione come proprietà &quot;jcr:language&quot;
 
 * &lt;html lang=&quot;it&quot;>
 
@@ -461,8 +461,8 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 |---|---|---|
 | E + F | un elemento F immediatamente preceduto da un elemento E | [Combinatore di pari livello adiacente](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | un elemento F preceduto da un elemento E | [Combinatore di pari livello generale](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:radice | un elemento E, radice del documento | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:n-esimo figlio/i | un elemento E, l’n-esimo elemento figlio del relativo elemento padre | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | un elemento E, radice del documento | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | un elemento E, l’n-esimo elemento figlio del relativo elemento padre | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-child(n) | un elemento E, l’n-esimo figlio del padre, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-of-type(n) | un elemento E, l’n-esimo elemento di pari livello del suo tipo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) | un elemento E, l’n-esimo pari livello del suo tipo, a partire dall’ultimo | [Pseudo-classi strutturali](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
@@ -470,7 +470,7 @@ L’utilizzo di selettori CSS simili a quelli seguenti non è consigliato con el
 Questo perché dopo l’importazione vengono aggiunti all’HTML generato elementi HTML aggiuntivi come il tag &lt;div>.
 
 * Anche gli script che si basano su una struttura simile a quella descritta sopra non sono consigliati per l’utilizzo con elementi contrassegnati per la conversione in componenti AEM.
-* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&ast;&quot;> non è consigliato.
+* L’utilizzo di stili sui tag di markup per la conversione dei componenti, ad esempio &lt;div data-cq-component=&quot;&amp;ast;&quot;> non è consigliato.
 * Il layout del design deve seguire le best practice di HTML5 Boilerplate. Ulteriori informazioni su: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configurazione dei moduli OSGI {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Importazione progettazione pagina di destinazione</td>
    <td>Extract Filter</td>
-   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> le voci ZIP corrispondenti a uno dei pattern specificati sono escluse dall'estrazione</td>
+   <td>L’elenco delle espressioni regolari da utilizzare per filtrare i file dall’estrazione. <br /> Le voci ZIP che corrispondono a uno dei pattern specificati sono escluse dall’estrazione</td>
   </tr>
   <tr>
    <td>Landing Page Builder</td>
@@ -514,12 +514,12 @@ La tabella seguente descrive brevemente le proprietà:
   <tr>
    <td>Preprocessore di ingresso pagina di destinazione</td>
    <td>Pattern di ricerca </td>
-   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. In caso di corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di ingresso della pagina di destinazione.</td>
+   <td>Pattern da cercare, nei contenuti della voce archivio. Questa espressione regolare viene associata alla voce contenuto riga per riga. Alla corrispondenza, il testo corrispondente viene sostituito con il pattern di sostituzione specificato.<br /> <br /> Consulta la nota seguente sulle limitazioni attuali del preprocessore di accesso alla pagina di destinazione.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Sostituisci pattern</td>
-   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l'importazione.</td>
+   <td>Pattern che sostituisce le corrispondenze trovate. Puoi utilizzare riferimenti a gruppi regex come $1, $2. Inoltre, questo modello supporta parole chiave come {designPath} che vengono risolte con il valore effettivo durante l’importazione.</td>
   </tr>
  </tbody>
 </table>
@@ -531,13 +531,13 @@ La tabella seguente descrive brevemente le proprietà:
 >
 >Ad esempio, se la configurazione predefinita è
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >E devi sostituire `CQ_DESIGN_PATH` con `VIPURL` nel modello di ricerca, il tuo modello di ricerca dovrebbe essere simile al seguente:
 >
 >`/\* *VIPURL *\*/ *(['"])`
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 Durante l&#39;importazione del pacchetto di progettazione, è possibile che si verifichino diversi errori, descritti in questa sezione.
 

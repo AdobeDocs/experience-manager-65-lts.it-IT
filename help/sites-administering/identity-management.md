@@ -12,7 +12,7 @@ role: Admin
 exl-id: 70a5429a-e805-49f6-9c2c-28720d9674ae
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1219'
 ht-degree: 1%
 
 ---
@@ -180,7 +180,7 @@ I provider di stati gestiscono una proprietà di profilo e i relativi stati.
 
 ## Profili e account utente {#profiles-and-user-accounts}
 
-I profili vengono archiviati nel repository dei contenuti come parte dell&#39;account utente [&#128279;](/help/sites-administering/user-group-ac-admin.md).
+I profili vengono archiviati nel repository dei contenuti come parte dell&#39;account utente [](/help/sites-administering/user-group-ac-admin.md).
 
 Il profilo si trova in `/home/users/geometrixx`:
 

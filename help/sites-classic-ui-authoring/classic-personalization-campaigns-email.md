@@ -12,8 +12,8 @@ role: User
 exl-id: 19ff5414-5798-4a89-afab-e0bad0f58b51
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1802'
+ht-degree: 2%
 
 ---
 
@@ -36,10 +36,10 @@ Inoltre, AEM consente di amministrare la funzionalità delle newsletter, inclusi
 
 Questo documento descrive le nozioni di base sulla creazione di newsletter in AEM. Per informazioni più dettagliate su come utilizzare il marketing via posta elettronica, vedere i seguenti documenti:
 
-* [Creazione di una pagina di destinazione efficace per la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
-* [Gestione delle sottoscrizioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
-* [Pubblicazione di un messaggio e-mail ai provider di servizi e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [Tracciamento delle e-mail non recapitate](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [Creazione di una pagina di destinazione efficace per una newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Gestione delle registrazioni](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
+* [Pubblicazione di un’e-mail ai provider di servizi e-mail](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
+* [Tracciamento dei messaggi e-mail non pervenuti a destinazione](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
@@ -71,26 +71,26 @@ Questo documento descrive le nozioni di base sulla creazione di newsletter in AE
 
    ![Finestra di dialogo proprietà pagina](assets/mcm_newnewsletterdialog.png)
 
-   * **Da nome**
-Nome che deve apparire come mittente della newsletter.
+   * **Nome mittente**
+     Nome che deve apparire come mittente della newsletter.
 
-   * **Indirizzo Da**
-Indirizzo e-mail che deve apparire come mittente della newsletter.
+   * **Indirizzo mittente**
+     Indirizzo e-mail che deve apparire come mittente della newsletter.
 
    * **Oggetto**
-Oggetto della newsletter.
+     Oggetto della newsletter.
 
    * **Rispondi a**
-Indirizzo e-mail a cui devono essere inviate le risposte per la newsletter inviata.
+     Indirizzo e-mail a cui devono essere inviate le risposte per la newsletter inviata.
 
    * **Descrizione**
-Descrizione della newsletter.
+     Descrizione della newsletter.
 
    * **Ora di attivazione**
-L’ in tempo per l’invio della newsletter.
+     L’ in tempo per l’invio della newsletter.
 
-   * **Elenco destinatari predefinito**
-Elenco predefinito che deve ricevere la newsletter.
+   * **Elenco destinatari predefiniti**
+     Elenco predefinito che deve ricevere la newsletter.
 
    È possibile aggiornarli in una fase successiva dalla finestra di dialogo **Proprietà...**.
 
@@ -143,7 +143,7 @@ Per personalizzare una newsletter e simulare il suo aspetto:
 >
 >Per impostazione predefinita, il valore del parametro è `localhost:4502` e l&#39;operazione non può essere completata se la porta per l&#39;istanza in esecuzione viene modificata.
 
-Passa da un client di posta elettronica comune all’altro per vedere come la newsletter verrà visualizzata dai lead. Per impostazione predefinita, la newsletter si apre senza che sia selezionato nessuno dei client di posta elettronica.
+Passa ai diversi client e-mail più diffusi per vedere come la newsletter verrà visualizzata dai lead. Per impostazione predefinita, la newsletter si apre senza che sia selezionato nessuno dei client di posta elettronica.
 
 Attualmente è possibile visualizzare le newsletter nei seguenti client di posta elettronica:
 
