@@ -12,8 +12,8 @@ role: User
 exl-id: abdb803b-a770-4f4b-8788-45d067341e0f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 6%
+source-wordcount: '2564'
+ht-degree: 7%
 
 ---
 
@@ -80,13 +80,13 @@ Puoi caricare un’immagine, quindi modificarla e manipolarla (ad esempio ritagl
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
-* **Mappa**
+* **mappa**
 Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
 * **Ritaglio**
 Seleziona Ritaglia per ritagliare un’immagine. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Ruota**
+* **Rotazione**
 Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
 * **Cancella**
@@ -100,13 +100,13 @@ Titolo dell&#39;immagine.
 * **Testo alternativo**
 Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
-* **Collegamento A**
+* **Collega a**
 Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
 * **Descrizione**
 Descrizione dell&#39;immagine.
 
-* **Dimensione**
+* **Dimensioni**
 Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
@@ -134,7 +134,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 * **Descrizione comando collegamento**
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
-* **TipoCollegamento**
+* **Tipo collegamento**
 Nell&#39;elenco a discesa selezionare tra un **URL personalizzato** e un **documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
@@ -176,20 +176,20 @@ Trascina un&#39;immagine dal Finder dei contenuti o fai clic per passare a un&#3
 * **Proprietà immagine** (**Proprietà immagine avanzate**)
 Consente di specificare quanto segue:
 
-   * **Titolo**
-Titolo del blocco, visualizzato a comparsa.
+  * **Titolo**
+    Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo alternativo**
-Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
+  * **Testo alternativo**
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
 
-   * **Collegamento a**
-Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
+  * **Collega a**
+    Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
-   * **Descrizione**
-Descrizione dell&#39;immagine.
+  * **Descrizione**
+    Descrizione dell&#39;immagine.
 
-   * **Dimensione**
-Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+  * **Dimensioni**
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Aggiungi i campi di testo e di contesto o i blocchi di personalizzazione per cre
 
 >[!NOTE]
 >
->Vengono presi in considerazione solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a `nms:seedMember` non sono disponibili.
+>Vengono considerati solo i campi definiti nello schema **nms:seedMember** o in una delle sue estensioni. Gli attributi delle tabelle collegate a `nms:seedMember` non sono disponibili.
 
 ## Componenti di Adobe Campaign Form {#adobe-campaign-form-components}
 
@@ -228,7 +228,7 @@ Quando apri un modulo configurato per l&#39;integrazione con Adobe Campaign, nel
 
 * Casella di selezione (Campaign)
 * Campo data (Campaign) e Campo data/HTML5 (Campaign)
-* Chiave principale crittografata (Campaign)
+* Chiave primaria crittografata (Campaign)
 * Visualizzazione errori (Campaign)
 * Chiave di riconciliazione nascosta (Campaign)
 * Campo numerico (Campaign)
@@ -342,7 +342,7 @@ L’esempio seguente mostra un componente Campo data (Campaign) con la larghezza
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
-### Chiave principale crittografata (Campaign) {#encrypted-primary-key-campaign}
+### Chiave primaria crittografata (Campaign) {#encrypted-primary-key-campaign}
 
 Questo componente definisce il nome del parametro URL che conterrà l&#39;identificatore di un profilo di Adobe Campaign (**Identificatore risorsa principale** o **Chiave primaria crittografata** in Adobe Campaign Standard e 6.1, rispettivamente).
 

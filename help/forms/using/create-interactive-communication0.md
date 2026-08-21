@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: creare una comunicazione interattiva '
+title: 'Esercitazione: creare una comunicazione interattiva '
 description: Creare una comunicazione interattiva utilizzando tutti gli elementi di base
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ role: Admin, User, Developer
 exl-id: 532f5e23-876d-477c-a8ab-94b6ae1656df
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 0%
+source-wordcount: '1914'
+ht-degree: 1%
 
 ---
 
-# Tutorial: creare una comunicazione interattiva {#tutorial-create-interactive-communication}
+# Esercitazione: creare una comunicazione interattiva {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 

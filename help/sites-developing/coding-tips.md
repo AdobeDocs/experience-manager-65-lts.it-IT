@@ -11,7 +11,7 @@ role: Developer
 exl-id: e431a240-45a2-4222-b854-32b90e5cd100
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Idealmente, i nomi dovrebbero rivelare la loro intenzione. Un test di codice com
   </tr>
   <tr>
    <td><p>//get tagged images<br /> public List getItems() {}</p> </td>
-   <td><p>list pubblica getTaggedImages() {}</p> </td>
+   <td><p>elenco pubblico getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
 </table>

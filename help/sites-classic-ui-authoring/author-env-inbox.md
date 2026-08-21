@@ -12,7 +12,7 @@ role: User
 exl-id: 2f760a0e-bee3-4803-b0db-6e1137396600
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '586'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Per iscriverti alle notifiche:
    * Attivato: quando una pagina è stata attivata.
    * Disattivato: quando una pagina è stata disattivata.
    * Eliminata (sindacazione): quando una pagina è stata eliminata-replicata, ovvero quando viene replicata un’azione di eliminazione eseguita su una pagina.
-Quando una pagina viene eliminata o spostata, viene replicata automaticamente un’azione di eliminazione: la pagina viene eliminata nell’istanza di origine in cui è stata eseguita l’azione di eliminazione e nell’istanza di destinazione definita dagli agenti di replica.
+     Quando una pagina viene eliminata o spostata, viene replicata automaticamente un’azione di eliminazione: la pagina viene eliminata nell’istanza di origine in cui è stata eseguita l’azione di eliminazione e nell’istanza di destinazione definita dagli agenti di replica.
 
    * Modificato: quando una pagina è stata modificata.
    * Creato: quando viene creata una pagina.
@@ -93,8 +93,8 @@ Quando una pagina viene eliminata o spostata, viene replicata automaticamente un
    * Fai clic su **Aggiungi** per aggiungere una nuova riga alla tabella.
    * Fare clic sulla cella della tabella **Percorso** e immettere il percorso, ad esempio `/content/docs`.
 
-   * Per ricevere una notifica per tutte le pagine appartenenti alla sottostruttura, impostare **Esatto?Da** a **No**.
-Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, impostare **Exact?Da** a **Sì**.
+   * Per ricevere una notifica per tutte le pagine appartenenti alla sottostruttura, impostare **Esatto?** a **No**.
+     Per ricevere una notifica solo per le azioni sulla pagina definita dal percorso, impostare **Esatto?** a **Sì**.
 
    * Per consentire la regola, impostare **Rule** su **Allow**. Se impostato su **Nega**, la regola viene negata ma non rimossa e può essere consentita in un secondo momento.
 
