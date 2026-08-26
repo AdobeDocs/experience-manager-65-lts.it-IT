@@ -102,7 +102,7 @@ Puoi installare AEM sui server dell’ambiente aziendale. Le istanze di installa
 
 ### Managed Services con Cloud Manager {#managed-services-using-cloud-manager}
 
-Per le distribuzioni di Adobe Managed Services, gli ambienti AEM vengono distribuiti e gestiti tramite [Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction). Per monitorare le prestazioni delle applicazioni e lo stato dell&#39;infrastruttura negli ambienti di produzione e non di produzione, vedere [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
+Per le distribuzioni di Adobe Managed Services, gli ambienti AEM vengono distribuiti e gestiti tramite [Cloud Manager](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-manager/content/introduction). Per monitorare le prestazioni delle applicazioni e lo stato dell&#39;infrastruttura negli ambienti di produzione e non di produzione, vedere [Observability Insights](https://experienceleague.adobe.com/it/docs/ams-observability-insights/content/overview).
 
 ## Guida introduttiva {#getting-started}
 
