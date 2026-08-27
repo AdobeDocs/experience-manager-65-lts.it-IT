@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: 2938a1c6-c8fc-420a-8fad-bb39e5a7936b
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 98%
@@ -82,7 +82,7 @@ AEM Forms Workspace corrisponde alle funzionalità di (obsoleto per AEM Forms su
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 Consente la gestione delle attività sui client senza Flash Player e Adobe Reader. Semplifica il rendering di moduli HTML, oltre a moduli PDF e Flex Forms.
 
