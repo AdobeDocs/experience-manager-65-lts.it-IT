@@ -10,10 +10,10 @@ role: User, Developer
 feature: Adaptive Forms
 hide: true
 exl-id: c68c602f-fa93-4e3d-9a8c-b61c3ab53000
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2503'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ A seconda dei componenti di AEM Form che hai installato, puoi includere i seguen
 
 **Amministratore dell’area di lavoro di AEM Forms:** può visualizzare e modificare le impostazioni nella pagina dell’area di lavoro nella console di amministrazione
 
-***Nota **: Flex Workspace è obsoleto per AEM Forms.*
+***nota &#x200B;**: Flex Workspace è obsoleto per la versione di AEM Forms.*
 
 **Utente dell’area di lavoro:** può accedere all’applicazione per utenti finali dell’area di lavoro
 
@@ -97,7 +97,7 @@ A seconda dei componenti di AEM Form che hai installato, puoi includere i seguen
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 ## Creare un ruolo {#create-a-role}
 

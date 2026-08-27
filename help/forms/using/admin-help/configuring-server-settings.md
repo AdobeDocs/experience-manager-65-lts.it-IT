@@ -10,7 +10,7 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 exl-id: da8031f2-26ab-41e2-bf54-7032727ca192
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+source-git-commit: d75fc7712b1428471a081508cd5d1d68ec87d9c7
 workflow-type: tm+mt
 source-wordcount: '2665'
 ht-degree: 99%
@@ -87,7 +87,7 @@ Per generare notifiche e-mail per un gruppo, specifica un indirizzo e-mail per i
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 ### Configurare i promemoria per utenti o gruppi {#configure-reminders-for-users-or-groups}
 
@@ -199,7 +199,7 @@ Solo per le notifiche di attività, Forms Workflow include due configurazioni di
 
 >[!NOTE]
 >
->Flex Workspace è obsoleto per la versione di AEM Forms.
+>Per la versione di AEM Forms, l’area di lavoro flessibile è obsoleta.
 
 Se la soluzione viene distribuita in un ambiente cluster, sostituire `@@notification-host@@` con l’indirizzo del cluster.
 
