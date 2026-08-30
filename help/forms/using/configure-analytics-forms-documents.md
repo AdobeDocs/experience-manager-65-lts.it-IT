@@ -9,16 +9,22 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
 exl-id: befc6b96-517b-4ca3-8007-2aa0fd6ed2cb
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
 # Analytics con Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate in base ai dati sulle modifiche necessarie per rendere i moduli o i documenti più utilizzabili.
+>[!CAUTION]
+>
+>La dashboard di Analytics per AEM Forms è obsoleta. Non è più possibile visualizzare i rapporti di analisi in AEM Forms. Per visualizzare i dati di analisi dei moduli, utilizza l’interfaccia utente di Adobe Analytics.
+>
+>Inoltre, l&#39;API [Adobe Analytics 1.4 ha raggiunto la fine del ciclo di vita](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Di conseguenza, le configurazioni di Adobe Analytics che utilizzano le credenziali utente (nome utente e password) non sono più supportate.
+
+AEM Forms si integra con Analytics per acquisire e tenere traccia delle metriche delle prestazioni per i moduli e i documenti pubblicati. L’obiettivo dell’analisi di queste metriche è quello di prendere decisioni informate basate sui dati in merito alle modifiche necessarie a rendere i moduli o i documenti più utilizzabili.
 
 >[!NOTE]
 >
