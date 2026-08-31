@@ -9,14 +9,18 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: f564bda3-4141-40b3-8c08-140d4da92e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+source-git-commit: 9c1795a90f0cd80dcf886477620a5330c5e3fbbf
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '673'
 ht-degree: 5%
 
 ---
 
 # Classificazioni Adobe{#adobe-classifications}
+
+[!BADGE Interrotto]{type=negative tooltip="Questa funzione è giunta al termine del ciclo di vita"}
+
+<div class="preview"> Classificazioni Adobe richiede una configurazione di Adobe Analytics che utilizzi le credenziali utente (nome utente e password), che non è più supportata ora che l'API <a href="https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/">Adobe Analytics 1.4 ha raggiunto la fine del ciclo di vita</a>. Di conseguenza, Classificazioni Adobe è obsoleto. </div>
 
 Classificazioni Adobe esporta i dati delle classificazioni in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in modo pianificato. L&#39;esportatore è un&#39;implementazione di un **com.adobe.cq.scheduled.exporter.Exporter**.
 
@@ -85,13 +89,13 @@ Nell&#39;implementazione predefinita di SAINTDefaultTransformer, le risorse figl
 
 * id-classification `nt:unstructured`
 
-   * 1 `nt:unstructured`
+  * 1 `nt:unstructured`
 
-      * Product = My Product Name (String)
-      * Prezzo = 120,90 (stringa)
-      * Dimensione = M (Stringa)
-      * Colore = nero (stringa)
-      * Colore^Codice = 101 (stringa)
+    * Product = My Product Name (String)
+    * Prezzo = 120,90 (stringa)
+    * Dimensione = M (Stringa)
+    * Colore = nero (stringa)
+    * Colore^Codice = 101 (stringa)
 
 **Intestazione e record SAINT:**
 
