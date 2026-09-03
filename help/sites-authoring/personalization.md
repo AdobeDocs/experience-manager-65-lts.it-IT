@@ -5,12 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: da8a1341-55a9-46bb-b78d-ced79e22e87e
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 23fa46e24f25f6aa889bc209b6742773d4535cc6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 36%
+source-wordcount: '570'
+ht-degree: 28%
 
 ---
+
 
 # Personalizzazione e targeting dei contenuti {#personalization}
 
@@ -18,9 +19,13 @@ ht-degree: 36%
 
 AEM fornisce un framework di strumenti per la creazione e modifica di contenuti mirati e la presentazione di esperienze personalizzate.
 
+>[!NOTE]
+>
+>La modalità di targeting e il componente Targeting classico di AEM utilizzano l’integrazione di AEM Target basata su ContextHub. Pertanto, le pagine che si basano esclusivamente sul SDK web di AEP non eseguiranno il rendering del componente Targeting classico di AEM. [Per informazioni dettagliate, vedere la documentazione per gli sviluppatori.](/help/sites-developing/target.md)
+
 ## Modalità di targeting {#targeting-mode}
 
-[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
+[Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. ](/help/sites-authoring/content-targeting-touch.md) La modalità di targeting e i componenti di destinazione forniscono gli strumenti necessari per creare i contenuti da usare nelle esperienze delle attività di marketing.
 
 ## Attività {#activities}
 
@@ -30,7 +35,7 @@ Ad esempio, il catalogo dei prodotti We.Retail include teaser che focalizzano l&
 
 Le attività identificano anche il [motore di targeting](/help/sites-authoring/personalization.md#targeting-engine) utilizzato dalle pagine.
 
-Utilizza la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare delle attività mentre [realizzi contenuti mirati](/help/sites-authoring/content-targeting-touch.md).
+Utilizza la [console Attività](/help/sites-authoring/activitylib.md) per creare e gestire le attività dei tuoi marchi. Puoi anche creare attività mentre [crei contenuti mirati.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Esperienze {#experiences}
 
@@ -48,7 +53,7 @@ Un’offerta è un contenuto che viene visualizzato in una posizione su una pagi
 
 Ad esempio, la pagina Donne del sito web di esempio We.Retail può utilizzare le offerte come immagini teaser che appaiono nella parte superiore della pagina. Un’offerta diversa viene utilizzata come teaser per l’esperienza Femmina over 30 e per l’esperienza Femmina under 30.
 
-Utilizza la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea offerte monouso o aggiungi offerte da una libreria di offerte quando [crei contenuti con targeting](/help/sites-authoring/content-targeting-touch.md).
+Utilizza la [console Offerte](/help/sites-authoring/offerlib.md) per creare offerte da utilizzare in più esperienze. Crea offerte monouso o aggiungi offerte da una libreria di offerte quando [crei contenuti con targeting.](/help/sites-authoring/content-targeting-touch.md)
 
 ## Motore di targeting {#targeting-engine}
 
@@ -63,6 +68,6 @@ AEM fornisce un motore di targeting integrato che elabora le richieste delle pag
 Il motore di targeting di Adobe Target consente di tenere traccia delle informazioni raccolte dalle visite della pagina in Adobe Target.
 
 * Quando utilizzi questo motore di targeting, puoi utilizzare i segmenti importati da Adobe Target per definire i tipi di pubblico per le esperienze.
-* Le attività che utilizzano il motore di Adobe Target sono [sincronizzate con Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Le attività che utilizzano il motore Adobe Target sono [sincronizzate con Target.](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
 
-Puoi usare questo motore di targeting dopo averlo [integrato con Adobe Target](/help/sites-administering/opt-in.md).
+Puoi usare questo motore quando hai [integrato con Adobe Target.](/help/sites-administering/opt-in.md)
