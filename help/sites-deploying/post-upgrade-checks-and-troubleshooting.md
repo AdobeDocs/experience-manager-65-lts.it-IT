@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 8b3d8d0f-10f7-4736-881d-8f1f21c69182
-source-git-commit: a037dc7cbb13abfeb8a7289baded50d3d788cbf6
+source-git-commit: 76bd0f170b06a3f930d504b680342c954daae460
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,8 @@ Dopo l&#39;[aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md),
 * [Abilita agenti di replica](#enable-replication-agents)
 
 * [Abilita processi pianificati personalizzati](#enable-custom-scheduled-jobs)
+
+* [Reinstallare o verificare i componenti aggiuntivi](#reinstall-or-verify-add-ons)
 
 * [Esegui piano di test](#execute-test-plan)
 
@@ -92,6 +94,19 @@ Dopo aver aggiornato e convalidato completamente l’ambiente di pubblicazione, 
 ### Abilita processi pianificati personalizzati {#enable-custom-scheduled-jobs}
 
 A questo punto è possibile abilitare tutti i processi pianificati come parte della base di codice.
+
+### Reinstallare o verificare i componenti aggiuntivi {#reinstall-or-verify-add-ons}
+
+>[!IMPORTANT]
+>
+>L&#39;installazione di un Service Pack di AEM 6.5 LTS è tecnicamente un [aggiornamento sul posto](/help/sites-deploying/in-place-upgrade.md) completo (il file jar quickstart di AEM viene completamente sostituito prima dell&#39;applicazione dell&#39;aggiornamento). Di conseguenza, le attività standard di pulizia pre-aggiornamento eseguite durante un aggiornamento sul posto vengono ora eseguite anche durante l’applicazione di un Service Pack.
+
+Una di queste attività rimuove le cartelle `install` obsolete (`install` e le varianti in modalità di esecuzione come `install.author` o `install.publish`) trovate in qualsiasi punto di `/libs`, per impedire la reinstallazione di bundle e configurazioni obsolete. Se la soluzione si basa su un componente aggiuntivo che mantiene i propri bundle o configurazioni OSGi in una cartella `install` in `/libs`, tale cartella può essere rimossa come parte dell&#39;applicazione di un Service Pack, anche se questo non è stato osservato sugli aggiornamenti del Service Pack in passato.
+
+Dopo aver applicato un Service Pack:
+
+* Verifica che tutti i componenti aggiuntivi installati in precedenza siano ancora presenti e che i relativi bundle e configurazioni OSGi siano attivi. Controllare `/system/console/bundles` per eventuali bundle non avviati.
+* Se manca il contenuto di un componente aggiuntivo, reinstalla il pacchetto di contenuto del componente aggiuntivo per ripristinarlo.
 
 ### Esegui piano di test {#execute-test-plan}
 
