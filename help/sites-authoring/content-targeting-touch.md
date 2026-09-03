@@ -10,14 +10,15 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
-source-wordcount: '5284'
-ht-degree: 72%
+source-wordcount: '5374'
+ht-degree: 69%
 
 ---
 
-# Creazione di contenuti di destinazione utilizzando la modalità di targeting{#authoring-targeted-content-using-targeting-mode}
+
+# Creazione di contenuti di destinazione utilizzando la modalità di targeting {#authoring-targeted-content-using-targeting-mode}
 
 Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targeting di AEM. La modalità di targeting e il componente Target forniscono gli strumenti per la creazione di contenuti per esperienze:
 
@@ -30,7 +31,7 @@ Puoi creare contenuti mirati (di destinazione) utilizzando la modalità di targe
 * Simulazione dell’esperienza utente.
 * Per ulteriori personalizzazioni, configura il componente Target.
 
-Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta [istruzioni per l&#39;integrazione con Adobe Target](/help/sites-administering/target.md).
+Puoi utilizzare AEM o Adobe Target come motore di targeting (per utilizzare Adobe Target devi disporre di un account Adobe Target valido). Se utilizzi Adobe Target, devi prima di tutto configurare l’integrazione. Consulta [istruzioni per l&#39;integrazione con Adobe Target.](/help/sites-administering/target.md)
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -50,6 +51,10 @@ Le attività ed esperienze visualizzate in modalità Target riflettono la [conso
 >[!NOTE]
 >
 >Nelle operazioni di targeting, la combinazione di branding e attività viene mantenuta a livello di utente non a livello di canale.
+
+>[!NOTE]
+>
+>La modalità di targeting e il componente Targeting classico di AEM utilizzano l’integrazione di AEM Target basata su ContextHub. Pertanto, le pagine che si basano esclusivamente sul SDK web di AEP non eseguiranno il rendering del componente Targeting classico di AEM. [Per informazioni dettagliate, vedere la documentazione per gli sviluppatori.](/help/sites-developing/target.md)
 
 ## Passaggio alla modalità di targeting {#switching-to-targeting-mode}
 
@@ -74,7 +79,7 @@ Puoi inoltre creare e gestire attività di Adobe Target da AEM con la possibilit
 
 Inoltre, puoi gestire gli obiettivi e le metriche per tutte le attività di Adobe Target e gestire il pubblico di Adobe Target. È incluso anche il reporting delle attività di Adobe Target, tra cui la conversione dei vincitori per test A/B.
 
-Quando aggiungi un’attività, questa viene visualizzata anche nella [console Attività](/help/sites-authoring/activitylib.md).
+Quando aggiungi un&#39;attività, questa viene visualizzata anche nella console [Attività.](/help/sites-authoring/activitylib.md)
 
 Per aggiungere un’attività:
 
@@ -82,7 +87,7 @@ Per aggiungere un’attività:
 
    >[!NOTE]
    >
-   >Adobe consiglia di [creare marchi tramite la console attività](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe consiglia di [creare marchi tramite la console attività.](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
    >
    >
    >Se crei un marchio in un altro modo, assicurati che il nodo `/campaigns/<brand>/master` esista, per evitare errori quando tenterai di creare un’attività.
@@ -139,7 +144,7 @@ Il passaggio Crea del targeting dei contenuti comporta la creazione di esperienz
 
 ### Visualizzazione delle offerte di esperienza in modalità di targeting {#seeing-experience-offers-in-targeting-mode}
 
-Dopo aver [avviato il processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), seleziona un’esperienza per visualizzare le offerte fornite per tale esperienza. Quando selezioni un’esperienza, i componenti soggetti a targeting nella pagina si modificano in modo da mostrare l’offerta per questa esperienza.
+Dopo aver [avviato il processo di targeting,](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) seleziona un&#39;esperienza per visualizzare le offerte fornite per tale esperienza. Quando selezioni un’esperienza, i componenti soggetti a targeting nella pagina si modificano in modo da mostrare l’offerta per questa esperienza.
 
 >[!CAUTION]
 >
@@ -177,7 +182,7 @@ Puoi salvare le offerte personalizzate in una libreria di offerte se desideri ri
 
 ### Aggiunta e rimozione di esperienze utilizzando la modalità di targeting {#adding-and-removing-experiences-using-targeting-mode}
 
-Utilizzando il passaggio Crea del [processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), puoi aggiungere e rimuovere esperienze. Inoltre, puoi duplicare un’esperienza e rinominarla.
+Utilizzando il passaggio Crea di [processo di targeting,](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) puoi aggiungere e rimuovere esperienze. Inoltre, puoi duplicare un’esperienza e rinominarla.
 
 #### Aggiunta di esperienze utilizzando la modalità di targeting {#adding-experiences-using-targeting-mode}
 
@@ -224,19 +229,19 @@ Per copiare le esperienze utilizzando la modalità di targeting:
 
 Esegui il targeting di un componente per creare offerte per le esperienze. I componenti di destinazione forniscono il contenuto che viene utilizzato come offerta per le esperienze.
 
-* [Eseguire il targeting di un componente esistente](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). Il contenuto diventa l’offerta dell’esperienza predefinita.
-* [Aggiungi un componente Target](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component), quindi aggiungi il contenuto al componente.
+* [Eseguire il targeting di un componente esistente.](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component) Il contenuto diventa l’offerta dell’esperienza predefinita.
+* [Aggiungere un componente Target,](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component) quindi aggiungere contenuto al componente.
 
 Dopo che è stato eseguito il targeting di un componente, puoi aggiungere le offerte per ogni esperienza:
 
-* [Aggiungi offerte personalizzate](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer).
-* [Aggiungi offerte da una libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+* [Aggiungere offerte personalizzate.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)
+* [Aggiungere offerte da una libreria.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 Per lavorare con le offerte sono disponibili i seguenti strumenti:
 
-* [Aggiungere un’offerta personalizzata a una libreria di offerte](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library).
-* [Convertire l’offerta dalla libreria in offerta personalizzata](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library).
-* [Aprire un’offerta dalla libreria e modificare il contenuto](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer).
+* [Aggiungi un’offerta personalizzata a una libreria di offerte.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)
+* [Converti un’offerta dalla libreria in offerta personalizzata.](/help/sites-authoring/content-targeting-touch.md#converting-a-library-offer-to-a-custom-library)
+* [Apri un’offerta dalla libreria e modifica il contenuto.](/help/sites-authoring/content-targeting-touch.md#editing-a-library-offer)
 
 #### Creazione di un’offerta predefinita tramite il targeting di un componente esistente {#creating-a-default-offer-by-targeting-an-existing-component}
 
@@ -244,7 +249,7 @@ Esegui il targeting di un componente nella pagina per utilizzarlo come offerta p
 
 Quando si esegue il targeting di un componente, solo il componente può essere utilizzato nell’offerta. Non è possibile rimuovere il componente dall’offerta o aggiungere altri componenti all’offerta.
 
-Esegui la seguente procedura dopo [aver avviato il processo di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
+Dopo [l&#39;avvio del processo di targeting, eseguire la procedura seguente.](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings)
 
 1. Fai clic sul componente di destinazione. Viene visualizzata la barra degli strumenti per il componente, come nell’esempio seguente.
 
@@ -254,7 +259,7 @@ Esegui la seguente procedura dopo [aver avviato il processo di targeting](/help/
 
    ![Destinazione](do-not-localize/chlimage_1.png)
 
-   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito viene replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per tali esperienze non predefinite, [aggiungi un’offerta personalizzata](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   Il contenuto del componente è l’offerta dell’esperienza predefinita. Quando viene eseguito il targeting di un componente, il suo nodo predefinito viene replicato per ogni esperienza. Questo è necessario per modificare il nodo del contenuto corretto durante la creazione specifica dell’esperienza. Per queste esperienze non predefinite, [aggiungi un&#39;offerta personalizzata](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) o [aggiungi un&#39;offerta dalla libreria.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 #### Creazione di un’offerta aggiungendo un componente Target {#creating-an-offer-by-adding-a-target-component}
 
@@ -294,22 +299,21 @@ In caso di modifica del contenuto con targeting, è necessario fare clic su **In
    >Se configurato dall’amministratore, potrebbe essere necessario impostare esplicitamente la posizione.
    >
    >
-   >Gli amministratori possono decidere se impostare questa configurazione sia necessario in **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >Gli amministratori possono decidere se impostare questa configurazione sia necessario o meno per `https://<host>:<port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet`
    >
-   >
-   >Per richiedere agli utenti di immettere una posizione, selezionare la casella di controllo **Forza posizione &#x200B;** Force).
+   >Per richiedere agli utenti di inserire una posizione, seleziona la casella di controllo **Force location (Forza posizione)**.
 
 1. Seleziona l’esperienza per la quale desideri creare l’offerta.
 1. Crea l’offerta:
 
    * Per l’esperienza predefinita, trascina i componenti nell’area di rilascio desiderata e modificane le proprietà come di consueto per creare il contenuto dell’offerta.
-   * Per esperienze non predefinite, [aggiungi un’offerta personalizzata](#adding-a-custom-offer) oppure [aggiungi un’offerta dalla libreria](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   * Per esperienze non predefinite, [aggiungi un&#39;offerta personalizzata](#adding-a-custom-offer) o [aggiungi un&#39;offerta dalla libreria.](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
 
 #### Aggiunta di un’offerta personalizzata {#adding-a-custom-offer}
 
 Crea un’offerta creando il contenuto di un componente di destinazione in modalità di targeting. Quando crei un’offerta personalizzata, questa viene utilizzata come offerta per una singola esperienza.
 
-Se decidi che l’offerta può essere utilizzata per altre esperienze, puoi creare un’offerta personalizzata e [aggiungerla alla libreria](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library). Per ulteriori informazioni sull’uso della console delle offerte per creare un’offerta riutilizzabile, consulta [Aggiunta di un’offerta a una libreria di offerte](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Se decidi che l&#39;offerta può essere utilizzata per altre esperienze, puoi creare un&#39;offerta personalizzata e [aggiungerla alla libreria.](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library) Per informazioni sull&#39;utilizzo della console delle offerte per creare un&#39;offerta riutilizzabile, vedere [Aggiungere un&#39;offerta a una libreria di offerte.](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. Seleziona l’esperienza a cui stai aggiungendo l’offerta.
 1. Per visualizzare il menu del componente, fai clic sul componente di destinazione a cui stai aggiungendo l’offerta.
@@ -324,7 +328,7 @@ Se decidi che l’offerta può essere utilizzata per altre esperienze, puoi crea
 
    ![Menu offerte](do-not-localize/chlimage_1-2.png)
 
-1. Modifica il contenuto del componente. 
+1. Modifica il contenuto del componente.
 
 #### Aggiunta di un’offerta da una libreria di offerte {#adding-an-offer-from-an-offer-library}
 
@@ -367,7 +371,7 @@ Non è possibile aggiungere offerte dalla libreria all’esperienza predefinita.
 
 Aggiungi un’offerta personalizzata alla [libreria di offerte](/help/sites-authoring/offerlib.md) quando desideri riutilizzarla come offerta per più esperienze. Puoi aggiungere offerte alla libreria del marchio corrente di cui stai eseguendo il targeting.
 
-Per ulteriori informazioni sull’uso della console delle offerte per creare un’offerta riutilizzabile, consulta [Aggiunta di un’offerta a una libreria di offerte](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library).
+Per informazioni sull&#39;utilizzo della console delle offerte per creare un&#39;offerta riutilizzabile, vedere [Aggiungere un&#39;offerta a una libreria di offerte.](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)
 
 1. Seleziona l’esperienza per visualizzare l’offerta personalizzata.
 1. Fai clic sull&#39;offerta personalizzata per visualizzare il menu dell&#39;offerta, quindi fai clic sull&#39;icona **Salva offerta nella libreria di offerte**.
@@ -381,7 +385,7 @@ Per ulteriori informazioni sull’uso della console delle offerte per creare un�
 Converti un’offerta dalla libreria in un’offerta personalizzata per modificare l’offerta per l’esperienza corrente e senza modificare l’offerta nelle altre esperienze.
 
 1. Seleziona l’esperienza per visualizzare l’offerta dalla libreria.
-1. Fai clic sull’offerta dalla libreria per visualizzare il menu dell’offerta, quindi fai clic sull’icona Converti in offerta in linea.
+1. Fai clic sull&#39;offerta della libreria per visualizzare il menu dell&#39;offerta, quindi fai clic sull&#39;icona **Converti in offerta in linea**.
 
    ![Converti in offerta in linea](do-not-localize/chlimage_1-5.png)
 
@@ -390,8 +394,8 @@ Converti un’offerta dalla libreria in un’offerta personalizzata per modifica
 Apri un’offerta dalla libreria da un’esperienza in modalità targeting per modificare l’offerta. Le modifiche apportate vengono visualizzate in tutte le esperienze che utilizzano l’offerta.
 
 1. Seleziona l’esperienza per visualizzare l’offerta dalla libreria.
-1. Converti l’offerta dalla libreria in offerta personalizzata/locale. Consulta [Convertire un’offerta dalla libreria in una libreria personalizzata](#converting-a-library-offer-to-a-custom-library).
-1. Modifica il contenuto dell’offerta. 
+1. Converti l’offerta dalla libreria in offerta personalizzata/locale. Vedi [Conversione di un&#39;offerta dalla libreria in una libreria personalizzata.](#converting-a-library-offer-to-a-custom-library)
+1. Modifica il contenuto dell’offerta.
 
 1. Salvalo nuovamente nella libreria. Consulta [Aggiunta di un’offerta personalizzata a una libreria](#adding-a-custom-offer-to-a-library).
 
@@ -399,7 +403,7 @@ Apri un’offerta dalla libreria da un’esperienza in modalità targeting per m
 
 Il passaggio di destinazione del [iprocesso di targeting](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) implica la mappatura dei tipi di pubblico con le esperienze con cui hai lavorato nel passaggio Crea. La pagina di targeting mostra il pubblico per ogni esperienza di cui stai eseguendo il targeting. Puoi specificare o modificare il pubblico per ogni esperienza. Se utilizzi Adobe Target, puoi anche creare test A/B che ti consentono di eseguire il targeting della percentuale di traffico per un pubblico per una particolare esperienza.
 
-### Se utilizzi il targeting di AEM o Adobe Target (targeting delle esperienze) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Se utilizzi il targeting AEM o Adobe Target (targeting delle esperienze) {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Il pubblico viene visualizzato sul lato sinistro del diagramma di mappatura, mentre le esperienze vengono visualizzate sul lato destro.
 
@@ -407,7 +411,7 @@ Il pubblico viene visualizzato sul lato sinistro del diagramma di mappatura, men
 
 Definisci un pubblico utilizzando un segmento. La configurazione cloud della pagina determina i segmenti disponibili. Quando la pagina non è associata a una configurazione cloud di Adobe Target, sono disponibili segmenti AEM per la definizione dei tipi di pubblico. Quando la pagina è associata a una configurazione cloud di Adobe Target, utilizzi i segmenti target.
 
-Per informazioni sui motori di targeting, consulta [Motore di targeting](/help/sites-authoring/personalization.md#targeting-engine).
+Per informazioni sui motori di targeting, vedi [Motore di targeting.](/help/sites-authoring/personalization.md#targeting-engine)
 
 Non utilizzare un pubblico per più di un’esperienza. Accanto a un’esperienza viene visualizzato un simbolo di avviso quando questa è mappata a un pubblico mappato a un’altra esperienza.
 
@@ -421,7 +425,7 @@ Utilizza la procedura seguente per associare un’esperienza a un pubblico quand
 1. (Facoltativo) Fare clic su **Modifica** e quindi digitare una parola chiave per cercare il segmento desiderato.
 1. Nell&#39;elenco dei tipi di pubblico selezionare il pubblico e fare clic su **OK**.
 
-### Se utilizzi i test A/B (Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
+### Se utilizzi i test A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
 Se hai un’attività di test A/B, i tipi di pubblico sono alla tua sinistra, la percentuale di visualizzazione di ogni esperienza al centro e le esperienze sulla destra.
 
@@ -563,7 +567,7 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
    * **Data e ora specificata**: un tempo specifico. Quando selezioni questa opzione, fai clic sull’icona del calendario, seleziona una data e specifica l’ora in cui terminare l’attività.
 
 1. Per specificare una priorità per l’attività, utilizza il cursore per selezionare **Bassa**, **Normale** o **Alta**.
-1. Se hai configurato Adobe Analytics con il tuo account Adobe Target, viene visualizzato il menu a discesa **Source** per la generazione di rapporti. Seleziona **Adobe Target** o **Adobe Analytics** come origine.
+1. Se hai configurato Adobe Analytics con il tuo account Adobe Target, viene visualizzato il menu a discesa **Origine di reporting**. Seleziona **Adobe Target** o **Adobe Analytics** come origine.
 
    Se si seleziona **Adobe Analytics**, seleziona la società e la suite di rapporti. Se si seleziona **Adobe Target**, non è richiesta alcuna azione.
 
@@ -575,7 +579,7 @@ Per configurare obiettivi e impostazioni se si utilizza Adobe Target:
 
    Per cancellare tutti i campi, fai clic sui tre punti nell’angolo superiore destro e seleziona **Cancella tutti i campi**.
 
-   Tutte le metriche dispongono anche di impostazioni avanzate che puoi definire. Seleziona **Impostazioni avanzate** per accedervi. Vedi la definizione del conteggio delle metriche di successo nella tabella precedente e consulta la [documentazione di Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it).
+   Tutte le metriche dispongono anche di impostazioni avanzate che puoi definire. Seleziona **Impostazioni avanzate** per accedervi. Vedi la definizione del conteggio delle metriche di successo nella tabella precedente e consulta la [documentazione di Adobe Target.](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=it)
 
    >[!NOTE]
    >
@@ -607,10 +611,10 @@ Simula l’esperienza di un visitatore per verificare che il contenuto della pag
 I seguenti criteri determinano il contenuto visualizzato durante la simulazione dell’esperienza di un visitatore:
 
 * I dati nell’archivio della sessione dell’utente (tramite Context Hub).
-* Le [Attività che sono in corso](/help/sites-authoring/activitylib.md).
-* Le [regole che definiscono i segmenti](/help/sites-administering/campaign-segmentation.md).
+* Le [attività attive](/help/sites-authoring/activitylib.md)
+* Le [regole che definiscono i segmenti.](/help/sites-administering/campaign-segmentation.md)
 * Il contenuto delle esperienze nei componenti Target.
-* La [configurazione del motore di targeting](/help/sites-authoring/activitylib.md).
+* Configurazione [&#x200B; del motore di targeting.](/help/sites-authoring/activitylib.md)
 
 Se durante il caricamento di un profilo nella pagina viene visualizzato contenuto imprevisto, controlla la configurazione di ogni elemento dell’elenco.
 
@@ -687,11 +691,11 @@ Se hai selezionato Adobe Target come motore:
   </tr>
   <tr>
    <td><strong>Targeting preciso</strong></td>
-   <td><p>L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per l’authoring, il targeting accurato è sempre abilitato.</p> <p>Se selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue prima un <code>mboxDefine</code> e poi un <code>mboxUpdate</code>, dando luogo a una richiesta Ajax una volta che i dati sono disponibili.</p> <p>Se non selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue <code>mboxCreate</code> generando immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili).</p> <p><strong>Nota:</strong> l'abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
+   <td><p>L’abilitazione di un targeting accurato indica al componente di attendere che i dati contestuali o del context hub siano disponibili prima di inviare la richiesta ad Adobe Target. Può aumentare il tempo di caricamento. Per la creazione, il targeting accurato è sempre abilitato.</p> <p>Se selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue prima un <code>mboxDefine</code> e poi un <code>mboxUpdate</code>, dando luogo a una richiesta Ajax una volta che i dati sono disponibili.</p> <p>Se non selezioni la casella di controllo <strong>Targeting accurato</strong>, la mbox esegue <code>mboxCreate</code> generando immediatamente una richiesta sincrona (in questo caso, non tutti i dati contestuali potrebbero essere ancora disponibili).</p> <p><strong>Nota:</strong> l'abilitazione o la disabilitazione del targeting accurato su un componente specifico non influisce sulle impostazioni impostate a livello globale. Puoi sempre ignorare le impostazioni globali selezionando Targeting accurato nel componente.</p> </td>
   </tr>
   <tr>
    <td><strong>Includi segmenti risolti</strong></td>
-   <td><p>La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mbox ed eventuali parametri configurati nella pagina e nel framework.</p> <p>Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non sono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e di inviare ad Adobe Target le informazioni che indicano che il segmento è attivo.</p> </td>
+   <td><p>La selezione di questa casella di controllo include tutti i segmenti risolti nella chiamata mBox e tutti i parametri configurati nella pagina e nel framework.</p> <p>Questo funziona solo in situazioni con API XML dove stai sincronizzando i segmenti AEM. Se disponi di segmenti in AEM che non sono gestiti da Adobe Target (come i segmenti di script), questa opzione consente di risolvere il segmento in AEM e di inviare ad Adobe Target le informazioni che indicano che il segmento è attivo.</p> </td>
   </tr>
   <tr>
    <td><strong>Parametri di contesto ereditati</strong></td>
@@ -710,7 +714,7 @@ Se hai selezionato Adobe Target come motore:
 
 >[!NOTE]
 >
->Quando selezioni un componente e lo rendi utilizzabile come destinazione, AEM inoltre sostituisce il componente e inserisce un componente Adobe Target. (Il componente Adobe Target viene utilizzato non solo quando lo aggiungi manualmente alla pagina, ma anche quando esegui il targeting di un componente esistente).
+>Quando selezioni un componente e lo rendi utilizzabile come destinazione, AEM inoltre sostituisce il componente e inserisce un componente Adobe Target. Il componente Adobe Target viene utilizzato non solo quando lo aggiungi manualmente alla pagina, ma anche quando esegui il targeting di un componente esistente.
 
 Se si seleziona ClientContext (lato client) come motore:
 
