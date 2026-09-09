@@ -1,6 +1,6 @@
 ---
 title: Introduzione e panoramica
-description: Scopri come utilizzare e amministrare AEM Content and Commerce con i nostri articoli utili sulle integrazioni e come iniziare a utilizzare AEM Storefront.
+description: Scopri come utilizzare e amministrare AEM Content and Commerce con i nostri articoli utili sulle integrazioni e come iniziare a utilizzare una vetrina digitale AEM.
 thumbnail: introducing-aem-commerce.jpg
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
@@ -8,14 +8,14 @@ role: Admin, Developer
 exl-id: 88be03c6-2342-4441-836d-f13b8cdfd629
 source-git-commit: 79cce324382bada2e9aec107b8e494723bf490e9
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 88%
+source-wordcount: '891'
+ht-degree: 87%
 
 ---
 
 # Content and Commerce {#content-commerce}
 
-Con i contenuti e il commerce di Adobe Experience Manager, i marchi possono scalare e innovare più rapidamente per differenziare le esperienze di commerce e acquisire l’accelerazione della spesa online. AEM Content and Commerce combina le esperienze coinvolgenti, omnicanale e personalizzate in Experience Manager con un numero qualsiasi di soluzioni commerce per portare esperienze differenziate in tutte le parti del percorso di shopping, riducendo i tempi di valutazione e promuovendo una conversione più elevata.
+Con i contenuti e il commerce di Adobe Experience Manager, i marchi possono scalare e innovare più rapidamente per differenziare le esperienze di commerce e acquisire l’accelerazione della spesa online. AEM Content and Commerce combina le esperienze coinvolgenti, omnicanale e personalizzate in Experience Manager con un numero qualsiasi di per l’e-commerce per portare esperienze differenziate in tutte le parti del percorso di shopping, riducendo i tempi di valutazione e promuovendo una conversione più elevata.
 
 ## Come Content and Commerce aiuta la clientela ad avere successo
 
@@ -31,10 +31,10 @@ I brand possono integrare Experience Manager con Adobe Commerce, parte di Adobe 
 
 ## Introduzione di AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Poiché questi progetti devono affrontare la complessità dell’integrazione di una soluzione commerciale. Una soluzione commerciale può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce a un set di servizi di e-commerce personalizzati. L’integrazione dipende fortemente dai casi d’uso e dall’ecosistema. Di solito riguarda strumenti vari e assume caratteristiche diverse:
+Poiché questi progetti devono affrontare la complessità dell’integrazione di una soluzione per l’e-commerce. Una soluzione commerciale può essere qualsiasi cosa, da una soluzione commerciale come Adobe Commerce a un set di servizi di e-commerce personalizzati. L’integrazione dipende fortemente dai casi d’uso e dall’ecosistema. Di solito riguarda strumenti vari e assume caratteristiche diverse:
 
 * Integrazione di un ecosistema complesso e dinamico (ad esempio cataloghi di prodotti)
-* Le aziende devono gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
+* Esigenza di gestire i contenuti dei prodotti con il proprio ciclo di vita in modo efficiente e omnicanale
 * Costruire percorsi di shopping complessi e personalizzati per utenti diversi
 * Possibilità di adattare e innovare rapidamente sul back-end e sul front-end
 * Esecuzione di un’infrastruttura E2E scalabile e stabile realizzata per prestazioni di picco (vendita Flash, Black Friday, ecc.). Ciò include la ricerca unificata e la gestione della cache.
@@ -49,7 +49,7 @@ Con oltre 200 clienti, CIF si è affermata come un ingrediente di successo per u
 
 ## Vantaggi di CIF {#cif-benefits}
 
-CIF fornisce componenti core di commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando il tempo di immissione sul mercato per i marchi. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
+CIF fornisce componenti core per l’e-commerce pronti all’uso che riducono la necessità di codice personalizzato, accelerando per i brand il tempo di immissione sul mercato. Tutti i componenti core sono pronti all’uso e integrati con il livello dati lato client di Adobe, per arricchire i profili presonalizzati, come il profilo unificato. Questo profilo acquisisce in dettaglio il comportamento di un visitatore, che può essere usato per prevedere e personalizzare il percorso del cliente in tempo reale.
 
 Il componente aggiuntivo CIF porta il contesto del prodotto in Experience Manager e fornisce strumenti di authoring come una console del prodotto e selettori di prodotti/categorie che consentono all’addetto al marketing di creare e distribuire esperienze di acquisto in Experience Manager senza dover dipendere dallo sviluppatore. I vantaggi includono:
 
@@ -67,15 +67,15 @@ CIF è progettato per l’innovazione continua con un componente aggiuntivo semp
 
 ### Integrazioni
 
-Collega l’ecosistema (ad esempio, la soluzione commerce) con l’Experience Cloud utilizzando [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Collega l’ecosistema (ad esempio, la soluzione per l’e-commerce) con Experience Cloud utilizzando [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html), un PaaS basato su micro-servizi senza server, e [Implementazione di riferimento di CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Pattern collaudati e best practice
 
 CIF supporta la clientela con modelli di integrazione standardizzati basati sulle best practice. Questo aiuta la clientela ad avere successo oggi ed è flessibile per crescere con la clientela e adattarsi alle esigenze future:
 
 * Elimina i problemi tipici relativi alle integrazioni dei cataloghi di prodotti che possono verificarsi. Esempi:
-   * Problemi di prestazioni con volume o complessità del catalogo maggiori
-   * Nessun accesso ai dati in fase di sviluppo
-   * Necessità di dati ed esperienze sui prodotti in tempo reale
+  * Problemi di prestazioni con volume o complessità del catalogo maggiori
+  * Nessun accesso ai dati in fase di sviluppo
+  * Necessità di dati ed esperienze sui prodotti in tempo reale
 * Una crescente maturità digitale rende necessaria la gestione dell’esperienza. CIF offre funzionalità di gestione dell’esperienza dei prodotti che possono essere incorporate in modo incrementale senza ulteriore sforzo IT.
 * Pronto per omnicanale: CIF supporta una varietà di tecnologie per punti di contatto (lato server, ibrido, lato client) con modelli, acceleratori e componenti core.

@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 3a5d10d2-4ef8-4f85-942e-47ece6538acb
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 15%
+source-wordcount: '416'
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ I componenti core CIF di AEM possono essere utilizzati su più strutture del sit
 
 Una procedura video dettagliata che illustra le opzioni di integrazione di più visualizzazioni dello store di Adobe Commerce con Adobe Experience Manager Sites.
 
->[!VIDEO](https://video.tv.adobe.com/v/36997/?quality=12&captions=ita)
+>[!VIDEO](https://video.tv.adobe.com/v/36997/?captions=ita&quality=12)
 
 Le funzioni Live Copy e copia per lingua di AEM per la gestione multisito sono utilizzate con Commerce integration framework per gestire globalmente i siti in aree geografiche e lingue diverse.
 
@@ -36,7 +36,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
 
 2. Assicurati che la connessione tra AEM e Adobe Commerce funzioni.
 
-3. Crea una configurazione figlio della configurazione di Cloud Service CIF:
+3. Crea una configurazione secondaria della configurazione di Cloud Service CIF:
 
    * In AEM vai a Strumenti > Generale > [Browser configurazioni](/help/sites-administering/configurations.md#using-configuration-browser)
    * Seleziona la configurazione di base creata
@@ -48,7 +48,7 @@ Per collegare un sito AEM e i componenti core di AEM CIF a una visualizzazione d
    >
    >I cataloghi Commerce possono essere indirizzati utilizzando ID o UID. UID introdotti in Adobe Commerce 2.4.2. Abilita questa opzione solo se il backend di e-commerce supporta uno schema GraphQL della versione 2.4.2 o successiva.
 
-4. Assegnare la configurazione figlio a un sito AEM
+4. Assegnare la configurazione secondaria a un sito AEM
 
    * Passa alla console AEM Sites
    * Passa alla directory principale dell’area geografica o della lingua della struttura del sito; ad esempio, per la pagina di esempio di Venia: /content/venia/us _or_ /content/venia/us/it

@@ -10,9 +10,9 @@ feature: Upgrading
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 1dd5d370-d1d4-4d15-9663-35b941b9076b
-source-git-commit: 8f7bbc3887601e10cf29e99ee54959a10c8a3f98
+source-git-commit: c93d78653e192d041830a84ea24fe5d3edde29e0
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1332'
 ht-degree: 2%
 
 ---
@@ -24,6 +24,7 @@ Prima di iniziare l’aggiornamento, è importante seguire queste attività di m
 * [Definizioni indice](#index-definitions)
 * [Garantire spazio su disco sufficiente](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
 * [Backup completo di AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Verifica la presenza di backup non aggiornati pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#check-stale-pre-upgrade-backups)
 * [Genera il file quickstart.properties](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Configurare il flusso di lavoro e la rimozione del registro di controllo](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
 * [Installare, configurare ed eseguire le attività di pre-aggiornamento](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#install-configure-run-pre-upgrade-tasks)
@@ -46,6 +47,18 @@ Durante l&#39;esecuzione dell&#39;aggiornamento, verificare che lo spazio su dis
 ## Backup completo di AEM {#fully-back-up-aem}
 
 Prima di iniziare l’aggiornamento, è necessario eseguire il backup completo di AEM. Assicurati di eseguire il backup dell’archivio, dell’installazione dell’applicazione, dell’archivio dati e delle istanze Mongo, se applicabile. Per ulteriori informazioni sul backup e il ripristino di un&#39;istanza di AEM, vedere [Backup e ripristino](/help/sites-administering/backup-and-restore.md).
+
+## Verifica la presenza di backup non aggiornati pre-aggiornamento {#check-stale-pre-upgrade-backups}
+
+Prima di un aggiornamento, AEM esegue il backup di alcuni percorsi (ad esempio `/etc/tags`) in `/var/upgrade/PreUpgradeBackup/<timestamp>`, quindi li ripristina al termine dell&#39;aggiornamento. Ogni nodo di backup ha una proprietà di stato di unione: `INIT` indica che il backup è stato creato ma non è mai stato unito nuovamente, mentre `COMPLETED` indica che l&#39;unione è stata completata correttamente.
+
+Se un backup di un aggiornamento precedente (ad esempio da 6.4 a 6.5) viene lasciato nello stato `INIT`, l&#39;aggiornamento più recente (da 6.5 a 6.5 LTS) ripristina il backup precedente non unito. Questo può reintrodurre in modo invisibile all’utente contenuti obsoleti o obsoleti che non corrispondono più allo stato corrente dell’archivio, causando problemi imprevisti al termine dell’aggiornamento.
+
+Per evitare questo problema, prima di avviare l’aggiornamento:
+
+1. Utilizzando CRXDE Lite (`/crx/de/index.jsp`), controllare l&#39;istanza di origine per eventuali nodi preesistenti in `/var/upgrade/PreUpgradeBackup/`.
+2. Controllare la proprietà dello stato di unione di ogni nodo di backup trovato.
+3. Se un nodo è stato trovato nello stato `INIT` da un aggiornamento precedente, rivederne il contenuto e ripulirlo, eliminarlo o unirlo in modo esplicito, prima di procedere. In questo modo l&#39;aggiornamento crea un backup nuovo e accurato, anziché ripristinare automaticamente i dati obsoleti.
 
 ## Genera il file quickstart.properties {#generate-quickstart-properties}
 
