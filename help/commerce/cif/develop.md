@@ -11,8 +11,8 @@ role: Admin, Developer
 exl-id: 22fcdadf-12c0-4545-a854-76345806386f
 source-git-commit: 5995dda0aac101e6c0d506ac5bba786674b0735b
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 18%
+source-wordcount: '880'
+ht-degree: 26%
 
 ---
 
@@ -27,11 +27,11 @@ Lo sviluppo di progetti AEM Commerce basati su Commerce integration framework (C
 
 ## Sviluppo locale per AEM Commerce {#local}
 
-Si consiglia di utilizzare un ambiente di sviluppo locale con i progetti CIF.
+Si consiglia di utilizzare un ambiente di sviluppo locale con progetti CIF.
 
 >[!NOTE]
 >
->Le istruzioni seguenti sono utili per configurare un ambiente di sviluppo AEM locale per AEM Commerce utilizzando CIF (con particolare attenzione per AEM 6.5 LTS). Se utilizzi AEM as a Cloud Service, consulta la documentazione di [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
+>Le istruzioni seguenti sono utili per configurare un ambiente di sviluppo AEM locale per AEM Commerce utilizzando CIF (con particolare attenzione per AEM 6.5 LTS). Se utilizzi AEM as a Cloud Service, consulta la documentazione di [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/introduction#).
 
 Il componente aggiuntivo AEM Commerce per AEM, noto come componente aggiuntivo CIF, è disponibile anche per lo sviluppo locale e fornito come pacchetto AEM. Può essere scaricato dal [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/it/aem.html) come feature pack.
 
@@ -41,7 +41,7 @@ Il componente aggiuntivo AEM Commerce per AEM, noto come componente aggiuntivo C
 
 - AEM 6.5 LTS locale
 - [Java 17/Java 21](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
-- [Apache Maven](https://maven.apache.org/) (3.3.9 o versione successiva)
+- [Apache Maven](https://maven.apache.org/) (3.3.9 o successivo)
 - [Nodo LTS](https://nodejs.org/it/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
@@ -163,5 +163,5 @@ Passare a http://localhost:4502/system/console/configMgr e creare una configuraz
 
 ## Risorse aggiuntive
 
-- [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
+- [Archetipo di progetto AEM](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
