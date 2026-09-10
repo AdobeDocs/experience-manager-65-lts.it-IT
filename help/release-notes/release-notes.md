@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
-source-git-commit: 79f3d3211a79ce62242273df0cdecd24cd8900cf
+source-git-commit: aa819778006a3acb0d02772156c2af820ed353bb
 workflow-type: tm+mt
-source-wordcount: '6705'
-ht-degree: 26%
+source-wordcount: '7575'
+ht-degree: 23%
 
 ---
 
@@ -301,9 +301,57 @@ La cronologia delle promozioni di Launch ora visualizza il testo localizzato nel
 
 
 
-<!--
 ### [!DNL Forms]{#forms-65-lts-sp3}
--->
+
+>[!NOTE]
+>
+> È ora disponibile AEM Forms 6.5 LTS Service Pack 3 (SP3) per le distribuzioni OSGi. Include correzioni di bug, miglioramenti della sicurezza e miglioramenti. **AEM Forms 6.5 LTS Service Pack 3 (SP3) per implementazioni JEE verrà rilasciato in un secondo momento.**
+
+#### Miglioramenti {#forms-enhancements-65-lts-sp3}
+
+* FORMS-24360: aggiunto il supporto di PDF Generator (PDFG) per Microsoft Office 2024.
+* FORMS-24949: aggiunta del supporto dell&#39;agente Forms Builder in AEM Forms 6.5 LTS. In questo modo vengono supportate le API HTTP di Forms Manager e le API HTTP di IA per la generazione di moduli (GenAI) richieste dall’agente.
+* FORMS-25180: è stato aggiunto il valore `daysUntilSigningDeadline` all&#39;interfaccia utente di AEM Forms, in modo che gli autori possano mostrare ai destinatari il numero di giorni rimanenti prima della scadenza della firma Adobe Sign.
+* FORMS-25182: PDF Generator (PDFG) ora supporta le conversioni di documenti multithread se configurato con un singolo account utente.
+
+#### Problemi risolti {#forms-fixed-issues-65-lts-sp3}
+
+* FORMS-23726: applicazione di uno schema XML nelle proprietà di Adaptive Forms non riuscita a causa di un conflitto di libreria `xsom`. La selezione dello schema ora funziona.
+* FORMS-24296: il campo Allegato file dei componenti di base ha accettato i tipi di file non consentiti (ad esempio, `.xsd`) al momento del caricamento e li ha rifiutati solo al momento dell&#39;invio, a differenza di altri tipi bloccati. I tipi non consentiti ora sono bloccati al caricamento.
+* FORMS-24603: nelle lettere di Gestione della corrispondenza, i frammenti di testo che presentavano una condizione hanno perso le interruzioni di riga se salvati come bozza. Le bozze ora mantengono le interruzioni di riga originali.
+* FORMS-24783: gli allegati sono stati eliminati dal passaggio `assignTask` nei flussi di lavoro Forms basati su Open Services Gateway initiative (OSGi). Gli allegati vengono ora mantenuti tramite l&#39;assegnazione di attività.
+* FORMS-24877: l’icona del calendario Selezione data non mostrava alcuna etichetta accessibile quando veniva applicato un pattern di visualizzazione, pertanto l’assistente vocale NVDA annunciava solo &quot;cliccabile&quot;. L’icona fornisce ora un’etichetta descrittiva.
+* FORMS-24913: i flussi di lavoro di AEM Forms si sono interrotti dopo il passaggio Adobe Sign perché lo stato di firma non è mai stato restituito. Al termine della firma, i flussi di lavoro ora continuano.
+* FORMS-25033: il componente Firma scarabocchio è stato saltato nell’ordine di tabulazione della tastiera, creando una barriera di accessibilità per gli utenti che utilizzano solo la tastiera. La navigazione tramite scheda ora raggiunge il campo.
+* FORMS-25045: le traduzioni in cinese tradizionale (Hong Kong) hanno smesso di eseguire il rendering dopo un aggiornamento, quindi i moduli sono tornati alla lingua predefinita. Il testo localizzato ora viene riprodotto correttamente.
+* FORMS-25170: la chiamata a `addInstance()` non mostrava i pannelli aggiunti in modo dinamico quando il conteggio delle istanze iniziali era 0. I pannelli aggiunti ora vengono visualizzati immediatamente.
+* FORMS-25225: il rinnovo lato server ha rimosso le traduzioni dei campi al di fuori dei frammenti in Adaptive Forms, ripristinando le etichette alla lingua di base. Tali traduzioni vengono ora mantenute.
+* FORMS-25233: nelle distribuzioni OSGi (Open Services Gateway initiative), il servizio Assembler ha unito un XDP principale con il relativo frammento immediato, ma non ha risolto i riferimenti ai frammenti nidificati come intestazioni, piè di pagina e sottomoduli riutilizzabili, quindi mancavano dall’output assemblato. I frammenti nidificati ora vengono risolti.
+* FORMS-25289: il servizio di rendering di Forms ha restituito un output diverso per lo stesso input in tutti i service pack, influendo sulle lettere di Gestione corrispondenza. L’output di rendering è ora coerente.
+* FORMS-25290: le lettere di Gestione della corrispondenza salvate hanno perso spazi e hanno mostrato una &quot;x&quot; in alcuni punti quando sono state riaperte. Il contenuto della lettera salvata ora rimane intatto.
+* FORMS-25346: dopo un aggiornamento del service pack, le lettere di comunicazione interattiva (IC) si bloccano durante un ciclo di caricamento e le lettere che hanno caricato hanno perso spazio nell’anteprima. Il caricamento e la spaziatura ora funzionano correttamente.
+* FORMS-25431: la procedura guidata Crea frammento di modulo ha inviato una richiesta di rete a ogni sequenza di tasti nel campo del titolo. Le chiamate ridondanti sono state rimosse.
+* FORMS-25645: creazione di un frammento di modulo adattivo basato su componenti core da uno schema JSON caricato in linea non riuscita con &quot;È stato specificato un modello di modulo non valido ALC-FMG-700-009.&quot; Gli schemi JSON in linea sono ora accettati.
+* FORMS-25646: un frammento di modulo adattivo basato su componenti core e creato da uno schema JSON mostrava un pannello Origini dati vuoto nell’editor. Il pannello ora elenca le origini dati dello schema.
+* FORMS-25674: l&#39;interfaccia utente dell&#39;agente di comunicazione interattiva (IC) è stata aperta in una pagina vuota, pertanto gli agenti non sono stati in grado di visualizzare il contenuto IC. Viene ora eseguito il rendering dell&#39;interfaccia utente dell&#39;agente.
+* FORMS-25686: il passaggio dell’opzione di tipo schema nella procedura guidata Crea frammento di modulo adattivo non ha azzerato lo stato dell’opzione precedente, generando una mancata corrispondenza dello schema. La procedura guidata ripristina l&#39;opzione inattiva.
+* FORMS-25757: l’applicazione di un tema non aggiorna la libreria client di base, pertanto le modifiche al tema sembrano non avere alcun effetto. I temi ora aggiornano la libreria client di base.
+* FORMS-25825: Il menu dell’hamburger mobile non ha risposto ai tocchi, rendendo la navigazione inutilizzabile sui dispositivi mobili. Il menu ora si apre come previsto.
+* FORMS-26333: l’azione Pubblica scompare dopo l’annullamento della pubblicazione di un modulo, impedendo in tal modo la ripubblicazione. La pubblicazione è ora disponibile dopo l’annullamento della pubblicazione.
+* FORMS-26763: in Designer, la formattazione in grassetto sui collegamenti ipertestuali all’interno di un oggetto di testo statico veniva persa dopo eventuali modifiche al testo. La formattazione grassetto consente ora di mantenere le modifiche.
+* FORMS-26817: facendo clic su Ripristina in un modulo adattivo, l’immagine configurata dall’autore nel componente Immagine viene cancellata e l’immagine non funziona più, mentre gli altri campi vengono ripristinati correttamente. L’operazione Reimposta mantiene l’immagine configurata.
+* FORMS-26852: nell’interfaccia utente dell’agente, un campo data/ora mostrava la data un giorno prima del valore memorizzato. Il campo ora mostra la data corretta.
+
+#### Problemi noti {#forms-known-issues-65-lts-sp3}
+
+Per questa versione non vengono segnalati problemi noti.
+
+#### Correzioni di sicurezza {#forms-security-fixes-65-lts-sp3}
+
+Questa versione risolve le vulnerabilità relative alla sicurezza in AEM Forms, incluse più correzioni di vulnerabilità cross-site scripting (XSS), una correzione di SSRF (request forgery) lato server, una correzione di entità esterna XML (XXE) e aggiornamenti a librerie di terze parti.
+
+<!-- TODO: Add security bulletin link. Open question, pending information from Sunny Marwaha. -->
+
 
 
 
@@ -394,7 +442,6 @@ I progetti di traduzione ora mantengono un conteggio accurato dello stato durant
 * L’Editor pagina dell’interfaccia touch ora esegue il rendering della struttura contenuto per le pagine dei pacchetti del flusso di lavoro. Gli autori possono esaminare la struttura del pacchetto e modificare i componenti Definizione risorsa tramite lo stesso editor. (GRANITE-67186) PRINCIPALE
 
 * La finestra di dialogo delle variabili del flusso di lavoro visualizza ora i controlli corretti per le variabili Form Data Model, JSON, XML e Document. Gli autori non visualizzano più il markup HTML non elaborato quando creano queste variabili non primitive. (GRANITE-67915)
-
 
 
 ## Informazioni su [!DNL Experience Manager Foundation] {#experience-manager-foundation}
