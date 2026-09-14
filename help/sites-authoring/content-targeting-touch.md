@@ -14,9 +14,7 @@ source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 69%
-
 ---
-
 
 # Creazione di contenuti di destinazione utilizzando la modalità di targeting {#authoring-targeted-content-using-targeting-mode}
 
@@ -614,7 +612,7 @@ I seguenti criteri determinano il contenuto visualizzato durante la simulazione 
 * Le [attività attive](/help/sites-authoring/activitylib.md)
 * Le [regole che definiscono i segmenti.](/help/sites-administering/campaign-segmentation.md)
 * Il contenuto delle esperienze nei componenti Target.
-* Configurazione [&#x200B; del motore di targeting.](/help/sites-authoring/activitylib.md)
+* Configurazione [ del motore di targeting.](/help/sites-authoring/activitylib.md)
 
 Se durante il caricamento di un profilo nella pagina viene visualizzato contenuto imprevisto, controlla la configurazione di ogni elemento dell’elenco.
 
