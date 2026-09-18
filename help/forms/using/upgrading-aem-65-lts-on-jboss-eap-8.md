@@ -1,13 +1,12 @@
 ---
 title: Aggiornamento di AEM 6.5 LTS su JBoss EAP 8 (Windows)
 description: Questa guida fornisce istruzioni dettagliate per l’aggiornamento di un’installazione Adobe Experience Manager (AEM) 6.5 LTS esistente da JBoss EAP 7.4 a JBoss EAP 8 su Windows, utilizzando JDK 21.
-source-git-commit: 835530039678bc16a6de87b8d580be91a2026f94
+exl-id: 23389613-0d9f-4e0b-b133-c8e598dd9cc9
+source-git-commit: d713aac72e764849d53e8feb98ed85b89f27a44d
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 3%
-
+source-wordcount: '1430'
+ht-degree: 2%
 ---
-
 # Aggiornamento di AEM 6.5 LTS su JBoss EAP 8 (Windows)
 
 ## Panoramica
@@ -495,7 +494,7 @@ Passa a **Strumenti** → **Operazioni** → **Diagnosi** per eseguire i control
 2. Monitorare le prestazioni del sistema durante l&#39;utilizzo iniziale
 3. Se necessario, regola le impostazioni JVM in base ai pattern di utilizzo effettivi
 
-## Risoluzione dei problemi
+## Risoluzione di problemi
 
 ### Problemi comuni
 
@@ -550,8 +549,8 @@ Se l’aggiornamento non riesce e non può essere risolto:
 ## Documentazione correlata
 
 - [Guida alla migrazione di JBoss EAP 8](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/8.0/html/migration_guide/)
-- [Guida all&#39;aggiornamento di Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html?lang=it)
-- [Installazione dei Service Pack di AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=it)
+- [Guida all’aggiornamento a Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
+- [Installazione dei Service Pack in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 ## Informazioni documento
 
