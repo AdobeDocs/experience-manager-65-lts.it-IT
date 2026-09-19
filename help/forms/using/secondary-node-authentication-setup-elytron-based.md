@@ -4,14 +4,12 @@ description: JBoss EAP 8 utilizza Elytron per consentire la comunicazione e la r
 solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
-source-git-commit: f093f39fb535209297940cff13a99c7631812152
+exl-id: 212aa75c-7f2a-4140-8051-77643065e429
+source-git-commit: c89b742e24734fc67883b9dec966f59a01062a2a
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '474'
 ht-degree: 3%
-
 ---
-
-
 # Configurazione dell&#39;autenticazione del nodo secondario (basata su Elytron)
 
 ## Configurare L’Autenticazione Del Nodo Secondario Utilizzando Elytron
@@ -45,10 +43,10 @@ Per arrestare JBoss se è in esecuzione:
 
 ## Scegli un&#39;opzione di configurazione
 
-* **Opzione 1: Impostazione Rapida Tramite L&#39;Archivio Delle Credenziali Predefinito**
+* **Opzione 1: Impostazione rapida tramite l&#39;archivio credenziali predefinito**
 Consigliato per ambienti e test di livello inferiore.
 
-* **Opzione 2: Installazione archivio credenziali personalizzato**
+* **Opzione 2: configurazione archivio credenziali personalizzato**
 Consigliato per ambienti di produzione e sicuri.
 
 ## Opzione 1: Impostazione rapida mediante l&#39;archivio credenziali predefinito
@@ -229,4 +227,3 @@ Confermare la corretta registrazione utilizzando i registri del controller host 
 * **L&#39;opzione 2** consente una maggiore protezione utilizzando una password personalizzata per l&#39;archivio credenziali.
 * La configurazione deve essere completata **solo sui nodi secondari**.
 * La configurazione del nodo principale viene riutilizzata automaticamente nel dominio.
-
