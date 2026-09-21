@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 1%
-
+source-wordcount: '1089'
+ht-degree: 0%
 ---
-
 # Hotfix per Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 Questo articolo elenca le correzioni critiche implementate per risolvere problemi noti, migliorare la stabilità del sistema e migliorare le prestazioni complessive di AEM Forms 6.5 LTS.
@@ -29,6 +27,59 @@ Questo articolo elenca le correzioni critiche implementate per risolvere problem
     <td><strong>Data</strong></td>
     <td><strong>Collegamento per il download degli hotfix (collegamento per la distribuzione di software AEM)</strong></td>
     <td><strong>Problemi risolti</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>21 settembre 2026</strong><br>
+      <em>Applicabile a:</em> distribuzioni AEM Forms 6.5 LTS Service Pack 2 JEE (JBoss, WebLogic, WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>Per installare questo aggiornamento rapido, completa i passaggi seguenti nell’ordine in cui:</strong></p>
+    <p><strong>Passaggio 1: installare la patch</strong></p>
+    <ul>
+    <strong>JBoss:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-jboss.zip">Hotfix per AEM Forms 6.5 LTS SP2 su Windows per il server JEE JBoss</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-jboss.tar.gz">Hotfix per AEM Forms 6.5 LTS SP2 su Linux per il server JEE JBoss</a></li>
+    <strong>WebLogic:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-weblogic.zip">Hotfix per AEM Forms 6.5 LTS SP2 su Windows per il server JEE Weblogic</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-weblogic.tar.gz">Hotfix per AEM Forms 6.5 LTS SP2 su Linux per il server JEE Weblogic</a></li>
+    <strong>WebSphere:</strong>
+    <li>Windows- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-win-websphere.zip">Hotfix per AEM Forms 6.5 LTS SP2 su Windows per il server WebSphere JEE</a></li>
+    <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.LTS.2-linux-websphere.tar.gz">Hotfix per AEM Forms 6.5 LTS SP2 su Linux per il server WebSphere JEE</a></li>
+    </ul>
+    <p>Installare la patch utilizzando la procedura standard di installazione patch di AEM Forms su JEE. <!-- TODO: link to the 6.5 LTS JEE patch installation instructions once available --></p>
+    <p><strong>Passaggio 2: installare il bundle di correzione della vulnerabilità</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-lts-sp2-hotfix/SP2LTSBundles_VULN-36670.zip">Pacchetto di correzione delle vulnerabilità per AEM Forms 6.5 LTS SP2</a></li>
+    </ul>
+    <ol>
+    <li>Apri la console OSGi in <code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>.</li>
+    <li>Fare clic su <strong>Installa/Aggiorna</strong>.</li>
+    <li>Selezionare le caselle di controllo <strong>Avvia bundle</strong> e <strong>Aggiorna pacchetti</strong>.</li>
+    <li>Fare clic su <strong>Scegli file</strong>, quindi caricare il bundle scaricato.</li>
+    <li>Attendi che il registro venga settato e che il bundle venga visualizzato come <strong>Attivo</strong>.</li>
+    </ol>
+    <p><strong>Passaggio 3: aggiornare il programma di installazione di AEM Forms Workbench</strong></p>
+    <p>È necessario eseguire l’aggiornamento al programma di installazione di AEM Forms Workbench più recente. Scaricala dal <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/fd/workbench/6-5-0-20260902-1-45/Workbench_DVD.zip">programma di installazione di AEM Forms Workbench</a>.</p>
+    <p><strong>Passaggio 4: aggiornare i file della libreria client (sviluppatori)</strong></p>
+    <p>Questa patch include un aggiornamento importante alla libreria client SDK <code>adobe-livecycle-client.jar</code> (vedi <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Inclusi i file della libreria Java AEM Forms</a>). Se il progetto utilizza questo file JAR, aggiorna <code>adobe-livecycle-client.jar</code> nel percorso di classe del progetto dopo aver installato l'aggiornamento rapido. La versione più recente è disponibile alle <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
+    <p>L'hotfix è cumulativo, pertanto è possibile applicarlo ad AEM Forms 6.5 LTS Service Pack 2 o a un Service Pack precedente senza prima installare Service Pack 2.</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26818</b> Dopo l'aggiornamento di Apache Shiro alla versione 2.1.0, AEM Forms su JEE non viene avviato con un <code>NoClassDefFoundError</code> per il gestore della sicurezza di Shiro. Questo hotfix ripristina l’avvio automatico riuscito.</li>
+    <li><b>FORMS-26819</b> AEM Forms su JEE ha esito negativo con un errore "nessuna classe trovata" per <code>org.owasp.esapi.reference.JavaLogFactory</code>. Questo hotfix risolve la classe mancante.</li>
+    <li><b>FORMS-26584, FORMS-26589</b> Dopo l'aggiornamento ad AEM Forms 6.5 LTS, gli endpoint di TaskManager vengono rimossi. Questo hotfix ripristina gli endpoint di TaskManager.</li>
+    <li><b>FORMS-26569</b> In JEE il passaggio MergeEars di Configuration Manager non riesce e viene restituito un errore di dichiarazione DOCTYPE (<code>ALC-LCM-010-200</code>) a causa del generatore XML protetto. Questo hotfix consente il completamento del passaggio MergeEars.</li>
+    <li><b>FORMS-25063</b> registri a livello di applicazione mancanti nelle distribuzioni IBM WebSphere Liberty. Questo aggiornamento rapido ripristina la registrazione a livello di applicazione.</li>
+    <li><b>FORMS-24892</b> In JBoss, l'e-mail non riesce se "IMAPProvider non è un sottotipo". Questo aggiornamento rapido ripristina la funzionalità e-mail su JBoss.</li>
+    <li><b>FORMS-24692</b> In WebSphere Liberty Profile (WLP), l'e-mail non riesce e viene visualizzato il messaggio "Impossibile convertire il socket in TLS". Questo hotfix ripristina le e-mail su TLS su WLP.</li>
+    <li><b>FORMS-26688</b> Aggiorna la libreria Gibson alla versione 6.0.29665850.</li>
+    <li><b>FORMS-25222</b> esegue il backport dei miglioramenti di convalida delle asserzioni SAML.</li>
+    <li><b>FORMS-26733, FORMS-26734</b> Apache Log4j è stato aggiornato alla versione 2.25.5.</li>
+    <li>Questo hotfix include anche correzioni di sicurezza.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
