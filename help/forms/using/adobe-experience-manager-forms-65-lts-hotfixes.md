@@ -1,19 +1,21 @@
 ---
-title: Hotfix per Adobe Experience Manager Forms 6.5 LTS SP1
-description: Informazioni su come scaricare e installare un hotfix per AEM Forms 6.5 LTS.
+title: Hotfix per Adobe Experience Manager Forms 6.5 LTS
+description: Informazioni su come scaricare e installare un hotfix per AEM Forms 6.5 LTS. Per AEM 6.5 (non LTS), consulta l’articolo sugli hotfix di AEM 6.5 Forms.
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: e485100f-3e16-4fd4-a8ce-af771d765dd1
-source-git-commit: 0ce01150bd74eeea7edb6c6127003e1aefda97a9
+source-git-commit: 989d83cfc56f7a7d4e2aea5a7ac1ca444d505859
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1137'
 ht-degree: 0%
 ---
 # Hotfix per Adobe Experience Manager Forms 6.5 LTS{#aem-form-hotfix}
 
 Questo articolo elenca le correzioni critiche implementate per risolvere problemi noti, migliorare la stabilità del sistema e migliorare le prestazioni complessive di AEM Forms 6.5 LTS.
 
+
+Questo articolo si applica ad AEM Forms 6.5 LTS. Per le distribuzioni di AEM 6.5 (non LTS), vedi [Hotfix di Adobe Experience Manager Forms](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/release-notes/aem-forms-hotfix).
 
 >[!NOTE]
 >
@@ -79,6 +81,7 @@ Questo articolo elenca le correzioni critiche implementate per risolvere problem
     <li><b>FORMS-26733, FORMS-26734</b> Apache Log4j è stato aggiornato alla versione 2.25.5.</li>
     <li>Questo hotfix include anche correzioni di sicurezza.</li>
     </ul>
+    <p><strong>Build:</strong> AEMForms-6.6.0-0008</p>
     </td>
   </tr>
   <tr>
