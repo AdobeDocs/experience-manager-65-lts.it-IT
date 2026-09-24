@@ -13,16 +13,14 @@ exl-id: 1167735d-a13a-438e-bef8-205e27f59f4e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 57%
-
+ht-degree: 64%
 ---
-
 # Promozione dei lanci{#promoting-launches}
 
 Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando promuovi una pagina di lancio sono disponibili le seguenti opzioni:
 
 * Promuovere solo la pagina corrente o l’intero lancio.
-* Promuovere le pagine figlie della pagina corrente.
+* Promuovere le pagine secondarie della pagina corrente.
 * Promuovere il lancio completo o solo le pagine che sono state modificate.
 
 ## Promozione delle pagine di lancio {#promoting-launch-pages}
