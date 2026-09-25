@@ -1,5 +1,5 @@
 ---
-title: Stile in linea dei componenti di moduli adattivi
+title: Stile in linea dei componenti dei moduli adattivi
 description: Sebbene sia possibile applicare stili personalizzati a un modulo adattivo, è anche possibile applicare proprietà CSS in linea ai singoli componenti di un modulo adattivo.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,10 @@ role: User, Developer
 exl-id: c074afbb-33d1-4424-bbd2-2acdeeebe9d0
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 2%
-
+source-wordcount: '647'
+ht-degree: 6%
 ---
-
-# Stile in linea dei componenti di moduli adattivi {#inline-styling-of-adaptive-form-components}
+# Stile in linea dei componenti dei moduli adattivi {#inline-styling-of-adaptive-form-components}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -85,7 +83,7 @@ Osserva la modifica dello stile della casella di testo come mostrato nell’imma
   <tr>
    <td><p>Etichetta</p> </td>
    <td><p>Dimensioni e posizione &gt; larghezza</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>Imposta la larghezza come 100 px per l'etichetta</p> </td>
   </tr>
   <tr>

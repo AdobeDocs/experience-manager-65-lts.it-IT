@@ -9,11 +9,9 @@ role: Admin, Developer
 exl-id: 708a4ab2-ca66-445d-8d69-bcf12fd5158a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1849'
-ht-degree: 9%
-
+source-wordcount: '1940'
+ht-degree: 10%
 ---
-
 # Creare e utilizzare frammenti di Forms adattivi in un modulo adattivo basato su componenti core {#adaptive-form-fragments}
 
 ## Applicabile a {#applies-to}
@@ -42,7 +40,7 @@ Puoi creare un frammento di modulo adattivo da zero o salvare un pannello in un 
 1. Accedi all&#39;istanza di AEM Forms all&#39;indirizzo https://[*hostname*]:[*port*]/aem/forms.html.
 1. Fai clic su **Crea > Frammento di modulo adattivo**.
 1. Specifica titolo, nome, descrizione e tag per il frammento. Assicurati di specificare un nome univoco per il frammento. Se esiste un altro frammento con lo stesso nome, il frammento non viene creato.
-1. Selezionare un modello di modulo. Forms Puoi creare un frammento di modulo per Forms adattivo basato su Componenti core o su Componenti di base.
+1. Selezionare un modello di modulo. Puoi creare un frammento di modulo per Forms adattivo basato su Componenti core o su Componenti di base.
    * Per creare un frammento di modulo per moduli basati su Componenti core, seleziona un modello basato su Componenti core.
    * Per creare un frammento di modulo per moduli basati su Componenti di base, seleziona un modello Componenti di base. Ad esempio, /libs/fd/af/templateForFragment/defaultFragmentTemplate.
 
@@ -155,7 +153,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando lâ
    <td><p>Copia il frammento selezionato. Il pulsante Incolla viene visualizzato nella barra degli strumenti.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Scarica</p> </td>
+   <td><p>Download</p> </td>
    <td><p>Scarica il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -175,7 +173,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando lâ
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Elimina</p> </td>
+   <td><p>Eliminare</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>
@@ -203,9 +201,9 @@ Fai riferimento ai frammenti di modulo adattivo che Ã¨ possibile utilizzare per 
 
 ## Consulta anche {#see-also}
 
-* [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
+* [Creare componenti core basati su modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Utilizza lâ€™editor di regole per aggiungere un comportamento dinamico al modulo](rule-editor.md)
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)

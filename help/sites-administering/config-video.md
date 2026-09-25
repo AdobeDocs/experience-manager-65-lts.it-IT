@@ -11,11 +11,9 @@ role: Admin
 exl-id: 0eac1568-cddb-4d26-b04c-78a2681cf44a
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
-
+source-wordcount: '534'
+ht-degree: 1%
 ---
-
 # Configurare il componente Video {#configure-the-video-component}
 
 Il [componente video](/help/sites-authoring/default-components-foundation.md#video) ti consente di inserire nella pagina una risorsa video predefinita e pronta all&#39;uso.

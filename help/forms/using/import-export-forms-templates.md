@@ -11,11 +11,9 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 98304115-1c27-4261-9c34-70a9d7e7cd53
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2450'
-ht-degree: 0%
-
+source-wordcount: '2481'
+ht-degree: 1%
 ---
-
 # Importazione ed esportazione di risorse in AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
 È possibile spostare moduli e risorse, temi, dizionari dati, frammenti di documenti e lettere correlati tra diverse istanze di AEM Forms. Tale spostamento è necessario per la migrazione di sistemi o lo spostamento di moduli da un server stage a un server di produzione. Per le risorse di cui è supportato il caricamento e l’importazione tramite l’interfaccia utente di AEM Forms, l’utilizzo dell’interfaccia utente di Forms è il metodo consigliato per l’esportazione o l’importazione. L’utilizzo di Gestione pacchetti di AEM per l’esportazione o l’importazione di tali risorse non è consigliato.
@@ -38,10 +36,10 @@ Per scaricare le risorse Forms e Documents:
 1. In Scarica risorse, scegli una delle seguenti opzioni e seleziona **Scarica**.
 
    * **Scarica come pacchetto CRX:** Utilizza l&#39;opzione per scaricare e spostare tutte le risorse selezionate e le relative dipendenze da un&#39;istanza AEM Forms a un&#39;altra. Scarica tutte le risorse e le cartelle come pacchetto crx. Qualsiasi risorsa di modulo, compresi i moduli creati in AEM (moduli adattivi, comunicazioni interattive e frammenti di moduli adattivi), i set di moduli, i modelli di modulo, i documenti PDF e le risorse (XSD, XFS, immagini) può essere scaricata come pacchetto dall’interfaccia utente di AEM Forms.
-Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
+     Il vantaggio di scaricare le risorse come pacchetto è che scarica anche le risorse utilizzate dalla risorsa selezionata per il download. Ad esempio, se disponi di un modulo adattivo che utilizza un modello di modulo, XSD e un’immagine. Quando selezioni questo modulo adattivo e lo scarichi come pacchetto, il pacchetto scaricato contiene anche il modello del modulo, XSD e l’immagine. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa.
 
    * **Scarica risorse come file binari:** Utilizza l&#39;opzione per scaricare solo modelli di modulo (XDP), PDF forms (PDF), documento (PDF) e risorse (immagini, schemi, fogli di stile). Puoi modificare queste risorse con applicazioni esterne. Scarica come file .zip le risorse dei moduli che hanno file binari, come XSD, XDP, immagini, PDF e XDP.
-Non puoi scaricare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, temi e set di moduli con **Scarica risorse come file binari**. Per scaricare queste risorse, è necessario utilizzare l&#39;opzione **Scarica come pacchetto CRX**.
+     Non puoi scaricare moduli adattivi, comunicazioni interattive, frammenti di moduli adattivi, temi e set di moduli con **Scarica risorse come file binari**. Per scaricare queste risorse, è necessario utilizzare l&#39;opzione **Scarica come pacchetto CRX**.
 
    Le risorse selezionate vengono scaricate come archivio (file .zip).
 

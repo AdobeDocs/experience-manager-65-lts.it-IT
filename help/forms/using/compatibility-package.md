@@ -7,11 +7,9 @@ feature: Adaptive Forms
 exl-id: 3a529a82-e2fd-423c-96c1-a5accc87775e
 source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 3%
-
+source-wordcount: '410'
+ht-degree: 19%
 ---
-
 # Pacchetto di compatibilità{#compatibility-package}
 
 ## Panoramica {#overview}
@@ -52,24 +50,24 @@ Installando il pacchetto di compatibilità, puoi rendere compatibili con AEM For
 
 * Gestione della corrispondenza Assets da AEM 6.4 e versioni precedenti:
 
-   * [Lettere](../../forms/using/create-letter.md)
-   * [Dizionari dati](/help/forms/using/data-dictionary.md)
-   * Frammenti del documento
+  * [Lettere](../../forms/using/create-letter.md)
+  * [Dizionari dati](/help/forms/using/data-dictionary.md)
+  * Frammenti del documento
 
 * Modelli obsoleti per moduli adattivi:
 
-   * /libs/fd/af/templates/blankTemplate2
-   * /libs/fd/af/templates/simpleEnrollmentTemplate
-   * /libs/fd/af/templates/simpleEnrollmentTemplate2
-   * /libs/fd/af/templates/surveyTemplate
-   * /libs/fd/af/templates/surveyTemplate2
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate
-   * /libs/fd/af/templates/tabbedEnrollmentTemplate2
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
-   * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
+  * /libs/fd/af/templates/blankTemplate2
+  * /libs/fd/af/templates/simpleEnrollmentTemplate
+  * /libs/fd/af/templates/simpleEnrollmentTemplate2
+  * /libs/fd/af/templates/surveyTemplate
+  * /libs/fd/af/templates/surveyTemplate2
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate
+  * /libs/fd/af/templates/tabbedEnrollmentTemplate2
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate
+  * /libs/fd/afaddon/templates/advancedEnrollmentTemplate2
 
 * Pagine obsolete dei moduli adattivi:
 
-   * /libs/fd/af/components/page/survey
-   * /libs/fd/af/components/page/tabbedenrollment
-   * /libs/fd/afaddon/components/page/advancedenrollment
+  * /libs/fd/af/components/page/survey
+  * /libs/fd/af/components/page/tabbedenrollment
+  * /libs/fd/afaddon/components/page/advancedenrollment

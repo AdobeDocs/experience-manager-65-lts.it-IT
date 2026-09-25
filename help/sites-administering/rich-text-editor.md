@@ -8,12 +8,10 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 0%
-
+source-wordcount: '2975'
+ht-degree: 1%
 ---
-
-# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
+# Configurare il Rich Text editor {#configure-the-rich-text-editor}
 
 L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Icone, caselle di selezione, barre degli strumenti e menu sono disponibili per la modifica del testo in WYSIWYG.
 
@@ -88,8 +86,8 @@ Questa funzionalità è disponibile tramite una serie di plug-in, ciascuno con:
 
 * Una proprietà `features`:
 
-   * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
-   * Che può essere configurato utilizzando una procedura standard
+  * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
+  * Che può essere configurato utilizzando una procedura standard
 
 * Se necessario, proprietà e opzioni aggiuntive che richiedono una configurazione specializzata.
 
@@ -108,7 +106,7 @@ Nella tabella seguente sono elencati i plug-in correnti:
 | formato | sottolineatura grassetto corsivo | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | immagine | immagine | Supporto immagini di base (trascinamento dal contenuto o da Content Finder). A seconda del browser, il supporto presenta comportamenti diversi per gli autori |
 | tasti |  | Per definire questo valore, vedere [dimensioni scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| giustificare | justifyleft justifycenter justifyright | Allineamento paragrafo. |
+| giustifica | justifyleft justifycenter justifyright | Allineamento paragrafo. |
 | collegamenti | modifylink scollega ancoraggio | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | elenchi | rientro non ordinato ordinato rientro | Questo plug-in controlla sia il rientro [che gli elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin), inclusi gli elenchi nidificati. |
 | misctools | specialchars sourceedit | Strumenti vari consentono agli autori di immettere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
@@ -325,8 +323,8 @@ In particolare, per visualizzare i plug-in e le opzioni correlate disponibili:
 * Il componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornisce un campo modulo per la modifica di informazioni di testo formattato (testo formattato). Per informazioni su tutti i parametri disponibili per il modulo Rich Text, vedere Opzioni di configurazione.
 * Il componente RichText offre un&#39;ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
 
-   * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
-   * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
+  * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
+  * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
 
 * Sono inoltre disponibili ulteriori informazioni sulle regole di HTML per i collegamenti.
 

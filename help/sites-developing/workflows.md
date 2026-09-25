@@ -11,11 +11,9 @@ role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 3%
-
+source-wordcount: '1478'
+ht-degree: 4%
 ---
-
 # Sviluppo ed estensione dei flussi di lavoro{#developing-and-extending-workflows}
 
 AEM fornisce diversi strumenti e risorse per la creazione di modelli di flusso di lavoro, lo sviluppo di passaggi del flusso di lavoro e per l’interazione programmatica con i flussi di lavoro.

@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Assets
 exl-id: 21771c11-ecce-4eff-be5b-f55835a5644e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 1%
-
+source-wordcount: '423'
+ht-degree: 3%
 ---
-
 # Best practice per tradurre le risorse {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] supporta flussi di lavoro multilingue per la traduzione di file binari, metadati e tag per risorse digitali in più lingue e per la gestione delle risorse tradotte. Per informazioni dettagliate, vedere [Assets multilingue](multilingual-assets.md).

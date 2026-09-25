@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: a163598d-0a6e-45a8-b3b2-1f260007952b
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 2%
-
+source-wordcount: '1057'
+ht-degree: 8%
 ---
-
 # Abilitare i componenti core Adaptive Forms su AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 ## Applicabile a {#applies-to}
@@ -110,7 +108,7 @@ Per creare un progetto basato su Archetipo AEM 41 o [versione successiva](https:
 
       >[!NOTE]
       >
-      >* Se configuri un’altra topologia, accertati di aggiungere l’URL di invio, precompilazione e altro al inserisco nell&#39;elenco Consentiti a livello di Dispatcher.
+      >* Se configuri un’altra topologia, accertati di aggiungere l’URL di invio, il precaricamento e altri URL al inserisco nell&#39;elenco Consentiti di a livello di Dispatcher.
 
    1. Salva e chiudi il file.
 
@@ -159,7 +157,7 @@ Quando i componenti core Adaptive Forms sono abilitati per il tuo ambiente, all�
 
 ## Passaggio successivo
 
-* [Creare componenti core basati sul modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Creare componenti core basati su modulo adattivo](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Creazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Creare temi per moduli adattivi basati sui componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)

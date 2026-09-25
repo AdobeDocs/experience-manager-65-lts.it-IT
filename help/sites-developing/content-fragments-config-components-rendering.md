@@ -11,11 +11,9 @@ role: Developer
 exl-id: 4ed9232f-0e31-43bb-9f7d-3b351557288f
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Componenti di configurazione dei frammenti di contenuto per il rendering{#content-fragments-configuring-components-for-rendering}
 
 Esistono diversi [servizi avanzati](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relativi al rendering dei frammenti di contenuto. Per utilizzare questi servizi, i tipi di risorse di tali componenti devono farsi conoscere nel framework dei frammenti di contenuto.

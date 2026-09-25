@@ -9,10 +9,8 @@ exl-id: 4a075532-5ad9-4b1d-9e04-c0b80d215e00
 source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 0%
-
+ht-degree: 4%
 ---
-
 # Generazione rapporti sulle transazioni per AEM Forms {#transaction-reports-overview}
 
 Il rapporto delle transazioni in AEM Forms consente di monitorare tutte le transazioni da una determinata data della distribuzione AEM Forms. Questa funzionalità è progettata per ottenere informazioni sull’utilizzo dei moduli, aiutando in tal modo le parti interessate del business a comprendere a fondo i propri volumi di elaborazione digitale. Le operazioni, in questo contesto, comprendono varie attività quali:

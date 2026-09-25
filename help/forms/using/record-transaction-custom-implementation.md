@@ -10,18 +10,16 @@ role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
-
+source-wordcount: '294'
+ht-degree: 3%
 ---
-
 # Registrare una transazione per le implementazioni personalizzate per AEM Forms su OSGi {#record-a-transaction-for-custom-implementations}
 
 ## Applicabile a {#applies-to}
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation).
 
 Utilizzare l&#39;API TransactionRecorder per registrare automaticamente le azioni non contabilizzate come transazioni
 

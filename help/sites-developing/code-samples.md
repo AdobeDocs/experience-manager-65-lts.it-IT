@@ -11,11 +11,9 @@ role: Developer
 exl-id: 15471908-feb1-4178-a24d-7cefe7717820
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 4%
-
+source-wordcount: '178'
+ht-degree: 16%
 ---
-
 # Esempi di codice{#code-samples}
 
 Il team dei servizi Adobe Consulting ha generato una serie di esempi di codice Adobe Experience Manager (AEM). Questi esempi sono parti di codice ben commentate per aiutare gli sviluppatori di AEM a comprendere i principali elementi di base di AEM. Gli esempi sono disponibili qui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).

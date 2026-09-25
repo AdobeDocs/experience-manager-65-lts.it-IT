@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: 24b7d3e5-7755-45f5-b4ea-fb61f25cf806
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 1%
-
+source-wordcount: '1241'
+ht-degree: 2%
 ---
-
 # Sincronizzazione di moduli adattivi con i modelli di modulo XFA{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -140,4 +138,4 @@ Anche il campo che è stato eliminato è contrassegnato da un&#39;icona per indi
 
 Pacchetto di contenuti per l’esempio in questo articolo
 
-[Ottieni file](assets/sample-xfa-af-sync-1.0.zip)
+[Ottieni il file](assets/sample-xfa-af-sync-1.0.zip)

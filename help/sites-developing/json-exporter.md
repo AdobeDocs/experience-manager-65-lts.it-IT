@@ -1,6 +1,6 @@
 ---
 title: Esportatore JSON per Content Services
-description: AEM Content Services è progettato per generalizzare la descrizione e la distribuzione dei contenuti in/da AEM, non limitandosi alle pagine web. Forniscono contenuti a canali che non sono pagine web AEM tradizionali, utilizzando metodi standardizzati che possono essere utilizzati da qualsiasi cliente.
+description: AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web. Fornisce contenuti a canali diversi dalle tradizionali pagine web di AEM, utilizzando metodi standardizzati utilizzabili da qualsiasi cliente.
 contentOwner: User
 content-type: reference
 topic-tags: components
@@ -11,11 +11,9 @@ role: Developer
 exl-id: 8c66b978-872e-4f5e-8f64-1e2dfb7d7dde
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 24%
-
+source-wordcount: '453'
+ht-degree: 43%
 ---
-
 # Esportatore JSON per Content Services{#json-exporter-for-content-services}
 
 AEM Content Services è progettato per generalizzare la descrizione e la consegna dei contenuti in/da AEM, non limitandosi alle pagine web.
@@ -82,15 +80,15 @@ Consulta anche:
 
 * API HTTP di Assets
 
-   * [API HTTP di Assets](/help/assets/mac-api-assets.md)
+  * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
 * Modelli Sling:
 
-   * [Modelli Sling - Associazione di una classe di modelli a un tipo di risorsa dalla versione 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+  * [Modelli Sling: associazione di una classe di modelli a un tipo di risorsa dalla versione 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM con JSON:
 
-   * [Ottenimento delle informazioni di pagina in formato JSON](/help/sites-developing/pageinfo.md)
+  * [Ottenimento delle informazioni di pagina in formato JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentazione correlata {#related-documentation}
 

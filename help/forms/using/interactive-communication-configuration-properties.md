@@ -12,11 +12,9 @@ role: Admin, User, Developer
 exl-id: 73e4cd72-0479-4b3c-82d2-653cded590b9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 6%
-
+source-wordcount: '614'
+ht-degree: 9%
 ---
-
 # Proprietà di configurazione delle comunicazioni interattive{#interactive-communications-configuration-properties}
 
 Le comunicazioni interattive includono proprietà configurate automaticamente dopo l&#39;installazione del pacchetto del componente aggiuntivo [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Gli autori di comunicazioni interattive possono modificare queste proprietà di configurazione predefinite utilizzando la pagina **Configurazione console Web Adobe Experience Manager**.
@@ -55,7 +53,7 @@ Selezionare **Configurazione frammenti di documento** nella pagina **Configurazi
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Rientro</td> 

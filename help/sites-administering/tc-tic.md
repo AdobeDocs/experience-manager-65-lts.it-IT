@@ -8,11 +8,9 @@ role: Admin
 exl-id: b89e2899-35b9-4105-bfa5-ca21dc6f4e14
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 44%
-
+source-wordcount: '1289'
+ht-degree: 45%
 ---
-
 # Configurazione del framework di integrazione della traduzione{#configuring-the-translation-integration-framework}
 
 Il Translation Integration Framework si integra con servizi di traduzione di terze parti per orchestrare la traduzione dei contenuti AEM.

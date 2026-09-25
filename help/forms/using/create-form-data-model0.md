@@ -10,18 +10,16 @@ role: Admin, User, Developer
 exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 0%
-
+source-wordcount: '2796'
+ht-degree: 1%
 ---
-
 # Tutorial: creare un modello di dati modulo in AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 Questo tutorial è un passaggio della serie [Crea la tua prima comunicazione interattiva](/help/forms/using/create-your-first-interactive-communication.md). Si consiglia di seguire la serie in sequenza cronologica per comprendere, eseguire e dimostrare il caso di utilizzo completo dell’esercitazione.
 
-## Informazioni sull’esercitazione {#about-the-tutorial}
+## Informazioni sul tutorial {#about-the-tutorial}
 
 Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati modulo da diverse origini dati back-end, come il profilo utente di AEM, i servizi web RESTful, i servizi web basati su SOAP, i servizi OData e i database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
 
@@ -31,7 +29,7 @@ Questo tutorial illustra i passaggi necessari per preparare, creare, configurare
 
 * [Configurare il database](../../forms/using/create-form-data-model0.md#step-set-up-the-database)
 * [Configura database MySQL come origine dati](../../forms/using/create-form-data-model0.md#step-configure-mysql-database-as-data-source)
-* [Crea modello dati modulo](../../forms/using/create-form-data-model0.md#step-create-form-data-model)
+* [Creare un modello di dati modulo](../../forms/using/create-form-data-model0.md#step-create-form-data-model)
 * [Configura modello dati modulo](../../forms/using/create-form-data-model0.md#step-configure-form-data-model)
 * [Test modello dati modulo](../../forms/using/create-form-data-model0.md#step-test-form-data-model-and-services)
 
@@ -191,14 +189,14 @@ La configurazione del modello dati del modulo include:
 
    * **Oggetti modello dati**:
 
-      * effetti
-      * chiamate
-      * cliente
+     * effetti
+     * chiamate
+     * cliente
 
    * **Servizi:**
 
-      * ottenere
-      * aggiorna
+     * ottenere
+     * aggiorna
 
    Selezionare **Aggiungi selezionati** per aggiungere gli oggetti e i servizi del modello dati selezionati al modello dati del modulo.
 
@@ -253,8 +251,8 @@ In base al caso d’uso, crea le seguenti associazioni tra gli oggetti del model
 
 | Associazione | Oggetti modello dati |
 |---|---|
-| 1:n | cliente:chiamate (è possibile associare più chiamate a un cliente con una fattura mensile) |
-| 1:1 | cliente:fatture (una fattura è associata a un cliente per un mese specifico) |
+| 1:n | cliente:calls (è possibile associare più chiamate a un cliente in una fattura mensile) |
+| 1:1 | cliente:bills (una fattura è associata a un cliente per un mese specifico) |
 
 Per creare associazioni tra oggetti modello dati, effettuare le operazioni riportate di seguito.
 
@@ -275,7 +273,7 @@ Per creare associazioni tra oggetti modello dati, effettuare le operazioni ripor
 1. Nella finestra di dialogo **Aggiungi argomento**:
 
    * Seleziona **mobilenum** dall&#39;elenco a discesa **Name**. La proprietà mobile number è una proprietà comune disponibile negli oggetti modello dati del cliente e delle chiamate. Di conseguenza, viene utilizzato per creare un’associazione tra il cliente e chiama oggetti modello dati.
-Per ogni numero di cellulare disponibile nell’oggetto modello dati del cliente, nella tabella chiamate sono disponibili più record di chiamata.
+     Per ogni numero di cellulare disponibile nell’oggetto modello dati del cliente, nella tabella chiamate sono disponibili più record di chiamata.
 
    * Specificare un titolo e una descrizione facoltativi per l&#39;argomento.
    * Seleziona **cliente** dall&#39;elenco a discesa **Associazione a**.
@@ -303,7 +301,7 @@ Per ogni numero di cellulare disponibile nell’oggetto modello dati del cliente
    * Selezionare **distinte** dall&#39;elenco a discesa **Oggetto modello**.
 
    * Selezionare **get** dall&#39;elenco a discesa **Service**. La proprietà **billplan**, che è la chiave primaria per la tabella delle distinte, è già disponibile nella sezione **Arguments**.
-Gli oggetti modello dati fatture e cliente vengono collegati utilizzando rispettivamente le proprietà billplan (fatture) e customerplan (cliente). Creare un&#39;associazione tra queste proprietà per recuperare i dettagli del piano per qualsiasi cliente disponibile nel database MySQL.
+     Gli oggetti modello dati fatture e cliente vengono collegati utilizzando rispettivamente le proprietà billplan (fatture) e customerplan (cliente). Creare un&#39;associazione tra queste proprietà per recuperare i dettagli del piano per qualsiasi cliente disponibile nel database MySQL.
 
    * Seleziona **cliente** dall&#39;elenco a discesa **Associazione a**.
 

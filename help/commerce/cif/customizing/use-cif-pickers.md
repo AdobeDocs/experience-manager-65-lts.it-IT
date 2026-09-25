@@ -11,11 +11,9 @@ role: Admin, Developer
 exl-id: 25442753-8309-452b-881a-d33ab159d5b2
 source-git-commit: d571dc696e42bae873cd58f2e7f321bd3002f42e
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
-
 ---
-
 # Selettori per l’authoring di contenuti AEM e Commerce {#cif-pickers}
 
 AEM Content &amp; Commerce Authoring fornisce una serie di strumenti di authoring per aiutare autori e addetti al marketing AEM a lavorare in modo efficiente con i dati di prodotto e i cataloghi commerce. Il selettore prodotti e il selettore categorie fanno parte del componente aggiuntivo CIF e sono utilizzati dai componenti core di CIF. I progetti possono utilizzare questi selettori in qualsiasi finestra di dialogo dei componenti per selezionare prodotti o categorie.

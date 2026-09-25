@@ -1,6 +1,6 @@
 ---
 title: Creare un modulo adattivo
-description: Scopri come creare un modulo adattivo utilizzando  [!DNL Experience Manager Forms]. I Forms adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Approfondisci le modalità di creazione di un modulo adattivo basato su un modello di dati modulo e uno schema XML o JSON.
+description: Scopri come creare un modulo adattivo utilizzando [!DNL Experience Manager Forms]. I Forms adattivi sono moduli HTML5 reattivi che semplificano la raccolta e l’elaborazione delle informazioni. Approfondisci le modalità di creazione di un modulo adattivo basato su un modello di dati modulo e uno schema XML o JSON.
 Keywords: create adaptive form core component, create core component based adaptive form, creare adaptive form
 role: Admin, Developer
 feature: Adaptive Forms,Core Components
@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: eb857ab1-ab1b-4c77-af3b-4507f53a8241
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 24%
-
+source-wordcount: '1922'
+ht-degree: 26%
 ---
-
 # Creazione di componenti core basati su Adaptive Forms {#creating-an-adaptive-form-core-components}
 
 
@@ -70,7 +68,7 @@ Per creare un modulo adattivo è necessario quanto segue:
 1. Viene visualizzato **[!UICONTROL Aggiungi proprietà]**. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
 
    * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di [!DNL Experience Manager Forms].
-   * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo del nome può contenere solo caratteri alfanumerici, trattini e trattini bassi.
+   * **[!UICONTROL Nome:]** specifica il nome del modulo. Nell’archivio viene creato un nodo con il nome specificato. Quando si inizia a digitare un titolo, il valore del campo nome viene generato automaticamente. Puoi modificare il valore suggerito. Il campo nome può contenere solo caratteri alfanumerici, trattini e caratteri di sottolineatura.
    * **[!UICONTROL Descrizione:]** Specifica le informazioni dettagliate sul modulo.
    * **[!UICONTROL Libreria client temi]:** Specifica il tema per un modulo adattivo. Per impostazione predefinita, il tema `adaptiveform.theme.canvas3` è selezionato. Puoi anche scegliere un tema diverso dal menu a discesa **[!UICONTROL Libreria client tema]**.
    * **[!UICONTROL Contenitore configurazione:]** definisce un percorso in cui vengono archiviati i file di configurazione per Adaptive Forms. Questi file di configurazione contengono impostazioni e proprietà relative al comportamento e all’aspetto di Adaptive Forms.
@@ -197,6 +195,6 @@ Per rinominare un modulo adattivo, effettua le seguenti operazioni:
 
 ## Consulta anche
 
-* [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
+* [Creare componenti core basati su modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)

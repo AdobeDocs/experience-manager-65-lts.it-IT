@@ -12,11 +12,9 @@ feature: Adaptive Forms
 exl-id: 1681e92b-2d88-4b10-a700-a516aa5a02c8
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
-
+source-wordcount: '334'
+ht-degree: 6%
 ---
-
 # AEM Forms su gruppi e privilegi OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 ## Applicabile a {#applies-to}

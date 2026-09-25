@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '616'
 ht-degree: 0%
-
 ---
-
 # Controllo delle versioni, revisione e aggiunta di commenti in un modulo adattivo
 
 <span class="preview">Questa funzionalità non è attivata per impostazione predefinita. È possibile scrivere dal proprio indirizzo ufficiale all&#39;indirizzo aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità.</span>

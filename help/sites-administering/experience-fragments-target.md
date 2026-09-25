@@ -12,11 +12,9 @@ role: Admin
 exl-id: 39473f0a-e4ee-4372-a0ea-ccf5d32501b9
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # Esportazione di frammenti di esperienza in Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 Puoi esportare [Frammenti esperienza](/help/sites-authoring/experience-fragments.md), creati in Adobe Experience Manager (AEM), in Adobe Target (Target). Possono quindi essere utilizzate come offerte nelle attività di Target, per testare e personalizzare le esperienze su larga scala.
@@ -187,12 +185,12 @@ Per evitare tali situazioni:
 
   Il messaggio di errore in AEM non impedisce all’utente di (forzare) eliminare il frammento di esperienza. Se il frammento di esperienza viene eliminato:
 
-   * L’offerta Target con il frammento di esperienza AEM può mostrare un comportamento indesiderato
+  * L’offerta Target con il frammento di esperienza AEM può mostrare un comportamento indesiderato
 
-      * L&#39;offerta sarà probabilmente ancora visualizzata, poiché l&#39;HTML del frammento di esperienza è stato inviato su Target
-      * Eventuali riferimenti nel frammento di esperienza potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
+    * L&#39;offerta sarà probabilmente ancora visualizzata, poiché l&#39;HTML del frammento di esperienza è stato inviato su Target
+    * Eventuali riferimenti nel frammento di esperienza potrebbero non funzionare correttamente se le risorse di riferimento sono state eliminate anche in AEM.
 
-   * Eventuali ulteriori modifiche al frammento di esperienza sono impossibili in quanto non esiste più in AEM.
+  * Eventuali ulteriori modifiche al frammento di esperienza sono impossibili in quanto non esiste più in AEM.
 
 
 ## Rimozione delle ClientLibs dai frammenti esperienza esportati in Target {#removing-clientlibs-from-fragments-exported-target}
