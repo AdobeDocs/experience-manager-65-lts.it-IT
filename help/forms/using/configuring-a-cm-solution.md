@@ -10,11 +10,9 @@ role: Admin, User, Developer
 exl-id: da668935-9d16-49e1-8e7a-772fc4040c1d
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 1%
-
+source-wordcount: '307'
+ht-degree: 4%
 ---
-
 # Configurazione di una soluzione di gestione della corrispondenza {#configuring-a-correspondence-management-solution}
 
 ## Definizione dell’URL dell’istanza di authoring per VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -51,4 +49,4 @@ Segui questi passaggi per definire l’URL dell’istanza Publish per la gestion
 
 1. Fai clic su **[!UICONTROL Salva]**.
 
-Per ulteriori informazioni sulla configurazione di Gestione corrispondenza, vedere [Proprietà di configurazione di Gestione corrispondenza](https://helpx.adobe.com/it/aem-forms/6-2/cm-configuration-properties.html).
+Per ulteriori informazioni sulla configurazione di Gestione corrispondenza, vedere [Proprietà di configurazione di Gestione corrispondenza](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

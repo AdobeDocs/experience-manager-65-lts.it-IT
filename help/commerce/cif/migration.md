@@ -1,24 +1,22 @@
 ---
-title: Migrazione al componente aggiuntivo AEM Commerce integration framework (CIF)
-description: Come migrare al componente aggiuntivo AEM Commerce integration framework (CIF) da una versione precedente.
+title: Migrazione al componente aggiuntivo AEM Commerce Integration Framework (CIF)
+description: Come migrare al componente aggiuntivo AEM Commerce Integration Framework (CIF) da una versione precedente.
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 847c33c1-17d6-447a-9f2c-91f2a81a3f04
 source-git-commit: 981b175b039fd7ffbddf558a77d2da2fed52ad79
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 4%
-
+source-wordcount: '320'
+ht-degree: 5%
 ---
-
 # Guida alla migrazione per il componente aggiuntivo Experience Manager {#cif-migration}
 
 Questa guida aiuta a identificare le aree da aggiornare per la migrazione del componente aggiuntivo Experience Manager.
 
 ## Componente aggiuntivo CIF
 
-Il componente aggiuntivo CIF è disponibile tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=versione-destinazione%3Aaem%2F6-5-lts&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). È compatibile e fornisce le stesse funzioni del componente aggiuntivo CIF per Experience Manager as a Cloud Service.
+Il componente aggiuntivo CIF è disponibile tramite il [portale di distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5-lts&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16). È compatibile e fornisce le stesse funzioni del componente aggiuntivo CIF per Experience Manager as a Cloud Service.
 
 Consulta [Guida introduttiva a AEM Content e Commerce](getting-started.md).
 
@@ -30,7 +28,7 @@ L&#39;importazione dei dati del catalogo dei prodotti non è supportata dal comp
 
 >[!TIP]
 >
->Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/it/products/magento/open-source.html).
+>Se non sono disponibili API in tempo reale, per l’integrazione deve essere utilizzata una cache di prodotto esterna con API. Esempio [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Esperienze nel catalogo dei prodotti con AEM Rendering
 
