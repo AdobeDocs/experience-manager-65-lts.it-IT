@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Forms
 exl-id: 59b54622-55c4-4526-b584-c08bbd1d08bb
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '1947'
-ht-degree: 5%
-
+source-wordcount: '2092'
+ht-degree: 6%
 ---
-
 # Creare o personalizzare un tema per moduli adattivi {#introduction-to-theme}
 
 ## Applicabile a {#applies-to}
@@ -30,13 +28,13 @@ In AEM Forms 6.5, un tema è una libreria client di AEM che puoi utilizzare per 
 
 L’ambiente AEM 6.5 fornisce i temi elencati di seguito per i Forms adattivi basati su Componenti core:
 
-* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
-* [Tema assistenza sanitaria](https://github.com/adobe/aem-forms-theme-healthcare)
+* [Tema Healthcare](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Tema pubblico](https://github.com/adobe/aem-forms-theme-public)
-* [Tema produzione](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Tema Manufacturing](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 ## Struttura dei temi {#understanding-structure-of-theme}
 
@@ -56,11 +54,11 @@ Un tema è un pacchetto che include il file CSS, i file JavaScript e le risorse 
 
 AEM Forms 6.5 fornisce i temi elencati di seguito per i Componenti core basati su Adaptive Forms.
 
-* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema pubblico](https://github.com/adobe/aem-forms-theme-public)
-* [Tema produzione](https://github.com/adobe/aem-forms-theme-manufacturing)
+* [Tema Manufacturing](https://github.com/adobe/aem-forms-theme-manufacturing)
 
 Puoi [personalizzare uno di questi temi per creare un tema](#customize-a-theme-core-components).
 
@@ -113,7 +111,7 @@ Gli esempi forniti nel documento sono basati sul tema **Canvas**, ma è possibil
 
 Per clonare un tema per Forms adattivo basato su Componenti core, scegli uno dei seguenti temi:
 
-* [Tema Area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema area di lavoro](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Tema EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
@@ -152,7 +150,7 @@ Puoi personalizzare i singoli componenti o apportare modifiche a livello di tema
 Il file `variable.scss` contiene le variabili globali del tema. Aggiornando queste variabili, puoi apportare modifiche relative allo stile a livello di tema. Per applicare gli stili a livello di tema, effettua le seguenti operazioni:
 
 1. Apri il file `<your-theme-sources>/src/site/_variables.scss` per la modifica.
-1. Modifica il valore di qualsiasi proprietà. Ad esempio, il colore di errore predefinito è il rosso. Per modificare il colore dell&#39;errore da rosso a blu, modificare il codice esadecimale del colore della variabile `$error`. Esempio: `$error: #196ee5`.
+1. Modifica il valore di qualsiasi proprietà. Ad esempio, il colore di errore predefinito è il rosso. Per modificare il colore dell&#39;errore da rosso a blu, modificare il codice esadecimale del colore della variabile `$error`. Ad esempio, `$error: #196ee5`.
 
    ![Esempio: colore dell&#39;errore impostato su blu](/help/forms/using/assets/theme-level-changes.png)
 
@@ -337,9 +335,9 @@ Per rimuovere i temi inutilizzati o indesiderati:
 
 ## Consulta anche
 
-* [Creare componenti core basati sul modulo adattivo](create-an-adaptive-form-core-components.md)
+* [Creare componenti core basati su modulo adattivo](create-an-adaptive-form-core-components.md)
 * [Utilizza l’editor di regole per aggiungere un comportamento dinamico al modulo](rule-editor.md)
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi di esempio e modelli di dati modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

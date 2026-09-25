@@ -8,12 +8,10 @@ role: Admin
 exl-id: 5511817e-dcf8-463d-8e62-cbbef64ad162
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2817'
-ht-degree: 0%
-
+source-wordcount: '2975'
+ht-degree: 1%
 ---
-
-# Configurare l’editor Rich Text {#configure-the-rich-text-editor}
+# Configurare il Rich Text editor {#configure-the-rich-text-editor}
 
 L’editor Rich Text offre agli autori un’ampia gamma di funzionalità per modificare il contenuto di testo. Icone, caselle di selezione, barre degli strumenti e menu sono disponibili per la modifica del testo in WYSIWYG.
 
@@ -88,8 +86,8 @@ Questa funzionalità è disponibile tramite una serie di plug-in, ciascuno con:
 
 * Una proprietà `features`:
 
-   * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
-   * Che può essere configurato utilizzando una procedura standard
+  * Utilizzato per attivare o disattivare le funzionalità di base di quel plug-in
+  * Che può essere configurato utilizzando una procedura standard
 
 * Se necessario, proprietà e opzioni aggiuntive che richiedono una configurazione specializzata.
 
@@ -97,7 +95,7 @@ Le funzionalità di base dell&#39;editor Rich Text vengono attivate o disattivat
 
 Nella tabella seguente sono elencati i plug-in correnti:
 
-* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1&rbrace;.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
+* ID plug-in con collegamento alla documentazione API. ID utilizzato come nome del nodo durante l&#39;attivazione di un plug-in [1}.](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)
 * Valori consentiti per la proprietà `features`.
 * Descrizione delle funzionalità fornite dal plug-in.
 
@@ -108,7 +106,7 @@ Nella tabella seguente sono elencati i plug-in correnti:
 | formato | sottolineatura grassetto corsivo | [Formattazione testo di base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | immagine | immagine | Supporto immagini di base (trascinamento dal contenuto o da Content Finder). A seconda del browser, il supporto presenta comportamenti diversi per gli autori |
 | tasti |  | Per definire questo valore, vedere [dimensioni scheda](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| giustificare | justifyleft justifycenter justifyright | Allineamento paragrafo. |
+| giustifica | justifyleft justifycenter justifyright | Allineamento paragrafo. |
 | collegamenti | modifylink scollega ancoraggio | [Collegamenti ipertestuali e ancoraggi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
 | elenchi | rientro non ordinato ordinato rientro | Questo plug-in controlla sia il rientro [che gli elenchi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin), inclusi gli elenchi nidificati. |
 | misctools | specialchars sourceedit | Strumenti vari consentono agli autori di immettere [caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) o modificare l&#39;origine di HTML. Inoltre, puoi aggiungere un intero [intervallo di caratteri speciali](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) se desideri definire un tuo elenco. |
@@ -176,9 +174,9 @@ Per informazioni dettagliate sulle configurazioni dei plug-in dell&#39;editor Ri
 
 >[!NOTE]
 >
->Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=it#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text in un&#39;interfaccia grafica come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
+>Il componente di testo [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) consente agli editor di modelli di configurare molti plug-in dell&#39;editor Rich Text in un&#39;interfaccia grafica come criteri di contenuto, eliminando la necessità di configurazione tecnica. I criteri dei contenuti possono funzionare con le configurazioni dell’interfaccia utente dell’editor Rich Text come descritto in questo documento.
 >
->Per ulteriori informazioni, consulta la sezione [Impostazioni dell&#39;interfaccia utente e criteri del contenuto](/help/sites-administering/rich-text-editor.md) di questo documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=it).
+>Per ulteriori informazioni, consulta la sezione [Impostazioni dell&#39;interfaccia utente e criteri del contenuto](/help/sites-administering/rich-text-editor.md) di questo documento e [Creazione di modelli di pagina](/help/sites-authoring/templates.md) e la [documentazione per gli sviluppatori di Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -254,7 +252,7 @@ Le opzioni disponibili nell’editor Rich Text scorrono a valle dalle configuraz
 * Se la configurazione dell&#39;interfaccia utente dell&#39;editor Rich Text è stata rimossa o non consente un elemento, il criterio del contenuto non è in grado di configurarlo.
 * Un autore ha accesso solo alle funzionalità rese disponibili dalle configurazioni dell’interfaccia utente e dai criteri dei contenuti.
 
-Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=it#the-text-component-and-the-rich-text-editor).
+Ad esempio, puoi visualizzare la [documentazione dei componenti core testo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizzare la mappatura tra icone e comandi della barra degli strumenti {#iconstoolbar}
 
@@ -325,8 +323,8 @@ In particolare, per visualizzare i plug-in e le opzioni correlate disponibili:
 * Il componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornisce un campo modulo per la modifica di informazioni di testo formattato (testo formattato). Per informazioni su tutti i parametri disponibili per il modulo Rich Text, vedere Opzioni di configurazione.
 * Il componente RichText offre un&#39;ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
 
-   * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
-   * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
+  * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
+  * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.
 
 * Sono inoltre disponibili ulteriori informazioni sulle regole di HTML per i collegamenti.
 

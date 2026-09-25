@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: e564101f-2d36-475d-b402-e973d13196ff
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '204'
 ht-degree: 7%
-
 ---
-
 # Confrontare i moduli adattivi {#compare-two-forms}
 
 <span class="preview">Questa funzionalità non è attivata per impostazione predefinita. È possibile scrivere dal proprio indirizzo ufficiale all&#39;indirizzo aem-forms-ea@adobe.com per richiedere l&#39;accesso alla funzionalità.</span>

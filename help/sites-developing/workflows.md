@@ -11,11 +11,9 @@ role: Developer
 exl-id: 625affd0-0e1a-4db8-812f-b6ce70cfe035
 source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 3%
-
+source-wordcount: '1478'
+ht-degree: 4%
 ---
-
 # Sviluppo ed estensione dei flussi di lavoro{#developing-and-extending-workflows}
 
 AEM fornisce diversi strumenti e risorse per la creazione di modelli di flusso di lavoro, lo sviluppo di passaggi del flusso di lavoro e per l’interazione programmatica con i flussi di lavoro.
@@ -204,7 +202,7 @@ Ad esempio, per un flusso di lavoro con sei passaggi e quattro fasi:
 
 ### Flussi di lavoro e Forms {#workflows-and-forms}
 
-In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core del modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=it) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
+In genere, i flussi di lavoro vengono utilizzati per elaborare l’invio dei moduli in AEM. Può essere con i [componenti core del modulo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponibili in un&#39;istanza AEM standard o con la [soluzione AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Durante la creazione di un modulo, l’invio del modulo può essere facilmente associato a un modello di flusso di lavoro. Ad esempio, per archiviare il contenuto in una posizione specifica del repository o per notificare a un utente l&#39;invio del modulo e il relativo contenuto.
 

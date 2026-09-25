@@ -1,5 +1,5 @@
 ---
-title: Frammenti di moduli adattivi
+title: Frammenti di un modulo adattivo
 description: I moduli adattivi forniscono un meccanismo per creare un segmento di modulo, ad esempio un pannello o un gruppo di campi, da utilizzare in qualsiasi modulo adattivo. Puoi anche salvare un pannello esistente come frammento.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -11,12 +11,10 @@ role: User, Developer
 exl-id: 7da165ac-2039-4ac8-810d-fbe6f771453a
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 4%
-
+source-wordcount: '2463'
+ht-degree: 5%
 ---
-
-# Frammenti di moduli adattivi{#adaptive-form-fragments}
+# Frammenti di un modulo adattivo{#adaptive-form-fragments}
 
 ## Applicabile a {#applies-to}
 
@@ -32,7 +30,7 @@ I moduli adattivi forniscono un meccanismo pratico per creare segmenti di modulo
 
 >[!NOTE]
 >
-> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Puoi personalizzare facilmente l&#39;esperienza del frammento per gli utenti con la [finestra di dialogo per configurazione e finestra di dialogo per progettazione del componente Frammento di modulo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Creare un frammento {#create-a-fragment}
 
@@ -107,7 +105,7 @@ Inoltre, se hai selezionato uno schema XML o un modello di modulo XDP come model
    * **Modello modulo**: a seconda del modello del modulo adattivo, in questo campo viene visualizzato **Schema XML**, **Modello modulo** o **Nessuno**. È un campo non modificabile.
 
    * **Radice modello frammento**: viene visualizzata solo nei moduli adattivi basati su XSD. Specifica la directory principale del modello per frammenti. È possibile scegliere **/** o il tipo complesso XSD dal menu a discesa. Puoi riutilizzare il frammento in un altro modulo adattivo solo se selezioni il tipo complesso come radice del modello di frammento.
-Se scegli **/** come radice del modello di frammento, la struttura XSD completa dalla radice è visibile nella scheda del modello dati del modulo adattivo. Per una directory principale del modello di frammento di tipo complesso, nella scheda del modello dati del modulo adattivo sono visibili solo i discendenti del tipo complesso selezionato. Se si crea un frammento e si sceglie un tipo complesso come **Radice modello frammento**, è possibile utilizzarlo ovunque venga utilizzato quel tipo complesso, all&#39;interno dello stesso modulo o in più moduli.
+     Se scegli **/** come radice del modello di frammento, la struttura XSD completa dalla radice è visibile nella scheda del modello dati del modulo adattivo. Per una directory principale del modello di frammento di tipo complesso, nella scheda del modello dati del modulo adattivo sono visibili solo i discendenti del tipo complesso selezionato. Se si crea un frammento e si sceglie un tipo complesso come **Radice modello frammento**, è possibile utilizzarlo ovunque venga utilizzato quel tipo complesso, all&#39;interno dello stesso modulo o in più moduli.
 
    * **Rif. XSD**: viene visualizzato solo nei moduli adattivi basati su XSD. Viene visualizzata la posizione dello schema XML.
 
@@ -224,7 +222,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
    <td><p>Copia il frammento selezionato. Il pulsante Incolla viene visualizzato nella barra degli strumenti.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Scarica</p> </td>
+   <td><p>Download</p> </td>
    <td><p>Scarica il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -244,7 +242,7 @@ Puoi eseguire diverse operazioni sui frammenti di moduli adattivi utilizzando l�
    <td><p>Pubblica o annulla la pubblicazione del frammento selezionato.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Elimina</p> </td>
+   <td><p>Eliminare</p> </td>
    <td><p>Elimina il frammento selezionato.<br /> <br /> </p> </td>
   </tr>
  </tbody>

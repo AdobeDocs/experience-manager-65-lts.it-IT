@@ -10,11 +10,9 @@ role: Admin, User, Developer
 exl-id: be7493a9-1e3b-4918-8b3e-fb1a2000b453
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
-
+source-wordcount: '846'
+ht-degree: 2%
 ---
-
 # Creare esperienze mirate in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrare Adobe Target con AEM Forms {#integrate-adobe-target-with-aem-forms}
@@ -36,8 +34,8 @@ Configura Adobe Target in AEM per utilizzarlo con moduli adattivi e comunicazion
 1. Nella pagina Attività, seleziona **Crea > Crea marchio**.
 1. Viene chiesto di scegliere un modello e di immettere le proprietà.
 
-   Selezionare un modello, quindi selezionare **Avanti.** Immetti il titolo del tuo marchio nella sezione Proprietà e seleziona **Crea.**
-Il tuo marchio è ora elencato nella pagina Attività.
+   Seleziona un modello, seleziona **Avanti.** Immetti il titolo del tuo marchio nella sezione Proprietà e seleziona **Crea.**
+   Il tuo marchio è ora elencato nella pagina Attività.
 
 1. Seleziona il brand nella pagina Attività.
 1. Nell&#39;area master del tuo marchio, seleziona **Crea** > **Crea attività**.

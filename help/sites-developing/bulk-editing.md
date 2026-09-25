@@ -1,5 +1,5 @@
 ---
-title: Configurazione della pagina per la modifica in blocco delle proprietà di pagina
+title: Configurazione della pagina per la modifica in blocco delle proprietà pagina
 description: La modifica in blocco delle proprietà di pagina consente di modificare le proprietà di più pagine contemporaneamente
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ role: Developer
 exl-id: 7ba0a378-0b52-40bd-8dab-32490594558e
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 0%
-
+source-wordcount: '419'
+ht-degree: 7%
 ---
-
-# Configurazione della pagina per la modifica in blocco delle proprietà di pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurazione della pagina per la modifica in blocco delle proprietà pagina {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [La modifica in blocco delle proprietà della pagina](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) consente di modificare le proprietà di più pagine contemporaneamente.
 

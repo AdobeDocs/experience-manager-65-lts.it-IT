@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’azione Invia
+title: Configurazione dell’azione di invio
 description: Forms consente di configurare un’azione di invio per definire come viene elaborato un modulo adattivo dopo l’invio. Puoi utilizzare azioni di invio incorporate o scriverne una da zero.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,12 +10,10 @@ role: Admin, User, Developer
 exl-id: a5aff5dd-912d-49ee-94e8-38cdbc396e5b
 source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
 workflow-type: tm+mt
-source-wordcount: '2602'
-ht-degree: 4%
-
+source-wordcount: '2700'
+ht-degree: 6%
 ---
-
-# Configurazione dell’azione Invia {#configuring-the-submit-action}
+# Configurazione dell’azione di invio {#configuring-the-submit-action}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
@@ -23,7 +21,7 @@ ht-degree: 4%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html).
 
 
 ## Introduzione all’invio di azioni {#introduction-to-submit-actions}
@@ -43,7 +41,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 * Invia PDF tramite e-mail
 * Richiama un Forms Workflow
 * Inviare utilizzando il modello dati modulo
-* Azione di invio Forms Portal
+* Azione Invio al portale dei moduli
 * Richiama un flusso di lavoro AEM
 * Invia a Power Automate
 
@@ -54,7 +52,7 @@ Le azioni di invio predefinite disponibili con i moduli adattivi sono:
 >[!NOTE]
 >
 >Assicurati che la cartella [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
->&#x200B;>esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
+>esiste. La directory è necessaria per archiviare temporaneamente gli allegati. Se la directory non esiste, creala.
 
 >[!CAUTION]
 >
@@ -133,7 +131,7 @@ Inoltre, è possibile inviare un allegato del modulo utilizzando un modello di d
 
 Per informazioni sul modello dati modulo, vedere [Integrazione dati AEM Forms](../../forms/using/data-integration.md).
 
-## Azione di invio Forms Portal {#forms-portal-submit-action}
+## Azione Invio al portale dei moduli {#forms-portal-submit-action}
 
 L&#39;opzione **Azione invio portale Forms** rende disponibili i dati del modulo tramite un portale AEM Forms.
 
@@ -159,7 +157,7 @@ L’azione Invia inserisce quanto segue nella posizione del payload del flusso d
 
 ## Invia a Power Automate {#microsoft-power-automate}
 
-È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business basate sui dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
+È possibile configurare un modulo adattivo per eseguire un flusso cloud di Microsoft® Power Automate all’invio. Il modulo adattivo configurato invia i dati acquisiti, gli allegati e il documento di record al flusso cloud Power Automate per l’elaborazione. Consente di creare un’esperienza di acquisizione dati personalizzata sfruttando al contempo la potenza di Microsoft® Power Automate per creare logiche di business sulla base dei dati acquisiti e automatizzare i flussi di lavoro dei clienti. Di seguito sono riportati alcuni esempi di cosa è possibile fare dopo l’integrazione di un modulo adattivo con Microsoft® Power Automate:
 
 * Utilizzare dati Forms adattivi in processi aziendali Power Automate
 * Utilizza Power Automate per inviare i dati acquisiti a più di 500 origini dati o a qualsiasi API disponibile pubblicamente
@@ -194,13 +192,13 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 1. Fai clic su **[!UICONTROL Crea]** > **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa. Viene visualizzata la procedura guidata di configurazione di SharePoint.
 1. Specifica il **[!UICONTROL Titolo]**, **[!UICONTROL ID client]**, **[!UICONTROL Segreto client]** e **[!UICONTROL URL OAuth]**. Per informazioni su come recuperare l&#39;ID client, il segreto client e l&#39;ID tenant per l&#39;URL OAuth, consulta la [documentazione di Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * Puoi recuperare `Client ID` e `Client Secret` dell&#39;app dal portale Microsoft® Azure.
-   * Nel portale Microsoft® Azure, aggiungere l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
+   * Nel portale Microsoft® Azure, aggiungi l&#39;URI di reindirizzamento come `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Sostituisci `[author-instance]` con l&#39;URL dell&#39;istanza di authoring.
    * Aggiungere le autorizzazioni API `offline_access` e `Sites.Manage.All` nella scheda **Microsoft® Graph** per fornire le autorizzazioni di lettura/scrittura. Aggiungere l&#39;autorizzazione `AllSites.Manage` nella scheda **Sharepoint** per interagire in remoto con i dati di SharePoint.
-   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale di Microsoft® Azure.
+   * Usa URL OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Sostituisci `<tenant-id>` con `tenant-id` dell&#39;app dal portale Microsoft® Azure.
 
      >[!NOTE]
      >
-     > Il campo **segreto client** è obbligatorio oppure facoltativo in base alla configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
+     > Il campo **segreto client** è obbligatorio o facoltativo a seconda della configurazione dell&#39;applicazione Azure Active Directory. Se l’applicazione è configurata per l’utilizzo di un segreto client, è obbligatorio fornire il segreto client.
 
 1. Fai clic su **[!UICONTROL Connetti]**. Se la connessione ha esito positivo, viene visualizzato il messaggio `Connection Successful`.
 1. Selezionare **[!UICONTROL Sito SharePoint]** e **[!UICONTROL Elenco SharePoint]** dall&#39;elenco a discesa.
@@ -210,7 +208,7 @@ Per collegare AEM Forms all’elenco di Microsoft® Sharepoint:
 
 È possibile utilizzare la configurazione dell’elenco SharePoint creata in un modulo adattivo per salvare dati o documenti di record generati in un elenco SharePoint. Per utilizzare una configurazione di archiviazione Elenco SharePoint in un modulo adattivo, effettua le seguenti operazioni:
 
-1. [Creare un modello di dati modulo con Microsoft](/help/forms/using/create-form-data-model.md)
+1. [Creare un modello dati modulo utilizzando la configurazione Elenco Microsoft® SharePoint](/help/forms/using/create-form-data-model.md)
 1. [Configurare il modello dati modulo per recuperare e inviare dati](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [Crea un modulo adattivo](/help/forms/using/create-adaptive-form.md).
 1. [Configurare l’azione di invio utilizzando un modello dati modulo](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
@@ -228,7 +226,7 @@ Quando si invia il modulo, i dati vengono salvati nell&#39;archivio elenco di Mi
 
 >[!NOTE]
 >
-> Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=it#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=it#deployment-process) nell&#39;istanza Cloud Service.
+> Per impostare i valori di una configurazione, [Genera configurazioni OSGi utilizzando AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [distribuisci la configurazione](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) nell&#39;istanza Cloud Service.
 
 ## Riconvalida lato server in modulo adattivo {#server-side-revalidation-in-adaptive-form}
 
