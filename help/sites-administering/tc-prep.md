@@ -8,11 +8,9 @@ role: Admin
 exl-id: 3db57dbc-757d-44be-8d32-ea5bc1f02fc8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '681'
 ht-degree: 42%
-
 ---
-
 # Preparazione del contenuto per la traduzione{#preparing-content-for-translation}
 
 I siti web multilingue forniscono generalmente una certa quantità di contenuto in più lingue. Il sito viene creato in una lingua e poi tradotto in altre lingue. In genere, i siti multilingue sono composti da rami di pagine, in cui ogni ramo contiene le pagine del sito in una lingua diversa.
@@ -31,7 +29,7 @@ Il sito demo di Geometrixx di esempio include diversi rami di lingua e utilizza 
              |- zh
 ```
 
-Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia in lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
+Ogni ramo linguistico di un sito è denominato copia per lingua. La lingua principale di una copia per lingua, nota come directory principale della lingua, identifica la lingua del contenuto nella copia per lingua. Ad esempio, `/content/geometrixx/fr` è la directory principale della lingua della copia per la lingua francese. Le copie per lingua devono utilizzare una [directory principale lingua configurata correttamente](/help/sites-administering/tc-prep.md#creating-a-language-root) in modo che la lingua corretta venga utilizzata quando vengono eseguite le traduzioni di un sito di origine.
 
 La copia per lingua per la quale originariamente si è creato il contenuto del sito è la lingua master. Il lingua master è quella di partenza che viene tradotta in altre lingue.
 
@@ -39,7 +37,7 @@ Utilizza i seguenti passaggi per preparare il sito alla traduzione:
 
 1. Crea la lingua principale della lingua master. Ad esempio, la directory principale della lingua del sito di dimostrazione Geometrixx in inglese è /content/geometrixx/en. Assicurati che la directory principale della lingua sia configurata correttamente in base alle informazioni in [Creazione di una directory principale della lingua](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Creare il contenuto della lingua master.
-1. Crea la directory principale della lingua di ogni copia per la lingua del sito. Ad esempio, la copia in lingua francese del sito di esempio Geometrixx è /content/geometrixx/fr.
+1. Crea la directory principale della lingua per ogni copia per lingua del sito. Ad esempio, la copia in lingua francese del sito di esempio Geometrixx è /content/geometrixx/fr.
 
 Dopo aver preparato il contenuto per la traduzione, puoi creare automaticamente le pagine mancanti nelle copie della lingua e nei relativi progetti di traduzione. (Vedi [Creazione di un progetto di traduzione](/help/sites-administering/tc-manage.md).) Per una panoramica del processo di traduzione dei contenuti in AEM, vedi [Traduzione di contenuti per siti Web multilingue](/help/sites-administering/translation.md).
 
@@ -71,7 +69,7 @@ La procedura seguente utilizza l’interfaccia utente ottimizzata per il tocco p
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Fai clic su Crea. Nella finestra di dialogo di conferma, fai clic su **Fine** per tornare alla console Sites oppure su **Apri** per aprire la copia per lingua.
+1. Fai clic su crea. Nella finestra di dialogo di conferma, fai clic su **Fine** per tornare alla console Sites oppure su **Apri** per aprire la copia per lingua.
 
 ## Visualizzazione dello stato delle directory principali della lingua {#seeing-the-status-of-language-roots}
 

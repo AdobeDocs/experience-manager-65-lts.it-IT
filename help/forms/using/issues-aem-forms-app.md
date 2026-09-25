@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi relativi all’app AEM Forms
+title: Risoluzione dei problemi dell’app AEM Forms
 description: Scopri i problemi comuni dell’app AEM Forms e come risolverli.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,10 @@ role: User, Developer
 exl-id: e63c1dc2-9843-47ca-8f3c-c49720659aa0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
-
+source-wordcount: '683'
+ht-degree: 2%
 ---
-
-# Risolvere i problemi relativi all’app AEM Forms {#troubleshoot-aem-forms-app}
+# Risoluzione dei problemi dell’app AEM Forms {#troubleshoot-aem-forms-app}
 
 Questo articolo descrive i messaggi di errore che potrebbero essere visualizzati durante la creazione dell’app AEM Forms e i passaggi per risolverli.
 

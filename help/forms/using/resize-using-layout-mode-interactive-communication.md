@@ -7,11 +7,9 @@ role: User, Developer
 exl-id: 39339f53-be4f-46a0-8c39-fd56a7f7e770
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '898'
 ht-degree: 1%
-
 ---
-
 # Utilizzare la modalità Layout per ridimensionare i componenti {#use-layout-mode-to-resize-components}
 
 L’interfaccia di authoring del canale web di comunicazione interattiva consente di ridimensionare i componenti utilizzando la modalità Layout. Trascinate i punti blu all&#39;interno delle colonne per definire i punti iniziale e finale per posizionare i componenti. I punti blu vengono visualizzati dopo aver toccato il componente nella griglia reattiva. La griglia reattiva è costituita da 12 colonne uguali. L&#39;ombreggiatura dei colori bianco e blu nelle colonne alternative differenzia una colonna dall&#39;altra.

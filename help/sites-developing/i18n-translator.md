@@ -11,11 +11,9 @@ role: Developer
 exl-id: 8f6936d0-051f-4966-84ed-87b348eab0b8
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2344'
 ht-degree: 2%
-
 ---
-
 # Utilizzo di Translator per gestire i dizionari{#using-translator-to-manage-dictionaries}
 
 AEM fornisce una console per gestire le varie traduzioni di testi utilizzati nell’interfaccia utente dei componenti. Questa console è disponibile all’indirizzo
@@ -142,7 +140,7 @@ Per aggiungere una stringa, attenersi alla procedura descritta di seguito.
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Nella casella Stringa della finestra di dialogo Aggiungi stringa digitare la stringa inglese. Nella casella Commento digitare un suggerimento di traduzione per il traduttore, se necessario.
-1. Fare clic su OK.
+1. Fai clic su OK.
 1. Fai clic su Salva.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)
@@ -178,11 +176,11 @@ La barra di ricerca nella parte inferiore dello strumento Translator fornisce le
 * **Filtra per testo:** Schema da associare alla stringa inglese, al commento o alle traduzioni. Nella tabella vengono visualizzati solo gli elementi che corrispondono in tutto o in parte alla serie.
 * **Modifiche: Qualsiasi, Modificato, Nuovo, Eliminato:** Mostra gli elementi modificati e non salvati.
 
-   * Qualsiasi: mostra gli elementi modificati, aggiunti o rimossi.
-   * Modificato: mostra gli elementi modificati.
-   * Nuovo: mostra gli elementi aggiunti.
-   * Eliminato: mostra gli elementi da rimuovere.
-   * Selezioni multiple: mostra gli elementi che hanno tutte le proprietà selezionate.
+  * Qualsiasi: mostra gli elementi modificati, aggiunti o rimossi.
+  * Modificato: mostra gli elementi modificati.
+  * Nuovo: mostra gli elementi aggiunti.
+  * Eliminato: mostra gli elementi da rimuovere.
+  * Selezioni multiple: mostra gli elementi che hanno tutte le proprietà selezionate.
 
 * **Ha un commento**: mostra gli elementi con commenti per i traduttori.
 * **Traduzioni mancanti:** mostra gli elementi in cui almeno una lingua non dispone di una traduzione.
@@ -292,8 +290,8 @@ Per aggiungere o rimuovere lingue, attenersi alla procedura descritta di seguito
    * **Tipo**: `Multi-String`
    * **Valore**: l&#39;elenco delle lingue che si desidera visualizzare. Ad esempio:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
@@ -385,4 +383,4 @@ Analogamente, il test delle stringhe di dizionario deve essere eseguito come par
 
 >[!NOTE]
 >
->Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/it/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.
+>Quando si utilizza Dispatcher, è necessario [annullare la validità delle pagine memorizzate in cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) per includere nuove stringhe di dicationary nelle stringhe dei componenti renderizzati.

@@ -13,9 +13,7 @@ source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 5%
-
 ---
-
 # Creazione di progetti di traduzione per frammenti di contenuto {#creating-translation-projects-for-content-fragments}
 
 Oltre alle risorse, Adobe Experience Manager (AEM) Assets supporta flussi di lavoro di copia per lingua per [frammenti di contenuto](/help/assets/content-fragments/content-fragments.md) (incluse le varianti). Non è necessaria alcuna ottimizzazione aggiuntiva per eseguire flussi di lavoro di copia per lingua sui frammenti di contenuto. In ogni flusso di lavoro, l’intero frammento di contenuto viene inviato per la traduzione.
