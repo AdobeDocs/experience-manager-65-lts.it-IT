@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 8%
@@ -43,49 +43,49 @@ Di seguito sono descritti gli oggetti JSON utilizzati nell’area di lavoro di A
 
    Le categorie sono presenti nella scheda del processo iniziale dell&#39;area di lavoro. Queste categorie vengono utilizzate per classificare i punti d&#39;inizio.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Solo client</strong></td>
-   <td><strong>Commenti</strong></td>
-  </tr>
-  <tr>
-   <td>nome</td>
-   <td>V</td>
-   <td>Nome categoria</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>V</td>
-   <td>ID categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>descrizione<br type="_moz" /> </td>
-   <td>V</td>
-   <td>Descrizione categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>V</td>
-   <td>Contiene un ID della categoria padre<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>M</td>
-   <td>Contiene un elenco di tutti i punti d'inizio presenti in una categoria</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>M</td>
-   <td>Contiene l'elenco delle categorie figlio dirette di una categoria<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Proprietà</strong></td>
+      <td><strong>Solo client</strong></td>
+      <td><strong>Commenti</strong></td>
+   </tr>
+   <tr>
+      <td>nome</td>
+      <td>V</td>
+      <td>Nome categoria</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>V</td>
+      <td>ID categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>descrizione<br type="_moz" /> </td>
+      <td>V</td>
+      <td>Descrizione categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>V</td>
+      <td>Contiene un ID della categoria padre<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>M</td>
+      <td>Contiene un elenco di tutti i punti d'inizio presenti in una categoria</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>M</td>
+      <td>Contiene l'elenco delle categorie figlio dirette di una categoria<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Tutti i punti iniziali e i Preferiti sono categorie definite sul lato client. La categoria Preferiti contiene tutti i punti d&#39;inizio contrassegnati dall&#39;utente come preferiti. La categoria Tutti i punti iniziali contiene tutti i punti iniziali.
+   >[!NOTE]
+   >
+   >Tutti i punti iniziali e i Preferiti sono categorie definite sul lato client. La categoria Preferiti contiene tutti i punti d&#39;inizio contrassegnati dall&#39;utente come preferiti. La categoria Tutti i punti iniziali contiene tutti i punti iniziali.
 
 1. Punto d&#39;inizio
 

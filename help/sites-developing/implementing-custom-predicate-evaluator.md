@@ -25,7 +25,7 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 2%
@@ -162,30 +162,30 @@ Il progetto `cq-search` contiene la classe astratta `AbstractPredicateEvaluator`
 
    Il frammento seguente mostra le differenze nel formato diff [unificato](https://en.wikipedia.org/wiki/Diff#Unified_format)
 
-```
-@@ -19,8 +19,11 @@
-  */
- package com.adobe.aem.docs.search;
+   ```
+   @@ -19,8 +19,11 @@
+     */
+   package com.adobe.aem.docs.search;
+   
+   +import org.apache.felix.scr.annotations.Component;
+   +
+   import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   
+   +@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
+   public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   
+   }
+   ```
 
-+import org.apache.felix.scr.annotations.Component;
-+
- import com.day.cq.search.eval.AbstractPredicateEvaluator;
+   [aem-search-custom-predicate-valuator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
-+@Component(metatype = false, factory = "com.day.cq.search.eval.PredicateEvaluator/repli")
- public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
+   >[!NOTE]
+   >
+   >`factory` deve essere una stringa univoca che inizia con `com.day.cq.search.eval.PredicateEvaluator/` e termina con il nome del `PredicateEvaluator` personalizzato.
 
- }
-```
-
-[aem-search-custom-predicate-valuator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
-
->[!NOTE]
->
->`factory` deve essere una stringa univoca che inizia con `com.day.cq.search.eval.PredicateEvaluator/` e termina con il nome del `PredicateEvaluator` personalizzato.
-
->[!NOTE]
->
->Il nome di `PredicateEvaluator` è il nome del predicato utilizzato per la creazione delle query.
+   >[!NOTE]
+   >
+   >Il nome di `PredicateEvaluator` è il nome del predicato utilizzato per la creazione delle query.
 
 1. Sostituisci:
 

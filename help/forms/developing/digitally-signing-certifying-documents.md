@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '17116'
-ht-degree: 0%
+source-wordcount: '17115'
+ht-degree: 1%
 ---
 # Firma digitale e certificazione dei documenti {#digitally-signing-and-certifying-documents}
 
@@ -611,9 +611,9 @@ Quando si utilizza una credenziale HSM nShield di crittografia per firmare o cer
 
 Dopo aver aggiunto questo valore di configurazione al file cknfastrc, è possibile utilizzare le nuove credenziali senza riavviare il server applicazioni J2EE.
 
-    >[!NOTE]
-    >
-    > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l&#39;arresto dei processi Java, potrebbe causare incongruenze nell&#39;ambiente di sviluppo AEM.
+>[!NOTE]
+>
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 **La firma non è attendibile**
 

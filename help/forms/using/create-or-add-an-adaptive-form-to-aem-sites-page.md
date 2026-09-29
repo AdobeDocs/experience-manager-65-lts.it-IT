@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 4%
@@ -87,7 +87,7 @@ Puoi sfruttare appieno questa funzione utilizzando le seguenti opzioni:
 
 +++  Abilitare i componenti core Forms adattivi per il tuo ambiente
 
-Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=it).
+Assicurati che i [Componenti core adattivi di Forms siano abilitati per il tuo ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++ 
 

@@ -19,7 +19,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 2%
@@ -32,11 +32,11 @@ ht-degree: 2%
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
 Questi possono coprire un&#39;ampia gamma di attività, ad esempio l&#39;utilizzo di [!DNL InDesign Server] per l&#39;elaborazione dei file.
 
-Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/it/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
+Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/it/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://helpx.adobe.com/it/indesign/using/scripting.html).Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
@@ -215,19 +215,19 @@ Per configurare il numero di processi IDS paralleli:
 
    Se sono presenti più computer che eseguono [!DNL InDesign Server], aggiungere endpoint SOAP (numero di processori per computer -1) per ogni computer.
 
+   >[!NOTE]
+   >
+   >Quando si lavora con un pool di lavoratori, è possibile abilitare l&#39;elenco Bloccati dei lavoratori IDS.
+   >
+   >Per eseguire questa operazione, abilitare la casella di controllo **[!UICONTROL enable.retry.name]** nella configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, che abilita le versioni di processo IDS.
+   >
+   >Inoltre, nella configurazione `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, impostare un valore positivo per il parametro `max.errors.to.blacklist` che determina il numero di tentativi del processo prima di bloccare un ID dall&#39;elenco dei gestori di processi.
+   >
+   >Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il processo di lavoro IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dall&#39;elenco Bloccati.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
-
->[!NOTE]
->
->Quando si lavora con un pool di lavoratori, è possibile abilitare l&#39;elenco Bloccati dei lavoratori IDS.
->
->Per eseguire questa operazione, abilitare la casella di controllo **[!UICONTROL enable.retry.name]** nella configurazione `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, che abilita le versioni di processo IDS.
->
->Inoltre, nella configurazione `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, impostare un valore positivo per il parametro `max.errors.to.blacklist` che determina il numero di tentativi del processo prima di bloccare un ID dall&#39;elenco dei gestori di processi.
->
->Per impostazione predefinita, dopo il tempo configurabile (`retry.interval.to.whitelist.name`) in minuti, il processo di lavoro IDS viene riconvalidato. Se il lavoratore viene trovato online, viene rimosso dall&#39;elenco Bloccati.
 
 ## Abilita supporto per [!DNL InDesign Server] versione 10.0 o successiva {#enabling-support-for-indesign-server-or-later}
 
@@ -251,4 +251,4 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguire la procedura seg
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver/faq.html)
+>* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

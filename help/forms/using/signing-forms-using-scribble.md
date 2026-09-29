@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 12%
@@ -40,7 +40,7 @@ ht-degree: 12%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble.html).
 
 
 È possibile utilizzare il componente **Firma scarabocchio** e il componente **Passaggio firma** per disegnare la firma (scarabocchio) in un modulo adattivo. Il componente del passaggio Firma visualizza una versione PDF del modulo adattivo. Per utilizzare il componente Passaggio firma, è necessario che sia abilitata l’opzione Documento di record o che i moduli adattivi basati su modelli di modulo siano impostati.
@@ -61,13 +61,11 @@ Dopo aver selezionato l&#39;icona Fine![aem_6_3_forms_save](assets/aem_6_3_forms
 
 * Quando le proporzioni dell’area di lavoro Firma scarabocchio sono superiori a 1, le informazioni sulla geolocalizzazione vengono aggiunte al lato destro dell’area di lavoro Firma scarabocchio.
 
-![firma a mano libera](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+  ![firma a mano libera](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
-
->[!NOTE]
->
->Le firme vengono sempre salvate in formato PNG.
->
+  >[!NOTE]
+  >
+  >Le firme vengono sempre salvate in formato PNG.
 
 ## Configurare un modulo adattivo per l’utilizzo della firma scarabocchio {#configure-an-adaptive-form-to-use-scribble-signature}
 

@@ -22,7 +22,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 4%
@@ -74,42 +74,42 @@ Il componente **Strumenti e-mail** per ExactTarget può aggiungere ulteriori fun
 
 1. Selezionare un&#39;opzione dal menu **Opzioni**:
 
-<table>
- <tbody>
-  <tr>
-   <td>Indirizzo postale (obbligatorio)</td>
-   <td>Questo componente inserisce l’indirizzo postale fisico dell’organizzazione nell’e-mail.</td>
-  </tr>
-  <tr>
-   <td>Centro profili (obbligatorio)</td>
-   <td>Il centro profili è una pagina web in cui gli abbonati possono immettere e gestire le informazioni personali che si tengono su di loro.</td>
-  </tr>
-  <tr>
-   <td>Visualizza e-mail come pagina Web</td>
-   <td>Questo componente consente all’utente di visualizzare l’e-mail come pagina web.</td>
-  </tr>
-  <tr>
-   <td>Informativa sulla privacy</td>
-   <td>Questo componente inserisce il collegamento all'informativa sulla privacy nell'e-mail.<br /> </td>
-  </tr>
-  <tr>
-   <td>Centro per annullamento sottoscrizioni</td>
-   <td>Consente all’utente di annullare l’iscrizione alla mailing list.</td>
-  </tr>
-  <tr>
-   <td>Centro sottoscrizioni</td>
-   <td>Un centro abbonamenti è una pagina web in cui un utente iscritto può controllare i messaggi ricevuti dalla tua organizzazione.</td>
-  </tr>
-  <tr>
-   <td>Traccia aperture e-mail</td>
-   <td>Componente nascosto che consente di utilizzare la funzione di tracciamento ExactTarget.<br /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>Indirizzo postale (obbligatorio)</td>
+      <td>Questo componente inserisce l’indirizzo postale fisico dell’organizzazione nell’e-mail.</td>
+   </tr>
+   <tr>
+      <td>Centro profili (obbligatorio)</td>
+      <td>Il centro profili è una pagina web in cui gli abbonati possono immettere e gestire le informazioni personali che si tengono su di loro.</td>
+   </tr>
+   <tr>
+      <td>Visualizza e-mail come pagina Web</td>
+      <td>Questo componente consente all’utente di visualizzare l’e-mail come pagina web.</td>
+   </tr>
+   <tr>
+      <td>Informativa sulla privacy</td>
+      <td>Questo componente inserisce il collegamento all'informativa sulla privacy nell'e-mail.<br /> </td>
+   </tr>
+   <tr>
+      <td>Centro per annullamento sottoscrizioni</td>
+      <td>Consente all’utente di annullare l’iscrizione alla mailing list.</td>
+   </tr>
+   <tr>
+      <td>Centro sottoscrizioni</td>
+      <td>Un centro abbonamenti è una pagina web in cui un utente iscritto può controllare i messaggi ricevuti dalla tua organizzazione.</td>
+   </tr>
+   <tr>
+      <td>Traccia aperture e-mail</td>
+      <td>Componente nascosto che consente di utilizzare la funzione di tracciamento ExactTarget.<br /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Il menu a discesa **Opzioni** è popolato solo se la configurazione ExactTarget è applicata all&#39;e-mail. Per ulteriori informazioni, vedere [Applicazione della configurazione del servizio di posta elettronica alle impostazioni di posta elettronica](#applying-e-mail-service-configuration-to-e-mail-settings).
+   >[!NOTE]
+   >
+   >Il menu a discesa **Opzioni** è popolato solo se la configurazione ExactTarget è applicata all&#39;e-mail. Per ulteriori informazioni, vedere [Applicazione della configurazione del servizio di posta elettronica alle impostazioni di posta elettronica](#applying-e-mail-service-configuration-to-e-mail-settings).
 
 1. Pubblica l’e-mail in ExactTarget.
 

@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 4%
@@ -39,7 +39,7 @@ L’esempio, discusso in questo documento, è un’implementazione di riferiment
 >[!NOTE]
 >
 >* Gli esempi e le configurazioni illustrate in questo documento sono conformi a MySQL 5.6.24 e devono essere sostituiti in modo appropriato per il sistema di database.
->* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, consulta l&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
+>* Verifica di aver installato la versione più recente del pacchetto del componente aggiuntivo AEM Forms. Per un elenco dei pacchetti disponibili, consulta l&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 >* Il pacchetto di esempio funziona solo con azioni di invio Adaptive Forms.
 
 ## Impostare e configurare l’esempio {#set-up-and-configure-the-sample}
@@ -102,79 +102,79 @@ pagina all&#39;indirizzo https://[*host*]:[*porta*]/system/console/configMgr.
 1. La connessione al database può essere effettuata tramite Apache Sling Connection Pooled Data Source.
 1. Per la connessione Apache Sling, individua e fai clic per aprire **[!UICONTROL Origine dati in pool di connessione Apache Sling]** in modalità di modifica nella configurazione della console Web. Specificare i valori per le proprietà come descritto nella tabella seguente:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Proprietà</strong></td>
-   <td><strong>Valore</strong></td>
-  </tr>
-  <tr>
-   <td>Nome origine dati</td>
-   <td><p>Nome di origine dati per filtrare i driver dal pool di origini dati</p> <p><strong>Nota: </strong><em>L'implementazione di esempio utilizza FormsPortal come nome dell'origine dati.</em></p> </td>
-  </tr>
-  <tr>
-   <td>Classe driver JDBC</td>
-   <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
-   <td>URI connessione JDBC <br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_schema</em>]</td>
-  </tr>
-  <tr>
-   <td>Nome utente</td>
-   <td>Un nome utente per autenticare ed eseguire azioni sulle tabelle del database</td>
-  </tr>
-  <tr>
-   <td>Password</td>
-   <td>Password associata al nome utente</td>
-  </tr>
-  <tr>
-   <td>Isolamento transazione</td>
-   <td>READ_COMMIT</td>
-  </tr>
-  <tr>
-   <td>Numero massimo connessioni attive</td>
-   <td>1000</td>
-  </tr>
-  <tr>
-   <td>Numero massimo di connessioni inattive</td>
-   <td>100</td>
-  </tr>
-  <tr>
-   <td>Connessioni inattive minime</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Dimensione iniziale</td>
-   <td>10</td>
-  </tr>
-  <tr>
-   <td>Attesa massima</td>
-   <td>100000</td>
-  </tr>
-  <tr>
-   <td>Test su prestito</td>
-   <td>Selezionato</td>
-  </tr>
-  <tr>
-   <td>Test durante inattività</td>
-   <td>Selezionato</td>
-  </tr>
-  <tr>
-   <td>Query di convalida</td>
-   <td>I valori di esempio sono SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
-   <td>Timeout query di convalida</td>
-   <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+    <tbody>
+    <tr>
+    <td><strong>Proprietà</strong></td>
+    <td><strong>Valore</strong></td>
+    </tr>
+    <tr>
+    <td>Nome origine dati</td>
+    <td><p>Nome di origine dati per filtrare i driver dal pool di origini dati</p> <p><strong>Nota: </strong><em>L'implementazione di esempio utilizza FormsPortal come nome dell'origine dati.</em></p> </td>
+    </tr>
+    <tr>
+    <td>Classe driver JDBC</td>
+    <td>com.mysql.jdbc.Driver</td>
+    </tr>
+    <tr>
+    <td>URI connessione JDBC <br /> </td>
+    <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_schema</em>]</td>
+    </tr>
+    <tr>
+    <td>Nome utente</td>
+    <td>Un nome utente per autenticare ed eseguire azioni sulle tabelle del database</td>
+    </tr>
+    <tr>
+    <td>Password</td>
+    <td>Password associata al nome utente</td>
+    </tr>
+    <tr>
+    <td>Isolamento transazione</td>
+    <td>READ_COMMIT</td>
+    </tr>
+    <tr>
+    <td>Numero massimo connessioni attive</td>
+    <td>1000</td>
+    </tr>
+    <tr>
+    <td>Numero massimo di connessioni inattive</td>
+    <td>100</td>
+    </tr>
+    <tr>
+    <td>Connessioni inattive minime</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Dimensione iniziale</td>
+    <td>10</td>
+    </tr>
+    <tr>
+    <td>Attesa massima</td>
+    <td>100000</td>
+    </tr>
+    <tr>
+    <td>Test su prestito</td>
+    <td>Selezionato</td>
+    </tr>
+    <tr>
+    <td>Test durante inattività</td>
+    <td>Selezionato</td>
+    </tr>
+    <tr>
+    <td>Query di convalida</td>
+    <td>I valori di esempio sono SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
+    </tr>
+    <tr>
+    <td>Timeout query di convalida</td>
+    <td>10000</td>
+    </tr>
+    </tbody>
+    </table>
 
->[!NOTE]
->
->* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
->* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
+   >[!NOTE]
+   >
+   >* Il driver JDBC per MySQL non viene fornito con l&#39;esempio. Verificare di aver eseguito il provisioning e fornire le informazioni necessarie per configurare il connection pool JDBC.
+   >* Indirizza le istanze di authoring e pubblicazione per utilizzare lo stesso database. Il valore del campo URI connessione JDBC deve essere lo stesso per tutte le istanze di authoring e pubblicazione.
 
 1. Lascia invariate le altre configurazioni e fai clic su **[!UICONTROL Salva]**.
 

@@ -16,7 +16,7 @@ role_v2:
     internal-label: Developer
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -69,8 +69,8 @@ Gli autori dei moduli possono confrontare due versioni diverse di un modulo a sc
 Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli. Qualsiasi utente di un modulo può aggiungere un commento a un modulo o esaminarlo tramite commenti. Per aggiungere un commento a un modulo, selezionare un **[!UICONTROL Modulo]** e aggiungere un **[!UICONTROL Commento]** al modulo.
 
 >[!NOTE]
-> Quando si utilizzano commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [aggiunta di revisori ai moduli](/help/forms/using/create-reviews-forms.md) è disabilitata.
-
+>
+>Quando si utilizzano commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [aggiunta di revisori ai moduli](/help/forms/using/create-reviews-forms.md) è disabilitata.
 
 ![Aggiungi commenti in un modulo](assets/form-comments.png)
 
