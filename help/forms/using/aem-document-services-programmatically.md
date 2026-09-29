@@ -86,7 +86,7 @@ Il servizio DocAssurance include i seguenti servizi:
 
 >[!NOTE]
 >
->Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
+>Tutti questi servizi utilizzano l&#39;oggetto Document come parametro di input per il quale è possibile trovare Javadoc all&#39;URL [https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/it/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Aggiunta di un campo di firma invisibile {#adding-an-invisible-signature-field}
 
