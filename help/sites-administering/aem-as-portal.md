@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 448715f1-ccec-4fb8-92d7-b7458cf9e6d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6116'
 ht-degree: 0%
-
 ---
-
 # Portlet e portali di AEM{#aem-portals-and-portlets}
 
 Questo documento descrive quanto segue:
@@ -526,7 +535,7 @@ title="{text}"/>
 
 #### Installazione di un layout personalizzato {#installing-a-custom-layout}
 
-Per installare un layout personalizzato, accedi alla sezione **Bundle &#x200B;** console web OSGI del portlet) e carica il bundle.
+Per installare un layout personalizzato, accedi alla sezione **Bundle **console web OSGI del portlet) e carica il bundle.
 
 #### Pacchetti {#packages}
 
@@ -610,7 +619,7 @@ Se il sito non dispone di regole severe per la gestione delle informazioni sulle
 
 I seguenti servizi hanno un’implementazione predefinita nel portlet dei contenuti (con la corrispondente interfaccia Java). Per personalizzare, è necessario distribuire nell&#39;applicazione portlet un bundle contenente la nuova implementazione del servizio.
 
-Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione **&#x200B; 0** e il portlet utilizza il servizio con la classificazione più alta.
+Quando implementi tale servizio, assicurati di impostare la proprietà **service.ranking** del servizio su un valore positivo. L’implementazione predefinita utilizza la classificazione** 0** e il portlet utilizza il servizio con la classificazione più alta.
 
 | **Nome** | **Descrizione** | **Comportamento predefinito** |
 |---|---|---|
@@ -715,7 +724,7 @@ Utilizza il componente Portal per aggiungere una finestra portlet alla pagina we
 
 1. Fai doppio clic sul componente per aprire le proprietà Portlet.
 1. Nel menu a discesa **Entità portlet**, selezionare il portlet dall&#39;elenco.
-1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo &#x200B;** a seconda che si desideri visualizzare la barra del titolo del portlet.
+1. Selezionare o deselezionare la casella di controllo **Nascondi barra del titolo **a seconda che si desideri visualizzare la barra del titolo del portlet.
 1. Nel campo **Finestra portlet**, immettere un ID univoco per la finestra portlet, se necessario.
 
    >[!NOTE]

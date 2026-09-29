@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 802130c3-9cb8-46b7-98c2-fd9e83d18ec3
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '497'
 ht-degree: 2%
-
 ---
-
 # Risoluzione dei problemi di Adobe Experience Manager {#troubleshooting-aem}
 
 Nella sezione seguente vengono descritti alcuni problemi che possono verificarsi durante l’utilizzo di AEM (Adobe Experience Manager) e vengono proposte possibili soluzioni.
@@ -94,17 +103,17 @@ L’immagine thread è un elenco di tutti i thread Java™ attualmente attivi. S
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
+Per ulteriori informazioni, consulta la [documentazione su come estrarre immagini thread da una JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
 
 ### Verifica di sessioni JCR non chiuse {#checking-for-unclosed-jcr-sessions}
 
 Quando viene sviluppata la funzionalità per AEM WCM, è possibile aprire le sessioni JCR (operazione paragonabile all’apertura di una connessione a un database). Se le sessioni aperte non vengono mai chiuse, il sistema potrebbe presentare i seguenti sintomi:
 
 * Il sistema diventa più lento.
-* È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di registro; il seguente numero (size=&lt;x>) mostra il numero di cache, ogni sessione apre diverse cache.
+* È possibile visualizzare gran parte di CacheManager: resizeAll voci nel file di log; il seguente numero (dimensione=&lt;x>) shows the number of caches, each session opens several caches.
 * Di tanto in tanto il sistema esaurisce la memoria (dopo alcune ore, giorni o settimane, a seconda della gravità).
 
-Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Per avviare l&#39;analisi delle sessioni non chiuse, vedere l&#39;articolo della Knowledge Base [Risolutore risorse non chiuso](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Utilizzo della console Web di Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

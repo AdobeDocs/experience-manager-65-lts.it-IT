@@ -1,5 +1,5 @@
 ---
-title: Configurazioni Cloud Service
+title: Configurazioni servizi cloud
 description: Puoi estendere le istanze esistenti per creare configurazioni personalizzate
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6b9b8d8c-8cd5-4c21-9b75-acd74d00354a
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '570'
+ht-degree: 4%
 ---
-
-# Configurazioni Cloud Service{#cloud-service-configurations}
+# Configurazioni servizi cloud{#cloud-service-configurations}
 
 Le configurazioni sono progettate per fornire la logica e la struttura per l’archiviazione delle configurazioni del servizio.
 
@@ -49,8 +58,8 @@ Per fornire una configurazione per i nuovi servizi, eseguire le operazioni segue
 
 * Sotto questo:
 
-   * un modello di configurazione
-   * un componente di configurazione
+  * un modello di configurazione
+  * un componente di configurazione
 
 Il modello e il componente devono ereditare `sling:resourceSuperType` dal modello base:
 
@@ -165,7 +174,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il serviz
 >
 >Per impostazione predefinita, `EcryptionPostProcessor` crittografa solo `POST` richieste effettuate a `/etc/cloudservices`.
 
-#### Proprietà aggiuntive per i nodi jcr:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
+#### Proprietà aggiuntive per i nodi JCR:content della pagina del servizio {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +184,7 @@ La proprietà verrà quindi crittografata automaticamente (utilizzando il serviz
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Questo viene utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui è incluso <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del tag <code>body</code>).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questa funzione per includere funzionalità aggiuntive, come le chiamate JavaScript per monitorare il comportamento dei visitatori.</td>
+   <td>Percorso di riferimento a un componente da includere automaticamente nella pagina.<br /> Utilizzato per funzionalità aggiuntive e inclusioni JS.<br /> Questo include il componente nella pagina in cui è incluso <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> (normalmente prima del tag <code>body</code>).<br /> Nel caso di Adobe Analytics e Adobe Target, utilizziamo questo per includere funzionalità aggiuntive, come le chiamate di JavaScript per monitorare il comportamento dei visitatori.</td>
   </tr>
   <tr>
    <td>descrizione</td>

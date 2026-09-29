@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: bff562ff-bf0e-4f56-afd2-77907ec01e2c
-source-git-commit: 2e9786117c4a8b3026f7f3109b5a49ce188b119a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 44%
-
 ---
-
 # Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
 
 AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili all&#39;uso delle console, altre alla [modifica delle pagine](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).

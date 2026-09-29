@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
 exl-id: 78c5486c-ed84-4ec8-b0b0-42d4e8611098
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 7%
-
 ---
-
 # Migrazione lenta dei contenuti {#lazy-content-migration}
 
 Per motivi di compatibilità con le versioni precedenti, il contenuto e la configurazione in **/etc** e **/content** a partire da Adobe Experience Manager (AEM) 6.3 non verranno toccati o trasformati immediatamente con l&#39;aggiornamento. Questo viene fatto per garantire che le dipendenze delle applicazioni del cliente da tali strutture rimangano intatte. La funzionalità relativa a queste strutture di contenuto è ancora la stessa anche se il contenuto in un’istanza predefinita di AEM 6.5 sarebbe ospitato in un’altra posizione.

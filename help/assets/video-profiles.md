@@ -11,13 +11,27 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: b7ee16db-fde2-4d06-b06c-945b6d876f8d
-source-git-commit: ad4c80af0d9aa88837164ba1a8d6be2042b2c0d4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3747'
 ht-degree: 6%
-
 ---
-
 # Profili video {#video-profiles}
 
 Dynamic Media dispone già di un profilo di codifica video adattivo predefinito. Le impostazioni in questo profilo preconfigurato sono ottimizzate per fornire ai clienti la migliore esperienza di visualizzazione possibile. Quando codifichi i video sorgente primari utilizzando il profilo di codifica video adattivo, il lettore video ottimizza la qualità di riproduzione. Regola automaticamente il flusso video in base alla velocità di connessione a Internet dei clienti. Questa funzionalità è nota come streaming bitrate adattivo.
@@ -99,7 +113,7 @@ La tabella seguente identifica i profili di codifica delle best practice per lo 
 
 ## Informazioni sull’utilizzo del ritaglio avanzato nei profili video {#about-smart-crop-video}
 
-Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che utilizza la potenza dell’intelligenza artificiale nell’intelligenza artificiale di Adobe. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
+Il ritaglio avanzato per video, una funzione opzionale disponibile in Profili video, è uno strumento che sfrutta la potenza dell’intelligenza artificiale in Adobe AI. Rileva e ritaglia automaticamente il punto focale in qualsiasi video adattivo o video progressivo caricato, indipendentemente dalle dimensioni.
 
 I formati video supportati per il ritaglio avanzato includono MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -221,13 +235,13 @@ Seleziona l’icona delle informazioni accanto a ciascuna opzione. Puoi trovare 
 1. Effettua le seguenti operazioni:
    * Nel campo **[!UICONTROL Larghezza]** immettere **[!UICONTROL auto]**.
    * Nel campo **[!UICONTROL Altezza]** immettere un valore in pixel.
-Per visualizzare le dimensioni del video, seleziona l&#39;icona delle informazioni dell&#39;altezza per aprire la pagina **[!UICONTROL Calcolatore dimensioni]**. Utilizzare la pagina **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione del video (casella blu) in base alle proprie esigenze. Al termine, nell&#39;angolo superiore destro della finestra di dialogo, selezionare **[!UICONTROL X]**.
+     Per visualizzare le dimensioni del video, seleziona l&#39;icona delle informazioni dell&#39;altezza per aprire la pagina **[!UICONTROL Calcolatore dimensioni]**. Utilizzare la pagina **[!UICONTROL Calcolatore dimensioni]** per impostare ulteriormente la dimensione del video (casella blu) in base alle proprie esigenze. Al termine, nell&#39;angolo superiore destro della finestra di dialogo, selezionare **[!UICONTROL X]**.
 1. (Facoltativo) Effettuate una delle seguenti operazioni:
 
    * Selezionare la scheda **[!UICONTROL Avanzate]** e assicurarsi che la casella di controllo **[!UICONTROL Usa valori predefiniti]** sia selezionata (scelta consigliata).
 
    * Deselezionare la casella di controllo **[!UICONTROL Usa valori predefiniti]** e specificare le impostazioni video e audio desiderate.
-Seleziona l’icona delle informazioni accanto a ciascuna opzione. Puoi trovare descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
+     Seleziona l’icona delle informazioni accanto a ciascuna opzione. Puoi trovare descrizioni aggiuntive o impostazioni consigliate in base al codec del formato video selezionato.
 
 1. Nell&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]** per salvare il predefinito.
 1. Effettua una delle seguenti operazioni:
@@ -281,19 +295,19 @@ Puoi modificare un profilo di codifica video esistente per accedere a parametri 
   </tr>
   <tr>
    <td><code>keyframe</code></td>
-   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Gli intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio di flusso per le codifiche video adattivi e possono anche migliorare la qualità dei video con movimenti elevati. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
+   <td>Numero di fotogrammi di destinazione tra fotogrammi chiave. Calcolate questo valore in modo che possa generare un fotogramma chiave ogni 2-10 secondi. Ad esempio, a 30 fotogrammi al secondo, l'intervallo dei fotogrammi chiave deve essere compreso tra 60 e 300.<br /> <br /> Gli intervalli di fotogrammi chiave inferiori migliorano il comportamento di ricerca e passaggio tra flussi per le codifiche video adattivi e possono anche migliorare la qualità dei video ad alto movimento. Tuttavia, poiché i fotogrammi chiave aumentano le dimensioni di un file, un intervallo di fotogrammi chiave inferiore di solito determina una qualità video complessiva inferiore a un determinato bitrate.</td>
    <td><code>String</code></td>
    <td><p>Numero positivo.</p> <p>Il valore predefinito è 300.</p> <p>Il valore consigliato per DASH o HLS è 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
-   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate minimo per consentire le codifiche del bitrate variabile, in Kbps (kilobit al secondo).</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito.</p> </td>
   </tr>
   <tr>
    <td><code>maxBitrate</code></td>
-   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante<strong> di </strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
+   <td><p>Bitrate massimo per consentire le codifiche del bitrate variabile, in Kbps.</p> <p>Questo parametro si applica solo quando l'opzione Usa bitrate costante</strong> di <strong> è deselezionata nella scheda Avanzate quando si crea o si modifica un profilo di codifica video.</p> <p>Vedi anche <a href="/help/assets/video.md#bitrate">Bitrate</a>.</p> </td>
    <td><code>String</code></td>
    <td><p>Numero positivo, in Kbps.</p> <p>Nessun valore predefinito. Tuttavia, il valore consigliato è fino a due volte il bitrate di codifica.</p> </td>
   </tr>
@@ -399,7 +413,7 @@ Vedi anche [Rielaborazione delle risorse in una cartella dopo averne modificato 
 1. Seleziona la scheda **[!UICONTROL Profili video]**, fai clic sul profilo dal menu a discesa e infine seleziona **[!UICONTROL Salva e chiudi]**. L’interfaccia utente visualizza il nome del profilo nel nome della scheda per indicare le cartelle a cui è stato assegnato un profilo.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-È possibile [monitorare l&#39;avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
+   È possibile [monitorare l&#39;avanzamento di un processo di elaborazione del profilo video](#monitoring-the-progress-of-an-encoding-job).
 
 ### Applicazione di un profilo video a livello globale {#applying-a-video-profile-globally}
 

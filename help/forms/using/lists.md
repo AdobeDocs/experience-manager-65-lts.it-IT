@@ -5,13 +5,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ece49f03-e711-439f-9c2d-6308fe2998ae
-source-git-commit: 4f2374a48687d39f7d365e09d9055edf583e2c20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6828'
+source-wordcount: '6927'
 ht-degree: 0%
-
 ---
-
 # Frammenti del documento{#document-fragments}
 
 ## Frammenti del documento {#document-fragments-1}
@@ -195,10 +208,10 @@ La funzione Trova e sostituisci consente di cercare (e sostituire) qualsiasi str
 * Utilizza l’associazione appropriata del dizionario dati nei moduli di testo.
 * Quando si utilizza l’Editor di testo quando si modifica una risorsa di testo, si applicano le seguenti regole:
 
-   * **Aggiunta della variabile:** consentita
-   * **Rimozione della variabile:** consentita
-   * **Aggiornamento delle proprietà:** consentito
-   * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
+  * **Aggiunta della variabile:** consentita
+  * **Rimozione della variabile:** consentita
+  * **Aggiornamento delle proprietà:** consentito
+  * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
 
 ## Elenco {#list}
 
@@ -276,8 +289,8 @@ Per modificare l&#39;ordine delle risorse all&#39;interno dell&#39;elenco, selez
 * Utilizza associazione dizionario dati appropriata
 * Quando si utilizza l’Editor elenco per modificare un elenco, si applicano le seguenti regole:
 
-   * Aggiornamento delle proprietà: consentito
-   * **Modifica del dizionario dati:** Consentita fino a quando non viene associato alcun elemento che utilizza il dizionario dati. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
+  * Aggiornamento delle proprietà: consentito
+  * **Modifica del dizionario dati:** Consentita fino a quando non viene associato alcun elemento che utilizza il dizionario dati. Non è possibile modificare il dizionario dati durante l&#39;aggiornamento.
 
 ## Condizioni {#conditions}
 
@@ -333,10 +346,10 @@ L’editor delle condizioni consente di specificare una condizione predefinita. 
 * Utilizza associazione dizionario dati appropriata
 * Quando si utilizza l’Editor condizioni per modificare una condizione, vengono applicate le seguenti regole:
 
-   * **Aggiunta della variabile:** consentita
-   * **Rimozione della variabile:** consentita
-   * **Aggiornamento delle proprietà:** consentito
-   * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato.
+  * **Aggiunta della variabile:** consentita
+  * **Rimozione della variabile:** consentita
+  * **Aggiornamento delle proprietà:** consentito
+  * **Modifica del dizionario dati:** consentita fino a quando l&#39;elemento del dizionario dati non viene utilizzato.
 
 ## Frammenti di layout {#layoutfragments}
 
@@ -368,18 +381,18 @@ Durante la progettazione delle tabelle, tenere presenti le considerazioni riport
 
 * Per le tabelle segnaposto, è possibile personalizzare le seguenti proprietà al momento della creazione del frammento.
 
-   * conteggio righe
-   * numero colonne
-   * intestazione e piè di pagina per ogni colonna
-   * tipo (area/campo di destinazione) di ciascuna colonna
-   * rapporto larghezza per ogni colonna
+  * conteggio righe
+  * numero colonne
+  * intestazione e piè di pagina per ogni colonna
+  * tipo (area/campo di destinazione) di ciascuna colonna
+  * rapporto larghezza per ogni colonna
 
 * Per una tabella non segnaposto, è possibile personalizzare le proprietà seguenti:
 
-   * conteggio righe
-   * numero colonne
-   * intestazione e piè di pagina per colonna aggiuntiva
-   * rapporto larghezza per ogni colonna
+  * conteggio righe
+  * numero colonne
+  * intestazione e piè di pagina per colonna aggiuntiva
+  * rapporto larghezza per ogni colonna
 
 È possibile nidificare i frammenti in una lettera. Ciò implica che è possibile aggiungere un frammento all’interno di un frammento. La soluzione Gestione corrispondenza supporta fino a quattro livelli di nidificazione all&#39;interno di una lettera: **Lettera *>*Frammento *>*Frammento *>*Frammento *>*Frammento.**
 
@@ -502,7 +515,7 @@ In questo esempio viene illustrato come creare una tabella dinamica e una tabell
    In alternativa, utilizzare gli XDP statici e dinamici associati a questo passaggio.
 
    Per ulteriori informazioni sull&#39;utilizzo dei frammenti di layout, vedere [Frammenti di layout](#layoutfragments).
-Per ulteriori informazioni sulla progettazione dei layout, vedere la [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Per ulteriori informazioni sulla progettazione dei layout, vedere la [Guida di Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
    [Ottieni il file](assets/static.xdp.zip)
 

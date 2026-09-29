@@ -9,13 +9,26 @@ feature: 3D Assets,Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: f27b595b-24eb-444c-a598-6f70c59ed8fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # Utilizzare risorse 3D in Dynamic Media {#working-with-three-d-assets-dm}
 
 Dynamic Media consente di caricare, gestire, visualizzare e distribuire risorse 3D come esperienze coinvolgenti.
@@ -41,7 +54,7 @@ Vedi anche [Formati 3D supportati](/help/assets/assets-formats.md).
 | GLB | Trasmissione GL binaria | model/gltf-binary | Include i materiali e le texture come un&#39;unica risorsa. |
 | OBJ | File oggetto WaveFront 3D | application/x-tgif |  |
 | STL | Stereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | *Supporto solo per l&#39;acquisizione. Nessuna visualizzazione o interazione disponibile.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa dai dispositivi Safari e iOS. |
+| USDZ | Archivio zip Universal Scene Description | model/vnd.usdz+zip | *Supporto solo per l&#39;acquisizione. Nessuna visualizzazione o interazione disponibile.* USDZ è un formato 3D proprietario che può essere visualizzato in modalità nativa dai dispositivi Safari e iOS. |
 
 >[!NOTE]
 >
@@ -68,19 +81,19 @@ Consulta [ConfigurE Dynamic Media Cloud Services](/help/assets/config-dms7.md#co
 
    * Organizzare e cercare risorse 3D
 
-      * [Organizza risorse digitali](/help/assets/organize-assets.md#organize-digital-assets).
-      * [Cerca risorse 3D](/help/assets/search-assets.md).
-      * [Utilizzare predicati personalizzati per filtrare i risultati della ricerca](/help/assets/search-assets.md#custompredicates).
+     * [Organizza risorse digitali](/help/assets/organize-assets.md#organize-digital-assets).
+     * [Cerca risorse 3D](/help/assets/search-assets.md).
+     * [Utilizzare predicati personalizzati per filtrare i risultati della ricerca](/help/assets/search-assets.md#custompredicates).
 
    * Visualizzare risorse 3D
 
-      * [Visualizzazione e interazione con risorse 3D](#viewing-three-d-assets).
-      * [Gestisci predefinito visualizzatore dimensionale](/help/assets/managing-viewer-presets.md).
+     * [Visualizzazione e interazione con risorse 3D](#viewing-three-d-assets).
+     * [Gestisci predefinito visualizzatore dimensionale](/help/assets/managing-viewer-presets.md).
 
    * Utilizzare i metadati delle risorse 3D
 
-      * [Gestione metadati per risorse digitali](/help/assets/metadata.md).
-      * [Schemi metadati](/help/assets/metadata-schemas.md).
+     * [Gestione metadati per risorse digitali](/help/assets/metadata.md).
+     * [Schemi metadati](/help/assets/metadata-schemas.md).
 
 1. **Pubblicare risorse 3D**
 
@@ -152,7 +165,7 @@ Vedi anche [Anteprima delle risorse tramite l&#39;interfaccia software](/help/as
    * Elimina `/editor.html` dall&#39;URL della pagina nel browser.
 
    ![risorsa 3D visualizzata nel componente 3D Media](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]**.
+   Una risorsa 3D completamente interattiva visualizzata in modalità **[!UICONTROL Anteprima]**.
 
 1. In modalità **[!UICONTROL Anteprima]**, eseguire una delle operazioni seguenti:
 
@@ -171,7 +184,7 @@ Dynamic Media include un componente Dynamic Media 3D Media che puoi utilizzare i
 
 * [Aggiungere il componente 3D Media al modello della pagina](#adding-three-d-media-component-to-page-template)
 * [Aggiungere il componente 3D Media a una pagina web](#adding-the-three-d-media-component-to-a-web-page)
-   * [Facoltativo - Configurare il componente 3D Media](#configuring-the-three-d-component)
+  * [Facoltativo - Configurare il componente 3D Media](#configuring-the-three-d-component)
 * [Assegnare una risorsa 3D al componente File 3D](#assigning-a-three-d-asset-to-the-component)
 
 ## Aggiungere il componente 3D Media al modello della pagina {#adding-three-d-media-component-to-page-template}

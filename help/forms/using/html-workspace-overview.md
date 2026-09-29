@@ -1,18 +1,36 @@
 ---
-title: Utilizzo dell’area di lavoro AEM Forms
+title: Utilizzo dell’area di lavoro di AEM Forms
 description: Inizia a usare l’area di lavoro di AEM Forms con questa breve panoramica sui flussi di lavoro dei processi.
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 exl-id: 7374797f-4154-402b-bb59-075134763c58
-source-git-commit: 823923ab074bae1705cc1991e4079897e4c5cac8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
-
+source-wordcount: '996'
+ht-degree: 1%
 ---
-
-# Utilizzo dell’area di lavoro AEM Forms{#working-with-aem-forms-workspace}
+# Utilizzo dell’area di lavoro di AEM Forms{#working-with-aem-forms-workspace}
 
 ## Introduzione {#introduction}
 
@@ -24,7 +42,7 @@ Per ulteriori informazioni, vedere [Introduzione all&#39;area di lavoro di AEM F
 
 ## Acquisizione di familiarità {#getting-familiar}
 
-Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/it_IT/livecycle/11.0/CreateFirstApp/index.html).
+Per avere familiarità con il processo end-to-end di creazione di un&#39;applicazione Forms per automatizzare un processo aziendale, seguire la procedura dettagliata. Dopo aver seguito la procedura dettagliata, è possibile creare, gestire e testare un&#39;applicazione utilizzando l&#39;area di lavoro Workbench, Designer e AEM Forms. Per informazioni dettagliate sull&#39;implementazione, vedere [Creazione della prima applicazione AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Panoramica funzionale {#functional-overview}
 

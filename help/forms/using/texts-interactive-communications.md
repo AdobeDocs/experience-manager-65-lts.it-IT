@@ -5,13 +5,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: ca18b9f4-9d06-4b15-81dd-68a6821e2e3e
-source-git-commit: 6db207b08535c063e41b333054561036481e8db9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2482'
 ht-degree: 1%
-
 ---
-
 # Testi delle comunicazioni interattive{#texts-in-interactive-communications}
 
 ## Panoramica {#overview}
@@ -23,7 +37,7 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
 * **Oggetti modello dati**: le proprietà dati utilizzano un&#39;origine dati back-end.
 * **Contenuto basato su regole**: parti di contenuto in un testo che vengono visualizzate o nascoste in base a una regola. Una regola può anche essere basata sulle proprietà e le variabili del modello di dati del modulo.
 * **Variabili**: nel frammento di documento di testo, le variabili non sono associate a un&#39;origine dati back-end. L’agente inserisce/seleziona i valori nelle variabili o associa le variabili alle origini dati durante la preparazione della comunicazione interattiva per l’invio a un processo post.
-* **Ripeti**: è possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, ad esempio le transazioni in un estratto conto relativo a una carta di credito, il cui numero di occorrenze potrebbe cambiare con ogni comunicazione interattiva generata. Utilizzando la funzione di ripetizione è possibile formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere [Condizione in linea e ripetizione](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Ripeti**: è possibile che nella comunicazione interattiva siano presenti informazioni dinamiche, ad esempio le transazioni in un estratto conto relativo a una carta di credito, il cui numero di occorrenze potrebbe cambiare con ogni comunicazione interattiva generata. Utilizzando la funzione di ripetizione è possibile formattare e strutturare tali informazioni dinamiche. Per ulteriori informazioni, vedere [Condizione in linea e ripetizione](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Crea testo {#createtext}
 
@@ -50,9 +64,9 @@ Il frammento di documento di testo nella comunicazione interattiva supporta il s
    * [Editor regole](#rules)
    * [Opzioni di formattazione](#formatting)
 
-      * [Copia e incolla testo formattato da altre applicazioni](#paste)
+     * [Copia e incolla testo formattato da altre applicazioni](#paste)
 
-      * [Evidenzia parti di testo](#highlight)
+     * [Evidenzia parti di testo](#highlight)
 
    * [Ripeti](/help/forms/using/cm-inline-condition.md)
    * [Caratteri speciali](#special)

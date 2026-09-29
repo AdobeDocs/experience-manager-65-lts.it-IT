@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 68a4d4b2-91a3-4545-a491-2a1ec08ceec5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2078'
+source-wordcount: '2082'
 ht-degree: 7%
-
 ---
-
 # Configurazione dei moduli di ricerca{#configuring-search-forms}
 
 Utilizza **Cerca in Forms** per personalizzare la selezione dei predicati di ricerca utilizzati nei pannelli di ricerca disponibili in varie console e/o pannelli AEM dell&#39;ambiente di authoring. La personalizzazione di questi pannelli rende la funzionalità di ricerca versatile in base alle tue esigenze specifiche.
@@ -26,9 +35,9 @@ Puoi [configurare i moduli di ricerca](#configuring-your-search-forms) utilizzat
 
 * **Strumenti**
 
-   * **Generale**
+  * **Generale**
 
-      * **Cerca in Forms**
+    * **Cerca in Forms**
 
 La prima volta che accedi a questa console puoi vedere che tutte le configurazioni hanno un simbolo lucchetto. Ciò indica che la configurazione appropriata è quella predefinita (predefinita) e non può essere eliminata. Dopo aver personalizzato la configurazione, il blocco scompare a meno che non si [elimini la configurazione personalizzata](#deleting-a-configuration-to-reinstate-the-default). In tal caso, viene ripristinato il valore predefinito (e l&#39;indicatore del lucchetto).
 
@@ -393,7 +402,7 @@ Se questa opzione è selezionata, le opzioni vengono visualizzate come caselle d
 * **Nomi proprietà pubblicazione e Live Copy**
 Le etichette per le caselle di controllo di pubblicazione e Live Copy per il predicato specifico di Sites.
 
-* L&#39;&ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
+* L&#39;&amp;ast; sulle etichette dei campi nella scheda **Impostazioni** indica che i campi sono obbligatori e se lasciato vuoto, viene visualizzato un messaggio di errore.
 
 ## Configurazione del Forms di ricerca {#configuring-your-search-forms}
 

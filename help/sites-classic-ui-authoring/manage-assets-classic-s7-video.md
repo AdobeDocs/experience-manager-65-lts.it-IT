@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 46af0e0d-9f8f-4751-91a8-c39d028e4c91
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 1%
-
+source-wordcount: '1725'
+ht-degree: 2%
 ---
-
 # Video{#video}
 
 Assets fornisce la gestione centralizzata delle risorse video, in cui puoi caricare i video direttamente in Assets per la codifica automatica in Dynamic Media Classic e accedere ai video Dynamic Media Classic direttamente da Assets per l’authoring delle pagine.
@@ -23,7 +32,7 @@ Assets fornisce la gestione centralizzata delle risorse video, in cui puoi caric
 L&#39;integrazione video Dynamic Media Classic estende la portata del video ottimizzato a tutti gli schermi (rilevamento automatico di dispositivi e larghezza di banda).
 
 * Il componente video Dynamic Media Classic esegue automaticamente il rilevamento del dispositivo e della larghezza di banda per riprodurre il formato e la qualità video corretti su desktop, tablet e dispositivi mobili.
-* Assets: puoi includere set di video adattivi anziché solo singole risorse video. Un set video adattivo è un contenitore per tutte le rappresentazioni video necessarie per riprodurre il video in modo fluido su più schermi. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Utilizzi un set video adattivo, insieme al componente video S7, per lo streaming video adattivo su più schermi, inclusi desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Per ulteriori informazioni, consulta la [documentazione di Dynamic Media Classic sui set di video adattivi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html?lang=it#video).
+* Assets: puoi includere set di video adattivi anziché solo singole risorse video. Un set video adattivo è un contenitore per tutte le rappresentazioni video necessarie per riprodurre il video in modo fluido su più schermi. Un set video adattivo raggruppa le versioni dello stesso video che sono codificate in diversi formati e bit rate, ad esempio 400 kbps, 800 kbps e 1000 kbps. Utilizzi un set video adattivo, insieme al componente video S7, per lo streaming video adattivo su più schermi, inclusi desktop, iOS, Android™, BlackBerry® e dispositivi mobili Windows. Per ulteriori informazioni, consulta la [documentazione di Dynamic Media Classic sui set di video adattivi](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## Informazioni su FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -64,7 +73,7 @@ Se hai bisogno di un flusso di lavoro o di un controllo delle versioni per le ri
 
 Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per le risorse, carica le risorse in Dynamic Media Classic. Di seguito è riportato il flusso di lavoro consigliato:
 
-1. Nell&#39;app desktop Dynamic Media Classic, [configurare un caricamento e una codifica FTP pianificati in Dynamic Media Classic (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=it#upload-options).
+1. Nell&#39;app desktop Dynamic Media Classic, [configurare un caricamento e una codifica FTP pianificati in Dynamic Media Classic (sistema automatizzato)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. In Experience Manager, accedi alle risorse video in WCM nella scheda **[!UICONTROL Dynamic Media Classic]** di Content Finder.
 1. Creare con il componente video Dynamic Media Classic.
 
@@ -81,7 +90,7 @@ Se non hai bisogno di un flusso di lavoro o di un controllo delle versioni per l
 
    >[!NOTE]
    >
-   >Per ulteriori informazioni sul significato dei predefiniti video, vedere [Predefiniti video per la codifica dei file video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=it#video-presets-for-encoding-video-files).
+   >Per ulteriori informazioni sul significato dei predefiniti video, vedere [Predefiniti video per la codifica dei file video](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe consiglia di selezionare entrambi i set di video adattivi durante la configurazione dei predefiniti universali o di selezionare l&#39;opzione **[!UICONTROL Codifica video adattivo]**.
 

@@ -7,13 +7,26 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b866ff4a-251c-4402-b426-9c4d97fd181d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
-
 ---
-
 # Creare una lettera {#create-letter}
 
 ## Flusso di lavoro di gestione della corrispondenza {#correspondence-management-workflow}
@@ -152,10 +165,10 @@ Analizzare ogni lettera per scoprire i vari pezzi che compongono la lettera. Lo 
 * Con quale frequenza cambia il modello di corrispondenza? Sarà aggiornato ogni anno, trimestralmente o solo quando una particolare legislazione cambia? Quale tipo di modifiche è previsto? Correggere gli errori tipografici, modificare il layout, aggiungere altri campi, aggiungere altri paragrafi e così via?
 * Quando pianifichi i requisiti di corrispondenza, assembla l’elenco dei nuovi modelli di corrispondenza. Per ogni modello di corrispondenza, è necessario:
 
-   * Clausole di testo, immagini e tabelle
-   * Valori dei dati dai sistemi back-end
-   * Layout e layout dei frammenti della corrispondenza
-   * Ordine in cui il contenuto viene visualizzato nella lettera e regole per l’inclusione e l’esclusione del contenuto
+  * Clausole di testo, immagini e tabelle
+  * Valori dei dati dai sistemi back-end
+  * Layout e layout dei frammenti della corrispondenza
+  * Ordine in cui il contenuto viene visualizzato nella lettera e regole per l’inclusione e l’esclusione del contenuto
 
 * Le condizioni in base alle quali gli utenti aziendali, ad esempio i periti per la liquidazione dei sinistri o i lavoratori addetti ai casi, modificano il contenuto o parti della lettera.
 * Gli scenari sono narrazioni che descrivono l’esperienza utente, i requisiti e i vantaggi dell’utilizzo della soluzione Letters.

@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 7d975fe3-9444-4337-ba32-98a8cc2e03f3
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 100%
-
 ---
-
 # Creare e gestire set di criteri {#creating-and-managing-policy-sets}
 
 >[!NOTE]
@@ -71,11 +83,11 @@ Durante la creazione del set di criteri, puoi utilizzare il pulsante Indietro pe
    * Seleziona la casella di controllo relativa all’utente o al gruppo da aggiungere e fai clic su Avanti.
    * Seleziona le autorizzazioni del coordinatore del set di criteri e fai clic su Aggiungi. Puoi impostare le seguenti autorizzazioni:
 
-      * Visualizzazione degli eventi
-      * Gestisci i documenti (revoca e ripristina l’accesso ai documenti e cambia i criteri sui documenti)
-      * Gestisci i criteri (crea, modifica ed elimina i criteri)
-      * Gestione degli editori di documenti (aggiunta e rimozione di editori di documenti)
-      * Delega (aggiungi e rimuovi i coordinatori del set di criteri)
+     * Visualizzazione degli eventi
+     * Gestisci i documenti (revoca e ripristina l’accesso ai documenti e cambia i criteri sui documenti)
+     * Gestisci i criteri (crea, modifica ed elimina i criteri)
+     * Gestione degli editori di documenti (aggiunta e rimozione di editori di documenti)
+     * Delega (aggiungi e rimuovi i coordinatori del set di criteri)
 
 1. Ripeti il passaggio 5 per aggiungere altri coordinatori del set di criteri.
 1. Rivedi le impostazioni del coordinatore del set di criteri e fai clic su Avanti.

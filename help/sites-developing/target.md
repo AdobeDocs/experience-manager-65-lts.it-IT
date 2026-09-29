@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 722c8052-6b1e-4b52-a332-b549f4a6bc05
-source-git-commit: 6360a0573f3683ad491c5e9edad5d34840f98ebb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 4%
-
 ---
-
 
 # Sviluppo per contenuti mirati {#developing-for-targeted-content}
 
@@ -205,7 +214,7 @@ Lo script JSP di questo componente genera chiamate all’API JavaScript di Targe
 
 Il file `mbox.js` predefinito utilizzato per creare mbox si trova in `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Per utilizzare un file `mbox.js` personalizzato, aggiungi il file alla configurazione cloud di Target. Per aggiungere il file, il file `mbox.js` deve essere disponibile nel file system.
 
-Se ad esempio si desidera utilizzare il servizio [Marketing Cloud ID,](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=it) è necessario scaricare `mbox.js` in modo che contenga il valore corretto per la variabile `imsOrgID`, basata sul tenant. Questa variabile è necessaria per l&#39;integrazione con il servizio Marketing Cloud ID. Per ulteriori informazioni, vedere [Adobe Analytics come Source per la generazione di rapporti per Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=it) e [Prima dell&#39;implementazione.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=it)
+Se ad esempio si desidera utilizzare il servizio [Marketing Cloud ID,](https://experienceleague.adobe.com/docs/id-service/using/home.html) è necessario scaricare `mbox.js` in modo che contenga il valore corretto per la variabile `imsOrgID`, basata sul tenant. Questa variabile è necessaria per l&#39;integrazione con il servizio Marketing Cloud ID. Per ulteriori informazioni, vedere [Adobe Analytics come Source per la generazione di rapporti per Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) e [Prima dell&#39;implementazione.](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 
 >[!NOTE]
 >

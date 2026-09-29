@@ -6,13 +6,27 @@ feature: Developing,SPA Editor
 role: Developer
 exl-id: 9c8dff52-3860-4f71-a0d9-993574f1d654
 index: false
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 3%
-
+source-wordcount: '409'
+ht-degree: 2%
 ---
-
 
 # Componente RemotePage {#remote-page-component}
 
@@ -36,9 +50,9 @@ Consulta l&#39;articolo [Modifica di un&#39;applicazione a pagina singola estern
 * Configurare l’URL remoto nelle Proprietà pagina
 * Eseguire il rendering dell’applicazione a pagina singola in AEM
 * L’applicazione web deve utilizzare un manifesto della risorsa bundler come uno dei seguenti ed esporre un file asset-manifest.json nella directory principale del dominio che elenca in una proprietà entrypoints tutti i file CSS e JS da caricare:
-   * https://github.com/shellscape/webpack-manifest-plugin
-   * https://github.com/webdeveric/webpack-assets-manifest
-   * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+  * https://github.com/shellscape/webpack-manifest-plugin
+  * https://github.com/webdeveric/webpack-assets-manifest
+  * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
   ![Punti di ingresso](assets/asset-manifest-entrypoints.png)
 
@@ -46,7 +60,7 @@ Consulta l&#39;articolo [Modifica di un&#39;applicazione a pagina singola estern
 
 ## Limitazioni {#limitations}
 
-* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto delle risorse come quello [&#x200B; trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, come Angular.
+* Il componente RemotePage prevede che l&#39;implementazione fornisca un manifesto di risorse come quello [trovato qui.](https://github.com/shellscape/webpack-manifest-plugin) Il componente RemotePage, tuttavia, è stato testato per funzionare solo con il framework React (e Next.js tramite il componente remote-page-next ) e pertanto non supporta il caricamento remoto di applicazioni da altri framework, come Angular.
 * I CSS interni definiti nel file HTML principale dell’applicazione e i CSS in linea sul nodo DOM principale non saranno disponibili durante il rendering remoto in AEM.
 
 ## Dettagli tecnici {#technical-details}

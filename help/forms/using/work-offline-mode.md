@@ -8,13 +8,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 9d55b4de-fee6-49ef-9c76-37f1ca525115
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 0%
-
+source-wordcount: '535'
+ht-degree: 2%
 ---
-
 # Utilizzo della modalità offline {#working-in-the-offline-mode}
 
 La modalità offline dell’app AEM Forms consente di lavorare senza problemi anche se l’app va offline. È possibile aprire, aggiornare e inviare un modulo senza richiedere alcuna connettività di rete.
@@ -46,6 +60,6 @@ Per configurare il componente offline lato server dell&#39;app AEM Forms:
    * **Cancella cache**: cancella la cache lato server delle dipendenze del modulo.
    * **Ripristina configurazione**: reimposta la configurazione offline dell&#39;app AEM Forms.
    * **Validità cache**: specifica il periodo di validità per la cache offline lato server.
-   * **Percorsi di osservazione risorse**: specifica i percorsi in cui il servizio offline controlla le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Esempio: `/etc/clientlibs/fd,/content/dam/images`.
+   * **Percorsi di osservazione risorse**: specifica i percorsi in cui il servizio offline controlla le modifiche alle risorse. Se si verificano modifiche nei percorsi specificati, la cache offline di tutti i moduli dipendenti viene aggiornata. Ad esempio, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. Nella scheda **Cache risorse manuale**, specificare le dipendenze del modulo che il servizio offline non è in grado di identificare. Puoi specificare risorse quali immagini caricate da JavaScript. L’app AEM Forms scaricherà queste risorse anche per la modalità offline.

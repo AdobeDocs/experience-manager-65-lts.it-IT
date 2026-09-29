@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: 3fd6a54b-9220-4bb2-9625-4f459c4d3aa8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # SSL/TLS per impostazione predefinita{#ssl-tls-by-default}
 
 Nel tentativo di migliorare continuamente la sicurezza di AEM, Adobe ha introdotto una funzione denominata SSL per impostazione predefinita. Lo scopo è quello di incoraggiare l’utilizzo di HTTPS per la connessione alle istanze di AEM.
@@ -195,7 +207,7 @@ Di seguito è riportato un esempio per la creazione di un certificato autofirmat
 
 >[!NOTE]
 >
->Per un elenco centralizzato di comandi cURL utili in AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/it/experience-manager/6-4/sites/administering/using/curl.html).
+>Per un elenco centralizzato di comandi cURL utili in AEM, vedere [Utilizzo di cURL con AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html).
 
 Puoi anche automatizzare la configurazione SSL/TLS utilizzando lo strumento cURL. Per eseguire questa operazione, invia i parametri di configurazione a questo URL:
 

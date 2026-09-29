@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 933ef22f-d023-44d2-8ec0-4bb47a46bba3
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 6%
-
+source-wordcount: '533'
+ht-degree: 7%
 ---
-
 # Best practice{#best-practices}
 
 Le best practice descrivono come sviluppare, amministrare o utilizzare AEM nel modo più efficiente ed efficace possibile. Questo elenco crescente di argomenti include diverse aree in AEM.
@@ -27,8 +36,8 @@ Nelle seguenti aree è disponibile la documentazione sulle best practice:
 
 Per le best practice sull’authoring, la distribuzione, la manutenzione o lo sviluppo, consulta una delle seguenti sezioni:
 
-* [Best practice di authoring](/help/sites-authoring/best-practices.md)
-* [Sviluppo di best practice](/help/sites-developing/best-practices.md)
+* [Authoring delle best practice](/help/sites-authoring/best-practices.md)
+* [Sviluppo delle best practice](/help/sites-developing/best-practices.md)
 * [Implementazione delle best practice](/help/sites-deploying/best-practices.md)
 
 I documenti specifici sono descritti e collegati nelle tabelle seguenti.

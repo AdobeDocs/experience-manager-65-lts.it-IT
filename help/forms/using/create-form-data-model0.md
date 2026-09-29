@@ -8,7 +8,25 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ecbfe24e-7662-48a7-9b46-37949f59050e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 1%
@@ -23,7 +41,7 @@ Questo tutorial è un passaggio della serie [Crea la tua prima comunicazione int
 
 Il modulo di integrazione dei dati di AEM Forms consente di creare un modello di dati modulo da diverse origini dati back-end, come il profilo utente di AEM, i servizi web RESTful, i servizi web basati su SOAP, i servizi OData e i database relazionali. È possibile configurare oggetti e servizi del modello dati in un modello dati del modulo e associarlo a un modulo adattivo. I campi del modulo adattivo sono associati alle proprietà dell’oggetto modello dati. I servizi consentono di precompilare il modulo adattivo e riscrivere i dati del modulo inviato nell’oggetto modello dati.
 
-Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello dati del modulo, vedere [Integrazione dati di AEM Forms](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/data-integration.html).
+Per ulteriori informazioni sull&#39;integrazione dei dati del modulo e sul modello dati del modulo, vedere [Integrazione dati di AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Questo tutorial illustra i passaggi necessari per preparare, creare, configurare e associare un modello di dati modulo a una comunicazione interattiva. Al termine di questa esercitazione, sarai in grado di:
 
@@ -44,7 +62,7 @@ Il modello dati del modulo è simile al seguente:
 Prima di iniziare, assicurati di disporre dei seguenti elementi:
 
 * Database MySQL con dati di esempio come indicato nella sezione [Configurare il database](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
-* Bundle OSGi per il driver JDBC MySQL come spiegato in [Bundling del driver di database JDBC](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* Bundle OSGi per il driver JDBC MySQL come spiegato in [Bundling del driver di database JDBC](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Passaggio 1: configurare il database {#step-set-up-the-database}
 
@@ -111,7 +129,7 @@ La tabella **bills** include i dettagli della fattura come la data di fatturazio
 
 ## Passaggio 2: configurare il database MySQL come origine dati {#step-configure-mysql-database-as-data-source}
 
-È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione, si configurerà il database MySQL configurato e popolato con dati di esempio. Per informazioni sulle altre origini dati supportate e su come configurarle, vedere [Integrazione dei dati di AEM Forms](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/data-integration.html).
+È possibile configurare diversi tipi di origini dati per creare un modello dati del modulo. Per questa esercitazione, si configurerà il database MySQL configurato e popolato con dati di esempio. Per informazioni sulle altre origini dati supportate e su come configurarle, vedere [Integrazione dei dati di AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Per configurare il database MySQL, eseguire le operazioni seguenti:
 
@@ -153,7 +171,7 @@ Per configurare il database MySQL, eseguire le operazioni seguenti:
 
 ## Passaggio 3: creare il modello dati del modulo {#step-create-form-data-model}
 
-AEM Forms fornisce un&#39;interfaccia utente intuitiva per [creare una modalità dati modulo](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il caso d&#39;uso di questa esercitazione, verrà utilizzato MySQL come origine dati.
+AEM Forms fornisce un&#39;interfaccia utente intuitiva per [creare una modalità dati modulo](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l da origini dati configurate. È possibile utilizzare più origini dati in un modello dati del modulo. Per il caso d&#39;uso di questa esercitazione, verrà utilizzato MySQL come origine dati.
 
 Per creare il modello dati del modulo, effettua le seguenti operazioni:
 

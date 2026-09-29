@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: e024c456-1d50-4ff2-bfb6-aca1cca31632
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1763'
 ht-degree: 62%
-
 ---
-
 # Configurazione della segmentazione con ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -33,7 +44,7 @@ AEM ti consente di personalizzare facilmente l’esperienza degli utenti. Consen
 
 ## Accesso ai segmenti {#accessing-segments}
 
-La console [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. Questa documentazione tratta la gestione dei segmenti per ContextHub. Per [segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e segmenti Adobe Target, consulta la relativa documentazione.
+La console [Tipi di pubblico](/help/sites-authoring/managing-audiences.md) viene utilizzata per gestire i segmenti per ContextHub o ClientContext e i tipi di pubblico per il tuo account Adobe Target. La presente documentazione riguarda la gestione dei segmenti per ContextHub. Per [segmenti ClientContext](/help/sites-administering/campaign-segmentation.md) e segmenti Adobe Target, consulta la relativa documentazione.
 
 Per accedere ai segmenti devi selezionare la configurazione. Nella navigazione globale, seleziona **Navigazione > Personalization > Tipi di pubblico**. Verranno visualizzate le configurazioni disponibili:
 
@@ -51,7 +62,7 @@ L&#39;**Editor segmenti** consente di modificare facilmente un segmento. Per mod
 
 Tramite il browser Componenti puoi aggiungere i contenitori **AND** e **OR** per definire la logica del segmento. In seguito puoi aggiungere altri componenti per confrontare proprietà e valori o script di riferimento e altri segmenti per definire i criteri di selezione (consulta [Creazione di un nuovo segmento](#creating-a-new-segment)) per definire lo scenario esatto per la selezione del segmento.
 
-Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul [&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)fattore di incremento, consulta [Creazione di un nuovo segmento](#creating-a-new-segment).
+Quando l’intera istruzione restituisce “True”, significa che il segmento è stato risolto. Se sono presenti più segmenti applicabili, viene utilizzato anche il fattore **Incrementa**. Per informazioni dettagliate sul [fattore di incremento, consulta [Creazione di un nuovo segmento](#creating-a-new-segment).](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -234,7 +245,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 Se disponi di molti segmenti, la gestione in un elenco semplice può essere complicata. In questi casi, può essere utile creare alcune cartelle per gestire i tuoi segmenti.
 
-### Crea una nuova cartella,  {#create-folder}
+### Crea una nuova cartella, {#create-folder}
 
 1. Dopo [l&#39;accesso ai segmenti](#accessing-segments), fare clic sul pulsante **Crea** e selezionare **Cartella**.
 
@@ -243,8 +254,8 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. Specifica il **titolo** e il **nome** da assegnare alla cartella.
    * Il **titolo** deve essere descrittivo.
    * Il **nome** diventerà il nome del nodo nell’archivio.
-      * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/sites-developing/naming-conventions.md)
-      * Se necessario è possibile modificarlo.
+     * Viene generato automaticamente dal titolo, secondo le [convenzioni di denominazione di AEM.](/help/sites-developing/naming-conventions.md)
+     * Se necessario è possibile modificarlo.
 
    ![Crea cartella](assets/contexthub-create-folder.png)
 
@@ -255,7 +266,6 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 1. La cartella verrà visualizzata nell’elenco dei segmenti.
    * L’ordinamento delle colonne incide sulla posizione di visualizzazione della nuova cartella nell’elenco.
    * Puoi fare clic sulle intestazioni di colonna per modificare l’ordinamento.
-
      ![La nuova cartella](assets/contexthub-folder.png)
 
 ### Modificare le cartelle esistenti {#modify-folders}
@@ -291,7 +301,7 @@ Se disponi di molti segmenti, la gestione in un elenco semplice può essere comp
 
 1. Se una delle cartelle selezionate contiene sottocartelle o segmenti, devi confermarne l’eliminazione.
 
-   ![Conferma l’eliminazione degli elementi figlio](assets/contexthub-confirm-segment-child-delete.png)
+   ![Conferma l’eliminazione degli elementi secondari](assets/contexthub-confirm-segment-child-delete.png)
 
    * Fai clic su **Forza eliminazione** per confermare.
    * Fai clic su **Annulla** per interrompere.

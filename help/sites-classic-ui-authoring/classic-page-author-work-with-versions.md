@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ea1b7d4-6e07-4ad4-9bac-ff2214b8f47e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
-# Utilizzo delle versioni di una pagina  {#working-with-page-versions}
+# Utilizzo delle versioni di una pagina{#working-with-page-versions}
 
 Il controllo delle versioni crea lo snapshot di una pagina in un determinato momento. Con il controllo delle versioni è possibile eseguire le azioni seguenti:
 
@@ -99,9 +108,9 @@ Per confrontare la versione corrente della pagina con una versione precedente:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. In Sidekick, selezionare la scheda secondaria **Ripristina versione** e fare clic sul pulsante **&lt;&lt;Indietro** per visualizzare la versione corrente.
+1. In Sidekick, selezionare la scheda secondaria **Ripristina versione** e fare clic sul pulsante **&lt;&lt;Back** per visualizzare la versione corrente.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp è una funzione progettata per simulare lo stato ***di pubblicazione*** di una pagina in specifici momenti nel passato.
 
@@ -170,8 +179,8 @@ Se si desidera visualizzare la sequenza temporale del documento:
 1. Selezionare e spostare (tenere premuto e trascinare) la sequenza temporale per spostarla nella sequenza temporale del documento.
 
    * Tutte le righe indicano le versioni pubblicate.
-Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
-Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale. La linea gialla indica che la pagina è stata modificata durante la versione rossa e così via.
+     Quando viene attivata una pagina, inizia una nuova riga. Ogni volta che il documento viene modificato, viene visualizzato un nuovo colore.
+     Nell’esempio seguente, la linea rossa indica che la pagina è stata modificata durante l’intervallo di tempo della versione verde iniziale. La linea gialla indica che la pagina è stata modificata durante la versione rossa e così via.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 

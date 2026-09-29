@@ -10,13 +10,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 71e3d2cd-4e22-44a2-88dd-1f165bf2b3d8
-source-git-commit: c576955f2e93de5e5fdc2d0e0f8bd8ba8810df63
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 1%
-
 ---
-
 # Come eseguire AEM con TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introduzione {#introduction}
@@ -218,7 +227,7 @@ Il servizio può essere configurato anche tramite la console web:
 >
 >Puoi controllare il ruolo di un&#39;istanza in qualsiasi momento controllando la presenza delle modalità di esecuzione **primary** o **standby** nella console Web Impostazioni Sling.
 >
->Per eseguire questa operazione, vai a *https://localhost:4502/system/console/status-slingsettings* e controlla la riga **&quot;Run Modes&quot;**.
+>Per eseguire questa operazione, vai a *https://localhost:4502/system/console/status-slingsettings* e controlla la riga **&quot;Modalità di esecuzione&quot;**.
 
 ## Prima sincronizzazione {#first-time-synchronization}
 
@@ -325,7 +334,7 @@ Per applicare gli hotfix a una configurazione di standby a freddo, si consiglia 
 
 Per farlo, segui i passaggi descritti di seguito:
 
-1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**&#x200B;bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
+1. Arresta il processo di sincronizzazione sull’istanza in standby a freddo passando alla console JMX e utilizzando **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**bean. Per ulteriori informazioni su come eseguire questa operazione, vedere la sezione relativa al [monitoraggio](#monitoring).
 1. Arrestare l&#39;istanza di standby a freddo.
 1. Installa l’hotfix sull’istanza primaria. Per ulteriori dettagli su come installare un hotfix, vedi [Come utilizzare i pacchetti](/help/sites-administering/package-manager.md).
 1. Verificare la presenza di eventuali problemi dopo l&#39;installazione.

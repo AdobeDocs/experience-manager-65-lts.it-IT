@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: b95b8f27-dbcd-4335-ac50-266ab3461d44
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 79%
-
+source-wordcount: '1840'
+ht-degree: 78%
 ---
-
 # Come modellare il contenuto {#model-your-content}
 
 In questa parte del [Percorso per sviluppatori di AEM headless](overview.md), puoi imparare a modellare la struttura del contenuto. Poi scopri che la struttura per Adobe Experience Manager (AEM) utilizza modelli per frammenti di contenuto e frammenti di contenuto per il riutilizzo su più canali.
@@ -33,10 +59,10 @@ Questo articolo si basa su questi fondamentali in modo da capire come preparare 
 
 * **Pubblico**: principiante
 * **Obiettivo**: scopri come modellare la struttura del contenuto, quindi realizzare tale struttura utilizzando i Modelli per frammenti di contenuto di AEM e i Frammenti di contenuto:
-   * Introduzione dei concetti e della terminologia relativi alla modellazione di dati/contenuti.
-   * Scopri perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
-   * Scopri come realizzare questa struttura utilizzando Modelli di frammenti di contenuto di AEM (e creare contenuti con Frammenti di contenuto).
-   * Scopri come modellare il contenuto; principi con campioni di base.
+  * Introduzione dei concetti e della terminologia relativi alla modellazione di dati/contenuti.
+  * Scopri perché è necessaria la modellazione dei contenuti per la distribuzione di contenuti headless.
+  * Scopri come realizzare questa struttura utilizzando Modelli di frammenti di contenuto di AEM (e creare contenuti con Frammenti di contenuto).
+  * Scopri come modellare il contenuto; principi con campioni di base.
 
 >[!NOTE]
 >
@@ -174,8 +200,8 @@ Ad esempio, definisci il campo contenente il nome di un insegnante come **Testo*
 1. I tipi di dati **Riferimento contenuto** e **Riferimento frammento** consentono di creare relazioni con altri contenuti in AEM.
 1. Il tipo di dati **Riferimento frammento** consente di realizzare più livelli di struttura nidificando i frammenti di contenuto (in base al tipo di modello). Questo è fondamentale per la modellazione dei contenuti.
 
-Ad esempio:
-![Modellazione dei contenuti con frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con frammenti di contenuto")
+Esempio:
+![Modellazione dei contenuti con Frammenti di contenuto](assets/headless-modeling-01.png "Modellazione dei contenuti con Frammenti di contenuto")
 
 ### Tipi di dati {#data-types}
 
@@ -197,15 +223,15 @@ AEM fornisce i seguenti tipi di dati per modellare il contenuto:
 Due tipi di dati forniscono riferimenti a contenuti esterni a uno specifico frammento:
 
 * **Riferimento contenuto**
-Fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
+Questo fornisce un semplice riferimento ad altri contenuti di qualsiasi tipo.
 Ad esempio, è possibile fare riferimento a un’immagine in una posizione specifica.
 
 * **Riferimento frammento**
-Fornisce riferimenti ad altri frammenti di contenuto.
+Questo fornisce riferimenti ad altri frammenti di contenuto.
 Questo tipo di riferimento viene utilizzato per creare contenuti nidificati, introducendo le relazioni necessarie per modellare il contenuto.
 Il tipo di dati può essere configurato in modo da consentire agli autori di frammenti di:
-   * Modificare direttamente il frammento a cui si fa riferimento.
-   * Crea un frammento di contenuto in base al modello appropriato.
+  * Modificare direttamente il frammento a cui si fa riferimento.
+  * Crea un frammento di contenuto in base al modello appropriato.
 
 ### Creazione di modelli per frammenti di contenuto {#creating-content-fragment-models}
 
@@ -274,10 +300,10 @@ Ora che hai imparato a modellare la tua struttura e a creare contenuti basandoti
 ## Risorse aggiuntive {#additional-resources}
 
 * [Utilizzo dei frammenti di contenuto](/help/assets/content-fragments/content-fragments.md): pagina di apertura dei frammenti di contenuto.
-   * [Frammenti di contenuto nel browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni.
-   * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Creazione e modifica di modelli per frammenti di contenuto.
-   * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) - Creazione e creazione di frammenti di contenuto. In questa pagina vengono visualizzate altre sezioni dettagliate.
+  * [Frammenti di contenuto nel browser configurazioni](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Abilitare la funzionalità Frammenti di contenuto nel browser configurazioni.
+  * [Modelli per frammenti di contenuto](/help/assets/content-fragments/content-fragments-models.md) - Creazione e modifica di modelli per frammenti di contenuto.
+  * [Gestione dei frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) - Creazione e creazione di frammenti di contenuto. In questa pagina vengono visualizzate altre sezioni dettagliate.
 * [Schemi AEM GraphQL](access-your-content.md) - Modalità di realizzazione dei modelli in GraphQL.
 * [La struttura del frammento di contenuto di esempio](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Guida introduttiva ad AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=it) - Una breve serie di video tutorial che offre una panoramica dell’utilizzo di funzioni headless di AEM, tra cui modellazione dei contenuti e GraphQL.
-   * [Nozioni di base sulla modellazione di GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=it): scopri come definire e inserire i frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.
+  * [Nozioni di base sulla modellazione di GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=it): scopri come definire e inserire i frammenti di contenuto in Adobe Experience Manager (AEM) per l’utilizzo con GraphQL.

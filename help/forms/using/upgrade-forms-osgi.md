@@ -6,13 +6,33 @@ role: Admin, User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, AEM Forms on OSGi, AEM Forms Upgrade
 exl-id: 9233d4b7-441c-4cbd-86f8-2c52b99c3330
-source-git-commit: 818673651f736311d400c71bfeb635b73b25a034
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: b9cdd520-e7a7-4af9-a95f-296f28882b69
+    internal-label: AEM Forms upgrade
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1620'
 ht-degree: 7%
-
 ---
-
 # Aggiornamento ad AEM 6.5 Forms LTS su OSGi {#upgrade-to-aem-forms-osgi}
 
 Per [eseguire l&#39;aggiornamento da AEM 6.5 a AEM 6.5 LTS](/help/sites-deploying/upgrade.md), eseguire l&#39;aggiornamento a AEM 6.5.17.0 Forms o versione successiva. È supportato un aggiornamento diretto da AEM 6.5.17.0 (o versioni successive) a AEM 6.5 Forms LTS.
@@ -52,7 +72,7 @@ Dopo l&#39;aggiornamento ad AEM Forms 6.5.17.0 o versione successiva, eseguire l
 
      L’utility di migrazione rende compatibili con AEM 6.5 forms i moduli adattivi e le risorse di gestione della corrispondenza delle versioni precedenti. Puoi scaricare l’utility da AEM Software Distribution. Per informazioni dettagliate sulla configurazione e l&#39;utilizzo dell&#39;utilità di migrazione, vedere [utilità di migrazione](../../forms/using/migration-utility.md).
 
-     Se si utilizza [Esempio per l&#39;integrazione del componente Bozze e invii](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) con il database e l&#39;aggiornamento da una versione precedente, eseguire le query SQL seguenti dopo l&#39;aggiornamento:
+     Se si utilizza [Esempio per l&#39;integrazione del componente Bozze e invii](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) con il database e l&#39;aggiornamento da una versione precedente, eseguire le query SQL seguenti dopo l&#39;aggiornamento:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
@@ -93,7 +113,7 @@ Dopo l&#39;aggiornamento ad AEM Forms 6.5.17.0 o versione successiva, eseguire l
 
    >[!NOTE]
    >
-   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se esegui l’aggiornamento da Forms 6.3 a AEM 6.5 Forms, utilizza i percorsi modificati per la personalizzazione che crei nuovamente. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms in AEM](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
+   >In AEM 6.4 Forms, la struttura dell’archivio crx è cambiata. Se esegui l’aggiornamento da Forms 6.3 a AEM 6.5 Forms, utilizza i percorsi modificati per la personalizzazione che crei nuovamente. Per l&#39;elenco completo dei percorsi modificati, vedere [Ristrutturazione dell&#39;archivio Forms in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/restructuring/forms-repository-restructuring-in-aem-6-5).
 
 
 ## Distribuzione di AEM su JBoss EAP 8 (Windows)

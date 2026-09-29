@@ -1,5 +1,5 @@
 ---
-title: Gestire i metadati del modulo
+title: Gestire i metadati dei moduli
 description: I metadati semplificano la classificazione e l’organizzazione delle risorse e aiutano gli utenti che cercano una risorsa specifica.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,34 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 712590c6-2348-4c0d-93b9-686e6478ca03
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1973'
-ht-degree: 1%
-
+source-wordcount: '2007'
+ht-degree: 2%
 ---
-
-# Gestire i metadati del modulo{#manage-form-metadata}
+# Gestire i metadati dei moduli{#manage-form-metadata}
 
 ## Applicabile a {#applies-to}
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html).
 
 ## Panoramica  {#overview-nbsp}
 
@@ -124,7 +138,7 @@ Di seguito è riportato un elenco completo delle proprietà di metadati supporta
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Invia URL</td> 
+   <td>URL di invio</td> 
    <td><p>Modello di modulo</p> <p>Modulo PDF</p> </td> 
    <td><p>Per configurare un URL specificato dall'utente per l'invio dei dati del modulo a un servlet.</p> <p>L’URL di invio può essere configurato utilizzando uno dei seguenti metodi, elencati in ordine di precedenza:</p> 
     <ul> 
@@ -300,7 +314,7 @@ AEM Forms espone gli schemi di metadati dei tipi di moduli supportati in questo 
 
       >[!NOTE]
       >
-      >Non modificare il prefisso ‘./jcr:content/metadata/&#39; definisce il percorso in cui è memorizzata la proprietà.
+      >Non modificare il prefisso ‘./jcr:content/metadata/’ in quanto definisce il percorso in cui è memorizzata la proprietà.
       >
       >Inoltre, il nome della proprietà deve essere univoco per evitare di scrivere valori per due o più proprietà nella stessa posizione nell’archivio. Pertanto, si consiglia di modificare il valore &quot;default&quot;.
 

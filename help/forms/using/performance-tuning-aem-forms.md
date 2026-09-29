@@ -9,13 +9,27 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 4009c85e-cb8a-4bed-a6ff-7c76fe78a47f
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '813'
 ht-degree: 0%
-
 ---
-
 # Ottimizzazione delle prestazioni del server AEM Forms{#performance-tuning-of-aem-forms-server}
 
 Questo articolo illustra strategie e best practice da implementare per ridurre i colli di bottiglia e ottimizzare le prestazioni dell’implementazione di AEM Forms.
@@ -149,9 +163,9 @@ Per migliorare le prestazioni, è possibile indirizzare il software antivirus pe
 
 * Directory di installazione di AEM. Se non è possibile escludere la directory completa, escludere quanto segue:
 
-   * [Directory di installazione di AEM]\crx-repository\temp
-   * [Directory di installazione di AEM]\crx-repository\repository
-   * [Directory di installazione di AEM]\crx-repository\launchpad
+  * [Directory di installazione di AEM]\crx-repository\temp
+  * [Directory di installazione di AEM]\crx-repository\repository
+  * [Directory di installazione di AEM]\crx-repository\launchpad
 
 <!--
 

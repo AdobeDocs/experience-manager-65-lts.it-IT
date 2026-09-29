@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 20aea30b-9cfe-45c1-aa8d-08085f8e3e7d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
 # Pubblicazione delle pagine{#publishing-pages}
 
 Dopo aver creato e rivisto i contenuti nell’ambiente di authoring, li rende disponibili sul sito web pubblico (l’ambiente di pubblicazione).
@@ -29,13 +38,13 @@ Puoi anche pubblicare/annullare la pubblicazione di una pagina immediatamente o 
 >
 >Alcuni termini relativi alla pubblicazione possono essere confusi:
 >
->* **Pubblicare/Annullare la pubblicazione**
+>* **Pubblica/Annulla pubblicazione**
 >  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
->* **Attivare/Disattivare**
+>* **Attiva/Disattiva**
 >  Sinonimi di pubblicare/annullare la pubblicazione.
 >
->* **Replicare/Replica**
+>* **Replica/Replica**
 >  Questi sono i termini tecnici che descrivono lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ad esempio durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
 

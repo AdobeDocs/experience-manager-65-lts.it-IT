@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell’ambiente dell’account
+title: Configurazione dell’ambiente account
 description: Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 19930920-ffa5-4cfc-a564-ae004320e143
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 16%
-
+source-wordcount: '229'
+ht-degree: 24%
 ---
-
-# Configurazione dell’ambiente dell’account{#configuring-your-account-environment}
+# Configurazione dell’ambiente account{#configuring-your-account-environment}
 
 Adobe Experience Manager (AEM) consente di configurare l’account e alcuni aspetti dell’ambiente di authoring.
 
@@ -26,9 +35,9 @@ Utilizzando le [impostazioni account](#account-settings) e le [preferenze utente
 * **Barra degli strumenti di modifica**
 Specificare se si desidera disporre della barra degli strumenti di modifica globale. Questa barra degli strumenti, visualizzata nella parte superiore della finestra del browser, fornisce i pulsanti **Copia**, **Taglia**, **Incolla**, **Elimina** da utilizzare con i componenti paragrafo della pagina:
 
-   * Mostra se necessario (predefinito)
-   * Mostra sempre
-   * Mantieni nascosto
+  * Mostra se necessario (predefinito)
+  * Mostra sempre
+  * Mantieni nascosto
 
 * **Impersona**
 La funzionalità di [Impersona](/help/sites-administering/security.md#impersonating-another-user) consente a un utente di lavorare per conto di un altro utente.
@@ -39,10 +48,10 @@ Lingua da utilizzare per l’interfaccia utente dell’ambiente di authoring. Se
 * **Gestione finestre**
 Seleziona una delle seguenti opzioni:
 
-   * Finestre multiple (impostazione predefinita)
-Le pagine vengono aperte in una nuova finestra.
-   * Finestra singola
-Le pagine vengono aperte nella finestra corrente.
+  * Finestre multiple (predefinito)
+    Le pagine vengono aperte in una nuova finestra.
+  * Finestra singola
+    Le pagine vengono aperte nella finestra corrente.
 
 ## Impostazioni account {#account-settings}
 

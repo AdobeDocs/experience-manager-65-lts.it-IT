@@ -1,5 +1,5 @@
 ---
-title: 'Sviluppo AEM: linee guida e best practice'
+title: Sviluppo AEM - Linee guida e best practice
 description: Linee guida e best practice per lo sviluppo su AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7fd478a6-ddc6-4c7f-b09b-e4de6ec0e897
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
-# Sviluppo AEM: linee guida e best practice{#aem-development-guidelines-and-best-practices}
+# Sviluppo AEM - Linee guida e best practice{#aem-development-guidelines-and-best-practices}
 
 ## Linee guida per l’utilizzo di modelli e componenti {#guidelines-for-using-templates-and-components}
 
@@ -63,21 +72,21 @@ Ad esempio:
 
   Ciò comportava la sovrapposizione di una definizione di componente:
 
-   * Creare una cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
+  * Creare una cartella di componenti in `/apps/<website-name>/components/<MyComponent>` copiando un componente esistente:
 
-      * Ad esempio, per personalizzare la copia del componente Testo:
+    * Ad esempio, per personalizzare la copia del componente Testo:
 
-         * da `/libs/foundation/components/text`
-         * a `/apps/myProject/components/text`
+      * da `/libs/foundation/components/text`
+      * a `/apps/myProject/components/text`
 
 * [Personalizzazione delle pagine visualizzate dal gestore degli errori](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Questo caso prevede la sovrapposizione di un servlet:
 
-   * Nell’archivio, copia uno o più script predefiniti:
+  * Nell’archivio, copia uno o più script predefiniti:
 
-      * da `/libs/sling/servlet/errorhandler/`
-      * a `/apps/sling/servlet/errorhandler/`
+    * da `/libs/sling/servlet/errorhandler/`
+    * a `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -142,7 +151,7 @@ La scheda di riferimento rapido API XSS contiene informazioni necessarie per uti
 
 Scheda di riferimento rapido XSSAPI.
 
-[Ottieni file](assets/xss_cheat_sheet_2016.pdf)
+[Ottieni il file](assets/xss_cheat_sheet_2016.pdf)
 
 ### Come proteggere la comunicazione per informazioni confidenziali {#securing-communication-for-confidential-information}
 

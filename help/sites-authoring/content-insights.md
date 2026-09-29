@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 10bf533d-c0a8-43ac-8dd5-d4fa501b8726
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 4%
-
 ---
-
 # Approfondimenti contenuto{#content-insight}
 
 Contenuto Insight fornisce informazioni sulle prestazioni delle pagine utilizzando analisi web e consigli SEO (Search Engine Optimization). Utilizza Content Insight per prendere decisioni su come modificare le pagine o per scoprire in che modo le modifiche precedenti hanno cambiato le prestazioni. Per ogni pagina creata, puoi aprire Insight dei contenuti per analizzare la pagina.
@@ -30,9 +43,9 @@ La pagina Insight dei contenuti include rapporti che utilizzano dati di Adobe Si
 
 * SiteCatalyst: sono disponibili rapporti per le metriche seguenti:
 
-   * Visualizzazioni pagina
-   * Tempo medio trascorso sulla pagina
-   * Origini
+  * Visualizzazioni pagina
+  * Tempo medio trascorso sulla pagina
+  * Origini
 
 * Target: rapporti sull’attività della campagna per la quale la pagina include offerte.
 * BrightEdge: segnala le funzioni della pagina che migliorano la visibilità della pagina ai motori di ricerca e consiglia le funzioni che devono essere implementate.
@@ -62,8 +75,8 @@ Il rapporto Visualizzazioni include le seguenti funzioni per la valutazione del 
 * Numero totale di visualizzazioni per una pagina per il periodo di reporting.
 * Un grafico del numero di visualizzazioni nel periodo di reporting:
 
-   * Visualizzazioni totali.
-   * Visitatori univoci.
+  * Visualizzazioni totali.
+  * Visitatori univoci.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

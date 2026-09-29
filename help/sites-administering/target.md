@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
 exl-id: d2f5fc90-7047-4a45-9c82-996f0da60782
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 65%
-
+source-wordcount: '620'
+ht-degree: 58%
 ---
-
 # Integrazione con Adobe Target{#integrating-with-adobe-target}
 
 Come parte di Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) consente di aumentare la rilevanza dei contenuti mediante il targeting e la valutazione su tutti i canali. Adobe Target viene utilizzato dagli esperti di marketing per progettare ed eseguire test online, creare all’istante segmenti di pubblico (in base al comportamento) e automatizzare il targeting di contenuti ed esperienze online. AEM ha adottato il flusso di lavoro di targeting utilizzato in Adobe Target Standard. Se utilizzi Target, avrai familiarità con l’ambiente di modifica del targeting in AEM.
@@ -29,7 +40,7 @@ Integra i tuoi siti di AEM Sites con Adobe Target per personalizzare i contenuti
 
 Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
-1. [Esegui attività preliminari](/help/sites-administering/target-requirements.md): registrati ad Adobe Target e configura alcuni aspetti dell’istanza di authoring AEM. Il tuo account Adobe Target deve disporre almeno delle autorizzazioni **livello &#x200B;** approvatore&quot;. Inoltre, devi proteggere le impostazioni dell’attività sul nodo di pubblicazione in modo che sia inaccessibile agli utenti.
+1. [Esegui attività preliminari](/help/sites-administering/target-requirements.md): registrati ad Adobe Target e configura alcuni aspetti dell’istanza di authoring AEM. Il tuo account Adobe Target deve disporre almeno delle autorizzazioni **livello ** approvatore&quot;. Inoltre, devi proteggere le impostazioni dell’attività sul nodo di pubblicazione in modo che sia inaccessibile agli utenti.
 
 1. Effettua una delle seguenti operazioni:
 
@@ -52,7 +63,7 @@ Per eseguire l’integrazione con Target, esegui le seguenti attività:
 
 >[!CAUTION]
 >
->Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** sull’istanza di pubblicazione, in modo che non sia accessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
+>Proteggere il nodo delle impostazioni delle attività **cq:ActivitySettings** nell&#39;istanza di pubblicazione in modo che sia inaccessibile agli utenti normali. Il nodo delle impostazioni delle attività deve essere accessibile solo al servizio che gestisce la sincronizzazione delle attività con Adobe Target.
 >
 >Consulta [Prerequisiti per l&#39;integrazione con Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) per informazioni dettagliate.
 

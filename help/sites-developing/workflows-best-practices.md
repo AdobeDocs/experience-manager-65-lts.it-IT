@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: f7d67e71-3148-4b27-a61e-ff64d3bf9b72
-source-git-commit: 887d76effd8af7ff4d061fb15d5a3572b51af20c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 1%
-
 ---
-
 # Best practice per i flussi di lavoro{#workflow-best-practices}
 
 I flussi di lavoro consentono di automatizzare le attività di Adobe Experience Manager (AEM).
@@ -239,8 +248,8 @@ Salvataggio di una sessione
 * All&#39;interno di un processo del flusso di lavoro, se `WorkflowSession` viene utilizzato per modificare l&#39;archivio, non salvare esplicitamente la sessione. Al termine, il flusso di lavoro salverà la sessione.
 * `Session.Save` non deve essere chiamato da un passaggio del flusso di lavoro:
 
-   * si consiglia di adattare la sessione JCR del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
-   * non è consigliabile che una fase del processo crei una propria sessione JCR.
+  * si consiglia di adattare la sessione JCR del flusso di lavoro; `save` non è necessario in quanto il motore del flusso di lavoro salva la sessione automaticamente al termine dell&#39;esecuzione del flusso di lavoro.
+  * non è consigliabile che una fase del processo crei una propria sessione JCR.
 
 * Eliminando i risparmi non necessari, è possibile ridurre il sovraccarico e quindi rendere più efficienti i flussi di lavoro.
 
@@ -303,7 +312,7 @@ Durante l’aggiornamento dell’istanza:
 * assicurati che sia stato eseguito il backup di tutti i modelli di flusso di lavoro personalizzati prima di aggiornare un’istanza.
 * conferma che nessuno dei flussi di lavoro personalizzati è archiviato nel [percorso](#locations):
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 ## Strumenti di sistema {#system-tools}
 

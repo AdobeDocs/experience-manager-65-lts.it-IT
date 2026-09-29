@@ -10,13 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: af957cd7-ad3d-46f2-9ca5-e175538104f1
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6331'
+source-wordcount: '6333'
 ht-degree: 0%
-
 ---
-
 # Adobe Experience Manager con MongoDB{#aem-with-mongodb}
 
 >[!NOTE]
@@ -80,8 +92,8 @@ Una RAM insufficiente determina una riduzione significativa delle prestazioni. L
 
 Per facilitare il processo di test di carico, è possibile supporre il seguente rapporto tra il working set e la dimensione totale del database:
 
-* 1:10 per l&#39;archiviazione SSD
-* 1:3 per l&#39;archiviazione su disco rigido
+* 1:10 per storage SSD
+* 1:3 per l&#39;archiviazione su hard disk
 
 Questi rapporti indicano che per le implementazioni SSD sono necessari 200 GB di RAM per un database da 2 TB.
 
@@ -242,7 +254,7 @@ MongoDB viene eseguito su diversi sistemi operativi, tra cui una vasta gamma di 
 * Disattivare le coperture trasparenti e sfalsare. Per ulteriori informazioni, vedere [Impostazioni pagine di grandi dimensioni trasparenti](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/).
 * [Regolare le impostazioni di lettura](https://docs.mongodb.com/manual/administration/production-notes/#readahead) sui dispositivi che memorizzano i file del database in modo da adattarle al caso d&#39;uso.
 
-   * Per il motore di storage WiredTiger, impostare readahead su 0 indipendentemente dal tipo di supporto di storage (rotazione, SSD e così via). In generale, utilizza l’impostazione di lettura consigliata a meno che il test non mostri un vantaggio misurabile, ripetibile e affidabile in un valore di lettura più elevato. [Il supporto tecnico MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) può fornire consigli e indicazioni su configurazioni di readahead diverse da zero.
+  * Per il motore di storage WiredTiger, impostare readahead su 0 indipendentemente dal tipo di supporto di storage (rotazione, SSD e così via). In generale, utilizza l’impostazione di lettura consigliata a meno che il test non mostri un vantaggio misurabile, ripetibile e affidabile in un valore di lettura più elevato. [Il supporto tecnico MongoDB](https://docs.mongodb.com/manual/administration/production-notes/#readahead) può fornire consigli e indicazioni su configurazioni di readahead diverse da zero.
 
 * Disattivare lo strumento ottimizzato se si esegue RHEL 7/CentOS 7 in un ambiente virtuale.
 * Quando RHEL 7/CentOS 7 viene eseguito in un ambiente virtuale, lo strumento ottimizzato richiama automaticamente un profilo di prestazioni derivato dal throughput delle prestazioni, che imposta automaticamente le impostazioni di lettura a 4 MB. Questa impostazione può avere un impatto negativo sulle prestazioni.
@@ -255,9 +267,9 @@ MongoDB viene eseguito su diversi sistemi operativi, tra cui una vasta gamma di 
 * Usa noatime per il punto di montaggio [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Configurare un numero sufficiente di handle di file (fs.file-max), il limite pid del kernel (kernel.pid_max) e il numero massimo di thread per processo (kernel.threads-max) per la distribuzione. Per i sistemi di grandi dimensioni, i seguenti valori costituiscono un buon punto di partenza:
 
-   * fs.file-max valore di 98000,
-   * valore kernel.pid_max di 64000,
-   * andkernel.threads-valore massimo di 64000
+  * fs.file-max valore di 98000,
+  * valore kernel.pid_max di 64000,
+  * andkernel.threads-valore massimo di 64000
 
 * Verificare che nel sistema sia configurato lo spazio di swap. Per informazioni dettagliate sul dimensionamento appropriato, consultare la documentazione del sistema operativo in uso.
 * Verificare che il valore predefinito di sistema di TCP keepalive sia impostato correttamente. Un valore pari a 300 offre spesso prestazioni migliori per i set di repliche e i cluster condivisi. Vedere: [Il tempo di conservazione TCP influisce sulle distribuzioni MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) per ulteriori informazioni, vedere Domande frequenti.

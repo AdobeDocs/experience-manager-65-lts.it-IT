@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 07048aa7-5f38-4810-9ef2-ce6892f9b9b6
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3015'
+source-wordcount: '3030'
 ht-degree: 46%
-
 ---
-
 # Modifica del contenuto di una pagina{#editing-page-content}
 
 Dopo aver creato la pagina (nuova o come parte di un lancio o di una Live Copy), puoi modificare il contenuto per apportare gli aggiornamenti necessari.
@@ -145,7 +158,7 @@ Il segnaposto del componente è un indicatore che mostra dove è posizionato un 
 >
 >Su un dispositivo mobile, il browser Componenti riempie l’intero schermo. Una volta iniziato a trascinare un componente, il browser si chiude per mostrare nuovamente la pagina e inserire il componente.
 
-### Inserimento di un Componente dal Sistema Paragrafo   {#inserting-a-component-from-the-paragraph-system}
+### Inserimento di un Componente dal Sistema Paragrafo {#inserting-a-component-from-the-paragraph-system}
 
 Puoi aggiungere un componente utilizzando la casella **Trascina qui i componenti** del sistema paragrafo:
 
@@ -269,9 +282,9 @@ Le azioni disponibili dipendono dal contesto; in questa sezione ne vengono descr
 
   Incolla il componente dagli Appunti alla pagina. Se l&#39;originale rimane o meno dipende dal fatto che sia stata utilizzata la copia o il taglio.
 
-   * È possibile utilizzare Incolla per collocare i componenti sulla stessa pagina o su una pagina diversa.
-   * L’elemento viene incollato sopra l’elemento in cui selezioni l’azione Incolla.
-   * L’azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
+  * È possibile utilizzare Incolla per collocare i componenti sulla stessa pagina o su una pagina diversa.
+  * L’elemento viene incollato sopra l’elemento in cui selezioni l’azione Incolla.
+  * L’azione Incolla viene visualizzata solo se negli Appunti è presente del contenuto.
 
   ![Incolla](assets/screen_shot_2018-03-22at113553.png)
 
@@ -310,7 +323,7 @@ Esistono due metodi per aggiungere o modificare contenuti nei componenti:
 * Aprire la [finestra di dialogo del componente per la modifica](#component-edit-dialog).
 * [Trascinare una risorsa](#draganddropintocomponent) dal browser Risorse per aggiungere direttamente il contenuto.
 
-### Finestra di dialogo di modifica del componente   {#component-edit-dialog}
+### Finestra di dialogo di modifica del componente {#component-edit-dialog}
 
 Per aprire un componente e modificarne il contenuto, utilizza l’icona [Modifica (a forma di matita) nella barra degli strumenti del componente](#edit-configure-copy-cut-delete-paste).
 
@@ -456,7 +469,7 @@ Se la pagina è basata su un [modello statico](/help/sites-authoring/templates.m
 
 Puoi vedere facilmente su quale modello si basa la pagina quando la selezioni in [Vista a colonne](/help/sites-authoring/basic-handling.md#column-view) o [Vista a elenco](/help/sites-authoring/basic-handling.md#list-view).
 
-## Stato della Live Copy   {#live-copy-status}
+## Stato della Live Copy {#live-copy-status}
 
 La [modalità di pagina Stato Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) consente di avere una rapida panoramica dello stato della Live Copy e di sapere quali componenti vengono ereditati e quali no:
 
@@ -492,7 +505,7 @@ Esistono due opzioni per visualizzare in anteprima una pagina:
 
 ### Modalità Anteprima {#preview-mode}
 
-Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1&rbrace;. &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) Questa modalità consente di effettuare le seguenti operazioni:
+Durante la modifica del contenuto, puoi visualizzare in anteprima la pagina utilizzando la modalità di anteprima [1}. ](/help/sites-authoring/author-environment-tools.md#page-modes)Questa modalità consente di effettuare le seguenti operazioni:
 
 * Nascondi vari meccanismi di modifica per avere una visualizzazione rapida della pagina quando viene pubblicata.
 * Utilizza i collegamenti per navigare.
@@ -506,7 +519,7 @@ Durante l’authoring, la modalità di anteprima è disponibile utilizzando l’
 
 L’opzione **Visualizza come pubblicato**, è disponibile nel menu [Informazioni pagina](/help/sites-authoring/author-environment-tools.md#page-information). In questo modo la pagina viene aperta in una nuova scheda, il contenuto viene aggiornato e la pagina viene visualizzata esattamente come appare quando viene pubblicata.
 
-## Blocco di una pagina   {#locking-a-page}
+## Blocco di una pagina {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questa funzione è utile quando si apportano numerose modifiche a una pagina specifica o quando è necessario bloccarla per un breve periodo.
 
@@ -514,15 +527,15 @@ Per bloccare una pagina è possibile utilizzare:
 
 * La console **Sites**
 
-   1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Seleziona l’icona del lucchetto.
+  1. Seleziona la pagina con [modalità di selezione](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+  1. Seleziona l’icona del lucchetto.
 
   ![Icona Blocca](assets/screen_shot_2018-03-22at134928.png)
 
 * **Editor pagina**
 
-   1. Per aprire il menu, seleziona l&#39;icona **Informazioni pagina**.
-   1. Seleziona l’opzione **Blocca pagina**.
+  1. Per aprire il menu, seleziona l&#39;icona **Informazioni pagina**.
+  1. Seleziona l’opzione **Blocca pagina**.
 
 Una volta eseguito il blocco le informazioni di visualizzazione della console vengono aggiornate e, durante la modifica, un simbolo a forma di lucchetto viene visualizzato nella barra degli strumenti.
 

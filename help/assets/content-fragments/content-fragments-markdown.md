@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 solution: Experience Manager, Experience Manager Assets
 exl-id: 5ca53958-dfcd-4058-a04c-c750ab4d9a6e
-source-git-commit: a8ff456d323e848cc0c6296670b39834682a36b9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 82%
-
 ---
-
 # Markdown {#markdown}
 
 Quando si esegue l&#39;[authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), l&#39;editor dei frammenti di contenuto utilizza la sintassi *markdown* per consentire di scrivere facilmente contenuti headless:
@@ -130,7 +142,7 @@ Puoi anche aggiungere citazioni nidificate. Esempio:
 
 Puoi creare elenchi ordinati e non ordinati.
 
-Per creare un elenco non ordinato, utilizzare il simbolo &ast; prima degli elementi dell&#39;elenco. Ad esempio:
+Per creare un elenco non ordinato, utilizzare il simbolo &amp;ast; prima degli elementi dell&#39;elenco. Ad esempio:
 
     `* item in list`
 

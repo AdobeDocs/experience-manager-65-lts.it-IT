@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 72293e17-bf29-4b3c-81b4-cd8372694a0d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1102'
 ht-degree: 2%
-
 ---
-
 # Risoluzione dei problemi di integrazione{#troubleshooting-integration-issues}
 
 ## Suggerimenti generali per la risoluzione dei problemi {#general-troubleshooting-tips}
@@ -61,14 +70,14 @@ Per ulteriori informazioni sulla creazione di servizi di importazione dati perso
 
 ### L&#39;arresto richiede molto tempo a causa di Importazione polling {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics è stato progettato pensando a un meccanismo di ereditarietà. In genere, per abilitare Analytics per un sito si aggiunge un riferimento a una configurazione Analytics nella scheda [Servizi cloud](/help/sites-developing/extending-cloud-config.md) delle proprietà della pagina. La configurazione viene quindi ereditata automaticamente da tutte le sottopagine senza dover fare nuovamente riferimento ad essa, a meno che una pagina non richieda una configurazione diversa. L’aggiunta di un riferimento a un sito crea automaticamente anche diversi nodi (12 per AEM 6.3 e versioni precedenti o 6 per AEM 6.4   e versioni successive) del tipo `cq;PollConfig` che crea un&#39;istanza di PollingImporters utilizzata per importare dati di Analytics in AEM. Di conseguenza:
+Analytics è stato progettato pensando a un meccanismo di ereditarietà. In genere, per abilitare Analytics per un sito si aggiunge un riferimento a una configurazione Analytics nella scheda [Servizi cloud](/help/sites-developing/extending-cloud-config.md) delle proprietà della pagina. La configurazione viene quindi ereditata automaticamente da tutte le sottopagine senza dover fare nuovamente riferimento ad essa, a meno che una pagina non richieda una configurazione diversa. L&#39;aggiunta di un riferimento a un sito determina inoltre la creazione automatica di diversi nodi (12 per AEM 6.3 e versioni precedenti o 6 per AEM 6.4 e versioni successive) del tipo `cq;PollConfig` che creano istanze di PollingImporters utilizzate per importare dati di Analytics in AEM. Di conseguenza:
 
 * Se un numero elevato di pagine fa riferimento ad Analytics, il numero di PollingImporters è elevato.
 * Inoltre, copiare e incollare pagine con un riferimento a una configurazione Analytics comporta la duplicazione dei relativi PollingImporters.
 
 #### Soluzione {#solution-1}
 
-In primo luogo, l&#39;analisi di [error.log](/help/sites-deploying/configure-logging.md) potrebbe fornire informazioni approfondite sulla quantità di PollingImporters attivi o registrati. Ad esempio:
+In primo luogo, l&#39;analisi del [error.log](/help/sites-deploying/configure-logging.md) potrebbe fornire informazioni insight sulla quantità di PollingImporters attivi o registrati. Ad esempio:
 
 ```
 # Count PollingImporter entries
@@ -100,11 +109,11 @@ Per risolvere il problema, puoi provare a effettuare le seguenti operazioni:
 * Ripubblica le configurazioni trovate in `/etc/cloudservices/dynamictagmanagement`
 * Controllare gli ACL su `/etc/cloudservices`. Gli ACL devono essere:
 
-   * consenti; jcr:read; webservice-support-servicelibfinder
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/defaults/`&ast;
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/defaults`
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/public/`&ast;
-   * consenti; jcr:read; tutti; `rep:glob:`&ast;`/public`
+  * consenti; jcr:read; webservice-support-servicelibfinder
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/defaults/`&amp;ast;
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/defaults`
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/public/`&amp;ast;
+  * consenti; jcr:read; tutti; `rep:glob:`&amp;ast;`/public`
 
 Per ulteriori informazioni sulla gestione degli ACL, leggere la pagina [Amministrazione utenti e sicurezza](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -166,7 +175,7 @@ Questo problema può avere diverse cause:
 Puoi provare le seguenti soluzioni:
 
 * Assicurati che il codice del cliente che carica le librerie simili a DTM (che a sua volta caricano le librerie di Target) venga eseguito in modo sincrono nell&#39;[intestazione pagina](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* Se il sito è configurato per l&#39;utilizzo di DTM per la distribuzione delle librerie di Target, verificare che l&#39;opzione **Clientlib consegnata da DTM** sia selezionata nella [configurazione di Target](https://helpx.adobe.com/it/experience-manager/6-3/sites/administering/using/target-configuring.html) per il sito.
+* Se il sito è configurato per l&#39;utilizzo di DTM per la distribuzione delle librerie di Target, verificare che l&#39;opzione **Clientlib consegnata da DTM** sia selezionata nella [configurazione di Target](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) per il sito.
 
 ### Viene sempre visualizzata un’offerta predefinita invece dell’offerta corretta quando si utilizza AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -211,7 +220,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se la risposta contiene la riga `a4tEnabled:false`, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/it/contact.html) per eseguire correttamente il provisioning del tuo account.
+Se la risposta contiene la riga `a4tEnabled:false`, contatta l&#39;[Assistenza clienti Adobe](https://helpx.adobe.com/contact.html) per eseguire correttamente il provisioning del tuo account.
 
 ### API di Target utili {#helpful-target-apis}
 

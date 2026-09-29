@@ -1,5 +1,5 @@
 ---
-title: Editor in blocco
+title: La modifica in serie
 description: Scopri come utilizzare l’Editor collettivo per una modifica efficiente quando il contesto della pagina visiva non è necessario.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 8028e74e-29df-4081-a567-5eb87ae362d4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
-
+source-wordcount: '1174'
+ht-degree: 1%
 ---
-
-# Editor in blocco{#the-bulk-editor}
+# La modifica in serie{#the-bulk-editor}
 
 L’editor in blocco consente di modificare in modo efficiente quando il contesto della pagina visiva non è necessario, in quanto consente di:
 
@@ -76,7 +85,7 @@ Per utilizzare l&#39;Editor collettivo per modificare più elementi contemporane
   </tr>
   <tr>
    <td>Percorso principale</td>
-   <td>Indica il percorso della directory principale cercato dall'editor di massa.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
+   <td>Indica il percorso della directory principale cercato dall'editor in blocco.<br /> Ad esempio, <code>/content/geometrixx/en</code>. L’editor collettivo esegue la ricerca su tutti i nodi secondari.</td>
   </tr>
   <tr>
    <td>Parametri di query</td>
@@ -121,7 +130,7 @@ Nell’esempio precedente, tutte le pagine che soddisfano i criteri di ricerca v
 * **percorso:** cerca solo i nodi al di sotto di questo percorso. Se specificate più di un termine con un prefisso di percorso, viene considerato solo l&#39;ultimo.
 * **tipo:** restituisce solo nodi del tipo di nodo specificato. Sono inclusi i tipi principali e mixin. È possibile specificare più tipi di nodo separati da virgole. GQL restituisce nodi di uno qualsiasi dei tipi specificati.
 * **ordine:** ordina il risultato in base alle proprietà specificate. È possibile specificare più nomi di proprietà separati da virgole. Per ordinare il risultato in ordine decrescente, aggiungi al nome della proprietà il prefisso meno. Ad esempio, order:-name. L&#39;utilizzo di un segno più restituisce il risultato in ordine crescente, che è anche l&#39;impostazione predefinita.
-* **limit:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un `interval:limit:10..` o un `limit:..20` aperto
+* **limit:** limita il numero di risultati utilizzando un intervallo. Ad esempio, limit:10..20 L&#39;intervallo è basato su zero, l&#39;inizio è inclusivo e la fine è esclusiva. È inoltre possibile specificare un `interval:limit:10..` aperto o `limit:..20`
 Se i punti vengono omessi e viene specificato un solo valore, GQL restituisce al massimo questo numero di risultati. Ad esempio, `limit:10` (restituisce i primi dieci risultati).
 
 ### Esportazione del contenuto {#exporting-content}

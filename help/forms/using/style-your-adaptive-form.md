@@ -6,13 +6,29 @@ feature: Adaptive Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5b3beaa6-ca0a-454e-85ee-c3653dd423fe
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 10%
-
 ---
-
 # Definire lo stile del modulo adattivo {#do-not-publish-style-your-adaptive-form}
 
 Scopri come creare un tema personalizzato, assegnare uno stile ai singoli componenti e utilizzare Web Fonts in un tema.
@@ -23,7 +39,7 @@ Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](ht
 
 ## Informazioni sul tutorial  {#about-the-tutorial}
 
-Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
+Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
 
 Al termine dell’esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
@@ -102,7 +118,7 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 
 ### Creare un tema {#create-a-theme}
 
-1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. L&#39;URL predefinito è [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-theme](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Temi]**. URL predefinito: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Tema]**. Viene visualizzata la pagina [!UICONTROL Crea tema] con i campi necessari per creare un tema. I campi **[!UICONTROL Titolo]** e **[!UICONTROL Nome]** sono obbligatori:
 
    * **Titolo:** Specificare un titolo per il tema. Ad esempio, **Tema globale.** Il titolo consente di identificare il tema dall’elenco dei temi.

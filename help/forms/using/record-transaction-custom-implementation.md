@@ -8,7 +8,22 @@ feature: Transaction Reports
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 205394bf-4609-4bdd-a030-974e354f9700
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 3%
@@ -25,7 +40,7 @@ Utilizzare l&#39;API TransactionRecorder per registrare automaticamente le azion
 
 Puoi utilizzare un codice personalizzato per inviare un PDF Form o per inviare agli utenti finali un URL di anteprima dell’interfaccia utente dell’agente per visualizzare un’anteprima di una comunicazione interattiva. In alternativa, è possibile inviare un modulo utilizzando metodi personalizzati anziché i metodi di invio forniti con AEM Forms. Tutte le azioni e le implementazioni personalizzate precedentemente menzionate delle API di AEM Forms non vengono contabilizzate come transazioni. AEM Forms fornisce un&#39;API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), per registrare azioni quali le transazioni.
 
-Per registrare una transazione, scrivi il [servlet sling standard](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=it) e chiama il servlet da un client per registrare una transazione. Puoi chiamare il servlet utilizzando AJAX o qualsiasi altro metodo standard.
+Per registrare una transazione, scrivi il [servlet sling standard](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) e chiama il servlet da un client per registrare una transazione. Puoi chiamare il servlet utilizzando AJAX o qualsiasi altro metodo standard.
 
 ## Esempio di codice lato server {#sample-server-sided-code}
 

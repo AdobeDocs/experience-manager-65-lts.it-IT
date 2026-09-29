@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: a3108797-8085-4683-971f-509e7bfa06b0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1594'
 ht-degree: 52%
-
 ---
-
 # Integrazione di AEM 6.5 con Adobe Campaign Classic {#integrating-campaign-classic}
 
 Integrando AEM con Adobe Campaign Classic (ACC), puoi gestire la consegna e-mail, il contenuto e i moduli direttamente in AEM. Per consentire la comunicazione bidirezionale tra le soluzioni sono necessari alcuni passaggi di configurazione sia in Adobe Campaign Classic che in AEM.
@@ -42,8 +51,8 @@ Questo documento illustra in dettaglio ciascuno di questi passaggi.
 ## Prerequisiti {#prerequisites}
 
 * Accesso amministratore ad Adobe Campaign Classic
-   * Per eseguire l’integrazione, è necessaria un&#39;istanza Adobe Campaign Classic funzionante, incluso un database configurato.
-   * Per ulteriori informazioni su come impostare e configurare Adobe Campaign Classic, vedere la [documentazione di Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=it) in particolare la guida all&#39;installazione e alla configurazione.
+  * Per eseguire l’integrazione, è necessaria un&#39;istanza Adobe Campaign Classic funzionante, incluso un database configurato.
+  * Per ulteriori informazioni su come impostare e configurare Adobe Campaign Classic, vedere la [documentazione di Adobe Campaign Classic,](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=it) in particolare la guida all&#39;installazione e alla configurazione.
 * Accesso amministratore ad AEM
 
 ## Installare il pacchetto di integrazione di AEM in Campaign {#install-package}
@@ -144,7 +153,7 @@ AEM utilizza [l&#39;operatore che hai già configurato in Campaign](#create-oper
 
 1. Viene visualizzata una nuova finestra di dialogo per modificare la configurazione. Fornisci le informazioni necessarie.
 
-   * **Nome utente**: corrisponde [all’operatore del pacchetto di integrazione di AEM in Adobe Campaign creato nel passaggio precedente.](#create-operator)Per impostazione predefinita, è `aemserver`.
+   * **Nome utente** - Questo è [l&#39;operatore del pacchetto di integrazione di Adobe Campaign AEM creato nel passaggio precedente.](#create-operator) Per impostazione predefinita è `aemserver`.
    * **Password**: corrisponde alla password per l’[operatore del pacchetto di integrazione di AEM in Adobe Campaign creato nel passaggio precedente.](#create-operator)
    * **Endpoint API**: corrisponde all’URL dell’istanza di Adobe Campaign.
 
@@ -241,8 +250,8 @@ Durante l’[installazione del pacchetto di **Integrazione di AEM** in Campaign,
 1. Nella scheda **Generale** di questo account, inserisci le informazioni utente definite nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
 
    * **Server**: l’indirizzo server di authoring di AEM
-      * Il server di authoring di AEM deve essere raggiungibile dall’stanza del server di Adobe Campaign Classic.
-      * Verificare che l’indirizzo del server **non** termini con una barra finale.
+     * Il server di authoring di AEM deve essere raggiungibile dall’stanza del server di Adobe Campaign Classic.
+     * Verificare che l’indirizzo del server **non** termini con una barra finale.
    * **Account**: per impostazione predefinita, rappresenta  l’utente `campaign-remote` che hai impostato in AEM nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
    * **Password**: questa password è la stessa `campaign-remote` dell’utente che hai impostato in AEM nel passaggio [Imposta password utente remoto di Campaign](#set-campaign-remote-password).
 

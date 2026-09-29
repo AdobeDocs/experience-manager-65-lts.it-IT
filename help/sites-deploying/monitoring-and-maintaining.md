@@ -10,13 +10,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c8bab030-053f-47d1-94f7-b7ff08bfaab0
-source-git-commit: 0fc8e7c27cbb9e24edea6d6a9f1f6e7051742b91
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5865'
 ht-degree: 1%
-
 ---
-
 # Monitoraggio e manutenzione dell’istanza di Adobe Experience Manager{#monitoring-and-maintaining-your-aem-instance}
 
 Dopo aver implementato le istanze AEM, è necessario monitorarne e mantenerne il funzionamento, le prestazioni e l’integrità.
@@ -25,7 +34,7 @@ Un fattore chiave in questo caso è che per riconoscere potenziali problemi è n
 
 >[!NOTE]
 >
->Le indicazioni presenti in questa pagina si applicano alle distribuzioni autogestite (on-premise). Se esegui AEM su Adobe Managed Services, la telemetria delle applicazioni e dell’infrastruttura viene raccolta per tuo conto e disponibile tramite Observability Insights, che fornisce una visualizzazione in hosting degli ambienti di produzione e non di produzione. Per ulteriori informazioni, vedere [Observability Insights](https://experienceleague.adobe.com/it/docs/ams-observability-insights/content/overview).
+>Le indicazioni presenti in questa pagina si applicano alle distribuzioni autogestite (on-premise). Se esegui AEM su Adobe Managed Services, la telemetria delle applicazioni e dell’infrastruttura viene raccolta per tuo conto e disponibile tramite Observability Insights, che fornisce una visualizzazione in hosting degli ambienti di produzione e non di produzione. Per ulteriori informazioni, vedere [Observability Insights](https://experienceleague.adobe.com/en/docs/ams-observability-insights/content/overview).
 
 | Verifica | Considerazioni | Commento/Azioni |
 |---|---|---|
@@ -59,7 +68,7 @@ Spesso viene eseguito un backup completo a intervalli regolari (ad esempio, gior
 
 >[!CAUTION]
 >
->Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1&rbrace; per verificare che sia possibile ripristinare correttamente il backup.*
+>Durante l&#39;implementazione dei backup delle istanze di produzione, è necessario eseguire i test *1} per verificare che sia possibile ripristinare correttamente il backup.*
 >
 >Senza questo test, il backup è potenzialmente inutile (scenario peggiore).
 
@@ -228,13 +237,13 @@ Nel file server in cui è stato installato AEM sono presenti diversi file di reg
   * `error.log`
     I messaggi di errore (di diversi livelli di gravità) sono registrati qui.
 
-  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=it)
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
     Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Fornisce statistiche e informazioni analitiche utilizzate per analizzare il comportamento del processo interno ImageServer.
 
   * `request.log`
     Ogni richiesta di accesso viene registrata qui insieme alla risposta.
 
-  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=it)
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
     Questo registro viene utilizzato solo se [!DNL Dynamic Media] è abilitato. Il registro s7access registra ogni richiesta effettuata a [!DNL Dynamic Media] tramite `/is/image` e `/is/content`.
 
   * `stderr.log`
@@ -253,7 +262,7 @@ Nel file server in cui è stato installato AEM sono presenti diversi file di reg
 
 >[!NOTE]
 >
->I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full &#x200B;** generato dalla **pagina &#x200B;** system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
+>I registri di ImageServer e s7access non sono inclusi nel pacchetto **Download Full **generato dalla **pagina **system/console/status-Bundlelist&quot;. Per assistenza, se hai [!DNL Dynamic Media] problemi, aggiungi i registri di accesso ImageServer e s7access quando contatti l&#39;Assistenza clienti.
 
 ### Attivazione del livello di registro DEBUG {#activating-the-debug-log-level}
 
@@ -1068,9 +1077,9 @@ Di seguito è riportato un elenco di suggerimenti su cosa controllare se si veri
 >
 >Per ulteriori informazioni, consulta anche i seguenti articoli:
 >
->* [Immagini thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=it)
->* [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
->* [Analizza utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=it)
+>* [Immagini thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analisi dei problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analizza utilizzando il profiler incorporato](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### CPU al 100% {#cpu-at}
@@ -1090,7 +1099,7 @@ In questi casi verificare:
 * Impostazioni JVM utilizzate per [avviare AEM](/help/sites-deploying/deploy.md#getting-started)
 * Knowledge Base:
 
-  * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=it)
+  * [Analizzare i problemi di memoria](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### I/O disco {#disk-i-o}
 
@@ -1108,7 +1117,7 @@ Se il sistema sta esaurendo lo spazio su disco o si notano problemi di accesso a
 * Indica se e come hai configurato [Rimozione versione](/help/sites-deploying/version-purging.md)
 * Knowledge Base:
 
-  * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=it)
+  * [Troppi file aperti](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
 
 ### Degradazione delle prestazioni regolare {#regular-performance-degradation}
 

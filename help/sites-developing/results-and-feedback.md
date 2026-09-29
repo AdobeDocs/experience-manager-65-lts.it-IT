@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 29dfc265-e5e4-413f-b488-57366b000f4e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 0%
-
+source-wordcount: '160'
+ht-degree: 6%
 ---
-
 # Tracciamento dei risultati e invio di feedback{#tracking-results-and-providing-feedback}
 
 Come e dove definire i casi di test e il piano di test risultante è a tua discrezione; sono disponibili molti strumenti.
@@ -24,10 +33,10 @@ Tuttavia, indipendentemente dal metodo o dallo strumento scelto, le informazioni
 
 * Deve essere:
 
-   * Limitato al tracciamento del caso di test e dei relativi risultati. In questo modo la manutenzione rimane semplice e il documento può fornire una chiara panoramica dell’avanzamento dei test.
-   * Gestito come una singola copia, disponibile per tutti i membri appropriati del team di progetto.
-   * Neutro e limitato ai risultati del test. È responsabilità del project manager prendere decisioni in merito a qualsiasi azione risultante dai risultati del test.
+  * Limitato al tracciamento del caso di test e dei relativi risultati. In questo modo la manutenzione rimane semplice e il documento può fornire una chiara panoramica dell’avanzamento dei test.
+  * Gestito come una singola copia, disponibile per tutti i membri appropriati del team di progetto.
+  * Neutro e limitato ai risultati del test. È responsabilità del project manager prendere decisioni in merito a qualsiasi azione risultante dai risultati del test.
 
 * Non deve essere:
 
-   * Esteso per includere le informazioni di tracciamento, senza bug, nuove funzioni o azioni di seguito. Queste informazioni dovrebbero essere conservate altrove, anche in questo caso sono disponibili molti strumenti.
+  * Esteso per includere le informazioni di tracciamento, senza bug, nuove funzioni o azioni di seguito. Queste informazioni dovrebbero essere conservate altrove, anche in questo caso sono disponibili molti strumenti.

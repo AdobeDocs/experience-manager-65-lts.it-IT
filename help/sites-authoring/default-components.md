@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 2a5d3d80-2710-4bb0-ad24-9a86525c6aea
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 21%
-
+source-wordcount: '399'
+ht-degree: 26%
 ---
-
 # Componenti{#components}
 
 Adobe Experience Manager (AEM) è dotato di vari componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [si modifica una pagina](/help/sites-authoring/editing-content.md). Le raggruppa per un’area funzionale principale denominata gruppo di componenti per facilitare il filtraggio.
@@ -35,7 +48,7 @@ Puoi selezionare un componente e trascinarlo nella posizione desiderata sulla pa
 
 * [Modifica contenuto - Modalità a tutto schermo](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Per ulteriori informazioni sull&#39;aggiunta di componenti a una pagina, vedere [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
+Per ulteriori informazioni sull’aggiunta di componenti a una pagina, consulta l’articolo [Modifica del contenuto di una pagina](/help/sites-authoring/editing-content.md).
 I componenti sono ordinati in base a varie categorie, denominate gruppi di componenti. Esempi di tali gruppi di componenti includono:
 
 * **WeRetail**: include i componenti core abilitati per l&#39;utilizzo con l&#39;[implementazione di riferimento WeRetail](/help/sites-developing/we-retail.md).

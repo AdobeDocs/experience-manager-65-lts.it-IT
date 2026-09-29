@@ -10,13 +10,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 8f504453-1009-46d9-83a5-d4a8531d7e2c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
-
+source-wordcount: '295'
+ht-degree: 4%
 ---
-
 # Utilizzo del salvataggio automatico nell’app AEM Forms{#using-autosave-in-aem-forms-app}
 
 Quando un utente immette dati nell’app Adobe Experience Manager Forms, la funzione di salvataggio automatico li salva a intervalli regolari. La funzione di salvataggio automatico nell’app AEM Forms consente di evitare la perdita di dati in caso di chiusura accidentale dell’app.
@@ -42,4 +56,4 @@ Per utilizzare la funzione di salvataggio automatico nell’app AEM Forms, effet
 1. Quando riavvii l’app e accedi con lo stesso utente, ti viene richiesto di ripristinare l’attività tramite la finestra di dialogo Recupera attività non salvata. Fare clic su **OK** nella finestra di dialogo Recupera attività non salvata per riprendere a utilizzare l&#39;attività salvata. Puoi fare clic su **Annulla** per eliminare i dati salvati corrispondenti all&#39;ultimo salvataggio automatico attivato e iniziare a lavorare con una nuova attività.
 
    Quando fai clic su **OK**, l&#39;attività viene ripristinata con i dati corrispondenti all&#39;ultimo salvataggio automatico attivato prima dell&#39;arresto anomalo dell&#39;app. Include i dati del modulo e tutti gli allegati associati all&#39;attività.
-   [![Recupero di un&#39;attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Modulo in corso di lavorazione **B.** App chiusa forzatamente **C.** App riavviata con la finestra di dialogo Recupera attività non salvata **D.** Modulo ripristinato con i dati originali
+   [![Recupero attività&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** Un modulo in corso di lavorazione **B.** app è stato chiuso forzatamente **C.** app riavviata con la finestra di dialogo Recupera attività non salvata **D.** modulo ripristinato con i dati originali

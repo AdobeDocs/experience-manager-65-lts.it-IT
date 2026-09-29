@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 6fb6e522-fb81-4ba2-90b2-aad68f8bfa9e
-source-git-commit: 9bc1cad84bb14b7513ede1fff2c1a37768dac442
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1261'
 ht-degree: 1%
-
 ---
-
 # Utilizzare Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Scopo {#purpose}
@@ -98,25 +107,25 @@ Per creare una sovrapposizione o una sostituzione è necessario ricreare il nodo
 
 * Sovrapposizione
 
-   * La definizione della voce di navigazione per la console Sites, come mostrato nella barra, è definita in:
+  * La definizione della voce di navigazione per la console Sites, come mostrato nella barra, è definita in:
 
-     `/libs/cq/core/content/nav/sites/jcr:title`
+    `/libs/cq/core/content/nav/sites/jcr:title`
 
-   * Per sovrapporre, crea il seguente nodo:
+  * Per sovrapporre, crea il seguente nodo:
 
-     `/apps/cq/core/content/nav/sites`
+    `/apps/cq/core/content/nav/sites`
 
-     Quindi aggiornare la proprietà `jcr:title` come richiesto.
+    Quindi aggiornare la proprietà `jcr:title` come richiesto.
 
 * Sostituisci
 
-   * La definizione della finestra di dialogo touch per la console Testi è la seguente:
+  * La definizione della finestra di dialogo touch per la console Testi è la seguente:
 
-     `/libs/foundation/components/text/cq:dialog`
+    `/libs/foundation/components/text/cq:dialog`
 
-   * Per eseguire l’override, crea il seguente nodo. Ad esempio:
+  * Per eseguire l’override, crea il seguente nodo. Ad esempio:
 
-     `/apps/the-project/components/text/cq:dialog`
+    `/apps/the-project/components/text/cq:dialog`
 
 Per creare una di queste, dovete solo ricreare la struttura dell&#39;ossatura. Per semplificare la ricreazione della struttura, tutti i nodi intermedi possono essere di tipo `nt:unstructured` (non devono necessariamente riflettere il tipo di nodo originale. Ad esempio, in `/libs`.
 
@@ -143,20 +152,20 @@ Con la funzionalità standard, questi casi d’uso ti consentono di effettuare l
 
   La proprietà non esiste nella definizione `/libs`, ma è obbligatoria nella sovrapposizione o sostituzione `/apps`.
 
-   1. Crea il nodo corrispondente in `/apps`
-   1. Crea la nuova proprietà su questo nodo &quot;
+  1. Crea il nodo corrispondente in `/apps`
+  1. Crea la nuova proprietà su questo nodo &quot;
 
 * **Ridefinire una proprietà (proprietà non create automaticamente)**
 
   La proprietà è definita in `/libs`, ma è necessario un nuovo valore nella sovrapposizione/esclusione di `/apps`.
 
-   1. Crea il nodo corrispondente in `/apps`
-   1. Crea la proprietà corrispondente su questo nodo (in `apps`)
+  1. Crea il nodo corrispondente in `/apps`
+  1. Crea la proprietà corrispondente su questo nodo (in `apps`)
 
-      * La proprietà ha una priorità in base alla configurazione di Sling Resource Resolver.
-      * È supportata la modifica del tipo di proprietà.
+     * La proprietà ha una priorità in base alla configurazione di Sling Resource Resolver.
+     * È supportata la modifica del tipo di proprietà.
 
-        Se si utilizza un tipo di proprietà diverso da quello utilizzato in `/libs`, verrà utilizzato il tipo di proprietà definito.
+       Se si utilizza un tipo di proprietà diverso da quello utilizzato in `/libs`, verrà utilizzato il tipo di proprietà definito.
 
   >[!NOTE]
   >
@@ -166,68 +175,68 @@ Con la funzionalità standard, questi casi d’uso ti consentono di effettuare l
 
   Per impostazione predefinita, le proprietà create automaticamente (come `jcr:primaryType`) non sono soggette a sovrapposizione/override per garantire che il tipo di nodo attualmente in `/libs` sia rispettato. Per imporre una sovrapposizione/esclusione è necessario ricreare il nodo in `/apps`, nascondere esplicitamente la proprietà e ridefinirla:
 
-   1. Crea il nodo corrispondente in `/apps` con `jcr:primaryType` desiderato
-   1. Creare la proprietà `sling:hideProperties` su tale nodo, con il valore impostato su quello della proprietà creata automaticamente, ad esempio `jcr:primaryType`
+  1. Crea il nodo corrispondente in `/apps` con `jcr:primaryType` desiderato
+  1. Creare la proprietà `sling:hideProperties` su tale nodo, con il valore impostato su quello della proprietà creata automaticamente, ad esempio `jcr:primaryType`
 
-      Questa proprietà, definita in `/apps`, ha ora la priorità rispetto a quella definita in `/libs`
+     Questa proprietà, definita in `/apps`, ha ora la priorità rispetto a quella definita in `/libs`
 
 * **Ridefinire un nodo e i relativi elementi secondari**
 
   Il nodo e i relativi nodi secondari sono definiti in `/libs`, ma è necessaria una nuova configurazione nella sovrapposizione/esclusione di `/apps`.
 
-   1. Combina le azioni di:
+  1. Combina le azioni di:
 
-      1. Nascondi elementi figlio di un nodo (mantenendo le proprietà del nodo)
-      1. Ridefinisci la proprietà / proprietà
+     1. Nascondi elementi figlio di un nodo (mantenendo le proprietà del nodo)
+     1. Ridefinisci la proprietà / proprietà
 
 * **Nascondi una proprietà**
 
   La proprietà è definita in `/libs`, ma non è richiesta nella sovrapposizione o sostituzione `/apps`.
 
-   1. Crea il nodo corrispondente in `/apps`
-   1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Consente di specificare le proprietà da nascondere o ignorare. È inoltre possibile utilizzare i caratteri jolly. Ad esempio:
+  1. Crea il nodo corrispondente in `/apps`
+  1. Creare una proprietà `sling:hideProperties` di tipo `String` o `String[]`. Consente di specificare le proprietà da nascondere o ignorare. È inoltre possibile utilizzare i caratteri jolly. Ad esempio:
 
-      * `*`
-      * `["*"]`
-      * `jcr:title`
-      * `["jcr:title", "jcr:description"]`
+     * `*`
+     * `["*"]`
+     * `jcr:title`
+     * `["jcr:title", "jcr:description"]`
 
 * **Nascondi un nodo e i relativi elementi secondari**
 
   Il nodo e i relativi nodi secondari sono definiti in `/libs`, ma non sono obbligatori nella sovrapposizione/esclusione di `/apps`.
 
-   1. Crea il nodo corrispondente in `/apps`
-   1. Crea una proprietà `sling:hideResource`
+  1. Crea il nodo corrispondente in `/apps`
+  1. Crea una proprietà `sling:hideResource`
 
-      * tipo: `Boolean`
-      * valore: `true`
+     * tipo: `Boolean`
+     * valore: `true`
 
 * **Nascondi elementi figlio di un nodo (mantenendo le proprietà del nodo)**
 
   Il nodo, le relative proprietà e i relativi elementi figlio sono definiti in `/libs`. Il nodo e le relative proprietà sono obbligatori nella sovrapposizione o sostituzione `/apps`, ma alcuni o tutti i nodi figlio non sono obbligatori nella sovrapposizione o sostituzione `/apps`.
 
-   1. Crea il nodo corrispondente in `/apps`
-   1. Creare la proprietà `sling:hideChildren`:
+  1. Crea il nodo corrispondente in `/apps`
+  1. Creare la proprietà `sling:hideChildren`:
 
-      * tipo: `String[]`
-      * valore: elenco dei nodi figlio (come definiti in `/libs`) da nascondere/ignorare
+     * tipo: `String[]`
+     * valore: elenco dei nodi figlio (come definiti in `/libs`) da nascondere/ignorare
 
-      Il carattere jolly &ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
+     Il carattere jolly &amp;ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
 
 * **Riordina nodi**
 
   Nodo e relativi elementi di pari livello definiti in `/libs`. Per modificare l&#39;ordine, ricreare il nodo nella sovrapposizione o sostituzione `/apps`. Definire la nuova posizione facendo riferimento al nodo di pari livello appropriato in `/libs`.
 
 
-   * Utilizzare la proprietà `sling:orderBefore`:
+  * Utilizzare la proprietà `sling:orderBefore`:
 
-      1. Crea il nodo corrispondente in `/apps`
-      1. Creare la proprietà `sling:orderBefore`:
+    1. Crea il nodo corrispondente in `/apps`
+    1. Creare la proprietà `sling:orderBefore`:
 
-         Specifica il nodo (come in `/libs`) prima del quale è posizionato il nodo corrente:
+       Specifica il nodo (come in `/libs`) prima del quale è posizionato il nodo corrente:
 
-         * tipo: `String`
-         * valore: `<before-SiblingName>`
+       * tipo: `String`
+       * valore: `<before-SiblingName>`
 
 ### Richiama Sling Resource Merger dal codice {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -241,21 +250,21 @@ Sling Resource Merger include due provider di risorse personalizzati: uno per le
 
 * Sovrapposizione:
 
-   * finalità: unire le risorse in base al relativo percorso di ricerca
-   * punto di montaggio: `/mnt/overlay`
-   * utilizzo: `mount point + relative path`
-   * esempio:
+  * finalità: unire le risorse in base al relativo percorso di ricerca
+  * punto di montaggio: `/mnt/overlay`
+  * utilizzo: `mount point + relative path`
+  * esempio:
 
-      * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
+    * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
 * Sostituisci:
 
-   * finalità: unire le risorse in base al loro super tipo
-   * punto di montaggio: `/mnt/overide`
-   * utilizzo: `mount point + absolute path`
-   * esempio:
+  * finalità: unire le risorse in base al loro super tipo
+  * punto di montaggio: `/mnt/overide`
+  * utilizzo: `mount point + absolute path`
+  * esempio:
 
-      * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
+    * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
 ### Esempio di utilizzo {#example-of-usage}
 
@@ -263,9 +272,9 @@ Alcuni esempi sono trattati:
 
 * Sovrapposizione:
 
-   * [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md)
-   * [Personalizzazione dell’authoring pagina](/help/sites-developing/customizing-page-authoring-touch.md)
+  * [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md)
+  * [Personalizzazione dell’authoring pagina](/help/sites-developing/customizing-page-authoring-touch.md)
 
 * Sostituisci:
 
-   * [Configurazione delle proprietà della pagina](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
+  * [Configurazione delle proprietà della pagina](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

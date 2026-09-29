@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 314a6c65-9b90-4f4c-9e4a-d551dbb646e9
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 30%
-
+source-wordcount: '491'
+ht-degree: 32%
 ---
-
 # Authoring{#authoring}
 
 ## Concetto di authoring (e pubblicazione) {#concept-of-authoring-and-publishing}
@@ -70,13 +83,13 @@ Di solito, l&#39;ambiente di pubblicazione si trova all&#39;interno della zona d
 >Sfortunatamente a volte c&#39;è una sovrapposizione nella terminologia utilizzata. Ciò può accadere con:
 >
 >* **Pubblica/Annulla pubblicazione**
->  Questi sono i termini principali delle azioni che rendono i contenuti disponibili al pubblico nell&#39;ambiente di pubblicazione (o meno).
+>  Termini principali per le azioni che consentono di rendere o meno i contenuti disponibili al pubblico nell’ambiente di pubblicazione.
 >
 >* **Attiva/Disattiva**
->  Questi termini sono sinonimi di pubblicazione/annullamento pubblicazione.
+>  Sinonimi di pubblicare/annullare la pubblicazione.
 >
 >* **Replica/Replica**
->  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all&#39;altro, ovvero durante la pubblicazione o la replica inversa di commenti degli utenti.
+>  Questi sono i termini tecnici utilizzati per indicare lo spostamento di dati (ad esempio contenuto di una pagina, file, codice e commenti degli utenti) da un ambiente all’altro, ovvero durante la pubblicazione o la replica inversa di commenti degli utenti.
 >
 
 #### Dispatcher {#dispatcher}

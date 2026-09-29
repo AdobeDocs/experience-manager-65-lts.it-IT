@@ -7,16 +7,27 @@ role: User, Admin
 feature: Configuration
 solution: Experience Manager, Experience Manager Assets
 exl-id: 2e03224f-b4eb-4bf5-aba9-a6cc292c96c2
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 1%
-
+source-wordcount: '264'
+ht-degree: 3%
 ---
-
 # Impostazione di Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/it/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) consente di gestire le risorse distribuendo risorse di marketing e merchandising visivo su richiesta, scalabili automaticamente per l&#39;utilizzo su siti Web, mobili e social. Grazie a un insieme di risorse di origine primarie, Dynamic Media genera e distribuisce in tempo reale più varianti di rich content attraverso una rete globale, scalabile e ottimizzata per le prestazioni.
 
 >[!NOTE]
 >
@@ -30,7 +41,7 @@ Per l’amministrazione di Dynamic Media, sono interessanti i seguenti argomenti
 * [Configura Dynamic Media - Modalità ibrida](config-dynamic.md) - Utilizza questa configurazione se sei un cliente Dynamic Media esistente che aggiorna Experience Manager.
 * [Gestire i predefiniti immagine](managing-image-presets.md)
 * [Gestire i predefiniti visualizzatore](managing-viewer-presets.md)
-* [Risoluzione dei problemi di Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
+* [Risoluzione problemi di Dynamic Media - Modalità Scene7](troubleshoot-dms7.md)
 
 Consulta anche i seguenti argomenti:
 

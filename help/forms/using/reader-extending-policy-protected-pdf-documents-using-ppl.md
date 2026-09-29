@@ -1,5 +1,5 @@
 ---
-title: Reader estende i documenti PDF protetti tramite policy utilizzando la Libreria di protezione portatile
+title: Reader estende i documenti PDF protetti da criterio utilizzando la libreria di protezione portatile
 description: Le estensioni Reader abilitano le funzioni interattive nei documenti di Adobe PDF tramite Acrobat Reader. È possibile utilizzare la Portable Protection Library (PPL) per estendere i documenti PDF protetti da DRM.
 contentOwner: khsingh
 content-type: reference
@@ -9,20 +9,35 @@ feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b1430a30-313f-4efc-85c5-ccb914923031
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 0%
-
+source-wordcount: '828'
+ht-degree: 3%
 ---
-
-# Reader estende i documenti PDF protetti tramite policy utilizzando la Libreria di protezione portatile {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
+# Reader estende i documenti PDF protetti da criterio utilizzando la libreria di protezione portatile {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Conoscere i concetti di protezione dei documenti, estensione del lettore e linguaggio di programmazione Java per estendere in lettura i documenti PDF protetti tramite policy di protezione dei documenti.
 
 È possibile utilizzare la protezione dei documenti per limitare l’accesso a documenti PDF specifici solo agli utenti autorizzati. È inoltre possibile determinare il modo in cui un destinatario può utilizzare un documento protetto. È ad esempio possibile specificare se i destinatari possono stampare, copiare o modificare il testo di un documento protetto tramite policy di protezione dei documenti. Per ulteriori informazioni sulla protezione dei documenti, consulta [informazioni sulla protezione dei documenti](/help/forms/using/admin-help/document-security.md).
 
-Puoi utilizzare le estensioni Reader per abilitare le funzioni interattive nel documento di Adobe PDF tramite Acrobat Reader. Queste funzioni interattive sono normalmente disponibili solo tramite Adobe Acrobat Professional e Standard. Per informazioni sulle funzionalità interattive abilitate dall&#39;estensione Reader, vedere [Servizio Adobe Experience Manager Forms DocAssurance &#x200B;](/help/forms/using/overview-aem-document-services.md)**.**
+Puoi utilizzare le estensioni Reader per abilitare le funzioni interattive nel documento di Adobe PDF tramite Acrobat Reader. Queste funzioni interattive sono normalmente disponibili solo tramite Adobe Acrobat Professional e Standard. Per informazioni sulle funzionalità interattive abilitate dall&#39;estensione Reader, vedere [Servizio Adobe Experience Manager Forms DocAssurance ](/help/forms/using/overview-aem-document-services.md)**.**
 
 È possibile utilizzare la libreria di protezione portatile per applicare le policy al documento senza che sia necessario spostarlo in rete. Solo le credenziali di sicurezza e i dettagli dei criteri di protezione possono essere utilizzati in rete. Il documento effettivo non lascia mai il client e le policy di protezione vengono applicate localmente al client.
 
@@ -68,7 +83,7 @@ Con il servizio Reader Extensions è possibile eseguire le seguenti attività:
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>Specifica un oggetto di tipo <a href="https://help.adobe.com/it_IT/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L'oggetto usageRights rappresenta singoli diritti che possono essere applicati a un documento PDF protetto tramite policy.</p> </td>
+   <td><p>Specifica un oggetto di tipo <a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>. L'oggetto usageRights rappresenta singoli diritti che possono essere applicati a un documento PDF protetto tramite policy.</p> </td>
   </tr>
  </tbody>
 </table>

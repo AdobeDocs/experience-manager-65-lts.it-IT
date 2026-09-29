@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 8bf470d5-1824-41d6-80e4-4af1eb6df713
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2212'
 ht-degree: 3%
-
 ---
-
 # Integrazione con Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integra [Adobe Dynamic Tag Management](https://business.adobe.com/it/products/experience-platform/adobe-experience-platform.html) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
+Integra [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) con AEM in modo da poter utilizzare le proprietà Web di Dynamic Tag Management per tenere traccia dei siti AEM. Dynamic Tag Management consente agli addetti al marketing di gestire i tag per la raccolta dei dati e distribuirli tra i sistemi di marketing digitale. Ad esempio, utilizza Dynamic Tag Management per raccogliere i dati di utilizzo per il tuo sito web AEM e distribuirli per l’analisi in Adobe Analytics o Adobe Target.
 
 Prima dell&#39;integrazione, creare la [proprietà Web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) di Dynamic Tag Management che tiene traccia del dominio del sito AEM. Le [opzioni di hosting](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) della proprietà Web devono essere configurate in modo da poter configurare AEM per l&#39;accesso alle librerie Dynamic Tag Management.
 

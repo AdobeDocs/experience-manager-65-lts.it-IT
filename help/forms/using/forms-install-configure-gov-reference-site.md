@@ -7,13 +7,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: 9c05a71b-70fa-4470-afdf-823fd5da5ad1
-source-git-commit: 51342861dd01e659999c19fbe0274e8d3cbcf8c4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4746'
+source-wordcount: '4751'
 ht-degree: 2%
-
 ---
-
 # Impostare e configurare il sito di riferimento We.Gov e We-Finance {#set-up-and-configure-we-gov-reference-site}
 
 ## Dettagli pacchetto demo {#demo-package-details}
@@ -47,21 +65,21 @@ Il [pacchetto demo We.Gov di AEM Forms](https://experience.adobe.com/#/downloads
 
 * **we-gov-forms.pkg.all-&lt;versione>.zip** - *Pacchetto demo completo*
 
-   * **we-gov-forms.ui.apps-&lt;versione>.zip** *- Contiene tutti i componenti, le librerie client, gli utenti di esempio, i modelli di flusso di lavoro e così via.*
+  * **we-gov-forms.ui.apps-&lt;versione>.zip** *- Contiene tutti i componenti, le librerie client, gli utenti di esempio, i modelli di flusso di lavoro e così via.*
 
-      * **we-gov-forms.core-&lt;versione>.jar** - *Contiene tutti i servizi OSGI, l&#39;implementazione personalizzata del passaggio del flusso di lavoro e così via.*
+    * **we-gov-forms.core-&lt;versione>.jar** - *Contiene tutti i servizi OSGI, l&#39;implementazione personalizzata del passaggio del flusso di lavoro e così via.*
 
-      * **we-gov-forms.derby&lt;versione>.jar** - *Contiene tutti i servizi OSGI, lo schema del database e così via.*
+    * **we-gov-forms.derby&lt;versione>.jar** - *Contiene tutti i servizi OSGI, lo schema del database e così via.*
 
-      * **core.wcm.components.all-2.0.4.zip** - *Raccolta di componenti WCM di esempio*
+    * **core.wcm.components.all-2.0.4.zip** - *Raccolta di componenti WCM di esempio*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *Pacchetto di layout AEM Sites Grid per il controllo colonna pagina Sites*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *Pacchetto di layout AEM Sites Grid per il controllo colonna pagina Sites*
 
-   * **we-gov-forms.ui.content-&lt;versione>.zip** - *Contiene tutto il contenuto, pagine, immagini, moduli, risorse di comunicazione interattive e così via.*
+  * **we-gov-forms.ui.content-&lt;versione>.zip** - *Contiene tutto il contenuto, pagine, immagini, moduli, risorse di comunicazione interattive e così via.*
 
-   * **we-gov-forms.ui.analytics-&lt;versione>.zip** - *Contiene tutti i dati di Forms Analytics We.Gov da archiviare nell&#39;archivio.*
+  * **we-gov-forms.ui.analytics-&lt;versione>.zip** - *Contiene tutti i dati di Forms Analytics We.Gov da archiviare nell&#39;archivio.*
 
-   * **we-gov-forms.config.public-&lt;versione>.zip** - *Contiene tutti i nodi di configurazione predefiniti, incluse le configurazioni cloud dei segnaposto, per evitare problemi di associazione a servizi e modelli dati di forms.*
+  * **we-gov-forms.config.public-&lt;versione>.zip** - *Contiene tutti i nodi di configurazione predefiniti, incluse le configurazioni cloud dei segnaposto, per evitare problemi di associazione a servizi e modelli dati di forms.*
 
 Le risorse incluse in questo pacchetto includono:
 
@@ -228,13 +246,13 @@ Questa sezione contiene dettagli e istruzioni sulla configurazione di MS® Dynam
 **Riferimenti:**
 
 1. [Configurazione di Microsoft® Dynamics OData](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Configurazione di Microsoft® Dynamics per AEM Forms](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
+1. [Configurazione di Microsoft® Dynamics per AEM Forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms#)
 
 #### Servizio cloud MS® Dynamics OData {#ms-dynamics-odata-cloud-service}
 
 1. Accedi a:
 
-   https://&lt;aemserver>:&lt;porta>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>:<porta>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. Assicurati di accedere al server utilizzando lo stesso URL di reindirizzamento configurato nella registrazione dell’applicazione MS® Dynamics.
 
@@ -483,7 +501,7 @@ Per installare e configurare AEM Forms con Adobe Forms, gli utenti dello strumen
 
 Prima di leggere ulteriori istruzioni, leggere quanto segue:
 
-* [Configurare il servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/configure-service#)
+* [Configurare il servizio di conversione automatica dei moduli](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#)
 
 #### Creare una configurazione IMS - Parte 1 {#creating-ims-config}
 
@@ -582,7 +600,7 @@ Una volta completata la configurazione IMS, puoi procedere con la revisione dell
 
 1. Per questa configurazione, i due valori della casella di controllo sono stati lasciati vuoti.
 
-   Per ulteriori informazioni su queste opzioni, vedere [Configurare il servizio cloud](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   Per ulteriori informazioni su queste opzioni, vedere [Configurare il servizio cloud](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Configura configurazione cloud (`We.Finance` produzione AFC) {#configure-cloud-configuration-wefinance}
 
@@ -612,7 +630,7 @@ Una volta completata la configurazione IMS, puoi procedere con la creazione dell
 
 1. Per questa configurazione, i due valori della casella di controllo sono stati lasciati vuoti.
 
-   * Per ulteriori informazioni su queste opzioni, vedere [Configurare il servizio cloud](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
+   * Per ulteriori informazioni su queste opzioni, vedere [Configurare il servizio cloud](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/configure-service#configure-the-cloud-service).
 
 #### Verifica della conversione dei moduli (applicazione di iscrizione We.Gov) {#test-forms-conversion}
 
@@ -652,7 +670,7 @@ Una volta configurata la configurazione, gli utenti possono testarla caricando u
 
 #### Problemi noti e note {#known-issues-notes}
 
-Il servizio di conversione automatica dei moduli include [best practice, modelli complessi noti](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) e [problemi noti](https://experienceleague.adobe.com/it/docs/aem-forms-automated-conversion-service/using/known-issues#). Leggi queste informazioni prima di iniziare a utilizzare il servizio di conversione automatica dei moduli di AEM Forms.
+Il servizio di conversione automatica dei moduli include [best practice, modelli complessi noti](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices#) e [problemi noti](https://experienceleague.adobe.com/en/docs/aem-forms-automated-conversion-service/using/known-issues#). Leggi queste informazioni prima di iniziare a utilizzare il servizio di conversione automatica dei moduli di AEM Forms.
 
 1. Crea il modulo con Genera moduli adattivi senza associazioni di dati abilitate, se desideri associare il modulo a un FDM dopo la conversione.
 

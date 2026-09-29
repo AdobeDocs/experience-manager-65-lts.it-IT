@@ -11,13 +11,30 @@ feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 exl-id: 20de763d-dd07-4ba6-a54d-a2b3b9b7e1ec
 index: false
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2879'
 ht-degree: 6%
-
 ---
-
 
 # Componenti di Adobe Campaign{#adobe-campaign-components}
 
@@ -102,13 +119,13 @@ Nella modalità di modifica a schermo intero sono disponibili diverse opzioni ag
 
 Quando viene caricata un’immagine, puoi configurare quanto segue:
 
-* **Mappa**
+* **mappa**
 Per mappare un&#39;immagine, selezionare Mappa. È possibile specificare la modalità di creazione della mappa immagine (rettangolo, poligono e così via) e il punto a cui deve puntare l&#39;area.
 
 * **Ritaglio**
 Seleziona Ritaglia per ritagliare un’immagine. Utilizzare il mouse per ritagliare l&#39;immagine.
 
-* **Ruota**
+* **Rotazione**
 Per ruotare un&#39;immagine, selezionare Ruota. Usare ripetutamente fino a quando l&#39;immagine non viene ruotata nel modo desiderato.
 
 * **Cancella**
@@ -122,13 +139,13 @@ Titolo dell&#39;immagine.
 * **Testo alternativo**
 Testo alternativo da utilizzare per la creazione di contenuto accessibile.
 
-* **Collegamento A**
+* **Collega a**
 Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
 * **Descrizione**
 Descrizione dell&#39;immagine.
 
-* **Dimensione**
+* **Dimensioni**
 Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
@@ -154,7 +171,7 @@ Didascalia del collegamento. Questo è il testo visualizzato dagli utenti.
 * **Descrizione comando collegamento**
 Aggiunge ulteriori informazioni sull&#39;utilizzo del collegamento.
 
-* **TipoCollegamento**
+* **Tipo collegamento**
 Nell&#39;elenco a discesa selezionare tra un **URL personalizzato** e un **documento adattivo**. Questo campo è obbligatorio. Se selezioni URL personalizzato, puoi fornire l’URL del collegamento. Se selezioni Documento adattivo, puoi fornire il percorso del documento.
 
 * **Parametro URL aggiuntivo**
@@ -220,20 +237,20 @@ Trascina un&#39;immagine dal Finder dei contenuti o fai clic per passare a un&#3
 * **Proprietà immagine** (**Proprietà immagine avanzate**)
 Consente di specificare quanto segue:
 
-   * **Titolo**
-Titolo del blocco, visualizzato a comparsa.
+  * **Titolo**
+    Titolo del blocco, visualizzato a comparsa.
 
-   * **Testo alternativo**
-Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
+  * **Testo alternativo**
+    Testo alternativo da visualizzare se l’immagine non può essere visualizzata.
 
-   * **Collegamento a**
-Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
+  * **Collega a**
+    Crea un collegamento alle risorse o ad altre pagine del tuo sito web.
 
-   * **Descrizione**
-Descrizione dell&#39;immagine.
+  * **Descrizione**
+    Descrizione dell&#39;immagine.
 
-   * **Dimensione**
-Imposta l&#39;altezza e la larghezza dell&#39;immagine.
+  * **Dimensioni**
+    Imposta l&#39;altezza e la larghezza dell&#39;immagine.
 
 >[!NOTE]
 >

@@ -11,22 +11,30 @@ thumbnail: 34350.jpg
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: 5f6171f8-20ca-4c31-a99f-a5bc07a63baf
-source-git-commit: 093d38dbb1d3e2a2f63c1b7a88d9f31c9950e955
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 24%
-
+source-wordcount: '934'
+ht-degree: 31%
 ---
-
 # Configurazioni URL avanzate {#url}
 
 >[!NOTE]
 >
->L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi all’ottimizzazione SEO devono essere affrontati in molti progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](/help/managing/seo-and-url-management.md).
+>L’ottimizzazione SEO (Search Engine Optimization) è diventato un aspetto cruciale per molti esperti marketing. Di conseguenza, i problemi relativi alla SEO devono essere affrontati in molti Progetti AEM. Per ulteriori informazioni, vedere [Best practice per la gestione SEO e URL](/help/managing/seo-and-url-management.md).
 
 I [componenti core CIF di AEM](https://github.com/adobe/aem-core-cif-components) forniscono configurazioni avanzate per personalizzare gli URL per le pagine di prodotti e categorie. Molte implementazioni personalizzano questi URL a scopo di SEO (Search Engine Optimization). Nei seguenti video viene descritto come configurare il servizio `UrlProvider` e le funzioni di [mappatura Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) per personalizzare gli URL delle pagine di prodotti e categorie.
 
->[!VIDEO](https://video.tv.adobe.com/v/38587/?captions=ita&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configurazione {#configuration}
 

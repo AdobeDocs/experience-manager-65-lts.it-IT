@@ -9,13 +9,29 @@ docset: aem65
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 69734a2b-7f9d-4661-a1e9-3bf6e362c272
-source-git-commit: 30ec8835be1af46e497457f639d90c1ee8b9dd6e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2299'
 ht-degree: 1%
-
 ---
-
 # Precompilare i campi di un modulo adattivo{#prefill-adaptive-form-fields}
 
 <span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=it) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
@@ -24,7 +40,7 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html).
 
 ## Introduzione {#introduction}
 
@@ -242,7 +258,7 @@ Per abilitare il servizio di precompilazione, specifica la Configurazione predef
 >La Configurazione del servizio di precompilazione è applicabile ai moduli adattivi, ai moduli HTML5 e ai set di moduli HTML5.
 
 1. Apri **[!UICONTROL Configurazione console Web Adobe Experience Manager]** utilizzando l&#39;URL:\
-   https://&lt;server>:&lt;porta>/system/console/configMgr
+   https://<server>:<porta>/system/console/configMgr
 1. Cerca e apri **[!UICONTROL Configurazione predefinita servizio di precompilazione]**.
 
    ![Configurazione preriempimento](assets/prefill_config_new.png)
@@ -351,7 +367,7 @@ Puoi utilizzare il servizio di preriempimento personalizzato per gli scenari in 
 
 Il servizio di precompilazione è un servizio OSGi ed è fornito tramite bundle OSGi. Crea il bundle OSGi, caricalo e installalo nei bundle di AEM Forms. Prima di iniziare a creare il bundle:
 
-* [Scarica AEM Forms Client SDK](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html)
+* [Scarica AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * Scarica il pacchetto boilerplate
 
 * Inserisci il file di dati (dati di precompilazione) nel crx-repository. È possibile inserire il file in qualsiasi posizione nella cartella \content del repository crx.
@@ -387,14 +403,14 @@ Quando si precompila un modulo adattivo, il server AEM Forms unisce i dati con u
 Puoi configurare il server AEM Forms in modo che esegua l’azione di unione dati sul client anziché sul server. Riduce in modo significativo il tempo necessario per precompilare ed eseguire il rendering dei moduli adattivi. Per impostazione predefinita, la funzione è disabilitata. È possibile abilitarlo dalla riga di comando o da Configuration Manager.
 
 * Per attivare o disattivare da Gestione configurazione:
-   1. Apri AEM Configuration Manager.
-   1. Individuare e aprire il modulo adattivo e la configurazione del canale web di comunicazione interattiva
-   1. Abilita l’opzione Configuration.af.clientside.datamerge.enabled.name
+  1. Apri AEM Configuration Manager.
+  1. Individuare e aprire il modulo adattivo e la configurazione del canale web di comunicazione interattiva
+  1. Abilita l’opzione Configuration.af.clientside.datamerge.enabled.name
 * Per attivare o disattivare dalla riga di comando:
-   * Per abilitare questa funzione, esegui il seguente comando cURL:
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Per abilitare questa funzione, esegui il seguente comando cURL:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   * Per disattivare, eseguire il seguente comando cURL:
-     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+  * Per disattivare, eseguire il seguente comando cURL:
+    `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-  Per sfruttare appieno l&#39;opzione di precompilazione dei dati nel client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/it/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  Per sfruttare appieno l&#39;opzione di precompilazione dei dati nel client, aggiorna il servizio di precompilazione per restituire [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

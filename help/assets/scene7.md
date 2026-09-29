@@ -1,5 +1,5 @@
 ---
-title: Aggiungere funzioni di Dynamic Media Classic alle pagine
+title: Aggiungere risorse Dynamic Media Classic alle pagine
 description: Come aggiungere funzioni e componenti di Dynamic Media Classic a una pagina in Adobe Experience Manager.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,16 +10,30 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 2%
-
+source-wordcount: '2902'
+ht-degree: 3%
 ---
+# Aggiungere risorse Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
 
-# Aggiungere funzioni di Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
-
-[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=it) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
 
 Puoi visualizzare le risorse Experience Manager pubblicate in Dynamic Media Classic in vari visualizzatori:
 
@@ -177,13 +191,13 @@ Il componente **[!UICONTROL Immagine]** di Dynamic Media Classic consente di agg
 
 **[!UICONTROL Nitidezza]** - Seleziona la modalità di nitidezza dell&#39;immagine. La nitidezza è spiegata in dettaglio nelle [best practice per i predefiniti immagine](/help/assets/managing-image-presets.md#image-preset-options) e nelle [best practice per la nitidezza](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificatori URL]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Questi comandi sono descritti in [Predefiniti immagine](/help/assets/managing-image-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=it).
+**[!UICONTROL Modificatori URL]** - È possibile modificare gli effetti immagine fornendo ulteriori comandi immagine Dynamic Media Classic. Questi comandi sono descritti in [Predefiniti immagine](/help/assets/managing-image-presets.md) e nel [Riferimento comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Punti di interruzione]** - Se il sito Web è reattivo, modificare i punti di interruzione. I punti di interruzione devono essere separati da virgole ( , ).
 
 ### Modello immagini {#image-template}
 
-[I modelli di immagine Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=it) sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, in cui il contenuto e le proprietà sono stati parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagine]** consente di importare immagini e modificare il testo in modo dinamico in Experience Manager. È inoltre possibile configurare il componente **[!UICONTROL Modello immagine]** in modo che utilizzi i valori del contesto client, in modo che ogni utente visualizzi l&#39;immagine in modo personalizzato.
+[I modelli di immagine Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) sono contenuti Photoshop a più livelli importati in Dynamic Media Classic, in cui il contenuto e le proprietà sono stati parametrizzati per la variabilità. Il componente **[!UICONTROL Modello immagine]** consente di importare immagini e modificare il testo in modo dinamico in Experience Manager. È inoltre possibile configurare il componente **[!UICONTROL Modello immagine]** in modo che utilizzi i valori del contesto client, in modo che ogni utente visualizzi l&#39;immagine in modo personalizzato.
 
 Selezionare **[!UICONTROL Modifica]** per configurare il componente. È possibile configurare [impostazioni comuni a tutti i componenti di Dynamic Media Classic](#settings-common-to-all-scene-components) e altre impostazioni descritte in questa sezione.
 
@@ -262,7 +276,7 @@ Se sono presenti più configurazioni, Experience Manager visualizza per impostaz
 >[!NOTE]
 >
 >* Assets nella cartella on-demand non viene visualizzato nel browser contenuti di Dynamic Media Classic.
->* Dynamic Media Classic Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
+>* Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
 >* Se **[!UICONTROL Dynamic Media Classic]** o l&#39;icona **[!UICONTROL S7]** non sono visualizzati come opzione nel browser del contenuto, è necessario [configurare Dynamic Media Classic per l&#39;utilizzo con Experience Manager](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Dynamic Media Classic supporta:
 >
@@ -329,7 +343,7 @@ Per impostazione predefinita, Experience Manager esegue la ricerca nella cartell
 >
 >* Nell&#39;interfaccia classica, è inoltre possibile cercare **Flash** e **FXG**. Il filtro per questi tipi nell’interfaccia touch non è supportato.
 >
->* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &ast;.mp4) e la rappresentazione codificata.
+>* Durante la ricerca di un video, viene eseguita la ricerca in un&#39;unica rappresentazione. I risultati restituiscono la rappresentazione originale (solo &amp;ast;.mp4) e la rappresentazione codificata.
 >* Durante la ricerca in un set di video adattivi, la ricerca viene eseguita nella cartella e in tutte le sottocartelle, ma solo se alla ricerca è stata aggiunta una parola chiave. Se non hai aggiunto una parola chiave, Experience Manager non esegue la ricerca nelle sottocartelle.
 >
 

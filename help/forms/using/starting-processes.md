@@ -9,13 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: 074b0cb2-b060-4180-ab16-ff8f7a4ee625
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Avvio dei processi {#starting-processes}
 
 AEM Forms workspace organizza i processi in base alle categorie impostate dall&#39;amministratore o dal designer processi. È inoltre possibile inserire i processi utilizzati di frequente nella categoria Preferiti in modo da poterli trovare rapidamente.
@@ -81,7 +97,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Apri un&#39;attività e fai clic sulla scheda **Note**, se il processo lo consente.
 1. Digitare un titolo per la nota nella casella **Titolo** e digitare il testo della nota nella casella **Nota**.
 1. Seleziona il livello **Autorizzazioni** per la nota per gli altri utenti che partecipano al processo.
-1. Fare clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Puoi eliminare una nota facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
+1. Fai clic su **OK**. Al modulo viene allegato un file di testo contenente la nota. È possibile aggiornare una nota facendo clic su di essa e modificando direttamente il testo. Puoi eliminare una nota facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto alla nota.
 
 ### Aggiungi un allegato {#add-an-attachment}
 
@@ -96,7 +112,7 @@ Potete aggiungere più note, modificare le note scritte ed eliminarle. A ciascun
 1. Fare clic sulla scheda **Allegati** e selezionare **Allegato**.
 1. Fare clic su **Sfoglia** per selezionare il file da allegare.
 1. Selezionare il livello **Autorizzazioni** per l&#39;allegato per gli altri utenti che partecipano al processo. Se selezioni **Leggi**, gli altri utenti potranno salvare il file localmente. Se selezioni una delle autorizzazioni di modifica, anche altri utenti possono caricare un nuovo file per sostituire l’allegato.
-1. Fare clic su **OK**. Il file viene allegato al modulo. Puoi eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
+1. Fai clic su **OK**. Il file viene allegato al modulo. Puoi eliminare un file facendo clic sul pulsante **Elimina** ![Immagine di un cestino](assets/icondelete.png) accanto all&#39;allegato.
 
 ## Salvataggio delle bozze dei moduli {#saving-draft-copies-of-forms}
 

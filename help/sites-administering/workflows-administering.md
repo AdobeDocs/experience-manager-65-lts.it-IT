@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: c86f66b3-6471-4fb6-81d6-3c0a4dcbe200
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
-
+source-wordcount: '1015'
+ht-degree: 63%
 ---
-
 # Amministrazione delle istanze dei flussi di lavoro{#administering-workflow-instances}
 
 La console Flusso di lavoro fornisce diversi strumenti per l’amministrazione delle istanze del flusso di lavoro, in modo che vengano eseguite come previsto.
@@ -69,7 +78,7 @@ Sono disponibili diverse console per l’amministrazione dei flussi di lavoro. U
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; conferma e/o ulteriori dettagli richiesti:
+1. Seleziona un elemento specifico, quindi utilizza **Termina**, **Sospendi** oppure **Riprendi**, a seconda del caso; verrà richiesto di confermare e/o fornire ulteriori dettagli:
 
    ![wf-97-1](assets/wf-97-1.png)
 
@@ -189,7 +198,7 @@ I dati elaborati dai flussi di lavoro vengono memorizzati nell’archiviazione f
 
 Viene fornito un flag a livello di modello di flusso di lavoro per indicare che tale modello (e le sue istanze di runtime) dispone di archiviazione esterna dei metadati. Le variabili del flusso di lavoro non vengono rese persistenti in JCR per le istanze del flusso di lavoro dei modelli contrassegnati per l’archiviazione esterna.
 
-La proprietà *userMetadataPersistenceEnabled* viene memorizzata nel *nodo jcr:content* del modello di flusso di lavoro. Questo flag viene reso persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
+La proprietà *userMetadataPersistenceEnabled* è archiviata nel nodo *jcr:content* del modello di flusso di lavoro. Questo flag è persistente nei metadati del flusso di lavoro come *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustrazione seguente mostra come configurare il flag in un flusso di lavoro.
 

@@ -1,5 +1,5 @@
 ---
-title: Abilita registrazione per moduli HTML5
+title: Abilitare la registrazione per i moduli HTML5
 description: L'utilità logger consente di registrare un modulo e di eseguire il debug dei problemi correlati ai moduli.
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,29 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 755966e5-6267-4633-bcad-05860a2eda6c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 4%
-
+source-wordcount: '644'
+ht-degree: 6%
 ---
-
-# Abilita registrazione per moduli HTML5{#enable-logging-for-html-forms}
+# Abilitare la registrazione per i moduli HTML5{#enable-logging-for-html-forms}
 
 È possibile configurare l&#39;utilità logger per avviare la creazione di registri per i moduli HTML5. L&#39;utilità logger dispone di vari livelli, è possibile impostare un livello in base alle proprie esigenze. HTML5 forms dispone di componenti server e client. Puoi configurare i registri per entrambi i componenti.
 
@@ -25,9 +40,9 @@ ht-degree: 4%
 
 Per configurare i registri lato server, effettua le seguenti operazioni:
 
-1. Vai a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
+1. Passa a `https://'[server]:[port]'/system/console/configMgr`. Individua e apri l&#39;opzione *Configurazione logger di accesso Sling*. Viene visualizzata una finestra di dialogo:
 
-   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![&#x200B; dell&#39;interfaccia](assets/logconfig.png)
+   Finestra di dialogo dell&#39;opzione di configurazione del logger di registrazione di Sling ![ dell&#39;interfaccia](assets/logconfig.png)
 
    Opzione di configurazione del logger di registrazione di accesso Sling
 

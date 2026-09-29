@@ -1,19 +1,32 @@
 ---
-title: Consentire ad AEM di effettuare ricerche nei documenti PDF e Microsoft Office protetti da Document Security
+title: Consentire ad AEM di effettuare ricerche nei documenti PDF e Microsoft Office protetti da protezione dei documenti
 description: Scopri come abilitare la ricerca nativa di AEM per eseguire ricerche full-text sui documenti PDF protetti da DRM.
 noindex: true
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e9d3f3c-8fc4-4d01-9f1e-62d3c29ab9e5
-source-git-commit: cd6caaf9de907488db14df2a6396fa60efa2d42c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 1%
-
+source-wordcount: '672'
+ht-degree: 9%
 ---
-
-# Consentire ad AEM di effettuare ricerche nei documenti PDF e Microsoft Office protetti da Document Security{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
+# Consentire ad AEM di effettuare ricerche nei documenti PDF e Microsoft Office protetti da protezione dei documenti{#enable-aem-to-search-document-security-protected-pdf-and-microsoft-office-documents}
 
 Adobe Experience Manager fornisce un’interfaccia utente per cercare e individuare varie risorse memorizzate in AEM. La ricerca nativa consente di cercare e individuare le risorse di AEM ed eseguire ricerche di testo in vari formati di documenti di uso comune, ad esempio file di testo normale, documenti di Microsoft Office e documenti di PDF. È inoltre possibile estendere e abilitare la ricerca nativa per eseguire ricerche full-text su documenti PDF e Microsoft Office protetti da DRM.
 
@@ -22,7 +35,7 @@ Per consentire ad AEM di effettuare ricerche nei documenti PDF e Microsoft Offic
 ## Prima di iniziare {#before-you-start}
 
 * Installa e configura AEM Forms Document Security.
-* Aggiungere il pacchetto sun.util.calendar al inserisco nell&#39;elenco Consentiti di della configurazione del firewall di deserializzazione **.** La configurazione è elencata in `https://'[server]:[port]'/system/console/configMgr`.
+* Aggiungere il file sun.calendar del pacchetto al inserisco nell&#39;elenco Consentiti di della configurazione del firewall di deserializzazione **.** Configurazione elencata in `https://'[server]:[port]'/system/console/configMgr`.
 * Assicurati che tutti i bundle di AEM siano attivi e funzionanti. I bundle sono elencati in `https://'[server]:[port]'/system/console/bundles`. Se non tutti i bundle sono attivi, attendi e controlla lo stato dei bundle dopo per alcuni minuti.
 
 ## Stabilire una connessione sicura all’interno del flusso di lavoro di AEM Forms (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
@@ -62,7 +75,7 @@ Una connessione sicura consente un flusso ininterrotto di informazioni tra AEM F
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Indicizzare un esempio di documento PDF o Microsoft Office protetto tramite policy {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

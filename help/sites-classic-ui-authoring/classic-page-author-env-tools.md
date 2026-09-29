@@ -1,5 +1,5 @@
 ---
-title: 'Authoring: ambiente e strumenti'
+title: Authoring - Ambiente e strumenti
 description: La console Siti Web consente di gestire e navigare nel sito Web. Utilizzando due riquadri, puoi espandere la struttura del sito web e intraprendere azioni sugli elementi richiesti.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: c4ac3f14-f45a-44f6-a232-69cae483a776
-source-git-commit: dc46c3e2689df1069eea6980ef615f639db42e92
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 8%
-
+source-wordcount: '950'
+ht-degree: 6%
 ---
+# Authoring - Ambiente e strumenti {#authoring-the-environment-and-tools}
 
-# Authoring: ambiente e strumenti {#authoring-the-environment-and-tools}
-
-L’ambiente di authoring di AEM offre diversi metodi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
+L’ambiente di authoring di AEM offre diversi meccanismi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
 
 ## Amministrazione sito {#site-administration}
 
@@ -35,7 +44,7 @@ La console **Siti Web** consente di gestire e navigare nel sito Web. Utilizzando
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 È possibile accedere direttamente a diverse risorse di **Aiuto** da AEM:
 
@@ -189,7 +198,7 @@ Altre [relazioni tra pagine sono visibili nella console Siti Web](/help/sites-cl
 
 La console del sito Web [fornisce inoltre informazioni sullo stato corrente della pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), ad esempio pubblicazione, modifica, blocco, Live Copy e così via.
 
-## Modalità pagina   {#page-modes}
+## Modalità pagina {#page-modes}
 
 Durante la modifica di una pagina con l’interfaccia utente classica, è possibile accedere a diverse modalità utilizzando le icone nella parte inferiore della barra laterale:
 

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2c0dd472-9697-4b96-b3fa-3c50883bf425
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3275'
 ht-degree: 99%
-
 ---
-
 # Configurare le directory {#configuring-directories}
 
 >[!NOTE]
@@ -283,7 +298,7 @@ Di seguito è riportato un esempio di script LDIF per la voce VLV per gli utenti
 
    >[!NOTE]
    >
-   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Come convenzione, anche il nome della voce vlvIndex è impostato su `lcuser`, ma puoi assegnarle un nome diverso. Utilizza lo stesso nome nello strumento vlvindex. (Consulta [Creare l’indice del server delle directory per VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Utilizzando lo strumento `ldapmodify` fornito con il server Sun ONE, crea una voce simile per i gruppi utilizzando rispettivamente il DN di base, il filtro di ricerca e il campo di ordinamento del gruppo:
 

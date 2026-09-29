@@ -10,13 +10,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 11ab6be0-ed61-4a4b-af82-d26eec982edd
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2223'
 ht-degree: 46%
-
 ---
-
 # Authoring - Ambiente e strumenti{#authoring-the-environment-and-tools}
 
 L’ambiente di authoring di AEM offre diversi meccanismi per organizzare e modificare i contenuti. Gli strumenti forniti sono accessibili dalle varie console ed editor di pagina.
@@ -86,17 +99,17 @@ L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
   I componenti sono rappresentati da
 
-   * Nome componente
-   * Gruppo di componenti (in grigio)
-   * Icona o abbreviazione
+  * Nome componente
+  * Gruppo di componenti (in grigio)
+  * Icona o abbreviazione
 
-      * Le icone dei componenti standard sono monocromatiche.
-      * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
+    * Le icone dei componenti standard sono monocromatiche.
+    * Le abbreviazioni sono sempre i primi due caratteri del nome del componente.
 
   Dalla barra degli strumenti nella parte superiore del browser **Componenti** è possibile effettuare le seguenti operazioni:
 
-   * Filtrare i componenti per nome
-   * Limita la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa.
+  * Filtrare i componenti per nome
+  * Limita la visualizzazione a uno specifico gruppo selezionandolo dall’elenco a discesa.
 
   Per una descrizione più dettagliata del componente, puoi fare clic sull&#39;icona delle informazioni accanto al componente nel browser **Componenti** (se disponibile). Ad esempio, per **Contenitore di layout**:
 
@@ -124,11 +137,11 @@ Per aggiungere una risorsa alla pagina, selezionala e trascinala nella posizione
 
 * un componente esistente del tipo appropriato.
 
-   * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
+  * Ad esempio, puoi trascinare una risorsa di tipo immagine su un componente Immagine.
 
 * Un [segnaposto](/help/sites-authoring/editing-content.md#component-placeholder) nel sistema paragrafo per creare un componente del tipo appropriato.
 
-   * Ad esempio, puoi trascinare una risorsa di tipo immagine nel sistema paragrafo per creare un componente Immagine.
+  * Ad esempio, puoi trascinare una risorsa di tipo immagine nel sistema paragrafo per creare un componente Immagine.
 
 >[!NOTE]
 >
@@ -141,7 +154,7 @@ Dalla barra degli strumenti nella parte superiore del browser Risorse puoi filtr
 * Tipo di risorsa come immagini, manoscritti, documenti, video, pagine, paragrafi e prodotti
 * Caratteristiche della risorsa come Orientamento (Verticale, Orizzontale, Quadrato) e Stile (Colore, Monocromatico, Scala di grigio)
 
-   * Disponibile solo per alcuni tipi di risorse
+  * Disponibile solo per alcuni tipi di risorse
 
 L&#39;aspetto e la gestione effettivi dipendono dal tipo di dispositivo in uso:
 
@@ -238,7 +251,7 @@ Per ulteriori informazioni, selezionate il tipo di riferimento appropriato. In a
 
 * **Collegamenti in ingresso** fornisce un elenco di pagine che fanno riferimento alla pagina, insieme all&#39;accesso diretto a **Modifica** una di queste pagine quando selezioni un collegamento specifico.
 
-   * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio, dal componente Elenco.
+  * Questo può mostrare solo collegamenti statici, non collegamenti generati dinamicamente; ad esempio, dal componente Elenco.
 
 * Istanze di contenuto prestato o preso in prestito mediante il componente **Riferimento**: da qui puoi passare alla pagina di riferimento o a cui si fa riferimento.
 

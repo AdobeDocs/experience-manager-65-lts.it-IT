@@ -1,5 +1,5 @@
 ---
-title: Elencare moduli su una pagina web utilizzando le API
+title: Elenco di moduli su una pagina web utilizzando le API
 description: Eseguire query a livello di codice su Forms Manager per recuperare un elenco filtrato di moduli e visualizzarli nelle proprie pagine Web.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,18 +8,31 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: 2cbbcbe8-be9e-4519-b224-07e99d06263d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
-
+source-wordcount: '693'
+ht-degree: 6%
 ---
-
-# Elencare moduli su una pagina web utilizzando le API {#listing-forms-on-a-web-page-using-apis}
+# Elenco di moduli su una pagina web utilizzando le API {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fornisce un’API di ricerca basata su REST che gli sviluppatori web possono utilizzare per eseguire query e recuperare un set di moduli che soddisfano i criteri di ricerca. Puoi utilizzare le API per cercare i moduli in base a vari filtri. L’oggetto di risposta contiene attributi del modulo, proprietà e punti finali del rendering dei moduli.
 
-Per eseguire ricerche nei moduli utilizzando l&#39;API REST, invia una richiesta GET al server all&#39;indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
+Per cercare moduli utilizzando l’API REST, invia una richiesta GET al server all’indirizzo `https://'[server]:[port]'/libs/fd/fm/content/manage.json` con i parametri di query descritti di seguito.
 
 ## Parametri di query {#query-parameters}
 
@@ -174,6 +187,6 @@ orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 * [Elencare moduli su una pagina web utilizzando API](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Utilizzare il componente Bozze e invii](/help/forms/using/draft-submission-component.md)
 * [Personalizzare l’archiviazione delle bozze e dei moduli inviati](/help/forms/using/draft-submission-component.md)
-* [Esempio per integrare il componente Bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
-* [Personalizzazione dei modelli per i componenti del portale Forms](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Esempio di integrazione del componente bozze e invii con il database](/help/forms/using/integrate-draft-submission-database.md)
+* [Personalizzazione dei modelli per i componenti del portale dei moduli](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Introduzione alla pubblicazione di moduli su un portale](/help/forms/using/introduction-publishing-forms.md)

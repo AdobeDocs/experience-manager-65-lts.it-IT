@@ -10,13 +10,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 532d8289-a266-4556-ab59-855460c377cb
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 63%
-
+source-wordcount: '969'
+ht-degree: 65%
 ---
-
 # Gestione dei tipi di pubblico{#managing-audiences}
 
 La console Pubblico consente di creare, organizzare e gestire i tipi di pubblico per il tuo account Adobe Target o gestire segmenti per ContextHub o ClientContext:
@@ -65,7 +80,7 @@ Quando utilizzi più regole, queste vengono combinate tramite l&#39;operatore bo
 
 >[!NOTE]
 >
->Se nel menu **Crea** non trovi **Crea pubblico di destinazione &#x200B;** non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
+>Se nel menu **Crea** non trovi **Crea pubblico di destinazione **non disponi delle autorizzazioni necessarie per creare un pubblico. Per creare tipi di pubblico è necessario disporre delle autorizzazioni di scrittura in **/etc/segmentation**. Per impostazione predefinita, gli autori dei contenuti del gruppo sono in possesso di autorizzazioni di scrittura.
 
 Per creare un pubblico di Adobe Target:
 
@@ -73,7 +88,7 @@ Per creare un pubblico di Adobe Target:
 
    ![schermata_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Nella console Pubblico, fai clic su **Crea** e quindi **&#x200B; Crea pubblico Target**.
+1. Nella console Pubblico, fai clic su **Crea** e quindi** Crea pubblico Target**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

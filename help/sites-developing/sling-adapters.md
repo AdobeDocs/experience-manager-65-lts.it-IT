@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7eae83bd-7982-4051-821f-b43f65c5af2b
-source-git-commit: cf22b13e0f7c8e66b598f85aab81b022480e60bc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 2%
-
+source-wordcount: '2529'
+ht-degree: 1%
 ---
-
 # Utilizzo di adattatori Sling{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) offre un [pattern di adattatore](https://sling.apache.org/documentation/the-sling-engine/adapters.html) per tradurre gli oggetti in modo conveniente che implementano l&#39;interfaccia [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Questa interfaccia fornisce un metodo [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) generico che converte l&#39;oggetto nel tipo di classe passato come argomento.
@@ -338,7 +347,7 @@ Ancora nessuna destinazione, ma implementa Adaptable e potrebbe essere utilizzat
 
 #### Protezione {#security}
 
-**Authorizable**, **User e &#x200B;** Group** si adattano a:
+**Authorizable**, **User e** Group** si adattano a:
 
 | [Nodo](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html) | Restituisce il nodo principale dell&#39;utente/gruppo. |
 | --- | --- |

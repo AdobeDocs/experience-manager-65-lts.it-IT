@@ -8,18 +8,27 @@ role: User
 hide: true
 solution: Experience Manager, Experience Manager Assets
 exl-id: 88dc81aa-f8b2-403e-bd87-ea224ac2d0c2
-source-git-commit: 103250f3442cf7c2793c51a95b1bf4fbaff71463
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '605'
 ht-degree: 9%
-
 ---
-
 # Anteprima di risorse 3D in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 | Versione | Collegamento articolo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=it) |
+| AEM as a Cloud Service | [Fai clic qui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Questo articolo |
 
 Come parte del processo di authoring, Experience Manager supporta il caricamento, la consegna e l’anteprima interattiva di risorse 3D.
@@ -39,7 +48,7 @@ L&#39;anteprima 3D interattiva supporta i seguenti formati di file:
 | OBJ | File oggetto WaveFront 3D | application/x-tgif | |
 | STL | Stereolitografia | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | Supporto solo per l’acquisizione; anteprima non disponibile. |
-| USDZ | Universal Scene Description Archivio zip | model/vnd.usdz+zip | Supporto solo per l’acquisizione; anteprima non disponibile. |
+| USDZ | Archivio zip Universal Scene Description | model/vnd.usdz+zip | Supporto solo per l’acquisizione; anteprima non disponibile. |
 
 >[!NOTE]
 >

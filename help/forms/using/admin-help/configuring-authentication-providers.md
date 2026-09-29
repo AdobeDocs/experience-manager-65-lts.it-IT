@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 14f006f8-8751-4713-ba5a-590ce479fbb4
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1614'
 ht-degree: 98%
-
 ---
-
 # Configurazione dei provider di autenticazione {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -160,7 +175,7 @@ Senza il provisioning just-in-time, quando un utente viene autenticato correttam
 1. Per creare un dominio, fai clic su Nuovo dominio enterprise o Nuovo dominio ibrido. Per modificare un dominio esistente, fai clic sul nome del dominio.
 1. Seleziona Abilita provisioning Just In Time.
 
-   ***nota &#x200B;**: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
+   ***nota **: se la casella di controllo Abilita provisioning Just In Time non è presente, fai clic su Home > Impostazioni > Gestione utente> Configurazione > Attributi di sistema avanzati, quindi fai clic su Ricarica.*
 
 1. Aggiungi provider di autenticazione. Durante l’aggiunta dei provider di autenticazione, nella schermata Nuova autenticazione, seleziona un creatore di identità e un provider di assegnazione registrati. Consulta [Configurazione dei provider di autenticazione](configuring-authentication-providers.md#configuring-authentication-providers).
 1. Salva il dominio.

@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 110b7175-d398-40ff-886e-5817a1df0ec9
-source-git-commit: ce0da5056e0821c94eb06a05c663a3939b37f940
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3056'
-ht-degree: 0%
-
+source-wordcount: '3217'
+ht-degree: 2%
 ---
-
 # Configurare Experience Manager Assets per Adobe Asset Link {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/it/creativecloud/business/enterprise/adobe-asset-link.html) semplifica la collaborazione tra creativi ed esperti di marketing nel processo di creazione dei contenuti. Collega Adobe Experience Manager Assets con le app desktop Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. Il pannello Adobe Asset Link consente ai creativi di accedere e modificare i contenuti memorizzati in AEM Assets senza uscire dalle app creative che preferiscono.
@@ -54,7 +63,7 @@ Adobe consiglia di installare il pacchetto di configurazione [adobe-asset-link-c
    Imposta le seguenti proprietà e salva le modifiche.
 
    * [!UICONTROL Mappature gruppo]: lascia vuoto a meno che non lo desideri. Per ulteriori dettagli, vedere [Mappatura gruppo](#group-mapping).
-   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/it/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organizzazione]: immetti l&#39;ID organizzazione in uso in Adobe Admin Console. Per ulteriori informazioni sugli ID organizzazione, vedere [Crea gruppo utenti](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
 
 1. Individuare la configurazione **[!UICONTROL Adobe Granite Bearer Authentication Handler]** e fare clic per modificarla.
 
@@ -282,7 +291,7 @@ In caso di problemi durante la configurazione o l’utilizzo di Adobe Asset Link
 * Assicurati che l’implementazione soddisfi i prerequisiti. In particolare, assicurati che siano installati i pacchetti o i Feature Pack appropriati.
 * Contatta il partner o l’integratore di sistemi della tua organizzazione.
 * Se gli utenti di Creative Cloud non sono in grado di verificare le risorse estratte, verifica la presenza di maiuscole/minuscole nei nomi di dominio negli ID e-mail. Per risolvere il problema, vedere [configurazione manuale](#manual-configuration).
-* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/it/enterprise/kb/asset-link-troubleshooting.html).
+* Per ulteriori informazioni, consulta [risolvere i problemi di Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]

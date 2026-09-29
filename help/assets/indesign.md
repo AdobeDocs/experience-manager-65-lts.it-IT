@@ -1,17 +1,29 @@
 ---
 title: Integra [!DNL Assets] con [!DNL InDesign Server]
-description: Scopri come integrare  [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
+description: Scopri come integrare [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server].
 role: Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: f0db5ec6-45ea-418e-ae5f-e6e307a40a38
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1587'
 ht-degree: 2%
-
 ---
-
 # Integra [!DNL Adobe Experience Manager Assets] con [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] utilizza:
@@ -20,11 +32,11 @@ ht-degree: 2%
 * Un lavoratore proxy per definire e gestire un&#39;attività specifica.
 Questi possono coprire un&#39;ampia gamma di attività, ad esempio l&#39;utilizzo di [!DNL InDesign Server] per l&#39;elaborazione dei file.
 
-Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/it/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
+Per caricare completamente i file in [!DNL Experience Manager Assets] che hai creato con [!DNL Adobe InDesign], viene utilizzato un proxy. Viene utilizzato un processo di lavoro proxy per comunicare con [!DNL Adobe InDesign Server], dove vengono eseguiti [script](https://helpx.adobe.com/indesign/using/scripting.html) per estrarre i metadati e generare varie rappresentazioni per [!DNL Experience Manager Assets]. Il processo di lavoro proxy abilita la comunicazione bidirezionale tra le istanze [!DNL InDesign Server] e [!DNL Experience Manager] in una configurazione cloud.
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/it/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://helpx.adobe.com/it/indesign/using/scripting.html).Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
+>[!DNL Adobe InDesign] è offerto come due offerte separate. [app desktop Adobe InDesign](https://www.adobe.com/products/indesign.html) utilizzata per progettare layout di pagina per la stampa e la distribuzione digitale. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) consente di creare in modo programmatico documenti automatizzati in base a ciò che hai creato con [!DNL InDesign]. Funziona come un servizio che offre un&#39;interfaccia al suo motore [ExtendScript](https://helpx.adobe.com/indesign/using/scripting.html).Gli script sono scritti in [!DNL ExtendScript], simile a [!DNL JavaScript].
 
 ## Come funziona l’estrazione {#how-the-extraction-works}
 
@@ -41,9 +53,9 @@ Questo script di comandi:
    * Recuperate il file INDD.
    * Esegui [!DNL InDesign Server] comandi:
 
-      * Vengono estratti la struttura, il testo ed eventuali file multimediali.
-      * Vengono generate le rappresentazioni di PDF e JPG.
-      * Vengono generate le rappresentazioni HTML e IDML.
+     * Vengono estratti la struttura, il testo ed eventuali file multimediali.
+     * Vengono generate le rappresentazioni di PDF e JPG.
+     * Vengono generate le rappresentazioni HTML e IDML.
 
    * Ripubblica i file risultanti in [!DNL Experience Manager Assets].
 
@@ -136,7 +148,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Gestore estrazione pagina**: dall&#39;elenco a comparsa, selezionare il gestore che si desidera utilizzare. Un gestore estrazione opera su un rendering specifico, scelto da un `RenditionPicker` correlato (vedi l&#39;API `ExtractionHandler`). In un&#39;installazione standard di [!DNL Experience Manager] è disponibile quanto segue:
-   * IDML Export Extraction Handle (Handle di estrazione esportazione IDML): opera sulla rappresentazione `IDML` generata nel passaggio MediaExtract.
+  * IDML Export Extraction Handle (Handle di estrazione esportazione IDML): opera sulla rappresentazione `IDML` generata nel passaggio MediaExtract.
 
 * **Nome pagina**: specificare il nome che si desidera assegnare alla pagina risultante. Se lasciato vuoto, il nome sarà &quot;page&quot; (o una derivata se &quot;page&quot; esiste già).
 
@@ -163,7 +175,7 @@ Per personalizzare, è possibile modificare la scheda **[!UICONTROL Argomenti]**
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **Pool IDS**
-Endpoint SOAP da utilizzare per la comunicazione con [!DNL InDesign Server]. È possibile aggiungere, rimuovere e ordinare gli elementi necessari.
+     Endpoint SOAP da utilizzare per la comunicazione con [!DNL InDesign Server]. È possibile aggiungere, rimuovere e ordinare gli elementi necessari.
 
 1. Fare clic su OK per salvare.
 
@@ -239,4 +251,4 @@ Per [!DNL InDesign Server] 10.0 o versione successiva, eseguire la procedura seg
 
 >[!MORELIKETHIS]
 >
->* [Informazioni su Adobe InDesign Server](https://www.adobe.com/it/products/indesignserver/faq.html)
+>* [Informazioni su Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

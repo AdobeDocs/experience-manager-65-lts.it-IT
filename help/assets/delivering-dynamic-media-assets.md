@@ -5,13 +5,29 @@ role: User, Admin
 feature: Asset Management,Renditions
 solution: Experience Manager, Experience Manager Assets
 exl-id: b91173b4-f1d1-4aad-97d2-782bc8aeaeab
-source-git-commit: 47b82956b41c3f78bed5ae220c7e993ce29e0385
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 10%
-
+source-wordcount: '314'
+ht-degree: 11%
 ---
-
 # Distribuire risorse Dynamic Media{#delivering-dynamic-media-assets}
 
 Il modo in cui distribuisci le risorse Dynamic Media, sia video che immagini, dipende da come viene implementato il sito web.
@@ -21,9 +37,9 @@ Dynamic Media offre diverse opzioni:
 * Se il tuo sito web è ospitato su Adobe Experience Manager, vuoi aggiungere le risorse Dynamic Media direttamente alla pagina.
 * Se il tuo sito web non è su Experience Manager, puoi scegliere:
 
-   * Incorporare il video o l’immagine sul sito web.
-   * Collega gli URL all’applicazione web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
-   * Se il tuo sito è reattivo, puoi [distribuire immagini ottimizzate](/help/assets/responsive-site.md).
+  * Incorporare il video o l’immagine sul sito web.
+  * Collega gli URL all’applicazione web. Utilizza i collegamenti quando desideri distribuire un lettore video come finestra popup o modale.
+  * Se il tuo sito è reattivo, puoi [distribuire immagini ottimizzate](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
@@ -36,7 +52,7 @@ Per ulteriori informazioni, consulta i seguenti argomenti:
 * [Attivazione della protezione hotlinking in Dynamic Media](/help/assets/hotlink-protection.md)
 * [Collegamento degli URL all’applicazione Web](/help/assets/linking-urls-to-yourwebapplication.md)
 * [Distribuzione di immagini ottimizzate per un sito reattivo](/help/assets/responsive-site.md)
-* [Distribuzione HTTP2 dei contenuti](/help/assets/http2.md)
+* [Distribuzione di contenuti HTTP2](/help/assets/http2.md)
 * [Utilizzo di set di regole per la trasformazione degli URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 ## Distribuzione HTTP/2 delle risorse Dynamic Media {#http-delivery-of-dynamic-media-assets}

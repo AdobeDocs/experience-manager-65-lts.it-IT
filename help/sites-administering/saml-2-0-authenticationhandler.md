@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: ee438c55-88cd-4f55-873e-16376b36fa7b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 2%
-
+source-wordcount: '864'
+ht-degree: 1%
 ---
-
 # Gestore di autenticazione SAML 2.0{#saml-authentication-handler}
 
 AEM viene fornito con un gestore di autenticazione [SAML](https://saml.xml.org/saml-specifications). Questo gestore supporta il protocollo di richiesta di autenticazione [SAML](https://saml.xml.org/saml-specifications) 2.0 (profilo Web-SSO) utilizzando l&#39;associazione `HTTP POST`.
@@ -31,7 +43,7 @@ Questo gestore archivia il messaggio di risposta SAML crittografato nel nodo ute
 
 >[!NOTE]
 >
->Vedi [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=it).
+>Vedi [una dimostrazione dell&#39;integrazione di AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configurazione del gestore di autenticazione SAML 2.0 {#configuring-the-saml-authentication-handler}
 
@@ -86,7 +98,7 @@ La [console Web](/help/sites-deploying/configuring-osgi.md) fornisce l&#39;acces
 
 **Aggiungi ai gruppi** Indica se un utente deve essere aggiunto automaticamente ai gruppi di CRX dopo l&#39;autenticazione riuscita.
 
-**Appartenenza al gruppo** Il nome dell&#39;attributo saml:Attribute contenente un elenco di gruppi CRX a cui deve essere aggiunto l&#39;utente.
+**Appartenenza al gruppo** Il nome del saml:Attribute contenente un elenco di gruppi CRX a cui deve essere aggiunto l&#39;utente.
 
 ## Aggiungi il certificato IdP al TrustStore AEM {#add-the-idp-certificate-to-the-aem-truststore}
 

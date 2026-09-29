@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 767f0e03-5228-4c85-a0be-9dae90fa5cbd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5154'
 ht-degree: 51%
-
 ---
-
 # API GraphQL AEM per l’utilizzo con Frammenti di contenuto {#graphql-api-for-use-with-content-fragments}
 
 Scopri come utilizzare Frammenti di contenuto in Adobe Experience Manager (AEM) con l’API GraphQL di AEM per la distribuzione di contenuti headless.
@@ -769,7 +781,7 @@ Per abilitare la memorizzazione nella cache delle query persistenti, sono necess
   >
   >Dispatcher aggiunge il suffisso `.json` a tutti gli URL di query persistenti, in modo che il risultato possa essere memorizzato nella cache.
   >
-  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=it#how-does-the-dispatcher-return-documents%3F)
+  >In questo modo, la query sarà conforme ai requisiti di Dispatcher per i documenti che possono essere memorizzati in cache. Per ulteriori dettagli vedi [Come vengono restituiti i documenti da Dispatcher?](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
@@ -955,7 +967,7 @@ Le operazioni di base delle query con GraphQL per AEM sono conformi alle specifi
 
 >[!CAUTION]
 >
->Se la memorizzazione nella cache di [&#x200B; in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
+>Se la memorizzazione nella cache di [ in Dispatcher è stata abilitata](#graphql-persisted-queries-enabling-caching-dispatcher), il filtro CORS non è necessario e quindi questa sezione può essere ignorata.
 
 >[!NOTE]
 >

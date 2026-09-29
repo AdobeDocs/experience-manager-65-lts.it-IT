@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 084c59b1-1e72-475e-8ec9-2cbc6e695876
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 3%
-
 ---
-
 # Gestione dell’accesso ai flussi di lavoro{#managing-access-to-workflows}
 
 Configura gli ACL in base agli account utente per consentire (o disabilitare) l’avvio e la partecipazione ai flussi di lavoro.
@@ -27,13 +36,13 @@ Configura gli ACL in base agli account utente per consentire (o disabilitare) l�
 * si sta utilizzando l&#39;account `admin`
 * l&#39;account è stato assegnato al gruppo predefinito `workflow-users`:
 
-   * questo gruppo dispone di tutti i privilegi necessari agli utenti per eseguire azioni del flusso di lavoro.
-   * quando l’account si trova in questo gruppo, può accedere solo ai flussi di lavoro avviati dall’account.
+  * questo gruppo dispone di tutti i privilegi necessari agli utenti per eseguire azioni del flusso di lavoro.
+  * quando l’account si trova in questo gruppo, può accedere solo ai flussi di lavoro avviati dall’account.
 
 * l&#39;account è stato assegnato al gruppo predefinito `workflow-administrators`:
 
-   * questo gruppo dispone di tutti i privilegi necessari affinché gli utenti con privilegi possano monitorare e amministrare i flussi di lavoro.
-   * quando l’account si trova in questo gruppo, ha accesso a tutti i flussi di lavoro.
+  * questo gruppo dispone di tutti i privilegi necessari affinché gli utenti con privilegi possano monitorare e amministrare i flussi di lavoro.
+  * quando l’account si trova in questo gruppo, ha accesso a tutti i flussi di lavoro.
 
 >[!NOTE]
 >
@@ -80,7 +89,7 @@ Se il modello di flusso di lavoro è memorizzato in `/var/workflow/models`, è p
 
 ### Crea una sottocartella in /var/workflow/models e applica a essa l’ACL {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Il tuo team di sviluppo [&#x200B; può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
+Il tuo team di sviluppo [ può creare i flussi di lavoro in una sottocartella](/help/sites-developing/workflows-models.md#creating-a-new-workflow) di
 
 `/var/workflow/models`
 
@@ -106,7 +115,7 @@ Paragonabile ai flussi di lavoro DAM memorizzati in
 
    >[!NOTE]
    >
-   >Come con [Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) puoi includere un rep:glob per limitare l&#39;accesso a un flusso di lavoro specifico.
+   >Come con [Applica un ACL per il modello di flusso di lavoro specifico a /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) puoi includere una rappresentazione:glob per limitare l&#39;accesso a un flusso di lavoro specifico.
 
    ![wf-110](assets/wf-110.png)
 

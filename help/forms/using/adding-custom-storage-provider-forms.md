@@ -1,5 +1,5 @@
 ---
-title: Archiviazione personalizzata per il componente Bozze e invii
+title: Archiviazione personalizzata per il componente bozze e invii
 description: Scopri come personalizzare l’archiviazione dei dati utente per le bozze e gli invii.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,25 @@ feature: Forms Portal
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 2f7caa43-213e-4cd2-bb02-6b18c3efb81c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
-
+source-wordcount: '337'
+ht-degree: 4%
 ---
-
-# Archiviazione personalizzata per il componente Bozze e invii {#custom-storage-for-drafts-and-submissions-component}
+# Archiviazione personalizzata per il componente bozze e invii {#custom-storage-for-drafts-and-submissions-component}
 
 ## Panoramica {#overview}
 

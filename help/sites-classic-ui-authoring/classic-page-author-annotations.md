@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9fe6be3b-2fd8-4023-9388-d5e80d22895c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 8%
-
+source-wordcount: '770'
+ht-degree: 9%
 ---
-
 # Annotazioni durante la modifica di una pagina{#annotations-when-editing-a-page}
 
 L’aggiunta di contenuto alle pagine del sito web è spesso soggetta a discussioni prima di essere effettivamente pubblicata. Per facilitare questa fase, molti componenti direttamente correlati al contenuto (anziché, ad esempio, al layout) ti consentono di aggiungere un’annotazione.
@@ -83,16 +92,16 @@ Gli schizzi sono una caratteristica delle annotazioni che consente di creare sem
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. È possibile disegnare più linee distinte.
+* Il cursore si trasforma in un reticolo incrociato quando siete in modalità sketch. Puoi disegnare più linee distinte.
 * La linea dello schizzo riflette il colore dell’annotazione e può essere:
 
-   * mano libera
+  * mano libera
 
-     la modalità predefinita; terminare rilasciando il pulsante del mouse.
+    la modalità predefinita; terminare rilasciando il pulsante del mouse.
 
-   * dritto:
+  * dritto:
 
-     tenere premuto `ALT` e fare clic sui punti iniziale e finale; terminare con un doppio clic.
+    tenere premuto `ALT` e fare clic sui punti iniziale e finale; terminare con un doppio clic.
 
 * Dopo aver chiuso la modalità di sketch, potete fare clic su una linea di sketch per selezionarla.
 * Spostate uno sketch selezionandolo, quindi trascinandolo nella posizione desiderata.

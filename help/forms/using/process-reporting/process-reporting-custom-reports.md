@@ -5,14 +5,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 5670fede-4567-445e-8eeb-84349405db0e
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 16%
-
 ---
-
 # Rapporti personalizzati in Rapporti sui processi{#custom-reports-in-process-reporting}
 
 Puoi utilizzare l’interfaccia REST di QueryBuilder o creare un servizio OSGi utilizzando l’API QueryBuilder per creare un rapporto personalizzato.
@@ -28,7 +43,7 @@ Prima di aggiungere un rapporto personalizzato, attenersi alla procedura descrit
 
 ## Utilizzo dell&#39;interfaccia REST di QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it) prima di eseguire i passaggi seguenti:
+L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share Query Builder tramite un’API Java e un’API REST. Scopri come utilizzare l&#39;interfaccia REST [CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en) prima di eseguire i passaggi seguenti:
 
 1. Sfoglia l&#39;URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Creare una query basata sulla struttura e sulle proprietà del nodo di archiviazione di Process Reporting.
@@ -45,7 +60,7 @@ L’interfaccia REST di CRX QueryBuilder espone le funzionalità di Asset Share 
 
 ## Creazione di un servizio tramite API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=it).
+I prerequisiti per la creazione di un servizio utilizzando l&#39;API di Query Builder sono [la creazione e la distribuzione del bundle OSGI CQ](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=it) e [l&#39;utilizzo dell&#39;API di Query Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en).
 
 1. Crea un servizio OSGi con le annotazioni appropriate. Per accedere a QueryBuilder utilizzare:
 
@@ -639,7 +654,7 @@ I prerequisiti per la creazione di un&#39;interfaccia utente separata per la vis
    * **descrizione**- Specifica la descrizione di una riga del report. Puoi lasciare vuoto il campo della descrizione.
    * **icona**- Specifica l&#39;immagine da rappresentare graficamente il report. Puoi lasciare vuoto il campo dell’icona.
 
-   ![Proprietà del nodo &#x200B;](assets/node_properties_new.png)
+   ![Proprietà del nodo ](assets/node_properties_new.png)
 
    Proprietà del nodo
 

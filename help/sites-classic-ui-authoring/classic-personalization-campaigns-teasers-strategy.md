@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: 3232ccb0-dd4c-4457-9467-cdad788f977c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 3%
-
+source-wordcount: '1203'
+ht-degree: 4%
 ---
-
 # Teaser e strategie{#teasers-and-strategies}
 
 Le campagne utilizzano spesso i teaser come meccanismo per attrarre un segmento specifico della popolazione di visitatori, fino a contenuti incentrati sui loro interessi. Uno o più teaser sono definiti per una campagna specifica.
@@ -111,7 +122,7 @@ Utilizziamo inoltre le seguenti definizioni di teaser:
 
 Quindi, se applichiamo questo a un visitatore in cui:
 
-* Risoluzione di **S1**, **S2 e &#x200B;** S6** completata
+* Risoluzione di **S1**, **S2 e** S6** completata
 
 * il tag **marketing** ha tre hit
 * il tag **business** ha sei hit
@@ -245,10 +256,10 @@ Dopo aver creato il brand e la campagna, puoi creare e configurare l’esperienz
 1. Modifica il componente teaser per aggiungere:
 
    * **Percorso campagna**
-Percorso della pagina della campagna che contiene la pagina del singolo teaser; i segmenti determinano esattamente quale teaser viene visualizzato.
+     Percorso della pagina della campagna che contiene la pagina del singolo teaser; i segmenti determinano esattamente quale teaser viene visualizzato.
 
    * **[Strategia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Metodo utilizzato per la selezione quando più segmenti vengono risolti correttamente.
+     Metodo utilizzato per la selezione quando più segmenti vengono risolti correttamente.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

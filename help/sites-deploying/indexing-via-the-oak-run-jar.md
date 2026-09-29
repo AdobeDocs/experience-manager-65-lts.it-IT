@@ -8,13 +8,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: a6344463-7796-4ee3-8b2e-b3bfd2aec99a
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '985'
 ht-degree: 0%
-
 ---
-
 # Indicizzazione tramite il file JAR eseguito da Oak {#indexing-via-the-oak-run-jar}
 
 Oak-run supporta tutti i casi di utilizzo dell’indicizzazione sulla riga di comando senza dover operare dal livello JMX. I vantaggi dell’approccio oak-run sono:
@@ -92,11 +101,11 @@ Eseguire questo processo solo su una singola istanza di AEM nel cluster.
 
 * **Considerazioni sullo standby a freddo (TarMK)**
 
-   * Non vi sono considerazioni speciali per lo standby a freddo; le istanze dello standby a freddo sincronizzano le modifiche come di consueto.
+  * Non vi sono considerazioni speciali per lo standby a freddo; le istanze dello standby a freddo sincronizzano le modifiche come di consueto.
 
 * **Farm di pubblicazione AEM (le farm di pubblicazione AE devono essere sempre TarMK)**
 
-   * Per la farm di pubblicazione, deve essere eseguito per tutti OPPURE eseguire i passaggi su una singola pubblicazione. Quindi, clona la configurazione per gli altri (seguendo tutte le consuete precauzioni durante la clonazione delle istanze di AEM; sling.id - dovrebbe essere collegato a qualcosa qui).
+  * Per la farm di pubblicazione, deve essere eseguito per tutti OPPURE eseguire i passaggi su una singola pubblicazione. Quindi, clona la configurazione per gli altri (seguendo tutte le consuete precauzioni durante la clonazione delle istanze di AEM; sling.id - dovrebbe essere collegato a qualcosa qui).
 
 ### Reindicizzazione online per TarMK {#onlinere-indexingfortarmk}
 

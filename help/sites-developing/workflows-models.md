@@ -10,18 +10,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7822a108-f128-4ccf-bd9f-348f0c2688da
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 3%
-
 ---
-
 # Creazione di modelli di flussi di lavoro{#creating-workflow-models}
 
 >[!CAUTION]
 >
->Per informazioni sull&#39;utilizzo dell&#39;interfaccia classica, consultare la [documentazione di AEM 6.3](https://helpx.adobe.com/it/experience-manager/6-3/help/sites-developing/workflows-models.html).
+>Per informazioni sull&#39;utilizzo dell&#39;interfaccia classica, consultare la [documentazione di AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html).
 
 È possibile creare un [modello di flusso di lavoro](/help/sites-developing/workflows.md#model) per definire la serie di passaggi eseguiti all&#39;avvio del flusso di lavoro da parte di un utente. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse.
 
@@ -85,9 +94,9 @@ Quando apri un [modello predefinito e/o legacy](/help/sites-developing/workflows
 * Il browser Passaggi non è disponibile (lato sinistro).
 * Nella barra degli strumenti (lato destro) è disponibile un&#39;azione **Modifica**.
 * Inizialmente il modello e le relative proprietà vengono presentati in modalità di sola lettura come:
-   * I flussi di lavoro predefiniti si trovano in `/libs`
-   * I flussi di lavoro legacy si trovano in `/etc`
-Se selezioni **Modifica**:
+  * I flussi di lavoro predefiniti si trovano in `/libs`
+  * I flussi di lavoro legacy sono in `/etc`
+    Se selezioni **Modifica**:
 * copia del flusso di lavoro in `/conf`
 * rendere disponibile il browser Passaggi
 * consente di apportare modifiche
@@ -250,7 +259,7 @@ Per definire **Stadi** per il flusso di lavoro:
    |---|---|
    | Passaggio 1 | Creare |
    | Passaggio 2 | Creare |
-   | Passaggio 3 | Rivedi |
+   | Passaggio 3 | Rivedere |
    | Passaggio 4 | Approvazione |
    | Passaggio 5 | Approvazione |
    | Passaggio 6 | Completato |
@@ -407,7 +416,7 @@ Per definire una regola OR, procedere come segue:
 
    >[!NOTE]
    >
-   >Gli script devono avere una funzione [&#x200B; `check()`](#function-check) che restituisce un valore booleano.
+   >Gli script devono avere una funzione [ `check()`](#function-check) che restituisce un valore booleano.
 
 1. Modifica il flusso di lavoro e aggiungi **OR Split** al modello.
 1. Modifica le proprietà del **ramo 1** della **divisione OR**:
@@ -415,7 +424,6 @@ Per definire una regola OR, procedere come segue:
    * Definisci come **Route predefinita** impostando **Valore** su `true`.
 
    * Imposta il percorso dello script come **Regola**. Ad esempio:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +433,6 @@ Per definire una regola OR, procedere come segue:
 1. Modifica le proprietà del **ramo 2** della **divisione OR**.
 
    * Imposta il percorso dell&#39;altro script come **Regola**. Ad esempio:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Imposta le proprietà dei singoli passaggi in ciascun ramo. Verificare che l&#39;**utente/gruppo** sia impostato.

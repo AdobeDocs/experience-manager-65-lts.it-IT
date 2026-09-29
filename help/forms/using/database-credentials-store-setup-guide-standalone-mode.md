@@ -5,13 +5,21 @@ solution: Experience Manager
 feature: Deploying
 role: User,Admin,Developer
 exl-id: f6e29287-a558-43ad-8465-ebf167c79c63
-source-git-commit: b4abf61e0d30396e78ecebf228114ad2bde30633
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
 # Guida alla configurazione dell&#39;archivio credenziali del database (modalità standalone)
 
 ## Panoramica
@@ -44,11 +52,11 @@ Prima di eseguire questi script, assicurati:
    - Gli script utilizzano `embed-server` che richiede l&#39;arresto del server
    - Se JBoss è in esecuzione, gli script avranno esito negativo
    - Verifica se JBoss è in esecuzione:
-      - Windows: controllare Gestione attività per il processo `java.exe`
-      - Linux: `ps aux | grep jboss` o `ps aux | grep java`
+     - Windows: controllare Gestione attività per il processo `java.exe`
+     - Linux: `ps aux | grep jboss` o `ps aux | grep java`
    - Arresta JBoss se in esecuzione:
-      - Premi `Ctrl+C` nel terminale in cui è in esecuzione JBoss
-      - Oppure terminare il processo manualmente
+     - Premi `Ctrl+C` nel terminale in cui è in esecuzione JBoss
+     - Oppure terminare il processo manualmente
 
 2. **La password del database è pronta**
 
@@ -82,10 +90,10 @@ Scarica lo script `create-elytron-cred-standalone.bat` dal [portale di distribuz
 - Crea archivio credenziali in: `JBOSS_HOME\standalone\configuration\cred-store.p12`
 - Modifica temporaneamente il file di configurazione per abilitare la creazione dell&#39;archivio credenziali
 - Aggiunge i seguenti alias con la password del database:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Ripristina lo stato originale del file di configurazione
 - Verifica che tutti gli alias siano stati aggiunti correttamente
 
@@ -107,10 +115,10 @@ Scarica lo script `create-elytron-cred-standalone.sh` dal [portale di distribuzi
 - Crea archivio credenziali in: `JBOSS_HOME/standalone/configuration/cred-store.p12`
 - Modifica temporaneamente il file di configurazione per abilitare la creazione dell&#39;archivio credenziali
 - Aggiunge i seguenti alias con la password del database:
-   - `EncryptDBPassword`
-   - `EncryptDBPassword_IDP_DS`
-   - `EncryptDBPassword_EDC_DS`
-   - `EncryptDBPassword_AEM_DS`
+  - `EncryptDBPassword`
+  - `EncryptDBPassword_IDP_DS`
+  - `EncryptDBPassword_EDC_DS`
+  - `EncryptDBPassword_AEM_DS`
 - Ripristina lo stato originale del file di configurazione
 - Verifica che tutti gli alias siano stati aggiunti correttamente
 

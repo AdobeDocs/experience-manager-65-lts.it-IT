@@ -1,5 +1,5 @@
 ---
-title: API JavaScript ClientContext
+title: API di JavaScript per ClientContext
 description: Scopri l’API JavaScript per ClientContext in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,30 @@ feature: Context Hub,Developing,Personalization
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: db4a4a1a-e014-4865-ab8c-d8a5aaefd93a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3125'
 ht-degree: 2%
-
 ---
-
-# API JavaScript ClientContext{#client-context-javascript-api}
+# API di JavaScript per ClientContext{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -522,7 +538,7 @@ Recupera la proprietà `STOREKEY`.
 
 **Parametri**
 
-Nessuno
+Nessuna
 
 **Restituisce**
 
@@ -550,7 +566,7 @@ Attiva l&#39;evento `persist` al completamento.
 
 **Parametri**
 
-Nessuno
+Nessuna
 
 **Restituisce**
 

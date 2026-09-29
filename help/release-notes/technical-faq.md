@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 051244f1-cc67-4222-bd45-0c135c28bb15
-source-git-commit: f994a8712a403083de1edc62579846ba99bd3afd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 59%
-
 ---
-
 # FAQ tecniche su AEM 6.5 LTS {#technical-faq}
 
 Questa pagina consente di rispondere ad alcune domande frequenti tecniche su AEM 6.5 LTS.
@@ -50,7 +64,7 @@ Verifica di utilizzare il file JAR Uber con il classificatore `apis`. La struttu
 
 No. AEM 6.5 LTS non supporta gli artefatti Sling migrati negli spazi dei nomi del pacchetto `jakarta.*`. Utilizza gli equivalenti `javax.*` nel codice e nelle dipendenze, ad esempio `javax.annotation.PostConstruct` anziché `jakarta.annotation.PostConstruct` nei modelli Sling. L’implementazione dei modelli Sling in AEM 6.5 LTS riconosce solo le annotazioni `javax.*`, pertanto `jakarta.*` annotazioni vengono ignorate automaticamente durante l’inizializzazione.
 
-Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base [Errore dei modelli Sling con `jakarta.annotation.PostConstruct` in AEM 6.5 LTS](https://experienceleague.adobe.com/it/docs/experience-cloud-kcs/kbarticles/ka-30339).
+Per ulteriori informazioni, vedere l&#39;articolo della Knowledge Base [Errore dei modelli Sling con `jakarta.annotation.PostConstruct` in AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-30339).
 
 ## Ottenere ulteriore assistenza.
 

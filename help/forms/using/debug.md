@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1b38cc53-027c-4b3b-bda1-24c0049113aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
 # Debug di moduli HTML5 {#debugging-html-forms}
 
 Questo documento include diversi scenari di risoluzione dei problemi. Per ogni scenario, vengono forniti alcuni passaggi per risolvere il problema. Segui questi passaggi e, se il problema persiste, configura il Logger per ottenere e rivedere i registri per gli errori/avvisi. Per ulteriori dettagli sulla registrazione dei moduli di HTML5, vedere [Generazione dei registri per i moduli HTML5](/help/forms/using/enable-logs.md).
@@ -45,7 +60,7 @@ Verifica i seguenti parametri:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
    <td>dati</td>
@@ -154,7 +169,7 @@ Verifica i seguenti parametri:
    Il motivo probabile è che uno o più parametri nell’URL non sono corretti.
 
    Verifica i seguenti parametri:
-Testo del passaggio
+   Testo del passaggio
 
 <table>
  <tbody>
@@ -172,7 +187,7 @@ Testo del passaggio
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso assoluto del file di dati.</td>
+   <td>Percorso assoluto del file di dati unito al modello.<br /> Nota: il percorso definisce il percorso assoluto del file di dati.</td>
   </tr>
   <tr>
    <td>dati</td>

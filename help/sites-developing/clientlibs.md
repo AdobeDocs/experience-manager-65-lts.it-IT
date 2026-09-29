@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: cafc7120-114e-487a-8b81-9c695318731e
-source-git-commit: a061c19dcb883b94ee61be21459c46e21eaf696a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
-
+source-wordcount: '2898'
+ht-degree: 2%
 ---
-
 # Utilizzo delle librerie lato client{#using-client-side-libraries}
 
 I siti web moderni si basano in larga misura sull’elaborazione lato client guidata da codice JavaScript e CSS complesso. L’organizzazione e l’ottimizzazione della trasmissione di questo codice possono essere un problema complesso.
@@ -66,7 +77,7 @@ Poiché HTL è la tecnologia preferita per lo sviluppo di siti AEM, deve essere 
 
 ### Utilizzo di HTL {#using-htl}
 
-In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/it/experience-manager/htl/using/block-statements.html#template-call):
+In HTL, le librerie client vengono caricate tramite un modello helper fornito da AEM, a cui è possibile accedere tramite [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). In questo file sono disponibili tre modelli, che possono essere richiamati tramite [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carica solo i file CSS delle librerie client di riferimento.
 * **js** - Carica solo i file JavaScript delle librerie client di riferimento.
@@ -74,7 +85,7 @@ In HTL, le librerie client vengono caricate tramite un modello helper fornito da
 
 Ogni modello helper richiede un’opzione `categories` per fare riferimento alle librerie client desiderate. Tale opzione può essere un array di valori stringa o una stringa contenente un elenco di valori separati da virgola.
 
-Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/it/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Per ulteriori dettagli ed esempi di utilizzo, vedere il documento [Guida introduttiva a HTML Template Language](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Utilizzo di JSP {#using-jsp}
 
@@ -97,11 +108,11 @@ La pagina HTML generata contiene il seguente codice:
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-Per informazioni complete, inclusi gli attributi per filtrare le librerie JS, CSS o theme, vedi [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
+Per informazioni complete, inclusi gli attributi per filtrare JS, CSS o le librerie dei temi, vedere [ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib).
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è stato dichiarato obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) come descritto in precedenza.
+>`<cq:includeClientLib>`, che in passato veniva comunemente utilizzato per includere le librerie client, è diventato obsoleto a partire da AEM 5.6. Utilizzare [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) come descritto in precedenza.
 
 ## Creazione di cartelle di librerie client {#creating-client-library-folders}
 
@@ -446,7 +457,7 @@ Il componente `dumplibs` include un selettore di test che visualizza il codice s
 
    * Apri il seguente URL nel browser web (utilizza un host e una porta diversi, a seconda delle necessità):
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    La pagina predefinita mostra l’output per i tag senza alcun valore per l’attributo categorie.
 

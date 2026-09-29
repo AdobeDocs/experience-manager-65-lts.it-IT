@@ -1,18 +1,31 @@
 ---
-title: Consentire ad AEM di effettuare ricerche nei documenti PDF protetti da Document Security
+title: Consentire ad AEM di effettuare ricerche nei documenti PDF protetti da protezione dei documenti
 description: Scopri come abilitare la ricerca nativa di AEM per eseguire ricerche full-text sui documenti PDF protetti da DRM.
 feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: ad86398d-0dc9-4168-b409-4d231b8d586b
-source-git-commit: 757c26274b39f5fb37a090f320493abd1af44c42
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 0%
-
+source-wordcount: '728'
+ht-degree: 7%
 ---
-
-# Consentire ad AEM di effettuare ricerche nei documenti PDF protetti da Document Security{#enable-aem-to-search-document-security-protected-pdf-documents}
+# Consentire ad AEM di effettuare ricerche nei documenti PDF protetti da protezione dei documenti{#enable-aem-to-search-document-security-protected-pdf-documents}
 
 La funzione di ricerca di AEM consente di cercare e individuare le risorse di AEM ed eseguire ricerche testuali in vari formati di documenti di uso comune, ad esempio file di testo normale, documenti di Microsoft Office e documenti di PDF. È inoltre possibile estendere la ricerca nativa per eseguire ricerche full-text su [documenti PDF protetti con AEM Document Security](../../forms/using/admin-help/document-security.md). Per consentire ad AEM di eseguire ricerche full-text su tali documenti, effettua le seguenti operazioni:
 
@@ -23,22 +36,22 @@ La funzione di ricerca di AEM consente di cercare e individuare le risorse di AE
 
 * Se utilizzi AEM Forms su OSGi:
 
-   * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
+  * Installa il pacchetto [Indicizzatore di Document Security di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) nel server AEM Forms.
 
-   * Assicurati che un AEM Forms sul server JEE sia in esecuzione e che la sicurezza dei documenti sia installata nel corrispondente AEM Forms sul server JEE. Per indicizzare il documento protetto è necessario AEM Form sul server JEE.
+  * Assicurati che un AEM Forms sul server JEE sia in esecuzione e che la sicurezza dei documenti sia installata nel corrispondente AEM Forms sul server JEE. Per indicizzare il documento protetto è necessario AEM Form sul server JEE.
 
 * Se utilizzi solo AEM Forms sul server JEE, il pacchetto di indicizzazione è già installato.
 * Assicurati che tutti i bundle siano attivi e funzionanti. Se non tutti i bundle sono attivi, attendi che tutti i bundle siano attivi.
 
-   * Per AEM Forms su OSGi, i bundle sono elencati in https://&#39;[server]:[porta]&#39;/system/console/bundles.
-   * Per AEM Forms su JEE, i bundle sono elencati in https://&#39;[server]:[porta]&#39;/[percorso-contesto]/sistema/console/bundle. Ad esempio, https://localhost:8080/lc/system/console/bundles.
+  * Per AEM Forms su OSGi, i bundle sono elencati in https://&#39;[server]:[porta]&#39;/system/console/bundles.
+  * Per AEM Forms su JEE, i bundle sono elencati in https://&#39;[server]:[porta]&#39;/[percorso-contesto]/sistema/console/bundle. Ad esempio, https://localhost:8080/lc/system/console/bundles.
 
-* Aggiungere il pacchetto *sun.util.calendar* al inserisco nell&#39;elenco Consentiti di. Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di, attenersi alla procedura descritta di seguito.
+* Aggiungere il pacchetto *sun.util.calendar* al inserisco nell&#39;elenco Consentiti di. Per aggiungere il pacchetto al inserisco nell&#39;elenco Consentiti di, effettuare le seguenti operazioni:
 
-   1. Apri AEM Web Console. URL: https://&#39;[server]:[porta]&#39;/system/console/configMgr.
-   1. Individuare e aprire **Configurazione firewall deserializzazione**.
+  1. Apri AEM Web Console. URL: https://&#39;[server]:[porta]&#39;/system/console/configMgr.
+  1. Individuare e aprire **Configurazione firewall deserializzazione**.
 
-   1. Aggiungere il pacchetto sun.util.calendar al campo delle classi o dei prefissi del pacchetto Inseriti nell&#39;elenco Consentiti e fare clic su **Salva**.
+  1. Aggiungere il pacchetto sun.util.calendar al campo delle classi o dei prefissi del pacchetto Inseriti nell&#39;elenco Consentiti e fare clic su **Salva**.
 
 ### Stabilire una connessione sicura tra gli stack AEM Forms JEE e OSGi {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
@@ -84,4 +97,4 @@ Per stabilire la connessione sicura, è possibile utilizzare uno dei metodi segu
 
    >[!NOTE]
    >
-   > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+   > Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.

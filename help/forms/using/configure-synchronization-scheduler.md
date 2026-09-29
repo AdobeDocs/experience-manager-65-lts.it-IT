@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell'utilità di pianificazione della sincronizzazione
+title: Configurazione del modulo di pianificazione di sincronizzazione
 description: Scopri come migrare e sincronizzare le risorse, configurare l’utilità di pianificazione della sincronizzazione e utilizzare le cartelle per organizzare le risorse.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 exl-id: b41e5e15-eb7f-4404-82a0-2ba034694577
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 0%
-
+ht-degree: 2%
 ---
-
-# Configurazione dell&#39;utilità di pianificazione della sincronizzazione {#configuring-the-synchronization-scheduler}
+# Configurazione del modulo di pianificazione di sincronizzazione {#configuring-the-synchronization-scheduler}
 
 Per impostazione predefinita, il modulo di pianificazione della sincronizzazione viene eseguito dopo ogni 3 minuti per sincronizzare tutte le risorse modificate e aggiornate nell’archivio tramite LiveCycle Workbench 11. Le applicazioni contenenti moduli e risorse sono visibili nell’interfaccia utente di AEM Forms al termine del processo di sincronizzazione.
 
@@ -52,7 +68,7 @@ Per modificare l&#39;intervallo dell&#39;utilità di pianificazione della sincro
 
 Puoi creare nuove applicazioni nel designer del flusso di lavoro (LiveCycle Workbench).
 
-Se l&#39;applicazione appena creata e una cartella in /content/dam/formsanddocuments hanno lo stesso nome, a livello principale esiste già un errore &quot;*Una risorsa con lo stesso nome di questa applicazione.*&quot; è registrato.
+Se l&#39;applicazione appena creata e una cartella in /content/dam/formsanddocuments hanno lo stesso nome, si verifica l&#39;errore &quot;*Una risorsa con lo stesso nome di questa applicazione esiste già al livello principale.*&quot; è registrato.
 
 Per risolvere il conflitto, rinomina l’applicazione e sincronizza manualmente le risorse.
 

@@ -7,13 +7,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 413f15c9-5b51-4d8d-8cf0-3e98608b9d9e
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 3%
-
 ---
-
 # Configurazione del contenitore di layout e della modalità layout{#configuring-layout-container-and-layout-mode}
 
 Scopri come configurare Contenitore di layout e Modalità di layout.
@@ -34,17 +43,17 @@ AEM consente di realizzare il layout dinamico per le pagine utilizzando una comb
 
   Questo componente fornisce un sistema paragrafo a griglia che consente di aggiungere e posizionare i componenti all’interno di una griglia reattiva. Può essere utilizzato come parsys predefinito per la pagina e/o reso disponibile agli autori nel browser componenti.
 
-   * Il componente predefinito **Contenitore di layout** è definito in:
+  * Il componente predefinito **Contenitore di layout** è definito in:
 
-     /libs/wcm/foundation/components/responsivegrid
+    /libs/wcm/foundation/components/responsivegrid
 
-   * Puoi definire i contenitori di layout:
+  * Puoi definire i contenitori di layout:
 
-      * Come componente che l’utente può aggiungere a una pagina.
-      * Come parsys predefinito per la pagina.
-      * Entrambi.
+    * Come componente che l’utente può aggiungere a una pagina.
+    * Come parsys predefinito per la pagina.
+    * Entrambi.
 
-        Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
+      Puoi avere il contenitore di layout come standard per la pagina, consentendo allo stesso tempo all’utente di aggiungere ulteriori contenitori di layout all’interno di questo; ad esempio, per ottenere il controllo delle colonne.
 
 * **[Modalità Layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Una volta che il contenitore di layout è posizionato nella pagina, è possibile utilizzare la modalità **Layout** per posizionare il contenuto all&#39;interno della griglia reattiva.
@@ -82,13 +91,13 @@ Queste procedure vengono utilizzate per attivare la modalità **Layout** nel sit
 * Sono utilizzati nella progettazione reattiva.
 * Può essere definito:
 
-   * Nel modello della pagina, da dove le impostazioni vengono copiate nelle pagine create con tale modello.
-   * Nel nodo della pagina, da dove le impostazioni vengono ereditate da eventuali pagine figlie.
+  * Nel modello della pagina, da dove le impostazioni vengono copiate nelle pagine create con tale modello.
+  * Nel nodo della pagina, da dove le impostazioni vengono ereditate da eventuali pagine figlie.
 
 * Definisci un titolo e una larghezza:
 
-   * Il titolo descrive il raggruppamento generico del dispositivo, con orientamento se necessario; ad esempio telefono, tablet, tabletorizzontale.
-   * La larghezza definisce la larghezza massima in pixel per il raggruppamento di dispositivi generico. Ad esempio, se il telefono del punto di interruzione ha una larghezza di 768, deve corrispondere alla larghezza massima del layout utilizzato per un dispositivo telefonico.
+  * Il titolo descrive il raggruppamento generico del dispositivo, con orientamento se necessario; ad esempio telefono, tablet, tabletorizzontale.
+  * La larghezza definisce la larghezza massima in pixel per il raggruppamento di dispositivi generico. Ad esempio, se il telefono del punto di interruzione ha una larghezza di 768, deve corrispondere alla larghezza massima del layout utilizzato per un dispositivo telefonico.
 
 * Sono visibili come marcatori nella parte superiore dell’editor pagina quando utilizzi l’emulatore.
 * Sono ereditati dalla gerarchia dei nodi principali e possono essere sostituiti a piacimento.
@@ -193,7 +202,7 @@ I due esempi seguenti illustrano la definizione:
 
 AEM utilizza LESS per generare parti del CSS necessario, che deve essere incluso nei progetti.
 
-Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/?lang=it) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
+Sarà inoltre necessario creare una [libreria client](https://experienceleague.adobe.com/docs/) per fornire ulteriori chiamate di configurazione e funzione. Il seguente estratto LESS è un esempio del minimo da aggiungere al progetto:
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -233,11 +242,11 @@ Ad esempio:
 
 * Prima:
 
-   * `width=100px`
+  * `width=100px`
 
 * Dopo:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Ridimensionamento e conformità dell&#39;immagine adattiva {#resizing-and-adaptive-image-compliance}
 
@@ -297,11 +306,11 @@ Puoi configurare il numero di colonne disponibili per ogni istanza specifica del
 
    * Numero di colonne disponibili:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Componenti che possono essere aggiunti al componente corrente:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Griglie reattive nidificate {#nested-responsive-grids}
 

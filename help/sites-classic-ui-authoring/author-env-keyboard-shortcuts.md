@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2fd45cb4-33e0-47b0-a4cc-4ae039b78e36
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 34%
-
+source-wordcount: '115'
+ht-degree: 24%
 ---
+# Scelte rapide da tastiera per le console{#keyboard-shortcuts-for-consoles}
 
-# Scelte rapide da tastiera per le console  {#keyboard-shortcuts-for-consoles}
-
-AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in particolare per l’utilizzo delle console e la [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, Alcune sono applicabili all&#39;uso delle console, altre alla [modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -41,7 +50,7 @@ AEM supporta l’utilizzo di scelte rapide da tastiera in numerose aree, in part
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (nella pagina richiesta)</td>
-   <td>Apri la pagina in una nuova finestra.<br /> <strong>Nota:</strong> questa impostazione è operativa se le <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostate su Finestra singola; in caso di più finestre, questo è il comportamento predefinito.</td>
+   <td>Apri pagina in una nuova finestra.<br /> <strong>Nota:</strong> questa impostazione è operativa se le <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Proprietà utente</a> sono impostate su Finestra singola; se sono presenti più finestre, questo è il comportamento predefinito.</td>
   </tr>
  </tbody>
 </table>

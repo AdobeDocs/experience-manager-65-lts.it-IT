@@ -1,5 +1,5 @@
 ---
-title: Creazione e utilizzo di processi per l'offload
+title: Creazione e utilizzo di processi per l’offload
 description: La funzione di individuazione Sling di Apache fornisce un’API Java che consente di creare processi JobManager e servizi JobConsumer che li utilizzano
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: cb3826ca-6724-47a0-8454-5f737b215760
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 0%
-
+source-wordcount: '397'
+ht-degree: 3%
 ---
-
-# Creazione e utilizzo di processi per l&#39;offload{#creating-and-consuming-jobs-for-offloading}
+# Creazione e utilizzo di processi per l’offload{#creating-and-consuming-jobs-for-offloading}
 
 La funzione di individuazione Sling di Apache fornisce un’API Java che consente di creare processi JobManager e servizi JobConsumer che li utilizzano.
 

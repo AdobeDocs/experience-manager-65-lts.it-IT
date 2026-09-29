@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: be81e33d-8e37-4a57-bcc1-78e968c64641
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
-
+source-wordcount: '1843'
+ht-degree: 17%
 ---
-
 # Modifica del contenuto di una pagina{#editing-page-content}
 
 Una volta creata la pagina (nuova o come parte di un lancio o una live copy) è possibile aggiornarla modificandone i contenuti.
@@ -92,10 +101,10 @@ Puoi anche aggiungere un nuovo componente alla pagina trascinando una risorsa da
 
 Questa opzione è valida per i seguenti tipi di risorse (alcune dipenderanno dal sistema pagina/paragrafo):
 
-| Tipo risorsa | Tipo di componente risultante |
+| Tipo di risorsa | Tipo di componente risultante |
 |---|---|
 | Immagine | Immagine |
-| Documento | Download |
+| Documento | Scarica |
 | Prodotto | Prodotto |
 | Video | Flash |
 
@@ -226,7 +235,7 @@ Il bordo inferiore della barra laterale contiene due icone importanti per l&#39;
 
 Per modifiche su larga scala della stessa frase, un&#39;opzione di menu **[Trova e sostituisci](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** consente di cercare e sostituire più istanze di una stringa all&#39;interno di una sezione del sito Web.
 
-## Blocco di una pagina   {#locking-a-page}
+## Blocco di una pagina {#locking-a-page}
 
 AEM consente di bloccare una pagina in modo che nessun altro possa modificarne il contenuto. Questa funzione è utile quando si apportano numerose modifiche a una pagina specifica o quando è necessario bloccarla per un breve periodo di tempo.
 

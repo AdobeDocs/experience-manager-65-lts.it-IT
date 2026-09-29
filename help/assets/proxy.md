@@ -1,18 +1,32 @@
 ---
 title: '[!DNL Assets] sviluppo proxy'
-description: Un proxy è un'istanza  [!DNL Experience Manager]  che utilizza i lavoratori proxy per elaborare i processi. Scopri come configurare un proxy  [!DNL Experience Manager] , le operazioni supportate, i componenti proxy e come sviluppare un processo di lavoro proxy personalizzato.
+description: Un proxy è un'istanza [!DNL Experience Manager] che utilizza i lavoratori proxy per elaborare i processi. Scopri come configurare un proxy [!DNL Experience Manager], le operazioni supportate, i componenti proxy e come sviluppare un processo di lavoro proxy personalizzato.
 contentOwner: AG
 role: Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
 exl-id: 8de16e9d-40b6-49d2-9e6b-1aba13137d78
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets] sviluppo proxy {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilizza un proxy per distribuire l&#39;elaborazione per determinate attività.
@@ -145,13 +159,13 @@ Per configurare un processo di lavoro proxy personalizzato è necessario:
 
 * Impostare e implementare (utilizzando l’evento Sling):
 
-   * un argomento processo personalizzato
-   * un gestore di eventi processo personalizzato
+  * un argomento processo personalizzato
+  * un gestore di eventi processo personalizzato
 
 * Quindi utilizza l’API JobService per:
 
-   * inviare il processo personalizzato al proxy
-   * gestisci il tuo lavoro
+  * inviare il processo personalizzato al proxy
+  * gestisci il tuo lavoro
 
 * Se desideri utilizzare il proxy da un flusso di lavoro, devi implementare un passaggio esterno personalizzato utilizzando l’API WorkflowExternalProcess e l’API JobService.
 

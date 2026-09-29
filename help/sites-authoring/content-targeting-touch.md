@@ -10,7 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
 exl-id: 650ba9be-6546-46dc-b4ab-ea0b97abff40
-source-git-commit: d49de63985f537da3e6b92dac5233c104b1ccdfe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '5374'
 ht-degree: 69%
@@ -612,7 +629,7 @@ I seguenti criteri determinano il contenuto visualizzato durante la simulazione 
 * Le [attività attive](/help/sites-authoring/activitylib.md)
 * Le [regole che definiscono i segmenti.](/help/sites-administering/campaign-segmentation.md)
 * Il contenuto delle esperienze nei componenti Target.
-* Configurazione [&#x200B; del motore di targeting.](/help/sites-authoring/activitylib.md)
+* Configurazione [ del motore di targeting.](/help/sites-authoring/activitylib.md)
 
 Se durante il caricamento di un profilo nella pagina viene visualizzato contenuto imprevisto, controlla la configurazione di ogni elemento dell’elenco.
 

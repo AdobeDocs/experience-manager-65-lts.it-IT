@@ -9,20 +9,36 @@ feature: Adaptive Forms,Foundation Components
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 exl-id: 9c516c90-1b1d-406a-b42d-909aae8bb634
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 7%
-
+source-wordcount: '878'
+ht-degree: 6%
 ---
-
 # Supporto di nuove lingue per la localizzazione di moduli adattivi{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## Applicabile a {#applies-to}
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
 
@@ -40,18 +56,18 @@ Esistono due metodi per identificare le impostazioni locali del modulo adattivo.
 
 * esaminare i seguenti parametri nell&#39;ordine specificato:
 
-   * Parametro richiesta `afAcceptLang`
+  * Parametro di richiesta `afAcceptLang`
 Per ignorare le impostazioni locali del browser degli utenti, è possibile passare il parametro di richiesta `afAcceptLang` per forzare le impostazioni locali. Ad esempio, il seguente URL è stato forzato a eseguire il rendering del modulo nelle impostazioni internazionali giapponesi:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando l&#39;intestazione `Accept-Language`.
+  * Impostazioni locali del browser impostate per l&#39;utente, specificate nella richiesta utilizzando l&#39;intestazione `Accept-Language`.
 
-   * Impostazione della lingua dell’utente specificato in AEM.
+  * Impostazione della lingua dell’utente specificato in AEM.
 
-   * Le impostazioni locali del browser sono attivate per impostazione predefinita. Per modificare le impostazioni internazionali del browser:
-      * Apri Gestione configurazione. URL: `http://[server]:[port]/system/console/configMgr`
-      * Individua e apri la configurazione **[!UICONTROL Modulo adattivo e canale web di comunicazione interattiva]**.
-      * Cambia lo stato dell&#39;opzione **[!UICONTROL Usa impostazioni internazionali del browser]** e **[!UICONTROL Salva]** la configurazione.
+  * Le impostazioni locali del browser sono attivate per impostazione predefinita. Per modificare le impostazioni internazionali del browser:
+    * Apri Gestione configurazione. URL: `http://[server]:[port]/system/console/configMgr`
+    * Individua e apri la configurazione **[!UICONTROL Modulo adattivo e canale web di comunicazione interattiva]**.
+    * Cambia lo stato dell&#39;opzione **[!UICONTROL Usa impostazioni internazionali del browser]** e **[!UICONTROL Salva]** la configurazione.
 
 Una volta identificate le impostazioni locali, i moduli adattivi selezionano il dizionario specifico per il modulo. Se non viene trovato il dizionario specifico per la lingua richiesta, viene utilizzato il dizionario per la lingua in cui è stato creato il modulo adattivo.
 

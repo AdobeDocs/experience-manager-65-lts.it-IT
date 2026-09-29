@@ -10,13 +10,29 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
 exl-id: e0986f82-a049-44d4-bf4c-e2f020315ce5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
-
+source-wordcount: '354'
+ht-degree: 5%
 ---
-
 # Visualizzazione dei componenti in base al modello utilizzato{#displaying-components-based-on-the-template-used}
 
 Quando un autore di moduli crea un modulo adattivo utilizzando un [modello](../../forms/using/template-editor.md), può visualizzare e utilizzare componenti specifici basati sui criteri dei modelli. È possibile specificare un criterio per il contenuto dei modelli che consenta di scegliere un gruppo di componenti visualizzato dall&#39;autore del modulo durante la creazione del modulo.
@@ -39,7 +55,7 @@ Per visualizzare i componenti nella barra laterale in base al criterio del conte
 
    Percorso del criterio del contenuto predefinito: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   Nella cartella `gridFluidLayout`, copiare e incollare il criterio predefinito e rinominarlo. Esempio: `myPolicy`.
+   Nella cartella `gridFluidLayout`, copiare e incollare il criterio predefinito e rinominarlo. Ad esempio, `myPolicy`.
 
    ![Copia dei criteri predefiniti](assets/crx-default1.png)
 

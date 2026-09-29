@@ -10,14 +10,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: de61c579-50ed-423b-adca-60329f3f0b89
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
 # Rendering di moduli PDF interattivi {#rendering-interactive-pdf-forms}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -39,7 +56,7 @@ Nella tabella seguente vengono descritti i passaggi del diagramma.
 <table>
  <thead>
   <tr>
-   <th><p>Incremento</p></th>
+   <th><p>Passaggio</p></th>
    <th><p>Descrizione</p></th>
   </tr>
  </thead>
@@ -204,7 +221,7 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l’API Forms (Ja
    * Creare un oggetto `java.util.HashMap` per archiviare gli allegati utilizzando il relativo costruttore.
    * Richiama il metodo `put` dell&#39;oggetto `java.util.HashMap` per ogni file da allegare al modulo di cui è stato eseguito il rendering. Passa i seguenti valori a questo metodo:
 
-      * Valore stringa che specifica il nome del file allegato, inclusa l&#39;estensione.
+     * Valore stringa che specifica il nome del file allegato, inclusa l&#39;estensione.
 
    * Oggetto `com.adobe.idp.Document` contenente il file allegato.
 
@@ -259,7 +276,7 @@ Eseguire il rendering di un modulo PDF interattivo utilizzando l’API Forms (se
    * Creare un oggetto `java.util.HashMap` per archiviare gli allegati utilizzando il relativo costruttore.
    * Richiama il metodo `put` dell&#39;oggetto `java.util.HashMap` per ogni file da allegare al modulo di cui è stato eseguito il rendering. Passa i seguenti valori a questo metodo:
 
-      * Valore stringa che specifica il nome dell&#39;allegato, inclusa l&#39;estensione del nome file
+     * Valore stringa che specifica il nome dell&#39;allegato, inclusa l&#39;estensione del nome file
 
    * Oggetto `BLOB` contenente il file allegato
 

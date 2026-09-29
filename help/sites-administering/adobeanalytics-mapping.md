@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9ffc796-1c2b-4fa6-b434-fb3ee03d40b5
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1462'
 ht-degree: 1%
-
 ---
-
 # Mappatura dei dati dei componenti con le proprietà di Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Aggiungi componenti al framework che raccolgono i dati da inviare ad Adobe Analytics. I componenti progettati per raccogliere i dati di Analytics memorizzano i dati nella variabile **CQ** appropriata. Quando si aggiunge un componente di questo tipo a un framework, il framework visualizza l&#39;elenco delle variabili CQ in modo da poterle mappare alla **variabile Analytics** appropriata.
@@ -180,25 +189,26 @@ Prendendo l&#39;immagine precedente come esempio, la **vista AEM** ha le seguent
 
    * **Traffico**:
 
-      * Variabile di traffico ( `prop1`) mappata a una variabile CQ ( `eventdata.downloadLink`)
+     * Variabile di traffico ( `prop1`) mappata a una variabile CQ ( `eventdata.downloadLink`)
 
-      * Quando il componente è associato a un lucchetto, questo significa che viene ereditato da un framework padre e quindi non può essere modificato
+     * Quando il componente è associato a un lucchetto, questo significa che viene ereditato da un framework padre e quindi non può essere modificato
 
    * **Conversione**:
 
-      * Variabile di conversione ( `eVar1`) mappata a una variabile CQ ( `pagedata.title`)
+     * Variabile di conversione ( `eVar1`) mappata a una variabile CQ ( `pagedata.title`)
 
-      * Variabile di conversione ( `eVar3`) mappata a un&#39;espressione JavaScript aggiunta in linea facendo doppio clic sul campo della variabile CQ e immettendo il codice manualmente
+     * Variabile di conversione ( `eVar3`) mappata a un&#39;espressione JavaScript aggiunta in linea facendo doppio clic sul campo della variabile CQ e immettendo il codice manualmente
 
    * **Evento**:
 
-      * Variabile evento ( `event1`) mappata a un evento CQ ( `eventdata.events.pageView`)
+     * Variabile evento ( `event1`) mappata a un evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >
 >Anche la colonna della variabile CQ di qualsiasi tabella può essere compilata in linea facendo doppio clic sul campo e aggiungendovi del testo. Questi campi accettano JavaScript come input.
 >
->Ad esempio, accanto a `prop3` puoi aggiungere:> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>Ad esempio, accanto a `prop3` puoi aggiungere:
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >per inviare il *titolo* di una pagina concatenata con la relativa *sezione* utilizzando *:* (due punti) e con prefisso *Adobe* come `prop3`
 >
 

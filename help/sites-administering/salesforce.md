@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 68003650-76d7-40b3-860b-70454c13211e
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1596'
 ht-degree: 4%
-
 ---
-
 # Integrare con Salesforce {#integrating-with-salesforce}
 
 L’integrazione di Salesforce con Adobe Experience Manager (AEM) fornisce funzionalità di gestione dei lead e utilizza le funzionalità esistenti fornite da Salesforce. Puoi configurare AEM per pubblicare i lead in Salesforce e creare componenti che accedono ai dati direttamente da Salesforce.
@@ -214,7 +223,7 @@ Puoi caricare i dati utente da Salesforce in ClientContext da utilizzare per la 
 
 Puoi creare un segmento che utilizza i dati dell’archivio ClientContext di Salesforce. Per effettuare questo collegamento:
 
-1. Passa alla segmentazione in AEM andando su **Strumenti** > **Segmentazione** oppure andando su [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Passa alla segmentazione in AEM andando su **Strumenti** > **Segmentazione** o andando su [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
 1. Crea o aggiorna un segmento per includere i dati da Salesforce. Per ulteriori informazioni, vedere [Segmentazione](/help/sites-administering/campaign-segmentation.md).
 
 ## Ricerca di lead {#searching-leads}

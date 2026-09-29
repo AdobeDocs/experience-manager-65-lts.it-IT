@@ -9,13 +9,22 @@ content-type: reference
 docset: aem65
 solution: Experience Manager, Experience Manager Sites
 exl-id: 6c0238ca-568e-4a46-a3cc-0b08a10cf324
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 # Gestione pacchetti {#working-with-packages}
 
 I pacchetti consentono l&#39;importazione e l&#39;esportazione del contenuto del repository. È possibile utilizzare i pacchetti per installare nuovi contenuti, installare nuove funzionalità, trasferire contenuti tra le istanze ed eseguire il backup del contenuto del repository.
@@ -64,8 +73,8 @@ Gestione pacchetti è suddiviso in quattro aree funzionali principali:
 * **Pannello di navigazione sinistro** - Consente di filtrare e ordinare l&#39;elenco dei pacchetti.
 * **Elenco pacchetti**: questo è l&#39;elenco dei pacchetti nell&#39;istanza filtrati e ordinati in base alle selezioni effettuate nel pannello di navigazione a sinistra.
 * **Registro attività** - Questo pannello viene ridotto a icona e si espande per descrivere in dettaglio l&#39;attività di Gestione pacchetti, ad esempio quando un pacchetto viene generato o installato. Nella scheda Registro attività sono disponibili pulsanti aggiuntivi per:
-   * **Cancella registro**
-   * **Mostra/Nascondi**
+  * **Cancella registro**
+  * **Mostra/Nascondi**
 * **Barra degli strumenti** - La barra degli strumenti contiene i pulsanti di aggiornamento per il pannello di navigazione sinistro e l&#39;elenco dei pacchetti, nonché i pulsanti per la ricerca, la creazione e il caricamento dei pacchetti.
 
 ![Interfaccia utente Gestione pacchetti](assets/package-manager-ui.png)
@@ -81,12 +90,12 @@ Se si fa clic sul nome di un pacchetto, la voce nell&#39;elenco dei pacchetti vi
 * [Modifica](#edit-package)
 * [Build](#building-a-package)
 * [Reinstalla](#reinstalling-packages)
-* [Download](#downloading-packages-to-your-file-system)
+* [Scarica](#downloading-packages-to-your-file-system)
 * [Condividi](#share)
 
 Ulteriori azioni sono disponibili sotto il pulsante **Altro**.
 
-* [Elimina](#deleting-packages)
+* [Eliminare](#deleting-packages)
 * [Copertura](#package-coverage)
 * [Contenuti](#viewing-package-contents-and-testing-installation)
 * [Ripeti adattamento](#rewrapping-a-package)
@@ -94,7 +103,7 @@ Ulteriori azioni sono disponibili sotto il pulsante **Altro**.
 * [Disinstalla](#uninstalling-packages)
 * [Installazione di test](#viewing-package-contents-and-testing-installation)
 * [Convalida](#validating-packages)
-* [Replica](#replicating-packages)
+* [Replicare](#replicating-packages)
 
 ### Stato pacchetto {#package-status}
 
@@ -128,7 +137,7 @@ La finestra di dialogo **Impostazioni pacchetto** è disponibile tramite il puls
 | Gruppo | Per organizzare i pacchetti, è possibile digitare il nome di un nuovo gruppo o selezionare un gruppo esistente |
 | Versione | Testo da utilizzare per la versione |
 | Descrizione | Breve descrizione del pacchetto che consente il markup HTML per la formattazione |
-| Miniatura  | Icona visualizzata con l&#39;elenco dei pacchetti |
+| Miniatura | Icona visualizzata con l&#39;elenco dei pacchetti |
 
 #### Miniature pacchetto {#thumbnails}
 
@@ -174,7 +183,7 @@ Durante la creazione di regole, viene definita un&#39;espressione regolare (nota
 | include | Include includerà tutti i file e le cartelle nella directory specificata che corrispondono all&#39;espressione regolare. Includi **non** includerà altri file o cartelle dal percorso radice specificato. |
 | escludi | Escludi escluderà tutti i file e le cartelle che corrispondono all’espressione regolare. |
 
-I filtri dei pacchetti vengono spesso definiti al momento della creazione del pacchetto [.](#creating-a-new-package) Tuttavia, è anche possibile modificarli in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
+I filtri dei pacchetti vengono spesso definiti al momento della creazione del pacchetto [.](#creating-a-new-package) Tuttavia, possono anche essere modificate in un secondo momento, dopodiché il pacchetto deve essere ricompilato per aggiornarne il contenuto in base alle nuove definizioni di filtro.
 
 >[!TIP]
 >
@@ -243,7 +252,7 @@ Puoi allegare più schermate al pacchetto per fornire una rappresentazione visiv
 
    ![Nuovo pacchetto](assets/new-package.png)
 
-1. Fai clic su **Modifica** per definire il contenuto del [pacchetto.](#package-contents) Fare clic su **Salva** al termine della modifica delle impostazioni.
+1. Fai clic su **Modifica** per definire il contenuto del [pacchetto.](#package-contents) Fai clic su **Salva** dopo aver completato la modifica delle impostazioni.
 
 1. Ora puoi [Generare](#building-a-package) il tuo pacchetto.
 
@@ -259,7 +268,7 @@ Un pacchetto viene spesso creato contemporaneamente alla [creazione del pacchett
 
 1. Fare clic su **Build**. Una finestra di dialogo richiede la conferma che desideri creare il pacchetto poiché tutti i contenuti del pacchetto esistenti verranno sovrascritti.
 
-1. Fare clic su **OK**. AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato, AEM mostra una conferma che il pacchetto è stato creato e (quando si chiude la finestra di dialogo) aggiorna le informazioni sull’elenco dei pacchetti.
+1. Fai clic su **OK**. AEM crea il pacchetto, elencando tutti i contenuti aggiunti al pacchetto così come fanno nell’elenco delle attività. Una volta completato, AEM mostra una conferma che il pacchetto è stato creato e (quando si chiude la finestra di dialogo) aggiorna le informazioni sull’elenco dei pacchetti.
 
 ### Modifica di un pacchetto {#edit-package}
 
@@ -577,13 +586,13 @@ Replica il contenuto di un pacchetto per installarlo nell’istanza Publish.
 
 1. Il pacchetto viene replicato e i dettagli vengono riportati nel registro attività.
 
-## Distribuzione di software {#software-distribution}
+## Distribuzione del software {#software-distribution}
 
 I pacchetti AEM possono essere utilizzati per creare e condividere contenuti tra ambienti AEM.
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com) è un servizio centralizzato progettato per semplificare la ricerca e il download di pacchetti AEM.
 
-Per ulteriori informazioni, vedere la [documentazione sulla distribuzione software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=it)
+Per ulteriori informazioni, vedere la [documentazione sulla distribuzione software.](https://experienceleague.adobe.com/it/docs/experience-cloud/software-distribution/home)
 
 >[!NOTE]
 >

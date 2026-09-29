@@ -10,14 +10,24 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: e3ef1435-d405-482f-9eb5-f9a64ff03322
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '732'
 ht-degree: 1%
-
 ---
-
 # Eliminazione della versione{#version-purging}
 
 In un’installazione standard, Adobe Experience Manager (AEM) crea una versione di una pagina o di un nodo quando attivi una pagina dopo l’aggiornamento del contenuto.
@@ -32,18 +42,18 @@ Queste versioni non vengono mai eliminate, pertanto le dimensioni dell’archivi
 
 AEM viene fornito con vari meccanismi per aiutarti a gestire l’archivio:
 
-* Gestione versioni [&#128279;](#version-manager)
+* Gestione versioni [](#version-manager)
 Questa può essere configurata per eliminare le versioni precedenti quando vengono create nuove versioni.
 
 * strumento [Rimuovi versioni](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
 Viene utilizzato come parte del monitoraggio e della manutenzione dell’archivio.
 Consente di intervenire per rimuovere le versioni precedenti di un nodo o di una gerarchia di nodi, in base ai seguenti parametri:
 
-   * Il numero massimo di versioni da mantenere nell’archivio.
-Se questo numero viene superato, viene rimossa la versione meno recente.
+  * Il numero massimo di versioni da mantenere nell’archivio.
+    Se questo numero viene superato, viene rimossa la versione meno recente.
 
-   * L’età massima di qualsiasi versione mantenuta nell’archivio.
-Quando la validità di una versione supera questo valore, viene eliminata dall’archivio.
+  * L’età massima di qualsiasi versione mantenuta nell’archivio.
+    Quando la validità di una versione supera questo valore, viene eliminata dall’archivio.
 
 * l&#39;attività di manutenzione [Pulizia versione](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). È possibile pianificare l&#39;attività di manutenzione Pulizia delle versioni per eliminare automaticamente le versioni precedenti. In questo modo si riduce la necessità di utilizzare manualmente gli strumenti di Pulizia delle versioni.
 
@@ -96,34 +106,34 @@ Ad esempio, quando definisci il numero massimo di versioni da mantenere E la ver
 
 * Impostazione:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Con:
 
-   * Sono state realizzate dieci versioni negli ultimi 60 giorni
-   * Tre di queste versioni sono state create negli ultimi 30 giorni
+  * Sono state realizzate dieci versioni negli ultimi 60 giorni
+  * Tre di queste versioni sono state create negli ultimi 30 giorni
 
 * Ciò significa che:
 
-   * Le ultime tre versioni vengono mantenute
+  * Le ultime tre versioni vengono mantenute
 
 Ad esempio, quando definisci il numero massimo E minimo di versioni da mantenere E la versione più vecchia da mantenere:
 
 * Impostazione:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Con:
 
-   * Cinque versioni sono state realizzate 60 giorni fa
+  * Cinque versioni sono state realizzate 60 giorni fa
 
 * Ciò significa che:
 
-   * Vengono conservate tre versioni
+  * Vengono conservate tre versioni
 
 ## Strumento Rimuovi versioni {#purge-versions-tool}
 

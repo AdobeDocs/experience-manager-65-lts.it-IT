@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager 6.5 LTS
 feature: Compliance
 role: Admin,Developer,Leader
 exl-id: e6542ba9-1182-4b81-b251-537747b89e4c
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6926'
-ht-degree: 100%
-
+source-wordcount: '7022'
+ht-degree: 99%
 ---
-
 # Glossario{#glossary}
 
 Questo glossario elenca (in ordine alfabetico) i dettagli di tutti i documenti da consegnare dell’[elenco di controllo del progetto](/help/managing/best-practices-checklist.md).
@@ -104,8 +120,8 @@ Assicurati che il tuo team sia composto da personale con formazione adeguata. Pe
 
 * almeno uno sviluppatore principale certificato AEM
 * almeno un architetto certificato AEM
-* almeno il 75% degli sviluppatori con certificazione AEM;
-in questo modo gli sviluppatori certificati possono dare consigli agli sviluppatori junior e le conoscenze vengono condivise con trasparenza
+* almeno il 75% degli sviluppatori ha la certificazione AEM;
+questo consente agli sviluppatori certificati di fornire consigli agli sviluppatori junior e garantisce la condivisione delle conoscenze e la trasparenza
 
 ### Diagramma dell’architettura {#architecture-diagram}
 
@@ -202,8 +218,8 @@ I KPI aziendali definiscono valori misurabili che dimostrano l’efficacia con c
 
 Un documento sui requisiti aziendali (BRD) descrive la soluzione aziendale per un progetto, fornendo una chiara definizione delle aspettative e delle esigenze di business del cliente. Il BRD distingue anche tra soluzione aziendale e soluzione tecnica.
 
-Nell’esaminare la soluzione aziendale, il BRD dovrebbe rispondere alla domanda:
-“Cosa vuole fare l’azienda?”
+Nell&#39;esaminare la soluzione aziendale, la BRD dovrebbe rispondere alla seguente domanda:
+&quot;Cosa vuole fare l&#39;azienda?&quot;
 
 ### Approvazione dell’azienda per eventuali modifiche necessarie alla soluzione o all’architettura identificate e allineate alle aspettative del ROI e dei KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -353,10 +369,10 @@ Eventuali personalizzazioni e/o hotfix applicati devono essere documentati in qu
 * AEM può essere personalizzato in base a specifiche esigenze business. Tutte le personalizzazioni che possono influire sull’aggiornamento devono essere documentate a pieno. Ad esempio, eventuali modifiche principali all’interfaccia utente di AEM.
 * Tutti gli aggiornamenti necessari per la soluzione corrente devono essere documentati a pieno, tra cui:
 
-   * Cumulative Fix Pack (CFP)
-   * Service Pack (SP)
-   * hotfix
-   * aggiornamenti
+  * Cumulative Fix Pack (CFP)
+  * Service Pack (SP)
+  * hotfix
+  * aggiornamenti
 
 ### Report del test di accettazione utente giornaliero {#daily-user-acceptance-test-report}
 
@@ -551,7 +567,7 @@ Questa mappa del sistema dovrebbe fornire un diagramma di alto livello del siste
 
 Definizione della struttura del contenuto del sistema legacy. Viene utilizzato come riferimento e anche durante la preparazione della strategia di migrazione.
 
-### Prestazioni precedenti e KPI delle prestazioni precedenti  {#historical-performance-and-historical-performance-kpis}
+### Prestazioni precedenti e KPI delle prestazioni precedenti {#historical-performance-and-historical-performance-kpis}
 
 Raccogli e documenta le statistiche sulle prestazioni e i KPI relativi alle prestazioni dal sistema legacy. Vengono poi utilizzati come punto di riferimento e per eseguire il benchmark della nuova soluzione.
 

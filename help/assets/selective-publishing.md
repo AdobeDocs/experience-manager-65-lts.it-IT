@@ -10,13 +10,27 @@ role: User, Admin
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
 exl-id: 64468f78-2dc1-4e42-a8c6-3cb81bca0e05
-source-git-commit: b8671573afd711dec4b883b3b382304e13889852
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3028'
 ht-degree: 3%
-
 ---
-
 # Configurare la pubblicazione selettiva a livello di cartella in Dynamic Media {#selective-publish-configure-folder}
 
 Puoi scegliere di pubblicare o annullare la pubblicazione di risorse in o da Adobe Experience Manager o Dynamic Media a livello di cartella. Puoi utilizzare **[!UICONTROL Gestisci pubblicazione]** o **[!UICONTROL Pubblicazione rapida]** invece di affidarti esclusivamente alla **[!UICONTROL configurazione di Dynamic Media]**, le cui impostazioni sono globali per tutte le cartelle nell&#39;istanza di Dynamic Media.
@@ -147,7 +161,7 @@ Vedi [Creare una configurazione Dynamic Media](#configuring-dynamic-media-cloud-
    | Azione | Descrizione |
    | --- | --- |
    | **[!UICONTROL Annulla pubblicazione]** (da Experience Manager) | Seleziona questa opzione se desideri annullare la pubblicazione delle risorse da Experience Manager. |
-   | **[!UICONTROL Annulla pubblicazione da Dynamic Media]** | Seleziona questa opzione se desideri annullare la pubblicazione delle risorse da Dynamic Media.<br>Questa opzione è disponibile solo se **[!UICONTROL la modalità di pubblicazione Dynamic Media]** è impostata su **[!UICONTROL Pubblicazione selettiva]** nelle proprietà della cartella. |
+   | **[!UICONTROL Annulla pubblicazione da Dynamic Media]** | Selezionare questa opzione se si desidera annullare la pubblicazione delle risorse da Dynamic Media.<br>Questa opzione è disponibile solo se **[!UICONTROL la modalità di pubblicazione Dynamic Media]** è impostata su **[!UICONTROL Pubblicazione selettiva]** nelle proprietà della cartella. |
 
 1. In **[!UICONTROL Pianificazione]**, impostare la tempistica della disattivazione.
 

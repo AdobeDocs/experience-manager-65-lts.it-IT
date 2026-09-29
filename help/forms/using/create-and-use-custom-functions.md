@@ -4,13 +4,23 @@ description: AEM Forms supporta funzioni personalizzate che consentono agli uten
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 40329e80-d794-4e43-8ed4-d88ce3c48751
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1071'
 ht-degree: 0%
-
 ---
-
 # Funzioni personalizzate in Adaptive Forms
 
 ## Introduzione
@@ -75,10 +85,10 @@ In alternativa, è possibile utilizzare: `@argument` `{type} name <Parameter Des
 Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag di parametri, uno per ogni parametro in ordine di occorrenza.
   `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
 
-   1. stringa
-   2. numero
-   3. booleano
-   4. ambito
+  1. stringa
+  2. numero
+  3. booleano
+  4. ambito
 
   L’ambito viene utilizzato per fare riferimento ai campi di un modulo adattivo. Quando un modulo utilizza il caricamento lento, è possibile utilizzare `scope` per accedere ai relativi campi. È possibile accedere ai campi quando sono caricati o se sono contrassegnati come globali.
 
@@ -88,11 +98,11 @@ Mostra i parametri utilizzati dalla funzione. Una funzione può avere più tag d
 Sintassi: `@return {type}`
 In alternativa, è possibile utilizzare `@returns {type}`.
 Aggiunge informazioni sulla funzione, ad esempio l&#39;obiettivo.
-{type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
+  {type} rappresenta il tipo restituito della funzione. I tipi restituiti consentiti sono:
 
-   1. stringa
-   1. numero
-   1. booleano
+  1. stringa
+  1. numero
+  1. booleano
 
   Tutti gli altri tipi di reso sono classificati in una delle categorie precedenti. Nessuno non è supportato. Accertati di selezionare uno dei tipi riportati sopra. I tipi restituiti non fanno distinzione tra maiuscole e minuscole.
 

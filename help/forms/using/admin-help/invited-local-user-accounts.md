@@ -5,14 +5,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 194ad425-ca1a-4a6e-9f4e-094c4577cde9
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 100%
-
 ---
-
 # Gestione degli account utente invitati e locali {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -129,6 +141,6 @@ Puoi trovare gli utenti più facilmente ordinando l’elenco degli utenti per in
 * Un triangolo rivolto verso l’alto indica l’ordine crescente.
 * Un triangolo rivolto verso il basso indica l’ordine decrescente.
 
-   1. Nella console di amministrazione, fai clic su Servizi > Protezione dei documenti > Utenti invitati e locali.
-   1. Per ordinare gli utenti invitati, fai clic sulla scheda Utenti invitati, quindi sull’intestazione di colonna appropriata.
-   1. Per ordinare gli utenti locali, fare clic sulla scheda Utenti locali e quindi sull’intestazione di colonna appropriata.
+  1. Nella console di amministrazione, fai clic su Servizi > Protezione dei documenti > Utenti invitati e locali.
+  1. Per ordinare gli utenti invitati, fai clic sulla scheda Utenti invitati, quindi sull’intestazione di colonna appropriata.
+  1. Per ordinare gli utenti locali, fare clic sulla scheda Utenti locali e quindi sull’intestazione di colonna appropriata.

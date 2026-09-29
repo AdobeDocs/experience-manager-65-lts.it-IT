@@ -7,13 +7,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: cb00bc09-580a-4c73-b202-d4110fa2f645
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 0%
-
+source-wordcount: '1176'
+ht-degree: 1%
 ---
-
 # Tutorial: applicare regole ai campi del modulo adattivo {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -63,7 +79,7 @@ A ogni cliente viene assegnato un numero ID cliente univoco, che consente di ide
 
    ![dropobjectstooutputfield-recuperedata](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
+   Per salvare la regola, fai clic su **[!UICONTROL Fine]**. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 
 1. Visualizza l’anteprima del modulo adattivo. Immetti un ID nel campo **[!UICONTROL ID cliente]**. Il modulo ora può recuperare i dettagli del cliente dal database.
 
@@ -96,7 +112,7 @@ Dopo aver recuperato i dettagli del cliente dal database, puoi aggiornare l’in
    >Non trascinare i campi **[!UICONTROL Nome]** e **[!UICONTROL ID cliente]** nella proprietà tablename.property corrispondente, ad esempio customerdetails.name. Consente di evitare di aggiornare il nome e l’ID del cliente per errore.
 
 1. Trascina il campo **[!UICONTROL ID cliente]** dalla scheda [!UICONTROL Oggetti modulo] al campo ID nella casella **[!UICONTROL INPUT]**. I campi senza un nome di tabella preceduto (ad esempio, customerdetails in questo caso d’uso) fungono da parametro di ricerca per il servizio di aggiornamento. Il campo **[!UICONTROL id]** in questo caso d&#39;uso identifica in modo univoco un record nella tabella **customerdetails**.
-1. Seleziona **[!UICONTROL Fine]** per salvare la regola. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
+1. Per salvare la regola, fai clic su **[!UICONTROL Fine]**. Nella finestra dell&#39;editor di regole, seleziona **[!UICONTROL Chiudi]**.
 1. Visualizza l’anteprima del modulo adattivo. Recupera i dettagli di un cliente, aggiorna l’indirizzo di spedizione e invia il modulo. Quando recuperi nuovamente i dettagli dello stesso cliente, viene visualizzato l’indirizzo di spedizione aggiornato.
 
 ## Passaggio 3: (sezione Bonus) Utilizza l’editor di codice per eseguire convalide e visualizzare messaggi di errore {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}

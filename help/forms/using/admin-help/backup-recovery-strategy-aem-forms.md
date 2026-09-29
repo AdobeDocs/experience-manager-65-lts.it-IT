@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 2f34b48a-0b95-4994-ac4f-616620a5b211
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
-
 ---
-
 # Strategia di backup e ripristino di AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
 
 Se l’implementazione di AEM Forms memorizza dati personalizzati aggiuntivi in un database diverso, è responsabilità dell’utente implementare una strategia per eseguire il backup di tali dati e assicurarsi che rimangano sincronizzati con i dati di AEM Forms. Inoltre, l’applicazione deve essere progettata in modo da essere sufficientemente solida per gestire uno scenario in cui i database aggiuntivi non sono sincronizzati. Si consiglia vivamente di eseguire le operazioni di database nel contesto di una transazione per mantenere uno stato coerente.
@@ -45,9 +60,9 @@ Il database viene utilizzato per archiviare gli artefatti del modulo, le configu
 
 * La modalità **Backup istantanea** indica che il sistema AEM Forms è in una modalità di backup, a tempo indefinito oppure per un numero specificato di minuti, dopo i quali non risulterà più abilitata. Per entrare o uscire dalla modalità di backup istantanea, è possibile utilizzare una delle opzioni seguenti. Dopo uno scenario di ripristino, la modalità di backup istantanea non deve essere abilitata.
 
-   * Utilizza la pagina Impostazioni di backup nella console di amministrazione. Per attivare la modalità istantanea, seleziona la casella di controllo Esegui in modalità di backup sicuro. Deseleziona la casella di controllo per uscire dalla modalità istantanea.
-   * Utilizza lo script LCBackupMode (consulta [Eseguire il backup del database, di GDS e delle directory principali dell’archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup istantanea, nell’argomento dello script imposta il parametro `continuousCoverage` su `false` o utilizza l’opzione `leaveContinuousCoverage`.
-   * Utilizza l’API di backup/ripristino fornita. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * Utilizza la pagina Impostazioni di backup nella console di amministrazione. Per attivare la modalità istantanea, seleziona la casella di controllo Esegui in modalità di backup sicuro. Deseleziona la casella di controllo per uscire dalla modalità istantanea.
+  * Utilizza lo script LCBackupMode (consulta [Eseguire il backup del database, di GDS e delle directory principali dell’archiviazione dei contenuti](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Per uscire dalla modalità di backup istantanea, nell’argomento dello script imposta il parametro `continuousCoverage` su `false` o utilizza l’opzione `leaveContinuousCoverage`.
+  * Utilizza l’API di backup/ripristino fornita. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * La modalità di **backup continuo** indica che il sistema è sempre in modalità di backup, con una nuova sessione che viene avviata non appena viene rilasciata quella precedente. Alla modalità di backup continuo non è associato alcun timeout. Quando lo script o le API LCBackupMode vengono chiamati per uscire dalla modalità di backup continuo, viene avviata una nuova sessione di tale modalità. Questa modalità è utile per supportare backup continui, ma consente comunque di eliminare dalla directory GDS i documenti vecchi e non necessari. La modalità di backup continuo non è supportata dalla pagina Backup e ripristino. Dopo uno scenario di ripristino, la modalità di backup continuo rimane abilitata. È possibile uscire dalla modalità di backup continuo (rolling backup mode) utilizzando lo script LCBackupMode con l’opzione `leaveContinuousCoverage`.
 

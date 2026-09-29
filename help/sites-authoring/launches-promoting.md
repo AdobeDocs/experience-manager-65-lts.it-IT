@@ -11,13 +11,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
 exl-id: fb035c7d-7448-4e74-8b39-a24a385da172
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 76%
-
 ---
-
 # Promozione dei lanci{#promoting-launches}
 
 Con la promozione delle pagine di lancio si sposta il contenuto nell’origine (produzione) prima della pubblicazione. Quando una pagina di lancio viene promossa, la pagina corrispondente nelle pagine sorgente viene sostituita con il contenuto della pagina promossa. Quando promuovi una pagina di lancio sono disponibili le seguenti opzioni:
@@ -55,29 +73,29 @@ Puoi promuovere i lanci dalla console **Sites** o dalla console **Lanci**:
 
    * la console **Sites**:
 
-      1. Apri la [barra dei riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
+     1. Apri la [barra dei riferimenti](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e seleziona la pagina sorgente desiderata utilizzando la [modalità di selezione](/help/sites-authoring/basic-handling.md) (oppure seleziona e apri la barra dei riferimenti, l’ordine non è importante). Vengono visualizzati tutti i riferimenti.
 
-      1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
-      1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
-      1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
+     1. Seleziona **Lanci** (ad esempio Lanci (1)) per visualizzare un elenco dei lanci specifici.
+     1. Seleziona il lancio specifico per visualizzare le azioni disponibili.
+     1. Seleziona **Promuovi lancio** per aprire la procedura guidata.
 
    * la console **Lanci**:
 
-      1. Seleziona il lancio (fai clic sulla miniatura).
-      1. Seleziona **Promuovi**.
+     1. Seleziona il lancio (fai clic sulla miniatura).
+     1. Seleziona **Promuovi**.
 
 1. Nel primo passaggio puoi specificare:
 
    * **Destinazione**
 
-      * **Elimina lancio dopo la promozione**
+     * **Elimina lancio dopo la promozione**
 
    * **Ambito**
 
-      * **Promuovi tutto il lancio**
-      * **Promuovi pagine modificate**
-      * **Promuovi la pagina corrente**
-      * **Promuovi la pagina corrente e le sottopagine**
+     * **Promuovi tutto il lancio**
+     * **Promuovi pagine modificate**
+     * **Promuovi la pagina corrente**
+     * **Promuovi la pagina corrente e le sottopagine**
 
    Ad esempio, quando selezioni solo la promozione delle pagine modificate:
 
@@ -117,19 +135,19 @@ Dopo aver creato un lancio nidificato, puoi promuoverlo nuovamente in qualsiasi 
 
    * **Destinazione**
 
-      * **Destinazione promozione**
-Puoi promuovere su qualsiasi sorgente.
+     * **Destinazione promozione**
+       Puoi promuovere su qualsiasi sorgente.
 
-      * **Elimina lancio dopo la promozione**
-Dopo la promozione, il lancio selezionato e tutti i lanci nidificati al suo interno verranno eliminati.
+     * **Elimina lancio dopo la promozione**
+       Dopo la promozione, il lancio selezionato e tutti i lanci nidificati al suo interno verranno eliminati.
 
    * **Ambito**
-Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state modificate. Nel secondo caso, puoi scegliere di includere o escludere le pagine secondarie. La configurazione predefinita prevede di promuovere solo le modifiche alla pagina corrente:
+     Qui puoi scegliere se promuovere l’intero lancio o solo le pagine che sono state modificate. Nel secondo caso, puoi scegliere di includere o escludere le pagine secondarie. La configurazione predefinita prevede di promuovere solo le modifiche alla pagina corrente:
 
-      * **Promuovi tutto il lancio**
-      * **Promuovi pagine modificate**
-      * **Promuovi la pagina corrente**
-      * **Promuovi la pagina corrente e le sottopagine**
+     * **Promuovi tutto il lancio**
+     * **Promuovi pagine modificate**
+     * **Promuovi la pagina corrente**
+     * **Promuovi la pagina corrente e le sottopagine**
 
    ![Impostazioni per promuovere un lancio](assets/chlimage_1-105.png)
 

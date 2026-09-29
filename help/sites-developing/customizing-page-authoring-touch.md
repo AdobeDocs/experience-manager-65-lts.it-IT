@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 8d53072b-826d-4ff4-843b-09204fb5a455
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1468'
 ht-degree: 2%
-
 ---
-
 # Personalizzazione dell’authoring pagina{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,8 +37,8 @@ Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la fu
 
   Le clientlibs consentono di estendere l’implementazione predefinita per realizzare nuove funzionalità, riutilizzando le funzioni, gli oggetti e i metodi standard. Durante la personalizzazione, puoi creare la tua libreria client in `/apps.`. La nuova libreria client deve:
 
-   * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
-   * fai parte della categoria `cq.authoring.editor.sites.page.hook` appropriata
+  * dipende dalla libreria client di authoring `cq.authoring.editor.sites.page`
+  * fai parte della categoria `cq.authoring.editor.sites.page.hook` appropriata
 
 * Sovrapposizioni
 
@@ -151,12 +160,12 @@ In un’installazione standard di AEM:
 
      ad esempio:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * proprietà: `editorType`
+       * proprietà: `editorType`
 
-           Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente, ad esempio `text`, `textimage`, `image`, `title`.
+         Definisce il tipo di editor in linea utilizzato quando viene attivata la modifica diretta per quel componente, ad esempio `text`, `textimage`, `image`, `title`.
 
 1. Ulteriori dettagli di configurazione dell&#39;editor possono essere configurati utilizzando un nodo `config` contenente configurazioni e un nodo `plugin` per contenere i dettagli di configurazione del plug-in necessari.
 

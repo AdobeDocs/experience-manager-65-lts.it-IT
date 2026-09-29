@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3090'
 ht-degree: 5%
-
 ---
-
 # Requisiti tecnici{#technical-requirements}
 
 Adobe supporta (AEM) Adobe Experience Manager sulle piattaforme come descritto nelle informazioni seguenti in questo documento.
@@ -155,7 +167,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Piattaforma** | **Livello di supporto** |
 |---|---|
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[2]` |
-| Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` |
+| Linux®, basato sulla distribuzione Debian inclusa Ubuntu | R: Supportato `[1]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
 | Microsoft® Windows Server 2022 | R: Supportato |
 
@@ -181,7 +193,7 @@ Adobe Experience Manager è supportato in esecuzione in una macchina virtuale in
 
 Per un ambiente nativo per il cloud, consulta l’offerta più recente della linea di prodotti AEM: Adobe Experience Manager as a Cloud Service. Per informazioni dettagliate, consulta la [documentazione di Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=it).
 
-Adobe offre anche Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/it/products/experience-manager/managed-services.html?aemClk=t).
+Adobe offre anche Adobe Managed Services per distribuire AEM su Azure o AWS. Adobe Managed Services offre agli esperti l’esperienza e le competenze necessarie per implementare e utilizzare AEM in questi ambienti di cloud computing. Consulta la [documentazione aggiuntiva su Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 In tutti gli altri casi di implementazione di AEM su Azure, AWS o qualsiasi altro ambiente di cloud computing, il supporto di Adobe è contenuto nell’ambiente di elaborazione virtuale. L’ambiente virtuale deve essere eseguito in conformità alle specifiche tecniche elencate in questa pagina. Qualsiasi problema relativo ad AEM in esecuzione in uno di questi ambienti cloud deve essere riproducibile indipendentemente da qualsiasi servizio cloud specifico per l’ambiente di cloud computing. Questo a meno che il servizio cloud non sia supportato come parte dei requisiti tecnici elencati in questa pagina, ad esempio archiviazione Azure Blob o AWS S3.
 
@@ -189,7 +201,7 @@ Per consigli su come implementare AEM su Azure o AWS, al di fuori di Adobe Manag
 
 ### Piattaforme Dispatcher (server web) {#dispatcher-platforms-web-servers}
 
-Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=it). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
+Dispatcher è il componente di caching e bilanciamento del carico. [Scarica la versione più recente di Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 richiede Dispatcher versione 4.3.2 o successiva.
 
 Con Dispatcher versione 4.3.2 sono supportati i seguenti server web:
 
@@ -387,7 +399,7 @@ Per Windows x86:
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -441,9 +453,9 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
 
 * **Sistemi operativi:**
 
-   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
-   * Windows Server
-   * macOS X (64 bit)
+  * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
+  * Windows Server
+  * macOS X (64 bit)
 
 * **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 

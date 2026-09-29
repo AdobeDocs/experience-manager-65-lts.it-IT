@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: a022067a-3bbe-4bce-9d49-b813fcbf0c6f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
-
+source-wordcount: '2116'
+ht-degree: 2%
 ---
-
 # Sviluppo con CRXDE Lite{#developing-with-crxde-lite}
 
 Questa sezione descrive come sviluppare l’applicazione Adobe Experience Manager (AEM) utilizzando CRXDE Lite.
@@ -72,7 +83,7 @@ CRXDE Lite offre le seguenti funzionalità:
   </tr>
   <tr>
    <td>Riquadro di modifica</td>
-   <td><p>Scheda <strong>Home</strong>: consente di cercare contenuti e/o documentazione e di accedere alle risorse per sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Explorer</strong> per visualizzarne il contenuto. Ad esempio, un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file nel riquadro <strong>Modifica</strong>, nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura dell'archivio.<br /> - <strong>Ricerca/Sostituisci ...</strong>: eseguire la ricerca o la sostituzione.<br /> <br /> Fare doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong>, in modo da poter immettere un numero di riga specifico da utilizzare.<br /> </td>
+   <td><p>Scheda <strong>Home</strong>: consente di cercare contenuti e/o documentazione e di accedere alle risorse per sviluppatori (documentazione, blog per sviluppatori, knowledge base) e al supporto (home page e centro di supporto di Adobe).<br /> </p> <p>Fare doppio clic su un file nel riquadro <strong>Explorer</strong> per visualizzarne il contenuto. Ad esempio, un file .jsp o .java. Puoi quindi modificarlo e salvare le modifiche.</p> <p>Dopo aver modificato un file nel riquadro <strong>Modifica</strong>, nella barra degli strumenti sono disponibili i seguenti strumenti:<br /> </p> - <strong>Mostra nella struttura: </strong>mostra il file nella struttura dell'archivio.<br /> - <strong>Ricerca/Sostituisci ...</strong>: eseguire la ricerca o la sostituzione.<br /> <br /> Fare doppio clic sulla riga di stato del riquadro <strong>Modifica</strong> per aprire la finestra di dialogo <strong>Vai alla riga</strong> in modo da poter immettere un numero di riga specifico da utilizzare.<br /> </td>
   </tr>
   <tr>
    <td>Scheda Proprietà<br /> </td>
@@ -111,7 +122,7 @@ CRXDE Lite offre le seguenti funzionalità:
    <td>Elimina il nodo selezionato.<br /> </td>
   </tr>
   <tr>
-   <td>Copiare</td>
+   <td>Copia</td>
    <td>Copia il nodo selezionato.<br /> </td>
   </tr>
   <tr>
@@ -244,7 +255,7 @@ Per creare una proprietà con CRXDE Lite:
 
 1. Apri CRXDE Lite nel browser.
 1. Nel riquadro di spostamento selezionare il nodo in cui si desidera aggiungere la nuova proprietà.
-1. Nella scheda **Proprietà** nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**. Fare clic su **Aggiungi**.
+1. Nella scheda **Proprietà** nel riquadro inferiore, immettere **Nome**, **Tipo** e **Valore**. Fai clic su **Aggiungi**.
 
 1. Fai clic su **Salva tutto** per salvare le modifiche sul server.
 
@@ -298,7 +309,7 @@ Operazioni disponibili:
 * Fissare il messaggio alla selezione facendo clic sull&#39;icona **Fissa**.
 * Attiva o disattiva la visualizzazione dei messaggi facendo clic sull&#39;icona **Interrompi**.
 
-## Controllo accesso {#access-control}
+## Controllo degli accessi {#access-control}
 
 >[!NOTE]
 >

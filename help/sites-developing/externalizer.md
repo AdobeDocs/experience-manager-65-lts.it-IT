@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 5beeae99-7ef4-49a0-aaad-3ab07429ebc2
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # Esternalizzazione degli URL{#externalizing-urls}
 
 In Adobe Experience Manager (AEM), **Externalizer** è un servizio OSGI che consente di trasformare in modo programmatico un percorso di risorsa (ad esempio, `/path/to/my/page`) in un URL esterno e assoluto (ad esempio, `https://www.mycompany.com/path/to/my/page`) prefissando il percorso con un DNS preconfigurato.
@@ -51,8 +60,8 @@ Per definire un mapping di dominio per il servizio **Externalizer**:
 
    * **lo schema** è http o https, ma può anche essere ftp e così via.
 
-      * se necessario, utilizza https per applicare i collegamenti https
-      * viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
+     * se necessario, utilizza https per applicare i collegamenti https
+     * viene utilizzato se il codice client non sostituisce lo schema quando viene richiesta l’esternalizzazione di un URL.
 
    * **server** è il nome host (può essere un nome di dominio o un indirizzo ip).
    * **porta** (facoltativo) è il numero di porta.

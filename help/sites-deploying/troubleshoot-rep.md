@@ -1,5 +1,5 @@
 ---
-title: Risoluzione dei problemi di replica
+title: Risoluzione dei problemi relativi alla replica
 description: Questo articolo fornisce informazioni su come risolvere i problemi di replica.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 015def31-c7de-42b3-8218-1284afcb6921
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 0%
-
+source-wordcount: '928'
+ht-degree: 1%
 ---
-
-# Risoluzione dei problemi di replica{#troubleshooting-replication}
+# Risoluzione dei problemi relativi alla replica{#troubleshooting-replication}
 
 Questa pagina fornisce informazioni su come risolvere i problemi di replica.
 
@@ -70,7 +79,7 @@ A volte è utile impostare tutte le registrazioni di replica da aggiungere in un
    * File di registro: logs/replication.log
    * Logger: com.day.cq.replication
 
-1. Se pensi che il problema sia correlato in qualche modo a sling eventing/jobs, puoi anche aggiungere questo pacchetto Java™ nelle categorie:org.apache.sling.event
+1. Se si sospetta che il problema sia correlato in qualche modo a eventi/processi Sling, è possibile aggiungere questo pacchetto Java™ anche nelle categorie:org.apache.sling.event
 
 ## Sospensione coda agente di replica  {#pausing-replication-agent-queue}
 
