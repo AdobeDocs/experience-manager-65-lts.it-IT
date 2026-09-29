@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 5f6106a9-64a6-45aa-a31d-2075d1e911bf
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '3352'
+source-wordcount: '3533'
 ht-degree: 1%
-
 ---
-
 # Funzioni personalizzate nei componenti core di Forms adattivi
 
 Questo articolo descrive la creazione di funzioni personalizzate con il componente core Modulo adattivo più recente dotato delle funzioni più recenti, ad esempio:
@@ -61,7 +71,7 @@ Le funzioni personalizzate sono essenzialmente librerie client aggiunte al file 
 
 >[!NOTE]
 >`[functionName]` è il nome della funzione. Gli spazi non sono consentiti.
->`<Function Name>` è il nome visualizzato della funzione nell&#39;editor di regole di Adaptive Forms.
+>`<Function Name>` è il nome visualizzato della funzione nell’editor di regole di Adaptive Forms.
 >Se il nome della funzione è identico al nome della funzione stessa, è possibile omettere `[functionName]` dalla sintassi.
 
 #### Parametro
@@ -74,17 +84,17 @@ Il **parametro** è un elenco di argomenti utilizzati dalle funzioni personalizz
 
   `{type}` rappresenta il tipo di parametro. I tipi di parametri consentiti sono:
 
-   * string (stringa): rappresenta un singolo valore di stringa.
-   * number: rappresenta un singolo valore numerico.
-   * booleano: rappresenta un singolo valore booleano (true o false).
-   * stringa[]: rappresenta una matrice di valori stringa.
-   * number[]: rappresenta una matrice di valori numerici.
-   * booleano[]: rappresenta una matrice di valori booleani.
-   * data: rappresenta un singolo valore di data.
-   * data[]: rappresenta una matrice di valori di data.
-   * array: rappresenta una matrice generica contenente valori di vari tipi.
-   * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-   * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * string (stringa): rappresenta un singolo valore di stringa.
+  * number: rappresenta un singolo valore numerico.
+  * booleano: rappresenta un singolo valore booleano (true o false).
+  * stringa[]: rappresenta una matrice di valori stringa.
+  * number[]: rappresenta una matrice di valori numerici.
+  * booleano[]: rappresenta una matrice di valori booleani.
+  * data: rappresenta un singolo valore di data.
+  * data[]: rappresenta una matrice di valori di data.
+  * array: rappresenta una matrice generica contenente valori di vari tipi.
+  * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
+  * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 Il tipo di parametro è **senza distinzione tra maiuscole e minuscole** e non sono consentiti spazi nel nome del parametro.
 
@@ -538,7 +548,7 @@ Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzand
 ## Utilizzo di una funzione personalizzata in un modulo adattivo {#use-custom-functions}
 
 In un modulo adattivo, puoi utilizzare [funzioni personalizzate all&#39;interno dell&#39;editor di regole](/help/forms/using/rule-editor-core-components.md).
-Aggiungiamo il seguente codice al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
+Aggiungiamo il codice seguente al file JavaScript (`Function.js` file) per calcolare l&#39;età in base alla data di nascita (AAAA-MM-GG). Creare una funzione personalizzata come `calculateAge()` che utilizza come input la data di nascita e restituisce l&#39;età:
 
 ```javascript
     /**
@@ -985,9 +995,9 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
 
 * L&#39;utente deve verificare che il componente core [e la versione della specifica siano impostati sulla versione più recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). Tuttavia, per i progetti e i moduli AEM esistenti, sono disponibili ulteriori passaggi da seguire:
 
-   * Per il progetto AEM, l&#39;utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e distribuire il progetto.
+  * Per il progetto AEM, l&#39;utente deve sostituire tutte le istanze di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` e distribuire il progetto.
 
-   * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l&#39;utente deve aprire e salvare la regola `submitForm` sul pulsante **Invia** utilizzando l&#39;editor di regole. Questa azione sostituisce la regola esistente di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
+  * Per i moduli esistenti, se i gestori di invio personalizzati non funzionano correttamente, l&#39;utente deve aprire e salvare la regola `submitForm` sul pulsante **Invia** utilizzando l&#39;editor di regole. Questa azione sostituisce la regola esistente di `submitForm('custom:submitSuccess', 'custom:submitError')` con `submitForm()` nel modulo.
 
 
 * Se il file JavaScript contenente il codice per le funzioni personalizzate presenta un errore, le funzioni personalizzate non sono elencate nell’editor delle regole di un modulo adattivo. Per verificare l&#39;elenco delle funzioni personalizzate, è possibile individuare l&#39;errore nel file `error.log`. In caso di errore, l’elenco delle funzioni personalizzate appare vuoto:
@@ -1003,9 +1013,9 @@ Se le funzioni personalizzate vengono modificate, la memorizzazione in cache vie
 * `parameter type` e `return type` non supportano `None`.
 
 * Le funzioni non supportate nell&#39;elenco delle funzioni personalizzate sono:
-   * Funzioni del generatore
-   * Funzioni Async/Await
-   * Definizioni dei metodi
-   * Metodi di classe
-   * Parametri predefiniti
-   * Parametri rimanenti
+  * Funzioni del generatore
+  * Funzioni Async/Await
+  * Definizioni dei metodi
+  * Metodi di classe
+  * Parametri predefiniti
+  * Parametri rimanenti

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: cbcb9301-48c9-4394-b8c0-766eed76101d
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 98%
-
 ---
-
 # Backup dei dati Adobe Experience Manager (AEM) Forms {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -56,10 +71,10 @@ Inoltre, osserva le seguenti linee guida per il processo di backup/ripristino.
 
   Quando esegui il backup delle istanze di authoring e pubblicazione, tieni presente quanto segue:
 
-   * Assicurati che il backup per le istanze di authoring e pubblicazione sia sincronizzato e venga avviato allo stesso tempo. Sebbene sia possibile continuare a utilizzare le istanze di authoring e pubblicazione durante l’esecuzione del backup, si consiglia di non pubblicare alcuna risorsa durante il backup per evitare modifiche non acquisite. Prima di pubblicare nuove risorse, attendi la fine del backup delle istanze di authoring e pubblicazione.
-   * Il backup completo del nodo di authoring include il backup dei dati di Forms Manager e dell’area di lavoro di AEM Forms.
-   * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi a livello locale. Durante la fase di backup non devono distribuire nuovi processi.
-   * La decisione sulla durata di ciascuna sessione di backup (per la modalità di backup continuo) deve essere basata sul tempo totale impiegato per eseguire il backup di tutti i dati in AEM Forms (DB, GDS, archivio AEM ed eventuali altri dati personalizzati aggiuntivi).
+  * Assicurati che il backup per le istanze di authoring e pubblicazione sia sincronizzato e venga avviato allo stesso tempo. Sebbene sia possibile continuare a utilizzare le istanze di authoring e pubblicazione durante l’esecuzione del backup, si consiglia di non pubblicare alcuna risorsa durante il backup per evitare modifiche non acquisite. Prima di pubblicare nuove risorse, attendi la fine del backup delle istanze di authoring e pubblicazione.
+  * Il backup completo del nodo di authoring include il backup dei dati di Forms Manager e dell’area di lavoro di AEM Forms.
+  * Gli sviluppatori di Workbench possono continuare a lavorare sui propri processi a livello locale. Durante la fase di backup non devono distribuire nuovi processi.
+  * La decisione sulla durata di ciascuna sessione di backup (per la modalità di backup continuo) deve essere basata sul tempo totale impiegato per eseguire il backup di tutti i dati in AEM Forms (DB, GDS, archivio AEM ed eventuali altri dati personalizzati aggiuntivi).
 
 Esegui il backup del database di AEM Forms, compresi eventuali registri delle transazioni. Consulta [Database AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 

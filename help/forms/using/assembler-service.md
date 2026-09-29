@@ -5,13 +5,29 @@ feature: Document Services
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5e1c5e07-1848-4784-9bdc-4d3b464baebe
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
 Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
@@ -317,9 +333,9 @@ L&#39;esempio seguente è un documento DDX che utilizza segnalibri per disassemb
 
 * Informazioni di testo.
 
-   * Parole in ogni pagina del documento
-   * Posizione di ciascuna parola in ogni pagina del documento
-   * Frasi in ogni paragrafo di ogni pagina del documento
+  * Parole in ogni pagina del documento
+  * Posizione di ciascuna parola in ogni pagina del documento
+  * Frasi in ogni paragrafo di ogni pagina del documento
 
 * Segnalibri, inclusi numero di pagina, titolo, destinazione e aspetto. Puoi esportare questo\
   dati da un documento PDF e importarli in un documento PDF.

@@ -5,13 +5,29 @@ feature: Content Fragments,Headless,GraphQL
 role: User,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 8d0271c0-a795-4ff6-a2ae-72329f05a401
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 74%
-
+source-wordcount: '697'
+ht-degree: 72%
 ---
-
 # Distribuzione di contenuti headless tramite frammenti di contenuto con GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
 Con Adobe Experience Manager (AEM), puoi utilizzare Frammenti di contenuto, insieme all’API GraphQL di AEM (un’implementazione personalizzata, basata su GraphQL standard), per fornire contenuti strutturati da utilizzare nelle applicazioni. La possibilità di personalizzare una singola query API consente di recuperare e fornire il contenuto specifico che desideri riprodurre (come risposta alla singola query API).
@@ -39,7 +55,7 @@ Un sistema per la gestione dei contenuti (CMS) headless è:
 
 In termini di authoring di frammenti di contenuto in AEM, questo significa che:
 
-* È possibile utilizzare i frammenti di contenuto per l’authoring contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
+* È possibile utilizzare Frammenti di contenuto per creare contenuti che non sono destinati principalmente alla pubblicazione diretta (1:1) su pagine formattate.
 
 * Il contenuto dei frammenti sarà strutturato in modo predeterminato in base ai modelli per frammenti di contenuto. Questo ne semplifica l’accesso da parte delle applicazioni che poi elaboreranno ulteriormente i contenuti.
 
@@ -99,7 +115,7 @@ Il **[Riferimento frammento](/help/assets/content-fragments/content-fragments-mo
 
 * Consente di recuperare i dati strutturati.
 
-   * Quando è definito come **multifeed**, è possibile fare riferimento a (recuperare) più frammenti secondari dal frammento principale.
+  * Quando è definito come **multifeed**, è possibile fare riferimento a (recuperare) più frammenti secondari dal frammento principale.
 
 ### Anteprima JSON {#json-preview}
 

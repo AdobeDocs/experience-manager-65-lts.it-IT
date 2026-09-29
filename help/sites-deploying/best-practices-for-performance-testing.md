@@ -1,5 +1,5 @@
 ---
-title: Best practice per i test delle prestazioni
+title: Best practice per il test delle prestazioni
 description: Scopri le strategie e le metodologie generali utilizzate per i test delle prestazioni e alcuni degli strumenti disponibili per facilitare il processo.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 29c20cf3-1694-4d06-ab7c-688018808c44
-source-git-commit: 4087a6f44bd87e3f841feb09220a9ea34ec1dc1c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1765'
-ht-degree: 0%
-
+source-wordcount: '1800'
+ht-degree: 1%
 ---
-
-# Best practice per i test delle prestazioni{#best-practices-for-performance-testing}
+# Best practice per il test delle prestazioni{#best-practices-for-performance-testing}
 
 ## Introduzione {#introduction}
 
@@ -63,8 +72,8 @@ Sul mercato sono disponibili molti strumenti di test delle prestazioni. Quando s
 
 * Quando si esegue il test di siti web mobili o reattivi, è necessario utilizzare un set di strumenti separato. Funzionano limitando la larghezza di banda della rete, simulando connessioni mobili più lente come 3G o EDGE. Tra gli strumenti più utilizzati vi sono:
 
-   * **[Condizionatore collegamento di rete](https://nshipster.com/network-link-conditioner/)** - fornisce un&#39;interfaccia utente di facile utilizzo e funziona a un livello abbastanza basso nello stack di rete. Include versioni per OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) - un&#39;applicazione proxy di debug Web che, oltre a diversi altri utilizzi, fornisce la limitazione della rete. Sono disponibili versioni per Windows, OS X e Linux®.
+  * **[Condizionatore collegamento di rete](https://nshipster.com/network-link-conditioner/)** - fornisce un&#39;interfaccia utente di facile utilizzo e funziona a un livello abbastanza basso nello stack di rete. Include versioni per OS X e iOS;
+  * [**Charles**](https://www.charlesproxy.com/) - un&#39;applicazione proxy di debug Web che, oltre a diversi altri utilizzi, fornisce la limitazione della rete. Sono disponibili versioni per Windows, OS X e Linux®.
 
 #### Strumenti di ottimizzazione {#optimization-tools}
 

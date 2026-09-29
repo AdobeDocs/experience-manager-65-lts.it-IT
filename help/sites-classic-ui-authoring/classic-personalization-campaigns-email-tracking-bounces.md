@@ -1,5 +1,5 @@
 ---
-title: Tracciamento delle e-mail non recapitate
+title: Tracciamento dei messaggi e-mail non pervenuti a destinazione
 description: Quando invii una newsletter a molti utenti, solitamente sono presenti alcuni indirizzi e-mail non validi nell’elenco. L'invio di newsletter a tali indirizzi viene reindirizzato. AEM può gestire tali mancati recapiti e interrompere l’invio di newsletter a tali indirizzi dopo il superamento del contatore di mancato recapito configurato.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 exl-id: b8d9df45-8b71-4f93-b94a-ecaf3da9b67b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
-# Tracciamento delle e-mail non recapitate{#tracking-bounced-emails}
+# Tracciamento dei messaggi e-mail non pervenuti a destinazione{#tracking-bounced-emails}
 
 >[!NOTE]
 >
@@ -64,7 +75,7 @@ Per configurare l’importazione feed per il tracciamento delle e-mail non recap
 
    Consente di impostare i flag per la ricerca.
 
-   `imap.flag.SEEN`:Impostare false per i messaggi nuovi o non visualizzati, true per i messaggi già letti
+   `imap.flag.SEEN`:Set false per messaggi nuovi/non visualizzati, true per messaggi già letti
 
    Per l&#39;elenco completo dei flag, vedere [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html).
 

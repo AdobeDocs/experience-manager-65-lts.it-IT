@@ -9,27 +9,36 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 330f5cc5-1af4-4777-b386-b0755e6781df
-source-git-commit: d37df3dc09122909adbb62ede6634939af105e06
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Amministrazione dei flussi di lavoro{#administering-workflows}
 
 I flussi di lavoro consentono di automatizzare le attività di Adobe Experience Manager (AEM). Flussi di lavoro:
 
 * Consiste in una serie di passaggi eseguiti in un ordine specifico.
 
-   * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
+  * Ogni passaggio esegue un’attività distinta, ad esempio l’attesa dell’input dell’utente, l’attivazione di una pagina o l’invio di un messaggio e-mail.
 
 * Può interagire con le risorse nell’archivio, gli account utente e i servizi AEM.
 * Può coordinare attività complicate che coinvolgono qualsiasi aspetto di AEM.
 
 I processi aziendali stabiliti dalla tua organizzazione possono essere rappresentati come flussi di lavoro. Ad esempio, il processo di pubblicazione dei contenuti dei siti web include in genere passaggi quali l’approvazione e l’approvazione da parte di vari soggetti interessati. Questi processi possono essere implementati come flussi di lavoro di AEM e applicati a pagine di contenuti e risorse.
 
-* [Avvio dei flussi di lavoro](/help/sites-administering/workflows-starting.md)
+* [Avviare i flussi di lavoro](/help/sites-administering/workflows-starting.md)
 * [Amministrazione delle istanze dei flussi di lavoro](/help/sites-administering/workflows-administering.md)
 * [Gestione dell’accesso ai flussi di lavoro](/help/sites-administering/workflows-managing.md)
 

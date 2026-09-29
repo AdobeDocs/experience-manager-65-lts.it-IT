@@ -9,13 +9,27 @@ feature: Interactive Communication
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 92bb4045-ed22-4cc3-9365-65cb39b3c82d
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2267'
 ht-degree: 2%
-
 ---
-
 # Generare più comunicazioni interattive utilizzando API Batch {#use-batch-api-to-generate-multiple-ic}
 
 Puoi utilizzare l’API Batch per produrre più comunicazioni interattive da un modello. Il modello è una comunicazione interattiva senza alcun dato. L’API Batch combina i dati con un modello per produrre una comunicazione interattiva. L’API è utile nella produzione di massa di comunicazioni interattive. Ad esempio, bollette telefoniche, estratti conto delle carte di credito per più clienti.
@@ -155,7 +169,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
       |--- |--- |--- |
       | templatePath | Stringa | Specifica il percorso del modello di comunicazione interattiva da utilizzare. Ad esempio, /content/dam/formsanddocuments/testsample/media. È una proprietà obbligatoria. |
       | recordPath | Stringa | Il valore del campo recordPath consente di impostare il nome di una comunicazione interattiva. È possibile impostare il percorso di un campo di un record come valore del campo recordPath. Ad esempio, se specifichi /employee/Id, il valore del campo id diventa il nome della comunicazione interattiva corrispondente. Il valore predefinito è un [UUID casuale](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
-      | usePrefillService | Booleano | Imposta il valore su True. Il valore predefinito è false. Quando il valore è impostato su true, l’API Batch legge i dati dal modello dati del modulo configurato e li inserisce nella comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ogni record) vengono trattati come argomenti FDM. |
+      | usePrefillService | Booleano | Imposta il valore su True. Il valore predefinito è falso. Quando il valore è impostato su true, l’API Batch legge i dati dal modello dati del modulo configurato e li inserisce nella comunicazione interattiva. Quando usePrefillService è impostato su true, i dati JSON di input (per ogni record) vengono trattati come argomenti FDM. |
       | batchType | Stringa | Impostate il valore su PRINT, WEB o WEB_AND_PRINT. Il valore predefinito è WEB_AND_PRINT. |
       | lingua | Stringa | Specifica le impostazioni locali della comunicazione interattiva di output. Il servizio preconfigurato non utilizza l’opzione internazionale, ma puoi creare un servizio personalizzato per generare comunicazioni interattive localizzate. Il valore di default è en_US. |
 

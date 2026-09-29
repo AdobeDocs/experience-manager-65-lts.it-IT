@@ -1,5 +1,5 @@
 ---
-title: Utilizzo della firma scarabocchio nei moduli HTML5
+title: Utilizzo della firma a meno nei moduli HTML5
 description: I moduli HTML5 sono sempre più utilizzati sui dispositivi touch e un requisito comune è il supporto delle firme. La firma di documenti su dispositivi mobili sta diventando una modalità accettata per firmare moduli su dispositivi mobili.
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,27 @@ feature: Forms Designer,Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: b364d618-57fa-4e43-a1cd-049b7313e6a6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
-# Utilizzo della firma scarabocchio nei moduli HTML5{#using-scribble-signature-in-html-forms}
+# Utilizzo della firma a meno nei moduli HTML5{#using-scribble-signature-in-html-forms}
 
 I moduli HTML5 vengono utilizzati sempre più spesso sui dispositivi touch e un requisito comune è il supporto delle firme. Scribing (scrittura con uno stilo o un dito) sta diventando un modo accettato di firmare moduli su dispositivi mobili. HTML5 Forms e Forms Designer ora consentono di avere un campo di firma scarabocchio sul modulo. Quando si esegue il rendering del modulo nel browser, è possibile firmare questi campi utilizzando uno stilo, un mouse o un tocco.
 

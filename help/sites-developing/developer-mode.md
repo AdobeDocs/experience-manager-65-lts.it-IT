@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b30bb90b-adca-4d3a-ae15-bede70e1c39a
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 3%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # Modalità Sviluppatore{#developer-mode}
 
 Durante la modifica delle pagine in Adobe Experience Manager (AEM), sono disponibili diverse [modalità](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui), inclusa la modalità Sviluppatore. Viene aperto un pannello laterale con diverse schede che forniscono a uno sviluppatore informazioni sulla pagina corrente. Le tre schede sono:
@@ -82,8 +91,8 @@ Viene mostrata una struttura ad albero componente che:
 * Mostra il tempo di calcolo lato server per eseguire il rendering del componente.
 * Consente di espandere la struttura e selezionare componenti specifici all&#39;interno della struttura. La selezione consente di accedere ai dettagli dei componenti, ad esempio:
 
-   * Percorso archivio
-   * Collegamenti agli script (a cui si accede in CRXDE Lite)
+  * Percorso archivio
+  * Collegamenti agli script (a cui si accede in CRXDE Lite)
 
 * I componenti selezionati (nel flusso di contenuto, indicati da un bordo blu) saranno evidenziati nella struttura del contenuto (e viceversa).
 
@@ -99,19 +108,19 @@ Ogni voce di componente può mostrare (ad esempio):
 
 * **Visualizza dettagli**: collegamento a un elenco che visualizza:
 
-   * tutti gli script di componenti utilizzati per eseguire il rendering del componente.
-   * il percorso del contenuto dell’archivio per questo componente specifico.
+  * tutti gli script di componenti utilizzati per eseguire il rendering del componente.
+  * il percorso del contenuto dell’archivio per questo componente specifico.
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Modifica script**: un collegamento che:
 
-   * apre lo script del componente in CRXDE Lite.
+  * apre lo script del componente in CRXDE Lite.
 
 * L’espansione di una voce di componente (punta freccia) può anche mostrare:
 
-   * Gerarchia all’interno del componente selezionato.
-   * I tempi di rendering per il componente selezionato sono isolati, tutti i singoli componenti nidificati al suo interno e il totale combinato.
+  * Gerarchia all’interno del componente selezionato.
+  * I tempi di rendering per il componente selezionato sono isolati, tutti i singoli componenti nidificati al suo interno e il totale combinato.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

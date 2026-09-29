@@ -1,5 +1,5 @@
 ---
-title: Procedura dettagliata sul sito di riferimento We.Gov FOIA
+title: Procedura dettagliata FOIA sul sito di riferimento We.Gov
 description: Consulta la procedura dettagliata sul sito di riferimento We.Gov per capire in che modo AEM Forms aiuta i governi a ricevere e comunicare le informazioni richieste da singoli individui in base al Freedom of Information Act.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,14 +7,32 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 exl-id: a2f79634-6eca-479a-89d7-e1ef2e4a6e6d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 0%
-
+source-wordcount: '854'
+ht-degree: 1%
 ---
-
-# Procedura dettagliata sul sito di riferimento We.Gov FOIA {#we-gov-reference-site-foia-walkthrough}
+# Procedura dettagliata FOIA sul sito di riferimento We.Gov {#we-gov-reference-site-foia-walkthrough}
 
 ## Scenario del Freedom of Information Act per il sito di riferimento {#reference-site-freedom-of-information-act-scenario}
 
@@ -36,7 +54,7 @@ Lo scenario coinvolge i seguenti utenti tipo:
 
 ## Sarah avvia una richiesta di informazioni in base alla FOIA {#sarah-initiates-request-for-information-under-foia}
 
-Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri dell&#39;Administration for Children and Families dal 2013 al 2016. Sarah presenta tale richiesta al Dipartimento di giustizia - Ufficio delle politiche dell&#39;informazione e si dichiara altresì disposta a pagare fino a 100 USD per le spese di stampa e di spedizione.
+Ai sensi del Freedom of Information Act, Sarah richiede una copia dei registri dell&#39;Administration for Children and Families dal 2013 al 2016. Sarah presenta tale richiesta al Department of Justice - Office Of Information Policy e indica inoltre di essere in grado di pagare fino a USD 100 per le spese di stampa e di spedizione.
 
 ### Come funziona {#how-it-works}
 
@@ -50,7 +68,7 @@ Sarah fa clic su **Applica** e nella pagina del modulo di richiesta Freedom of I
 
 * **Agenzia:** Sarah specifica l&#39;agenzia a cui è stata indirizzata la richiesta come Department of Justice - Office of Information Policy.
 
-* **Pagherà fino a**: Sarah specifica di essere disposta a pagare fino a 100 USD per le spese di stampa e di spedizione.
+* **Pagherà fino a**: Sarah specifica di essere disposta a pagare fino a USD 100 per le spese di stampa e di spedizione.
 * **Descrivere la richiesta in dettaglio**: Sarah specifica &quot;Richiesta di copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016&quot;.
 
 ![Richiesta della copia dei registri dei casi relativi all&#39;amministrazione per figli e famiglie per gli anni fiscali dal 2013 al 2016](assets/sarahfiosform.png)

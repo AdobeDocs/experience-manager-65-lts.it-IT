@@ -1,5 +1,5 @@
 ---
-title: Console classica per l’assegnazione di tag dell’interfaccia utente
+title: Console per l’assegnazione di tag dell’interfaccia classica
 description: Scopri la console di assegnazione tag dell’interfaccia utente classica di Adobe Experience Manager.
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 4d4c96ea-b7dd-49b9-86b5-2507e7518ba4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 1%
-
+source-wordcount: '905'
+ht-degree: 2%
 ---
-
-# Console classica per l’assegnazione di tag dell’interfaccia utente{#classic-ui-tagging-console}
+# Console per l’assegnazione di tag dell’interfaccia classica{#classic-ui-tagging-console}
 
 Questa sezione è per la console di assegnazione tag dell’interfaccia classica.
 
@@ -49,19 +58,19 @@ ad esempio, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 1. In entrambi i casi immettere:
 
    * **Titolo**
-(*Obbligatorio*) Titolo visualizzato per il tag. È possibile immettere qualsiasi carattere,
-si consiglia di non utilizzare i seguenti caratteri speciali:
+     (*Obbligatorio*) Titolo visualizzato per il tag. È possibile immettere qualsiasi carattere,
+     si consiglia di non utilizzare i seguenti caratteri speciali:
 
-      * `colon (:)` - delimitatore spazio dei nomi
-      * `forward slash (/)` - delimitatore tag secondario
+     * `colon (:)` - delimitatore spazio dei nomi
+     * `forward slash (/)` - delimitatore tag secondario
 
      Questi caratteri non vengono visualizzati se vengono immessi.
 
    * **Nome**
-(*Obbligatorio*) Nome del nodo per il tag.
+     (*Obbligatorio*) Nome del nodo per il tag.
 
    * **Descrizione**
-(*Facoltativo*) Descrizione del tag.
+     (*Facoltativo*) Descrizione del tag.
 
    * seleziona **Crea**
 

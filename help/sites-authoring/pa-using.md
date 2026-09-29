@@ -9,13 +9,28 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
 role: User,Admin,Developer
 exl-id: debcc73f-c2bb-4e3a-8ebf-c7590264d289
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '655'
 ht-degree: 5%
-
 ---
-
 # Visualizzazione dei dati analitici sulle pagine{#seeing-page-analytics-data}
 
 Utilizza i dati di analisi della pagina per misurare l’efficacia del contenuto della pagina.
@@ -91,7 +106,7 @@ Apri [Content Insight](/help/sites-authoring/content-insights.md) dalla console 
 >
 >I dati per Activity Map provengono da Adobe Analytics.
 
-Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#x200B; in modalità &#x200B;](/help/sites-authoring/author-environment-tools.md#page-modes) per visualizzare i dati rilevanti. Ad esempio:
+Quando il tuo sito Web è stato [configurato per Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), puoi utilizzare l&#39;Activity Map[&#128279;](/help/sites-authoring/author-environment-tools.md#page-modes) in modalità  per visualizzare i dati rilevanti. Ad esempio:
 
 ![aa-07](assets/aa-07.png)
 
@@ -137,23 +152,23 @@ La finestra di dialogo **Impostazioni Activity Map** fornisce una serie di opzio
 
 * Generale
 
-   * Suite per report
-   * Nome pagina
-   * Lingua
-   * Sovrapposizioni etichetta con
-   * Dimensione font etichetta
-   * Colore sfumatura
-   * Colore bolla
-   * Sfumatura colore basata su
-   * Trasparenza sfumatura
+  * Suite per report
+  * Nome pagina
+  * Lingua
+  * Sovrapposizioni etichetta con
+  * Dimensione font etichetta
+  * Colore sfumatura
+  * Colore bolla
+  * Sfumatura colore basata su
+  * Trasparenza sfumatura
 
 * Standard
 
-   * Visualizzazione (tipo e numero di collegamenti)
-   * Nascondi sovrapposizioni per collegamenti che non hanno ricevuto hit
+  * Visualizzazione (tipo e numero di collegamenti)
+  * Nascondi sovrapposizioni per collegamenti che non hanno ricevuto hit
 
 * Live
 
-   * Visualizza in alto (guadagni o perdenti)
-   * Escludi % inferiore
-   * Aggiornamento automatico (dati e periodo)
+  * Visualizza in alto (guadagni o perdenti)
+  * Escludi % inferiore
+  * Aggiornamento automatico (dati e periodo)

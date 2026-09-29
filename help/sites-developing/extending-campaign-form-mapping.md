@@ -1,5 +1,5 @@
 ---
-title: Creazione di mapping di moduli personalizzati
+title: Creazione di mappature di moduli personalizzati
 description: Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare in AEM un modulo mappato su tale tabella personalizzata
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7b870221-2946-4e3d-b606-71a46bdfc568
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 3%
-
+source-wordcount: '538'
+ht-degree: 5%
 ---
-
-# Creazione di mapping di moduli personalizzati{#creating-custom-form-mappings}
+# Creazione di mappature di moduli personalizzati{#creating-custom-form-mappings}
 
 Quando crei una tabella personalizzata in Adobe Campaign, potrebbe essere utile creare in AEM un modulo mappato su tale tabella personalizzata.
 
@@ -31,7 +40,7 @@ Devi avere installato quanto segue:
 
 Per ulteriori informazioni, vedere [Integrazione di AEM con Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
-## Creazione di mapping di moduli personalizzati {#creating-custom-form-mappings-2}
+## Creazione di mappature di moduli personalizzati {#creating-custom-form-mappings-2}
 
 Per creare mappature di moduli personalizzate, è necessario seguire questi passaggi di alto livello, descritti in dettaglio nelle sezioni seguenti:
 
@@ -106,7 +115,7 @@ Durante la configurazione dei campi, accertati di specificare nomi di elementi u
 
 Dopo aver configurato i campi, devi modificare manualmente la mappatura.
 
-In CRXDE-lite, vai al nodo **jcr:content** (della pagina) e modifica il valore **acMapping** nel nome interno della mappatura **Target**.
+In CRXDE-lite, vai al nodo **jcr:content** (della pagina) e modifica il valore **acMapping** nel nome interno del mapping **Target**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -120,7 +129,7 @@ Ora puoi inviare il modulo e verificare sul lato Adobe Campaign se i valori veng
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
-## Risoluzione dei problemi {#troubleshooting}
+## Risoluzione di problemi {#troubleshooting}
 
 **&quot;Tipo non valido per il valore &#39;02/02/2015&#39; dall&#39;elemento &#39;@eventdate&#39; (documento di tipo &#39;Event ([adb:event])&#39;)&quot;**
 

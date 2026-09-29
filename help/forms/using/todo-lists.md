@@ -1,5 +1,5 @@
 ---
-title: Utilizzo degli elenchi Attività
+title: Utilizzo degli elenchi attività
 description: Come aprire, lavorare e completare le attività in base alle esigenze, ad esempio approvare o rifiutare una richiesta o aggiungere ulteriori informazioni.
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 0e4b5758-3da5-4ca5-8553-161f923661aa
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 0%
-
 ---
-
-# Utilizzo degli elenchi Attività{#working-with-to-do-lists}
+# Utilizzo degli elenchi attività{#working-with-to-do-lists}
 
 Quando si visualizzano gli elenchi attività, è possibile che vengano visualizzate le attività di un processo aziendale assegnate all&#39;utente o a qualsiasi gruppo a cui l&#39;utente appartiene o che siano attività condivise di altri utenti. È possibile aprire, lavorare e completare le attività in base alle esigenze, ad esempio approvando o rifiutando una richiesta o aggiungendo ulteriori informazioni. Dopo aver completato un&#39;attività, questa viene inviata alla persona successiva nel processo aziendale,
 
@@ -45,17 +59,17 @@ Quando apri e lavori su un’attività, gli strumenti disponibili dipendono dall
 
 * **Revisione multiutente**: l&#39;attività viene ricevuta contemporaneamente da altri utenti. Tu e gli altri utenti dovete fornire informazioni o rivedere il contenuto, o entrambi. Con questo tipo di attività possono essere disponibili i seguenti strumenti:
 
-   * Visualizzazione delle istruzioni per l&#39;attività
-   * Visualizzazione dello stato di completamento di tutti gli utenti assegnati all&#39;attività
-   * Visualizzazione dei commenti di tutti gli utenti assegnati all&#39;attività
-   * Aggiunta di commenti all&#39;attività
+  * Visualizzazione delle istruzioni per l&#39;attività
+  * Visualizzazione dello stato di completamento di tutti gli utenti assegnati all&#39;attività
+  * Visualizzazione dei commenti di tutti gli utenti assegnati all&#39;attività
+  * Aggiunta di commenti all&#39;attività
 
 Altri strumenti che possono essere disponibili con una qualsiasi delle attività di cui sopra includono:
 
 * Inoltra
 * Condividi
 * Consulta
-* Torna
+* A capo
 * Note
 * Allegati
 

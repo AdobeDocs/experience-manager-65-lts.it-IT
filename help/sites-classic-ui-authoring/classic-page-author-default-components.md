@@ -1,6 +1,6 @@
 ---
 title: Componenti
-description: AEM viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web.
+description: AEM include diversi componenti predefiniti che offrono funzionalità complete per gli autori di siti web.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 1976047c-661a-4398-8dd8-c71cd05d53be
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 23%
-
+source-wordcount: '200'
+ht-degree: 34%
 ---
-
 # Componenti{#components}
 
 Adobe Experience Manager (AEM) viene fornito con una varietà di componenti pronti all’uso che forniscono funzionalità complete per gli autori di siti web. Sono disponibili quando [si modifica una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e sono raggruppati per area funzionale principale (ovvero, gruppo di componenti) per facilitare l&#39;applicazione di filtri.

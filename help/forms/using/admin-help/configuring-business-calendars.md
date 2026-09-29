@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 23fab14d-3658-4fd3-88c1-fc71f1ac0400
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 97%
-
+source-wordcount: '1949'
+ht-degree: 89%
 ---
-
 # Configurazione dei calendari aziendali {#configuring-business-calendars}
 
 I *calendari aziendali* definiscono i giorni lavorativi e non lavorativi (ad esempio, le festività riconosciute pr legge, i fine settimana e i giorni di chiusura dell’azienda) dell’organizzazione. Quando si utilizzano i calendari aziendali, AEM Forms ignora i giorni non lavorativi durante l’esecuzione di determinati calcoli di date. In Workbench è possibile specificare se utilizzare i calendari aziendali per gli eventi associati all’utente, ad esempio promemoria di attività, scadenze ed escalation, oppure per le azioni non associate all’utente, ad esempio Eventi con timer e Servizio di attesa.
@@ -25,7 +40,7 @@ Ad esempio, un promemoria di attività è configurato per essere visualizzato tr
 
 >[!NOTE]
 >
->Quando le date e le ore vengono calcolate utilizzando i calendari aziendali, AEM Forms utilizza la data e l’ora del server in cui è in esecuzione e non modifica la differenza tra i fusi orari. Ad esempio, se un promemoria dell’attività è pianificato per le ore 10:00 su un server in esecuzione a Londra, ma l’utente che deve ricevere il promemoria si trova a New York, riceverà il promemoria alle 5:00 ora locale.
+>Quando le date e le ore vengono calcolate utilizzando i calendari aziendali, AEM Forms utilizza la data e l’ora del server in cui è in esecuzione e non modifica la differenza tra i fusi orari. Ad esempio, se un promemoria attività è pianificato per le 10:00 su un server in esecuzione a Londra, ma l’utente che riceve il promemoria si trova a New York, riceverà il promemoria alle 5:00 ora locale.
 
 ## Utilizzare il calendario aziendale predefinito {#using-the-default-business-calendar}
 
@@ -78,7 +93,7 @@ Se l’organizzazione prevede diversi gruppi di utenti con giorni non lavorativi
 
    Se selezioni questa opzione, un evento che si verifica prima dell’intervallo di tempo specificato viene spostato all’inizio dell’intervallo di tempo e un evento che si verifica dopo l’intervallo di tempo viene spostato all’ora di inizio del giorno lavorativo successivo.
 
-   Consideriamo ad esempio la situazione in cui a un utente viene assegnata un’attività alle 2:00:00 del mattino di martedì e il promemoria per tale attività è impostato su due giorni lavorativi. Senza l’orario di lavoro, il promemoria si verificherebbe alle 2:00:00 di giovedì. Se l’orario di lavoro è impostato dalle 8:00:00 alle 17:00:00, il promemoria verrà inviato alle 8:00:00 di giovedì. Senza orario di lavoro, se un evento di promemoria è stato creato alle 18:00 di martedì, il promemoria si verificherebbe al di fuori dell’orario lavorativo di giovedì. :00 Con l’orario di lavoro impostato dalle 8:00:00 alle 17:00:00, il promemoria si verificherà alle 8:00:00 di venerdì.
+   Consideriamo ad esempio la situazione in cui a un utente viene assegnata un’attività alle 02:00 del martedì e il promemoria per tale attività è impostato su due giorni lavorativi. Senza l’orario di lavoro, il promemoria verrà visualizzato alle 02:00 del giovedì. Se l’orario di lavoro è impostato sulle 8:00 alle 17:00, il promemoria verrà inviato alle 8:00 del giovedì. Senza orario di lavoro, se un evento di promemoria è stato creato alle 18:00 di martedì, il promemoria si verificherà dopo l’orario di lavoro di giovedì. Con l’orario di lavoro impostato sulle 08:00 alle 17:00, il promemoria verrà visualizzato alle 08:00 del venerdì.
 
 1. Nel calendario a sinistra fai doppio clic su qualsiasi altro giorno non lavorativo, ad esempio su una festività. Non è possibile selezionare date pregresse. I giorni non lavorativi selezionati vengono visualizzati in un elenco sulla destra, con la data riportata due volte su una riga. Seleziona la data a sinistra per digitare il nome o la descrizione del giorno non lavorativo.
 

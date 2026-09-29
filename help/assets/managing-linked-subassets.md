@@ -1,18 +1,29 @@
 ---
 title: Gestire le risorse composte con riferimenti e più pagine
-description: Scopri come creare riferimenti alle risorse digitali da  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare singole pagine di risorse secondarie di file di più pagine come PDF, INDD, PPT, PPTX e AI.
+description: Scopri come creare riferimenti alle risorse digitali da [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Utilizza la funzione Visualizzatore pagina per visualizzare singole pagine di risorse secondarie di file di più pagine come PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 077dfd55-0193-41ff-97c0-9f6be978cc9f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # Gestire le risorse composte e multipagina {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] può identificare se un file caricato contiene riferimenti a risorse già esistenti nell&#39;archivio. Questa funzione è disponibile solo per i formati di file supportati. Se la risorsa caricata contiene riferimenti a [!DNL Experience Manager] risorse, viene creato un collegamento bidirezionale tra le risorse caricate e di riferimento.
@@ -100,8 +111,8 @@ Per generare le risorse secondarie, effettuate una delle seguenti operazioni:
 * Nuove risorse: il flusso di lavoro [!UICONTROL DAM Update Assets] viene eseguito su qualsiasi nuova risorsa caricata in [!DNL Experience Manager]. Le risorse secondarie vengono generate automaticamente per le nuove risorse con più pagine.
 * Risorse a più pagine esistenti: esegui manualmente il flusso di lavoro [!UICONTROL DAM Update Assets] seguendo uno dei passaggi seguenti:
 
-   * Seleziona una risorsa e fai clic su [!UICONTROL Timeline] per aprire il pannello a sinistra. In alternativa, utilizzare la scelta rapida da tastiera `alt + 3`. Fai clic su [!UICONTROL Avvia flusso di lavoro], seleziona [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
-   * Seleziona una risorsa e fai clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, seleziona il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
+  * Seleziona una risorsa e fai clic su [!UICONTROL Timeline] per aprire il pannello a sinistra. In alternativa, utilizzare la scelta rapida da tastiera `alt + 3`. Fai clic su [!UICONTROL Avvia flusso di lavoro], seleziona [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
+  * Seleziona una risorsa e fai clic su [!UICONTROL Crea] > [!UICONTROL Flusso di lavoro] nella barra degli strumenti. Dalla finestra di dialogo a comparsa, seleziona il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM], fai clic su [!UICONTROL Inizia] e fai clic su [!UICONTROL Procedi].
 
 Per i documenti di Microsoft Word, eseguire il flusso di lavoro **[!UICONTROL Analisi documenti Word DAM]**. Genera un componente `cq:Page` dal contenuto del documento di Microsoft Word. Il componente `cq:Page` fa riferimento alle immagini estratte dal documento. Queste immagini vengono estratte anche se la generazione di risorse secondarie è disabilitata.
 

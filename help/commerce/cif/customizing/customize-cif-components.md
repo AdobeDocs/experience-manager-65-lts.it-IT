@@ -5,13 +5,21 @@ feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
 exl-id: e8f2a771-b2e3-4f3e-85a0-480f783fc313
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 14%
-
 ---
-
 # Personalizzare i componenti core di Adobe Experience Manager CIF {#customize-cif-components}
 
 Il [progetto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) è una base di codice di riferimento per l&#39;utilizzo di [componenti core CIF](https://github.com/adobe/aem-core-cif-components). In questa esercitazione, estendi ulteriormente il componente [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) per visualizzare un attributo personalizzato da Adobe Commerce. Scopri anche l’integrazione di GraphQL tra Adobe Experience Manager (AEM) e Adobe Commerce e gli hook di estensione forniti dai componenti core di CIF.
@@ -494,5 +502,5 @@ Esamina la funzionalità del badge **Nuovo** che è già stato implementato nel 
 - [Componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei componenti core di AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizzazione dei Componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=it)
-- [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=it)
+- [Guida introduttiva ad AEM Sites](https://experienceleague.adobe.com/it/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 - [Utilizzo del selettore prodotti e categorie di CIF](use-cif-pickers.md)

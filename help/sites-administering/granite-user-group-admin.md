@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: ba02f9d4-5286-41d6-995c-307d6e13431b
-source-git-commit: abda4a719676f45388e91bbdec1421152433fce8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '956'
 ht-degree: 3%
-
 ---
-
 # Operazioni Granite: amministrazione di utenti e gruppi{#granite-operations-user-and-group-administration}
 
 Poiché Granite incorpora l’implementazione dell’archivio CRX della specifica API JCR, ha una propria amministrazione di utenti e gruppi.
@@ -34,9 +46,9 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti, viene aperta la cons
 
   La console **Utenti** elenca:
 
-   * il nome utente
-   * il nome di accesso dell’utente (nome account)
-   * qualsiasi titolo assegnato all’account
+  * il nome utente
+  * il nome di accesso dell’utente (nome account)
+  * qualsiasi titolo assegnato all’account
 
 * [Amministrazione gruppo](#group-administration)
 
@@ -44,9 +56,9 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti, viene aperta la cons
 
   La console **Gruppi** elenca:
 
-   * il nome del gruppo
-   * la descrizione del gruppo
-   * il numero di utenti/gruppi nel gruppo
+  * il nome del gruppo
+  * la descrizione del gruppo
+  * il numero di utenti/gruppi nel gruppo
 
 ## Amministrazione utente {#user-administration}
 
@@ -90,8 +102,8 @@ Scegliendo **Utenti** o **Gruppi** dalla console Strumenti, viene aperta la cons
    * **Informazioni**
    * **Impostazioni account**
 
-      * **Stato**
-È possibile contrassegnare l&#39;account come **attivo** o **inattivo**.
+     * **Stato**
+       È possibile contrassegnare l&#39;account come **attivo** o **inattivo**.
 
    * **Foto**
 

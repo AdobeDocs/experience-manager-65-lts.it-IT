@@ -1,18 +1,32 @@
 ---
 title: Migrare risorse e documenti AEM Forms
-description: L'utilità di migrazione consente di migrare risorse e documenti Adobe Experience Manager (AEM) Forms da AEM 6.5.22.0 Forms ad AEM 6.5 Forms LTS.
+description: L'utility di migrazione consente di migrare risorse e documenti Adobe Experience Manager (AEM) Forms da AEM 6.5.22.0 Forms ad AEM 6.5 Forms LTS.
 content-type: reference
 role: Admin,User
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 636f7b61-549e-45c7-ab21-94bb90db2b22
-source-git-commit: 060bb23d64a90f0b2da487ead4c672cbf471c9a8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 1%
-
+source-wordcount: '1765'
+ht-degree: 2%
 ---
-
 # Migrare risorse e documenti AEM Forms{#migrate-aem-forms-assets-and-documents}
 
 L&#39;utilità di migrazione converte le [risorse Forms adattive](../../forms/using/introduction-forms-authoring.md), [configurazioni cloud](/help/sites-developing/extending-cloud-config.md) e [risorse Gestione corrispondenza](/help/forms/using/cm-overview.md) dal formato utilizzato nelle versioni precedenti al formato utilizzato in Adobe Experience Manager (AEM) 6.5 LTS Forms. Quando si esegue l&#39;utilità di migrazione, viene eseguita la migrazione dei seguenti elementi:
@@ -90,11 +104,11 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
    * Per eseguire la migrazione di **risorse**, seleziona AEM Forms Assets Migration e nella schermata successiva seleziona **Start Migration**. Viene eseguita la migrazione dei seguenti elementi:
 
-      * Moduli adattivi
-      * Frammenti di documenti
-      * Temi
-      * Lettere
-      * Dizionari dati
+     * Moduli adattivi
+     * Frammenti di documenti
+     * Temi
+     * Lettere
+     * Dizionari dati
 
    >[!NOTE]
    >
@@ -102,12 +116,12 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
    * Per migrare i componenti personalizzati del modulo adattivo, seleziona **Migrazione componenti personalizzati Forms adattivi** e nella pagina Migrazione componenti personalizzati seleziona **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
-      * Componenti personalizzati scritti per Adaptive Forms
-      * Eventuali sovrapposizioni dei componenti.
+     * Componenti personalizzati scritti per Adaptive Forms
+     * Eventuali sovrapposizioni dei componenti.
 
    * Per migrare i modelli di modulo adattivo, seleziona **Migrazione modello Forms adattivo** e nella pagina Migrazione componenti personalizzati seleziona **Avvia migrazione**. Viene eseguita la migrazione dei seguenti elementi:
 
-      * Modelli di modulo adattivo creati in `/apps` o `/conf` utilizzando l&#39;Editor modelli di AEM.
+     * Modelli di modulo adattivo creati in `/apps` o `/conf` utilizzando l&#39;Editor modelli di AEM.
 
    * Eseguire la migrazione dei servizi di configurazione cloud di AEM Forms per utilizzare il nuovo paradigma del servizio cloud in base al contesto, che include l&#39;interfaccia utente touch (in `/conf`). Durante la migrazione dei servizi di configurazione cloud di AEM Forms, i servizi cloud in `/etc` vengono spostati in `/conf`. Se non si dispone di personalizzazioni dei servizi cloud che dipendono dai percorsi legacy (`/etc`), Adobe consiglia di eseguire l&#39;utilità di migrazione dopo l&#39;aggiornamento alla versione 6.5. Per ulteriori informazioni, utilizzare l&#39;interfaccia utente touch della configurazione cloud. Se sono presenti personalizzazioni di servizi cloud esistenti, continuare a utilizzare l&#39;interfaccia utente classica nella configurazione aggiornata fino a quando le personalizzazioni non vengono aggiornate in modo da allinearle ai percorsi migrati (`/conf`), quindi eseguire l&#39;utilità di migrazione.
 
@@ -115,23 +129,23 @@ Quando si esegue l&#39;utilità di migrazione per la prima volta, viene creato u
 
    * Servizi cloud del modello dati modulo
 
-      * Percorso Source: `/etc/cloudservices/fdm`
-      * Percorso di destinazione: `/conf/global/settings/cloudconfigs/fdm`
+     * Percorso Source: `/etc/cloudservices/fdm`
+     * Percorso di destinazione: `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Percorso Source: `/etc/cloudservices/recaptcha`
-      * Percorso di destinazione: `/conf/global/settings/cloudconfigs/recaptcha`
+     * Percorso Source: `/etc/cloudservices/recaptcha`
+     * Percorso di destinazione: `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Percorso Source: `/etc/cloudservices/echosign`
-      * Percorso di destinazione: `/conf/global/settings/cloudconfigs/echosign`
+     * Percorso Source: `/etc/cloudservices/echosign`
+     * Percorso di destinazione: `/conf/global/settings/cloudconfigs/echosign`
 
    * Servizi cloud Typekit
 
-      * Percorso Source: `/etc/cloudservices/typekit`
-      * Percorso di destinazione: `/conf/global/settings/cloudconfigs/typekit`
+     * Percorso Source: `/etc/cloudservices/typekit`
+     * Percorso di destinazione: `/conf/global/settings/cloudconfigs/typekit`
 
    La finestra del browser mostra quanto segue durante il processo di migrazione:
 
@@ -151,15 +165,15 @@ Questi componenti possono essere migrati aprendoli nell’editor di regole nell�
 
 * Per migrare regole e script (non necessari se si esegue l’aggiornamento da 6.3) nei componenti personalizzati, seleziona Migrazione componenti personalizzati di Forms adattivi e nella schermata successiva seleziona Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
 
-   * Regole e script creati utilizzando l’editor di regole (6.1 FP1 e versioni successive)
+  * Regole e script creati utilizzando l’editor di regole (6.1 FP1 e versioni successive)
 
-   * Script creati utilizzando la scheda Script nell’interfaccia utente di 6.1 e versioni precedenti
+  * Script creati utilizzando la scheda Script nell’interfaccia utente di 6.1 e versioni precedenti
 
 * Per eseguire la migrazione dei modelli (non richiesto per l’aggiornamento da 6.3 e 6.4), seleziona Migrazione modello Forms adattivo e nella schermata successiva seleziona Avvia migrazione. Viene eseguita la migrazione dei seguenti elementi:
 
-   * Modelli precedenti: modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Sono inclusi gli script definiti nei componenti del modello.
+  * Modelli precedenti: modelli di moduli adattivi creati in /apps utilizzando AEM 6.1 Forms o versioni precedenti. Sono inclusi gli script definiti nei componenti del modello.
 
-   * Nuovi modelli: modelli di moduli adattivi creati utilizzando l&#39;editor modelli in `/conf`. Ciò include la migrazione di regole e script creati utilizzando l’editor di regole.
+  * Nuovi modelli: modelli di moduli adattivi creati utilizzando l&#39;editor modelli in `/conf`. Ciò include la migrazione di regole e script creati utilizzando l’editor di regole.
 
 ### Attività di manutenzione dopo l’esecuzione dell’utility di migrazione {#housekeepingtasks}
 

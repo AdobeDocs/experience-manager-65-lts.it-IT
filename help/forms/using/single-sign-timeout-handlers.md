@@ -1,5 +1,5 @@
 ---
-title: Gestori di accesso singolo e timeout
+title: Gestori del Single Sign On e del timeout
 description: Come impostare il valore di timeout della sessione per l’area di lavoro di AEM Forms.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c6bdfa6f-0d9b-4473-a2e1-6cad73fbd1ed
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 0%
-
+source-wordcount: '192'
+ht-degree: 6%
 ---
-
-# Gestori di accesso singolo e timeout {#single-sign-on-and-timeout-handlers}
+# Gestori del Single Sign On e del timeout {#single-sign-on-and-timeout-handlers}
 
 L’area di lavoro di AEM Forms è abilitata per l’SSO. Se un utente ha effettuato l’accesso a un’applicazione AEM Forms come Forms Manager o l’interfaccia utente di PDF Generator e accede all’area di lavoro di AEM Forms nella stessa sessione del browser, l’utente ha effettuato l’accesso all’area di lavoro di AEM Forms e viceversa.
 

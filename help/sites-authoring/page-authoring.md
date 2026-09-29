@@ -5,13 +5,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: fafe6322-1dc3-4637-8a8a-33143af04c30
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # Authoring delle pagine{#authoring-pages}
 
 Di seguito sono riportati due tipi di panoramica sull’authoring con AEM:
@@ -28,7 +41,7 @@ Di seguito sono riportati due tipi di panoramica sull’authoring con AEM:
 
 Per facilitare l’authoring delle pagine, l’ambiente di authoring offre funzioni quali:
 
-* **Trascina**
+* **Trascinare**
 I componenti (come Testo, Immagine) e le risorse digitali (come le immagini) possono essere posizionati nella pagina semplicemente trascinandoli e rilasciandoli nella posizione desiderata.
 
 * **Modifica**
@@ -37,13 +50,13 @@ Una volta posizionata sulla pagina, è possibile aprire una finestra di dialogo 
 * **Modifica diretta**
 I componenti Testo e Immagine possono essere modificati direttamente nella pagina web senza aprire una finestra di dialogo o eseguire un’azione di salvataggio esplicita.
 
-* **[Browser componenti](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
+* Browser componenti **[&#128279;](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui i componenti possono essere trascinati sulla pagina e quindi modificati.
 
-* **[Browser risorse](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
+* Browser risorse **[&#128279;](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 Sul lato sinistro di una pagina modificabile è possibile aprire un browser scorrevole; da qui le risorse possono essere trascinate sulla pagina; ad esempio, per posizionare le risorse o creare collegamenti ad altre pagine.
 
-* **Barra degli strumenti del componente**
+* Barra degli strumenti del componente **&#x200B;**
 Facendo doppio clic o facendo doppio clic lentamente, viene visualizzata la barra degli strumenti appropriata (singola per la barra degli strumenti di modifica locale e doppia lenta per la barra degli strumenti completa).
 
 * **[Layout reattivo](/help/sites-authoring/responsive-layout.md)**

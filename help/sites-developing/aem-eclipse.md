@@ -9,13 +9,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 exl-id: 5aaf9560-fa44-49d3-96c0-47cc71e7e658
-source-git-commit: c77c4cc5345a34d5504216d9e67af217acd644c2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 2%
-
+source-wordcount: '1296'
+ht-degree: 3%
 ---
-
 
 # Strumenti per sviluppatori AEM per Eclipse {#aem-developer-tools-for-eclipse}
 
@@ -38,7 +49,7 @@ Offre diverse funzioni che facilitano lo sviluppo di AEM:
 Prima di utilizzare gli strumenti per sviluppatori di AEM, è necessario:
 
 * Scarica e installa [Eclipse IDE per Enterprise Java e Web Developers.](https://www.eclipse.org/downloads/packages/)
-   * La versione 1.4.0 di AEM Developer Tools per Eclipse è compatibile con Eclipse 2022-12 (4.26) o versione successiva e richiede Java 17 o versione successiva per l’esecuzione.
+  * La versione 1.4.0 di AEM Developer Tools per Eclipse è compatibile con Eclipse 2022-12 (4.26) o versione successiva e richiede Java 17 o versione successiva per l’esecuzione.
 * Configurare l&#39;installazione di Eclipse per assicurarsi di disporre di almeno 1 GB di memoria heap modificando il file di configurazione `eclipse.ini` come descritto nelle [Domande frequenti su Eclipse.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]

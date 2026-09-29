@@ -1,5 +1,5 @@
 ---
-title: Salva moduli come modelli
+title: Salvare i moduli come modelli
 description: Scopri come creare modelli da moduli con dati richiesti ripetutamente.
 contentOwner: khsingh
 content-type: reference
@@ -9,14 +9,28 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 5e5ce783-8d0c-421c-b938-7020215682a0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 0%
-
+ht-degree: 2%
 ---
-
-# Salva moduli come modelli {#save-forms-as-templates}
+# Salvare i moduli come modelli {#save-forms-as-templates}
 
 A volte, quando gli utenti compilano un modulo, gli input per alcuni campi rimangono gli stessi. Per tali istanze, è possibile compilare i campi che richiedono valori identici in ogni istanza e salvare il modulo o la bozza come modello. Ora, ogni volta che crei un’istanza del modello, i campi specificati sono già compilati con i valori specificati nel modello. Consente di risparmiare tempo e fatica per compilare il modulo.
 

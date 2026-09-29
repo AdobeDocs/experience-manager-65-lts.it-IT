@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d7c33a37-a675-490d-b28d-1a367ffa33e9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
-
+source-wordcount: '866'
+ht-degree: 1%
 ---
-
 # Implementazione della denominazione delle pagine lato server per Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics utilizza la proprietà `s.pageName` per identificare in modo univoco le pagine e associare i dati raccolti per le pagine. In genere, per assegnare un valore a questa proprietà che AEM invia ad Analytics, esegui le seguenti attività in AEM:
@@ -75,7 +84,7 @@ Ad esempio, un componente pagina personalizzato può includere una proprietà di
 
 ### Implementazione di un servizio provider del nome della pagina di Analytics {#implementing-an-analytics-page-name-provider-service}
 
-Implementa l&#39;interfaccia `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` come servizio OSGi per personalizzare la logica che recupera il valore della proprietà `s.pageName`. Le funzioni di analisi della pagina Sites e Insight sui contenuti utilizzano il servizio per recuperare i dati dei rapporti da Analytics.
+Implementa l&#39;interfaccia `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` come servizio OSGi per personalizzare la logica che recupera il valore della proprietà `s.pageName`. L’analisi della pagina Sites e l’Insight dei contenuti utilizzano il servizio per recuperare i dati del rapporto da Analytics.
 
 L&#39;interfaccia AnalyticsPageNameProvider definisce due metodi che è necessario implementare:
 

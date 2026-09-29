@@ -8,14 +8,26 @@ feature: PDF Generator
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 68896dab-2d46-4998-9918-40efb8554143
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6249'
-ht-degree: 99%
-
+source-wordcount: '6255'
+ht-degree: 97%
 ---
-
 # Configurare le impostazioni tipo di file {#configuring-file-type-settings}
 
 >[!NOTE]
@@ -415,9 +427,9 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Exc
 
 **Prova OpenOffice come convertitore di fallback**: quando questa opzione è selezionata e una conversione con Microsoft Excel non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**Estensioni del nome file**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
+**Estensioni del nome file**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `xls,xlsx`. Non includere un punto prima o uno spazio tra le estensioni.
 
-**Crea file conforme a PDF/A-1a**: impone l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 RGB.
+**Crea file conforme a PDF/A-1a**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 
 **Aggiungi segnalibri ad Adobe PDF**: converte i nomi dei fogli di lavoro di Excel in segnalibri. Questa opzione è selezionata per impostazione predefinita.
 
@@ -471,7 +483,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Pow
 
 **[!UICONTROL Converti diapositive nascoste in pagine PDF]**: converte le diapositive nascoste.
 
-**[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 RGB. Alcune funzionalità di PowerPoint non vengono convertite quando generi un file PDF. Se una transizione di PowerPoint non ha un’equivalente in Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un unico effetto. Le transizioni di pagina e i punti elenco fly-in vengono convertiti.
+**[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF. Alcune funzionalità di PowerPoint non vengono convertite quando generi un file PDF. Se una transizione di PowerPoint non ha un’equivalente in Acrobat, viene sostituita una transizione simile. Se più effetti di animazione si trovano nella stessa diapositiva, viene utilizzato un unico effetto. Le transizioni di pagina e i punti elenco fly-in vengono convertiti.
 
 ## Impostazioni progetto Microsoft (solo Windows) {#microsoft-project-settings-windows-only}
 
@@ -481,7 +493,7 @@ Queste opzioni determinano la modalità di conversione dei file di progetto di M
 
 1. **[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 1. **[!UICONTROL Allega file di origine ad Adobe PDF]**: aggiunge il file di origine al file PDF come allegato.
-1. **[!UICONTROL Crea file conforme a PDF/A-1a]**: forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB Adobe PDF.
+1. **[!UICONTROL Crea file conforme a PDF/A-1a]**: impone l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 1. **[!UICONTROL Esegui automaticamente macro]**: esegue le macro nel documento del progetto Microsoft (ad esempio una macro che inserisce l’ora corrente) prima di convertire il documento.
 
 ## Impostazioni di Microsoft Word (solo Windows) {#microsoft-word-settings-windows-only}
@@ -490,7 +502,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Prova OpenOffice come convertitore fallback]**: quando selezioni questa opzione e una conversione con Microsoft Word non riesce o raggiunge il limite di timeout specificato, PDF Generator tenta la conversione utilizzando OpenOffice. Se la conversione tramite OpenOffice non riesce o raggiunge il limite di timeout specificato, nel file di log viene riportata un’eccezione.
 
-**[!UICONTROL Estensioni del nome file]**: specifica le estensioni dei nomi dei file per i tipi di file, separate da virgole, che sono accettate per questa applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
+**[!UICONTROL Estensioni del nome file]**: specifica le estensioni del nome file per i tipi file, separati da virgole, accettati per l’applicazione. Il valore predefinito è `doc,docx,rtf,txt`. Non includere un punto prima o uno spazio tra le estensioni.
 
 **[!UICONTROL Converti informazioni documento]**: aggiunge informazioni sul documento dalla finestra di dialogo Proprietà del file di origine, inclusi titolo, oggetto, autore, parole chiave, gestore, società, categoria e commenti. Questa opzione è selezionata per impostazione predefinita.
 
@@ -502,7 +514,7 @@ Queste opzioni determinano la modalità di conversione dei file di Microsoft Wor
 
 **[!UICONTROL Abilita accessibilità e ridisposizione con tag Adobe PDF]**: incorpora i tag nel file PDF. Questa opzione è selezionata per impostazione predefinita.
 
-**[!UICONTROL Crea file conforme a PDF/A-1a]**: se selezionata, forza l’utilizzo dell’impostazione PDF/A-1b:2005 RGB Adobe PDF.
+**[!UICONTROL Crea file conforme a PDF/A-1a]**: se selezionata, forza l&#39;utilizzo dell&#39;impostazione PDF/A-1b:2005 RGB Adobe PDF.
 
 **[!UICONTROL Esegui automaticamente macro]**: esegue tutte le macro nel documento Word (ad esempio una macro che inserisce l’ora corrente) prima di convertire il documento.
 
@@ -544,7 +556,7 @@ Se un nome di stile di Microsoft Word include una virgola (,) o un segno di ugua
 
 **Apri riquadro livelli quando visualizzato in Adobe Acrobat**: se i livelli di Visio non vengono appiattiti, apre una finestra in cui puoi specificare i livelli che vengono conservati nel file PDF quando vengono aperti con Acrobat. Questa opzione è selezionata per impostazione predefinita.
 
-**Crea file conforme a PDF/A-1b**: forza l’utilizzo dell’impostazione di Adobe PDF PDF/A-1b:2005 (RGB).
+**Crea file conforme a PDF/A-1b**: impone l&#39;utilizzo dell&#39;impostazione di Adobe PDF PDF/A-1b:2005 (RGB).
 
 **Converti commenti in commenti Adobe PDF**: converte le note di Visio in commenti PDF.
 

@@ -1,5 +1,5 @@
 ---
-title: Avvio e arresto riga di comando
+title: Avvio e arresto dalla riga di comando
 description: Scopri come avviare e arrestare Adobe Experience Manager dalla riga di comando.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: ff94f750-c193-438b-8be0-fcd7a40cead4
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 3%
 ---
-
-# Avvio e arresto riga di comando{#command-line-start-and-stop}
+# Avvio e arresto dalla riga di comando{#command-line-start-and-stop}
 
 ## Avvio di Adobe Experience Manager dalla riga di comando {#starting-adobe-experience-manager-from-the-command-line}
 
@@ -91,8 +100,8 @@ Per interrompere AEM, effettuare una delle seguenti operazioni:
 
 * A seconda della piattaforma utilizzata:
 
-   * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
-   * Se è stato utilizzato lo script di avvio in UNIX®, è necessario utilizzare lo script di arresto per arrestare AEM.
+  * Se AEM è stato avviato da uno script o dalla riga di comando, premere **Ctrl+C** per arrestare il server.
+  * Se è stato utilizzato lo script di avvio in UNIX®, è necessario utilizzare lo script di arresto per arrestare AEM.
 
 * Se hai avviato AEM facendo doppio clic sul file jar, fai clic sul pulsante **On** nella finestra di avvio (il pulsante diventa **Off**) per arrestare il server.
 

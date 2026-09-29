@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 7ae41982-8438-41a6-91f9-3b3b6755a39b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 5%
-
+source-wordcount: '404'
+ht-degree: 7%
 ---
-
 # Creazione di un Cloud Service personalizzato{#creating-a-custom-cloud-service}
 
 Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Service personalizzati. Questo consente di inserire un markup personalizzato nella pagina in modo strutturato. Questa funzione è utile principalmente per i provider di analisi di terze parti, ad esempio Google Analytics, Chartbeat e così via. I servizi cloud vengono ereditati dalle pagine padre alle pagine figlie con la possibilità di interrompere l’ereditarietà a qualsiasi livello.
@@ -83,12 +92,12 @@ Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Servic
    * **Tipo**: `cq:Dialog`
    * **Proprietà**:
 
-      * **Nome**: `title`
-      * **Tipo**: `String`
-      * **Valore**: `Google Analytics Config`
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valore**: `dialog`
+     * **Nome**: `title`
+     * **Tipo**: `String`
+     * **Valore**: `Google Analytics Config`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valore**: `dialog`
 
 1. Crea un nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
@@ -96,9 +105,9 @@ Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Servic
    * **Tipo**: `cq:Widget`
    * **Proprietà**:
 
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valore**: `tabpanel`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valore**: `tabpanel`
 
 1. Crea un nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
@@ -111,9 +120,9 @@ Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Servic
    * **Tipo**: `cq:Panel`
    * **Proprietà**:
 
-      * **Nome**: `title`
-      * **Tipo**: `String`
-      * **Valore**: `Config`
+     * **Nome**: `title`
+     * **Tipo**: `String`
+     * **Valore**: `Config`
 
 1. Crea un nodo in `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
@@ -121,23 +130,23 @@ Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Servic
    * **Tipo**: `nt:unstructured`
    * **Proprietà**:
 
-      * **Nome**: `fieldLabel`
-      * **Tipo**: Stringa
-      * **Valore**: ID account
+     * **Nome**: `fieldLabel`
+     * **Tipo**: Stringa
+     * **Valore**: ID account
 
-      * **Nome**: `fieldDescription`
-      * **Tipo**: `String`
-      * **Valore**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
+     * **Nome**: `fieldDescription`
+     * **Tipo**: `String`
+     * **Valore**: `The account ID assigned by Google. Usually in the form UA-NNNNNN-N`
 
-      * **Nome**: `name`
-      * **Tipo**: `String`
-      * **Valore**: `./accountID`
-      * **Nome**: `validateOnBlur`
-      * **Tipo**: `String`
-      * **Valore**: `true`
-      * **Nome**: `xtype`
-      * **Tipo**: `String`
-      * **Valore**: `textfield`
+     * **Nome**: `name`
+     * **Tipo**: `String`
+     * **Valore**: `./accountID`
+     * **Nome**: `validateOnBlur`
+     * **Tipo**: `String`
+     * **Valore**: `true`
+     * **Nome**: `xtype`
+     * **Tipo**: `String`
+     * **Valore**: `textfield`
 
 1. Copiare `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` in `/apps/acs/analytics/components/googleanalyticspage/body.jsp` e modificare `libs` in `apps` alla riga 34 e rendere il riferimento allo script alla riga 79 un percorso completo.
 1. Crea un modello in `/apps/acs/analytics/templates/`:
@@ -147,8 +156,8 @@ Il set predefinito di Cloud Services può essere esteso con tipi di Cloud Servic
    * con **Titolo**= `Google Analytics Configuration`
    * con **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * con **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * con **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (nel nodo modello, non nel nodo jcr:content)
-   * con **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in jcr:content)
+   * con **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (nel nodo del modello, non nel nodo jcr:content)
+   * con **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (su jcr:content)
 
 1. Creare un componente: `/apps/acs/analytics/components/googleanalytics`.
 

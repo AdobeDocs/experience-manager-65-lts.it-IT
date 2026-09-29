@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d9318173-c598-4de0-bbbe-2c094da8afa6
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
-
 # Configurazione del tracciamento dei collegamenti per Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Quando gli utenti fanno clic sui collegamenti nelle pagine del sito web, è possibile acquisire informazioni correlate in Adobe Analytics. Ad esempio, utilizza il tracciamento dei collegamenti per scoprire come gli utenti interagiscono con il sito, tracciare i download dei file e tenere traccia dei collegamenti di uscita.
@@ -88,7 +97,7 @@ Definisce i filtri per la corrispondenza con gli URL dei collegamenti interni. Q
 
   Il valore predefinito è `'javascript:,'+window.location.hostname`
 
-* **Lascia Stringa Di Query**
+* **Lascia stringa di query**
 Include i parametri URL durante la valutazione delle corrispondenze con filtri interni ed esterni.
 
   Abilita questa opzione se desideri includere i parametri URL durante la valutazione degli URL di destinazione del collegamento rispetto ai filtri esterni e interni.

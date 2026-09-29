@@ -1,5 +1,5 @@
 ---
-title: Scelta di Adobe Analytics e Adobe Target
+title: Adesione ad Adobe Analytics e Adobe Target
 description: Scopri come partecipare ad Adobe Analytics e Adobe Target.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: d872078f-3aa0-4abe-ac2a-74a1cd47b219
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 9%
 ---
-
-# Scelta di Adobe Analytics e Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# Adesione ad Adobe Analytics e Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM dispone di una procedura opt-in per facilitare l’integrazione con Adobe Analytics e Adobe Target. Questa è un’attività preconfigurata e può essere assegnata al gruppo di utenti amministratori.
 
@@ -160,7 +169,7 @@ Non è necessario modificare le configurazioni cloud. Tuttavia, puoi configurare
 >
 >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
 >
->Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+>Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell&#39;istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
 >
 >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Apporta le modifiche direttamente a tali componenti.
 
@@ -180,9 +189,9 @@ I parametri inviati dipendono dai seguenti elementi:
 
 * Se desideri utilizzare il file **marketingcloud.properties** compilato con tutte le credenziali richieste, devi inviare i seguenti parametri:
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=percorso di una pagina AEM a cui allegare le configurazioni dei servizi cloud create
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=percorso di una pagina AEM a cui allegare le configurazioni dei servizi cloud create
 
   Ad esempio, una richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we.retail è:
 
@@ -191,17 +200,17 @@ I parametri inviati dipendono dai seguenti elementi:
   ```
 
 * Se non desideri utilizzare il file **marketingcloud.properties**, devi inviare le credenziali e i parametri. Ad esempio:
-   * automaticProvisioning= `true`
-   * nomeserver= `analytics|target`
-   * path=path to an AEM page to attach the created cloud services configs; è possibile definire più percorsi
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * nomeserver= `analytics|target`
+  * path=path to an AEM page to attach the created cloud services configs; è possibile definire più percorsi
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   In questo caso, la richiesta curl che crea configurazioni sia di Analytics che di Target e le allega alla pagina we-retail è:
 

@@ -9,13 +9,22 @@ feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 893d04cb-3a71-4400-9ca4-62ad46aacfdd
-source-git-commit: 4c6423d295aa93f6f7048a5ac919b551f3f305d7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 0%
-
+source-wordcount: '1942'
+ht-degree: 1%
 ---
-
 # Utenti del servizio in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
 ## Panoramica {#overview}
@@ -40,31 +49,31 @@ Molti problemi possono essere risolti ristrutturando il contenuto. Durante la ri
 
 * **Modifica controllo dell&#39;accesso**
 
-   * Assicurati che gli utenti o i gruppi che necessitano effettivamente di accesso abbiano effettivamente accesso;
+  * Assicurati che gli utenti o i gruppi che necessitano effettivamente di accesso abbiano effettivamente accesso;
 
 * **Perfeziona struttura contenuto**
 
-   * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
-   * Modificare la granularità del contenuto;
+  * Spostalo in altre posizioni, ad esempio, in cui il controllo di accesso corrisponde alle sessioni di richiesta disponibili;
+  * Modificare la granularità del contenuto;
 
 * **Effettua il refactoring del codice per renderlo un servizio appropriato**
 
-   * Sposta la logica di business dal codice JSP al servizio. Questo consente una modellazione del contenuto diversa.
+  * Sposta la logica di business dal codice JSP al servizio. Questo consente una modellazione del contenuto diversa.
 
 Inoltre, assicurati che tutte le nuove funzioni sviluppate siano conformi ai seguenti principi:
 
 * **I requisiti di sicurezza devono guidare la struttura del contenuto**
 
-   * La gestione del controllo degli accessi dovrebbe essere naturale
-   * Il controllo degli accessi deve essere applicato dall&#39;archivio, non dall&#39;applicazione
+  * La gestione del controllo degli accessi dovrebbe essere naturale
+  * Il controllo degli accessi deve essere applicato dall&#39;archivio, non dall&#39;applicazione
 
 * **Usa tipi di nodo**
 
-   * Limita il set di proprietà che è possibile impostare
+  * Limita il set di proprietà che è possibile impostare
 
 * **Rispetta impostazioni privacy**
 
-   * Se sono presenti profili privati, un esempio potrebbe essere quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul nodo `/profile` privato.
+  * Se sono presenti profili privati, un esempio potrebbe essere quello di non esporre l’immagine del profilo, l’e-mail o il nome completo trovati sul nodo `/profile` privato.
 
 ## Controllo accesso rigoroso {#strict-access-control}
 
@@ -77,7 +86,7 @@ Sia che si applichi il controllo degli accessi durante la ristrutturazione dei c
 * Applica ACL per i tipi di nodo
 * Limita le autorizzazioni
 
-   * ad esempio, se devi solo scrivere le proprietà, non dare l&#39;autorizzazione `jcr:write`; usa invece `jcr:modifyProperties`
+  * ad esempio, se devi solo scrivere le proprietà, non dare l&#39;autorizzazione `jcr:write`; usa invece `jcr:modifyProperties`
 
 ## Utenti e mappature dei servizi {#service-users-and-mappings}
 

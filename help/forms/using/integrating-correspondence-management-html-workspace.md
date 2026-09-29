@@ -8,13 +8,33 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 exl-id: b383fa80-1643-41f3-bc6c-176727fea688
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
-
+source-wordcount: '642'
+ht-degree: 1%
 ---
-
 # Integrazione di applicazioni di terze parti nell’area di lavoro di AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms Workspace supporta la gestione delle attività di assegnazione delle attività e completamento per moduli e documenti. Questi moduli e documenti possono essere XDP Forms, Flex® Forms o Guide (obsolete) di cui è stato eseguito il rendering in formati XDP, PDF, HTML o Flex.
@@ -59,7 +79,7 @@ Utilizza i seguenti passaggi per creare un’attività per eseguire il rendering
 
 1. Fai clic su Gestisci profili azione. Viene visualizzata la finestra di dialogo Gestisci profilo azione. Verificare che il processo di rendering e il processo di invio siano selezionati in modo appropriato.
 1. Per aprire la lettera con un file XML dati, sfogliare e selezionare il file di dati appropriato nel processo di preparazione dei dati.
-1. Fare clic su OK.
+1. Fai clic su OK.
 1. Definire le variabili per Output punto iniziale e Allegati attività. Le variabili definite contengono i dati Output punto iniziale e Allegati attività.
 1. (Facoltativo) Per aggiungere un altro utente al flusso di lavoro, trascina un selettore di attività, configuralo e assegnalo a un utente. Scrivere un wrapper personalizzato (esempio fornito di seguito) o scaricare e installare il DSC (fornito di seguito) per il modello di lettera esatta, l&#39;output del punto iniziale e l&#39;allegato dell&#39;operazione.
 
@@ -101,7 +121,7 @@ Utilizza i seguenti passaggi per creare un’attività per eseguire il rendering
    ```
 
    [Ottieni file](assets/dscsample.zip)
-Scarica DSC: un esempio di DSC è disponibile nel file DSCSample.zip allegato in precedenza. Scarica e decomprimi il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Vedere [Configurare il servizio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Scarica DSC: un esempio di DSC è disponibile nel file DSCSample.zip allegato in precedenza. Scarica e decomprimi il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Vedere [Configurare il servizio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Nella finestra di dialogo Definisci attività, seleziona l&#39;attività appropriata come getLetterInstanceInfo e fai clic su **OK**.
 

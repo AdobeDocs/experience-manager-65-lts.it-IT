@@ -1,5 +1,5 @@
 ---
-title: Definizione dei test case
+title: Definizione dei casi di test
 description: I test case devono essere basati sui casi d’uso e sulle specifiche dettagliate dei requisiti
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 29943019-6ff2-440e-8cf8-4b92b0408021
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 0%
-
+source-wordcount: '532'
+ht-degree: 2%
 ---
-
-# Definizione dei test case{#defining-your-test-cases}
+# Definizione dei casi di test{#defining-your-test-cases}
 
 I test case devono essere basati su:
 
@@ -97,12 +106,12 @@ Verificare che il sito Web sia ancora disponibile quando un server viene arresta
 * **Cluster**
 Utilizzato per fornire quanto segue:
 
-   * **Failover**
-Se un server ha esito negativo, l&#39;elaborazione verrà ripresa dagli altri server del cluster.
+  * **Failover**
+    Se un server ha esito negativo, l&#39;elaborazione verrà ripresa dagli altri server del cluster.
 
-   * **Prestazioni**
-Il bilanciamento del carico con failover completo aumenta le prestazioni di un cluster.
-Se utilizzato per un progetto del cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
+  * **Prestazioni**
+    Il bilanciamento del carico con failover completo aumenta le prestazioni di un cluster.
+    Se utilizzato per un progetto del cliente, il cluster deve essere testato per confermare il corretto funzionamento della configurazione.
 
 ## Verifica del software di terze parti {#testing-third-party-software}
 

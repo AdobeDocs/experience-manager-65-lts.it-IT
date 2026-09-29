@@ -5,13 +5,21 @@ solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: c3a8c33d-2ae7-4a90-862f-3f7faf7b4eb0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 # Cockpit prodotto {#product-cockpit}
 
 ## Panoramica {#overview}
@@ -76,7 +84,7 @@ Facendo clic sull&#39;icona delle proprietà di un prodotto o di una categoria s
 
 ### Schede Commerce {#tabs}
 
-Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (inclusi variants) è un dato di sola lettura in AEM, in quanto il sistema di registrazione è il back-end per l’e-commerce. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
+Le schede Generale e Variante mostrano le proprietà commerce predefinite provenienti dal backend di e-commerce. Questi dati (incluse le varianti) sono dati di sola lettura in AEM, in quanto il sistema di registrazione è il backend per e-commerce. La scheda Variante viene visualizzata solo per i prodotti con varianti e mostra un elenco di tutte le varianti.
 
 ![proprietà catalogo](/help/commerce/cif/assets/catalog-properties.png)
 

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: aea2daf6-c1e2-4e17-8c3f-6b25c693a45c
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # Partecipazione ai flussi di lavoro{#participating-in-workflows}
 
 In genere i flussi di lavoro includono passaggi che richiedono di eseguire un’attività su una pagina o una risorsa. Il flusso di lavoro seleziona un utente o un gruppo per eseguire l’attività e assegna un elemento di lavoro a tale persona o gruppo.
@@ -34,9 +43,9 @@ Per elaborare un elemento di lavoro è possibile eseguire le azioni seguenti:
 
   Gli utenti disponibili per la delega dipendono dal tipo di assegnatario dell’elemento di lavoro:
 
-   * Se l’elemento di lavoro è stato assegnato a un gruppo, sono disponibili i membri del gruppo.
-   * Se l’elemento di lavoro è stato assegnato a un gruppo e poi è stato delegato a un utente, sono disponibili i membri del gruppo e il gruppo.
-   * Se l’elemento di lavoro è stato assegnato a un singolo utente, l’elemento di lavoro non può essere delegato.
+  * Se l’elemento di lavoro è stato assegnato a un gruppo, sono disponibili i membri del gruppo.
+  * Se l’elemento di lavoro è stato assegnato a un gruppo e poi è stato delegato a un utente, sono disponibili i membri del gruppo e il gruppo.
+  * Se l’elemento di lavoro è stato assegnato a un singolo utente, l’elemento di lavoro non può essere delegato.
 
 * **Indietro**
 

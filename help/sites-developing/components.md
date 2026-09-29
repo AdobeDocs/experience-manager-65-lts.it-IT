@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 364eebca-b4cf-470b-994e-9e56ec68597b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 54%
-
 ---
-
 # Panoramica dei componenti{#components-overview}
 
 Questa pagina fornisce una panoramica dei componenti di Adobe Experience Manager (AEM) come quelli [utilizzati per l’authoring delle pagine](/help/sites-authoring/default-components-foundation.md).
@@ -109,7 +118,7 @@ Le pagine seguenti forniscono informazioni più dettagliate sullo sviluppo di qu
 * [Utilizzo di Nascondi condizioni](/help/sites-developing/hide-conditions.md)
 * Interfaccia classica
 
-   * [Componenti di AEM (interfaccia classica)](/help/sites-developing/developing-components-classic.md)
-   * [Utilizzo ed estensione dei widget (interfaccia classica)](/help/sites-developing/widgets.md)
-   * [Utilizzo di xtypes (interfaccia classica)](/help/sites-developing/xtypes.md)
-   * [Sviluppo di moduli (interfaccia classica)](/help/sites-developing/developing-forms.md)
+  * [Componenti di AEM (interfaccia classica)](/help/sites-developing/developing-components-classic.md)
+  * [Utilizzo ed estensione dei widget (interfaccia classica)](/help/sites-developing/widgets.md)
+  * [Utilizzo di xtypes (interfaccia classica)](/help/sites-developing/xtypes.md)
+  * [Sviluppo di moduli (interfaccia classica)](/help/sites-developing/developing-forms.md)

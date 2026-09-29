@@ -1,5 +1,5 @@
 ---
-title: Incorporazione di un componente collegamento in una pagina
+title: Incorporazione del componente collegamento in una pagina
 description: Puoi utilizzare il componente collegamento per collegare un documento adattivo o un modulo adattivo da qualsiasi pagina.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,27 @@ solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
 exl-id: a6ae1633-63a8-4364-b298-bc569459a136
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 4%
 ---
-
-# Incorporazione di un componente collegamento in una pagina{#embedding-link-component-in-a-page}
+# Incorporazione del componente collegamento in una pagina{#embedding-link-component-in-a-page}
 
 ## Prerequisiti {#prerequisites}
 
@@ -56,6 +69,6 @@ Per aggiungere un componente Collegamento alla pagina, effettua le seguenti oper
 * Accertati di selezionare PDF come tipo di rendering se il percorso specificato in Percorso modulo punta a un documento il cui formato di rendering è PDF.
 * È possibile specificare l&#39;URL di invio per un modulo in più posizioni e il relativo ordine di precedenza è il seguente:
 
-   1. L’URL di invio incorporato nel modulo (nel pulsante di invio) ha la priorità più alta.
-   1. L’URL di invio menzionato in Forms Manager ha la priorità media.
-   1. L’URL di invio menzionato nel portale dei moduli ha la priorità più bassa.
+  1. L’URL di invio incorporato nel modulo (nel pulsante di invio) ha la priorità più alta.
+  1. L’URL di invio menzionato in Forms Manager ha la priorità media.
+  1. L’URL di invio menzionato nel portale dei moduli ha la priorità più bassa.

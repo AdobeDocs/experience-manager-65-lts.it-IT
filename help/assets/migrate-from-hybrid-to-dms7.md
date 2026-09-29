@@ -10,13 +10,29 @@ role: User, Admin
 feature: Scene7 Mode,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
 exl-id: 7d21d993-f7a3-4c12-aa4d-03057c8f29fc
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: ee69dd13-2aba-4eb0-912b-399e82368d73
+    internal-label: Scene7 mode
+  - id: cf50b0d2-df62-495c-a741-4fa0284ca4fc
+    internal-label: Hybrid mode
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 2%
-
 ---
-
 # Informazioni sul passaggio da Dynamic Media-Hybrid a Dynamic Media-Scene7 {#about-migrating}
 
 Dynamic Media-Hybrid è una versione precedente dell’integrazione Dynamic Media con Adobe Experience Manager. La versione ibrida è stata introdotta in Adobe Experience Manager 6.1. Anche se Adobe continua a supportare la modalità ibrida, non è la modalità preferita; Dynamic Media-Scene7 è la modalità preferita da utilizzare. La modalità ibrida non supporta nuove funzioni, come Ritaglio avanzato e immagini panoramiche, mentre Dynamic Media-Scene7 le supporta.

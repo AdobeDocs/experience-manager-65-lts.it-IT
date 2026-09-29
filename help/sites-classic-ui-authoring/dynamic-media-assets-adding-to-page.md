@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 163c1f4e-7d90-44dd-84e7-9f02a9508783
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 2%
-
 ---
-
 # Aggiunta di risorse Dynamic Media alle pagine{#adding-dynamic-media-assets-to-pages}
 
 Per aggiungere la funzionalità Dynamic Media alle risorse utilizzate nei siti Web, puoi aggiungere il componente **[!UICONTROL Dynamic Media]** o **[!UICONTROL Interactive Media]** direttamente nella pagina. Attiva la modalità **[!UICONTROL Progettazione]** e abilita i componenti Dynamic Media. Quindi, potrai aggiungere questi componenti alla pagina e fornire così risorse al componente. I componenti Dynamic Media e gli elementi multimediali interattivi sono intelligenti: rilevano l’aggiunta di un’immagine o di un video e le opzioni disponibili cambiano di conseguenza.

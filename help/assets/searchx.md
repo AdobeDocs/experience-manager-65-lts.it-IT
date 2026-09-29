@@ -1,18 +1,27 @@
 ---
 title: Estendere la funzionalità di ricerca
-description: Estendi le funzionalità di ricerca di  [!DNL Adobe Experience Manager Assets]  oltre i valori predefiniti.
+description: Estendere le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets] oltre i valori predefiniti.
 contentOwner: AG
 role: Developer
 feature: Search
 solution: Experience Manager, Experience Manager Assets
 exl-id: 92efe52b-8fa5-4006-bd68-2472b4ba04f6
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '827'
+ht-degree: 7%
 ---
-
 # Estendere la ricerca delle risorse {#extending-assets-search}
 
 È possibile estendere le funzionalità di ricerca di [!DNL Adobe Experience Manager Assets]. [!DNL Experience Manager Assets] cerca le risorse per stringhe.
@@ -140,7 +149,7 @@ Per creare un predicato di proprietà:
    </script>
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo **cq:editConfig** di tipo primario **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** con un singolo valore di **DELETE**.
 1. Passa al browser e, nella pagina di esempio (ad esempio, **press.html**), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 
 1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca**). Inserire il componente nella colonna **Predicati** e digitare una parola di ricerca, ad esempio **Rombo**, quindi fare clic sulla lente di ingrandimento per avviare la ricerca.
@@ -244,7 +253,7 @@ Per creare un predicato di gruppo:
        });
    ```
 
-1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungi un nodo **cq:editConfig** di tipo principale **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** che presenta un singolo valore **DELETE**.
+1. Per rendere disponibile il componente, devi essere in grado di modificarlo. Per rendere modificabile un componente, in CRXDE aggiungere un nodo **cq:editConfig** di tipo primario **cq:EditConfig**. Per rimuovere i paragrafi, aggiungi una proprietà con più valori **cq:actions** con un singolo valore di **DELETE**.
 1. Passa al browser e, nella pagina di esempio (ad esempio, **press.html**), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo predicato (ad esempio, **left**).
 1. In modalità **Modifica**, il nuovo componente è ora disponibile nella barra laterale (nel gruppo **Ricerca**). Inserire il componente nella colonna **Predicati**.
 

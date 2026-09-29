@@ -6,13 +6,29 @@ feature: Viewers
 role: User,Admin,Developer
 solution: Experience Manager, Experience Manager Assets
 exl-id: 3aea14f7-052d-4f23-b65d-e648623146e7
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6920'
+source-wordcount: '6924'
 ht-degree: 7%
-
 ---
-
 # Integrare i visualizzatori Dynamic Media con i tag di Adobe Analytics e Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Cos’è l’integrazione dei visualizzatori Dynamic Media con i tag di Adobe Analytics e Experience Platform? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -220,13 +236,13 @@ Il valore esatto restituito dall’elemento dati dipende dal contesto. Se l’el
 * L&#39;elemento dati **[!UICONTROL ZoomScale]** punta all&#39;evento **[!UICONTROL ZOOM]** e al relativo argomento &quot;scale&quot;.
 * **[!UICONTROL Regola TrackPan]** con quanto segue:
 
-   * Utilizza l&#39;evento **[!UICONTROL PAN]** del visualizzatore Dynamic Media come attivatore.
-   * Invia il valore dell&#39;elemento dati **[!UICONTROL ZoomScale]** ad Adobe Analytics.
+  * Utilizza l&#39;evento **[!UICONTROL PAN]** del visualizzatore Dynamic Media come attivatore.
+  * Invia il valore dell&#39;elemento dati **[!UICONTROL ZoomScale]** ad Adobe Analytics.
 
 * Regola **[!UICONTROL TrackKey]** con:
 
-   * Utilizza l’evento di pressione chiave dall’estensione Core Experience Platform Tags come attivatore.
-   * Invia il valore dell&#39;elemento dati **[!UICONTROL ZoomScale]** ad Adobe Analytics.
+  * Utilizza l’evento di pressione chiave dall’estensione Core Experience Platform Tags come attivatore.
+  * Invia il valore dell&#39;elemento dati **[!UICONTROL ZoomScale]** ad Adobe Analytics.
 
 Ora, supponiamo che l’utente finale carichi la pagina web con i due visualizzatori. In *visualizzatore1* viene eseguito lo zoom avanti del 50%, quindi in *visualizzatore2* viene eseguito lo zoom avanti del 25%. In *viewer1* viene eseguita una panoramica dell&#39;immagine e infine viene selezionato un tasto sulla tastiera.
 
@@ -755,8 +771,8 @@ La configurazione di Experience Manager prevede i due passaggi principali seguen
    * **[!UICONTROL Server autorizzazioni]** - Tornare alla pagina dei dettagli di integrazione aperta in precedenza. Seleziona la scheda **[!UICONTROL JWT]**. Copiare il nome del server, senza il percorso, come evidenziato di seguito.
 
    Torna alla pagina **[!UICONTROL Account]**, quindi incolla il nome nel rispettivo campo.
-Ad esempio, `https://ims-na1.adobelogin.com/`
-(il nome del server è solo un esempio)
+   Ad esempio, `https://ims-na1.adobelogin.com/`
+   (il nome del server è solo un esempio)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

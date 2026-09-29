@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d44e6ea8-b4e5-4ed7-a6d0-de1da2709e18
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 1%
-
+source-wordcount: '2446'
+ht-degree: 2%
 ---
-
 # Sviluppo di componenti Adobe Experience Manager (AEM) (interfaccia classica){#developing-aem-components-classic-ui}
 
 L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’aspetto dei componenti. A causa della natura di questi widget, ci sono alcune differenze tra il modo in cui i componenti interagiscono con l&#39;interfaccia classica e l&#39;[interfaccia touch](/help/sites-developing/developing-components.md).
@@ -29,7 +38,7 @@ L’interfaccia classica utilizza ExtJS per creare widget che forniscono l’asp
 >
 >Anche se sia HTML Template Language (HTL) che JSP possono essere utilizzati per lo sviluppo di componenti per l’interfaccia utente classica, questa pagina illustra lo sviluppo con JSP. Ciò è dovuto esclusivamente alla cronologia dell’utilizzo di JSP nell’interfaccia classica.
 >
->HTL è ora il linguaggio di script consigliato per AEM. Consulta [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=it) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
+>HTL è ora il linguaggio di script consigliato per AEM. Consulta [HTL](https://experienceleague.adobe.com/it/docs/experience-manager-htl/content/overview) e [Sviluppo di componenti AEM](/help/sites-developing/developing-components.md) per confrontare i metodi.
 
 ## Struttura {#structure}
 
@@ -63,20 +72,20 @@ Riepilogo:
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` - Oggetto richiesta racchiuso ( `SlingHttpServletRequest`).
-   * `slingResponse` - Oggetto risposta racchiuso ( `SlingHttpServletResponse`).
-   * `resource` - Oggetto Risorsa Sling ( `slingRequest.getResource();`).
-   * `resourceResolver` - Oggetto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
-   * `currentNode` - Nodo JCR risolto per la richiesta.
-   * `log` - Logger predefinito ().
-   * `sling` - Helper dello script Sling.
-   * `properties` - Proprietà della risorsa indirizzata ( `resource.adaptTo(ValueMap.class);`).
-   * `pageProperties` - Proprietà della pagina della risorsa indirizzata.
-   * `pageManager` - Gestore pagine per l&#39;accesso alle pagine di contenuto AEM ( `resourceResolver.adaptTo(PageManager.class);`).
-   * `component` - L&#39;oggetto componente del componente AEM corrente.
-   * `designer` - Oggetto Designer per il recupero delle informazioni di progettazione ( `resourceResolver.adaptTo(Designer.class);`).
-   * `currentDesign` - Progettazione della risorsa indirizzata.
-   * `currentStyle` - Stile della risorsa indirizzata.
+  * `slingRequest` - Oggetto richiesta racchiuso ( `SlingHttpServletRequest`).
+  * `slingResponse` - Oggetto risposta racchiuso ( `SlingHttpServletResponse`).
+  * `resource` - Oggetto Risorsa Sling ( `slingRequest.getResource();`).
+  * `resourceResolver` - Oggetto Sling Resource Resolver ( `slingRequest.getResoucreResolver();`).
+  * `currentNode` - Nodo JCR risolto per la richiesta.
+  * `log` - Logger predefinito ().
+  * `sling` - Helper dello script Sling.
+  * `properties` - Proprietà della risorsa indirizzata ( `resource.adaptTo(ValueMap.class);`).
+  * `pageProperties` - Proprietà della pagina della risorsa indirizzata.
+  * `pageManager` - Gestore pagine per l&#39;accesso alle pagine di contenuto AEM ( `resourceResolver.adaptTo(PageManager.class);`).
+  * `component` - L&#39;oggetto componente del componente AEM corrente.
+  * `designer` - Oggetto Designer per il recupero delle informazioni di progettazione ( `resourceResolver.adaptTo(Designer.class);`).
+  * `currentDesign` - Progettazione della risorsa indirizzata.
+  * `currentStyle` - Stile della risorsa indirizzata.
 
 ### Accesso al contenuto {#accessing-content}
 
@@ -164,8 +173,8 @@ Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possi
 
    * aggiunta di un campo nella finestra di dialogo
 
-      * `cq:dialog` - finestra di dialogo per l&#39;interfaccia touch
-      * `dialog` - finestra di dialogo per l&#39;interfaccia classica
+     * `cq:dialog` - finestra di dialogo per l&#39;interfaccia touch
+     * `dialog` - finestra di dialogo per l&#39;interfaccia classica
 
    * sostituzione del file `.jsp` (denominalo dopo il nuovo componente)
    * o rielaborazione completa dell&#39;intero componente, se si desidera
@@ -278,16 +287,16 @@ Per creare il componente, utilizzate il componente textimage standard come base 
 
    * Nome componente
 
-      * Imposta `jcr:description` su `Text Image Component (Extended)`
-      * Imposta `jcr:title` su `Text Image (Extended)`
+     * Imposta `jcr:description` su `Text Image Component (Extended)`
+     * Imposta `jcr:title` su `Text Image (Extended)`
 
    * Gruppo, in cui il componente è elencato nella barra laterale (lascia invariato)
 
-      * Lascia `componentGroup` impostato su `General`
+     * Lascia `componentGroup` impostato su `General`
 
    * Componente padre del nuovo componente (il componente textimage standard)
 
-      * Imposta `sling:resourceSuperType` su `foundation/components/textimage`
+     * Imposta `sling:resourceSuperType` su `foundation/components/textimage`
 
    Dopo questo passaggio, il nodo del componente si presenta così:
 
@@ -305,24 +314,24 @@ Per creare il componente, utilizzate il componente textimage standard come base 
 
    * Per le prime due schede (tab1 e tab2):
 
-      * Cambia xtype in cqinclude (per ereditare dal componente standard).
-      * Aggiungere una proprietà di percorso con i valori `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, rispettivamente.
-      * Rimuovi tutte le altre proprietà o sottonodi.
+     * Cambia xtype in cqinclude (per ereditare dal componente standard).
+     * Aggiungere una proprietà di percorso con i valori `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` e `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, rispettivamente.
+     * Rimuovi tutte le altre proprietà o sottonodi.
 
    * Per tab3:
 
-      * Lascia le proprietà e i sottonodi senza modifiche
-      * Aggiungi una definizione di campo a `tab3/items`, posizione nodo di tipo `cq:Widget`
-      * Impostare le seguenti proprietà (di tipo String) per il nuovo nodo `tab3/items/position`:
+     * Lascia le proprietà e i sottonodi senza modifiche
+     * Aggiungi una definizione di campo a `tab3/items`, posizione nodo di tipo `cq:Widget`
+     * Impostare le seguenti proprietà (di tipo String) per il nuovo nodo `tab3/items/position`:
 
-         * `name`: `./imagePosition`
-         * `xtype`: `selection`
-         * `fieldLabel`: `Image Position`
-         * `type`: `select`
+       * `name`: `./imagePosition`
+       * `xtype`: `selection`
+       * `fieldLabel`: `Image Position`
+       * `type`: `select`
 
-      * Aggiungere il sottonodo `position/options` di tipo `cq:WidgetCollection` per rappresentare le due scelte per il posizionamento dell&#39;immagine e sotto di esso creare due nodi, o1 e o2 di tipo `nt:unstructured`.
-      * Per il nodo `position/options/o1` impostare le proprietà: `text` su `Left` e `value` su `left.`
-      * Per il nodo `position/options/o2` impostare le proprietà: `text` su `Right` e `value` su `right`.
+     * Aggiungere il sottonodo `position/options` di tipo `cq:WidgetCollection` per rappresentare le due scelte per il posizionamento dell&#39;immagine e sotto di esso creare due nodi, o1 e o2 di tipo `nt:unstructured`.
+     * Per il nodo `position/options/o1` impostare le proprietà: `text` su `Left` e `value` su `left.`
+     * Per il nodo `position/options/o2` impostare le proprietà: `text` su `Right` e `value` su `right`.
 
    * Elimina scheda4.
 

@@ -6,13 +6,27 @@ role: User, Admin
 mini-toc-levels: 4
 solution: Experience Manager, Experience Manager Assets
 exl-id: 99cd5f46-f1aa-46f5-b112-311724e00490
-source-git-commit: 298d0505a6c0561202e77008b3c352066d4e72b7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2530'
 ht-degree: 0%
-
 ---
-
 # Configurare le impostazioni generali di Dynamic Media
 
 La configurazione delle **[!UICONTROL impostazioni generali di Dynamic Media]** è disponibile solo se:
@@ -47,7 +61,7 @@ Vedi anche [Facoltativo - Impostazione e configurazione di Dynamic Media - Impos
    * Scheda [PDF](#pdf-tab)
    * Scheda [Illustrator](#illustrator-tab)
 
-   ![Pagina Impostazioni generali di Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
+   ![Pagina Impostazioni generali Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
    *Pagina Impostazioni generali Dynamic Media, con la scheda **[!UICONTROL Modifica immagine]**&#x200B;selezionata.*<br><br>
 
 1. Al termine, vicino all&#39;angolo superiore destro della pagina, seleziona **[!UICONTROL Salva]**.
@@ -59,7 +73,7 @@ Al momento della creazione dell’account, Adobe Dynamic Media fornisce automati
 | Opzione | Descrizione |
 | --- | --- |
 | **[!UICONTROL Nome server pubblicato]** | Obbligatorio.<br>Il nome deve utilizzare `https://` nel percorso.<br>Questo server è il server Live CDN (Content Deliver Network) utilizzato in tutte le chiamate URL generate dal sistema e specifiche per il tuo account. Non modificare questo nome server a meno che non sia stato richiesto dal supporto tecnico Adobe. |
-| **[!UICONTROL Nome server di origine]** | Obbligatorio.<br>Questo server viene utilizzato solo per il test di controllo qualità. Non modificare il nome di questo server a meno che non sia richiesto dal supporto tecnico Adobe. |
+| **[!UICONTROL Nome server di origine]** | Obbligatorio.<br>Questo server viene utilizzato solo per i test di controllo qualità. Non modificare il nome di questo server a meno che non sia richiesto dal supporto tecnico Adobe. |
 
 ## Carica nell’applicazione {#upload-to-application}
 
@@ -95,9 +109,9 @@ L&#39;effetto Maschera di contrasto utilizza le stesse opzioni del filtro Masche
 | Opzioni Maschera definizione dettagli | Descrizione |
 | --- | --- |
 | **[!UICONTROL Importo]** | Obbligatorio.<br>Controlla la quantità di contrasto applicata ai pixel del bordo.<br>Consideralo come l&#39;intensità dell&#39;effetto. La differenza principale tra i valori di quantità di Maschera di contrasto in Adobe Dynamic Media e i valori di quantità in Adobe Photoshop è che Photoshop ha un intervallo tra l’1% e il 500%. In Adobe Dynamic Media, invece, l&#39;intervallo di valori è compreso tra `0.0` e `5.0`. In Adobe Dynamic Media, il valore 5.0 è l’equivalente approssimativo del 500% in Photoshop; il valore 0.9 è l’equivalente del 90% e così via. |
-| **[!UICONTROL Raggio]** | Obbligatorio.<br>Controlla il raggio dell&#39;effetto.<br>L&#39;intervallo di valori è compreso tra `0` e `250`. L&#39;effetto viene eseguito su tutti i pixel di un&#39;immagine e si irradia da tutti i pixel in tutte le direzioni. Il raggio è misurato in pixel. Ad esempio, per ottenere un effetto di nitidezza simile per un&#39;immagine da 2000 x 2000 pixel e per un&#39;immagine da 500 x 500 pixel, è necessario impostare un raggio di due pixel sull&#39;immagine da 2000 x 2000 pixel. Quindi impostate un valore di raggio di un pixel sull&#39;immagine da 500 x 500 pixel. Un valore più grande viene utilizzato per un&#39;immagine con più pixel. |
-| **[!UICONTROL Soglia]** | Obbligatorio.<br>Soglia è un intervallo di contrasto che viene ignorato quando si applica il filtro Maschera di contrasto. Questo effetto è importante in modo che non venga introdotto alcun &quot;disturbo&quot; in un&#39;immagine quando si utilizza questo filtro. L&#39;intervallo di valori è compreso tra `0` e `255`, ovvero il numero di passaggi di luminosità in un&#39;immagine in scala di grigio. `0`=nero, `128`=grigio 50% e `255`=bianco.<br>Un valore di soglia di `12` ignora le variazioni lievi della luminosità della tonalità della pelle per evitare di aggiungere rumore, ma aggiunge comunque contrasto ai bordi delle aree in cui le ciglia incontrano la pelle.<br>Se hai una foto del volto di qualcuno, la Maschera definizione dettagli influisce sulle parti in contrasto dell&#39;immagine. Ad esempio, dove ciglia e pelle si incontrano per creare un’area di contrasto evidente e la pelle liscia stessa. Anche la pelle più liscia mostra lievi variazioni nei valori di luminosità. Se non utilizzi un valore di soglia, il filtro accentua queste sottili modifiche nei pixel della pelle. A sua volta, si crea un effetto rumoroso e indesiderato, mentre il contrasto sulle ciglia aumenta, aumentando la nitidezza.<br>Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel che non cambiano in modo significativo il contrasto, come lo skin uniforme.<br>Nell&#39;immagine della cerniera mostrata in precedenza, notare la trama accanto alle cerniere. Viene visualizzato disturbo dell&#39;immagine perché i valori di soglia erano troppo bassi per sopprimere il disturbo. |
-| **[!UICONTROL Monocromatico]** | Selezionate questa opzione per applicare una maschera di contrasto alla luminosità (intensità) dell&#39;immagine.<br>Deselezionate questa opzione per applicare una maschera di contrasto a ogni componente di colore separatamente. |
+| **[!UICONTROL Raggio]** | Elemento obbligatorio.<br>Controlla il raggio dell&#39;effetto.<br>L&#39;intervallo di valori è compreso tra `0` e `250`. L&#39;effetto viene eseguito su tutti i pixel di un&#39;immagine e si irradia da tutti i pixel in tutte le direzioni. Il raggio è misurato in pixel. Ad esempio, per ottenere un effetto di nitidezza simile per un&#39;immagine da 2000 x 2000 pixel e per un&#39;immagine da 500 x 500 pixel, è necessario impostare un raggio di due pixel sull&#39;immagine da 2000 x 2000 pixel. Quindi impostate un valore di raggio di un pixel sull&#39;immagine da 500 x 500 pixel. Un valore più grande viene utilizzato per un&#39;immagine con più pixel. |
+| **[!UICONTROL Soglia]** | Obbligatorio.<br>Soglia è un intervallo di contrasto che viene ignorato quando si applica il filtro Maschera di contrasto. Questo effetto è importante in modo che non venga introdotto alcun &quot;disturbo&quot; in un&#39;immagine quando si utilizza questo filtro. L&#39;intervallo di valori è compreso tra `0` e `255`, ovvero il numero di passaggi di luminosità in un&#39;immagine in scala di grigio. `0`=nero, `128`=grigio 50% e `255`=bianco.<br>Un valore di soglia di `12` ignora le variazioni lievi della luminosità della tonalità della pelle per evitare di aggiungere rumore, ma aggiunge comunque contrasto ai bordi delle aree in contrasto, ad esempio quelle in cui le ciglia incontrano la pelle.<br>Se hai una foto del volto di qualcuno, la Maschera definizione dettagli influisce sulle parti in contrasto dell&#39;immagine. Ad esempio, dove ciglia e pelle si incontrano per creare un’area di contrasto evidente e la pelle liscia stessa. Anche la pelle più liscia mostra lievi variazioni nei valori di luminosità. Se non utilizzi un valore di soglia, il filtro accentua queste sottili modifiche nei pixel della pelle. A sua volta, si crea un effetto rumoroso e indesiderato, mentre il contrasto sulle ciglia aumenta, aumentando la nitidezza.<br>Per evitare questo problema, viene introdotto un valore di soglia che indica al filtro di ignorare i pixel che non cambiano in modo significativo il contrasto, come lo skin uniforme.<br>Nell&#39;immagine della cerniera mostrata in precedenza, notare la trama accanto alle cerniere. Viene visualizzato disturbo dell&#39;immagine perché i valori di soglia erano troppo bassi per sopprimere il disturbo. |
+| **[!UICONTROL Monocromatico]** | Selezionare questa opzione per applicare una maschera di contrasto alla luminosità (intensità) dell&#39;immagine.<br>Deselezionare questa opzione per applicare una maschera di contrasto a ogni componente di colore separatamente. |
 
 Vedi anche [Immagini più nitide in Adobe Dynamic Media e sul server immagini](/help/assets/assets/sharpening_images.pdf).
 
@@ -114,7 +128,7 @@ Quando carichi i file immagine di PostScript (EPS), puoi formattarli in vari mod
 | **[!UICONTROL Elaborazione]** | Scegliete Rasterizza per convertire gli elementi grafici vettoriali nel file nel formato bitmap. |
 | **[!UICONTROL Mantieni sfondo trasparente nelle immagini sottoposte a rendering]** | Mantiene la trasparenza di sfondo del file. |
 | **[!UICONTROL Risoluzione (pixel/pollici)]** | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file. |
-| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte lo spazio colore in scala di grigio. |
+| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte in spazio colore Gradazioni di grigio. |
 
 ### Scheda Photoshop {#photoshop-tab}
 
@@ -126,7 +140,7 @@ Potete creare modelli da file Adobe® Photoshop®, gestire i livelli, specificar
 | **[!UICONTROL Crea modello]** | Crea un modello dai livelli nel file PSD. |
 | **[!UICONTROL Estrai testo]** | Estrae il testo in modo che gli utenti possano cercare il testo in un visualizzatore. |
 | **[!UICONTROL Estendi livelli alle dimensioni di sfondo]** | Estende le dimensioni dei livelli immagine strappati alle dimensioni del livello di sfondo. |
-| **[!UICONTROL Denominazione livello]** | Estende le dimensioni dei livelli immagine strappati alle dimensioni del livello di sfondo.<br>· **[!UICONTROL Nome livello]** - Assegna alle immagini un nome dopo i relativi nomi di livello nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un&#39;immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei livelli nel file PSD. <br>· **[!UICONTROL Photoshop e numero livello]** - Assegna alle immagini un nome dopo i relativi numeri di livello nel file PSD, ignorando i nomi di livello originali. Le immagini sono denominate con il nome del file Photoshop e un numero di livello aggiunto. Il secondo livello di un file denominato `Spring Ad.psd`, ad esempio, è denominato `Spring Ad_2` anche se in Photoshop è presente un nome non predefinito.<br>· **[!UICONTROL Photoshop e nome livello]** - Denomina le immagini dopo il file PSD seguito dal nome o dal numero del livello. Il numero di livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato `Price Tag` in un file PSD denominato `SpringAd` è denominato `Spring Ad_Price Tag`. Un livello con il nome predefinito Livello 2 è denominato `Spring Ad_2`. |
+| **[!UICONTROL Denominazione livello]** | Estende le dimensioni dei livelli immagine copiati da CD alle dimensioni del livello di sfondo.<br>· **[!UICONTROL Nome livello]** - Assegna alle immagini i nomi dei livelli nel file PSD. Ad esempio, un livello denominato Tag prezzo nel file PSD originale diventa un&#39;immagine denominata Tag prezzo. Tuttavia, se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop (Sfondo, Livello 1, Livello 2 e così via), le immagini vengono denominate in base ai numeri dei livelli nel file PSD. <br>· **[!UICONTROL Photoshop e numero livello]** - Assegna alle immagini un nome dopo i relativi numeri di livello nel file PSD, ignorando i nomi di livello originali. Le immagini sono denominate con il nome del file Photoshop e un numero di livello aggiunto. Ad esempio, il secondo livello di un file denominato `Spring Ad.psd` è denominato `Spring Ad_2` anche se in Photoshop aveva un nome non predefinito.<br>· **[!UICONTROL Photoshop e nome livello]** - Denomina le immagini dopo il file PSD seguito dal nome del livello o dal numero del livello. Il numero di livello viene utilizzato se i nomi dei livelli nel file PSD sono nomi di livello predefiniti di Photoshop. Ad esempio, un livello denominato `Price Tag` in un file PSD denominato `SpringAd` è denominato `Spring Ad_Price Tag`. Un livello con il nome predefinito Livello 2 è denominato `Spring Ad_2`. |
 | **[!UICONTROL Ancoraggio]** | Specificate il modo in cui le immagini vengono ancorate nei modelli generati dalla composizione a livelli prodotta dal file PSD. Per impostazione predefinita, l&#39;ancoraggio è il centro. Un ancoraggio centrale consente alle immagini di sostituzione di occupare al meglio lo stesso spazio, indipendentemente dalle proporzioni dell&#39;immagine di sostituzione. Le immagini con un aspetto diverso che sostituiscono questa immagine, quando si fa riferimento al modello e si utilizza la sostituzione dei parametri, occupano di fatto lo stesso spazio. Impostate un&#39;impostazione diversa se l&#39;applicazione richiede le immagini sostitutive per riempire lo spazio allocato nel modello. |
 
 ### Scheda PDF {#pdf-tab}
@@ -135,10 +149,10 @@ Potete scegliere di rasterizzare i file, estrarre parole di ricerca e collegamen
 
 | Opzione PDF | Descrizione |
 | --- | --- |
-| **[!UICONTROL Elaborazione]** | · **[!UICONTROL Nessuno]** - Non è stata eseguita alcuna elaborazione di PDF.<br>· **[!UICONTROL Miniatura]** - Ripete ogni pagina nel file PDF e la converte in un&#39;immagine di miniatura.<br> · **[!UICONTROL Rasterizza]** - Ripete le pagine nel file PDF e converte gli elementi grafici vettoriali in immagini bitmap. Per creare un eCatalog, scegliere questa opzione. |
-| **[!UICONTROL Estrai]** | · **[!UICONTROL Nessuno]** - Nessuna parola o collegamento di ricerca estratto dal PDF.<br>· **[!UICONTROL Parole di ricerca]** - Estrae le parole di ricerca dal file PDF in modo che sia possibile eseguire ricerche per parola chiave in un visualizzatore eCatalog.<br>· **[!UICONTROL Collegamenti]** - Estrae i collegamenti dai file PDF e li converte in mappe immagine utilizzate in un visualizzatore eCatalog.<br>· **[!UICONTROL Parole e collegamenti di ricerca]** - Estrae sia le parole di ricerca che i collegamenti da utilizzare in un visualizzatore eCatalog. |
+| **[!UICONTROL Elaborazione]** | · **[!UICONTROL Nessuno]** - Non è stata eseguita alcuna elaborazione del PDF.<br>· **[!UICONTROL Miniatura]** - Ripete ogni pagina nel file PDF e la converte in un&#39;immagine miniatura.<br> · **[!UICONTROL Rasterizza]** - Ripete le pagine nel file PDF e converte gli elementi grafici vettoriali in immagini bitmap. Per creare un eCatalog, scegliere questa opzione. |
+| **[!UICONTROL Estrai]** | · **[!UICONTROL Nessuno]** - Nessuna parola o collegamento di ricerca estratto da PDF.<br>· **[!UICONTROL Parole di ricerca]** - Estrae le parole di ricerca dal file di PDF in modo che il file possa essere cercato per parola chiave in un visualizzatore eCatalog.<br>· **[!UICONTROL Collegamenti]** - Estrae i collegamenti dai file di PDF e li converte in mappe immagine utilizzate in un visualizzatore eCatalog.<br>· **[!UICONTROL Parole e collegamenti di ricerca]** - Estrae sia le parole di ricerca che i collegamenti da utilizzare in un visualizzatore eCatalog. |
 | **[!UICONTROL Risoluzione (pixel/pollici)]** | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file PDF. Il valore predefinito è 150. |
-| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file PDF.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte lo spazio colore in scala di grigio. |
+| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file PDF.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte in spazio colore Gradazioni di grigio. |
 
 ### Scheda Illustrator {#illustrator-tab}
 
@@ -154,4 +168,4 @@ Quando carichi i file immagine di Illustrator (AI), puoi formattarli in vari mod
 | **[!UICONTROL Elaborazione]** | Scegliete Rasterizza per convertire gli elementi grafici vettoriali nel file nel formato bitmap. |
 | **[!UICONTROL Mantieni sfondo trasparente nelle immagini sottoposte a rendering]** | Mantiene la trasparenza di sfondo del file. |
 | **[!UICONTROL Risoluzione (pixel/pollici)]** | Determina l&#39;impostazione della risoluzione. Questa impostazione determina il numero di pixel visualizzati per pollice nel file. |
-| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte lo spazio colore in scala di grigio. |
+| **[!UICONTROL Spazio colore]** | · **[!UICONTROL Rileva automaticamente]** - Mantiene lo spazio colore del file.<br>· **[!UICONTROL Forza come RGB]** - Converte in spazio colore RGB.<br>· **[!UICONTROL Forza come CMYK]** - Converte in spazio colore CMYK.<br>· **[!UICONTROL Forza come scala di grigio]** - Converte in spazio colore Gradazioni di grigio. |

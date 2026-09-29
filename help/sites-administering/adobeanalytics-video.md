@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 420dc7d6-0e9e-47be-baef-4c79296eb69a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '1758'
-ht-degree: 0%
-
+source-wordcount: '1817'
+ht-degree: 1%
 ---
-
 # Configurazione del tracciamento video per Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Sono disponibili diversi metodi per il tracciamento degli eventi video, due dei quali sono opzioni legacy per le versioni precedenti di Adobe Analytics. Queste opzioni legacy sono: Milestone legacy e Secondi legacy.
@@ -293,26 +302,26 @@ Questo metodo è simile al metodo Milestones, con la differenza che le milestone
 
    Inoltre, le informazioni inviate ad Adobe Analytics sono meno personalizzabili; sono disponibili solo 3 variabili per la mappatura:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>Le variabili mappate a questo conterranno il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>Le variabili mappate a questo conterranno il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
+   >[!NOTE]
+   >
+   >Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
 
 1. Mappa queste variabili su prop da 1 a 3
 
@@ -350,26 +359,26 @@ Quando si utilizza il metodo **&#x200B; secondi precedenti**, le chiamate di Ado
 
    Le informazioni inviate ad Adobe Analytics sono meno personalizzabili. Sono disponibili solo 3 variabili per la mappatura:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>La variabile mappata a questo conterrà il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>Le variabili mappate a questo conterranno il nome <strong>descrittivo</strong> (<strong>Titolo</strong>) del video se impostato in DAM; se il Titolo non è impostato, verrà inviato il <strong>nome file</strong> del video. Inviato una sola volta, all'inizio della riproduzione di un video.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>La variabile mappata a questo conterrà il nome del file. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>La variabile mappata a questo conterrà il percorso del file sul server. Inviato una sola volta, all’inizio della riproduzione di un video.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
+   >[!NOTE]
+   >
+   >Puoi impostare il nome **descrittivo** di un video aprendo il video per la modifica in DAM e impostando il campo di metadati **Titolo** sul nome desiderato. Al termine, è inoltre necessario salvare le modifiche apportate.
 
 1. Mappa queste variabili su prop1, prop2 e prop3
 

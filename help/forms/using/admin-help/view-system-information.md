@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 6be4ce1d-39fe-4a25-9d4e-f1cbc593d2c7
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
-
 ---
-
 # Visualizzare le informazioni di sistema {#view-system-information}
 
 Nella scheda Sistema vengono visualizzati i grafici di monitoraggio delle risorse e le informazioni sul server che esegue AEM Forms. Per accedere a queste informazioni, nella console di amministrazione fai clic su Health Monitor nell’angolo superiore destro della pagina. Se esegui AEM Forms in un ambiente cluster, le informazioni visualizzate si riferiscono al nodo selezionato dall’elenco Server.

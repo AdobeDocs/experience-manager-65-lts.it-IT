@@ -5,13 +5,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
 exl-id: 686d5510-8cdb-49eb-9ed0-f360be9bdc6d
-source-git-commit: d680ecf942886a61579cf72f82809e3dbbcfd394
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 85%
-
+source-wordcount: '1444'
+ht-degree: 83%
 ---
-
 # Query GraphQL persistenti {#persisted-queries-caching}
 
 Le query persistenti sono query GraphQL create e memorizzate sul server Adobe Experience Manager (AEM). Possono essere richiamate tramite una richiesta GET da parte delle applicazioni client. La risposta di una richiesta GET può essere memorizzata nella cache ai livelli Dispatcher e Content Delivery Network (CDN), migliorando in ultima analisi le prestazioni dell’applicazione client richiedente. In questo sono diverse dalle query GraphQL standard, che vengono eseguite utilizzando richieste POST in cui la risposta non può essere facilmente memorizzata nella cache.
@@ -32,7 +44,7 @@ Le query persistenti devono sempre utilizzare l’endpoint correlato alla [confi
 La query ha accesso a tutti i modelli per frammenti di contenuto.
 * Configurazione/i di Sites ed endpoint specifici
 La creazione di una query persistente per una configurazione Sites specifica richiede un endpoint corrispondente specifico per la configurazione Sites (per fornire accesso ai relativi modelli per frammenti di contenuto).
-Ad esempio, per creare una query persistente specifica per la configurazione di Sites WKND, è necessario creare in anticipo una configurazione di Sites specifica per WKND corrispondente e un endpoint specifico per WKND.
+Ad esempio, per creare una query persistente per la configurazione di Sites WKND, è necessario aver già creato una configurazione di Sites specifica per WKND corrispondente e un endpoint specifico per WKND.
 
 >[!NOTE]
 >

@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: ae001541-ae7f-42ce-8236-5fbb6ddb4c1f
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '7169'
 ht-degree: 96%
-
 ---
-
 # Configurazione degli endpoint della cartella controllata {#configuring-watched-folder-endpoints}
 
 Un amministratore può configurare una cartella di rete, nota come *cartella controllata*, in modo che, quando un utente inserisce un file (ad esempio un file PDF) nella cartella controllata, venga richiamata un’operazione di servizio configurata che manipola il file. Dopo che il servizio ha eseguito l’operazione specificata, salva il file modificato in una cartella di output specificata.
@@ -159,9 +174,9 @@ Puoi utilizzare i modelli file per escludere:
 * File con nomi specifici; ad esempio, data.&ast; escluderebbe file e cartelle denominati *data1*, *data2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &ast;.`[dD][Aa]`&#39;porta&#39;
-   * &ast;.`[Xx][Mm][Ll]`
+  * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * &ast;.`[dD][Aa]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -175,9 +190,9 @@ Puoi utilizzare i pattern di file per includere:
 * File con nomi specifici; ad esempio, data.&ast; includerebbe file e cartelle denominati *data1*, *data2* e così via.
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &ast;.`[dD][Aa]`&#39;porta&#39;
-   * &ast;.`[Xx][Mm][Ll]`
+  * Dati`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * &ast;.`[dD][Aa]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 Per ulteriori informazioni sui pattern di file, consulta [Informazioni sui pattern di file](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -247,9 +262,9 @@ Gli amministratori possono specificare il tipo di file che può richiamare un se
 * File con nomi specifici. Ad esempio, data.&ast;
 * File con espressioni composite nel nome e nell’estensione, come negli esempi seguenti:
 
-   * Data`[0-9][0-9][0-9].[dD][aA]`&#39;port&#39;
-   * &ast;.`[dD][Aa]`&#39;porta&#39;
-   * &ast;.`[Xx][Mm][Ll]`
+  * Data`[0-9][0-9][0-9].[dD][aA]`&#39;port&#39;
+  * &ast;.`[dD][Aa]`&#39;porta&#39;
+  * &ast;.`[Xx][Mm][Ll]`
 
 L’amministratore può definire il modello di file della cartella di output in cui memorizzare i risultati. Per le cartelle di output (risultati, conservazione ed errori), l’amministratore può specificare uno dei seguenti modelli di file:
 
@@ -378,17 +393,17 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 * Per i pattern di file, gli amministratori possono specificare espressioni regolari con il supporto aggiuntivo di pattern con caratteri jolly. Cartella controllata modifica l&#39;espressione regolare per supportare i pattern con caratteri jolly, ad esempio &ast;.&ast; o &ast;.pdf. Questi pattern con caratteri jolly non sono supportati dalle espressioni regolari.
 * La cartella controllata analizza l’input della cartella di input ma non verifica che il file o la cartella di origine sia stato completamente copiato nella cartella di input prima di iniziare l’elaborazione. Per assicurarti che il file o la cartella di origine sia stato completamente copiato nella cartella di input della cartella controllata prima che il file o la cartella venga prelevato, esegui le operazioni seguenti:
 
-   * Usa il tempo di attesa, ovvero il tempo in millisecondi per il quale la cartella controllata resta in attesa dall’ora dell’ultima modifica. Utilizza questa funzione se devi elaborare file di grandi dimensioni. Ad esempio, se il download di un file richiede 10 minuti, specificare il tempo di attesa come 10&ast;60 &ast;1000 millisecondi. In tal modo la cartella controllata non raccogliere il file se non esisste da almeno 10 minuti.
-   * Utilizza il pattern di file di esclusione e il pattern di file di inclusione. Se ad esempio il pattern di file di esclusione è `ex*` e il pattern di file di inclusione è `in*`, la cartella controllata raccoglierà i file che iniziano con “in” e non raccoglierà i file che iniziano con “ex”. Per copiare file o cartelle di grandi dimensioni, rinomina il file o la cartella in modo che il nome inizi con “ex”. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&ast;&quot;.
+  * Usa il tempo di attesa, ovvero il tempo in millisecondi per il quale la cartella controllata resta in attesa dall’ora dell’ultima modifica. Utilizza questa funzione se devi elaborare file di grandi dimensioni. Ad esempio, se il download di un file richiede 10 minuti, specificare il tempo di attesa come 10&ast;60 &ast;1000 millisecondi. In tal modo la cartella controllata non raccogliere il file se non esisste da almeno 10 minuti.
+  * Utilizza il pattern di file di esclusione e il pattern di file di inclusione. Se ad esempio il pattern di file di esclusione è `ex*` e il pattern di file di inclusione è `in*`, la cartella controllata raccoglierà i file che iniziano con “in” e non raccoglierà i file che iniziano con “ex”. Per copiare file o cartelle di grandi dimensioni, rinomina il file o la cartella in modo che il nome inizi con “ex”. Dopo aver copiato completamente il file o la cartella denominata &quot;ex&quot; nella cartella controllata, rinominala in &quot;in&ast;&quot;.
 
 * Utilizza la durata di eliminazione per mantenere pulita la cartella dei risultati. La cartella controllata elimina tutti i file più vecchi della durata indicata nella durata di eliminazione. La durata è in giorni.
 * Quando aggiungi un endpoint cartella controllata, dopo la selezione del nome dell’operazione, viene popolata la mappatura dei parametri di input. Per ogni input dell’operazione viene generato un campo di mappatura dei parametri di input. Di seguito sono riportati alcuni esempi di mappature dei parametri di input:
 
-   * Per l’input `com.adobe.idp.Document`: se l’operazione di servizio ha un input di tipo `Document`, l’amministratore può specificare il tipo di mappatura come `Variable`. La cartella controllata preleverà l’input dalla cartella di input della cartella controllata in base al pattern di file specificato per il parametro di input. Se l’amministratore specifica come parametro `*.pdf`, ogni file con estensione .pdf verrà prelevato e convertito in `com.adobe.idp.Document` e verrà richiamato il servizio.
-   * Per l’input `java.util.Map`: se l’operazione del servizio ha un input di tipo `Map`, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.pdf`. Ad esempio, un servizio richiede una mappatura di due oggetti `com.adobe.idp.Document` che rappresentano due file nella cartella di input, come 1.pdf e 2.pdf. Nella cartella controllata verrà creata una mappatura con la chiave come nome del file e `com.adobe.idp.Document` come valore.
-   * Per l’input `java.util.List`: se l’operazione di servizio ha un input di tipo elenco, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.pdf`. Quando i file PDF vengono rilasciati nella cartella di input, la cartella controllata creerà un elenco degli oggetti `com.adobe.idp.Document` che rappresenta questi file e richiamerà il servizio di destinazione.
-   * Per `java.lang.String`: l’amministratore ha due opzioni. In primo luogo, l’amministratore può specificare il tipo di mappatura come `Literal` e immettere un valore di mappatura come stringa, ad esempio `hello.` e la cartella controllata richiamerà il servizio con la stringa `hello`. In secondo luogo, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.txt`. In quest’ultimo caso i file con estensione .txt verranno letti come un documento con valore imposto stringa per richiamare il servizio.
-   * Tipo Java primario: l’amministratore può specificare il tipo di mappatura come `Literal` e fornire il valore. La cartella controllata richiamerà il servizio con il valore specificato.
+  * Per l’input `com.adobe.idp.Document`: se l’operazione di servizio ha un input di tipo `Document`, l’amministratore può specificare il tipo di mappatura come `Variable`. La cartella controllata preleverà l’input dalla cartella di input della cartella controllata in base al pattern di file specificato per il parametro di input. Se l’amministratore specifica come parametro `*.pdf`, ogni file con estensione .pdf verrà prelevato e convertito in `com.adobe.idp.Document` e verrà richiamato il servizio.
+  * Per l’input `java.util.Map`: se l’operazione del servizio ha un input di tipo `Map`, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.pdf`. Ad esempio, un servizio richiede una mappatura di due oggetti `com.adobe.idp.Document` che rappresentano due file nella cartella di input, come 1.pdf e 2.pdf. Nella cartella controllata verrà creata una mappatura con la chiave come nome del file e `com.adobe.idp.Document` come valore.
+  * Per l’input `java.util.List`: se l’operazione di servizio ha un input di tipo elenco, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.pdf`. Quando i file PDF vengono rilasciati nella cartella di input, la cartella controllata creerà un elenco degli oggetti `com.adobe.idp.Document` che rappresenta questi file e richiamerà il servizio di destinazione.
+  * Per `java.lang.String`: l’amministratore ha due opzioni. In primo luogo, l’amministratore può specificare il tipo di mappatura come `Literal` e immettere un valore di mappatura come stringa, ad esempio `hello.` e la cartella controllata richiamerà il servizio con la stringa `hello`. In secondo luogo, l’amministratore può specificare il tipo di mappatura come `Variable` e immettere un valore di mappatura con un pattern come `*.txt`. In quest’ultimo caso i file con estensione .txt verranno letti come un documento con valore imposto stringa per richiamare il servizio.
+  * Tipo Java primario: l’amministratore può specificare il tipo di mappatura come `Literal` e fornire il valore. La cartella controllata richiamerà il servizio con il valore specificato.
 
 * La cartella controllata è concepita per funzionare con i documenti. Gli output supportati sono `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node` e un elenco e una mappa di questi tipi. Qualsiasi altro tipo genererà un output di errore nella cartella errori.
 * Se non sono presenti risultati nella cartella dei risultati, verifica la cartella errori per confermare se si è verificato un errore.
@@ -396,17 +411,17 @@ Di seguito sono riportati alcuni suggerimenti utili per la configurazione dell�
 * La creazione di cartelle controllate per le operazioni di importazione ed esportazione non consente l’astrazione dell’estensione del nome file. Quando si richiama il servizio di integrazione dei dati del modulo utilizzando le cartelle controllate, il tipo di estensione del nome file per il file di output potrebbe non corrispondere al formato di output previsto per il tipo di oggetto documento. Se ad esempio il file di input di una cartella controllata che richiama l’operazione di esportazione è un modulo XFA contenente dati, l’output deve essere un file di dati XDP. Per ottenere un file di output con l’estensione corretta, puoi specificarlo nella mappatura dei parametri di output. In questo esempio puoi utilizzare %F.xdp come mappatura dei parametri di output.
 * La cartella controllata può elaborare i file di input prima che vengano copiati completamente nella cartella. Il blocco dei file non è obbligatorio in UNIX, ma lo è in Windows. Per questo motivo, quando un file viene copiato in una cartella controllata, la cartella controllata può spostare il file nella cartella di fase senza attendere il completamento della copia del file stesso. Questo comportamento fa sì che venga elaborata solo una parte del file di input. Attualmente esistono due soluzioni alternative:
 
-   * Soluzione alternativa 1
+  * Soluzione alternativa 1
 
-      1. Specificate un pattern per Escludi pattern file, ad esempio temp&ast;.ps.
-      1. Copia i file che iniziano con temp (ad esempio, temp1.ps) nella cartella controllata.
-      1. Dopo che il file è stato copiato completamente nella cartella controllata, rinomina il file in modo che corrisponda al pattern specificato per Pattern di file di inclusione. La cartella controllata sposta quindi il file completato nella cartella di fase.
+    1. Specificate un pattern per Escludi pattern file, ad esempio temp&ast;.ps.
+    1. Copia i file che iniziano con temp (ad esempio, temp1.ps) nella cartella controllata.
+    1. Dopo che il file è stato copiato completamente nella cartella controllata, rinomina il file in modo che corrisponda al pattern specificato per Pattern di file di inclusione. La cartella controllata sposta quindi il file completato nella cartella di fase.
 
-   * Soluzione alternativa 2
+  * Soluzione alternativa 2
 
-     Se conosci il tempo massimo necessario per copiare i file in una cartella controllata, specifica il tempo di attesa in secondi. La cartella controllata attende quindi il periodo di tempo specificato prima di spostare il file nella cartella di fase.
+    Se conosci il tempo massimo necessario per copiare i file in una cartella controllata, specifica il tempo di attesa in secondi. La cartella controllata attende quindi il periodo di tempo specificato prima di spostare il file nella cartella di fase.
 
-     Questo non è un problema per i file su Windows, perché Windows blocca un file quando un thread sta scrivendo. Tuttavia, questo rappresenta problema per le cartelle su Windows. Per le cartelle devi seguire i passaggi descritti in Soluzione 1.
+    Questo non è un problema per i file su Windows, perché Windows blocca un file quando un thread sta scrivendo. Tuttavia, questo rappresenta problema per le cartelle su Windows. Per le cartelle devi seguire i passaggi descritti in Soluzione 1.
 
 * Se l’attributo dell’endpoint Mantieni nome cartella per la cartella controllata è impostato su un percorso di directory null, la directory di fase non viene cancellata come previsto. La directory contiene ancora il file elaborato e la cartella temporanea.
 
@@ -432,5 +447,5 @@ Per tutti i servizi, è necessario regolare la dimensione batch e l’intervallo
 
 * La cartella controllata si basa sul modulo di pianificazione Quartz per la scansione delle cartelle controllate. Il modulo di pianificazione Quartz dispone di un pool di thread per la scansione. Se l’intervallo di ripetizione per la cartella controllata è molto basso (&lt; 5 secondi) e la dimensione del batch è elevata (> 2), può verificarsi una situazione di tipo “race condition”. Quando si verifica questa condizione, un file viene raccolto da due thread Quartz:
 
-   * Uno dei thread trova correttamente il file e richiama il servizio di destinazione con il file.
-   * Il secondo thread visualizza il file, ma non riesce quando tenta di verificare se il file è valido (file di lettura o scrittura), causando falsi errori che indicano che il file non può essere elaborato perché è di sola lettura. Ciò si verifica solo con un intervallo di ripetizione basso e una dimensione del batch elevata.
+  * Uno dei thread trova correttamente il file e richiama il servizio di destinazione con il file.
+  * Il secondo thread visualizza il file, ma non riesce quando tenta di verificare se il file è valido (file di lettura o scrittura), causando falsi errori che indicano che il file non può essere elaborato perché è di sola lettura. Ciò si verifica solo con un intervallo di ripetizione basso e una dimensione del batch elevata.

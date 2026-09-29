@@ -4,7 +4,19 @@ description: Utilizza i componenti core per moduli adattivi di AEM per aggiunger
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 53645880-92e2-4dfd-9c5d-50c849d6e32b
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
@@ -57,8 +69,8 @@ Gli autori dei moduli possono confrontare due versioni diverse di un modulo a sc
 Una revisione è un meccanismo che consente a uno o più revisori di aggiungere commenti ai moduli. Qualsiasi utente di un modulo può aggiungere un commento a un modulo o esaminarlo tramite commenti. Per aggiungere un commento a un modulo, selezionare un **[!UICONTROL Modulo]** e aggiungere un **[!UICONTROL Commento]** al modulo.
 
 >[!NOTE]
-> Quando si utilizzano commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [aggiunta di revisori ai moduli](/help/forms/using/create-reviews-forms.md) è disabilitata.
-
+>
+>Quando si utilizzano commenti nei componenti core per moduli adattivi come descritto in precedenza, la funzionalità del modulo [aggiunta di revisori ai moduli](/help/forms/using/create-reviews-forms.md) è disabilitata.
 
 ![Aggiungi commenti in un modulo](assets/form-comments.png)
 

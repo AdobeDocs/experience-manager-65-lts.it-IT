@@ -8,13 +8,26 @@ solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 exl-id: 9d80bc0a-f2b0-4b27-9417-639531cb8415
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 3%
-
 ---
-
 # Framework dell’aspetto per moduli adattivi e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
 Forms (moduli adattivi e HTML5) utilizza [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) librerie per aspetto e script. I moduli utilizzano inoltre l&#39;architettura [jQuery UI](https://jqueryui.com/) **Widget** per tutti gli elementi interattivi (ad esempio campi e pulsanti) del modulo. Questa architettura consente allo sviluppatore di moduli di utilizzare un set completo di widget e plug-in jQuery disponibili in Forms. Puoi anche implementare una logica specifica per il modulo durante l’acquisizione di dati da utenti come le restrizioni leadDigits/trailDigits o l’implementazione di clausole immagine. Gli sviluppatori di moduli possono creare e utilizzare le funzionalità personalizzate per migliorare l’esperienza di acquisizione dei dati e renderla più semplice da usare.

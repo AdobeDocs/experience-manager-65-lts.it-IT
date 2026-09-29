@@ -1,5 +1,5 @@
 ---
-title: Gestisci immagini firma agente
+title: Gestire immagini firma agente
 description: Dopo aver creato un modello di lettera, puoi utilizzarlo per creare corrispondenza in AEM Forms gestendo dati, contenuto e allegati.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,27 @@ feature: Correspondence Management
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 3081dedf-ba92-4205-af67-930524719e60
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 0%
-
+source-wordcount: '689'
+ht-degree: 2%
 ---
-
-# Gestisci immagini firma agente{#manage-agent-signature-images}
+# Gestire immagini firma agente{#manage-agent-signature-images}
 
 ## Panoramica {#overview}
 
@@ -34,7 +47,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 1. Assicurati che l’immagine della firma dell’agente abbia lo stesso nome del nome utente di AEM dell’utente. L&#39;estensione non è necessaria per il nome file dell&#39;immagine.
 1. In CRX, creare una cartella denominata `cmUserRoot` nella cartella dei contenuti.
 
-   1. Vai a `https://'[server]:[port]'/crx/de`. Se necessario, accedi come amministratore.
+   1. Passa a `https://'[server]:[port]'/crx/de`. Se necessario, accedi come amministratore.
 
    1. Fare clic con il pulsante destro del mouse sulla cartella **content** e selezionare **Create** > **Create Folder**.
 
@@ -48,7 +61,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 
 1. In Esplora contenuto, passa alla cartella cmUserRoot e aggiungi l’immagine della firma dell’agente.
 
-   1. Vai a `https://'[server]:[port]'/crx/explorer/index.jsp`. Se necessario, accedi come amministratore.
+   1. Passa a `https://'[server]:[port]'/crx/explorer/index.jsp`. Se necessario, accedi come amministratore.
    1. Fare clic su **Esplora contenuto**. Esplora contenuto si apre in una nuova finestra.
    1. In Esplora contenuto passare alla cartella cmUserRoot e selezionarla. Fare clic con il pulsante destro del mouse sulla cartella **cmUserRoot** e selezionare **Nuovo nodo**.
 
@@ -68,7 +81,7 @@ Il valore di agentFolder DDE viene ricavato dal parametro di configurazione CMUs
 
       Se la proprietà non è presente, creare innanzitutto una proprietà denominata jcr:content.
 
-      ![jcr:content, proprietà](assets/3_jcrcontentntresource.png)
+      ![jcr:content proprietà](assets/3_jcrcontentntresource.png)
 
       Tra le sottoproprietà di jcr:content vi è jcr:data, che è inattivo. Fare doppio clic su jcr:data. La proprietà diventa modificabile e nella voce viene visualizzato il pulsante Scegli file. Fare clic su **Scegli file** e selezionare il file di immagine da utilizzare come logo. Il file di immagine non deve avere un&#39;estensione.
 

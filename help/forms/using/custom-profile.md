@@ -9,13 +9,28 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 1f7c1213-4100-45d2-8083-531ff8d413e0
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
-
 # Creazione di un profilo personalizzato per i moduli HTML5 {#creating-a-custom-profile-for-html-forms}
 
 Un profilo è un nodo di risorsa in [Apache Sling](https://sling.apache.org/). Rappresenta la versione personalizzata del servizio di rendering di HTML5 Forms. È possibile utilizzare il servizio di rendering di HTML5 forms per personalizzare l&#39;aspetto, il comportamento e le interazioni dei moduli HTML5. Nella cartella `/content` dell&#39;archivio JCR esiste un nodo di profilo. È possibile inserire il nodo direttamente nella cartella `/content` o in una sottocartella della cartella `/content`.
@@ -48,7 +63,7 @@ Il modulo formBody.jsp è per la rappresentazione HTML del modulo XFA.
 
 Inizialmente, il modulo HTML5 esegue il rendering solo della prima pagina del modulo. Quando un utente fa scorrere il modulo, viene caricato il resto dei moduli. Rende l’esperienza di caricamento più veloce. Il componente nav_footer.jsp contiene tutti gli stili e gli elementi necessari per facilitare il caricamento delle pagine durante lo scorrimento.
 
-## footer.jsp {#footer-jsp}
+## piè di pagina.jsp {#footer-jsp}
 
 Il modulo footer.jsp è vuoto. Ti consente di aggiungere script utilizzati solo per l’interazione dell’utente.
 

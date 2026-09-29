@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 053efcc4-35dd-49c8-9645-ae29aa492352
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '343'
 ht-degree: 13%
-
 ---
-
 # Distribuzione di immagini ottimizzate per un sito reattivo {#delivering-optimized-images-for-a-responsive-site}
 
 Utilizza la funzione Codice reattivo per condividere il codice per il servizio reattivo con il tuo sviluppatore web. Il codice responsive (**[!UICONTROL RESS]**) viene copiato negli Appunti in modo da poterlo condividere con lo sviluppatore Web.
@@ -38,7 +49,7 @@ Vedi anche [Collegare gli URL all&#39;applicazione Web](linking-urls-to-yourweba
 
    >[!NOTE]
    >
-   >Per poter rendere disponibili i pulsanti **[!UICONTROL URL]** o **[!UICONTROL RESS]**, la risorsa selezionata *e* il predefinito immagine o il predefinito visualizzatore devono essere pubblicati.
+   >Per poter rendere disponibili i pulsanti **[!UICONTROL URL]** o **[!UICONTROL RESS]**, la risorsa selezionata *e* il predefinito per immagini o il predefinito visualizzatore devono essere pubblicati.
    >
    >Dynamic Media: la modalità ibrida richiede la pubblicazione di predefiniti immagine; Dynamic Media: la modalità Scene7 pubblica automaticamente i predefiniti immagine.
 

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: b60b198e-1683-4970-b9b4-f1d0178e00e1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 1%
-
 ---
-
 # Concetti dell’interfaccia utente di Adobe Experience Manager con funzionalità touch{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [design reattivo](/help/sites-authoring/responsive-layout.md) per l&#39;ambiente di authoring, progettata per funzionare sia su dispositivi touch che desktop.
@@ -28,24 +37,24 @@ Adobe Experience Manager (AEM) dispone di un&#39;interfaccia utente touch con [d
 L’interfaccia touch include:
 
 * L’intestazione della suite che:
-   * Mostra il logo
-   * Fornisce un collegamento alla navigazione globale
-   * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
+  * Mostra il logo
+  * Fornisce un collegamento alla navigazione globale
+  * Fornisce un collegamento ad altre azioni generiche, come Ricerca, Aiuto, Soluzioni Experience Cloud, Notifiche e Impostazioni utente.
 * La barra a sinistra (visualizzata quando necessario e nascosta), che può mostrare:
-   * Timeline
-   * Riferimenti
-   * Filtri
+  * Timeline
+  * Riferimenti
+  * Filtri
 * L’intestazione di navigazione, che è nuovamente sensibile al contesto e può mostrare:
-   * Indica quale console stai utilizzando attualmente, o la tua posizione, o entrambe, all’interno di tale console
-   * Selezione per la barra a sinistra
-   * Breadcrumb
-   * Accedi alle azioni **Crea** appropriate
-   * Visualizza selezioni
+  * Indica quale console stai utilizzando attualmente, o la tua posizione, o entrambe, all’interno di tale console
+  * Selezione per la barra a sinistra
+  * Breadcrumb
+  * Accedi alle azioni **Crea** appropriate
+  * Visualizza selezioni
 * L’area del contenuto che:
-   * Elenca gli elementi di contenuto (pagine, risorse, post in forum e così via)
-   * Può essere formattato come richiesto, ad esempio colonna, scheda o elenco
-   * Utilizza un design reattivo (il display si ridimensiona automaticamente in base al dispositivo e/o alle dimensioni della finestra)
-   * Utilizza lo scorrimento infinito (nessuna più impaginazione, tutti gli elementi sono elencati in un&#39;unica finestra)
+  * Elenca gli elementi di contenuto (pagine, risorse, post in forum e così via)
+  * Può essere formattato come richiesto, ad esempio colonna, scheda o elenco
+  * Utilizza un design reattivo (il display si ridimensiona automaticamente in base al dispositivo e/o alle dimensioni della finestra)
+  * Utilizza lo scorrimento infinito (nessuna più impaginazione, tutti gli elementi sono elencati in un&#39;unica finestra)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

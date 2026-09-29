@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
 exl-id: 2b4214b0-1a38-4e36-b740-16fcaf9ceb54
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 0%
-
 ---
-
 # Raccolta oggetti inattivi nell’archivio dati {#data-store-garbage-collection}
 
 Quando viene rimossa una risorsa WCM convenzionale, il riferimento al record dell’archivio dati sottostante può essere rimosso dalla gerarchia dei nodi, ma il record dell’archivio dati stesso rimane. Questo record di archivio dati senza riferimenti diventa quindi un &quot;immondizia&quot; che non deve essere conservata. Nei casi in cui sono presenti diverse risorse inutilizzate, è utile eliminarle per preservare lo spazio e ottimizzare le prestazioni di backup e manutenzione dei file system.

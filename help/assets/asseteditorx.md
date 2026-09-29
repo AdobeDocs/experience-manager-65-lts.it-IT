@@ -1,19 +1,30 @@
 ---
-title: Estendi editor risorse
+title: Estendere l’editor risorse
 description: Scopri come estendere le funzionalità dell’Editor risorse utilizzando componenti personalizzati.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 solution: Experience Manager, Experience Manager Assets
 exl-id: a74c52bc-f639-4fc2-90e5-bac24fbb9ade
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '694'
 ht-degree: 12%
-
 ---
-
-# Estendi editor risorse {#extending-asset-editor}
+# Estendere l’editor risorse {#extending-asset-editor}
 
 L’Editor risorse è la pagina che si apre quando si fa clic su una risorsa trovata tramite Condivisione risorse, consentendo all’utente di modificare aspetti della risorsa come metadati, miniature, titolo e tag.
 
@@ -201,7 +212,7 @@ Questo esempio descrive come creare un componente che mostra e visualizza i meta
 
 1. Passa al browser e, nella pagina di esempio (ad esempio, `asseteditor.html`), passa alla modalità progettazione e abilita il nuovo componente per il sistema paragrafo.
 
-1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo relativo.
+1. Nella modalità **Modifica**, il nuovo componente, ad esempio, **Metadati campione**, è ora disponibile nella barra laterale (gruppo **Editor risorse**). Inserisci il componente. Per memorizzare i metadati, è necessario aggiungerli al modulo metadati.
 
 ## Modifica opzioni metadati {#modifying-metadata-options}
 

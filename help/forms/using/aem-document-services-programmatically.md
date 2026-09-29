@@ -1,18 +1,36 @@
 ---
-title: Utilizzo di AEM Document Services a livello di programmazione
+title: Utilizzo dei servizi basati su documenti di AEM a livello di programmazione
 description: Scopri come utilizzare le API di Document Services per firmare, crittografare, assegnare tag e generare documenti PDF in formato digitale.
 feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 5c6fa5ae-ac28-4d92-9123-f4f1404bdc4f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '6439'
-ht-degree: 1%
-
+source-wordcount: '6510'
+ht-degree: 2%
 ---
-
-# Utilizzo di AEM Document Services a livello di programmazione  {#using-aem-document-services-programmatically}
+# Utilizzo dei servizi basati su documenti di AEM a livello di programmazione  {#using-aem-document-services-programmatically}
 
 Esempi ed esempi in questo documento sono utili per comprendere e utilizzare AEM Document Services in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
@@ -2438,7 +2456,7 @@ public void removeDocumentUsageRights() {
 
 #### Verifica delle firme digitali {#verifying-digital-signatures}
 
-PDF È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento di PDF contenente una firma digitale.
+È possibile verificare che le firme digitali non siano state modificate e che la firma digitale sia valida. Durante la verifica di una firma digitale, è possibile controllare lo stato della firma e le relative proprietà, ad esempio l&#39;identità del firmatario. Prima di considerare attendibile una firma digitale, è consigliabile verificarla. Durante la verifica di una firma digitale, fare riferimento a un documento di PDF contenente una firma digitale.
 
 **Sintassi**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
@@ -4456,7 +4474,7 @@ private File importData(File inDoc, File inXML)
 
 ## Servizio PDF Generator {#pdfgeneratorservice}
 
-Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
+Il servizio PDF Generator fornisce API per la conversione di formati di file nativi in PDF. Converte inoltre i PDF in altri formati di file e ottimizza le dimensioni dei documenti PDF.
 
 ### GeneraServizioPDF {#generatepdfservice}
 

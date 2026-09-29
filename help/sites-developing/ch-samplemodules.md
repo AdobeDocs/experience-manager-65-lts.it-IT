@@ -1,5 +1,5 @@
 ---
-title: Tipi di modulo interfaccia utente ContextHub di esempio
+title: Tipi di modulo dell’interfaccia utente di ContextHub di esempio
 description: ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
 exl-id: 523d8bf9-b925-4c09-8452-bb3a31489dd1
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 1%
-
+source-wordcount: '1190'
+ht-degree: 2%
 ---
-
-# Tipi di modulo interfaccia utente ContextHub di esempio {#sample-contexthub-ui-module-types}
+# Tipi di modulo dell’interfaccia utente di ContextHub di esempio {#sample-contexthub-ui-module-types}
 
 ContextHub fornisce diversi moduli di interfaccia utente di esempio che puoi utilizzare nelle soluzioni. Vengono fornite le seguenti informazioni:
 
@@ -55,16 +66,16 @@ Configura il modulo dell’interfaccia utente contexthub.base utilizzando un ogg
 * **storeMapping:** Mapping chiave/archivio. Utilizza la chiave nei modelli Handlebar per accedere ai dati store ContextHub associati.
 * **elenco:** array di elementi da visualizzare come elenco in un popover quando si fa clic sul modulo dell&#39;interfaccia utente. Se si include questo elemento, non includere popoverTemplate. Il valore è un array di oggetti con le seguenti chiavi:
 
-   * Titolo: testo da visualizzare per questo elemento
-   * image: (facoltativo) URL di un’immagine che deve essere visualizzata a sinistra
-   * icon: (facoltativo) classe di icone CUI da visualizzare a sinistra; ignorata se è specificata un&#39;immagine
-   * selected: (facoltativo) valore booleano che specifica se l&#39;elemento deve essere visualizzato come selezionato (true=selected). Per impostazione predefinita, gli elementi selezionati vengono visualizzati in grassetto. Utilizzare una proprietà `listType` per configurare altri aspetti (vedere di seguito).
+  * Titolo: testo da visualizzare per questo elemento
+  * image: (facoltativo) URL di un’immagine che deve essere visualizzata a sinistra
+  * icon: (facoltativo) classe di icone CUI da visualizzare a sinistra; ignorata se è specificata un&#39;immagine
+  * selected: (facoltativo) valore booleano che specifica se l&#39;elemento deve essere visualizzato come selezionato (true=selected). Per impostazione predefinita, gli elementi selezionati vengono visualizzati in grassetto. Utilizzare una proprietà `listType` per configurare altri aspetti (vedere di seguito).
 
 * **listType:** stile da utilizzare per gli elementi dell&#39;elenco popover. Utilizza uno dei seguenti valori:
 
-   * segno di spunta
-   * checkbox
-   * radio
+  * segno di spunta
+  * checkbox
+  * radio
 
 * **popoverTemplate:** modello Handlebars che specifica il contenuto da riprodurre nel popover quando si fa clic sul modulo dell&#39;interfaccia utente. Se si include questo elemento, non includere l&#39;elemento `list`.
 

@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 743645c5-b4c9-45ff-a130-0bf72aa6e6f2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5032'
 ht-degree: 3%
-
 ---
-
 # Creare un sito web completo (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +149,7 @@ Un modello definisce il contenuto predefinito di una nuova pagina. I siti web co
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   Il valore della proprietà del percorso consentito è un&#39;espressione regolare *.* Le pagine con un percorso corrispondente all&#39;espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le pagine secondarie.
+   Il valore della proprietà del percorso consentito è un&#39;espressione regolare *.* Le pagine con un percorso che corrisponde all’espressione possono utilizzare il modello. In questo caso, l&#39;espressione regolare corrisponde al percorso della cartella **/content** e di tutte le pagine secondarie.
 
    Quando un autore crea una pagina sotto /content, il modello **contentpage** viene visualizzato in un elenco di modelli disponibili da utilizzare.
 
@@ -329,7 +338,7 @@ In questa sezione vengono creati diversi script che generano ciascuno una parte 
 
 1. In CRXDE Lite, creare il file `left.jsp` in `/apps/mywebsite/components/contentpage`:
 
-   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea &#x200B;** quindi **Crea file**.
+   1. Fare clic con il pulsante destro del mouse sul nodo `/apps/mywebsite/components/contentpage`, quindi selezionare **Crea** quindi **Crea file**.
 
    1. Nella finestra, digita `left.jsp` come **Nome** e fai clic su **OK**.
 
@@ -493,7 +502,7 @@ Migliora lo script di rendering del componente topnav per utilizzare collegament
 
 Questo esercizio illustra [l&#39;elaborazione della richiesta Sling](/help/sites-developing/the-basics.md#sling-request-processing). Lo script topnav.jsp viene modificato per chiamare uno script che genera dinamicamente immagini da utilizzare per i collegamenti di navigazione della pagina. In questo esercizio, Sling analizza l’URL dei file di origine delle immagini per determinare lo script da utilizzare per il rendering delle immagini.
 
-Ad esempio, l&#39;origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
+Ad esempio, l’origine del collegamento immagine alla pagina Prodotti potrebbe essere https://localhost:4502/content/mywebsite/en/products.navimage.png. Sling analizza questo URL per determinare il tipo di risorsa e lo script da utilizzare per il rendering della risorsa:
 
 1. Sling determina il percorso della risorsa da `/content/mwebysite/en/products.png.`
 1. Sling corrisponde a questo percorso con il nodo `/content/mywebsite/en/products`.
@@ -834,7 +843,7 @@ Per vedere il funzionamento completo di questo componente, puoi visualizzare la 
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Come Percorso della directory principale dell&#39;elenco, immettere: `/content/mywebsite/en`. Fare clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
+1. Come Percorso della directory principale dell&#39;elenco, immettere: `/content/mywebsite/en`. Fai clic su OK. Il componente Listchildren sulla pagina ora si presenta come segue:
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 

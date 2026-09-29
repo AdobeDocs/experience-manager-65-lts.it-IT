@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: d8fe6fb6-8ede-4fa7-95da-adee313bf768
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 0%
-
+source-wordcount: '625'
+ht-degree: 1%
 ---
-
 # Sovrapposizioni{#overlays}
 
 Adobe Experience Manager (AEM), e prima ancora CQ, ha a lungo utilizzato il principio delle sovrapposizioni per consentire di estendere e personalizzare le [console](/help/sites-developing/customizing-consoles-touch.md) e altre funzionalità (ad esempio, [authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -28,32 +37,32 @@ A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrappos
 
 * AEM 6.0 e versione successiva: per le sovrapposizioni relative a [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ovvero l&#39;interfaccia utente touch)
 
-   * Metodo
+  * Metodo
 
-      * Ricostruire la struttura `/libs` appropriata in `/apps`.
+    * Ricostruire la struttura `/libs` appropriata in `/apps`.
 
-        Questa operazione non richiede una copia 1:1, [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) viene utilizzato per fare un riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l’accesso e l’unione di risorse con meccanismi di differenze.
+      Questa operazione non richiede una copia 1:1, [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) viene utilizzato per fare un riferimento incrociato alle definizioni originali richieste. Sling Resource Merger fornisce servizi per l’accesso e l’unione di risorse con meccanismi di differenze.
 
-      * In `/apps`, apportare le modifiche desiderate.
+    * In `/apps`, apportare le modifiche desiderate.
 
-   * Vantaggi
+  * Vantaggi
 
-      * Più affidabile per le modifiche in `/libs`.
-      * Ridefinisci solo ciò che è richiesto.
+    * Più affidabile per le modifiche in `/libs`.
+    * Ridefinisci solo ciò che è richiesto.
 
 * Sovrapposizioni e sovrapposizioni non Granite prima di AEM 6.0
 
-   * Metodo
+  * Metodo
 
-      * Copia il contenuto da `/libs` a `/apps`
+    * Copia il contenuto da `/libs` a `/apps`
 
-        Copia l’intero sottoramo, comprese le proprietà.
+      Copia l’intero sottoramo, comprese le proprietà.
 
-      * In `/apps`, apportare le modifiche desiderate.
+    * In `/apps`, apportare le modifiche desiderate.
 
-   * Svantaggi
+  * Svantaggi
 
-      * Anche se le modifiche non andranno perse quando qualcosa cambia in `/libs`, potrebbe essere necessario ricreare alcune modifiche che si verificano nella sovrapposizione in `/apps`.
+    * Anche se le modifiche non andranno perse quando qualcosa cambia in `/libs`, potrebbe essere necessario ricreare alcune modifiche che si verificano nella sovrapposizione in `/apps`.
 
 >[!CAUTION]
 >
@@ -65,9 +74,9 @@ Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [c
 
 * ***Non* apportare modifiche nel ramo `/libs`**&#x200B;Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
 
-   * aggiorna nell’istanza
-   * applicare un hotfix
-   * installare un feature pack
+  * aggiorna nell’istanza
+  * applicare un hotfix
+  * installare un feature pack
 
 * Concentrano le modifiche in un&#39;unica posizione, semplificando il monitoraggio, la migrazione, il backup o il debug delle modifiche, in base alle esigenze.
 
@@ -77,10 +86,10 @@ Per le sovrapposizioni, la risorsa consegnata è un aggregato delle risorse e de
 
 * La risorsa **Percorso di ricerca del Risolutore** come definito nella [configurazione OSGi](/help/sites-deploying/configuring-osgi.md) per **Apache Sling Resource Resolver Factory**.
 
-   * L’ordine discendente dei percorsi di ricerca indica le rispettive priorità.
-   * In un&#39;installazione standard, i valori predefiniti principali sono `/apps`, `/libs`, pertanto il contenuto di `/apps` ha una priorità maggiore rispetto a quello di `/libs` (ovvero *sovrapposizioni*).
+  * L’ordine discendente dei percorsi di ricerca indica le rispettive priorità.
+  * In un&#39;installazione standard, i valori predefiniti principali sono `/apps`, `/libs`, pertanto il contenuto di `/apps` ha una priorità maggiore rispetto a quello di `/libs` (ovvero *sovrapposizioni*).
 
-* Due utenti del servizio hanno bisogno dell&#39;accesso JCR:READ alla posizione in cui sono memorizzati gli script. Tali utenti sono: components-search-service (utilizzato dai componenti com.day.cq.wcm.coreto access/cache ) e sling-scripting (utilizzato da org.apache.sling.servlets.resolver per trovare i servlet).
+* Due utenti del servizio hanno bisogno dell&#39;accesso JCR:READ al percorso in cui sono archiviati gli script. Tali utenti sono: components-search-service (utilizzato dai componenti com.day.cq.wcm.coreto access/cache ) e sling-scripting (utilizzato da org.apache.sling.servlets.resolver per trovare i servlet).
 * La seguente configurazione deve essere configurata anche in base alla posizione in cui inserisci gli script (in questo esempio in /etc, /libs o /apps).
 
   ```
@@ -101,4 +110,4 @@ Per le sovrapposizioni, la risorsa consegnata è un aggregato delle risorse e de
 Alcuni esempi sono trattati quando:
 
 * [Personalizzazione delle console](/help/sites-developing/customizing-consoles-touch.md)
-* [Personalizzazione dell’authoring delle pagine](/help/sites-developing/customizing-page-authoring-touch.md)
+* [Personalizzazione dell’authoring pagina](/help/sites-developing/customizing-page-authoring-touch.md)

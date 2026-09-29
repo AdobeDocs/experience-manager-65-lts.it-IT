@@ -1,18 +1,27 @@
 ---
-title: Integra [!DNL Assets]  con flusso attività
-description: Descrive le funzionalità di registrazione di  [!DNL Experience Manager]  e come configurarle per registrare eventi specifici.
+title: Integra [!DNL Assets] con il flusso di attività
+description: Descrive le funzionalità di registrazione di [!DNL Experience Manager] e come configurarlo per registrare eventi specifici.
 contentOwner: AG
 role: Developer
 feature: Asset Management
 solution: Experience Manager, Experience Manager Assets
 exl-id: 44604607-e49d-469c-a6f1-dedbcd657d65
-source-git-commit: a869ffbc6015fd230285838d260434d9c0ffbcb0
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # Integra [!DNL Assets] con il flusso di attività {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets] utenti eseguono molte azioni come la creazione, il caricamento e l&#39;eliminazione di Assets. Puoi registrare queste azioni in modo da fornire una cronologia di ciò che è stato fatto da un utente. In questa sezione vengono descritte le funzionalità di registrazione di [!DNL Experience Manager] e viene descritto come configurare [!DNL Experience Manager] per registrare eventi specifici.

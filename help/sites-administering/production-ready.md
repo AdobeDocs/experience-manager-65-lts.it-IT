@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 99724bd6-41b4-4491-9958-1f5d9e1f5050
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 4%
-
+source-wordcount: '383'
+ht-degree: 7%
 ---
-
 # Esecuzione di AEM in modalità pronta per la produzione{#running-aem-in-production-ready-mode}
 
 Con AEM 6.1, Adobe introduce la nuova modalità di esecuzione `"nosamplecontent"` volta ad automatizzare i passaggi necessari per preparare un&#39;istanza AEM per la distribuzione in un ambiente di produzione.
@@ -64,9 +76,9 @@ In particolare, quando AEM viene eseguito in modalità pronta per la produzione,
    1. **Gzip:** `enabled`
    1. **Intervallo:** `disabled`
 
-1. **Apache Sling GET Servlet** è impostato per supportare le configurazioni sicure per impostazione predefinita, come segue:
+1. Per impostazione predefinita, **Apache Sling GET Servlet** è impostato per supportare configurazioni sicure, come segue:
 
-| **Configurazione** | **Autore** | **Pubblica** |
+| **Configurazione** | **Authoring** | **Pubblica** |
 |---|---|---|
 | Rendering TXT | disabilitato | disabilitato |
 | Rappresentazione HTML | disabilitato | disabilitato |

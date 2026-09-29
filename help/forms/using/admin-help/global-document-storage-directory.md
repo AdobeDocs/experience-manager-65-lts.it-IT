@@ -9,14 +9,29 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 9a93b8f9-33cb-4aec-81e0-a1146bba955a
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 100%
-
 ---
-
 # Directory di archiviazione globale dei documenti{#global-document-storage-directory}
 
 La *directory di archiviazione documenti globale (GDS)* è una directory utilizzata per archiviare i file di lunga durata utilizzati all’interno di un processo. Questi file includono PDF, criteri e modelli di modulo. I file di lunga durata sono una parte fondamentale dello stato complessivo di molte distribuzioni di AEM Forms. Se alcuni o tutti i documenti di lunga durata vengono persi o danneggiati, il server Forms potrebbe diventare instabile. I documenti di input per le chiamate di processo asincrone sono archiviati anche nella directory GDS e devono essere disponibili per elaborare le richieste. È importante tenere presente l’affidabilità del file system che ospita la directory GDS. Utilizza un array ridondante di dischi indipendenti (RAID) o un’altra tecnologia appropriata per la qualità e il livello di servizio richiesti.
@@ -94,7 +109,7 @@ Puoi modificare la posizione di GDS nella console di amministrazione al termine 
 
 ## Informazioni sui file di distribuzione {#about-deployment-files}
 
-AEM Forms è costituito da due tipi di file di distribuzione, i contenitori del servizio e i file EAR di Java 2 Platform, Enterprise Edition (J2EE). I file EAR sono costituiti da pacchetti di applicazioni J2EE standard che contengono le funzionalità di base di AEM Forms. I file EAR specifici del server applicazioni sono i seguenti:
+AEM Forms è costituito da due tipi di file di distribuzione, i contenitori del servizio e i file EAR di Java 2 Platform, Enterprise Edition (J2EE). I file EAR sono costituiti da bundle di applicazioni J2EE standard che contengono le funzionalità di base di AEM Forms. I file EAR specifici del server applicazioni sono i seguenti:
 
 * adobe-core-*[appserver]*.ear
 * adobe-core-*[appserver]*-*[OS]*.ear

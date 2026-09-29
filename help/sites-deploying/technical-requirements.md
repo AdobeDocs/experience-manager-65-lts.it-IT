@@ -6,13 +6,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: f65dd129-9e28-4de1-acca-dd31eaf3c19b
-source-git-commit: f5a36877c0d051de5c96a8ab89b2886b28865249
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3090'
 ht-degree: 5%
-
 ---
-
 # Requisiti tecnici{#technical-requirements}
 
 Adobe supporta (AEM) Adobe Experience Manager sulle piattaforme come descritto nelle informazioni seguenti in questo documento.
@@ -155,7 +167,7 @@ Adobe Experience Manager funziona con le seguenti piattaforme server per gli amb
 | **Piattaforma** | **Livello di supporto** |
 |---|---|
 | **Linux®, basato sulla distribuzione Red Hat®** | R: Supportato `[1]` `[2]` |
-| Linux®, basato sulla distribuzione Debian incl. Ubuntu | R: Supportato `[1]` |
+| Linux®, basato sulla distribuzione Debian inclusa Ubuntu | R: Supportato `[1]` |
 | Linux®, basato sulla distribuzione SUSE® | R: Supportato `[1]` |
 | Microsoft® Windows Server 2022 | R: Supportato |
 
@@ -441,9 +453,9 @@ La funzione di write-back di XMP è supportata e abilitata per le piattaforme e 
 
 * **Sistemi operativi:**
 
-   * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
-   * Windows Server
-   * macOS X (64 bit)
+  * Linux® (supporto di applicazioni a 32 bit e 32 bit su sistemi a 64 bit).
+  * Windows Server
+  * macOS X (64 bit)
 
 * **Formati file**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 

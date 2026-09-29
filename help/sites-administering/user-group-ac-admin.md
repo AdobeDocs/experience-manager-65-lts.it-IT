@@ -9,13 +9,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: a1f4823f-4861-4e99-88cd-4a686abe3f64
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '3107'
 ht-degree: 0%
-
 ---
-
 # Amministrazione di utenti, gruppi e diritti di accesso{#user-group-and-access-rights-administration}
 
 L’abilitazione dell’accesso a un archivio CRX prevede diversi argomenti:
@@ -70,22 +82,22 @@ CRX utilizza due concetti chiave per valutare i diritti di accesso:
 
 * Un&#39;entità **principal** è un&#39;entità che dispone di diritti di accesso. Gli utenti/gruppi/ruoli includono:
 
-   * Un account utente
-   * Un account di gruppo
+  * Un account utente
+  * Un account di gruppo
 
-     Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
+    Se un account utente appartiene a uno o più gruppi, viene associato anche a ciascuno di tali gruppi principali.
 
 * **oggetto** utilizzato per rappresentare l&#39;origine di una richiesta.
 
   Viene utilizzato per consolidare i diritti di accesso applicabili a tale richiesta. Questi sono presi da:
 
-   * Entità utente principale
+  * Entità utente principale
 
-     I diritti assegnati direttamente all’account utente.
+    I diritti assegnati direttamente all’account utente.
 
-   * Tutte le entità di gruppo associate all&#39;utente
+  * Tutte le entità di gruppo associate all&#39;utente
 
-     Tutti i diritti vengono assegnati a uno qualsiasi dei gruppi a cui appartiene l&#39;utente.
+    Tutti i diritti vengono assegnati a uno qualsiasi dei gruppi a cui appartiene l&#39;utente.
 
   Il risultato viene quindi utilizzato per consentire o negare l’accesso alla risorsa richiesta.
 
@@ -124,8 +136,8 @@ I diritti di accesso in CRX vengono valutati come segue:
 
 * Le entità utente hanno sempre la precedenza sulle entità gruppo indipendentemente da:
 
-   * l’ordine nell’elenco di controllo di accesso
-   * la loro posizione nella gerarchia dei nodi
+  * l’ordine nell’elenco di controllo di accesso
+  * la loro posizione nella gerarchia dei nodi
 
 * Per una determinata entità principale, esiste (al massimo) una negazione e 1 consenti l’ingresso in un determinato nodo. L’implementazione cancella sempre le voci ridondanti e si assicura che lo stesso privilegio non sia elencato sia nelle voci consentite che in quelle negate.
 
@@ -163,7 +175,7 @@ Nel caso di cui sopra:
 In questo caso:
 
 * A `aUser` non è concessa l&#39;autorizzazione di scrittura per `grandChildNode`.
-* La seconda voce ACE per `aUser` è ridondante.
+* Il secondo ACE per `aUser` è ridondante.
 
 I diritti di accesso di più entità di gruppo vengono valutati in base al loro ordine, sia all&#39;interno della gerarchia che all&#39;interno di un singolo elenco di controllo di accesso.
 

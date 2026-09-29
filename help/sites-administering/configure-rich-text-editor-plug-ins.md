@@ -6,13 +6,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: f185c622-1681-4221-a082-cac71d6b510b
-source-git-commit: 2e0cbe62754866d31de69547f9af1f2f63930f2c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '4463'
 ht-degree: 2%
-
 ---
-
 # Configurare i plug-in del Rich Text editor {#configure-the-rich-text-editor-plug-ins}
 
 Le funzionalità dell’editor Rich Text sono disponibili tramite una serie di plug-in, ciascuno con la proprietà Features. È possibile configurare la proprietà features per abilitare o disabilitare una o più funzionalità dell’editor Rich Text. Questo articolo descrive come configurare in modo specifico i plug-in dell’editor Rich Text.
@@ -38,16 +47,16 @@ Per impostazione predefinita, i plug-in `format`, `link`, `list`, `justify` e `c
 
    * A seconda del componente, i nodi principali sono:
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * un nodo di configurazione alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * un nodo di configurazione alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * Sono di tipo: **jcr:primaryType** `cq:Widget`
    * Entrambi hanno le seguenti proprietà:
 
-      * **Nome** `name`
-      * **Tipo** `String`
-      * **Valore** `./text`
+     * **Nome** `name`
+     * **Tipo** `String`
+     * **Valore** `./text`
 
 1. A seconda dell&#39;interfaccia per la quale si sta configurando, creare un nodo `<rtePlugins-node>`, se non esiste:
 
@@ -299,7 +308,7 @@ Per creare lo stile che gli autori possono applicare al testo giapponese, effett
 
 1. Aggiungi il testo della proprietà allo stesso nodo. Il valore è il nome dello stile visualizzato dall’autore al momento della selezione dello stile.
    * Nome: `text`
-*Tipo: `String`
+     *Tipo: `String`
    * Valore: `Japanese word-wrap`
 
 1. Creare un foglio di stile e specificarne il percorso. Vedere [specificare il percorso del foglio di stile](#locationofstylesheet). Aggiungere il contenuto seguente al foglio di stile. Modifica il colore di sfondo come desiderato.
@@ -506,13 +515,13 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
 
    * Per definire gli stili per l&#39;intera tabella (disponibile in **Proprietà tabella**):
 
-      * **Nome** `tableStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `tableStyles`
+     * **Tipo** `cq:WidgetCollection`
 
    * Per definire gli stili per le singole celle (disponibili in **Proprietà cella**):
 
-      * **Nome** `cellStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `cellStyles`
+     * **Tipo** `cq:WidgetCollection`
 
 1. Crea un nodo (sotto il nodo `tableStyles` o `cellStyles`, a seconda dei casi) in modo da poter rappresentare un singolo stile:
 
@@ -523,15 +532,15 @@ Gli stili vengono in genere applicati al testo, ma è possibile applicare un set
 
    * Per definire lo stile CSS a cui fare riferimento
 
-      * **Nome** `cssName`
-      * **Tipo** `String`
-      * **Valore** il nome della classe CSS (senza un `.` precedente, ad esempio, `cssClass` invece di `.cssClass`)
+     * **Nome** `cssName`
+     * **Tipo** `String`
+     * **Valore** il nome della classe CSS (senza un `.` precedente, ad esempio, `cssClass` invece di `.cssClass`)
 
    * Per definire un testo descrittivo da visualizzare nel selettore a discesa
 
-      * **Nome** `text`
-      * **Tipo** `String`
-      * **Valore** il testo da visualizzare nell&#39;elenco di selezione
+     * **Nome** `text`
+     * **Tipo** `String`
+     * **Valore** il testo da visualizzare nell&#39;elenco di selezione
 
 1. Salva tutte le modifiche.
 
@@ -684,58 +693,58 @@ Per configurare il modo in cui i collegamenti vengono aggiunti in AEM da un altr
 
    * Stile CSS per collegamenti interni:
 
-      * **Nome** `cssInternal`
-      * **Tipo** `String`
-      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
+     * **Nome** `cssInternal`
+     * **Tipo** `String`
+     * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
 
    * Stile CSS per collegamenti esterni
 
-      * **Nome** `cssExternal`
-      * **Tipo** `String`
-      * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
+     * **Nome** `cssExternal`
+     * **Tipo** `String`
+     * **Valore** il nome della classe CSS (senza un &#39;.&#39; precedente; ad esempio, `cssClass` invece di `.cssClass`)
 
    * Matrice di **protocolli** validi. I protocolli supportati sono `http://`, `https://`, `file://` e `mailto:`.
 
-      * **Nome** `protocols`
-      * **Tipo** `String[]`
-      * **Valore** uno o più protocolli
+     * **Nome** `protocols`
+     * **Tipo** `String[]`
+     * **Valore** uno o più protocolli
 
    * **defaultProtocol** (proprietà di tipo **String**): protocollo da utilizzare se l&#39;utente non ne ha specificato esplicitamente uno.
 
-      * **Nome** `defaultProtocol`
-      * **Tipo** `String`
-      * **Valore** uno o più protocolli predefiniti
+     * **Nome** `defaultProtocol`
+     * **Tipo** `String`
+     * **Valore** uno o più protocolli predefiniti
 
    * Definizione di come gestire l’attributo target di un collegamento. Crea un nodo:
 
-      * **Nome** `targetConfig`
-      * **Tipo** `nt:unstructured`
+     * **Nome** `targetConfig`
+     * **Tipo** `nt:unstructured`
 
      Nel nodo `targetConfig`, definire le proprietà richieste:
 
-      * Specifica la modalità di destinazione:
+     * Specifica la modalità di destinazione:
 
-         * **Nome** `mode`
-         * **Tipo** `String`
-         * **Valore**
+       * **Nome** `mode`
+       * **Tipo** `String`
+       * **Valore**
 
-            * `auto`: indica che è stata scelta una destinazione automatica
+         * `auto`: indica che è stata scelta una destinazione automatica
 
-              (specificato dalla proprietà `targetExternal` per i collegamenti esterni o `targetInternal` per i collegamenti interni).
+           (specificato dalla proprietà `targetExternal` per i collegamenti esterni o `targetInternal` per i collegamenti interni).
 
-            * `manual`: non applicabile in questo contesto
-            * `blank`: non applicabile in questo contesto
+         * `manual`: non applicabile in questo contesto
+         * `blank`: non applicabile in questo contesto
 
-      * Destinazione dei collegamenti interni:
+     * Destinazione dei collegamenti interni:
 
-         * **Nome** `targetInternal`
-         * **Tipo** `String`
-         * **Valore** la destinazione per i collegamenti interni (da utilizzare solo quando la modalità è `auto`)
+       * **Nome** `targetInternal`
+       * **Tipo** `String`
+       * **Valore** la destinazione per i collegamenti interni (da utilizzare solo quando la modalità è `auto`)
 
-      * Destinazione per i collegamenti esterni:
+     * Destinazione per i collegamenti esterni:
 
-         * **Nome** `targetExternal`
-         * **Tipo** `String`
-         * **Valore** la destinazione per i collegamenti esterni (utilizzato solo quando la modalità è `auto`).
+       * **Nome** `targetExternal`
+       * **Tipo** `String`
+       * **Valore** la destinazione per i collegamenti esterni (utilizzato solo quando la modalità è `auto`).
 
 1. Salva tutte le modifiche.

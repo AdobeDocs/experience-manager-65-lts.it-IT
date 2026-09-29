@@ -5,13 +5,39 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 exl-id: 36a20b73-9277-4619-8103-80a3f900459d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 91%
-
+source-wordcount: '2023'
+ht-degree: 92%
 ---
-
 # Percorso della tua prima esperienza con AEM Headless {#path-to-first-experience}
 
 In questa parte del [Percorso per sviluppatori headless AEM,](overview.md) comprenderai i passaggi per implementare la tua prima esperienza headless in AEM incluse considerazioni sulla pianificazione e apprenderai le best practice per rendere il percorso il più semplice possibile.
@@ -55,7 +81,7 @@ Vuoi creare un’esperienza coerente e gestire campagne personalizzate tra i can
 
 È invece necessario considerare il modo in cui il contenuto su superfici diverse è correlato in base a principi di organizzazione quali gerarchie di marchi e prodotti, categorie di beni o superfici o passaggi nel percorso del cliente. Ad esempio, se disponi di un insieme di superfici che supportano un marchio specifico di auto prodotte, potresti voler iniziare con un modello di contenuto per informazioni generali che sarebbe vero per l’intera auto e poi avere elementi più specifici come il contenuto necessario da quando l’auto si avvia a quando ci sono problemi di servizio. Un modello di questo tipo applicherà l’ereditarietà del contenuto generale del marchio automobilistico, consentendo al tempo stesso turni in base al contesto specifico necessario. Aiuta anche nella gestione futura degli aggiornamenti di questo contenuto in quanto puoi applicare il controllo in base a ruoli come l’addetto marketing o il responsabile prodotto per l’intero marchio automobilistico rispetto a un autore responsabile dell’esperienza di “avvio automobile”.
 
-Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze aziendali.
+Una volta ottenuto il modello di contenuto e una visualizzazione chiara dei vari client su cui deve essere mostrato il contenuto, è necessario assicurarsi che le API/GraphQL associate all’accesso a vari modelli di contenuto siano pubblicate per tutti i client che necessitano di tale contenuto. Esistono diverse opzioni per accedere a determinati contenuti. Puoi richiedere un contenuto specifico statico che consenta la memorizzazione in cache del contenuto e prestazioni migliori. Puoi anche richiedere contenuti generati dinamicamente che richiederanno un’elaborazione maggiore. Assicurati che i client sfruttino le API più efficienti per le esigenze di business.
 
 ## Informazioni sugli ambienti {#understanding-environments}
 
@@ -95,7 +121,7 @@ Questa è una panoramica di ciò che è necessario per implementare la prima app
 1. Creare frammenti di contenuto
 1. Query del contenuto con GraphQL
 
-## Best practice   {#best-practices}
+## Best practice {#best-practices}
 
 Un progetto headless non solo ha successo grazie alla tecnologia implementata, ma anche grazie alla buona pianificazione e alla governance dei progetti. Di seguito sono riportate alcune best practice che sviluppatori e autori di contenuti devono tenere a mente durante la pianificazione del progetto.
 
@@ -107,8 +133,8 @@ Un progetto headless non solo ha successo grazie alla tecnologia implementata, m
 * Se disponi di restrizioni di accesso, prova ad allineare il modello di contenuto ai requisiti di accesso.
 * Quando si dispone dei requisiti di accesso, questi devono guidare la gerarchia dei contenuti. Raggruppare i contenuti che vengono modificati dallo stesso gruppo di persone.
 * Raggruppare contenuti simili in una cartella.
-   * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
-   * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
+  * È più probabile che un autore di contenuti copia e incolla il contenuto esistente per crearne uno nuovo. Pertanto, farlo fare nella stessa cartella rende tutto più efficiente.
+  * AEM consente di impostare i modelli per cartella in modo che il pulsante **Crea nuovo** mostrerà solo i modelli supportati in tale posizione.
 * La creazione di nuovi frammenti di contenuto nell’editor frammenti di contenuto in linea può essere semplificata se la cartella principale è impostata nel modello. Quindi il professionista o la professionista non deve scegliere una posizione, ma deve solo fornire un nome e può iniziare a modificare il nuovo riferimento.
 
 ### Creazione di contenuti {#authoring}

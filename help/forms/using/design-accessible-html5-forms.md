@@ -9,18 +9,33 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 9a23dc13-48e4-44dc-b601-10fa0d56cbc8
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 0%
-
+source-wordcount: '342'
+ht-degree: 2%
 ---
-
 # Progettazione di moduli HTML5 accessibili {#designing-accessible-html-forms}
 
 I moduli HTML5 utilizzano lo standard di accessibilità ARIA HTML5 per generare moduli HTML accessibili. Questi moduli supportano la navigazione a schede (ad eccezione di Mozilla FireFox) e sono certificati per essere compatibili con gli assistenti vocali comuni. Per generare un modulo HTML5 con buone funzioni di accessibilità, progettare il modello di modulo XFA in base ad alcune linee guida di progettazione di base. Le linee guida per la progettazione includono la configurazione dell&#39;ordine di tabulazione corretto e la fornitura del contenuto Testo parlato per ogni controllo modulo. AEM Forms Designer supporta l’impostazione di questi attributi di controllo modulo per generare un modulo PDF e HTML5 accessibile.
 
-*Nota: la navigazione a schede non copre i campi protetti, ad esempio i campi di calcolo che visualizzano la somma dei valori. Affinché l’assistente vocale possa leggere il valore di un campo protetto, inserisci un campo di sola lettura vuoto sopra o accanto al campo protetto. Assegnare il valore del campo protetto al nuovo campo di sola lettura. L&#39;utilità di lettura dello schermo o la navigazione a schede può scegliere questo campo di sola lettura e indicarlo come valore del campo protetto.*
+*Nota:Tabbed la navigazione non copre i campi protetti, ad esempio i campi di calcolo che visualizzano la somma dei valori. Affinché l’assistente vocale possa leggere il valore di un campo protetto, inserisci un campo di sola lettura vuoto sopra o accanto al campo protetto. Assegnare il valore del campo protetto al nuovo campo di sola lettura. L&#39;utilità di lettura dello schermo o la navigazione a schede può scegliere questo campo di sola lettura e indicarlo come valore del campo protetto.*
 
 AEM Forms Designer include diverse opzioni Speak Text che possono essere trasmesse agli assistenti vocali. Per ogni oggetto di un modulo, l’utente può specificare una delle diverse impostazioni per il testo dell’assistente vocale:
 

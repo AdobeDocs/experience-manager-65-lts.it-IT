@@ -6,13 +6,29 @@ role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 exl-id: dd22ea1b-33e9-407d-b7b6-645bdba00b4e
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10632'
+source-wordcount: '10681'
 ht-degree: 2%
-
 ---
-
 # Installazione e configurazione dei servizi documentali {#installing-and-configuring-document-services}
 
 AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a livello di documento, ad esempio servizi per creare, assemblare, distribuire e archiviare documenti PDF, aggiungere firme digitali per limitare l’accesso ai documenti e decodificare Forms in codice a barre. Questi servizi sono inclusi nel pacchetto del componente aggiuntivo AEM Forms. Nel complesso, questi servizi sono noti come servizi di documentazione. Di seguito è riportato un elenco dei servizi documentali disponibili e delle relative principali funzionalità:
@@ -37,9 +53,9 @@ AEM Forms fornisce un set di servizi OSGi per eseguire diverse operazioni a live
 
 * **Servizio di firma:** consente di utilizzare le firme digitali e i documenti nel server AEM. Ad esempio, il servizio di firma viene utilizzato in genere nelle situazioni seguenti:
 
-   * Il server AEM certifica un modulo prima che venga inviato a un utente per l’apertura tramite Acrobat o Adobe Reader.
-   * Il server AEM convalida una firma aggiunta a un modulo tramite Acrobat o Adobe Reader.
-   * Il server AEM firma un modulo per conto di un notaio pubblico.
+  * Il server AEM certifica un modulo prima che venga inviato a un utente per l’apertura tramite Acrobat o Adobe Reader.
+  * Il server AEM convalida una firma aggiunta a un modulo tramite Acrobat o Adobe Reader.
+  * Il server AEM firma un modulo per conto di un notaio pubblico.
 
   Il servizio di firma accede ai certificati e alle credenziali archiviati nell&#39;archivio fonti attendibili. Per ulteriori informazioni, vedere [Servizio firma](/help/forms/using/aem-document-services-programmatically.md).
 
@@ -64,18 +80,18 @@ Prima di iniziare l’installazione e la configurazione dei servizi documentali 
 * Il percorso di installazione dell’istanza di AEM non contiene spazi vuoti.
 * Un’istanza di AEM è attiva e in esecuzione. Nella terminologia di AEM, per &quot;istanza&quot; si intende una copia di AEM in esecuzione su un server in modalità di authoring o pubblicazione. In genere, per eseguire i servizi documentali di AEM Forms è necessaria una sola istanza di AEM (authoring o pubblicazione):
 
-   * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
-   * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
+  * **Autore**: istanza di AEM utilizzata per creare, caricare e modificare contenuti e amministrare il sito Web. Quando il contenuto è pronto per essere pubblicato, viene replicato nell’istanza di pubblicazione.
+  * **Pubblicazione**: istanza di AEM che fornisce il contenuto pubblicato al pubblico tramite Internet o una rete interna.
 
 * I requisiti di memoria sono soddisfatti. Il pacchetto del componente aggiuntivo AEM Forms richiede:
 
-   * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
-   * 6 GB di spazio temporaneo per installazioni basate su UNIX.
+  * 15 GB di spazio temporaneo per le installazioni basate su Microsoft® Windows.
+  * 6 GB di spazio temporaneo per installazioni basate su UNIX.
 
 * Il software client necessario affinché il generatore PDF esegua la conversione su Microsoft® Windows e Linux® è installato:
 
-   * **Microsoft® Windows**: installa **Microsoft® Office** o **Apache OpenOffice**
-   * **Linux®**: installa **Apache OpenOffice**
+  * **Microsoft® Windows**: installa **Microsoft® Office** o **Apache OpenOffice**
+  * **Linux®**: installa **Apache OpenOffice**
 
 >[!NOTE]
 >
@@ -165,25 +181,25 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
 
 * **(solo PDF Generator**) Installa la versione a 32 bit delle librerie libcurl, libcrypto e libssl e crea i symlink seguenti. I collegamenti simbolici puntano alla versione più recente delle rispettive librerie:
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **(solo PDF Generator)** Il servizio PDF Generator supporta le route WebKit e WebToPDF per la conversione di file HTML in documenti PDF. Per abilitare la conversione per la route WebToPDF, installare le librerie a 64 bit elencate di seguito. In genere, queste librerie sono già installate. Se manca una libreria, installala manualmente:
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 
 ## Configurazioni di preinstallazione {#preinstallationconfigurations}
 
@@ -1347,13 +1363,13 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 * Accertati che un utente PDF Generator sia aggiunto nell’interfaccia utente di configurazione di PDF.
 * Verificare che l&#39;utente PDF Generator sia membro del gruppo Administrators e che il privilegio [Sostituisci token a livello di processo](#grant-the-replace-a-process-level-token-privilege) sia impostato per l&#39;utente.
 * Assicurati che l’utente sia configurato nell’interfaccia utente di PDF Generator ed esegua le azioni seguenti:
-   1. Accedere a Microsoft® Windows con l&#39;utente PDF Generator.
-   1. Aprire applicazioni Microsoft® Office o OpenOffice e annullare tutte le finestre di dialogo.
-   1. Imposta Adobe PDF come stampante predefinita.
-   1. Imposta Acrobat come programma predefinito per i file PDF.
-   1. Eseguire la conversione manuale utilizzando le opzioni File > Stampa e Acrobat barra multifunzione nelle applicazioni di Microsoft Office e annullare tutte le finestre di dialogo.
-   1. Terminare tutti i processi correlati alla conversione, ad esempio winword.exe, powerpoint.exe ed excel.exe.
-   1. Riavvia il server AEM Forms.
+  1. Accedere a Microsoft® Windows con l&#39;utente PDF Generator.
+  1. Aprire applicazioni Microsoft® Office o OpenOffice e annullare tutte le finestre di dialogo.
+  1. Imposta Adobe PDF come stampante predefinita.
+  1. Imposta Acrobat come programma predefinito per i file PDF.
+  1. Eseguire la conversione manuale utilizzando le opzioni File > Stampa e Acrobat barra multifunzione nelle applicazioni di Microsoft Office e annullare tutte le finestre di dialogo.
+  1. Terminare tutti i processi correlati alla conversione, ad esempio winword.exe, powerpoint.exe ed excel.exe.
+  1. Riavvia il server AEM Forms.
 
 **Linux®**
 
@@ -1393,29 +1409,29 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 * Verifica che nel sistema siano installate le versioni più recenti delle librerie lib curl, libcrypto e libssl a 32 bit. Creare anche i symlink `/usr/lib/libcurl.so` (o libcurl.a per AIX®), `/usr/lib/libcrypto.so` (o libcrypto.a per AIX®) e `/usr/lib/libssl.so` (o libssl.a per AIX®) che puntano alle versioni più recenti (32 bit) delle rispettive librerie.
 
 * Effettua le seguenti operazioni per il provider di socket SSL IBM®:
-   1. Copiare il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+  1. Copiare il file java.security da `<WAS_Installed_JAVA>\jre\lib\security` in qualsiasi posizione sul server AEM Forms. La posizione predefinita è Posizione predefinita = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Modificare il file java.security nella posizione copiata e modificare le factory SSL Socket predefinite con factory JSSE2 (utilizzare factory JSSE2 invece di WebSphere®).
+  1. Modificare il file java.security nella posizione copiata e modificare le factory SSL Socket predefinite con factory JSSE2 (utilizzare factory JSSE2 invece di WebSphere®).
 
-      Modificare i seguenti socket factory JSSE predefiniti:
+     Modificare i seguenti socket factory JSSE predefiniti:
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      con
+     con
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 
@@ -1451,21 +1467,21 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 * Se si dispone di una licenza esistente di Adobe Acrobat ed è scaduta, [Scaricare l&#39;ultima versione di Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html) e migrare il numero di serie. Prima della [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Utilizzare i comandi seguenti per generare prov.xml e reserializzare l&#39;installazione esistente utilizzando il file prov.xml anziché i comandi forniti nell&#39;articolo numero di serie [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+  * Utilizzare i comandi seguenti per generare prov.xml e reserializzare l&#39;installazione esistente utilizzando il file prov.xml anziché i comandi forniti nell&#39;articolo numero di serie [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-         &quot;
-         
-         adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=elenco limitato di impostazioni locali in formato xx_XX o ALL>] [—provfile=&lt;Percorso assoluto a prov.xml>]
-         
-         &quot;
-     
-   * Serializzare il pacchetto con il volume (serializzare nuovamente l&#39;installazione esistente utilizzando il file prov.xml e il nuovo numero di serie): eseguire il comando seguente dalla cartella di installazione PRTK come amministratore per serializzare e attivare i pacchetti distribuiti sui computer client:
+        &quot;
+        
+        adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;LEID>] [—regsuppress=ss] [—eulasuppress] [—locales=elenco limitato di impostazioni locali in formato xx_XX o ALL>] [—provfile=&lt;Percorso assoluto a prov.xml>]
+        
+        &quot;
+    
+  * Serializzare il pacchetto con il volume (serializzare nuovamente l&#39;installazione esistente utilizzando il file prov.xml e il nuovo numero di serie): eseguire il comando seguente dalla cartella di installazione PRTK come amministratore per serializzare e attivare i pacchetti distribuiti sui computer client:
 
-         &quot;
-         adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
-         
-         &quot;
-     
+        &quot;
+        adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+        
+        &quot;
+    
 * Per le installazioni su larga scala, utilizzare [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) per rimuovere le versioni precedenti di Reader e Acrobat. Personalizzare il programma di installazione e distribuirlo in tutti i computer dell&#39;organizzazione.
 
 +++

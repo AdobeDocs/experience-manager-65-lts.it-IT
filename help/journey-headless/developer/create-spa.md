@@ -5,13 +5,29 @@ solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 exl-id: 47e73efa-997d-44d9-bb41-6f550eac137a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # Come creare applicazioni a pagina singola (SPA) con AEM {#create-spa}
 
 In questa continuazione facoltativa del [Percorso di sviluppatori AEM Headless,](overview.md) scopri come Adobe Experience Manager (AEM) può combinare la distribuzione headless con le funzioni tradizionali di CMS full stack e come creare applicazioni a pagina singola modificabili utilizzando il framework dell’editor per applicazioni a pagina singola di AEM e integrare applicazioni a pagina singola esterne, abilitando le funzionalità di modifica in base alle esigenze.
@@ -27,7 +43,7 @@ A questo punto, avresti dovuto completare l’intero [Percorso per sviluppatori 
 * Come recuperare e aggiornare il contenuto headless in AEM.
 * Come pubblicare con un progetto AEM headless.
 
-Ora sei andato in diretta con il tuo primo progetto AEM Headless o hai le conoscenze per farlo. Congratulazioni. 
+Ora sei andato in diretta con il tuo primo progetto AEM Headless o hai le conoscenze per farlo. Congratulazioni.
 
 Allora perché stai leggendo questa ulteriore continuazione facoltativa del percorso? Probabilmente, ricordi che nella [Guida introduttiva](getting-started.md#integration-levels), c&#39;è stata una breve discussione su come AEM non solo supporta la consegna headless e i modelli tradizionali full stack, ma può anche supportare modelli ibridi che combinano i vantaggi di entrambi. Anche se non può farlo il modello tradizionale headless, questi modelli ibridi possono offrire una grandissima flessibilità per determinati progetti.
 
@@ -84,7 +100,7 @@ Lo sviluppo di applicazioni a pagina singola in AEM presuppone che lo sviluppato
 
 Per una descrizione completa di come AEM gestisce le SPA, consulta la sezione [risorse aggiuntive](#additional-resources) per i collegamenti a una documentazione più dettagliata.
 
-## Editor SPA di AEM  {#aem-spa-editor}
+## Editor SPA di AEM {#aem-spa-editor}
 
 I siti costruiti utilizzando framework SPA comuni come React e Angular caricano il contenuto tramite JSON dinamico e non forniscono la struttura di HTML necessaria affinché l’editor pagina di AEM possa inserire controlli di modifica.
 
@@ -124,9 +140,9 @@ Vedi sotto le [risorse aggiuntive](#additional-resources) che possono farti appr
 Di seguito sono riportate alcune risorse aggiuntive che approfondiscono alcuni concetti menzionati in questo documento.
 
 * [Headful e headless in AEM](/help/sites-developing/headful-headless.md): descrizione dei diversi modelli di distribuzione disponibili in AEM
-* [Introduzione a SPA e procedura dettagliata.](/help/sites-developing/spa-walkthrough.md) - Una buona introduzione a SPA in AEM
+* [Introduzione e procedura dettagliata SPA.](/help/sites-developing/spa-walkthrough.md) - Una buona introduzione alle applicazioni a pagina singola in AEM
 * [Sviluppo di SPA per AEM](/help/sites-developing/spa-architecture.md): linee guida su come sviluppare SPA per AEM
 * [Panoramica dell’editor di SPA](/help/sites-developing/spa-overview.md): dettagli sul funzionamento dell&#39;editor SPA
 * [Documenti di riferimento SPA](/help/sites-developing/spa-reference-materials.md): riferimenti e collegamenti API JavaScript a progetti open source GitHub SPA di AEM
 * [Frammenti di contenuto](/help/assets/content-fragments/content-fragments.md): come creare frammenti di contenuto
-* [L’Archetipo di progetto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=it) è un modello Maven che crea un progetto AEM minimo basato sulle best practice di Adobe Experience Manager (AEM) come punto di partenza per il tuo sito web
+* [L’Archetipo di progetto AEM](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/developing/archetype/overview) è un modello Maven che crea un progetto AEM minimo basato sulle best practice di Adobe Experience Manager (AEM) come punto di partenza per il tuo sito web

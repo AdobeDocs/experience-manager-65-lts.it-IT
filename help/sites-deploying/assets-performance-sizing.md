@@ -1,5 +1,5 @@
 ---
-title: Guida alle prestazioni di Assets
+title: Guida delle prestazioni delle risorse
 description: Scopri come determinare il dimensionamento hardware ottimale per una nuova configurazione di Digital Asset Management (DAM) e come risolvere i problemi di prestazioni
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 49225f9f-d09e-4ab6-9e29-b47ba41e8889
-source-git-commit: 929a2175449a371ecf81226fedb98a0c5c6d7166
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 5%
 ---
-
-# Guida alle prestazioni di Assets{#assets-performance-guide}
+# Guida delle prestazioni delle risorse{#assets-performance-guide}
 
 Il Digital Asset Management (DAM) viene spesso utilizzato nei casi in cui le prestazioni sono importanti. Tuttavia, la tipica configurazione DAM contiene diversi componenti hardware e software che possono influire sulle prestazioni. Questo documento fornisce quanto segue:
 
@@ -61,7 +70,7 @@ I processi DAM sono molto adatti per essere eseguiti in parallelo per grandi qua
 
 L’elaborazione intensiva di risorse digitali richiede risorse hardware ottimizzate, i fattori più rilevanti sono le dimensioni delle immagini e il picco di trasmissione delle immagini elaborate.
 
-Alloca almeno 16 GB di heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l&#39;acquisizione di immagini non elaborate.
+Alloca almeno 16 GB di memoria heap e configura il flusso di lavoro [!UICONTROL Risorsa di aggiornamento DAM] per utilizzare il [pacchetto Camera Raw](/help/assets/camera-raw.md) per l’acquisizione di immagini non elaborate.
 
 ## Informazioni sul sistema {#understanding-the-system}
 

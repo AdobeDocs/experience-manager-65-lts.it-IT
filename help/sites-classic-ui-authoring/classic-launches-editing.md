@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 9a29bdbf-0f5d-4656-bd65-a63fd804c9e7
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 8%
-
 ---
-
 # Modifica dei lanci{#editing-launches}
 
 ## Modifica delle pagine di lancio {#editing-launch-pages}
@@ -45,9 +54,9 @@ Dopo aver creato un lancio, puoi modificare il nome del lancio e la data del lan
 
    * Nella scheda **Generale** è possibile modificare:
 
-      * **Titolo**
-      * **Data attivazione**: equivalente alla data di lancio
-      * **Pronto per la produzione**
+     * **Titolo**
+     * **Data attivazione**: equivalente alla data di lancio
+     * **Pronto per la produzione**
 
      Per informazioni sullo scopo e sull&#39;interazione di questi campi, vedere [Lanci - Ordine degli eventi](/help/sites-authoring/launches.md#launches-the-order-of-events).
 

@@ -1,5 +1,5 @@
 ---
-title: Sviluppo e differenze tra pagine
+title: URL e confronto tra pagine
 description: Scopri come sviluppare e utilizzare la funzione di differenze tra pagine in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 74ac70c9-a774-4b35-b285-3feb425dac3a
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 10%
-
+source-wordcount: '385'
+ht-degree: 12%
 ---
-
-# Sviluppo e differenze tra pagine{#developing-and-page-diff}
+# URL e confronto tra pagine{#developing-and-page-diff}
 
 ## Panoramica delle funzioni {#feature-overview}
 
@@ -45,18 +54,18 @@ Tuttavia, ci sono alcune limitazioni che devono essere considerate dallo svilupp
 
 * Questa funzione utilizza classi CSS che non fanno parte del namespace per il prodotto AEM. Se nella pagina sono incluse altre classi CSS personalizzate o classi CSS di terze parti con gli stessi nomi, la visualizzazione delle differenze potrebbe esserne influenzata.
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * Poiché la differenze è lato client ed viene eseguita al caricamento della pagina, eventuali modifiche apportate al DOM dopo l’esecuzione del servizio differenze lato client non verranno contabilizzate. Questo può influire
 
-   * Componenti che utilizzano AJAX per includere i contenuti
-   * Applicazioni a pagina singola
-   * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.
+  * Componenti che utilizzano AJAX per includere i contenuti
+  * Applicazioni a pagina singola
+  * Componenti basati su JavaScript che manipolano il DOM in base all’interazione dell’utente.
 
 >[!NOTE]
 >

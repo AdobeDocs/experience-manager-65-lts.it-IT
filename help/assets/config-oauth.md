@@ -1,18 +1,32 @@
 ---
 title: Configurare l’assegnazione tag delle risorse tramite Smart Content Service
-description: Scopri come configurare l'assegnazione tag avanzati e l'assegnazione tag avanzati migliorati in [!DNL Adobe Experience Manager], utilizzando il Servizio di contenuti avanzati.
+description: Scopri come configurare l'assegnazione tag avanzati e l'assegnazione tag avanzati migliorati in [!DNL Adobe Experience Manager] tramite il Servizio di contenuti avanzati.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 26371d15-b0e1-4892-9c52-bc9829e462ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 17%
-
+source-wordcount: '1079'
+ht-degree: 19%
 ---
-
-# Risoluzione dei problemi di smart tag per le credenziali OAuth {#oauth-config}
+# Risoluzione dei problemi di tag avanzati per le credenziali OAuth {#oauth-config}
 
 È necessaria una configurazione di autorizzazione aperta per adottare il consenso all&#39;applicazione [!DNL Adobe Experience Manager] per interagire con Smart Content Services in modo protetto.
 
@@ -39,8 +53,8 @@ Una configurazione OAuth richiede i seguenti prerequisiti:
 
 * Crea una nuova integrazione OAuth in [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Utilizza `ClientID`, `ClientSecret`, `OrgID` e altre proprietà nei passaggi seguenti:
 * I seguenti file si trovano in questo percorso `/apps/system/config in crx/de`:
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configurazione OAuth per gli utenti AMS esistenti e On-Prem {#steps-config-oauth-onprem}
 
@@ -52,7 +66,6 @@ I seguenti passaggi possono essere eseguiti dall’amministratore di sistema. Il
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Aggiorna `auth.token.provider.client.id` con l&#39;ID client della nuova configurazione OAuth.
    * Aggiorna `auth.access.token.request` a `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -131,7 +144,7 @@ Un certificato pubblico ti consente di autenticare il profilo su Adobe Developer
 
 1. Fai clic su **[!UICONTROL Scarica certificato pubblico per integrazione OAuth]** e scarica il file del certificato pubblico `AEM-SmartTags.crt`. Inoltre, non è più necessario caricare questo certificato nella console per sviluppatori di Adobe.
 
-   ![Una rappresentazione delle impostazioni create per il servizio assegnazione tag avanzati](assets/smart-tags-download-public-cert1.png)
+   ![Una rappresentazione delle impostazioni create per il servizio di assegnazione di tag avanzati](assets/smart-tags-download-public-cert1.png)
 
    *Figura: impostazioni per il servizio di assegnazione tag avanzati.*
 

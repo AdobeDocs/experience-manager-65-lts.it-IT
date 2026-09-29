@@ -1,5 +1,5 @@
 ---
-title: Rendering del modello di modulo per i moduli HTML5
+title: Rendering del modello per moduli HTML5
 description: I profili HTML5 forms sono associati ai rendering dei profili. I rendering profili sono pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio OSGi di Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,35 @@ feature: HTML5 Forms,Mobile Forms
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: 45c6a654-c726-4a45-86a9-57f4ed24b4ca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
-
+source-wordcount: '543'
+ht-degree: 3%
 ---
-
-# Rendering del modello di modulo per i moduli HTML5 {#rendering-form-template-for-html-forms}
+# Rendering del modello per moduli HTML5 {#rendering-form-template-for-html-forms}
 
 ## Endpoint di rendering {#render-endpoint}
 
 I moduli HTML5 hanno il concetto di **Profili** che sono esposti come endpoint REST per abilitare il rendering mobile dei modelli di modulo. A questi profili è associato **Rendering profilo**. Si tratta di pagine JSP responsabili della generazione della rappresentazione HTML del modulo chiamando il servizio Forms OSGi. Il percorso JCR del nodo Profilo determina l’URL dell’endpoint di rendering. Il punto finale predefinito del rendering del modulo che punta al profilo &quot;predefinito&quot; è simile al seguente:
 
-https://&lt;*host*>:&lt;*porta*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*percorso della cartella contenente il modulo xdp*>&amp;template=&lt;*nome dell&#39;xdp*>
+https://<*host*>:<*porta*>/content/xfaforms/profiles/default.html?contentRoot=<*percorso della cartella che contiene il modulo xdp*>&modello=<*nome dell'xdp*>
 
 Ad esempio `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

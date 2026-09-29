@@ -9,13 +9,27 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 exl-id: 23ffbaa6-1bd9-48c3-afa3-19737bb15de0
-source-git-commit: f015c4fb30bbba2ec0de7290d37ee56e182d2ddc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1547'
 ht-degree: 1%
-
 ---
-
 # Architettura e topologie di implementazione per AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Applicabile a {#applies-to}
@@ -36,9 +50,9 @@ L’architettura di AEM Forms include i seguenti componenti:
 * **Servizi Forms:** fornisce funzionalità relative ai moduli, ad esempio la creazione, l&#39;assemblaggio, la distribuzione e l&#39;archiviazione di documenti PDF, l&#39;aggiunta di firme digitali per limitare l&#39;accesso ai documenti e la decodifica di moduli con codice a barre. Questi servizi sono pubblicamente disponibili per l’utilizzo da parte di codice personalizzato distribuito congiuntamente in AEM.
 * **Livello Web:** JSP o servlet, generati su servizi comuni e forms, che forniscono le funzionalità seguenti:
 
-   * **Creazione front-end**: interfaccia utente per la creazione e la gestione dei moduli.
-   * **Front-end per rendering e invio moduli**: interfaccia rivolta all&#39;utente finale per l&#39;utilizzo da parte degli utenti finali di AEM Forms (ad esempio, i cittadini che accedono a un sito Web governativo). In questo modo è possibile visualizzare la copia trasformata di un modulo (in un browser Web) e le funzionalità di invio.
-   * **API REST**: JSP e servlet esportano un sottoinsieme di servizi Forms per l&#39;utilizzo remoto da parte di client basati su HTTP, ad esempio Forms Mobile SDK.
+  * **Creazione front-end**: interfaccia utente per la creazione e la gestione dei moduli.
+  * **Front-end per rendering e invio moduli**: interfaccia rivolta all&#39;utente finale per l&#39;utilizzo da parte degli utenti finali di AEM Forms (ad esempio, i cittadini che accedono a un sito Web governativo). In questo modo è possibile visualizzare la copia trasformata di un modulo (in un browser Web) e le funzionalità di invio.
+  * **API REST**: JSP e servlet esportano un sottoinsieme di servizi Forms per l&#39;utilizzo remoto da parte di client basati su HTTP, ad esempio Forms Mobile SDK.
 
 **AEM Forms su OSGi:** Un ambiente AEM Forms su OSGi è un pacchetto standard AEM Author o AEM Publish con AEM Forms distribuito su di esso. Puoi eseguire AEM Forms su OSGi in un [ambiente server singolo, farm e configurazioni cluster](/help/sites-deploying/recommended-deploys.md). La configurazione del cluster è disponibile solo per le istanze di AEM Author.
 

@@ -1,6 +1,6 @@
 ---
 title: Operazioni di base
-description: Panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager. Utilizza la console Sites come base.
+description: Panoramica delle operazioni di base nell’ambiente di authoring di Adobe Experience Manager. Usa la console Sites come base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: bc424dcd-f3a7-48f5-848d-1b14b8e26862
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 4%
-
+source-wordcount: '1188'
+ht-degree: 5%
 ---
-
 # Operazioni di base{#basic-handling}
 
 >[!NOTE]
@@ -54,14 +63,14 @@ Le console principali sono:
   </tr>
   <tr>
    <td><strong>Lanci</strong></td>
-   <td>Questo consente di gestire i <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a>; questi consentono di sviluppare il contenuto per una versione futura di una o più pagine Web attivate.<br /> <i>Nota: nell'interfaccia touch sono disponibili molte delle stesse funzionalità nella console Sites, insieme alla barra Riferimenti.</i> <i>Se necessario, questa console è disponibile dalla console Strumenti; selezionare Operazioni, quindi Avvii.</i></td>
+   <td>Questo consente di gestire i <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanci</a>, che consentono di sviluppare il contenuto per una versione futura di una o più pagine Web attivate.<br /> <i>Nota: nell'interfaccia touch molte delle stesse funzionalità sono disponibili nella console Sites, insieme alla barra Riferimenti.</i> <i>Se necessario, questa console è disponibile dalla console Strumenti; selezionare Operazioni, quindi Avvii.</i></td>
   </tr>
   <tr>
    <td><strong>Casella in entrata </strong></td>
    <td>Spesso sono coinvolte più persone nelle sottoattività di un flusso di lavoro e ogni persona deve completare il proprio passaggio prima di consegnare il lavoro alla persona successiva. La Casella in entrata consente di visualizzare le notifiche relative a tali attività. Vedi <a href="/help/sites-administering/workflows.md">Utilizzo dei flussi di lavoro</a>. <br /> </td>
   </tr>
   <tr>
-   <td><strong>Assegnazione dei tag</strong></td>
+   <td><strong>Assegnazione tag</strong></td>
    <td>Le console di assegnazione tag consentono di gestire i tag. I tag sono nomi brevi o frasi che puoi utilizzare per classificare e annotare parti di contenuto in modo da semplificarne la ricerca e l’organizzazione. Per ulteriori informazioni, vedere <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Utilizzo e gestione dei tag</a>.</td>
   </tr>
   <tr>
@@ -103,7 +112,7 @@ Da qui è possibile [gestire le pagine](/help/sites-authoring/managing-pages.md)
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Accedere all’Aiuto   {#accessing-help}
+## Accedere all’Aiuto {#accessing-help}
 
 Su varie console (ad esempio, Siti Web) è disponibile un pulsante **Guida**. Facendo clic su **Guida** verrà aperto Condivisione pacchetti o il sito della documentazione.
 
@@ -117,10 +126,10 @@ Nella console **Siti Web** le pagine di contenuto sono elencate in una struttura
 
 * Facendo clic sul nome della pagina nel riquadro a sinistra, si effettua quanto segue:
 
-   * Elenca le pagine figlie nel riquadro di destra
-   * Espande la struttura nel riquadro sinistro.
+  * Elenca le pagine figlie nel riquadro di destra
+  * Espande la struttura nel riquadro sinistro.
 
-     Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard, questo metodo di espansione funziona quando sono presenti al massimo `30` nodi secondari.
+    Per motivi di prestazioni, questa azione dipende dal numero di nodi secondari. Con un&#39;installazione standard, questo metodo di espansione funziona quando sono presenti al massimo `30` nodi secondari.
 
 * Facendo doppio clic sul nome della pagina (riquadro sinistro), la struttura si espande, anche se l&#39;apertura della pagina non è così evidente.
 
@@ -158,7 +167,7 @@ Sono disponibili gli elementi seguenti. Per impostazione predefinita viene visua
    <td><strong>Descrizione</strong></td>
   </tr>
   <tr>
-   <td>Miniatura </td>
+   <td>Miniatura</td>
    <td>Mostra una miniatura per la pagina.</td>
   </tr>
   <tr>
@@ -202,7 +211,7 @@ Sono disponibili gli elementi seguenti. Per impostazione predefinita viene visua
    <td>Indica quando una pagina è stata bloccata e l'account utente che l'ha bloccata.</td>
   </tr>
   <tr>
-   <td>Live Copy </td>
+   <td>Live Copy</td>
    <td>Indica quando la pagina fa parte di una Live Copy.</td>
   </tr>
  </tbody>

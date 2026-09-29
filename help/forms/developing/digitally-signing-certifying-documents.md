@@ -5,14 +5,31 @@ role: Developer
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 30ed51ad-4f69-41eb-9fca-d29d644aa4ba
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
-source-wordcount: '17116'
-ht-degree: 0%
-
+source-wordcount: '17115'
+ht-degree: 1%
 ---
-
 # Firma digitale e certificazione dei documenti {#digitally-signing-and-certifying-documents}
 
 **Gli esempi e gli esempi contenuti in questo documento sono solo per AEM Forms in ambiente JEE.**
@@ -128,11 +145,11 @@ Aggiungi un campo firma utilizzando Signature API (Java):
    * Se lo si desidera, creare un oggetto `FieldMDPOptions` che specifichi i campi bloccati quando viene applicata una firma digitale al campo firma.
    * Aggiungere un campo di firma a un documento di PDF richiamando il metodo `addSignatureField` dell&#39;oggetto `SignatureServiceClient` e passando i valori seguenti:
 
-      * `com.adobe.idp`. Oggetto `Document` che rappresenta il documento PDF a cui viene aggiunto un campo firma.
-      * Valore stringa che specifica il nome del campo della firma.
-      * Valore `java.lang.Integer` che rappresenta il numero di pagina a cui viene aggiunto un campo firma.
-      * Oggetto `PositionRectangle` che specifica la posizione del campo firma.
-      * Oggetto `FieldMDPOptions` che specifica i campi del documento di PDF bloccati dopo l&#39;applicazione di una firma digitale al campo della firma. Il valore di questo parametro è facoltativo ed è possibile trasmettere `null`.
+     * `com.adobe.idp`. Oggetto `Document` che rappresenta il documento PDF a cui viene aggiunto un campo firma.
+     * Valore stringa che specifica il nome del campo della firma.
+     * Valore `java.lang.Integer` che rappresenta il numero di pagina a cui viene aggiunto un campo firma.
+     * Oggetto `PositionRectangle` che specifica la posizione del campo firma.
+     * Oggetto `FieldMDPOptions` che specifica i campi del documento di PDF bloccati dopo l&#39;applicazione di una firma digitale al campo della firma. Il valore di questo parametro è facoltativo ed è possibile trasmettere `null`.
 
    * Oggetto `PDFSeedValueOptions` che specifica vari valori di runtime. Il valore di questo parametro è facoltativo ed è possibile trasmettere `null`.
 
@@ -171,10 +188,10 @@ Per aggiungere un campo di firma utilizzando l’API di firma (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni un documento PDF a cui viene aggiunto un campo firma
 
@@ -318,10 +335,10 @@ Recupera i nomi dei campi della firma utilizzando Signature API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF contenente i campi firma
 
@@ -403,11 +420,11 @@ Per modificare un campo di firma, assegnare valori al relativo dizionario di blo
 * **Filtro**: specifica il filtro utilizzato con il campo firma. Ad esempio, puoi utilizzare il filtro Adobe.PPKLite.
 * **Opzioni contrassegno**: specifica i valori del contrassegno associati al campo della firma. Il valore 1 indica che un firmatario deve utilizzare solo i valori specificati per la voce. Il valore 0 indica che sono consentiti altri valori. Di seguito sono riportate le posizioni di bit:
 
-   * **1(Filtro):** Gestore della firma da utilizzare per firmare il campo della firma
-   * **2 (Filtro secondario):** Matrice di nomi che indicano le codifiche accettabili da utilizzare per la firma
-   * **3 (V)**: numero di versione minimo richiesto del gestore di firma da utilizzare per firmare il campo firma
-   * **4 (motivi):** Matrice di stringhe che specifica i possibili motivi per la firma di un documento
-   * **5 (PDFLegalWarnings):** Matrice di stringhe che specifica le possibili attestazioni legali
+  * **1(Filtro):** Gestore della firma da utilizzare per firmare il campo della firma
+  * **2 (Filtro secondario):** Matrice di nomi che indicano le codifiche accettabili da utilizzare per la firma
+  * **3 (V)**: numero di versione minimo richiesto del gestore di firma da utilizzare per firmare il campo firma
+  * **4 (motivi):** Matrice di stringhe che specifica i possibili motivi per la firma di un documento
+  * **5 (PDFLegalWarnings):** Matrice di stringhe che specifica le possibili attestazioni legali
 
 * **Attestazioni legali**: quando un documento viene certificato, viene automaticamente analizzato per individuare tipi specifici di contenuto che possono rendere ambiguo o fuorviante il contenuto visibile di un documento. Ad esempio, un’annotazione può oscurare il testo importante per comprendere ciò che viene certificato. Il processo di scansione genera avvisi che indicano la presenza di questo tipo di contenuto. Fornisce inoltre una spiegazione aggiuntiva del contenuto che potrebbe aver generato avvisi.
 * **Autorizzazioni**: specifica le autorizzazioni che possono essere utilizzate in un documento di PDF senza invalidare la firma.
@@ -500,10 +517,10 @@ Modifica un campo di firma utilizzando Signature API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF contenente il campo firma da modificare
 
@@ -594,9 +611,9 @@ Quando si utilizza una credenziale HSM nShield di crittografia per firmare o cer
 
 Dopo aver aggiunto questo valore di configurazione al file cknfastrc, è possibile utilizzare le nuove credenziali senza riavviare il server applicazioni J2EE.
 
-    >[!NOTE]
-    >
-    > Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l&#39;arresto dei processi Java, potrebbe causare incongruenze nell&#39;ambiente di sviluppo AEM.
+>[!NOTE]
+>
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 **La firma non è attendibile**
 
@@ -767,10 +784,10 @@ Per firmare digitalmente un documento PDF utilizzando l’API di firma (servizio
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF da firmare
 
@@ -924,11 +941,11 @@ Apporre una firma digitale a un modulo interattivo utilizzando Forms e Signature
    * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Richiama il metodo `setGenerateServerAppearance` dell&#39;oggetto `PDFFormRenderSpec` e passa `true`.
    * Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Oggetto `com.adobe.idp.Document` contenente il modulo PDF da riprodurre.
-      * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo.
-      * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
-      * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms. È possibile specificare `null` per il valore di questo parametro.
-      * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+     * Oggetto `com.adobe.idp.Document` contenente il modulo PDF da riprodurre.
+     * Oggetto `com.adobe.idp.Document` contenente dati da unire al modulo.
+     * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
+     * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms. È possibile specificare `null` per il valore di questo parametro.
+     * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
 
      Il metodo `renderPDFForm2` restituisce un oggetto `FormsResult` che contiene un flusso di dati del modulo
 
@@ -991,9 +1008,9 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1016,14 +1033,14 @@ Firmare digitalmente un modulo interattivo utilizzando Forms e Signature API (se
    * Creare un oggetto `PDFFormRenderSpec` utilizzato per impostare le opzioni di runtime. Assegnare il valore `true` al campo `generateServerAppearance` dell&#39;oggetto `PDFFormRenderSpec`.
    * Richiama il metodo `renderPDFForm2` dell&#39;oggetto `FormsServiceClient` e passa i seguenti valori:
 
-      * Oggetto `BLOB` contenente il modulo PDF da riprodurre.
-      * Oggetto `BLOB` contenente dati da unire al modulo.
-      * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
-      * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms. È possibile specificare `null` per il valore di questo parametro.
-      * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
-      * Parametro di output lungo utilizzato per memorizzare il numero di pagine nel modulo.
-      * Parametro di output stringa utilizzato per il valore locale.
-      * Valore `FormResult` che è un parametro di output utilizzato per memorizzare il modulo interattivo.
+     * Oggetto `BLOB` contenente il modulo PDF da riprodurre.
+     * Oggetto `BLOB` contenente dati da unire al modulo.
+     * Un oggetto `PDFFormRenderSpec` che memorizza le opzioni di runtime.
+     * Oggetto `URLSpec` contenente i valori URI richiesti dal servizio Forms. È possibile specificare `null` per il valore di questo parametro.
+     * Oggetto `java.util.HashMap` che memorizza gli allegati. Questo è un parametro facoltativo ed è possibile specificare `null` se non si desidera allegare file al modulo.
+     * Parametro di output lungo utilizzato per memorizzare il numero di pagine nel modulo.
+     * Parametro di output stringa utilizzato per il valore locale.
+     * Valore `FormResult` che è un parametro di output utilizzato per memorizzare il modulo interattivo.
 
    * Recuperare il modulo PDF richiamando il campo `outputContent` dell&#39;oggetto `FormsResult`. Questo campo memorizza un oggetto `BLOB` che rappresenta il modulo interattivo.
 
@@ -1231,10 +1248,10 @@ Certifica un documento PDF utilizzando Signature API (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF da certificare
 
@@ -1468,10 +1485,10 @@ Verifica una firma digitale utilizzando l’API del servizio di firma (servizio 
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF contenente la firma da verificare
 
@@ -1683,10 +1700,10 @@ Verificare più firme digitali utilizzando l&#39;API del servizio di firma (serv
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF contenente le firme da verificare
 
@@ -1847,10 +1864,10 @@ Rimuovere una firma digitale utilizzando l’API di firma (servizio web):
    * Impostare il campo `MessageEncoding` dell&#39;oggetto `System.ServiceModel.BasicHttpBinding` su `WSMessageEncoding.Mtom`. Questo valore assicura che venga utilizzato MTOM.
    * Abilita l’autenticazione HTTP di base eseguendo le seguenti attività:
 
-      * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Assegnare il nome utente di AEM Forms al campo `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+     * Assegnare il valore della password corrispondente al campo `SignatureServiceClient.ClientCredentials.UserName.Password`.
+     * Assegnare il valore costante `HttpClientCredentialType.Basic` al campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Assegnare il valore costante `BasicHttpSecurityMode.TransportCredentialOnly` al campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Ottieni il documento PDF contenente una firma da rimuovere
 

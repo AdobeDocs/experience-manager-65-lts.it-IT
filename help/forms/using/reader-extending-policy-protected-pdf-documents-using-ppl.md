@@ -1,5 +1,5 @@
 ---
-title: Reader estende i documenti PDF protetti tramite policy utilizzando la Libreria di protezione portatile
+title: Reader estende i documenti PDF protetti da criterio utilizzando la libreria di protezione portatile
 description: Le estensioni Reader abilitano le funzioni interattive nei documenti di Adobe PDF tramite Acrobat Reader. È possibile utilizzare la Portable Protection Library (PPL) per estendere i documenti PDF protetti da DRM.
 contentOwner: khsingh
 content-type: reference
@@ -9,14 +9,29 @@ feature: Document Security,Reader Extensions
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: b1430a30-313f-4efc-85c5-ccb914923031
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: 621ad6f8-3769-57bb-838c-1d26cfb18d50
+    internal-label: Reader Extensions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 0%
-
+source-wordcount: '828'
+ht-degree: 3%
 ---
-
-# Reader estende i documenti PDF protetti tramite policy utilizzando la Libreria di protezione portatile {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
+# Reader estende i documenti PDF protetti da criterio utilizzando la libreria di protezione portatile {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
 Conoscere i concetti di protezione dei documenti, estensione del lettore e linguaggio di programmazione Java per estendere in lettura i documenti PDF protetti tramite policy di protezione dei documenti.
 

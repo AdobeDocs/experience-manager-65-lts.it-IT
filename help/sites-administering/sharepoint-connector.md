@@ -9,13 +9,19 @@ docset: aem65
 feature: Integration
 role: Admin
 exl-id: 3f8ec723-2705-4ce5-8cb2-e7e6bfe94512
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
-
 # Connettore SharePoint{#sharepoint-connector}
 
 Questo articolo include informazioni dettagliate sul connettore JCR Adobe per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0.
@@ -72,12 +78,12 @@ Il connettore supporta quanto segue:
 
 * Versioni di AEM:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versioni di Microsoft SharePoint:
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * Se hai bisogno di supporto per le distribuzioni personalizzate del connettore (OEM, requisiti speciali, metodi di autenticazione personalizzati), contatta l’ufficio Adobe della tua regione.
 
@@ -128,7 +134,7 @@ Per impostazione predefinita, il connettore espone una singola area di lavoro JC
 Il connettore può essere configurato anche per più aree di lavoro. In questo caso, ogni area di lavoro è associata all&#39;URL del relativo server SharePoint esposto tramite l&#39;area di lavoro. Per aggiungere un&#39;area di lavoro, aggiungete una definizione di area di lavoro al parametro Workspace. Una definizione di area di lavoro ha il seguente formato:
 `<name>`= `<url>` dove
 `<name>` è il nome dell&#39;area di lavoro JCR e
-`<url>` è l&#39;URL del server SharePoint per tale area di lavoro.
+`<url>` è l&#39;URL del server SharePoint per quell&#39;area di lavoro.
 
 In AEM, esegui un altro passaggio oltre ai passaggi di configurazione precedenti. Elenco consentiti del bundle &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
@@ -194,7 +200,7 @@ In particolare, sono disponibili i seguenti tipi di autenticazione:
 * Claims-Basic
 * Basato su Forms per attestazioni
 
-Il connettore AEM JCR per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l’autenticazione basata su attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
+Connettore JCR AEM per Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versione 4.0. supporta l’autenticazione basata su attestazioni (suggerita da Microsoft), che funziona nelle seguenti modalità:
 
 * **Autenticazione di base/NTLM**: il connettore tenta prima di connettersi utilizzando l&#39;autenticazione di base. Se non disponibile, viene utilizzata l&#39;autenticazione basata su NTLM.
 * **Autenticazione basata su Forms**: gli utenti vengono convalidati in base alle credenziali digitate dagli utenti in un modulo di accesso, in genere una pagina Web. Il sistema emette un token per le richieste autenticate che contiene una chiave per ristabilire l’identità per le richieste successive.

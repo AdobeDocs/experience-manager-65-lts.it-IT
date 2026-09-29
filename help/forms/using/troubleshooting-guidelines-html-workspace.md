@@ -1,5 +1,5 @@
 ---
-title: Linee guida per la risoluzione dei problemi per AEM Forms Workspace
+title: Linee guida per la risoluzione dei problemi per l’area di lavoro di AEM Forms
 description: Abilita i registri e utilizza il debugger nel browser per la risoluzione dei problemi di AEM Forms Workspace.
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,30 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
 exl-id: d0494d5b-7b03-47e2-a461-7ef8c865069d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 0%
-
+source-wordcount: '788'
+ht-degree: 7%
 ---
-
-# Linee guida per la risoluzione dei problemi per AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Linee guida per la risoluzione dei problemi per l’area di lavoro di AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Questo articolo illustra come eseguire il debug dell’area di lavoro di AEM Forms abilitando la registrazione e utilizzando il debugger in un browser. Vengono inoltre illustrati alcuni problemi comuni che è possibile incontrare durante l’utilizzo di AEM Forms Workspace e delle relative soluzioni.
 
@@ -33,11 +49,11 @@ Se durante l&#39;installazione del pacchetto si verifica un errore `javax.jcr.no
 
 1. Passa a Gestione pacchetti. URL predefinito: `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Cerca e installa il pacchetto `adobe-lc-workspace-pkg-[version].zip`.
-1. Riavviare il server applicazioni.
+1. Riavvia il server applicazioni.
 
 >[!NOTE]
 >
-> Si consiglia di utilizzare il comando &#39;Ctrl + C&#39; per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
+> Si consiglia di utilizzare il comando “Ctrl + C” per riavviare SDK. Il riavvio di AEM SDK utilizzando metodi alternativi, ad esempio l’arresto dei processi Java, può causare incoerenze nell’ambiente di sviluppo AEM.
 
 ## Registrazione nell’area di lavoro di AEM Forms {#aem-forms-workspace-nbsp-logging}
 
@@ -147,7 +163,7 @@ Nell’area di lavoro AEM Forms:
 ### Livelli di registro disponibili nell’area di lavoro di AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATALE
-* ERRORE 
+* ERRORE
 * AVVISO
 * INFO
 * DEBUG

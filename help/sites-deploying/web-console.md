@@ -9,14 +9,23 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 55d4f34c-6766-48b7-86a1-689901e8871f
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '718'
 ht-degree: 1%
-
 ---
-
-# Console Web{#web-console}
+# Console web{#web-console}
 
 La console Web in Adobe Experience Manager (AEM) è basata sulla [console di gestione Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix è uno sforzo della community per implementare la piattaforma di servizio OSGi R4, che include il framework OSGi e i servizi standard.
 
@@ -65,10 +74,10 @@ Esistono due tipi di configurazioni disponibili dagli elenchi a discesa in quest
 * **Configurazioni**
 Consente di aggiornare le configurazioni esistenti. Hanno un’identità persistente (PID) e possono essere:
 
-   * standard e integrale per AEM; questi sono richiesti, se eliminati i valori tornano alle impostazioni predefinite.
-   * istanze create da Configurazioni di fabbrica; queste istanze vengono create dall&#39;utente; l&#39;eliminazione rimuove l&#39;istanza.
+  * standard e integrale per AEM; questi sono richiesti, se eliminati i valori tornano alle impostazioni predefinite.
+  * istanze create da Configurazioni di fabbrica; queste istanze vengono create dall&#39;utente; l&#39;eliminazione rimuove l&#39;istanza.
 
-* **Configurazioni factory**
+* **Configurazioni di fabbrica**
 Consente di creare un&#39;istanza dell&#39;oggetto funzionalità richiesto.
 
   Viene allocata a un’identità persistente e quindi elencata nell’elenco a discesa Configurazioni.

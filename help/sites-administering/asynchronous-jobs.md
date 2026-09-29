@@ -1,17 +1,26 @@
 ---
 title: Processi asincroni
-description: ' Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.'
+description: Adobe Experience Manager ottimizza le prestazioni completando in modo asincrono alcune attività a consumo intensivo di risorse.
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: e095b7d4-b1b4-4070-9264-b23ea2c677f5
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 84%
-
+source-wordcount: '806'
+ht-degree: 82%
 ---
-
 # Operazioni asincrone {#asynchronous-operations}
 
 Adobe Experience Manager, per ridurre l’impatto negativo sulle prestazioni, elabora in modo asincrono alcune operazioni che richiedono tempo e risorse. L’elaborazione asincrona comporta l’accodamento di più processi e la loro esecuzione in modo seriale, in base alla disponibilità delle risorse di sistema.
@@ -54,7 +63,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
    * **[!UICONTROL Pianificato]**: l’elaborazione dell’operazione è pianificata per un momento successivo
 
-1. Per interrompere un’operazione attiva, selezionala nell’elenco e scegli **[!UICONTROL Interrompi]** nella barra degli strumenti.
+1. Per interrompere un’operazione attiva, selezionala nell’elenco e fai clic su **[!UICONTROL Interrompi]** nella barra degli strumenti.
 
    ![stop_icon](assets/async-stop-icon.png)
 
@@ -74,7 +83,7 @@ Lo stato delle operazioni asincrone è consultabile in dettaglio alla pagina **[
 
 ## Rimuovi processi completati {#purging-completed-jobs}
 
-AEM ogni giorno alle 01:00 esegue un processo che elimina i processi asincroni completati da più di un giorno.
+AEM esegue un processo di eliminazione ogni giorno alle 01:00 per eliminare i processi asincroni completati da più di un giorno.
 
 Puoi modificare la pianificazione per il processo di eliminazione e il periodo per il quale i dettagli dei processi completati vengono conservati prima di essere eliminati. Puoi anche configurare il numero massimo di processi completati per i quali i dettagli devono essere conservati.
 

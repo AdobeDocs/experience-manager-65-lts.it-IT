@@ -4,13 +4,19 @@ description: Scopri la flessibilità di Universal Editor e come può aiutare a p
 feature: Developing
 role: Developer
 exl-id: 495df631-5bdd-456b-b115-ec8561f33488
-source-git-commit: 49922325d3cc993d551683fac1effe9fc9590880
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: ae206583-dab1-444b-b978-a37aad4a988c
+    internal-label: Experience Manager 6.5 LTS
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 46%
-
 ---
-
 # Informazioni sull’editor universale {#universal-editor}
 
 Scopri la flessibilità di Universal Editor e come può aiutare a potenziare le esperienze headless utilizzando AEM 6.5 LTS.
@@ -39,9 +45,9 @@ L’editor universale è un servizio che funziona insieme ad AEM per creare cont
 Di seguito è riportato il supporto di Universal Editor:
 
 * AEM 6.5 LTS GA
-   * Sono supportati sia l’hosting on-premise che Adobe Managed Services (AMS)*.
+  * Sono supportati sia l’hosting on-premise che Adobe Managed Services (AMS)*.
 * [AEM 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
-   * Sono supportati sia l’hosting on-premise che AMS*.
+  * Sono supportati sia l’hosting on-premise che AMS*.
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/it/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) (versione `2023.8.13099` o successiva)
 
 Questo documento si concentra sul supporto AEM 6.5 LTS di Universal Editor. Per utilizzare l’Editor universale con AEM 6.5 LTS, è necessario quanto segue:
@@ -129,11 +135,11 @@ Per definire le mappature sono disponibili le seguenti variabili in `Universal E
 Esempi di mappature:
 
 * Apri tutte le pagine in `/content/foo` in AEM Author:
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * Risultati nell&#39;apertura di `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * Risultati nell&#39;apertura di `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * Apri tutte le pagine in `/content/bar` su un server NextJS remoto, fornendo come informazioni tutte le variabili
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * Risultati nell&#39;apertura di `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * Risultati nell&#39;apertura di `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### Configurazione del servizio Editor universale {#set-up-ue}
 

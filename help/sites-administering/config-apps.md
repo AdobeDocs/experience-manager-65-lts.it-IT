@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
 exl-id: 4f36487c-45a2-4c18-b3cc-bb9284d68f49
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 6%
-
 ---
-
 # Configurazione delle app AEM{#configuring-for-aem-apps}
 
 Le app Adobe Experience Manager ti consentono di aggiornare il contenuto dell’OTA dell’applicazione (via etere). Il contenuto aggiornato viene archiviato nell’istanza di pubblicazione. Per consentire all’app sul dispositivo di connettersi all’istanza Publish e di verificare la disponibilità di aggiornamenti, l’istanza Publish deve essere configurata in modo da consentire l’utilizzo di un’intestazione referente vuota.
@@ -25,7 +34,7 @@ Le app Adobe Experience Manager ti consentono di aggiornare il contenuto dell’
 Per configurare il servizio filtro referenti:
 
 * Apri la console Apache Felix (**Configurazioni**) in:
-* https://&lt;server>:<numero_porta>/system/console/configMgr
+* https://<server>:<numero_porta>/system/console/configMgr
 * Accedi come amministratore.
 * Nel menu **Configurazioni**, seleziona: *Filtro referrer Apache Sling*
 * Seleziona il campo Consenti vuoto per consentire intestazioni referente vuote/mancanti.

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: d2c16908-18c2-4ab9-a1da-6fc072c94bf9
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # Applicazione dei flussi di lavoro alle pagine{#applying-workflows-to-pages}
 
 Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
@@ -25,8 +34,8 @@ Quando applichi il flusso di lavoro, specifichi le informazioni seguenti:
   Puoi utilizzare qualsiasi flusso di lavoro a cui hai accesso, secondo quanto assegnato dall’amministratore AEM.
 * Facoltativamente:
 
-   * Un commento che fornisce informazioni sul motivo per cui hai avviato il flusso di lavoro.
-   * Titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
+  * Un commento che fornisce informazioni sul motivo per cui hai avviato il flusso di lavoro.
+  * Titolo che consente di identificare l’istanza del flusso di lavoro nella casella in entrata di un utente.
 
 >[!NOTE]
 >

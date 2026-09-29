@@ -10,13 +10,24 @@ feature: Developing,Tagging
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 exl-id: 5d1c2c73-c457-49dc-b519-eba5ad9d5722
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 0%
-
+source-wordcount: '1641'
+ht-degree: 1%
 ---
-
 # Framework di assegnazione tag AEM {#aem-tagging-framework}
 
 L’assegnazione tag consente di categorizzare e organizzare i contenuti. I tag possono essere classificati in base a uno spazio dei nomi e a una tassonomia. Per informazioni dettagliate sull’utilizzo dei tag:
@@ -35,7 +46,7 @@ Per assegnare tag ai contenuti e utilizzare l’infrastruttura di assegnazione t
 * Il mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin) deve essere incluso nel nodo del contenuto con tag `NodeType`.
 * [`TagID`](#tagid) viene aggiunto alla proprietà [`cq:tags`](#tagged-content-cq-tags-property) del nodo di contenuto e viene risolto in un nodo di tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
 
-## Tag : cq:Tag Node Type  {#tags-cq-tag-node-type}
+## Tag : cq:Tag Tipo di nodo  {#tags-cq-tag-node-type}
 
 La dichiarazione di un tag viene acquisita nell&#39;archivio in un nodo di tipo `cq:Tag`.
 
@@ -103,8 +114,8 @@ Nella tabella seguente vengono illustrati alcuni TagID di esempio, i relativi el
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`, `apple` | `braeburn` | `/content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
-| `sky` | `default` | `sky` | Nessuno | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | Nessuno | Nessuno | Nessuno, lo spazio dei nomi | `/content/cq:tags/dam` |
+| `sky` | `default` | `sky` | Nessuna | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | Nessuna | Nessuna | Nessuno, lo spazio dei nomi | `/content/cq:tags/dam` |
 | `/content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `/content/cq:tags/category/car` |
 
 ### Localizzazione del titolo del tag {#localization-of-tag-title}
@@ -116,7 +127,7 @@ Per ulteriori informazioni, consulta i seguenti documenti:
 * [Tag in lingue diverse](/help/sites-developing/building.md#tags-in-different-languages), che descrive l&#39;utilizzo delle API
 * [Gestione dei tag in lingue diverse](/help/sites-administering/tags.md#managing-tags-in-different-languages), che descrive l&#39;utilizzo della console di assegnazione tag
 
-### Controllo accesso {#access-control}
+### Controllo degli accessi {#access-control}
 
 I tag esistono come nodi nell&#39;archivio nel nodo principale della tassonomia [&#128279;](#taxonomy-root-node). È possibile consentire o negare agli autori e ai visitatori del sito la creazione di tag in un determinato spazio dei nomi impostando ACL appropriati nell’archivio.
 
@@ -128,7 +139,7 @@ Una pratica tipica include:
 * Consente agli utenti/autori di accedere in lettura a tutti i namespace che dovrebbero essere leggibili (per lo più tutti).
 * Consentire agli utenti/autori l&#39;accesso in scrittura agli spazi dei nomi in cui i tag devono essere liberamente definibili dagli utenti/autori (aggiungere un nodo in `/content/cq:tags/some_namespace`)
 
-## Contenuto assegnabile : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenuto con tag : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Affinché gli sviluppatori di applicazioni possano associare tag a un tipo di contenuto, la registrazione del nodo ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve includere il mixin `cq:Taggable` o il mixin `cq:OwnerTaggable`.
 
@@ -177,14 +188,14 @@ Di seguito è riportata una descrizione degli effetti nell&#39;archivio durante 
 
 * Quando un tag A viene spostato o unito al tag B in `/content/cq:tags`:
 
-   * Il tag A non viene eliminato e ottiene una proprietà `cq:movedTo`.
-   * Il tag B viene creato (in caso di spostamento) e ottiene una proprietà `cq:backlinks`.
+  * Il tag A non viene eliminato e ottiene una proprietà `cq:movedTo`.
+  * Il tag B viene creato (in caso di spostamento) e ottiene una proprietà `cq:backlinks`.
 
 * `cq:movedTo` punti al tag B.
 
-   * Questa proprietà indica che il tag A è stato spostato o unito al tag B. Se si sposta il tag B, la proprietà viene aggiornata di conseguenza. Il tag A è quindi nascosto ed è mantenuto solo nell’archivio per risolvere gli ID tag nei nodi di contenuto che puntano al tag A. Il garbage collector dei tag rimuove tag come tag A una volta che nessun altro nodo di contenuto vi punta.
+  * Questa proprietà indica che il tag A è stato spostato o unito al tag B. Se si sposta il tag B, la proprietà viene aggiornata di conseguenza. Il tag A è quindi nascosto ed è mantenuto solo nell’archivio per risolvere gli ID tag nei nodi di contenuto che puntano al tag A. Il garbage collector dei tag rimuove tag come tag A una volta che nessun altro nodo di contenuto vi punta.
 
-   * Un valore speciale per la proprietà `cq:movedTo` è `nirvana`. Viene applicato quando il tag viene eliminato, ma non può essere rimosso dall&#39;archivio perché sono presenti tag secondari con `cq:movedTo` che devono essere conservati.
+  * Un valore speciale per la proprietà `cq:movedTo` è `nirvana`. Viene applicato quando il tag viene eliminato, ma non può essere rimosso dall&#39;archivio perché sono presenti tag secondari con `cq:movedTo` che devono essere conservati.
 
   >[!NOTE]
   >
@@ -204,13 +215,13 @@ Di seguito è riportata una descrizione degli effetti nell&#39;archivio durante 
 
 * La lettura di una proprietà `cq:tags` di un nodo di contenuto richiede la seguente risoluzione:
 
-   1. Se non viene trovata alcuna corrispondenza in `/content/cq:tags`, non verrà restituito alcun tag.
+  1. Se non viene trovata alcuna corrispondenza in `/content/cq:tags`, non verrà restituito alcun tag.
 
-   1. Se per il tag è impostata la proprietà `cq:movedTo`, viene seguito l&#39;ID del tag di riferimento.
+  1. Se per il tag è impostata la proprietà `cq:movedTo`, viene seguito l&#39;ID del tag di riferimento.
 
-      * Questo passaggio viene ripetuto se il tag seguito ha una proprietà `cq:movedTo`.
+     * Questo passaggio viene ripetuto se il tag seguito ha una proprietà `cq:movedTo`.
 
-   1. Se il tag seguito non ha una proprietà `cq:movedTo`, il tag verrà letto.
+  1. Se il tag seguito non ha una proprietà `cq:movedTo`, il tag verrà letto.
 
 * Per pubblicare la modifica quando un tag è stato spostato o unito, è necessario replicare il nodo `cq:Tag` e tutti i relativi collegamenti. Questa operazione viene eseguita automaticamente quando il tag viene attivato nella console di amministrazione dei tag.
 

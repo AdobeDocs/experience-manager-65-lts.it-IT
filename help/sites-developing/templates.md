@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 exl-id: 3b3cff43-4edc-4250-8e6d-08eb5906ffcd
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 1%
-
+source-wordcount: '901'
+ht-degree: 2%
 ---
-
 # Modelli{#templates}
 
 I modelli vengono utilizzati in vari punti di AEM:
@@ -45,9 +54,9 @@ Vantaggi dei modelli modificabili:
 
 * Sono state introdotte per consentire di definire quanto segue per tutte le pagine create con il modello:
 
-   * la struttura
-   * il contenuto iniziale
-   * criteri per contenuti
+  * la struttura
+  * il contenuto iniziale
+  * criteri per contenuti
 
 * Dopo la creazione della nuova pagina, viene mantenuta una connessione dinamica tra la pagina e il modello. Ciò significa che le modifiche alla struttura del modello vengono applicate a tutte le pagine create con tale modello, mentre le modifiche al contenuto iniziale non vengono applicate.
 * Utilizza i criteri per contenuto (modificati dall’editor modelli) per mantenere le proprietà di progettazione (non utilizza la modalità Progettazione nell’editor pagina).

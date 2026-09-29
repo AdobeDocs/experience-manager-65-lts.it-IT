@@ -9,16 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 24ab494d-4a11-408e-8dc0-de16508edfac
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 1%
-
+source-wordcount: '380'
+ht-degree: 5%
 ---
-
 # Integrazione delle pagine di destinazione con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM ha integrato la soluzione per pagine di destinazione con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di invito all&#39;azione (CTA):
+AEM ha integrato la soluzione per pagine di destinazione con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) utilizzando i seguenti componenti di call-to-action (CTA):
 
 1. Componente Click-through
 1. Componente collegamento grafico
@@ -31,7 +40,7 @@ Adobe consiglia di esaminare l&#39;[integrazione AEM-Adobe Analytics esistente](
 
 ## Componenti disponibili per la mappatura {#components-available-for-mapping}
 
-In AEM, i componenti **Invito all&#39;azione** - **ClickThroughLink** e **GraphicalLink** - visualizzati qui nella barra laterale, possono essere mappati alle variabili di Adobe Analytics.
+In AEM, i componenti **Call to action** - **ClickThroughLink** e **GraphicalLink** - visualizzati qui nella barra laterale, possono essere mappati alle variabili Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -40,7 +49,7 @@ In AEM, i componenti **Invito all&#39;azione** - **ClickThroughLink** e **Graphi
 Per mappare i componenti della pagina di destinazione su Adobe Analytics:
 
 1. Dopo aver creato la configurazione di Adobe Analytics e aver creato un framework, seleziona la suite di rapporti appropriata dal menu a discesa. Questo comporta il recupero delle variabili di Adobe Analytics e la loro visualizzazione nel Content Finder.
-1. Trascina i componenti di invito all’azione (CTA) dalla barra laterale fino all’area di mappatura al centro della pagina, a seconda delle necessità.
+1. Trascina i componenti Call to action (CTA) dalla barra laterale all’area di mappatura al centro della pagina, a seconda delle necessità.
 
 <table>
  <tbody>

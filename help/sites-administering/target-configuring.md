@@ -5,13 +5,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: 55f100b2-625a-4d0e-b8bb-011c7e3e3580
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2209'
 ht-degree: 28%
-
 ---
-
 # Configurazione manuale dell’integrazione con Adobe Target {#manually-configuring-the-integration-with-adobe-target}
 
 Puoi modificare le configurazioni della procedura guidata di consenso effettuate durante l’utilizzo della procedura guidata, oppure integrarle manualmente con Adobe Target senza utilizzare la procedura guidata.
@@ -96,7 +105,7 @@ A questo scopo, specifica la configurazione cloud A4T con cui collegare la confi
 
 ![ImpostazioniAdobeTarget](assets/adobe-target-settings.jpg)
 
-Fare clic su **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
+Fai clic su **OK**. Quando esegui il targeting dei contenuti con Adobe Target, puoi [selezionare l&#39;origine del rapporto](/help/sites-authoring/content-targeting-touch.md).
 
 ## Integrazione manuale con Adobe Target {#manually-integrating-with-adobe-target}
 
@@ -104,7 +113,7 @@ Integrazione manuale con Adobe Target invece di utilizzare la procedura guidata 
 
 >[!NOTE]
 >
->Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione per Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
+>Il file della libreria di Target, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), è una nuova libreria di implementazione di Adobe Target progettata sia per le tipiche implementazioni web che per le applicazioni a pagina singola. Adobe consiglia di utilizzare AT.js invece di mbox.js come libreria client.
 >
 >AT.js offre diversi miglioramenti rispetto alla libreria mbox.js:
 >
@@ -175,7 +184,7 @@ Segui la procedura seguente per creare una configurazione cloud di Target in AEM
    >
    >Il targeting accurato significa che la configurazione del servizio cloud attende il caricamento del contesto prima di caricare il contenuto. Di conseguenza, in termini di prestazioni, un targeting accurato può creare un ritardo di alcuni millisecondi prima del caricamento del contenuto.
    >
-   >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell’istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
+   >Il targeting accurato è sempre abilitato nell’istanza di authoring. Tuttavia, nell&#39;istanza di pubblicazione puoi scegliere di disattivare il targeting accurato a livello globale cancellando il segno di spunta accanto a Targeting accurato nella configurazione del servizio cloud (**http://localhost:4502/etc/cloudservices.html**). Puoi inoltre attivare e disattivare il targeting accurato per i singoli componenti indipendentemente dall’impostazione nella configurazione del servizio cloud.
    >
    >Se hai ***già*** creato i componenti di destinazione e modificato questa impostazione, le modifiche non influiscono su tali componenti. Modifica direttamente tali componenti.
 
@@ -231,7 +240,7 @@ Associa le [attività AEM](/help/sites-authoring/activitylib.md) alla configuraz
 >
 >* Se l&#39;opzione **xt_only** è abilitata **not** nel tenant di Adobe Target (clientcode), puoi creare **entrambe** le attività XT e A/B in AEM.
 >
->**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi attivare o disattivare questa opzione da AEM.
+>**Nota aggiuntiva:** l&#39;opzione **xt_only** è un&#39;impostazione applicata a un determinato tenant di Target (clientcode) e può essere modificata solo direttamente in Adobe Target. Non puoi abilitare o disabilitare questa opzione da AEM.
 
 ### Associazione del framework di Target al sito {#associating-the-target-framework-with-your-site}
 

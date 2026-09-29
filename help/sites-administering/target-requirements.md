@@ -10,13 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 exl-id: e1771229-b2ce-406a-95a5-99b11fafbe34
-source-git-commit: 24bd1f57da3f9ce613ee28276d1ae9465b6dfba6
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 5%
-
+source-wordcount: '521'
+ht-degree: 4%
 ---
-
 # Prerequisiti per l’integrazione con Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 Come parte dell&#39;integrazione [di AEM e Adobe Target](/help/sites-administering/target.md), è necessario registrarsi ad Adobe Target, configurare l&#39;agente di replica e proteggere le impostazioni delle attività sul nodo di pubblicazione.

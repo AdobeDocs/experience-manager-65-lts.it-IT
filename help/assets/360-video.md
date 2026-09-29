@@ -10,13 +10,27 @@ feature: 360 VR Video
 role: User, Admin
 solution: Experience Manager, Experience Manager Assets
 exl-id: 17e45464-3de4-40a8-b102-ccc9eaba92a3
-source-git-commit: f27795b9acf834101d82937d9f9f142361816735
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1187'
 ht-degree: 0%
-
 ---
-
 # Video 360/VR {#vr-video}
 
 I video a 360 gradi registrano una vista in ogni direzione contemporaneamente. Le riprese vengono effettuate utilizzando una telecamera omnidirezionale o una serie di telecamere. Durante la riproduzione su uno schermo piatto, l&#39;utente ha il controllo dell&#39;angolo di visione; le riproduzioni su dispositivi mobili usano solitamente i controlli giroscopici integrati.
@@ -33,7 +47,7 @@ Vedere anche [Gestione dei predefiniti visualizzatore](/help/assets/managing-vie
 
 Selezionare [Stazione spaziale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) per aprire una finestra del browser e guardare un video a 360 gradi. Durante la riproduzione di un video, trascinare il puntatore del mouse in una nuova posizione per modificare l&#39;angolo di visualizzazione.
 
-![Esempio di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di essa.](assets/6_5_360videoiss_simplified.png)
+![Campione di video 360 con la stazione spaziale internazionale che galleggia nello spazio esterno e la terra e il sole dietro di esso.](assets/6_5_360videoiss_simplified.png)
 *Fotogramma video da Stazione Spaziale 360*
 
 ## Video e Adobe Premiere Pro 360/VR {#vr-video-and-adobe-premiere-pro}
@@ -60,14 +74,14 @@ Vedi [Modifica video 360/VR](https://helpx.adobe.com/it/premiere-pro/how-to/edit
 
    * Idealmente, il contenuto video originale a 360 è ideale per avere una delle seguenti risoluzioni:
 
-      * 1080p - 1920 x 1080, risoluzione Full HD o FHD oppure
-      * 2160p - 3840 x 2160, nota come risoluzione 4k, UHD o Ultra HD. Questa risoluzione elevata del display si trova più spesso su televisori e monitor per computer di alta qualità. La risoluzione 2160p è spesso chiamata &quot;4k&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
+     * 1080p - 1920 x 1080, risoluzione Full HD o FHD oppure
+     * 2160p - 3840 x 2160, nota come risoluzione 4k, UHD o Ultra HD. Questa risoluzione elevata del display si trova più spesso su televisori e monitor per computer di alta qualità. La risoluzione 2160p è spesso chiamata &quot;4k&quot; perché la larghezza è vicina a 4000 pixel. In altre parole, offre quattro volte i pixel di 1080p.
 
    * [Crea un profilo video adattivo personalizzato](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) con rappresentazioni di qualità superiore. Ad esempio, crea un profilo video adattivo contenente le tre impostazioni seguenti:
 
-      * width=auto; height=720; bitrate=2500 kbps
-      * width=auto; height=1080; bitrate=5000 kbps
-      * width=auto; height=1440; bitrate=6600 kbps
+     * width=auto; height=720; bitrate=2500 kbps
+     * width=auto; height=1080; bitrate=5000 kbps
+     * width=auto; height=1440; bitrate=6600 kbps
 
    * Elabora contenuti video 360 in una cartella dedicata esclusivamente alle risorse video 360.
 
@@ -83,8 +97,8 @@ Per impostazione predefinita, Experience Manager rileva i video come &quot;360&q
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo di proprietà** - Doppio
-   * **Valore** - proporzioni a virgola mobile, valore predefinito: 2,0.
+  * **Tipo di proprietà** - Doppio
+  * **Valore** - proporzioni a virgola mobile, valore predefinito: 2,0.
 
 Dopo aver impostato questa proprietà, questa ha effetto immediato sia sui video esistenti che sui video appena caricati.
 

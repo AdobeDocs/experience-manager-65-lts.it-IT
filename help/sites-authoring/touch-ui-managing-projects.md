@@ -9,13 +9,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 exl-id: 53400e3d-542f-4abc-9909-45eb11b0cfcc
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
-
+source-wordcount: '970'
+ht-degree: 20%
 ---
-
 # Gestione dei progetti {#managing-projects}
 
 Nella console **Progetti** puoi accedere ai tuoi progetti e gestirli.
@@ -37,11 +50,11 @@ Il modo più semplice per eseguire questa operazione è concedere al gruppo **ut
 Segui questi passaggi per creare un progetto.
 
 1. Nella console **Progetti**, fai clic su **Crea** per aprire la procedura guidata **Crea progetto**.
-1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [sono disponibili qui.](/help/sites-authoring/projects.md#project-templates)
+1. Seleziona un modello e fai clic su **Avanti**. Ulteriori informazioni sui modelli di progetto standard [sono disponibili qui.](/help/sites-authoring/projects.md#project-templates)
 
    ![Creazione guidata progetto](assets/create-project-wizard.png)
 
-1. Definisci **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura**, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono.
+1. Definisci **Titolo** e **Descrizione** e aggiungi un&#39;immagine **Miniatura**, se necessario. Puoi anche aggiungere o eliminare utenti e il gruppo a cui appartengono,
 
    ![Passaggio proprietà della procedura guidata](assets/create-project-wizard-properties.png)
 

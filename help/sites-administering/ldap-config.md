@@ -9,13 +9,25 @@ solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 exl-id: d19750c4-9477-4bcb-b225-5f089b43194d
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 0%
-
+source-wordcount: '1657'
+ht-degree: 4%
 ---
-
 # Configurazione di LDAP con AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (il **L** protocollo **D** directory **A** accesso **P** protocollo) viene utilizzato per accedere ai servizi di directory centralizzati. Consente di ridurre lo sforzo necessario per gestire gli account utente in quanto sono accessibili da più applicazioni. Uno di questi server LDAP è Active Directory. LDAP viene spesso utilizzato per ottenere Single Sign-On che consente a un utente di accedere a più applicazioni dopo l&#39;accesso una sola volta.
@@ -43,7 +55,7 @@ Affinché LDAP funzioni con AEM, devi creare tre configurazioni OSGi:
 >
 >Guarda il modulo di accesso esterno di [Oak - Autenticazione con LDAP e versioni successive](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=it) per approfondire i moduli di accesso esterno.
 >
->Per leggere un esempio di configurazione di Experience Manager con Apache DS, vedere [Configurazione di Adobe Experience Manager 6.5 per l&#39;utilizzo del servizio directory Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=it)
+>Per leggere un esempio di configurazione di Experience Manager con Apache DS, vedere [Configurazione di Adobe Experience Manager 6.5 per l&#39;utilizzo del servizio directory Apache.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## Configurazione Del Provider Di Identità LDAP {#configuring-the-ldap-identity-provider}
 
@@ -162,7 +174,7 @@ Per il gestore di sincronizzazione sono disponibili le seguenti opzioni di confi
   </tr>
   <tr>
    <td><strong>Tempo di scadenza utente</strong></td>
-   <td>Durata della scadenza di un utente sincronizzato.</td>
+   <td>Durata fino alla scadenza di un utente sincronizzato.</td>
   </tr>
   <tr>
    <td><strong>Iscrizione automatica utente</strong></td>
@@ -182,7 +194,7 @@ Per il gestore di sincronizzazione sono disponibili le seguenti opzioni di confi
   </tr>
   <tr>
    <td><strong>Profondità di nidificazione appartenenza utente</strong></td>
-   <td>Restituisce la profondità massima della nidificazione dei gruppi quando le relazioni di appartenenza vengono sincronizzate. Un valore pari a 0 disattiva efficacemente la ricerca di appartenenza al gruppo. Il valore 1 aggiunge solo i gruppi diretti di un utente. Questo valore non ha alcun effetto quando si sincronizzano singoli gruppi solo durante la sincronizzazione di un elemento precedente di appartenenza degli utenti.</td>
+   <td>Restituisce la profondità massima della nidificazione del gruppo quando le relazioni delle iscrizioni vengono sincronizzate. Un valore pari a 0 disattiva efficacemente la ricerca dell'iscrizione al gruppo. Il valore 1 aggiunge solo i gruppi diretti di un utente. Questo valore non ha alcun effetto quando si sincronizzano singoli gruppi solo durante la sincronizzazione dell'origine dell'iscrizione degli utenti.</td>
   </tr>
   <tr>
    <td><strong>Ora scadenza gruppo</strong></td>

@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 exl-id: 6f92750a-4eaa-43cf-8f67-b1a65b1c6930
-source-git-commit: 408f6aaedd2cc0315f6e66b83f045ca2716db61d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 0%
-
+source-wordcount: '1501'
+ht-degree: 1%
 ---
-
 # Risoluzione dei problemi degli indici Oak{#troubleshooting-oak-indexes}
 
 ## Reindicizzazione lenta  {#slow-re-indexing}
@@ -66,8 +75,8 @@ In circostanze eccezionali, il pool di thread utilizzato per gestire l’indiciz
    * Passa alla console Web AEM OSGi>Stato>Sling Scheduler oppure vai a https://&lt;host>:&lt;port>/system/console/status-slingscheduler (ad esempio, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
    * Verificare che siano presenti le seguenti voci del pool:
 
-      * ApacheSlingoak
-      * ApacheSlingdefault
+     * ApacheSlingoak
+     * ApacheSlingdefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -94,7 +103,7 @@ La reindicizzazione può essere considerata &quot;completamente bloccata&quot; i
 
 * La reindicizzazione è lenta, al punto che nei file di registro non viene segnalato alcun progresso significativo per quanto riguarda il numero di nodi attraversati.
 
-   * Ad esempio, se non ci sono messaggi nel corso di un’ora o se l’avanzamento è così lento che il completamento richiede una settimana o più.
+  * Ad esempio, se non ci sono messaggi nel corso di un’ora o se l’avanzamento è così lento che il completamento richiede una settimana o più.
 
 * La reindicizzazione è bloccata in un ciclo infinito se vengono visualizzate eccezioni ripetute nei file di registro (ad esempio, `OutOfMemoryException`) nel thread di indicizzazione. La ripetizione di una o più stesse eccezioni nel registro indica che Oak tenta di indicizzare la stessa cosa ripetutamente, ma non riesce per lo stesso problema.
 
@@ -105,21 +114,21 @@ Per identificare e correggere un processo di reindicizzazione bloccato, effettua
    * Raccogli 5 minuti di immagine thread, un’immagine thread ogni 2 secondi.
    * [Impostare il livello DEBUG e i registri per le appendici](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * Raccogli dati da `IndexStats` MBean asincroni:
 
-      * Passa a AEM OSGi Web Console>Principale>JMX>IndexStat>asincrono
+     * Passa a AEM OSGi Web Console>Principale>JMX>IndexStat>asincrono
 
-        oppure vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       oppure vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Utilizza la modalità console di [oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) per raccogliere i dettagli di ciò che esiste nel nodo * `/:async`*.
    * Raccogli un elenco di punti di controllo dell&#39;archivio utilizzando `CheckpointManager` MBean:
 
-      * Console web OSGi AEM>Principale>JMX>Gestione punti di controllo>listCheckpoints()
+     * Console web OSGi AEM>Principale>JMX>Gestione punti di controllo>listCheckpoints()
 
-        oppure vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       oppure vai a [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Dopo aver raccolto tutte le informazioni descritte nel passaggio 1, riavvia AEM.
 
@@ -140,8 +149,8 @@ Per interrompere in modo sicuro la reindicizzazione, segui questi passaggi:
    * Passa all’MBean IndexStats appropriato tramite la console JMX, da AEM OSGi Web Console>Main>JMX o https://&lt;host>:&lt;port>/system/console/jmx (ad esempio, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
    * Aprire l&#39;elemento MBean IndexStats in base alla corsia di reindicizzazione che si desidera interrompere ( `async`, `async-reindex` o `fulltext-async`)
 
-      * Per identificare la corsia appropriata e quindi l’istanza MBean IndexStats, controlla la proprietà &quot;async&quot; degli indici Oak. La proprietà &quot;async&quot; contiene il nome della corsia: `async`, `async-reindex` o `fulltext-async`.
-      * La corsia è disponibile anche accedendo a Gestione indici di AEM nella colonna &quot;Asincrono&quot;. Per accedere a Gestione indice, passare a Operazioni>Diagnosi>Gestione indice.
+     * Per identificare la corsia appropriata e quindi l’istanza MBean IndexStats, controlla la proprietà &quot;async&quot; degli indici Oak. La proprietà &quot;async&quot; contiene il nome della corsia: `async`, `async-reindex` o `fulltext-async`.
+     * La corsia è disponibile anche accedendo a Gestione indici di AEM nella colonna &quot;Asincrono&quot;. Per accedere a Gestione indice, passare a Operazioni>Diagnosi>Gestione indice.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -150,15 +159,15 @@ Per interrompere in modo sicuro la reindicizzazione, segui questi passaggi:
 
    * Durante la reindicizzazione di un indice **esistente**, impostare la proprietà reindex su false
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * In alternativa, per un indice **new**:
 
-      * Impostare la proprietà type su disabled
+     * Impostare la proprietà type su disabled
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * o rimuovere completamente la definizione dell’indice
+     * o rimuovere completamente la definizione dell’indice
 
    Al termine, esegui il commit delle modifiche nell’archivio.
 

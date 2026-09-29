@@ -9,14 +9,26 @@ feature: Document Security
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
+removedfrom6.5.2025: 'yes'
 exl-id: 72c31f40-d1b0-47ae-bdeb-e9b92c3d27e1
-source-git-commit: 26f8a32961cf18c2f1930ab7bc910333b3ccf188
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10338'
 ht-degree: 98%
-
 ---
-
 # Configura il server della protezione dei documenti {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -470,10 +482,10 @@ Alcune applicazioni client potrebbero non supportare le filigrane dinamiche. Con
 * Impossibile utilizzare un documento PDF protetto da password come elemento filigrana.
 * Le versioni di Acrobat e Adobe Reader precedenti alla 10 non supportano le seguenti funzioni per filigrane:
 
-   * Filigrane in PDF
-   * Più elementi nella filigrana (testo/PDF)
-   * Opzioni avanzate come intervallo di pagine oppure opzioni di visualizzazione
-   * Opzioni di formattazione del testo, come ad esempio il tipo di font, il nome del font e il colore specificato. Tuttavia, nelle versioni precedenti di Acrobat e Adobe Reader il contenuto di testo viene visualizzato con il carattere e il colore predefiniti.
+  * Filigrane in PDF
+  * Più elementi nella filigrana (testo/PDF)
+  * Opzioni avanzate come intervallo di pagine oppure opzioni di visualizzazione
+  * Opzioni di formattazione del testo, come ad esempio il tipo di font, il nome del font e il colore specificato. Tuttavia, nelle versioni precedenti di Acrobat e Adobe Reader il contenuto di testo viene visualizzato con il carattere e il colore predefiniti.
 
 * Acrobat 9.0 e versioni precedenti: Acrobat 9.0 e versioni precedenti non supportano i nomi dei criteri nelle filigrane dinamiche. Se Acrobat 9.0 apre un documento protetto da criteri con una filigrana dinamica che include il nome di un criterio e altri dati dinamici, la filigrana viene visualizzata senza il nome del criterio. Se la filigrana dinamica include solo il nome del criterio, Acrobat visualizza un messaggio di errore
 

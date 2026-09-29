@@ -10,13 +10,25 @@ feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: 0c20efb1-9b01-41ef-b38d-261fb4b0ff91
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
 source-wordcount: '6780'
 ht-degree: 1%
-
 ---
-
 # Gruppi di utenti chiusi in AEM{#closed-user-groups-in-aem}
 
 ## Introduzione {#introduction}
@@ -101,10 +113,10 @@ Le seguenti best practice devono tenere conto della definizione di accesso in le
 * Crea un modello di minaccia per i dati o i contenuti che devono essere protetti per identificare i limiti della minaccia e ottenere un quadro chiaro della sensibilità dei dati e dei ruoli associati all’accesso autorizzato
 * Modellare il contenuto dell’archivio e i gruppi di utenti chiusi (CUG) tenendo presenti gli aspetti generali relativi alle autorizzazioni e le best practice:
 
-   * Ricorda che l’autorizzazione di lettura viene concessa solo se un determinato CUG e la valutazione di altri moduli distribuiti nella concessione dell’impostazione consentono a un determinato soggetto di leggere un determinato elemento dell’archivio
-   * Evita la creazione di CUG ridondanti in cui l’accesso in lettura è già limitato da altri moduli di autorizzazione
-   * L’eccessiva necessità di CUG nidificati potrebbe potenzialmente evidenziare problemi nella progettazione del contenuto
-   * Un’eccessiva necessità di gruppi di utenti chiusi (ad esempio, su ogni pagina) può indicare la necessità di un modello di autorizzazione personalizzato potenzialmente più adatto alle esigenze di sicurezza specifiche dell’applicazione e del contenuto a portata di mano.
+  * Ricorda che l’autorizzazione di lettura viene concessa solo se un determinato CUG e la valutazione di altri moduli distribuiti nella concessione dell’impostazione consentono a un determinato soggetto di leggere un determinato elemento dell’archivio
+  * Evita la creazione di CUG ridondanti in cui l’accesso in lettura è già limitato da altri moduli di autorizzazione
+  * L’eccessiva necessità di CUG nidificati potrebbe potenzialmente evidenziare problemi nella progettazione del contenuto
+  * Un’eccessiva necessità di gruppi di utenti chiusi (ad esempio, su ogni pagina) può indicare la necessità di un modello di autorizzazione personalizzato potenzialmente più adatto alle esigenze di sicurezza specifiche dell’applicazione e del contenuto a portata di mano.
 
 * Limita i percorsi supportati per i criteri CUG ad alcune strutture nell’archivio per ottimizzare le prestazioni. Ad esempio, consenti solo i CUG sotto il nodo /content come valore predefinito a partire da AEM 6.3.
 * I criteri CUG sono progettati per consentire l&#39;accesso in lettura a un piccolo insieme di entità principali. La necessità di un numero elevato di utenti/gruppi/ruoli può evidenziare problemi nel contenuto o nella progettazione dell’applicazione e dovrebbe essere riconsiderata.
@@ -146,10 +158,10 @@ Quando si chiama `AuthenticationHandler.requestCredentials`, il gestore tenta di
 * distinguere tra password scaduta e necessità di accesso regolare come motivo del reindirizzamento;
 * Se l’accesso è regolare, verifica se è possibile ottenere un percorso di accesso nell’ordine seguente:
 
-   * dal LoginPathProvider implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * dalla precedente implementazione obsoleta di CUG,
-   * dalle mappature pagina di accesso, come definite con `LoginSelectorHandler`,
-   * e infine, tornare alla pagina di accesso predefinita, come definita con `LoginSelectorHandler`.
+  * dal LoginPathProvider implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * dalla precedente implementazione obsoleta di CUG,
+  * dalle mappature pagina di accesso, come definite con `LoginSelectorHandler`,
+  * e infine, tornare alla pagina di accesso predefinita, come definita con `LoginSelectorHandler`.
 
 * Quando si ottiene un percorso di accesso valido tramite le chiamate elencate sopra, la richiesta dell’utente viene reindirizzata a tale pagina.
 
@@ -158,10 +170,10 @@ La destinazione di questa documentazione è la valutazione del percorso di acces
 * La registrazione dei percorsi di accesso dipende dalla distinzione tra password scaduta e necessità di accesso regolare come motivo del reindirizzamento
 * Se l’accesso è regolare, verifica se è possibile ottenere un percorso di accesso nell’ordine seguente:
 
-   * da `LoginPathProvider` come implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * dalla precedente implementazione obsoleta di CUG,
-   * dalle mappature pagina di accesso definite con `LoginSelectorHandler`,
-   * e infine tornare alla pagina di accesso predefinita come definita con `LoginSelectorHandler`.
+  * da `LoginPathProvider` come implementato dal nuovo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * dalla precedente implementazione obsoleta di CUG,
+  * dalle mappature pagina di accesso definite con `LoginSelectorHandler`,
+  * e infine tornare alla pagina di accesso predefinita come definita con `LoginSelectorHandler`.
 
 * Quando si ottiene un percorso di accesso valido tramite le chiamate elencate sopra, la richiesta dell’utente viene reindirizzata a tale pagina.
 
@@ -179,9 +191,9 @@ Nel definire i requisiti di autenticazione è necessario tenere conto delle segu
 * Contenuto dell’archivio del modello tale che i requisiti di autenticazione si applichino all’intera struttura senza dover escludere nuovamente le sottostrutture nidificate dai requisiti.
 * Per evitare di specificare e quindi registrare percorsi di accesso ridondanti:
 
-   * affidarsi all’ereditarietà ed evitare di definire percorsi di accesso nidificati,
-   * non impostare il percorso di accesso facoltativo su un valore corrispondente al valore predefinito o ereditato,
-   * gli sviluppatori di applicazioni devono identificare i percorsi di accesso da configurare nelle configurazioni dei percorsi di accesso globali (sia predefiniti che mappati) associate a `LoginSelectorHandler`.
+  * affidarsi all’ereditarietà ed evitare di definire percorsi di accesso nidificati,
+  * non impostare il percorso di accesso facoltativo su un valore corrispondente al valore predefinito o ereditato,
+  * gli sviluppatori di applicazioni devono identificare i percorsi di accesso da configurare nelle configurazioni dei percorsi di accesso globali (sia predefiniti che mappati) associate a `LoginSelectorHandler`.
 
 ## Rappresentazione nel repository {#representation-in-the-repository}
 

@@ -10,13 +10,24 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
 exl-id: c5907a0b-031f-4e3a-8a5c-5daf31eb71fc
-source-git-commit: 86ca5b498d0a51e21e247d07ce186d8a01c95baa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '4969'
+source-wordcount: '4975'
 ht-degree: 1%
-
 ---
-
 # Monitoraggio delle risorse del server tramite la console JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La console JMX consente di monitorare e gestire i servizi sul server CRX. Le sezioni che seguono riepilogano gli attributi e le operazioni esposte tramite il framework JMX.
@@ -53,37 +64,37 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 * Argomenti: nessuno
 * Valore restituito: dati tabulari contenenti le colonne seguenti:
 
-   * Jobs
-   * Nome coda
-   * Lavori attivi
-   * Tempo medio di elaborazione
-   * Tempo medio di attesa
-   * Processi annullati
-   * Processi con errori
-   * Processi completati
-   * Processi elaborati
-   * Processi in coda
+  * Jobs
+  * Nome coda
+  * Lavori attivi
+  * Tempo medio di elaborazione
+  * Tempo medio di attesa
+  * Processi annullati
+  * Processi con errori
+  * Processi completati
+  * Processi elaborati
+  * Processi in coda
 
 **returnWorkflowJobTopicInfo** Elenca le informazioni di elaborazione per i processi del flusso di lavoro, organizzate per argomento.
 
 * Argomenti: nessuno
 * Valore restituito: dati tabulari contenenti le colonne seguenti:
 
-   * Nome argomento
-   * Tempo medio di elaborazione
-   * Tempo medio di attesa
-   * Processi annullati
-   * Processi con errori
-   * Processi completati
-   * Processi elaborati
+  * Nome argomento
+  * Tempo medio di elaborazione
+  * Tempo medio di attesa
+  * Processi annullati
+  * Processi con errori
+  * Processi completati
+  * Processi elaborati
 
 **returnFailedWorkflowCount** mostra il numero di istanze del flusso di lavoro non riuscite. È possibile specificare un modello di flusso di lavoro per eseguire query o recuperare informazioni per tutti i modelli di flusso di lavoro.
 
 * Argomenti:
 
-   * model: ID del modello da interrogare. Per visualizzare un conteggio delle istanze del flusso di lavoro non riuscite per tutti i modelli di flusso di lavoro, non specificare alcun valore. L’ID è il percorso del nodo del modello, ad esempio:
+  * model: ID del modello da interrogare. Per visualizzare un conteggio delle istanze del flusso di lavoro non riuscite per tutti i modelli di flusso di lavoro, non specificare alcun valore. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro non riuscite.
 
@@ -96,65 +107,65 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Riavvia l&#39;istanza: (facoltativo) specifica un valore di `true` per riavviare le istanze dopo che sono state terminate. Il valore predefinito di `false` non causa il riavvio delle istanze del flusso di lavoro terminate.
-   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non riuscite di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Riavvia l&#39;istanza: (facoltativo) specifica un valore di `true` per riavviare le istanze dopo che sono state terminate. Il valore predefinito di `false` non causa il riavvio delle istanze del flusso di lavoro terminate.
+  * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non riuscite di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: dati tabulari relativi alle istanze terminate, contenenti le colonne seguenti:
 
-   * Iniziatore
-   * InstanceId
-   * ID modello
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Iniziatore
+  * InstanceId
+  * ID modello
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **retryFailedWorkItems** Tenta di eseguire i passaggi dell&#39;elemento di lavoro non riusciti. È possibile riprovare tutti gli elementi di lavoro non riusciti o solo gli elementi di lavoro non riusciti per un modello di flusso di lavoro specifico. È possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguire effettivamente l&#39;operazione.
 
 * Argomenti:
 
-   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificare alcun modello per applicare l&#39;operazione agli elementi di lavoro non riusciti di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificare alcun modello per applicare l&#39;operazione agli elementi di lavoro non riusciti di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: dati tabulari relativi agli elementi di lavoro non riusciti che vengono ritentati, incluse le colonne seguenti:
 
-   * Iniziatore
-   * InstanceId
-   * ID modello
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Iniziatore
+  * InstanceId
+  * ID modello
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **PurgeActive** rimuove le istanze di flusso di lavoro attive di una pagina specifica. Potete eliminare le varianti attive per tutti i modelli o solo le varianti per un modello specifico. Se lo si desidera, è possibile eseguire il test dell&#39;operazione per visualizzare i risultati senza eseguirla effettivamente.
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Numero di giorni dall’avvio del flusso di lavoro: età in giorni delle istanze del flusso di lavoro da eliminare.
-   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Numero di giorni dall’avvio del flusso di lavoro: età in giorni delle istanze del flusso di lavoro da eliminare.
+  * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: dati tabulari relativi alle istanze del flusso di lavoro attive eliminate, incluse le colonne seguenti:
 
-   * Iniziatore
-   * InstanceId
-   * ID modello
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Iniziatore
+  * InstanceId
+  * ID modello
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 **countStaleWorkflows** Restituisce il numero di istanze del flusso di lavoro non aggiornate. Puoi recuperare il numero di istanze non aggiornate per tutti i modelli di flusso di lavoro o per un modello specifico.
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze di flusso di lavoro non aggiornate.
 
@@ -162,10 +173,10 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non aggiornate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze non aggiornate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: elenco di istanze del flusso di lavoro riavviate.
 
@@ -178,9 +189,9 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze in esecuzione. Non specificare alcun modello per restituire il numero di istanze in esecuzione di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze in esecuzione. Non specificare alcun modello per restituire il numero di istanze in esecuzione di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro in esecuzione.
 
@@ -188,9 +199,9 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze completate. Non specificare alcun modello per restituire il numero di istanze completate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello per il quale viene restituito il numero di istanze completate. Non specificare alcun modello per restituire il numero di istanze completate di tutti i modelli di flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * Valore restituito: numero di istanze del flusso di lavoro completate.
 
@@ -198,20 +209,20 @@ Operazioni per l’amministrazione di istanze di flusso di lavoro in esecuzione,
 
 * Argomenti:
 
-   * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
+  * Modello: (facoltativo) l’ID del modello a cui viene applicata l’operazione. Non specificate alcun modello per applicare l&#39;operazione alle istanze del flusso di lavoro di tutti i modelli del flusso di lavoro. L’ID è il percorso del nodo del modello, ad esempio:
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Numero di giorni dal completamento del flusso di lavoro: il numero di giorni in cui le istanze del flusso di lavoro sono state completate.
-   * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * Numero di giorni dal completamento del flusso di lavoro: il numero di giorni in cui le istanze del flusso di lavoro sono state completate.
+  * Esecuzione di prova: (facoltativo) specificare un valore di `true` per visualizzare i risultati dell&#39;operazione senza eseguire effettivamente l&#39;operazione. Il valore predefinito di `false` causa l&#39;esecuzione dell&#39;operazione.
 
 * Valore restituito: dati tabulari relativi alle istanze del flusso di lavoro completate che vengono eliminate, incluse le colonne seguenti:
 
-   * Iniziatore
-   * InstanceId
-   * ID modello
-   * Payload
-   * StartComment
-   * WorkflowTitle
+  * Iniziatore
+  * InstanceId
+  * ID modello
+  * Payload
+  * StartComment
+  * WorkflowTitle
 
 ## Archivio {#repository}
 
@@ -532,7 +543,7 @@ Sola lettura.
 
 * Argomenti:
 
-   * name (nome): valore String che rappresenta il nome della nuova area di lavoro.
+  * name (nome): valore String che rappresenta il nome della nuova area di lavoro.
 
 * Valore restituito: nessuno
 
@@ -540,7 +551,7 @@ Sola lettura.
 
 * Argomenti:
 
-   * delete: Valore booleano che indica se eliminare gli elementi del repository non utilizzati. Il valore true determina l&#39;eliminazione dei nodi e delle proprietà non utilizzati. Se si imposta il valore false, tutti i nodi vengono analizzati ma nessuno viene eliminato.
+  * delete: Valore booleano che indica se eliminare gli elementi del repository non utilizzati. Il valore true determina l&#39;eliminazione dei nodi e delle proprietà non utilizzati. Se si imposta il valore false, tutti i nodi vengono analizzati ma nessuno viene eliminato.
 
 * Valore restituito: nessuno
 
@@ -553,13 +564,13 @@ Sola lettura.
 
 * Argomenti:
 
-   * `target`: (facoltativo) un valore `String` che rappresenta il nome del file ZIP o della directory in cui archiviare i dati del repository. Per utilizzare un file ZIP, Includi l’estensione del nome del file ZIP. Per utilizzare una directory, non includere alcuna estensione di file.
+  * `target`: (facoltativo) un valore `String` che rappresenta il nome del file ZIP o della directory in cui archiviare i dati del repository. Per utilizzare un file ZIP, Includi l’estensione del nome del file ZIP. Per utilizzare una directory, non includere alcuna estensione di file.
 
-     Per eseguire un backup incrementale, specificare la directory utilizzata in precedenza per il backup.
+    Per eseguire un backup incrementale, specificare la directory utilizzata in precedenza per il backup.
 
-     È possibile specificare un percorso assoluto o relativo. I percorsi relativi sono relativi alla directory principale della directory crx-quickstart.
+    È possibile specificare un percorso assoluto o relativo. I percorsi relativi sono relativi alla directory principale della directory crx-quickstart.
 
-     Se non si specifica alcun valore, viene utilizzato il valore predefinito `backup-currentdate.zip`, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
+    Se non si specifica alcun valore, viene utilizzato il valore predefinito `backup-currentdate.zip`, dove `currentdate` è nel formato `yyyyMMdd-HHmm`.
 
 * Valore restituito: nessuno
 
@@ -592,7 +603,7 @@ Sola lettura.
 
 * Argomenti:
 
-   * `background`: valore booleano che indica se eseguire l&#39;operazione in background in modo che la console Web sia utilizzabile durante l&#39;esecuzione. Il valore true esegue l&#39;operazione in background.
+  * `background`: valore booleano che indica se eseguire l&#39;operazione in background in modo che la console Web sia utilizzabile durante l&#39;esecuzione. Il valore true esegue l&#39;operazione in background.
 
 * Valore restituito: nessuno
 
@@ -605,9 +616,9 @@ Sola lettura.
 
 * Argomenti:
 
-   * `master`: valore stringa che rappresenta l&#39;indirizzo IP o il nome del computer che esegue il nodo del repository master.
-   * `username`: nome da utilizzare per l&#39;autenticazione con il cluster.
-   * `password`: password da utilizzare per l&#39;autenticazione.
+  * `master`: valore stringa che rappresenta l&#39;indirizzo IP o il nome del computer che esegue il nodo del repository master.
+  * `username`: nome da utilizzare per l&#39;autenticazione con il cluster.
+  * `password`: password da utilizzare per l&#39;autenticazione.
 
 * Valore restituito: nessuno
 
@@ -623,28 +634,28 @@ Il valore del campo TimeSeries per ogni tipo di statistica definito da `org.apac
 * Tipo: `TimeSeries`
 * Nome: uno dei seguenti valori della classe Enum `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * CONTATORE_SCRITTURA_BUNDLE
-   * BUNDLE_WRITE_DURATION
-   * CONTATORE_DIMENSIONI_BUNDLE
-   * MEDIA_QUERY
-   * CONTEGGIO_QUERY
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * BUNDLE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * BUNDLE_COUNTER
+  * BUNDLE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * CONTATORE_SCRITTURA_BUNDLE
+  * BUNDLE_WRITE_DURATION
+  * CONTATORE_DIMENSIONI_BUNDLE
+  * MEDIA_QUERY
+  * CONTEGGIO_QUERY
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### Attributi {#attributes-1}
 
@@ -816,7 +827,7 @@ Chiama il metodo startupFinished del modulo di avvio del server. Il metodo tenta
 Imposta il valore di completamento del processo di avvio del server. La barra di avanzamento nella finestra QuickStart rappresenta il valore di completamento.
 
 * Argomenti:
-   * p1: Valore float che rappresenta la frazione di completamento del processo di avvio. Il valore deve essere compreso tra zero e uno. Ad esempio, 0,3 indica 30% completato.
+  * p1: Valore float che rappresenta la frazione di completamento del processo di avvio. Il valore deve essere compreso tra zero e uno. Ad esempio, 0,3 indica 30% completato.
 * Valore restituito: nessuno.
 
 ## Servizi di terze parti {#third-party-services}

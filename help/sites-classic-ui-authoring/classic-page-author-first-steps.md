@@ -9,13 +9,22 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7ac0a308-42fe-498e-abd8-37aa1bc6daca
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 7%
-
+source-wordcount: '412'
+ht-degree: 8%
 ---
-
 # Primi passaggi per gli autori{#first-steps-for-authors}
 
 Questa sezione offre una panoramica delle attività principali che verranno utilizzate quando [inizierai a creare contenuti](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) con Adobe Experience Manager (AEM).
@@ -53,7 +62,7 @@ Se la tua istanza ha già pagine esistenti o hai creato una nuova pagina da solo
 * [Tagliare, copiare e incollare un componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Annullamento e ripristino di operazioni di modifica delle pagine](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Utilizzo della modalità Anteprima](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (per vedere come apparirà quando verrà pubblicato)
-* [Blocco di una pagina  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Blocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Sblocco di una pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Pubblicazione di una pagina {#publishing-a-page}

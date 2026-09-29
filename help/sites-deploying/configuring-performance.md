@@ -9,13 +9,22 @@ feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 exl-id: c46d9569-23e7-44e2-a072-034450f14ca2
-source-git-commit: 96fe29ceae4c38238ccc40d456f2ad8e276788c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
 workflow-type: tm+mt
 source-wordcount: '5215'
 ht-degree: 17%
-
 ---
-
 # Ottimizzazione delle prestazioni {#performance-optimization}
 
 >[!NOTE]
@@ -597,11 +606,13 @@ Per le pagine non modificate, le immagini rimangono comunque nella cache, sebben
 * Se invece offri una scelta tra dieci pagine iniziali diverse, puoi memorizzare in cache ciascuna di esse, migliorando così le prestazioni.
 
 >[!TIP]
+>
 >Per ulteriori dettagli sulla configurazione della cache di Dispatcher, consulta l&#39;[esercitazione sulla cache di AEM Dispatcher](https://experienceleague.adobe.com/it/docs/experience-manager-learn/dispatcher-tutorial/overview) e la relativa sezione sull&#39;[memorizzazione in cache di contenuto protetto.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=it#dispatcher-tips-and-tricks)
 
 Se personalizzi ogni pagina inserendo il nome dell’utente nella barra del titolo (ad esempio), questo ha un impatto sulle prestazioni.
 
 >[!TIP]
+>
 >Per il caching di contenuto protetto, vedere [Caching di contenuto protetto](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=it) nella guida di Dispatcher.
 
 Per quanto riguarda la combinazione di contenuti limitati e pubblici in una pagina, considera una strategia che utilizza le inclusioni lato server in Dispatcher o le inclusioni lato client tramite Ajax nel browser.

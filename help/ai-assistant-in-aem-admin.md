@@ -5,13 +5,27 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin,Developer,User
 exl-id: e653d37f-5802-4b0f-a71b-539b33ad5ca5
-source-git-commit: e3106e87f72484568667873c1772abd30a108e51
-workflow-type: ht
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+    internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 100%
-
 ---
-
 # Configurare l’Assistente IA in AEM {#aem-ai-asst-admin-setup}
 
 <!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
@@ -20,13 +34,13 @@ ht-degree: 100%
 
 Per utilizzare l’Assistente IA in AEM (Adobe Experience Manager), devi disporre delle autorizzazioni necessarie per accedere alla knowledge del prodotto tramite l’Assistente IA. Questa autorizzazione è attivata per impostazione predefinita.
 
-Se desideri controllare chi può accedere alla knowledge del prodotto, invia un’e-mail all’indirizzo [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) dal tuo indirizzo e-mail associato al tuo Adobe ID. Adobe può abilitare il controllo degli accessi a livello di utente. Quando è abilitato, l’amministratore può concedere l’accesso a livello di utente seguendo i passaggi descritti di seguito.
+Se desideri controllare chi può accedere alla knowledge del prodotto, invia un’e-mail ad [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) dall’indirizzo e-mail associato al tuo Adobe ID. Adobe può abilitare il controllo degli accessi a livello di utente. Quando è abilitato, l’amministratore può concedere l’accesso a livello di utente seguendo i passaggi descritti di seguito.
 
-Se hai richiesto il controllo degli accessi a livello di utente, la tua organizzazione deve dare il consenso tramite Adobe Admin Console.Un amministratore di prodotto crea (o seleziona) un gruppo di utenti e concede la nuova autorizzazione “Assistante IA”.Chiunque venga aggiunto a quel gruppo ottiene immediatamente l’accesso all’Assistante IA in tutto AEM.Se l’obiettivo è la disponibilità a livello aziendale, l’amministratore assegna semplicemente tutti gli utenti a quel gruppo.
+Se hai richiesto il controllo degli accessi a livello di utente, la tua organizzazione deve dare il consenso tramite Adobe Admin Console. Un amministratore di prodotto crea (o seleziona) un gruppo di utenti e concede la nuova autorizzazione “Assistante IA”. Chiunque venga aggiunto a quel gruppo ottiene immediatamente l’accesso all’Assistante IA in tutto AEM. Se l’obiettivo è la disponibilità a livello aziendale, l’amministratore assegna semplicemente tutti gli utenti a quel gruppo.
 
-Dal punto di vista di un dipendente, il processo è semplice: identifica l’amministratore del prodotto per Adobe Experience Manager nella tua organizzazione e richiedi di essere aggiunto al gruppo di utenti abilitato all’IA.Una volta presente in quel gruppo, l’icona dell’Assistente sarà visualizzata automaticamente al prossimo accesso.
+Dal punto di vista di un dipendente, il processo è semplice: identifica l’amministratore del prodotto per Adobe Experience Manager nella tua organizzazione e richiedi di essere aggiunto al gruppo di utenti abilitato all’IA. Una volta presente in quel gruppo, l’icona dell’Assistente sarà visualizzata automaticamente al prossimo accesso.
 
-Gli amministratori devono tenere presente la normale governance di Cloud Manager.È necessario disporre dei diritti di amministratore del prodotto in Admin Console per creare profili, gestire gruppi di utenti o modificare le autorizzazioni. Se gli utenti necessitano anche della funzione incorporata dell’Assistente **Crea ticket di supporto**, aggiungi il ruolo standard di **amministratore di supporto** (ruolo standard di Admin Console) alle stesse persone o allo stesso gruppo.
+Gli amministratori devono tenere presente la normale governance di Cloud Manager. È necessario disporre dei diritti di amministratore del prodotto in Admin Console per creare profili, gestire gruppi di utenti o modificare le autorizzazioni. Se gli utenti necessitano anche della funzione incorporata dell’Assistente **Crea ticket di supporto**, aggiungi il ruolo standard di **amministratore di supporto** (ruolo standard di Admin Console) alle stesse persone o allo stesso gruppo.
 
 Il processo di configurazione dell’Assistente IA in AEM prevede i seguenti passaggi:
 
@@ -61,7 +75,7 @@ Prima di iniziare, assicurati di aver soddisfatto i seguenti prerequisiti:
    | --- | --- |
    | Nome del profilo di prodotto | `AI Assistant in AEM` (o il tuo nome descrittivo preferito) |
    | Nome visualizzato (facoltativo) | `AI Assistant` |
-   | Descrizione (facoltativa) | `Product profile for managing AI Assistant in AEM access` |
+   | Descrizione (facoltativo) | `Product profile for managing AI Assistant in AEM access` |
    | Notifica | Imposta la configurazione in base alle preferenze della tua organizzazione |
 
 
@@ -113,7 +127,7 @@ Articolo di riferimento: [Assegnare autorizzazioni personalizzate al nuovo profi
    | Opzione | Valore suggerito |
    | --- | --- |
    | Nome del gruppo di utenti | `AI Assistant in AEM` (o il tuo nome preferito) |
-   | Descrizione (facoltativa) | `User group for managing AI Assistant in AEM access` |
+   | Descrizione (facoltativo) | `User group for managing AI Assistant in AEM access` |
 
    ![Crea un nuovo gruppo di utenti](/help/assets/assets-ai/ai-assistant-create-new-user-group.png)
 

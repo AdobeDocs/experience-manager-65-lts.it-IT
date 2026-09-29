@@ -1,5 +1,5 @@
 ---
-title: Aggiungere funzioni di Dynamic Media Classic alle pagine
+title: Aggiungere risorse Dynamic Media Classic alle pagine
 description: Come aggiungere funzioni e componenti di Dynamic Media Classic a una pagina in Adobe Experience Manager.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,14 +10,28 @@ role: User, Admin
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 exl-id: 80ffa496-880a-4638-bf78-1aab0c052983
-source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
 workflow-type: tm+mt
-source-wordcount: '2844'
-ht-degree: 2%
-
+source-wordcount: '2902'
+ht-degree: 3%
 ---
-
-# Aggiungere funzioni di Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
+# Aggiungere risorse Dynamic Media Classic alle pagine {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=it) è una soluzione ospitata per la gestione, l&#39;ottimizzazione, la pubblicazione e la distribuzione di risorse rich media a visualizzazioni e stampe connesse a Internet, dispositivi mobili e posta elettronica.
 
@@ -262,7 +276,7 @@ Se sono presenti più configurazioni, Experience Manager visualizza per impostaz
 >[!NOTE]
 >
 >* Assets nella cartella on-demand non viene visualizzato nel browser contenuti di Dynamic Media Classic.
->* Dynamic Media Classic Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
+>* Quando [Anteprima sicura è abilitata](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), nel browser del contenuto di Dynamic Media Classic vengono visualizzate sia le risorse pubblicate che quelle non pubblicate.
 >* Se **[!UICONTROL Dynamic Media Classic]** o l&#39;icona **[!UICONTROL S7]** non sono visualizzati come opzione nel browser del contenuto, è necessario [configurare Dynamic Media Classic per l&#39;utilizzo con Experience Manager](/help/sites-administering/scene7.md).
 >* Per i video, il browser dei contenuti di Dynamic Media Classic supporta:
 >
