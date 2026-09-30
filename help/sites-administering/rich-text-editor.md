@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2978'
 ht-degree: 1%
 ---
 # Configurare il Rich Text editor {#configure-the-rich-text-editor}
@@ -327,12 +327,12 @@ In una pagina, puoi includere la libreria client di CoralUI 2 RTE o la libreria 
 
 ## Ulteriori informazioni {#further-information}
 
-Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, vedere il riferimento all&#39;[API Widget di AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText).
+Per ulteriori informazioni sulla configurazione dell&#39;editor Rich Text, vedere il riferimento all&#39;[API Widget di AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText).
 
 In particolare, per visualizzare i plug-in e le opzioni correlate disponibili:
 
-* Il componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornisce un campo modulo per la modifica di informazioni di testo formattato (testo formattato). Per informazioni su tutti i parametri disponibili per il modulo Rich Text, vedere Opzioni di configurazione.
-* Il componente RichText offre un&#39;ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
+* Il componente [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) fornisce un campo modulo per la modifica di informazioni di testo formattato (testo formattato). Per informazioni su tutti i parametri disponibili per il modulo Rich Text, vedere Opzioni di configurazione.
+* Il componente RichText offre un&#39;ampia gamma di funzionalità utilizzando i plug-in elencati in [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Per ogni plug-in:
 
   * Per informazioni dettagliate sulle funzionalità che è possibile attivare (o disattivare), vedere Funzionalità.
   * Per informazioni dettagliate sulla configurazione del plug-in appropriato, consulta Opzioni di configurazione per tutti i parametri disponibili.

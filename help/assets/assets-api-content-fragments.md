@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2066'
 ht-degree: 23%
 ---
 # Supporto dei frammenti di contenuto nell’API HTTP di AEM Assets {#content-fragments-support-in-aem-assets-http-api}
@@ -286,7 +286,7 @@ L’utilizzo può variare a seconda che utilizzi un ambiente di authoring o pubb
 
 >[!NOTE]
 >
->Per ulteriori dettagli, vedi il [riferimento API](/help/assets/assets-api-content-fragments.md#api-reference). In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
+>Per ulteriori dettagli, vedi il [riferimento API](/help/assets/assets-api-content-fragments.md#api-reference). In particolare, [API di Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html).
 
 ### Lettura/consegna {#read-delivery}
 
@@ -410,7 +410,7 @@ Restituito quando:
 
 Consulta qui per riferimenti API dettagliati:
 
-* [API Adobe Experience Manager Assets - Frammenti di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [API Adobe Experience Manager Assets - Frammenti di contenuto](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/assets-api-content-fragments/index.html)
 * [API HTTP di Assets](/help/assets/mac-api-assets.md)
 
   * [Funzioni disponibili](/help/assets/mac-api-assets.md#assets)

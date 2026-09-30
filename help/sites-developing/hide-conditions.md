@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 3%
 ---
 # Utilizzo di Nascondi condizioni {#using-hide-conditions}
@@ -43,7 +43,7 @@ Utilizzando le condizioni di nascondi, gli amministratori, gli sviluppatori e gl
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` è responsabile del filtraggio delle risorse in base all&#39;esistenza e al valore della proprietà `granite:hide`, situata nel campo da filtrare. L&#39;implementazione di `/libs/cq/gui/components/authoring/dialog/dialog.jsp` include un&#39;istanza di `FilteringResourceWrapper.`
 
-L&#39;implementazione utilizza l&#39;API Granite [ELResolver](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e aggiunge una variabile personalizzata `cqDesign` tramite ExpressionCustomizer.
+L&#39;implementazione utilizza l&#39;API Granite [ELResolver](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) e aggiunge una variabile personalizzata `cqDesign` tramite ExpressionCustomizer.
 
 Di seguito sono riportati alcuni esempi di condizioni di Nascondi in un nodo di progettazione che si trova in `etc/design` o come criterio del contenuto.
 

@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2268'
 ht-degree: 2%
 ---
 # Generare più comunicazioni interattive utilizzando API Batch {#use-batch-api-to-generate-multiple-ic}
@@ -185,7 +185,7 @@ I dati (record) salvati in un&#39;origine dati esterna vengono combinati con un 
 
 ## Richiama l’API Batch utilizzando le richieste REST
 
-È possibile richiamare [l&#39;API Batch](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/index.html) tramite richieste REST (Managational State Transfer). Ti consente di fornire un endpoint REST ad altri utenti per accedere all’API e configurare i tuoi metodi per l’elaborazione, l’archiviazione e la personalizzazione della comunicazione interattiva. Puoi sviluppare un servlet Java™ personalizzato per distribuire l’API sull’istanza AEM.
+È possibile richiamare [l&#39;API Batch](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/index.html) tramite richieste REST (Managational State Transfer). Ti consente di fornire un endpoint REST ad altri utenti per accedere all’API e configurare i tuoi metodi per l’elaborazione, l’archiviazione e la personalizzazione della comunicazione interattiva. Puoi sviluppare un servlet Java™ personalizzato per distribuire l’API sull’istanza AEM.
 
 Prima di distribuire il servlet Java™, assicurati di disporre di una comunicazione interattiva e che i file di dati corrispondenti siano pronti. Per creare e distribuire il servlet Java™, effettua le seguenti operazioni:
 

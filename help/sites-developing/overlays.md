@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 1%
 ---
 # Sovrapposizioni{#overlays}
@@ -35,7 +35,7 @@ In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e s
 
 A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrapposizioni vengono implementate e utilizzate:
 
-* AEM 6.0 e versione successiva: per le sovrapposizioni relative a [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ovvero l&#39;interfaccia utente touch)
+* AEM 6.0 e versione successiva: per le sovrapposizioni relative a [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ovvero l&#39;interfaccia utente touch)
 
   * Metodo
 
@@ -66,7 +66,7 @@ A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrappos
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia utente standard touch.
+>[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia utente standard touch.
 >
 >Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) implicano la copia del nodo e dell’intera sottostruttura appropriati, quindi l’apporto delle modifiche necessarie.
 

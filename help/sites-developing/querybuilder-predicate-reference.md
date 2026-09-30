@@ -9,13 +9,11 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
 exl-id: c044d541-24d6-4975-9b38-6a4317a16358
-source-git-commit: a85b54d5a7c3b00f95f439941a390dcfee883187
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2358'
 ht-degree: 1%
-
 ---
-
 # Riferimento predicato di Query Builder{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Concettualmente `fulltext AND ( (path AND type) OR (path AND type) )`. Tali join
 
 ### hasPermission {#haspermission}
 
-Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Limita il risultato agli elementi in cui la sessione corrente dispone dei privilegi [JCR specificati.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Un predicato di sola filtraggio e non può utilizzare un indice di ricerca. Non supporta l’estrazione dei facet.
 
@@ -269,7 +267,7 @@ Supporta l’estrazione facet e fornisce due bucket per le risorse principali e 
 
 ### memberOf {#memberof}
 
-Trova elementi che sono membri di una raccolta di risorse [sling specifica](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
+Trova elementi che sono membri di una raccolta di risorse [sling specifica](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/org/apache/sling/resource/collection/ResourceCollection.html).
 
 Un predicato di sola filtraggio e non può utilizzare un indice di ricerca. Non supporta l’estrazione dei facet.
 
@@ -475,18 +473,18 @@ Il nome &quot;root&quot; non viene mai utilizzato in una query, è implicito.
 
   (solo per il servlet JSON) seleziona il modo in cui gli hit vengono scritti come JSON, con questi standard (estensibili tramite il servizio ResultHitWriter):
 
-   * **semplice**:
+  * **semplice**:
 
-     Elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato).
+    Elementi minimi come `path`, `title`, `lastmodified`, `excerpt` (se impostato).
 
-   * **completo**:
+  * **completo**:
 
-     I risultati vengono visualizzati come JSON Sling per ogni nodo, con `jcr:path` che mostra il percorso hit. Per impostazione predefinita, la risposta include solo le proprietà dirette del nodo; utilizza `p.nodedepth=N` per includere contenuto più approfondito, dove `0` restituisce l&#39;intera sottostruttura. Impostare `p.acls=true` per includere le autorizzazioni JCR della sessione corrente per ogni elemento (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    I risultati vengono visualizzati come JSON Sling per ogni nodo, con `jcr:path` che mostra il percorso hit. Per impostazione predefinita, la risposta include solo le proprietà dirette del nodo; utilizza `p.nodedepth=N` per includere contenuto più approfondito, dove `0` restituisce l&#39;intera sottostruttura. Impostare `p.acls=true` per includere le autorizzazioni JCR della sessione corrente per ogni elemento (`create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
 
-   * **selettivo**:
+  * **selettivo**:
 
-     La risposta include solo le proprietà elencate in `p.properties`, che è un elenco separato da spazi di percorsi relativi (utilizzare `+` negli URL). Se un percorso relativo ha una profondità maggiore di 1, l&#39;output lo nidifica come oggetto figlio. La proprietà speciale `jcr:path` include sempre il percorso hit.
+    La risposta include solo le proprietà elencate in `p.properties`, che è un elenco separato da spazi di percorsi relativi (utilizzare `+` negli URL). Se un percorso relativo ha una profondità maggiore di 1, l&#39;output lo nidifica come oggetto figlio. La proprietà speciale `jcr:path` include sempre il percorso hit.
 
 
 ### `savedquery` {#savedquery}

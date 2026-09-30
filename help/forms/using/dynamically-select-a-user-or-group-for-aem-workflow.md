@@ -25,9 +25,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '948'
 ht-degree: 3%
 ---
 # Selezionare dinamicamente un utente o un gruppo per i passaggi del flusso di lavoro incentrati su AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
@@ -131,7 +131,7 @@ function getAdobeSignRecipients() {
 
 ## Utilizzare l’interfaccia Java per scegliere un utente o un gruppo in modo dinamico {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per i passaggi Adobe Sign e Assegna attività. Puoi creare un bundle OSGi che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo al server AEM Forms. Rende l&#39;opzione disponibile per la selezione nei componenti `Assign Task` e Adobe Sign di AEM Workflow.
+È possibile utilizzare l&#39;interfaccia Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per i passaggi Adobe Sign e Assegna attività. Puoi creare un bundle OSGi che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e distribuirlo al server AEM Forms. Rende l&#39;opzione disponibile per la selezione nei componenti `Assign Task` e Adobe Sign di AEM Workflow.
 
 Sono necessari [file SDK](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#) e [file JAR granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) per compilare l&#39;esempio di codice elencato di seguito. Aggiungi questi file jar come dipendenze esterne al progetto del bundle OSGi. Puoi utilizzare qualsiasi IDE Java per creare un bundle OSGi. La procedura seguente descrive come utilizzare Eclipse per creare un bundle OSGi:
 
@@ -240,7 +240,7 @@ Sono necessari [file SDK](https://experienceleague.adobe.com/it/docs/experience-
    </project>
    ```
 
-1. Aggiungere il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per il passaggio Assegna attività. Per il codice di esempio, vedere [Esempio per la scelta dinamica di un utente o di un gruppo tramite un&#39;interfaccia Java](#-sample-scripts-for).
+1. Aggiungere il codice sorgente che utilizza l&#39;interfaccia Java [RecipientInfoSpecifier](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) per scegliere un utente o un gruppo in modo dinamico per il passaggio Assegna attività. Per il codice di esempio, vedere [Esempio per la scelta dinamica di un utente o di un gruppo tramite un&#39;interfaccia Java](#-sample-scripts-for).
 1. Apri un prompt dei comandi e passa alla directory contenente il progetto del bundle OSGi. Utilizza il seguente comando per creare il bundle OSGi:
 
    `mvn clean install`

@@ -20,16 +20,16 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1739'
 ht-degree: 6%
 ---
 # Tipi di nodo personalizzati{#custom-node-types}
 
 Poiché Adobe Experience Manager (AEM) è basato su Sling e utilizza un archivio JCR, i tipi di nodo offerti da entrambi sono disponibili per l’utilizzo con quanto segue:
 
-* [Tipi di nodo JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipi di nodo JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipi di nodo Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Oltre a questi tipi di nodo, AEM fornisce una serie di tipi di nodo personalizzati.

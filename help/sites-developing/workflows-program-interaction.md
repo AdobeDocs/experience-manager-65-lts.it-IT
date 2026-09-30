@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2058'
 ht-degree: 1%
 ---
 # Interazione con i flussi di lavoro a livello di programmazione{#interacting-with-workflows-programmatically}
@@ -35,7 +35,7 @@ Quando [personalizzi ed estendi i flussi di lavoro](/help/sites-developing/workf
 
 ## Utilizzo dell’API Java del flusso di lavoro {#using-the-workflow-java-api}
 
-L&#39;API Java del flusso di lavoro è costituita dal pacchetto [`com.adobe.granite.workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html) e da diversi pacchetti secondari. Il membro più significativo dell&#39;API è la classe `com.adobe.granite.workflow.WorkflowSession`. La classe `WorkflowSession` consente di accedere sia agli oggetti del flusso di lavoro in fase di progettazione che a quelli di runtime:
+L&#39;API Java del flusso di lavoro è costituita dal pacchetto [`com.adobe.granite.workflow`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/package-summary.html) e da diversi pacchetti secondari. Il membro più significativo dell&#39;API è la classe `com.adobe.granite.workflow.WorkflowSession`. La classe `WorkflowSession` consente di accedere sia agli oggetti del flusso di lavoro in fase di progettazione che a quelli di runtime:
 
 * modelli di workflow
 * elementi di lavoro
@@ -49,10 +49,10 @@ La tabella seguente fornisce collegamenti alla documentazione di riferimento di 
 
 | Funzioni | Oggetti |
 |---|---|
-| Accesso a un flusso di lavoro | [`WorkflowSession`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
-| Esecuzione e query di un’istanza di flusso di lavoro | [`Workflow`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
-| Gestione di un modello di flusso di lavoro | [`WorkflowModel`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
-| Informazioni per un nodo presente o meno nel flusso di lavoro | [`WorkflowStatus`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
+| Accesso a un flusso di lavoro | [`WorkflowSession`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Esecuzione e query di un’istanza di flusso di lavoro | [`Workflow`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Gestione di un modello di flusso di lavoro | [`WorkflowModel`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informazioni per un nodo presente o meno nel flusso di lavoro | [`WorkflowStatus`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Ottenimento di oggetti del flusso di lavoro negli script ECMA {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -567,7 +567,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 ### Filtraggio dei flussi di lavoro di sistema durante la verifica dello stato del flusso di lavoro {#filtering-out-system-workflows-when-checking-workflow-status}
 
-È possibile utilizzare l&#39;API [WorkflowStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) per recuperare informazioni sullo stato del flusso di lavoro di un nodo.
+È possibile utilizzare l&#39;API [WorkflowStatus](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) per recuperare informazioni sullo stato del flusso di lavoro di un nodo.
 
 Diversi metodi hanno il parametro:
 
@@ -818,7 +818,7 @@ wfSession.complete(workItem, routes.get(0));
 
 ### Ascolto degli eventi dei flussi di lavoro {#listening-for-workflow-events}
 
-Utilizzare il framework eventi OSGi per rilevare gli eventi definiti dalla classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Questa classe fornisce anche diversi metodi utili per ottenere informazioni sull&#39;oggetto dell&#39;evento. Il metodo `getWorkItem`, ad esempio, restituisce l&#39;oggetto `WorkItem` per l&#39;elemento di lavoro coinvolto nell&#39;evento.
+Utilizzare il framework eventi OSGi per rilevare gli eventi definiti dalla classe [`com.adobe.granite.workflow.event.WorkflowEvent`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html). Questa classe fornisce anche diversi metodi utili per ottenere informazioni sull&#39;oggetto dell&#39;evento. Il metodo `getWorkItem`, ad esempio, restituisce l&#39;oggetto `WorkItem` per l&#39;elemento di lavoro coinvolto nell&#39;evento.
 
 Il codice di esempio seguente definisce un servizio che ascolta gli eventi del flusso di lavoro ed esegue le attività in base al tipo di evento.
 

@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3270'
 ht-degree: 2%
 ---
 # Guida di riferimento per i passaggi dei flussi di lavoro {#workflow-step-reference}
@@ -349,7 +349,7 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 
 1. **Esempio di definizione della finestra di dialogo**
 
-   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
+   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -437,7 +437,7 @@ Crea un servizio OSGi o un ECMAScript che seleziona un utente a cui assegnare l�
 
 * **Servizio OSGi**
 
-  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
+  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
 
   * Campo `SERVICE_PROPERTY_LABEL`: utilizzare questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco di selettori partecipanti disponibili nelle proprietà **Passaggio partecipante dinamico**.
 

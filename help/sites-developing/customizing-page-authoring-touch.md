@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1472'
 ht-degree: 2%
 ---
 # Personalizzazione dell’authoring pagina{#customizing-page-authoring}
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM) offre diversi meccanismi per personalizzare la fu
 
 >[!NOTE]
 >
->Per ulteriori informazioni, consulta [Set di documentazione JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>Per ulteriori informazioni, consulta [Set di documentazione JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Questi possono essere utilizzati in molti modi per estendere la funzionalità di authoring delle pagine nell’istanza AEM. Di seguito è riportata una selezione (ad alto livello).
 
@@ -56,7 +56,7 @@ Questi possono essere utilizzati in molti modi per estendere la funzionalità di
 >
 >* Utilizzo e creazione di [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilizzo e creazione di [sovrapposizioni](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struttura dell&#39;interfaccia utente touch di AEM](/help/sites-developing/touch-ui-structure.md) per i dettagli delle aree strutturali utilizzate per l&#39;authoring delle pagine.
 >
 
@@ -116,9 +116,9 @@ Puoi trovare il codice di questa pagina su GitHub
 
 Durante l’authoring delle pagine, l’utente deve spesso selezionare tra le risorse (ad esempio pagine, componenti e risorse). Può assumere la forma di un elenco, ad esempio, dal quale l’autore deve scegliere un elemento.
 
-Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se il componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) viene utilizzato per consentire all&#39;utente di selezionare il percorso di una particolare risorsa, i percorsi presentati possono essere filtrati nel modo seguente:
+Per mantenere l’elenco a una dimensione ragionevole e pertinente al caso d’uso, un filtro può essere implementato sotto forma di predicato personalizzato. Ad esempio, se il componente [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) viene utilizzato per consentire all&#39;utente di selezionare il percorso di una particolare risorsa, i percorsi presentati possono essere filtrati nel modo seguente:
 
-* Implementare il predicato personalizzato implementando l&#39;interfaccia [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implementare il predicato personalizzato implementando l&#39;interfaccia [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Specificare un nome per il predicato e fare riferimento a tale nome quando si utilizza `pathbrowser`.
 
 Per ulteriori dettagli sulla creazione di un predicato personalizzato, vedere [Implementazione di un valutatore del predicato personalizzato per Query Builder](/help/sites-developing/implementing-custom-predicate-evaluator.md).

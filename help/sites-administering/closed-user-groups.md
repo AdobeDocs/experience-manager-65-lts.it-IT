@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 1%
 ---
 # Gruppi di utenti chiusi in AEM{#closed-user-groups-in-aem}
@@ -217,7 +217,7 @@ La pagina associata al percorso di accesso può trovarsi all’interno o all’e
 
 ### Gestione dei criteri CUG {#managing-cug-policies}
 
-Il nuovo tipo di criteri di controllo di accesso per limitare l&#39;accesso in lettura per un CUG viene gestito utilizzando l&#39;API di gestione del controllo di accesso JCR e segue i meccanismi descritti con la specifica [JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+Il nuovo tipo di criteri di controllo di accesso per limitare l&#39;accesso in lettura per un CUG viene gestito utilizzando l&#39;API di gestione del controllo di accesso JCR e segue i meccanismi descritti con la specifica [JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Imposta un nuovo criterio per gruppi utenti chiusi {#set-a-new-cug-policy}
 

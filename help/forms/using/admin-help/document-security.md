@@ -20,10 +20,10 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3286'
-ht-degree: 100%
+source-wordcount: '3287'
+ht-degree: 99%
 ---
 # Informazioni sulla protezione dei documenti {#about-document-security}
 
@@ -283,4 +283,4 @@ Aggiungi gruppi di utenti ai criteri anziché singoli utenti. Semplifica la gest
 
   >[!NOTE]
   >
-  >Puoi utilizzare l’API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il chiamante di API dispone dell’autorizzazione di editore del documento, quindi crea e ti restituisce un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e questi sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.
+  >Puoi utilizzare l’API [getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) per recuperare un massimo di 1000 nomi di set di criteri. Internamente, l’API recupera un massimo di 1000 criteri per i quali il chiamante di API dispone dell’autorizzazione di editore del documento, quindi crea e ti restituisce un elenco di nomi univoci di set di criteri associati ai criteri recuperati. Ad esempio, quando l’API recupera 1000 criteri e questi sono associati a 200 set di criteri in totale, l’API restituisce solo 200 nomi di set di criteri.

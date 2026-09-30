@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '5298'
+source-wordcount: '5300'
 ht-degree: 1%
 ---
 # Sviluppo di rapporti {#developing-reports}
@@ -116,7 +116,7 @@ Ogni colonna è un&#39;istanza del componente [`columnbase`](#column-base-compon
 La query:
 
 * È definito come parte del componente [`reportbase`](#report-base).
-* È basato su [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
+* È basato su [CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/search/QueryBuilder.html).
 * Recupera i dati utilizzati come base del rapporto. Ogni riga del set di risultati (tabella) è associata a un nodo come restituito dalla query. Le informazioni specifiche per [singole colonne](#column-base-component) vengono quindi estratte da questo set di dati.
 
 * Di solito è costituito da:
@@ -390,7 +390,7 @@ N:charting
 
 Ogni rapporto può avere una finestra di dialogo di configurazione, che consente all’utente di specificare vari parametri per il rapporto. Questa finestra di dialogo è accessibile tramite il pulsante **Modifica** quando la pagina del report è aperta.
 
-Questa finestra di dialogo è un CQ standard [dialog](/help/sites-developing/components-basics.md#dialogs) e può essere configurata come tale (vedi [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).
+Questa finestra di dialogo è un CQ standard [dialog](/help/sites-developing/components-basics.md#dialogs) e può essere configurata come tale (vedi [CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog) per ulteriori informazioni).
 
 Di seguito è riportato un esempio di finestra di dialogo:
 

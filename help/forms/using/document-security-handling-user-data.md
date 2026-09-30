@@ -25,9 +25,9 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
 ---
 # Document Security | Gestione dei dati utente {#document-security-handling-user-data}
@@ -141,7 +141,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Per esportare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di controllo in base a `principalId`, `policyId` o `licenseId`.
+>Per esportare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per esportare i dati di controllo in base a `principalId`, `policyId` o `licenseId`.
 
 Per ottenere dati completi su un utente nel sistema, è necessario accedere ed esportare i dati dal database di gestione utenti. Per ulteriori informazioni, vedere [Gestione utenti di Forms: gestione dei dati utente](/help/forms/using/user-management-handling-user-data.md).
 
@@ -166,7 +166,7 @@ Per eliminare i dati di Document Security relativi a un ID entità dalle tabelle
 
    >[!NOTE]
    >
-   >Per eliminare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di controllo basati su `principalId`, `policyId` o `licenseId`.
+   >Per eliminare i dati dalla tabella `EdcAuditEntity`, utilizzare l&#39;API [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) che accetta [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) come parametro per eliminare i dati di controllo basati su `principalId`, `policyId` o `licenseId`.
 
 1. I file XML dei criteri attivi e archiviati sono archiviati rispettivamente nelle tabelle di database `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity`. Per eliminare i dati di un utente da queste tabelle, eseguire le operazioni seguenti:
 

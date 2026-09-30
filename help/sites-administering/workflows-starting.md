@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 3%
 ---
 # Avviare i flussi di lavoro{#starting-workflows}
@@ -183,7 +183,7 @@ Un pacchetto di flusso di lavoro:
      Questa proprietà di avvio è un elenco di elementi separato da virgole: &quot;
 
      * `property-name` ignora qualsiasi evento `jcr` attivato sul nome della proprietà specificato. &quot;
-     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualsiasi evento che contiene `*<someValue*`> `user-data` impostato tramite l&#39;API [`ObservationManager`] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Ad esempio:
 

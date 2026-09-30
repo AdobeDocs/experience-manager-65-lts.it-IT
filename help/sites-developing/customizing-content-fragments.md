@@ -22,9 +22,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2831'
 ht-degree: 2%
 ---
 # Personalizzazione ed estensione dei frammenti di contenuto{#customizing-and-extending-content-fragments}
@@ -255,7 +255,7 @@ I frammenti di contenuto possono essere integrati con:
 
 Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi:
 
-[com.adobe.cq.dam.cfm](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -265,7 +265,7 @@ Puoi utilizzare l’API lato server per accedere ai frammenti di contenuto; vedi
 
 Le tre interfacce seguenti possono fungere da punti di ingresso:
 
-* **Modello frammento** ([Modello frammento](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Modello frammento** ([Modello frammento](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Utilizza `FragmentTemplate.createFragment()` per creare un frammento.
 
@@ -308,7 +308,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
     * Ottenere dati di base (nome, titolo, descrizione)
 
-* **Frammento di contenuto** ([Frammento di contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Frammento di contenuto** ([Frammento di contenuto](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   Questa interfaccia consente di lavorare con un frammento di contenuto in modo astratto.
 
@@ -340,7 +340,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
   Le interfacce che rappresentano gli elementi principali di un frammento sono:
 
-  * **Elemento contenuto** ([Elemento contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **Elemento contenuto** ([Elemento contenuto](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
     * Ottenere dati di base (nome, titolo, descrizione)
     * Ottieni/Imposta contenuto
@@ -354,7 +354,7 @@ Le tre interfacce seguenti possono fungere da punti di ingresso:
 
     * Scelta rapida per la risoluzione delle varianti (applicazione di alcune logiche di fallback aggiuntive specifiche per l’implementazione se la variante specificata non è disponibile per un elemento)
 
-  * **Variante contenuto** ([Variante contenuto](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **Variante contenuto** ([Variante contenuto](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
     * Ottenere dati di base (nome, titolo, descrizione)
     * Ottieni/Imposta contenuto

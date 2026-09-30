@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # Protezione{#security}
@@ -48,7 +48,7 @@ Il meccanismo di protezione XSS fornito da AEM si basa sulla [libreria Java™ A
 
 >[!NOTE]
 >
->Adobe consiglia di accedere sempre all&#39;API di protezione XSS utilizzando [XSSAPI fornita da AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe consiglia di accedere sempre all&#39;API di protezione XSS utilizzando [XSSAPI fornita da AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Inoltre, un firewall dell&#39;applicazione Web, ad esempio [mod_security per Apache](https://www.modsecurity.org), può fornire un controllo centrale e affidabile sulla sicurezza dell&#39;ambiente di distribuzione e proteggere da attacchi di cross-site scripting non rilevati in precedenza.
 

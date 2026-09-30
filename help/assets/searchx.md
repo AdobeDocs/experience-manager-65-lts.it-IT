@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 7%
 ---
 # Estendere la ricerca delle risorse {#extending-assets-search}
@@ -61,7 +61,7 @@ Per sovrapporre i predicati preconfigurati, copiare il nodo `facets` da `/libs/d
 
 Oltre a utilizzare i predicati preesistenti, gli sviluppatori di [!DNL Experience Manager] possono anche creare i propri predicati utilizzando [API Query Builder](/help/sites-developing/querybuilder-api.md).
 
-La creazione di predicati personalizzati richiede conoscenze di base sul framework [Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html).
+La creazione di predicati personalizzati richiede conoscenze di base sul framework [Widgets](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html).
 
 La best practice prevede di copiare un predicato esistente e regolarlo. I predicati di esempio sono in **/libs/cq/search/components/predicates**.
 
