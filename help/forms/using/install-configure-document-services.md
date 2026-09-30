@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
 workflow-type: tm+mt
-source-wordcount: '10681'
+source-wordcount: '10769'
 ht-degree: 2%
 ---
 # Installazione e configurazione dei servizi documentali {#installing-and-configuring-document-services}
@@ -201,6 +201,10 @@ Se si utilizza un sistema operativo basato su UNIX, installare i seguenti pacche
   * ld-linux.so.2
   * libexpat.so.1
 
+* Su Red Hat® Enterprise Linux® 9, la build OpenOffice a 32 bit richiede `libcrypt.so.1`, che non è installato per impostazione predefinita. Se manca, OpenOffice non viene avviato con l&#39;errore `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e le conversioni da OpenOffice a PDF non riescono. Installare il pacchetto `libxcrypt-compat` (32 bit) per fornire la libreria:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
+
 ## Configurazioni di preinstallazione {#preinstallationconfigurations}
 
 Le configurazioni elencate nella sezione Configurazioni di preinstallazione sono applicabili solo al servizio PDF Generator. Se non configuri il servizio PDF Generator, puoi saltare la sezione di configurazione della preinstallazione.
@@ -215,7 +219,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 Dopo aver installato Acrobat, aprire Microsoft® Word. Nella scheda **Acrobat**, fai clic su **Crea PDF** e converti un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
 
@@ -1074,7 +1078,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
@@ -1377,6 +1381,10 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 * Creare una variabile di ambiente `OpenOffice_PATH` e impostarla in modo che punti all&#39;installazione di OpenOffice è impostata nel profilo [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) o nel profilo dt (Device Tree).
 * In caso di problemi durante l&#39;installazione di OpenOffice, verificare che siano disponibili le [librerie a 32 bit](#extrarequirements) necessarie per l&#39;installazione di OpenOffice.
+
+* Su Red Hat® Enterprise Linux® 9, la build OpenOffice a 32 bit richiede `libcrypt.so.1`, che non è installato per impostazione predefinita. Se manca, OpenOffice non viene avviato con l&#39;errore `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e le conversioni da OpenOffice a PDF non riescono. Installare il pacchetto `libxcrypt-compat` (32 bit) per fornire la libreria:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
