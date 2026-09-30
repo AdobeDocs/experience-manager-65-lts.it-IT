@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1262'
 ht-degree: 1%
 ---
 # Utilizzare Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
@@ -43,7 +43,7 @@ Sling Resource Merger combina le risorse di sovrapposizione e di sostituzione (e
 
 >[!CAUTION]
 >
->Sling Resource Merger e i metodi correlati possono essere utilizzati solo con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/index.html). Questa situazione significa anche che è appropriata solo per l’interfaccia utente standard touch; in particolare, le sostituzioni definite in questo modo sono applicabili solo alla finestra di dialogo touch di un componente.
+>Sling Resource Merger e i metodi correlati possono essere utilizzati solo con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/index.html). Questa situazione significa anche che è appropriata solo per l’interfaccia utente standard touch; in particolare, le sostituzioni definite in questo modo sono applicabili solo alla finestra di dialogo touch di un componente.
 >
 >Per sovrapporre o sostituire altre aree (incluse altre parti di un componente touch o dell’interfaccia classica), copia il nodo e la struttura appropriati dall’originale. Posizionate la copia nel punto in cui definite la personalizzazione.
 
@@ -221,7 +221,7 @@ Con la funzionalità standard, questi casi d’uso ti consentono di effettuare l
      * tipo: `String[]`
      * valore: elenco dei nodi figlio (come definiti in `/libs`) da nascondere/ignorare
 
-     Il carattere jolly &ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
+     Il carattere jolly &amp;ast; può essere utilizzato per nascondere o ignorare tutti i nodi figlio.
 
 * **Riordina nodi**
 

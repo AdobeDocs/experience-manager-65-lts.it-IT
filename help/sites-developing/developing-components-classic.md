@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2449'
 ht-degree: 2%
 ---
 # Sviluppo di componenti Adobe Experience Manager (AEM) (interfaccia classica){#developing-aem-components-classic-ui}
@@ -101,7 +101,7 @@ Esistono tre metodi per accedere al contenuto in AEM WCM:
 
 * Tramite l&#39;oggetto `currentPage` introdotto in `global.jsp`:
 
-  L&#39;oggetto `currentPage` è un&#39;istanza di una pagina (vedere [API AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La classe page fornisce alcuni metodi per accedere al contenuto.
+  L&#39;oggetto `currentPage` è un&#39;istanza di una pagina (vedere [API AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/wcm/api/Page.html)). La classe page fornisce alcuni metodi per accedere al contenuto.
 
   Esempio: `String pageTitle = currentPage.getTitle();`
 
@@ -185,8 +185,8 @@ Per sviluppare nuovi componenti per AEM basati su componenti esistenti, è possi
    >
    >Un componente per:
    >
-   >* L&#39;interfaccia touch utilizza [componenti Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-   >* L&#39;interfaccia classica utilizza [widget ExtJS](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* L&#39;interfaccia touch utilizza [componenti Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+   >* L&#39;interfaccia classica utilizza [widget ExtJS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >

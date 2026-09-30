@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
 ---
 # Creazione di un nuovo componente campo dell’interfaccia utente Granite{#creating-a-new-granite-ui-field-component}
@@ -37,7 +37,7 @@ L&#39;interfaccia utente Granite fornisce una serie di componenti progettati per
 
 >[!NOTE]
 >
->Per informazioni dettagliate sui campi, consulta la [documentazione dell&#39;interfaccia utente Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Per informazioni dettagliate sui campi, consulta la [documentazione dell&#39;interfaccia utente Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Utilizza il framework Granite UI Foundation per sviluppare e/o estendere i componenti Granite. Ciò si basa su due elementi:
 
@@ -59,7 +59,7 @@ Il componente generico dell&#39;interfaccia utente Granite `field` è composto d
 * `init.jsp`: gestisce l&#39;elaborazione generica, l&#39;etichettatura, la descrizione e fornisce il valore del modulo necessario per il rendering del campo.
 * `render.jsp`: viene eseguito il rendering effettivo del campo, che deve essere sostituito per il campo personalizzato; è incluso da `init.jsp`.
 
-Per informazioni dettagliate, consulta la [documentazione dell&#39;interfaccia utente Granite - Campo](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Per informazioni dettagliate, consulta la [documentazione dell&#39;interfaccia utente Granite - Campo](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Per esempi, consulta:
 

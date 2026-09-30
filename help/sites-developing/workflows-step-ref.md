@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3270'
 ht-degree: 2%
 ---
 # Guida di riferimento per i passaggi dei flussi di lavoro {#workflow-step-reference}
@@ -89,7 +89,7 @@ Le seguenti proprietà sono disponibili per molti componenti del passaggio del f
 
 ## Suddivisione E {#and-split}
 
-La &lbrack;0&rbrace;divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
+La [0}divisione AND **crea una [PROD143]e nel flusso di lavoro, dopo la quale entrambi i rami sono attivi.** Puoi aggiungere i passaggi del flusso di lavoro a ogni ramo in base alle esigenze. Questo passaggio ti consente di introdurre più percorsi di elaborazione nel flusso di lavoro. Ad esempio, puoi consentire che determinati passaggi di revisione si verifichino in parallelo, risparmiando tempo.
 
 ![wf-26](assets/wf-26.png)
 
@@ -278,7 +278,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 * [Utente/Gruppo](#step-properties-user-group-tab)
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [&#x200B; creata](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: percorso del nodo della finestra di dialogo [ creata](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante finestra di dialogo - Creazione di una finestra di dialogo {#dialog-participant-step-creating-a-dialog}
 
@@ -349,7 +349,7 @@ Puoi memorizzare i dati del widget nel payload del flusso di lavoro o nei metada
 
 1. **Esempio di definizione della finestra di dialogo**
 
-   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
+   Il seguente frammento di codice XML rappresenta una finestra di dialogo in cui è memorizzato un valore `String` nel nodo `watchEmail` del contenuto del payload. Il nodo titolo rappresenta il componente [TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html):
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -400,7 +400,7 @@ Per configurare il passaggio, modifica e utilizza le seguenti schede:
 
 * **Finestra di dialogo**
 
-  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [&#x200B; creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
+  * **Percorso finestra di dialogo**: il percorso del nodo della finestra di dialogo [ creata (come nel **Passaggio partecipante alla finestra di dialogo**)](#dialog-participant-step-creating-a-dialog).
 
 #### Passaggio partecipante dinamico: sviluppo del selettore partecipanti {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -437,7 +437,7 @@ Crea un servizio OSGi o un ECMAScript che seleziona un utente a cui assegnare l�
 
 * **Servizio OSGi**
 
-  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
+  I servizi devono implementare l&#39;interfaccia [com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interfaccia definisce i seguenti membri:
 
   * Campo `SERVICE_PROPERTY_LABEL`: utilizzare questo campo per specificare il nome del selettore partecipanti. Il nome viene visualizzato in un elenco di selettori partecipanti disponibili nelle proprietà **Passaggio partecipante dinamico**.
 

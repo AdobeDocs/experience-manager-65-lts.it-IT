@@ -23,9 +23,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 4%
 ---
 # OWASP Top 10{#owasp-top}
@@ -74,7 +74,7 @@ I dati sensibili, come le credenziali di terze parti, vengono archiviati in form
 
 ## &#x200B;8. Errore nel limitare l’accesso agli URL {#failure-to-restrict-url-access}
 
-L&#39;archivio consente l&#39;impostazione di [privilegi granulari (come specificato da JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci di controllo di accesso. Le restrizioni di accesso vengono applicate dall’archivio.
+L&#39;archivio consente l&#39;impostazione di [privilegi granulari (come specificato da JCR)](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html) per qualsiasi utente o gruppo specificato in un determinato percorso, tramite le voci di controllo di accesso. Le restrizioni di accesso vengono applicate dall’archivio.
 
 ## &#x200B;9. Protezione livello di trasporto insufficiente {#insufficient-transport-layer-protection}
 

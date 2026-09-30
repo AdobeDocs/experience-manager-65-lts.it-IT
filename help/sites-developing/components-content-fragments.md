@@ -27,9 +27,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1005'
 ht-degree: 5%
 ---
 # Componenti per frammenti di contenuto{#components-for-content-fragments}
@@ -46,7 +46,7 @@ Consulta [API di gestione dei frammenti di contenuto - Lato client](/help/sites-
 
 >[!CAUTION]
 >
->Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è ora consigliato. Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=it).
+>Il [componente core Frammento di contenuto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=it) è ora consigliato. Per ulteriori dettagli, vedere [Sviluppo di componenti core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 >
 >Questa sezione descrive il componente originale distribuito per l&#39;utilizzo con frammenti di contenuto (**Frammento di contenuto** nel gruppo **Generale**).
 
@@ -54,7 +54,7 @@ Consulta [API di gestione dei frammenti di contenuto - Lato client](/help/sites-
 >
 >Per ulteriori informazioni, vedere anche [Componenti di configurazione dei frammenti di contenuto per il rendering](/help/sites-developing/content-fragments-config-components-rendering.md).
 
-I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [È quindi possibile utilizzare questi frammenti e le relative varianti durante la creazione delle pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa frammento di contenuto esistente trascinandola dal browser risorse alla pagina [&#128279;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come l&#39;immagine del componente di base). Il componente predefinito per frammenti di contenuto visualizza solo un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. La finestra di dialogo del componente consente di definire l&#39;elemento [, la variante e l&#39;intervallo di paragrafi del frammento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare nella pagina.
+I frammenti di contenuto di Adobe Experience Manager (AEM) vengono [creati e gestiti come risorse indipendenti dalla pagina](/help/assets/content-fragments/content-fragments.md). Consentono di creare contenuti indipendenti dal canale, con possibili varianti per canali specifici. [È quindi possibile utilizzare questi frammenti e le relative varianti durante la creazione delle pagine di contenuto](/help/sites-authoring/content-fragments.md). Puoi anche utilizzare una risorsa frammento di contenuto esistente trascinandola dal browser risorse alla pagina ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (come per altri componenti basati su risorse, come l&#39;immagine del componente di base). [Il componente predefinito per frammenti di contenuto visualizza solo un [elemento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) del frammento di contenuto di riferimento. La finestra di dialogo del componente consente di definire l&#39;elemento [, la variante e l&#39;intervallo di paragrafi del frammento](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) che si desidera visualizzare nella pagina.
 
 >[!NOTE]
 >
@@ -145,4 +145,4 @@ La configurazione preconfigurata utilizza i seguenti trasformatori:
 * `transformer-cfm-parfilter` - esclude i paragrafi indesiderati se è specificato un intervallo di paragrafi (come può essere fatto con il componente Frammento di contenuto)
 * `transformer-cfm-assetprocessor` - viene utilizzato internamente per recuperare un elenco delle risorse incorporate nel frammento
 
-Il processo di rendering è esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e può essere utilizzato (ad esempio) da componenti personalizzati, se necessario.
+Il processo di rendering è esposto tramite [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5-lts/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) e può essere utilizzato (ad esempio) da componenti personalizzati, se necessario.

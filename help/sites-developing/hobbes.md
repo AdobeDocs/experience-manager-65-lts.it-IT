@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '790'
 ht-degree: 3%
 ---
 # Test dell’interfaccia utente{#testing-your-ui}
@@ -39,7 +39,7 @@ Il framework di test di AEM utilizza Hobbes.js, una libreria di test scritta in 
 
 >[!NOTE]
 >
->Per informazioni complete sull&#39;API, consulta la [documentazione](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) di Hobbes.js.
+>Per informazioni complete sull&#39;API, consulta la [documentazione](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) di Hobbes.js.
 
 ## Struttura delle prove {#structure-of-tests}
 
@@ -112,7 +112,7 @@ Le suite di test vengono eseguite in sequenza nell’ordine in cui compaiono nel
 
 La procedura seguente illustra la creazione e l&#39;esecuzione di una suite di test utilizzando il contenuto [We.Retail](/help/sites-developing/we-retail.md), ma è possibile modificare facilmente il test per utilizzare una pagina Web diversa.
 
-Per informazioni dettagliate sulla creazione di suite di test personalizzate, consulta la [documentazione API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Per informazioni dettagliate sulla creazione di suite di test personalizzate, consulta la [documentazione API Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Apri CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Fare clic con il pulsante destro del mouse sulla cartella `/etc/clientlibs` e scegliere **Crea > Crea cartella**. Digitare `myTests` per il nome e fare clic su **OK**.

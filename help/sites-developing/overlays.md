@@ -20,9 +20,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 1%
 ---
 # Sovrapposizioni{#overlays}
@@ -31,11 +31,11 @@ Adobe Experience Manager (AEM), e prima ancora CQ, ha a lungo utilizzato il prin
 
 Sovrapposizione è un termine utilizzato in molti contesti. In questo contesto (estensione di AEM), per sovrapposizione si intende l’accettazione delle funzionalità predefinite e l’imposizione di definizioni personalizzate (personalizzazione della funzionalità standard).
 
-In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [&#128279;](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
+In un&#39;istanza standard, la funzionalità predefinita si trova in `/libs` e si consiglia di definire la sovrapposizione (personalizzazioni) nel ramo `/apps`. AEM utilizza un percorso di ricerca per trovare una risorsa, eseguendo prima la ricerca nel ramo `/apps` e poi nel ramo `/libs` (è possibile configurare il percorso di ricerca [](#configuring-the-search-paths)). Questo meccanismo indica che la sovrapposizione (e le personalizzazioni ivi definite) ha la priorità.
 
 A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrapposizioni vengono implementate e utilizzate:
 
-* AEM 6.0 e versione successiva: per le sovrapposizioni relative a [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ovvero l&#39;interfaccia utente touch)
+* AEM 6.0 e versione successiva: per le sovrapposizioni relative a [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ovvero l&#39;interfaccia utente touch)
 
   * Metodo
 
@@ -66,13 +66,13 @@ A partire da AEM 6.0, sono state apportate modifiche al modo in cui le sovrappos
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia utente standard touch.
+>[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e i metodi correlati possono essere utilizzati solo con [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Ciò significa che la creazione di una sovrapposizione con una struttura di ossatura è appropriata solo per l’interfaccia utente standard touch.
 >
 >Le sovrapposizioni per altre aree (inclusa l’interfaccia classica) implicano la copia del nodo e dell’intera sottostruttura appropriati, quindi l’apporto delle modifiche necessarie.
 
 Le sovrapposizioni sono il metodo consigliato per molte modifiche, ad esempio [configurazione delle console](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) o [creazione della categoria di selezione nel browser risorse nel pannello laterale](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (utilizzato durante la creazione delle pagine). Sono necessari in quanto:
 
-* ***Non* apportare modifiche nel ramo `/libs`**&#x200B;Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
+* ***Non* apportare modifiche nel ramo `/libs`**Qualsiasi modifica apportata potrebbe andare persa, poiché questo ramo potrebbe subire modifiche ogni volta che:
 
   * aggiorna nell’istanza
   * applicare un hotfix
