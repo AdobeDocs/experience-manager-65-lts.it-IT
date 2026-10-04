@@ -10,11 +10,9 @@ role: User, Developer
 exl-id: 840dadca-6691-4244-9383-7dbc8e14f0a0
 source-git-commit: c3e9029236734e22f5d266ac26b923eafbe0a459
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 0%
-
+source-wordcount: '245'
+ht-degree: 3%
 ---
-
 # Distribuire l’app AEM Forms {#distribute-aem-forms-app}
 
 Mobile Device Management (MDM) consente la distribuzione su larga scala di app su dispositivi mobili.
