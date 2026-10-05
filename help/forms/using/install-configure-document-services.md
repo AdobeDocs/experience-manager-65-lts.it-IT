@@ -24,9 +24,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 1b62d0d980c9916d03ed6a14d7e42a4923967243
 workflow-type: tm+mt
-source-wordcount: '10769'
+source-wordcount: '10979'
 ht-degree: 2%
 ---
 # Installazione e configurazione dei servizi documentali {#installing-and-configuring-document-services}
@@ -219,7 +219,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 Dopo aver installato Acrobat, aprire Microsoft® Word. Nella scheda **Acrobat**, fai clic su **Crea PDF** e converti un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
 
@@ -1078,7 +1078,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=it).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non arrestare immediatamente il server.** Prima di arrestare AEM Forms Server, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e che il log sia stabile.
 
@@ -1122,6 +1122,27 @@ Per eseguire il servizio PDF Generator è necessario un account utente locale. P
 1. Apri la pagina [Configurazione AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
 1. Nella scheda **[!UICONTROL Account utente]**, fornisci le credenziali di un account utente locale e fai clic su **[!UICONTROL Invia]**. Se Microsoft® Windows richiede, consenti l’accesso all’utente. Una volta aggiunto, l&#39;utente configurato viene visualizzato nella sezione **[!UICONTROL Account utente]** della scheda **[!UICONTROL Account utente]**.
+
+### Abilitare conversioni PDF Generator multithread (solo Windows)
+
+Per eseguire conversioni di documenti multithread mentre AEM Forms viene eseguito come servizio Windows, PDF Generator elabora le conversioni con un singolo account utente configurato.
+
+>[!NOTE]
+>
+> In questa modalità, più istanze di **Microsoft® Word** (doc/docx) e **Excel** (xls/xlsx) vengono eseguite con lo stesso utente e gestiscono le conversioni contemporaneamente. **Microsoft® PowerPoint** (ppt/pptx) non supporta questa modalità. PDF Generator avvia una sola istanza di PowerPoint alla volta, pertanto le conversioni multithread non sono supportate per PowerPoint.
+
+Per abilitare le conversioni multithread per Word ed Excel:
+
+1. Configura un [account utente locale](#configure-a-local-user-account-to-run-the-pdf-generator-service) per PDF Generator.
+1. Accedi all&#39;istanza di AEM Author e passa a **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Strumenti]** > **[!UICONTROL Forms]** > **[!UICONTROL Configura PDF Generator]**. URL predefinito: <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Nella scheda **[!UICONTROL Configurazione generale]**, impostare le opzioni seguenti (configurare PDFMaker per Word e Native2PDF per Excel):
+
+   * **Attiva modalità utente singolo per PDFMaker:** **true**
+   * **Dimensione pool di processi per utente singolo PDFMaker:** Imposta come desiderato. Questo valore rappresenta il numero massimo di istanze di Word che possono eseguire conversioni contemporaneamente.
+   * **Attiva Modalità Utente Singolo Per Native2PDF:** **true**
+   * **Native2PDF Single User Process Pool Size:** Imposta come desiderato. Questo valore è il numero massimo di istanze di Excel che possono eseguire conversioni contemporaneamente.
+
+1. Riavvia il server AEM Forms.
 
 ### Configurare le impostazioni di timeout {#configure-the-time-out-settings}
 
