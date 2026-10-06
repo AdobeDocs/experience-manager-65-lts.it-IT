@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '214'
 ht-degree: 0%
 ---
 # Accesso all’app Adobe Experience Manager Forms{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>Le versioni Android e iOS dell’app AEM Forms sono state dismesse. La pubblicazione dell’app Android in Google Play è stata annullata a settembre 2026 e l’app iOS è stata rimossa dall’App Store di Apple.
+>Queste app non sono più disponibili per l&#39;installazione. Per assistenza sull&#39;app Android, contatta [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Quando avvii l’app Adobe Experience Manager (AEM) Forms, devi prima fornire le credenziali di accesso e un URL del server AEM Forms.
 
@@ -39,12 +44,12 @@ Quando avvii l’app Adobe Experience Manager (AEM) Forms, devi prima fornire le
 1. Seleziona l’icona dell’app AEM Forms sul tuo dispositivo mobile.
 1. Per accedere all’app, immetti un nome utente, una password e l’URL del server AEM Forms.
 
-   >[!NOTE]
-   >
-   >L’app Mobile memorizza nella cache tutti gli URL del server AEM Forms che hai immesso.
-   >
-   >    * Per visualizzare l&#39;elenco degli URL del server, fare clic sulla freccia dell&#39;elenco nell&#39;angolo destro della casella di testo URL server.
-   >    * Seleziona l’URL di un server AEM Forms a cui accedere tramite l’app.
+>[!NOTE]
+>
+>L’app Mobile memorizza nella cache tutti gli URL del server AEM Forms che hai immesso.
+>
+>    * Per visualizzare l&#39;elenco degli URL del server, fare clic sulla freccia dell&#39;elenco nell&#39;angolo destro della casella di testo URL server.
+>    * Seleziona l’URL di un server AEM Forms a cui accedere tramite l’app.
 
 Quando accedi all&#39;app, vieni indirizzato alla schermata [**Home**](../../forms/using/home-screen.md).
 

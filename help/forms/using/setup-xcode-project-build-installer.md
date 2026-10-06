@@ -9,14 +9,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: c5092e61-c3f9-4770-91be-247e6a02cdb4
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '838'
 ht-degree: 4%
-
 ---
-
 # Configurare il progetto Xcode e creare l’app iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>L’app AEM Forms per iOS è stata interrotta e rimossa dall’App Store di Apple.
+>Non è più disponibile per l&#39;installazione.
 
 AEM Forms fornisce il codice sorgente completo dell’app AEM Forms. L’origine contiene tutti i componenti per la creazione di un’app AEM Forms personalizzata. L&#39;archivio del codice sorgente `adobe-lc-mobileworkspace-src-<version>.zip` fa parte del pacchetto `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Distribuzione software.
 
@@ -122,9 +125,9 @@ Per informazioni dettagliate sulla firma del codice e sull&#39;aggiunta di dispo
    </dict>
    ```
 
-   >[!NOTE]
-   >
-   >Questo passaggio è necessario solo se l’app AEM Forms deve connettersi a un server che non rispetta i requisiti di sicurezza del trasporto dell’app.
+>[!NOTE]
+>
+>Questo passaggio è necessario solo se l’app AEM Forms deve connettersi a un server che non rispetta i requisiti di sicurezza del trasporto dell’app.
 
 1. In **PROGETTO**, seleziona **AEM Forms** e assicurati che sia selezionata la firma appropriata per **Identità firma codice**, **Debug**, **Versione** e **Qualsiasi SDK iOS**.
 1. Connetti un’iPad con provisioning a un computer Mac.
