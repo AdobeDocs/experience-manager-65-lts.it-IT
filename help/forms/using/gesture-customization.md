@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '371'
 ht-degree: 1%
 ---
 # Personalizzazione del gesto {#gesture-customization}
+
+>[!NOTE]
+>
+>Le versioni Android e iOS dell’app AEM Forms sono state dismesse. La pubblicazione dell’app Android in Google Play è stata annullata a settembre 2026 e l’app iOS è stata rimossa dall’App Store di Apple.
+>Queste app non sono più disponibili per l&#39;installazione. Per assistenza sull&#39;app Android, contatta [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puoi personalizzare i movimenti dell’app AEM Forms in modo da fornire un metodo distinto per interagire con l’app. È ad esempio possibile aggiungere nuovi movimenti per aprire o chiudere un&#39;attività o un punto d&#39;inizio.
 
@@ -50,9 +55,9 @@ Nell’app AEM Forms, con il pulsante sinistro del mouse viene aperta una nuova 
    * In Eclipse, passa alla cartella **assets > www > wsmobile > js > runtime > views**.
    * In Visual Studio, passare alla cartella **MWSWwindows > www > wsmobile > js > runtime > views**.
 
-   >[!NOTE]
-   >
-   >Il file task.js contiene la vista backbone associata a ogni attività o punto d&#39;inizio elencato negli elenchi di attività o punto d&#39;inizio.
+>[!NOTE]
+>
+>Il file task.js contiene la vista backbone associata a ogni attività o punto d&#39;inizio elencato negli elenchi di attività o punto d&#39;inizio.
 
 1. Nel file `task.js`, cercare la proprietà degli eventi della visualizzazione.
 

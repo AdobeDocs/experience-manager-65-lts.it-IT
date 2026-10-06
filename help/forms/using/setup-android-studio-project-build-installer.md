@@ -8,14 +8,17 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 425c6194-0b87-4b01-a013-f620755072b3
-source-git-commit: b8576049fba41b3bec16046316938274a5046513
+source-git-commit: 711891ad88f25baaedffb46ec9441c120af3eed4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 3%
-
+source-wordcount: '646'
+ht-degree: 2%
 ---
-
 # Configurate il progetto Android™ studio e create l&#39;app Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!NOTE]
+>
+>Le versioni Android e iOS dell’app AEM Forms sono state dismesse. La pubblicazione dell’app Android in Google Play è stata annullata a settembre 2026 e l’app iOS è stata rimossa dall’App Store di Apple.
+>Queste app non sono più disponibili per l&#39;installazione. Per assistenza sull&#39;app Android, contatta [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Questo articolo è destinato alla creazione dell&#39;app AEM Forms 6.3.1.1 e versioni successive. Per creare un&#39;app dal codice sorgente dell&#39;app AEM Forms 6.3, vedi [Configurare il progetto Eclipse e creare l&#39;app Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -52,9 +55,9 @@ Nell&#39;immagine seguente viene visualizzata la struttura di directory della ca
 
    **Per utenti Windows®**: `%HOMEPATH%\Projects`
 
-   >[!NOTE]
-   >
-   >Per Windows®, si consiglia di mantenere il progetto Android™ nell&#39;unità di sistema.
+>[!NOTE]
+>
+>Per Windows®, si consiglia di mantenere il progetto Android™ nell&#39;unità di sistema.
 
 1. Estrai l’archivio nella seguente directory:
 
@@ -62,9 +65,9 @@ Nell&#39;immagine seguente viene visualizzata la struttura di directory della ca
 
    **Per utenti Windows®**: `%HOMEPATH%\Projects\[your-project]`
 
-   >[!NOTE]
-   >
-   >Si consiglia di mantenere il progetto Android estratto nell&#39;unità di sistema prima di importarlo in Android™ Studio.
+>[!NOTE]
+>
+>Si consiglia di mantenere il progetto Android estratto nell&#39;unità di sistema prima di importarlo in Android™ Studio.
 
 1. Avvia Android™ Studio.
 

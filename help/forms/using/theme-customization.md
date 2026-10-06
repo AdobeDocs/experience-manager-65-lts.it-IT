@@ -25,12 +25,17 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 2b710c6ef8d291a42b4a7658bf84f5e764422d5c
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 6%
+source-wordcount: '297'
+ht-degree: 5%
 ---
 # Personalizzazione del tema {#theme-customization}
+
+>[!NOTE]
+>
+>Le versioni Android e iOS dell’app AEM Forms sono state dismesse. La pubblicazione dell’app Android in Google Play è stata annullata a settembre 2026 e l’app iOS è stata rimossa dall’App Store di Apple.
+>Queste app non sono più disponibili per l&#39;installazione. Per assistenza sull&#39;app Android, contatta [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Puoi personalizzare il codice HTML e il file CSS per fornire all’app AEM Forms un aspetto specifico per l’organizzazione. È ad esempio possibile modificare il colore e l&#39;altezza dello sfondo delle attività o dei punti iniziali. Nell&#39;esempio seguente vengono fornite istruzioni per la modifica:
 
