@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 60fd1764a1b2a6440d306d21a8a84a8f9d879811
+source-git-commit: 7fb04d7017fa8f6183508cf4f880077eb533c057
 workflow-type: tm+mt
-source-wordcount: '7432'
+source-wordcount: '7577'
 ht-degree: 21%
 ---
 
@@ -674,34 +674,31 @@ If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier 
 >Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.4.7 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
 -->
 
+AEM 6.5 LTS SP3 aggiorna il bundle `jackson`. Questa modifica influisce sulle distribuzioni che utilizzano il connettore di traduzione GlobalLink.
 
-
-<!--
-AEM 6.5 LTS SP3 upgrades the `jackson` bundle. This change affects deployments that use the GlobalLink translation connector.
-
-If you use the `gs4tr-globallink-adaptors-aem.core` bundle at a version earlier than 3.4.0, upgrade the bundle to a compatible version. Version 3.4.0 or later works with the upgraded `jackson` bundle in SP3.
+Se utilizzi il bundle `gs4tr-globallink-adaptors-aem.core` in una versione precedente alla 3.4.0, aggiorna il bundle a una versione compatibile. La versione 3.4.0 o successiva funziona con il bundle `jackson` aggiornato in SP3.
 
 >[!NOTE]
 >
-> Upgrade the `gs4tr-globallink-adaptors-aem.core` bundle to 3.4.0 or later before or during the SP3 update to avoid compatibility issues with the GlobalLink connector.
+> Aggiornare il bundle `gs4tr-globallink-adaptors-aem.core` alla versione 3.4.0 o successiva prima o durante l&#39;aggiornamento di SP3 per evitare problemi di compatibilità con il connettore GlobalLink.
 
 
-### Install required Oak indexes for Sites Headless APIs{#site-headless-api}
+### Installa gli indici Oak richiesti per le API headless di Sites{#site-headless-api}
 
-Some APIs that moved to Sites Headless require additional Oak indexes for full functionality. 
+Alcune API che sono state spostate in Sites Headless richiedono indici Oak aggiuntivi per garantire la piena funzionalità.
 
-To use the following features, install the `cq-dam-cfm-indices` package:
+Per utilizzare le funzionalità seguenti, installare il pacchetto `cq-dam-cfm-indices`:
 
-* List Content Fragment Models
-* List Content Fragments
-* Search API
-* Workflows
+* Elenco modelli per frammenti di contenuto
+* Elenco frammenti di contenuto
+* Ricerca API
+* Flussi di lavoro
 
-Download the index package [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) from the Adobe Software Distribution portal. 
+Scarica il pacchetto di indice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) dal portale di distribuzione software di Adobe.
 
 -->
 
-&#x200B;###
+###
 
 ### Errore di connessione di Dispatcher con la funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
 
