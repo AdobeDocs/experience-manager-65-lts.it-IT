@@ -7,9 +7,9 @@ user-guide-description: Utilizzare la documentazione di Adobe Experience Manager
 breadcrumb-title: Guida utente
 user-guide-title: AEM 6.5 LTS
 nudge: true
-source-git-commit: 8781bd3762ec04424802d899d3517754e0c81fc5
+source-git-commit: a895c5e5cb2a4e21d7460d598bd260a5292ed2ad
 workflow-type: tm+mt
-source-wordcount: '7799'
+source-wordcount: '7801'
 ht-degree: 66%
 ---
 # Documentazione di Adobe Experience Manager 6.5 LTS {#content}
@@ -332,6 +332,7 @@ ht-degree: 66%
     + [Configurare la funzionalità dei metadati](/help/assets/metadata-config.md)
     + [Schemi di metadati](/help/assets/metadata-schemas.md)
     + [Write-back XMP alle rappresentazioni](/help/assets/xmp-writeback.md)
+    + [Metadati C2PA](/help/assets/c2pa-metadata.md)
     + [Condivisione dei collegamenti delle risorse](/help/assets/link-sharing.md)
     + [Rapporti sulle risorse](/help/assets/asset-reports.md)
     + [Configurare il Servizio di contenuti avanzati per l’assegnazione tag](/help/assets/config-smart-tagging.md)
