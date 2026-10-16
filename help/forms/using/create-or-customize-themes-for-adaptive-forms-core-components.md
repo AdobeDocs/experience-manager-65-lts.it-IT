@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 6%
@@ -115,7 +115,7 @@ La creazione o la personalizzazione di un tema è un processo in più fasi. Per 
 1. [Personalizzare l&#39;aspetto del tema](#customize-the-theme)
 1. [Pronto per la distribuzione locale](#generate-the-clientlib)
 1. [Distribuisci il tema in un ambiente locale](#deploy-the-theme-on-a-local-environment)
-1. [Distribuire il tema nell’ambiente di produzione](#5-deploy-a-theme-on-your-production-environment)
+1. [Distribuire il tema nell’ambiente di produzione](#deploy-theme)
 
 <!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
@@ -356,4 +356,4 @@ Per rimuovere i temi inutilizzati o indesiderati:
 * [Creazione o personalizzazione di temi per Forms adattivo basato su Componenti core](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Creazione di un modello per Forms adattivo basato su Componenti core](template-editor.md)
 * [Creare o aggiungere un modulo adattivo a una pagina o a un frammento di esperienza di AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=it)
+* [Modelli di temi e modelli di dati modulo di esempio](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4013'
 ht-degree: 2%
@@ -244,7 +244,7 @@ Per creare una corrispondenza è necessario disporre quanto segue:
 * Altri XDP ([frammenti di layout](document-fragments.md#document-fragments)) che costituiscono parti della lettera. Gli XDP\Layout vengono creati in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65).
 * Il dizionario dati [pertinente](/help/forms/using/data-dictionary.md) (facoltativo).
 * I [moduli dati](/help/forms/using/document-fragments.md) che desideri utilizzare nella corrispondenza.
-* [Dati di prova](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) è il file XML contenente i dati di prova. I dati di test sono necessari se si utilizza un dizionario dati.
+* [Dati di prova](/help/forms/using/data-dictionary.md#working-with-test-data) è il file XML contenente i dati di prova. I dati di test sono necessari se si utilizza un dizionario dati.
 
 ## Creare un modello di lettera {#create-a-letter-template}
 
@@ -275,7 +275,7 @@ Per creare una corrispondenza è necessario disporre quanto segue:
 
    ![Messaggio di avviso: lettera creata correttamente](assets/createcorrespondencecreated.png)
 
-   **Successivo**: quando si seleziona **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Inserire i [moduli dati e frammenti di layout e configurarli](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p).
+   **Successivo**: quando si seleziona **Apri**, Gestione corrispondenza visualizza una rappresentazione del layout con tutti i componenti nel layout (XDP) elencati. Inserire i [moduli dati e frammenti di layout e configurarli](/help/forms/using/create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them).
 
 ### Inserire moduli di dati e frammenti di layout in una lettera e configurarli {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 

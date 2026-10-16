@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 6%
@@ -38,7 +38,7 @@ ht-degree: 6%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html).
 
 ## Informazioni sui dizionari delle impostazioni internazionali {#about-locale-dictionaries}
 
@@ -81,13 +81,13 @@ AEM Forms attualmente supporta la localizzazione dei contenuti dei moduli adatti
 
 Per aggiungere il supporto per una nuova lingua in fase di esecuzione per moduli adattivi:
 
-1. [Aggiungere una lingua al servizio GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
+1. [Aggiungere una lingua al servizio GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#add-a-locale-to-the-guide-localization-service-br)
 
-1. [Aggiungere una libreria client XFA per una lingua](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [Aggiungere una libreria client XFA per una lingua](../../forms/using/supporting-new-language-localization.md#add-xfa-client-library-for-a-locale-br)
 
-1. [Aggiungere una libreria client per moduli adattivi per una lingua](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Aggiungere il supporto delle impostazioni locali per il dizionario](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Riavvia il server](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
+1. [Aggiungere una libreria client per moduli adattivi per una lingua](../../forms/using/supporting-new-language-localization.md#add-adaptive-form-client-library-for-a-locale-br)
+1. [Aggiungere il supporto delle impostazioni locali per il dizionario](../../forms/using/supporting-new-language-localization.md#add-locale-support-for-the-dictionary-br)
+1. [Riavvia il server](../../forms/using/supporting-new-language-localization.md#restart-the-server)
 
 ### Aggiungere una lingua al servizio Localizzazione guida {#add-a-locale-to-the-guide-localization-service-br}
 

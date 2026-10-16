@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 0%
@@ -40,9 +40,9 @@ Le query ad hoc in Process Reporting consentono di creare query personalizzate c
 
 È inoltre possibile definire query ad hoc utilizzando i filtri delle proprietà dei processi e delle attività. Questi filtri possono quindi essere salvati e utilizzati per eseguire i rapporti in un secondo momento.
 
-[**Ricerca processi**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): cerca le istanze di processo con un filtro di ricerca definito dall&#39;utente in base agli attributi di processo.
+[**Ricerca processi**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-search): cerca le istanze di processo con un filtro di ricerca definito dall&#39;utente in base agli attributi di processo.
 
-[**Dettagli processo**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): visualizzare i dettagli di un&#39;istanza di processo specificando l&#39;ID processo.
+[**Dettagli processo**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#process-task-details): visualizzare i dettagli di un&#39;istanza di processo specificando l&#39;ID processo.
 
 **Ricerca attività**: cerca le istanze dell&#39;attività con un filtro di ricerca definito dall&#39;utente in base agli attributi dell&#39;attività.
 
@@ -165,7 +165,7 @@ Utilizza le opzioni del pannello **Filtri personali** per **aggiungere** ![lc_pr
    ![risultato_ricerca_attività](assets/task_search_result.png)
 
 1. Fai clic sul pulsante della barra ![lc_pr_rail_button](assets/lc_pr_rail_button.png) in alto a sinistra per comprimere il riquadro **I miei filtri** ed espandere lo spazio disponibile per il pannello **Report**.
-1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report &#x200B;** per eseguire operazioni sui risultati della query.
+1. Utilizza le opzioni nell’angolo superiore destro del pannello **Report **per eseguire operazioni sui risultati della query.
 
    * **Aggiorna**: aggiorna il report con i dati più recenti presenti nell&#39;archivio
 

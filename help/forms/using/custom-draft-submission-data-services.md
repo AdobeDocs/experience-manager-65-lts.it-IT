@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Per impostazione predefinita, AEM Forms archivia i dati utente associati alla bo
 
 Tuttavia, i componenti del portale AEM Forms forniscono servizi di dati che ti consentono di personalizzare l’implementazione della memorizzazione dei dati utente per le bozze e gli invii. Ad esempio, puoi archiviare i dati in un archivio dati attualmente implementato nella tua organizzazione.
 
-Per personalizzare l&#39;archiviazione dei dati utente, è necessario implementare i servizi [Dati bozza](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) e [Dati invio](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Per personalizzare l&#39;archiviazione dei dati utente, è necessario implementare i servizi [Dati bozza](/help/forms/using/custom-draft-submission-data-services.md#draft-data-service) e [Dati invio](/help/forms/using/custom-draft-submission-data-services.md#submission-data-service).
 
 ## Prerequisiti {#prerequisites}
 

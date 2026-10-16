@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 10%
@@ -39,7 +39,7 @@ Questo tutorial è un passaggio della serie [Creare il primo modulo adattivo](ht
 
 ## Informazioni sul tutorial  {#about-the-tutorial}
 
-Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/it/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
+Puoi utilizzare i temi per fornire un aspetto e uno stile unici a un modulo adattivo. Puoi applicare i temi predefiniti forniti con l’editor di moduli adattivi o creare temi personalizzati. AEM [!DNL Forms] fornisce un [editor temi](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) per la creazione di temi personalizzati. Un singolo tema può fornire un aspetto diverso allo stesso modulo adattivo aperto su dispositivi mobili, tablet o desktop. Qualsiasi conoscenza precedente di CSS o LESS non è necessaria per utilizzare l’editor di temi, ma è preferibile.
 
 Al termine dell’esercitazione, dovresti essere in grado di effettuare le seguenti operazioni:
 
@@ -126,7 +126,7 @@ In questo tutorial potrai applicare stili a intestazione e piè di pagina, compo
 
 1. Seleziona **[!UICONTROL Crea]**. Viene creato un tema e viene visualizzata una finestra di dialogo per aprire il modulo per la modifica. Seleziona **[!UICONTROL Apri]** per aprire il tema appena creato in una nuova scheda. Il tema viene aperto nell’editor temi. Per lo stile, l&#39;editor temi utilizza un modulo adattivo fornito con AEM [!DNL Forms].
 
-   Per informazioni sull&#39;utilizzo dell&#39;interfaccia utente dell&#39;editor temi, vedere [Informazioni sull&#39;editor temi](/help/forms/using/themes.md#aboutthethemeeditor).
+   Per informazioni sull&#39;utilizzo dell&#39;interfaccia utente dell&#39;editor temi, vedere [Informazioni sull&#39;editor temi](/help/forms/using/themes.md#about-the-theme-editor).
 
 1. Seleziona **[!UICONTROL Opzioni tema]** ![Opzioni tema](assets/theme-options.png) > **[!UICONTROL Configura]**. Nel campo **[!UICONTROL Anteprima modulo]**, seleziona il modulo adattivo **shipping-address-add-update-form**, seleziona ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), seleziona **[!UICONTROL Salva]**. Ora l’editor temi è configurato per utilizzare un modulo adattivo personalizzato invece del modulo adattivo predefinito. Seleziona **[!UICONTROL Annulla]** per tornare all&#39;editor temi.
 

@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 3%
@@ -50,4 +50,4 @@ Utilizza tipi di variabili semplici (ad esempio stringa o int) ed evita di utili
 
 Utilizzo efficace dell&#39;archiviazione globale dei documenti (GDS). La directory GDS sul server Forms viene utilizzata per memorizzare, tra le altre cose, i file passati ai servizi che fanno parte di AEM Forms nei processi. Per migliorare le prestazioni, i documenti più piccoli vengono invece memorizzati in memoria e memorizzati nel database.
 
-La console di amministrazione espone la proprietà Dimensione massima in linea documento predefinita per configurare la dimensione massima dei documenti memorizzati in memoria e memorizzati nel database. Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings). Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene salvata in modo permanente nella directory GDS anziché nel database. Il vantaggio è che è possibile eliminare più facilmente i file quando non sono più necessari quando vengono memorizzati nella directory GDS.
+La console di amministrazione espone la proprietà Dimensione massima in linea documento predefinita per configurare la dimensione massima dei documenti memorizzati in memoria e memorizzati nel database. Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings). Se si imposta questa proprietà su un valore basso, la maggior parte dei documenti viene salvata in modo permanente nella directory GDS anziché nel database. Il vantaggio è che è possibile eliminare più facilmente i file quando non sono più necessari quando vengono memorizzati nella directory GDS.

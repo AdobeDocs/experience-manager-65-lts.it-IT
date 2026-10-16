@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 7%
@@ -136,7 +136,7 @@ Il pacchetto del componente aggiuntivo AEM Forms è un’applicazione implementa
 1. Apri [Gestione pacchetti](/help/sites-administering/package-manager.md) e fai clic su **[!UICONTROL Carica pacchetto]** per caricare il pacchetto.
 1. Selezionare il pacchetto e fare clic su **[!UICONTROL Installa]**.
 
-   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/it/aem-forms/kb/aem-forms-releases.html).
+   Puoi scaricare il pacchetto anche tramite il collegamento diretto elencato nell&#39;articolo [Versioni di AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 1. Dopo l’installazione del pacchetto, viene richiesto di riavviare l’istanza di AEM. **Non riavviare immediatamente il server.** Prima di arrestare il server AEM Forms, attendere che i messaggi ServiceEvent REGISTERED e ServiceEvent UNREGISTERED non vengano visualizzati nel file `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e che il registro sia stabile.
 
    >[!NOTE]
@@ -254,7 +254,7 @@ Per utilizzare Adobe Analytics con AEM Forms, vedi [Configurazione di analisi e 
 
 È probabile che i clienti abbandonino un modulo se l’esperienza che fornisce non è coinvolgente. Se da un lato è frustrante per i clienti, dall’altro può anche aumentare il volume e i costi del supporto per la tua organizzazione. Identificare e fornire la giusta esperienza del cliente che aumenti il tasso di conversione è fondamentale e impegnativo. AEM Forms è la chiave di questo problema.
 
-AEM forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Per utilizzare Adobe Target per testare i moduli adattivi A/B, [Integra Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM forms si integra con Adobe Target, una soluzione Adobe Marketing Cloud, per offrire esperienze cliente personalizzate e coinvolgenti su più canali digitali. Per utilizzare Adobe Target per testare i moduli adattivi A/B, [Integra Adobe Target con AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set-up-and-integrate-target-in-aem-forms).
 
 ## Passaggi successivi {#next-steps}
 

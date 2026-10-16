@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2481'
 ht-degree: 1%
@@ -136,7 +136,7 @@ Per condividere risorse, come dizionari dati, lettere e frammenti di documento, 
 
 Utilizza questa opzione per scaricare tutte le risorse di Gestione della corrispondenza e le relative dipendenze come pacchetto da un’istanza di AEM Forms.
 
-Ad esempio, se Gestione corrispondenza include una lettera che utilizza un’immagine e un testo, il pacchetto scaricato contiene anche l’immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Dopo aver scaricato il pacchetto (.cmp), puoi [importare il pacchetto in un&#39;istanza di AEM Forms diversa](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Ad esempio, se Gestione corrispondenza include una lettera che utilizza un’immagine e un testo, il pacchetto scaricato contiene anche l’immagine e il testo relativi alla lettera. Vengono scaricate anche tutte le proprietà di metadati (comprese le proprietà personalizzate) associate alla risorsa. Dopo aver scaricato il pacchetto (.cmp), puoi [importare il pacchetto in un&#39;istanza di AEM Forms diversa](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 La procedura seguente illustra come scaricare come pacchetto tutte le risorse di Gestione della corrispondenza e le relative dipendenze:
 
@@ -161,7 +161,7 @@ La procedura seguente illustra come scaricare come pacchetto tutte le risorse di
 
 1. Selezionare il collegamento **Scarica pacchetto esportato** per scaricare il file del pacchetto.
 
-   Per aggiungere le risorse nel pacchetto a un&#39;altra istanza di Gestione corrispondenza, [importa il pacchetto in un&#39;istanza di AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+   Per aggiungere le risorse nel pacchetto a un&#39;altra istanza di Gestione corrispondenza, [importa il pacchetto in un&#39;istanza di AEM Forms](../../forms/using/import-export-forms-templates.md#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management).
 
 ### Importare frammenti di documenti, lettere e/o dizionari di dati in Gestione corrispondenza {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 

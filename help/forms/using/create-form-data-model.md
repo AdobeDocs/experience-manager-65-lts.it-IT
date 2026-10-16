@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1629'
 ht-degree: 2%
@@ -256,4 +256,4 @@ Per eseguire il test, eseguire le operazioni seguenti:
 
 >[!NOTE]
 >
-> Puoi creare e utilizzare la configurazione Elenco SharePoint utilizzando Modello dati modulo in un modulo adattivo, per salvare dati o documenti di record generati in un elenco SharePoint. Per ulteriori informazioni, vedere [Collegare un modulo adattivo all&#39;elenco di Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration).
+> Puoi creare e utilizzare la configurazione Elenco SharePoint utilizzando Modello dati modulo in un modulo adattivo, per salvare dati o documenti di record generati in un elenco SharePoint. Per ulteriori informazioni, vedere [Collegare un modulo adattivo all&#39;elenco di Microsoft® SharePoint](/help/forms/using/configuring-submit-actions.md#connect-af-sharepoint-list).

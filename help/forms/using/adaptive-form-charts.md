@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Per impostazione predefinita, con il componente Grafico sono disponibili le segu
 
 ### Funzioni personalizzate {#custom-functions}
 
-Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere [funzioni personalizzate](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) in JavaScript e renderle disponibili nell&#39;elenco delle funzioni nel componente Grafico.
+Oltre a utilizzare le funzioni predefinite nei grafici, è possibile scrivere [funzioni personalizzate](/help/forms/using/rule-editor.md#custom-functions) in JavaScript e renderle disponibili nell&#39;elenco delle funzioni nel componente Grafico.
 
 Una funzione accetta una matrice o più valori e un nome di categoria come input e restituisce un valore. Ad esempio:
 

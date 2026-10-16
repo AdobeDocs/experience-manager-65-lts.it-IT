@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 7%
@@ -45,8 +45,8 @@ Questo articolo illustra come gli autori di moduli possono aggiungere aiuto cont
 
 Puoi specificare la guida contestuale utilizzando le seguenti opzioni nella sezione Contenuto della guida della scheda Proprietà nella barra laterale.
 
-* [Descrizione breve](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [Descrizione lunga](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [Descrizione breve](../../forms/using/authoring-in-field-help.md#short-description)
+* [Descrizione lunga](../../forms/using/authoring-in-field-help.md#long-description)
 
 ![Guida contestuale per i campi modulo](assets/descriptions.png)
 

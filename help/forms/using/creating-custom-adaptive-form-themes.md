@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 1%
@@ -223,7 +223,7 @@ Si crea un **modello adattivo** e si applica il tema al modello. Puoi quindi uti
 
 Dopo aver creato un tema per moduli adattivi, effettua le seguenti operazioni per utilizzarlo in un modulo adattivo:
 
-1. Per includere il tema creato in [per creare una sezione del tema del modulo adattivo](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p), crea una pagina personalizzata di tipo `cq:Component`.
+1. Per includere il tema creato in [per creare una sezione del tema del modulo adattivo](/help/forms/using/creating-custom-adaptive-form-themes.md#to-create-an-adaptive-form-theme), crea una pagina personalizzata di tipo `cq:Component`.
 
    Ad esempio `/apps/myAfCustomizations/myAfPages/forestPage`
 

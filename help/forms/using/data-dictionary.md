@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
@@ -47,7 +47,7 @@ In genere, gli utenti aziendali non devono conoscere le rappresentazioni di meta
 1. Un autore [crea il dizionario dati](#createdatadictionary) caricando uno schema o da zero.
 1. L’Autore crea comunicazioni lettera e interattive in base al dizionario dati e associa gli elementi del dizionario dati nella lettera e nelle comunicazioni interattive laddove necessario.
 1. Un autore può scaricare un file XML di dati di esempio, basato sullo schema di un dizionario di dati. L’autore può modificare il file XML dei dati di esempio, che può essere associato come dati di test al dizionario dati. Lo stesso viene utilizzato durante l’anteprima della lettera.
-1. Quando [visualizza l&#39;anteprima di una lettera](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), un autore sceglie di visualizzare l&#39;anteprima della lettera con i dati (anteprima personalizzata). La lettera viene aperta precompilata con i dati forniti dall’autore. Si apre nell’interfaccia per la creazione di corrispondenza. L&#39;agente che visualizza l&#39;anteprima di questa lettera può modificare il contenuto, i dati e gli allegati di questa lettera e può inviare la lettera finale. Per ulteriori informazioni sulla creazione di lettere, vedere [Creare corrispondenza](../../forms/using/create-letter.md).
+1. Quando [visualizza l&#39;anteprima di una lettera](../../forms/using/create-letter.md#types-of-linkage-available-for-each-of-the-fields), un autore sceglie di visualizzare l&#39;anteprima della lettera con i dati (anteprima personalizzata). La lettera viene aperta precompilata con i dati forniti dall’autore. Si apre nell’interfaccia per la creazione di corrispondenza. L&#39;agente che visualizza l&#39;anteprima di questa lettera può modificare il contenuto, i dati e gli allegati di questa lettera e può inviare la lettera finale. Per ulteriori informazioni sulla creazione di lettere, vedere [Creare corrispondenza](../../forms/using/create-letter.md).
 
 ## Prerequisito {#prerequisite}
 

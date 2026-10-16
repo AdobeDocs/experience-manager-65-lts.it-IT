@@ -18,7 +18,7 @@ level_v2:
     internal-label: Beginner
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5748'
 ht-degree: 3%
@@ -66,11 +66,11 @@ I tipi di regola Mostra, Nascondi, Abilita, Disabilita, Imposta valore di e Conv
 >
 >I tipi di regole disponibili, incluse le condizioni e le azioni definite nell&#39;editor di regole, dipendono anche dal tipo di oggetto modulo su cui si sta creando una regola. Nell&#39;editor delle regole vengono visualizzati solo i tipi di regole e le opzioni validi per la scrittura di istruzioni di condizione e azione per un particolare tipo di oggetto modulo. Ad esempio, non vengono visualizzati i tipi Convalida e Imposta valore di per un oggetto pannello.
 
-Per ulteriori informazioni sui tipi di regole disponibili nell&#39;editor di regole, vedere [Tipi di regole disponibili nell&#39;editor di regole](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Per ulteriori informazioni sui tipi di regole disponibili nell&#39;editor di regole, vedere [Tipi di regole disponibili nell&#39;editor di regole](rule-editor.md#available-rule-types-in-rule-editor).
 
 ### Linee guida per la scelta di un costrutto regola {#guidelines-for-choosing-a-rule-construct}
 
-Sebbene sia possibile ottenere la maggior parte dei casi d’uso utilizzando qualsiasi costrutto di regola, di seguito sono riportate alcune linee guida per scegliere un costrutto rispetto a un altro. Per ulteriori informazioni sulle regole disponibili nell&#39;editor di regole, vedere [Tipi di regole disponibili nell&#39;editor di regole](rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Sebbene sia possibile ottenere la maggior parte dei casi d’uso utilizzando qualsiasi costrutto di regola, di seguito sono riportate alcune linee guida per scegliere un costrutto rispetto a un altro. Per ulteriori informazioni sulle regole disponibili nell&#39;editor di regole, vedere [Tipi di regole disponibili nell&#39;editor di regole](rule-editor.md#available-rule-types-in-rule-editor).
 
 * Una regola tipica del pollice durante la creazione di una regola è pensarla nel contesto dell&#39;oggetto su cui si sta scrivendo una regola. Si supponga di voler nascondere o visualizzare un campo B in base al valore specificato dall&#39;utente nel campo A. In questo caso, si sta valutando una condizione nel campo A e, in base al valore restituito, si sta attivando un&#39;azione nel campo B.
 
@@ -111,7 +111,7 @@ L’editor di regole fornisce i seguenti operatori logici ed eventi utilizzando 
 
 ## Tipi di regole disponibili nell’editor di regole {#available-rule-types-in-rule-editor}
 
-L’editor di regole fornisce un set di tipi di regole predefiniti che è possibile utilizzare per scrivere regole. Esaminiamo in dettaglio ogni tipo di regola. Per ulteriori informazioni sulla scrittura di regole nell&#39;editor di regole, vedere [Scrivi regole](rule-editor.md#p-write-rules-p).
+L’editor di regole fornisce un set di tipi di regole predefiniti che è possibile utilizzare per scrivere regole. Esaminiamo in dettaglio ogni tipo di regola. Per ulteriori informazioni sulla scrittura di regole nell&#39;editor di regole, vedere [Scrivi regole](rule-editor.md#write-rules).
 
 ### [!UICONTROL Quando] {#whenruletype}
 
@@ -413,7 +413,7 @@ Per avviare l’interfaccia utente dell’editor di regole:
 
    ![create-rules](assets/create-rules.png)
 
-   Tutte le regole esistenti sugli oggetti modulo selezionati sono elencate in questa visualizzazione. Per informazioni sulla gestione delle regole esistenti, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+   Tutte le regole esistenti sugli oggetti modulo selezionati sono elencate in questa visualizzazione. Per informazioni sulla gestione delle regole esistenti, vedere [Gestire le regole](rule-editor.md#manage-rules).
 
 1. Seleziona **[!UICONTROL Crea]** per scrivere una nuova regola. L’editor visivo dell’interfaccia utente dell’editor di regole si apre per impostazione predefinita quando si avvia l’editor di regole la prima volta.
 
@@ -443,7 +443,7 @@ Nella figura sono illustrate alcune delle funzioni elencate di seguito:
 >
 >È possibile eseguire la ricerca di testo su oggetti e funzioni, nomi e titoli nelle schede Oggetti e funzioni di Forms.
 
-Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli oggetti modulo per visualizzare le regole applicate a ciascuno degli oggetti. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, vedere [Copiare e incollare le regole](rule-editor.md#p-copy-paste-rules-p).
+Nell&#39;albero sinistro degli oggetti modulo è possibile selezionare gli oggetti modulo per visualizzare le regole applicate a ciascuno degli oggetti. Non solo è possibile spostarsi tra le regole dei vari oggetti modulo, ma è anche possibile copiare e incollare le regole tra gli oggetti modulo. Per ulteriori informazioni, vedere [Copiare e incollare le regole](rule-editor.md#copy-paste-rules).
 
 ### C. Attivazione/disattivazione di funzioni e oggetti modulo {#c-form-objects-and-functions-toggle-br}
 
@@ -453,7 +453,7 @@ Quando viene toccato questo pulsante di attivazione, diventa attivo il riquadro 
 
 L’editor di regole visive è l’area in cui si scrivono le regole nella modalità editor visivo dell’interfaccia utente dell’editor di regole. Ti consente di selezionare un tipo di regola e di definire di conseguenza condizioni e azioni. Quando si definiscono condizioni e azioni in una regola, è possibile trascinare gli oggetti modulo e le funzioni dal riquadro Oggetti modulo e funzioni.
 
-Per ulteriori informazioni sull&#39;utilizzo dell&#39;editor di regole visive, vedere [Scrivere regole](rule-editor.md#p-write-rules-p).
+Per ulteriori informazioni sull&#39;utilizzo dell&#39;editor di regole visive, vedere [Scrivere regole](rule-editor.md#write-rules).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -470,7 +470,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Tasti Done e cancel {#done-and-cancel-buttons}
 
-Il pulsante **[!UICONTROL Fine]** viene utilizzato per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, i dati incompleti non sono validi e non vengono eseguiti. Le regole salvate su un oggetto modulo vengono elencate quando si avvia l’editor di regole la prossima volta dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestione regole](rule-editor.md#p-manage-rules-p).
+Il pulsante **[!UICONTROL Fine]** viene utilizzato per salvare una regola. È possibile salvare una regola incompleta. Tuttavia, i dati incompleti non sono validi e non vengono eseguiti. Le regole salvate su un oggetto modulo vengono elencate quando si avvia l’editor di regole la prossima volta dallo stesso oggetto modulo. Puoi gestire le regole esistenti in tale vista. Per ulteriori informazioni, vedere [Gestione regole](rule-editor.md#manage-rules).
 
 Il pulsante **[!UICONTROL Annulla]** elimina le modifiche apportate a una regola e chiude l&#39;editor di regole.
 
@@ -628,7 +628,7 @@ In alternativa, è possibile utilizzare la regola Imposta valore di per calcolar
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/it/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -730,7 +730,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=it#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -853,7 +853,7 @@ Per copiare e incollare le regole, effettuare le seguenti operazioni:
 
    ![copia regola](assets/copyrule.png)
 
-   Per informazioni sulla gestione delle regole esistenti, vedere [Gestire le regole](rule-editor.md#p-manage-rules-p).
+   Per informazioni sulla gestione delle regole esistenti, vedere [Gestire le regole](rule-editor.md#manage-rules).
 
 1. Selezionare la casella di controllo accanto al titolo della regola per visualizzare le opzioni per la gestione della regola. Seleziona **[!UICONTROL Copia]**.
 

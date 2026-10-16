@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '7736'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
 Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference).
 
-I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](/help/sites-developing/workflows-models.md#extending-aem).
+I modelli di workflow consentono di convertire una regola business in un processo ripetitivo automatizzato. Un modello consente di definire ed eseguire una serie di passaggi. Puoi anche definire le proprietà del modello, ad esempio se il flusso di lavoro è transitorio o utilizza più risorse. Puoi [includere vari passaggi del flusso di lavoro di AEM in un modello per ottenere la regola business](/help/sites-developing/workflows-models.md#adding-a-step-to-a-model).
 
 ## Passaggi di Forms Workflow {#forms-workflow-steps}
 
@@ -154,7 +154,7 @@ Il passaggio Assegna attività crea un&#39;attività e la assegna a un utente o 
 
 Utilizza la fase e-mail per inviare un’e-mail, ad esempio un messaggio e-mail con un documento record, un collegamento di un modulo adattivo, un collegamento di una comunicazione interattiva o un documento PDF allegato. Il passaggio Invia e-mail supporta [e-mail HTML](https://en.wikipedia.org/wiki/HTML_email). Le e-mail di HTML sono dinamiche e si adattano alle dimensioni del client e-mail e dello schermo dei destinatari. Puoi utilizzare un modello e-mail di HTML per definire l’aspetto, la combinazione di colori e il comportamento dell’e-mail.
 
-Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [&#128279;](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
+Il passaggio e-mail utilizza Day CQ Mail Service per inviare le e-mail. Prima di utilizzare il passaggio e-mail, assicurati che il servizio e-mail [](../../forms/using/aem-forms-workflow.md) sia configurato. Il passaggio e-mail presenta le seguenti proprietà:
 
 **Titolo:** Il titolo del passaggio consente di identificare il passaggio nell&#39;editor del flusso di lavoro.
 
@@ -323,7 +323,7 @@ Il passaggio Firma documento consente di utilizzare Adobe Sign per firmare i doc
 
 
 * **Script o servizio per selezionare i destinatari:** L&#39;opzione è disponibile solo se si seleziona Dinamicamente nel campo Seleziona destinatari. È possibile specificare un ECMAScript o un servizio per scegliere i destinatari e le opzioni di verifica per un documento.
-* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa **in** 2 passaggi di verifica.
+* **Dettagli destinatario:** L&#39;opzione è disponibile solo se l&#39;opzione Manualmente è selezionata nel campo Seleziona destinatari. Specifica l’indirizzo e-mail e scegli un meccanismo di verifica opzionale. Prima di selezionare un meccanismo di verifica in due fasi, accertati che l’opzione di verifica corrispondente sia abilitata per l’account Adobe Sign configurato. È possibile utilizzare una variabile di tipo String per definire i valori per i campi **[!UICONTROL Email]**, **[!UICONTROL Codice paese]** e **[!UICONTROL Numero telefono]**. I campi **[!UICONTROL Codice paese]** e **[!UICONTROL Numero di telefono]** vengono visualizzati solo se si seleziona **[!UICONTROL Verifica telefono]** dall&#39;elenco a discesa ]**in**[!UICONTROL  2 passaggi di verifica.
 * **Variabile di stato:** un documento abilitato per Adobe Sign memorizza lo stato di firma del documento in una variabile di tipo dati String. Specifica il nome della variabile di stato (adobeSignStatus). Una variabile di stato di un’istanza è disponibile in CRXDE in /etc/workflow/instances/&lt;server>/&lt;data-ora>/&lt;istanza del modello di flusso di lavoro>/workItems/&lt;nodo>/metaData contiene lo stato di una variabile.
 * **[!UICONTROL Documento firmato]**: è possibile salvare lo stato del documento firmato in Variabile. Per aggiungere un audit trail della firma elettronica per una maggiore sicurezza e legalità al documento firmato, è possibile includere un rapporto di audit. È possibile salvare il documento firmato utilizzando la cartella Variabile o Payload.
   >[!NOTE]

@@ -23,14 +23,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
 ---
 # Utilizzo del servizio Assembler{#using-assembler-service}
 
-Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Il servizio Assembler consente di combinare, ridisporre e integrare i documenti PDF e XDP e di ottenere informazioni sui documenti PDF. Ogni job inviato al servizio Assembler include un documento DDX (Document Description XML), documenti di origine e risorse esterne (stringhe e elementi grafici). Per ulteriori informazioni sul servizio Assembler, vedere [Panoramica del servizio Assembler](../../forms/using/overview-aem-document-services.md#assembler-service).
 
 È possibile utilizzare il servizio di assemblaggio per le operazioni seguenti:
 

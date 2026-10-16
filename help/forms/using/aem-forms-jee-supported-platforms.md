@@ -27,7 +27,7 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 7326db91b35209d8d1316d8e1e75e31359ee0316
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2993'
 ht-degree: 3%
@@ -314,7 +314,7 @@ Inoltre, considera i seguenti punti durante la scelta del software per le implem
 
 - Il supporto di AEM Forms su JEE è stato aggiornato e sono stati corretti i pacchetti oltre alla versione principale e secondaria specificata del software supportato. Tuttavia, l’aggiornamento alla versione principale o secondaria successiva non è supportato, a meno che non sia specificato.
 - Le installazioni basate su cluster non supportano la persistenza TarMK. Per informazioni sulla persistenza supportata, vedere [Scelta di un tipo di persistenza per un&#39;installazione di AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
-- AEM Forms su JEE supporta diversi software di terze parti in base ai [criteri di supporto software di terze parti](#third-party-patch-support-policy-third-party-patch-support-policy) di Adobe.
+- AEM Forms su JEE supporta diversi software di terze parti in base ai [criteri di supporto software di terze parti](#third-party-patch-support-policy) di Adobe.
 - AEM Forms sulle piattaforme di supporto JEE in base al supporto fornito da fornitori terzi. Alcune combinazioni potrebbero non essere consentite da fornitori di terze parti. Molti fornitori, ad esempio, non hanno certificato i propri server applicazioni con Oracle. Di conseguenza, anche AEM Forms su JEE non supporta queste combinazioni. Per assicurarsi di scegliere le versioni del software supportate, consultare la matrice di supporto anche per i fornitori di terze parti.
 - AEM Forms su JEE non supporta lo standby a freddo di TarMK.
 - AEM Forms su JEE non supporta il clustering verticale.
@@ -398,7 +398,7 @@ L’app AEM Forms ora supporta Apache Cordova. Di seguito sono riportate le vers
    <th><p><strong>Formati supportati per la conversione in PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/it/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> ultima versione</td>
    <td>XPS, formati immagine (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -649,7 +649,7 @@ AEM Forms su JEE supporta aggiornamenti, patch e fix pack oltre alla versione pr
 
 ## Criteri di supporto delle patch di terze parti {#third-party-patch-support-policy}
 
-I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione di [AEM Forms 65 LTS](https://experienceleague.adobe.com/it/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
+I requisiti software di terze parti per AEM Forms su JEE sono documentati nella sezione &quot;Requisiti di sistema&quot; dei rispettivi documenti di prodotto. Accedi a tutta la documentazione di [AEM Forms 65 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/getting-started/introduction-aem-forms) .
 
 AEM Forms sulle piattaforme di riferimento di terze parti di JEE indica il livello di patch specifico dell’infrastruttura di terze parti corrente durante lo sviluppo e il rilascio di AEM Forms su JEE e il livello minimo di patch/service pack dell’infrastruttura supportata da tale versione di AEM Forms su JEE.
 
@@ -679,7 +679,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -765,7 +765,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/it/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -834,7 +834,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | Added Support | Removed Support | Deprecated Support |
 | -------------- | --------------- | ------------------- |
-| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/it/support/programs/eol-matrix.html)|
+| Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4. | | [Adobe Acrobat 2017 - Core support for Adobe Acrobat 2017 ends on June 6, 2022.](https://helpx.adobe.com/support/programs/eol-matrix.html)|
 |  | Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)| |
 |  | | Microsoft&reg; Windows Server 2016 (64-bit)|
 |  | | Microsoft&reg; Office 2016 |

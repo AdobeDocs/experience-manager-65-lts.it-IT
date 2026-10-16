@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 Questa documentazione si applica a **AEM 6.5 LTS Forms**.
 
-Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=it).
+Per la documentazione di AEM as a Cloud Service, consulta [AEM Forms su Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html).
 
 ![integrazione dati](do-not-localize/data-integeration.png)
 
@@ -122,7 +122,7 @@ Per creare una proprietà figlio:
 
 1. In un modello dati modulo, selezionare un oggetto modello dati e selezionare **[!UICONTROL Crea proprietà figlio]**.
 1. Nella finestra di dialogo **[!UICONTROL Crea proprietà secondaria]**, specifica un nome e un tipo di dati per la proprietà rispettivamente nei campi **[!UICONTROL Nome]** e **[!UICONTROL Tipo]**. Facoltativamente, puoi specificare un titolo e una descrizione per la proprietà.
-1. Abilita Calcolato se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o a un&#39;espressione. Per ulteriori informazioni, vedere [Modifica proprietà](#edit-properties).
+1. Abilita Calcolato se la proprietà è una proprietà calcolata. Il valore di una proprietà calcolata viene valutato in base a una regola o a un&#39;espressione. Per ulteriori informazioni, vedere [Modifica proprietà](#properties).
 1. Se l’oggetto modello dati è associato a un’origine dati, la proprietà figlio aggiunta viene automaticamente associata alla proprietà dell’oggetto modello dati padre con lo stesso nome e tipo di dati.
 
    Per associare manualmente una proprietà figlio a una proprietà oggetto modello dati, selezionare l&#39;icona Sfoglia accanto al campo **[!UICONTROL Associa riferimento]**. Nella finestra di dialogo **[!UICONTROL Seleziona oggetto]** sono elencate tutte le proprietà dell&#39;oggetto modello dati padre. Seleziona una proprietà a cui associarti e fai clic sull’icona di spunta. È possibile selezionare solo una proprietà dello stesso tipo di dati della proprietà figlio.

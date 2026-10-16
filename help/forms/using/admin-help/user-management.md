@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Gestione utenti consente di abilitare il Single Sign-On (SSO) tra i moduli di AEM Forms e le applicazioni protette da Netegrity SiteMinder utilizzando il linguaggio SAML (Security Assertion Markup Language). Quando l’SSO viene implementato, le pagine di accesso dell’utente di AEM Forms non sono obbligatorie e non vengono visualizzate se l’utente è già autenticato tramite il portale aziendale.
 
-Per informazioni sul miglioramento delle prestazioni di sincronizzazione di database e directory per DB2, vedere [Database IBM DB2: esecuzione di comandi per la manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Per informazioni sul miglioramento delle prestazioni di sincronizzazione di database e directory per DB2, vedere [Database IBM DB2: esecuzione di comandi per la manutenzione regolare](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db-database-running-commands-for-regular-maintenance).
 
 ## Configurazione della gestione degli utenti per un server LDAP abilitato per SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 

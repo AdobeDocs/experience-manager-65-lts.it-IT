@@ -27,9 +27,9 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
-source-wordcount: '7272'
+source-wordcount: '7270'
 ht-degree: 19%
 ---
 # Cartella controllata in AEM Forms{#watched-folder-in-aem-forms}
@@ -100,7 +100,7 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 >
 >Se il server che ospita la cartella controllata non dispone della modalità di esecuzione specificata, la cartella controllata si attiva sempre indipendentemente dalle modalità di esecuzione sul server.
 
-* **outputFilePattern (stringa)**: pattern del file di output. È possibile specificare una cartella o un modello di file. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file. [Il modello di file e cartella](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) può inoltre specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
+* **outputFilePattern (stringa)**: pattern del file di output. È possibile specificare una cartella o un modello di file. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file. [Il modello di file e cartella](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) può inoltre specificare una struttura di directory per i file di output. È una proprietà obbligatoria.
 
 * **stageFileExpirationDuration (Long, default -1)**: il numero di secondi di attesa prima di un file/cartella di input già prelevato per l&#39;elaborazione deve essere considerato come timeout e contrassegnato come errore. Questo meccanismo di scadenza si attiva solo quando il valore di questa proprietà è un numero positivo.
 
@@ -112,7 +112,7 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
 
 * **pollInterval (Long)**: intervallo in secondi per la ricerca di input nella cartella controllata. Se l&#39;impostazione Limitazione non è abilitata, l&#39;intervallo di polling deve essere più lungo del tempo necessario per elaborare un processo medio. In caso contrario, il sistema potrebbe sovraccaricare. Il valore predefinito è 5. Per ulteriori informazioni, consulta la descrizione relativa a Dimensione batch. Il valore dell&#39;intervallo di polling deve essere maggiore o uguale a uno.
 * **excludeFilePattern (String)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati da una cartella controllata per determinare quali file e cartelle analizzare e selezionare. Qualsiasi file o cartella con questo modello non viene analizzato per l&#39;elaborazione. Questa impostazione è utile quando l’input è una cartella con più file. Il contenuto della cartella può essere copiato in una cartella con un nome scelto dalla cartella controllata. Questo impedisce alla cartella controllata di selezionare una cartella da elaborare prima che la cartella venga completamente copiata nella cartella di input. Il valore predefinito è null.
-È possibile utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) per escludere:
+È possibile utilizzare [modelli di file](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns) per escludere:
 
   * File con estensioni di file specifiche; ad esempio, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
   * File con nomi specifici; ad esempio, dati&#42; escluderebbe file e cartelle denominati dati1, dati2 e così via.
@@ -122,7 +122,7 @@ Puoi configurare le seguenti proprietà per una cartella controllata.
     * &#42;.`[dD][Aa]`&#39;porta&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 * **includeFilePattern (stringa)**: elenco delimitato da punti e virgola (;) dei pattern utilizzati dalla cartella controllata per determinare quali cartelle e file analizzare e raccogliere. Ad esempio, se IncludeFilePattern è input&#42;, verranno selezionati tutti i file e le cartelle che corrispondono all&#39;input&#42;. Questo include file e cartelle denominati input1, input2 e così via. Il valore predefinito è &#42; e indica tutti i file e le cartelle. Puoi utilizzare i pattern di file per includere:
 
@@ -136,7 +136,7 @@ Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui patte
     * &#42;.`[dD][Aa]`&#39;porta&#39;
     * &#42;.`[Xx][Mm][Ll]`
 
-Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli di file](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns)
 
 * **waitTime (Long)**: tempo, in millisecondi, di attesa prima della scansione di una cartella o di un file dopo la creazione. Ad esempio, se il tempo di attesa è di 3.600.000 millisecondi (un’ora) e il file è stato creato un minuto fa, questo file verrà acquisito dopo 59 o più minuti. Il valore predefinito è 0. Questa impostazione è utile per garantire che un file o una cartella sia completamente copiato nella cartella di input. Ad esempio, se hai un file di grandi dimensioni da elaborare e il download del file richiede dieci minuti, imposta il tempo di attesa su 10&#42;60 &#42;1000 millisecondi. Questo impedisce alla cartella controllata di esaminare il file se non ha dieci minuti.
 * **purgeDuration (Long)**: i file e le cartelle nella cartella dei risultati vengono eliminati quando sono più vecchi di questo valore. Questo valore è misurato in giorni. Questa impostazione è utile per garantire che la cartella dei risultati non si riempia. Un valore pari a -1 giorni indica di non eliminare mai la cartella dei risultati. Il valore predefinito è -1.
@@ -159,7 +159,7 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 
   Ad esempio, se sono le 20:00 del 17 luglio 2009 e si specifica C:/Test/WF0/failure/%Y/%M/%D/%H/, la cartella dei risultati sarà C:/Test/WF0/failure/2009/07/17/20
 
-  Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  Se il percorso non è assoluto ma relativo, la cartella viene creata all’interno della cartella controllata. Il valore predefinito è result/%Y/%M/%D/, ovvero la cartella dei risultati all&#39;interno della cartella controllata. Per ulteriori informazioni sui modelli di file, consulta [Informazioni sui pattern di file](../../forms/using/watched-folder-in-aem-forms.md#file-and-folder-patterns).
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Per ulteriori informazioni sui modelli di file, vedere [Informazioni sui modelli
 
   Quando i file vengono rilasciati nella cartella controllata, vengono elencati i file nell’input, il che può ridurre le prestazioni se la scansione viene eseguita ogni secondo. L’aumento dell’intervallo di scansione può migliorare le prestazioni. Se il volume dei file da eliminare è ridotto, regolare di conseguenza le dimensioni del batch e l&#39;intervallo di polling. Ad esempio, se vengono rilasciati 10 file al secondo, prova a impostare pollInterval su 1 secondo e la dimensione batch su 10
 
-* **throttleOn (booleano)**: quando questa opzione è selezionata, limita il numero di processi della cartella controllata che AEM Forms elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (Vedi [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (booleano)**: quando questa opzione è selezionata, limita il numero di processi della cartella controllata che AEM Forms elabora in un dato momento. Il numero massimo di processi è determinato dal valore Dimensione batch. Il valore predefinito è true. (Vedi [Informazioni sulla limitazione](../../forms/using/watched-folder-in-aem-forms.md#about-throttling).)
 
 * **overwriteDuplicateFilename (Boolean)**: se è impostato su True, i file nella cartella dei risultati e nella cartella di conservazione vengono sovrascritti. Se è impostato su falso, vengono utilizzati file e cartelle con un suffisso di indice numerico per il nome. Il valore predefinito è falso.
 * **preserveOnFailure (booleano)**: mantenere i file di input in caso di errore durante l&#39;esecuzione dell&#39;operazione su un servizio. Il valore predefinito è vero.
@@ -260,9 +260,9 @@ Ad esempio, il codice seguente è un’implementazione personalizzata dell’int
 public class OutputWriter implements ContentProcessor {
 ```
 
-Durante la [configurazione di una cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p), se si specifica la proprietà inputProcessorId come (foo=bar) e la proprietà inputProcessorType come Service, per elaborare i file di input della cartella controllata viene utilizzato il servizio (implementazione personalizzata) indicato sopra.
+Durante la [configurazione di una cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node), se si specifica la proprietà inputProcessorId come (foo=bar) e la proprietà inputProcessorType come Service, per elaborare i file di input della cartella controllata viene utilizzato il servizio (implementazione personalizzata) indicato sopra.
 
-L’esempio seguente è anche un’implementazione personalizzata dell’interfaccia ContentProcessor. Nell&#39;esempio, il Servizio accetta i file di input, li copia in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto documento viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+L’esempio seguente è anche un’implementazione personalizzata dell’interfaccia ContentProcessor. Nell&#39;esempio, il Servizio accetta i file di input, li copia in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto documento viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node).
 
 ```java
 @Component(immediate = true)
@@ -289,7 +289,7 @@ Gli script sono il codice personalizzato di reclamo ECMAScript scritto per elabo
 * **getConfigParameters**: restituisce una mappa immutabile di tipo Map. La mappa contiene i parametri di configurazione di una cartella controllata.
 * **setResult**: l&#39;implementazione ContentProcessor utilizza l&#39;API per scrivere il documento di output nella cartella dei risultati. È possibile specificare un nome per il file di output nell&#39;API setResult. L’API può scegliere di utilizzare o ignorare il file fornito a seconda della cartella di output o del pattern di file specificato. Se viene specificato un pattern di cartella, i nomi dei file di output saranno quelli descritti nei flussi di lavoro. Se viene specificato un pattern di file, i nomi dei file di output sono quelli descritti in pattern di file.
 
-Il codice seguente è un esempio di ECMAScript. Accetta i file di input, li copia in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto documento viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+Il codice seguente è un esempio di ECMAScript. Accetta i file di input, li copia in una posizione temporanea e restituisce un oggetto documento con il contenuto del file. Il contenuto dell&#39;oggetto documento viene salvato nella cartella dei risultati. Il percorso fisico della cartella dei risultati è configurato nel nodo di configurazione [Cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#create-watched-folder-configuration-node).
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ L&#39;argomento per processWorkflowContext() è un oggetto di tipo com.adobe.aem
 * getMetadata: restituisce il valore della variabile Metadata. Le variabili vengono passate al metodo WorkflowContextService.execute().
 * getCommittedVariables: restituisce una mappa oggetto di sola lettura che rappresenta le variabili impostate dai passaggi precedenti. Se una variabile non viene modificata in nessuno dei passaggi precedenti, viene restituito il valore predefinito specificato durante la configurazione della cartella controllata.
 * getCommittedResults: restituisce una mappa documento di sola lettura. La mappa rappresenta i file di output generati dai passaggi precedenti.
-* setVariable: l’implementazione di WorkflowContextProcessor utilizza la variabile per manipolare le variabili che rappresentano i dati dinamici personalizzati che scorrono tra i passaggi. Il nome e il tipo delle variabili sono identici al nome delle variabili specificate durante [la configurazione della cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). Per modificare il valore di una variabile, chiama l’API setVariable con un valore non nullo. Per rimuovere una variabile, chiama setVariable() con un valore null.
+* setVariable: l’implementazione di WorkflowContextProcessor utilizza la variabile per manipolare le variabili che rappresentano i dati dinamici personalizzati che scorrono tra i passaggi. Il nome e il tipo delle variabili sono identici al nome delle variabili specificate durante [la configurazione della cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder). Per modificare il valore di una variabile, chiama l’API setVariable con un valore non nullo. Per rimuovere una variabile, chiama setVariable() con un valore null.
 
 Sono inoltre disponibili le seguenti API ProcessorContext:
 
@@ -531,8 +531,8 @@ Watched Folder analizza la cartella di input in corrispondenza di ogni pollInter
 La limitazione impedisce che la cartella controllata richiami nuovi processi quando i processi precedenti non sono ancora completati. La cartella controllata rileva i processi in corso ed elabora i nuovi processi in base alle dimensioni del batch meno quelli in corso. Ad esempio, nella seconda chiamata, se i processi completati sono solo tre e un processo è ancora in corso, la cartella controllata richiama solo altri tre processi.
 
 * La cartella controllata si basa sul numero di file presenti nella cartella di fase per individuare quanti processi sono in corso. Se i file rimangono non elaborati nella cartella di staging, la cartella controllata non richiama altri processi. Ad esempio, se la dimensione del batch è quattro e tre processi sono bloccati, la cartella controllata richiama un solo processo nelle chiamate successive. Esistono più scenari che possono bloccare l’elaborazione dei file nella cartella di fase. Quando i processi vengono arrestati, l&#39;amministratore può terminare il processo nella pagina di amministrazione di Gestione processi in modo che la cartella controllata sposti i file fuori dalla cartella dell&#39;area di visualizzazione.
-* Se il server AEM Forms si blocca prima che la cartella controllata richiami i processi, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, consulta [Punti di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* Se il server AEM Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, ovvero quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella di stage. Per informazioni, consulta [Punti di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* Se il server AEM Forms si blocca prima che la cartella controllata richiami i processi, l’amministratore può spostare i file fuori dalla cartella dell’area di visualizzazione. Per informazioni, consulta [Punti di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
+* Se il server AEM Forms è in esecuzione ma la cartella controllata non è in esecuzione quando il servizio Gestione processi richiama, ovvero quando i servizi non si avviano nella sequenza ordinata, l&#39;amministratore può spostare i file fuori dalla cartella di stage. Per informazioni, consulta [Punti di errore e ripristino](../../forms/using/watched-folder-in-aem-forms.md#failure-points-and-recoveryfailure-points-and-recovery).
 
 ### Punti di errore e ripristinoPunti di errore e ripristino {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -615,9 +615,9 @@ Puoi configurare una cartella controllata per avviare un flusso di lavoro, un se
 
 Per configurare una cartella controllata con PDF Generator, effettua le seguenti operazioni:
 
-1. [Creare un ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
-1. [Creare un flusso di lavoro](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
-1. [Configurare la cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
+1. [Creare un ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#create-an-ecmascript)
+1. [Creare un flusso di lavoro](../../forms/using/watched-folder-in-aem-forms.md#create-a-workflow)
+1. [Configurare la cartella controllata](../../forms/using/watched-folder-in-aem-forms.md#configure-the-watched-folder)
 
 ### Creare un ECMAScript {#create-an-ecmascript}
 
@@ -671,7 +671,7 @@ ECMAScript utilizzerà l&#39;API createPDF di PDF Generator per convertire i doc
 
 1. Fare clic con il pulsante destro del mouse sul passaggio del processo e selezionare **Modifica**. Viene visualizzata la finestra Proprietà passaggio.
 
-1. Nella scheda Processo selezionare ECMAScript. Ad esempio, lo script pdfg-openOffice-sample.ecma creato in [Crea un ECMAScript](#p-create-an-ecmascript-p). Abilita l&#39;opzione **Avanzamento gestore** e fai clic su **OK**.
+1. Nella scheda Processo selezionare ECMAScript. Ad esempio, lo script pdfg-openOffice-sample.ecma creato in [Crea un ECMAScript](#create-an-ecmascript). Abilita l&#39;opzione **Avanzamento gestore** e fai clic su **OK**.
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 

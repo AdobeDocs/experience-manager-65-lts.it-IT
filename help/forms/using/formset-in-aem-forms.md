@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Per creare un set di moduli, effettuare le seguenti operazioni:
 
    * Ordine dei moduli: trascinare i moduli per riordinarli. L’ordine dei moduli definisce l’ordine in cui i moduli vengono mostrati all’utente finale nell’app AEM Forms e nella rappresentazione autonoma.
    * Identificatore modulo: specifica un’identità univoca per i moduli da utilizzare nelle espressioni di idoneità.
-   * Directory principale dati: per ogni modulo nel set di moduli, l’autore può configurare l’XPATH in cui i dati di quel particolare modulo sono posizionati nell’XML inviato. Per impostazione predefinita, il valore è /. Se tutti i moduli nel set di moduli sono associati a uno schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che in ogni campo del modulo sia specificata un&#39;associazione dati corretta nell&#39;XDP. Se due campi in due moduli diversi condividono la stessa associazione dati, il campo nel secondo modulo mostra i valori precompilati del primo modulo. Non associare due sottomaschere con lo stesso contenuto interno allo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per set di moduli](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Directory principale dati: per ogni modulo nel set di moduli, l’autore può configurare l’XPATH in cui i dati di quel particolare modulo sono posizionati nell’XML inviato. Per impostazione predefinita, il valore è /. Se tutti i moduli nel set di moduli sono associati a uno schema e condividono lo stesso schema XML, è possibile modificare questo valore. È consigliabile che in ogni campo del modulo sia specificata un&#39;associazione dati corretta nell&#39;XDP. Se due campi in due moduli diversi condividono la stessa associazione dati, il campo nel secondo modulo mostra i valori precompilati del primo modulo. Non associare due sottomaschere con lo stesso contenuto interno allo stesso nodo XML. Per ulteriori informazioni sulla struttura XML del set di moduli, vedere [Precompila XML per set di moduli](../../forms/using/formset-in-aem-forms.md#prefill-xml-for-form-set).
    * Espressione di idoneità: specifica un&#39;espressione di JavaScript che valuta un valore booleano e indica se un modulo nel set di moduli è idoneo alla compilazione. Se false, all’utente non viene richiesto o non viene mostrato nemmeno il modulo da compilare. In genere, l’espressione si basa sui valori dei campi acquisiti prima del modulo. Le espressioni contengono anche chiamate al set di moduli API fs.valueOf per estrarre i valori compilati dall’utente in un campo di un modulo del set di moduli:
 
    *fs.valueOf(&lt;Identificatore modulo>, &lt;espressione fieldSom>) > &lt;valore>*

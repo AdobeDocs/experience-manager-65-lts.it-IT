@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Per un modulo adattivo, l’opzione di salvataggio automatico non è attivata co
    * Specificare un intervallo di tempo se si seleziona il trigger **[!UICONTROL Time based]**.
    * Specificare un nome evento se si seleziona il trigger **[!UICONTROL Basato su evento]**.
 
-   Puoi anche creare e aggiungere all’elenco la tua strategia personalizzata. Per ulteriori dettagli, vedere [Implementare una strategia personalizzata per il salvataggio automatico dei moduli](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p).
+   Puoi anche creare e aggiungere all’elenco la tua strategia personalizzata. Per ulteriori dettagli, vedere [Implementare una strategia personalizzata per il salvataggio automatico dei moduli](/help/forms/using/auto-save-an-adaptive-form.md#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms).
 
 1. (Solo salvataggio automatico basato sul tempo) Per configurare le opzioni per il salvataggio automatico basato sul tempo, effettuare le seguenti operazioni.
 
@@ -66,7 +66,7 @@ Per un modulo adattivo, l’opzione di salvataggio automatico non è attivata co
 
 1. (Solo salvataggio automatico basato su eventi) Per configurare le opzioni per il salvataggio automatico basato su eventi, effettuare le seguenti operazioni.
 
-   1. Nella casella **Salvataggio automatico dopo l&#39;evento** specificare un evento [GuideBridge](https://helpx.adobe.com/it/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
+   1. Nella casella **Salvataggio automatico dopo l&#39;evento** specificare un evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). Il modulo viene salvato ogni volta che l’espressione restituisce TRUE.
 
 1. (Facoltativo) Per salvare automaticamente il contenuto per utenti anonimi, selezionare l&#39;opzione **Abilita salvataggio automatico per utenti anonimi** e fare clic su **[!UICONTROL OK]**.
 

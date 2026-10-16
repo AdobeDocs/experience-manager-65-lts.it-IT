@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 18%
@@ -62,9 +62,9 @@ Il servizio di traduzione automatica traduce immediatamente il contenuto in form
 
    Per ulteriori informazioni sulle impostazioni e sulla configurazione del documento record, vedi:
 
-   [Configurazione modello del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Configurazione modello del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-template-configuration)
 
-   [Impostazioni del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Impostazioni del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-settings)
 
 1. [Personalizzare le informazioni di branding del documento record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e assicurarsi che le impostazioni locali del browser siano impostate sulla stessa lingua in cui è stato localizzato il modulo adattivo utilizzando la lingua del computer. Le impostazioni locali del browser consentono di localizzare le informazioni di branding nel documento di record.
 1. Per visualizzare il documento di record localizzato, selezionare Genera anteprima. Il documento di record PDF viene generato e aperto in una nuova scheda nel browser.

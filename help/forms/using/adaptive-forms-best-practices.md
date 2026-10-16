@@ -16,14 +16,14 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 1%
 ---
 # Best practice per l’utilizzo dei moduli adattivi {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/it/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
+<span class="preview"> Adobe consiglia di utilizzare l&#39;acquisizione dati moderna ed estensibile [Componenti core](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction) per [la creazione di un nuovo Forms adattivo](/help/forms/using/create-an-adaptive-form-core-components.md) o [l&#39;aggiunta di Forms adattivo alle pagine AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Questi componenti rappresentano un progresso significativo nella creazione di Forms adattivi, garantendo esperienze utente straordinarie. Questo articolo descrive un approccio precedente all’authoring di Forms adattivi utilizzando i componenti di base. </span>
 
 ## Panoramica {#overview}
 
@@ -102,11 +102,11 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
   * Per personalizzare il layout dei componenti predefiniti dei moduli adattivi in /libs, [crea componenti di layout personalizzati](/help/forms/using/custom-layout-components-forms.md) oltre ai [layout predefiniti](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Introdurre interattività personalizzate creando widget o aspetti personalizzati. Si sconsiglia di modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Framework aspetto](/help/forms/using/introduction-widgets.md).
 
-* Consulta [Gestione di informazioni personali](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) per consigli sulla gestione dei dati PII.
+* Consulta [Gestione di informazioni personali](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information) per consigli sulla gestione dei dati PII.
 
 ### Creazione di modelli di modulo
 
-È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/it/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
+È possibile creare un modulo adattivo utilizzando i modelli di modulo abilitati in **Browser configurazioni**. Per abilitare i modelli di modulo, vedi [Creazione del modello di modulo adattivo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template).
 
 I modelli di modulo possono essere caricati anche da pacchetti di moduli adattivi creati in un altro computer di authoring. I modelli di modulo vengono resi disponibili installando [pacchetti aemforms-references-*](https://experienceleague.adobe.com/it/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases). Alcune delle best practice consigliate sono:
 
@@ -288,7 +288,7 @@ Per ulteriori informazioni, vedere [Plug-in Chrome di AEM - Modulo adattivo](htt
 
 Le convalide lato server sono necessarie per evitare tentativi di aggirare le convalide sul client e possibili compromissioni dell’invio dei dati e violazioni delle regole aziendali. Le convalide lato server vengono eseguite sul server caricando la libreria client richiesta.
 
-* Includi funzioni in una libreria client per la convalida delle espressioni nei moduli adattivi e specifica la libreria client nella finestra di dialogo del contenitore di moduli adattivi. Per ulteriori informazioni, vedere [Riconvalida lato server](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Includi funzioni in una libreria client per la convalida delle espressioni nei moduli adattivi e specifica la libreria client nella finestra di dialogo del contenitore di moduli adattivi. Per ulteriori informazioni, vedere [Riconvalida lato server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Localizzazione di moduli adattivi {#localizing-adaptive-forms}
@@ -330,7 +330,7 @@ Spesso è necessario spostare i progetti AEM da un ambiente all’altro. Di segu
 Di seguito sono riportate alcune best practice per configurare AEM per migliorare le prestazioni generali:
 
 * Abilita la compressione della libreria client HTML per JavaScript e CSS dalla console Felix.
-* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/it/experience-manager/dispatcher/using/dispatcher.html).
+* Memorizza nella cache tutte le librerie client in `/etc.clientlibs/fd` ed eventuali librerie client personalizzate in AEM Dispatcher per aumentare la reattività e la sicurezza dei moduli pubblicati. Per ulteriori informazioni, vedere [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Non memorizzare nella cache `/content/forms/af/` e `/content/dam/formsanddocuments/*` percorsi. per informazioni dettagliate sulla configurazione della memorizzazione nella cache dei moduli adattivi, vedi [memorizzazione nella cache dei moduli adattivi](/help/forms/using/configure-adaptive-forms-cache.md).
 
@@ -373,11 +373,11 @@ Una delle sfide principali per le organizzazioni è la gestione dei dati persona
 
 L’editor di regole di AEM Forms fornisce un’interfaccia visiva per la creazione e la gestione delle regole, riducendo la necessità di ricorrere a estese funzioni di codifica. Può essere particolarmente utile per gli utenti aziendali o i progettisti di moduli che non dispongono di competenze avanzate di programmazione ma devono definire e mantenere regole di business all’interno dei moduli. A questo proposito vengono descritti alcuni casi d’uso in cui l’editor di regole consente di:
 
-* &#x200B;<!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
-* &#x200B;<!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
-* &#x200B;<!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
-* &#x200B;<!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
-* &#x200B;<!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
+* <!-- Allows you --> Definire le regole aziendali per i moduli senza la necessità di una programmazione estesa.
+* <!-- Use the Rule Editor when you need --> Per implementare la logica condizionale nei moduli. Ciò include la visualizzazione o l&#39;eliminazione di elementi modulo, la modifica dei valori dei campi in base a determinate condizioni o la modifica dinamica del comportamento dei moduli.
+* <!--When you want --> Per applicare le regole di convalida dei dati all’invio di moduli, è possibile utilizzare l’Editor di regole per definire le condizioni di convalida.
+* <!-- When you need --> Per integrare i moduli con origini dati o servizi esterni, l&#39;editor di regole consente di definire regole per il recupero, la visualizzazione o la modifica dei dati durante le interazioni dei moduli.
+* <!-- If you want -->Per creare moduli dinamici e interattivi che rispondano alle azioni dell’utente, l’Editor regole consente di definire regole che disciplinano il comportamento degli elementi del modulo in tempo reale.
 
 L’editor di regole è disponibile sia per i componenti di AEM Forms Foundation che per i componenti core.
 

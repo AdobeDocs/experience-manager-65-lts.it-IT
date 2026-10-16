@@ -30,7 +30,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 1%
@@ -121,7 +121,7 @@ Utilizza i seguenti passaggi per creare un’attività per eseguire il rendering
    ```
 
    [Ottieni file](assets/dscsample.zip)
-   Scarica DSC: un esempio di DSC è disponibile nel file DSCSample.zip allegato in precedenza. Scarica e decomprimi il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Vedere [Configurare il servizio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Scarica DSC: un esempio di DSC è disponibile nel file DSCSample.zip allegato in precedenza. Scarica e decomprimi il file DSCSample.zip. Prima di utilizzare il servizio DSC, è necessario configurarlo. Vedere [Configurare il servizio DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#configure-the-dsc-service).
 
    Nella finestra di dialogo Definisci attività, seleziona l&#39;attività appropriata come getLetterInstanceInfo e fai clic su **OK**.
 
