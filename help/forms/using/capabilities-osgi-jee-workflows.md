@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 24%
@@ -412,7 +412,7 @@ I flussi di lavoro AEM incentrati sui moduli su OSGi e i flussi di lavoro JEE pe
 1. I servizi documentali AEM Forms nativi sono disponibili per i flussi di lavoro AEM incentrati su moduli su OSGi e per i flussi di lavoro AEM Forms su JEE. AEM Workflow utilizza servizi di documenti nativi per flussi di lavoro AEM incentrati su moduli in flussi di lavoro OSGi e AEM Forms JEE (Process Management).
 1. I flussi di lavoro AEM Forms JEE possono eseguire il rendering solo di un modulo adattivo. Non supporta il rendering di un modulo adattivo come documento PDF.
 1. I flussi di lavoro di AEM Forms JEE non dispongono di un passaggio separato per Adobe Sign. È necessario un modulo adattivo abilitato per Adobe Sign per i flussi di lavoro JEE per AEM Forms. Per ulteriori dettagli, consulta la [documentazione di Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. È possibile utilizzare il passaggio [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) per richiamare un servizio Web e inviare o recuperare dati da un&#39;applicazione di terze parti.
+1. È possibile utilizzare il passaggio [Richiama servizio modello dati modulo](../../forms/using/aem-forms-workflow-step-reference.md#invoke-form-data-model-service-step) per richiamare un servizio Web e inviare o recuperare dati da un&#39;applicazione di terze parti.
 1. Puoi utilizzare il passaggio [Invia e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) per inviare e-mail.
 
 ## Differenze tra la casella in entrata di AEM e le funzioni dell’app AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}

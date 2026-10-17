@@ -25,7 +25,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1556'
 ht-degree: 1%
@@ -114,8 +114,8 @@ Il pannello strumenti di AEM contiene strumenti per vari componenti. Per passare
   ![Strumenti di AEM Forms](assets/aem_forms_tools_new.png)
 
 * **Configura PDF Generator:** Un amministratore può configurare le impostazioni di AEM [!DNL Forms] PDF Generator, aggiungere account utente e importare o esportare la configurazione in PDF Generator.
-* **Gestione della corrispondenza pubblicazione Assets:** AEM [!DNL Forms] consente di pubblicare contemporaneamente tutte le lettere, i frammenti di documento e i dizionari di dati e le relative dipendenze da un&#39;istanza Autore. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze. Per informazioni dettagliate, vedere [Pubblicazione e annullamento della pubblicazione di moduli e documenti](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
-* **Esporta Assets Gestione corrispondenza:** È possibile scaricare tutte le risorse di Gestione corrispondenza e le relative dipendenze come pacchetto da un&#39;istanza di AEM [!DNL Forms]. Per i passaggi dettagliati, vedi [Importazione ed esportazione di risorse in AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
+* **Gestione della corrispondenza pubblicazione Assets:** AEM [!DNL Forms] consente di pubblicare contemporaneamente tutte le lettere, i frammenti di documento e i dizionari di dati e le relative dipendenze da un&#39;istanza Autore. Le risorse pubblicate includono tutte le risorse di Gestione della corrispondenza e le relative dipendenze. Per informazioni dettagliate, vedere [Pubblicazione e annullamento della pubblicazione di moduli e documenti](../../forms/using/publishing-unpublishing-forms.md#publish-all-the-correspondence-management-assets).
+* **Esporta Assets Gestione corrispondenza:** È possibile scaricare tutte le risorse di Gestione corrispondenza e le relative dipendenze come pacchetto da un&#39;istanza di AEM [!DNL Forms]. Per i passaggi dettagliati, vedi [Importazione ed esportazione di risorse in AEM Forms](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management)
 
 ## Elementi comuni dell’interfaccia utente {#commonelements}
 

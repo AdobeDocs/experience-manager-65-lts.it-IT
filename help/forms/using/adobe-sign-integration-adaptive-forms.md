@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2207'
 ht-degree: 2%
@@ -231,7 +231,7 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 
 #### Utilizza le credenziali ricevute per collegare AEM Forms ad Adobe Acrobat Sign Solutions for Government
 
-1. Apri `re-direct URL` nel browser. Hai creato e annotato `re-direct URL` nell&#39;ultimo passaggio di [creazione di un URL di reindirizzamento nell&#39;istanza di AEM](#create-redirect-url).
+1. Apri `re-direct URL` nel browser. Hai creato e annotato `re-direct URL` nell&#39;ultimo passaggio di [creazione di un URL di reindirizzamento nell&#39;istanza di AEM](#create-a-redirect-url-for-your-aem-instance).
 
 1. Nella scheda **[!UICONTROL Generale]** della pagina **[!UICONTROL Crea configurazione Adobe Sign]**, specifica un **[!UICONTROL Nome]** per la configurazione e seleziona **[!UICONTROL Avanti]**. Facoltativamente, puoi specificare un **[!UICONTROL Titolo]** e cercare di selezionare una **[!UICONTROL Miniatura]** per la configurazione. Fai clic su **[!UICONTROL Avanti]**.
 
@@ -282,7 +282,7 @@ Il rappresentante genera e condivide le credenziali con te. Nella sezione succes
 1. Pubblica la configurazione.
 1. Utilizza [replica](/help/sites-deploying/replication.md) per creare una configurazione identica nelle istanze di pubblicazione corrispondenti.
 
-Ora puoi [utilizzare Aggiungi campi Adobe Acrobat Sign in un modulo adattivo](working-with-adobe-sign.md) o [flusso di lavoro AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Assicurarsi di aggiungere il contenitore di configurazione utilizzato per la configurazione di Cloud Service a tutto il Forms adattivo abilitato per [!DNL Adobe Acrobat Sign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
+Ora puoi [utilizzare Aggiungi campi Adobe Acrobat Sign in un modulo adattivo](working-with-adobe-sign.md) o [flusso di lavoro AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step). Assicurarsi di aggiungere il contenitore di configurazione utilizzato per la configurazione di Cloud Service a tutto il Forms adattivo abilitato per [!DNL Adobe Acrobat Sign]. È possibile specificare un contenitore di configurazione dalle proprietà di un modulo adattivo.
 
 
 ## Configura l&#39;utilità di pianificazione [!DNL Adobe Sign] per sincronizzare lo stato di firma {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
@@ -301,5 +301,5 @@ L&#39;intervallo predefinito per sincronizzare lo stato di [!DNL Adobe Sign] è 
 ## Articoli correlati {#related-articles}
 
 * [Utilizzare l’accesso di Adobe in un modulo adattivo](../../forms/using/working-with-adobe-sign.md)
-* [Adobe Sign con flussi di lavoro incentrati su moduli](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
+* [Adobe Sign con flussi di lavoro incentrati su moduli](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step)
 * [Utilizzo di Adobe Sign con AEM Forms (video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

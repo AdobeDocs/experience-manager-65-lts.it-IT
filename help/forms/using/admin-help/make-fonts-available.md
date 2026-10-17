@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 100%
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Verifica che i font utilizzati in un modulo siano disponibili per l’utilizzo nel server applicazioni J2EE che ospita AEM Forms. Ad esempio, prendi in considerazione lo scenario seguente. Un designer di moduli aggiunge un font alla directory dei font utilizzata dal designer e crea un modulo che utilizza tale font in un computer a parte. Affinché il servizio di output utilizzi il font, inseriscilo nella directory dei font del cliente. Se non esiste una directory dei font del cliente, crea una directory nel server applicazioni J2EE che ospita AEM Forms.
 
-Per ulteriori informazioni sulle impostazioni dei font, consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
+Per ulteriori informazioni sulle impostazioni dei font, consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).
 
 **Specificare il percorso della directory dei font del cliente**
 

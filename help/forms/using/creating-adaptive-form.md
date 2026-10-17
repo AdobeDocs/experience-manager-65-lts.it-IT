@@ -27,7 +27,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Per creare un modulo adattivo, segui la procedura riportata di seguito.
    >Per un&#39;installazione predefinita, l&#39;accesso è `admin` e la password è `admin`.
 
 1. Seleziona **[!UICONTROL Crea]** e **[!UICONTROL Modulo adattivo]**.
-1. Viene visualizzata un&#39;opzione per selezionare un modello. Per ulteriori informazioni sui modelli, vedere [Modelli di modulo adattivo](creating-adaptive-form.md#p-adaptive-form-templates-p). Seleziona un modello per selezionarlo, quindi fai clic su Avanti.
+1. Viene visualizzata un&#39;opzione per selezionare un modello. Per ulteriori informazioni sui modelli, vedere [Modelli di modulo adattivo](creating-adaptive-form.md#adaptive-form-templates). Seleziona un modello per selezionarlo, quindi fai clic su Avanti.
 1. Viene visualizzata un&#39;opzione per &quot;Aggiungi proprietà&quot;. Specificare i valori per i seguenti campi proprietà. I campi Titolo e Nome sono obbligatori:
 
    * **[!UICONTROL Titolo:]** Specifica il nome visualizzato del modulo. Il titolo consente di identificare il modulo nell’interfaccia utente di [!DNL Experience Manager Forms].

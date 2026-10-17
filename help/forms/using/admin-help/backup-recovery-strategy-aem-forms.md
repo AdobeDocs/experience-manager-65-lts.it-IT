@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 93%
@@ -125,6 +125,6 @@ Utilizza lo script `LCSetGDS` nella cartella `[*aem-forms root]*\sdk\misc\Founda
 
 >[!NOTE]
 >
->Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. (Vedi [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
+>Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. (Vedi [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings)*.) *
 
 Dopo aver impostato il percorso GDS, avvia il server Forms in modalità di manutenzione e utilizza la console di amministrazione per aggiornare i percorsi del file system rimanenti per il nuovo nodo. Dopo aver verificato che tutte le configurazioni necessarie siano state aggiornate, riavvia e verifica AEM Forms.

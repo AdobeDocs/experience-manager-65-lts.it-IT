@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 2%
@@ -96,7 +96,7 @@ Oltre al server JBoss®, è possibile aggiungere l&#39;argomento -Dabtesting.ena
 
 >[!NOTE]
 >
->Se aggiorni gli URL di Target configurati in un secondo momento, accertati di aggiornare tutti i test A/B in esecuzione in modo che puntino agli URL correnti. Per informazioni sull&#39;aggiornamento dei test A/B, vedere [Aggiorna test A/B](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>Se aggiorni gli URL di Target configurati in un secondo momento, accertati di aggiornare tutti i test A/B in esecuzione in modo che puntino agli URL correnti. Per informazioni sull&#39;aggiornamento dei test A/B, vedere [Aggiorna test A/B](/help/forms/using/ab-testing-adaptive-forms.md#update-a-b-test).
 >
 
 ## Creare tipi di pubblico in AEM {#create-audiences-within-aem}

@@ -20,7 +20,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6927'
 ht-degree: 0%
@@ -65,7 +65,7 @@ La soluzione di gestione della corrispondenza supporta due tipi di elementi di d
 
    Il correttore ortografico predefinito nel browser controlla l&#39;ortografia nell&#39;editor di testo. Per gestire il controllo ortografico e grammaticale, è possibile modificare le impostazioni del correttore ortografico del browser oppure installare i plug-in e gli add-on del browser per il controllo ortografico e grammaticale.
 
-   È inoltre possibile utilizzare le varie scelte rapide da tastiera disponibili nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;[Editor di testo](/help/forms/using/keyboard-shortcuts.md#p-formatting-p) in Scelte rapide da tastiera per Gestione corrispondenza.
+   È inoltre possibile utilizzare le varie scelte rapide da tastiera disponibili nell&#39;editor di testo per gestire, modificare e formattare il testo. Per ulteriori informazioni sulle scelte rapide da tastiera dell&#39;[Editor di testo](/help/forms/using/keyboard-shortcuts.md#formatting) in Scelte rapide da tastiera per Gestione corrispondenza.
 
 1. Viene aperto un editor di testo, immettete il testo. Utilizza la barra degli strumenti nella parte superiore della pagina per formattare il testo, inserire condizioni, collegamenti e interruzioni di pagina.
 
@@ -501,7 +501,7 @@ In questo esempio viene illustrato come creare una tabella dinamica e una tabell
 
    Quindi selezionare DD ed esportare i dati di esempio. Il file XML ottenuto contiene i dati relativi ai dipendenti e tre istanze per Nominee_details (per impostazione predefinita vengono scaricate 3 istanze. Puoi aggiungere o eliminare in base alle tue esigenze). Aggiorna i valori e importa i dati di test in DD. Il file CMP è il pacchetto e contiene il DD. Importa quindi DD in Gestione corrispondenza.
 
-   Per ulteriori informazioni sull&#39;utilizzo del dizionario dati e dei dati di prova, vedere [Dizionario dati](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
+   Per ulteriori informazioni sull&#39;utilizzo del dizionario dati e dei dati di prova, vedere [Dizionario dati](/help/forms/using/data-dictionary.md#working-with-test-data).
 
    ![Struttura dizionario dati](assets/dd.jpeg)
 

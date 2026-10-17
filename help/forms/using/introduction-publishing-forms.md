@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Forms Portal consente di elencare i moduli dal repository dei moduli nella pagin
 1. **Abilita componenti di Forms Portal**: i componenti di Forms Portal non sono pronti all&#39;uso. [Abilita i componenti dalla barra laterale di AEM](/help/forms/using/enabling-forms-portal-components.md) per una pagina AEM Sites.
 1. **Elenca moduli in una pagina (crea pagina portale Forms):** Puoi elencare i moduli sia nelle pagine AEM Sites che in quelle non AEM Site. L’elenco contiene i moduli disponibili nell’istanza Publish. Un utente può aprire i moduli e iniziare a compilarli. Ogni volta che un utente apre un modulo, viene creata una nuova istanza del modulo:
 
-   1. **Elenca moduli in una pagina di AEM Sites**: aggiungi il componente **[Cerca ed elenca](../../forms/using/creating-form-portal-page.md)** alla pagina e configura il **[riquadro elenco](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** in essa per elencare i moduli in una pagina. Aggiungere e configurare il componente **Riquadro di ricerca** nel componente **Ricerca ed elenco** per aggiungere funzionalità di ricerca alla pagina. La pagina con il componente Forms Portal è nota come [pagina Forms Portal](../../forms/using/creating-form-portal-page.md).
+   1. **Elenca moduli in una pagina di AEM Sites**: aggiungi il componente **[Cerca ed elenca](../../forms/using/creating-form-portal-page.md)** alla pagina e configura il **[riquadro elenco](../../forms/using/creating-form-portal-page.md#list-pane)** in essa per elencare i moduli in una pagina. Aggiungere e configurare il componente **Riquadro di ricerca** nel componente **Ricerca ed elenco** per aggiungere funzionalità di ricerca alla pagina. La pagina con il componente Forms Portal è nota come [pagina Forms Portal](../../forms/using/creating-form-portal-page.md).
 
    1. **Elenca moduli in una pagina non AEM Sites:** Utilizza le [API di ricerca di Forms Portal](/help/forms/using/listing-forms-webpage-using-apis.md) per eseguire query, recuperare ed elencare moduli in pagine non AEM Sites.
 

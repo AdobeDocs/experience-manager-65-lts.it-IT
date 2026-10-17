@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d1f055e0688c24b55f80c7e2be974fe1d28ae8d5
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 1%
@@ -219,7 +219,7 @@ Per un campo sono disponibili più modelli di convalida predefiniti. Per selezio
 
 ### Espressioni di convalida {#validation-expressions}
 
-La convalida di un campo può essere calcolata anche utilizzando espressioni su campi diversi. Queste espressioni sono scritte nel campo **Script di convalida** della scheda **Script** della finestra di dialogo **Modifica** del componente. Lo stato di convalida di un campo dipende dal valore restituito dall&#39;espressione. Per informazioni su come scrivere tali espressioni, vedere [Convalida espressione](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+La convalida di un campo può essere calcolata anche utilizzando espressioni su campi diversi. Queste espressioni sono scritte nel campo **Script di convalida** della scheda **Script** della finestra di dialogo **Modifica** del componente. Lo stato di convalida di un campo dipende dal valore restituito dall&#39;espressione. Per informazioni su come scrivere tali espressioni, vedere [Convalida espressione](../../forms/using/adaptive-form-expressions.md#validate-expression).
 
 ## Informazioni aggiuntive {#additional-information}
 

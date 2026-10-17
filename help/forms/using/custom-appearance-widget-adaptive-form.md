@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 1%
@@ -179,7 +179,7 @@ Una volta creato il modello di progetto, effettua le seguenti modifiche, in base
    * Il metodo `getEventMap` mappa gli eventi attivati dal widget, con gli eventi richiesti dal modello di modulo adattivo. Il valore predefinito mappa gli eventi HTML standard per il widget predefinito e deve essere aggiornato se viene attivato un evento alternativo.
    * `showDisplayValue` e `showValue` applicano la clausola di visualizzazione e modifica delle immagini e possono essere sostituiti per avere un comportamento alternativo.
 
-   * Il metodo `getCommitValue` viene chiamato dal framework dei moduli adattivi quando si verifica l&#39;evento `commit`. In genere, si tratta dell’evento di uscita, ad eccezione degli elementi a discesa, pulsante di scelta e casella di controllo in cui si verifica in caso di modifica). Per ulteriori informazioni, vedere [Espressioni Forms adattive](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
+   * Il metodo `getCommitValue` viene chiamato dal framework dei moduli adattivi quando si verifica l&#39;evento `commit`. In genere, si tratta dell’evento di uscita, ad eccezione degli elementi a discesa, pulsante di scelta e casella di controllo in cui si verifica in caso di modifica). Per ulteriori informazioni, vedere [Espressioni Forms adattive](../../forms/using/adaptive-form-expressions.md#value-commit-script).
 
    * Il file modello fornisce un’implementazione di esempio per vari metodi. Rimuovere i metodi da non estendere.
 

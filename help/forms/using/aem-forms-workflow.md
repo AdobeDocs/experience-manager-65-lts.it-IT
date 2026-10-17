@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3758'
 ht-degree: 2%
@@ -288,7 +288,7 @@ Puoi utilizzare i passaggi Assegna attività e Invia e-mail dei flussi di lavoro
 
 ### Rimuovi istanze flusso di lavoro {#purge-workflow-instances}
 
-Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular) eliminazione delle istanze del flusso di lavoro.
+Minimizzare il numero di istanze del flusso di lavoro aumenta le prestazioni del motore del flusso di lavoro, in modo da poter eliminare regolarmente dall’archivio le istanze del flusso di lavoro completate o in esecuzione. Per informazioni dettagliate, vedi [Rimozione regolare delle istanze del flusso di lavoro](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances) eliminazione delle istanze del flusso di lavoro.
 
 ## Parametrizza i dati sensibili per le variabili del flusso di lavoro e memorizzali in archivi di dati esterni {#externalize-wf-variables}
 

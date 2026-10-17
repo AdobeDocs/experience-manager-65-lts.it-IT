@@ -25,7 +25,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '6510'
 ht-degree: 2%
@@ -34,11 +34,11 @@ ht-degree: 2%
 
 Esempi ed esempi in questo documento sono utili per comprendere e utilizzare AEM Document Services in un ambiente AEM Forms su OSGi. Per esempi ed esempi sull’ambiente AEM Forms su JEE, consulta
 
-* [Guida introduttiva all’API Java di Signature Service](/help/forms/developing/signature-service-java-api-quick.md#programming-aem-forms-jee)
+* [Guida introduttiva all’API Java di Signature Service](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quickstart-soap)
 
-* [Servizio di crittografia API Java - Guida introduttiva](/help/forms/developing/encryption-service-java-api-quick.md#developer-reference)
+* [Servizio di crittografia API Java - Guida introduttiva](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quickstart-soap)
 
-* [Guida introduttiva al servizio Acrobat Reader extensions API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#developer-reference)
+* [Guida introduttiva al servizio Acrobat Reader extensions API Java](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap)
 
 ## Prerequisito {#prerequisite}
 
@@ -58,31 +58,31 @@ Il servizio DocAssurance include i seguenti servizi:
 
 È possibile eseguire le operazioni seguenti utilizzando il servizio DocAssurance:
 
-* [Aggiungi firma invisibile](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
+* [Aggiungi firma invisibile](/help/forms/using/aem-document-services-programmatically.md#adding-an-invisible-signature-field)
 
-* [Aggiungi campo firma](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
+* [Aggiungi campo firma](/help/forms/using/aem-document-services-programmatically.md#adding-a-signature-field-nbsp)
 * [Applica la marca temporale al documento](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
-* [Ottieni firma](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
-* [Ottieni elenco campi firma](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
-* [Modifica campi firma](/help/forms/using/aem-document-services-programmatically.md#p-modifying-signature-fields-nbsp-p)
+* [Ottieni firma](/help/forms/using/aem-document-services-programmatically.md#getting-signature)
+* [Ottieni elenco campi firma](/help/forms/using/aem-document-services-programmatically.md#getting-signature-field-list-nbsp)
+* [Modifica campi firma](/help/forms/using/aem-document-services-programmatically.md#modifying-signature-fields-nbsp)
 
-* [Proteggi documento](/help/forms/using/aem-document-services-programmatically.md#p-securing-documents-p)
+* [Proteggi documento](/help/forms/using/aem-document-services-programmatically.md#securing-documents)
 
-* [Ottieni diritti di utilizzo credenziali](/help/forms/using/aem-document-services-programmatically.md#p-getting-credential-usage-rights-p)
+* [Ottieni diritti di utilizzo credenziali](/help/forms/using/aem-document-services-programmatically.md#getting-credential-usage-rights)
 
-* [Ottieni diritti di utilizzo documento](/help/forms/using/aem-document-services-programmatically.md#p-getting-document-usage-rights-p)
+* [Ottieni diritti di utilizzo documento](/help/forms/using/aem-document-services-programmatically.md#getting-document-usage-rights)
 
-* [Rimuovi diritti di utilizzo](/help/forms/using/aem-document-services-programmatically.md#p-removing-usage-rights-p)
-* [Verifica firme digitali](/help/forms/using/aem-document-services-programmatically.md#p-verifying-digital-signatures-p)
-* [Verifica più firme digitali](/help/forms/using/aem-document-services-programmatically.md#p-verifying-multiple-digital-signatures-p)
-* [Rimuovi firme digitali](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
+* [Rimuovi diritti di utilizzo](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights)
+* [Verifica firme digitali](/help/forms/using/aem-document-services-programmatically.md#verifying-digital-signatures)
+* [Verifica più firme digitali](/help/forms/using/aem-document-services-programmatically.md#verifying-multiple-digital-signatures)
+* [Rimuovi firme digitali](/help/forms/using/aem-document-services-programmatically.md#removing-digital-signatures)
 
-* [Ottieni campo firma di certificazione](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [Ottieni tipo di crittografia PDF](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
-* [Rimuovi crittografia password](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
+* [Ottieni campo firma di certificazione](/help/forms/using/aem-document-services-programmatically.md#getting-certifying-signature-field)
+* [Ottieni tipo di crittografia PDF](/help/forms/using/aem-document-services-programmatically.md#getting-pdf-encryption-type)
+* [Rimuovi crittografia password](/help/forms/using/aem-document-services-programmatically.md#removing-password-encryption-from-pdf)
 
-* [Rimuovi crittografia certificato](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
+* [Rimuovi crittografia certificato](/help/forms/using/aem-document-services-programmatically.md#removing-certificate-encryption)
 
 >[!NOTE]
 >
@@ -3651,17 +3651,17 @@ Nell&#39;esempio di codice Java riportato di seguito viene rimossa la crittograf
 
 Il servizio di output fornisce API per il rendering di un file XDP nei formati .pdf, .pcl, .zpl e .ps. Il servizio supporta le seguenti API:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo come valori letterali una struttura di modulo con i dati archiviati in un percorso di rete, un file system locale o un percorso HTTP.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** Genera un documento PDF unendo come valori letterali una struttura di modulo con i dati archiviati in un percorso di rete, un file system locale o un percorso HTTP.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genera un documento PDF unendo una struttura di modulo con i dati archiviati in un&#39;applicazione.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript o ZPL da una struttura di modulo e da un file di dati archiviato in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput):** Genera un documento PDF unendo una struttura di modulo con i dati archiviati in un&#39;applicazione.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutputbatch):** unisce una struttura di modulo ai dati per creare un documento PDF. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** genera un output PCL, PostScript o ZPL da una struttura di modulo e da un file di dati archiviato in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** genera un output PCL, PostScript e ZPL da un file di progettazione e dati di un modulo archiviato in un&#39;applicazione.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#generateprintedoutput):** genera un output PCL, PostScript e ZPL da un file di progettazione e dati di un modulo archiviato in un&#39;applicazione.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF. Utilizza l’API generatePDFOutput per le progettazioni dei moduli o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono archiviati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
+L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l&#39;output in un file PDF. Utilizza l’API generatePDFOutput per le progettazioni dei moduli o i dati memorizzati in un percorso di rete, in un file system locale o in un percorso HTTP come valori letterali. Se la struttura del modulo e i dati XML sono archiviati in un&#39;applicazione, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput).
 
 **Sintassi:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3768,7 +3768,7 @@ Nell&#39;esempio di codice Java riportato di seguito viene generato un documento
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l’output in un file PDF. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, in locale o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
+L’API generatePDFOutput genera un documento PDF unendo una progettazione di moduli con i dati. Facoltativamente, genera un file di metadati per ogni record o salva l’output in un file PDF. Utilizza l’API generatePrintedOutput per le progettazioni dei moduli o i dati memorizzati in un’applicazione. Se la struttura del modulo e i dati XML sono memorizzati in un percorso di rete, in locale o in un percorso HTTP come valori letterali, utilizzare l&#39;API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#generatepdfoutput).
 
 **Sintassi:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -4310,8 +4310,8 @@ String outputFolder="C:/Output";
 
 Il servizio Forms fornisce API per importare ed esportare dati da e verso un modulo PDF interattivo. Un modulo PDF interattivo è un documento di PDF che contiene uno o più campi utilizzati per visualizzare e raccogliere informazioni dagli utenti. Il servizio supporta le seguenti API:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** esporta dati da un modulo di PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dati in un PDF Form interattivo.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#exportdata):** esporta dati da un modulo di PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#importdata):** importa dati in un PDF Form interattivo.
 
 ### exportData {#exportdata}
 

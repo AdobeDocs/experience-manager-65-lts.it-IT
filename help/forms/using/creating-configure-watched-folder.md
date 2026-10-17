@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 18%
@@ -47,7 +47,7 @@ Prima di configurare una cartella controllata, verifica quanto segue:
 
 * Le cartelle controllate sono una funzione avanzata di AEM Forms. Per funzionare è necessario il pacchetto di componenti aggiuntivi per AEM Forms. Verifica che sia installato e configurato il pacchetto del componente aggiuntivo AEM Forms appropriato.
 * Puoi creare la cartella controllata in un archivio condiviso o in un archivio locale. Verificare che l&#39;utente di AEM Forms configurato per eseguire la cartella controllata disponga delle autorizzazioni di lettura e scrittura per la cartella controllata.
-* Puoi utilizzare un servizio, un flusso di lavoro o uno script per automatizzare un’operazione con una cartella controllata. Assicurati che il servizio, il flusso di lavoro o uno script corrispondente sia stato creato e sia pronto per l’esecuzione. Per informazioni sulla creazione di un servizio, un flusso di lavoro e uno script, vedere [Vari metodi di elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
+* Puoi utilizzare un servizio, un flusso di lavoro o uno script per automatizzare un’operazione con una cartella controllata. Assicurati che il servizio, il flusso di lavoro o uno script corrispondente sia stato creato e sia pronto per l’esecuzione. Per informazioni sulla creazione di un servizio, un flusso di lavoro e uno script, vedere [Vari metodi di elaborazione dei file](/help/forms/using/watched-folder-in-aem-forms.md#variousmethodsforprocessingfiles).
 * Una cartella controllata ha diverse proprietà. Vedere [Proprietà cartella controllata](watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Per creare una cartella controllata, effettua le seguenti operazioni:

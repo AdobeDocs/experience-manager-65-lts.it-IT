@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 2%
@@ -42,11 +42,11 @@ Per pubblicare i dati di Forms, Process Reporting utilizza l&#39;archivio incorp
 
 Process Reporting è costituito dai seguenti moduli:
 
-* [Servizio ProcessDataPublisher](#processdatapublisher-service-br-p)
-* [Servizio ProcessDataStorage](#processdatastorageprovider-service-br-p)
-* [Servizio OSGi](#osgi-service-br-p)
-* [Query Data Servlet](#querydataservlet-service-br-p)
-* [Interfaccia utente di Process Reporting](#process-reporting-user-interface-br-p)
+* [Servizio ProcessDataPublisher](#processdatapublisher-service-br)
+* [Servizio ProcessDataStorage](#processdatastorageprovider-service-br)
+* [Servizio OSGi](#osgi-service-br)
+* [Query Data Servlet](#querydataservlet-service-br)
+* [Interfaccia utente di Process Reporting](#process-reporting-user-interface-br)
 
 ## Architettura di report dei processi {#process-reporting-architecture-br}
 
@@ -58,13 +58,13 @@ Process Reporting è costituito dai seguenti moduli:
 
 Il server ProcessDataPublisher viene eseguito periodicamente sul database di AEM Forms ed estrae i dati modificati dall&#39;ultima esecuzione del servizio. Quindi pubblica i dati nel servizio Archiviazione dati processo.
 
-Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#reportconfiguration-service).
 
 ### Servizio ProcessDataStorageProvider {#processdatastorageprovider-service-br}
 
 Il servizio ProcessDataStorageProvider riceve i dati di processo dal servizio ProcessDataPublisher e li salva nel repository di Process Reporting.
 
-Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Per informazioni dettagliate sulla configurazione del servizio, vedere [Configurare il servizio ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#to-configure-the-process-reporting-repository-locations).
 
 ### Servizio OSGi {#osgi-service-br}
 

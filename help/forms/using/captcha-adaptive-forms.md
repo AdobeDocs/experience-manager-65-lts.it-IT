@@ -29,7 +29,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 9%
@@ -123,7 +123,7 @@ Una volta abilitato, il servizio reCAPTCHA Enterprise è disponibile per l’uti
    1. Seleziona la versione come reCAPTCHA v2, specifica il nome, la chiave del sito e la chiave segreta per il servizio reCAPTCHA (ottenuti nel passaggio 1), quindi seleziona **[!UICONTROL Crea]** per creare la configurazione del servizio cloud.
    1. Nella finestra di dialogo Modifica componente, specifica il sito e le chiavi segrete ottenuti nel passaggio 1. Seleziona **[!UICONTROL Salva impostazioni]**, quindi seleziona **OK** per completare la configurazione.
 
-   Una volta configurato, il servizio reCAPTCHA è disponibile per l’utilizzo nei moduli adattivi. Per ulteriori informazioni, vedi [utilizzo del CAPTCHA nei moduli adattivi](#using-captcha).
+   Una volta configurato, il servizio reCAPTCHA è disponibile per l’utilizzo nei moduli adattivi. Per ulteriori informazioni, vedi [utilizzo del CAPTCHA nei moduli adattivi](#using-captcha-in-adaptive-forms).
 
 ![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 

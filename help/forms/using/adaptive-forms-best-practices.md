@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '5707'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Per ulteriori informazioni, consulta [Creare un modulo adattivo](/help/forms/usi
   * Per personalizzare il layout dei componenti predefiniti dei moduli adattivi in /libs, [crea componenti di layout personalizzati](/help/forms/using/custom-layout-components-forms.md) oltre ai [layout predefiniti](/help/forms/using/layout-capabilities-adaptive-forms.md).
   * Introdurre interattività personalizzate creando widget o aspetti personalizzati. Si sconsiglia di modificare i componenti predefiniti. Per ulteriori informazioni, vedere [Framework aspetto](/help/forms/using/introduction-widgets.md).
 
-* Consulta [Gestione di informazioni personali](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) per consigli sulla gestione dei dati PII.
+* Consulta [Gestione di informazioni personali](/help/forms/using/adaptive-forms-best-practices.md#handling-personally-identifiable-information) per consigli sulla gestione dei dati PII.
 
 ### Creazione di modelli di modulo
 
@@ -288,7 +288,7 @@ Per ulteriori informazioni, vedere [Plug-in Chrome di AEM - Modulo adattivo](htt
 
 Le convalide lato server sono necessarie per evitare tentativi di aggirare le convalide sul client e possibili compromissioni dell’invio dei dati e violazioni delle regole aziendali. Le convalide lato server vengono eseguite sul server caricando la libreria client richiesta.
 
-* Includi funzioni in una libreria client per la convalida delle espressioni nei moduli adattivi e specifica la libreria client nella finestra di dialogo del contenitore di moduli adattivi. Per ulteriori informazioni, vedere [Riconvalida lato server](/help/forms/using/configuring-submit-actions.md#p-server-side-revalidation-in-adaptive-form-p).
+* Includi funzioni in una libreria client per la convalida delle espressioni nei moduli adattivi e specifica la libreria client nella finestra di dialogo del contenitore di moduli adattivi. Per ulteriori informazioni, vedere [Riconvalida lato server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form).
 * La convalida lato server convalida il modello del modulo. Si consiglia di creare una libreria client separata per le convalide e non combinarla con altri elementi come lo stile di HTML e la manipolazione DOM nella stessa libreria client.
 
 ### Localizzazione di moduli adattivi {#localizing-adaptive-forms}

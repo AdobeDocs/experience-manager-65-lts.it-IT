@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 4%
@@ -289,7 +289,7 @@ Fare clic sul titolo in qualsiasi momento per tornare alla schermata iniziale.
 
 Ora ultimo aggiornamento visualizza la data e l&#39;ora dell&#39;ultimo push degli aggiornamenti dei dati all&#39;archivio di report dei processi.
 
-Per informazioni dettagliate sul servizio di pubblicazione dei dati e sulla pianificazione di questo servizio, vedere [Pianificare la pubblicazione dei dati del processo](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) nell&#39;articolo Guida introduttiva al reporting dei processi.
+Per informazioni dettagliate sul servizio di pubblicazione dei dati e sulla pianificazione di questo servizio, vedere [Pianificare la pubblicazione dei dati del processo](/help/forms/using/process-reporting/install-start-process-reporting.md#schedule-process-data-publishing) nell&#39;articolo Guida introduttiva al reporting dei processi.
 
 **Utente report processi:** il nome utente connesso viene visualizzato a destra dell&#39;ora dell&#39;ultimo aggiornamento.
 

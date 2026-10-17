@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '4354'
 ht-degree: 2%
@@ -433,7 +433,7 @@ Per informazioni su come applicare le interruzioni di pagina e applicare più pa
   * **Colore accento:** È possibile predefinire il colore del modello del [!UICONTROL Documento di record].
   * **Famiglia di caratteri:** Seleziona il tipo di carattere per il [!UICONTROL documento di record] testi.
   * **Includi campi non associati nel DoR:** L&#39;impostazione della proprietà include campi non associati del modulo adattivo basato su schema in [!UICONTROL Documento di record]. Per impostazione predefinita è true.
-  * **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti dal [!UICONTROL Documento di record] all&#39;invio del modulo. Quando abiliti [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL documento di record]
+  * **Escludi campi dal DoR se nascosto:** Imposta la proprietà per escludere i campi nascosti dal [!UICONTROL Documento di record] all&#39;invio del modulo. Quando abiliti [Riconvalida sul server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form), il server ricalcola i campi nascosti prima di escluderli dal [!UICONTROL documento di record]
 * **[!UICONTROL PROPRIETÀ CAMPO MODULO]**
   * Se si seleziona l&#39;opzione **Per il componente Casella di controllo e Pulsante di opzione, mostrare solo il valore selezionato**, verrà generato l&#39;output DoR con solo il valore selezionato.
   * È possibile selezionare Separatore per più valori selezionati oppure scegliere qualsiasi altro tipo di separatore.

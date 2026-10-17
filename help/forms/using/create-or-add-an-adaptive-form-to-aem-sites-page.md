@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 4083c0007e6f07f55a94b61e8605d4fb0af7e166
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 4%
@@ -57,7 +57,7 @@ L’utilizzo del contenitore di moduli adattivi nell’editor di pagine di AEM c
 * **Gestione multisito e Live Copy:** AEM Sites fornisce [solide funzionalità di gestione multisito e Live Copy](/help/sites-administering/msm.md), che consentono di creare e gestire più siti Web in un unico ambiente. Questa funzione consente ora di riutilizzare i moduli in siti diversi, garantendo coerenza e riducendo le attività di duplicazione. Grazie al controllo e alla gestione centralizzati, è possibile gestire e aggiornare in modo efficiente i moduli su più siti Web.
 * **Temi:** le pagine AEM Sites forniscono un framework per la progettazione e la gestione di stili visivi coerenti su più pagine Web. Questi definiscono colori, font, fogli di stile e altri elementi visivi che contribuiscono all’aspetto generale del sito web. [Puoi utilizzare i temi progettati per una pagina AEM Sites per un modulo adattivo, risparmiando tempo e fatica](/help/sites-authoring/style-system.md).
 * **Assegnazione tag:** le pagine AEM Sites ti consentono di [assegnare tag o etichette a una pagina, una risorsa o altro contenuto](/help/sites-authoring/tags.md). I tag sono parole chiave o etichette di metadati che consentono di categorizzare e organizzare il contenuto in base a criteri specifici. Puoi assegnare uno o più tag a pagine, risorse o qualsiasi altro elemento di contenuto all’interno di AEM per migliorare la ricerca e classificare le risorse.
-* **Blocco e sblocco del contenuto:** AEM Sites consente agli utenti di [controllare l&#39;accesso e le modifiche alle pagine](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page) nell&#39;ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
+* **Blocco e sblocco del contenuto:** AEM Sites consente agli utenti di [controllare l&#39;accesso e le modifiche alle pagine](/help/sites-authoring/editing-content.md#locking-a-page) nell&#39;ambiente AEM Sites. Quando una pagina viene bloccata, significa che è protetta da modifiche o modifiche non autorizzate da parte di altri utenti. Solo l’utente che ha bloccato il contenuto o un amministratore designato può sbloccarlo per consentire modifiche.
 
 
 ## Varie opzioni per aggiungere un modulo adattivo nell’Editor pagina di AEM

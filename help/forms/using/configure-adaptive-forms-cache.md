@@ -27,7 +27,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Puoi anche configurare il caching dei moduli adattivi in Dispatcher per un ulter
   * Utilizza il formato URL `http://host:port/content/forms/af/<afName>.<locale>.html` per richiedere una versione localizzata di un modulo adattivo invece di `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [Disattivare utilizzando le impostazioni locali del browser](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) per gli URL con formato `http://host:port/content/forms/af/<adaptivefName>.html`.
   * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usa impostazioni locali del browser]** in Gestione configurazione è disabilitato, viene distribuita la versione non localizzata del modulo adattivo. La lingua non localizzata è la lingua utilizzata durante lo sviluppo del modulo adattivo. Le impostazioni locali configurate per il browser (impostazioni locali del browser) non vengono considerate e viene distribuita una versione non localizzata del modulo adattivo.
-  * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e si attiva **[!UICONTROL Usa impostazioni locali browser]** in Gestione configurazione, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulla lingua configurata per il browser (lingua del browser). Può causare il caching di [solo della prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Quando si utilizza il formato URL `http://host:port/content/forms/af/<adaptivefName>.html` e si attiva **[!UICONTROL Usa impostazioni locali browser]** in Gestione configurazione, viene distribuita una versione localizzata del modulo adattivo, se disponibile. La lingua del modulo adattivo localizzato si basa sulla lingua configurata per il browser (lingua del browser). Può causare il caching di [solo della prima istanza di un modulo adattivo]. Per evitare che il problema si verifichi nell&#39;istanza, vedere [risoluzione dei problemi](#only-first-instance-of-adaptive-forms-is-cached).
 
 ### Abilita caching in Dispatcher
 

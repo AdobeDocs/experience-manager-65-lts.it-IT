@@ -27,7 +27,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 2%
@@ -68,7 +68,7 @@ L’azione Invia e-mail consente all’autore di inviare automaticamente e-mail 
 
    Specifica l&#39;oggetto e il corpo dell&#39;e-mail rispettivamente nei campi **[!UICONTROL Oggetto]** e **[!UICONTROL Modello e-mail]**.
 
-   È inoltre possibile specificare segnaposto variabili nei campi, nel qual caso i valori dei campi vengono elaborati quando il modulo viene inviato correttamente da un utente finale. Per ulteriori informazioni, vedere [Utilizzo di nomi di campi modulo adattivo per creare in modo dinamico contenuto e-mail](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   È inoltre possibile specificare segnaposto variabili nei campi, nel qual caso i valori dei campi vengono elaborati quando il modulo viene inviato correttamente da un utente finale. Per ulteriori informazioni, vedere [Utilizzo di nomi di campi modulo adattivo per creare in modo dinamico contenuto e-mail](../../forms/using/form-submission-receipt-via-email.md#using-adaptive-form-field-names-to-dynamically-create-email-content).
 
    Selezionare **[!UICONTROL Includi allegati]** se il modulo include file allegati e si desidera allegarli all&#39;e-mail.
 

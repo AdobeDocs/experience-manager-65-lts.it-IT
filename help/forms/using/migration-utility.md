@@ -22,7 +22,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 2%
@@ -181,7 +181,7 @@ Dopo aver eseguito l&#39;utilità Migration, eseguire le seguenti operazioni di 
 
 1. Assicurati che la versione XFA dei layout e dei layout dei frammenti sia la 3.3 o successiva. Se utilizzi layout e layout di frammenti di una versione precedente, potrebbero esserci problemi nel rendering della lettera. La procedura seguente illustra come aggiornare una versione di un XFA precedente alla versione più recente:
 
-   1. [Scarica XFA come file zip](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) dall&#39;interfaccia utente di Forms.
+   1. [Scarica XFA come file zip](../../forms/using/import-export-forms-templates.md#import-and-export-assets-in-correspondence-management) dall&#39;interfaccia utente di Forms.
    1. Estrai il file.
    1. Apri il file XFA nell’ultimo Designer e salvalo. La versione di XFA viene aggiornata a quella più recente.
    1. Carica XFA nell’interfaccia utente di Forms.

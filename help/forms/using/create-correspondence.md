@@ -23,7 +23,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    >[!NOTE]
    >
-   >Se alla lettera non è associato un dizionario dati, viene visualizzata l’anteprima della lettera. In caso contrario, se la lettera è basata sul dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzata nel menu Anteprima e puoi selezionare una delle due opzioni. È inoltre possibile associare i dati di test a un dizionario dati. Quando al dizionario dati [sono associati dati di test](../../forms/using/data-dictionary.md#p-working-with-test-data-p), quando si seleziona l&#39;opzione di anteprima, viene aperta l&#39;anteprima normale con i dati di test compilati.
+   >Se alla lettera non è associato un dizionario dati, viene visualizzata l’anteprima della lettera. In caso contrario, se la lettera è basata sul dizionario dati, Gestione corrispondenza visualizza le opzioni Anteprima e Personalizzata nel menu Anteprima e puoi selezionare una delle due opzioni. È inoltre possibile associare i dati di test a un dizionario dati. Quando al dizionario dati [sono associati dati di test](../../forms/using/data-dictionary.md#working-with-test-data), quando si seleziona l&#39;opzione di anteprima, viene aperta l&#39;anteprima normale con i dati di test compilati.
 
 1. Per poter eseguire il rendering di una corrispondenza durante l’anteprima, è necessario essere un amministratore o far parte di uno dei seguenti gruppi:
 
@@ -58,7 +58,7 @@ Selezionare la lettera da visualizzare in anteprima seguendo la procedura descri
 
    Se non disponi delle autorizzazioni necessarie, richiedi all’amministratore l’accesso appropriato. Per ulteriori informazioni sulla creazione e l&#39;aggiunta di utenti ai gruppi, vedere [Aggiunta di utenti o gruppi a un gruppo](/help/sites-administering/security.md). Se tenti di eseguire il rendering di una corrispondenza senza disporre delle autorizzazioni appropriate, viene visualizzata la pagina di errore 404.
 
-1. Se hai selezionato **Anteprima** > **Personalizzata**, viene visualizzata una finestra di dialogo. Nella finestra di dialogo, seleziona un file di dati corrispondente al dizionario dati con cui visualizzare l&#39;anteprima della lettera, quindi seleziona **Anteprima**. Un file di dati viene creato in base a un dizionario dati per una lettera specifica. Per ulteriori informazioni sul file di dati, vedere [Dizionario dati](../../forms/using/data-dictionary.md#p-working-with-test-data-p).
+1. Se hai selezionato **Anteprima** > **Personalizzata**, viene visualizzata una finestra di dialogo. Nella finestra di dialogo, seleziona un file di dati corrispondente al dizionario dati con cui visualizzare l&#39;anteprima della lettera, quindi seleziona **Anteprima**. Un file di dati viene creato in base a un dizionario dati per una lettera specifica. Per ulteriori informazioni sul file di dati, vedere [Dizionario dati](../../forms/using/data-dictionary.md#working-with-test-data).
 
    ![Anteprima lettera](assets/8_previewcustomdatafile.png)
 
@@ -254,7 +254,7 @@ Puoi apportare modifiche al layout e al contenuto per garantire che la lettera a
 
    ![Interruzione di pagina esplicita](assets/8_pagebreak.png)
 
-1. Per salvare la lettera come bozza e continuare a utilizzarla in seguito, selezionare Salva come bozza. Per utilizzare questa opzione, la lettera deve essere [pubblicata](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Per ulteriori informazioni, vedere Istanza bozza in [Salvataggio delle bozze e invio delle istanze di lettere](#savingdrafts).
+1. Per salvare la lettera come bozza e continuare a utilizzarla in seguito, selezionare Salva come bozza. Per utilizzare questa opzione, la lettera deve essere [pubblicata](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). Per ulteriori informazioni, vedere Istanza bozza in [Salvataggio delle bozze e invio delle istanze di lettere](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
@@ -284,7 +284,7 @@ Quando si esegue il rendering di una lettera nell’interfaccia utente Crea corr
 
 È possibile salvare due tipi di istanze di lettere: Istanza bozza e Istanza invio.
 
-* **Istanza bozza**: l&#39;istanza bozza acquisisce lo stato corrente della lettera visualizzata in anteprima. Per salvare una bozza di istanza, accertatevi innanzitutto che la lettera e tutte le risorse a cui fa riferimento la lettera siano nello stato Pubblicato. Per informazioni sulla pubblicazione di una lettera, consulta [Pubblicare una risorsa](../../forms/using/publishing-unpublishing-forms.md#publishanasset). È necessario pubblicare una lettera prima di salvarla come bozza, poiché quando si pubblica una lettera, si crea una versione della lettera, delle risorse dipendenti e dei dati a quel punto. La versione pubblicata di una lettera non può essere modificata da te o da un altro utente e può essere ripristinata in un secondo momento senza alcuna discrepanza imprevista dalla versione pubblicata. Puoi tornare a questa istanza in un secondo momento e continuare da dove ti sei allontanato.
+* **Istanza bozza**: l&#39;istanza bozza acquisisce lo stato corrente della lettera visualizzata in anteprima. Per salvare una bozza di istanza, accertatevi innanzitutto che la lettera e tutte le risorse a cui fa riferimento la lettera siano nello stato Pubblicato. Per informazioni sulla pubblicazione di una lettera, consulta [Pubblicare una risorsa](../../forms/using/publishing-unpublishing-forms.md#publish-an-asset). È necessario pubblicare una lettera prima di salvarla come bozza, poiché quando si pubblica una lettera, si crea una versione della lettera, delle risorse dipendenti e dei dati a quel punto. La versione pubblicata di una lettera non può essere modificata da te o da un altro utente e può essere ripristinata in un secondo momento senza alcuna discrepanza imprevista dalla versione pubblicata. Puoi tornare a questa istanza in un secondo momento e continuare da dove ti sei allontanato.
 
 * **Istanza di invio**: le istanze di invio acquisiscono lo stato della lettera durante l&#39;invio. L’istanza di invio memorizza lo stato PDF dell’istanza della lettera dopo la post-elaborazione insieme ai dati immessi dall’utente nell’interfaccia utente di Creazione corrispondenza.
 

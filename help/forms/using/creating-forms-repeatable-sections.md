@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 2%
@@ -135,7 +135,7 @@ La sottomaschera ripetibile è simile ai pannelli ripetibili in Adaptive Forms. 
 1. Per specificare il numero massimo di ripetizioni di sottomaschera, selezionare Max e digitare un numero nella casella associata. Se non si specifica un valore nella casella Max, il numero di ripetizioni della sottomaschera è illimitato.
 1. Per specificare un numero impostato di ripetizioni di sottomaschera, indipendentemente dalla quantità di dati, selezionare Conteggio iniziale e digitare un numero nella casella associata. Se si seleziona questa opzione e non sono disponibili dati o sono presenti meno voci di dati rispetto al valore Conteggio iniziale specificato, le istanze vuote del sottomodulo verranno comunque inserite nel modulo.
 1. Aggiungere due pulsanti nella sottomaschera padre: uno per aggiungere un&#39;istanza e un altro per eliminare un&#39;istanza di una sottomaschera ripetibile. Per i passaggi dettagliati, vedi [Generare un&#39;azione](https://help.adobe.com/it_IT/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Collega ora il modello di modulo al modulo adattivo. Per i passaggi dettagliati, consulta [Creare un modulo adattivo basato su un modello](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Collega ora il modello di modulo al modulo adattivo. Per i passaggi dettagliati, consulta [Creare un modulo adattivo basato su un modello](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 1. Utilizzare i pulsanti creati nel passaggio 9 per aggiungere e rimuovere sottomaschere.
 
 Il file .zip allegato contiene un modulo secondario ripetibile di esempio.

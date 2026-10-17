@@ -24,7 +24,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 4%
@@ -38,7 +38,7 @@ ht-degree: 4%
 * Eseguire calcoli complessi sui dati acquisiti
 * Salvataggio dei dati Adaptive Forms sui sistemi di storage secondo una pianificazione predefinita
 
-L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Richiama un flusso Microsoft® Power Automate** per inviare i dati dei moduli adattivi, gli allegati e il documento di record al flusso cloud di Power Automate. Per utilizzare l&#39;azione Invia per inviare i dati acquisiti a Microsoft® Power Automate, [Connetti l&#39;istanza Autore AEM Forms con Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+L&#39;editor di Forms adattivo fornisce l&#39;azione di invio **Richiama un flusso Microsoft® Power Automate** per inviare i dati dei moduli adattivi, gli allegati e il documento di record al flusso cloud di Power Automate. Per utilizzare l&#39;azione Invia per inviare i dati acquisiti a Microsoft® Power Automate, [Connetti l&#39;istanza Autore AEM Forms con Microsoft® Power Automate](#connect-forms-server-with-power-automate)
 
 ## Prerequisiti
 

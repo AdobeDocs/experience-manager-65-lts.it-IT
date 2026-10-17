@@ -22,7 +22,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 94%
@@ -130,7 +130,7 @@ Se il GDS viene ripristinato in una posizione diversa da quella originale, esegu
 
 >[!NOTE]
 >
->Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
+>Questa circostanza è l’unica in base alla quale utilizzare questo script per modificare la posizione del GDS. Per modificare la posizione del GDS durante l’esecuzione di AEM Forms, utilizza la console di amministrazione. Consulta [Configurare le impostazioni generali di AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#general-aem-forms-settings).
 
 >[!NOTE]
 >

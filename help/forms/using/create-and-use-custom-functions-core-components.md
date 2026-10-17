@@ -18,7 +18,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
@@ -94,7 +94,7 @@ Il **parametro** è un elenco di argomenti utilizzati dalle funzioni personalizz
   * data[]: rappresenta una matrice di valori di data.
   * array: rappresenta una matrice generica contenente valori di vari tipi.
   * object: rappresenta un oggetto modulo passato a una funzione personalizzata anziché passare direttamente il relativo valore.
-  * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * ambito: rappresenta l&#39;oggetto globals, che contiene variabili di sola lettura quali istanze di moduli, istanze di campi di destinazione e metodi per l&#39;esecuzione di modifiche di moduli nelle funzioni personalizzate. Viene dichiarato come ultimo parametro nelle annotazioni di JavaScript e non è visibile all’editor di regole di un modulo adattivo. Il parametro scope accede all&#39;oggetto del modulo o del componente per attivare la regola o l&#39;evento necessario per l&#39;elaborazione del modulo. Per ulteriori informazioni sull&#39;oggetto Globals e su come utilizzarlo, [fare clic qui](/help/forms/using/create-and-use-custom-functions-core-components.md#support-field-and-global-objects)
 
 Il tipo di parametro è **senza distinzione tra maiuscole e minuscole** e non sono consentiti spazi nel nome del parametro.
 
@@ -543,7 +543,7 @@ Ora puoi creare una regola per utilizzare funzioni personalizzate nell’editor 
 
 ![Aggiunta della libreria client della funzione personalizzata](/help/forms/using//assets/calculateage-customfunction.png)
 
-Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzando il servizio Invoke dell&#39;editor di regole [in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+Ora vediamo come configurare e utilizzare una funzione personalizzata utilizzando il servizio Invoke dell&#39;editor di regole [in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke)
 
 ## Utilizzo di una funzione personalizzata in un modulo adattivo {#use-custom-functions}
 

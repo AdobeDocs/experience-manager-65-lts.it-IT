@@ -26,7 +26,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 2%
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 ## Introduzione {#introduction}
 
-È possibile creare un modulo adattivo basato su un modello di modulo XFA (file `*.XDP`). Questo riutilizzo consente di mantenere l’investimento nei moduli XFA esistenti. Per informazioni su come utilizzare un modello di modulo XFA per creare un modulo adattivo, [Creare un modulo adattivo basato su un modello](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+È possibile creare un modulo adattivo basato su un modello di modulo XFA (file `*.XDP`). Questo riutilizzo consente di mantenere l’investimento nei moduli XFA esistenti. Per informazioni su come utilizzare un modello di modulo XFA per creare un modulo adattivo, [Creare un modulo adattivo basato su un modello](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template).
 
 Puoi riutilizzare i campi del file XDP nel modulo adattivo. Questi campi sono denominati campi associati. Le proprietà dei campi associati (ad esempio script, etichette e formato di visualizzazione) vengono copiate dal file XDP. Puoi anche scegliere di ignorare il valore di alcune di queste proprietà.
 
@@ -55,11 +55,11 @@ Per utilizzare le informazioni contenute in questo articolo, si consiglia di acq
 
 * XFA (XML Forms Architecture)
 
-Per utilizzare le risorse fornite per l&#39;esempio nell&#39;articolo, scaricare il pacchetto di esempio come descritto nella sezione successiva, [Pacchetto di esempio](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Per utilizzare le risorse fornite per l&#39;esempio nell&#39;articolo, scaricare il pacchetto di esempio come descritto nella sezione successiva, [Pacchetto di esempio](../../forms/using/synchronizing-adaptive-forms-xfa.md#sample-package).
 
 ## Pacchetto di esempio {#sample-package}
 
-L’articolo utilizza un esempio per dimostrare come sincronizzare il modulo adattivo con un modello di modulo XFA aggiornato. Le risorse utilizzate nell&#39;esempio sono disponibili in un pacchetto che può essere scaricato dalla sezione [Download](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) di questo articolo.
+L’articolo utilizza un esempio per dimostrare come sincronizzare il modulo adattivo con un modello di modulo XFA aggiornato. Le risorse utilizzate nell&#39;esempio sono disponibili in un pacchetto che può essere scaricato dalla sezione [Download](../../forms/using/synchronizing-adaptive-forms-xfa.md#downloads) di questo articolo.
 
 Dopo aver caricato il pacchetto, puoi visualizzare queste risorse nell’interfaccia utente di AEM Forms.
 
@@ -122,7 +122,7 @@ Per aggiornare le proprietà nel modulo adattivo di esempio, fai clic sul colleg
 
 >[!NOTE]
 >
->Il campo numerico AF dell&#39;etichetta non è stato modificato perché la proprietà è stata sostituita dalla finestra di dialogo delle proprietà del componente, come descritto in [Aggiungere contenuto ai moduli adattivi](../../forms/using/synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
+>Il campo numerico AF dell&#39;etichetta non è stato modificato perché la proprietà è stata sostituita dalla finestra di dialogo delle proprietà del componente, come descritto in [Aggiungere contenuto ai moduli adattivi](../../forms/using/synchronizing-adaptive-forms-xfa.md#add-content-to-adaptive-form-br).
 
 ### Aggiunta di nuovi campi dal file XDP al modulo adattivo   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

@@ -28,7 +28,7 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: 436319b5001c99eb6f12b8f575c0045877bd7eb3
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 5%
@@ -41,7 +41,7 @@ Gli amministratori di AEM Forms personalizzano l’area di lavoro per creare due
 
 Per configurare l’area di lavoro di AEM Forms, segui la procedura riportata di seguito.
 
-1. Installa il pacchetto di sviluppo dell’area di lavoro AEM Forms sul server. Per istruzioni sulla creazione, vedere [pacchetto di sviluppo](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+1. Installa il pacchetto di sviluppo dell’area di lavoro AEM Forms sul server. Per istruzioni sulla creazione, vedere [pacchetto di sviluppo](/help/forms/using/introduction-customizing-html-workspace.md#crx-package).
 1. Accedere a CRXDE Lite come amministratore accedendo a `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copia il nodo ws in /content e incolla in /content. Rinomina il nodo in ws2. Fai clic su **[!UICONTROL Salva tutto]**. Nelle proprietà di questo nodo, modificare il valore di `sling:resourceType` in ws2. Fai clic su **[!UICONTROL Salva tutto]**.
 
