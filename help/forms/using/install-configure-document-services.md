@@ -219,7 +219,7 @@ Se si intende utilizzare il servizio PDF Generator per convertire i formati di f
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint sono disponibili solo per Microsoft® Windows. Se si utilizza il sistema operativo basato su UNIX, installare OpenOffice per convertire i file RTF e i file Microsoft® Office supportati in documenti PDF.
 >* Chiudi tutte le finestre di dialogo visualizzate dopo l’installazione di Adobe Acrobat e del software di terze parti per tutti gli utenti configurati per l’utilizzo del servizio PDF Generator.
 >* Avviare tutto il software installato almeno una volta. Ignora tutte le finestre di dialogo per tutti gli utenti configurati per utilizzare il servizio PDF Generator.
->* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
+>* [Controllare la data di scadenza dei numeri di serie di Adobe Acrobat](https://helpx.adobe.com/it/enterprise/kb/volume-license-expiration-check.html) e impostare una data per l&#39;aggiornamento della licenza oppure [migrare il numero di serie](https://www.adobe.com/it/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) in base alla data di scadenza.
 
 Dopo aver installato Acrobat, aprire Microsoft® Word. Nella scheda **Acrobat**, fai clic su **Crea PDF** e converti un file .doc o .docx disponibile nel computer in un documento PDF. Se la conversione ha esito positivo, AEM Forms è pronto a utilizzare Acrobat con il servizio PDF Generator.
 
@@ -1494,9 +1494,9 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
 
 +++Scadenza della licenza di Adobe Acrobat installata su AEM Forms Server
 
-* Se si dispone di una licenza esistente di Adobe Acrobat ed è scaduta, [Scaricare l&#39;ultima versione di Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html) e migrare il numero di serie. Prima della [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* Se si dispone di una licenza esistente di Adobe Acrobat ed è scaduta, [Scaricare l&#39;ultima versione di Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html) e migrare il numero di serie. Prima della [migrazione del numero di serie](https://www.adobe.com/it/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-  * Utilizzare i comandi seguenti per generare prov.xml e reserializzare l&#39;installazione esistente utilizzando il file prov.xml anziché i comandi forniti nell&#39;articolo numero di serie [migrazione del numero di serie](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+  * Utilizzare i comandi seguenti per generare prov.xml e reserializzare l&#39;installazione esistente utilizzando il file prov.xml anziché i comandi forniti nell&#39;articolo numero di serie [migrazione del numero di serie](https://www.adobe.com/it/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
         &quot;
         
@@ -1511,7 +1511,7 @@ Prima di eseguire i controlli seguenti, verificare che [Strumento di preparazion
         
         &quot;
     
-* Per le installazioni su larga scala, utilizzare [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) per rimuovere le versioni precedenti di Reader e Acrobat. Personalizzare il programma di installazione e distribuirlo in tutti i computer dell&#39;organizzazione.
+* Per le installazioni su larga scala, utilizzare [Acrobat Customization Wizard](https://www.adobe.com/it/devnet-docs/acrobatetk/tools/Wizard/index.html) per rimuovere le versioni precedenti di Reader e Acrobat. Personalizzare il programma di installazione e distribuirlo in tutti i computer dell&#39;organizzazione.
 
 +++
 
