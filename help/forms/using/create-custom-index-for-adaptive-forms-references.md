@@ -16,7 +16,7 @@ Crea un indice Lucene con tag per evitare query trasversali quando Adobe Experie
 
 In AEM Forms 6.5 LTS SP1 e versioni successive, la query di riferimento utilizza il tag di indice `aemformsAFReferences`. Queste versioni includono la modifica della query, ma è necessario creare un indice personalizzato con tale tag. Questo articolo mostra come definire e distribuire l’indice.
 
-Per AEM Forms 6.5, consulta [Creare un indice personalizzato per i riferimenti ai moduli adattivi in AEM Forms 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
+Per AEM Forms 6.5, consulta [Creare un indice personalizzato per i riferimenti ai moduli adattivi in AEM Forms 6.5](https://experienceleague.adobe.com/it/docs/experience-manager-65/content/forms/install-aem-forms/configure-aem-forms/create-custom-index-for-adaptive-forms-references).
 
 ## Prerequisiti {#prerequisites}
 
