@@ -674,7 +674,7 @@ La compattazione online può danneggiare l&#39;archivio JCR con un `SegmentNotFo
 
 1. Installa [hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) da Software Distribution. Include un bundle `oak-segment-tar` di basso livello, quindi l&#39;istanza viene riavviata dopo l&#39;installazione. Pianificare i tempi di inattività.
 1. Impostare la proprietà di sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true` all&#39;avvio di AEM. Questo flag è necessario all’avvio di AEM, non durante l’esecuzione della compattazione offline.
-1. Per qualsiasi operazione di `oak-run`, utilizzare il file jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente di [`oak-run` 2.4.1-B002 da Software Distribution.
+1. Per qualsiasi operazione di `oak-run`, utilizzare il file jar [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente di `oak-run` 2.4.1-B002 da Software Distribution.
 
 ### AEM Forms
 
@@ -706,7 +706,7 @@ Per utilizzare le funzionalità seguenti, installare il pacchetto `cq-dam-cfm-in
 Scarica il pacchetto di indice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) dal portale di distribuzione software di Adobe.
 
 
-###
+&#x200B;###
 
 ### Errore di connessione di Dispatcher con la funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
 
