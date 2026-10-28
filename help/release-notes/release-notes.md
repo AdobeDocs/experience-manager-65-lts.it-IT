@@ -3,6 +3,7 @@ title: Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP3
 description: Trova informazioni sulla versione corrente per Adobe Experience Manager 6.5 LTS, Service Pack 3.
 solution: Experience Manager
 feature: Release Information
+owner: Rick Brough
 role: User,Admin,Developer
 exl-id: b5a8f555-c061-4fe2-a100-cc01335959cb
 product_v2:
@@ -21,10 +22,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 7c3cc17781a4f5ca68ed738e76063a75c18beaeb
+source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
 workflow-type: tm+mt
-source-wordcount: '7886'
-ht-degree: 21%
+source-wordcount: '7820'
+ht-degree: 20%
 ---
 
 # Note sulla versione corrente per Adobe Experience Manager 6.5 LTS, SP3 {#release-notes}
@@ -43,7 +44,7 @@ ht-degree: 21%
 
 >[!IMPORTANT]
 >
-> **Hotfix obbligatorio** - Per evitare problemi SNFE (SegmentNotFoundException) durante la compattazione online in standby, installare l&#39;hotfix descritto in [Problemi noti - Danneggiamento dell&#39;archivio durante la compattazione online](#repository-corruption-during-online-compaction-granite-73045).
+> **Hotfix obbligatorio** - Per evitare problemi SNFE (SegmentNotFoundException) durante la compattazione online in standby, installare l&#39;hotfix descritto in [Problemi noti - Danneggiamento dell&#39;archivio durante la compattazione online](#repository-corruption-during-online-compaction-on-standby).
 
 ## Cosa è incluso in [!DNL Adobe Experience Manager] 6.5 LTS, SP3 {#what-is-new}
 
@@ -93,7 +94,7 @@ Per l&#39;elenco completo, vedere [Problemi risolti in 6.5 LTS, Service Pack 3](
 
 * L’editor delle proprietà personalizzate ora supporta l’interazione da tastiera con i relativi controlli di formattazione. Gli autori possono spostare lo stato attivo tra le opzioni della barra degli strumenti, selezionare uno stile di testo e formattare i valori delle proprietà utilizzando solo una tastiera. (SITES-40333) PRINCIPALE
 
-* L’attivazione tramite tastiera ora ignora l’elenco dei componenti del pannello laterale quando l’interazione disponibile richiede il trascinamento della selezione. Questa modifica impedisce agli utenti che utilizzano la tastiera di accedere a un flusso di lavoro inutilizzabile per la selezione dei componenti. (SITES-40752)
+* L’attivazione tramite tastiera ora ignora l’elenco dei componenti del pannello laterale quando l’interazione disponibile richiede uno spostamento manuale. Questa modifica impedisce agli utenti che utilizzano la tastiera di accedere a un flusso di lavoro inutilizzabile per la selezione dei componenti. (SITES-40752)
 * La chiusura di una sovrapposizione ora ripristina lo stato attivo sul relativo controllo di attivazione. Gli utenti che utilizzano la tastiera o l’assistente vocale non tornano più alla sovrapposizione o perdono la loro posizione nell’interfaccia. (SITES-40819)
 * La navigazione tramite tastiera non sposta più lo stato attivo sul contenuto della pagina nascosta. Questa modifica mantiene una sequenza di attivazione prevedibile ed evita interruzioni della navigazione. (SITES-41430)
 * Il pulsante Blocca fornisce ora un feedback preciso sull’utilità di lettura dello schermo in base al titolo. Gli utenti sentono un’etichetta di azione chiara invece di una descrizione lunga. (SITES-41431)
@@ -148,7 +149,7 @@ Per l&#39;elenco completo, vedere [Problemi risolti in 6.5 LTS, Service Pack 3](
 * I pulsanti del menu intestazione non segnalano più agli assistenti vocali che aprono le finestre di dialogo. Gli assistenti vocali invece annunciano lo stato espanso o compresso di ogni pulsante, che descrive con precisione il comportamento del menu. (SITES-24742)
 * Il testo sul pulsante Elimina ora offre un contrasto sufficiente rispetto allo sfondo rosso. Gli utenti possono identificare l’azione più facilmente prima di confermarne l’eliminazione. (SITES-24772)
 * Le schede Canvas non espongono più collegamenti immagine e intestazione separati che conducono alla stessa destinazione. Un singolo collegamento riduce le interruzioni della tastiera duplicate e gli annunci ripetuti degli assistenti vocali. (SITES-24947)
-* In Vista a elenco ora viene visualizzato il pulsante di trascinamento con maggiore visibilità. Le dimensioni, lo spessore e il contrasto aggiornati dell&#39;icona facilitano l&#39;individuazione e l&#39;utilizzo del controllo. (SITES-24951)
+* Nella Vista a elenco viene ora visualizzato il pulsante di spostamento manuale con maggiore visibilità. Le dimensioni, lo spessore e il contrasto aggiornati dell&#39;icona facilitano l&#39;individuazione e l&#39;utilizzo del controllo. (SITES-24951)
 * I pulsanti di intestazione ora forniscono nomi accessibili concisi: Ricerca, App, Guida, Casella in entrata e Utente. Gli assistenti vocali non annunciano più termini ridondanti come &quot;cliccabile&quot; o &quot;grafico&quot; durante la navigazione da tastiera. (SITES-24715)
 * I collegamenti in Navigazione app ora presentano un’enfasi visiva maggiore. L&#39;aumento delle dimensioni e del peso del testo migliora la leggibilità per gli utenti ipovedenti o con differenze nella visione dei colori. (SITES-24723)
 * I collegamenti della casella in entrata ora utilizzano il markup di elenco semantico. Gli assistenti vocali possono identificare i collegamenti come un gruppo correlato, annunciare il conteggio degli elementi e supportare una navigazione più efficiente. (SITES-24730)
@@ -242,7 +243,7 @@ Il bundle API REST per frammenti di contenuto headless rimuove gli interruttori 
 
 #### Console dei componenti{#sites-component-console-65-lts-sp3}
 
-Content Finder ora elenca le risorse i cui nomi contengono caratteri non codificabili senza generare errori o eccezioni. La pagina Utilizzo live dei componenti carica anche set di risultati di grandi dimensioni in modo continuo, senza visualizzare righe vuote durante lo scorrimento. (SITES-44672) PRINCIPALE
+Content Finder ora elenca le risorse i cui nomi contengono caratteri non codificabili senza generare errori o eccezioni. La pagina Utilizzo live dei componenti carica anche set di risultati di grandi dimensioni in modo continuo, senza visualizzare righe vuote durante lo scorrimento. (SITES-44672)
 
 <!--
 #### Content API{#sites-content-api-65-lts-sp3}
@@ -325,51 +326,51 @@ La cronologia delle promozioni di Launch ora visualizza il testo localizzato nel
 
 #### Miglioramenti {#forms-enhancements-65-lts-sp3}
 
-* FORMS-24360: aggiunto il supporto di PDF Generator (PDFG) per Microsoft Office 2024. Questo vale sia per le implementazioni OSGi che per quelle JEE.
-* FORMS-24949: aggiunta del supporto dell&#39;agente Forms Builder in AEM Forms 6.5 LTS. In questo modo vengono supportate le API HTTP di Forms Manager e le API HTTP di IA per la generazione di moduli (GenAI) richieste dall’agente.
-* FORMS-25180: è stato aggiunto il valore `daysUntilSigningDeadline` all&#39;interfaccia utente di AEM Forms, in modo che gli autori possano mostrare ai destinatari il numero di giorni rimanenti prima della scadenza della firma Adobe Sign.
-* FORMS-25182, FORMS-25181: PDF Generator (PDFG) ora supporta le conversioni di documenti multithread se configurato con un singolo account utente. Questo vale sia per le implementazioni OSGi che per quelle JEE.
-* FORMS-27595: aggiunto l’attributo **Descrizione profilo utente** per le filigrane dinamiche in AEM Forms Document Security, in modo che possano includere la descrizione del profilo dell’utente.
+* È stato aggiunto il supporto di PDF Generator (PDFG) per Microsoft Office 2024. Questo vale sia per le implementazioni OSGi che per quelle JEE. (FORMS-24360)
+* È stato aggiunto il supporto per l’agente Forms Builder in AEM Forms 6.5 LTS. In questo modo vengono supportate le API HTTP di Forms Manager e le API HTTP di IA per la generazione di moduli (GenAI) richieste dall’agente. (FORMS-24949)
+* È stato aggiunto il valore `daysUntilSigningDeadline` all&#39;interfaccia utente di AEM Forms, in modo che gli autori possano mostrare ai destinatari il numero di giorni rimanenti prima della scadenza della firma di Adobe Sign. (FORMS-25180)
+* PDF Generator (PDFG) ora supporta le conversioni di documenti multithread se configurate con un singolo account utente. Questo vale sia per le implementazioni OSGi che per quelle JEE. (FORMS-25182, FORMS-25181)
+* È stato aggiunto l&#39;attributo **Descrizione profilo utente** per le filigrane dinamiche in AEM Forms Document Security, in modo che possano includere la descrizione del profilo dell&#39;utente. (FORMS-27595)
 * WebSphere® Liberty Profile (WLP) ora supporta Microsoft® SQL Server, oltre ad Oracle Database.
 
 #### Problemi risolti {#forms-fixed-issues-65-lts-sp3}
 
-* FORMS-23726: applicazione di uno schema XML nelle proprietà di Adaptive Forms non riuscita a causa di un conflitto di libreria `xsom`. La selezione dello schema ora funziona.
-* FORMS-24296: il campo Allegato file dei componenti di base ha accettato i tipi di file non consentiti (ad esempio, `.xsd`) al momento del caricamento e li ha rifiutati solo al momento dell&#39;invio, a differenza di altri tipi bloccati. I tipi non consentiti ora sono bloccati al caricamento.
-* FORMS-24603: nelle lettere di Gestione della corrispondenza, i frammenti di testo che presentavano una condizione hanno perso le interruzioni di riga se salvati come bozza. Le bozze ora mantengono le interruzioni di riga originali.
-* FORMS-24783: gli allegati sono stati eliminati dal passaggio `assignTask` nei flussi di lavoro Forms basati su Open Services Gateway initiative (OSGi). Gli allegati vengono ora mantenuti tramite l&#39;assegnazione di attività.
-* FORMS-24877: l’icona del calendario Selezione data non mostrava alcuna etichetta accessibile quando veniva applicato un pattern di visualizzazione, pertanto l’assistente vocale NVDA annunciava solo &quot;cliccabile&quot;. L’icona fornisce ora un’etichetta descrittiva.
-* FORMS-24913: i flussi di lavoro di AEM Forms si sono interrotti dopo il passaggio Adobe Sign perché lo stato di firma non è mai stato restituito. Al termine della firma, i flussi di lavoro ora continuano.
-* FORMS-25033: il componente Firma scarabocchio è stato saltato nell’ordine di tabulazione della tastiera, creando una barriera di accessibilità per gli utenti che utilizzano solo la tastiera. La navigazione tramite scheda ora raggiunge il campo.
-* FORMS-25045: le traduzioni in cinese tradizionale (Hong Kong) hanno smesso di eseguire il rendering dopo un aggiornamento, quindi i moduli sono tornati alla lingua predefinita. Il testo localizzato ora viene riprodotto correttamente.
-* FORMS-25170: la chiamata a `addInstance()` non mostrava i pannelli aggiunti in modo dinamico quando il conteggio delle istanze iniziali era 0. I pannelli aggiunti ora vengono visualizzati immediatamente.
-* FORMS-25225: il rinnovo lato server ha rimosso le traduzioni dei campi al di fuori dei frammenti in Adaptive Forms, ripristinando le etichette alla lingua di base. Tali traduzioni vengono ora mantenute.
-* FORMS-25233: nelle distribuzioni OSGi, il servizio Assembler non è riuscito a risolvere i riferimenti ai frammenti nidificati nei file XDP, causandone la mancanza nell’output assemblato. I frammenti nidificati ora vengono risolti.
-* FORMS-25289: il servizio di rendering di Forms ha restituito un output diverso per lo stesso input in tutti i service pack, influendo sulle lettere di Gestione corrispondenza. L’output di rendering è ora coerente.
-* FORMS-25290: le lettere di Gestione della corrispondenza salvate hanno perso spazi e hanno mostrato una &quot;x&quot; in alcuni punti quando sono state riaperte. Il contenuto della lettera salvata ora rimane intatto.
-* FORMS-25346: dopo un aggiornamento del service pack, le lettere di comunicazione interattiva (IC) si bloccano durante un ciclo di caricamento e le lettere che hanno caricato hanno perso spazio nell’anteprima. Il caricamento e la spaziatura ora funzionano correttamente.
-* FORMS-25431: la procedura guidata Crea frammento di modulo ha inviato una richiesta di rete a ogni sequenza di tasti nel campo del titolo. Le chiamate ridondanti sono state rimosse.
-* FORMS-25645: creazione di un frammento di modulo adattivo basato su componenti core da uno schema JSON caricato in linea non riuscita con &quot;È stato specificato un modello di modulo non valido ALC-FMG-700-009.&quot; Gli schemi JSON in linea sono ora accettati.
-* FORMS-25646: un frammento di modulo adattivo basato su componenti core e creato da uno schema JSON mostrava un pannello Origini dati vuoto nell’editor. Il pannello ora elenca le origini dati dello schema.
-* FORMS-25674: l&#39;interfaccia utente dell&#39;agente di comunicazione interattiva (IC) è stata aperta in una pagina vuota, impedendo agli agenti di visualizzare il contenuto IC. Viene ora eseguito il rendering dell&#39;interfaccia utente dell&#39;agente.
-* FORMS-25686: il passaggio dell’opzione di tipo schema nella procedura guidata Crea frammento di modulo adattivo non ha azzerato lo stato dell’opzione precedente, generando una mancata corrispondenza dello schema. La procedura guidata ripristina l&#39;opzione inattiva.
-* FORMS-25757: l’applicazione di un tema non aggiorna la libreria client di base, pertanto le modifiche al tema sembrano non avere alcun effetto. I temi ora aggiornano la libreria client di base.
-* FORMS-25825: Il menu dell’hamburger mobile non ha risposto ai tocchi, rendendo la navigazione inutilizzabile sui dispositivi mobili. Il menu ora si apre come previsto.
-* FORMS-26333: l’azione Pubblica scompare dopo l’annullamento della pubblicazione di un modulo, impedendo in tal modo la ripubblicazione. La pubblicazione è ora disponibile dopo l’annullamento della pubblicazione.
-* FORMS-26763: in Designer, la formattazione in grassetto sui collegamenti ipertestuali all’interno di un oggetto di testo statico veniva persa dopo eventuali modifiche al testo. La formattazione grassetto consente ora di mantenere le modifiche.
-* FORMS-26817: facendo clic su Ripristina in un modulo adattivo, l’immagine configurata dall’autore nel componente Immagine viene cancellata e l’immagine non funziona più, mentre gli altri campi vengono ripristinati correttamente. L’operazione Reimposta mantiene l’immagine configurata.
-* FORMS-26852: nell’interfaccia utente dell’agente, un campo data/ora mostrava la data un giorno prima del valore memorizzato. Il campo ora mostra la data corretta.
-* FORMS-26733, FORMS-26734: Apache Log4j è stato aggiornato alla versione 2.25.5.
+* Applicazione di uno schema XML nelle proprietà di Adaptive Forms non riuscita a causa di un conflitto di libreria `xsom`. La selezione dello schema ora funziona. (FORMS-23726)
+* Il campo Allegato file dei componenti di base ha accettato i tipi di file non consentiti (ad esempio, `.xsd`) al momento del caricamento e li ha rifiutati solo al momento dell&#39;invio, a differenza di altri tipi bloccati. I tipi non consentiti ora sono bloccati al caricamento. (FORMS-24296)
+* Nelle lettere di Gestione della corrispondenza, i frammenti di testo che contenevano una condizione hanno perso le interruzioni di riga quando sono stati salvati come bozza. Le bozze ora mantengono le interruzioni di riga originali. (FORMS-24603)
+* Gli allegati sono stati eliminati dal passaggio `assignTask` nei flussi di lavoro Forms basati su Open Services Gateway initiative (OSGi). Gli allegati vengono ora mantenuti tramite l&#39;assegnazione di attività. (FORMS-24783)
+* L’icona del calendario Selezione data non mostrava un’etichetta accessibile quando veniva applicato un pattern di visualizzazione, pertanto l’assistente vocale NVDA annunciava solo &quot;cliccabile&quot;. L’icona fornisce ora un’etichetta descrittiva. (FORMS-24877)
+* I flussi di lavoro di AEM Forms si sono interrotti dopo il passaggio Adobe Sign perché lo stato di firma non è mai stato restituito. Al termine della firma, i flussi di lavoro ora continuano. (FORMS-24913)
+* Il componente Firma scarabocchio è stato saltato nell’ordine di tabulazione della tastiera, creando una barriera di accessibilità per gli utenti che utilizzano solo la tastiera. La navigazione tramite scheda ora raggiunge il campo. (FORMS-25033)
+* Le traduzioni in cinese tradizionale (Hong Kong) hanno smesso di essere riprodotte dopo un aggiornamento, per cui i moduli sono tornati alla lingua predefinita. Il testo localizzato ora viene riprodotto correttamente. (FORMS-25045)
+* La chiamata a `addInstance()` non mostrava i pannelli aggiunti in modo dinamico quando il conteggio delle istanze iniziali era 0. I pannelli aggiunti ora vengono visualizzati immediatamente. (FORMS-25170)
+* Il ripristino lato server ha rimosso le traduzioni dei campi che si trovavano all’esterno dei frammenti in Adaptive Forms, ripristinando le etichette alla lingua di base. Tali traduzioni vengono ora mantenute. (FORMS-25225)
+* Nelle distribuzioni OSGi, il servizio Assembler non è riuscito a risolvere i riferimenti ai frammenti nidificati nei file XDP, causandone la mancanza nell’output assemblato. I frammenti nidificati ora vengono risolti. (FORMS-25233)
+* Il servizio di rendering di Forms ha restituito un output diverso per lo stesso input nei service pack, influendo sulle lettere di Gestione corrispondenza. L’output di rendering è ora coerente. (FORMS-25289)
+* Le lettere di Gestione della corrispondenza salvate hanno perso spazi e hanno mostrato una &quot;x&quot; in alcuni punti quando sono state riaperte. Il contenuto della lettera salvata ora rimane intatto. (FORMS-25290)
+* Dopo un aggiornamento del service pack, le lettere di comunicazione interattiva (IC) si bloccano durante un ciclo di caricamento e le lettere che non sono state caricate perdono spazio nell’anteprima. Il caricamento e la spaziatura ora funzionano correttamente. (FORMS-25346)
+* La procedura guidata Crea frammento di modulo ha inviato una richiesta di rete per ogni sequenza di tasti nel campo titolo. Le chiamate ridondanti sono state rimosse. (FORMS-25431)
+* Creazione di un frammento di modulo adattivo basato su componenti core da uno schema JSON caricato in linea non riuscita con &quot;È stato specificato un modello di modulo non valido ALC-FMG-700-009.&quot; Gli schemi JSON in linea sono ora accettati. (FORMS-25645)
+* Un frammento di modulo adattivo basato su Componenti core e creato da uno schema JSON mostrava un pannello Origini dati vuoto nell’editor. Il pannello ora elenca le origini dati dello schema. (FORMS-25646)
+* L&#39;interfaccia utente dell&#39;agente di comunicazione interattiva (IC) si è aperta in una pagina vuota, impedendo agli agenti di visualizzare il contenuto IC. Viene ora eseguito il rendering dell&#39;interfaccia utente dell&#39;agente. (FORMS-25674)
+* Il passaggio dell’opzione di tipo schema nella procedura guidata Crea frammento di modulo adattivo non ha azzerato lo stato dell’opzione precedente, generando una mancata corrispondenza dello schema. La procedura guidata ripristina l&#39;opzione inattiva. (FORMS-25686)
+* L’applicazione di un tema non aggiornava la libreria client di base, pertanto le modifiche al tema sembravano non avere alcun effetto. I temi ora aggiornano la libreria client di base. (FORMS-25757)
+* Il menu degli hamburger per dispositivi mobili non rispondeva ai tocchi, rendendo la navigazione inutilizzabile sui dispositivi mobili. Il menu ora si apre come previsto. (FORMS-25825)
+* L’azione Pubblica è scomparsa dopo l’annullamento della pubblicazione di un modulo, impedendo in tal modo la ripubblicazione. La pubblicazione è ora disponibile dopo l’annullamento della pubblicazione. (FORMS-26333)
+* In Designer, la formattazione in grassetto sui collegamenti ipertestuali all’interno di un oggetto di testo statico veniva persa dopo eventuali modifiche apportate al testo. La formattazione grassetto consente ora di mantenere le modifiche. (FORMS-26763)
+* Facendo clic su Ripristina in un modulo adattivo, l’immagine configurata dall’autore nel componente Immagine viene cancellata e l’immagine non funziona più, mentre gli altri campi vengono ripristinati correttamente. L’operazione Reimposta mantiene l’immagine configurata. (FORMS-26817)
+* Nell&#39;interfaccia utente dell&#39;agente, un campo data/ora visualizzava la data un giorno prima del valore memorizzato. Il campo ora mostra la data corretta. (FORMS-26852)
+* Apache Log4j è stato aggiornato alla versione 2.25.5. (FORMS-26733, FORMS-26734)
 
 I seguenti problemi sono stati risolti per AEM Forms su JEE in 6.5 LTS Service Pack 3:
 
-* FORMS-27585: in AEM Forms su JEE, la chiamata di PDF forms basata su XFA `submitForm()` non è riuscita a visualizzare il risultato dell&#39;invio in Adobe Reader o Acrobat quando lo script ha chiamato `closeDoc()`. Il risultato dell’invio ora viene visualizzato correttamente.
-* FORMS-25998: in AEM Forms su JEE, la registrazione dei certificati della chiave privata HSM (Hardware Security Module) non è riuscita con un `IllegalAccessError` in Java 21 durante il test della connettività HSM nella console di amministrazione. La registrazione del certificato della chiave privata HSM ora funziona.
-* FORMS-24993: in AEM Forms su JEE, il caricamento di un file WSDL nel passaggio Richiama servizio Web non è riuscito con `SAXException` (&quot;Fine prematura del file&quot;). I file WSDL ora vengono caricati correttamente.
-* FORMS-24518: in AEM Forms su JEE (JBoss), l’applicazione web Reader Extensions ha restituito &quot;Error processing request&quot; (Errore durante l’elaborazione della richiesta) dopo una nuova installazione a causa di un URI taglib JSTL legacy. L’applicazione web Reader Extensions ora viene caricata.
-* FORMS-27495: in AEM Forms su JEE, PDF Generator non ha convertito i file Excel (`.xlsx`) quando era abilitata la modalità utente singolo e le conversioni si sono bloccate a tempo indefinito. Le conversioni Excel ora sono completate in modalità utente singolo.
-* FORMS-27098: in AEM Forms su JEE, l&#39;accesso a `/lc` come amministratore non è riuscito a causa del gate di autenticazione di SOAP SDK (`/sdk`). L&#39;accesso come amministratore viene eseguito correttamente.
-* FORMS-25869: in AEM Forms su JEE, PDF Generator incorpora una correzione aggiornata del motore di conversione per migliorare l’affidabilità della conversione.
+* In AEM Forms su JEE, la chiamata di PDF forms basata su XFA `submitForm()` non è riuscita a visualizzare il risultato dell&#39;invio in Acrobat Reader o Acrobat quando lo script ha chiamato `closeDoc()`. Il risultato dell’invio ora viene visualizzato correttamente. (FORMS-27585)
+* In AEM Forms su JEE, la registrazione dei certificati della chiave privata del modulo di sicurezza hardware (HSM) non è riuscita con un `IllegalAccessError` in Java 21 durante il test della connettività HSM nella console di amministrazione. La registrazione del certificato della chiave privata HSM ora funziona. (FORMS-25998)
+* In AEM Forms su JEE, il caricamento di un file WSDL nel passaggio Richiama servizio Web non è riuscito con `SAXException` (&quot;Fine prematura del file&quot;). I file WSDL ora vengono caricati correttamente. (FORMS-24993)
+* Su AEM Forms on JEE (JBoss), l’applicazione web Reader Extensions ha restituito &quot;Error processing request&quot; (Errore durante l’elaborazione della richiesta) dopo una nuova installazione a causa di un URI taglib JSTL legacy. L’applicazione web Reader Extensions ora viene caricata. (FORMS-24518)
+* In AEM Forms su JEE, PDF Generator non ha convertito i file Excel (`.xlsx`) quando la modalità utente singolo era abilitata e le conversioni si sono bloccate a tempo indefinito. Le conversioni Excel ora sono completate in modalità utente singolo. (FORMS-27495)
+* In AEM Forms su JEE, l&#39;accesso a `/lc` come amministratore non è riuscito a causa del gate di autenticazione di SOAP SDK (`/sdk`). L&#39;accesso come amministratore viene eseguito correttamente. (FORMS-27098)
+* In AEM Forms su JEE, PDF Generator incorpora una correzione aggiornata del motore di conversione per migliorare l’affidabilità della conversione. (FORMS-25869)
 
 **Installare AEM Forms 6.5 LTS SP3 su JEE**
 
@@ -383,7 +384,7 @@ Per installare AEM Forms 6.5 LTS SP3 su JEE, completa questi passaggi nell’ord
 
 * In **AEM Forms su JEE 6.5 LTS SP3**, la conversione di **file PostScript (PS), EPS e PRN in PDF** non riesce. Il processo nativo `PsToPdfSvc` può terminare in modo imprevisto, causando un errore del processo di conversione con errori quali `ALC-PDG-003-011` e `ALC-PDG-001-028`. Per assistenza, contatta l’Assistenza clienti Adobe. (FORMS-28152)
 
-* In **AEM Forms su JEE 6.5 LTS SP3**, quando un PDF con firma digitale viene allegato a un&#39;attività in AEM Forms JEE Workspace, il caricamento rimane bloccato nello stato di caricamento o non riesce con un errore &quot;File non valido&quot;. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix della versione corrente, contatta il supporto Adobe. (FORMS-28517)
+* In **AEM Forms su JEE 6.5 LTS SP3**, il caricamento di un PDF con firma digitale in un&#39;attività in AEM Forms JEE Workspace non riesce o si blocca. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix della versione corrente, contatta il supporto Adobe. (FORMS-28517)
 
 In AEM Forms su JEE, le estensioni Reader non funzionano sulla piattaforma WebSphere® Liberty Profile (WLP). Nel file EAR incluso con LTS SP3 mancano le librerie Bouncy Castle richieste sul suo classpath.
 
@@ -396,7 +397,7 @@ In AEM Forms su JEE, le estensioni Reader non funzionano sulla piattaforma WebSp
    bcmail-jdk18on-1.84.jar bcprov-jdk18on-1.84.jar bcpkix-jdk18on-1.84.jar bcutil-jdk18on-1.84.jar
    ```
 
-1. Ridistribuire il file EAR modificato nella cartella WebSphere® Liberty Profile `dropins`:
+1. Ridistribuire il file EAR modificato nella cartella WebSphere® Liberty Profile `dropins`
    1. Arrestare il server WebSphere® Liberty Profile ed eliminare `adobe-livecycle-websphere.ear` da `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
    1. Eliminare la directory `adobe-livecycle-websphere.ear` da `<WebSphere Liberty Profile install location>\usr\servers\<server-name>\apps\expanded\`.
    1. Copiare il file EAR modificato dal passaggio 2 in `<WebSphere Liberty Profile install location>\usr\servers\aemforms\dropins`.
@@ -404,9 +405,7 @@ In AEM Forms su JEE, le estensioni Reader non funzionano sulla piattaforma WebSp
 
 #### Correzioni di sicurezza {#forms-security-fixes-65-lts-sp3}
 
-Questa versione risolve le vulnerabilità di sicurezza in AEM Forms, incluse le librerie XSS, SSRF e XXE e gli aggiornamenti.
-
-
+Questa versione risolve le vulnerabilità di sicurezza di AEM Forms, tra cui XSS, SSRF e XXE, e aggiorna le librerie.
 
 
 ### Foundation {#foundation-65-lts-sp3}
@@ -551,7 +550,7 @@ Consulta anche [Aggiornare la versione Uber Jar Uber di AEM](/help/sites-deployi
 
 Applicabile a: clienti AEM 6.5 LTS (On-Premise) che installano Service Pack 3 (SP3). SP3 viene fornito come file JAR Quickstart.
 
-**Perché questo aggiornamento è importante**
+**Importanza di questa procedura di aggiornamento**
 SP2 per AEM 6.5 LTS viene fornito come file Quickstart JAR anziché come file ZIP da installare tramite il gestore di pacchetti. I clienti on-premise eseguono l’aggiornamento sostituendo il file JAR Quickstart, estraendolo e riavviandolo. Questo metodo è conforme alla procedura di aggiornamento standard di Adobe.
 
 
@@ -667,19 +666,15 @@ In questa sezione sono elencate le funzionalità e le funzioni che sono state ri
 
 ## Problemi noti {#known-issues}
 
-### Danneggiamento dell’archivio durante la compattazione online in standby (GRANITE-73045) {#repository-corruption-during-online-compaction-granite-73045}
+### Danneggiamento dell’archivio durante la compattazione online in standby {#repository-corruption-during-online-compaction-on-standby}
 
-Gli utenti possono riscontrare un danneggiamento dell’archivio durante la compattazione online se l’istanza era in esecuzione in precedenza come standby a freddo TarMK ed è stata successivamente promossa a principale. In questo scenario può verificarsi un `SegmentNotFoundException` (SNFE) che può danneggiare l’archivio.
+La compattazione online può danneggiare l&#39;archivio JCR con un `SegmentNotFoundException` (SNFE) se l&#39;istanza è stata precedentemente eseguita come TarMK Cold Standby e successivamente è stata promossa a primaria.
 
-Per risolvere il problema, installa l’hotfix dalla [Distribuzione software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip). Poiché l’hotfix include un bundle `oak-segment-tar` di basso livello, l’istanza viene riavviata dopo l’installazione.
+**Risoluzione**
 
-Pianifica i tempi di inattività dell’istanza durante la sua applicazione. Per la compattazione offline, utilizza il file jar [`oak-run`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente, disponibile anche in Distribuzione software.
-
->[!NOTE]
->
-> * Per qualsiasi operazione `oak-run`, utilizzare il file jar [`oak-run` 2.4.1-B002](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar).
->
-> * Avvia AEM impostando la proprietà di sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true`.
+1. Installa [hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) da Software Distribution. Include un bundle `oak-segment-tar` di basso livello, quindi l&#39;istanza viene riavviata dopo l&#39;installazione. Pianificare i tempi di inattività.
+1. Impostare la proprietà di sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true` all&#39;avvio di AEM. Questo flag è necessario all’avvio di AEM, non durante l’esecuzione della compattazione offline.
+1. Per qualsiasi operazione di `oak-run`, utilizzare il file jar [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente di `oak-run` 2.4.1-B002 da Software Distribution.
 
 ### AEM Forms
 
@@ -710,7 +705,6 @@ Per utilizzare le funzionalità seguenti, installare il pacchetto `cq-dam-cfm-in
 
 Scarica il pacchetto di indice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) dal portale di distribuzione software di Adobe.
 
--->
 
 &#x200B;###
 
