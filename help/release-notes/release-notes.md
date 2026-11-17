@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -382,6 +382,8 @@ Per installare AEM Forms 6.5 LTS SP3 su JEE, completa questi passaggi nell’ord
 
 #### Problemi noti {#forms-known-issues-65-lts-sp3}
 
+* In **AEM Forms 6.5 LTS SP3 su JEE e OSGi su Windows**, PDF Generator (PDFG) si blocca quando si esporta un documento PDF esistente in un altro formato di file supportato. L&#39;operazione di esportazione non viene completata e il file di output convertito non viene restituito. (FORMS-29849)
+
 * In **AEM Forms su JEE 6.5 LTS SP3**, la conversione di **file PostScript (PS), EPS e PRN in PDF** non riesce. Il processo nativo `PsToPdfSvc` può terminare in modo imprevisto, causando un errore del processo di conversione con errori quali `ALC-PDG-003-011` e `ALC-PDG-001-028`. Per assistenza, contatta l’Assistenza clienti Adobe. (FORMS-28152)
 
 * In **AEM Forms su JEE 6.5 LTS SP3**, il caricamento di un PDF con firma digitale in un&#39;attività in AEM Forms JEE Workspace non riesce o si blocca. Di conseguenza, non è possibile aggiungere all&#39;attività allegati PDF firmati di dimensioni maggiori. Questo problema è stato risolto in una versione successiva. Per un hotfix della versione corrente, contatta il supporto Adobe. (FORMS-28517)
@@ -674,7 +676,7 @@ La compattazione online può danneggiare l&#39;archivio JCR con un `SegmentNotFo
 
 1. Installa [hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/cq-6.5.lts.3-hotfix-GRANITE-74457-1.0.zip) da Software Distribution. Include un bundle `oak-segment-tar` di basso livello, quindi l&#39;istanza viene riavviata dopo l&#39;installazione. Pianificare i tempi di inattività.
 1. Impostare la proprietà di sistema `oak.segment.cleanup.skipDanglingFutureReclaim=true` all&#39;avvio di AEM. Questo flag è necessario all’avvio di AEM, non durante l’esecuzione della compattazione offline.
-1. Per qualsiasi operazione di `oak-run`, utilizzare il file jar [&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente di `oak-run` 2.4.1-B002 da Software Distribution.
+1. Per qualsiasi operazione di `oak-run`, utilizzare il file jar ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq660/hotfixes/granite-74457/oak-run-2.4.1-B002.jar) corrispondente di [`oak-run` 2.4.1-B002 da Software Distribution.
 
 ### AEM Forms
 
@@ -706,7 +708,7 @@ Per utilizzare le funzionalità seguenti, installare il pacchetto `cq-dam-cfm-in
 Scarica il pacchetto di indice [cq-dam-cfm-indices](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fcq-dam-cfm-indices-1.1.5.zip) dal portale di distribuzione software di Adobe.
 
 
-&#x200B;###
+###
 
 ### Errore di connessione di Dispatcher con la funzione solo SSL (risolto in AEM 6.5 LTS SP1 e versioni successive){#ssl-only-feature}
 
