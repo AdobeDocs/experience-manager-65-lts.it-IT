@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: dc085d8f240ae633d82c0b03e8e30ccb82a92008
+source-git-commit: 5bc7e1ae18a7ee667241c2c82b55d3f32e71ce41
 workflow-type: tm+mt
-source-wordcount: '7820'
+source-wordcount: '7863'
 ht-degree: 20%
 ---
 
@@ -381,6 +381,8 @@ Per installare AEM Forms 6.5 LTS SP3 su JEE, completa questi passaggi nell’ord
 1. Se il progetto utilizza la libreria client di SDK `adobe-livecycle-client.jar`, aggiornala nel percorso di classe del progetto. La versione più recente è disponibile alle `<AEM_Forms_Installation_dir>/sdk/client-libs/common/adobe-livecycle-client.jar`.
 
 #### Problemi noti {#forms-known-issues-65-lts-sp3}
+
+* In **AEM Forms 6.5 LTS SP3 su JEE e OSGi su Windows**, PDF Generator (PDFG) si blocca quando si esporta un documento PDF esistente in un altro formato di file supportato. L&#39;operazione di esportazione non viene completata e il file di output convertito non viene restituito. (FORMS-29849)
 
 * In **AEM Forms su JEE 6.5 LTS SP3**, la conversione di **file PostScript (PS), EPS e PRN in PDF** non riesce. Il processo nativo `PsToPdfSvc` può terminare in modo imprevisto, causando un errore del processo di conversione con errori quali `ALC-PDG-003-011` e `ALC-PDG-001-028`. Per assistenza, contatta l’Assistenza clienti Adobe. (FORMS-28152)
 
