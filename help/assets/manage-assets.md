@@ -21,9 +21,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 2e690827bfa8f3d8227860de4efb802758ae0095
+source-git-commit: adca0a252dc42816ac61dd402c9102796ad47ead
 workflow-type: tm+mt
-source-wordcount: '10238'
+source-wordcount: '10248'
 ht-degree: 3%
 ---
 # Gestire le risorse digitali {#manage-digital-assets}
@@ -35,11 +35,11 @@ ht-degree: 3%
 
 In [!DNL Adobe Experience Manager Assets], puoi fare di più che archiviare e gestire le risorse. [!DNL Experience Manager] offre funzionalità di gestione delle risorse di livello enterprise. Puoi modificare e condividere le risorse, eseguire ricerche avanzate e creare più rappresentazioni di decine di formati di file supportati. Puoi anche gestire versioni e diritti digitali, automatizzare l’elaborazione delle risorse, gestire e gestire i metadati, collaborare utilizzando le annotazioni e molto altro.
 
-Questo articolo descrive le attività di base per la gestione delle risorse, come creare o caricare; aggiornamenti dei metadati; copiare, spostare ed eliminare; pubblicare, annullare la pubblicazione e cercare le risorse. Per informazioni sull&#39;interfaccia utente, vedere [Introduzione all&#39;interfaccia utente delle risorse](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [gestire i frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) risorse.
+Questo articolo descrive le attività di base per la gestione delle risorse: creare, caricare, aggiornare i metadati, copiare, spostare, eliminare, pubblicare, annullare la pubblicazione e cercare. Per informazioni sull&#39;interfaccia utente, vedere [Introduzione all&#39;interfaccia utente delle risorse](/help/sites-authoring/basic-handling.md). Per gestire i frammenti di contenuto, consulta [gestire i frammenti di contenuto](/help/assets/content-fragments/content-fragments-managing.md) risorse.
 
 ## Creare cartelle {#creating-folders}
 
-Quando si organizza una raccolta di risorse, ad esempio tutte le immagini `Nature`, è possibile creare cartelle per mantenerle unite. Puoi utilizzare le cartelle per categorizzare e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare le risorse in cartelle per funzionare meglio.
+Per mantenere insieme una raccolta di risorse, ad esempio `Nature` immagini, creare cartelle. Puoi utilizzare le cartelle per categorizzare e organizzare le risorse. [!DNL Experience Manager Assets] non richiede di organizzare le risorse in cartelle per funzionare meglio.
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ Move this section into a new article. CQDOC-14874 ticket is created for this.
 In this complete article, replace emphasis with UICONTROL where appropriate.
 -->
 
-È possibile caricare vari tipi di risorse (tra cui immagini, file PDF, file RAW e così via) dalla cartella locale o da un&#39;unità di rete in [!DNL Experience Manager Assets].
+È possibile caricare varie risorse (tra cui immagini, PDF e file RAW) dalla cartella locale o da un&#39;unità di rete in [!DNL Experience Manager Assets].
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 >
 >I nomi di file Assets caricati in Experience Manager che hanno una lunghezza superiore a 100 caratteri sono abbreviati quando vengono utilizzati in Dynamic Media.
 >
->I primi 100 caratteri nel nome del file vengono utilizzati così come sono; tutti i caratteri rimanenti vengono sostituiti da una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
+>[!DNL Experience Manager] utilizza i primi 100 caratteri del nome di file così come sono e sostituisce eventuali caratteri rimanenti con una stringa alfanumerica. Questo metodo di ridenominazione garantisce un nome univoco quando la risorsa viene utilizzata in Dynamic Media. Inoltre, deve contenere la lunghezza massima consentita per il nome del file di risorse in Dynamic Media.
 
 Puoi scegliere di caricare le risorse nelle cartelle con o senza un profilo di elaborazione assegnato.
 
@@ -97,7 +97,7 @@ Prima di caricare una risorsa, assicurati che sia in un [formato](/help/assets/a
 
    ![Barra di avanzamento caricamento risorse](assets/upload-progress-bar.png)
 
-È possibile configurare la dimensione al di sopra della quale una risorsa è considerata di grandi dimensioni. Ad esempio, puoi configurare il sistema in modo che consideri le risorse superiori a 1000 MB (anziché 500 MB) come risorse di grandi dimensioni. In questo caso, **[!UICONTROL Pausa]** viene visualizzato sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
+È possibile configurare la dimensione al di sopra della quale una risorsa è considerata di grandi dimensioni. Per considerare le risorse di dimensioni superiori a 1000 MB (anziché 500 MB), configura il sistema. In questo caso, **[!UICONTROL Pausa]** viene visualizzato sulla barra di avanzamento quando vengono caricate risorse di dimensioni superiori a 1000 MB.
 
 L&#39;opzione [!UICONTROL Pausa] non indica se un file di dimensioni superiori a 1000 MB è stato caricato con un file inferiore a 1000 MB. Tuttavia, se annulli il caricamento di un file di dimensioni inferiori a 1000 MB, viene visualizzata l&#39;opzione **[!UICONTROL Pausa]**.
 
@@ -581,7 +581,11 @@ Per eliminare le risorse, un utente deve disporre delle autorizzazioni di elimin
 
 Per risolvere o rimuovere i riferimenti in entrata da altre pagine, aggiorna i riferimenti rilevanti prima di eliminare una risorsa. Per impedire agli utenti di eliminare le risorse di riferimento e lasciare i collegamenti interrotti, disabilita l’opzione Forza eliminazione utilizzando una sovrapposizione.
 
-Per eliminare una risorsa o una cartella contenente una risorsa:
+>[!IMPORTANT]
+>
+>Quando è abilitata la modalità Dynamic Media - Scene7, anche l’eliminazione definitiva di una risorsa in Experience Manager ne determina l’eliminazione. La risorsa non viene spostata nella cartella Cestino di elementi multimediali dinamici, pertanto non puoi ripristinarla da Dynamic Media.
+
+**Per eliminare risorsa:**
 
 1. Passa alla posizione della risorsa o della cartella da eliminare.
 
